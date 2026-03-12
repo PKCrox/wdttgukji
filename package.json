@@ -1,0 +1,14 @@
+{
+  "name": "wdttgukji",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "에이전틱 전략 게임 생성 파이프라인 — 첫 번째 테마: 삼국지",
+  "scripts": {
+    "crawl:characters": "node scripts/crawl/crawl-characters.js",
+    "crawl:events": "node scripts/crawl/crawl-events.js",
+    "crawl:koei": "node scripts/crawl/crawl-koei-mechanics.js",
+    "crawl:all": "npm run crawl:characters && npm run crawl:events && npm run crawl:koei"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
