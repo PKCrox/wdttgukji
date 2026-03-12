@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GameEvent",
+  "description": "테마 독립적 이벤트 스키마. 역사/관계/절차적 3레이어 공통.",
+  "type": "object",
+  "required": ["id", "layer", "name", "trigger", "narrative", "effects"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "고유 식별자. 형식: {layer}_{period}_{sequence}",
+      "examples": ["hist_208_redcliffs", "rel_marriage_001", "proc_drought_042"]
+    },
+    "layer": {
+      "enum": ["historical", "relational", "procedural"],
+      "description": "historical: 역사 기반 수작업 | relational: 관계 기반 규칙+AI | procedural: 완전 AI 생성"
+    },
+    "name": {
+      "type": "string",
+      "description": "이벤트 표시 이름"
+    },
+    "period": {
+      "type": "object",
+      "properties": {
+        "year": { "type": "integer", "description": "발생 연도 (서기)" },
+        "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "turn_range": {
+          "type": "object",
+          "properties": {
+            "earliest": { "type": "integer" },
+            "latest": { "type": "integer" }
+          },
+          "description": "게임 턴 기준 발생 가능 범위"
+        }
+      }
+    },
+    "location": {
+      "type": "string",
+      "description": "발생 장소 (도시/지역 ID)"
+    },
+    "trigger": {
+      "type": "object",
+      "required": ["conditions"],
+      "properties": {
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "params"],
+            "properties": {
+              "type": {
+                "enum": [
+                  "year_range",
+                  "character_alive",
+                  "character_in_city",
+                  "character_stat_gte",
+                  "character_relationship",
+                  "faction_controls",
+                  "faction_at_war",
+                  "faction_allied",
+                  "resource_gte",
+                  "resource_lte",
+                  "event_completed",
+                  "event_not_completed",
+                  "random_chance"
+                ]
+              },
+              "params": { "type": "object" }
+            }
+          },
+          "description": "모든 조건이 AND로 충족되어야 발화"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 50,
+          "description": "동일 턴에 복수 이벤트 충돌 시 우선순위"
+        },
+        "cooldown_turns": {
+          "type": "integer",
+          "default": 0,
+          "description": "발화 후 재발화 불가 기간"
+        }
+      }
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["character_id", "role"],
+        "properties": {
+          "character_id": { "type": "string" },
+          "role": {
+            "enum": ["protagonist", "antagonist", "supporter", "target", "observer"],
+            "description": "이벤트 내 역할"
+          },
+          "required": {
+            "type": "boolean",
+            "default": true,
+            "description": "false면 부재 시 다른 캐릭터로 대체 가능"
+          }
+        }
+      }
+    },
+    "narrative": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "description": "서사 텍스트 (변수 치환 가능: {character.name} 등)" },
+        "flavor": { "type": "string", "description": "분위기 보조 텍스트" },
+        "generation": {
+          "enum": ["manual", "ai_reviewed", "ai_generated"],
+          "description": "생성 방식"
+        }
+      }
+    },
+    "choices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "effects"],
+        "properties": {
+          "id": { "type": "string" },
+          "text": { "type": "string" },
+          "conditions": {
+            "type": "array",
+            "description": "이 선택지가 보이려면 충족해야 할 추가 조건"
+          },
+          "effects": { "$ref": "#/$defs/effects" },
+          "next_event": {
+            "type": "string",
+            "description": "이 선택 후 연쇄 발화할 이벤트 ID"
+          }
+        }
+      }
+    },
+    "effects": {
+      "$ref": "#/$defs/effects",
+      "description": "선택지 없이 자동 적용되는 효과 (절차적 이벤트 등)"
+    },
+    "historical_basis": {
+      "type": "string",
+      "description": "역사적 근거. 예: '연의 49회', '정사 위서 무제기', 'AI 생성'",
+      "examples": ["연의 49회 적벽대전", "정사 촉서 선주전", "AI 생성"]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "분류 태그",
+      "examples": [["battle", "decisive", "fire_attack"], ["diplomacy", "alliance"], ["personal", "oath"]]
+    }
+  },
+  "$defs": {
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "target", "value"],
+        "properties": {
+          "type": {
+            "enum": [
+              "stat_change",
+              "relationship_change",
+              "loyalty_change",
+              "resource_change",
+              "territory_change",
+              "army_change",
+              "character_join",
+              "character_leave",
+              "character_death",
+              "faction_war",
+              "faction_peace",
+              "faction_alliance",
+              "unlock_event",
+              "unlock_tech",
+              "custom"
+            ]
+          },
+          "target": { "type": "string", "description": "효과 대상 (캐릭터ID, 세력ID, 도시ID)" },
+          "value": { "description": "효과 값 (타입에 따라 number, string, object)" },
+          "duration_turns": { "type": "integer", "description": "일시적 효과의 지속 턴 수" }
+        }
+      }
+    }
+  }
+}

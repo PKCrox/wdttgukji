@@ -1,0 +1,127 @@
+[
+  {
+    "_comment": "Tier: historical / 수작업 이벤트 — 적벽대전",
+    "id": "hist_208_redcliffs",
+    "layer": "historical",
+    "name": "적벽대전",
+    "period": { "year": 208, "month": 11 },
+    "location": "적벽",
+    "trigger": {
+      "conditions": [
+        { "type": "year_range", "params": { "min": 207, "max": 210 } },
+        { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+        { "type": "character_alive", "params": { "character_id": "zhou_yu" } },
+        { "type": "faction_controls", "params": { "faction": "wei", "territory": "jingzhou_north" } },
+        { "type": "faction_at_war", "params": { "faction_a": "wei", "faction_b": "wu" } }
+      ],
+      "priority": 100
+    },
+    "participants": [
+      { "character_id": "cao_cao", "role": "antagonist", "required": true },
+      { "character_id": "zhou_yu", "role": "protagonist", "required": true },
+      { "character_id": "zhuge_liang", "role": "supporter", "required": false },
+      { "character_id": "huang_gai", "role": "supporter", "required": false },
+      { "character_id": "liu_bei", "role": "supporter", "required": false }
+    ],
+    "narrative": {
+      "text": "{cao_cao.name}의 80만 대군이 남하하여 장강에 이르렀다. {zhou_yu.name}은 화공을 준비하고, {huang_gai.name}이 거짓 항복으로 적진에 불을 놓는다.",
+      "flavor": "동남풍이 불어온다. 강 위의 쇄선이 일시에 불길에 휩싸인다.",
+      "generation": "manual"
+    },
+    "choices": [
+      {
+        "id": "redcliffs_fire_attack",
+        "text": "화공을 실행한다",
+        "effects": [
+          { "type": "army_change", "target": "wei", "value": { "soldiers": -200000, "morale": -50 } },
+          { "type": "territory_change", "target": "jingzhou_south", "value": { "controller": "shu" } },
+          { "type": "relationship_change", "target": "wu_shu_alliance", "value": +20 },
+          { "type": "unlock_event", "target": "hist_208_huarong_pass", "value": true }
+        ],
+        "next_event": "hist_208_huarong_pass"
+      },
+      {
+        "id": "redcliffs_direct_assault",
+        "text": "정면 수전으로 맞선다",
+        "conditions": [
+          { "type": "character_stat_gte", "params": { "character_id": "zhou_yu", "stat": "leadership", "value": 90 } }
+        ],
+        "effects": [
+          { "type": "army_change", "target": "wei", "value": { "soldiers": -100000, "morale": -30 } },
+          { "type": "army_change", "target": "wu", "value": { "soldiers": -50000, "morale": -10 } }
+        ]
+      }
+    ],
+    "historical_basis": "연의 49회 적벽대전, 정사 오서 주유전",
+    "tags": ["battle", "decisive", "fire_attack", "alliance"]
+  },
+  {
+    "_comment": "Tier: relational / 규칙+AI 이벤트 — 의형제 결의",
+    "id": "rel_oath_001",
+    "layer": "relational",
+    "name": "도원결의",
+    "period": { "year": 184 },
+    "location": "탁군",
+    "trigger": {
+      "conditions": [
+        { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+        { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+        { "type": "character_alive", "params": { "character_id": "zhang_fei" } },
+        { "type": "character_in_city", "params": { "character_id": "liu_bei", "city": "zhuo_jun" } },
+        { "type": "character_relationship", "params": { "a": "liu_bei", "b": "guan_yu", "type": "friendly", "min_intensity": 60 } },
+        { "type": "event_not_completed", "params": { "event_id": "rel_oath_001" } }
+      ],
+      "priority": 90,
+      "cooldown_turns": 9999
+    },
+    "participants": [
+      { "character_id": "liu_bei", "role": "protagonist", "required": true },
+      { "character_id": "guan_yu", "role": "protagonist", "required": true },
+      { "character_id": "zhang_fei", "role": "protagonist", "required": true }
+    ],
+    "narrative": {
+      "text": "복숭아꽃이 만개한 정원에서 {liu_bei.name}, {guan_yu.name}, {zhang_fei.name} 세 사람이 의형제의 맹세를 올린다. '같은 날 태어나지는 못했으나, 같은 날 죽기를 원하노라.'",
+      "generation": "manual"
+    },
+    "choices": [
+      {
+        "id": "oath_accept",
+        "text": "맹세를 받아들인다",
+        "effects": [
+          { "type": "relationship_change", "target": "liu_bei:guan_yu", "value": { "type": "sworn_brothers", "intensity": 100 } },
+          { "type": "relationship_change", "target": "liu_bei:zhang_fei", "value": { "type": "sworn_brothers", "intensity": 100 } },
+          { "type": "relationship_change", "target": "guan_yu:zhang_fei", "value": { "type": "sworn_brothers", "intensity": 100 } },
+          { "type": "loyalty_change", "target": "guan_yu", "value": +50 },
+          { "type": "loyalty_change", "target": "zhang_fei", "value": +50 }
+        ]
+      }
+    ],
+    "historical_basis": "연의 1회 도원결의",
+    "tags": ["personal", "oath", "brotherhood"]
+  },
+  {
+    "_comment": "Tier: procedural / 완전 AI 생성 이벤트 — 가뭄",
+    "id": "proc_drought_042",
+    "layer": "procedural",
+    "name": "심한 가뭄",
+    "period": { "turn_range": { "earliest": 1, "latest": 9999 } },
+    "trigger": {
+      "conditions": [
+        { "type": "random_chance", "params": { "probability": 0.03 } }
+      ],
+      "priority": 30,
+      "cooldown_turns": 24
+    },
+    "participants": [],
+    "narrative": {
+      "text": "{city.name}에 극심한 가뭄이 들었다. 농작물이 말라가고 백성들의 불만이 높아진다.",
+      "generation": "ai_generated"
+    },
+    "effects": [
+      { "type": "resource_change", "target": "{city}", "value": { "food": -3000 } },
+      { "type": "stat_change", "target": "{city}", "value": { "public_order": -15 }, "duration_turns": 6 }
+    ],
+    "historical_basis": "AI 생성",
+    "tags": ["disaster", "drought", "economy"]
+  }
+]
