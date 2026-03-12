@@ -355,6 +355,69 @@ Territory:
 
 ---
 
+## 기여 가이드 (AI 코딩 워크플로우)
+
+이 프로젝트는 전원 AI 도구(Claude Code, Cursor 등)를 사용한다. 아래는 충돌 없이 협업하기 위한 최소 규칙.
+
+### 브랜치 전략
+
+```
+main              ← 안정 버전. 직접 커밋 금지. PR로만 머지.
+  ├── feat/xxx    ← 기능 개발 (예: feat/event-engine, feat/soul-pipeline)
+  ├── data/xxx    ← 데이터 작업 (예: data/tier0-souls, data/crawl-chinese)
+  └── fix/xxx     ← 버그 수정
+```
+
+**규칙**:
+- `main`에 직접 push하지 않는다. 항상 브랜치 → PR → 머지
+- 브랜치 이름은 `{타입}/{설명}` 형식. 예: `feat/battle-system`, `data/guan-yu-soul`
+- PR은 간단한 설명이면 충분. AI가 코드 리뷰 돌림
+
+### 작업 흐름
+
+```bash
+# 1. 최신 main 받기
+git pull origin main
+
+# 2. 브랜치 만들기
+git checkout -b feat/내작업이름
+
+# 3. AI랑 작업하기 (Claude Code, Cursor 등)
+#    파일 수정, 추가, 삭제...
+
+# 4. 변경사항 확인
+git status
+git diff
+
+# 5. 커밋
+git add 파일이름           # 또는 git add -A (전체)
+git commit -m "뭘 했는지 한줄 설명"
+
+# 6. 푸시
+git push -u origin feat/내작업이름
+
+# 7. GitHub에서 PR 만들기 (또는 AI가 만들어줌)
+#    main ← feat/내작업이름 으로 PR
+```
+
+### AI 도구 사용 시 주의
+
+- **같은 파일을 동시에 수정하지 않기**: 작업 시작 전에 디스코드/카톡에서 "나 이 파일 작업한다" 공유
+- **커밋 자주 하기**: AI가 대량 수정할 수 있으므로, 중간중간 커밋해서 되돌릴 수 있게
+- **soul.md 수정 시**: `data/characters/` 아래 파일은 캐릭터 이름이 파일명. 한 PR에 한 캐릭터씩 권장
+- **이벤트 수정 시**: `docs/schemas/event-schema.json`이 기준. 스키마 변경은 반드시 PR 리뷰
+
+### 기획 리드 (장군이) 주요 작업 영역
+
+| 작업 | 파일/위치 | 설명 |
+|---|---|---|
+| soul.md 검수 | `data/characters/*.soul.md` | AI가 생성한 초안의 성격/가치관/행동 패턴 검수 |
+| 이벤트 기획 | `data/events/` | 역사 이벤트 분기 설계, AI 이벤트 품질 기준 |
+| 밸런스 결정 | `docs/balance.md` (생성 예정) | 능력치 범위, 자원 공식, 전투 공식 |
+| 하드코딩 경계 | README 내 테이블 | 어디까지 수작업, 어디부터 AI에 맡길지 |
+
+---
+
 ## 디렉토리 구조
 
 ```
