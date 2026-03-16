@@ -37,6 +37,7 @@ async function init() {
   document.getElementById('btn-confirm-faction').addEventListener('click', showIntro);
   document.getElementById('btn-back-to-start').addEventListener('click', backToStart);
   document.getElementById('btn-start-game').addEventListener('click', startNewGame);
+  document.getElementById('intro-dialogue').addEventListener('click', advanceDialogue);
 
   // 턴 로그 토글
   document.getElementById('btn-toggle-log').addEventListener('click', toggleLog);
@@ -117,6 +118,51 @@ const FACTION_LEADERS = {
   wei: 'cao_cao', shu: 'liu_bei', wu: 'sun_quan',
   liu_zhang: 'liu_zhang_char', zhang_lu: 'zhang_lu_char',
 };
+
+// --- 세력별 도입 대화 ---
+const FACTION_DIALOGUES = {
+  wei: [
+    { speaker: '순욱', text: '승상, 형주의 유종이 항복하며 수군까지 얻었습니다. 장강을 건너는 것은 시간 문제입니다.' },
+    { speaker: '조조', text: '하하, 주유와 제갈량이 손을 잡는다 한들 80만 앞에서는 무력하지.' },
+    { speaker: '가후', text: '승상, 한 가지 우려가 있습니다. 북방 병사들은 수전에 익숙하지 않고, 남방의 풍토병도...' },
+    { speaker: '조조', text: '걱정 마라. 연환계로 배를 잇대면 육지나 다름없다. 병사들의 멀미도 해결될 것이야.' },
+    { speaker: '순유', text: '손권에게 항복을 권하는 서신을 보내는 것도 일책입니다. 전의를 꺾으면 피를 흘리지 않아도 됩니다.' },
+    { speaker: '조조', text: '좋다. 전쟁은 시작 전에 이기는 것이 상책. — 그러나 거부한다면, 남김없이 쓸어버릴 것이다.' },
+  ],
+  shu: [
+    { speaker: '제갈량', text: '주공, 조조의 80만 대군이 남하합니다. 우리 힘만으로는 막을 수 없습니다.' },
+    { speaker: '유비', text: '군사의 뜻은 알겠소. 하나 손권이 우리와 손잡을 이유가 있겠소?' },
+    { speaker: '제갈량', text: '손권 역시 조조를 두려워합니다. 제가 강동으로 건너가 설득하겠습니다. 함께라면 승산이 있습니다.' },
+    { speaker: '관우', text: '형님, 군사를 믿으십시오. 우리에게는 아직 대의가 있고, 따르는 백성이 있습니다.' },
+    { speaker: '장비', text: '형님! 이 장익덕이 살아있는 한, 형님 뒤는 제가 지킵니다!' },
+    { speaker: '유비', text: '...좋다. 군사, 강동으로 가시오. 한실 부흥의 마지막 불씨를 — 우리가 지켜야 하오.' },
+  ],
+  wu: [
+    { speaker: '노숙', text: '주공, 유비 쪽에서 제갈량이라는 자가 사신으로 왔습니다. 연합을 제안하고 있습니다.' },
+    { speaker: '손권', text: '조조가 80만을 이끌고 온다... 조정의 대신들은 뭐라 하던가?' },
+    { speaker: '노숙', text: '장소, 진군 등은 항복을 주장합니다. 조조의 세가 너무 크다고...' },
+    { speaker: '주유', text: '항복이라니! 손가 3대가 피로 일군 강동을 고스란히 바치자는 겁니까!' },
+    { speaker: '손권', text: '...도독의 뜻은?' },
+    { speaker: '주유', text: '제게 정예 5만을 주십시오. 장강의 바람과 불로 — 조조의 목을 가져오겠습니다.' },
+  ],
+  liu_zhang: [
+    { speaker: '장송', text: '주공, 조조가 관중을 평정하고 한중을 넘봅니다. 우리도 대비가 필요합니다.' },
+    { speaker: '유장', text: '촉도가 험하니 쉽게 들어오지는 못할 것이다...' },
+    { speaker: '법정', text: '주공, 촉도만 믿어서는 안 됩니다. 병사를 훈련시키고 관문을 보강해야 합니다.' },
+    { speaker: '장송', text: '(천하의 영웅들이 움직이는데, 이 분은 언제까지 성도에 앉아만 계시려나...)' },
+    { speaker: '유장', text: '...아버지가 남기신 이 땅만은 지켜야지. 그래, 우선 관문부터 점검하자.' },
+  ],
+  zhang_lu: [
+    { speaker: '양송', text: '교주, 남쪽 유장과의 갈등이 심해지고 있습니다. 유장이 장수를 파견했다는 소식도...' },
+    { speaker: '장로', text: '도의 힘으로 백성을 다스리면 만사가 평안한 법이다.' },
+    { speaker: '방덕', text: '교주, 도로 나라를 지킬 수는 없습니다. 조조가 관중을 평정하면 한중이 다음 목표입니다.' },
+    { speaker: '장로', text: '......' },
+    { speaker: '방덕', text: '한중의 지형은 천혜의 요새입니다. 양평관만 굳건히 지키면 10만 대군도 막아낼 수 있습니다.' },
+    { speaker: '장로', text: '그래... 우선은 방어를 굳히자. 신도들의 힘을 모아, 한중만은 지켜내야 한다.' },
+  ],
+};
+
+let dialogueState = { lines: [], index: 0 };
 
 // --- 세력 선택 화면 ---
 async function showFactionSelect() {
@@ -201,8 +247,71 @@ function showIntro() {
     <div class="intro-stat"><div class="label">장수</div><div class="value">${chars.length}명</div></div>
   `;
 
+  // 대화 시퀀스 초기화
+  const lines = FACTION_DIALOGUES[selectedFaction] || [];
+  dialogueState = { lines, index: 0 };
+  const dlgEl = document.getElementById('intro-dialogue');
+  const startBtn = document.getElementById('btn-start-game');
+
+  if (lines.length > 0) {
+    dlgEl.classList.remove('hidden');
+    startBtn.classList.add('hidden');
+    showDialogueLine();
+  } else {
+    dlgEl.classList.add('hidden');
+    startBtn.classList.remove('hidden');
+  }
+
   document.getElementById('faction-screen').classList.add('hidden');
   document.getElementById('intro-screen').classList.remove('hidden');
+}
+
+function showDialogueLine() {
+  const { lines, index } = dialogueState;
+  if (index >= lines.length) {
+    // 대화 끝 → 시작 버튼 표시
+    document.getElementById('intro-dialogue').classList.add('hidden');
+    document.getElementById('btn-start-game').classList.remove('hidden');
+    return;
+  }
+
+  const line = lines[index];
+  const speakerEl = document.getElementById('dialogue-speaker');
+  const textEl = document.getElementById('dialogue-text');
+  const progressEl = document.getElementById('dialogue-progress');
+
+  speakerEl.textContent = line.speaker;
+  textEl.textContent = '';
+  progressEl.textContent = `${index + 1} / ${lines.length}`;
+
+  // 타이핑 애니메이션
+  let charIdx = 0;
+  const chars = [...line.text];
+  if (dialogueState._timer) clearInterval(dialogueState._timer);
+  dialogueState._typing = true;
+
+  dialogueState._timer = setInterval(() => {
+    if (charIdx < chars.length) {
+      textEl.textContent += chars[charIdx];
+      charIdx++;
+    } else {
+      clearInterval(dialogueState._timer);
+      dialogueState._typing = false;
+    }
+  }, 30);
+}
+
+function advanceDialogue() {
+  if (dialogueState._typing) {
+    // 타이핑 중이면 즉시 완료
+    clearInterval(dialogueState._timer);
+    dialogueState._typing = false;
+    const line = dialogueState.lines[dialogueState.index];
+    document.getElementById('dialogue-text').textContent = line.text;
+    return;
+  }
+  dialogueState.index++;
+  showDialogueLine();
 }
 
 // --- 게임 시작 ---
@@ -246,6 +355,7 @@ function saveGame() {
 }
 
 function returnToMenu() {
+  if (dialogueState._timer) clearInterval(dialogueState._timer);
   document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('gameover-modal').classList.add('hidden');
   document.getElementById('faction-screen').classList.add('hidden');
