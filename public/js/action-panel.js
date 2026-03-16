@@ -364,59 +364,80 @@ export class ActionPanel {
     const city = state.cities[cityId];
     const buildings = getAvailableBuildings(state, cityId);
 
-    // 현재 건물 표시
-    if (city.buildings && Object.keys(city.buildings).length > 0) {
-      const header = document.createElement('div');
-      header.className = 'action-hint';
-      let buildingText = '현재: ';
-      for (const [bId, b] of Object.entries(city.buildings)) {
+    // 현재 건물 상태
+    const existing = city.buildings ? Object.entries(city.buildings) : [];
+    if (existing.length > 0) {
+      const statusBar = document.createElement('div');
+      statusBar.className = 'action-status-bar';
+      for (const [bId, b] of existing) {
         const name = BUILDINGS[bId]?.name || bId;
-        buildingText += b.building ? `${name}(건설중 ${b.turnsLeft}턴) ` : `${name} Lv.${b.level} `;
+        if (b.building) {
+          statusBar.innerHTML += `<span class="status-tag building">🔨 ${name} 건설중 (${b.turnsLeft}턴)</span>`;
+        } else {
+          statusBar.innerHTML += `<span class="status-tag done">${name} Lv.${b.level}</span>`;
+        }
       }
-      header.textContent = buildingText;
-      container.appendChild(header);
+      container.appendChild(statusBar);
     }
 
+    const grid = document.createElement('div');
+    grid.className = 'action-card-grid';
+
     for (const b of buildings) {
-      const existing = city.buildings?.[b.id];
-      const levelStr = existing ? `Lv.${existing.level}→${existing.level + 1}` : 'Lv.1';
-      this._addButton(
-        `${b.name} ${levelStr} (금 ${b.cost}) — ${BUILDINGS[b.id]?.desc || ''}`,
-        'build', {
-          cityId, buildingId: b.id,
-          disabled: noActions || !b.canBuild,
-          cost: `금 ${b.cost}`
-        }, container);
+      const ex = city.buildings?.[b.id];
+      const levelStr = ex ? `Lv.${ex.level}→${ex.level + 1}` : 'Lv.1';
+      const disabled = noActions || !b.canBuild;
+      const card = document.createElement('button');
+      card.className = 'action-card' + (disabled ? ' disabled' : '');
+      card.disabled = disabled;
+      card.innerHTML = `
+        <div class="ac-name">${b.name} <span class="ac-level">${levelStr}</span></div>
+        <div class="ac-desc">${BUILDINGS[b.id]?.desc || ''}</div>
+        <div class="ac-cost">금 ${b.cost.toLocaleString()}</div>`;
+      card.addEventListener('click', () => {
+        if (this.onAction) this.onAction('build', { cityId, buildingId: b.id });
+      });
+      grid.appendChild(card);
     }
+    container.appendChild(grid);
   }
 
   // ─── 연구 ───
 
   _buildResearchActions(container, cityId, state, faction, noActions) {
+    const CATEGORY_LABELS = { military: '군사', economy: '경제', special: '특수' };
+    const CATEGORY_COLORS = { military: '#E74C3C', economy: '#F39C12', special: '#9B59B6' };
     const status = getResearchStatus(state, state.player.factionId);
 
+    const statusBar = document.createElement('div');
+    statusBar.className = 'action-status-bar';
     if (status.researching) {
-      const hint = document.createElement('div');
-      hint.className = 'action-hint';
-      hint.textContent = `연구 중: ${status.name} (${status.turnsLeft}턴 남음)`;
-      container.appendChild(hint);
+      statusBar.innerHTML += `<span class="status-tag building">📜 ${status.name} 연구중 (${status.turnsLeft}턴)</span>`;
     }
+    statusBar.innerHTML += `<span class="status-tag done">완료 ${status.completedCount}개</span>`;
+    container.appendChild(statusBar);
 
-    const hint2 = document.createElement('div');
-    hint2.className = 'action-hint';
-    hint2.textContent = `완료된 연구: ${status.completedCount}개`;
-    container.appendChild(hint2);
+    const grid = document.createElement('div');
+    grid.className = 'action-card-grid';
 
     const techs = getAvailableTechs(state, state.player.factionId);
     for (const t of techs) {
-      this._addButton(
-        `${t.name} [${t.category}] (금 ${t.cost}, ${t.turns}턴)${!t.available ? ` — ${t.reason}` : ''}`,
-        'start_research', {
-          techId: t.id,
-          disabled: noActions || !t.available,
-          cost: `금 ${t.cost}`
-        }, container);
+      const disabled = noActions || !t.available;
+      const catLabel = CATEGORY_LABELS[t.category] || t.category;
+      const catColor = CATEGORY_COLORS[t.category] || '#666';
+      const card = document.createElement('button');
+      card.className = 'action-card' + (disabled ? ' disabled' : '');
+      card.disabled = disabled;
+      card.innerHTML = `
+        <div class="ac-name">${t.name} <span class="ac-cat" style="background:${catColor}">${catLabel}</span></div>
+        <div class="ac-desc">${TECHS[t.id]?.desc || ''}${!t.available ? `<br><span class="ac-lock">🔒 ${t.reason}</span>` : ''}</div>
+        <div class="ac-cost">금 ${t.cost.toLocaleString()} · ${t.turns}턴</div>`;
+      card.addEventListener('click', () => {
+        if (this.onAction) this.onAction('start_research', { techId: t.id });
+      });
+      grid.appendChild(card);
     }
+    container.appendChild(grid);
   }
 
   // ─── 첩보 ───
@@ -433,7 +454,6 @@ export class ActionPanel {
       return;
     }
 
-    // 적 도시에 대한 첩보 행동
     const myChars = state.getCharactersOfFaction(state.player.factionId);
     const spies = myChars.filter(c => c.stats.intellect >= 60).sort((a, b) => b.stats.intellect - a.stats.intellect);
     const bestSpy = spies[0];
@@ -446,20 +466,33 @@ export class ActionPanel {
       return;
     }
 
-    const spyHeader = document.createElement('div');
-    spyHeader.className = 'action-hint';
-    spyHeader.textContent = `첩자: ${getCharName(bestSpy.id)} (지력 ${bestSpy.stats.intellect})`;
-    container.appendChild(spyHeader);
+    const statusBar = document.createElement('div');
+    statusBar.className = 'action-status-bar';
+    statusBar.innerHTML = `<span class="status-tag done">🕵 ${getCharName(bestSpy.id)} (지력 ${bestSpy.stats.intellect})</span>`;
+    container.appendChild(statusBar);
+
+    const grid = document.createElement('div');
+    grid.className = 'action-card-grid';
 
     for (const [actionId, action] of Object.entries(ESPIONAGE_ACTIONS)) {
       const { chance } = calculateEspionageChance(state, bestSpy.id, cityId, actionId);
-      this._addButton(
-        `${action.name} (성공률 ${Math.round(chance * 100)}%, 금 ${action.cost}) — ${action.desc}`,
-        'espionage', {
-          spyId: bestSpy.id, targetCityId: cityId, actionType: actionId,
-          disabled: noActions || faction.gold < action.cost
-        }, container);
+      const disabled = noActions || faction.gold < action.cost;
+      const chanceColor = chance >= 0.6 ? '#2ECC71' : chance >= 0.3 ? '#F39C12' : '#E74C3C';
+      const card = document.createElement('button');
+      card.className = 'action-card' + (disabled ? ' disabled' : '');
+      card.disabled = disabled;
+      card.innerHTML = `
+        <div class="ac-name">${action.name} <span class="ac-chance" style="color:${chanceColor}">${Math.round(chance * 100)}%</span></div>
+        <div class="ac-desc">${action.desc}</div>
+        <div class="ac-cost">금 ${action.cost.toLocaleString()}</div>`;
+      card.addEventListener('click', () => {
+        if (this.onAction) this.onAction('espionage', {
+          spyId: bestSpy.id, targetCityId: cityId, actionType: actionId
+        });
+      });
+      grid.appendChild(card);
     }
+    container.appendChild(grid);
   }
 
   // ─── 유틸 ───

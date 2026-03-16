@@ -747,6 +747,118 @@ body {
 
 .action-faction-header:first-child { border-top: none; margin-top: 0; }
 
+/* 액션 카드 그리드 (건설/연구/첩보) */
+.action-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+}
+
+.action-card:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: rgba(201, 168, 76, 0.06);
+  transform: translateY(-1px);
+}
+
+.action-card.disabled, .action-card:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ac-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ac-level {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--text-dim);
+}
+
+.ac-cat {
+  font-size: 0.6rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.ac-chance {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: auto;
+}
+
+.ac-desc {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+  flex: 1;
+}
+
+.ac-lock {
+  color: var(--danger);
+  font-size: 0.65rem;
+}
+
+.ac-cost {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* 상태 바 (연구 진행, 기존 건물) */
+.action-status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.status-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.status-tag.building {
+  background: rgba(243, 156, 18, 0.12);
+  color: var(--warning);
+  border: 1px solid rgba(243, 156, 18, 0.25);
+}
+
+.status-tag.done {
+  background: rgba(46, 204, 113, 0.08);
+  color: var(--text-dim);
+  border: 1px solid rgba(46, 204, 113, 0.15);
+}
+
 /* 내정 트랙 바 (사이드바) */
 .domestic-tracks {
   border-top: 1px solid var(--border);
