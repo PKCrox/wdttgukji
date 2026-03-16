@@ -1,4 +1,6 @@
 {
+  "buildCommand": "",
+  "outputDirectory": ".",
   "rewrites": [
     { "source": "/", "destination": "/public/index.html" },
     { "source": "/js/:path*", "destination": "/public/js/:path*" },
