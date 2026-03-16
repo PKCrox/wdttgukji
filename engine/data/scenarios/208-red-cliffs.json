@@ -1,0 +1,296 @@
+{
+  "id": "208_red_cliffs",
+  "name": "적벽대전",
+  "name_en": "Battle of Red Cliffs",
+  "year": 208,
+  "month": 1,
+  "description": "208년 초, 유표가 병사하고 형주는 혼란에 빠졌다. 유비는 형주의 일부를 확보했으나 조조 80만 대군이 남하 중이다. 손권의 오나라와 연합하여 적벽에서 운명을 건 결전을 준비해야 한다.",
+  "playerFaction": "shu",
+  "playerCharacter": "liu_bei",
+
+  "factions": {
+    "wei": {
+      "name": "위", "color": "#4A90D9", "leader": "cao_cao",
+      "gold": 80000, "tech": 4, "allies": [], "enemies": ["shu"], "active": true,
+      "reputation": 90, "truces": {}
+    },
+    "shu": {
+      "name": "촉", "color": "#2ECC71", "leader": "liu_bei",
+      "gold": 12000, "tech": 2, "allies": [], "enemies": ["wei"], "active": true,
+      "reputation": 130, "truces": {}
+    },
+    "wu": {
+      "name": "오", "color": "#E74C3C", "leader": "sun_quan",
+      "gold": 35000, "tech": 3, "allies": [], "enemies": [], "active": true,
+      "reputation": 110, "truces": {}
+    },
+    "liu_zhang": {
+      "name": "유장", "color": "#F39C12", "leader": "liu_zhang_char",
+      "gold": 40000, "tech": 2, "allies": [], "enemies": [], "active": true,
+      "reputation": 100, "truces": {}
+    },
+    "zhang_lu": {
+      "name": "장로", "color": "#9B59B6", "leader": "zhang_lu_char",
+      "gold": 15000, "tech": 1, "allies": [], "enemies": [], "active": true,
+      "reputation": 100, "truces": {}
+    }
+  },
+
+  "cities": {
+    "yanzhou": {
+      "name": "연주", "owner": "wei", "governor": "cao_ren",
+      "population": 45000, "defense": 60, "food": 12000, "army": 25000, "morale": 75,
+      "agriculture": 65, "commerce": 70, "technology": 55, "publicOrder": 75,
+      "naturalBonus": { "commerce": 1.1 }
+    },
+    "xuchang": {
+      "name": "허창", "owner": "wei", "governor": "xun_yu",
+      "population": 55000, "defense": 75, "food": 18000, "army": 30000, "morale": 80,
+      "agriculture": 70, "commerce": 85, "technology": 70, "publicOrder": 85,
+      "naturalBonus": { "technology": 1.15 }
+    },
+    "yuzhou": {
+      "name": "예주", "owner": "wei", "governor": "cao_cao",
+      "population": 40000, "defense": 55, "food": 18000, "army": 80000, "morale": 85,
+      "agriculture": 60, "commerce": 60, "technology": 50, "publicOrder": 60,
+      "naturalBonus": {}
+    },
+    "xuzhou": {
+      "name": "서주", "owner": "wei", "governor": "zhang_liao",
+      "population": 35000, "defense": 50, "food": 9000, "army": 18000, "morale": 72,
+      "agriculture": 70, "commerce": 55, "technology": 45, "publicOrder": 55,
+      "naturalBonus": { "agriculture": 1.1 }
+    },
+    "luoyang": {
+      "name": "낙양", "owner": "wei", "governor": null,
+      "population": 30000, "defense": 70, "food": 8000, "army": 10000, "morale": 65,
+      "agriculture": 45, "commerce": 50, "technology": 60, "publicOrder": 55,
+      "naturalBonus": { "technology": 1.1 }
+    },
+    "ye": {
+      "name": "업성", "owner": "wei", "governor": "cao_pi",
+      "population": 50000, "defense": 80, "food": 20000, "army": 35000, "morale": 78,
+      "agriculture": 75, "commerce": 80, "technology": 65, "publicOrder": 80,
+      "naturalBonus": { "commerce": 1.15 }
+    },
+    "jizhou": {
+      "name": "기주", "owner": "wei", "governor": null,
+      "population": 38000, "defense": 50, "food": 11000, "army": 15000, "morale": 68,
+      "agriculture": 65, "commerce": 55, "technology": 45, "publicOrder": 60,
+      "naturalBonus": { "agriculture": 1.1 }
+    },
+    "youzhou": {
+      "name": "유주", "owner": "wei", "governor": null,
+      "population": 25000, "defense": 45, "food": 7000, "army": 12000, "morale": 60,
+      "agriculture": 35, "commerce": 40, "technology": 30, "publicOrder": 45,
+      "naturalBonus": {}
+    },
+    "bingzhou": {
+      "name": "병주", "owner": "wei", "governor": null,
+      "population": 20000, "defense": 40, "food": 6000, "army": 10000, "morale": 58,
+      "agriculture": 30, "commerce": 30, "technology": 25, "publicOrder": 40,
+      "naturalBonus": {}
+    },
+    "jingzhou": {
+      "name": "형주", "owner": "shu", "governor": "liu_bei",
+      "population": 55000, "defense": 70, "food": 20000, "army": 40000, "morale": 75,
+      "agriculture": 75, "commerce": 65, "technology": 55, "publicOrder": 65,
+      "naturalBonus": { "agriculture": 1.15 }
+    },
+    "yangzhou": {
+      "name": "양주", "owner": "wu", "governor": "lu_su",
+      "population": 42000, "defense": 60, "food": 14000, "army": 25000, "morale": 78,
+      "agriculture": 70, "commerce": 80, "technology": 55, "publicOrder": 70,
+      "naturalBonus": { "commerce": 1.15 }
+    },
+    "jianye": {
+      "name": "건업", "owner": "wu", "governor": "sun_quan",
+      "population": 50000, "defense": 70, "food": 16000, "army": 30000, "morale": 82,
+      "agriculture": 65, "commerce": 85, "technology": 60, "publicOrder": 80,
+      "naturalBonus": { "commerce": 1.2 }
+    },
+    "yizhou": {
+      "name": "익주", "owner": "liu_zhang", "governor": null,
+      "population": 35000, "defense": 45, "food": 10000, "army": 15000, "morale": 65,
+      "agriculture": 60, "commerce": 50, "technology": 40, "publicOrder": 50,
+      "naturalBonus": { "agriculture": 1.1 }
+    },
+    "chengdu": {
+      "name": "성도", "owner": "liu_zhang", "governor": "liu_zhang_char",
+      "population": 55000, "defense": 65, "food": 18000, "army": 25000, "morale": 70,
+      "agriculture": 80, "commerce": 70, "technology": 55, "publicOrder": 70,
+      "naturalBonus": { "agriculture": 1.2 }
+    },
+    "hanzhong": {
+      "name": "한중", "owner": "zhang_lu", "governor": "zhang_lu_char",
+      "population": 22000, "defense": 55, "food": 8000, "army": 12000, "morale": 65,
+      "agriculture": 50, "commerce": 40, "technology": 35, "publicOrder": 65,
+      "naturalBonus": { "publicOrder": 1.15 }
+    },
+    "changan": {
+      "name": "장안", "owner": "wei", "governor": null,
+      "population": 28000, "defense": 60, "food": 7000, "army": 8000, "morale": 55,
+      "agriculture": 40, "commerce": 45, "technology": 50, "publicOrder": 50,
+      "naturalBonus": { "technology": 1.1 }
+    },
+    "yongzhou": {
+      "name": "옹주", "owner": "wei", "governor": null,
+      "population": 15000, "defense": 35, "food": 5000, "army": 5000, "morale": 50,
+      "agriculture": 25, "commerce": 25, "technology": 20, "publicOrder": 35,
+      "naturalBonus": {}
+    },
+    "jiaozhou": {
+      "name": "교주", "owner": "shu", "governor": "ma_liang",
+      "population": 15000, "defense": 30, "food": 8000, "army": 8000, "morale": 60,
+      "agriculture": 45, "commerce": 30, "technology": 20, "publicOrder": 35,
+      "naturalBonus": { "agriculture": 1.1 }
+    }
+  },
+
+  "characters": {
+    "cao_cao":      { "faction": "wei", "city": "yuzhou", "alive": true, "status": "active", "stats": { "command": 96, "war": 72, "intellect": 91, "politics": 94, "charisma": 96 }, "loyalty": 100 },
+    "cao_ren":      { "faction": "wei", "city": "yanzhou", "alive": true, "status": "active", "stats": { "command": 85, "war": 82, "intellect": 56, "politics": 54, "charisma": 58 }, "loyalty": 95 },
+    "cao_pi":       { "faction": "wei", "city": "ye", "alive": true, "status": "active", "stats": { "command": 73, "war": 58, "intellect": 80, "politics": 86, "charisma": 68 }, "loyalty": 100 },
+    "cao_hong":     { "faction": "wei", "city": "xuchang", "alive": true, "status": "active", "stats": { "command": 72, "war": 78, "intellect": 43, "politics": 41, "charisma": 50 }, "loyalty": 93 },
+    "xiahou_dun":   { "faction": "wei", "city": "yanzhou", "alive": true, "status": "active", "stats": { "command": 84, "war": 90, "intellect": 50, "politics": 55, "charisma": 82 }, "loyalty": 100 },
+    "xiahou_yuan":  { "faction": "wei", "city": "changan", "alive": true, "status": "active", "stats": { "command": 82, "war": 86, "intellect": 46, "politics": 40, "charisma": 60 }, "loyalty": 98 },
+    "zhang_liao":   { "faction": "wei", "city": "xuzhou", "alive": true, "status": "active", "stats": { "command": 89, "war": 92, "intellect": 74, "politics": 62, "charisma": 78 }, "loyalty": 92 },
+    "xu_chu":       { "faction": "wei", "city": "yuzhou", "alive": true, "status": "active", "stats": { "command": 70, "war": 96, "intellect": 25, "politics": 15, "charisma": 52 }, "loyalty": 95 },
+    "xu_huang":     { "faction": "wei", "city": "yuzhou", "alive": true, "status": "active", "stats": { "command": 85, "war": 88, "intellect": 67, "politics": 58, "charisma": 71 }, "loyalty": 90 },
+    "xun_yu":       { "faction": "wei", "city": "xuchang", "alive": true, "status": "active", "stats": { "command": 55, "war": 15, "intellect": 96, "politics": 95, "charisma": 85 }, "loyalty": 78 },
+    "jia_xu":       { "faction": "wei", "city": "yuzhou", "alive": true, "status": "active", "stats": { "command": 86, "war": 48, "intellect": 97, "politics": 85, "charisma": 57 }, "loyalty": 80 },
+    "yu_jin":       { "faction": "wei", "city": "yuzhou", "alive": true, "status": "active", "stats": { "command": 82, "war": 79, "intellect": 68, "politics": 60, "charisma": 55 }, "loyalty": 85 },
+    "zhang_he":     { "faction": "wei", "city": "ye", "alive": true, "status": "active", "stats": { "command": 88, "war": 86, "intellect": 62, "politics": 52, "charisma": 65 }, "loyalty": 88 },
+    "yue_jin":      { "faction": "wei", "city": "yanzhou", "alive": true, "status": "active", "stats": { "command": 80, "war": 84, "intellect": 55, "politics": 48, "charisma": 60 }, "loyalty": 90 },
+    "sima_yi":      { "faction": "wei", "city": "ye", "alive": true, "status": "active", "stats": { "command": 93, "war": 55, "intellect": 98, "politics": 92, "charisma": 70 }, "loyalty": 60 },
+
+    "liu_bei":      { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 75, "war": 73, "intellect": 74, "politics": 78, "charisma": 99 }, "loyalty": 100 },
+    "guan_yu":      { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 92, "war": 97, "intellect": 75, "politics": 62, "charisma": 93 }, "loyalty": 100 },
+    "zhang_fei":    { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 83, "war": 98, "intellect": 42, "politics": 28, "charisma": 72 }, "loyalty": 100 },
+    "zhao_yun":     { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 86, "war": 96, "intellect": 73, "politics": 65, "charisma": 82 }, "loyalty": 100 },
+    "zhuge_liang":  { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 92, "war": 38, "intellect": 100, "politics": 95, "charisma": 92 }, "loyalty": 100 },
+    "huang_zhong":  { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 82, "war": 92, "intellect": 52, "politics": 40, "charisma": 65 }, "loyalty": 85 },
+    "wei_yan":      { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 85, "war": 90, "intellect": 56, "politics": 35, "charisma": 48 }, "loyalty": 70 },
+    "ma_liang":     { "faction": "shu", "city": "jiaozhou", "alive": true, "status": "active", "stats": { "command": 45, "war": 30, "intellect": 82, "politics": 88, "charisma": 78 }, "loyalty": 95 },
+    "xu_shu":       { "faction": "shu", "city": "jingzhou", "alive": true, "status": "active", "stats": { "command": 60, "war": 55, "intellect": 88, "politics": 78, "charisma": 75 }, "loyalty": 90 },
+
+    "sun_quan":     { "faction": "wu", "city": "jianye", "alive": true, "status": "active", "stats": { "command": 76, "war": 67, "intellect": 80, "politics": 89, "charisma": 95 }, "loyalty": 100 },
+    "zhou_yu":      { "faction": "wu", "city": "yangzhou", "alive": true, "status": "active", "stats": { "command": 93, "war": 80, "intellect": 96, "politics": 80, "charisma": 90 }, "loyalty": 95 },
+    "lu_su":        { "faction": "wu", "city": "yangzhou", "alive": true, "status": "active", "stats": { "command": 68, "war": 42, "intellect": 90, "politics": 88, "charisma": 85 }, "loyalty": 92 },
+    "gan_ning":     { "faction": "wu", "city": "jianye", "alive": true, "status": "active", "stats": { "command": 86, "war": 94, "intellect": 76, "politics": 18, "charisma": 58 }, "loyalty": 88 },
+    "huang_gai":    { "faction": "wu", "city": "yangzhou", "alive": true, "status": "active", "stats": { "command": 78, "war": 80, "intellect": 72, "politics": 55, "charisma": 70 }, "loyalty": 95 },
+    "taishi_ci":    { "faction": "wu", "city": "jianye", "alive": true, "status": "active", "stats": { "command": 82, "war": 92, "intellect": 60, "politics": 48, "charisma": 78 }, "loyalty": 90 },
+    "zhou_tai":     { "faction": "wu", "city": "jianye", "alive": true, "status": "active", "stats": { "command": 80, "war": 90, "intellect": 55, "politics": 42, "charisma": 65 }, "loyalty": 93 },
+    "kan_ze":       { "faction": "wu", "city": "jianye", "alive": true, "status": "active", "stats": { "command": 43, "war": 49, "intellect": 83, "politics": 86, "charisma": 73 }, "loyalty": 90 },
+
+    "liu_biao":     { "faction": "shu", "city": "jingzhou", "alive": false, "status": "dead", "stats": { "command": 45, "war": 20, "intellect": 68, "politics": 82, "charisma": 75 }, "loyalty": 0 },
+
+    "liu_zhang_char": { "faction": "liu_zhang", "city": "chengdu", "alive": true, "status": "active", "stats": { "command": 38, "war": 22, "intellect": 52, "politics": 60, "charisma": 55 }, "loyalty": 100 },
+    "fa_zheng":     { "faction": "liu_zhang", "city": "chengdu", "alive": true, "status": "active", "stats": { "command": 62, "war": 48, "intellect": 92, "politics": 82, "charisma": 60 }, "loyalty": 50 },
+    "zhang_song":   { "faction": "liu_zhang", "city": "chengdu", "alive": true, "status": "active", "stats": { "command": 30, "war": 15, "intellect": 88, "politics": 80, "charisma": 35 }, "loyalty": 30 },
+
+    "zhang_lu_char": { "faction": "zhang_lu", "city": "hanzhong", "alive": true, "status": "active", "stats": { "command": 52, "war": 45, "intellect": 58, "politics": 62, "charisma": 65 }, "loyalty": 100 },
+    "pang_de":      { "faction": "zhang_lu", "city": "hanzhong", "alive": true, "status": "active", "stats": { "command": 81, "war": 92, "intellect": 48, "politics": 35, "charisma": 62 }, "loyalty": 70 }
+  },
+
+  "unaffiliatedPool": {
+    "pang_tong":    { "faction": null, "city": "jingzhou", "alive": true, "status": "wandering", "stats": { "command": 86, "war": 25, "intellect": 98, "politics": 88, "charisma": 55 }, "loyalty": 0 },
+    "ma_chao":      { "faction": null, "city": "yongzhou", "alive": true, "status": "wandering", "stats": { "command": 88, "war": 97, "intellect": 42, "politics": 25, "charisma": 72 }, "loyalty": 0 },
+    "yan_yan":      { "faction": null, "city": "yizhou", "alive": true, "status": "wandering", "stats": { "command": 75, "war": 82, "intellect": 48, "politics": 52, "charisma": 68 }, "loyalty": 0 },
+    "jiang_wan":    { "faction": null, "city": "jingzhou", "alive": true, "status": "wandering", "stats": { "command": 52, "war": 22, "intellect": 82, "politics": 90, "charisma": 75 }, "loyalty": 0 },
+    "fei_yi":       { "faction": null, "city": "yangzhou", "alive": true, "status": "wandering", "stats": { "command": 48, "war": 18, "intellect": 80, "politics": 92, "charisma": 82 }, "loyalty": 0 },
+    "lu_meng":      { "faction": null, "city": "yangzhou", "alive": true, "status": "wandering", "stats": { "command": 84, "war": 78, "intellect": 88, "politics": 72, "charisma": 68 }, "loyalty": 0 }
+  },
+
+  "relationships": [
+    { "a": "liu_bei", "b": "guan_yu", "type": "sworn_brothers", "intensity": 100 },
+    { "a": "liu_bei", "b": "zhang_fei", "type": "sworn_brothers", "intensity": 100 },
+    { "a": "guan_yu", "b": "zhang_fei", "type": "sworn_brothers", "intensity": 100 },
+    { "a": "liu_bei", "b": "zhuge_liang", "type": "lord_vassal", "intensity": 95 },
+    { "a": "liu_bei", "b": "zhao_yun", "type": "lord_vassal", "intensity": 90 },
+    { "a": "cao_cao", "b": "guan_yu", "type": "respect", "intensity": 85 },
+    { "a": "cao_cao", "b": "liu_bei", "type": "rivalry", "intensity": 90 },
+    { "a": "sun_quan", "b": "zhou_yu", "type": "lord_vassal", "intensity": 88 },
+    { "a": "sun_quan", "b": "lu_su", "type": "lord_vassal", "intensity": 85 },
+    { "a": "zhou_yu", "b": "zhuge_liang", "type": "rivalry", "intensity": 75 },
+    { "a": "cao_cao", "b": "xiahou_dun", "type": "family", "intensity": 95 },
+    { "a": "cao_cao", "b": "xun_yu", "type": "lord_vassal", "intensity": 80 },
+    { "a": "cao_cao", "b": "jia_xu", "type": "lord_vassal", "intensity": 78 },
+    { "a": "liu_bei", "b": "pang_tong", "type": "respect", "intensity": 60 },
+    { "a": "zhuge_liang", "b": "pang_tong", "type": "friendship", "intensity": 85 },
+    { "a": "ma_chao", "b": "cao_cao", "type": "enmity", "intensity": 95 }
+  ],
+
+  "connectionTerrains": {
+    "youzhou:jizhou": "plains",
+    "jizhou:bingzhou": "plains",
+    "jizhou:yanzhou": "plains",
+    "jizhou:ye": "plains",
+    "ye:yanzhou": "plains",
+    "yanzhou:xuzhou": "plains",
+    "yanzhou:yuzhou": "plains",
+    "yanzhou:xuchang": "plains",
+    "xuchang:yuzhou": "plains",
+    "xuchang:luoyang": "plains",
+    "luoyang:changan": "mountain",
+    "luoyang:yanzhou": "plains",
+    "changan:yongzhou": "plains",
+    "yuzhou:jingzhou": "river",
+    "jingzhou:yangzhou": "river",
+    "jingzhou:yizhou": "mountain",
+    "jingzhou:jiaozhou": "forest",
+    "xuzhou:yangzhou": "river",
+    "yangzhou:jianye": "river",
+    "yizhou:chengdu": "mountain",
+    "yizhou:hanzhong": "mountain",
+    "hanzhong:changan": "mountain",
+    "hanzhong:yongzhou": "mountain"
+  },
+
+  "cityPositions": {
+    "youzhou":  { "x": 720, "y": 80 },
+    "jizhou":   { "x": 640, "y": 150 },
+    "bingzhou": { "x": 480, "y": 130 },
+    "ye":       { "x": 600, "y": 200 },
+    "yanzhou":  { "x": 620, "y": 280 },
+    "xuzhou":   { "x": 720, "y": 300 },
+    "xuchang":  { "x": 570, "y": 340 },
+    "yuzhou":   { "x": 520, "y": 380 },
+    "luoyang":  { "x": 470, "y": 300 },
+    "changan":  { "x": 360, "y": 310 },
+    "yongzhou": { "x": 280, "y": 350 },
+    "jingzhou": { "x": 520, "y": 460 },
+    "yangzhou":  { "x": 680, "y": 420 },
+    "jianye":   { "x": 740, "y": 460 },
+    "yizhou":   { "x": 330, "y": 490 },
+    "chengdu":  { "x": 260, "y": 520 },
+    "hanzhong": { "x": 340, "y": 400 },
+    "jiaozhou": { "x": 480, "y": 600 }
+  },
+
+  "connections": [
+    ["youzhou", "jizhou"],
+    ["jizhou", "bingzhou"],
+    ["jizhou", "yanzhou"],
+    ["jizhou", "ye"],
+    ["ye", "yanzhou"],
+    ["yanzhou", "xuzhou"],
+    ["yanzhou", "yuzhou"],
+    ["yanzhou", "xuchang"],
+    ["xuchang", "yuzhou"],
+    ["xuchang", "luoyang"],
+    ["luoyang", "changan"],
+    ["luoyang", "yanzhou"],
+    ["changan", "yongzhou"],
+    ["yuzhou", "jingzhou"],
+    ["jingzhou", "yangzhou"],
+    ["jingzhou", "yizhou"],
+    ["jingzhou", "jiaozhou"],
+    ["xuzhou", "yangzhou"],
+    ["yangzhou", "jianye"],
+    ["yizhou", "chengdu"],
+    ["yizhou", "hanzhong"],
+    ["hanzhong", "changan"],
+    ["hanzhong", "yongzhou"]
+  ]
+}

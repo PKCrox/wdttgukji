@@ -10,7 +10,8 @@
     "crawl:all": "npm run crawl:characters && npm run crawl:events && npm run crawl:koei",
     "generate:soul": "node scripts/generate/generate-soul.js",
     "generate:soul:tier0": "node scripts/generate/generate-soul.js --tier 0",
-    "generate:soul:dry": "node scripts/generate/generate-soul.js --dry-run"
+    "generate:soul:dry": "node scripts/generate/generate-soul.js --dry-run",
+    "dev": "node server.js"
   },
   "dependencies": {
     "cheerio": "^1.2.0"
