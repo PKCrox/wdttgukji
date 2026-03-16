@@ -1,0 +1,424 @@
+{
+  "batch": 2,
+  "chapters": [
+    {
+      "chapter_number": 11,
+      "title_kr": "유황숙이 북해에서 공융을 구하고, 여온후가 복양에서 조조를 격파하다",
+      "summary_kr": "조조가 서주를 공격하자 도겸은 미축과 진등을 보내 북해의 공융과 청주의 전해에게 구원을 요청하고, 공융은 태사자의 활약으로 유비에게 구원을 청하여 관우가 관해를 참수하며 포위를 풀어준다. 유비는 공손찬에게 조운을 빌려 서주 구원에 나서고, 도겸은 세 차례나 서주를 양보하지만 유비는 이를 사양하고 소패에 주둔한다. 한편 여포가 진궁의 계책에 따라 연주를 점령하자 곽가의 건의로 조조가 서주에서 철군하고, 복양에서 여포와 대전하나 전위의 분전 덕에 가까스로 목숨을 건진다.",
+      "key_events": [
+        {
+          "event": "태사자가 공융의 북해 포위를 뚫고 유비에게 구원 요청",
+          "participants": ["taishi-ci", "kong-rong", "liu-bei"],
+          "year": 194
+        },
+        {
+          "event": "관우가 관해를 참수하고 북해 포위 해제",
+          "participants": ["guan-yu", "liu-bei", "kong-rong"],
+          "year": 194
+        },
+        {
+          "event": "도겸이 유비에게 서주 양보를 시도하나 유비가 거절",
+          "participants": ["tao-qian", "liu-bei"],
+          "year": 194
+        },
+        {
+          "event": "여포가 진궁의 계책으로 연주를 기습 점령",
+          "participants": ["lu-bu", "chen-gong"],
+          "year": 194
+        },
+        {
+          "event": "조조와 여포의 복양 대전, 전위가 조조를 구출",
+          "participants": ["cao-cao", "lu-bu", "dian-wei"],
+          "year": 194
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "공손찬에게서 조운과 병력을 빌려 서주를 구원하고, 도겸의 서주 양보를 사양하며 소패에 주둔한다" },
+        { "character": "taishi-ci", "action": "어머니의 명으로 단기필마로 포위를 뚫고 유비에게 구원을 요청한다" },
+        { "character": "guan-yu", "action": "관해를 수십 합 만에 참수하여 북해 포위를 풀어준다" },
+        { "character": "cao-cao", "action": "여포의 연주 점령 소식에 서주에서 철군하고 복양에서 여포와 대전한다" },
+        { "character": "lu-bu", "action": "진궁의 계책에 따라 연주를 점령하고 복양에서 조조를 대파한다" },
+        { "character": "dian-wei", "action": "단기로 적진을 뚫고 조조를 구출하며 맹장의 위용을 드러낸다" },
+        { "character": "tao-qian", "action": "유비에게 서주 양보를 시도하지만 끝내 거절당한다" },
+        { "character": "chen-gong", "action": "여포에게 연주 기습 계책을 진언하나 태산 매복 계책은 묵살당한다" }
+      ]
+    },
+    {
+      "chapter_number": 12,
+      "title_kr": "도공조가 세 번 서주를 양보하고, 조맹덕이 여포와 대전하다",
+      "summary_kr": "조조가 복양에서 전씨의 내응 함정에 빠져 화공으로 거의 목숨을 잃으나 전위의 호위로 탈출하고, 곧바로 거짓 사망 소문을 퍼뜨려 여포를 마릉산 매복으로 유인해 대파한다. 대기근으로 양군이 일시 휴전한 사이 도겸이 병세가 위독해지자 다시 유비에게 서주를 양보하고 세상을 떠나며, 유비가 마침내 서주를 맡게 된다. 이후 조조는 허저를 새로 얻고 여남의 황건적을 소탕한 뒤, 연주를 되찾고 정도에서 여포를 대파하여 산동을 평정한다.",
+      "key_events": [
+        {
+          "event": "조조가 복양성 함정에 빠져 화상을 입고 가까스로 탈출",
+          "participants": ["cao-cao", "dian-wei", "lu-bu", "chen-gong"],
+          "year": 194
+        },
+        {
+          "event": "조조가 거짓 사망으로 여포를 마릉산 매복에 유인",
+          "participants": ["cao-cao", "lu-bu", "guo-jia"],
+          "year": 194
+        },
+        {
+          "event": "도겸이 병사하며 유비에게 서주를 양보",
+          "participants": ["tao-qian", "liu-bei"],
+          "year": 194
+        },
+        {
+          "event": "조조가 허저를 얻고 황건 잔당 소탕",
+          "participants": ["cao-cao", "xu-chu", "dian-wei"],
+          "year": 194
+        },
+        {
+          "event": "조조가 연주를 회복하고 정도에서 여포를 대파",
+          "participants": ["cao-cao", "lu-bu", "xu-chu"],
+          "year": 195
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "복양 화공 함정에서 전위에 의해 구출되고, 거짓 사망 계략으로 여포를 격파한 뒤 연주를 회복한다" },
+        { "character": "tao-qian", "action": "병석에서 유비에게 세 번째로 서주를 양보하고 세상을 떠난다" },
+        { "character": "liu-bei", "action": "도겸의 유언을 받들어 마침내 서주목을 맡는다" },
+        { "character": "xu-chu", "action": "전위와 하루 종일 싸운 뒤 조조에게 귀순하여 맹장으로 활약한다" },
+        { "character": "lu-bu", "action": "복양에서 화공으로 조조를 궁지에 몰지만 결국 정도에서 대패하여 달아난다" },
+        { "character": "xun-yu", "action": "조조에게 서주 공략 대신 진지 일대 황건적 소탕을 진언한다" }
+      ]
+    },
+    {
+      "chapter_number": 13,
+      "title_kr": "이각과 곽사가 대전을 벌이고, 양봉과 동승이 천자를 구하다",
+      "summary_kr": "양표의 이간계로 이각과 곽사가 서로 싸우게 되어 장안이 전란에 휩싸이고, 이각은 헌제를 납치하여 미오에 가두며 곽사는 공경들을 감금한다. 가후의 밀계와 양봉·동승의 분전으로 헌제가 구출되어 낙양으로 향하지만, 이각·곽사의 추격을 받아 황하 도하 중 수많은 신하가 희생되는 참극이 벌어진다. 장제의 중재로 일시 휴전한 뒤 천자는 안읍에 도착하나, 이락·한섬 등이 전횡하여 조정은 여전히 혼란 속에 놓인다.",
+      "key_events": [
+        {
+          "event": "양표의 이간계로 이각과 곽사가 내전 시작",
+          "participants": ["yang-biao"],
+          "year": 195
+        },
+        {
+          "event": "이각이 헌제를 납치하여 미오에 유폐",
+          "participants": ["li-jue", "emperor-xian"],
+          "year": 195
+        },
+        {
+          "event": "가후가 밀계로 이각의 강병을 이산시킴",
+          "participants": ["jia-xu"],
+          "year": 195
+        },
+        {
+          "event": "양봉·동승이 천자를 호위하여 탈출, 서황이 최용을 참수",
+          "participants": ["yang-feng", "dong-cheng", "xu-huang"],
+          "year": 195
+        },
+        {
+          "event": "헌제 일행이 황하 도하 중 대참극 발생",
+          "participants": ["emperor-xian"],
+          "year": 195
+        }
+      ],
+      "character_actions": [
+        { "character": "jia-xu", "action": "이각의 강병을 이산시키고 헌제에게 이각을 대사마로 봉하도록 밀주하여 형세를 역전시킨다" },
+        { "character": "xu-huang", "action": "양봉 휘하에서 곽사의 부장 최용을 일합에 참수하며 맹장의 면모를 보인다" },
+        { "character": "dong-cheng", "action": "양봉과 합세하여 천자를 호위하고 이각·곽사의 추격군을 막아낸다" },
+        { "character": "lu-bu", "action": "조조에게 대패한 뒤 원소·원술에게도 거절당하고 유비에게 의탁하여 소패에 주둔한다" },
+        { "character": "liu-bei", "action": "여포를 받아들여 소패에 머물게 하지만 장비가 여포와 충돌한다" }
+      ]
+    },
+    {
+      "chapter_number": 14,
+      "title_kr": "조맹덕이 천자를 옮겨 허도로 행차시키고, 여봉선이 밤을 틈타 서주를 습격하다",
+      "summary_kr": "조조가 대군을 이끌고 낙양에 입조하여 이각·곽사의 잔당을 격파하고, 동소의 건의에 따라 천자를 허도로 옮겨 실권을 장악하며 만총의 설득으로 서황을 항복시킨다. 순욱의 이호경식지계에 따라 유비에게 여포를 죽이라는 밀서를 보내지만 유비가 이를 여포에게 보여주어 실패하고, 이어서 구호탄랑지계로 원술을 자극하여 유비와 싸우게 만든다. 유비가 원술과 싸우러 출진한 사이 장비가 술에 취해 조표에게 맞고 조표가 여포와 내통하여, 여포가 야습으로 서주를 빼앗고 유비의 처자를 사로잡는다.",
+      "key_events": [
+        {
+          "event": "조조가 헌제를 허도로 천도시키고 대권을 장악",
+          "participants": ["cao-cao", "emperor-xian", "dong-zhao"],
+          "year": 196
+        },
+        {
+          "event": "서황이 만총의 설득으로 조조에게 귀순",
+          "participants": ["xu-huang", "cao-cao"],
+          "year": 196
+        },
+        {
+          "event": "순욱의 이호경식지계: 유비에게 여포 암살 밀서",
+          "participants": ["xun-yu", "cao-cao", "liu-bei", "lu-bu"],
+          "year": 196
+        },
+        {
+          "event": "장비가 음주 후 서주 방비를 소홀히 하여 여포가 야습으로 서주 탈취",
+          "participants": ["zhang-fei", "lu-bu", "chen-gong"],
+          "year": 196
+        },
+        {
+          "event": "유비가 처자를 잃고 원술군과 우이에서 대치",
+          "participants": ["liu-bei", "yuan-shu", "guan-yu"],
+          "year": 196
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "낙양에서 이각·곽사 잔당을 격파하고 천자를 허도로 천도시켜 실권을 장악한다" },
+        { "character": "xun-yu", "action": "이호경식지계와 구호탄랑지계를 연달아 진언하여 유비와 여포를 이간시키려 한다" },
+        { "character": "xu-huang", "action": "만총의 설득에 감복하여 양봉을 버리고 조조에게 귀순한다" },
+        { "character": "zhang-fei", "action": "금주 약속을 어기고 술에 취해 조표를 구타한 결과 여포의 야습을 초래한다" },
+        { "character": "lu-bu", "action": "조표의 내응을 받아 야습으로 서주를 점거하고 유비의 가족을 사로잡는다" },
+        { "character": "liu-bei", "action": "여포에게 조조의 밀서를 보여주는 의리를 지키지만 결국 서주와 처자를 모두 잃는다" }
+      ]
+    },
+    {
+      "chapter_number": 15,
+      "title_kr": "태사자가 소패왕과 격전하고, 손백부가 엄백호와 대전하다",
+      "summary_kr": "손책이 아버지의 전국옥새를 담보로 원술에게 병사를 빌려 강동 원정에 나서고, 주유·장소·장굉 등 인재를 영입하여 유요의 군대를 격파한다. 신정에서 태사자와 손책이 50합의 명승부를 벌이며 서로 투구와 단극을 빼앗는 접전을 펼치고, 손책이 결국 태사자를 사로잡아 의리로 대우하자 태사자가 감복하여 항복한다. 손책은 엄백호·왕랑 등을 차례로 격파하여 강동 전역을 평정하고 \"소패왕\"이라 불리며, 주태가 산적으로부터 손권을 목숨 걸고 구출하고 화타의 치료로 회복한다.",
+      "key_events": [
+        {
+          "event": "손책이 옥새를 담보로 원술에게 병력을 빌림",
+          "participants": ["sun-ce", "yuan-shu"],
+          "year": 195
+        },
+        {
+          "event": "손책이 주유와 재회하고 장소·장굉을 영입",
+          "participants": ["sun-ce", "zhou-yu", "zhang-zhao", "zhang-hong"],
+          "year": 195
+        },
+        {
+          "event": "손책과 태사자의 신정 격전 (50합 접전 후 육박전)",
+          "participants": ["sun-ce", "taishi-ci"],
+          "year": 195
+        },
+        {
+          "event": "태사자가 손책에게 항복하고 약속을 지켜 돌아옴",
+          "participants": ["taishi-ci", "sun-ce"],
+          "year": 195
+        },
+        {
+          "event": "손책이 엄백호·왕랑을 격파하여 강동 평정",
+          "participants": ["sun-ce", "zhou-yu"],
+          "year": 196
+        },
+        {
+          "event": "주태가 산적으로부터 손권을 구출, 화타가 치료",
+          "participants": ["zhou-tai", "sun-quan", "hua-tuo"],
+          "year": 196
+        }
+      ],
+      "character_actions": [
+        { "character": "sun-ce", "action": "옥새를 담보로 군사를 빌려 강동을 원정하고, 태사자와의 명승부 끝에 항복을 받아내며 소패왕으로 불린다" },
+        { "character": "taishi-ci", "action": "손책과 신정에서 100합의 대접전을 벌이고, 사로잡힌 뒤 의리에 감복하여 귀순한다" },
+        { "character": "zhou-yu", "action": "손책과 재회하여 강동 대업을 도모하고 곡아를 기습 점령하는 등 전략적 활약을 한다" },
+        { "character": "zhou-tai", "action": "산적 습격 시 12곳의 부상을 입으면서 손권을 목숨 걸고 구출한다" },
+        { "character": "liu-bei", "action": "여포의 배려로 처자를 돌려받고 소패로 돌아가 주둔한다" },
+        { "character": "lu-bu", "action": "원술의 약속 불이행에 분노하고 진궁의 건의로 유비를 소패에 복귀시킨다" }
+      ]
+    },
+    {
+      "chapter_number": 16,
+      "title_kr": "여봉선이 원문에서 화극을 쏘고, 조맹덕이 육수에서 패전하다",
+      "summary_kr": "원술이 기령에게 10만 대군으로 소패를 공격하게 하자, 여포가 원문사극의 명사로 150보 밖 화극의 작은 가지를 정확히 맞혀 양군을 화해시킨다. 이후 여포가 원술과의 혼인을 진규의 만류로 파기하고 한윤을 허도로 압송하며, 조조는 장수 토벌에 나서지만 장수의 숙모 추씨를 취한 일로 장수가 반란을 일으켜 전위·조앙·조안민이 전사하는 대패를 당한다. 우금이 패잔병 속에서도 냉정하게 영채를 세우고 반격하여 조조를 위기에서 구하며, 여포는 진등에게 속아 원술과의 혼약을 완전히 끊는다.",
+      "key_events": [
+        {
+          "event": "여포의 원문사극: 150보 밖 화극 소지를 맞혀 유비를 구함",
+          "participants": ["lu-bu", "liu-bei", "ji-ling"],
+          "year": 196
+        },
+        {
+          "event": "진규가 여포를 설득하여 원술과의 혼약 파기",
+          "participants": ["chen-gui", "lu-bu", "yuan-shu"],
+          "year": 197
+        },
+        {
+          "event": "조조가 장수의 숙모 추씨를 취하여 장수가 반란",
+          "participants": ["cao-cao", "zhang-xiu", "jia-xu"],
+          "year": 197
+        },
+        {
+          "event": "전위가 쌍철극을 도난당한 채 적군을 막다 전사",
+          "participants": ["dian-wei", "zhang-xiu"],
+          "year": 197
+        },
+        {
+          "event": "우금이 독단으로 영채를 세우고 반격하여 패전을 수습",
+          "participants": ["yu-jin", "cao-cao"],
+          "year": 197
+        }
+      ],
+      "character_actions": [
+        { "character": "lu-bu", "action": "원문에서 150보 밖 화극의 작은 가지를 정확히 쏘아 맞혀 유비와 기령을 화해시키는 명궁을 보인다" },
+        { "character": "dian-wei", "action": "쌍철극을 도난당한 상태에서 맨몸으로 적군을 막다가 장렬하게 전사한다" },
+        { "character": "yu-jin", "action": "패잔병 속에서 독자적으로 영채를 세우고 장수군의 추격을 격퇴하여 조조의 신임을 얻는다" },
+        { "character": "cao-cao", "action": "장수의 숙모를 취한 일로 장수의 반란을 초래하여 전위·장남·조카를 잃는 대패를 당한다" },
+        { "character": "jia-xu", "action": "조조가 성 동남각을 공략할 것을 간파하고 장수에게 복병 계략을 진언한다" },
+        { "character": "liu-bei", "action": "여포의 원문사극 덕에 위기를 모면하지만 이후 여포의 공격을 받아 허도로 도주한다" }
+      ]
+    },
+    {
+      "chapter_number": 17,
+      "title_kr": "원공로가 크게 칠로군을 일으키고, 조맹덕이 세 장수를 합치다",
+      "summary_kr": "원술이 스스로 황제를 칭하고 칠로대군 20여만을 동원하여 서주를 공격하나, 진등의 계략으로 한섬·양봉이 내응하고 여포·유비·관우의 협공으로 대패하여 수춘으로 퇴각한다. 조조가 유비·여포·손책과 연합하여 사면에서 수춘을 공격하고, 군량 부족 시 왕후의 목을 빌려 군심을 수습하는 냉혹한 결단으로 결국 수춘을 함락시킨다. 이어서 이각·곽사가 단위·오습에게 각각 살해되어 그 화근이 소멸되고, 조조는 장수 재토벌에 나서며 밀밭을 밟은 벌로 자신의 머리카락을 잘라 할발대수의 일화를 남긴다.",
+      "key_events": [
+        {
+          "event": "원술이 황제를 참칭하고 중씨를 건호",
+          "participants": ["yuan-shu"],
+          "year": 197
+        },
+        {
+          "event": "여포·유비·관우 연합이 원술의 칠로군을 대파",
+          "participants": ["lu-bu", "liu-bei", "guan-yu", "yuan-shu"],
+          "year": 197
+        },
+        {
+          "event": "조조가 유비·여포·손책과 사면 협공으로 수춘 함락",
+          "participants": ["cao-cao", "liu-bei", "lu-bu", "sun-ce"],
+          "year": 197
+        },
+        {
+          "event": "조조가 왕후를 참수하여 소곡 분배 불만을 무마",
+          "participants": ["cao-cao"],
+          "year": 197
+        },
+        {
+          "event": "이각·곽사가 각각 단위·오습에게 살해됨",
+          "participants": ["li-jue", "guo-si"],
+          "year": 198
+        },
+        {
+          "event": "조조의 할발대수: 밀밭을 밟은 벌로 자신의 머리카락을 자름",
+          "participants": ["cao-cao"],
+          "year": 198
+        }
+      ],
+      "character_actions": [
+        { "character": "yuan-shu", "action": "전국옥새를 빌미로 황제를 참칭하고 칠로대군을 일으키나 대패하여 수춘으로 도주한다" },
+        { "character": "cao-cao", "action": "연합군을 조직하여 수춘을 함락시키고, 왕후의 목으로 군심을 수습하며, 할발대수로 군기를 세운다" },
+        { "character": "lu-bu", "action": "한섬·양봉의 내응과 함께 원술군을 대파하고 서주를 지켜낸다" },
+        { "character": "guan-yu", "action": "원술의 패잔군을 추격하여 대살하고 원술을 회남으로 패주시킨다" },
+        { "character": "liu-bei", "action": "한섬·양봉의 수급을 바쳐 조조에게 공을 세우고 소패에 복귀한다" },
+        { "character": "jia-xu", "action": "장수에게 조조군의 동남각 공격을 간파한 복병 계략을 진언하여 조조를 대패시킨다" }
+      ]
+    },
+    {
+      "chapter_number": 18,
+      "title_kr": "가문화가 적을 헤아려 승리를 결정하고, 하후돈이 화살을 뽑아 눈알을 먹다",
+      "summary_kr": "가후가 조조의 동남각 야간 공략을 정확히 간파하여 복병으로 대파하고, 이어 유표·장수 연합군의 추격에서도 \"첫 추격은 패하고 재추격은 이긴다\"는 신묘한 판단으로 장수를 승리로 이끈다. 조조는 허도로 귀환하여 곽가의 \"십승십패론\"을 듣고 자신감을 얻으며, 원소가 공손찬을 치는 틈에 먼저 여포를 제거하기로 결정한다. 조조가 하후돈을 선봉으로 보내 소패를 공략하는데, 하후돈이 고순과 싸우다 조성의 화살에 왼쪽 눈을 맞고 화살과 함께 눈알을 뽑아 삼킨 뒤 조성을 찔러 죽이는 장면이 벌어진다.",
+      "key_events": [
+        {
+          "event": "가후가 조조의 동남각 야습을 간파하여 복병으로 대파",
+          "participants": ["jia-xu", "zhang-xiu", "cao-cao"],
+          "year": 198
+        },
+        {
+          "event": "가후의 신묘한 판단: 첫 추격 패배, 재추격 승리",
+          "participants": ["jia-xu", "zhang-xiu", "liu-biao"],
+          "year": 198
+        },
+        {
+          "event": "곽가의 십승십패론으로 원소 대비 전략 수립",
+          "participants": ["guo-jia", "cao-cao"],
+          "year": 198
+        },
+        {
+          "event": "조조가 여포 토벌을 결정하고 출병",
+          "participants": ["cao-cao", "liu-bei"],
+          "year": 198
+        },
+        {
+          "event": "하후돈이 화살에 왼눈을 맞고 눈알을 먹은 뒤 조성을 사살",
+          "participants": ["xiahou-dun", "cao-xing"],
+          "year": 198
+        }
+      ],
+      "character_actions": [
+        { "character": "jia-xu", "action": "조조의 동남각 야습을 정확히 간파하고, 추격전에서 첫 패배 후 재추격 승리를 예견하는 신묘한 용병술을 보인다" },
+        { "character": "guo-jia", "action": "십승십패론을 펼쳐 조조에게 원소보다 먼저 여포를 치라고 진언한다" },
+        { "character": "xiahou-dun", "action": "고순과의 전투 중 조성의 화살에 왼눈을 맞고 눈알을 뽑아 삼킨 뒤 조성을 찔러 죽인다" },
+        { "character": "zhang-xiu", "action": "가후의 계략에 따라 조조를 두 차례 격파하고 유표와 연합하여 양성을 지킨다" },
+        { "character": "cao-cao", "action": "안중에서 유표·장수의 협공을 기병으로 격파하고 허도에서 여포 토벌을 결정한다" },
+        { "character": "guan-yu", "action": "소패 수비 중 장료에게 충의로 대하여 감화시키고 추격을 자제한다" }
+      ]
+    },
+    {
+      "chapter_number": 19,
+      "title_kr": "하비성에서 조조가 격전하고, 백문루에서 여포가 목숨을 잃다",
+      "summary_kr": "여포가 소패를 함락시키자 유비는 처자를 버리고 도주하여 조조와 합류하고, 조조는 진등의 내응 계략으로 서주를 되찾은 뒤 대군으로 하비성을 포위한다. 곽가의 수공 계략으로 사수·비수를 터뜨려 하비를 물에 잠기게 하자, 여포가 술과 여색에 빠져 진궁의 출전 건의를 번번이 거절하고 아내와 초선의 만류에 흔들리며 부하 후성·송헌·위속에게 사로잡힌다. 백문루에서 여포는 유비에게 살려달라 호소하나 유비가 정원·동탁의 선례를 들어 거절하고, 진궁은 조조의 회유를 일축하며 당당히 목을 내밀어 처형되며, 여포는 교수형으로 최후를 맞이하고 장료는 유비·관우의 구명으로 조조에게 항복한다.",
+      "key_events": [
+        {
+          "event": "유비가 소패를 잃고 처자를 버린 채 조조에게 합류",
+          "participants": ["liu-bei", "cao-cao"],
+          "year": 198
+        },
+        {
+          "event": "진등의 이간계로 조조가 서주를 탈환",
+          "participants": ["chen-deng", "cao-cao", "lu-bu"],
+          "year": 198
+        },
+        {
+          "event": "곽가의 수공으로 하비성 수몰",
+          "participants": ["guo-jia", "cao-cao"],
+          "year": 199
+        },
+        {
+          "event": "후성·송헌·위속이 여포를 생포하여 조조에게 헌납",
+          "participants": ["lu-bu", "cao-cao"],
+          "year": 199
+        },
+        {
+          "event": "백문루에서 여포 교수형, 진궁 참수, 고순 참수",
+          "participants": ["lu-bu", "chen-gong", "cao-cao", "liu-bei"],
+          "year": 199
+        },
+        {
+          "event": "장료가 유비·관우의 구명으로 조조에게 항복",
+          "participants": ["zhang-liao", "guan-yu", "liu-bei", "cao-cao"],
+          "year": 199
+        }
+      ],
+      "character_actions": [
+        { "character": "lu-bu", "action": "진궁의 출전 건의를 아내와 초선의 만류 때문에 거절하고, 부하에게 사로잡혀 백문루에서 교수형으로 최후를 맞는다" },
+        { "character": "chen-gong", "action": "여포가 자신의 계책을 듣지 않는 것을 한탄하며, 백문루에서 조조의 회유를 일축하고 당당히 처형된다" },
+        { "character": "cao-cao", "action": "수공으로 하비를 함락시키고 백문루에서 여포를 처형하되, 진궁의 모친과 처자는 봉양하도록 명한다" },
+        { "character": "liu-bei", "action": "여포의 구명 호소에 정원·동탁의 선례를 들어 처형을 건의한다" },
+        { "character": "guan-yu", "action": "장료의 충의를 알아보고 무릎 꿇어 조조에게 목숨을 보장해달라 청한다" },
+        { "character": "zhang-liao", "action": "조조를 꾸짖지만 유비·관우의 구명으로 항복하여 중랑장에 봉해진다" },
+        { "character": "guo-jia", "action": "사수·비수를 터뜨리는 수공 계략으로 하비 함락의 결정적 공을 세운다" },
+        { "character": "diao-chan", "action": "여포에게 출전하지 말라고 만류하여 진궁의 계책이 무산되는 데 영향을 미친다" }
+      ]
+    },
+    {
+      "chapter_number": 20,
+      "title_kr": "조아만이 허전에서 사냥하고, 동국구가 내각에서 조서를 받다",
+      "summary_kr": "조조가 유비를 허도에 머물게 하고 헌제가 족보를 확인하여 유비를 황숙으로 인정하자, 조조는 이를 오히려 천자의 조령으로 유비를 통제할 수 있다며 경계하지 않는다. 허전 사냥에서 조조가 천자의 활로 사슴을 쏘고 군신의 만세 환호를 자신이 가로막아 받으니, 관우가 분노하여 칼을 뽑으려 하지만 유비가 만류하고, 헌제는 궁으로 돌아와 통곡한다. 헌제가 혈서 밀조를 옥대 안에 숨겨 국구 동승에게 하사하고, 동승은 왕자복·종집·오석·오자란·마등 등과 함께 의장을 작성하여 조조 주살을 모의한다.",
+      "key_events": [
+        {
+          "event": "헌제가 족보를 확인하여 유비를 황숙으로 인정",
+          "participants": ["emperor-xian", "liu-bei"],
+          "year": 199
+        },
+        {
+          "event": "허전 사냥에서 조조가 천자의 만세 환호를 가로채 받음",
+          "participants": ["cao-cao", "emperor-xian"],
+          "year": 199
+        },
+        {
+          "event": "관우가 조조를 죽이려 하나 유비가 만류",
+          "participants": ["guan-yu", "liu-bei", "cao-cao"],
+          "year": 199
+        },
+        {
+          "event": "헌제가 혈서 밀조를 옥대에 숨겨 동승에게 하사",
+          "participants": ["emperor-xian", "dong-cheng"],
+          "year": 199
+        },
+        {
+          "event": "동승·마등 등이 의장을 작성하여 조조 주살을 모의",
+          "participants": ["dong-cheng", "ma-teng", "wang-zifu"],
+          "year": 199
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "헌제에게 황숙으로 인정받고 좌장군 의성정후에 봉해지며, 허전에서 관우의 충동을 만류한다" },
+        { "character": "cao-cao", "action": "허전 사냥에서 천자의 활로 사슴을 쏘고 만세를 가로막아 받으며, 동승의 옥대를 살피지만 밀조를 발견하지 못한다" },
+        { "character": "guan-yu", "action": "조조가 천자의 환호를 가로채자 분노하여 칼을 뽑으려 하지만 유비의 만류로 참는다" },
+        { "character": "emperor-xian", "action": "혈서 밀조를 써서 옥대에 숨겨 동승에게 하사하며 조조 주살을 부탁한다" },
+        { "character": "dong-cheng", "action": "밀조를 발견한 뒤 왕자복·종집·오석·오자란·마등 등 6인과 의장을 작성하여 조조 주살을 모의한다" },
+        { "character": "zhang-liao", "action": "유비·관우의 구명으로 조조에게 항복하고 장무·손관 등의 귀순을 이끌어낸다" },
+        { "character": "ma-teng", "action": "동승의 밀조를 보고 분노하여 의장에 서명하고 서량 군사로 외응하겠다고 맹세한다" }
+      ]
+    }
+  ]
+}

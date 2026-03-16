@@ -1,0 +1,152 @@
+{
+  "name_kr": "악진",
+  "name_en": "Yue Jin",
+  "name_cn": "樂進",
+  "courtesy_kr": "문겸",
+  "courtesy_cn": "文謙",
+  "faction": "wei",
+  "tier": 1,
+  "role": "선등 장수",
+  "stats": null,
+  "novel_presence": {
+    "first_chapter": 5,
+    "last_chapter": 111,
+    "chapters": "5-6,11-12,14,16,23-24,26,31-33,42,48,50,53,61,67-68,98,111",
+    "chapter_count": 15
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위 오자양장(五子良將) [ 펼치기 · 접기 ]전장군우장군좌장군좌장군우장군장료악진우금장합서황\n\n오자양장(五子良將)후한의 우장군악진樂進 시호위후(威侯) 작위 광창정후(廣昌亭侯) 최종직위 우장군(右將軍) 성씨악(樂) 명진(進) 자문겸(文謙) 생몰 기간 ?년 ~ 218년 고향 연주(兗州) 동군(東郡) 위국현(衛國縣)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 관도대전2.3. 하북 평정2.4. 형주 정벌2.5. 남군 공방전2.6. 청니 대치2.7. 2차 합비 공방전2.8. 죽음3. 삼국지연의4. 여담5. 미디어 믹스",
+      "biography": "연주 동군 위국현 사람으로 용모와 체구는 작으나 담력이 뛰어나, 조조를 따라 다니며 장하리(帳下吏)가 되었다. 고향 군으로 돌려보내져 병사를 모집하게 했는데, 천여 명을 모아 돌아오니, 군가사마 함진도위로 삼았다.조조를 수행해 복양에서 여포, 연주 진류군 옹구현에서 장초, 예주 진국 고현에서 교유를 공격하는데, 모든 싸움에서 선두에 서서 공을 세워 광창정후에 봉해졌다. 조조를 수행해 형주 남양군 안중현에서 장수를 치고, 하비에서 여포를 포위할 때는 별장(別將)을 격파하고, 사견에서 수고를 쳤으며 예주 패국 패현에서 유비를 공격해 이들을 모두 격파하고 토구교위에 임명되었다.",
+      "death": "식읍 5백 호를 더 늘려주어 예전과 합쳐 모두 1,200호가 되었다. 악진이 여러 차례 전공을 세웠으므로 악진의 식읍 중 5백 호를 떼어내어 아들 한 명을 열후에 봉했다. 악진은 우장군으로 관위가 올랐다. 218년에 죽었는데 시호를 내려 위후(威侯)라 했으며 아들 악침이 후사를 이었다.《제왕기》에 따르면 조방은 조서를 내려 고인이 된 공신들을 조조의 제묘 앞 정원에서 제사지내도록 했는데 그 중에는 악진도 포함되어 있다."
+    },
+    "wiki_en": {
+      "summary": "Yue Jin, courtesy name Wenqian, was a military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He was noted as much for his short stature as for his valour and ferocity on the battlefield. Yue Jin participated in most of Cao Cao's early military exploits, and gained multiple successes in the campaigns against Lü Bu, Liu Bei, remnants of the Yellow Turban rebels, and Yuan Shao and his associates. He was particularly praised as a capable vanguard, but his most famed accomplishment came with his supporting role in the defence of Hefei against Sun Quan's forces at the Battle of Xiaoyao Ford of 214–215.",
+      "sections": {
+        "Lead": "Yue Jin (pronunciationⓘ) (died 218),[1] courtesy name Wenqian, was a military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He was noted as much for his short stature as for his valour and ferocity on the battlefield. Yue Jin participated in most of Cao Cao's early military exploits, and gained multiple successes in the campaigns against Lü Bu, Liu Bei, remnants of the Yellow Turban rebels, and Yuan Shao and his associates. He was particularly praised as a capable vanguard, but his most famed accomplishment came with his supporting role in the defence of Hefei against Sun Quan's forces at the Battle of Xiaoyao Ford of 214–215.[2]\n\nChen Shou, who wrote the third-century historical text Sanguozhi, named Yue Jin as one of the Five Elite Generals of his time, alongside Yu Jin, Zhang He, Zhang Liao and Xu Huang.[3]",
+        "Early life": "Yue Jin was born in Yangping Commandery (陽平郡), which is present-day Qingfeng County, Henan,[4] in the late Eastern Han dynasty. He was small-sized and short but was known for his courage. When he first came to serve under the warlord Cao Cao, he was appointed as a clerk who handled administrative tasks in camp.[5]\n\nAround early 190,[6] when Cao Cao was raising troops to join the campaign against the warlord Dong Zhuo who controlled the Han central government, Yue Jin was tasked to recruit soldiers for Cao Cao's camp, in which he brought back 1,000 men from his hometown. For his effort, Yue Jin was put into test as an acting Major (司馬) and Formation Breaking Commandant (陷陣都尉).[7]",
+        "Death": "Yue Jin died in 218, but his cause of death was not documented in historical records. He was given the posthumous title \"Marquis Wei\" (威侯), which literally means the \"awe-inspiring marquis\".[27]"
+      }
+    },
+    "wiki_zh": {
+      "summary": "樂進（2世紀？—218年），字文謙，兖州陽平郡衛國縣（今山東省莘縣）人，東漢末年曹操重要將領，五子良將中最先跟隨曹操。在袁氏討伐的戰役中表現出色，每戰都率先到達戰場，經常立下戰功；公元215年，與張遼、李典七千兵馬一起駐屯合肥，樂進守城，張遼李典出城迎擊。逝世后，諡曰威侯。\n",
+      "sections": {
+        "Introduction": "樂進（2世紀？—218年），字文謙，兖州陽平郡衛國縣（今山東省莘縣）人，東漢末年曹操重要將領，五子良將中最先跟隨曹操。在袁氏討伐的戰役中表現出色，每戰都率先到達戰場，經常立下戰功；公元215年，與張遼、李典七千兵馬一起駐屯合肥，樂進守城，張遼李典出城迎擊。逝世后，諡曰威侯。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 2,
+      "text": "「誰敢與吾正君討賊？」一人挺身出曰：「願借精兵五千，斬關入內，冊立新君，盡誅閹豎，掃清朝廷，以安天下！」進視之，乃司徒袁逢之子，袁隗之姪：名紹，字本初，見為司隸校尉。",
+      "text_length": 83
+    },
+    {
+      "chapter": 3,
+      "text": "「太后詔我，有何禍事？」袁紹曰：「今謀已泄，事已露，將軍尚欲入宮耶？」曹操曰：「先召十常侍出，然後可入。",
+      "text_length": 52
+    },
+    {
+      "chapter": 12,
+      "text": "「同殺入去救主！」兩人到門邊，城上火砲滾下，樂進馬不能入，典韋冒煙突火，又殺入去，到處尋覓。",
+      "text_length": 46
+    },
+    {
+      "chapter": 67,
+      "text": "「將軍之意若何﹖」張遼曰：「主公遠征在外，吳兵以為破我必矣。",
+      "text_length": 30
+    },
+    {
+      "chapter": 12,
+      "text": "「主公何在？」韋曰：「我往復兩遭，尋覓不見。",
+      "text_length": 22
+    },
+    {
+      "chapter": 2,
+      "text": "「此計大妙！」便發檄至各鎮，召赴京師。",
+      "text_length": 19
+    },
+    {
+      "chapter": 26,
+      "text": "「關某願施犬馬之勞，破汝南賊寇。",
+      "text_length": 16
+    },
+    {
+      "chapter": 26,
+      "text": "關某願施犬馬之勞，破汝南賊寇。",
+      "text_length": 15
+    },
+    {
+      "chapter": 2,
+      "text": "「吾意已決，汝勿多言。",
+      "text_length": 11
+    },
+    {
+      "chapter": 3,
+      "text": "「汝多疑，不足謀大事。",
+      "text_length": 11
+    },
+    {
+      "chapter": 2,
+      "text": "吾意已決，汝勿多言。",
+      "text_length": 10
+    },
+    {
+      "chapter": 2,
+      "text": "太后不允，如之奈何？",
+      "text_length": 10
+    },
+    {
+      "chapter": 3,
+      "text": "汝多疑，不足謀大事。",
+      "text_length": 10
+    },
+    {
+      "chapter": 3,
+      "text": "太后詔我，有何禍事？",
+      "text_length": 10
+    },
+    {
+      "chapter": 2,
+      "text": "誰敢與吾正君討賊？",
+      "text_length": 9
+    },
+    {
+      "chapter": 12,
+      "text": "同殺入去救主！",
+      "text_length": 7
+    },
+    {
+      "chapter": 67,
+      "text": "將軍之意若何﹖",
+      "text_length": 7
+    },
+    {
+      "chapter": 2,
+      "text": "「且容商議。",
+      "text_length": 6
+    },
+    {
+      "chapter": 2,
+      "text": "且容商議。",
+      "text_length": 5
+    },
+    {
+      "chapter": 2,
+      "text": "此計大妙！",
+      "text_length": 5
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": false,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-16T10:52:17.211Z"
+}

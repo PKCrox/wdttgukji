@@ -1,0 +1,44 @@
+{
+  "name_kr": "여포의 딸",
+  "name_en": "Lu Lingqi",
+  "name_cn": "呂玲綺",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 1,
+  "role": "여포의 딸 (창작)",
+  "stats": null,
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "Lü Bu, courtesy name Fengxian, was a Chinese general and warlord who lived during the late Eastern Han dynasty. Originally a subordinate of Ding Yuan, he murdered the minor warlord and defected to the powerful Dong Zhuo. In 192, he killed Dong Zhuo after being instigated by Wang Yun and Shisun Rui (士孙瑞), but was defeated and driven away from Chang'an by Dong Zhuo's followers.",
+      "sections": {
+        "Lead": "Lü Bu (pronunciationⓘ; died 7 February 199),[b] courtesy name Fengxian, was a Chinese general and warlord who lived during the late Eastern Han dynasty. Originally a subordinate of Ding Yuan, he murdered the minor warlord and defected to the powerful Dong Zhuo. In 192, he killed Dong Zhuo after being instigated by Wang Yun and Shisun Rui (士孙瑞),[3] but was defeated and driven away from Chang'an by Dong Zhuo's followers.\n\nFrom 192 to early 195, Lü Bu consecutively sought shelter under warlords such as Yuan Shu, Yuan Shao, and Zhang Yang. In 194, he managed to take control of Yan Province from Cao Cao, but Cao took back his territories within two years. In 195, Lü Bu turned against Liu Bei, who had offered him refuge in Xu Province, and seized control of the province from his host. Although he had agreed to an alliance with Yuan Shu earlier, following Yuan declaring himself emperor in a treason against Emperor Xian of Han, Lü Bu joined Cao Cao and others in attacking the pretender. In 198, he sided with Yuan Shu again and came under attack by the combined forces of Cao and Liu, resulting in his defeat at the Battle of Xiapi in 199. He was captured and executed on Cao Cao's order.\n\nAlthough Lü Bu is depicted in both historical and literary sources as an exceptionally formidable warrior, he was also notorious for his volatile temperament and political unreliability, traits that contributed to his downfall. His life is dramatized in the 14th-century novel Romance of the Three Kingd... (truncated)",
+        "Downfall and death": "Lü Bu was tied up and brought before Cao Cao. He said, \"I'm being tied up too tightly. Can you loosen the bonds?\" Cao Cao replied, \"A tiger must be tightly restrained.\" Lü Bu then said, \"My lord, you dread only me, but now, since I've already submitted to you, you shouldn't have any more worries. My lord, why don't you spare me and let me help you lead your troops? In this way, you won't need to worry about not being able to pacify the Empire.\" When Cao Cao showed signs of reconsideration, Liu Bei interjected, \"My lord, haven't you seen what Lü Bu did to Ding Jianyang and Grand Preceptor Dong?\" Cao Cao rubbed his chin. Lü Bu shouted at Liu Bei, \"You're the most untrustworthy person!\"[Sanguozhi 28]\n\nAdditional details about the conversation between Lü Bu and Cao Cao were recorded in other texts and they were later added by Pei Songzhi as annotations to the Sanguozhi.\n\nThe Yingxiong Ji recorded:\n\nLü Bu told Cao Cao, \"I treated my subordinates generously, but they betrayed me when I was in trouble.\" Cao Cao replied, \"You abandoned your wife, and you've designs on your men's wives. You call this 'treating them generously'?\" Lü Bu remained silent.[Sanguozhi zhu 21]\n\nThe Xiandi Chunqiu recorded:\n\nLü Bu asked Cao Cao, \"My lord, you've lost weight. Why?\" Cao Cao asked him, \"How do you recognise me?\" Lü Bu replied, \"When I was in Luoyang, I saw you at the Wen Family Gardens (溫氏園).\" Cao Cao said, \"Yes, I forgot. I lost weight because I'm depressed over not having recruited you earlier.... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "吕布（不晚于161年—199年2月7日），字奉先，并州五原郡九原（今内蒙古自治区包头市九原区）人，东汉末年武将与军阀，被封為溫侯。先后为丁原、董卓的部将，也曾为袁绍效力，后趁劉備與袁術交戰時而佔据徐州，自成一方势力。建安三年十二月（199年2月7日），在下邳被曹操击败处死。\n",
+      "sections": {
+        "Introduction": "吕布（不晚于161年—199年2月7日），字奉先，并州五原郡九原（今内蒙古自治区包头市九原区）人，东汉末年武将与军阀，被封為溫侯。先后为丁原、董卓的部将，也曾为袁绍效力，后趁劉備與袁術交戰時而佔据徐州，自成一方势力。建安三年十二月（199年2月7日），在下邳被曹操击败处死。"
+      }
+    }
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": false,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-16T10:52:17.299Z"
+}

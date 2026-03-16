@@ -1,0 +1,158 @@
+{
+  "name_kr": "주태",
+  "name_en": "Zhou Tai",
+  "name_cn": "周泰",
+  "courtesy_kr": "유평",
+  "courtesy_cn": "幼平",
+  "faction": "wu",
+  "tier": 1,
+  "role": "손권 근위, 흉터 장수",
+  "stats": {
+    "leadership": 76,
+    "war": 91,
+    "intelligence": 48,
+    "politics": 38,
+    "charisma": 60,
+    "total": 313,
+    "birth": 171,
+    "death": 225
+  },
+  "novel_presence": {
+    "first_chapter": 15,
+    "last_chapter": 84,
+    "chapters": "15,44,48-51,55,61,67-68,75-76,78,82-84",
+    "chapter_count": 9
+  },
+  "biography": {
+    "namu": {
+      "overview": "오서(吳書) [ 펼치기 · 접기 ]1권 「손파로토역전(孫破虜討逆傳)」2권 「오주전(吳主傳)」손견 주준 · 손책손권 호주 정천 풍희3권 「삼사주전(三嗣主傳)」4권 「유요태사자사섭전(劉繇太史慈士燮傳)」손량 · 손휴 이형 · 손호 장제유요 착융 유기 · 태사자 · 사섭5권 「비빈전(妃嬪傳)」6권 「종실전(宗實傳)」}무열황후 · 사부인 · 서부인 · 보연사 · 대의황후 · 경회황후 반부인 · 전혜해 · 주부인 · 하희 · 등방란손정 · 손유 · 손교 · 손환(奐) · 손분(賁) 손보 · 손익 · 손광 · 손소 · 손환(桓)7권 「장고제갈보전(張顧諸葛步傳)」8권 「장엄정감설전(張嚴程闞薛傳)」장소 장분 장승 장휴· 고옹 고소 고담 고승 · 제갈근 제갈융 · 보즐 주소장굉 · 엄준 배현 · 정병 징숭 · 감택 당고 · 설종 설영9권 「주유노숙여몽전(周瑜魯肅呂蒙傳)」10권 「정황한장주진동감릉서반정전(程黃韓蔣周陳董甘凌徐潘丁傳)」주유 · 노숙 · 여몽정보 · 황개 · 한당 · 장흠 · 주태 ·진무 진표 동습 · 감녕 · 능통 · 서성 ·반장 · 정봉11권 「주치주연여범주환전(朱治朱然呂範朱桓傳)」12권 「우육장낙육오주전(虞陸張駱陸吾朱傳)」13권 「육손전(陸遜傳)」주치 · 주연 주적 · 여범 여거 · 주환 주이우번 우사 주육 · 육적 · 장온 · 낙통 육모 · 오찬 ·주거육손 육항14권 「오주오자전(吳主五子傳)」손등 · 손려 · 손화 · 손패 · 손분(奮)15권 「하전여주종리전(賀全呂周鍾離傳)」16권 「반준육개전(潘濬陸凱傳)」17권 「시의호종전(是儀胡綜傳)」하제 · 전종 · 여대 · 주방 · 종리목반준 · 육개 육윤시의 · 호종 서상18권 「오범유돈조달전(吳範劉惇趙達傳)」19권 「제갈등이손복양전(諸葛滕二孫濮陽傳)」20권 「왕누하위화전(王樓賀韋華傳)」오범 위등 · 유돈 · 조달제갈각 섭우 · 등윤 · 손준 유찬 · 손침 · 복양흥왕번 · 누현 · 하소 · 위소 · 화핵관련 틀: 위서 촉서※ 흠정 24사 관련 틀 둘러보기\n\n강동십이호신(江東十二虎臣)周泰주태 작위 능양후(陵陽侯) 최종직위 한중태수(漢中太守) 겸 분위장군(奮威將軍) 성씨 주(周) 휘 태(泰) 자 유평(幼平) 생몰기간 ?년~?년 고향 양주(揚州) 구강군(九江郡) 하채현(下蔡縣)"
+    },
+    "wiki_en": {
+      "summary": "Zhou Tai, courtesy name Youping, was a military general serving under the warlord Sun Quan during the late Eastern Han dynasty and early Three Kingdoms period of China. He previously served under Sun Ce, Sun Quan's elder brother and predecessor.",
+      "sections": {
+        "Lead": "Zhou Tai (pronunciationⓘ) (died c. 223), courtesy name Youping, was a military general serving under the warlord Sun Quan during the late Eastern Han dynasty and early Three Kingdoms period of China. He previously served under Sun Ce, Sun Quan's elder brother and predecessor.[2]\n\n- Zhou Shao\n\n- Zhou Cheng",
+        "Death": "Zhou Tai died sometime during the Huangwu era (222–229) in Sun Quan's reign.[1] His year of death was not specified, but the Australian sinologist Rafe de Crespigny estimated it to be around 223.[2]"
+      }
+    },
+    "wiki_zh": {
+      "summary": "周泰（？—222年），字幼平，揚州九江下蔡（今安徽鳳臺）人。漢末三國時期孫策麾下的孫吳名將；是江東十二虎臣之一。與蔣欽是同鄉九江人，因護主有功，孫權賞賜予御幘青縑蓋，官至漢中太守、奮威將軍，封陵陽侯。\n",
+      "sections": {
+        "Introduction": "周泰（？—222年），字幼平，揚州九江下蔡（今安徽鳳臺）人。漢末三國時期孫策麾下的孫吳名將；是江東十二虎臣之一。與蔣欽是同鄉九江人，因護主有功，孫權賞賜予御幘青縑蓋，官至漢中太守、奮威將軍，封陵陽侯。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 83,
+      "text": "「命此孺子為將，東吳休矣！公見彼所行乎？」泰曰：「吾聊以言試之，並無一計，安能破蜀也？」\n\n次日，陸遜傳下號令，教諸將各處關防，牢守隘口，不許輕敵。",
+      "text_length": 74
+    },
+    {
+      "chapter": 83,
+      "text": "「目今安東將軍孫桓，乃主上之姪，見困於彝陵城中，內無糧草，外無救兵；請都督早施良策，救出孫桓，以安主上之心。",
+      "text_length": 54
+    },
+    {
+      "chapter": 83,
+      "text": "目今安東將軍孫桓，乃主上之姪，見困於彝陵城中，內無糧草，外無救兵；請都督早施良策，救出孫桓，以安主上之心。",
+      "text_length": 53
+    },
+    {
+      "chapter": 111,
+      "text": "吾守隴西二三十年，未嘗如此明察地理。公之所言，真神算也。公可速去。吾自攻此處寨柵。",
+      "text_length": 41
+    },
+    {
+      "chapter": 84,
+      "text": "吾視此等兵如兒戲耳。願同韓將軍分兩路擊之。如其不勝，甘當軍令。",
+      "text_length": 31
+    },
+    {
+      "chapter": 83,
+      "text": "命此孺子為將，東吳休矣！公見彼所行乎？",
+      "text_length": 19
+    },
+    {
+      "chapter": 111,
+      "text": "「吾守隴西二三十年，未嘗如此明察地理。",
+      "text_length": 19
+    },
+    {
+      "chapter": 83,
+      "text": "吾聊以言試之，並無一計，安能破蜀也？",
+      "text_length": 18
+    },
+    {
+      "chapter": 68,
+      "text": "主公在前，某在後，可以出圍。",
+      "text_length": 14
+    },
+    {
+      "chapter": 114,
+      "text": "獨斬賈充，少可以謝天下耳。",
+      "text_length": 13
+    },
+    {
+      "chapter": 114,
+      "text": "「惟有進於此者，不知其次。",
+      "text_length": 13
+    },
+    {
+      "chapter": 114,
+      "text": "惟有進於此者，不知其次。",
+      "text_length": 12
+    },
+    {
+      "chapter": 84,
+      "text": "「吾視此等兵如兒戲耳。",
+      "text_length": 11
+    },
+    {
+      "chapter": 48,
+      "text": "「某當權為先鋒破敵。",
+      "text_length": 10
+    },
+    {
+      "chapter": 48,
+      "text": "某當權為先鋒破敵。",
+      "text_length": 9
+    },
+    {
+      "chapter": 68,
+      "text": "「主公可隨泰殺出。",
+      "text_length": 9
+    },
+    {
+      "chapter": 51,
+      "text": "「都督自提兵至。",
+      "text_length": 8
+    },
+    {
+      "chapter": 68,
+      "text": "主公可隨泰殺出。",
+      "text_length": 8
+    },
+    {
+      "chapter": 51,
+      "text": "都督自提兵至。",
+      "text_length": 7
+    },
+    {
+      "chapter": 68,
+      "text": "「吾再救去。",
+      "text_length": 6
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-16T10:52:17.271Z"
+}

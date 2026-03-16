@@ -1,0 +1,173 @@
+{
+  "name_kr": "장료",
+  "name_en": "Zhang Liao",
+  "name_cn": "張遼",
+  "courtesy_kr": "문원",
+  "courtesy_cn": "文遠",
+  "faction": "wei",
+  "tier": 0,
+  "role": "합비 수비, 오국 무쌍",
+  "stats": {
+    "leadership": 93,
+    "war": 92,
+    "intelligence": 78,
+    "politics": 58,
+    "charisma": 78,
+    "total": 399,
+    "birth": 169,
+    "death": 222
+  },
+  "novel_presence": {
+    "first_chapter": 11,
+    "last_chapter": 98,
+    "chapters": "11-12,16-21,23-28,30-33,40,42,46,48-50,53,58,67-68,85-86,98",
+    "chapter_count": 13
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위 오자양장(五子良將) [ 펼치기 · 접기 ]전장군우장군좌장군좌장군우장군장료악진우금장합서황\n\n오자양장(五子良將)조위의 전장군장료張遼 시호 강후(剛侯) 작위 관내후(關內侯) → 도정후(都亭侯) → 도향후(都鄕侯) → 진양후(晉陽侯) 최종직위 전장군(前將軍) 가절(假節) 성씨 장(張), 섭(聶) 명 료(遼) 자 문원(文遠) 생몰 기간 169년~222년 고향 병주(幷州) 안문군(雁門郡) 마읍현(馬邑縣) 역임한 관직 [ 펼치기 · 접기 ] 후한(정원) 종사(從事) 여포군기도위(騎都尉) →노국상(魯國相) 겸 북지태수(北地太守) 후한(조조 → 조비) 중랑장(中郞將) →비장군(裨將軍) →행 중견장군(行 中堅將軍) →탕구장군(盪寇將軍) →탕구장군(盪寇將軍) 겸 가절(假節) →정동장군(征東將軍) 겸 가절(假節) → 전장군(前將軍) 겸 가절(假節) 조위(조비) 전장군(前將軍) 겸 가절(假節)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 여포 휘하2.3. 관도대전2.4. 창희 토벌2.5. 하북 평정2.6. 진란 토벌2.7. 형주 정벌2.8. 환성 전투2.9. 2차 합비 공방전2.10. 조조 휘하2.11. 유수구 전투2.12. 번성 공방전2.13. 조비 휘하2.14. 동구 전투2.15. 죽음3. 삼국지연의4. 기타5. 미디어 믹스6. 둘러보기7. 관련 문서",
+      "biography": "병주 안문군 마읍현 출신으로 본래 섭일(聶壹)의 후예인데 원한을 피하기 위해 성을 바꾸었다.젊어서 군리(郡吏)가 되었다. 한나라 말, 병주자사 정원은 장료의 무력이 보통 사람을 뛰어넘는다 여겨 불러서 종사(從事)로 삼고, 군을 이끌고 수도로 가게 했다. 하진은 장료를 하북으로 보내 모병해 천 여 명을 모았다. 경도로 돌아온 뒤 하진이 패망하자 군을 이끌고 동탁에 속했다.",
+      "anecdotes": "합비시 소요진 공원의 장료 동상 장료는 정원의 추천으로 관직에 오르고 하진의 명까지 받은 상태임에도 나중에 난입해 정권을 잡은 동탁을 군말없이 섬겼고 동탁 사후에는 정원과 동탁을 죽인 여포를 따랐으며 하비에서는 별로 싸우지도 않고 조조에게 항복했다. 원래 주군의 적이나 살해자를 몇번이나 아무 말 없이 따랐다는 건 장료는 소위 충의지사는 전혀 아니었다. 그냥 권력자가 누구든 조정을 따른 것일 수도 있지만 그렇다면 왜 장안에선 이각을 따르지 않았고 여포가 패망한 이후에야 조조를 따랐는가 하는 의문이 있다.장료를 상징하는 유명한 문장으로 료래래(遼來來)가 있는데 이는 일본 창작물에서 만든 표현이다. 정사에선 자기 이름을 외치면서 돌격했다고만 되어있다. 이 부분을 당나라 시대에 료래료래(遼來遼來)라고 불렀고, 또 현대 일본에서 료래래로 바꿔서 부르게 된 것이다. 이것이 한국에 퍼져서 장료를 언급할 때 료라이라고 하는 경우가 늘어났는데, 이는 遼來의 일본 발음이 한국에 같이 전해졌기 때문이다.주군이 여러 번 바뀌면서도 활약을 보인다는 행적 때문에, 조운만큼은 아니지만 일본에서 띄워주는 무장 중 하나이다. 일본인들 시각에서는 일본 전국시대 무사의 이미지가 많이 보이는 듯. 기록상 장료 이상의 충성심에 못지않은 능력을 지녔음에도 용렬한 주군에게 충성을 다한 탓에 가진 능력을 전부 펼치지도 못하고 죽고 잊혀 간 고순과 달리, 주군을 잘 갈아타 오래 살며 활약하여 유명해진 케이스. 간혹 진삼국무쌍 시리즈등의 매체에서 여포의 '무예'에 대한 동경을 가진 순수한 충신의 모습으로 나오곤 하는데, 사실 이러한 모습은 장료 본연의 것이라기보단 고순의 특징을 흡수한 것에 가깝다. 그래서인지 진삼국무쌍 시리즈의 최신판인 진삼국무쌍 8에선 여포 버금가는 싸움 바보, 비상식인으로 캐릭터성이 확 바뀌었는데 일각에선 참전 요청이 많은 고순에게 이전까지의 장료의 캐릭터성을 인계하기 위해 바꾼 게 아니냐고 추측 중이다.삼국지의 대표적인 2차 창작물인 코에이 <삼국지 시리즈>나 <진삼국무쌍 시리즈>에서의 성능도 우수하고 <영걸전 시리즈>에서도 비중과 성능이 상당하다. 장료가 돋보이는 2차 합비 공방전은 <창천항로>, <삼국전투기> 등에서 비중 높게 다뤄지며 엄청난 호평을 이끌어냈다. <삼국전투기> 작가 최훈은 장료빠로서 장료를 주인공으로 생각하고 작품을 그렸다. 덕분에 한국에서도 인기와 인지도가 매우 높은 삼국지 무장 중 하나다. 현대의 2차 창작물에서는 동탁과 여포의 부하로 다뤄지나 실상은 다른데 동탁 시절의 장료는 애초부터 하진의 명을 받고 하북에서 모병하고 돌아오니 정권이 뒤집혀있는 상황을 맞이한 인사로 당시 나이는 겨우 10대 후반에서 20대 초반이었기 때문에 이각, 곽사 등과 달리 동탁군의 수뇌부에 있을 만한 나이가 아니었다. 여포 시절에도 확실하게 여포의 직속 수하였던 고순과 달리 장료는 기본적으로 여포의 객장으로 조조나 유표에게 의탁 중이던 유비의 포지션과 비슷하다. 늘 여포 직속이 아닌 별도의 병마를 이끌고 움직였고 여포토벌전 당시 여포와 조조의 대결을 관망하다가 조조에게 투항했고 그럼에도 배신자 취급을 받지는 않았다. 애초부터 여포의 수하 취급을 받지 않은 것이다.요나라의 맹장 야율휴가와 비슷한 면이 있다. 야율휴가가 북송군 수만 명을 수천 명의 철기로 도륙내는 등 북송군에게 두려움의 대상이 되자, 북송에서 어린이의 울음을 달랠 때 \"우월이 이르렀다\"라고 하면 어린이는 울음을 그쳤다고 하였고, 장료가 손권의 10만 대군을 800명의 군대로 패퇴시키는 등 손오에서 두려움의 대상이 되자, 손오에서는 \"장료가 온다!\"라고 하면 아이는 울음을 그쳤다고 한다.여러 창작물에서 장료의 무기는 관우와 비슷하게 언월도 계열의 무기로 나온다. 다만 언월도 자체가 당나라 때 처음 등장한 무기라 장료 활동 시기엔 없던 무기였으며 오히려 정사 기록을 보면 장료가 자주 쓴 무기는 극이었다.",
+      "military": "<오주전>에 따르면 214년 5월, 손권이 환성을 정벌했다. 윤달에 환성을 함락시키고, 여강태수 주광과 참군 동화, 남녀 수만 명을 포로로 잡았다.<여몽전>에 따르면 얼마 후 장료가 협석(夾石)까지 왔으나, 성이 이미 함락되었다는 소식을 듣고 이내 퇴각했다.",
+      "death": "222년, 장료는 병이 깊어져 마침내 강도에서 죽었다. 조비는 눈물을 흘렸고 시호를 내려 강후(剛侯)라 했다. 아들 장호가 후사를 이었다.225년, 조비는 장료와 이전의 합비에서의 공을 추념하며 다음과 같은 조서를 내렸다.합비 전투에서 장료와 이전은 보졸 8백으로 적군 10만을 깨뜨렸으니 예로부터 용병함에 있어 일찍이 없었던 일이다. 장료와 이전의 식읍 중 각각 1백 호를 떼어내 그들의 아들 한 명 씩에게 관내후의 작위를 내리도록 하라.이에 장호는 편장군에 임명되었다. 장호가 죽자 장호의 아들이자 장료의 손자였던 장통(張統)이 후사를 이었다."
+    },
+    "wiki_en": {
+      "summary": "Zhang Liao, courtesy name Wenyuan, was a Chinese military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He served briefly in the state of Cao Wei, founded by Cao Cao's successor Cao Pi, in the early Three Kingdoms period before his death. Formerly a subordinate of other warlords such as Ding Yuan, Dong Zhuo and Lü Bu, Zhang Liao joined Cao Cao c.February 199 after Lü Bu's downfall at the Battle of Xiapi. Since then, he participated in many of Cao Cao's military campaigns, including those against Yuan Shao's heirs and the Wuhuan tribes from 201 to 207. He is best known for his pivotal role in the Battle of Xiaoyao Ford in 214–215, in which he successfully defended Hefei from the forces of the warlord Sun Quan.",
+      "sections": {
+        "Lead": "Zhang Liao (pronunciationⓘ) (169 – late 222),[a][4] courtesy name Wenyuan, was a Chinese military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He served briefly in the state of Cao Wei, founded by Cao Cao's successor Cao Pi, in the early Three Kingdoms period before his death. Formerly a subordinate of other warlords such as Ding Yuan, Dong Zhuo and Lü Bu, Zhang Liao joined Cao Cao c.February 199 after Lü Bu's downfall at the Battle of Xiapi. Since then, he participated in many of Cao Cao's military campaigns, including those against Yuan Shao's heirs and the Wuhuan tribes from 201 to 207. He is best known for his pivotal role in the Battle of Xiaoyao Ford in 214–215, in which he successfully defended Hefei from the forces of the warlord Sun Quan.\n\nChen Shou, who wrote the third-century historical text Sanguozhi, named Zhang Liao as one of the Five Elite Generals of his time, alongside Yu Jin, Zhang He, Yue Jin and Xu Huang.[5]\n\n- Zhang Hu\n\n- at least one other son",
+        "Early career and service under Lü Bu": "Zhang Liao was from Mayi County (馬邑縣), Yanmen Commandery, which is present-day Shuocheng District, Shuozhou, Shanxi.[6] He was a descendant of Nie Yi (聶壹), but his family name had been changed from Nie to Zhang to avoid association with his disgraced ancestor.[7][b] When he was young, he served as a minor official in his home commandery, and experienced many frontier skirmishes against rebellious Donghu people during his youth.[8]\n\nTowards the end of the Eastern Han dynasty, Ding Yuan, the Inspector of Bing Province, heard of Zhang Liao's combat skills and hired him as an assistant officer. Ding Yuan ordered Zhang Liao to lead troops from Bing Province to the imperial capital, Luoyang, to assist the General-in-Chief, He Jin. He Jin then sent him on a mission to Hebei, where Zhang Liao managed to recruit over 1,000 men to serve in He Jin's army.[9]\n\nWhen Zhang Liao returned to Luoyang, the warlord Dong Zhuo had seized control of Luoyang in the aftermath of He Jin's assassination, and replaced He Jin as the de facto head of the Han central government. Zhang Liao and his 1,000 troops then joined Dong Zhuo's army.[10] In 192, after Lü Bu betrayed and killed Dong Zhuo, Zhang Liao served as one of his deputies and became a Cavalry Commandant (騎都尉).[11]\n\nAbout a month after he killed Dong Zhuo,[12] Lü Bu came under attack by Dong Zhuo's followers, who were led by Li Jue and Guo Si. They defeated him and forced him out of the imperial capital, Chang'an.[c] Zhang Liao accompanied Lü B... (truncated)",
+        "Death": "In 222, after Sun Quan broke ties with Wei and declared himself the independent ruler of his Eastern Wu state,[55] Cao Pi ordered Zhang Liao and Cao Xiu to lead a naval fleet to Hailing (海陵; around present-day Taizhou, Jiangsu), directly facing Wu territory across the river.[62]\n\nSun Quan was afraid when he heard that Zhang Liao was there, and he warned his generals: \"Zhang Liao may be ill, but he is still a foe to be reckoned with. Be careful!\"[63]\n\nZhang Liao and the other Wei generals initially defeated the Wu forces led by Lü Fan, but the battle eventually turned in favor of the Wu forces, and the Wei forces withdrew. Afterward, however, his condition worsened, and he died not long later in Jiangdu (江都; present-day Jiangdu District, Yangzhou, Jiangsu).[3]\n\nCao Pi cried when he learnt of Zhang Liao's death. He awarded Zhang Liao the posthumous title \"Marquis Gang\" (剛侯),[64] which literally means \"resolute marquis\". In 225, in commemoration of Zhang Liao and Li Dian for their contributions at the Battle of Xiaoyao Ford in 214–215, Cao Pi issued an imperial decree: \"During the Battle of Hefei, Zhang Liao and Li Dian defeated an enemy force of 100,000 with only 800 foot soldiers. There had never been anything like this before in the history of warfare. They can be referred to as our state's 'claws and teeth' for their success in breaking the enemy's morale. I hereby increase the number of taxable households in Zhang Liao and Li Dian's marquisates by 100 each, and award a son ... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "張遼（169年—222年），字文遠，雁門郡馬邑縣（今山西省朔州市朔城區）人。本姓聂，是西漢聶壹之後，为避祸改姓张。東漢末、三國時期曹魏前將軍，五子良將之一，諡號為剛侯。後為歷代所推崇，唐朝时位列古今六十四名將之一。\n",
+      "sections": {
+        "Introduction": "張遼（169年—222年），字文遠，雁門郡馬邑縣（今山西省朔州市朔城區）人。本姓聂，是西漢聶壹之後，为避祸改姓张。東漢末、三國時期曹魏前將軍，五子良將之一，諡號為剛侯。後為歷代所推崇，唐朝时位列古今六十四名將之一。\n\n曾追隨丁原、董卓、呂布軍閥諸侯，後呂布兵敗後，歸降追隨曹操。公元207年爆發白狼山之戰，張遼斬殺烏桓軍首領蹋頓，徹底消滅北方邊疆外族烏桓勢力。公元215年，與李典、樂進以七千兵馬駐守合肥城，爆發合肥之戰，面對東吳孫權親征大軍，率領八百步兵突击吴军军营，使吴军一度混乱，吴将陈武战死，徐盛负伤，差点擒住孫權。經此一役，“登鋒陷陣”以及“張遼止啼”成為流傳千古的典故，中國著名章回小說《三國演義》中的「威震逍遙津」情節，便是以此事為藍本。",
+        "家族": "- 聶壹，后因避怨而改姓\n\n- 張汎，因張遼功績被封侯\n\n- 張虎，偏將軍，嗣爵晉陽侯\n\n- 張統，張虎之子，嗣爵",
+        "艺术創作": "三國時繁欽作品《征天山賦》，主要描寫張遼征討陳蘭、梅成時的狀況。賦題寫明：「丞相武平侯曹公東征，臨川未濟，群舒蠢動，割有灊、六，乃俾上將盪寇將軍張遼治兵南岳之陽。」清末民初時期學者古直《曹子建詩箋》指出，陳思王曹植的作品《白馬篇》中的主角，是以張遼於207年征討烏桓時的形象為創作原型的。南北朝時的文學作品中，庾信《哀江南賦》有「張遼臨於赤壁，王濬下於巴丘。乍風驚而射火，或箭重而回舟。未辨聲於黃蓋，已先沈於杜侯。落帆黃鶴之浦，藏船鸚鵡之洲」之句。元代雜劇中，張遼主要有兩個身份：一是呂布手下「八健將」之一，二是曹操的親隨軍師，更有「百計張遼」之稱。托名關漢卿所作的雜劇《關雲長千里獨行》中，張遼的開場白就已道出其出身：「筆頭掃出千條計，腹內包藏七字書。小官姓張名遼，字文遠。幼習儒業，頗看韜略之書。先曾在呂布之下為健將，後在於曹丞相手下為參謀。」而在不少雜劇劇目，張遼與許褚分別擔任曹操軍中重要的文武代表，二人經常作為曹操的心腹愛將而並列。如《劉玄德醉走黃鶴樓》中有「曹操以雄兵百萬，虎將千員。左有百計張遼，右有九牛許褚，獨霸許，虎視中原」句，《諸葛亮博望燒屯》中則有「憑著這諸葛亮關羽張飛，怕甚麼曹孟德張遼的這許褚，更和那孫仲謀魯肅和那周瑜。」句。《三國志平話》中，張遼仍然擔任曹軍軍師，有「智囊先生」的稱號。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 25,
+      "text": "當初劉使君與兄結義之時，誓同生死；今使君方敗，而兄即戰死，倘使君復出，欲求兄相助，而不可復得，豈不負當年之盟誓乎？其罪一也。劉使君以家眷付託於兄，兄今戰死，二夫人無所倚賴，負卻使君依託之重。其罪二也。兄武藝超群，兼通經史，不思共使君匡扶漢室，徒欲赴湯蹈火，以成匹夫之勇，安得為義？其罪三也。兄有此三罪，弟不得不告。",
+      "text_length": 157
+    },
+    {
+      "chapter": 19,
+      "text": "「濮陽城中曾相遇，如何忘卻？」操笑曰：「你原來也記得！」遼曰：「只是可惜！」操曰：「可惜甚的？」遼曰：「可惜當日火不大，不曾燒死你這國賊！」操大怒曰：「敗將安敢辱吾！」拔劍在手，親自來殺張遼。",
+      "text_length": 96
+    },
+    {
+      "chapter": 25,
+      "text": "今四面皆曹公之兵，兄若不降，則必死；徒死無益，不若且降曹公，卻打聽劉使君音信，知何處，即往投之。一者可以保二夫人，二者不背桃園之約，三者可留有用之身。有此三便，兄宜詳之。",
+      "text_length": 85
+    },
+    {
+      "chapter": 27,
+      "text": "雲長封金挂印，財賄不足以動其心，爵祿不足以移其志，此等人吾深敬之。想他去此不遠，我一發結識他做個人情。汝可先去請住他，待我與他送行，更以路費征袍贈之，使為後日記念。",
+      "text_length": 82
+    },
+    {
+      "chapter": 25,
+      "text": "玄德不知存亡，翼德未知生死。昨夜曹公已破下邳，軍民盡無傷害，差人護衛玄德家眷，不許驚擾。如此相待，弟特來報兄。",
+      "text_length": 55
+    },
+    {
+      "chapter": 53,
+      "text": "非也，為將之道，勿以勝為喜，勿以敗為憂。倘吳兵度我無備，乘虛攻擊，何以應之？今夜防備，當比每夜更加謹慎。",
+      "text_length": 52
+    },
+    {
+      "chapter": 14,
+      "text": "「兄長何故不殺呂布？」玄德曰：「此曹孟德恐我與呂布同謀伐之，故用此計，使我兩人自相吞併，彼卻於中取利。",
+      "text_length": 51
+    },
+    {
+      "chapter": 25,
+      "text": "「兄此言豈不為天下笑乎？」公曰：「吾仗忠義而死，安得為天下笑？」遼曰：「兄今即死，其罪有三。",
+      "text_length": 46
+    },
+    {
+      "chapter": 25,
+      "text": "豈不聞豫讓眾人國士之論乎？劉玄德待雲長不過恩厚耳。丞相更施厚恩以結其心，何憂雲長之不服也？",
+      "text_length": 45
+    },
+    {
+      "chapter": 28,
+      "text": "「既未知玄德下落，且再回見丞相，若何？」關公笑曰：「安有是理！文遠回見丞相，幸為我謝罪。",
+      "text_length": 44
+    },
+    {
+      "chapter": 67,
+      "text": "主公遠征在外，吳兵以為破我必矣。今可發兵出迎，奮力與戰，折其鋒銳，以安眾心，然後可守也。",
+      "text_length": 44
+    },
+    {
+      "chapter": 67,
+      "text": "「既曼成肯相助，來日引一軍於逍遙津北埋伏；待吳兵殺過來，可先斷小師橋，吾與樂文謙擊之。",
+      "text_length": 43
+    },
+    {
+      "chapter": 67,
+      "text": "既曼成肯相助，來日引一軍於逍遙津北埋伏；待吳兵殺過來，可先斷小師橋，吾與樂文謙擊之。",
+      "text_length": 42
+    },
+    {
+      "chapter": 26,
+      "text": "「今玄德在河北，兄往從否？」關公曰：「昔日之言，安肯背之？文遠須為我致意丞相。",
+      "text_length": 39
+    },
+    {
+      "chapter": 28,
+      "text": "「奉丞相鈞旨：因聞知雲長斬關殺將，恐於路有阻，特差我傳諭各處關隘，任便放行。",
+      "text_length": 38
+    },
+    {
+      "chapter": 25,
+      "text": "兄言差矣。處世不分輕重，非丈夫也。玄德待兄，未必過於丞相，兄何故只懷去志？",
+      "text_length": 37
+    },
+    {
+      "chapter": 28,
+      "text": "奉丞相鈞旨：因聞知雲長斬關殺將，恐於路有阻，特差我傳諭各處關隘，任便放行。",
+      "text_length": 37
+    },
+    {
+      "chapter": 21,
+      "text": "「兄不留心天下大事，而學小人之事，何也？」玄德曰：「此非二弟所知之。",
+      "text_length": 34
+    },
+    {
+      "chapter": 27,
+      "text": "「雲長封金挂印，財賄不足以動其心，爵祿不足以移其志，此等人吾深敬之。",
+      "text_length": 34
+    },
+    {
+      "chapter": 28,
+      "text": "我見蔡將軍，自有分解。既丞相大度，教放雲長去，公等不可廢丞相之意。",
+      "text_length": 33
+    }
+  ],
+  "relationships": [
+    {
+      "target": "Cao Cao",
+      "type": "lord_vassal",
+      "type_kr": "군신",
+      "intensity": 85,
+      "evidence": "여포 사후 등용"
+    }
+  ],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": true
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-16T10:52:17.133Z"
+}

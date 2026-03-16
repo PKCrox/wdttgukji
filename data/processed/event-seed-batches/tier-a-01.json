@@ -1,0 +1,1242 @@
+{
+  "total": 18,
+  "seeds": [
+    {
+      "id": "hist_200_boma",
+      "layer": "historical",
+      "name": "백마 전투",
+      "period": {
+        "year": 200
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 199,
+              "max": 202
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_liao"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhang_liao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "yuan_shao",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "yan_liang",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-boma.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_208_changban",
+      "layer": "historical",
+      "name": "장판파 전투",
+      "period": {
+        "year": 208
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 207,
+              "max": 210
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhao_yun"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhao_yun",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-changban.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_228_chencang",
+      "layer": "historical",
+      "name": "진창 전투",
+      "period": {
+        "year": 228
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 227,
+              "max": 230
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-chencang.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_219_fancheng",
+      "layer": "historical",
+      "name": "번성 공방전",
+      "period": {
+        "year": 219
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 218,
+              "max": 221
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_ren"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xu_huang"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_ren",
+          "role": "antagonist",
+          "required": true
+        },
+        {
+          "character_id": "xu_huang",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "pang_de",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "yu_jin",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-fancheng.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_200_guandu",
+      "layer": "historical",
+      "name": "관도대전",
+      "period": {
+        "year": 200
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 199,
+              "max": 202
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xun_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guo_jia"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "xun_yu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "guo_jia",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "yuan_shao",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "yan_liang",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "wen_chou",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-guandu.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_217_hanzhong",
+      "layer": "historical",
+      "name": "한중 공방전",
+      "period": {
+        "year": 217
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 216,
+              "max": 219
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "fa_zheng"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "huang_zhong"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "fa_zheng",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "huang_zhong",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "xiahou_yuan",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-hanzhong.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_215_hefei",
+      "layer": "historical",
+      "name": "합비대전",
+      "period": {
+        "year": 215
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 214,
+              "max": 217
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_liao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yue_jin"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhang_liao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "yue_jin",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-hefei.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_228_jieting",
+      "layer": "historical",
+      "name": "가정 전투",
+      "period": {
+        "year": 228
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 227,
+              "max": 230
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_he"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-jieting.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_219_maicheng",
+      "layer": "historical",
+      "name": "맥성 전투",
+      "period": {
+        "year": 219
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 218,
+              "max": 221
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_meng"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_meng",
+          "role": "antagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-maicheng.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_219_mount-dingjun",
+      "layer": "historical",
+      "name": "정군산 전투",
+      "period": {
+        "year": 219
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 218,
+              "max": 221
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "huang_zhong"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "fa_zheng"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "huang_zhong",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "fa_zheng",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "xiahou_yuan",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-mount-dingjun.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_228_qishan",
+      "layer": "historical",
+      "name": "기산 전투",
+      "period": {
+        "year": 228
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 227,
+              "max": 230
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_he"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "antagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-qishan.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_208_red-cliffs",
+      "layer": "historical",
+      "name": "적벽대전",
+      "period": {
+        "year": 208
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 207,
+              "max": 210
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhou_yu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-red-cliffs.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_228_shiting",
+      "layer": "historical",
+      "name": "석정 전투",
+      "period": {
+        "year": 228
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 227,
+              "max": 230
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-shiting.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_211_tong-pass",
+      "layer": "historical",
+      "name": "동관 전투",
+      "period": {
+        "year": 211
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 210,
+              "max": 213
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xu_chu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "xu_chu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "han_sui",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-tong-pass.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_197_wancheng",
+      "layer": "historical",
+      "name": "완성 전투",
+      "period": {
+        "year": 197
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 196,
+              "max": 199
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dian_wei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_xiu"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "dian_wei",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhang_xiu",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "jia_xu",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-wancheng.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_234_wuzhang-plains",
+      "layer": "historical",
+      "name": "오장원 전투",
+      "period": {
+        "year": 234
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 233,
+              "max": 236
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-wuzhang-plains.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_198_xiapi",
+      "layer": "historical",
+      "name": "하비성 전투",
+      "period": {
+        "year": 198
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 197,
+              "max": 200
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "chen_gong",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-xiapi.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_244_xingshi",
+      "layer": "historical",
+      "name": "흥세 전투",
+      "period": {
+        "year": 244
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 243,
+              "max": 246
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_shuang"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_shuang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-xingshi.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "batch": 6,
+  "chapters": [
+    {
+      "chapter_number": 51,
+      "title_kr": "조인이 동오의 군사와 대전하고 공명이 주유를 한 번 분노케 하다",
+      "summary_kr": "주유가 남군을 공략하던 중 조인의 함정에 빠져 화살에 맞아 부상을 입는다. 주유는 거짓으로 죽은 척하여 조인을 야습하도록 유인해 대파하지만, 돌아와 보니 제갈량이 이미 조인의 병부를 탈취하여 남군, 형주, 양양을 모두 차지한 뒤였다. 허탈하게 세 성을 빼앗긴 주유는 분노로 화살 상처가 터져 쓰러진다.",
+      "key_events": [
+        {
+          "event": "주유가 남군 공격 중 조인의 매복에 걸려 화살에 맞아 부상당함",
+          "participants": ["zhou-yu", "cao-ren"],
+          "year": 208
+        },
+        {
+          "event": "주유가 거짓 죽음으로 조인을 야습 유도하여 대파함",
+          "participants": ["zhou-yu", "cao-ren"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 조인의 병부를 빼앗아 남군·형주·양양을 무혈 점령함",
+          "participants": ["zhuge-liang", "zhao-yun", "zhang-fei", "guan-yu"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhou-yu", "action": "남군 공략 중 화살에 맞아 부상하고, 거짓 죽음 계책으로 조인을 유인함" },
+        { "character": "zhuge-liang", "action": "주유와 조인의 교전을 이용하여 남군·형주·양양 세 성을 기습 점령함" },
+        { "character": "cao-ren", "action": "남군에서 함정을 파고 주유를 사상시키나 결국 패퇴함" },
+        { "character": "zhao-yun", "action": "제갈량의 명으로 남군성을 선점하여 수비함" },
+        { "character": "guan-yu", "action": "양양을 기습 점령함" },
+        { "character": "zhang-fei", "action": "형주를 기습 점령함" }
+      ]
+    },
+    {
+      "chapter_number": 52,
+      "title_kr": "제갈량이 지혜로 노숙을 물리치고 조자룡이 계책으로 계양을 취하다",
+      "summary_kr": "주유가 형주 반환을 요구하러 노숙을 보내지만, 제갈량은 유기를 내세워 형주 보유를 정당화하고 노숙을 빈손으로 돌려보낸다. 유비는 마량의 건의에 따라 형주 남부 네 군의 공략을 개시하여, 먼저 영릉을 함락하고 이어 계양 공략에 나선다. 조운은 계양태수 조범의 항복을 받되, 조범이 형수를 아내로 바치려는 제안을 의리에 어긋난다며 거절하고 조범을 사로잡아 계양을 평정한다.",
+      "key_events": [
+        {
+          "event": "노숙이 형주 반환을 요구하나 제갈량이 유기를 내세워 거절함",
+          "participants": ["zhuge-liang", "lu-su", "liu-bei"],
+          "year": 209
+        },
+        {
+          "event": "유비군이 영릉군을 함락함",
+          "participants": ["liu-bei", "zhuge-liang", "zhang-fei", "zhao-yun"],
+          "year": 209
+        },
+        {
+          "event": "조운이 계양군을 항복받고 조범의 형수 혼인 제안을 거절함",
+          "participants": ["zhao-yun"],
+          "year": 209
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "유기를 내세워 노숙의 형주 반환 요구를 논파함" },
+        { "character": "lu-su", "action": "형주 반환을 요구하러 왔으나 빈손으로 돌아감" },
+        { "character": "zhao-yun", "action": "계양태수 조범을 항복시키고, 형수 혼인 제안을 의리로 거절함" },
+        { "character": "liu-bei", "action": "마량의 건의를 받아들여 형주 남부 4군 공략을 개시함" },
+        { "character": "zhang-fei", "action": "영릉 공략에 선봉으로 참가함" }
+      ]
+    },
+    {
+      "chapter_number": 53,
+      "title_kr": "관운장이 의리로 황한승을 놓아주고 손중모가 장문원과 대전하다",
+      "summary_kr": "관우가 장사군을 공략하며 노장 황충과 3일간 대결하는데, 관우가 낙마한 황충을 살려주자 황충도 일부러 투구끈만 맞혀 은혜를 갚는다. 태수 한현이 내통을 의심하여 황충을 처형하려 하나 위연이 한현을 베고 황충을 구출하며, 유비는 황충과 위연을 모두 거두어 형주 남부 네 군을 평정한다. 한편 손권은 합비에서 장료와 교전하다가 태사자가 전사하고 패퇴한다.",
+      "key_events": [
+        {
+          "event": "관우와 황충이 장사성 밖에서 3일간 호각지세의 대결을 벌임",
+          "participants": ["guan-yu", "huang-zhong"],
+          "year": 209
+        },
+        {
+          "event": "위연이 한현을 베고 황충을 구출하여 장사성을 유비에게 바침",
+          "participants": ["wei-yan", "huang-zhong"],
+          "year": 209
+        },
+        {
+          "event": "합비 전투에서 태사자가 장료군에 맞서다 전사함",
+          "participants": ["sun-quan", "zhang-liao"],
+          "year": 209
+        },
+        {
+          "event": "유기가 병사하여 유비가 형주를 완전히 장악함",
+          "participants": ["liu-bei"],
+          "year": 209
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "낙마한 황충을 의리로 살려주고, 장사를 평정함" },
+        { "character": "huang-zhong", "action": "관우의 투구끈만 맞혀 은혜를 갚고, 유비에게 항복함" },
+        { "character": "wei-yan", "action": "폭군 한현을 베어 장사성을 열고 유비에게 투항함" },
+        { "character": "sun-quan", "action": "합비에서 장료와 교전하다 패퇴함" },
+        { "character": "zhang-liao", "action": "합비를 방어하며 동오군을 격파함" }
+      ]
+    },
+    {
+      "chapter_number": 54,
+      "title_kr": "오국태가 절에서 신랑을 살피고 유황숙이 동방에서 가연을 이루다",
+      "summary_kr": "주유가 유비를 남서(남경)로 유인하여 억류한 뒤 형주를 빼앗으려는 미인계를 꾸미지만, 제갈량은 세 개의 금낭 계책을 조운에게 맡겨 대비한다. 유비가 남서에 도착하자 오국태가 감로사에서 직접 만나보고 마음에 들어 진짜 혼인을 성사시키니, 주유의 계략은 도리어 진짜 결혼이 되어버린다. 유비는 검으로 돌을 쪼개며 패업의 뜻을 밝히고, 손부인과 혼례를 올린다.",
+      "key_events": [
+        {
+          "event": "주유가 손권의 여동생과의 정략 결혼으로 유비를 유인하는 계책을 세움",
+          "participants": ["zhou-yu", "sun-quan", "lu-su"],
+          "year": 209
+        },
+        {
+          "event": "오국태가 감로사에서 유비를 보고 진짜 사위로 인정함",
+          "participants": ["liu-bei", "sun-quan"],
+          "year": 209
+        },
+        {
+          "event": "유비와 손부인이 남서에서 혼례를 올림",
+          "participants": ["liu-bei", "sun-quan"],
+          "year": 209
+        }
+      ],
+      "character_actions": [
+        { "character": "zhou-yu", "action": "유비를 동오로 유인하기 위해 가짜 혼인 계책을 꾸밈" },
+        { "character": "zhuge-liang", "action": "세 개의 금낭 계책을 조운에게 주어 유비를 보호함" },
+        { "character": "liu-bei", "action": "남서에서 오국태의 마음을 얻어 손부인과 진짜 혼인함" },
+        { "character": "zhao-yun", "action": "유비를 호위하며 금낭 계책을 순서대로 실행함" },
+        { "character": "sun-quan", "action": "주유의 계책에 동의했으나 어머니의 뜻에 따라 진짜 혼인을 성사시킴" }
+      ]
+    },
+    {
+      "chapter_number": 55,
+      "title_kr": "유비가 지혜로 손부인을 설득하고 공명이 주유를 두 번째로 분노케 하다",
+      "summary_kr": "동오에서 안락에 빠진 유비를 조운이 제갈량의 두 번째 금낭을 열어 조조 침공 거짓 소식으로 깨우치고, 유비는 손부인을 설득하여 정월 초하루에 제사를 핑계로 탈출한다. 손권이 추격병을 보내고 주유도 서성·정봉을 미리 매복시키지만, 손부인의 호통에 막혀 모두 물러나고, 유비 일행은 제갈량이 미리 배치한 배를 타고 강을 건넌다. 관우·황충·위연의 매복에 걸려 대패한 주유는 '부인을 잃고 군사마저 잃었다'는 조롱에 화살 상처가 다시 터져 쓰러진다.",
+      "key_events": [
+        {
+          "event": "유비가 손부인과 함께 동오를 탈출함",
+          "participants": ["liu-bei", "zhao-yun"],
+          "year": 210
+        },
+        {
+          "event": "손부인이 동오 추격 장수들을 호통쳐 퇴각시킴",
+          "participants": ["liu-bei"],
+          "year": 210
+        },
+        {
+          "event": "주유가 추격하다 관우·황충·위연의 매복에 대패하고 '배了夫人又折兵' 조롱을 당함",
+          "participants": ["zhou-yu", "zhuge-liang", "guan-yu", "huang-zhong", "wei-yan"],
+          "year": 210
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "손부인을 설득하여 정월에 동오를 탈출함" },
+        { "character": "zhao-yun", "action": "두 번째 금낭을 열어 유비를 각성시키고 호위함" },
+        { "character": "zhuge-liang", "action": "유랑포에 미리 배를 배치하고 관우 등을 매복시켜 주유를 대파함" },
+        { "character": "zhou-yu", "action": "유비 추격에 실패하고 매복에 걸려 대패, 분노로 쓰러짐" },
+        { "character": "guan-yu", "action": "매복하여 주유의 추격군을 격파함" }
+      ]
+    },
+    {
+      "chapter_number": 56,
+      "title_kr": "조조가 동작대에서 성대한 연회를 베풀고 공명이 주유를 세 번째로 분노케 하다",
+      "summary_kr": "조조가 업군에 동작대를 완공하고 문무백관과 성대한 연회를 열어 무예 시합과 시문 짓기를 즐기는데, 동오가 유비를 형주목으로 표주했다는 소식에 크게 동요한다. 조조는 주유를 남군태수로 봉해 유비와 이간하려 하고, 주유는 서천 정벌을 빙자한 '가도멸괵' 계략으로 형주를 빼앗으려 한다. 그러나 제갈량이 이를 꿰뚫어 관우·장비·황충·위연 네 갈래 매복을 깔아놓자, 형주성 앞에서 계략이 탄로난 주유는 화살 상처가 또다시 터져 쓰러진다.",
+      "key_events": [
+        {
+          "event": "조조가 동작대를 완공하고 문무백관과 성대한 연회를 벌임",
+          "participants": ["cao-cao"],
+          "year": 210
+        },
+        {
+          "event": "조조가 주유를 남군태수로 봉해 손·유 이간을 꾀함",
+          "participants": ["cao-cao", "zhou-yu"],
+          "year": 210
+        },
+        {
+          "event": "주유가 서천 정벌을 빙자해 형주를 빼앗으려다 제갈량에게 간파당해 세 번째로 분노하여 쓰러짐",
+          "participants": ["zhou-yu", "zhuge-liang", "lu-su"],
+          "year": 210
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "동작대 낙성 연회에서 문무를 과시하고, 손·유 이간책을 시행함" },
+        { "character": "zhou-yu", "action": "가도멸괵 계략으로 형주를 노리다 제갈량에게 간파당해 세 번째 분노로 쓰러짐" },
+        { "character": "zhuge-liang", "action": "주유의 가도멸괵을 꿰뚫어 네 갈래 매복으로 주유를 대파함" },
+        { "character": "lu-su", "action": "주유의 전령으로 형주를 오가며 중재함" },
+        { "character": "zhao-yun", "action": "형주성 성루에서 주유의 계략을 폭로하며 수비함" }
+      ]
+    },
+    {
+      "chapter_number": 57,
+      "title_kr": "시상구에서 와룡이 조문하고 뇌양현에서 봉추가 정사를 처리하다",
+      "summary_kr": "주유가 제갈량의 서신에 분노가 극에 달해 '이미 주유를 낳았거늘 어찌 공명을 낳았는가'라는 한탄을 남기고 36세에 사망하며, 유서로 노숙을 후임 도독으로 천거한다. 제갈량이 시상으로 가서 주유를 진심으로 조문하고, 그곳에서 방통을 만나 유비에게 귀순하도록 권유한다. 한편 마등이 조조 암살 음모가 발각되어 아들들과 함께 처형당하고, 방통은 뇌양현령에 부임했다가 반나절 만에 백일치 공무를 처리하여 유비의 부군사로 발탁된다.",
+      "key_events": [
+        {
+          "event": "주유가 바구에서 병사함 (향년 36세), 노숙을 후임 도독으로 천거",
+          "participants": ["zhou-yu", "lu-su", "sun-quan"],
+          "year": 210
+        },
+        {
+          "event": "제갈량이 시상에서 주유를 조문하고 방통을 유비에게 추천함",
+          "participants": ["zhuge-liang", "pang-tong"],
+          "year": 210
+        },
+        {
+          "event": "마등이 조조 암살 음모가 발각되어 아들 마휴·마철과 함께 처형됨",
+          "participants": ["cao-cao", "ma-teng"],
+          "year": 211
+        },
+        {
+          "event": "방통이 뇌양현에서 반나절 만에 백일치 공무를 처리하여 유비의 부군사가 됨",
+          "participants": ["pang-tong", "liu-bei", "zhang-fei"],
+          "year": 210
+        }
+      ],
+      "character_actions": [
+        { "character": "zhou-yu", "action": "'기생유 하생량' 탄식을 남기고 36세에 사망함" },
+        { "character": "zhuge-liang", "action": "시상에서 주유를 조문하고, 방통에게 유비 귀순을 권유함" },
+        { "character": "pang-tong", "action": "손권에게 무시당한 뒤 유비를 찾아가고, 뇌양에서 재능을 입증하여 부군사가 됨" },
+        { "character": "cao-cao", "action": "마등의 암살 음모를 분쇄하고 마등 부자를 처형함" },
+        { "character": "ma-chao", "action": "서량에서 병력을 보전하며 부친의 복수를 결심함" },
+        { "character": "lu-su", "action": "주유의 유서에 따라 동오 도독에 임명됨" }
+      ]
+    },
+    {
+      "chapter_number": 58,
+      "title_kr": "마맹기가 거병하여 원수를 갚고 조아만이 수염을 자르고 전포를 버리다",
+      "summary_kr": "조조가 강남 원정을 준비하자 제갈량이 마초에게 서신을 보내 서량군을 일으키게 하고, 마초는 한수와 연합하여 20만 대군으로 장안을 함락하고 동관까지 탈취한다. 마초가 동관 전투에서 조조를 직접 추격하자, 조조는 붉은 전포를 벗고 수염을 잘라 깃발로 목을 감싸며 겨우 목숨을 건진다. 이후 조조는 위수 북안으로 도하하여 허저의 호위 속에 마초의 화살 공격을 간신히 피하고, 서량군과 대치 상태에 돌입한다.",
+      "key_events": [
+        {
+          "event": "마초가 한수와 연합하여 20만 대군으로 장안을 함락함",
+          "participants": ["ma-chao", "han-sui", "pang-de"],
+          "year": 211
+        },
+        {
+          "event": "마초가 동관 전투에서 조조를 추격하자 조조가 수염을 자르고 전포를 버리며 도주함",
+          "participants": ["ma-chao", "cao-cao"],
+          "year": 211
+        },
+        {
+          "event": "조조가 위수를 도하할 때 허저가 목숨을 걸고 호위함",
+          "participants": ["cao-cao", "xu-chu", "ma-chao"],
+          "year": 211
+        }
+      ],
+      "character_actions": [
+        { "character": "ma-chao", "action": "부친의 복수를 위해 한수와 연합하여 장안·동관을 함락하고 조조를 추격함" },
+        { "character": "cao-cao", "action": "동관에서 마초에게 대패하여 수염을 자르고 전포를 벗어 도주함" },
+        { "character": "xu-chu", "action": "위수 도하 시 조조를 업고 배에 올라 목숨을 지킴" },
+        { "character": "zhuge-liang", "action": "유비의 서신을 통해 마초가 서량군을 일으키도록 유도함" },
+        { "character": "pang-de", "action": "마초의 선봉으로 장안 전투에서 활약함" }
+      ]
+    },
+    {
+      "chapter_number": 59,
+      "title_kr": "허저가 벌거벗고 마초와 싸우고 조조가 편지를 고쳐 한수를 이간하다",
+      "summary_kr": "허저가 갑옷을 벗고 마초와 200여 합에 달하는 사투를 벌이며 '호치'라는 별명에 걸맞은 용맹을 보여준다. 조조는 가후의 이간책에 따라 한수와 의미심장하게 대면한 뒤, 핵심 부분을 일부러 지운 편지를 한수에게 보내 마초의 의심을 극대화시킨다. 결국 마초가 한수를 공격하여 왼손을 잘라버리고 서량 연합군은 와해되며, 마초는 패잔병을 이끌고 농서로 도주하고, 조조는 관중을 평정한 뒤 허도로 귀환한다.",
+      "key_events": [
+        {
+          "event": "허저가 상반신을 벗고 마초와 200여 합의 일기토를 벌임",
+          "participants": ["xu-chu", "ma-chao"],
+          "year": 211
+        },
+        {
+          "event": "조조가 가후의 이간책으로 한수에게 수정한 편지를 보내 마초와 이간시킴",
+          "participants": ["cao-cao", "jia-xu", "han-sui", "ma-chao"],
+          "year": 211
+        },
+        {
+          "event": "마초가 한수의 왼손을 자르고 서량 연합군이 와해됨",
+          "participants": ["ma-chao", "han-sui"],
+          "year": 211
+        },
+        {
+          "event": "조조가 관중을 평정하고 허도로 귀환, 장로가 서천 침공을 계획함",
+          "participants": ["cao-cao", "zhang-lu"],
+          "year": 211
+        }
+      ],
+      "character_actions": [
+        { "character": "xu-chu", "action": "벌거벗고 마초와 200여 합의 사투를 벌여 호치의 위명을 떨침" },
+        { "character": "ma-chao", "action": "한수를 의심하여 왼손을 잘라버리고, 패퇴하여 농서로 도주함" },
+        { "character": "cao-cao", "action": "가후의 이간책을 실행하여 마초·한수 동맹을 와해시키고 관중을 평정함" },
+        { "character": "jia-xu", "action": "가짜 편지 이간책을 헌책하여 서량 연합군을 분열시킴" },
+        { "character": "han-sui", "action": "조조의 이간에 넘어가 마초에게 의심을 사고 왼손을 잃음" }
+      ]
+    },
+    {
+      "chapter_number": 60,
+      "title_kr": "장영년이 양수를 반박하고 방사원이 서촉 공략을 논하다",
+      "summary_kr": "익주 별가 장송이 조조에게 서천을 바치려 허도를 방문하지만, 조조의 오만한 태도에 분노하여 돌아서서 형주의 유비를 찾아가고, 유비의 인의에 감동하여 서천 지리도를 헌상하며 내응을 약속한다. 장송은 법정·맹달과 공모하고, 유장은 장로의 위협에 대비해 유비를 서천에 초청하기로 결정하는데, 황권·왕루 등의 충신들이 목숨을 걸고 간언하나 유장은 듣지 않는다. 유비는 방통을 군사로, 황충·위연을 장수로 삼아 5만 병력을 이끌고 서천으로 출발하여 부성에서 유장과 상봉한다.",
+      "key_events": [
+        {
+          "event": "장송이 조조에게 무시당한 뒤 유비를 방문하여 서천 지리도를 바침",
+          "participants": ["zhang-song", "cao-cao", "liu-bei", "zhuge-liang"],
+          "year": 211
+        },
+        {
+          "event": "유장이 장로 대비를 위해 유비를 서천에 초청하기로 결정함",
+          "participants": ["liu-zhang", "zhang-song", "fa-zheng"],
+          "year": 211
+        },
+        {
+          "event": "유비가 방통·황충·위연과 함께 5만 군을 이끌고 서천에 입성, 부성에서 유장과 상봉함",
+          "participants": ["liu-bei", "pang-tong", "huang-zhong", "wei-yan", "liu-zhang"],
+          "year": 211
+        }
+      ],
+      "character_actions": [
+        { "character": "zhang-song", "action": "조조에게 무시당한 뒤 유비에게 서천 지리도를 헌상하고 법정·맹달과 내응을 약속함" },
+        { "character": "liu-bei", "action": "장송을 극진히 예우하여 서천 지리도를 얻고, 방통과 함께 입촉함" },
+        { "character": "pang-tong", "action": "유비에게 서천 공략을 강력히 권유하고 군사로서 입촉함" },
+        { "character": "cao-cao", "action": "장송을 오만하게 대하여 서천 내응의 기회를 놓침" },
+        { "character": "fa-zheng", "action": "장송과 공모하여 유장의 사자로 형주에 가서 유비와 내통함" },
+        { "character": "liu-zhang", "action": "황권·왕루의 간언을 무시하고 유비를 서천에 초청하여 부성에서 상봉함" }
+      ]
+    }
+  ]
+}

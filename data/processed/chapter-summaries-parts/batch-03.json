@@ -1,0 +1,344 @@
+{
+  "batch": 3,
+  "chapters": [
+    {
+      "chapter_number": 21,
+      "title_kr": "조조가 술을 데워 영웅을 논하고, 관우가 성을 속여 차주를 베다",
+      "summary_kr": "동승이 유비를 찾아가 의대조를 보여주며 조조 주살 모의에 참여시키고, 유비는 후원에서 채소를 가꾸며 뜻을 숨긴다. 조조가 유비를 초대하여 청매를 안주 삼아 술을 데우며 천하 영웅을 논하다가 '영웅은 오직 그대와 나뿐'이라 하니, 유비가 놀라 젓가락을 떨어뜨리지만 천둥소리 핑계로 위기를 넘긴다. 유비는 원술 토벌 명분으로 서주에 나가 탈출에 성공하고, 원술은 패망하여 피를 토하고 죽으며, 관우는 거짓 계략으로 차주를 베어 서주를 되찾는다.",
+      "key_events": [
+        {
+          "event": "조조와 유비의 청매자주 영웅 논쟁",
+          "participants": ["cao-cao", "liu-bei"],
+          "year": 199
+        },
+        {
+          "event": "유비가 원술 토벌을 명분으로 허도를 탈출",
+          "participants": ["liu-bei", "cao-cao"],
+          "year": 199
+        },
+        {
+          "event": "원술이 궁핍 끝에 피를 토하고 사망",
+          "participants": ["yuan-shu"],
+          "year": 199
+        },
+        {
+          "event": "관우가 거짓 투항 계략으로 차주를 참수하고 서주 탈환",
+          "participants": ["guan-yu"],
+          "year": 199
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "유비를 초대하여 천하 영웅을 논하며 떠보다" },
+        { "character": "liu-bei", "action": "채소밭 가꾸기로 뜻을 숨기고, 천둥 핑계로 영웅론의 위기를 모면하다" },
+        { "character": "guan-yu", "action": "조조군으로 위장하여 차주를 유인 후 참수하다" },
+        { "character": "zhang-fei", "action": "기령을 열 합도 못 싸우고 찔러 죽이다" },
+        { "character": "yuan-shu", "action": "꿀물조차 구하지 못한 채 피를 토하고 죽다" }
+      ]
+    },
+    {
+      "chapter_number": 22,
+      "title_kr": "원소와 조조가 각각 마보 삼군을 일으키고, 관우와 장비가 왕충과 유대 두 장수를 사로잡다",
+      "summary_kr": "유비는 정현의 서신을 빌려 원소에게 구원을 청하고, 원소는 모사들의 의견 대립 속에서 30만 대군을 일으켜 여양으로 진군하며 진림이 조조를 성토하는 격문을 쓴다. 조조는 진림의 명문에 감탄하면서도 순욱의 분석을 듣고 원소를 두려워하지 않으며, 유비 토벌에 유대와 왕충을 보낸다. 관우는 왕충을 생포하고, 장비는 계략을 써서 유대를 사로잡는데, 유비는 두 장수를 후대하여 돌려보내며 화해를 도모한다.",
+      "key_events": [
+        {
+          "event": "원소가 30만 대군을 일으켜 여양으로 진군",
+          "participants": ["yuan-shao"],
+          "year": 200
+        },
+        {
+          "event": "진림이 조조를 성토하는 격문을 작성",
+          "participants": ["yuan-shao", "cao-cao"],
+          "year": 200
+        },
+        {
+          "event": "관우가 왕충을 생포",
+          "participants": ["guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "장비가 계략으로 유대를 사로잡음",
+          "participants": ["zhang-fei"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "yuan-shao", "action": "정현의 서신을 받고 30만 대군으로 조조 토벌을 결정하다" },
+        { "character": "cao-cao", "action": "격문에 놀라 일어나 대응을 모색하고, 유대와 왕충을 유비 토벌에 파견하다" },
+        { "character": "guan-yu", "action": "왕충과 싸워 생포하다" },
+        { "character": "zhang-fei", "action": "거짓 술 취한 척으로 유대를 함정에 빠뜨려 사로잡다" },
+        { "character": "liu-bei", "action": "사로잡은 두 장수를 예우하여 풀어주다" }
+      ]
+    },
+    {
+      "chapter_number": 23,
+      "title_kr": "예형이 벌거벗고 역적을 꾸짖고, 태의 길평이 독약을 쓰다가 형벌을 당하다",
+      "summary_kr": "가후의 설득으로 장수가 조조에게 항복하고, 공융이 추천한 예형은 조조의 모사와 장수들을 모조리 모욕하며 벌거벗고 북을 치는 기행을 벌인다. 조조는 예형을 유표에게 보내 빌려 죽이려 하고, 예형은 황조의 손에 결국 참수당한다. 동승의 조조 암살 음모에 태의 길평이 독약 계략으로 가담하나 가노 진경동의 밀고로 발각되어, 온갖 고문에도 동료를 끝내 발설하지 않고 계단에 머리를 부딪쳐 자결한다.",
+      "key_events": [
+        {
+          "event": "장수가 가후의 조언으로 조조에게 항복",
+          "participants": ["zhang-xiu", "jia-xu", "cao-cao"],
+          "year": 199
+        },
+        {
+          "event": "예형이 벌거벗고 조조의 신하들을 모욕",
+          "participants": ["cao-cao"],
+          "year": 199
+        },
+        {
+          "event": "황조가 예형을 참수",
+          "participants": [],
+          "year": 199
+        },
+        {
+          "event": "태의 길평의 조조 독살 계획이 발각되어 자결",
+          "participants": ["cao-cao"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "jia-xu", "action": "장수에게 원소 대신 조조에게 항복할 세 가지 이유를 들어 설득하다" },
+        { "character": "cao-cao", "action": "예형의 모욕을 참고 유표에게 보내 빌려 죽이려 하고, 길평의 암살 계획을 적발하다" },
+        { "character": "liu-bei", "action": "허도를 떠나 서주에서 조조 토벌 전선 구축에 집중하다" },
+        { "character": "yuan-shao", "action": "유표와 동맹을 시도하나 성과 없다" }
+      ]
+    },
+    {
+      "chapter_number": 24,
+      "title_kr": "국적이 흉포하게 귀비를 죽이고, 황숙이 패주하여 원소에게 몸을 의탁하다",
+      "summary_kr": "조조는 의대조 음모를 적발하여 동승 등 5인과 그 일족 700여 명을 처형하고, 임신 5개월의 동귀비마저 목졸라 죽이며 궁정을 장악한다. 곽가의 권고에 따라 20만 대군으로 서주를 공격하자, 원소는 아들의 병을 핑계로 구원을 거부하고, 장비의 야습 계략은 순욱의 예측에 걸려 매복에 대패한다. 유비는 홀로 말을 타고 청주로 도주하여 원담을 거쳐 원소에게 의탁하게 되고, 조조는 서주를 함락시킨 뒤 하비에서 유비의 가솔을 지키는 관우를 어떻게 항복시킬지 모의한다.",
+      "key_events": [
+        {
+          "event": "조조가 동승 등 의대조 관련자 일족 700여 명 처형",
+          "participants": ["cao-cao"],
+          "year": 200
+        },
+        {
+          "event": "조조가 동귀비를 궁중에서 살해",
+          "participants": ["cao-cao"],
+          "year": 200
+        },
+        {
+          "event": "조조의 20만 대군 서주 공격, 유비 대패",
+          "participants": ["cao-cao", "liu-bei", "zhang-fei"],
+          "year": 200
+        },
+        {
+          "event": "유비가 원소에게 의탁",
+          "participants": ["liu-bei", "yuan-shao"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "동승 일족을 몰살하고 동귀비를 목졸라 죽이며 서주를 공격하다" },
+        { "character": "liu-bei", "action": "야습에 대패하여 홀로 말을 타고 원소에게 도망치다" },
+        { "character": "zhang-fei", "action": "야습을 건의하나 매복에 걸려 망탕산으로 패주하다" },
+        { "character": "yuan-shao", "action": "아들의 병을 이유로 허도 기습 호기를 놓치다" },
+        { "character": "guan-yu", "action": "하비성에서 유비의 두 부인을 보호하며 수비하다" }
+      ]
+    },
+    {
+      "chapter_number": 25,
+      "title_kr": "토산에 주둔한 관우가 세 가지 조건을 내걸고, 백마에서 조조가 포위를 풀다",
+      "summary_kr": "관우는 하후돈의 유인에 걸려 토산에 고립되고, 장료가 찾아와 죽으면 세 가지 죄가 된다며 설득하자 '한나라에 항복하지 조조에게는 아니다'를 포함한 세 가지 조건을 내걸어 조조의 승낙을 받고 잠시 투항한다. 조조는 관우를 극진히 대접하며 미녀, 금은, 비단을 보내지만 관우는 모두 두 형수에게 넘기고, 적토마를 받을 때만 절하며 형을 찾으면 하루 만에 갈 수 있다고 말해 조조를 놀라게 한다. 원소가 안량을 선봉으로 백마를 공격하자, 조조의 장수들이 연달아 패하는 가운데 관우가 만군 속에서 안량의 목을 베어 포위를 풀며 대공을 세운다.",
+      "key_events": [
+        {
+          "event": "관우가 토산에서 세 가지 조건을 내걸고 조조에게 잠시 투항",
+          "participants": ["guan-yu", "cao-cao", "zhang-liao"],
+          "year": 200
+        },
+        {
+          "event": "조조가 적토마를 관우에게 하사",
+          "participants": ["cao-cao", "guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "관우가 백마 전투에서 안량을 참수",
+          "participants": ["guan-yu", "yan-liang"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "토산에서 세 가지 조건을 내걸어 조조에게 잠시 몸을 맡기고, 백마에서 안량을 만군 중에 베다" },
+        { "character": "cao-cao", "action": "관우의 조건을 모두 수락하고 극진히 대접하나, 적토마를 준 것을 후회하다" },
+        { "character": "zhang-liao", "action": "토산에서 관우를 설득하여 항복의 세 가지 논리를 제시하다" },
+        { "character": "yuan-shao", "action": "안량을 선봉으로 보내 백마를 공격하다" },
+        { "character": "liu-bei", "action": "원소 진영에서 형제들의 소식을 모른 채 번민하다" }
+      ]
+    },
+    {
+      "chapter_number": 26,
+      "title_kr": "원본초가 패전하여 장수를 잃고, 관운장이 인장을 걸고 금을 봉하여 떠나다",
+      "summary_kr": "관우는 연진 전투에서 문추까지 참수하여 대공을 세우나, 원소는 유비의 아우가 자기 장수를 죽인 것에 분노하여 유비를 처형하려 하고 유비는 '조조가 빌려 죽이려는 계략'이라며 위기를 모면한다. 유비의 서신이 진진을 통해 관우에게 전달되어 유비의 생존을 확인한 관우는 즉시 떠나려 하나, 조조가 회피패를 걸고 면회를 거부하며 붙잡으려 한다. 관우는 결국 받은 금은을 모두 봉하고 한수정후 인장을 걸어 놓은 뒤, 두 형수의 수레를 호위하며 북문을 돌파하여 허도를 떠난다.",
+      "key_events": [
+        {
+          "event": "관우가 연진 전투에서 문추를 참수",
+          "participants": ["guan-yu", "wen-chou"],
+          "year": 200
+        },
+        {
+          "event": "유비가 관우에게 밀서를 보내 생존을 알림",
+          "participants": ["liu-bei", "guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "관우가 인장과 금은을 봉하고 허도를 떠남",
+          "participants": ["guan-yu", "cao-cao"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "문추를 참수하고, 유비의 소식을 듣자 금은을 봉하고 인장을 걸어둔 채 떠나다" },
+        { "character": "cao-cao", "action": "회피패를 걸어 관우의 면회를 거부하며 떠나지 못하게 막으려 하다" },
+        { "character": "liu-bei", "action": "원소에게 조조의 이간계라 설득하여 목숨을 구하고, 관우에게 밀서를 보내다" },
+        { "character": "yuan-shao", "action": "안량과 문추를 잃고 유비를 의심하나 설득당하다" }
+      ]
+    },
+    {
+      "chapter_number": 27,
+      "title_kr": "미염공이 천리를 홀로 달리고, 한수정후가 다섯 관문에서 여섯 장수를 베다",
+      "summary_kr": "조조는 관우의 충의를 인정하여 추격을 만류하고 직접 금과 비단 전포를 주며 전송하지만, 관우는 통행 문서 없이 떠났기에 곳곳의 관문에서 가로막힌다. 동령관의 공수, 낙양의 한복과 맹탄, 사수관의 변희, 형양의 왕식, 황하 나루의 진기 등 다섯 관문에서 여섯 장수가 막아서지만 관우는 모두 베어 넘기며, 진국사의 승려 보정이 변희의 매복을 알려주고 요부 낭인 요화가 두 형수를 구출하는 등 도움을 받는다. 황하를 건넌 관우는 손건으로부터 유비가 원소를 떠나 여남으로 갔다는 소식을 듣고 방향을 바꾸는데, 뒤에서 하후돈이 추격해 온다.",
+      "key_events": [
+        {
+          "event": "조조가 관우를 전송하며 금과 전포를 하사",
+          "participants": ["cao-cao", "guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "관우가 다섯 관문에서 여섯 장수를 베다",
+          "participants": ["guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "요화가 두 형수를 구출",
+          "participants": ["guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "관우가 황하를 건넘",
+          "participants": ["guan-yu"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "다섯 관문에서 여섯 장수를 참수하며 천리 단기 여정을 이어가다" },
+        { "character": "cao-cao", "action": "관우의 충의를 존중하여 추격을 불허하고 직접 전송하다" },
+        { "character": "liu-bei", "action": "원소를 떠나 여남으로 이동하다" }
+      ]
+    },
+    {
+      "chapter_number": 28,
+      "title_kr": "채양을 베어 형제의 의심을 풀고, 고성에서 군신이 모여 의를 맺다",
+      "summary_kr": "하후돈이 관우를 추격하나 조조의 통행 공문과 장료의 중재로 물러가고, 관우는 고성에 도착하지만 장비가 조조에게 항복한 것을 의심하며 창을 들이대자 마침 쫓아온 채양을 북소리 한 통에 베어 결백을 증명한다. 유비는 원소에게 유표 설득을 명분으로 빠져나오고, 관정의 장원에서 관우와 감격적으로 재회하며 관평을 관우의 양자로 삼는다. 와우산에서 배원소를 죽이고 산채를 차지한 조운을 만나 합류하니, 유비, 관우, 장비, 조운, 미축, 미방, 손건, 간옹, 관평, 주창 등이 고성에 모여 주둔하게 된다.",
+      "key_events": [
+        {
+          "event": "장료의 중재로 하후돈이 관우 추격을 중단",
+          "participants": ["guan-yu", "xiahou-dun", "zhang-liao"],
+          "year": 200
+        },
+        {
+          "event": "관우가 채양을 참수하여 장비의 의심을 해소",
+          "participants": ["guan-yu", "zhang-fei"],
+          "year": 200
+        },
+        {
+          "event": "유비가 원소를 떠나 고성에서 관우와 재회",
+          "participants": ["liu-bei", "guan-yu"],
+          "year": 200
+        },
+        {
+          "event": "조운이 와우산에서 유비와 합류",
+          "participants": ["zhao-yun", "liu-bei"],
+          "year": 200
+        },
+        {
+          "event": "관평을 관우의 양자로 삼음",
+          "participants": ["guan-yu", "liu-bei"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "채양을 일합에 베어 장비의 의심을 풀고 관평을 양자로 맞다" },
+        { "character": "zhang-fei", "action": "관우의 항복을 의심하여 창을 겨누다가 채양 참수를 보고 화해하다" },
+        { "character": "liu-bei", "action": "유표 설득 핑계로 원소를 떠나 관우와 재회하다" },
+        { "character": "zhao-yun", "action": "와우산에서 배원소를 죽이고 산채를 차지한 뒤 유비와 합류하다" },
+        { "character": "zhang-liao", "action": "조조의 명을 전하여 하후돈과 관우의 싸움을 중재하다" }
+      ]
+    },
+    {
+      "chapter_number": 29,
+      "title_kr": "소패왕이 분노하여 우길을 베고, 벽안아가 강동을 이어받다",
+      "summary_kr": "손책은 강동을 평정하고 위세를 떨치지만, 허공의 밀서가 발각되어 허공을 처형한 뒤 허공의 식객 셋에게 사냥 중 습격당해 얼굴에 독화살을 맞는 중상을 입는다. 상처를 치료하는 동안 도사 우길이 백성의 신앙을 모으는 것에 분노하여 기우제로 비를 내리게 했음에도 참수하지만, 이후 우길의 환영에 시달려 상처가 터지고 26세의 나이로 사망하며 동생 손권에게 인장을 넘긴다. 주유가 돌아와 보필을 맹세하고 노숙과 제갈근을 천거하여 손권 정권의 기틀을 잡으며, 조조는 손권을 장군으로 봉하여 회유하고 원소는 다시 70만 대군을 일으켜 허창 공격을 재개한다.",
+      "key_events": [
+        {
+          "event": "손책이 허공의 식객에게 습격당해 중상",
+          "participants": ["sun-ce"],
+          "year": 200
+        },
+        {
+          "event": "손책이 우길을 참수",
+          "participants": ["sun-ce"],
+          "year": 200
+        },
+        {
+          "event": "손책 사망, 손권에게 인장 이양",
+          "participants": ["sun-ce", "sun-quan"],
+          "year": 200
+        },
+        {
+          "event": "주유가 보필을 맹세하고 노숙을 천거",
+          "participants": ["zhou-yu", "sun-quan", "lu-su"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "sun-ce", "action": "허공을 처형하고 우길을 참수하나, 자객의 독화살과 환영에 시달리다 26세로 사망하다" },
+        { "character": "sun-quan", "action": "형의 유언에 따라 강동의 인장을 이어받다" },
+        { "character": "zhou-yu", "action": "바구에서 달려와 손권에게 충성을 맹세하고 노숙을 천거하다" },
+        { "character": "cao-cao", "action": "손권을 장군으로 봉하여 회유하다" },
+        { "character": "yuan-shao", "action": "손권과의 동맹이 무산되자 70만 대군으로 허창 재공격을 결의하다" }
+      ]
+    },
+    {
+      "chapter_number": 30,
+      "title_kr": "관도에서 원본초가 패적하고, 오소에서 조맹덕이 군량을 불태우다",
+      "summary_kr": "원소가 70만 대군으로 관도에 진군하나 전풍과 저수의 간언을 무시하고, 조조는 7만 정예로 맞서며 유엽의 발석차(벽력차)로 토산 위의 궁노수를 격파하고 지하 갱도도 참호로 무력화한다. 군량이 바닥날 위기에 원소에게 쫓겨난 허유가 조조에게 투항하여 오소의 군량고를 알려주고, 조조는 5천 기병으로 오소를 기습하여 순우경의 군량을 모두 불태운다. 장합과 고람이 곽도의 참소에 밀려 조조에게 항복하고, 군량을 잃은 원소군은 총붕괴하여 원소가 800기만 이끌고 황하를 건너 도주하며, 조조는 내통 서신을 불태워 아량을 보이고 관도대전의 완승을 거둔다.",
+      "key_events": [
+        {
+          "event": "관도에서 원소 70만 대 조조 7만의 대치 시작",
+          "participants": ["yuan-shao", "cao-cao"],
+          "year": 200
+        },
+        {
+          "event": "허유가 원소를 떠나 조조에게 투항",
+          "participants": ["cao-cao", "yuan-shao"],
+          "year": 200
+        },
+        {
+          "event": "조조의 오소 기습으로 원소 군량 전소",
+          "participants": ["cao-cao", "yuan-shao"],
+          "year": 200
+        },
+        {
+          "event": "장합과 고람이 조조에게 항복",
+          "participants": ["zhang-he", "cao-cao"],
+          "year": 200
+        },
+        {
+          "event": "원소 대패, 800기만으로 황하 도주 (관도대전 종결)",
+          "participants": ["yuan-shao", "cao-cao"],
+          "year": 200
+        },
+        {
+          "event": "저수가 조조에게 잡혀 탈출을 시도하다 처형됨",
+          "participants": ["cao-cao"],
+          "year": 200
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "발석차로 토산을 격파하고, 허유의 정보로 오소를 기습하여 군량을 소각하며 관도대전에서 승리하다" },
+        { "character": "yuan-shao", "action": "전풍과 저수의 간언을 무시하고 허유를 쫓아내어 대패하다" },
+        { "character": "zhang-he", "action": "곽도의 참소를 피해 고람과 함께 조조에게 항복하다" }
+      ]
+    }
+  ]
+}

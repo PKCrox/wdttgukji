@@ -1,0 +1,352 @@
+{
+  "batch": 4,
+  "chapters": [
+    {
+      "chapter_number": 31,
+      "title_kr": "조조가 창정에서 원소를 격파하고, 유비가 형주에서 유표에게 의탁하다",
+      "summary_kr": "조조가 십면매복의 계략으로 창정에서 원소를 대파하여 원소의 군세가 궤멸되고, 원소는 피를 토하며 기주로 퇴각한다. 유비는 여남에서 조조에게 패하여 군사를 거의 잃고, 조운의 분전으로 간신히 탈출하여 남쪽으로 도주한다. 손건의 건의로 유비는 형주의 유표에게 의탁하기로 하고, 유표는 성 밖 30리까지 나와 유비를 맞이한다.",
+      "key_events": [
+        {
+          "event": "조조가 십면매복계로 창정에서 원소를 대파하다",
+          "participants": ["cao-cao", "yuan-shao"],
+          "year": 201
+        },
+        {
+          "event": "전풍이 원소의 명으로 옥중에서 자결하다",
+          "participants": ["yuan-shao"],
+          "year": 201
+        },
+        {
+          "event": "유비가 여남 양산에서 조조에게 대패하다",
+          "participants": ["liu-bei", "cao-cao", "zhao-yun"],
+          "year": 201
+        },
+        {
+          "event": "조운이 고람을 베고 장합을 물리쳐 유비를 구출하다",
+          "participants": ["zhao-yun", "liu-bei"],
+          "year": 201
+        },
+        {
+          "event": "유비가 형주 유표에게 의탁하다",
+          "participants": ["liu-bei", "liu-biao"],
+          "year": 201
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "십면매복계로 창정에서 원소를 격파하고, 이어 여남의 유비를 격퇴하다" },
+        { "character": "yuan-shao", "action": "창정에서 대패하여 피를 토하고, 후사 문제를 두고 고민하다" },
+        { "character": "liu-bei", "action": "여남에서 패하여 형주로 도망치고, 유표에게 의탁하다" },
+        { "character": "zhao-yun", "action": "고람을 단창으로 찔러 죽이고, 장합을 물리쳐 유비를 구하다" },
+        { "character": "guan-yu", "action": "관평, 주창과 함께 유비를 호위하고 적을 물리치다" }
+      ]
+    },
+    {
+      "chapter_number": 32,
+      "title_kr": "기주를 빼앗으며 원상이 다투고, 장하를 결단하여 허유가 계책을 바치다",
+      "summary_kr": "원소가 병사하고 심배와 봉기가 삼자 원상을 후계자로 세우니, 장자 원담이 불복하여 형제간에 내전이 벌어진다. 원담은 궁지에 몰려 조조에게 항복을 청하고, 조조는 순유의 계책에 따라 원씨 형제의 내분을 이용하기로 한다. 허유의 장하 결수 계책으로 기주성이 수몰되고, 심배의 조카 심영이 서문을 열어 조조군이 입성하며, 심배는 끝까지 항복을 거부하고 북향하여 참수당한다.",
+      "key_events": [
+        {
+          "event": "원소가 병사하고 원상이 후계자로 옹립되다",
+          "participants": ["yuan-shao"],
+          "year": 202
+        },
+        {
+          "event": "원담과 원상이 후계 문제로 내전을 벌이다",
+          "participants": ["yuan-shao"],
+          "year": 202
+        },
+        {
+          "event": "원담이 조조에게 항복을 청하다",
+          "participants": ["cao-cao"],
+          "year": 203
+        },
+        {
+          "event": "허유의 계책으로 장하의 물을 기주성에 끌어들이다",
+          "participants": ["cao-cao"],
+          "year": 204
+        },
+        {
+          "event": "심배가 기주성에서 항복을 거부하고 북향 참수당하다",
+          "participants": ["cao-cao"],
+          "year": 204
+        },
+        {
+          "event": "조비가 원소의 부에 들어가 견씨를 발견하다",
+          "participants": ["cao-pi"],
+          "year": 204
+        }
+      ],
+      "character_actions": [
+        { "character": "yuan-shao", "action": "병사하며, 후사를 원상에게 맡기다" },
+        { "character": "cao-cao", "action": "원씨 형제의 내분을 이용하여 기주를 함락시키다" },
+        { "character": "cao-pi", "action": "기주 함락 후 원소의 부에 들어가 원희의 처 견씨를 취하다" }
+      ]
+    },
+    {
+      "chapter_number": 33,
+      "title_kr": "조비가 난중에 견씨를 취하고, 곽가가 유계로 요동을 평정하다",
+      "summary_kr": "조조가 기주를 평정한 후 원소의 묘에 제사를 올리며 통곡하고, 허저가 공을 뽐내던 허유를 살해한다. 조조는 원담을 남피에서 격파하고, 원희와 원상은 요동의 공손강에게 도주하나, 곽가의 유계에 따라 조조가 공격하지 않자 공손강이 스스로 두 사람의 목을 베어 바친다. 곽가는 원정 중 병사하고, 조조는 그의 유서대로 하여 요동을 평정한다.",
+      "key_events": [
+        {
+          "event": "조비가 원희의 처 견씨를 취하다",
+          "participants": ["cao-pi"],
+          "year": 204
+        },
+        {
+          "event": "허저가 허유를 참살하다",
+          "participants": ["cao-cao"],
+          "year": 204
+        },
+        {
+          "event": "조조가 남피에서 원담을 격파하고 원담이 전사하다",
+          "participants": ["cao-cao"],
+          "year": 205
+        },
+        {
+          "event": "곽가가 원정 중 병사하며 유계를 남기다",
+          "participants": ["cao-cao"],
+          "year": 207
+        },
+        {
+          "event": "공손강이 원희, 원상의 수급을 베어 조조에게 바치다",
+          "participants": ["cao-cao"],
+          "year": 207
+        },
+        {
+          "event": "조조가 백랑산에서 오환족을 격파하다",
+          "participants": ["cao-cao"],
+          "year": 207
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "원소 묘에 통곡하고, 원담을 멸하고, 곽가의 유계대로 요동을 평정하다" },
+        { "character": "cao-pi", "action": "기주 함락 시 견씨를 발견하고 아내로 맞이하다" },
+        { "character": "liu-bei", "action": "유표에게 원담 구원 출병을 하지 말라고 조언하다" }
+      ]
+    },
+    {
+      "chapter_number": 34,
+      "title_kr": "채부인이 병풍 뒤에서 밀담을 엿듣고, 유황숙이 말을 타고 단계를 뛰어넘다",
+      "summary_kr": "유비가 신야에 주둔하여 민심을 얻고, 유선이 태어난다. 유비가 형주를 방문하여 유표에게 조조의 허도를 습격하자고 건의하나 유표가 거절하고, 후사 문제를 상의하는데 채부인이 병풍 뒤에서 엿듣고 유비를 경계한다. 채모가 양양 연회에서 유비를 암살하려 하나, 이적의 밀고로 유비가 적로마를 타고 단계를 뛰어넘어 위기를 탈출한다.",
+      "key_events": [
+        {
+          "event": "유선(아두)이 신야에서 태어나다",
+          "participants": ["liu-bei"],
+          "year": 207
+        },
+        {
+          "event": "유비가 유표에게 허도 기습을 건의하나 거절당하다",
+          "participants": ["liu-bei", "liu-biao"],
+          "year": 207
+        },
+        {
+          "event": "유비가 비육지탄을 한탄하다",
+          "participants": ["liu-bei", "liu-biao"],
+          "year": 207
+        },
+        {
+          "event": "유비가 적로마를 타고 단계를 뛰어넘어 암살을 피하다",
+          "participants": ["liu-bei"],
+          "year": 207
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "유표에게 북벌을 건의하고, 비육지탄을 한탄하며, 단계를 뛰어넘어 탈출하다" },
+        { "character": "liu-biao", "action": "후사 문제로 고민하며 유비에게 상의하다" },
+        { "character": "zhao-yun", "action": "300군을 이끌고 유비를 호위하여 양양에 동행하다" }
+      ]
+    },
+    {
+      "chapter_number": 35,
+      "title_kr": "유비가 남장에서 은자를 만나고, 단복이 신야에서 영주를 만나다",
+      "summary_kr": "유비가 단계를 건넌 후 남장에서 은자 수경선생 사마휘를 만나, '복룡과 봉추 중 한 명을 얻으면 천하를 안정시킬 수 있다'는 말을 듣는다. 신야로 돌아온 유비는 시장에서 노래하는 단복(서서의 가명)을 만나 군사로 맞이한다. 서서는 여광, 여상 형제를 격파하고, 이어 조인의 팔문금쇄진을 간파하여 조운으로 하여금 격파하게 하는 등 연전연승한다.",
+      "key_events": [
+        {
+          "event": "유비가 수경선생 사마휘를 만나 복룡, 봉추의 존재를 알게 되다",
+          "participants": ["liu-bei"],
+          "year": 207
+        },
+        {
+          "event": "서서(단복)가 유비의 군사가 되다",
+          "participants": ["liu-bei", "xu-shu"],
+          "year": 207
+        },
+        {
+          "event": "서서의 계략으로 여광, 여상을 격파하다",
+          "participants": ["liu-bei", "xu-shu", "zhao-yun"],
+          "year": 207
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "사마휘를 만나 복룡, 봉추를 알게 되고, 서서를 군사로 맞이하다" },
+        { "character": "xu-shu", "action": "단복이라는 가명으로 유비를 찾아가 군사가 되어 첫 전투에서 승리하다" },
+        { "character": "zhao-yun", "action": "여광을 일합에 찔러 죽이고, 팔문금쇄진을 돌파하다" }
+      ]
+    },
+    {
+      "chapter_number": 36,
+      "title_kr": "유비가 계략으로 번성을 습격하고, 서서가 말을 달리며 제갈량을 추천하다",
+      "summary_kr": "서서가 조인의 팔문금쇄진을 파하고, 야습까지 예측하여 조인군을 대파한 뒤 번성을 탈취한다. 조조는 정욱의 계략으로 서서의 어머니를 허창에 유인하고 위조한 편지로 서서를 불러들이니, 유비는 차마 막지 못하고 눈물로 이별한다. 서서는 떠나면서 말을 돌려 와 융중의 제갈량(와룡선생)을 추천하고, 유비는 곧바로 삼고초려를 준비한다.",
+      "key_events": [
+        {
+          "event": "서서의 계략으로 조인을 대파하고 번성을 탈취하다",
+          "participants": ["liu-bei", "xu-shu", "guan-yu"],
+          "year": 207
+        },
+        {
+          "event": "조조가 서서의 어머니를 유인하여 위조 편지로 서서를 불러들이다",
+          "participants": ["cao-cao", "xu-shu"],
+          "year": 207
+        },
+        {
+          "event": "서서가 유비와 이별하며 제갈량을 추천하다",
+          "participants": ["xu-shu", "liu-bei", "zhuge-liang"],
+          "year": 207
+        },
+        {
+          "event": "유비가 양자 유봉을 얻다",
+          "participants": ["liu-bei"],
+          "year": 207
+        }
+      ],
+      "character_actions": [
+        { "character": "xu-shu", "action": "조인을 연파하고 번성을 취한 뒤, 어머니 때문에 조조에게 가면서 제갈량을 추천하다" },
+        { "character": "liu-bei", "action": "서서와 눈물로 이별하고, 제갈량의 존재를 알게 되다" },
+        { "character": "cao-cao", "action": "정욱의 계책으로 서서 모친을 유인하여 서서를 불러들이다" },
+        { "character": "guan-yu", "action": "번성 탈취 시 선봉으로 활약하다" }
+      ]
+    },
+    {
+      "chapter_number": 37,
+      "title_kr": "사마휘가 다시 명사를 추천하고, 유비가 세 번 초려를 찾다",
+      "summary_kr": "서서가 허창에 도착하나 어머니는 위조 편지임을 알고 아들을 꾸짖은 뒤 목을 매어 자결하고, 서서는 비통해하며 평생 조조를 위해 한 가지 계책도 내지 않겠다고 맹세한다. 유비는 사마휘의 재추천을 받고 융중으로 제갈량을 찾아가나, 첫 방문과 두 번째 방문 모두 공명이 부재하여 만나지 못한다. 유비는 눈보라 속에서도 두 번째 방문을 감행하며 제갈량에게 간절한 서신을 남기는 등 지극한 성의를 보인다.",
+      "key_events": [
+        {
+          "event": "서서의 어머니가 아들을 꾸짖고 자결하다",
+          "participants": ["xu-shu"],
+          "year": 207
+        },
+        {
+          "event": "사마휘가 유비에게 제갈량을 다시 추천하다",
+          "participants": ["liu-bei"],
+          "year": 207
+        },
+        {
+          "event": "유비가 융중 초려를 첫 번째, 두 번째 방문하나 제갈량을 만나지 못하다",
+          "participants": ["liu-bei", "zhuge-liang"],
+          "year": 207
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "눈보라 속에서 두 차례 융중을 방문하고, 제갈량에게 서신을 남기다" },
+        { "character": "xu-shu", "action": "어머니의 자결에 비통해하며, 평생 조조를 위해 계책을 내지 않겠다고 맹세하다" },
+        { "character": "zhuge-liang", "action": "외출하여 부재중이나, 동생 제갈균이 유비를 접대하다" }
+      ]
+    },
+    {
+      "chapter_number": 38,
+      "title_kr": "천하 삼분을 융중에서 결책하고, 장강에서 손씨가 원수를 갚다",
+      "summary_kr": "유비가 세 번째로 융중을 방문하여 마침내 제갈량을 만나고, 제갈량은 천하삼분지계를 제시하여 형주와 익주를 취하고 손권과 연합하여 조조에 대항하는 대전략을 설파한다. 유비의 간곡한 청에 제갈량이 출산하기로 결심하여 함께 신야로 돌아간다. 한편 강동에서는 손권이 감녕 등의 활약으로 황조를 토벌하여 아버지 손견의 원수를 갚고, 주유가 대도독으로서 수군을 훈련한다.",
+      "key_events": [
+        {
+          "event": "유비가 삼고초려로 제갈량을 만나다",
+          "participants": ["liu-bei", "zhuge-liang"],
+          "year": 207
+        },
+        {
+          "event": "제갈량이 융중대책(천하삼분지계)을 제시하다",
+          "participants": ["zhuge-liang", "liu-bei"],
+          "year": 207
+        },
+        {
+          "event": "제갈량이 유비를 따라 출산하다",
+          "participants": ["zhuge-liang", "liu-bei"],
+          "year": 207
+        },
+        {
+          "event": "손권이 황조를 토벌하여 아버지의 원수를 갚다",
+          "participants": ["sun-quan"],
+          "year": 208
+        },
+        {
+          "event": "감녕이 황조를 사살하다",
+          "participants": ["sun-quan"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "융중대책으로 천하삼분의 대전략을 제시하고, 유비를 따라 출산하다" },
+        { "character": "liu-bei", "action": "세 번째 방문에서 제갈량을 만나 사사하고, 사제의 예로 대우하다" },
+        { "character": "sun-quan", "action": "주유를 대도독으로 임명하고 황조를 토벌하여 부친의 원수를 갚다" }
+      ]
+    },
+    {
+      "chapter_number": 39,
+      "title_kr": "형주성에서 공자가 세 번 계책을 구하고, 박망파에서 군사가 처음 용병하다",
+      "summary_kr": "유비가 유표를 방문하여 형주 방어를 논하고, 제갈량은 유기에게 강하로 나가 외직을 맡으라는 계책을 주어 채씨의 화를 피하게 한다. 조조가 하후돈에게 10만 대군을 주어 신야를 치게 하자, 제갈량은 첫 출진으로 박망파에서 화공을 펼친다. 조운이 거짓 패주로 하후돈을 유인하고, 관우와 장비의 매복과 합세하여 조조군을 대파하니, 이것이 제갈량의 '출사 이래 첫 공(초출무로제일공)'이 된다.",
+      "key_events": [
+        {
+          "event": "제갈량이 유기에게 강하 출진을 조언하여 화를 피하게 하다",
+          "participants": ["zhuge-liang", "liu-bei"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 박망파에서 화공으로 하후돈의 10만 대군을 대파하다 (초출무로제일공)",
+          "participants": ["zhuge-liang", "liu-bei", "zhao-yun", "guan-yu", "zhang-fei"],
+          "year": 208
+        },
+        {
+          "event": "조조가 사마의를 문학연으로 등용하다",
+          "participants": ["cao-cao", "sima-yi"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "유기에게 강하 출진의 계책을 주고, 박망파에서 화공으로 첫 대승을 거두다" },
+        { "character": "liu-bei", "action": "유표에게 형주 방어를 상의하고, 제갈량에게 병권을 맡기다" },
+        { "character": "zhao-yun", "action": "하후돈을 상대로 거짓 패주하여 매복 지점으로 유인하다" },
+        { "character": "guan-yu", "action": "예산에 매복하여 조조군의 군량을 소각하다" },
+        { "character": "zhang-fei", "action": "안림에 매복하여 박망성의 군량을 불태우다" }
+      ]
+    },
+    {
+      "chapter_number": 40,
+      "title_kr": "채부인이 형주 헌납을 의논하고, 제갈량이 신야를 불태우다",
+      "summary_kr": "조조가 50만 대군으로 남정을 시작하고, 공융이 간하다가 일가족과 함께 참살당한다. 유표가 병사하고 채씨 일족이 유종을 형주 주인으로 세운 뒤, 유종은 괴월과 왕찬 등의 권유로 형주 9군을 조조에게 바치기로 결정한다. 제갈량은 백성을 번성으로 미리 피난시킨 뒤 빈 신야성에 화공과 백하 수공을 설치하여 조인, 조홍의 선봉군을 대파한다.",
+      "key_events": [
+        {
+          "event": "조조가 50만 대군을 일으켜 남정을 시작하다",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "공융이 간언하다 일가족과 함께 참살당하다",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "유표가 병사하다",
+          "participants": ["liu-biao"],
+          "year": 208
+        },
+        {
+          "event": "채씨 일족이 유종을 형주주로 세우고, 유종이 조조에게 항복하기로 결정하다",
+          "participants": ["liu-biao"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 신야에서 화공과 수공으로 조인군을 대파하다",
+          "participants": ["zhuge-liang", "liu-bei", "guan-yu", "zhang-fei", "zhao-yun"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "50만 대군을 5대로 나누어 남정을 개시하고, 공융을 참살하다" },
+        { "character": "liu-biao", "action": "유비에게 형주를 맡기겠다는 유언을 남기고 병사하다" },
+        { "character": "zhuge-liang", "action": "백성을 번성으로 피난시킨 후 신야성에 화공과 백하 수공을 설치하여 조인군을 대파하다" },
+        { "character": "guan-yu", "action": "백하 상류에서 모래주머니로 물을 막았다가 방류하여 수공을 실행하다" },
+        { "character": "zhang-fei", "action": "박릉 나루에서 매복하여 물에 빠진 조조군을 섬멸하다" }
+      ]
+    }
+  ]
+}

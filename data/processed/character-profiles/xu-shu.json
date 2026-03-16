@@ -1,0 +1,167 @@
+{
+  "name_kr": "서서",
+  "name_en": "Xu Shu",
+  "name_cn": "徐庶",
+  "courtesy_kr": "원직",
+  "courtesy_cn": "元直",
+  "faction": "wei",
+  "tier": 1,
+  "role": "촉→위 이적, 효자",
+  "stats": {
+    "leadership": 84,
+    "war": 64,
+    "intelligence": 93,
+    "politics": 80,
+    "charisma": 81,
+    "total": 402,
+    "birth": 178,
+    "death": 232
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      41,
+      48
+    ],
+    "chapter_count": 7
+  },
+  "biography": {
+    "namu": {
+      "overview": "1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 유비 휘하에서2.3. 위나라에서3. 삼국지연의4. 기타5. 대중매체에서",
+      "biography": "예주 영천군 장사현 사람으로 어머니는 서모이다. 서서에 대한 기록 중에 本單家子(본단가자), 즉 본래 단가의 자식이라는 내용이 있다. 여기서 단가(單家)란 친척이 없는 단독 가구를 의미하며, 친족 간에 상부상조가 굳건하던 당시 시대상에 비추어 보면 서서는 매우 불우한 환경에서 자랐다고 생각된다.또한 젊은 시절에는 임협, 격검(검술)을 좋아하며 불량하게 살았다. 실상은 시장바닥에서 패거리를 지어 칼 휘두르고 다니던 건달이었다는 뜻이다. 대략 189년 정도에 서서는 다른 사람을 위해 원수를 갚아준 후 얼굴에 하얀 흙을 바르고 머리를 흩트려서 얼굴을 숨긴 채 달아나다 관원에게 붙잡혔다. 관원이 그의 이름을 물어도 서서는 입을 닫고 말하지 않았다. 이에 관원이 그를 수레에 태우고 기둥에 묶고는 북을 치며 저자 거리를 돌아다녔으나 감히 그를 식별하는 자가 없었다. 그러다가 그의 일당들이 그를 풀어줘 죽을 뻔한 위기에서 벗어날 수 있었다. 이 사건으로 인하여 마음을 고쳐먹은 서서는 무기를 버리고 학문을 닦기 시작했다.처음에 학사에 나오자 여러 유생들은 그가 예전에 도적질했다는 것을 듣고 그와 함께하려 하지 않았다. 이에 서서는 늘 성실하고 겸손하게 행동하였고 마침내 동향인 석도와 친애하게 되었다. 중원에 전란이 일자 석도와 함께 남쪽으로 와서 형주에 의탁했다. 도착한 후 또한 제갈량과도 서로 친하게 지냈다.〈상랑전〉에 주석으로 달린 《양양기》에 따르면 상랑은 젊어서 사마휘를 스승으로 모셨으며 서서, 한숭, 방통 등과 친하게 지냈다.〈제갈량전〉에 따르면 제갈량은 늘 자신을 관중, 악의에 비교했으나 당시 사람들은 이를 수긍하지 않았다. 오직 친한 벗으로 지내던 최주평, 서서만이 참으로 그러하다고 인정했다.〈제갈량전〉에 주석으로 달린 《위략》에 따르면 제갈량은 형주에 있었는데 건안 초 석도, 서서, 맹건 등과 함께 타향에서 공부했다. 이 3명은 정밀하고 세세하게 공부했으나 제갈량은 홀로 전체의 큰 내용을 살피는 방식으로 공부했다. 매양 새벽부터 밤까지 차분하고 침착하게 무릎을 끌어안고 앉아 크게 읊조리며 세 사람에게 말했다. \"경(卿) 세 사람이 벼슬하면 가히 주자사나 군태수까지 오를 것이오.\" 세 사람이 제갈량 자신은 어떠한지 물었으나 제갈량은 웃을 뿐 대답하지 않았다.",
+      "anecdotes": "정사에서도 지략가였는지는 알 수 없다. 개인 열전이 없는 관계로 그의 행적은 <촉서> 제갈량전의 주석으로만 간략하게 전해지는데 이것도 분량이 얼마 안 되기 때문이다. 서서가 맡은 직책이나 제갈량의 말로 미루어볼 때 적어도 행정 능력은 뛰어났던 걸로 보인다. 연의에서 지략가로서 보여준 면모는 서서가 제갈량의 친구답게 다재다능한 인물이라는 데에서 착안한 것일 수 있으며 동시에 유비에게 필요한 것은 전략을 짜는 책사임을 암시하기 위함일 것이다."
+    },
+    "wiki_en": {
+      "summary": "Xu Shu, courtesy name Yuanzhi, originally named Xu Fu, was a Chinese politician of the state of Cao Wei during the Three Kingdoms period of China. He was born in the late Eastern Han dynasty and used to be a vigilante swordsman in his early life. However, after running into trouble with the authorities, he renounced his old ways and took up scholarly pursuits. He lived a reclusive life from the 190s to mid-200s in Jing Province, where he met and befriended Zhuge Liang. In late 207, he became an adviser to the warlord Liu Bei and served under Liu for about a year. He also recommended Zhuge Liang to Liu Bei during this period of time. In late 208, Liu Bei was defeated at the Battle of Changban by his rival Cao Cao. Xu Shu's mother was captured by Cao Cao's forces during the battle. Feeling lost and without a sense of direction, Xu Shu eventually left Liu Bei and joined Cao Cao. He continued serving in the state of Cao Wei – founded by Cao Cao's son and successor, Cao Pi, who ended the Eastern Han dynasty – and died of illness in office.",
+      "sections": {
+        "Lead": "Xu Shu (fl.180 – 230s), courtesy name Yuanzhi, originally named Xu Fu, was a Chinese politician of the state of Cao Wei during the Three Kingdoms period of China. He was born in the late Eastern Han dynasty and used to be a vigilante swordsman in his early life. However, after running into trouble with the authorities, he renounced his old ways and took up scholarly pursuits. He lived a reclusive life from the 190s to mid-200s in Jing Province (covering present-day Hubei and Hunan provinces), where he met and befriended Zhuge Liang. In late 207, he became an adviser to the warlord Liu Bei and served under Liu for about a year. He also recommended Zhuge Liang to Liu Bei during this period of time. In late 208, Liu Bei was defeated at the Battle of Changban by his rival Cao Cao. Xu Shu's mother was captured by Cao Cao's forces during the battle. Feeling lost and without a sense of direction, Xu Shu eventually left Liu Bei and joined Cao Cao. He continued serving in the state of Cao Wei – founded by Cao Cao's son and successor, Cao Pi, who ended the Eastern Han dynasty – and died of illness in office.\n\nXu Shu's defection from Liu Bei to Cao Cao was fictionalised in the historical novel Romance of the Three Kingdoms. In the novel, he was Liu Bei's chief strategist before Zhuge Liang came along, and he once helped Liu Bei repel two attacks from Cao Cao's general Cao Ren. He was eventually tricked into leaving Liu Bei and joining Cao Cao, but he recommended Zhuge Liang to Liu Bei b... (truncated)",
+        "Early life": "Xu Shu was from Yingchuan Commandery (潁川郡), Yu Province, which is in present-day central Henan.[3] His original given name was Fu (福), and he was born into a poor family. He was a swordsman in his early life; during the latter part of the Zhong'ping era (184-189) of Emperor Ling's reign, he once helped someone take revenge by killing another person. To avoid being recognised, he covered his face with white chalk and let his hair run wild. He was later arrested by an official, who asked him for his name, but he did not reply. The official tied him to a cart, paraded him through the streets, and asked for any person who could identify him. No one came forth. Xu Shu's fellows rescued him later. He was so grateful to be saved that he gave up his life as a swordsman and became a scholar.[4]\n\nWhen Xu Shu first attended school, his mates ostracised him because of his background, but he remained humble and hardworking. He woke up early, cleaned the school alone, and paid great attention to his studies. He met Shi Tao (石韜; also known as Shi Guangyuan 石廣元) and became close friends with him. In the early 190s, when wars broke out in central China, Xu Shu and Shi Tao moved south to Jing Province (covering present-day Hubei and Hunan), where they met Zhuge Liang and befriended him.[5] During his time in Jing Province from the late 190s to the early 200s (about a decade), Xu Shu maintained close friendships with Zhuge Liang, Shi Tao and Meng Gongwei (孟公威). They travelled and studied togeth... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "徐庶（活跃期2世纪—3世纪），字元直，原名福，小說《三國演義》將徐庶的化名誤植為單福，豫州颍川长社（今河南长葛）人。東漢末至三国时人。\n",
+      "sections": {
+        "Introduction": "徐庶（活跃期2世纪—3世纪），字元直，原名福，小說《三國演義》將徐庶的化名誤植為單福，豫州颍川长社（今河南长葛）人。東漢末至三国时人。",
+        "评价": "- 诸葛亮：“夫参署者，集众思，广忠益也。若远小嫌，难相违覆，旷阙损矣。违覆而得中，犹弃敝趫而获珠玉。然人心苦不能尽，惟徐元直处兹不惑。又，董幼宰参署七年，事有不至，至于十反，来相启告。苟能慕元直之十一，幼宰之勤渠，有忠于国，则亮可以少过矣。”“昔初交州平，屡闻得失，后交元直，勤见启诲。”（《三国志·蜀书九·董刘马陈董吕传第九》）\n- 尹义尚：“徐元直西蜀之谋士，关云长刘氏之骁将，须归即遣，知叛弗追，今之与古，何其异趣？”（《全北齐文·卷八》）\n- 习凿齿：“西望隆中，想卧龙之吟；东眺白沙，思凤雏之声；北临樊墟，存邓老之高；南眷城邑，怀羊公之风；纵目檀溪，念崔徐之友；肆睇鱼梁，追二德之远，未尝不徘徊移日，惆怅极多，抚乘踌躇，慨尔而泣。曰若乃魏武之所置酒，孙坚之所陨毙，裴杜之故居，繁王之旧宅，遗事犹存，星列满目。琐琐常流，碌碌凡士，焉足以感其方寸哉！”（《晋书·列传第五十二》）\n- 罗贯中：“痛恨高贤不再逢，临歧泣别两情浓。片言却似春雷震，能使南阳起卧龙。”（《三國演義》）\n- 冯梦龙：“徐庶之不终于昭烈也，其母存也，陵母不伏剑，陵亦庶也。”\n- 李蟠：“陵归楚则徐庶不得为完臣，陵不归楚则赵苞不得为孝子矣。”"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 36,
+      "text": "此人乃瑯琊陽都人，複姓諸葛，名亮，字孔明。乃漢司隸校尉諸葛豐之後。其父名珪，字子貢，為泰山郡丞，早卒。亮從其叔玄。玄與荊州劉景升有舊，因往依之，遂家於襄陽。後玄卒，亮與弟諸葛均躬耕於南陽。嘗好為梁父吟。所居之地，有一岡，名臥龍岡，因自號為臥龍先生。此人乃絕代奇才，使君急宜枉駕見之。若此人肯相輔佐，何愁天下不定乎？",
+      "text_length": 157
+    },
+    {
+      "chapter": 48,
+      "text": "吾感劉皇叔厚恩，未嘗忘報。曹操逼死吾母，吾已說過終身不設一謀，今安肯破兄良策？只是我亦隨軍在此，兵敗之後，玉石不分，豈能免難？君當教我脫身之術，我即緘口遠避矣。",
+      "text_length": 80
+    },
+    {
+      "chapter": 36,
+      "text": "庶本欲事劉豫州，奈老母為曹操所囚，馳書來召，只得捨之而往。臨行時，將公薦與玄德。玄德即日將來奉謁，望公勿推阻，即展平生之大才以輔之，幸甚。",
+      "text_length": 69
+    },
+    {
+      "chapter": 36,
+      "text": "以某比之，譬猶駑馬並麒麟、寒鴉配鸞鳳耳。此人每嘗自比管仲、樂毅；以吾觀之，管、樂殆不及此人。此人有經天緯地之才，蓋天下一人也。",
+      "text_length": 63
+    },
+    {
+      "chapter": 41,
+      "text": "曹操使庶來招降使君，乃假買民心也。今彼分兵八路，填白河而進，樊城恐不可守，宜速作行計。",
+      "text_length": 43
+    },
+    {
+      "chapter": 48,
+      "text": "庶蒙丞相收錄，恨無寸功報效。請得三千人馬，星夜往散關把住隘口。如有緊急，再行告報。",
+      "text_length": 41
+    },
+    {
+      "chapter": 39,
+      "text": "亮字孔明，道號臥龍先生。有經天緯地之才，出鬼入神之計，真當世奇士，非可小覷。",
+      "text_length": 38
+    },
+    {
+      "chapter": 37,
+      "text": "某幼逃難，流落江湖，偶至新野，遂與玄德交厚。老母在堂，幸蒙顧念，不勝愧感。",
+      "text_length": 37
+    },
+    {
+      "chapter": 36,
+      "text": "此人不可屈致，使君可親往求之。若得此人，無異周得呂望、漢得張良也。",
+      "text_length": 33
+    },
+    {
+      "chapter": 36,
+      "text": "「庶本欲事劉豫州，奈老母為曹操所囚，馳書來召，只得捨之而往。",
+      "text_length": 30
+    },
+    {
+      "chapter": 39,
+      "text": "將軍勿輕視劉玄德。今玄德得諸葛亮為輔，如虎生翼矣。",
+      "text_length": 25
+    },
+    {
+      "chapter": 36,
+      "text": "「此人乃瑯琊陽都人，複姓諸葛，名亮，字孔明。",
+      "text_length": 22
+    },
+    {
+      "chapter": 39,
+      "text": "庶安敢比亮？庶如螢火之光，亮乃皓月之明也。",
+      "text_length": 21
+    },
+    {
+      "chapter": 36,
+      "text": "「今聞老母被囚，雖金波玉液，不能下咽矣。",
+      "text_length": 20
+    },
+    {
+      "chapter": 37,
+      "text": "近於新野事劉豫州，因得母書，故星夜至此。",
+      "text_length": 20
+    },
+    {
+      "chapter": 36,
+      "text": "今聞老母被囚，雖金波玉液，不能下咽矣。",
+      "text_length": 19
+    },
+    {
+      "chapter": 36,
+      "text": "鳳雛乃襄陽龐統也。伏龍正是諸葛孔明。",
+      "text_length": 18
+    },
+    {
+      "chapter": 41,
+      "text": "「曹操使庶來招降使君，乃假買民心也。",
+      "text_length": 18
+    },
+    {
+      "chapter": 36,
+      "text": "「此人不可屈致，使君可親往求之。",
+      "text_length": 16
+    },
+    {
+      "chapter": 48,
+      "text": "「庶蒙丞相收錄，恨無寸功報效。",
+      "text_length": 15
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-16T10:52:17.224Z"
+}

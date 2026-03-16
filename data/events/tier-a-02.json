@@ -1,0 +1,2395 @@
+{
+  "total": 18,
+  "events": [
+    {
+      "id": "hist_222_yiling",
+      "layer": "historical",
+      "name": "이릉대전",
+      "period": {
+        "year": 222
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 221,
+              "max": 224
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_liang",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "관우의 죽음에 분노한 유비가 국력을 기울여 동오 정벌에 나선다. 칠백 리에 걸쳐 연영을 세운 촉한군은 그 위세가 하늘을 찌르지만, 젊은 도독 육손은 침착하게 수비에만 전념하며 때를 기다린다. 무더운 여름, 촉군이 숲속으로 진영을 옮기는 그 순간을 육손은 놓치지 않는다. 화공 한 번에 칠백 리 연영이 불바다로 변하고, 촉한의 정예병력은 하룻밤 사이에 재로 변한다. 백제성으로 간신히 퇴각한 유비는 다시는 일어서지 못할 상처를 입는다.",
+        "flavor": "칠백 리의 오만이 하룻밤의 화염으로 재가 되었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "yiling_advance",
+          "text": "전군을 이끌고 강을 건너 오군 본진을 직접 공격한다.",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": -30000
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": { "stat": "command", "delta": -15 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "gold", "delta": -5000 }
+            },
+            {
+              "type": "character_death",
+              "target": "ma_liang",
+              "value": "전사"
+            }
+          ]
+        },
+        {
+          "id": "yiling_retreat",
+          "text": "형세가 불리함을 인정하고 백제성으로 전략적 퇴각을 명한다.",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": -10000
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": { "stat": "charm", "delta": -10 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "gold", "delta": -2000 }
+            }
+          ]
+        },
+        {
+          "id": "yiling_negotiate",
+          "text": "마량을 사신으로 보내 손권과 휴전을 교섭한다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "sun_quan", "delta": 15 }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": -5000
+            },
+            {
+              "type": "faction_peace",
+              "target": "shu",
+              "value": "wu"
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: battle-of-yiling.json",
+      "tags": [
+        "battle",
+        "decisive",
+        "fire_attack"
+      ]
+    },
+    {
+      "id": "hist_263_yinping",
+      "layer": "historical",
+      "name": "음평 전투",
+      "period": {
+        "year": 263
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 262,
+              "max": 265
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "deng_ai"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "deng_ai",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "등애는 종회의 대군이 검각에서 강유에게 막혀 교착 상태에 빠진 틈을 노린다. 음평의 험로 — 인적 미답의 칠백 리 절벽을 기어오르고, 담요에 몸을 말아 낭떠러지를 굴러내리며, 병사들과 함께 죽음의 행군을 감행한다. 아무도 예상하지 못한 경로로 촉한의 후방에 나타난 등애의 기습군은 면죽관을 돌파하고 성도의 코앞까지 진격한다. 촉한 조정은 공포에 질리고, 누구도 이 미친 작전이 성공하리라 믿지 못했다.",
+        "flavor": "길이 없으면 만들면 된다 — 등애는 절벽 위에서 그것을 증명했다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "yinping_press",
+          "text": "기세를 몰아 성도까지 단숨에 진격한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "wei",
+              "value": { "territory": "chengdu", "action": "capture" }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": -5000
+            },
+            {
+              "type": "stat_change",
+              "target": "deng_ai",
+              "value": { "stat": "command", "delta": 20 }
+            }
+          ]
+        },
+        {
+          "id": "yinping_consolidate",
+          "text": "면죽관을 확보하고 병력을 재정비한 뒤 종회와 합류를 기다린다.",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": -2000
+            },
+            {
+              "type": "stat_change",
+              "target": "deng_ai",
+              "value": { "stat": "intellect", "delta": 5 }
+            },
+            {
+              "type": "resource_change",
+              "target": "wei",
+              "value": { "resource": "supply", "delta": -1000 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: battle-of-yinping.json",
+      "tags": [
+        "battle",
+        "decisive",
+        "surprise_attack"
+      ]
+    },
+    {
+      "id": "hist_190_-against-dong-zhuo",
+      "layer": "historical",
+      "name": "반동탁 연합",
+      "period": {
+        "year": 190
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 189,
+              "max": 192
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_jian"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "yuan_shu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "li_ru",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "동탁이 낙양을 불태우고 천자를 장안으로 끌고 간다. 사방의 제후들이 분노하여 맹주 원소 아래 십팔로 연합군을 결성한다. 그러나 깃발은 높이 올랐으되, 각자의 속셈은 제각각이다. 손견은 피를 흘리며 선봉에 서고, 조조는 단기로 추격에 나서지만, 대부분의 제후는 진영에 앉아 술만 마신다. 연합은 동탁을 물리치지 못한 채 저마다의 야심만 키우고 해산하니, 이것이 난세의 서막이다.",
+        "flavor": "대의를 외치는 자는 많되, 피를 흘릴 자는 적었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "coalition_attack",
+          "text": "전군을 이끌고 호로관을 직접 공격하여 연합의 선봉에 선다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "yuan_shao",
+              "value": { "stat": "charm", "delta": 10 }
+            },
+            {
+              "type": "army_change",
+              "target": "yuan-shao",
+              "value": -8000
+            },
+            {
+              "type": "relationship_change",
+              "target": "yuan_shao",
+              "value": { "other": "cao_cao", "delta": 10 }
+            },
+            {
+              "type": "faction_war",
+              "target": "yuan-shao",
+              "value": "dong-zhuo"
+            }
+          ]
+        },
+        {
+          "id": "coalition_wait",
+          "text": "다른 제후들의 전력 소모를 관망하며 때를 기다린다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "yuan_shao",
+              "value": { "stat": "charm", "delta": -10 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "yuan_shao",
+              "value": { "other": "cao_cao", "delta": -15 }
+            },
+            {
+              "type": "resource_change",
+              "target": "yuan-shao",
+              "value": { "resource": "gold", "delta": 2000 }
+            }
+          ]
+        },
+        {
+          "id": "coalition_negotiate",
+          "text": "동탁에게 밀사를 보내 황제 양위와 영토 분할을 제안한다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "yuan_shao",
+              "value": { "other": "dong_zhuo", "delta": 20 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "yuan_shao",
+              "value": { "other": "cao_cao", "delta": -30 }
+            },
+            {
+              "type": "stat_change",
+              "target": "yuan_shao",
+              "value": { "stat": "charm", "delta": -20 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: coalition-against-dong-zhuo.json",
+      "tags": [
+        "battle",
+        "coalition",
+        "diplomacy"
+      ]
+    },
+    {
+      "id": "hist_280_-of-eastern-wu",
+      "layer": "historical",
+      "name": "동오 멸망",
+      "period": {
+        "year": 280
+      },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 279,
+              "max": 282
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yan"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "서진의 무제 사마염이 마침내 천하통일의 마지막 칼을 뽑아든다. 왕준의 수군이 장강을 따라 동쪽으로 내려오니, 오나라가 장강에 걸어둔 철쇄도 횃불 앞에 녹아내린다. 손호는 항복 문서를 품에 안고 맨몸으로 진영 밖에 나와 무릎을 꿇는다. 위·촉·오 삼국의 기나긴 쟁패가 끝나고, 분열된 천하가 하나의 깃발 아래 다시 모인다. 그러나 태평의 그림자 뒤에는 이미 팔왕의 난이 싹트고 있었으니.",
+        "flavor": "삼국의 꿈이 끝나는 자리에서, 또 다른 혼란의 씨앗이 뿌려진다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "wu_fall_conquer",
+          "text": "대군을 보내 건업을 포위하고 무조건 항복을 요구한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "western-jin",
+              "value": { "territory": "jianye", "action": "capture" }
+            },
+            {
+              "type": "territory_change",
+              "target": "western-jin",
+              "value": { "territory": "yangzhou", "action": "capture" }
+            },
+            {
+              "type": "army_change",
+              "target": "western-jin",
+              "value": -5000
+            },
+            {
+              "type": "stat_change",
+              "target": "sima_yan",
+              "value": { "stat": "command", "delta": 10 }
+            }
+          ]
+        },
+        {
+          "id": "wu_fall_mercy",
+          "text": "손호에게 봉작을 내리고 관대한 항복 조건을 제시하여 민심을 얻는다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "western-jin",
+              "value": { "territory": "jianye", "action": "capture" }
+            },
+            {
+              "type": "stat_change",
+              "target": "sima_yan",
+              "value": { "stat": "charm", "delta": 15 }
+            },
+            {
+              "type": "resource_change",
+              "target": "western-jin",
+              "value": { "resource": "gold", "delta": -3000 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: fall-of-eastern-wu.json",
+      "tags": [
+        "battle",
+        "decisive",
+        "unification"
+      ]
+    },
+    {
+      "id": "hist_263_-of-shu-han",
+      "layer": "historical",
+      "name": "촉한 멸망",
+      "period": {
+        "year": 263
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 262,
+              "max": 265
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhong_hui"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "deng_ai"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_zhao"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhong_hui",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "deng_ai",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sima_zhao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_shan",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "jiang_wei",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "사마소의 명으로 종회와 등애가 각각 십만, 삼만의 군세를 이끌고 촉한을 향해 진격한다. 강유가 검각에서 종회를 막아내지만, 등애가 음평의 험로를 넘어 성도 뒤편에 나타난다. 유선은 싸움 한 번 제대로 하지 못하고 항복의 깃발을 올리니, 제갈량이 한평생 심혈을 기울인 북벌의 꿈이 여기서 산산조각 난다. 강유는 항복한 척 종회의 야심을 부추겨 마지막 반격을 도모하지만, 그마저 실패로 끝나고 촉한의 등불은 완전히 꺼진다.",
+        "flavor": "승상이 별을 떨구고 간 그 나라가, 끝내 별 하나 없이 사라졌다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "shu_fall_press",
+          "text": "검각을 우회하여 양 갈래로 성도를 포위 공격한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "wei",
+              "value": { "territory": "chengdu", "action": "capture" }
+            },
+            {
+              "type": "territory_change",
+              "target": "wei",
+              "value": { "territory": "hanzhong", "action": "capture" }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": -15000
+            },
+            {
+              "type": "stat_change",
+              "target": "zhong_hui",
+              "value": { "stat": "command", "delta": 10 }
+            }
+          ]
+        },
+        {
+          "id": "shu_fall_recruit_jiang",
+          "text": "강유의 항복을 받아들이고 촉한의 잔존 병력을 흡수한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "wei",
+              "value": { "territory": "chengdu", "action": "capture" }
+            },
+            {
+              "type": "character_join",
+              "target": "jiang_wei",
+              "value": "wei"
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": 10000
+            },
+            {
+              "type": "loyalty_change",
+              "target": "jiang_wei",
+              "value": -30
+            }
+          ]
+        },
+        {
+          "id": "shu_fall_rebel",
+          "text": "종회가 촉 땅에서 독립을 선언하고 사마소에 반기를 든다.",
+          "effects": [
+            {
+              "type": "faction_war",
+              "target": "zhong_hui",
+              "value": "wei"
+            },
+            {
+              "type": "territory_change",
+              "target": "zhong_hui",
+              "value": { "territory": "chengdu", "action": "capture" }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhong_hui",
+              "value": { "stat": "charm", "delta": -20 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "zhong_hui",
+              "value": { "other": "sima_zhao", "delta": -50 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: fall-of-shu-han.json",
+      "tags": [
+        "battle",
+        "decisive",
+        "fall_of_kingdom"
+      ]
+    },
+    {
+      "id": "hist_193_-of-xu-province",
+      "layer": "historical",
+      "name": "서주 대학살",
+      "period": {
+        "year": 193
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 192,
+              "max": 195
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "tao_qian"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "tao_qian",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "조조의 부친 조숭이 서주를 지나다 도겸의 부하에게 살해당한다. 효자를 자처하는 조조의 눈이 핏빛으로 물든다. 대군을 이끌고 서주에 쏟아져 들어온 조조는 항복하는 성에도, 도망치는 백성에도 칼을 멈추지 않는다. 사수의 물이 시체로 막혀 흐르지 못하고, 수만 명의 백성이 칼날 아래 쓰러진다. 천하의 간웅이 부친의 원수 앞에서 잠시 짐승이 되었으니, 이 학살은 조조의 이름에 지울 수 없는 핏자국을 남긴다.",
+        "flavor": "사수가 피로 물들었으되, 아버지의 원한은 끝내 씻기지 않았다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "xuzhou_massacre",
+          "text": "분노를 앞세워 서주 전역을 초토화하고 도겸을 끝까지 추격한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "cao_cao",
+              "value": { "territory": "xuzhou", "action": "capture" }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "charm", "delta": -25 }
+            },
+            {
+              "type": "army_change",
+              "target": "cao_cao",
+              "value": -5000
+            },
+            {
+              "type": "resource_change",
+              "target": "cao_cao",
+              "value": { "resource": "population", "delta": -50000 }
+            }
+          ]
+        },
+        {
+          "id": "xuzhou_restrain",
+          "text": "도겸만을 처단하되 백성에 대한 학살은 금지한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "cao_cao",
+              "value": { "territory": "xuzhou", "action": "capture" }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "charm", "delta": 5 }
+            },
+            {
+              "type": "army_change",
+              "target": "cao_cao",
+              "value": -8000
+            }
+          ]
+        },
+        {
+          "id": "xuzhou_withdraw",
+          "text": "여포가 연주를 습격했다는 급보에 복수를 미루고 회군한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "intellect", "delta": 5 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "cao_cao",
+              "value": { "other": "tao_qian", "delta": -20 }
+            },
+            {
+              "type": "territory_change",
+              "target": "cao_cao",
+              "value": { "territory": "yanzhou", "action": "defend" }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: massacre-of-xu-province.json",
+      "tags": [
+        "battle",
+        "massacre",
+        "revenge"
+      ]
+    },
+    {
+      "id": "hist_225_-captures-of-meng-huo",
+      "layer": "historical",
+      "name": "칠종칠금",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 224,
+              "max": 227
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "북벌의 후방을 안정시키기 위해 제갈량이 직접 남중으로 향한다. 남만왕 맹획을 일곱 번 사로잡고 일곱 번 풀어주니, 장수들은 이해할 수 없다며 고개를 젓는다. 그러나 제갈량은 칼이 아니라 마음을 이기는 것이 진정한 정복임을 알고 있었다. 일곱 번째 풀려난 맹획이 마침내 무릎을 꿇고 눈물을 흘리며 진심으로 항복하니, 남중 전역이 다시는 반기를 들지 않겠다 맹세한다. 승상의 인내가 칼보다 날카로운 순간이었다.",
+        "flavor": "일곱 번의 관용이 만 번의 칼보다 깊이 베었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "menghuo_release",
+          "text": "맹획을 다시 풀어주고 마음을 얻는 전략을 끝까지 관철한다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "zhuge_liang",
+              "value": { "other": "meng_huo", "delta": 50 }
+            },
+            {
+              "type": "faction_alliance",
+              "target": "shu",
+              "value": "nanman"
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "charm", "delta": 15 }
+            },
+            {
+              "type": "character_join",
+              "target": "meng_huo",
+              "value": "shu"
+            }
+          ]
+        },
+        {
+          "id": "menghuo_execute",
+          "text": "더 이상의 관용은 낭비다. 맹획을 처형하고 남만을 무력으로 평정한다.",
+          "effects": [
+            {
+              "type": "character_death",
+              "target": "meng_huo",
+              "value": "처형"
+            },
+            {
+              "type": "territory_change",
+              "target": "shu",
+              "value": { "territory": "jiaozhou", "action": "capture" }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "charm", "delta": -10 }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": -8000
+            }
+          ]
+        },
+        {
+          "id": "menghuo_vassal",
+          "text": "맹획에게 자치권을 부여하되 매년 공물과 병력 지원을 조건으로 건다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "zhuge_liang",
+              "value": { "other": "meng_huo", "delta": 20 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "supply", "delta": 3000 }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": 5000
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: seven-captures-of-meng-huo.json",
+      "tags": [
+        "battle",
+        "diplomacy",
+        "pacification"
+      ]
+    },
+    {
+      "id": "hist_263_-of-reunification",
+      "layer": "historical",
+      "name": "삼국통일전쟁",
+      "period": {
+        "year": 263
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 262,
+              "max": 265
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [],
+      "narrative": {
+        "text": "사마씨 삼대가 위나라의 실권을 장악한 끝에, 사마소가 마침내 천하 통일의 기치를 올린다. 촉한의 쇠락, 동오의 내분 — 분열의 시대가 저물어감을 모두가 감지하지만, 누가 최후의 승자가 될지는 여전히 칼끝에 달려 있다. 십팔만 대군이 서쪽을 향해 진군하니, 이것은 한 나라의 정벌이 아니라 난세 그 자체의 종결이다. 삼국의 백 년 전쟁이 마지막 장으로 접어든다.",
+        "flavor": "백 년의 분열이 끝나려 하되, 그 대가는 피로 치러야 했다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "reunify_west_first",
+          "text": "약한 촉한을 먼저 멸망시킨 뒤 동오를 도모한다.",
+          "effects": [
+            {
+              "type": "faction_war",
+              "target": "wei",
+              "value": "shu"
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": -20000
+            },
+            {
+              "type": "resource_change",
+              "target": "wei",
+              "value": { "resource": "gold", "delta": -10000 }
+            },
+            {
+              "type": "stat_change",
+              "target": "sima_zhao",
+              "value": { "stat": "command", "delta": 10 }
+            }
+          ]
+        },
+        {
+          "id": "reunify_south_first",
+          "text": "장강을 건너 동오를 먼저 치고, 촉한은 고립시킨다.",
+          "effects": [
+            {
+              "type": "faction_war",
+              "target": "wei",
+              "value": "wu"
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": -25000
+            },
+            {
+              "type": "resource_change",
+              "target": "wei",
+              "value": { "resource": "gold", "delta": -15000 }
+            }
+          ]
+        },
+        {
+          "id": "reunify_consolidate",
+          "text": "내정을 정비하고 사마씨의 황위 찬탈을 먼저 완성한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "sima_zhao",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "resource_change",
+              "target": "wei",
+              "value": { "resource": "gold", "delta": 5000 }
+            },
+            {
+              "type": "stat_change",
+              "target": "sima_zhao",
+              "value": { "stat": "charm", "delta": -10 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: war-of-reunification.json",
+      "tags": [
+        "battle",
+        "decisive",
+        "unification"
+      ]
+    },
+    {
+      "id": "hist_184_-turban-rebellion",
+      "layer": "historical",
+      "name": "황건적의 난",
+      "period": {
+        "year": 184
+      },
+      "location": "jizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 183,
+              "max": 186
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_jian"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_jiao",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "\"창천이사 황천당립\" — 장각이 외치는 한마디에 팔주의 백성이 노란 두건을 머리에 두르고 일어선다. 기근과 역병에 짓눌린 자들의 분노가 태평도의 깃발 아래 모이니, 삼십육만 대군이 한순간에 후한의 기둥을 뒤흔든다. 조정은 허둥대며 각지의 호족에게 토벌을 명하고, 이때 유비·관우·장비 삼형제가 의용군을 이끌고 역사의 무대에 처음 발을 디딘다. 황건적은 진압되지만, 그 잔불은 전국에 퍼져 군벌 할거의 시대를 연다.",
+        "flavor": "하늘이 노랗게 물든 그해, 한 왕조의 사백 년이 비로소 흔들렸다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "turban_volunteer",
+          "text": "의용군을 조직하여 황건적 토벌에 적극 참여한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": { "stat": "charm", "delta": 15 }
+            },
+            {
+              "type": "army_change",
+              "target": "liu_bei",
+              "value": 3000
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "cao_cao", "delta": 10 }
+            }
+          ]
+        },
+        {
+          "id": "turban_defend",
+          "text": "고향을 지키는 데 집중하며 백성을 보호한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": { "stat": "charm", "delta": 10 }
+            },
+            {
+              "type": "resource_change",
+              "target": "liu_bei",
+              "value": { "resource": "population", "delta": 5000 }
+            }
+          ]
+        },
+        {
+          "id": "turban_recruit",
+          "text": "황건적 패잔병 중 쓸 만한 자를 선별하여 자기 세력에 편입한다.",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "liu_bei",
+              "value": 5000
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": { "stat": "charm", "delta": -5 }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "liu_bei",
+              "value": -10
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: yellow-turban-rebellion.json",
+      "tags": [
+        "battle",
+        "rebellion",
+        "origin"
+      ]
+    },
+    {
+      "id": "hist_199_-shao-vs-gongsun-zan",
+      "layer": "historical",
+      "name": "원소 대 공손찬",
+      "period": {
+        "year": 199
+      },
+      "location": "youzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 198,
+              "max": 201
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_zan",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "하북의 패권을 두고 원소와 공손찬이 최후의 결전에 돌입한다. 공손찬은 역경루에 만석의 군량을 쌓아놓고 철벽 수비를 택하지만, 원소의 포위는 날로 좁혀온다. 원군은 오지 않고, 성 안의 사기는 바닥을 치며, 공손찬의 눈에서 서서히 빛이 꺼져간다. 최후의 순간, 공손찬은 가족을 죽이고 역경루에 불을 지른 뒤 스스로 목숨을 끊는다. 원소는 하북 사주를 통일하며 천하 최대 세력으로 우뚝 선다.",
+        "flavor": "역경루의 화염 속에서, 백마장군의 마지막 긍지가 재로 변했다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "gongsun_siege",
+          "text": "역경루를 완전 포위하고 항복할 때까지 장기전을 벌인다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "yuan-shao",
+              "value": { "territory": "youzhou", "action": "capture" }
+            },
+            {
+              "type": "character_death",
+              "target": "gongsun_zan",
+              "value": "자결"
+            },
+            {
+              "type": "army_change",
+              "target": "yuan-shao",
+              "value": -5000
+            },
+            {
+              "type": "resource_change",
+              "target": "yuan-shao",
+              "value": { "resource": "supply", "delta": -3000 }
+            }
+          ]
+        },
+        {
+          "id": "gongsun_storm",
+          "text": "기다릴 수 없다. 전군을 투입하여 역경루를 강습한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "yuan-shao",
+              "value": { "territory": "youzhou", "action": "capture" }
+            },
+            {
+              "type": "character_death",
+              "target": "gongsun_zan",
+              "value": "전사"
+            },
+            {
+              "type": "army_change",
+              "target": "yuan-shao",
+              "value": -15000
+            },
+            {
+              "type": "stat_change",
+              "target": "yuan_shao",
+              "value": { "stat": "command", "delta": 5 }
+            }
+          ]
+        },
+        {
+          "id": "gongsun_offer",
+          "text": "공손찬에게 항복하면 목숨을 보전해주겠다는 서신을 보낸다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "yuan-shao",
+              "value": { "territory": "youzhou", "action": "capture" }
+            },
+            {
+              "type": "stat_change",
+              "target": "yuan_shao",
+              "value": { "stat": "charm", "delta": 10 }
+            },
+            {
+              "type": "character_join",
+              "target": "gongsun_zan",
+              "value": "yuan-shao"
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "전투 데이터: yuan-shao-vs-gongsun-zan.json",
+      "tags": [
+        "battle",
+        "siege",
+        "hegemony"
+      ]
+    },
+    {
+      "id": "rel_battle_of_jieting",
+      "layer": "relational",
+      "name": "가정 전투",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jiang_wei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_liang",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "ma_su",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "fa_zheng",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "제갈량의 제1차 북벌이 순풍에 돛을 달고 진행되던 중, 가정의 수비를 맡은 마속이 치명적 실수를 저지른다. 산꼭대기에 진을 치라는 부관의 만류를 뿌리치고, 병법서의 \"거고임하\"만 고집한 마속. 위군이 수원을 차단하자 촉군은 갈증에 미쳐 무너진다. 가정이 함락되며 북벌의 보급선이 끊기고, 제갈량은 눈물을 흘리며 마속의 목을 벤다. 읍참마속 — 사사로운 정을 버리고 군법을 세운 이 결단은, 승상의 가슴에 영원히 남는 상처가 된다.",
+        "flavor": "산 위의 오만이 천하의 꿈을 무너뜨렸다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "jieting_execute",
+          "text": "군법대로 마속을 참수하여 기강을 세운다.",
+          "effects": [
+            {
+              "type": "character_death",
+              "target": "ma_su",
+              "value": "처형"
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "command", "delta": 10 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "zhuge_liang",
+              "value": { "other": "ma_liang", "delta": -20 }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "jiang_wei",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "jieting_spare",
+          "text": "마속의 관직을 박탈하되 목숨은 살려 속죄의 기회를 준다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "ma_su",
+              "value": { "stat": "command", "delta": -20 }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "command", "delta": -5 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "zhuge_liang",
+              "value": { "other": "ma_liang", "delta": 10 }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "ma_su",
+              "value": 20
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 가정 전투",
+      "tags": [
+        "battle",
+        "discipline",
+        "northern_expedition"
+      ]
+    },
+    {
+      "id": "rel_selfinjury_scheme",
+      "layer": "relational",
+      "name": "고육지계",
+      "period": {
+        "year": 208
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gan_ning"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "kan_ze"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jiang_wei"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "gan_ning",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "kan_ze",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "jiang_wei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_su",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "pang_tong",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "적벽대전을 앞두고, 주유가 황개에게 매질 오십 대를 내리니 등가죽이 찢어져 피가 흐른다. 장수들이 경악하지만 이것은 치밀하게 짜인 고육지계 — 거짓 항복으로 조조의 의심을 풀기 위한 피의 연극이다. 감택이 항복서를 품에 넣고 조조의 진영에 홀로 건너가, 한 치의 흔들림 없는 담력으로 조조를 설득한다. 조조는 황개의 처참한 상처를 전해 듣고 투항을 믿는다. 살점이 대가가 된 이 한 수가 적벽의 판을 뒤집는 결정적 포석이 된다.",
+        "flavor": "오십 대의 매질 — 진심으로 아파야 거짓이 진실이 된다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "scheme_execute",
+          "text": "고육지계를 감행한다. 황개가 매를 맞고 감택이 항복서를 전달한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "gan_ning",
+              "value": { "stat": "intellect", "delta": 15 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "gan_ning",
+              "value": { "other": "cao_cao", "delta": 20 }
+            },
+            {
+              "type": "unlock_event",
+              "target": "wu",
+              "value": "hist_208_chibi_fire"
+            }
+          ]
+        },
+        {
+          "id": "scheme_abort",
+          "text": "너무 위험하다. 정면 대결로 승부를 본다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "gan_ning",
+              "value": { "stat": "command", "delta": 5 }
+            },
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": -10000
+            },
+            {
+              "type": "resource_change",
+              "target": "wu",
+              "value": { "resource": "gold", "delta": -3000 }
+            }
+          ]
+        },
+        {
+          "id": "scheme_double",
+          "text": "고육지계에 연환계를 더한다. 방통을 보내 조조의 전선을 쇠사슬로 잇게 한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "pang_tong",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "stat_change",
+              "target": "gan_ning",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "unlock_event",
+              "target": "wu",
+              "value": "hist_208_chibi_fire"
+            },
+            {
+              "type": "unlock_event",
+              "target": "wu",
+              "value": "rel_chain_link_strategy"
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 고육지계",
+      "tags": [
+        "episode",
+        "stratagem",
+        "espionage"
+      ]
+    },
+    {
+      "id": "rel_empty_fort_strategy",
+      "layer": "relational",
+      "name": "공성계",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xun_yu"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "xun_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "가정이 함락되고 위군이 서성으로 쏟아져 오는데, 제갈량의 곁에는 문관 수천 명뿐. 병사는 없다. 이 절체절명의 순간에 승상은 성문을 활짝 열고, 성벽 위에서 향을 피우며 거문고를 타기 시작한다. 십오만 대군을 이끌고 도착한 사마의는 텅 빈 성문 앞에서 멈춘다. \"공명에게는 반드시 매복이 있다\" — 평생의 숙적을 너무 잘 아는 것이 오히려 독이 되어, 사마의는 전군 철수를 명한다. 거문고 한 곡이 십오만 대군을 물린 이 순간은, 지략의 극치이자 허세의 예술이다.",
+        "flavor": "소리 없는 성이 가장 무서운 성이었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "empty_fort_bluff",
+          "text": "공성계를 시행한다. 성문을 열고 거문고를 연주하여 위군을 물린다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "intellect", "delta": 20 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "zhuge_liang",
+              "value": { "other": "sima_yi", "delta": -10 }
+            },
+            {
+              "type": "stat_change",
+              "target": "sima_yi",
+              "value": { "stat": "intellect", "delta": -5 }
+            }
+          ]
+        },
+        {
+          "id": "empty_fort_flee",
+          "text": "위험을 무릅쓸 수 없다. 소수 병력으로 후퇴한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "shu",
+              "value": { "territory": "yongzhou", "action": "lose" }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": -2000
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "charm", "delta": -10 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 공성계",
+      "tags": [
+        "episode",
+        "stratagem",
+        "bluff"
+      ]
+    },
+    {
+      "id": "rel_battle_of_guandu",
+      "layer": "relational",
+      "name": "관도대전",
+      "period": {
+        "year": 200
+      },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jia_xu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guo_jia"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jia_xu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_zan",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "guo_jia",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ma_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "원소 칠십만 대 조조 칠만 — 열 배의 병력 차이에도 불구하고, 조조는 관도에서 물러서지 않는다. 곽가의 \"십승십패론\"이 조조에게 확신을 심어주고, 허유의 밤중 투항이 전세를 뒤집을 열쇠를 가져다준다. 조조가 직접 기병 오천을 이끌고 오소의 군량고를 습격하여 불태우니, 원소군은 하룻밤 사이에 와해된다. 천하의 주도권이 사대가문 원씨에서 환관의 손자 조조에게로 넘어가는, 삼국지 최대의 역전극이 벌어진다.",
+        "flavor": "오소의 화염 하나가 칠십만 대군의 배를 태웠다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "guandu_raid",
+          "text": "허유의 정보를 믿고 정예 기병으로 오소의 군량고를 야습한다.",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "yuan-shao",
+              "value": -50000
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "command", "delta": 20 }
+            },
+            {
+              "type": "stat_change",
+              "target": "guo_jia",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "resource_change",
+              "target": "yuan-shao",
+              "value": { "resource": "supply", "delta": -20000 }
+            }
+          ]
+        },
+        {
+          "id": "guandu_defend",
+          "text": "허유를 믿을 수 없다. 함정일 수 있으니 수비에 집중한다.",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "cao_cao",
+              "value": -10000
+            },
+            {
+              "type": "resource_change",
+              "target": "cao_cao",
+              "value": { "resource": "supply", "delta": -5000 }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "intellect", "delta": -5 }
+            }
+          ]
+        },
+        {
+          "id": "guandu_negotiate",
+          "text": "원소에게 화친을 제안하여 시간을 벌며 세력을 키운다.",
+          "effects": [
+            {
+              "type": "faction_peace",
+              "target": "cao_cao",
+              "value": "yuan-shao"
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "charm", "delta": -15 }
+            },
+            {
+              "type": "resource_change",
+              "target": "cao_cao",
+              "value": { "resource": "gold", "delta": 3000 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 관도대전",
+      "tags": [
+        "battle",
+        "decisive",
+        "supply_raid"
+      ]
+    },
+    {
+      "id": "rel_short_song_style_duan_ge_xing",
+      "layer": "relational",
+      "name": "단가행",
+      "period": {
+        "year": 208
+      },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_pi",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "xiahou_dun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "적벽을 향해 진군하는 백만 대군의 선두에서, 조조가 장강에 배를 띄우고 술잔을 들어 올린다. \"대작하며 당당히 노래하리니, 인생 몇이나 살겠는가.\" 단가행 — 천하의 간웅이 시인의 얼굴을 드러내는 순간이다. 달빛 아래 창을 횡으로 쥐고 읊조리는 조조의 목소리에, 장수들은 전쟁 전야의 긴장을 잠시 잊는다. 그러나 이 낭만의 밤 직후, 적벽의 화염이 기다리고 있다는 것을 아직 아무도 모른다.",
+        "flavor": "횡삭부시 — 창을 쥐고 시를 읊는 자만이 천하를 논할 자격이 있었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "duangehang_inspire",
+          "text": "단가행을 읊으며 장수들의 사기를 끌어올리고 남진을 계속한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "charm", "delta": 15 }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "xiahou_dun",
+              "value": 10
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": 5000
+            }
+          ]
+        },
+        {
+          "id": "duangehang_omen",
+          "text": "불길한 징조를 느끼고 진군 속도를 늦춰 만반의 준비를 갖춘다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "resource_change",
+              "target": "wei",
+              "value": { "resource": "supply", "delta": 2000 }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": { "stat": "charm", "delta": -5 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 단가행",
+      "tags": [
+        "episode",
+        "culture",
+        "poetry"
+      ]
+    },
+    {
+      "id": "rel_oath_of_the_peach_garden",
+      "layer": "relational",
+      "name": "도원결의",
+      "period": {
+        "year": 184
+      },
+      "location": "youzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "gongsun_zan",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_ce",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "탁현의 복숭아밭에 세 남자가 모인다. 돗자리 짜는 유비, 녹두 파는 관우, 돼지 잡는 장비 — 이름 없는 세 사람이 향을 피우고 하늘에 맹세한다. \"같은 해 같은 달 같은 날에 죽기를 원한다.\" 복숭아꽃이 바람에 흩날리는 그 순간의 맹세가, 이후 사십 년 천하대란의 한 축을 세운다. 의형제의 결속은 잔인한 난세에서 가장 아름다운 이상이자, 가장 무서운 무기가 된다.",
+        "flavor": "복숭아꽃 아래에서 맺은 약속이 천하를 움직였다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "peach_oath_join",
+          "text": "의형제의 맹세를 맺고 삼인이 함께 의용군을 일으킨다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "guan_yu", "delta": 50 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "zhang_fei", "delta": 50 }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "guan_yu",
+              "value": 30
+            },
+            {
+              "type": "loyalty_change",
+              "target": "zhang_fei",
+              "value": 30
+            },
+            {
+              "type": "army_change",
+              "target": "liu_bei",
+              "value": 1000
+            }
+          ]
+        },
+        {
+          "id": "peach_oath_cautious",
+          "text": "뜻은 같으나 아직 때가 아니다. 각자 세력을 키운 뒤 다시 모이기로 한다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "guan_yu", "delta": 20 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "zhang_fei", "delta": 20 }
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": { "stat": "intellect", "delta": 5 }
+            }
+          ]
+        },
+        {
+          "id": "peach_oath_grand",
+          "text": "장비의 재산을 털어 무기와 갑옷을 갖추고 즉시 대규모 모병에 나선다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "guan_yu", "delta": 40 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": { "other": "zhang_fei", "delta": 40 }
+            },
+            {
+              "type": "army_change",
+              "target": "liu_bei",
+              "value": 3000
+            },
+            {
+              "type": "resource_change",
+              "target": "liu_bei",
+              "value": { "resource": "gold", "delta": -2000 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 도원결의",
+      "tags": [
+        "episode",
+        "oath",
+        "brotherhood",
+        "origin"
+      ]
+    },
+    {
+      "id": "rel_bronze_sparrow_terrace",
+      "layer": "relational",
+      "name": "동작대",
+      "period": {
+        "year": 210
+      },
+      "location": "ye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "da_qiao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xu_huang"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "lu_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "da_qiao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "xu_huang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_ce",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_xiu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "업성에 웅장한 동작대가 솟아오른다. 조조가 천하의 미녀와 보물을 모아들인 이 궁궐은 그의 권력과 야망의 상징이다. 한편 제갈량은 주유의 전의를 불태우기 위해 조조의 동작대부를 일부러 왜곡한다. \"조조가 동남의 이교 — 대교와 소교를 동작대에 가두려 한다\"고 속삭이자, 주유의 얼굴이 붉으락푸르락 변하며 칼을 뽑아 맹세한다. 동작대라는 건물 하나가 적벽대전의 도화선이 되는 순간이다.",
+        "flavor": "건물 하나에 담긴 야심이 강동의 칼을 뽑게 했다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "terrace_provoke",
+          "text": "동작대부를 왜곡하여 주유의 분노를 자극하고 항전 결의를 이끌어낸다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "relationship_change",
+              "target": "lu_su",
+              "value": { "other": "zhuge_liang", "delta": 10 }
+            },
+            {
+              "type": "faction_war",
+              "target": "wu",
+              "value": "wei"
+            }
+          ]
+        },
+        {
+          "id": "terrace_diplomacy",
+          "text": "감정적 도발 대신 냉정한 이해관계 분석으로 손권을 설득한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "lu_su",
+              "value": { "stat": "intellect", "delta": 10 }
+            },
+            {
+              "type": "faction_alliance",
+              "target": "wu",
+              "value": "shu"
+            },
+            {
+              "type": "relationship_change",
+              "target": "lu_su",
+              "value": { "other": "sun_quan", "delta": 15 }
+            }
+          ]
+        },
+        {
+          "id": "terrace_submit",
+          "text": "조조의 압도적 병력 앞에 항복을 권하고 강동의 안전을 도모한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "lu_su",
+              "value": { "stat": "charm", "delta": -20 }
+            },
+            {
+              "type": "faction_peace",
+              "target": "wu",
+              "value": "wei"
+            },
+            {
+              "type": "loyalty_change",
+              "target": "lu_su",
+              "value": -20
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 동작대",
+      "tags": [
+        "episode",
+        "culture",
+        "provocation",
+        "diplomacy"
+      ]
+    },
+    {
+      "id": "rel_beauty_trap",
+      "layer": "relational",
+      "name": "미인계",
+      "period": {
+        "year": 192
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jia_xu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_tong"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jia_xu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "pang_tong",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_shangxiang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "왕윤이 피눈물을 삼키며 양녀 초선에게 천하의 운명을 맡긴다. 절세미녀 초선이 먼저 여포의 마음을 사로잡고, 다음으로 동탁의 품에 안기니, 의부자 사이에 의심의 독이 번지기 시작한다. 여포가 봉의정에서 초선과 밀회하는 장면을 동탁이 목격하자, 부자의 정은 산산이 부서진다. 마침내 여포의 방천화극이 동탁의 가슴을 관통하니, 한 여인의 눈물이 폭군의 시대를 끝낸 것이다. 역사상 가장 아름답고 잔인한 계책이 완성된다.",
+        "flavor": "경국지색이 나라를 기울인 것이 아니라, 나라를 바로 세웠다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "beauty_trap_execute",
+          "text": "미인계를 실행한다. 초선으로 동탁과 여포 사이를 이간시킨다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "dong_zhuo",
+              "value": { "other": "lu_bu", "delta": -50 }
+            },
+            {
+              "type": "character_death",
+              "target": "dong_zhuo",
+              "value": "암살"
+            },
+            {
+              "type": "stat_change",
+              "target": "wang_yun",
+              "value": { "stat": "intellect", "delta": 15 }
+            },
+            {
+              "type": "territory_change",
+              "target": "later-han",
+              "value": { "territory": "changan", "action": "liberate" }
+            }
+          ]
+        },
+        {
+          "id": "beauty_trap_assassin",
+          "text": "미인계 대신 자객을 매수하여 동탁을 직접 암살한다.",
+          "effects": [
+            {
+              "type": "character_death",
+              "target": "dong_zhuo",
+              "value": "암살"
+            },
+            {
+              "type": "army_change",
+              "target": "later-han",
+              "value": -3000
+            },
+            {
+              "type": "relationship_change",
+              "target": "lu_bu",
+              "value": { "other": "dong_zhuo", "delta": 0 }
+            },
+            {
+              "type": "stat_change",
+              "target": "jia_xu",
+              "value": { "stat": "intellect", "delta": 5 }
+            }
+          ]
+        },
+        {
+          "id": "beauty_trap_endure",
+          "text": "아직 때가 아니다. 동탁의 신임을 얻으며 내부에서 기회를 엿본다.",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "jia_xu",
+              "value": { "other": "dong_zhuo", "delta": 15 }
+            },
+            {
+              "type": "stat_change",
+              "target": "jia_xu",
+              "value": { "stat": "intellect", "delta": 5 }
+            },
+            {
+              "type": "stat_change",
+              "target": "dong_zhuo",
+              "value": { "stat": "charm", "delta": -10 }
+            }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 미인계",
+      "tags": [
+        "episode",
+        "stratagem",
+        "beauty_trap",
+        "assassination"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "name_kr": "허저",
+  "name_en": "Xu Chu",
+  "name_cn": "許褚",
+  "courtesy_kr": "중강",
+  "courtesy_cn": "仲康",
+  "faction": "wei",
+  "tier": 1,
+  "role": "호치(虎癡), 조조 호위",
+  "stats": {
+    "leadership": 65,
+    "war": 96,
+    "intelligence": 36,
+    "politics": 20,
+    "charisma": 59,
+    "total": 276,
+    "birth": 169,
+    "death": 226
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      12,
+      14,
+      16,
+      17,
+      19,
+      21,
+      23,
+      24,
+      25,
+      27,
+      30,
+      31,
+      32,
+      33,
+      40,
+      41,
+      42,
+      48,
+      50,
+      56,
+      57,
+      58,
+      59,
+      61,
+      66,
+      67,
+      68,
+      72,
+      79,
+      86,
+      116
+    ],
+    "chapter_count": 31
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위의 무위장군호치(虎痴) 호후(虎侯)허저許褚시호장후(壯侯)작위관내후(關內侯) → 안창정후(安昌亭侯) → 만세정후(萬歲亭侯) → 모향후(牟鄕侯)최종직위무위장군(武衛將軍)성씨허(許)휘저(褚)자중강(仲康)신체190cm, 115cm(허리 둘레)생몰 기간?년~?년고향예주(豫州) 패국(沛國) 초현(譙縣) [ 역임한 관직 펼치기 · 접기 ]후한(조조)도위(都尉) → 교위(校尉) → 무위중랑장(武衛中郞將) → 중견장군(中堅將軍) → 무위장군(武衛將軍)조위(조비 → 조예)무위장군(武衛將軍)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 양 전투2.3. 관도대전2.4. 하북 평정2.5. 관중 평정2.6. 장로 정벌2.7. 조조 휘하2.8. 죽음3. 삼국지연의4. 평가5. 여담6. 대중매체에서",
+      "biography": "신장이 8척(약 190cm)이고, 허리 크기가 10위(약 115cm)이고, 용모는 위엄있고 강인하며, 용맹함과 힘이 보통 사람을 뛰어넘었다고 한다.후한 말, 청년과 종족 수천 명을 모아 함께 단단한 벽을 쌓아 도적들을 막았다. 당시 여남군 갈피(葛陂)의 적 1만여 명이 허저의 성벽을 공격했는데 허저의 무리가 적어 대적할 수 없었지만 목숨을 다해 싸워 피로가 극도에 달했다. 그들은 화살을 모두 사용했으므로, 성안에 있는 남녀에게 돌을 모아 간두(杆斗)처럼 만들어 성의 사방에 놓도록 명령했다. 허저가 돌을 날려 적을 맞히면, 맞는 것은 모두 부서졌으므로 적은 감히 진격하지 못했다. 성벽 안에 양식이 다 떨어지자 허저는 거짓으로 적과 강화를 맺어, 적에게 소를 주고 식량과 바꾸었다. 적이 와서 소를 가지려 하자, 소는 놀라 도망쳐 돌아왔다. 그래서 허저는 진영 앞으로 나가 한 손으로 소꼬리를 거꾸로 하여 끌어당겨 적군이 있는 쪽으로 백 보 남짓 걷도록 했다. 적군은 그의 용맹스러움에 매우 놀랐으며, 결국에는 소조차도 감히 달아나지 못했다. 때문에 회(淮), 여(汝), 진(陳), 양(梁) 일대에서는 이 사실을 듣고 모두 그를 두려워했다.조조가 회수와 여수를 함락시키자, 허저는 병사를 이끌고 조조에게 귀순했다. 조조는 허저를 보고 용맹함을 느껴 말했다.이는 나의 번쾌로다!그날로 도위로 임명하여 조조를 호위하도록 하고, 허저를 따르는 협객들을 모두 조조의 호위를 맡은 근위병 '호사(虎士)'로 임명했다. 참고로 호사의 구성원들은 전위의 부하들이 중심이었다. 즉 조조는 허저에게 전위가 했던 일을 맡긴 것이다. 허저를 보고 죽은 전위와 비슷하다고 생각한 듯하다. 이렇게 호사는 전위의 부하들과 허저의 부하들로 이루어지게 된다.",
+      "evaluation": "삼국지 같은 전쟁물에서 흔히 나오는 착각 중 하나가, '뛰어난 장군'이라고 하니 개인의 무력이 뛰어난 것만 생각하는 것이다. 하지만 사실 장군, 즉 군사령관으로서 가장 중요한 건 지휘 능력으로, 명장이라고 불리는 경우도 거의 대부분 이런 사람들이다. 가령 연의에 나오는 제갈량은 검이든 창이든 활이든 무기를 잘 다루었다는 이야기는 딱히 없으나, 그렇다고 군 지휘관으로서의 능력을 부정하기는 쉽지 않다. 반면 허저는 그 반대의 경우라고 할 수 있다. 물론 그렇다고 졸장이라는 건 아니고, 군의 지휘를 맡은 게 아니라 개인의 뛰어난 무력으로 조조의 근위병, 보디가드 역할을 한 것. 정사에서 허저는 일신의 무예가 최강급이라고 되어 있다.허저의 시호인 장후(壯侯)는 일반적으로 군공이 많지 않으면 내려지지 않는 칭호다. 서황, 장합, 문빙, 방덕, 조휴 등 삼국시대의 이름 높은 명장들이 받은 칭호이며 군의 요직이나 군공을 세우지 않으면 받지 못하는 시호다. 시호로 미루어 봤을 때 허저의 역할은 친위대를 이끌며 조조를 호위하는 역할만이 아닌, 때로는 군을 이끌고 직접 전투에 투입되었을 확률이 높다.근본도 없는 무식쟁이 취급하는 사람도 있는데, 처음 등장했을 때 독립 세력으로 종족 수천을 거느리고 이들의 우두머리 역할을 한데다 조조에게 항복할 때도 부하들을 거느렸던 것을 본다면 어느 정도 집안이 되는 호족에 해당되지 않나 추측할 수 있다는 의견이 있다. 보통 근본이 없는 사람은 전위처럼 자도 없다는 것이 근거. 게다가 많은 사람들이 호치(호랑이 + 백치)라고 불렀다는 점과 조인과의 일화를 보면 이런 사람에게 붙는 치(痴) 자는 보통 무식하다는 의미가 아니라 강직한 사람, 우직한 사람이라는 의미로 사용된다. 그리고 호족처럼 묘사가 된 부분은 논란의 여지가 있다. 수천의 종족은 당시 인구상 불가능하며, 그저 주변에 거주하는 사람들을 이끌었다 정도로 해석하는 편이 옳다. 또한 반드시 호족이라고 볼 수는 없는 것이, 일반적인 지방 유력자 가문의 일원이었다면 기록이 풍부하고 끝도 깔끔했던 허저인 만큼 그에 관련된 기록이 안 남을 수가 없다. 또한 뒤에 나타나는 여러 일화에 나타난 질박한 성품, 예의 따지기 좋아하던 당대의 분위기와는 전혀 다른 행동들을 보면 전통적인 호족층으로 간주하는 것이 쉽지 않은 면이 있다. 호족이 그냥 지방에서 돈많아 아무것도 안 하고 놀고 먹는 줄 아는 사람들이 많지만 당대의 호족은 귀족 계층이었다. 당시의 기본이 유학이며, 학문을 통해 중앙에 나가는 것 또한 노리는 사람이 다수였기 때문에 당시 대부분 사람들은 유교적 의례에 충실한 면모를 보였는데 허저에 대한 기록은 이와 너무 상충하는 것. 결정적으로 당시에는 호족이 아니라도 힘 꽤나 쓰는 친구들은 지방에서 세력을 가질 수 있었던 난세였고, 특히 허저가 종족을 모아 지역을 지키던 시기는 해당 지역이 황건적에 의해 한번 휩쓸리고 난 뒤였다는 것도 감안해야 할 부분이다. 핵심은 지방 호족이 아니라 협객층이었을 수 있다는 말. 더욱이 호치의 이명에 걸맞게 허저는 호랑이처럼 용맹하고 싸움에 결코 물러남이 없는 위인이었다.다만 조방 시대에 전위는 위나라 개국공신으로 배향되는데도 불구하고 허저는 조조의 묘당에 배향되지 못했다. 배송지는 이를 비판하며 동관의 위기는 허저가 아니면 구하지도 못 했을 것이며 전위보다도 그 공이 뛰어나다고 하였다.",
+      "military": "허저는 조조를 따라 장수를 정벌하러 가서 앞 진영에 섰으며, 10,000여 명의 머리를 베었으므로 교위로 승진했다.처음, 허저가 호사로 임명된 사람들을 인솔하여 조조를 따라 정벌하러 갔는데 조조는 그들이 모두 장사(壯士)라고 생각하고 동시에 장수로 임명했다. 이후 공에 따라 장군이 된 열후가 몇 사람 있었고 도위, 교위가 된 사람이 100여 명 있었는데 모두 검객이었다.",
+      "death": "조조가 세상을 떠나자 허저는 통곡하며 눈물을 흘리고 선혈을 토했다. 조비가 황제의 자리에 오르자 허저를 만세정후로 봉하였으며 무위장군으로 승진시켜 중군의 숙위(宿衛)를 담당하는 근위병을 지휘하게 하고, 측근들과 매우 친하게 지내도록 했다.조예가 즉위한 후, 허저를 모향후로 봉하고 식읍 700호를 주었으며, 그의 아들에게 관내후의 작위를 주었으며 얼마 안되어 허저가 죽자, 시호를 장후(壯侯)라고 했다. 아들 허의가 작위를 계승했고, 허저의 형 허정은 군공으로 인해 진위장군의 관직을 받아 행차하는 길을 순시하는 호분(虎賁)을 지휘하였다.태화 연간(227년~233년)에 황제는 허저의 충효를 생각하고 조서를 내려 칭찬했고, 또 허저의 자손 두 명에게 관내후의 작위를 하사했다. 허의는 종회에게 살해되었다. 태시 초(265년), 아들 허종이 작위를 이었다."
+    },
+    "wiki_en": {
+      "summary": "Xu Chu, courtesy name Zhongkang, was a Chinese military general who lived during the late Eastern Han dynasty and the Three Kingdoms period of China. He started his career as a bodyguard to the warlord Cao Cao and later became a general in the state of Wei during the Three Kingdoms period. He was described to be a big and strong man, yet simple minded and honest, so he was nicknamed \"Tiger Fool\" by his men. After his death, he was posthumously honoured with the title \"Marquis Zhuang\", which literally means \"robust marquis\".",
+      "sections": {
+        "Lead": "Xu Chu (pronunciationⓘ) (died c. 230),[a] courtesy name Zhongkang, was a Chinese military general who lived during the late Eastern Han dynasty and the Three Kingdoms period of China. He started his career as a bodyguard to the warlord Cao Cao and later became a general in the state of Wei during the Three Kingdoms period. He was described to be a big and strong man, yet simple minded and honest, so he was nicknamed \"Tiger Fool\" by his men. After his death, he was posthumously honoured with the title \"Marquis Zhuang\", which literally means \"robust marquis\".",
+        "Early life": "Xu Chu was from Qiao County (譙縣), Pei State (沛國), which is present-day Bozhou, Anhui.[3] He was over eight chi tall (≈1.86 metres) with a broad waist. He had an imposing and sturdy look and was known for his great strength and courage.[4]\n\nTowards the end of the Eastern Han dynasty, Xu Chu rallied thousands of his clan members and they constructed a fortress to fend off the Yellow Turban rebels. An army of rebels from Runan (汝南; present-day Runan County, Henan), numbering more than 10,000, once attacked Xu Chu's fortress. The defenders were outnumbered and worn out as the battle dragged on. When the arrows were used up, Xu Chu told all the men and women within the fortress to gather stones the size of chess pieces and place them in the four corners of the fortress. He then hurled the stones at the enemies, crushing the bones of all those who were hit. The rebels then kept a distance away and did not dare to come close. When the food supply was exhausted, Xu Chu pretended to negotiate a truce with the rebels and discuss a deal to exchange an ox for food. When the rebels came to collect the ox, the animal would always run back. Xu Chu, holding on to the ox's tail, pulled it along for more than a hundred steps. Seeing this, the startled rebels took off without the ox. The rebels in the surrounding areas heard of this incident and became fearful of Xu Chu.[5]"
+      }
+    },
+    "wiki_zh": {
+      "summary": "许褚（？—230年？），字仲康，谯国谯（今中国安徽省亳州市）人，漢末三国时曹魏名將，自典韋戰死之後，主要负责曹操的護衛工作。许褚力大寡言，被称为“虎痴”。\n",
+      "sections": {
+        "Introduction": "许褚（？—230年？），字仲康，谯国谯（今中国安徽省亳州市）人，漢末三国时曹魏名將，自典韋戰死之後，主要负责曹操的護衛工作。许褚力大寡言，被称为“虎痴”。",
+        "历史评价": "- 陈寿《三国志·魏书十八》评述许褚：“性谨慎奉法，质重少言。”“许褚、典韦折冲左右，抑亦汉之樊哙也。”\n- 曹操：“此吾樊哙也。”\n- 马超乃问太祖曰：“公有虎侯者安在？”太祖顾指褚，褚嗔目盼之。自此始也。军中以褚力如虎而痴，故号曰虎痴；是以超问虎侯，至今天下称焉，皆谓其姓名也。\n- 李俨：“许仲康之忠勇，乃齐其位。”\n- 张说：“思齐忠壮而异材，求之古人，张飞、许褚等也。”\n- 马端临：“徐他谋逆而许褚心动，忠诚之至远同於日，且潼关之危，非褚不济，褚之功烈有过典韦。”\n- 朱邦衡：“破张绣之役，斩首万计，皆褚等先登陷阵之功也。”\n- 罗贯中：“天下瓜分汉欲亡，四方豪杰尽鹰扬。葛陂许褚投降后，自此何忧吕布强！”“凛凛威风镇九州，当年许褚果如虎。只因孟起军前见，天下从兹播虎侯。”“臂挽鞍鞒护主身，手持篙楫在波津。 若非许褚倾心救，孟德应为泉下人。”"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 14,
+      "text": "「子真吾之樊噲也！」隨令夏侯惇領兵左出，曹仁領兵右出，操自領中軍衝陣。",
+      "text_length": 35
+    },
+    {
+      "chapter": 66,
+      "text": "將軍雖親，乃外藩鎮守之官；許褚雖疏，現充內侍。主公醉臥堂上，不敢放入。",
+      "text_length": 35
+    },
+    {
+      "chapter": 67,
+      "text": "「吾當敵賊！徐公明善保主公！」說罷，提刀縱馬向前，力敵二將。",
+      "text_length": 30
+    },
+    {
+      "chapter": 72,
+      "text": "「吾有萬夫之勇，豈懼他人哉！今夜乘著月色，正好使糧車行走。",
+      "text_length": 29
+    },
+    {
+      "chapter": 72,
+      "text": "吾有萬夫之勇，豈懼他人哉！今夜乘著月色，正好使糧車行走。",
+      "text_length": 28
+    },
+    {
+      "chapter": 59,
+      "text": "「某誓與死戰！」即使人下戰書，說虎侯單搦馬超來日決戰。",
+      "text_length": 27
+    },
+    {
+      "chapter": 14,
+      "text": "「願借精兵五萬，斬劉備、呂布之頭，獻於丞相。",
+      "text_length": 22
+    },
+    {
+      "chapter": 14,
+      "text": "願借精兵五萬，斬劉備、呂布之頭，獻於丞相。",
+      "text_length": 21
+    },
+    {
+      "chapter": 58,
+      "text": "若非有人縱馬放牛以誘賊，賊必努力渡河矣。",
+      "text_length": 20
+    },
+    {
+      "chapter": 21,
+      "text": "奉丞相命，特請將軍回去，別有商議。",
+      "text_length": 17
+    },
+    {
+      "chapter": 12,
+      "text": "「吾願取此二人，以為贄見之禮。",
+      "text_length": 15
+    },
+    {
+      "chapter": 12,
+      "text": "吾願取此二人，以為贄見之禮。",
+      "text_length": 14
+    },
+    {
+      "chapter": 67,
+      "text": "吾當敵賊！徐公明善保主公！",
+      "text_length": 13
+    },
+    {
+      "chapter": 67,
+      "text": "「兵已至此，主公不可憚勞。",
+      "text_length": 13
+    },
+    {
+      "chapter": 27,
+      "text": "此人無禮太甚，何不擒之？",
+      "text_length": 12
+    },
+    {
+      "chapter": 67,
+      "text": "兵已至此，主公不可憚勞。",
+      "text_length": 12
+    },
+    {
+      "chapter": 21,
+      "text": "不知。只教我來相請。",
+      "text_length": 10
+    },
+    {
+      "chapter": 59,
+      "text": "「某來日必擒馬超。",
+      "text_length": 9
+    },
+    {
+      "chapter": 14,
+      "text": "子真吾之樊噲也！",
+      "text_length": 8
+    },
+    {
+      "chapter": 59,
+      "text": "吾即譙郡許褚也！",
+      "text_length": 8
+    }
+  ],
+  "relationships": [
+    {
+      "target": "Cao Cao",
+      "type": "lord_vassal",
+      "type_kr": "군신",
+      "intensity": 85,
+      "evidence": "호치(虎癡)"
+    }
+  ],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": true
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-16T10:52:17.216Z"
+}

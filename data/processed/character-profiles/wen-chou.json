@@ -1,0 +1,79 @@
+{
+  "name_kr": "문추",
+  "name_en": "Wen Chou",
+  "name_cn": "文醜",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 1,
+  "role": "원소 맹장",
+  "stats": {
+    "leadership": 78,
+    "war": 94,
+    "intelligence": 25,
+    "politics": 25,
+    "charisma": 38,
+    "total": 260,
+    "birth": 161,
+    "death": 200
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      5,
+      6,
+      7,
+      22,
+      26,
+      27,
+      28,
+      41,
+      45,
+      49,
+      50,
+      77
+    ],
+    "chapter_count": 12
+  },
+  "biography": {
+    "namu": {
+      "anecdotes": "<삼국지연의>에서는 안량과 더불어 원소군의 쌍두마차 격이었던 무장이자 완벽한 띄워주기용 미드카더. 정사에서도 안량과 함께 하북의 명장이라고 적고 있지만 패배한 기록 밖에 남아있지 않아서 <삼국지연의>에 비하면 입지가 미묘하다. 또한 안량과는 평소에도 형제처럼 지내던 절친한 사이였다고 나온다.좀 기묘하게도 얼굴(顔)이 잘 생겼다(良)는 안량과는 달리 이름이 ‘더러울 추(醜)’다.옛날 판본에서는 간체자를 丑(축)이라고 여겨 '문축'이라고 번역된 곳도 많다."
+    },
+    "wiki_en": {
+      "summary": "Wen Chou was a military general serving under the warlord Yuan Shao during the late Eastern Han dynasty of China. His force was defeated by that of rival warlord Cao Cao in the Battle of Yan Ford and he was killed in the midst of battle.",
+      "sections": {
+        "Lead": "Wen Chou (pronunciationⓘ) (died 200) was a military general serving under the warlord Yuan Shao during the late Eastern Han dynasty of China. His force was defeated by that of rival warlord Cao Cao in the Battle of Yan Ford and he was killed in the midst of battle."
+      }
+    },
+    "wiki_zh": {
+      "summary": "文醜（？—200年），是漢末三國時代武將，為袁绍手下之将領，與顏良齊名。建安五年（公元200年），顏良戰死後，與劉備共同攻擊曹軍，卻兵敗被亂軍圍攻所殺，死於延津之戰。現存的史書並未紀錄死於誰手，晉朝以後的野史多認為文醜與顏良同為關羽所殺。在《三国演义》中，文醜是为顏良報仇而被關羽斬殺。\n",
+      "sections": {
+        "Introduction": "文醜（？—200年），是漢末三國時代武將，為袁绍手下之将領，與顏良齊名。建安五年（公元200年），顏良戰死後，與劉備共同攻擊曹軍，卻兵敗被亂軍圍攻所殺，死於延津之戰。現存的史書並未紀錄死於誰手，晉朝以後的野史多認為文醜與顏良同為關羽所殺。在《三国演义》中，文醜是为顏良報仇而被關羽斬殺。",
+        "评价": "- 孔融：“颜良、文醜，勇冠三军。”（《三国志·卷十·魏书十·荀彧荀攸贾诩传第十》）\n- 荀彧：“颜良、文醜，一夫之勇耳，可一战而禽也。”（《三国志·卷十·魏书十·荀彧荀攸贾诩传第十》）\n- 陆游：“颜良文醜知何益，关羽张飞死可伤。等是人间号骁将，太山宁比一毫芒。”（读史）"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 26,
+      "text": "劉玄德屢敗之將，於軍不利。既主公要他去時，某分三萬軍，教他為後部。",
+      "text_length": 33
+    },
+    {
+      "chapter": 26,
+      "text": "「劉玄德屢敗之將，於軍不利。",
+      "text_length": 14
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-16T10:52:17.301Z"
+}

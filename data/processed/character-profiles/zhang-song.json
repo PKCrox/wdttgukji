@@ -1,0 +1,151 @@
+{
+  "name_kr": "장송",
+  "name_en": "Zhang Song",
+  "name_cn": "張松",
+  "courtesy_kr": "영년",
+  "courtesy_cn": "永年",
+  "faction": "other",
+  "tier": 1,
+  "role": "유비 입촉 내응",
+  "stats": null,
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      60,
+      62,
+      63,
+      65
+    ],
+    "chapter_count": 4
+  },
+  "biography": {
+    "namu": {
+      "anecdotes": "배송지가 《삼국지》 선주전에 주석을 달며 인용한 위소(위요)의 〈오서〉(吳書)에서는 법정이 유비와 밀약하기 전에 장송이 먼저 유비를 대면해 극진한 대접을 받았다고 하였다. 또 익주의 병기·물자·인마의 수량, 각 요해처의 거리 등 그 허실에 대해 유비가 묻자 모든 정보를 알려주고 지도까지 그려주었다고 하였다. 그런데 〈유장전〉, 〈선주전〉, 〈법정전〉에 의하면 장송은 유비한테 파송된 적이 없다. 사마광은 〈통감고이〉에서 이를 〈오서〉의 오류로 보아 〈자치통감〉에 삽입하지 않았다."
+    },
+    "wiki_en": {
+      "summary": "Zhang Song, courtesy name Ziqiao, was an official and adviser serving under the warlord Liu Zhang during the late Eastern Han dynasty of China.",
+      "sections": {
+        "Lead": "Zhang Song (died January or February 213),[a][1] courtesy name Ziqiao, was an official and adviser serving under the warlord Liu Zhang during the late Eastern Han dynasty of China.\n\n- Zhang Su (brother)\n\n- Zhang Biao (nephew/adopted son)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "张松可以指：\n张松 (东汉)，东汉政治人物\n张松 (嘉靖进士)，明朝政治人物\n张松 (足球运动员)，中华人民共和国足球运动员\n张松 (画家)，中华人民共和国画家",
+      "sections": {
+        "Introduction": "张松可以指：\n\n- 张松 (东汉)，东汉政治人物\n- 张松 (嘉靖进士)，明朝政治人物\n- 张松 (足球运动员)，中华人民共和国足球运动员\n- 张松 (画家)，中华人民共和国画家"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 60,
+      "text": "某非賣主求榮；今遇明公，不敢不披瀝肝膽。劉季玉雖有益州之地，稟性暗弱，不能任賢用能；加之張魯在北，時思侵犯，人心離散，思得明主。松此一行，專欲納款於操；何期逆賊恣逞奸雄，傲賢慢士，故特來見明公。明公先取西川為基，然後北圖漢中，收取中原，匡正天朝，名垂青史，功莫大焉。明公果有取西川之意，松願施犬馬之勞，以為內應。未知鈞意若何？",
+      "text_length": 163
+    },
+    {
+      "chapter": 60,
+      "text": "蜀為西郡，古號益州。路有錦江之險，地連劍閣之雄。回環二百八程，縱橫三萬餘里。雞鳴犬吠相聞，市井閭閻不斷。田肥地美，歲無水旱之憂；國富民豐，時有管絃之樂。所產之物，阜如山積。天下莫可及也！",
+      "text_length": 93
+    },
+    {
+      "chapter": 65,
+      "text": "一面差人去說與馬超：『汝既欲成功，與汝一月限，要依我三件事。若依得，使有賞；否則必誅。一要取西川，二要劉璋首級，三要退荊州兵。三件事不成，可獻頭來。』一面教張衛點軍把守關隘，防馬超兵變。",
+      "text_length": 93
+    },
+    {
+      "chapter": 60,
+      "text": "「久聞公世代簪纓，何不立於廟堂，輔佐天子，乃區區作相府門下一吏乎？」\n\n楊修聞言，滿面羞慚，強顏而答曰：「某雖居下寮，丞相委以軍政錢糧之重，早晚多蒙丞相教誨，極有開發，故就此職耳。",
+      "text_length": 90
+    },
+    {
+      "chapter": 60,
+      "text": "某聞許都曹操，掃蕩中原。呂布、二袁皆為所滅，近又破馬超，天下無敵矣。主公可備進獻之物，松親往許都，說曹操興兵取漢中，以圖張魯。則魯拒敵不暇，何敢復窺蜀中耶？",
+      "text_length": 78
+    },
+    {
+      "chapter": 60,
+      "text": "丞相驅兵到處，戰必勝，攻必取，松亦素知。昔日濮陽攻呂布之時，宛城戰張繡之日；赤壁遇周郎，華容逢關羽；割鬚棄袍於潼關，奪船避箭於渭水：此皆無敵於天下也。",
+      "text_length": 75
+    },
+    {
+      "chapter": 60,
+      "text": "「東吳據六郡八十一州，民強國富，猶且不知足耶？」龐統曰：「吾主漢朝皇叔，反不能占據州郡；其他皆漢之蟊賊，卻都恃強侵占地土；惟智者不平焉。",
+      "text_length": 68
+    },
+    {
+      "chapter": 60,
+      "text": "荊州劉皇叔，與主公同宗，仁慈寬厚，有長者風。赤壁鏖兵之後，操聞之而膽裂，何況張魯乎？主公何不遣使結好，使為外援？可以拒曹操張魯矣。",
+      "text_length": 65
+    },
+    {
+      "chapter": 60,
+      "text": "文有相如之賦，武有伏波之才；醫有仲景之能，卜有君平之隱。九流三教，出乎其類，拔乎其萃者，不可勝記，豈能盡數！",
+      "text_length": 54
+    },
+    {
+      "chapter": 60,
+      "text": "「今蜀中文官各顧妻子，不復為主公效力；諸將恃功驕傲，各有外意；不得劉皇叔，則敵攻於外，民攻於內，必敗之道也。",
+      "text_length": 54
+    },
+    {
+      "chapter": 60,
+      "text": "今蜀中文官各顧妻子，不復為主公效力；諸將恃功驕傲，各有外意；不得劉皇叔，則敵攻於外，民攻於內，必敗之道也。",
+      "text_length": 53
+    },
+    {
+      "chapter": 60,
+      "text": "益州險塞，沃野千里，民殷國富；智能之士，久慕皇叔之德；若起荊襄之眾。長驅西指，霸業可成，漢室可興矣。",
+      "text_length": 50
+    },
+    {
+      "chapter": 60,
+      "text": "明公可速圖之。松有心腹契友二人：法正、孟達。此二人必能相助。如二人到荊州時，可將心事共議。",
+      "text_length": 45
+    },
+    {
+      "chapter": 60,
+      "text": "不然，明公乃漢室宗親，仁義充塞乎四海。休道占據州郡，便代正統而居帝位，亦非分外。",
+      "text_length": 40
+    },
+    {
+      "chapter": 60,
+      "text": "文武全才，智勇足備，忠義慷慨之士，動以百數。如松不才之輩，車載斗量，不可勝記。",
+      "text_length": 39
+    },
+    {
+      "chapter": 60,
+      "text": "大丈夫處世，當努力建功立業，著鞭在先。今若不取，為他人所取，悔之晚矣。",
+      "text_length": 35
+    },
+    {
+      "chapter": 60,
+      "text": "「益州險塞，沃野千里，民殷國富；智能之士，久慕皇叔之德；若起荊襄之眾。",
+      "text_length": 35
+    },
+    {
+      "chapter": 60,
+      "text": "南有孫權，北有張魯，西有劉備，至少者亦帶甲十餘萬，豈得謂太平耶？",
+      "text_length": 32
+    },
+    {
+      "chapter": 60,
+      "text": "久聞公世代簪纓，何不立於廟堂，輔佐天子，乃區區作相府門下一吏乎？",
+      "text_length": 32
+    },
+    {
+      "chapter": 65,
+      "text": "「一面差人去說與馬超：『汝既欲成功，與汝一月限，要依我三件事。",
+      "text_length": 31
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": false,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-16T10:52:17.294Z"
+}

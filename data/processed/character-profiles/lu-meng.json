@@ -1,0 +1,169 @@
+{
+  "name_kr": "여몽",
+  "name_en": "Lu Meng",
+  "name_cn": "呂蒙",
+  "courtesy_kr": "자명",
+  "courtesy_cn": "子明",
+  "faction": "wu",
+  "tier": 1,
+  "role": "오하아몽, 형주 탈환",
+  "stats": {
+    "leadership": 91,
+    "war": 81,
+    "intelligence": 89,
+    "politics": 78,
+    "charisma": 82,
+    "total": 421,
+    "birth": 178,
+    "death": 219
+  },
+  "novel_presence": {
+    "first_chapter": 38,
+    "last_chapter": 110,
+    "chapters": "38,44,49-51,56,61,66-68,73,75-77,82-83,103,110",
+    "chapter_count": 11
+  },
+  "biography": {
+    "namu": {
+      "overview": "여몽은 여기로 연결됩니다. 고려와 몽골(원나라)의 관계에 대한 내용은 여몽 관계 문서를, 고려와 몽골 간의 전쟁에 대한 내용은 여몽전쟁 문서를, 고려와 몽골의 연합군에 대한 내용은 여몽연합군 문서를 참고하십시오.\n\n오서(吳書) [ 펼치기 · 접기 ]1권 「손파로토역전(孫破虜討逆傳)」2권 「오주전(吳主傳)」손견 주준 · 손책손권 호주 정천 풍희3권 「삼사주전(三嗣主傳)」4권 「유요태사자사섭전(劉繇太史慈士燮傳)」손량 · 손휴 이형 · 손호 장제유요 착융 유기 · 태사자 · 사섭5권 「비빈전(妃嬪傳)」6권 「종실전(宗實傳)」}무열황후 · 사부인 · 서부인 · 보연사 · 대의황후 · 경회황후 반부인 · 전혜해 · 주부인 · 하희 · 등방란손정 · 손유 · 손교 · 손환(奐) · 손분(賁) 손보 · 손익 · 손광 · 손소 · 손환(桓)7권 「장고제갈보전(張顧諸葛步傳)」8권 「장엄정감설전(張嚴程闞薛傳)」장소 장분 장승 장휴· 고옹 고소 고담 고승 · 제갈근 제갈융 · 보즐 주소장굉 · 엄준 배현 · 정병 징숭 · 감택 당고 · 설종 설영9권 「주유노숙여몽전(周瑜魯肅呂蒙傳)」10권 「정황한장주진동감릉서반정전(程黃韓蔣周陳董甘凌徐潘丁傳)」주유 · 노숙 · 여몽정보 · 황개 · 한당 · 장흠 · 주태 ·진무 진표 동습 · 감녕 · 능통 · 서성 ·반장 · 정봉11권 「주치주연여범주환전(朱治朱然呂範朱桓傳)」12권 「우육장낙육오주전(虞陸張駱陸吾朱傳)」13권 「육손전(陸遜傳)」주치 · 주연 주적 · 여범 여거 · 주환 주이우번 우사 주육 · 육적 · 장온 · 낙통 육모 · 오찬 ·주거육손 육항14권 「오주오자전(吳主五子傳)」손등 · 손려 · 손화 · 손패 · 손분(奮)15권 「하전여주종리전(賀全呂周鍾離傳)」16권 「반준육개전(潘濬陸凱傳)」17권 「시의호종전(是儀胡綜傳)」하제 · 전종 · 여대 · 주방 · 종리목반준 · 육개 육윤시의 · 호종 서상18권 「오범유돈조달전(吳範劉惇趙達傳)」19권 「제갈등이손복양전(諸葛滕二孫濮陽傳)」20권 「왕누하위화전(王樓賀韋華傳)」오범 위등 · 유돈 · 조달제갈각 섭우 · 등윤 · 손준 유찬 · 손침 · 복양흥왕번 · 누현 · 하소 · 위소 · 화핵관련 틀: 위서 촉서※ 흠정 24사 관련 틀 둘러보기\n\n잔릉후(孱陵侯)여몽呂蒙작위잔릉후(孱陵侯)최종 직위도독(都督) 겸 남군태수(南郡太守) 성씨여(呂)이름몽(蒙)자자명(子明)생몰 기간178년~219년고향예주(豫州) 여남군(汝南郡) 부파현(富波縣)\n\n1. 개요2. 생애2.1. 오하아몽2.2. 남군 공방전2.3. 괄목상대2.4. 손오의 명장2.5. 익양대치2.6. 능력 위주의 인사 기용2.7. 번성 공방전2.8. 죽음2.9. 사후3. 평가3.1. 긍정적 평가3.2. 부정적 평가4. 여담5. 미디어 믹스",
+      "evaluation": "여몽에 대한 후대의 평가는 약간씩 갈린다.여몽이 촉한정통론과 관우신앙으로 부정적인 평가를 받았다고 여기는 이들이 많은데 사실 송, 명 시대에도 무성왕묘에 배향되거나 십칠사명장전과 광명장전 등에 포함되는 등 여전히 명장으로서는 인정받는 등 긍정적인 평가도 받았다. 촉한정통론이 본격적으로 퍼진 남송-원 시기에도 나쁜 평가만 있는 것은 아니었다.",
+      "death": "손권이 여몽에게 술을 따르려던 그 순간 여몽이 술잔을 내던지고 손권의 멱살을 잡으며 \"이 쥐새끼 같은 놈아! 내가 누구인지 알겠느냐!\"고 말한 뒤 \"나는 관우다!\"라고 외치자, 여몽은 온몸에서 피를 뿜으며 죽었다. - 삼국지연의삼국지연의에서는 77회에서 관우와의 대결에서 이긴 다음 형주를 차지한 기념으로 연 연회 자리에서 1등 공신이라면서 가장 먼저 술을 받은 뒤 마시려다가 관우의 귀신이 들려 갑자기 술잔을 내던지며 손권을 향하여 욕을 하다가 칠공분혈을 하면서 호러스러운 장면으로 최후를 맞지만, 이는 당연히 픽션이다.하지만 그런 급작스런 전개조차 개연성이 느껴질만큼, 진짜로 관우의 저주라도 받은 듯이 실제 역사에서도 여몽은 형주정벌 직후 갑자기 지병이 도지면서 빠르게 앓아눕게 된다. 공안에 있던 손권은 여몽을 내전에 두고 여몽의 병을 고칠 수 있는 자에게 천금을 내린다고 모집하였다. 여몽에게 침을 쓰면 손권이 아파했고, 여몽의 안색을 보고 싶어도 여몽이 불편할까봐 벽을 뚫어 들여다보았다. 여몽이 조금이라도 음식을 넘기면 기뻐하여 주위를 돌아보며 웃으며 말하고, 그러지 못하면 탄식하며 잠자리에 들지 못했다.병이 좀 낫자 손권은 그를 위해 사면령을 내리고 신하들은 하례를 올렸다. 하지만 다시 병이 심해져 손권이 직접 가서 살폈다. 주연전에 따르면 호위장군 여몽의 병세가 위중해지자, 손권은 이렇게 물었다고 한다.그대가 만일 일어나지 못한다면, 누가 대신할 수 있소?여몽은 병상에서 대답한다.주연은 대담함과 지조에 있어서 남음이 있습니다. 제 생각으로는 그를 임용할 만합니다.또한 손권은 도사들에게 명을 내려 성신 아래서 여몽을 위해 천명을 청하도록 했다.그러나 온갖 노력이 부질없게도 219년 말, 여몽은 41세라는 한창 나이에 결국 내전에서 숨지면서 역시 오나라의 요절징크스에서 벗어나지 못했다. 관우가 죽은 년도와 같은 해였으니, 말 그대로 관우를 처단하자마자 죽은 것이다. 때문에 사람들은 여몽의 죽음을 두고 관우의 저주를 받은 것 아니냐는 소문이 퍼졌다.여몽은 임종 직전에 하사받은 여러 금과 보물을 모두 관부의 창고에 넣어 자신이 죽는 날 모두 상부에 돌려주고 초상은 검약하게 하라고 유언을 남겼다. 손권은 매우 애통해하며 그를 위해 먹는 반찬 수를 줄였고, 여몽의 유언을 듣고 더욱 비통해했다.주연전에 따르면 창업 공신으로서 질병에 걸렸을 때 손권이 마음을 기울인 점에서는 여몽과 능통에 대한 것이 가장 무거웠고, 주연이 그 다음이었다고 한다."
+    },
+    "wiki_en": {
+      "summary": "Lü Meng, courtesy name Ziming, was a Chinese military general and politician who served under the warlord Sun Quan during the late Eastern Han dynasty of China. Early in his career, he fought in several battles under the banner of Sun Ce, Sun Quan's elder brother and predecessor. Although he had been noted for his bravery, he was still deemed as nothing more than a \"mere warrior\" for his lack of literacy skills. Later, with encouragement from Sun Quan, Lü Meng took up scholarly pursuits to improve himself, gradually becoming a learned and competent military leader. In 217, he succeeded Lu Su as the frontline commander of Sun Quan's forces in Jing Province. Two years later, in a carefully calculated military operation, Lü Meng led an invasion of Liu Bei's territories in southern Jing Province, swiftly and stealthily capturing all the lands from Liu Bei's general Guan Yu, who was captured and executed after his defeat. Lü Meng enjoyed his finest hour after the victory but died a few months later because he was already seriously ill before the campaign.",
+      "sections": {
+        "Lead": "Lü Meng (pronunciationⓘ) (178 – January or February 220),[a] courtesy name Ziming, was a Chinese military general and politician who served under the warlord Sun Quan during the late Eastern Han dynasty of China. Early in his career, he fought in several battles under the banner of Sun Ce, Sun Quan's elder brother and predecessor. Although he had been noted for his bravery, he was still deemed as nothing more than a \"mere warrior\" for his lack of literacy skills. Later, with encouragement from Sun Quan, Lü Meng took up scholarly pursuits to improve himself, gradually becoming a learned and competent military leader. In 217, he succeeded Lu Su as the frontline commander of Sun Quan's forces in Jing Province. Two years later, in a carefully calculated military operation, Lü Meng led an invasion of Liu Bei's territories in southern Jing Province, swiftly and stealthily capturing all the lands from Liu Bei's general Guan Yu, who was captured and executed after his defeat. Lü Meng enjoyed his finest hour after the victory but died a few months later because he was already seriously ill before the campaign.[2]\n\n- Lü Cong",
+        "Early life": "Lü Meng was from Fupo County (富陂縣), Runan Commandery (汝南郡), which is located southeast of present-day Funan County, Anhui. His family migrated to the south of the Yangtze River when Lü Meng was young. Lü Meng lived with his brother-in-law, Deng Dang (鄧當), who served as a military officer under Sun Ce. When he was 14 or 15, he secretly followed Deng Dang to the battles against the Shanyue tribes. Deng Dang was shocked to see his teenage brother-in-law in battle, so he scolded Lü Meng and warned him to stop. Lü Meng refused to listen so Deng Dang told Lü Meng's mother about this. When she wanted to punish him, Lü Meng said: \"It is difficult to survive in poverty. If we can prove ourselves through hard work, then wealth will come eventually. How can we catch the tiger cub if we don't enter the tiger's den?\" Lü Meng's mother sighed and let him have his way.[Sanguozhi 2]\n\nAt the time, an official scorned Lü Meng because of his young age and often insulted him by saying things like: \"What can he do? His behaviour will only result in him feeding himself to the tigers.\" Lü Meng killed the official one day when he lost control of his anger. Initially, he took shelter under Zheng Chang (鄭長) but later turned himself in to Yuan Xiong (袁雄), a colonel under Sun Ce. Yuan Xiong pleaded with his lord to spare Lü Meng's life. Sun Ce interviewed Lü Meng and was so impressed with him that he pardoned Lü Meng and appointed him as a close aide.[Sanguozhi 3]\n\nA few years later, after Deng Dang died... (truncated)",
+        "Death": "For his achievements in the conquest of Jing Province, Lü Meng was appointed as the Administrator (太守) of Nan Commandery. He was also enfeoffed as the Marquis of Chanling (孱陵侯) and awarded 100 million coins and 500 jin of gold.[Sanguozhi 35] Earlier on, Sun Quan threw a feast at Gong'an County to celebrate the victory, but Lü Meng did not want to attend because he was ill. Sun Quan laughed and said: \"Ziming, you deserve the honour of capturing Guan Yu. You have achieved victory but haven't received any reward yet, so how can you leave now?\" He ordered the soldiers to play music, and personally selected subordinates for Lü Meng and the equipment required for the ceremony. After the ceremony, all the soldiers lined up along the path when Lü Meng took his leave, with music playing in the background. That was Lü Meng's finest hour.[Sanguozhi zhu 11]\n\nLü Meng rejected the coins and gold, but Sun Quan insisted that he accept. He became ill again before he was enfeoffed as a marquis. Sun Quan was at Gong'an County then, so he had Lü Meng brought to his personal residence to stay with him. He also offered 1,000 jin of gold as a reward to any person who could cure Lü Meng.\n\nSun Quan became more worried as Lü Meng's condition deteriorated over time. He wanted to see Lü Meng but felt that it was too troublesome to keep moving around, so he had a hole drilled in the wall to observe Lü Meng's room. He was happy when he saw Lü Meng having his meals, but could not sleep at night when he saw... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "呂蒙（180年—221年），字子明，汝南富陂（今安徽阜南東南）人，東漢末年孫權麾下的名將。由於為虎威將軍，故亦稱呂虎威。呂蒙出身貧苦，年少時未曾受過教育，便從軍打仗。其姊夫鄧當是孫策親信，呂蒙後來受到孫策的賞識、孫權的提拔。呂蒙一方面靠著自身武勇屢建戰功，另一方面在壯年時與另外一位江東十二虎臣之一的蔣欽受到主公孫權勸學，篤學不倦，枕籍經史，發奮圖強，遍讀群書，逐漸蛻變成長為一位擁有出色戰略眼光，且頗有國士之風的智勇兼備的將才。魯肅病逝後接掌前線軍務並擔任孫吳勢力的軍督，後世現今已將周瑜、魯肅、呂蒙、陆逊合稱為四大都督。其功績是多次成功抵擋曹操的南征，以及運用心理戰瓦解劉備勢力，白衣渡江兵不血刃解除敵人防衛，並且擊敗關羽奪取荊州領土南郡、零陵、武陵。\n",
+      "sections": {
+        "Introduction": "呂蒙（180年—221年），字子明，汝南富陂（今安徽阜南東南）人，東漢末年孫權麾下的名將。由於為虎威將軍，故亦稱呂虎威。呂蒙出身貧苦，年少時未曾受過教育，便從軍打仗。其姊夫鄧當是孫策親信，呂蒙後來受到孫策的賞識、孫權的提拔。呂蒙一方面靠著自身武勇屢建戰功，另一方面在壯年時與另外一位江東十二虎臣之一的蔣欽受到主公孫權勸學，篤學不倦，枕籍經史，發奮圖強，遍讀群書（孫子、六韜、左傳、三史等書），逐漸蛻變成長為一位擁有出色戰略眼光，且頗有國士之風的智勇兼備的將才。魯肅病逝後接掌前線軍務並擔任孫吳勢力的軍督，後世現今已將周瑜、魯肅、呂蒙、陆逊合稱為四大都督。其功績是多次成功抵擋曹操的南征，以及運用心理戰瓦解劉備勢力，白衣渡江兵不血刃解除敵人防衛，並且擊敗關羽奪取荊州領土南郡、零陵、武陵。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 77,
+      "text": "吾料關某兵少，必不從大路而逃。麥城正北有險峻小路，必從此路而去。可令朱然引精兵五千，伏於麥城之北二十里。彼軍至，不可與敵，只可隨後掩殺。彼軍定無戰心，必奔臨沮。卻令潘璋引精兵五百，伏於臨沮山僻小路，關某可擒矣。今遣將士各門攻打，只空北門，待其出走。",
+      "text_length": 124
+    },
+    {
+      "chapter": 75,
+      "text": "主公若以蒙可用則獨用蒙；若以叔明可用則獨用叔明。豈不聞昔日周瑜、程普為左右都督，事雖決於瑜，然普自以舊臣而居瑜下，頗不相睦；後因見瑜之才，方始敬服？今蒙之才不及瑜，而叔明之親勝於普，恐未必能相濟也。",
+      "text_length": 99
+    },
+    {
+      "chapter": 75,
+      "text": "「今荊州已得，但公安傅士仁、南郡糜芳，此二處如何收復？」言未畢，忽一人出曰：「不須引弓發箭，某憑三寸不爛之舌，說公安傅士仁來降，可乎？」眾視之，乃虞翻也。",
+      "text_length": 77
+    },
+    {
+      "chapter": 75,
+      "text": "今操遠在河北，未暇東顧。徐州守兵無多，往自可克；然其地勢利於陸戰，不利水戰，縱然得之，亦難保守。不如先取荊州，全據長江，別作良圖。",
+      "text_length": 65
+    },
+    {
+      "chapter": 67,
+      "text": "此法皆費日月而成，合淝救軍一至，不可圖矣。今我軍初到，士氣方銳，正可乘此銳氣，奮力攻擊。來日平明進兵，午未時便當破城。",
+      "text_length": 59
+    },
+    {
+      "chapter": 66,
+      "text": "「彼帶軍馬來，某與甘寧各人領一軍伏於岸側，放砲為號，準備廝殺；如無軍來，只於庭後伏刀斧手五十人，就筵間殺之。",
+      "text_length": 54
+    },
+    {
+      "chapter": 66,
+      "text": "彼帶軍馬來，某與甘寧各人領一軍伏於岸側，放砲為號，準備廝殺；如無軍來，只於庭後伏刀斧手五十人，就筵間殺之。",
+      "text_length": 53
+    },
+    {
+      "chapter": 75,
+      "text": "「賤軀偶病，何勞探問？」遜曰：「吳侯以重任付公，公不乘時而動，空懷鬱結，何也？」蒙目視陸遜，良久不語。",
+      "text_length": 51
+    },
+    {
+      "chapter": 75,
+      "text": "若用望重之人，雲長必然防備。陸遜意思深長，而未有遠名，非雲長所忌；若即用以代臣之任，必有所濟。",
+      "text_length": 47
+    },
+    {
+      "chapter": 75,
+      "text": "今雲長果撤荊州之兵，攻取樊城，便可設計襲取荊州。卿與吾弟孫皎同引大軍前去，何如？",
+      "text_length": 40
+    },
+    {
+      "chapter": 75,
+      "text": "「今雲長未獲，留士仁於公安，久必有變；不若使往南郡招糜芳歸降。",
+      "text_length": 31
+    },
+    {
+      "chapter": 75,
+      "text": "今雲長未獲，留士仁於公安，久必有變；不若使往南郡招糜芳歸降。",
+      "text_length": 30
+    },
+    {
+      "chapter": 76,
+      "text": "「卦主敵人遠奔，卿以何策擒之？」蒙笑曰：「卦象正合某之機也。",
+      "text_length": 30
+    },
+    {
+      "chapter": 51,
+      "text": "留凌公續當之。蒙為前驅，都督斷後；不須十日，必奏凱歌。",
+      "text_length": 27
+    },
+    {
+      "chapter": 75,
+      "text": "今荊州已得，但公安傅士仁、南郡糜芳，此二處如何收復？",
+      "text_length": 26
+    },
+    {
+      "chapter": 75,
+      "text": "「今雲長果撤荊州之兵，攻取樊城，便可設計襲取荊州。",
+      "text_length": 25
+    },
+    {
+      "chapter": 75,
+      "text": "「主公若以蒙可用則獨用蒙；若以叔明可用則獨用叔明。",
+      "text_length": 25
+    },
+    {
+      "chapter": 75,
+      "text": "「汝雖係我同鄉，但吾號令已出，汝故犯之，當按軍法。",
+      "text_length": 25
+    },
+    {
+      "chapter": 75,
+      "text": "汝雖係我同鄉，但吾號令已出，汝故犯之，當按軍法。",
+      "text_length": 24
+    },
+    {
+      "chapter": 67,
+      "text": "「此法皆費日月而成，合淝救軍一至，不可圖矣。",
+      "text_length": 22
+    }
+  ],
+  "relationships": [
+    {
+      "target": "Sun Quan",
+      "type": "lord_vassal",
+      "type_kr": "군신",
+      "intensity": 79,
+      "evidence": "형주 탈환"
+    }
+  ],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": true
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-16T10:52:17.265Z"
+}

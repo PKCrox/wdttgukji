@@ -1,0 +1,315 @@
+{
+  "batch": 8,
+  "chapters": [
+    {
+      "chapter_number": 71,
+      "title_kr": "대산을 점거한 황충이 편히 쉬며 적을 기다리고, 한수를 거점 삼은 조운이 적은 병력으로 대군을 이기다",
+      "summary_kr": "황충이 법정의 '반객위주' 전략에 따라 정군산 맞은편 고지를 탈취한 뒤, 이일대로의 전법으로 하후연을 유인하여 단칼에 베어 죽인다. 조운은 황충 구출 후 본진으로 돌아와 공성계를 펼쳐, 단기필마로 영문 앞에 서서 추격해 온 조조의 대군을 격퇴한다. 유비는 조운의 활약을 보고 '자룡은 온몸이 담(膽)이다'라고 칭찬하며, 한수 일대를 장악하여 한중 공략의 결정적 전기를 마련한다.",
+      "key_events": [
+        {
+          "event": "황충이 정군산에서 하후연을 참살하다",
+          "participants": ["huang-zhong", "xiahou-yuan", "fa-zheng"],
+          "year": 219
+        },
+        {
+          "event": "조운이 한수에서 공성계로 조조 대군을 격퇴하다",
+          "participants": ["zhao-yun", "cao-cao"],
+          "year": 219
+        },
+        {
+          "event": "조조가 양수의 '절묘호사' 해석에 감탄하다",
+          "participants": ["cao-cao", "yang-xiu"],
+          "year": 219
+        }
+      ],
+      "character_actions": [
+        { "character": "huang-zhong", "action": "법정의 전략에 따라 대산을 점거하고, 이일대로의 전법으로 하후연을 단칼에 참살하다" },
+        { "character": "zhao-yun", "action": "황충과 장저를 구출한 뒤, 공성계를 펼쳐 조조의 대군을 퇴각시키다" },
+        { "character": "fa-zheng", "action": "반객위주 전략과 백기·홍기 신호 전법을 고안하여 황충의 승리를 이끌다" },
+        { "character": "cao-cao", "action": "40만 대군을 이끌고 한중에 도착하나, 조운의 공성계에 대패하다" },
+        { "character": "zhuge-liang", "action": "황충에게 법정을 배속하고, 조운을 후원군으로 보내 한중 전투를 총괄 지휘하다" }
+      ]
+    },
+    {
+      "chapter_number": 72,
+      "title_kr": "제갈량이 지략으로 한중을 취하고, 조아만이 군사를 이끌고 사곡으로 물러나다",
+      "summary_kr": "제갈량이 의병 전술과 배수진 유인책으로 조조를 연파하여 한중에서 완전히 축출하고, 장비·위연·마초 등이 합동 공격으로 양평관과 남정을 탈환한다. 조조가 '계륵(鷄肋)' 야간 구호를 내리자 양수가 철군 의도를 간파하고 행장을 꾸리는데, 이에 격분한 조조가 군심 혼란죄로 양수를 처형한다. 위연이 사곡에서 조조를 쏘아 앞니 두 개를 부러뜨리고, 조조는 아들 조창의 원군을 받아 가까스로 퇴각한다.",
+      "key_events": [
+        {
+          "event": "제갈량이 의병 전술로 한중을 탈취하다",
+          "participants": ["zhuge-liang", "liu-bei", "cao-cao"],
+          "year": 219
+        },
+        {
+          "event": "조조가 '계륵' 구호 사건으로 양수를 처형하다",
+          "participants": ["cao-cao", "yang-xiu"],
+          "year": 219
+        },
+        {
+          "event": "위연이 사곡에서 화살로 조조의 앞니를 부러뜨리다",
+          "participants": ["wei-yan", "cao-cao"],
+          "year": 219
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "의병과 배수진 유인 전술로 조조를 기만하여 한중에서 몰아내다" },
+        { "character": "cao-cao", "action": "'계륵' 구호로 철군 의도를 드러내고, 양수를 군심 혼란죄로 참수하다" },
+        { "character": "yang-xiu", "action": "계륵의 뜻을 간파하고 미리 행장을 꾸렸으나, 군심 혼란죄로 처형당하다" },
+        { "character": "wei-yan", "action": "사곡에서 조조를 쏘아 부상을 입히다" },
+        { "character": "zhang-fei", "action": "사곡 일대에서 허저를 격파하고 군량을 탈취하다" }
+      ]
+    },
+    {
+      "chapter_number": 73,
+      "title_kr": "유비가 한중왕에 즉위하고, 관우가 양양군을 공략하여 함락하다",
+      "summary_kr": "건안 24년 유비가 면양에서 한중왕에 즉위하고, 관우·장비·조운·마초·황충을 오호대장으로 봉하며, 제갈량을 군사로 삼는다. 사마의의 건의로 조조가 손권에게 연합 공격을 제안하고, 손권이 관우에게 혼인 동맹을 청하나 관우가 '내 호녀를 어찌 개자식에게 시집보내랴'며 격노하여 거절한다. 관우는 조인의 양양 수비군을 격파하고 양양을 함락한 뒤 번성 공격을 준비하는데, 왕보가 동오의 위협을 경고하나 관우는 봉화대만 설치하고 자신만만하게 진격한다.",
+      "key_events": [
+        {
+          "event": "유비가 한중왕에 즉위하고 오호대장을 봉하다",
+          "participants": ["liu-bei", "zhuge-liang", "guan-yu", "zhang-fei", "zhao-yun", "ma-chao", "huang-zhong"],
+          "year": 219
+        },
+        {
+          "event": "관우가 손권의 혼인 제안을 모욕하며 거절하다",
+          "participants": ["guan-yu", "sun-quan"],
+          "year": 219
+        },
+        {
+          "event": "관우가 양양을 함락하다",
+          "participants": ["guan-yu", "cao-ren"],
+          "year": 219
+        },
+        {
+          "event": "사마의가 손권과의 연합으로 형주를 도모하는 계책을 건의하다",
+          "participants": ["sima-yi", "cao-cao", "sun-quan"],
+          "year": 219
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "면양에서 한중왕에 즉위하고 상을 올려 허도에 보고하다" },
+        { "character": "guan-yu", "action": "손권의 혼인 제안을 격노하며 거절하고, 양양을 공략하여 함락하다" },
+        { "character": "sima-yi", "action": "손권과 연합하여 형주를 양면 협공하는 계책을 조조에게 건의하다" },
+        { "character": "sun-quan", "action": "조조의 연합 제안을 수락하고, 관우에게 혼인 동맹을 시도하다" },
+        { "character": "zhuge-liang", "action": "관우에게 선제적으로 번성을 공략하도록 명하다" }
+      ]
+    },
+    {
+      "chapter_number": 74,
+      "title_kr": "방덕이 관을 메고 결사 전투를 벌이고, 관우가 물을 풀어 칠군을 수몰시키다",
+      "summary_kr": "방덕이 관을 짜서 싣고 관우와의 결사전을 선언하며, 백여 합을 싸워 무승부를 이루고 암전으로 관우의 왼팔을 맞힌다. 우금의 칠군이 증구천 저지대에 주둔하자, 관우가 가을 장마의 양강 범람을 이용하여 수공을 퍼부어 칠군을 수몰시킨다. 우금은 항복하고 방덕은 끝까지 항전하다 사로잡혀 참수당하며, 관우의 위명이 화하를 진동시켜 조조가 천도를 고려할 정도가 된다.",
+      "key_events": [
+        {
+          "event": "방덕이 관을 메고 관우와 결사전을 벌이다",
+          "participants": ["pang-de", "guan-yu"],
+          "year": 219
+        },
+        {
+          "event": "관우가 수공으로 우금의 칠군을 수몰시키다 (수엄칠군)",
+          "participants": ["guan-yu", "yu-jin", "pang-de"],
+          "year": 219
+        },
+        {
+          "event": "우금이 항복하고 방덕이 참수당하다",
+          "participants": ["yu-jin", "pang-de", "guan-yu"],
+          "year": 219
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "가을 홍수를 이용한 수공으로 칠군을 수몰시키고, 우금을 사로잡고 방덕을 참수하다" },
+        { "character": "pang-de", "action": "관을 메고 출전하여 관우와 호각지세로 싸우고, 암전으로 관우를 부상시키나, 수공에 패해 사로잡혀 죽음 앞에서도 항복을 거부하다" },
+        { "character": "yu-jin", "action": "칠군을 저지대에 주둔시켜 수공에 전멸당하고, 굴욕적으로 항복하다" },
+        { "character": "cao-cao", "action": "관우의 위세에 천도를 고려하다" }
+      ]
+    },
+    {
+      "chapter_number": 75,
+      "title_kr": "관우가 뼈를 긁어 독을 치료하고, 여몽이 백의로 강을 건너다",
+      "summary_kr": "관우가 번성 공격 중 독화살에 맞아 부상당하자, 신의 화타가 찾아와 마취 없이 뼈를 긁어 독을 제거하는데, 관우는 바둑을 두며 태연히 수술을 받는다. 사마의의 건의로 조조가 손권에게 형주 협공을 제안하고, 여몽은 병을 핑계로 육손에게 육구 수비를 넘겨 관우의 경계를 풀게 한 뒤, 백의도강 작전으로 봉화대를 무력화하고 형주를 기습 탈취한다. 부사인과 미방이 동오에 항복하고, 여몽은 엄격한 군기로 형주 민심을 안정시킨다.",
+      "key_events": [
+        {
+          "event": "화타가 관우의 팔뼈를 긁어 독을 치료하다 (괄골료독)",
+          "participants": ["guan-yu", "hua-tuo"],
+          "year": 219
+        },
+        {
+          "event": "여몽이 백의도강으로 형주를 기습 점령하다",
+          "participants": ["lu-meng", "lu-xun", "sun-quan"],
+          "year": 219
+        },
+        {
+          "event": "육손이 관우를 교만하게 만드는 계책을 세우다",
+          "participants": ["lu-xun", "lu-meng", "guan-yu"],
+          "year": 219
+        },
+        {
+          "event": "부사인과 미방이 동오에 항복하다",
+          "participants": ["fu-shiren", "mi-fang", "lu-meng"],
+          "year": 219
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "화타의 괄골 수술을 마취 없이 바둑을 두며 태연히 받다" },
+        { "character": "hua-tuo", "action": "관우의 독화살 상처를 괄골료독으로 완치하다" },
+        { "character": "lu-meng", "action": "병을 핑계로 육구를 떠난 뒤, 백의도강으로 형주를 기습 점령하고 엄격한 군기로 민심을 수습하다" },
+        { "character": "lu-xun", "action": "여몽에게 관우를 교만하게 만드는 전략을 제안하고, 비굴한 서신으로 관우의 경계를 풀다" },
+        { "character": "sima-yi", "action": "손권과 연합하여 관우를 협공하는 전략을 조조에게 건의하다" }
+      ]
+    },
+    {
+      "chapter_number": 76,
+      "title_kr": "서황이 면수에서 대전을 벌이고, 관우가 패주하여 맥성으로 달아나다",
+      "summary_kr": "서황이 편성 등 관우의 전초 진지를 차례로 격파하고, 번성의 조인과 합류하여 관우를 양면 협공하자 관우는 양강을 건너 퇴각한다. 형주가 여몽에게 빼앗기고 공안·남군이 부사인·미방의 항복으로 모두 함락되었다는 소식에, 관우는 상처가 터져 실신하고 군사들은 여몽의 회유책에 속속 이탈한다. 관우는 관평·요화와 함께 잔병 300여 명을 이끌고 맥성으로 퇴각하며, 요화가 상용에 원군을 청하러 가나 유봉·맹달이 출병을 거부한다.",
+      "key_events": [
+        {
+          "event": "서황이 편성·사총 등 관우의 진지를 탈취하다",
+          "participants": ["xu-huang", "guan-yu"],
+          "year": 219
+        },
+        {
+          "event": "관우가 형주·공안·남군 상실 소식을 듣고 맥성으로 패주하다",
+          "participants": ["guan-yu", "lu-meng"],
+          "year": 219
+        },
+        {
+          "event": "유봉·맹달이 관우 구원을 거부하다",
+          "participants": ["liu-feng", "meng-da", "liao-hua"],
+          "year": 219
+        }
+      ],
+      "character_actions": [
+        { "character": "xu-huang", "action": "편성과 사총을 기습으로 함락하고, 조인과 합류하여 관우를 양면 협공하다" },
+        { "character": "guan-yu", "action": "서황과 조인의 협공에 패배하고, 형주 상실 소식에 맥성으로 퇴각하다" },
+        { "character": "lu-meng", "action": "관우 수하 장졸의 가족을 후대하여 적군의 전의를 와해시키다" },
+        { "character": "liu-feng", "action": "맹달의 간언에 넘어가 관우 구원 출병을 거부하다" },
+        { "character": "liao-hua", "action": "맥성을 돌파하여 상용에 원군을 청하러 가다" }
+      ]
+    },
+    {
+      "chapter_number": 77,
+      "title_kr": "옥천산에서 관우가 현성하고, 낙양성에서 조조가 신령에 감응하다",
+      "summary_kr": "관우가 맥성 북문을 돌파하여 임저로 향하나, 여몽의 계략대로 반장의 부장 마충에게 사로잡히고 아들 관평과 함께 처형당하니, 건안 24년 12월 향년 58세였다. 여몽은 축하연에서 갑자기 관우의 혼이 빙의하여 손권을 꾸짖고, 칠규에서 피를 흘리며 사망한다. 장소의 계책에 따라 손권이 관우의 수급을 조조에게 보내 화를 전가하려 하나, 사마의가 간파하고 조조는 왕후의 예로 관우를 장사지낸다.",
+      "key_events": [
+        {
+          "event": "관우 부자가 임저에서 사로잡혀 처형당하다",
+          "participants": ["guan-yu", "guan-ping", "sun-quan", "pan-zhang"],
+          "year": 219
+        },
+        {
+          "event": "여몽이 관우의 혼에 빙의당하여 사망하다",
+          "participants": ["lu-meng", "guan-yu", "sun-quan"],
+          "year": 219
+        },
+        {
+          "event": "손권이 관우의 수급을 조조에게 보내 이화위위를 꾀하다",
+          "participants": ["sun-quan", "cao-cao", "sima-yi"],
+          "year": 220
+        },
+        {
+          "event": "조조가 관우를 왕후의 예로 낙양에 장사지내다",
+          "participants": ["cao-cao", "guan-yu"],
+          "year": 220
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "맥성을 탈출하나 임저에서 사로잡혀, 끝까지 항복을 거부하고 부자 함께 처형당하다" },
+        { "character": "sun-quan", "action": "관우 부자를 처형하고, 관우의 수급을 조조에게 보내 화를 전가하려 하다" },
+        { "character": "lu-meng", "action": "관우 포획 작전을 성공시키나, 축하연에서 관우의 혼에 빙의당해 사망하다" },
+        { "character": "sima-yi", "action": "손권의 이화위위 계략을 간파하고, 왕후의 예로 관우를 장사지내는 방책을 조조에게 건의하다" },
+        { "character": "cao-cao", "action": "관우의 수급을 받고 경악하여, 왕후의 예로 낙양에 장사지내다" },
+        { "character": "liu-bei", "action": "관우의 혼이 꿈에 나타나 복수를 호소하자, 관우의 죽음을 직감하다" }
+      ]
+    },
+    {
+      "chapter_number": 78,
+      "title_kr": "풍병을 치료하려다 신의가 목숨을 잃고, 유명을 전하며 간웅이 생을 마치다",
+      "summary_kr": "조조가 두통으로 고통받자 화타가 두개골을 열어 치료하겠다고 제안하나, 조조가 암살 의도로 의심하여 화타를 옥에 가두어 죽이고, 화타의 의서 '청낭서'도 옥졸의 아내가 태워 실전된다. 조조는 건안 25년 정월에 66세로 사망하며, 임종 전 조비를 후계자로 지목하고 72의총 설치를 유언한다. 조비가 위왕에 즉위하자 조창이 군대를 이끌고 왔으나 가규의 만류로 왕위 다툼 없이 귀환하고, 화흠이 헌제에게서 조서를 받아내어 조비의 즉위를 합법화한다.",
+      "key_events": [
+        {
+          "event": "조조가 화타를 옥에 가두어 죽이다",
+          "participants": ["cao-cao", "hua-tuo"],
+          "year": 220
+        },
+        {
+          "event": "조조가 사망하다 (향년 66세)",
+          "participants": ["cao-cao", "cao-pi"],
+          "year": 220
+        },
+        {
+          "event": "조비가 위왕에 즉위하다",
+          "participants": ["cao-pi"],
+          "year": 220
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "화타의 개두술을 암살 시도로 의심하여 옥사시키고, 66세로 사망하며 조비를 후계자로 지목하다" },
+        { "character": "hua-tuo", "action": "조조의 두통에 개두술을 제안하나, 의심받아 옥사하고 청낭서가 소실되다" },
+        { "character": "cao-pi", "action": "부왕의 유명에 따라 위왕에 즉위하다" },
+        { "character": "liu-bei", "action": "관우의 죽음에 통곡하며 동오 정벌을 맹세하다" },
+        { "character": "zhuge-liang", "action": "유비를 위로하며 동오·위나라의 이간질에 넘어가지 말 것을 간언하다" }
+      ]
+    },
+    {
+      "chapter_number": 79,
+      "title_kr": "형이 아우를 핍박하니 조식이 시를 짓고, 조카가 숙부를 모함하니 유봉이 처형당하다",
+      "summary_kr": "조비가 조식을 소환하여 일곱 걸음 안에 시를 짓지 못하면 죽이겠다고 위협하자, 조식이 '콩을 삶는데 콩깍지를 태우니, 같은 뿌리에서 났건만 어찌 이리 급히 볶아대느냐'라는 칠보시를 지어 목숨을 건진다. 맹달이 유비의 문책을 두려워하여 위나라에 투항하고, 유비는 제갈량의 건의에 따라 유봉을 맹달 토벌에 보내나 패전하여 돌아온 유봉을 관우 구원 불이행 죄로 처형한다. 건안 25년이 연강 원년으로 개원되고, 하후돈이 사망하며 각지에서 상서가 나타나 조비의 찬탈이 임박함을 예고한다.",
+      "key_events": [
+        {
+          "event": "조식이 칠보시를 지어 목숨을 건지다",
+          "participants": ["cao-zhi", "cao-pi"],
+          "year": 220
+        },
+        {
+          "event": "우금이 조조 묘소의 굴욕적 벽화를 보고 분사하다",
+          "participants": ["yu-jin", "cao-pi"],
+          "year": 220
+        },
+        {
+          "event": "맹달이 위나라에 투항하다",
+          "participants": ["meng-da", "cao-pi"],
+          "year": 220
+        },
+        {
+          "event": "유봉이 관우 구원 불이행 죄로 처형당하다",
+          "participants": ["liu-feng", "liu-bei", "zhuge-liang"],
+          "year": 220
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-pi", "action": "조식을 핍박하여 칠보시를 짓게 하고, 우금에게 굴욕적 벽화를 보여주다" },
+        { "character": "cao-zhi", "action": "일곱 걸음 안에 칠보시를 지어 형의 핍박에서 목숨을 건지다" },
+        { "character": "liu-bei", "action": "맹달의 반역에 분노하고, 관우 구원을 거부한 유봉을 처형하다" },
+        { "character": "zhuge-liang", "action": "유봉을 맹달 토벌에 보내 이호경식의 계로 제거할 것을 건의하다" },
+        { "character": "ma-chao", "action": "팽양의 반역 서신을 적발하여 유비에게 보고하다" }
+      ]
+    },
+    {
+      "chapter_number": 80,
+      "title_kr": "조비가 황제를 폐하고 한나라를 찬탈하며, 한중왕이 황위에 올라 대통을 잇다",
+      "summary_kr": "화흠·왕랑 등 위나라 신하들이 헌제를 협박하여 선양 조서를 받아내고, 조비가 번양의 수선대에서 선양을 받아 위나라 황제에 즉위하니 연호를 황초로 고치고, 헌제는 산양공으로 강등된다. 한중왕 유비는 헌제가 시해되었다는 오보를 듣고 통곡하며 병석에 눕는데, 제갈량이 꾀병을 써서 유비가 황제에 즉위하지 않으면 모든 신하가 떠나갈 것이라 설득한다. 유비가 성도 무담산 남쪽에서 즉위하여 연호를 장무로 고치고, 관우의 원수를 갚기 위한 동오 정벌을 선언하자 조운이 나서서 간언한다.",
+      "key_events": [
+        {
+          "event": "조비가 헌제의 선양을 받아 위나라 황제에 즉위하다 (후한 멸망)",
+          "participants": ["cao-pi", "han-xiandi"],
+          "year": 220
+        },
+        {
+          "event": "유비가 성도에서 촉한 황제에 즉위하다",
+          "participants": ["liu-bei", "zhuge-liang"],
+          "year": 221
+        },
+        {
+          "event": "유비가 동오 정벌을 선언하다",
+          "participants": ["liu-bei", "guan-yu", "sun-quan"],
+          "year": 221
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-pi", "action": "수선대에서 헌제의 선양을 받아 위나라 황제에 즉위하다" },
+        { "character": "liu-bei", "action": "제갈량의 설득으로 성도에서 촉한 황제에 즉위하고, 동오 정벌을 선포하다" },
+        { "character": "zhuge-liang", "action": "꾀병을 써서 유비를 설득하여 황제 즉위를 이끌어내다" },
+        { "character": "zhao-yun", "action": "유비의 동오 정벌 선언에 나서서 간언하다" },
+        { "character": "sun-quan", "action": "조비에게 칭신하며 유비 토벌을 부추기다" }
+      ]
+    }
+  ]
+}

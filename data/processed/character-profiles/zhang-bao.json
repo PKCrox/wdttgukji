@@ -1,0 +1,157 @@
+{
+  "name_kr": "장포",
+  "name_en": "Zhang Bao",
+  "name_cn": "張苞",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 1,
+  "role": "장비의 아들",
+  "stats": {
+    "leadership": 75,
+    "war": 87,
+    "intelligence": 48,
+    "politics": 46,
+    "charisma": 68,
+    "total": 324,
+    "birth": 198,
+    "death": 229
+  },
+  "novel_presence": {
+    "first_chapter": 81,
+    "last_chapter": 99,
+    "chapters": "81-85,87,91-99",
+    "chapter_count": 3
+  },
+  "biography": {
+    "namu": {
+      "overview": "후한의 인물에 대한 내용은 장포(후한) 문서를, 동오의 인물에 대한 내용은 장포(손오) 문서를 참고하십시오.\n\n촉서(蜀書) [ 펼치기 · 접기 ]1권 「유이목전(劉二牧傳)」2권 「선주전(先主傳)」3권 「후주전(後主傳)」유언 · 유장유비유선4권 「이주비자전(二主妃子傳)」5권 「제갈량전(諸葛亮傳)」6권 「관장마황조전(關張馬黃趙傳)」감부인 · 목황후 · 경애황후 · 장황후 · 유영 · 유리 · 유선(璿)제갈량 제갈교 제갈첨 동궐 번건관우 관흥 · 장비 장포 · 마초 마대 · 황충 · 조운 조통 조광7권 「방통법정전(龐統法正傳)」8권 「허미손간이진전(許糜孫簡伊秦傳)」9권 「동류마진동여전(董劉馬陳董呂傳)」방통 방굉 방림 · 법정허정 · 미축 · 손건 · 간옹 · 이적 · 진밀동화 · 유파 · 마량 마속 · 진진 · 동윤 진지 · 여예10권 「유팽요이유위양전(劉彭廖李劉魏楊傳)」11권 「곽왕상장양비전(霍王向張楊費傳)」12권 「두주두허맹래윤이초극전(杜周杜許孟來尹李譙郤傳)」유봉 맹달 · 팽양 · 요립 · 이엄 · 유염 · 위연 · 양의곽준 곽익 나헌 · 왕련 · 상랑 상총 · 장예 · 양홍 하지 · 비시두미 · 주군 장유 · 두경 · 허자 · 맹광 · 내민 · 윤묵 · 이선 · 초주 초수 · 극정13권 「황이여마왕장전(黃李呂馬王張傳)」14권 「장완비의강유전(蔣琬費禕姜維傳)」15권 「등장종양전(鄧張宗楊傳)」황권 · 이회 · 여개 · 마충 · 왕평 구부 · 장억장완 장빈 장현 유민 · 비의 · 강유등지 · 장익 · 종예 요화 · 양희관련 틀: 위서 오서※ 흠정 24사 관련 틀 둘러보기"
+    },
+    "wiki_en": {
+      "summary": "Zhang Bao was the eldest son of Zhang Fei, a general who served the warlord Liu Bei during the late Eastern Han dynasty and the state of Shu Han during the Three Kingdoms period of China. Little is known about Zhang Bao's life because Zhang Fei's biography in the historical text Records of the Three Kingdoms only mentioned that he was Zhang Fei's eldest son and that he died early.",
+      "sections": {
+        "Lead": "Zhang Bao (fl. third century) was the eldest son of Zhang Fei, a general who served the warlord Liu Bei during the late Eastern Han dynasty and the state of Shu Han during the Three Kingdoms period of China. Little is known about Zhang Bao's life because Zhang Fei's biography in the historical text Records of the Three Kingdoms only mentioned that he was Zhang Fei's eldest son and that he died early.[1]\n\nZhang Bao had a son, Zhang Zun (張遵), who served as a Master of Writing (尚書) in the Shu government and was killed in battle at Mianzhu in 263 during the Conquest of Shu by Wei.[2][3] Zhang Bao also had a younger brother, Zhang Shao (張紹), who inherited their father's peerage and served as a Supervisor of the Masters of Writing (尚書僕射) in the Shu government. After the fall of Shu in 263, Zhang Shao was enfeoffed as a marquis by the Wei government along with many other former Shu officials who surrendered.[4]"
+      }
+    },
+    "wiki_zh": {
+      "summary": "張苞可能指下列人物：\n張苞 (督郵)：東漢末期人物，山陽高平縣人，為郡督郵。\n張苞 (中郎將)：東漢末期人物，李傕手下中郎將。\n張苞 (蜀漢)：東漢末期三國時代蜀漢人物，張飛長子。",
+      "sections": {
+        "Introduction": "張苞可能指下列人物：\n\n- 張苞 (督郵)：東漢末期人物，山陽高平縣人，為郡督郵。\n- 張苞 (中郎將)：東漢末期人物，李傕手下中郎將。\n- 張苞 (蜀漢)：東漢末期三國時代蜀漢人物，張飛長子。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 95,
+      "text": "汝二人各引三千精兵，投武功山小路而行。如遇魏兵，不可大擊，只鼓譟吶喊，為疑兵驚之。彼當自走，亦不可追。待軍退盡，便投陽平關去。",
+      "text_length": 63
+    },
+    {
+      "chapter": 98,
+      "text": "魏兵頭營接連四通之路。今晚若西山火起，魏兵必來劫吾營。汝二人卻伏於魏寨左右。只等他兵出寨，汝二人便可劫之。",
+      "text_length": 53
+    },
+    {
+      "chapter": 94,
+      "text": "我被鐵車軍追急，忽見伯父自空而下，驚退羌兵，指曰：『汝從這條路去救吾兒。』因此引軍逕來尋你。",
+      "text_length": 46
+    },
+    {
+      "chapter": 82,
+      "text": "黃漢升此去必然有失。賢姪休辭勞苦，可去相助。略有微功。便可令回，勿使有失。",
+      "text_length": 37
+    },
+    {
+      "chapter": 93,
+      "text": "「汝二人各引一軍，伏於祁山要路；放過魏兵，卻從魏兵來路，殺奔魏寨而去。",
+      "text_length": 35
+    },
+    {
+      "chapter": 93,
+      "text": "汝二人各引一軍，伏於祁山要路；放過魏兵，卻從魏兵來路，殺奔魏寨而去。",
+      "text_length": 34
+    },
+    {
+      "chapter": 81,
+      "text": "「范彊、張達殺了臣父，將首級投東吳去了！」先主哀痛至甚，飲食不進。",
+      "text_length": 33
+    },
+    {
+      "chapter": 92,
+      "text": "「賊子休走！汝等詭計，如何瞞得丞相耶！」手起一槍，刺崔諒於馬下。",
+      "text_length": 32
+    },
+    {
+      "chapter": 81,
+      "text": "卿與吳班，敢引本部軍作先鋒，為卿父報讎否？",
+      "text_length": 21
+    },
+    {
+      "chapter": 82,
+      "text": "「安國有失，吾不獨生！」言訖，綽鎗上馬。",
+      "text_length": 20
+    },
+    {
+      "chapter": 81,
+      "text": "范彊、張達殺了臣父，將首級投東吳去了！",
+      "text_length": 19
+    },
+    {
+      "chapter": 92,
+      "text": "賊子休走！汝等詭計，如何瞞得丞相耶！",
+      "text_length": 18
+    },
+    {
+      "chapter": 81,
+      "text": "吳班軍馬己至。小臣乞為先鋒。",
+      "text_length": 14
+    },
+    {
+      "chapter": 82,
+      "text": "「既關興前去討賊，臣願同行。",
+      "text_length": 14
+    },
+    {
+      "chapter": 81,
+      "text": "我自幼習學武藝，箭無虛發。",
+      "text_length": 13
+    },
+    {
+      "chapter": 82,
+      "text": "既關興前去討賊，臣願同行。",
+      "text_length": 13
+    },
+    {
+      "chapter": 98,
+      "text": "「魏兵頭營接連四通之路。",
+      "text_length": 12
+    },
+    {
+      "chapter": 82,
+      "text": "「黃漢升此去必然有失。",
+      "text_length": 11
+    },
+    {
+      "chapter": 81,
+      "text": "為國為父，萬死不辭！",
+      "text_length": 10
+    },
+    {
+      "chapter": 82,
+      "text": "安國有失，吾不獨生！",
+      "text_length": 10
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-16T10:52:17.260Z"
+}

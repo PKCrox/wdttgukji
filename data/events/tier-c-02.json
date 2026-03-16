@@ -1,0 +1,1003 @@
+{
+  "total": 29,
+  "events": [
+    {
+      "id": "novel_ch22_원소와_조조의_본격적_대립",
+      "layer": "historical",
+      "name": "원소와 조조의 본격적 대립",
+      "period": { "year": 199 },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 198, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "yuan_shao" } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "faction_at_war", "params": { "faction_a": "wei", "faction_b": "yuan-shao" } }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "yuan_shao", "role": "antagonist", "required": true },
+        { "character_id": "cao_cao", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "원소가 공손찬을 멸한 뒤 하북 사주를 통합하고, 70만 대군을 호언하며 남하를 선포한다. 허도의 조조는 병력이 7만에 불과하나 순욱과 곽가의 '십승십패론'을 받들어 항전을 결심한다. 두 영웅의 운명을 건 대결이 시작된다.",
+        "flavor": "하북의 깃발이 황하 위로 끝없이 펄럭인다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "yuan-shao", "value": { "opponent": "wei", "reason": "hegemony" } }
+      ],
+      "choices": [
+        {
+          "id": "ch22_fortify_xuchang",
+          "text": "허도의 방비를 강화하고 수비전을 준비한다",
+          "effects": [
+            { "type": "resource_change", "target": "xuchang", "value": { "defense": 15 } }
+          ]
+        },
+        {
+          "id": "ch22_preemptive_strike",
+          "text": "선제적으로 황하 이북으로 기습한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "morale": 10, "troops": -5000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 22회: 원소 vs 조조 대결 시작",
+      "tags": ["novel_chapter", "war", "rivalry", "decisive"]
+    },
+    {
+      "id": "novel_ch23_예형이_벗은_채_북을_치며_조조_모욕",
+      "layer": "historical",
+      "name": "예형이 벗은 채 북을 치며 조조 모욕",
+      "period": { "year": 199 },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 198, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } }
+        ],
+        "priority": 40
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "광사 예형이 조조의 연회에 초대받아 북을 치라는 명을 받는다. 예형은 옷을 벗어 나체로 북을 치며 조조와 그 신하들을 통렬히 모욕한다. 조조는 분노하나 선비를 죽이면 명성을 잃을까 두려워 유표에게 보내 칼을 빌리려 한다.",
+        "flavor": "벌거벗은 몸으로 치는 북소리가 조정을 뒤흔든다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao_cao", "value": { "reputation": -5 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 23회: 예형의 나출 격고",
+      "tags": ["novel_chapter", "personal", "humiliation", "culture"]
+    },
+    {
+      "id": "novel_ch24_동승의_조조_암살_계획_발각",
+      "layer": "historical",
+      "name": "동승의 조조 암살 계획 발각",
+      "period": { "year": 199 },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 199, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "헌제의 밀조를 받은 동승이 조조 암살을 도모하나, 가동의 밀고로 음모가 발각된다. 조조는 동승 일족을 멸하고 귀비마저 참수하니, 헌제가 통곡해도 막을 수 없다. 천자의 권위가 완전히 무너지는 순간이다.",
+        "flavor": "피묻은 밀조가 조조의 손에서 구겨진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao_cao", "value": { "authority": 10, "reputation": -10 } },
+        { "type": "character_death", "target": "dong_cheng", "value": "executed" }
+      ],
+      "choices": [],
+      "historical_basis": "연의 24회: 동승 암살 음모 발각",
+      "tags": ["novel_chapter", "conspiracy", "political", "execution"]
+    },
+    {
+      "id": "novel_ch25_관우_세_가지_조건으로_항복",
+      "layer": "historical",
+      "name": "관우 세 가지 조건으로 항복",
+      "period": { "year": 200 },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "하비성이 함락되고 유비의 행방이 묘연해지자, 관우는 장요의 설득을 받아 세 가지 조건을 내건다. 한 황실에 항복하되 조조에겐 아니며, 두 형수의 봉록을 보장하고, 유비의 소식을 듣는 즉시 떠날 것. 조조는 이를 모두 수락한다.",
+        "flavor": "의리의 무게가 칼날보다 무겁다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_join", "target": "guan_yu", "value": { "faction": "wei", "temporary": true } },
+        { "type": "relationship_change", "target": "guan_yu", "value": { "with": "cao_cao", "change": 20, "reason": "respect" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 25회: 관우 조조에 항복",
+      "tags": ["novel_chapter", "loyalty", "surrender", "oath"]
+    },
+    {
+      "id": "novel_ch26_관우가_원소의_장수_안량_격파",
+      "layer": "historical",
+      "name": "관우가 원소의 장수 안량 격파",
+      "period": { "year": 200 },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "yan_liang" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch25_관우_세_가지_조건으로_항복" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "yan_liang", "role": "antagonist", "required": true },
+        { "character_id": "wen_chou", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "백마에서 원소의 맹장 안량이 위군 제장을 연달아 베며 기세를 올린다. 조조가 관우를 내보내자, 적토마를 몰아 만군 속을 관통하여 안량의 목을 벤다. 이어 문추까지 격살하니, 원소군의 사기가 크게 꺾인다.",
+        "flavor": "적토마의 붉은 그림자가 지나간 자리에 장수의 머리가 떨어진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "yan_liang", "value": "killed_in_battle" },
+        { "type": "character_death", "target": "wen_chou", "value": "killed_in_battle" },
+        { "type": "stat_change", "target": "guan_yu", "value": { "martial_fame": 20 } },
+        { "type": "army_change", "target": "yuan-shao", "value": { "morale": -20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 26회: 관우 안량/문추 베다",
+      "tags": ["novel_chapter", "battle", "duel", "heroic"]
+    },
+    {
+      "id": "novel_ch27_관우_다섯_관문을_통과하며_여섯_장수를_베다",
+      "layer": "historical",
+      "name": "관우 다섯 관문을 통과하며 여섯 장수를 베다",
+      "period": { "year": 200 },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch26_관우가_원소의_장수_안량_격파" } }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "유비의 소식을 듣고 관우가 조조의 통행증 없이 허도를 떠난다. 동령관, 낙양, 비수관, 형양, 활주 다섯 관문에서 가로막는 여섯 장수를 차례로 베며 천리를 달린다. 조조조차 그 의리를 막지 못하고 놓아준다.",
+        "flavor": "천 리 길, 청룡언월도에 피가 마를 틈이 없다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_leave", "target": "guan_yu", "value": { "faction": "wei", "reason": "loyalty_to_liu_bei" } },
+        { "type": "stat_change", "target": "guan_yu", "value": { "loyalty": 10, "fame": 15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 27회: 관우 오관참장",
+      "tags": ["novel_chapter", "loyalty", "journey", "legendary", "battle"]
+    },
+    {
+      "id": "novel_ch28_삼형제_재회",
+      "layer": "historical",
+      "name": "삼형제 재회",
+      "period": { "year": 200 },
+      "location": "jizhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 201 } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "zhang_fei" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch27_관우_다섯_관문을_통과하며_여섯_장수를_베다" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhang_fei", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "관우가 천신만고 끝에 유비를 찾아내고, 장비도 합류하여 도원결의 삼형제가 다시 모인다. 유비는 관우의 손을 잡고 눈물을 흘리며, 장비는 형의 무사 귀환에 크게 기뻐한다. 셋이 함께하면 못할 일이 없다는 맹세가 다시 살아난다.",
+        "flavor": "흩어졌던 세 개의 별이 다시 하나의 자리로 돌아온다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "guan_yu", "value": { "with": "liu_bei", "change": 15, "reason": "reunion" } },
+        { "type": "relationship_change", "target": "zhang_fei", "value": { "with": "liu_bei", "change": 10, "reason": "reunion" } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "morale": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 28회: 관우/유비/장비 재회",
+      "tags": ["novel_chapter", "reunion", "loyalty", "brotherhood"]
+    },
+    {
+      "id": "novel_ch29_손책_사망",
+      "layer": "historical",
+      "name": "손책 사망",
+      "period": { "year": 200 },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "sun_ce" } },
+          { "type": "character_alive", "params": { "character_id": "sun_quan" } }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "sun_ce", "role": "protagonist", "required": true },
+        { "character_id": "sun_quan", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "소패왕 손책이 사냥 중 허공의 문객들에게 습격당해 독화살에 맞는다. 신선 우길을 참수한 후 상처가 악화되어, 결국 동생 손권에게 강동을 맡기며 숨을 거둔다. '강동을 지키되, 천하를 다투라'는 유언이 남는다.",
+        "flavor": "소패왕의 마지막 숨결이 강동의 바람이 된다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "sun_ce", "value": "assassination_wound" }
+      ],
+      "choices": [],
+      "historical_basis": "연의 29회: 손책 사망, 손권 계승",
+      "tags": ["novel_chapter", "death", "succession", "assassination"]
+    },
+    {
+      "id": "novel_ch29_손권이_강동_계승",
+      "layer": "historical",
+      "name": "손권이 강동 계승",
+      "period": { "year": 200 },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 200 } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch29_손책_사망" } },
+          { "type": "character_alive", "params": { "character_id": "sun_quan" } }
+        ],
+        "priority": 79
+      },
+      "participants": [
+        { "character_id": "sun_quan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "약관의 나이에 강동 6군 81주를 물려받은 손권이 장소와 주유를 좌우 보필로 삼아 기반을 다진다. 형의 유언대로 안으로는 장소에게 묻고, 밖으로는 주유에게 의지한다. 젊은 군주 아래 강동은 새로운 시대를 맞는다.",
+        "flavor": "자줏빛 수염의 젊은 군주가 옥좌에 오른다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sun_quan", "value": { "authority": 30, "leadership": 10 } },
+        { "type": "territory_change", "target": "wu", "value": { "region": "jianye", "action": "consolidate" } }
+      ],
+      "choices": [
+        {
+          "id": "ch29_defensive",
+          "text": "형의 유언에 따라 강동 수성에 집중한다",
+          "effects": [
+            { "type": "resource_change", "target": "jianye", "value": { "stability": 15 } }
+          ]
+        },
+        {
+          "id": "ch29_expansive",
+          "text": "적극적으로 주변 세력을 복속시킨다",
+          "effects": [
+            { "type": "army_change", "target": "wu", "value": { "morale": 10 } },
+            { "type": "resource_change", "target": "jianye", "value": { "stability": -5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 29회: 손책 사망, 손권 계승",
+      "tags": ["novel_chapter", "succession", "leadership", "wu"]
+    },
+    {
+      "id": "novel_ch30_조조가_원소를_관도에서_격파",
+      "layer": "historical",
+      "name": "조조가 원소를 관도에서 격파",
+      "period": { "year": 200 },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 200, "max": 200 } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "character_alive", "params": { "character_id": "yuan_shao" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch22_원소와_조조의_본격적_대립" } }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "yuan_shao", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "관도에서 조조와 원소의 운명이 갈린다. 허유가 원소를 배반하고 조조에게 오소의 군량 위치를 알려주니, 조조는 경기병으로 야습하여 원소의 군량을 불태운다. 군량을 잃은 원소의 70만 대군이 와해되어 참패한다.",
+        "flavor": "오소의 하늘을 태운 불빛이 천하의 판도를 바꾼다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "army_change", "target": "yuan-shao", "value": { "troops": -100000, "morale": -40 } },
+        { "type": "army_change", "target": "wei", "value": { "morale": 30 } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "fame": 25, "authority": 15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 30회: 관도대전",
+      "tags": ["novel_chapter", "battle", "decisive", "turning_point"]
+    },
+    {
+      "id": "novel_ch31_원소_가문_내분",
+      "layer": "historical",
+      "name": "원소 가문 내분",
+      "period": { "year": 202 },
+      "location": "jizhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 201, "max": 203 } },
+          { "type": "character_alive", "params": { "character_id": "yuan_shao" } },
+          { "type": "character_alive", "params": { "character_id": "yuan_tan" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch30_조조가_원소를_관도에서_격파" } }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "yuan_shao", "role": "protagonist", "required": true },
+        { "character_id": "yuan_tan", "role": "antagonist", "required": false },
+        { "character_id": "yuan_shang", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "관도 참패 이후 원소가 피를 토하며 병석에 눕는다. 장남 원담과 삼남 원상이 후계를 놓고 다투니, 모사들도 편을 갈라 분열한다. 하북의 대업이 형제의 칼부림으로 무너지기 시작한다.",
+        "flavor": "아버지의 병상 앞에서 형제의 칼이 서로를 향한다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "yuan_shao", "value": { "health": -30 } },
+        { "type": "resource_change", "target": "jizhou", "value": { "stability": -20 } },
+        { "type": "relationship_change", "target": "yuan_tan", "value": { "with": "yuan_shang", "change": -30, "reason": "succession_dispute" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 31회: 원소 세력 분열",
+      "tags": ["novel_chapter", "political", "succession", "decline"]
+    },
+    {
+      "id": "novel_ch32_조조의_원씨_세력_토벌",
+      "layer": "historical",
+      "name": "조조의 원씨 세력 토벌",
+      "period": { "year": 204 },
+      "location": "ye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 203, "max": 205 } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "character_alive", "params": { "character_id": "cao_pi" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch31_원소_가문_내분" } }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "cao_pi", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "원소가 병사한 뒤 내분에 빠진 원씨 형제를 조조가 각개격파한다. 업성을 함락하고 하북을 평정하니, 원소가 일군 사주의 기반이 모두 조조의 손에 들어간다. 조조는 원소의 무덤 앞에서 눈물을 흘리며 옛 벗을 조문한다.",
+        "flavor": "업성에 조씨의 깃발이 오르고, 원씨의 시대가 저문다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "wei", "value": { "region": "jizhou", "action": "conquer" } },
+        { "type": "territory_change", "target": "wei", "value": { "region": "ye", "action": "conquer" } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "authority": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 32회: 조조 원씨 정벌",
+      "tags": ["novel_chapter", "conquest", "war", "unification"]
+    },
+    {
+      "id": "novel_ch33_조비가_원희의_아내_견씨_차지",
+      "layer": "historical",
+      "name": "조비가 원희의 아내 견씨 차지",
+      "period": { "year": 204 },
+      "location": "ye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 204, "max": 205 } },
+          { "type": "character_alive", "params": { "character_id": "cao_pi" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch32_조조의_원씨_세력_토벌" } }
+        ],
+        "priority": 45
+      },
+      "participants": [
+        { "character_id": "cao_pi", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "업성 함락 후 조비가 원희의 아내 견씨를 발견한다. 그 절세의 미모에 빠져 자기 아내로 삼으니, 조조도 아들의 행동을 묵인한다. 승자가 패자의 모든 것을 취하는 난세의 잔혹한 법칙이 드러나는 순간이다.",
+        "flavor": "업성 후궁에 새 주인의 발소리가 울린다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao_pi", "value": { "reputation": -5, "satisfaction": 10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 33회: 조비 견씨 취함",
+      "tags": ["novel_chapter", "personal", "marriage", "conquest_spoils"]
+    },
+    {
+      "id": "novel_ch34_유비_암살_시도_극복",
+      "layer": "historical",
+      "name": "유비 암살 시도 극복",
+      "period": { "year": 206 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 205, "max": 207 } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "유표의 객장으로 머물던 유비에게 채모 일당이 암살 음모를 꾸민다. 연회 자리에서 위기를 눈치챈 유비가 적로마를 몰아 단계를 뛰어넘어 탈출한다. 허벅지에 살이 찐 것을 한탄하며 세월만 흐르는 현실에 눈물을 흘린다.",
+        "flavor": "적로가 물을 박차고 뛰어오르는 순간, 영웅의 운명이 이어진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "luck": 5 } },
+        { "type": "relationship_change", "target": "liu_bei", "value": { "with": "liu_biao", "change": -10, "reason": "distrust" } }
+      ],
+      "choices": [
+        {
+          "id": "ch34_stay_jingzhou",
+          "text": "인내하며 형주에 머물러 때를 기다린다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "patience": 5 } }
+          ]
+        },
+        {
+          "id": "ch34_seek_allies",
+          "text": "은밀히 형주 호족들과 관계를 넓힌다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "influence": 10 } },
+            { "type": "resource_change", "target": "jingzhou", "value": { "stability": -5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 34회: 유비 형주에서 암살 위기",
+      "tags": ["novel_chapter", "assassination", "escape", "personal"]
+    },
+    {
+      "id": "novel_ch35_유비_사마휘를_만나_제갈량_방통_추천받음",
+      "layer": "historical",
+      "name": "유비 사마휘를 만나 제갈량/방통 추천받음",
+      "period": { "year": 207 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 206, "max": 207 } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "sima_hui" } }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "sima_hui", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "유비가 수경선생 사마휘를 찾아가 천하대세를 묻는다. 사마휘가 '복룡과 봉추, 이 둘 중 하나만 얻어도 천하를 안정시킬 수 있다'고 말한다. 복룡은 제갈량, 봉추는 방통이니, 유비의 가슴에 처음으로 희망의 불씨가 피어오른다.",
+        "flavor": "은자의 한마디가 영웅의 운명을 바꾼다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "unlock_event", "target": "liu_bei", "value": "novel_ch37_유비_제갈량_세_번_방문_시작" }
+      ],
+      "choices": [],
+      "historical_basis": "연의 35회: 수경선생 사마휘 만남",
+      "tags": ["novel_chapter", "meeting", "advice", "destiny"]
+    },
+    {
+      "id": "novel_ch36_서서가_유비_밑에서_활약_시작",
+      "layer": "historical",
+      "name": "서서가 유비 밑에서 활약 시작",
+      "period": { "year": 207 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 207, "max": 207 } },
+          { "type": "character_alive", "params": { "character_id": "xu_shu" } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "xu_shu", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "서서가 단복이라는 가명으로 유비 아래 들어와 첫 군사로 활약한다. 조인의 팔문금쇄진을 간파하여 크게 격파하니, 유비가 처음으로 참모의 힘을 실감한다. 그러나 조조가 서서의 모친을 인질로 잡아 소환하니, 서서는 눈물로 떠나며 제갈량을 추천한다.",
+        "flavor": "떠나는 서서가 말 위에서 돌아보며, 남은 길을 가리킨다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_join", "target": "xu_shu", "value": { "faction": "shu", "temporary": true } },
+        { "type": "character_leave", "target": "xu_shu", "value": { "faction": "shu", "reason": "mother_hostage" } },
+        { "type": "unlock_event", "target": "liu_bei", "value": "novel_ch37_유비_제갈량_세_번_방문_시작" }
+      ],
+      "choices": [],
+      "historical_basis": "연의 36회: 서서 등장",
+      "tags": ["novel_chapter", "advisor", "parting", "filial_piety"]
+    },
+    {
+      "id": "novel_ch37_유비_제갈량_세_번_방문_시작",
+      "layer": "historical",
+      "name": "유비 제갈량 세 번 방문 시작",
+      "period": { "year": 207 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 207, "max": 207 } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch36_서서가_유비_밑에서_활약_시작" } }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "유비가 융중의 제갈량 초당을 찾아가나, 두 번이나 헛걸음을 한다. 관우와 장비가 불만을 터뜨려도 유비는 굽히지 않는다. 한겨울 눈밭을 걸으며 세 번째 방문을 결행하니, 마침내 낮잠에서 깬 제갈량과 마주한다.",
+        "flavor": "눈 덮인 오솔길 끝에 초당의 불빛이 보인다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "reputation": 10, "sincerity": 15 } }
+      ],
+      "choices": [
+        {
+          "id": "ch37_persist",
+          "text": "끝까지 예를 갖추어 세 번째 방문을 감행한다",
+          "effects": [
+            { "type": "relationship_change", "target": "liu_bei", "value": { "with": "zhuge_liang", "change": 30, "reason": "sincerity" } }
+          ],
+          "next_event": "novel_ch38_제갈량_천하삼분지계_제시"
+        },
+        {
+          "id": "ch37_send_messenger",
+          "text": "사자를 보내 정중히 초청한다",
+          "effects": [
+            { "type": "relationship_change", "target": "liu_bei", "value": { "with": "zhuge_liang", "change": 5, "reason": "formal_invitation" } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 37회: 삼고초려 시작",
+      "tags": ["novel_chapter", "recruitment", "sincerity", "legendary"]
+    },
+    {
+      "id": "novel_ch38_제갈량_천하삼분지계_제시",
+      "layer": "historical",
+      "name": "제갈량 천하삼분지계 제시",
+      "period": { "year": 207 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 207, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch37_유비_제갈량_세_번_방문_시작" } }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 초당에서 천하의 형세를 논한다. 조조는 북방을 이미 평정했으니 정면으로 맞서선 안 되고, 손권은 강동 삼대를 거쳤으니 동맹할 대상이다. 형주와 익주를 취해 삼분천하를 이룬 뒤, 때를 기다려 중원을 도모하라는 대전략이 펼쳐진다.",
+        "flavor": "초당의 지도 위에 세 개의 천하가 그려진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "strategy": 30 } },
+        { "type": "unlock_event", "target": "liu_bei", "value": "longzhong_plan_active" }
+      ],
+      "choices": [],
+      "historical_basis": "연의 38회: 삼고초려 완성, 천하삼분지계",
+      "tags": ["novel_chapter", "strategy", "legendary", "turning_point"]
+    },
+    {
+      "id": "novel_ch38_유비_제갈량_영입",
+      "layer": "historical",
+      "name": "유비 제갈량 영입",
+      "period": { "year": 207 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 207, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch38_제갈량_천하삼분지계_제시" } }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "유비가 제갈량을 군사로 영입하니, '물고기가 물을 만난 것 같다'고 기뻐한다. 27세의 와룡이 초당을 떠나 난세에 뛰어들고, 유비 진영에 비로소 대업의 청사진이 생긴다. 관우와 장비의 불만도 점차 사그라든다.",
+        "flavor": "와룡이 구름을 타고 오르는 날이 왔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_join", "target": "zhuge_liang", "value": { "faction": "shu", "role": "chief_strategist" } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "strategy": 20, "morale": 20 } },
+        { "type": "relationship_change", "target": "liu_bei", "value": { "with": "zhuge_liang", "change": 40, "reason": "fish_meets_water" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 38회: 삼고초려 완성, 천하삼분지계",
+      "tags": ["novel_chapter", "recruitment", "legendary", "turning_point"]
+    },
+    {
+      "id": "novel_ch39_제갈량의_첫_전략으로_조인_격파",
+      "layer": "historical",
+      "name": "제갈량의 첫 전략으로 조인 격파",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 207, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch38_유비_제갈량_영입" } }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "supporter", "required": true },
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "cao_ren", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량이 군사로서 첫 지휘를 맡아 박망파에서 조인과 하후돈의 대군을 맞는다. 복병과 화공을 결합한 완벽한 작전으로 조조군을 대파하니, 관우와 장비도 비로소 공명의 실력을 인정한다. 와룡의 첫 번째 불꽃이 천하를 밝힌다.",
+        "flavor": "박망파의 불길 속에서 새 군사의 이름이 각인된다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "fame": 15, "authority": 10 } },
+        { "type": "army_change", "target": "wei", "value": { "troops": -10000, "morale": -15 } },
+        { "type": "relationship_change", "target": "guan_yu", "value": { "with": "zhuge_liang", "change": 15, "reason": "proven_ability" } },
+        { "type": "relationship_change", "target": "zhang_fei", "value": { "with": "zhuge_liang", "change": 15, "reason": "proven_ability" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 39회: 유비 조인 격파",
+      "tags": ["novel_chapter", "battle", "fire_attack", "debut"]
+    },
+    {
+      "id": "novel_ch40_유표_사망",
+      "layer": "historical",
+      "name": "유표 사망",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "liu_biao" } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "liu_biao", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "형주목 유표가 병으로 세상을 떠나고, 채모 일당이 어린 차남 유종을 옹립한다. 유비에게 형주를 넘기려던 유표의 뜻은 무산된다. 유종은 조조 대군 앞에 무릎을 꿇고 항복하니, 형주가 피 한 방울 없이 조조에게 넘어간다.",
+        "flavor": "주인 잃은 형주의 깃발이 바람에 쓸쓸히 흔들린다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "liu_biao", "value": "illness" },
+        { "type": "territory_change", "target": "wei", "value": { "region": "jingzhou", "action": "surrender" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 40회: 유표 사망, 조조 남하",
+      "tags": ["novel_chapter", "death", "succession", "surrender"]
+    },
+    {
+      "id": "novel_ch40_조조_남정_시작",
+      "layer": "historical",
+      "name": "조조 남정 시작",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch40_유표_사망" } }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "북방을 통일한 조조가 80만 대군을 이끌고 남하한다. 형주를 접수하고 유비를 추격하니, 유비는 수만 백성을 이끌고 남으로 피난길에 오른다. 하루 십 리밖에 못 가는 행렬이지만, 유비는 백성을 버리지 않는다.",
+        "flavor": "먼지를 일으키며 남쪽으로 끝없이 이어지는 피난 행렬.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "army_change", "target": "wei", "value": { "troops": 200000, "morale": 25 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "reputation": 15 } }
+      ],
+      "choices": [
+        {
+          "id": "ch40_abandon_people",
+          "text": "백성을 두고 빠르게 철수한다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "reputation": -20, "safety": 15 } }
+          ]
+        },
+        {
+          "id": "ch40_protect_people",
+          "text": "끝까지 백성과 함께 간다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "reputation": 20 } },
+            { "type": "army_change", "target": "shu", "value": { "morale": 15, "speed": -20 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 40회: 유표 사망, 조조 남하",
+      "tags": ["novel_chapter", "war", "march", "refugee"]
+    },
+    {
+      "id": "novel_ch41_장판에서_조운이_유선_구출",
+      "layer": "historical",
+      "name": "장판에서 조운이 유선 구출",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhao_yun" } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch40_조조_남정_시작" } }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhao_yun", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "supporter", "required": true },
+        { "character_id": "cao_cao", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "장판파에서 조조의 대군이 유비 진영을 덮친다. 조운이 단기로 적진을 종횡하며 유비의 어린 아들 아두를 품에 안고 돌파한다. 조조군의 명장 50여 명을 상대하며 피투성이가 되어 돌아오니, 유비가 아이를 땅에 던지며 장수 하나를 잃을 뻔했다고 한탄한다.",
+        "flavor": "갑옷에 젖은 피가 마르기 전에, 아이의 울음소리가 들린다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhao_yun", "value": { "fame": 25, "martial": 5 } },
+        { "type": "relationship_change", "target": "zhao_yun", "value": { "with": "liu_bei", "change": 25, "reason": "saved_heir" } },
+        { "type": "army_change", "target": "wei", "value": { "troops": -5000 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 41회: 장판 전투 - 조운의 활약",
+      "tags": ["novel_chapter", "battle", "heroic", "rescue", "legendary"]
+    },
+    {
+      "id": "novel_ch42_장비_혼자_다리_위에서_조조군_저지",
+      "layer": "historical",
+      "name": "장비 혼자 다리 위에서 조조군 저지",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhang_fei" } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch41_장판에서_조운이_유선_구출" } }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhang_fei", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "장판교 위에 장비가 장팔사모를 꽂고 홀로 서서 조조군을 호통친다. '나는 연인 장익덕이다! 죽고 싶은 자 나와라!' 한 번 외칠 때마다 조조군이 물러서고, 세 번 외치자 하후걸이 간담이 서늘해 말에서 떨어진다.",
+        "flavor": "다리 위의 한 사람이 백만 대군을 멈춘다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhang_fei", "value": { "fame": 20, "intimidation": 15 } },
+        { "type": "army_change", "target": "wei", "value": { "morale": -20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 42회: 장비 장판교에서 조조군 저지",
+      "tags": ["novel_chapter", "battle", "heroic", "legendary", "intimidation"]
+    },
+    {
+      "id": "novel_ch43_제갈량_강동_유생들과_설전",
+      "layer": "historical",
+      "name": "제갈량 강동 유생들과 설전",
+      "period": { "year": 208 },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "character_alive", "params": { "character_id": "sun_quan" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch42_장비_혼자_다리_위에서_조조군_저지" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sun_quan", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 강동으로 건너가 손권에게 동맹을 청한다. 장소, 고옹 등 강동의 문관들이 항복론을 내세우며 공명을 공격하나, 제갈량이 하나하나 논파한다. 혀끝으로 칼보다 날카롭게 베어내니, 항전파의 기세가 살아난다.",
+        "flavor": "세 치 혀가 백만 군사보다 날카롭다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "fame": 10, "diplomacy": 15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 43회: 제갈량 설전, 손권 설득",
+      "tags": ["novel_chapter", "diplomacy", "debate", "alliance"]
+    },
+    {
+      "id": "novel_ch43_손권을_항조_결심시킴",
+      "layer": "historical",
+      "name": "손권을 항조 결심시킴",
+      "period": { "year": 208 },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "character_alive", "params": { "character_id": "sun_quan" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch43_제갈량_강동_유생들과_설전" } }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sun_quan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 손권을 단독 면담하며 최후의 설득을 펼친다. 항복하면 조조가 강동을 어떻게 할 것인지 냉정히 분석하고, 유비와 연합하면 반드시 이길 수 있다고 단언한다. 손권이 검으로 서안을 내리치며 '다시 항복을 말하는 자는 이 안과 같으리라!' 선언한다.",
+        "flavor": "잘려나간 서안의 모서리처럼, 물러남은 더 이상 없다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_alliance", "target": "wu", "value": { "ally": "shu", "reason": "anti_cao_cao" } },
+        { "type": "stat_change", "target": "sun_quan", "value": { "resolve": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 43회: 제갈량 설전, 손권 설득",
+      "tags": ["novel_chapter", "diplomacy", "alliance", "decisive"]
+    },
+    {
+      "id": "novel_ch44_주유가_조조와의_전쟁_결심",
+      "layer": "historical",
+      "name": "주유가 조조와의 전쟁 결심",
+      "period": { "year": 208 },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhou_yu" } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch43_손권을_항조_결심시킴" } }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "zhou_yu", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "대도독 주유가 조조군 80만이 허장성세임을 간파하고, 정예 3만으로 충분히 격파할 수 있다고 손권에게 장담한다. 제갈량이 교묘히 주유의 자존심을 자극하여 전의를 불태우니, 천하의 두 기재가 경쟁하듯 전쟁 준비에 돌입한다.",
+        "flavor": "장강의 물결 위로 전운이 몰려온다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhou_yu", "value": { "resolve": 15, "strategy": 10 } },
+        { "type": "faction_war", "target": "wu", "value": { "opponent": "wei", "reason": "resistance" } },
+        { "type": "relationship_change", "target": "zhou_yu", "value": { "with": "zhuge_liang", "change": -10, "reason": "rivalry" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 44회: 주유 항전 결심",
+      "tags": ["novel_chapter", "war_preparation", "rivalry", "strategy"]
+    },
+    {
+      "id": "novel_ch45_조조가_보낸_장간이_주유에게_역이용됨",
+      "layer": "historical",
+      "name": "조조가 보낸 장간이 주유에게 역이용됨",
+      "period": { "year": 208 },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhou_yu" } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch44_주유가_조조와의_전쟁_결심" } }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "zhou_yu", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조조가 옛 친구 장간을 보내 주유를 회유하려 한다. 주유는 이를 간파하고 오히려 장간을 역이용한다. 술에 취한 척하며 위조된 밀서를 보게 하니, 장간은 이를 가지고 돌아가 조조에게 바친다. 조조가 밀서의 함정에 빠진다.",
+        "flavor": "술잔 사이로 계략의 그물이 펼쳐진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhou_yu", "value": { "cunning": 10 } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "judgment": -10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 45회: 장간의 첩보 실패",
+      "tags": ["novel_chapter", "espionage", "deception", "counter_intelligence"]
+    },
+    {
+      "id": "novel_ch45_채모_장윤_살해_유도",
+      "layer": "historical",
+      "name": "채모/장윤 살해 유도",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "year_range", "params": { "min": 208, "max": 208 } },
+          { "type": "character_alive", "params": { "character_id": "zhou_yu" } },
+          { "type": "character_alive", "params": { "character_id": "cao_cao" } },
+          { "type": "event_completed", "params": { "event_id": "novel_ch45_조조가_보낸_장간이_주유에게_역이용됨" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "zhou_yu", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "장간이 가져온 위조 밀서를 본 조조가 분노하여 수군 도독 채모와 장윤을 참수한다. 채모와 장윤은 항복한 형주 수군의 핵심 장수로, 조조군에서 유일하게 수전에 능한 인물이었다. 뒤늦게 주유의 이간계임을 깨달았으나, 이미 칼은 돌이킬 수 없다.",
+        "flavor": "떨어진 두 머리와 함께, 조조의 수전 승산이 사라진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cai_mao", "value": "executed_by_own_side" },
+        { "type": "character_death", "target": "zhang_yun", "value": "executed_by_own_side" },
+        { "type": "army_change", "target": "wei", "value": { "naval_strength": -30 } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "judgment": -10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 45회: 장간의 첩보 실패",
+      "tags": ["novel_chapter", "deception", "execution", "counter_intelligence", "naval"]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "total_factions": 11,
+  "generated_at": "2026-03-16T10:52:02.517Z",
+  "factions": [
+    {
+      "id": "dong-zhuo",
+      "name_kr": "동탁 정권",
+      "category": "faction",
+      "overview": "후한 태위 [ 펼치기 · 접기 ]초대제2대제3대제4대제5대조희우연조희모융포욱제6대제7대제8대제9대제10대등표정홍송유윤목장포제11대제12대제13대제14대제15대장우서방장우이수사마포제16대제17대제18대제19대제20대마영유개양진풍석유희제21대제22대제23대제24대제25대주총유광방참시연방참제26대제27대제28대제29대제30대왕공환언조준이고호광제31대제32대제33",
+      "timeline_snippet": "",
+      "sections_count": 8,
+      "source_url": "https://namu.wiki/w/%EB%8F%99%ED%83%81"
+    },
+    {
+      "id": "later-han",
+      "name_kr": "후한",
+      "category": "faction",
+      "overview": "오대십국시대에 947년부터 951년까지 존속한 나라에 대한 내용은 후한(오대십국시대) 문서를 참고하십시오.\n\n동한은 여기로 연결됩니다. WEi의 멤버에 대한 내용은 김동한 문서를, 일본의 가문에 대한 내용은 아야(가문) 문서를 참고하십시오.\n\n중국의 역사 [ 펼치기 · 접기 ]선진​시대황하 문명하(夏)상(商)주(周)서주(西周)동주(東周)춘추전국시대(춘추시대",
+      "timeline_snippet": "",
+      "sections_count": 15,
+      "source_url": "https://namu.wiki/w/%ED%9B%84%ED%95%9C"
+    },
+    {
+      "id": "liu-biao",
+      "name_kr": "유표 세력",
+      "category": "faction",
+      "overview": "후한서(後漢書) [ 본기(本紀) ]1권 「광무제기(光武帝紀)」2권 「명제기(明帝紀)」 3권 「장제기(章帝紀)」 유수유장유달4권 「화제상제기(和帝殤帝紀)」 5권 「안제기(安帝紀)」 6권 「순제충제질제기(順帝沖帝質帝紀)」 유조 · 유륭유호유보 · 유병 · 유찬7권 「환제기(桓帝紀)」 8권 「영제기(霊帝紀)」 9권 「헌제기(獻帝紀)」 유지유굉유협10권 「황후기(",
+      "timeline_snippet": "",
+      "sections_count": 6,
+      "source_url": "https://namu.wiki/w/%EC%9C%A0%ED%91%9C"
+    },
+    {
+      "id": "nanman",
+      "name_kr": "남만",
+      "category": "faction",
+      "overview": "1. 개요2. 역사2.1. 중국사2.1.1. 제갈량집2.2. 한국사2.3. 일본사3. 창작물의 남만3.1. 삼국지3.2. 무협지3.2.1. 매체에서의 등장3.3. 대항해시대 온라인의 남만무역4. 같이보기",
+      "timeline_snippet": "",
+      "sections_count": 10,
+      "source_url": "https://namu.wiki/w/%EB%82%A8%EB%A7%8C"
+    },
+    {
+      "id": "shu",
+      "name_kr": "촉한",
+      "category": "faction",
+      "overview": "중국의 역사 [ 펼치기 · 접기 ]선진​시대황하 문명하(夏)상(商)주(周)서주(西周)동주(東周)춘추전국시대(춘추시대 · 전국시대)진한​시대진(秦)초한쟁패기후초(後楚) · 서초(西楚) · 18제후국한(漢)전한(前漢)신(新) 현한(玄漢)후한(後漢)위진​남북조​시대삼국위(魏)촉(蜀)오(吳)진(晉)서진(西晉)동진(東晉)환초(桓楚)오호십육국전진(前秦)남북조송(宋)북",
+      "timeline_snippet": "214년유비, 파촉 평정218 ~ 219년한중 공방전219년유비 한중왕 즉위, 형주 공방전221년유비 황제로 즉위 / 촉한 건국222년이릉대전223년유비 사망, 유선 즉위225년제갈량의 남정227 ~ 234년제갈량의 북벌244년흥세 전투247 ~ 262년강유의 북벌263년위나라의 남정으로 멸망",
+      "sections_count": 25,
+      "source_url": "https://namu.wiki/w/%EC%B4%89%ED%95%9C"
+    },
+    {
+      "id": "wei",
+      "name_kr": "위(삼국시대)",
+      "category": "faction",
+      "overview": "중국의 역사 [ 펼치기 · 접기 ]선진​시대황하 문명하(夏)상(商)주(周)서주(西周)동주(東周)춘추전국시대(춘추시대 · 전국시대)진한​시대진(秦)초한쟁패기후초(後楚) · 서초(西楚) · 18제후국한(漢)전한(前漢)신(新) 현한(玄漢)후한(後漢)위진​남북조​시대삼국위(魏)촉(蜀)오(吳)진(晉)서진(西晉)동진(東晉)환초(桓楚)오호십육국전진(前秦)남북조송(宋)북",
+      "timeline_snippet": "",
+      "sections_count": 12,
+      "source_url": "https://namu.wiki/w/%EC%9C%84(%EC%82%BC%EA%B5%AD%EC%8B%9C%EB%8C%80)"
+    },
+    {
+      "id": "western-jin",
+      "name_kr": "진(서진)",
+      "category": "faction",
+      "overview": "중국의 역사 [ 펼치기 · 접기 ]선진​시대황하 문명하(夏)상(商)주(周)서주(西周)동주(東周)춘추전국시대(춘추시대 · 전국시대)진한​시대진(秦)초한쟁패기후초(後楚) · 서초(西楚) · 18제후국한(漢)전한(前漢)신(新) 현한(玄漢)후한(後漢)위진​남북조​시대삼국위(魏)촉(蜀)오(吳)진(晉)서진(西晉)동진(東晉)환초(桓楚)오호십육국전진(前秦)남북조송(宋)북",
+      "timeline_snippet": "",
+      "sections_count": 20,
+      "source_url": "https://namu.wiki/w/%EC%84%9C%EC%A7%84"
+    },
+    {
+      "id": "wu",
+      "name_kr": "오(삼국시대)",
+      "category": "faction",
+      "overview": "중국의 역사 [ 펼치기 · 접기 ]선진​시대황하 문명하(夏)상(商)주(周)서주(西周)동주(東周)춘추전국시대(춘추시대 · 전국시대)진한​시대진(秦)초한쟁패기후초(後楚) · 서초(西楚) · 18제후국한(漢)전한(前漢)신(新) 현한(玄漢)후한(後漢)위진​남북조​시대삼국위(魏)촉(蜀)오(吳)진(晉)서진(西晉)동진(東晉)환초(桓楚)오호십육국전진(前秦)남북조송(宋)북",
+      "timeline_snippet": "",
+      "sections_count": 23,
+      "source_url": "https://namu.wiki/w/%EC%98%A4(%EC%82%BC%EA%B5%AD%EC%8B%9C%EB%8C%80)"
+    },
+    {
+      "id": "xiliang",
+      "name_kr": "서량",
+      "category": "faction",
+      "overview": "후한 13주 서량(西涼)에 대한 내용은 양주(간쑤성) 문서를, 남북조시대 양나라의 후계 국가 서량(西梁)에 대한 내용은 후량(남북조시대) 문서를, 무협소설 마도전생기의 주인공 서량에 대한 내용은 서량(마도전생기) 문서를 참고하십시오.\n\n오호십육국시대 16국(國) [ 펼치기 · 접기 ]전량(涼)전조(趙)성한(漢)후조(趙)전연(燕)전진(秦)후연(燕)후진(秦)서",
+      "timeline_snippet": "",
+      "sections_count": 5,
+      "source_url": "https://namu.wiki/w/%EC%84%9C%EB%9F%89"
+    },
+    {
+      "id": "yellow-turbans",
+      "name_kr": "황건적",
+      "category": "faction",
+      "overview": "이 문서는 후한 말 군사세력 황건적에 관한 문서입니다. 이외의 다른 뜻에 대한 내용은 황건적(동음이의어) 문서를 참고하십시오.\n\n1. 개요2. 역사3. 평가4. 실제 인물4.1. 황건적의 난4.2. 황건적의 난 이후5. 각색/가공인물6. 기록상 오류7. 대중매체8. 기타",
+      "timeline_snippet": "",
+      "sections_count": 11,
+      "source_url": "https://namu.wiki/w/%ED%99%A9%EA%B1%B4%EC%A0%81"
+    },
+    {
+      "id": "yuan-shao",
+      "name_kr": "원소 세력",
+      "category": "faction",
+      "overview": "서원팔교위 [ 펼치기 · 접기 ]상군교위중군교위하군교위전군교위건석원소포홍조조조군좌교위조군우교위좌교위우교위조융풍방하모순우경\n\n18로 제후 [ 펼치기 · 접기 ]남양태수기주목예주자사연주자사하내태수진류태수원술한복공주유대왕광장막동군태수산양태수제북상북해상광릉태수서주자사교모원유포신공융장초도겸서량태수북평태수상당태수장사태수발해태수전군교위마등공손찬장양손견원소조조\n\n후한의 ",
+      "timeline_snippet": "",
+      "sections_count": 17,
+      "source_url": "https://namu.wiki/w/%EC%9B%90%EC%86%8C(%EC%82%BC%EA%B5%AD%EC%A7%80)"
+    }
+  ],
+  "initial_territories": {
+    "dong_zhuo": [
+      "luoyang",
+      "changan"
+    ],
+    "yuan_shao": [
+      "jizhou",
+      "ye"
+    ],
+    "yuan_shu": [
+      "yuzhou"
+    ],
+    "cao_cao": [
+      "yanzhou",
+      "xuchang"
+    ],
+    "liu_biao": [
+      "jingzhou"
+    ],
+    "liu_yan": [
+      "yizhou",
+      "chengdu"
+    ],
+    "sun_jian": [],
+    "gongsun_zan": [
+      "youzhou"
+    ],
+    "yellow_turbans": [],
+    "later_han": [
+      "luoyang"
+    ]
+  },
+  "scenarios": {
+    "190_coalition": {
+      "year": 190,
+      "description": "반동탁 연합 (게임 시작 시나리오 1)",
+      "territories": {
+        "dong_zhuo": [
+          "luoyang",
+          "changan"
+        ],
+        "yuan_shao": [
+          "jizhou",
+          "ye"
+        ],
+        "yuan_shu": [
+          "yuzhou"
+        ],
+        "cao_cao": [
+          "yanzhou",
+          "xuchang"
+        ],
+        "liu_biao": [
+          "jingzhou"
+        ],
+        "liu_yan": [
+          "yizhou",
+          "chengdu"
+        ],
+        "sun_jian": [],
+        "gongsun_zan": [
+          "youzhou"
+        ],
+        "yellow_turbans": [],
+        "later_han": [
+          "luoyang"
+        ]
+      }
+    },
+    "200_guandu": {
+      "year": 200,
+      "description": "관도대전 직전",
+      "territories": {
+        "cao_cao": [
+          "yanzhou",
+          "xuchang",
+          "yuzhou",
+          "xuzhou",
+          "luoyang"
+        ],
+        "yuan_shao": [
+          "jizhou",
+          "ye",
+          "youzhou",
+          "bingzhou"
+        ],
+        "liu_biao": [
+          "jingzhou"
+        ],
+        "sun_ce": [
+          "yangzhou",
+          "jianye"
+        ],
+        "liu_zhang": [
+          "yizhou",
+          "chengdu"
+        ],
+        "liu_bei": [],
+        "zhang_lu": [
+          "hanzhong"
+        ]
+      }
+    },
+    "208_red_cliffs": {
+      "year": 208,
+      "description": "적벽대전 직전",
+      "territories": {
+        "cao_cao": [
+          "yanzhou",
+          "xuchang",
+          "yuzhou",
+          "xuzhou",
+          "luoyang",
+          "ye",
+          "jizhou",
+          "youzhou",
+          "bingzhou",
+          "jingzhou"
+        ],
+        "sun_quan": [
+          "yangzhou",
+          "jianye"
+        ],
+        "liu_bei": [],
+        "liu_zhang": [
+          "yizhou",
+          "chengdu"
+        ],
+        "zhang_lu": [
+          "hanzhong"
+        ]
+      }
+    },
+    "220_three_kingdoms": {
+      "year": 220,
+      "description": "삼국 정립",
+      "territories": {
+        "wei": [
+          "yanzhou",
+          "xuchang",
+          "yuzhou",
+          "xuzhou",
+          "luoyang",
+          "ye",
+          "jizhou",
+          "youzhou",
+          "bingzhou",
+          "yongzhou",
+          "changan"
+        ],
+        "shu": [
+          "yizhou",
+          "chengdu",
+          "hanzhong"
+        ],
+        "wu": [
+          "yangzhou",
+          "jianye",
+          "jiaozhou"
+        ]
+      }
+    }
+  }
+}

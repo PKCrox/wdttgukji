@@ -1,0 +1,175 @@
+{
+  "name_kr": "육손",
+  "name_en": "Lu Xun",
+  "name_cn": "陸遜",
+  "courtesy_kr": "백언",
+  "courtesy_cn": "伯言",
+  "faction": "wu",
+  "tier": 1,
+  "role": "이릉대전 승리",
+  "stats": {
+    "leadership": 96,
+    "war": 69,
+    "intelligence": 95,
+    "politics": 87,
+    "charisma": 90,
+    "total": 437,
+    "birth": 183,
+    "death": 245
+  },
+  "novel_presence": {
+    "first_chapter": 38,
+    "last_chapter": 119,
+    "chapters": "38,44,49-50,53,68,75,83-87,96-98,102-103,108,119",
+    "chapter_count": 11
+  },
+  "biography": {
+    "namu": {
+      "overview": "손오 승상(丞相) [ 펼치기 · 접기 ]초대제2대제3대제4대대리손소고옹육손보즐주거제5대대리제6대제7대좌승상손준손은손침복양흥육개우승상제9대제10대만욱연장제한 대장군 · 후한 태위 · 후한 대사공 · 후한 대사농 조위 태위 · 조위 사도 · 조위 사공 · 촉한 재상 · 손오 승상\n\n손오의 승상육손陸遜성씨육(陸)휘손(遜)자백언(伯言)출생183년한나라 양주(揚州) 오군(吳郡) 오현(吳縣)사망245년 2월 (향년 62세)손오재임 기간손오 승상244년 ~ 245년 2월시호소후(昭侯)작호화정후(華亭侯) → 누후(婁侯) → 강릉후(江陵侯) → 누후(婁侯)최종 직위승상(丞相)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 손가와의 화친2.3. 번성 공방전2.4. 700리 촉영을 불사르다, 이릉대전2.5. 외교와 내정2.6. 석정 전투2.7. 건업에서(오나라 건국)2.8. 4차 합비 공방전2.9. 형주에서 보여준 지략2.10. 손권과의 말년2.11. 이궁지쟁 사건과 최후2.12. 사후3. 삼국지연의4. 평가5. 기타6. 미디어 믹스7. 둘러보기",
+      "biography": "육씨는 오의 사성이라 불리는 강동의 유력한 호족으로 육손은 그 방계로 태어났다. 육씨세공에 따르면 육손의 조부 육우는 배움에 정진하여 성문교위 직책을 맡았다. 육손의 아버지 육준은 육가 집안을 이루고 관직은 구강도위까지 이르렀다.양주 오군 오현 사람인 육손은 어려서 부친을 여의고 당조부인 여강태수 육강의 임지에서 성장했다. 그런데 집안의 대표이던 육강이 원술의 군량 요청을 거절하여 당시 원술의 휘하에서 일하던 손책에게 공격을 당하니, 그는 아들인 육적과 육손 등 육씨 일족을 모두 오현으로 피난시켰다. 결국 196년에 육강이 손책과의 싸움에서 져서 죽자 그의 뒤를 이을 육적이 너무 어렸던 덕에 육손이 육적을 대신해 집안을 관리했다. 주목할 점은 육손도 육적보다 고작 5살 많았을 뿐 이 때 나이는 성년도 되지 않은 14세였다는 점이다.손책이 세상을 떠난 뒤, 그의 뒤를 이은 손권이 권력을 잡고 어느 정도 시간이 흐른 203년, 육손은 21세의 나이에 손권 아래의 막부에 임명되었다. 그는 동서조령사를 거쳐 해창현의 둔전교위로 임명되어 해창현의 정무를 관리했다. 육손은 해창현에 큰 한재가 닥쳤을 때 곡식 창고를 열어 백성들을 구제하고 백성들에게 농업과 양잠을 권유하고 감독하여 백성들에게 큰 혜택을 주었다.육손은 손권에게 오군, 회계군, 단양군의 숲속에 숨어있는 사람들을 소집해야 한다고 요청했다. 육손은 새로 수집한 병사들을 데리고 가서 예전부터 회계의 문제거리였던 산적의 우두머리 반림을 토벌하고 남은 무리의 항복을 받아내니 육손이 이끄는 병사는 2천 명까지 그 수가 늘었다.하제전에 따르면 216년, 파양의 백성 우돌이 조조의 인수를 받고 백성들을 변화시켜 도적으로 만들었으며, 능양현, 시안현, 경현이 모두 우돌과 서로 호응했다. 하제와 육손은 우돌을 토벌하여 무찔러서 수천 명의 머리를 베었으며, 나머지 무리들은 두려워하며 복종했다. 단양의 세 현은 모두 투항했으며, 정예 병사를 총 8천 명 얻었다.육손은 정위교위로 임명되었고, 군대를 이포(利浦)에 주둔시켰다. 하제는 안동장군에 임명되고, 산음후로 봉해졌으며, 밖으로 나가 장강가에 주둔하여 부주 상류 지역으로부터 환까지 지휘하게 되었다.",
+      "evaluation": "이릉대전에서 이름을 떨치고 손권에게 군사와 정치 양쪽에서 중용되었으나 말년에는 총기를 잃어버린 손권에게 간언하다 핍박받고 분사하였다. 주유 이상으로 공적이 큰 인물로 정사 <삼국지>에서 신하의 신분으로서 단독 열전이 실린 사람은 제갈량과 육손뿐이다.육손은 여몽과 더불어 관우를 제거했고 결과적으로 장비와 유비까지 죽게 만든 인물이기도 하다. 사실상 도원종언의 진주인공. 특히 이릉대전에서 그가 촉한에 입힌 피해는 매우 컸는데 촉한의 젊은 인재들이 대거 이릉대전에서 죽어버렸고 제갈량은 북벌 당시 인재난으로 고생했으며 이는 마속의 기용으로 대표되는 수많은 실패로 이어졌다.보통 대중매체에서 비중이 가장 높은 주유가 정사에서는 노숙, 여몽이랑 세트 취급이고 반대로 주유의 하위호환 취급인 육손의 비중이 엄청나게 높다는 것. 물론 대중매체에서도 육손이 지략과 카리스마가 주유에 약간 못 미칠 뿐 침착함, 무력 등을 포함한 종합적인 면에서는 주유보다 뛰어난 것으로 묘사되는 케이스도 많다.",
+      "anecdotes": "삼국지연의에서 백면서생처럼 그려진 것과는 다르게 이릉대전 때 이미 38세의 중년이었다. 육손은 183년생으로 182년생인 손권보다 한 살, 181년생인 제갈량보다 두 살 어릴 뿐이다. 다만 정사를 봐도 휘하 장수들에게 애송이 취급을 받았음을 짐작할 수 있는데, 물론 그것은 어려서라기보다는 경력이 부족했기 때문일 것이다. 주유는 육손보다도 더 젊어서 손권군을 지휘했는데, 육손보다 군무 경험과 세력 내의 입지면에서 훨씬 유리했기에 잡음 없이 군을 지휘했던 것이다.장인 손책과 8살 차이로, 손씨와는 꽤 나이 차이가 나는 부부였을 것이다. 어차피 정략 결혼 했을것이라 상관 없겠지만....육손의 도독 후임이라 할 수 있는 주연의 무덤에서 승상의 모습을 그려넣은 칠기가 나왔는데, 이게 육손의 모습을 묘사했다는 추측이 나오고 있다.포기의 준수(雋水)에서는, 강물이 불면 황룡이 8마리의 아들들을 데리고 물놀이를 온다. 그 때마다 강물은 막히고 홍수가 일어나 사람들이 고통을 겪고 있었다. 포기에 부임한 육손은 사람들 때문에 이 화를 없애겠다고 결심했다. 육손은 철로 배를 만들고 50명의 용사를 뽑아 겨울부터 이듬해 봄까지 훈련시켰다. 여름에 강물이 불면 여지없이 황룡이 아들들을 데리고 준수에 파도를 일으켜왔다. 육손은 배를 타고 황룡과 아들들을 쫓아 3척의 설화검(雪花剣)을 휘둘러 자식 용의 몸통을 잘라냈다. 50명의 용사들도 칼과 창을 휘두르며 맹활약해 나머지 7마리를 물리쳤다. 황룡은 분노해 육손에게 싸움을 걸어왔다. 육손과 용사들은 주춤하지 않고 용기있게 싸웠다. 황룡이 탈진한 것을 가늠한 육손은 황룡의 등에 올라타고 그 이마에 검을 찔러넣었다. 황룡은 상처를 입고 달아났다. 육손은 즉시 병사들에 강의 흐름을 원활하게 갖추도록 명령했고, 이후 강은 다시 홍수를 일으키지 않았다.사람들은 육손에게 감사하고 준수의 이름을 육수(陸水)로 바꿨다.육손이 형주로 여몽 대신 부임해왔을 때 촉나라는 아직 무명이였던 육손을 경계하지 않았으나 마량만은 “경계를 게을리해서는 안된다”고 진언해 관우는 취임 축하 사절로 관평을 파견하여 육손이 어떤 인물인지 확인하러 갔다. 관평이 육손에게 와서 보면 병영 안은 지저분하고 칼과 창에 녹이 슬고 손질이 되어 있지 않았다. 육손은 심심한 듯 옆에 놓여있는 큰 항아리에서 개구리를 꺼내 개구리의 이마에 붉은 색을 발라 방에 놓아주었다. 이마를 붉게 하고 뛰어다니는 개구리들을 보고, 병사들은 박장대소했다. 연회가 시작되어도 붉은 색을 계속 칠하던 육손이 관평에게 \"당신의 아버지는 전쟁 뿐, 이런 즐거움도 모르지요. 인생 즐길 때 즐기지 않으면 이 개구리들을 보십시오. 재미있죠?\"라고 말했다. 형주에 돌아간 관평이 이 일을 관우에게 전하고 관우는 안심했다. 지금도 그 지역에는 이마가 붉은 개구리들이 있다고 한다.14~5세 때 스승에 대해서 주먹을 쓰는 무술을 배우고 고향에서는 견줄 자가 없는 솜씨가 되었다. 그렇기에 스승조차 가볍게 보게 되었다. 어느 날 육씨 가문 친족의 잔치에서 무술의 얘기가 나왔을 때 육손의 스승이 \"강한 자는 얼마든지 있지만 진정한 달인이 되려면 노인이 될 때까지 수련을 계속해야 할 것이다\" 라고 말했다. 이것을 들은 육손은 그렇지 않다고 생각했다. 육손의 무술 솜씨를 묻던 스승이 \"이 나이까지 무술 수업을 했지만 아직 상대의 공격을 당한 적은 없다\" 라고 대답한 것을 듣고 육손은 몰래 스승의 배후로 가 주먹을 내질렀다. 그러나 스승은 아무 일 없다는 듯이 피하고 \"교만을 없애지 않으면 더 이상은 늘지 않는다\"라고 육손을 타일렀다. 육손은 부끄러워 용서를 빌었다. 이 건으로 육손은 겸손을 배우고 더욱 실력이 늘어나게 되었다.",
+      "military": "228년, 손권은 파양태수 주방으로 하여금 위의 대사마 조휴를 속이도록 했다. 조휴가 주방의 거짓 항복 계책에 속아 환현으로 진입하자, 손권은 육손에게 황월을 주며 그를 대도독으로 임명해 조휴를 맞아 공격하도록 했다. 조휴는 자신이 속았다는 사태를 알아차렸지만, 그에게 속은 일이 부끄럽기도 하고 자신의 병마가 정예이면서 머릿 수가 많기도 하니 육손과 교전하기로 했다. 육손 자신은 중앙의 군대를 지휘하고, 주환과 전종을 좌우익으로 삼아 세 갈래 길로 함께 나아가 조휴의 복병과 과감하게 부딪혔다. 결국 조휴는 패하였고 손권군은 달아나는 조휴의 병사들을 협석까지 추격했다. 이 싸움에서 손권군이 죽이거나 포획한 위군은 만여 명이며, 소와 말, 노새와 나귀가 끄는 수레 1만 대를 얻었고, 조휴 군대의 물자나 기계를 거의 빼앗았다. 조휴는 돌아간 후, 등에 종기가 나 죽었다.육손이 군대를 정돈하여 무창을 지날 때, 손권은 주위의 신하들에게 명령하여 자신의 우산 덮개로 육손을 가리고 궁궐문을 드나들도록 했으며, 자신이 사용하는 상등의 진귀한 물품들을 하사하니 당시 육손과 견줄 자는 아무도 없었다. 이후 육손은 서릉으로 돌아왔다.",
+      "death": "〈오주전〉에 따르면 236년 겨울 10월, 파양의 도적 팽단 등이 반란을 일으켰다.〈오주전〉에 따르면 237년 봄 1월, 호종과 고옹이 효와 충은 병행할 수 없다고 해서 손권은 부모가 죽었을 때 근무지를 이탈하면 사형에 처하는 법을 만든다. 그런데 이후 맹종은 모친상을 당해 달려나가 상을 치른 후 스스로 무창에 돌아와 감옥에 갇혀 형을 받기를 청했는데, 육손이 평소 그의 행동에 대해 서술하고 부탁하자 손권도 결국 그의 직위를 한 단계 강등만 시키는 선에 끝내 앞으로 이런 일이 있어서는 안 된다고 한다.〈오주전〉에 따르면 237년 2월, 육손이 팽단 등을 토벌하여 그 해에 모두 격파시켰다.237년, 중랑장 주지(周祗)가 파양에서 병사를 소집할 것을 요청했다. 손권은 이 일을 육손에게 물었다. 육손은, 이 군의 백성들은 쉽게 동요하고 안정시키기 어려우므로, 소집에 응하도록 할 수 없다면 아마도 도적으로 이르게 될 것이라고 주장했다. 그러나 주지는 병사를 모집할 것을 간곡히 요청했다. 그 군의 백성 오거 등은 과연 도적이 되어 주지를 살해하고 여러 현을 공격하여 함락시켰다. 예장군과 여릉군의 옛날부터 있던 사악한 백성들은 함께 오거에게 호응하여 도적이 되었다. 육손은 이 소식을 들은 즉시 토벌에 나서 격파시켰다. 오거 등은 서로 이어서 항복했다. 육손은 정예 병사 8천여 명을 얻었고, 세 군을 평정시켰다.〈진무전〉에 따르면 파양군의 백성 오거 등이 반란을 일으켜, 성곽을 공격해 함락시키니, 속현들이 요동하니, 진표가 바로 경계를 건너가 토벌하니, 오거는 격파되어 패배하였고, 마침내 항복하였다. 육손이 진표를 편장군에 배수하고, 봉작으로 올려 도향후로 하며, 북쪽 장갱에 주둔하였다.〈오주전〉에 따르면 당초, 손권은 교사 여일을 신임했는데, 여일은 성격이 가혹하고 법을 매우 엄하게 집행했다. 태자 손등이 이 점을 자주 간언했지만, 손권은 받아들이지 않았다. 대신들은 이 때문에 감히 말하는 자가 없었다.〈육손전〉에 따르면 당시 중서전교로 있던 여일이 요직을 훔쳐 차지하고 권력을 남용하여 위세와 복을 마음대로 만들었다. 육손은 태상 반준과 함께 마음 속으로 걱정하고 이에 관한 말을 할 때마다 눈물을 흘렸다. 이후에 손권이 여일을 주살하자 깊이 자책했다.〈보즐전〉에 따르면 후에 중서 여일이 문서를 감사하게 되었는데, 보즐이 탄핵한 자가 많았다. 보즐은 상소를 올려 말했다.승상 고옹, 상대장군 육손, 태상 반준은 심장과 넓적다리라고 말할 수 있는 국가의 신하들입니다. 이 세 명의 신하는 생각이 미치지 못하는 것이 있을 뿐, 어찌 감히 독자적인 세력으로 위협하여 하늘을 저버리겠습니까?이로 미루어보아 이미 이 시점부터 손권은 육손 등 신하들을 꽤 경계하고 있었던 것으로 추정된다.〈오주전〉에 따르면 이후에 여일의 간사한 죄악이 발각되어 참살 당하게 되었는데, 손권은 자신의 잘못을 시인하고 자책했으며, 곧 중서랑 원례를 시켜 여러 대장들에게 사과의 말을 전하도록 하고, 이 기회에 그 당시의 정사에 있어서 고쳐야만 할 점에 관해 질문했다.그때 사연과 사굉 등이 각각 마땅히 해야 할 일에 관해 진술하여 유익한 사업을 일으켜 바꿔 보려고 했다. 손권은 이 일을 육손에게 심의하도록 했다. 육손은 다음과 같이 말했다.국가는 백성을 근본으로 삼으며, 강성함은 백성들의 힘에서 나오고, 재력도 백성들에게서 나옵니다. 바라건대 성상께서는 은혜를 베풀어 백성들을 안녕되게 하고 구제하십시오. 그런 연후에 다시 생각 하십시오.〈오주전〉에 따르면 241년 가을 8월, 육손이 주에 성을 쌓았다."
+    },
+    "wiki_en": {
+      "summary": "Lu Xun, pen name of Zhou Shuren, born Zhou Zhangshou, was a Chinese writer. A leading figure of modern Chinese literature, he wrote in both vernacular and literary Chinese as a novelist, literary critic, essayist, poet, translator and political commentator, known for his sharp, satirical style and critical reflections on Chinese history and culture.",
+      "sections": {
+        "Lead": "Lu Xun (Chinese: 魯迅; pinyin: Lǔ Xùn, [lù ɕŷn]; 25 September 1881 – 19 October 1936), pen name of Zhou Shuren, born Zhou Zhangshou, was a Chinese writer. A leading figure of modern Chinese literature, he wrote in both vernacular and literary Chinese as a novelist, literary critic, essayist, poet, translator and political commentator, known for his sharp, satirical style and critical reflections on Chinese history and culture.\n\nLu Xun was born into a declining family of landlords and scholar-officials in Shaoxing, Zhejiang. Although he initially aspired to take the imperial examinations, his family's limited financial means compelled him to attend government-funded schools that offered a \"Western-style education.\" After graduation, Lu Xun pursued medical studies at Tohoku University in Japan but eventually dropped out, turning his attention to literature. Financial difficulties forced his return to China, where he taught at various secondary schools and colleges before taking a position at the Ministry of Education of the Republic of China.\n\nLu Xun pioneered the New Culture Movement by publishing the first novel in vernacular Chinese, Diary of a Madman, in 1918. He gained prominence through his political writings in La Jeunesse following the May Fourth Movement in 1919. From the late 1920s onward, Lu Xun became increasingly engaged with Marxist thought and leftist politics. In the 1930s, he served as the nominal leader of the League of Left-Wing Writers in Shanghai. Since 194... (truncated)",
+        "Early life": "Lu Xun was born in Shaoxing, Zhejiang. As was common before the 20th century, Lu Xun used several names. His birth name was \"Zhou Zhangshou\" (Chinese: 周樟壽). His courtesy name was \"Yushan\" (豫山), which he later changed to \"Yucai\" (豫才). In 1898, before he went to the Jiangnan Naval Academy, he took the given name \"Shuren\" (樹人), which figuratively means \"to be an educated man\".[2] The name \"Lu Xun \", by which he is most well known internationally, was a pen name chosen upon the initial publishing of his story \"Diary of a Madman\" in 1918.[3]\n\nBy the time Lu Xun was born, the Zhou family had been prosperous for centuries, and had become wealthy through landowning, pawnbroking, and by having several family members promoted to government positions. His paternal grandfather, Zhou Fuqing, was appointed to the Imperial Hanlin Academy in Beijing, the highest position possible for aspiring civil servants at that time.\n\nZhou's mother was a member of the same landed gentry class as Lu Xun's father, from a slightly smaller town in the countryside (Anqiaotou, Zhejiang; a part of Tongxiang). Because formal education was not considered socially appropriate for girls,[citation needed] she had not received any education, but she still taught herself how to read and write. The surname Lu Xun (魯) was the same as his mother's.[4]\n\nLu Xun's early education was based on the Confucian classics, in which he studied poetry, history, and philosophy—subjects which, he later reflected, were neither useful n... (truncated)",
+        "Early career": "Lu Xun intended to study in Germany in 1909, but did not have sufficient funds, and was forced to return home. Between 1909 and 1911 he held a number of brief teaching positions at local colleges and secondary schools that he felt were unsatisfying, partly to support his brother Zuoren's studies in Japan.[16]\n\nLu Xun spent these years in traditional Chinese literary pursuits: collecting old books, researching pre-modern Chinese fiction, reconstructing ancient tombstone inscriptions,[17] and compiling the history of his native town, Shaoxing. He explained to an old friend that his activities were not \"scholarship\", but \"a substitute for 'wine and women'\". In his personal letters he expressed disappointment about his own failure, China's political situation, and his family's continuing impoverishment.\n\nIn 1911 he returned to Japan to retrieve his brother, Zuoren, so that Zuoren could help with the family finances. Zuoren wanted to remain in Japan to study French, but Lu Xun wrote that \"French... does not fill stomachs\". He encouraged another one of his brothers, Jianren, to become a botanist.[16] He began to drink heavily, a habit he continued for the rest of his life. In 1911 he wrote his first short story, Nostalgia, but he was so disappointed with it that he threw it away. Zuoren saved it, and had it successfully published two years later under his own name.[17]\n\nIn February 1912, shortly after the Xinhai Revolution overthrew the Qing dynasty and was followed by the founding... (truncated)",
+        "Later career": "In 1929, Lu Xun visited his mother, and reported that she was pleased at the news of Xu's pregnancy.[26] Xu gave birth to a son named Haiying on 27 September. She was in labor with the baby for 27 hours. The child's name meant simply \"Shanghai infant\". His parents chose the name thinking that he could change it himself later, but he never did so. Haiying was Lu Xun's only child.[29]\n\nAfter moving to Shanghai, Lu Xun rejected all regular teaching positions (though he sometimes gave guest lectures at different campuses), and for the first time was able to make a living solely as a professional writer, with a monthly income of roughly 500 yuan. He was also appointed by the government as a \"specially appointed writer\" by the national Ministry of Higher Education, which secured him an additional 300 yuan per month.\n\nLu Xun began to study and identify with Marxist politics, made contact with local CCP members, and became involved in literary disputes with other leftist writers in the city. In 1930 Lu Xun became one of the co-founders of the League of Left-Wing Writers, but shortly after he moved to Shanghai other leftist writers accused him of being \"an evil feudal remnant\", the \"best spokesman of the bourgeoisie\", and \"a counterrevolutionary split personality\". The League continued in various forms until 1936, when the constant disputes among its members led the CCP to dissolve it.[26]\n\nIn January 1931, the Kuomintang (KMT) passed new, stricter censorship laws, allowing for writer... (truncated)",
+        "Death": "At 3:30 am on the morning of 18 October 1936, the author woke having great difficulty breathing. Dr. Sudo, his physician, was summoned, and Lu Xun was given injections to relieve the pain. His wife was with him throughout that night. Lu Xun died at 5:11 am the next morning, 19 October.[35] Lu Xun's remains were interred in a mausoleum within Lu Xun Park in Shanghai. Mao Zedong later made the calligraphic inscription above his tomb.\n\nHe was survived by his son, Zhou Haiying.",
+        "Legacy": "Lu Xun has been described by Nobel laureate Kenzaburō Ōe as \"the greatest writer Asia produced in the 20th century.\"[37] Shortly after Lu Xun's death, Mao Zedong called him \"the saint of modern China\", but used his legacy selectively to promote his own political goals. In 1942, he quoted Lu Xun out of context to tell his audience to be \"a willing ox\" like Lu Xun was, but told writers and artists who believed in freedom of expression that, because CCP areas were already liberated, they did not need to be like Lu Xun . After the People's Republic of China was established in 1949, CCP literary theorists portrayed his work as orthodox examples of communist literature, yet every one of Lu Xun's close disciples from the 1930s was purged. Mao admitted that, had Lu Xun survived until the 1950s, he would \"either have gone silent or gone to prison\".[38]\n\nParty leaders depicted him as \"drawing the blueprint of the communist future\" and Mao Zedong defined him as the \"chief commander of China's Cultural Revolution,\" although Lu Xun did not join the party. During the 1920s and 1930s Lu Xun and his contemporaries often met informally for free-wheeling intellectual discussions, but after the founding of the People's Republic in 1949 the Party sought more control over intellectual life in China, and this type of intellectual independence was suppressed, often violently.\n\nFinally, Lu Xun's satirical and ironic writing style itself was discouraged, ridiculed, then as often as possible destroyed... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "陸遜（183年—245年3月19日），本名陸議，字伯言，吴郡吴县（今江苏省苏州市）人，三國時代吳國軍事家、政治家，负责统领吴国军事和政治多年，并同时掌管民事，辅佐太子等。历任吴国大都督、上大将军、丞相。63岁去世，孙休时追谥昭侯。\n",
+      "sections": {
+        "Introduction": "陸遜（183年—245年3月19日），本名陸議，字伯言，吴郡吴县（今江苏省苏州市）人，三國時代吳國軍事家、政治家，负责统领吴国军事和政治多年，并同时掌管民事，辅佐太子等。历任吴国大都督、上大将军、丞相。63岁去世，孙休时追谥昭侯。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 75,
+      "text": "雲長倚恃英雄，自料無敵，所慮者惟將軍耳。將軍乘此機會，託疾辭職，以陸口之任讓之他人，使他人卑辭讚美關公，以驕其心，彼必盡撤荊州之兵，以向樊城；若荊州無備，用一旅之師，別出奇計以襲之，則荊州在掌握之中矣。",
+      "text_length": 101
+    },
+    {
+      "chapter": 83,
+      "text": "劉備舉兵東下，連勝十餘陣，銳氣正盛；今只乘高守險，不可輕出，出則不利。但宜獎勵將士，廣布防禦之策，以觀其變。今彼馳騁於平原廣野之間，正自得志；我堅守不出，彼求戰不得，必移屯於山林樹木間。吾當以奇計勝之。",
+      "text_length": 101
+    },
+    {
+      "chapter": 83,
+      "text": "「吾欽奉王命，總督諸軍，昨已三令五申，令汝等各處堅守；俱不遵吾令，何也？」韓當曰：「吾自從孫將軍平定江南，經數百戰；其餘諸將，或從討逆將軍，或從當今大王，皆披堅執銳，出生入死之士。",
+      "text_length": 90
+    },
+    {
+      "chapter": 103,
+      "text": "吾軍欲退，當徐徐而動。今若退兵，魏人必乘勢追趕，此取敗之道也。足下宜先督船隻詐爲拒敵之意，吾悉以人馬向襄陽而進，爲疑敵之計，然後徐徐退歸江東，魏兵自不敢近耳。",
+      "text_length": 79
+    },
+    {
+      "chapter": 84,
+      "text": "吾非懼石陣而退；吾料魏主曹丕，其奸詐與父無異，今知吾追趕蜀兵，必乘虛來襲。吾若深入西川，急難退矣。",
+      "text_length": 49
+    },
+    {
+      "chapter": 83,
+      "text": "「江東文武，皆大王故舊之臣；臣年無才，安能制之？」權曰：「闞德潤以全家保卿，孤亦素知卿才。",
+      "text_length": 45
+    },
+    {
+      "chapter": 83,
+      "text": "主上命吾為大將，督軍破蜀。軍有常法，公等各宜遵守。違者王法無親，勿致後悔。",
+      "text_length": 37
+    },
+    {
+      "chapter": 84,
+      "text": "「蜀兵欺我太甚！某等願出擊之！」遜笑曰：「公等但恃血氣之勇，未知孫吳兵法。",
+      "text_length": 37
+    },
+    {
+      "chapter": 83,
+      "text": "「劉備舉兵東下，連勝十餘陣，銳氣正盛；今只乘高守險，不可輕出，出則不利。",
+      "text_length": 36
+    },
+    {
+      "chapter": 83,
+      "text": "吾欽奉王命，總督諸軍，昨已三令五申，令汝等各處堅守；俱不遵吾令，何也？",
+      "text_length": 35
+    },
+    {
+      "chapter": 83,
+      "text": "目今蜀兵四十餘營，皆移於山林密處，依溪傍澗，就水歇涼。都督可乘虛擊之。",
+      "text_length": 35
+    },
+    {
+      "chapter": 83,
+      "text": "「倘文武不服，何如？」權取所佩劍與之曰：「如有不聽號令者，先斬後奏。",
+      "text_length": 34
+    },
+    {
+      "chapter": 83,
+      "text": "吾素知孫安東深得軍心，必能堅守，不必救之。待吾破蜀後，彼自出矣。",
+      "text_length": 32
+    },
+    {
+      "chapter": 84,
+      "text": "吾之不聽諸公擊班者，正為此也。今伏兵已出，旬日之內，必破蜀矣。",
+      "text_length": 31
+    },
+    {
+      "chapter": 96,
+      "text": "「今曹休大敗，魏兵喪膽；可修國書，遣使入川，教諸葛亮進兵攻之。",
+      "text_length": 31
+    },
+    {
+      "chapter": 96,
+      "text": "今曹休大敗，魏兵喪膽；可修國書，遣使入川，教諸葛亮進兵攻之。",
+      "text_length": 30
+    },
+    {
+      "chapter": 83,
+      "text": "「荷蒙重託，敢不拜命？但乞大王於來日會聚眾官，然後賜臣。",
+      "text_length": 28
+    },
+    {
+      "chapter": 83,
+      "text": "「目今蜀兵四十餘營，皆移於山林密處，依溪傍澗，就水歇涼。",
+      "text_length": 28
+    },
+    {
+      "chapter": 83,
+      "text": "荷蒙重託，敢不拜命？但乞大王於來日會聚眾官，然後賜臣。",
+      "text_length": 27
+    },
+    {
+      "chapter": 84,
+      "text": "非汝之過也：吾欲試敵人之虛實耳。破蜀之計，吾已定矣。",
+      "text_length": 26
+    }
+  ],
+  "relationships": [
+    {
+      "target": "Sun Quan",
+      "type": "lord_vassal",
+      "type_kr": "군신",
+      "intensity": 80,
+      "evidence": "이릉 승리"
+    }
+  ],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": true
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-16T10:52:17.268Z"
+}

@@ -1,0 +1,140 @@
+{
+  "name_kr": "전위",
+  "name_en": "Dian Wei",
+  "name_cn": "典韋",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 1,
+  "role": "조조의 근위대장, 완성 전사",
+  "stats": {
+    "leadership": 56,
+    "war": 95,
+    "intelligence": 35,
+    "politics": 29,
+    "charisma": 58,
+    "total": 273,
+    "birth": 160,
+    "death": 197
+  },
+  "novel_presence": {
+    "first_chapter": 10,
+    "last_chapter": 58,
+    "chapters": "10-12,14,16-18,58",
+    "chapter_count": 4
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n악래(惡來)典韋(뎬웨이)/Diǎn Wéi전위 성씨 전(典) 휘 위(韋) 출생미상연주(兗州) 진류군(陳留郡) 기오현(己吾縣)(現 허난성 상추시 닝링현 황강향 지우청촌)사망197년형주(荊州) 남양군(南陽郡) 완성(宛城)(現 허난성 난양시)가족전만(典満) (아들) 최종직위 교위(校尉) [ 역임한 관직 펼치기 · 접기 ] 후한(장막 → 조조) 사마(司馬) → 교위(校尉)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 장막 휘하2.3. 조조에게 임관2.4. 복양 전투2.5. 조조 휘하2.6. 완 전투2.7. 사후3. 삼국지연의4. 기타5. 대중매체에서",
+      "biography": "연주 진류군 기오현 사람인데 용모가 우락부락하고 근력은 다른 사람들을 뛰어넘었으며 곧은 의지와 절개와 협기가 있었다.양읍의 유씨(劉氏)는 저양의 이영(李永)과 원수지간이었는데, 전위는 유씨를 위해 복수했다. 이영은 과거에 부춘현의 장(長)을 역임했으므로 집안을 매우 삼엄하게 경계했다. 전위는 수레를 타고 닭과 술을 싣고 방문객으로 가장해서 문을 열게 한 후, 품속에서 비수를 꺼내 이영과 그의 아내를 죽인 연후에 조용히 수레 위의 칼과 화극을 갖고 걸어 나왔다. 이영의 집은 저자 가까이에 있었는데, 시장 사람들은 모두 그를 두려워했다. 그를 추격하는 사람이 수백 명이 되었으나 감히 그에게 접근하지 못했고, 4 ~ 5리쯤 달려가서야 그의 동료를 만나 태도를 바꿔 싸우면서 탈출했다. 이 일로 말미암아 호걸로 인식되었다.",
+      "anecdotes": "전위가 온 몸에 화살을 맞고 선 채로 서서 죽은 것으로 묘사되는 경우도 있는데 이건 일본 쪽에서 만든 설정이다. 일본사에서 무사시보 벤케이가 이런 식으로 죽었다는 이야기가 전해지는데 요코야마 미츠테루 삼국지에서 전위의 죽음을 이렇게 묘사해 한국에도 알려지게 되었다. 그 후로 일본 쪽 창작물에서는 전위의 최후에서 화살이 강조되는 편이다.전위는 190년부터 197년까지 불과 7년 남짓 장수로써 활약했기 때문에, 조조군에서 활약한 시기가 10년도 채 되지 않을 만큼 짧았고, 220년 정식 건국은 물론 그 전신 되는 위공·위왕 시절의 210년대에서도 제법 오래 전이었다. 하지만 당대 사람들은 전위의 용맹과 완성에서 자신을 희생해 조조를 구한 공적을 상당히 높게 평가했다는 걸 알 수 있는데, 위 왕조의 영묘에 제사를 지낼 때, 전위가 하후연, 조홍 등 건국공신들과 함께 배향되었다는 점이다. 참고로 평생동안 조위를 섬겼던 허저는 여기에 이름을 올리지 못했는데, 이는 겨우 7년 남짓 조조를 섬긴 전위의 공적을 평생토록 조조를 섬긴 허저의 공적보다 높게 기렸다는 의미가 된다. 이를 두고 후대에 주석을 달았던 배송지는 조조의 제묘 앞 정원에서 제사를 지낼 때 전위는 제사를 지내면서, 허저는 함께 제사 지내지 않은 것을 비판했다. 배송지는 서타의 모반과 동관에서 허저가 조조를 구한 것이 전위가 복양이나 완성에서 조조를 구한 것과 비교해도 공이 적지 않다고 했는데, 배송지는 200년 뒤의 사람이라 당대의 인식과는 차이가 있을 수 있다.전위가 처음 맡은 사마라는 직책은 부대에서의 최일선 장교에 해당되며 한 부대 내에도 수도 없이 많이 있는 직책이었다. 전위는 출신 성분 자체가 미천했기 때문에 복양에서 조조의 눈에 우연히 들지 않았다면 잊힌 존재가 되었을 가능성도 있었다. 당시에는 천거를 통해서 관직에 나가던 시대였기 때문에, 자도 없는 천한 출신의 전위가 정상적인 출세 과정을 밟는 것은 불가능했다. 다행히 난세였고, 복양에서 조조가 전위의 활약을 바로 옆에서 지켜볼 수 있었던 것이 전위의 인생 역전의 기회가 된 것으로, 이로 인해 전위는 졸병으로 시작하여 경호실장의 자리까지 오른 것이었다. 물론 전위가 보여준 뛰어난 무용을 보면 평화로운 시대에도 입소문이 퍼져 중용되었을 것이다.",
+      "military": "조조는 복양으로 가서 여포를 토벌했다. 여포는 복양에서 서쪽으로 4~5리쯤 되는 곳에 부대 하나를 주둔시켰는데 조조가 밤에 여포의 주둔군을 급습하여 날이 밝을 때를 기다렸다가 적을 격파시켰다. 미처 돌아가지 않았는데, 마침 여포의 구원병이 도착하여 삼면에서 조조 군대를 공격했다. 이 당시 여포는 직접 격투에 참가하여 아침부터 날이 저물 때까지 쌍방이 대치하여 수십 차례 교전을 벌이고 격렬하게 싸웠다.조조가 적진을 뚫고 나갈 병사를 소집하자, 전위가 제일 먼저 참가하여 응모한 수십 명을 통솔하였는데, 그들은 모두 두꺼운 옷과 두 겹의 갑옷을 입고 방패도 들지 않고, 단지 긴 창과 화극을 손에 들고 있었다. 이때 서쪽에서 또 긴급하게 고하자 전위는 병사를 이끌고 적을 감당했는데, 적은 화살과 쇠뇌를 어지럽게 쏘았고, 화살은 비가 내리듯 쏟아졌으므로, 전위는 바라볼 수도 없어 병사들에게 말했다.적군이 열 발짝까지 접근해오면 나에게 보고하라.병사가 말했다. 열 발짝입니다.또 명령했다.다섯 발짝일 때, 다시 보고하라.병사들은 두려워하며 긴급하게 외쳤다. 적이 왔습니다.전위는 손에 십여 개의 화극을 들고 큰소리로 고함지르며 일어났다. 화극이 닿은 적은 고꾸라지지 않는 자가 없었다. 여포의 군대는 퇴각했다. 마침 날이 저물었으므로 조조는 병사를 인솔하여 떠났다."
+    },
+    "wiki_en": {
+      "summary": "Dian Wei was a military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. Famed for his enormous strength, Dian Wei excelled at wielding a pair of jis, each of which was said to weigh 40 jin. He was killed in action at the Battle of Wancheng while covering Cao Cao's escape from Zhang Xiu's forces.",
+      "sections": {
+        "Lead": "Dian Wei (pronunciationⓘ; died February or March 197)[a] was a military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. Famed for his enormous strength, Dian Wei excelled at wielding a pair of jis (a halberd-like weapon), each of which was said to weigh 40 jin. He was killed in action at the Battle of Wancheng while covering Cao Cao's escape from Zhang Xiu's forces.[2]",
+        "Background": "Dian Wei was from Jiwu County (己吾縣), Chenliu Commandery (陳留郡), in present-day Ningling County, Henan. He was described as a stalwart man with great strength and the ambition of becoming a youxia (vigilante).[3]",
+        "Death at the Battle of Wancheng": "In February 197,[18] Cao Cao invaded Wancheng (宛城; present-day Wancheng District, Nanyang, Henan) in the north of Jing Province. Wancheng was the territory of the warlord Zhang Xiu, who immediately surrendered upon learning of Cao Cao's invasion. Cao Cao was pleased so he threw a party for Zhang Xiu and his men.[19] During the party, Dian Wei stood guard behind Cao Cao, holding a giant battle axe whose blade was one chi long. Zhang Xiu and his followers did not dare to look up when they toasted to Cao Cao.[20]\n\nCao Cao had stayed in Wancheng for more than 10 days when Zhang Xiu suddenly rebelled and launched a surprise attack on his camp. Cao Cao was caught unprepared so he retreated with a few horsemen.[21]\n\nDian Wei stood guard at the entrance to the camp and prevented Zhang Xiu's soldiers from advancing further. The enemy then scattered and broke into Cao Cao's camp from the other entrances. Dian Wei had about a dozen men with him and they were all heavily outnumbered by Zhang Xiu's forces.[22] However, Dian Wei fought bravely with a long ji, and with each swing of his weapon, he broke more than ten enemy spears. As the battle went on, Dian Wei's men were eventually all killed and Dian himself had sustained several wounds all over his body, but he continued fighting the enemy at close quarters with short weapons. Dian Wei grabbed two enemies and killed them, and the others did not dare to approach him.[23] Dian Wei then rushed forward and slew several more enemy soldiers b... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "典韋（2世紀—197年），陳留郡己吾县（今河南省寧陵县）人，東漢末年群雄曹操麾下侍衛武將，因保護曹操而戰死。小說《三國演義》中稱典韋為「古之惡來」。\n",
+      "sections": {
+        "Introduction": "典韋（2世紀—197年），陳留郡己吾县（今河南省寧陵县）人，東漢末年群雄曹操麾下侍衛武將，因保護曹操而戰死。小說《三國演義》中稱典韋為「古之惡來」。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 12,
+      "text": "「汝亦黃巾賊耶？」壯士曰：「黃巾數百騎，盡被我擒在塢內！」韋曰：「何不獻出？」壯士曰：「你若贏得手中寶刀，我便獻出！」韋大怒，挺雙戟向前來戰。",
+      "text_length": 71
+    },
+    {
+      "chapter": 35,
+      "text": "「二將欺敵而亡，今只宜按兵不動，申報丞相，起大兵來征剿，乃為上策。",
+      "text_length": 33
+    },
+    {
+      "chapter": 35,
+      "text": "二將欺敵而亡，今只宜按兵不動，申報丞相，起大兵來征剿，乃為上策。",
+      "text_length": 32
+    },
+    {
+      "chapter": 35,
+      "text": "兵法云：『知彼知己，百戰百勝．』某非怯戰，但恐不能必勝耳。",
+      "text_length": 29
+    },
+    {
+      "chapter": 12,
+      "text": "「汝在城外催救軍，我入去尋主公。",
+      "text_length": 16
+    },
+    {
+      "chapter": 12,
+      "text": "汝在城外催救軍，我入去尋主公。",
+      "text_length": 15
+    },
+    {
+      "chapter": 35,
+      "text": "「劉備人傑也，不可輕視。",
+      "text_length": 12
+    },
+    {
+      "chapter": 12,
+      "text": "我往復兩遭，尋覓不見。",
+      "text_length": 11
+    },
+    {
+      "chapter": 35,
+      "text": "劉備人傑也，不可輕視。",
+      "text_length": 11
+    },
+    {
+      "chapter": 35,
+      "text": "將軍若去，某守樊城。",
+      "text_length": 10
+    },
+    {
+      "chapter": 12,
+      "text": "汝亦黃巾賊耶？",
+      "text_length": 7
+    },
+    {
+      "chapter": 12,
+      "text": "「吾亦尋不見。",
+      "text_length": 7
+    },
+    {
+      "chapter": 12,
+      "text": "吾亦尋不見。",
+      "text_length": 6
+    },
+    {
+      "chapter": 12,
+      "text": "何不獻出？",
+      "text_length": 5
+    }
+  ],
+  "relationships": [
+    {
+      "target": "Cao Cao",
+      "type": "lord_vassal",
+      "type_kr": "군신",
+      "intensity": 75,
+      "evidence": "근위대장"
+    }
+  ],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": true
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-16T10:52:17.214Z"
+}

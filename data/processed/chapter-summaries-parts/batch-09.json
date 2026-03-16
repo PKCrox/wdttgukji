@@ -1,0 +1,295 @@
+{
+  "batch": 9,
+  "chapters": [
+    {
+      "chapter_number": 81,
+      "title_kr": "형의 원수에 급한 장비가 해를 당하고, 아우의 한을 씻으려 선주가 출병하다",
+      "summary_kr": "유비가 관우의 원수를 갚기 위해 오나라 정벌을 결심하나, 조운과 제갈량이 위나라를 먼저 치라고 간언하지만 듣지 않는다. 장비는 낭중에서 백기백갑을 기한 내에 준비하라는 무리한 명령을 내리고, 부하 범강과 장달에게 잠든 사이 암살당한다. 유비는 장비의 아들 장포와 관우의 아들 관흥을 의형제로 맺게 하고, 75만 대군을 이끌고 오나라 정벌에 나선다.",
+      "key_events": [
+        {
+          "event": "장비가 부하 범강과 장달에게 암살당하다",
+          "participants": ["zhang-fei", "fan-jiang", "zhang-da"],
+          "year": 221
+        },
+        {
+          "event": "유비가 오나라 정벌을 위해 75만 대군을 일으키다",
+          "participants": ["liu-bei"],
+          "year": 221
+        },
+        {
+          "event": "장포와 관흥이 의형제를 맺다",
+          "participants": ["zhang-bao", "guan-xing"],
+          "year": 221
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "조운과 제갈량의 간언을 무시하고 오나라 친정을 결심하다" },
+        { "character": "zhang-fei", "action": "부하를 학대하다가 범강과 장달에게 암살당하다" },
+        { "character": "zhao-yun", "action": "국적은 조조이니 위를 먼저 치라고 간언하다" },
+        { "character": "zhuge-liang", "action": "백관을 이끌고 출병을 만류하나 실패하다" },
+        { "character": "zhang-bao", "action": "아버지의 원수를 갚겠다며 선봉을 자청하다" },
+        { "character": "guan-xing", "action": "활솜씨를 뽐내며 장포와 선봉 자리를 다투다" }
+      ]
+    },
+    {
+      "chapter_number": 82,
+      "title_kr": "손권이 위에 항복하여 구석을 받고, 선주가 오를 정벌하며 육군을 상 주다",
+      "summary_kr": "손권은 촉의 대군을 막기 위해 조비에게 항복하여 오왕에 봉해지고 구석을 받는다. 유비의 선봉 오반과 장포, 관흥이 오나라 장수 손환을 격파하고 이릉성을 포위한다. 오나라가 한당, 주태, 반장, 감녕 등을 보내 반격하나, 유비는 노장 황충이 공을 세우겠다며 단독 출전하는 것을 걱정한다.",
+      "key_events": [
+        {
+          "event": "손권이 조비에게 칭신하여 오왕에 봉해지다",
+          "participants": ["sun-quan", "cao-pi"],
+          "year": 221
+        },
+        {
+          "event": "장포와 관흥이 손환의 군을 대파하다",
+          "participants": ["zhang-bao", "guan-xing", "sun-huan"],
+          "year": 221
+        },
+        {
+          "event": "손환이 이릉성에서 포위당하다",
+          "participants": ["sun-huan"],
+          "year": 221
+        }
+      ],
+      "character_actions": [
+        { "character": "sun-quan", "action": "위나라에 칭신하여 오왕 봉작과 구석을 받다" },
+        { "character": "liu-bei", "action": "대군을 이끌고 기관에서 백제성까지 진군하다" },
+        { "character": "zhang-bao", "action": "오나라 장수 사적과 이이를 격파하다" },
+        { "character": "guan-xing", "action": "이이를 베어 장포를 구하다" },
+        { "character": "cao-pi", "action": "손권의 항복을 받아들여 오왕에 봉하다" }
+      ]
+    },
+    {
+      "chapter_number": 83,
+      "title_kr": "효정에서 선주가 원수를 잡고, 강구를 지키며 서생이 대장에 배수되다",
+      "summary_kr": "노장 황충이 '늙은이는 쓸모없다'는 유비의 말에 분개하여 단독 출전했다가 매복에 걸려 전사하고, 감녕은 번왕 사마가에게 사살당한다. 관흥이 관우의 원수 반장을 추적하여 관우의 사당에서 참살하고 청룡언월도를 되찾는다. 손권은 간택의 추천으로 육손을 대도독에 임명하나, 한당과 주태 등 원로 장수들은 서생 출신을 불복한다.",
+      "key_events": [
+        {
+          "event": "황충이 오나라군과 싸우다 전사하다",
+          "participants": ["huang-zhong"],
+          "year": 222
+        },
+        {
+          "event": "감녕이 사마가에게 사살당하다",
+          "participants": ["gan-ning", "sha-moke"],
+          "year": 222
+        },
+        {
+          "event": "관흥이 반장을 죽이고 청룡언월도를 되찾다",
+          "participants": ["guan-xing", "pan-zhang"],
+          "year": 222
+        },
+        {
+          "event": "육손이 오나라 대도독에 임명되다",
+          "participants": ["lu-xun", "sun-quan"],
+          "year": 222
+        }
+      ],
+      "character_actions": [
+        { "character": "huang-zhong", "action": "늙었다는 말에 분개하여 출전했다가 화살에 맞아 전사하다" },
+        { "character": "guan-xing", "action": "반장을 추적하여 관우 사당 앞에서 참살하다" },
+        { "character": "lu-xun", "action": "대도독에 임명되어 제장에게 수비 명령을 내리다" },
+        { "character": "liu-bei", "action": "효정에서 칠백 리에 걸쳐 사십여 채의 영채를 설치하다" }
+      ]
+    },
+    {
+      "chapter_number": 84,
+      "title_kr": "육손이 칠백 리 연영을 불사르고, 공명이 팔진도를 교묘히 펼치다",
+      "summary_kr": "육손은 유비군이 산림에 진을 옮긴 것을 간파하고 화공을 감행하여 칠백 리 연영을 불태워 촉군을 궤멸시킨다. 유비는 조운의 구원으로 간신히 백제성으로 탈출하고, 부동, 정기 등 충신들은 장렬히 전사한다. 육손이 추격하다 어복포에서 제갈량이 미리 배치한 팔진도에 갇히나 제갈량의 장인 황승언이 구출해 주고, 위나라 삼로 출병 소식에 군을 돌린다.",
+      "key_events": [
+        {
+          "event": "육손이 화공으로 촉나라 칠백 리 연영을 불태우다 (이릉대전)",
+          "participants": ["lu-xun", "liu-bei"],
+          "year": 222
+        },
+        {
+          "event": "유비가 백제성으로 패주하다",
+          "participants": ["liu-bei", "zhao-yun"],
+          "year": 222
+        },
+        {
+          "event": "육손이 팔진도에 갇혔다가 황승언의 도움으로 빠져나오다",
+          "participants": ["lu-xun", "zhuge-liang"],
+          "year": 222
+        }
+      ],
+      "character_actions": [
+        { "character": "lu-xun", "action": "화공으로 촉군 사십 둔을 불태워 대승을 거두다" },
+        { "character": "liu-bei", "action": "대패하여 마안산에서 포위되었다가 백제성으로 도주하다" },
+        { "character": "zhao-yun", "action": "강주에서 달려와 유비를 구출하다" },
+        { "character": "zhuge-liang", "action": "미리 어복포에 팔진도를 설치하여 육손의 추격을 저지하다" }
+      ]
+    },
+    {
+      "chapter_number": 85,
+      "title_kr": "유선주가 유조로 고아를 부탁하고, 제갈량이 편안히 앉아 오로를 물리치다",
+      "summary_kr": "유비가 백제성 영안궁에서 제갈량에게 '사자가 보좌할 만하면 보좌하고, 재능이 없으면 그대가 직접 성도의 주인이 되라'며 탁고의 유명을 남기고 붕어한다. 유선이 즉위하고, 사마의가 조비에게 오로 침공을 건의하여 50만 대군이 촉을 공격하나, 제갈량은 마초, 위연, 이엄, 조운 등을 배치하여 네 길을 물리치고 등지를 사신으로 보내 동오와 연합한다.",
+      "key_events": [
+        {
+          "event": "유비가 백제성에서 제갈량에게 탁고하고 붕어하다",
+          "participants": ["liu-bei", "zhuge-liang", "liu-shan"],
+          "year": 223
+        },
+        {
+          "event": "유선이 촉한 황제에 즉위하다",
+          "participants": ["liu-shan"],
+          "year": 223
+        },
+        {
+          "event": "제갈량이 오로 침공을 모두 물리치다",
+          "participants": ["zhuge-liang", "ma-chao", "zhao-yun", "wei-yan"],
+          "year": 223
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "제갈량에게 탁고하며 '군가자취(그대가 스스로 주인이 되라)'의 유언을 남기다" },
+        { "character": "zhuge-liang", "action": "오로의 병사를 각각 적절한 장수를 배치하여 물리치다" },
+        { "character": "liu-shan", "action": "촉한 2대 황제로 즉위하다" },
+        { "character": "ma-su", "action": "유비가 '말이 실제를 넘는다'며 제갈량에게 경계시키다" }
+      ]
+    },
+    {
+      "chapter_number": 86,
+      "title_kr": "장온을 곤란케 하며 진밀이 천변을 뽐내고, 조비를 격파하며 서성이 화공을 쓰다",
+      "summary_kr": "등지가 동오에 사신으로 가 손권을 설득하여 촉오 동맹을 성사시키고, 장온이 답례 사신으로 촉에 왔다가 학사 진밀의 천문 논쟁에 압도당한다. 조비가 30만 대군으로 동오를 침공하나, 서성이 갈대 허수아비로 가짜 성곽을 만들어 위군을 기만하고 화공으로 대파한다. 이 전투에서 장료가 정봉의 화살에 맞아 허도로 돌아간 뒤 사망한다.",
+      "key_events": [
+        {
+          "event": "등지가 동오에서 촉오 동맹을 성사시키다",
+          "participants": ["deng-zhi", "sun-quan"],
+          "year": 223
+        },
+        {
+          "event": "서성이 화공으로 조비의 침공을 격퇴하다",
+          "participants": ["xu-sheng", "cao-pi"],
+          "year": 224
+        },
+        {
+          "event": "장료가 정봉의 화살에 부상당한 뒤 사망하다",
+          "participants": ["zhang-liao", "ding-feng"],
+          "year": 224
+        }
+      ],
+      "character_actions": [
+        { "character": "deng-zhi", "action": "동오에서 기름 솥 위협에도 굴하지 않고 촉오 동맹을 성사시키다" },
+        { "character": "zhuge-liang", "action": "동오와의 동맹을 기획하고 남만 정벌을 준비하다" },
+        { "character": "xu-sheng", "action": "갈대 허수아비 성곽과 화공으로 위군을 대파하다" },
+        { "character": "cao-pi", "action": "30만 대군으로 동오를 침공하나 대패하고 돌아가다" }
+      ]
+    },
+    {
+      "chapter_number": 87,
+      "title_kr": "남쪽 도적을 정벌하며 승상이 대군을 일으키고, 천병에 항거하며 만왕이 처음 사로잡히다",
+      "summary_kr": "제갈량이 건흥 3년 남만 반란을 진압하기 위해 50만 대군을 이끌고 친정에 나서며, 마속이 '공심위상(마음을 공략하는 것이 상책)'이라 진언한다. 제갈량은 이간계로 옹개를 죽이게 하고 주포를 처단하게 하여 삼로의 반군을 평정한 뒤, 남만 깊숙이 진격한다. 맹획의 삼동 원수를 격파하고, 위연이 산골에서 맹획을 생포하나, 제갈량은 불복하는 맹획을 풀어준다.",
+      "key_events": [
+        {
+          "event": "제갈량이 50만 대군으로 남만 정벌에 나서다",
+          "participants": ["zhuge-liang", "zhao-yun", "wei-yan", "ma-su"],
+          "year": 225
+        },
+        {
+          "event": "마속이 '공심위상' 전략을 건의하다",
+          "participants": ["ma-su", "zhuge-liang"],
+          "year": 225
+        },
+        {
+          "event": "맹획이 처음으로 사로잡히다 (칠종칠금 1차)",
+          "participants": ["meng-huo", "zhuge-liang", "wei-yan"],
+          "year": 225
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "이간계로 옹개와 주포를 제거하고 남만 깊숙이 진격하다" },
+        { "character": "ma-su", "action": "공심위상(마음을 공략함이 상책)을 진언하여 참군이 되다" },
+        { "character": "meng-huo", "action": "삼동 원수를 앞세워 싸우나 대패하고 생포당하다" },
+        { "character": "wei-yan", "action": "산골에서 맹획을 생포하다" },
+        { "character": "zhao-yun", "action": "금환삼결을 일합에 찔러 죽이다" }
+      ]
+    },
+    {
+      "chapter_number": 88,
+      "title_kr": "노수를 건너 다시 번왕을 묶고, 거짓 항복을 간파하여 세 번 맹획을 사로잡다",
+      "summary_kr": "맹획이 노수를 방벽 삼아 수비하나, 마대가 야간에 노수를 도하하여 양곡 보급로를 차단한다. 동도나 등 부하 추장들이 제갈량의 은혜에 감복하여 술 취한 맹획을 사로잡아 바치니, 제갈량이 두 번째로 풀어준다. 세 번째로 맹획이 아우 맹우를 보내 거짓 항복시키고 야습을 시도하나, 제갈량이 이를 간파하여 왕평, 위연, 조운의 협공과 마대의 위장으로 다시 생포한 뒤 또 석방한다.",
+      "key_events": [
+        {
+          "event": "동도나가 맹획을 사로잡아 바치다 (칠종칠금 2차)",
+          "participants": ["meng-huo", "zhuge-liang", "dong-tuna"],
+          "year": 225
+        },
+        {
+          "event": "맹우의 거짓 항복을 간파하여 맹획을 세 번째 사로잡다 (칠종칠금 3차)",
+          "participants": ["meng-huo", "zhuge-liang", "zhao-yun", "wei-yan"],
+          "year": 225
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "맹우의 사항을 간파하고 세 갈래 매복으로 맹획을 삼금하다" },
+        { "character": "meng-huo", "action": "노수 방어선을 구축하나 내부 배신과 거짓 항복 실패로 연이어 잡히다" },
+        { "character": "ma-dai", "action": "야간에 노수를 건너 양곡 보급로를 차단하다" },
+        { "character": "zhao-yun", "action": "삼로 협공에서 맹획의 본채를 습격하다" }
+      ]
+    },
+    {
+      "chapter_number": 89,
+      "title_kr": "무향후가 네 번째로 계책을 쓰고, 남만왕이 다섯 번째로 사로잡히다",
+      "summary_kr": "제갈량이 서이하에서 죽다리를 놓아 대군을 건너고, 허영을 설치하여 맹획을 유인한 뒤 함정으로 네 번째 생포하나 또다시 석방한다. 맹획이 독룡동의 타사대왕에게 의탁하여 아천, 멸천, 흑천, 유천 등 네 가지 독천으로 촉군을 막으려 하나, 제갈량이 복파장군 사당의 산신 지시를 따라 만안계의 약수로 병사들을 구한다. 은야동 양봉이 맹획과 타사대왕을 사로잡아 제갈량에게 바쳐 다섯 번째 사로잡히나, 맹획은 여전히 불복하여 다시 풀려난다.",
+      "key_events": [
+        {
+          "event": "맹획이 네 번째로 함정에 빠져 사로잡히다 (칠종칠금 4차)",
+          "participants": ["meng-huo", "zhuge-liang", "wei-yan"],
+          "year": 225
+        },
+        {
+          "event": "촉군이 독천의 해독약을 만안은자에게서 얻다",
+          "participants": ["zhuge-liang", "meng-jie"],
+          "year": 225
+        },
+        {
+          "event": "양봉이 맹획을 사로잡아 바치다 (칠종칠금 5차)",
+          "participants": ["meng-huo", "zhuge-liang", "yang-feng"],
+          "year": 225
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "서이하에 죽다리를 놓고 허영과 함정으로 맹획을 사금하다" },
+        { "character": "meng-huo", "action": "독룡동에 숨어 네 독천으로 촉군을 막으려 하나 실패하다" },
+        { "character": "wei-yan", "action": "산골 매복으로 맹획을 함정에 빠뜨려 사금하다" },
+        { "character": "yang-feng", "action": "제갈량의 은혜에 감복하여 연회 중 맹획을 사로잡아 바치다" }
+      ]
+    },
+    {
+      "chapter_number": 90,
+      "title_kr": "거대한 짐승을 몰아 여섯 번째 만병을 깨뜨리고, 등갑을 불태워 일곱 번째 맹획을 사로잡다",
+      "summary_kr": "제갈량이 삼강성을 토산 전술로 함락하고, 축융부인이 비도로 촉장을 잡으나 마대의 반마삭에 걸려 사로잡힌다. 목록대왕의 맹수군에 가짜 거수와 연화탄으로 대승하고, 대래동주의 거짓 항복을 간파하여 맹획을 여섯 번째 생포한 뒤 석방한다. 최후에 올돌골의 등갑군을 반사곡으로 유인하여 화공으로 전멸시키고, 맹획을 일곱 번째 사로잡자 마침내 맹획이 진심으로 항복하여 남만이 평정된다.",
+      "key_events": [
+        {
+          "event": "제갈량이 가짜 항복을 간파하여 맹획을 여섯 번째 사로잡다 (칠종칠금 6차)",
+          "participants": ["meng-huo", "zhuge-liang"],
+          "year": 225
+        },
+        {
+          "event": "반사곡에서 등갑군을 화공으로 전멸시키다",
+          "participants": ["zhuge-liang", "wu-tu-gu", "wei-yan", "ma-dai"],
+          "year": 225
+        },
+        {
+          "event": "맹획이 일곱 번째 사로잡혀 진심으로 항복하다 (칠종칠금 7차)",
+          "participants": ["meng-huo", "zhuge-liang"],
+          "year": 225
+        },
+        {
+          "event": "남만이 평정되고 맹획이 영구 동주로 임명되다",
+          "participants": ["zhuge-liang", "meng-huo"],
+          "year": 225
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "반사곡 화공으로 등갑군을 전멸시키고 눈물을 흘리며 수명이 줄었다 탄식하다" },
+        { "character": "meng-huo", "action": "칠금칠종 끝에 진심으로 항복하며 다시는 반란하지 않겠다고 맹세하다" },
+        { "character": "wei-yan", "action": "15연패 유인전으로 올돌골을 반사곡으로 끌어들이다" },
+        { "character": "ma-dai", "action": "반사곡에 지뢰와 화약을 설치하여 등갑군을 소각하다" },
+        { "character": "zhu-rong", "action": "비도로 장억과 마충을 사로잡으나 반마삭에 걸려 생포당하다" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1471 @@
+{
+  "total_entries": 122,
+  "period": "127 CE - 280/05/01 CE",
+  "generated_at": "2026-03-16T10:52:01.992Z",
+  "entries": [
+    {
+      "year": 127,
+      "event_kr": "정현 출생",
+      "event_en": "Birth of Zheng Xuan",
+      "participants": [
+        "정현",
+        "노식"
+      ],
+      "location": null,
+      "significance": "Notable scholars born",
+      "source": "namuwiki"
+    },
+    {
+      "year": 155,
+      "event_kr": "주요 군벌 출생",
+      "event_en": "Births of major warlords",
+      "participants": [
+        "조조",
+        "원술",
+        "원소",
+        "손책"
+      ],
+      "location": null,
+      "significance": "Future Three Kingdoms founders emerge",
+      "source": "namuwiki"
+    },
+    {
+      "year": 175,
+      "event_kr": "손책, 주유 출생",
+      "event_en": "Sun Ce and Zhou Yu born",
+      "participants": [
+        "손책",
+        "주유"
+      ],
+      "location": null,
+      "significance": "Eastern Wu founders",
+      "source": "namuwiki"
+    },
+    {
+      "year": 181,
+      "event_kr": "제갈량 출생",
+      "event_en": "Zhuge Liang born",
+      "participants": [
+        "제갈량"
+      ],
+      "location": null,
+      "significance": "Future Shu strategist",
+      "source": "namuwiki"
+    },
+    {
+      "year": 182,
+      "event_kr": "손권 출생",
+      "event_en": "Sun Quan born",
+      "participants": [
+        "손권"
+      ],
+      "location": null,
+      "significance": "Future Eastern Wu emperor",
+      "source": "namuwiki"
+    },
+    {
+      "year": 184,
+      "event_kr": "황건적의 난",
+      "event_en": "Yellow Turban Rebellion",
+      "participants": [
+        "장각",
+        "황보숭",
+        "노식",
+        "손견"
+      ],
+      "location": "전국",
+      "significance": "삼국지 시대의 시작. 태평도 교주 장각이 주도한 대규모 농민 반란",
+      "source": "namuwiki"
+    },
+    {
+      "year": 185,
+      "event_kr": "양주 반란, 유언 익주자사 부임",
+      "event_en": "Yang Zhou uprisings; Liu Yan appointed",
+      "participants": [
+        "유언"
+      ],
+      "location": null,
+      "significance": "서남 지역 세력 기반 형성",
+      "source": "namuwiki"
+    },
+    {
+      "year": 187,
+      "event_kr": "한수 한나라에 귀순",
+      "event_en": "Han Sui submits to Han court",
+      "participants": [
+        "한수"
+      ],
+      "location": null,
+      "significance": "북방 안정",
+      "source": "namuwiki"
+    },
+    {
+      "year": 189,
+      "event_kr": "십상시의 난, 동탁 권력 장악",
+      "event_en": "Ten Eunuchs Coup; Dong Zhuo seizes power",
+      "participants": [
+        "동탁",
+        "여포",
+        "원소",
+        "하진"
+      ],
+      "location": "낙양",
+      "significance": "조정 붕괴, 동탁이 권력 장악",
+      "source": "namuwiki"
+    },
+    {
+      "year": 190,
+      "event_kr": "반동탁 연합군 결성, 호뢰관 전투",
+      "event_en": "Anti-Dong Zhuo coalition; Battle of Hulao Gate",
+      "participants": [
+        "원소",
+        "조조",
+        "손견",
+        "여포",
+        "동탁"
+      ],
+      "location": "낙양 일대",
+      "significance": "연합군의 일시적 성공",
+      "source": "namuwiki"
+    },
+    {
+      "year": 191,
+      "event_kr": "반동탁 연합 와해",
+      "event_en": "Coalition collapse",
+      "participants": [
+        "원술"
+      ],
+      "location": null,
+      "significance": "지역 할거 시작",
+      "source": "namuwiki"
+    },
+    {
+      "year": 192,
+      "event_kr": "동탁 암살, 여포와 왕윤의 미인계",
+      "event_en": "Dong Zhuo assassinated by Lu Bu",
+      "participants": [
+        "여포",
+        "왕윤",
+        "동탁",
+        "초선"
+      ],
+      "location": "장안",
+      "significance": "동탁 사망, 혼란 지속",
+      "source": "namuwiki"
+    },
+    {
+      "year": 193,
+      "event_kr": "서주 대학살 (1차)",
+      "event_en": "First Xuzhou Massacre",
+      "participants": [
+        "조조",
+        "유비",
+        "도겸"
+      ],
+      "location": "서주",
+      "significance": "조조의 서주 침공",
+      "source": "namuwiki"
+    },
+    {
+      "year": 194,
+      "event_kr": "서주 대학살 (2차), 손책 강동 획득",
+      "event_en": "Second Xuzhou massacre; Sun Ce gains Jiangdong",
+      "participants": [
+        "조조",
+        "손책"
+      ],
+      "location": null,
+      "significance": "손책의 강동 기반 확립",
+      "source": "namuwiki"
+    },
+    {
+      "year": 196,
+      "event_kr": "여포 서주 탈취, 조조 헌제 옹립",
+      "event_en": "Lu Bu captures Xuzhou; Cao Cao installs Emperor Xian",
+      "participants": [
+        "여포",
+        "조조",
+        "헌제"
+      ],
+      "location": "서주, 허도",
+      "significance": "조조의 정치적 기반 확립",
+      "source": "namuwiki"
+    },
+    {
+      "year": 198,
+      "event_kr": "하비 전투 - 여포 패망",
+      "event_en": "Battle of Xiapi - Lu Bu defeated",
+      "participants": [
+        "조조",
+        "여포",
+        "진궁"
+      ],
+      "location": "하비",
+      "significance": "여포 처형, 조조 세력 확대",
+      "source": "namuwiki"
+    },
+    {
+      "year": 200,
+      "event_kr": "관도대전",
+      "event_en": "Battle of Guandu",
+      "participants": [
+        "조조",
+        "원소",
+        "장합",
+        "고람"
+      ],
+      "location": "관도",
+      "significance": "조조가 원소를 결정적으로 격파. 화북 패권 확립의 전환점",
+      "source": "namuwiki"
+    },
+    {
+      "year": 202,
+      "event_kr": "원소 사망, 후계자 분쟁",
+      "event_en": "Yuan Shao's death; succession crisis",
+      "participants": [
+        "원소",
+        "원담",
+        "원상"
+      ],
+      "location": null,
+      "significance": "북방 세력 전환",
+      "source": "namuwiki"
+    },
+    {
+      "year": 204,
+      "event_kr": "조조 업성 함락 (원소의 수도)",
+      "event_en": "Cao Cao captures Ye",
+      "participants": [
+        "조조"
+      ],
+      "location": "업성",
+      "significance": "북방 통일 진행",
+      "source": "namuwiki"
+    },
+    {
+      "year": 205,
+      "event_kr": "원담 패배 및 처형",
+      "event_en": "Yuan Tan defeated and executed",
+      "participants": [
+        "원담",
+        "조조"
+      ],
+      "location": null,
+      "significance": "원씨 세력 사실상 소멸",
+      "source": "namuwiki"
+    },
+    {
+      "year": 207,
+      "event_kr": "삼고초려 - 유비, 제갈량 영입",
+      "event_en": "Three Visits to the Thatched Cottage",
+      "participants": [
+        "유비",
+        "제갈량"
+      ],
+      "location": "융중",
+      "significance": "천하삼분지계 제시. 촉한의 전략적 청사진",
+      "source": "namuwiki"
+    },
+    {
+      "year": 208,
+      "event_kr": "적벽대전",
+      "event_en": "Battle of Red Cliffs",
+      "participants": [
+        "조조",
+        "유비",
+        "손권",
+        "주유",
+        "제갈량",
+        "황개"
+      ],
+      "location": "적벽",
+      "significance": "조조의 남방 확장 저지. 삼국 정립의 결정적 전투",
+      "source": "namuwiki"
+    },
+    {
+      "year": 209,
+      "event_kr": "유비 형주 남부 영토 획득",
+      "event_en": "Liu Bei gains southern Jing Province",
+      "participants": [
+        "유비"
+      ],
+      "location": "형주",
+      "significance": "촉한 확장의 시작",
+      "source": "namuwiki"
+    },
+    {
+      "year": 211,
+      "event_kr": "유비 입촉",
+      "event_en": "Liu Bei enters Shu/Yizhou",
+      "participants": [
+        "유비",
+        "유장"
+      ],
+      "location": "익주",
+      "significance": "유비의 촉 정복 시작",
+      "source": "namuwiki"
+    },
+    {
+      "year": 214,
+      "event_kr": "유비 성도 함락, 마초 귀순",
+      "event_en": "Liu Bei conquers Chengdu; Ma Chao submits",
+      "participants": [
+        "유비",
+        "마초",
+        "유장"
+      ],
+      "location": "성도",
+      "significance": "촉한 건국의 기반 확립",
+      "source": "namuwiki"
+    },
+    {
+      "year": 215,
+      "event_kr": "합비 전투, 장로 조조에 귀순",
+      "event_en": "Battle of Hefei; Zhang Lu submits",
+      "participants": [
+        "손권",
+        "장료",
+        "장로",
+        "조조"
+      ],
+      "location": "합비, 한중",
+      "significance": "위나라 영토 통합",
+      "source": "namuwiki"
+    },
+    {
+      "year": 219,
+      "event_kr": "정군산 전투 - 하후연 전사",
+      "event_en": "Battle of Mount Dingjun",
+      "participants": [
+        "유비",
+        "하후연",
+        "황충"
+      ],
+      "location": "정군산",
+      "significance": "유비의 한중 확보",
+      "source": "namuwiki"
+    },
+    {
+      "year": 219,
+      "event_kr": "유비 한중왕 등극",
+      "event_en": "Liu Bei becomes King of Hanzhong",
+      "participants": [
+        "유비"
+      ],
+      "location": "한중",
+      "significance": "",
+      "source": "namuwiki"
+    },
+    {
+      "year": 219,
+      "event_kr": "번성 공방전, 관우 사망",
+      "event_en": "Battle of Fancheng; Guan Yu's death",
+      "participants": [
+        "관우",
+        "우금",
+        "방덕",
+        "여몽",
+        "손권"
+      ],
+      "location": "번성, 형주",
+      "significance": "관우 포로 후 처형. 촉한의 결정적 타격",
+      "source": "namuwiki"
+    },
+    {
+      "year": 220,
+      "event_kr": "조조 사망, 조비 위나라 건국",
+      "event_en": "Cao Cao dies; Cao Pi establishes Wei",
+      "participants": [
+        "조조",
+        "조비",
+        "헌제"
+      ],
+      "location": "낙양",
+      "significance": "후한 멸망, 위나라 건국",
+      "source": "namuwiki"
+    },
+    {
+      "year": 221,
+      "event_kr": "유비 촉한 건국",
+      "event_en": "Liu Bei founds Shu Han",
+      "participants": [
+        "유비"
+      ],
+      "location": "성도",
+      "significance": "촉한 제국 수립",
+      "source": "namuwiki"
+    },
+    {
+      "year": 221,
+      "event_kr": "장비 암살",
+      "event_en": "Zhang Fei assassinated",
+      "participants": [
+        "장비"
+      ],
+      "location": null,
+      "significance": "촉한의 핵심 무장 상실",
+      "source": "namuwiki"
+    },
+    {
+      "year": 222,
+      "event_kr": "이릉대전 - 육손의 화공",
+      "event_en": "Battle of Yiling",
+      "participants": [
+        "유비",
+        "육손"
+      ],
+      "location": "이릉",
+      "significance": "유비의 동정 실패. 촉한 국력 크게 약화",
+      "source": "namuwiki"
+    },
+    {
+      "year": 223,
+      "event_kr": "유비 사망, 유선 즉위",
+      "event_en": "Liu Bei dies; Liu Shan succeeds",
+      "participants": [
+        "유비",
+        "유선",
+        "제갈량"
+      ],
+      "location": "백제성",
+      "significance": "세대교체. 제갈량에게 탁고",
+      "source": "namuwiki"
+    },
+    {
+      "year": 225,
+      "event_kr": "칠종칠금 - 남만 정벌",
+      "event_en": "Seven Captures of Meng Huo",
+      "participants": [
+        "제갈량",
+        "맹획"
+      ],
+      "location": "남중",
+      "significance": "남방 안정화",
+      "source": "namuwiki"
+    },
+    {
+      "year": 227,
+      "event_kr": "제갈량 제1차 북벌, 출사표",
+      "event_en": "First Northern Expedition; Chu Shi Biao",
+      "participants": [
+        "제갈량"
+      ],
+      "location": "한중→위",
+      "significance": "출사표 제출. 북벌 시작",
+      "source": "namuwiki"
+    },
+    {
+      "year": 228,
+      "event_kr": "가정 전투 - 마속 패배",
+      "event_en": "Battle of Jieting - Ma Su defeated",
+      "participants": [
+        "제갈량",
+        "마속",
+        "장합"
+      ],
+      "location": "가정",
+      "significance": "마속의 전략적 실패, 제갈량의 읍참마속",
+      "source": "namuwiki"
+    },
+    {
+      "year": 228,
+      "event_kr": "제2차 북벌",
+      "event_en": "Second Northern Expedition",
+      "participants": [
+        "제갈량"
+      ],
+      "location": null,
+      "significance": "위나라의 저항",
+      "source": "namuwiki"
+    },
+    {
+      "year": 229,
+      "event_kr": "손권 오나라 건국, 삼국정립 완성",
+      "event_en": "Sun Quan founds Eastern Wu",
+      "participants": [
+        "손권"
+      ],
+      "location": "건업",
+      "significance": "삼국 체제 완성",
+      "source": "namuwiki"
+    },
+    {
+      "year": 231,
+      "event_kr": "제4차 북벌, 장합 전사",
+      "event_en": "Fourth Northern Expedition; Zhang He dies",
+      "participants": [
+        "제갈량",
+        "사마의",
+        "장합"
+      ],
+      "location": null,
+      "significance": "전략적 교착 상태",
+      "source": "namuwiki"
+    },
+    {
+      "year": 234,
+      "event_kr": "오장원 전투 - 제갈량 사망",
+      "event_en": "Battle of Wuzhang Plains - Zhuge Liang dies",
+      "participants": [
+        "제갈량",
+        "사마의"
+      ],
+      "location": "오장원",
+      "significance": "제갈량의 최후. 촉한 북벌의 사실상 종료",
+      "source": "namuwiki"
+    },
+    {
+      "year": 238,
+      "event_kr": "공손연 반란 진압",
+      "event_en": "Gongsun Yuan's rebellion suppressed",
+      "participants": [
+        "사마의",
+        "공손연"
+      ],
+      "location": null,
+      "significance": "위나라 동방 국경 안정",
+      "source": "namuwiki"
+    },
+    {
+      "year": 239,
+      "event_kr": "조예(위 명제) 사망",
+      "event_en": "Cao Rui dies",
+      "participants": [
+        "조예",
+        "조방"
+      ],
+      "location": null,
+      "significance": "어린 황제 조방에게 양위",
+      "source": "namuwiki"
+    },
+    {
+      "year": 249,
+      "event_kr": "고평릉 사변 - 사마의 쿠데타",
+      "event_en": "Gaoping Ling Incident - Sima Yi seizes power",
+      "participants": [
+        "사마의",
+        "조상"
+      ],
+      "location": null,
+      "significance": "사마씨가 위나라 실권 장악",
+      "source": "namuwiki"
+    },
+    {
+      "year": 252,
+      "event_kr": "손권 사망",
+      "event_en": "Sun Quan dies",
+      "participants": [
+        "손권"
+      ],
+      "location": null,
+      "significance": "오나라 후계 위기",
+      "source": "namuwiki"
+    },
+    {
+      "year": 260,
+      "event_kr": "사마소, 조모 시해",
+      "event_en": "Sima Zhao assassinates Emperor Cao Mao",
+      "participants": [
+        "사마소",
+        "조모"
+      ],
+      "location": null,
+      "significance": "위나라 황실 권위 완전 몰락",
+      "source": "namuwiki"
+    },
+    {
+      "year": 263,
+      "event_kr": "촉한 멸망",
+      "event_en": "Wei conquers Shu Han",
+      "participants": [
+        "등애",
+        "종회",
+        "강유",
+        "유선"
+      ],
+      "location": "성도",
+      "significance": "촉한 멸망. 유선 항복",
+      "source": "namuwiki"
+    },
+    {
+      "year": 265,
+      "event_kr": "서진 건국",
+      "event_en": "Western Jin founded",
+      "participants": [
+        "사마염"
+      ],
+      "location": null,
+      "significance": "사마염이 위나라에서 선양받아 진나라 건국",
+      "source": "namuwiki"
+    },
+    {
+      "year": 280,
+      "event_kr": "오나라 멸망, 삼국 통일",
+      "event_en": "Eastern Wu falls; China unified",
+      "participants": [
+        "사마염",
+        "손호"
+      ],
+      "location": null,
+      "significance": "삼국시대 종결. 서진에 의한 통일",
+      "source": "namuwiki"
+    },
+    {
+      "year": "184/03/04",
+      "event_kr": "황건적의 난 시작",
+      "event_en": "",
+      "participants": [
+        "황건적"
+      ],
+      "location": "중국 전역",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "184/04/01",
+      "event_kr": "하진 대장군 임명",
+      "event_en": "",
+      "participants": [
+        "하진"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "184/04",
+      "event_kr": "도원결의",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "관우",
+        "장비"
+      ],
+      "location": "장비의 저택",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "184/08",
+      "event_kr": "장로 거병",
+      "event_en": "",
+      "participants": [
+        "장로"
+      ],
+      "location": "익주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 185,
+      "event_kr": "선비족 침입",
+      "event_en": "",
+      "participants": [
+        "선비족"
+      ],
+      "location": "유주, 병주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 185,
+      "event_kr": "흑산적 출현",
+      "event_en": "",
+      "participants": [
+        "장연"
+      ],
+      "location": "태항산",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 187,
+      "event_kr": "장순 반란",
+      "event_en": "",
+      "participants": [
+        "장순",
+        "구리조"
+      ],
+      "location": "유주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 187,
+      "event_kr": "손책 남방 정복 시작",
+      "event_en": "",
+      "participants": [
+        "손책"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "189/05/13",
+      "event_kr": "후한 영제 사망",
+      "event_en": "",
+      "participants": [
+        "영제"
+      ],
+      "location": "낙양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "189/09/22",
+      "event_kr": "십상시의 난",
+      "event_en": "",
+      "participants": [
+        "원소",
+        "환관"
+      ],
+      "location": "황궁",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "189/09/28",
+      "event_kr": "동탁 권력 장악",
+      "event_en": "",
+      "participants": [
+        "동탁",
+        "여포"
+      ],
+      "location": "낙양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 190,
+      "event_kr": "반동탁 연합군 결성",
+      "event_en": "",
+      "participants": [
+        "원소",
+        "조조",
+        "손견"
+      ],
+      "location": "각지",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "190/01",
+      "event_kr": "동탁 토벌전",
+      "event_en": "",
+      "participants": [
+        "연합군",
+        "동탁"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "190/04/09",
+      "event_kr": "동탁 낙양 불태우고 천도",
+      "event_en": "",
+      "participants": [
+        "동탁",
+        "여포"
+      ],
+      "location": "낙양→장안",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "190/05",
+      "event_kr": "양성 전투",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "동탁"
+      ],
+      "location": "양성",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 191,
+      "event_kr": "공손찬 vs 원소 충돌",
+      "event_en": "",
+      "participants": [
+        "공손찬",
+        "원소"
+      ],
+      "location": "기주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "191/04",
+      "event_kr": "손책 낙양 입성",
+      "event_en": "",
+      "participants": [
+        "손책"
+      ],
+      "location": "낙양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "191/07",
+      "event_kr": "원소 기주 장악",
+      "event_en": "",
+      "participants": [
+        "원소"
+      ],
+      "location": "기주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "191/12",
+      "event_kr": "교전 전투",
+      "event_en": "",
+      "participants": [
+        "원소",
+        "공손찬"
+      ],
+      "location": "교전",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "192/05/22",
+      "event_kr": "동탁 암살",
+      "event_en": "",
+      "participants": [
+        "왕윤",
+        "여포",
+        "동탁"
+      ],
+      "location": "장안",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "192/06",
+      "event_kr": "장안성 전투",
+      "event_en": "",
+      "participants": [
+        "이각",
+        "곽사",
+        "여포"
+      ],
+      "location": "장안",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "193/09",
+      "event_kr": "조조 서주 침공",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "도겸"
+      ],
+      "location": "서주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "194/05",
+      "event_kr": "복양 전투",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "여포"
+      ],
+      "location": "복양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 194,
+      "event_kr": "손책의 강동 정복",
+      "event_en": "",
+      "participants": [
+        "손책"
+      ],
+      "location": "강동",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "195/08",
+      "event_kr": "헌제 장안 탈출",
+      "event_en": "",
+      "participants": [
+        "헌제",
+        "조조"
+      ],
+      "location": "장안→낙양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "196/09",
+      "event_kr": "조조 헌제 보호",
+      "event_en": "",
+      "participants": [
+        "조조"
+      ],
+      "location": "낙양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 197,
+      "event_kr": "원술 토벌전",
+      "event_en": "",
+      "participants": [
+        "원술"
+      ],
+      "location": "각지",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "198/12",
+      "event_kr": "하비 전투",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "여포"
+      ],
+      "location": "하비",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "199/03",
+      "event_kr": "원소 북방 지배",
+      "event_en": "",
+      "participants": [
+        "원소"
+      ],
+      "location": "하북",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "200/02",
+      "event_kr": "조조 vs 유비 교전",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "유비"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "200/03",
+      "event_kr": "백마 전투",
+      "event_en": "",
+      "participants": [
+        "관우",
+        "안량"
+      ],
+      "location": "백마",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "200/09",
+      "event_kr": "관도대전",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "원소"
+      ],
+      "location": "관도",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "202/06/28",
+      "event_kr": "원소 사망",
+      "event_en": "",
+      "participants": [
+        "원소"
+      ],
+      "location": "하북",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "203-207",
+      "event_kr": "조조의 북방 통일",
+      "event_en": "",
+      "participants": [
+        "조조"
+      ],
+      "location": "화북",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "207/10",
+      "event_kr": "백랑산 전투",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "원상",
+        "원희"
+      ],
+      "location": "백랑산",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "207/12",
+      "event_kr": "삼고초려",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "제갈량"
+      ],
+      "location": "제갈량의 초당",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "208/07",
+      "event_kr": "조조 형주 침공 개시",
+      "event_en": "",
+      "participants": [
+        "조조"
+      ],
+      "location": "형주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "208/10",
+      "event_kr": "장판 전투",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "조조",
+        "조운"
+      ],
+      "location": "장판",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "208/11",
+      "event_kr": "적벽대전",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "유비",
+        "손권",
+        "주유"
+      ],
+      "location": "적벽",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "208/12",
+      "event_kr": "합비 전투",
+      "event_en": "",
+      "participants": [
+        "손권"
+      ],
+      "location": "합비",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "209/12",
+      "event_kr": "남군 전투",
+      "event_en": "",
+      "participants": [
+        "손권",
+        "유비",
+        "조조"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 210,
+      "event_kr": "제갈량 두각 나타냄",
+      "event_en": "",
+      "participants": [
+        "제갈량"
+      ],
+      "location": "촉",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "211/04",
+      "event_kr": "동관 전투",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "마초"
+      ],
+      "location": "동관",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "212-214",
+      "event_kr": "유비의 촉 정복전",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "유장"
+      ],
+      "location": "익주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 215,
+      "event_kr": "유비 vs 손권 형주 분쟁",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "손권"
+      ],
+      "location": "형주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "215/04",
+      "event_kr": "양평관 전투",
+      "event_en": "",
+      "participants": [
+        "조조",
+        "장로"
+      ],
+      "location": "양평관",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "216/05/29",
+      "event_kr": "조조 위왕 책봉",
+      "event_en": "",
+      "participants": [
+        "조조"
+      ],
+      "location": "장안",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "217-219",
+      "event_kr": "한중 공방전",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "조조"
+      ],
+      "location": "한중",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "219/03",
+      "event_kr": "하후연 전사",
+      "event_en": "",
+      "participants": [
+        "하후연",
+        "유비",
+        "황충"
+      ],
+      "location": "한중",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "219/06",
+      "event_kr": "유비 한중 탈환",
+      "event_en": "",
+      "participants": [
+        "유비"
+      ],
+      "location": "한중",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "219/08",
+      "event_kr": "번성 전투",
+      "event_en": "",
+      "participants": [
+        "관우",
+        "조조"
+      ],
+      "location": "번성",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "220/01",
+      "event_kr": "관우 사망",
+      "event_en": "",
+      "participants": [
+        "관우"
+      ],
+      "location": "형주",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "220/03/15",
+      "event_kr": "조조 사망",
+      "event_en": "",
+      "participants": [
+        "조조"
+      ],
+      "location": "낙양",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "220/12/11",
+      "event_kr": "조비 위나라 건국",
+      "event_en": "",
+      "participants": [
+        "조비"
+      ],
+      "location": "장안",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "221/04/06",
+      "event_kr": "유비 촉한 건국",
+      "event_en": "",
+      "participants": [
+        "유비"
+      ],
+      "location": "성도",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "221/08",
+      "event_kr": "이릉대전",
+      "event_en": "",
+      "participants": [
+        "유비",
+        "손권",
+        "육손"
+      ],
+      "location": "이릉",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 227,
+      "event_kr": "제갈량 출사표 상주",
+      "event_en": "",
+      "participants": [
+        "제갈량"
+      ],
+      "location": "촉한 조정",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "228/01",
+      "event_kr": "제갈량 북벌 개시",
+      "event_en": "",
+      "participants": [
+        "제갈량",
+        "사마의"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "228/02",
+      "event_kr": "가정 전투",
+      "event_en": "",
+      "participants": [
+        "마속",
+        "장합"
+      ],
+      "location": "가정",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "228/05",
+      "event_kr": "강유 제갈량 합류",
+      "event_en": "",
+      "participants": [
+        "강유",
+        "제갈량"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 229,
+      "event_kr": "제2차 북벌",
+      "event_en": "",
+      "participants": [
+        "제갈량"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": 230,
+      "event_kr": "제3차 북벌",
+      "event_en": "",
+      "participants": [
+        "제갈량",
+        "조진"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "231/03",
+      "event_kr": "기산 전투",
+      "event_en": "",
+      "participants": [
+        "제갈량",
+        "사마의"
+      ],
+      "location": "기산",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "234/03",
+      "event_kr": "오장원 전투 (최후)",
+      "event_en": "",
+      "participants": [
+        "제갈량",
+        "사마의"
+      ],
+      "location": "오장원",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "234/10/08",
+      "event_kr": "제갈량 사망",
+      "event_en": "",
+      "participants": [
+        "제갈량"
+      ],
+      "location": "오장원",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "229/05/23",
+      "event_kr": "손권 오나라 건국",
+      "event_en": "",
+      "participants": [
+        "손권"
+      ],
+      "location": "건업",
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "252/05/21",
+      "event_kr": "손권 사망",
+      "event_en": "",
+      "participants": [
+        "손권"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "260/06/02",
+      "event_kr": "사마소 조모 시해",
+      "event_en": "",
+      "participants": [
+        "사마소",
+        "조모"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "263/12/17",
+      "event_kr": "위나라 촉한 정복",
+      "event_en": "",
+      "participants": [
+        "등애",
+        "종회",
+        "유선"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "265/09/06",
+      "event_kr": "사마소 사망",
+      "event_en": "",
+      "participants": [
+        "사마소"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "266/02/08",
+      "event_kr": "사마염 진나라 건국",
+      "event_en": "",
+      "participants": [
+        "사마염"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "279-280",
+      "event_kr": "진나라의 오나라 정복",
+      "event_en": "",
+      "participants": [
+        "사마염",
+        "손호"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    },
+    {
+      "year": "280/05/01",
+      "event_kr": "오나라 멸망, 삼국 통일",
+      "event_en": "",
+      "participants": [
+        "진나라",
+        "손호"
+      ],
+      "location": null,
+      "significance": "",
+      "source": "yellow"
+    }
+  ]
+}

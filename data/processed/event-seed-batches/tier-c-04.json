@@ -1,0 +1,1405 @@
+{
+  "total": 29,
+  "seeds": [
+    {
+      "id": "novel_ch70_유비_한중_원정_시작",
+      "layer": "historical",
+      "name": "유비 한중 원정 시작",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 70회: 한중 공방전 시작",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 70,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch70_장비_장합_격파",
+      "layer": "historical",
+      "name": "장비 장합 격파",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 70회: 한중 공방전 시작",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 70,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch71_황충이_하후연_참수",
+      "layer": "historical",
+      "name": "황충이 하후연 참수",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "huang_zhong"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xiahou_yuan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "huang_zhong",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "xiahou_yuan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 71회: 황충 정군산 전투",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 71,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch72_조조_한중_철수",
+      "layer": "historical",
+      "name": "조조 한중 철수",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 72회: 유비 한중 차지",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 72,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch72_유비_한중_확보",
+      "layer": "historical",
+      "name": "유비 한중 확보",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 72회: 유비 한중 차지",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 72,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch73_유비_한중왕_선언",
+      "layer": "historical",
+      "name": "유비 한중왕 선언",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 73회: 유비 한중왕 등극",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 73,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch73_관우_양양_공격_시작",
+      "layer": "historical",
+      "name": "관우 양양 공격 시작",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 73회: 유비 한중왕 등극",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 73,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch74_방덕이_관우와_대결",
+      "layer": "historical",
+      "name": "방덕이 관우와 대결",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_de"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "pang_de",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "yu_jin",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 74회: 방덕 vs 관우",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 74,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch74_우금_투항",
+      "layer": "historical",
+      "name": "우금 투항",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_de"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "pang_de",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "yu_jin",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 74회: 방덕 vs 관우",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 74,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch75_화타가_관우의_팔뼈를_긁어_독_제거",
+      "layer": "historical",
+      "name": "화타가 관우의 팔뼈를 긁어 독 제거",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "hua_tuo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "hua_tuo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 75회: 관우 독화살 치료 (화타)",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 75,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch76_여몽이_백의도강으로_형주_함락",
+      "layer": "historical",
+      "name": "여몽이 백의도강으로 형주 함락",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_meng"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "lu_meng",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 76회: 여몽 형주 습격",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 76,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch77_관우_포로_후_처형",
+      "layer": "historical",
+      "name": "관우 포로 후 처형",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 77회: 관우 포획 및 처형",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 77,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch77_관우의_혼령_출현",
+      "layer": "historical",
+      "name": "관우의 혼령 출현",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 77회: 관우 포획 및 처형",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 77,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch78_조조가_화타_처형",
+      "layer": "historical",
+      "name": "조조가 화타 처형",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "hua_tuo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "hua_tuo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 78회: 화타 처형, 조조 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 78,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch78_조조_사망",
+      "layer": "historical",
+      "name": "조조 사망",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "hua_tuo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "hua_tuo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 78회: 화타 처형, 조조 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 78,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch79_조비와_조식의_갈등",
+      "layer": "historical",
+      "name": "조비와 조식의 갈등",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_pi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_pi",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 79회: 조비 형제간 다툼",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 79,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch79_칠보시",
+      "layer": "historical",
+      "name": "칠보시",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_pi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_pi",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 79회: 조비 형제간 다툼",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 79,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch80_조비_위나라_건국",
+      "layer": "historical",
+      "name": "조비 위나라 건국",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_pi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_pi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 80회: 조비 선양 받음, 유비 칭제",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 80,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch80_유비_촉한_건국_선언",
+      "layer": "historical",
+      "name": "유비 촉한 건국 선언",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_pi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_pi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 80회: 조비 선양 받음, 유비 칭제",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 80,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch81_장비_부하에_의해_살해됨",
+      "layer": "historical",
+      "name": "장비 부하에 의해 살해됨",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_fei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 81회: 장비 암살",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 81,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch81_유비_동정_결심",
+      "layer": "historical",
+      "name": "유비 동정 결심",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_fei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 81회: 장비 암살",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 81,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch82_유비_대군으로_오나라_침공",
+      "layer": "historical",
+      "name": "유비 대군으로 오나라 침공",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 82회: 유비 손권 공격",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 82,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch83_육손의_화공으로_유비_대패",
+      "layer": "historical",
+      "name": "육손의 화공으로 유비 대패",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 83회: 이릉대전",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 83,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch84_육손이_제갈량의_팔진도에_갇힘",
+      "layer": "historical",
+      "name": "육손이 제갈량의 팔진도에 갇힘",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "lu_xun",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 84회: 육손 팔진도에 빠지다",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 84,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch84_유비_퇴각",
+      "layer": "historical",
+      "name": "유비 퇴각",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "lu_xun",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 84회: 육손 팔진도에 빠지다",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 84,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch85_유비_사망",
+      "layer": "historical",
+      "name": "유비 사망",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_shan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 85회: 유비 백제성 탁고",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 85,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch85_제갈량에게_후사_부탁",
+      "layer": "historical",
+      "name": "제갈량에게 후사 부탁",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_shan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 85회: 유비 백제성 탁고",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 85,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch86_조비의_오나라_원정_실패",
+      "layer": "historical",
+      "name": "조비의 오나라 원정 실패",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_pi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_pi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 86회: 조비 오나라 공격 실패",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 86,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch87_제갈량_남정_시작",
+      "layer": "historical",
+      "name": "제갈량 남정 시작",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 87회: 남만 정벌 시작",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 87,
+      "_completeness": 0.3
+    }
+  ]
+}

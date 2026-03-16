@@ -1,0 +1,1395 @@
+{
+  "total": 29,
+  "events": [
+    {
+      "id": "novel_ch1_황건적의_난_발발",
+      "layer": "historical",
+      "name": "황건적의 난 발발",
+      "period": {
+        "year": 184,
+        "month": 2
+      },
+      "location": "yuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 184, "max": 185 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_jiao" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "zhang_jiao", "role": "antagonist", "required": true },
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": false },
+        { "character_id": "zhang_fei", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "창천이사 황천당립! 태평도 교주 장각이 마침내 거병하니, 머리에 노란 두건을 두른 수십만 도적이 팔주를 뒤흔든다. 관가의 군대는 맥을 추지 못하고, 천하의 질서가 한순간에 무너져 내린다. 각지의 뜻있는 자들이 의병을 일으키기 시작한다.",
+        "flavor": "하늘이 노랗게 물드는 봄날, 태평의 꿈은 피와 함께 흩어졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "yellow-turbans", "value": { "against": "later-han" } },
+        { "type": "stat_change", "target": "later-han", "value": { "stat": "stability", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 1회: 도원결의, 황건적의 난",
+      "tags": ["novel_chapter", "rebellion", "turning_point"]
+    },
+    {
+      "id": "novel_ch1_유비_관우_장비_도원결의",
+      "layer": "historical",
+      "name": "유비/관우/장비 도원결의",
+      "period": {
+        "year": 184,
+        "month": 3
+      },
+      "location": "youzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 184, "max": 185 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_fei" }
+          }
+        ],
+        "priority": 95
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "zhang_fei", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "장비의 장원 뒤뜰, 복숭아꽃이 만발한 아래에서 세 사내가 무릎을 꿇는다. 같은 해 같은 달에 태어나지는 못했으나, 같은 해 같은 달에 죽기를 원하노라! 유비, 관우, 장비가 천지에 맹세하니, 이로써 천하를 뒤흔들 형제의 인연이 시작된다.",
+        "flavor": "복숭아꽃잎이 맹세의 술잔 위로 흩날렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "liu_bei", "value": { "other": "guan_yu", "relation": "sworn_brother", "delta": 100 } },
+        { "type": "relationship_change", "target": "liu_bei", "value": { "other": "zhang_fei", "relation": "sworn_brother", "delta": 100 } },
+        { "type": "relationship_change", "target": "guan_yu", "value": { "other": "zhang_fei", "relation": "sworn_brother", "delta": 100 } },
+        { "type": "character_join", "target": "guan_yu", "value": { "faction": "liu_bei" } },
+        { "type": "character_join", "target": "zhang_fei", "value": { "faction": "liu_bei" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 1회: 도원결의, 황건적의 난",
+      "tags": ["novel_chapter", "oath", "brotherhood", "iconic"]
+    },
+    {
+      "id": "novel_ch2_장비가_부패한_관리_폭행",
+      "layer": "historical",
+      "name": "장비가 부패한 관리 폭행",
+      "period": {
+        "year": 185,
+        "month": 6
+      },
+      "location": "yuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 185, "max": 188 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_fei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch1_황건적의_난_발발" }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        { "character_id": "zhang_fei", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "황건적 토벌의 공으로 현위 벼슬을 얻은 유비에게 독우가 파견된다. 뇌물을 요구하는 탐관오리 앞에서 장비의 분노가 폭발한다. 버드나무 가지로 독우를 사정없이 내려치니, 관직은 하루아침에 물거품이 되고 세 형제는 다시 떠돌이 신세가 된다.",
+        "flavor": "버드나무 가지가 부러질 때까지 채찍질이 멈추지 않았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhang_fei", "value": { "stat": "notoriety", "delta": 10 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "official_rank", "delta": -1 } }
+      ],
+      "choices": [
+        {
+          "id": "restrain_zhang_fei",
+          "text": "장비를 말리고 독우에게 사과한다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "official_rank", "delta": 0 } },
+            { "type": "loyalty_change", "target": "zhang_fei", "value": { "delta": -10 } }
+          ]
+        },
+        {
+          "id": "let_zhang_fei",
+          "text": "장비의 분노에 동조하며 관인을 내던진다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "righteousness", "delta": 10 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "official_rank", "delta": -1 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
+      "tags": ["novel_chapter", "personal", "corruption"]
+    },
+    {
+      "id": "novel_ch2_후한_영제_사망",
+      "layer": "historical",
+      "name": "후한 영제 사망",
+      "period": {
+        "year": 189,
+        "month": 4
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 189 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "emperor_ling" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "emperor_ling", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "영제가 붕어하니 천하가 진동한다. 환관 십상시와 외척 하진 사이에 권력 다툼이 격화되고, 어린 소제가 옥좌에 오른다. 그러나 진정한 권력은 이미 황제의 손을 떠났다. 낙양의 궁전은 피비린내 나는 암투의 무대가 된다.",
+        "flavor": "옥좌 위의 용포가 빈 껍데기가 된 날이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "emperor_ling", "value": { "cause": "natural" } },
+        { "type": "stat_change", "target": "later-han", "value": { "stat": "stability", "delta": -20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
+      "tags": ["novel_chapter", "death", "succession_crisis"]
+    },
+    {
+      "id": "novel_ch2_환관_반란",
+      "layer": "historical",
+      "name": "환관 반란",
+      "period": {
+        "year": 189,
+        "month": 8
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 189 }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch2_후한_영제_사망" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "he_jin", "role": "target", "required": false },
+        { "character_id": "yuan_shao", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "대장군 하진이 십상시를 주살하려 하나, 도리어 환관들의 선수에 걸려 궁중에서 참살당한다. 원소가 군사를 이끌고 궁으로 돌입하여 환관들을 닥치는 대로 베니, 낙양 궁전이 피바다로 변한다. 수백 년 후한 조정의 질서가 이 하룻밤에 산산이 부서진다.",
+        "flavor": "궁전의 붉은 기둥에 새로운 피가 덧칠해졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "he_jin", "value": { "cause": "assassination" } },
+        { "type": "stat_change", "target": "later-han", "value": { "stat": "stability", "delta": -25 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
+      "tags": ["novel_chapter", "assassination", "court_intrigue"]
+    },
+    {
+      "id": "novel_ch3_동탁_권력_장악",
+      "layer": "historical",
+      "name": "동탁 권력 장악",
+      "period": {
+        "year": 189,
+        "month": 9
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 190 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch2_환관_반란" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "protagonist", "required": true },
+        { "character_id": "lu_bu", "role": "supporter", "required": false },
+        { "character_id": "ding_yuan", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "환관의 난으로 혼란에 빠진 낙양에 서량의 맹장 동탁이 대군을 이끌고 입성한다. 이십만 대군의 위세로 조정을 장악하니, 문무백관이 감히 고개를 들지 못한다. 동탁은 스스로 상국이라 칭하고, 낙양에 공포의 시대가 열린다.",
+        "flavor": "서량 철기의 말발굽 소리가 낙양의 아침을 깨웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "dong-zhuo", "value": { "city": "luoyang", "action": "capture" } },
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "authority", "delta": 50 } },
+        { "type": "stat_change", "target": "later-han", "value": { "stat": "stability", "delta": -20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 3회: 동탁 권력 장악",
+      "tags": ["novel_chapter", "tyranny", "power_seizure"]
+    },
+    {
+      "id": "novel_ch3_여포_정원_살해",
+      "layer": "historical",
+      "name": "여포 정원 살해",
+      "period": {
+        "year": 189,
+        "month": 9
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "ding_yuan" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch3_동탁_권력_장악" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "lu_bu", "role": "protagonist", "required": true },
+        { "character_id": "ding_yuan", "role": "target", "required": true },
+        { "character_id": "dong_zhuo", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "동탁이 적토마와 금은보화로 여포를 유혹한다. 천하무적의 무력을 지닌 여포는 의부 정원의 목을 베어 동탁에게 바치고, 새로운 주인 앞에 무릎을 꿇는다. 명마 한 필에 부자의 의리가 끊어지니, 여포의 반복무상함이 여기서 시작된다.",
+        "flavor": "적토마의 갈기에 의부의 피가 묻어 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "ding_yuan", "value": { "cause": "betrayal" } },
+        { "type": "character_join", "target": "lu_bu", "value": { "faction": "dong-zhuo" } },
+        { "type": "relationship_change", "target": "lu_bu", "value": { "other": "dong_zhuo", "relation": "adoptive_father", "delta": 50 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 3회: 동탁 권력 장악",
+      "tags": ["novel_chapter", "betrayal", "character_death"]
+    },
+    {
+      "id": "novel_ch4_소제_폐위",
+      "layer": "historical",
+      "name": "소제 폐위",
+      "period": {
+        "year": 189,
+        "month": 9
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 190 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch3_동탁_권력_장악" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "antagonist", "required": true },
+        { "character_id": "emperor_shao", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "동탁이 조정을 농락하여 소제를 홍농왕으로 강등시킨다. 문무백관 앞에서 천자의 용포를 벗기니, 감히 반대하는 자가 없다. 오직 상서 정태만이 분연히 일어나 동탁을 꾸짖으나, 검 앞에서 충절은 무력하다.",
+        "flavor": "빈 옥좌를 바라보는 백관의 눈에 두려움만이 가득했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "emperor_shao", "value": { "cause": "deposed" } },
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "authority", "delta": 20 } },
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "reputation", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 4회: 태자 폐위, 헌제 옹립",
+      "tags": ["novel_chapter", "deposition", "tyranny"]
+    },
+    {
+      "id": "novel_ch4_헌제_즉위",
+      "layer": "historical",
+      "name": "헌제 즉위",
+      "period": {
+        "year": 189,
+        "month": 10
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "emperor_xian" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch4_소제_폐위" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "antagonist", "required": true },
+        { "character_id": "emperor_xian", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "동탁이 진류왕 유협을 새 천자로 옹립하니, 이가 곧 후한 최후의 황제 헌제다. 아홉 살 어린 천자는 동탁의 손바닥 위에서 허수아비 노릇을 한다. 허나 이 꼭두각시 황제의 이름이 훗날 천하 영웅들의 대의명분이 될 줄은 아무도 몰랐다.",
+        "flavor": "천자의 옥새가 찍히는 순간, 진짜 권력자는 뒤에서 웃고 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "emperor_xian", "value": { "stat": "authority", "delta": -50 } },
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "authority", "delta": 10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 4회: 태자 폐위, 헌제 옹립",
+      "tags": ["novel_chapter", "succession", "puppet_emperor"]
+    },
+    {
+      "id": "novel_ch5_제후들의_반동탁_연합_결성",
+      "layer": "historical",
+      "name": "제후들의 반동탁 연합 결성",
+      "period": {
+        "year": 190,
+        "month": 1
+      },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 190, "max": 191 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "yuan_shao", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "supporter", "required": false },
+        { "character_id": "sun_jian", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "조조의 격문이 천하에 퍼지니, 십팔로 제후가 의병을 일으켜 낙양으로 향한다. 원소가 맹주로 추대되고, 각 진영의 깃발이 하늘을 뒤덮는다. 사사로운 야심을 품은 자도 있고, 진심으로 한실을 걱정하는 자도 있다. 그러나 동탁을 치겠다는 대의 아래, 잠시 모든 칼끝이 한 방향을 향한다.",
+        "flavor": "십팔로 제후의 군기가 바람에 펄럭이던 그날, 천하가 처음으로 숨을 죽였다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_alliance", "target": "yuan-shao", "value": { "with": "later-han", "type": "anti_dong_zhuo" } },
+        { "type": "faction_war", "target": "yuan-shao", "value": { "against": "dong-zhuo" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 5회: 반동탁 연합군 결성",
+      "tags": ["novel_chapter", "alliance", "coalition", "turning_point"]
+    },
+    {
+      "id": "novel_ch5_호뢰관_전투",
+      "layer": "historical",
+      "name": "호뢰관 전투",
+      "period": {
+        "year": 190,
+        "month": 2
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch5_제후들의_반동탁_연합_결성" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "lu_bu", "role": "antagonist", "required": true },
+        { "character_id": "liu_bei", "role": "protagonist", "required": false },
+        { "character_id": "guan_yu", "role": "supporter", "required": false },
+        { "character_id": "zhang_fei", "role": "supporter", "required": false },
+        { "character_id": "yuan_shao", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "호뢰관 앞에서 천하무쌍 여포가 방천화극을 휘두르니, 연합군의 장수들이 줄줄이 쓰러진다. 그때 유비, 관우, 장비 세 형제가 동시에 달려들어 여포와 대전하니, 이것이 바로 삼영전여포다. 여포조차 당해내지 못하고 물러나니, 이름 없던 세 의형제의 명성이 천하에 울려퍼진다.",
+        "flavor": "세 자루 병기가 하나의 극을 에워쌌을 때, 전장이 잠시 멈추었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 15 } },
+        { "type": "stat_change", "target": "zhang_fei", "value": { "stat": "fame", "delta": 15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 5회: 반동탁 연합군 결성",
+      "tags": ["novel_chapter", "battle", "iconic", "three_brothers"]
+    },
+    {
+      "id": "novel_ch6_동탁이_낙양_불태움",
+      "layer": "historical",
+      "name": "동탁이 낙양 불태움",
+      "period": {
+        "year": 190,
+        "month": 3
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch5_호뢰관_전투" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "연합군의 진격에 궁지에 몰린 동탁이 광기의 결단을 내린다. 낙양 전체에 불을 지르라! 이백 년 수도의 궁궐, 민가, 종묘가 삼일 밤낮 타오른다. 백성을 강제로 장안으로 끌고 가니, 길 위에 시체가 즐비하다. 한 사람의 폭정이 천하의 심장을 잿더미로 만든 것이다.",
+        "flavor": "낙양의 하늘이 삼일간 밤이 되지 않았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "dong-zhuo", "value": { "city": "luoyang", "action": "destroy" } },
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "reputation", "delta": -50 } },
+        { "type": "resource_change", "target": "luoyang", "value": { "resource": "population", "delta": -80 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 6회: 동탁 낙양 방화 및 천도",
+      "tags": ["novel_chapter", "destruction", "atrocity", "turning_point"]
+    },
+    {
+      "id": "novel_ch6_장안으로_천도",
+      "layer": "historical",
+      "name": "장안으로 천도",
+      "period": {
+        "year": 190,
+        "month": 4
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch6_동탁이_낙양_불태움" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "protagonist", "required": true },
+        { "character_id": "emperor_xian", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "불타는 낙양을 등지고 동탁이 헌제와 백관을 장안으로 강제 이주시킨다. 수십만 백성이 먹을 것도 없이 서쪽으로 끌려가니, 길 위에 쓰러지는 자가 부지기수다. 장안에 새 궁을 세우고 미앙전에 앉은 동탁은, 천자보다 더 높은 자리에서 주지육림을 벌인다.",
+        "flavor": "서쪽으로 향하는 행렬에서 아이의 울음소리가 끊이지 않았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "dong-zhuo", "value": { "city": "changan", "action": "capital" } },
+        { "type": "stat_change", "target": "later-han", "value": { "stat": "legitimacy", "delta": -15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 6회: 동탁 낙양 방화 및 천도",
+      "tags": ["novel_chapter", "forced_migration", "capital_move"]
+    },
+    {
+      "id": "novel_ch7_손견_옥새_획득",
+      "layer": "historical",
+      "name": "손견 옥새 획득",
+      "period": {
+        "year": 190,
+        "month": 5
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_jian" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch6_동탁이_낙양_불태움" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "sun_jian", "role": "protagonist", "required": true },
+        { "character_id": "yuan_shu", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "폐허가 된 낙양의 우물에서 손견의 병사가 이상한 빛을 발견한다. 건져 올린 것은 다름 아닌 전국옥새 — 천자의 정통성을 상징하는 보물이다. 손견은 이를 감추고 강동으로 돌아가려 하지만, 소문은 이미 제후들 사이에 퍼져 탐욕과 의심의 씨앗을 뿌린다.",
+        "flavor": "우물 속에서 올라온 빛이 난세의 야심에 불을 붙였다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sun_jian", "value": { "stat": "legitimacy", "delta": 20 } },
+        { "type": "relationship_change", "target": "sun_jian", "value": { "other": "yuan_shao", "relation": "suspicion", "delta": -20 } }
+      ],
+      "choices": [
+        {
+          "id": "keep_seal",
+          "text": "옥새를 비밀리에 보관하고 강동으로 돌아간다",
+          "effects": [
+            { "type": "stat_change", "target": "sun_jian", "value": { "stat": "ambition", "delta": 15 } },
+            { "type": "relationship_change", "target": "sun_jian", "value": { "other": "yuan_shao", "relation": "trust", "delta": -30 } }
+          ]
+        },
+        {
+          "id": "return_seal",
+          "text": "옥새를 연합군 맹주 원소에게 헌납한다",
+          "effects": [
+            { "type": "stat_change", "target": "sun_jian", "value": { "stat": "righteousness", "delta": 20 } },
+            { "type": "relationship_change", "target": "sun_jian", "value": { "other": "yuan_shao", "relation": "trust", "delta": 20 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 7회: 손견의 옥새 획득",
+      "tags": ["novel_chapter", "treasure", "imperial_seal", "ambition"]
+    },
+    {
+      "id": "novel_ch8_왕윤이_초선을_이용한_이간계",
+      "layer": "historical",
+      "name": "왕윤이 초선을 이용한 이간계",
+      "period": {
+        "year": 191,
+        "month": 6
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "wang_yun" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "diao_chan" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "wang_yun", "role": "protagonist", "required": true },
+        { "character_id": "diao_chan", "role": "supporter", "required": true },
+        { "character_id": "dong_zhuo", "role": "target", "required": false },
+        { "character_id": "lu_bu", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "사도 왕윤이 달빛 아래 통곡하는 초선을 발견한다. 나라를 위해 목숨을 바치겠다는 미인의 결의를 본 왕윤은 연환계를 꾸민다. 초선을 동탁과 여포 모두에게 약속하여 부자 사이를 이간시키는 것이다. 미인의 눈물 한 방울이 폭군의 최후를 향해 똑딱거리기 시작한다.",
+        "flavor": "봉의정 달빛 아래, 한 여인의 눈물이 천하의 운명을 바꾸었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "lu_bu", "value": { "other": "dong_zhuo", "relation": "trust", "delta": -40 } },
+        { "type": "relationship_change", "target": "dong_zhuo", "value": { "other": "lu_bu", "relation": "suspicion", "delta": 30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 8회: 왕윤의 미인계 (초선)",
+      "tags": ["novel_chapter", "beauty_scheme", "intrigue", "iconic"]
+    },
+    {
+      "id": "novel_ch9_여포가_동탁_살해",
+      "layer": "historical",
+      "name": "여포가 동탁 살해",
+      "period": {
+        "year": 192,
+        "month": 4
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch8_왕윤이_초선을_이용한_이간계" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "lu_bu", "role": "protagonist", "required": true },
+        { "character_id": "dong_zhuo", "role": "target", "required": true },
+        { "character_id": "wang_yun", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "왕윤의 이간계가 결실을 맺는다. 여포가 방천화극으로 의부 동탁의 목을 찌르니, 폭군이 미앙전 앞에 쓰러진다. 장안 백성들이 거리에 나와 춤추며 환호하고, 동탁의 시체에서 뽑은 기름으로 등불을 켜니 삼일 밤낮을 탄다. 폭정의 시대가 끝났으나, 평화는 오지 않는다.",
+        "flavor": "폭군의 기름이 장안의 밤을 밝혔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "dong_zhuo", "value": { "cause": "assassination" } },
+        { "type": "territory_change", "target": "later-han", "value": { "city": "changan", "action": "liberate" } },
+        { "type": "stat_change", "target": "lu_bu", "value": { "stat": "fame", "delta": 25 } },
+        { "type": "stat_change", "target": "lu_bu", "value": { "stat": "reputation", "delta": -10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 9회: 동탁 암살",
+      "tags": ["novel_chapter", "assassination", "betrayal", "turning_point"]
+    },
+    {
+      "id": "novel_ch10_이각과_곽사가_장안_장악",
+      "layer": "historical",
+      "name": "이각과 곽사가 장안 장악",
+      "period": {
+        "year": 192,
+        "month": 6
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "li_jue" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guo_si" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch9_여포가_동탁_살해" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "li_jue", "role": "protagonist", "required": true },
+        { "character_id": "guo_si", "role": "supporter", "required": true },
+        { "character_id": "wang_yun", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "동탁의 잔당 이각과 곽사가 서량군을 수습하여 장안으로 쳐들어온다. 왕윤은 순국하고, 여포는 패주한다. 동탁보다 더 무능하고 잔인한 두 장수가 장안을 차지하니, 헌제는 또다시 인질이 된다. 한 폭군을 제거했더니 두 마리 짐승이 나타난 꼴이다.",
+        "flavor": "동탁의 재가 채 식기도 전에, 새로운 공포가 장안을 덮쳤다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "xiliang", "value": { "city": "changan", "action": "capture" } },
+        { "type": "character_death", "target": "wang_yun", "value": { "cause": "executed" } },
+        { "type": "character_leave", "target": "lu_bu", "value": { "from": "changan" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 10회: 이각/곽사 장안 장악, 조조 서주 공격",
+      "tags": ["novel_chapter", "power_seizure", "chaos"]
+    },
+    {
+      "id": "novel_ch10_조조_서주_침공_시작",
+      "layer": "historical",
+      "name": "조조 서주 침공 시작",
+      "period": {
+        "year": 194,
+        "month": 1
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 193, "max": 195 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "tao_qian" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "tao_qian", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "조조의 부친 조숭이 서주를 지나다 도겸의 부하에게 살해된다. 격분한 조조가 복수를 맹세하며 대군을 이끌고 서주를 침공한다. 지나는 곳마다 닭과 개도 남기지 않는 도륙이 벌어지니, 사수의 물이 피로 물들어 흐르지 못한다.",
+        "flavor": "아버지의 핏값을 치르기 위해, 한 성의 백성이 대신 피를 흘렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wei", "value": { "against": "xuzhou" } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "reputation", "delta": -20 } },
+        { "type": "army_change", "target": "xuzhou", "value": { "delta": -30 } }
+      ],
+      "choices": [
+        {
+          "id": "total_war",
+          "text": "서주를 초토화하여 부친의 원수를 갚는다",
+          "effects": [
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "reputation", "delta": -30 } },
+            { "type": "resource_change", "target": "xuzhou", "value": { "resource": "population", "delta": -50 } }
+          ]
+        },
+        {
+          "id": "measured_attack",
+          "text": "군사 목표에 집중하고 민간인 학살을 자제한다",
+          "effects": [
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "reputation", "delta": 5 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "mercy", "delta": 10 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 10회: 이각/곽사 장안 장악, 조조 서주 공격",
+      "tags": ["novel_chapter", "invasion", "revenge", "massacre"]
+    },
+    {
+      "id": "novel_ch11_유비_서주_인수",
+      "layer": "historical",
+      "name": "유비 서주 인수",
+      "period": {
+        "year": 194,
+        "month": 10
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "tao_qian" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch10_조조_서주_침공_시작" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "tao_qian", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "병상에서 죽음을 앞둔 도겸이 세 번이나 서주를 유비에게 양보한다. 유비는 거듭 사양하지만, 미축과 손건 등 서주 명사들의 간청에 마침내 서주 목사를 받아들인다. 떠돌이 돗자리 장수가 처음으로 한 고을의 주인이 되는 순간이다.",
+        "flavor": "도겸이 서주의 인수를 건네며 마지막 미소를 지었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "liu_bei", "value": { "city": "xuzhou", "action": "inherit" } },
+        { "type": "character_death", "target": "tao_qian", "value": { "cause": "illness" } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 15 } },
+        { "type": "character_join", "target": "mi_zhu", "value": { "faction": "liu_bei" } }
+      ],
+      "choices": [
+        {
+          "id": "accept_xuzhou",
+          "text": "서주를 받아들여 백성을 보살핀다",
+          "effects": [
+            { "type": "territory_change", "target": "liu_bei", "value": { "city": "xuzhou", "action": "govern" } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "righteousness", "delta": 10 } }
+          ]
+        },
+        {
+          "id": "refuse_xuzhou",
+          "text": "서주를 사양하고 다른 이에게 넘긴다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "humility", "delta": 15 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": -5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 11회: 유비 서주 획득",
+      "tags": ["novel_chapter", "succession", "territory", "benevolence"]
+    },
+    {
+      "id": "novel_ch12_여포의_서주_침공",
+      "layer": "historical",
+      "name": "여포의 서주 침공",
+      "period": {
+        "year": 196,
+        "month": 6
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch11_유비_서주_인수" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "lu_bu", "role": "antagonist", "required": true },
+        { "character_id": "liu_bei", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "유비가 원술과 싸우러 나간 틈을 타, 여포가 뒤통수를 친다. 장비가 술에 취해 방심한 사이에 서주성이 함락되니, 유비는 졸지에 터전을 잃는다. 갈 곳 없는 유비는 원수인 여포에게 굽히고 소패성에 의탁하는 굴욕을 감수한다.",
+        "flavor": "술독에 빠진 하룻밤이 한 고을의 주인을 거지로 만들었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "lu_bu", "value": { "city": "xuzhou", "action": "capture" } },
+        { "type": "territory_change", "target": "liu_bei", "value": { "city": "xuzhou", "action": "lose" } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": -10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 12회: 여포 서주 공격",
+      "tags": ["novel_chapter", "betrayal", "territory_loss"]
+    },
+    {
+      "id": "novel_ch13_이각_곽사_충돌",
+      "layer": "historical",
+      "name": "이각/곽사 충돌",
+      "period": {
+        "year": 195,
+        "month": 3
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "li_jue" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guo_si" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch10_이각과_곽사가_장안_장악" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "li_jue", "role": "protagonist", "required": true },
+        { "character_id": "guo_si", "role": "antagonist", "required": true },
+        { "character_id": "emperor_xian", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "장안을 나눠 먹은 이각과 곽사가 서로를 의심하다 결국 칼을 빼들었다. 이각이 헌제를 인질로 잡고, 곽사가 백관을 억류하니, 장안 성 안에서 동지끼리 전쟁이 벌어진다. 백성들은 두 세력 사이에서 짓밟히고, 한나라 조정은 이름뿐인 껍데기가 된다.",
+        "flavor": "아군의 칼이 아군을 향했을 때, 장안에 남은 것은 절망뿐이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "li_jue", "value": { "against": "guo_si" } },
+        { "type": "stat_change", "target": "later-han", "value": { "stat": "stability", "delta": -15 } },
+        { "type": "resource_change", "target": "changan", "value": { "resource": "population", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 13회: 조정 내분",
+      "tags": ["novel_chapter", "civil_war", "court_chaos"]
+    },
+    {
+      "id": "novel_ch14_조조가_헌제를_허도로_옮기고_실권_장악",
+      "layer": "historical",
+      "name": "조조가 헌제를 허도로 옮기고 실권 장악",
+      "period": {
+        "year": 196,
+        "month": 9
+      },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "emperor_xian" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch13_이각_곽사_충돌" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "emperor_xian", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "이각과 곽사의 내전에서 탈출한 헌제를 조조가 허도로 맞아들인다. 봉천자이영제후 — 천자를 받들어 제후에게 호령한다! 조조의 이 한 수로 천하의 정치 판도가 뒤집어진다. 대의명분이라는 최강의 무기를 손에 쥔 조조가 중원의 패자로 올라선다.",
+        "flavor": "옥좌를 허도로 옮긴 그날, 진짜 주인이 누구인지 모두가 알았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "wei", "value": { "city": "xuchang", "action": "capital" } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "authority", "delta": 40 } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "legitimacy", "delta": 30 } },
+        { "type": "stat_change", "target": "emperor_xian", "value": { "stat": "authority", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 14회: 조조 헌제를 꼭두각시로",
+      "tags": ["novel_chapter", "political", "puppet_emperor", "turning_point"]
+    },
+    {
+      "id": "novel_ch15_손책이_원술에게_옥새_맡기고_병력_확보",
+      "layer": "historical",
+      "name": "손책이 원술에게 옥새 맡기고 병력 확보",
+      "period": {
+        "year": 195,
+        "month": 1
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_ce" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shu" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "sun_ce", "role": "protagonist", "required": true },
+        { "character_id": "yuan_shu", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "아버지의 유산인 전국옥새를 담보로 원술에게 삼천 병사와 오백 필 군마를 빌린다. 열일곱 살 소패왕 손책이 이 적은 병력으로 강동을 정벌하러 나선다. 아버지의 보물을 내던지는 대담함 속에, 천하를 삼키겠다는 젊은 야심이 불타오른다.",
+        "flavor": "옥새 하나로 제국의 기초를 놓은 청년이 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "army_change", "target": "sun_ce", "value": { "delta": 30 } },
+        { "type": "stat_change", "target": "yuan_shu", "value": { "stat": "legitimacy", "delta": 15 } },
+        { "type": "stat_change", "target": "sun_ce", "value": { "stat": "legitimacy", "delta": -10 } }
+      ],
+      "choices": [
+        {
+          "id": "pledge_seal",
+          "text": "옥새를 담보로 병력을 빌린다",
+          "effects": [
+            { "type": "army_change", "target": "sun_ce", "value": { "delta": 30 } },
+            { "type": "stat_change", "target": "sun_ce", "value": { "stat": "ambition", "delta": 15 } }
+          ]
+        },
+        {
+          "id": "keep_seal_build_slow",
+          "text": "옥새를 지키고 독자적으로 병력을 모은다",
+          "effects": [
+            { "type": "army_change", "target": "sun_ce", "value": { "delta": 5 } },
+            { "type": "stat_change", "target": "sun_ce", "value": { "stat": "patience", "delta": 10 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 15회: 손책 옥새로 병력 확보",
+      "tags": ["novel_chapter", "deal", "imperial_seal", "ambition"]
+    },
+    {
+      "id": "novel_ch16_원술의_책략",
+      "layer": "historical",
+      "name": "원술의 책략",
+      "period": {
+        "year": 196,
+        "month": 3
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "yuan_shu", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "target", "required": false },
+        { "character_id": "lu_bu", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "원술이 유비를 치기 위해 군량으로 여포를 매수하려 한다. 유비와 여포 사이를 이간시켜 서주를 혼란에 빠뜨리려는 술수다. 그러나 여포가 원문사극으로 양측을 화해시키니, 원술의 계략은 무위로 돌아간다. 백보 밖 방천화극의 작은 가지를 정확히 맞힌 그 신기에 양군이 모두 할 말을 잃는다.",
+        "flavor": "방천화극의 작은 가지 끝에 매달린 전쟁의 운명이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "yuan_shu", "value": { "other": "lu_bu", "relation": "trust", "delta": -15 } },
+        { "type": "stat_change", "target": "lu_bu", "value": { "stat": "fame", "delta": 10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 16회: 원술과 유비/여포의 갈등",
+      "tags": ["novel_chapter", "diplomacy", "archery", "mediation"]
+    },
+    {
+      "id": "novel_ch17_원술_스스로_황제_칭함",
+      "layer": "historical",
+      "name": "원술 스스로 황제 칭함",
+      "period": {
+        "year": 197,
+        "month": 2
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 197, "max": 197 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shu" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "yuan_shu", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "전국옥새를 손에 넣은 원술이 마침내 스스로 황제를 칭하고 국호를 중(仲)이라 한다. 명문 사세삼공 가문의 자존심이 야심을 이기지 못한 것이다. 그러나 천하의 제후들이 일제히 등을 돌리고, 가뭄과 기근이 회남을 덮치니, 참칭제의 몰락이 시작된다.",
+        "flavor": "스스로 쓴 왕관이 가장 무거운 법이다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "yuan_shu", "value": { "stat": "legitimacy", "delta": -50 } },
+        { "type": "stat_change", "target": "yuan_shu", "value": { "stat": "reputation", "delta": -40 } },
+        { "type": "faction_war", "target": "later-han", "value": { "against": "yuan_shu" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 17회: 원술 칭제",
+      "tags": ["novel_chapter", "usurpation", "hubris", "turning_point"]
+    },
+    {
+      "id": "novel_ch18_조조와_장수의_전투",
+      "layer": "historical",
+      "name": "조조와 장수의 전투",
+      "period": {
+        "year": 197,
+        "month": 3
+      },
+      "location": "yuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 197, "max": 198 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_xiu" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "zhang_xiu", "role": "antagonist", "required": true },
+        { "character_id": "dian_wei", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "완성에서 장수가 항복했다가 조조의 음행에 분노하여 야습을 감행한다. 조조의 맹장 전위가 중문에서 적을 막다가 온몸에 창을 맞고 장렬히 전사하고, 조조의 장남 조앙도 이 전투에서 목숨을 잃는다. 평생 자신만만한 조조가 처음으로 눈물을 흘린 전투다.",
+        "flavor": "전위의 쌍극이 마지막으로 빛난 밤, 주군은 말 위에서 울었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "dian_wei", "value": { "cause": "battle" } },
+        { "type": "character_death", "target": "cao_ang", "value": { "cause": "battle" } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "reputation", "delta": -10 } },
+        { "type": "army_change", "target": "cao_cao", "value": { "delta": -15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 18회: 조조 vs 장수",
+      "tags": ["novel_chapter", "battle", "ambush", "character_death"]
+    },
+    {
+      "id": "novel_ch19_여포_하비에서_패배_후_처형",
+      "layer": "historical",
+      "name": "여포 하비에서 패배 후 처형",
+      "period": {
+        "year": 199,
+        "month": 2
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 198, "max": 199 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "lu_bu", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "antagonist", "required": true },
+        { "character_id": "liu_bei", "role": "observer", "required": false },
+        { "character_id": "chen_gong", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "하비성이 수공으로 함락되고, 부하에게 배신당한 여포가 백문루에서 포박된 채 조조 앞에 끌려온다. 목숨을 구걸하는 여포에게 유비가 차갑게 한마디 던진다 — 공은 정건양과 동태사의 일을 잊으셨소? 세 주인을 배신한 전사의 최후는 교수형이다. 참모 진궁은 돌아보지도 않고 죽음으로 걸어갔다.",
+        "flavor": "백문루의 밧줄이 천하무쌍의 무력을 잠재웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "lu_bu", "value": { "cause": "executed" } },
+        { "type": "character_death", "target": "chen_gong", "value": { "cause": "executed" } },
+        { "type": "territory_change", "target": "wei", "value": { "city": "xuzhou", "action": "capture" } }
+      ],
+      "choices": [
+        {
+          "id": "spare_lu_bu",
+          "text": "여포를 살려두고 수하로 받아들인다",
+          "effects": [
+            { "type": "character_join", "target": "lu_bu", "value": { "faction": "wei" } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "risk", "delta": 30 } }
+          ]
+        },
+        {
+          "id": "execute_lu_bu",
+          "text": "여포를 처형하여 후환을 없앤다",
+          "effects": [
+            { "type": "character_death", "target": "lu_bu", "value": { "cause": "executed" } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "authority", "delta": 10 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 19회: 여포 최후 - 하비 전투",
+      "tags": ["novel_chapter", "execution", "betrayal", "decisive"]
+    },
+    {
+      "id": "novel_ch20_동승이_조조_암살을_위한_밀서_받음",
+      "layer": "historical",
+      "name": "동승이 조조 암살을 위한 밀서 받음",
+      "period": {
+        "year": 199,
+        "month": 6
+      },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "emperor_xian" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch14_조조가_헌제를_허도로_옮기고_실권_장악" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "emperor_xian", "role": "protagonist", "required": true },
+        { "character_id": "dong_cheng", "role": "supporter", "required": false },
+        { "character_id": "liu_bei", "role": "supporter", "required": false },
+        { "character_id": "cao_cao", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "헌제가 옥대 속에 피로 쓴 밀조를 숨겨 국구 동승에게 전한다. 조조를 제거하라! 동승이 유비를 포함한 충신들을 규합하여 의대조 동맹을 맺는다. 그러나 궁성의 벽에도 귀가 있으니, 이 위험한 비밀이 얼마나 오래 지켜질 수 있을까.",
+        "flavor": "옥대 속 핏빛 글자가 충신들의 운명을 결정지었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "unlock_event", "target": "dong_cheng_conspiracy", "value": { "type": "plot" } },
+        { "type": "relationship_change", "target": "liu_bei", "value": { "other": "cao_cao", "relation": "hostility", "delta": 20 } }
+      ],
+      "choices": [
+        {
+          "id": "join_plot",
+          "text": "의대조에 서명하고 거사에 참여한다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "loyalty_to_han", "delta": 20 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "danger", "delta": 30 } }
+          ]
+        },
+        {
+          "id": "refuse_plot",
+          "text": "위험을 감수하지 않고 밀조를 거절한다",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "caution", "delta": 15 } },
+            { "type": "relationship_change", "target": "liu_bei", "value": { "other": "emperor_xian", "relation": "trust", "delta": -20 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 20회: 동승의 의대조",
+      "tags": ["novel_chapter", "conspiracy", "secret_edict", "intrigue"]
+    },
+    {
+      "id": "novel_ch21_조조와_유비_술자리에서_영웅_논함",
+      "layer": "historical",
+      "name": "조조와 유비 술자리에서 영웅 논함",
+      "period": {
+        "year": 199,
+        "month": 7
+      },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch20_동승이_조조_암살을_위한_밀서_받음" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조조가 유비를 불러 매실주를 마시며 천하 영웅을 논한다. 원소, 원술, 유표, 손책 — 하나하나 이름을 거론하며 모두 영웅이 아니라 하고, 마침내 손가락으로 유비를 가리킨다. 천하의 영웅은 오직 사군과 조조뿐이오! 유비가 화들짝 놀라 젓가락을 떨어뜨리는 순간, 마침 천둥이 치니 놀란 척 수습한다.",
+        "flavor": "천둥소리에 떨어진 젓가락 하나가 천하의 간담을 서늘하게 했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "cao_cao", "value": { "other": "liu_bei", "relation": "suspicion", "delta": 20 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "cunning", "delta": 5 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 21회: 조조와 유비의 영웅론",
+      "tags": ["novel_chapter", "dialogue", "iconic", "tension"]
+    }
+  ]
+}

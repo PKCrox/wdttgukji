@@ -1,0 +1,173 @@
+{
+  "name_kr": "하후돈",
+  "name_en": "Xiahou Dun",
+  "name_cn": "夏侯惇",
+  "courtesy_kr": "원양",
+  "courtesy_cn": "元讓",
+  "faction": "wei",
+  "tier": 0,
+  "role": "조조 혈족 맹장",
+  "stats": {
+    "leadership": 89,
+    "war": 90,
+    "intelligence": 58,
+    "politics": 70,
+    "charisma": 81,
+    "total": 388,
+    "birth": 156,
+    "death": 220
+  },
+  "novel_presence": {
+    "first_chapter": 5,
+    "last_chapter": 79,
+    "chapters": "5-6,10-12,14,16-19,23-28,30-31,33,39-43,48,50,66-67,69-72,78-79,91",
+    "chapter_count": 14
+  },
+  "biography": {
+    "namu": {
+      "overview": "한 대장군 [ 펼치기 · 접기 ]전한(前漢)초대제2대제3대제4대한신두영위청곽광제5대제6대현한왕봉왕상이통후한(後漢)초대제2대제3대제4대두헌등즐경보양상제5대제6대제7대제8대양기두무하진한섬제9대제10대제11대조조원소하후돈한 대장군 · 후한 태위 · 후한 대사공 · 후한 대사농조위 태위 · 조위 사도 · 조위 사공 · 촉한 재상 · 손오 승상\n\n위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위의 대장군맹하후(盲夏侯)하후돈夏侯惇(샤허우둔)시호충후(忠侯)작위고안향후(高安鄕侯)최종직위대장군(大將軍)성씨하후(夏侯)명돈(惇)자원양(元讓)족제하후연(夏侯淵)생몰 기간음력: 160년(?)~220년 4월 경오(25)일양력: 160년(?)~220년 6월 13일고향예주(豫州) 패국(沛國) 초현(譙縣) 역임한 관직 [ 펼치기 · 접기 ]후한(조조)분무장군 사마(奮武將軍 司馬) →절충교위(折衝校尉) 겸 동군태수(東郡太守) →진류태수(陳留太守) 겸 제음태수(濟陰太守) 겸 건무장군(建武將軍) →진류태수(陳留太守) 겸 제음태수(濟陰太守) 겸 건무장군(建武將軍) 겸 하남윤(河南尹) →하남윤(河南尹) 겸 복파장군(伏波將軍) →전장군(前將軍)조위(조비)대장군(大將軍)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 동탁 토벌전2.3. 복양 전투2.4. 서주에서2.5. 조조 휘하2.6. 관도대전2.7. 박망파 전투2.8. 하북 평정2.9. 장로 정벌2.10. 216년~217년 유수구 전투2.11. 번성 공방전2.12. 죽음2.13. 사후 (위나라 건국)3. 삼국지연의4. 평가4.1. 긍정적 평가4.2. 연의에 기반한 오해 및 재평가5. 기타6. 미디어 믹스7. 관련 문서",
+      "biography": "14세에 스승을 모시고 학문을 배웠는데 어떤 이가 그의 스승을 모욕하자 그를 죽였고 이로 인해 그의 강직한 기풍이 알려지게 되었다.조조가 처음 거병한 이래 하후돈은 늘 비장(裨將)으로 정벌을 수행했다.",
+      "evaluation": "하후돈은 무장임에도 군공보다는 정치적/행정적 측면에서 역할을 많이 했던 인물이고, 이 때문에 본 문서에서 그 능력에 대한 평가가 갈리는 경향이 있다. 이는 연의에서는 삼국지연의 최고의 지략가로 묘사되나, 정사에서는 지략가보다는 명재상 또는 애민(愛民) 정치인에 더 가까운 행적을 보인 제갈량과도 비슷하다고 볼 수 있다. 마찬가지로 연의의 하후돈은 위나라의 대표적인 맹장으로 묘사되나, 정사의 하후돈은 군수 사령관에 더 가까운 모습을 보이고 있다.",
+      "anecdotes": "조조의 신임도 특히나 남달랐다. 조조의 수레에 동승했으며 다른 장수들보다도 특히 중하게 대우받아 그 침실까지도 출입하였다.진수가 처음 정사 삼국지를 편찬할 때 조조의 친부 조숭은 조참의 후손이지만 그 부계혈통에 대해 정확히 알 수 없다고 적었으며, 조조가 하후돈과 같은 집안이라는 이야기도 없었다. 후세에 배송지가 하후돈이 조조의 사촌이라는 조만전과 세어의 기록을 주석으로 넣었다. 그런데 유명 인사 조조와 거의 동시대의 인물이었던 진수가 조조의 아버지 조숭이 조씨 집안 출신이란 점은 명확히 했는데 오나라 사람이 저자인 조만전과 후세 사람이 저자인 세어에서 조조의 출신을 어찌 알았는지 의심스럽고 출처조차 불분명하다. 청나라 시대의 학자 홍량길은 조씨와 하후씨가 서로 대대로 결혼한 것은 둘이 같은 일족이 아니라는 증거라고 주장했으며, 유함흔 역시 조씨 일가가 조숭이 환관의 양자라는 사실도 숨기려 하지 않았는데 무엇하러 하후씨임을 숨겼겠느냐고 깠다. 다만 이 때문에 진수가 동성동본의 혼인을 대놓고 쓸 수 없어서 조숭이 하후씨라고 쓰지 않고 제하후조전을 마련해 하후씨가 위나라 종실임을 암시했다는 의견도 있다. 하후씨가 조씨와 인척관계에 있을 뿐이라면 굳이 위나라 황실의 종실들만이 들어갈 자리인 '종실전'을 따로 두지, '제하후조전'으로 하후씨와 조씨를 묶지 않았을 테니까. 그러나 애초에 조만전과 세어가 맞다면 하후돈과 조조는 조인/조홍과 동일하게 인척이 되는 것인데, 기록을 굳이 나눈 것이 하후돈과 조조가 인척이 맞다는 근거가 되는 것이 이상하다. 조조가 자신의 딸과 하후돈의 차남을 결혼시킨 것을 보면 하후돈을 그렇게까지 가까운 혈연적으로 인식하지 않았을 확률이 높다. 즉, 조씨와 하후씨가 다른 집안이라는 것이 당시 위진의 전반적인 인식이었기에 종실전이라고 하지 않고 제하후조전으로 분류했다고 보는 게 더 맞아떨어진다. 굳이 묶어 편찬한 것은 하후돈이 조조의 친척임이 확실한 조홍/조인들보다도 조조와 더욱 친밀했고, 하후씨가 조씨와는 다른 집안이되 서로 계속 사돈관계를 맺으며 사실상 가족관계에 가까운 사이였다고 보면 자연스럽다.현대에 이르러 유전자 감식을 통한 연구 결과에 따르면 조조와 하후씨가 친척이 아니라고 하지만 이는 다른 삼국지 인물의 후손들도 유전자 감식으로는 서로 다 다르게 나오는 건 마찬가지며, 조조의 무덤조차 제대로 남아있지 않아서 고대인의 정확한 DNA를 얻지 못하는 현대의 상황상 이거 가지고 단순히 판단할 일은 아니다. 조조와 하후돈은 무려 1,800년 전 사람인데 그 후손들도 수십대를 내려오면서 각 후손들마다 서로 다른 씨족들과의 혈통적 교류가 있었을 것임은 자명하고, 현대에 이들의 후손을 자처하는 이들 전부가 정말 전부 조조와 하후돈의 자손인지도 알 수 없는 엄청나게 오래전 일이다.하후돈 하면 가장 유명한 것이 애꾸눈이 된 일화다. 그러나 실제로 눈에 직접 화살에 맞아서 애꾸눈이 되었을 가능성은 낮다. 눈의 시신경은 뇌와 직접적으로 연결되어 있고 물컹한 안구를 화살이 못 뚫을 리 없으니 이 부분에 화살을 정면으로 맞으면 즉사하므로 화살을 뽑고 딸려나온 눈을 먹는다는 것은 의학적으로 말이 안 된다. 다만, 무조건 어떻게 된다는 것은 예외가 많아서 현실에서도 전장에서 머리에 총 맞고도 살아남아 살아가는 사람들도 있고, 실제로 화살이 눈을 정면으로 꿰뚫은 게 아니라 빗겨맞췄거나, 한 번 이상 지면으로부터 튕겨져 속도가 약해진 화살을 맞은 것이라면 아예 불가능은 아니다. 그렇다고는 해도, 현대도 아니고 삼국시대의 의학 기술로는 저 정도 상처를 제대로 치료했을지도 의문인데 하후돈은 이후에도 멀쩡히 활동했다. 이를 보면 눈 근처에 가볍게 상처를 입었는데 감염 등의 이유로 시력을 상실했을 가능성이 높다. 하후돈이 연의에서 용장, 맹장으로 각색되는 것도 외눈 탓이 크다. 악의 화신인 조조의 오른팔로서 강하지만 결국 당하는 역할과 용장 역할을 맡기려는데, 독안룡이라는 별명처럼 중세 중국에서도 애꾸눈은 악당같은 이미지를 갖고 있기 때문에 극의 재미를 위하여 하후돈에게 맹장의 이미지를 입힌 것이다. 무장으로서 애꾸눈은 큰 약점이다. 시야의 일부와 원근감을 잃어버리는 데다가, 방향 전환이 어려워지기 때문이다. 당연히 화살을 피하는 것도 굉장히 힘들어진다. 때문에 실제로 애꾸눈이 된 하후돈은 무력을 크게 상실했을 것이다. 장군이 꼭 전열의 선두에 직접 나서지는 않았겠지만, 이 시대의 전쟁은 장군에게 직접적으로 위해가 가해져서 직접 창칼을 휘둘러야 하는 사태가 벌어지지 않는다는 보장 또한 없었다. 결국 조조군 전선의 후방 총책을 맡는 것으로 보직을 변경하게 된 것이라고 추측할 수 있다.상기한 대로 연의나 매체 등에서 맹장, 용장 이미지가 강했던것과 대조적으로 실제론 정치, 행정 능력이 뛰어났으며 부하나 백성들을 잘 챙겨주는 인격자였다는 요소 때문에 국내에선 행보관이라는 별명을 얻기도 했다.",
+      "military": "조조가 도겸을 공격할 때 하후돈을 남겨 복양을 수비하게 했다.<순욱전>에 따르면 순욱은 장막이 반란을 일으켰음을 알고, 곧 병사를 이끌고 대비를 했으며, 동군태수 하후돈을 빨리 불러 들였지만, 연주의 여러 성이 모두 여포에게 호응했다. 이때 조조의 모든 군대는 도겸을 공격하고, 남겨서 수비하던 병사는 적었고, 감독하던 장수와 큰 관리들이 장막, 진궁과 많이 남몰래 서로 통하여 공모하였다. 하후돈이 도착한 그날 밤 즉시 모반하였던 자들 수십명을 주살하니 군대가 이내 평정되었다.예주자사 곽공이 군사 수만을 이끌고 성 아래에 이르렀는데, 혹자들은 곽공이 여포와 같이 모반을 일으켰다고 말해 군사들이 심히 두려워 했다. 곽공이 순욱을 보고자 하니 이에 순욱이 가려고 했다. 하후돈 등이 말했다.그대는 한 주의 중요한 인물로, 가면 반드시 위험하게 될 것이니 가면 안됩니다.순욱이 말했다.곽공이 장막 등과 본래부터 결탁한 것은 아니며, 지금 빨리 온 것은 그 계책이 반드시 아직 정해지지 않았기 때문이요. 아직 정해지지 않았을 때 그를 설득하면 중립을 하게 할 수 있으니, 만약 먼저 의심한다면 저들은 장차 노하여 계책을 완성할 것이오.곽공이 순욱을 만나보내는데 두려운 뜻이 없고, 견성은 쉽게 공격하지 못할 거라 생각하여 마침내 병사를 이끌고 가버렸다.장막이 모반하여 여포를 맞이했는데 조조의 가솔들이 견성에 있어 하후돈이 적은 수의 군대로 견성으로 나아가다가 여포와 조우해 교전했다. 여포는 군을 물려 마침내 복양에 입성하여 하후돈 군의 치중(輜重)을 습격하여 탈취했다.여포가 장수를 보내 거짓으로 항복하고는 하후돈을 사로잡아 보물을 요구하니 하후돈의 군중이 두려움에 떨었다. 이에 하후돈의 장수 한호가 군사들을 지휘해 병영의 문에 둔치고 군리(軍吏)와 제장들을 불러 모두 각자 담당하고 있는 부(部)를 단속하여 함부로 움직이지 못하게 하자 여러 군영이 안정되었다.그리고 하후돈이 있는 곳으로 나아가 그를 인질로 잡고 있는 자들을 질책하여 말했다.너희들이 흉역하게도 감히 대장군을 사로잡아 겁박하고도 살기를 바라는 것인가! 내가 도적을 토벌하라는 명을 받았는데 어찌 장군 한 명 때문에 너희들을 용서하리.그리고는 눈물을 흘리며 하후돈에게 말했다.응당 국법이 이러하니 어찌하겠습니까!그리고 병사들을 재촉해 하후돈을 인질로 잡고 있는 자들을 공격하게 하자 두려움에 머리를 조아리며 말했다.저희들은 다만 필요한 돈과 물품을 얻어 떠나려 했을 뿐입니다.한호가 여러 차례 책망하며 모두 참수했다.하후돈이 풀려나고 난 뒤 조조가 이를 듣고 한호에게 말했다.경이 이처럼 한 건 가히 아주 오랜 세대의 법이오.이에 영을 내려 지금 이후로 인질을 붙잡는 자가 있으면 모두 함께 공격하고 인질을 돌보지 말도록 했다. 이로 인해 인질을 붙잡고 협박하는 자가 없어지게 되었다.조조가 서주에서 돌아오고 하후돈이 이를 수행하여 여포를 공격하다 날아오는 화살에 맞아 왼쪽 눈을 다쳤다. 이 일로 하후돈은 애꾸눈이 되었다. 그리고 그것은 하후돈 최대의 콤플렉스가 되었다. 여기서 왼쪽 눈을 다쳤을 때 하후돈이 아버지의 정기가 담긴 피를 어찌 흘리겠느냐며 다친 눈알을 뽑아 씹어먹는데 이건 연의의 창작이다. 실제로 눈알이 뽑힐 정도로 눈이 다치면 눈은 물론 뇌신경까지 무리가 가기 때문에 죽는다. 비록 한쪽 눈을 잃었지만 이후로도 하후돈이 별 다른 이상 없이 조조 휘하에서 계속 활동한 걸 감안하면 이미 멀리 날아와 살상력을 잃은 화살이 눈에 살짝 박혔다 떨어졌거나 유시에 스쳐 눈알이 아닌 눈 근처를 다치고 감염으로 한쪽 눈이 먼 것으로 보인다.《위략》에 따르면 이때 하후연과 하후돈이 둘 다 장군이었는데, 둘 다 '하후 장군'이라 군중에서는 한쪽 눈을 잃은 하후돈을 맹하후(盲夏侯)라 불렀다. 하후돈은 이를 싫어했는데, 거울을 보면 화를 내며 번번이 땅바닥에 집어던지곤 했다.그래도 부하들을 죽이거나 처벌했다는 기록은 없고 거울에만 화풀이하고 만 걸 보면 역시 사람은 좋았다. 놀리기 위한 것도 아니었고 두 명의 하후 장군을 구분하기 위한 별칭 격이었다. 오히려 전투에서 입은 상처인 만큼, 본인 생각은 어떨지 몰라도 군중 가운데서는 그리 치욕스런 별명은 아니었을 것이다. 대체로 하후돈의 성격은 여러 정황상 과격하고 용맹하면서도 위엄이 있었던 것으로 보이고, 다른 일화에서 보면 감정이 격해질 상황에서도 도를 넘지 않고 오히려 너그럽게 대처하려 노력했다는 것을 알 수 있다.",
+      "death": "하후돈은 군중에 있을 때도 스승을 모시고 학문을 배웠다. 그 성정이 청렴, 검소하여 남은 재물이 있으면 즉시 나누어서 베풀고 부족하면 관청에서 도움을 받고 별도로 산업을 경영하여 치부하지 않았다.〈무제기〉주석《조만전》과《세어》에 따르면 220년, 왕(조조)이 죽자 하후돈은 예전에 했던 말을 상기하고 한스러워 하다 발병하여 죽었다.조비가 위왕 작위를 받고 즉위하자 하후돈을 대장군에 임명했는데 그 몇 달 뒤에 죽었다.〈문제기〉주석《위서》에 따르면 이때 조비는 흰 상복을 입고 업성의 동쪽 성문까지 행차하여 그의 죽음을 애도했다. 그러나 예법에 의하면 같은 성씨를 가진 경우에는 종묘의 문 밖에서 곡을 해야 하는데, 성문까지 나가서 곡을 한 것은 예법에 어긋난 것이다. 시호를 내려 충후(忠侯)라 했다. 아들인 하후충이 후사를 이었다."
+    },
+    "wiki_en": {
+      "summary": "Xiahou Dun, courtesy name Yuanrang, was a Chinese military general and politician serving under the warlord Cao Cao during the late Eastern Han dynasty of China. He served for a few months under Cao Cao's successor, Cao Pi, before his death. As one of Cao Cao's most trusted generals, Xiahou Dun aided the warlord in his campaigns against Lü Bu, Liu Bei, Sun Quan and others.",
+      "sections": {
+        "Lead": "Xiahou Dun (pronunciationⓘ) (died 13 June 220),[a] courtesy name Yuanrang, was a Chinese military general and politician serving under the warlord Cao Cao during the late Eastern Han dynasty of China.[3][4] He served for a few months under Cao Cao's successor, Cao Pi, before his death. As one of Cao Cao's most trusted generals, Xiahou Dun aided the warlord in his campaigns against Lü Bu, Liu Bei, Sun Quan and others.\n\nXiahou Dun lost his left eye when he was a hit by a stray arrow during a battle against Lü Bu in the late 190s, and subsequently became known among the army as \"Blind Xiahou\". His image as a one-eyed warrior was popularized by the 14th-century historical novel Romance of the Three Kingdoms, in which he ripped the arrow from the socket, devoured his own eyeball, and rejoined the battle.\n\n- Xiahou Chong\n\n- Xiahou Mao\n\n- Xiahou Zizang\n\n- Xiahou Zijiang\n\n- at least three other sons\n\n- Xiahou Lian (brother)\n\n- Xiahou Yuan (cousin)",
+        "Early life": "Xiahou Dun was from Qiao County (譙縣), Pei State (沛國), in present-day Bozhou, Anhui. He was a descendant of Xiahou Ying, who served under the Han dynasty's founding emperor, Liu Bang (Emperor Gao). Though the family hadn't reached national prominence in the centuries since, they were a leading family in Pei, often intermarrying down the generations with the other prominent local Ding and Cao clans.[5] Xiahou Dun first gained recognition when he killed a man who insulted his teacher when he was 13 years old.[4]\n\nIn the 180s, possibly when Cao Cao was appointed Cavalry Commandant to help fight Yellow Turbans in Yingchuan, Xiahou Dun helped Cao Cao raise troops, and from then on would follow him across many a battle as his second in command.[6] In 190, when Cao Cao was raising an army to participate in the campaign against Dong Zhuo, Xiahou Dun became his Major (司馬), and when they were defeated by Xu Rong at Suanzao, Xiahou Dun went with Cao Cao to recruit more troops in Yang Province, though they would face a mutiny among their new soldiers.[7] Xiahou Dun was sent to garrison Boma (白馬; near present-day Hua County, Henan), later promoted to Colonel Who Breaks and Charges (折衝校尉), and as Cao Cao became Governor of Yan in 192, Dun succeeded him as the Administrator (太守) of Dong Commandery (東郡; the areas around present-day Puyang, Henan and Liaocheng, Shandong).[8]",
+        "Mid-career": "Xiahou Dun was appointed as the Administrator (太守) of Chenliu (陳留; around present-day Kaifeng, Henan) commandery, the area once under Zhang Miao's control, where had a falling out with his Reporting Officer Wei Zhen around 200.[23] Xiahou Dun invited Wei Zhen to bring his wife out to the feast, to which Wei Zhen strongly objected to as inappropriate to the fury of Xiahou Dun who had his subordinate jailed but soon released him.[24] Then to Jiyin (濟陰; near present-day Dingtao County, Shandong) commandery, and held the rank of General Who Builds Martial Might (建武將軍). He was also enfeoffed as the Marquis of Gao'an District (高安鄉侯). While he was in office, a drought broke out and there was a locust infestation in the region. To counter these problems, Xiahou Dun spearheaded an agricultural program, in which he instructed workers to dam up the Taishou River (太壽水; a tributary of the Huai River) to create a large pond. He personally participated in the construction works and also encouraged the people to grow crops in the inundated land. This program greatly aided the people during those years of severe famine. He was later reassigned to be the Intendant of Henan (河南尹).[25] In 198 Xiahou Dun was dispatched to Xu to reinforce the allied Liu Bei, who was under attack from Gao Shun on the orders of Lü Bu, but Gao Shun defeated Xiahou Dun then would drive out Liu Bei.[7]\n\nXiahou Dun did not participate in Cao Cao's campaigns in northern China against Yuan Shao, Yuan's sons and their alli... (truncated)",
+        "Later life and death": "Xiahou Dun accompanied the 215 campaign in Hanzhong against the theocratic warlord Zhang Lu but Cao Cao's forces struggled against Zhang Wei's forces. According to Dong Zhao's account,[34] Cao Cao issued orders to recall with Xiahou Dun and Xu Chu were sent to bring the troops back from the hills. In the confusion, some of the returning troops got lost in the night and surprised some of the defenders who fled from their position. This was reported back to Xiahou Dun and, with some not believing it, Xiahou Dun rode forward to see for himself then went back to tell Cao Cao so they could exploit it, Zhang Wei's position collapsed and Zhang Lu soon surrendered. In 216, he accompanied Cao Cao to Juchao (居巢; in present-day Chaohu, Anhui) against southern rival Sun Quan but met with stalemate. In 217, Cao Cao withdrew but left behind Xiahou Dun as Area Commander in command of 26 juns (軍)[b] until Sun Quan negotiated terms including an acceptance of Cao Cao as King.[35] As a reward for his contributions including at Juchao, he received a number of performing dancers and musicians. The imperial order that came with the reward read: \"When Wei Jiang (魏絳) pacified the Rong people, he was only rewarded with gold and riches. Don't you, General, deserve more than him?\"[36]\n\nIn 219, when Cao Cao marched to Mobei (摩陂; southeast of present-day Jia County, Henan) in response to Guan Yu's attack, he treated Xiahou Dun with exceptional honors that no other officer received, by letting Xiahou ride... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "夏侯惇（2世紀—220年6月13日），字元让，別名盲夏侯，沛国谯县（今属安徽省亳州市）人，曹操的族兄。漢朝開國功臣之一夏侯嬰的後代。東漢末年曹操部下大將，官至大將軍，封高安鄉侯。曹操死後數月夏侯惇也因病去世。谥為忠侯。\n",
+      "sections": {
+        "Introduction": "夏侯惇（2世紀—220年6月13日），字元让，別名盲夏侯，沛国谯县（今属安徽省亳州市）人，曹操的族兄。漢朝開國功臣之一夏侯嬰的後代。東漢末年曹操部下大將，官至大將軍，封高安鄉侯。曹操死後數月夏侯惇也因病去世。谥為忠侯。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 39,
+      "text": "吾笑徐元直在丞相面前，誇諸葛亮為天人。今觀其用兵，乃以此等軍馬為前部，與吾對敵，正如驅犬羊與虎豹鬥耳！吾於丞相前誇口，要活捉劉備、諸葛亮，今必應吾言矣。",
+      "text_length": 76
+    },
+    {
+      "chapter": 10,
+      "text": "此乃陳留人：姓典，名韋，勇力過人。舊跟張邈，與帳下人不和，手殺數十人，逃竄山中。惇出射獵，見韋逐鹿過澗，因收於軍中。今特薦之於公。",
+      "text_length": 65
+    },
+    {
+      "chapter": 28,
+      "text": "「丞相無明文傳報，汝於路殺人，又斬吾部將，無禮太甚！我特來擒你，獻與丞相發落！」\n\n言訖，便拍馬挺鎗欲鬥。",
+      "text_length": 53
+    },
+    {
+      "chapter": 10,
+      "text": "他曾為友報讎殺人，提頭直出鬧市，數百人不敢近。只今所使兩枝鐵戟，重八十斤，挾之上馬，運使如飛。",
+      "text_length": 47
+    },
+    {
+      "chapter": 39,
+      "text": "元直之言謬矣。吾看諸葛亮如草芥耳，何足懼哉！吾若不一陣生擒劉備，活捉諸葛，願將首級獻與丞相。",
+      "text_length": 46
+    },
+    {
+      "chapter": 28,
+      "text": "丞相無明文傳報，汝於路殺人，又斬吾部將，無禮太甚！我特來擒你，獻與丞相發落！",
+      "text_length": 38
+    },
+    {
+      "chapter": 28,
+      "text": "「丞相敬愛關將軍忠義，恐於路關隘攔截，故遣某持齎公文，遍行諸處。",
+      "text_length": 32
+    },
+    {
+      "chapter": 30,
+      "text": "「主公興仁義之師，田豐何得出此不祥之語？」\n\n紹因怒，欲斬田豐。",
+      "text_length": 32
+    },
+    {
+      "chapter": 66,
+      "text": "「吳、蜀急未可攻，宜先取漢中張魯，以得勝之兵取蜀，可一鼓而下也。",
+      "text_length": 32
+    },
+    {
+      "chapter": 28,
+      "text": "丞相敬愛關將軍忠義，恐於路關隘攔截，故遣某持齎公文，遍行諸處。",
+      "text_length": 31
+    },
+    {
+      "chapter": 39,
+      "text": "「敵軍如此，雖十面埋伏，吾何懼哉！」遂不聽浩言，直趕至博望坡。",
+      "text_length": 31
+    },
+    {
+      "chapter": 66,
+      "text": "吳、蜀急未可攻，宜先取漢中張魯，以得勝之兵取蜀，可一鼓而下也。",
+      "text_length": 31
+    },
+    {
+      "chapter": 28,
+      "text": "秦琪是蔡陽之甥。他將秦琪託付我處，今被關某所殺，怎肯干休？",
+      "text_length": 29
+    },
+    {
+      "chapter": 39,
+      "text": "「此即埋伏之兵也！吾今晚不到新野，誓不罷兵！」乃催軍前進。",
+      "text_length": 29
+    },
+    {
+      "chapter": 27,
+      "text": "「關某休走！」正是：\n\n六將阻關徒受死，一軍攔路復爭鋒。",
+      "text_length": 28
+    },
+    {
+      "chapter": 28,
+      "text": "「關某於路，殺把關將士，丞相知否？」來使曰：「此卻未知。",
+      "text_length": 28
+    },
+    {
+      "chapter": 39,
+      "text": "「近聞劉備在新野，每日教演士卒，必為後患，可早圖之。",
+      "text_length": 26
+    },
+    {
+      "chapter": 39,
+      "text": "近聞劉備在新野，每日教演士卒，必為後患，可早圖之。",
+      "text_length": 25
+    },
+    {
+      "chapter": 10,
+      "text": "「他曾為友報讎殺人，提頭直出鬧市，數百人不敢近。",
+      "text_length": 24
+    },
+    {
+      "chapter": 39,
+      "text": "此即埋伏之兵也！吾今晚不到新野，誓不罷兵！",
+      "text_length": 21
+    }
+  ],
+  "relationships": [
+    {
+      "target": "Cao Cao",
+      "type": "lord_vassal",
+      "type_kr": "군신",
+      "intensity": 85,
+      "evidence": "혈족 맹장"
+    }
+  ],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": true
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-16T10:52:17.131Z"
+}

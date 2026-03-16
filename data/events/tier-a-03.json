@@ -1,0 +1,1133 @@
+{
+  "total": 18,
+  "events": [
+    {
+      "id": "rel_sky_piercer_halberd",
+      "layer": "relational",
+      "name": "방천화극",
+      "period": {
+        "year": 198,
+        "turn_range": { "earliest": 30, "latest": 45 }
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "ma_chao" } },
+          { "type": "character_alive", "params": { "character_id": "sun_quan" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "ma_chao", "role": "supporter", "required": true },
+        { "character_id": "sun_quan", "role": "supporter", "required": false },
+        { "character_id": "lu_meng", "role": "observer", "required": false },
+        { "character_id": "lu_bu", "role": "antagonist", "required": false },
+        { "character_id": "yuan_shu", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "여포의 상징이던 방천화극이 세상에 다시 모습을 드러냈다. 한때 천하무적의 무장이 휘둘렀던 이 무기에 관우와 마초의 눈이 동시에 머문다. 방천화극을 손에 넣는 자는 천하에 무용을 떨칠 것이라는 소문이 퍼지며, 각 세력의 장수들이 서주로 몰려들기 시작한다. 명마 적토마를 이미 가진 관우가 이 극까지 얻는다면 그 위세는 감당할 수 없을 것이다. 누가 이 전설의 무기를 차지할 것인가.",
+        "flavor": "한 자루의 극이 천하의 무인들을 시험한다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "sky_piercer_claim",
+          "text": "관우가 직접 방천화극을 취한다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 5 } },
+            { "type": "relationship_change", "target": "ma_chao", "value": { "character_id": "guan_yu", "change": -15 } },
+            { "type": "loyalty_change", "target": "guan_yu", "value": 10 }
+          ]
+        },
+        {
+          "id": "sky_piercer_yield",
+          "text": "마초에게 방천화극을 양보하여 의리를 세운다",
+          "effects": [
+            { "type": "stat_change", "target": "ma_chao", "value": { "martial": 5 } },
+            { "type": "relationship_change", "target": "ma_chao", "value": { "character_id": "guan_yu", "change": 20 } },
+            { "type": "loyalty_change", "target": "ma_chao", "value": 15 }
+          ]
+        },
+        {
+          "id": "sky_piercer_destroy",
+          "text": "방천화극을 부수어 여포의 잔재를 지운다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "charisma": 3 } },
+            { "type": "stat_change", "target": "ma_chao", "value": { "charisma": 3 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 10 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 방천화극 - 여포의 상징 무기를 둘러싼 서사",
+      "tags": ["episode", "weapon", "rivalry"]
+    },
+    {
+      "id": "rel_battle_of_fancheng",
+      "layer": "relational",
+      "name": "번성 전투",
+      "period": {
+        "year": 219,
+        "month": 7,
+        "turn_range": { "earliest": 80, "latest": 95 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "gan_ning" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "lu_su" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "gan_ning", "role": "antagonist", "required": true },
+        { "character_id": "lu_su", "role": "supporter", "required": false },
+        { "character_id": "ma_chao", "role": "supporter", "required": false },
+        { "character_id": "pang_de", "role": "antagonist", "required": false },
+        { "character_id": "fa_zheng", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 형주에서 북벌의 깃발을 올렸다. 번성을 포위한 관우는 가을 장마를 이용해 수공을 펼치니, 우금의 칠군이 물에 잠기고 방덕은 결사항전 끝에 참수당한다. 그러나 승리의 이면에서 여몽과 감녕이 이끄는 오군이 형주의 빈틈을 노리고 있었다. 천하를 진동시킨 위수의 대승 뒤에 치명적인 함정이 기다리고 있음을 관우는 아직 모른다. 형주를 지킬 것인가, 번성을 함락시킬 것인가.",
+        "flavor": "위수에 떠오른 시체는 적의 것이었으나, 형주의 운명도 함께 떠올랐다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "fancheng_press_attack",
+          "text": "번성 공격을 밀어붙여 조인을 함락시킨다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 3 } },
+            { "type": "territory_change", "target": "shu", "value": { "city": "ye", "action": "contest" } },
+            { "type": "army_change", "target": "guan_yu", "value": -5000 },
+            { "type": "faction_war", "target": "wu", "value": { "attacker": "wu", "defender": "shu" } }
+          ]
+        },
+        {
+          "id": "fancheng_defend_jingzhou",
+          "text": "번성 포위를 풀고 형주 방어로 회군한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "territory_defense", "amount": 20 } },
+            { "type": "relationship_change", "target": "gan_ning", "value": { "character_id": "guan_yu", "change": -5 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "intelligence": 2 } }
+          ]
+        },
+        {
+          "id": "fancheng_negotiate",
+          "text": "오나라에 사신을 보내 형주 분할을 협상한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": -2000 } },
+            { "type": "faction_peace", "target": "wu", "value": { "faction_a": "shu", "faction_b": "wu" } },
+            { "type": "relationship_change", "target": "lu_su", "value": { "character_id": "guan_yu", "change": 10 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 번성 전투 - 219년 관우의 북벌과 수공, 형주 위기",
+      "tags": ["episode", "battle", "decisive", "flood"]
+    },
+    {
+      "id": "rel_three_visits_to_the_thatched_cottage",
+      "layer": "relational",
+      "name": "삼고초려",
+      "period": {
+        "year": 207,
+        "turn_range": { "earliest": 50, "latest": 65 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "guo_jia" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "ma_su" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guo_jia", "role": "observer", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "ma_su", "role": "supporter", "required": false },
+        { "character_id": "pang_tong", "role": "supporter", "required": false },
+        { "character_id": "xu_shu", "role": "supporter", "required": false },
+        { "character_id": "sun_quan", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "융중의 초가집을 세 번이나 찾아가는 유비의 정성에 관우와 장비는 불만이 가득하다. 한낱 농부에 불과한 자에게 왜 이토록 머리를 숙여야 하느냐고 관우가 간언하지만, 유비는 뜻을 꺾지 않는다. 마침내 제갈량이 문을 열고 천하삼분의 대책을 펼치니, 그 혜안에 관우조차 입을 다물지 못한다. 한편 조조 진영의 곽가는 이 소식을 듣고 남쪽의 용이 깨어날 것을 경계한다. 초야의 현인 한 명이 천하의 판도를 바꾸려 하고 있었다.",
+        "flavor": "세 번의 걸음이 천하의 지도를 다시 그렸다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "three_visits_accept",
+          "text": "제갈량을 군사로 영입하고 천하삼분지계를 따른다",
+          "effects": [
+            { "type": "character_join", "target": "zhuge_liang", "value": { "faction": "shu", "role": "strategist" } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "intelligence": 2 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 20 } },
+            { "type": "unlock_event", "target": "shu", "value": "rel_longzhong_plan" }
+          ]
+        },
+        {
+          "id": "three_visits_reject",
+          "text": "관우의 간언을 받아들여 독자적인 길을 간다",
+          "effects": [
+            { "type": "loyalty_change", "target": "guan_yu", "value": 15 },
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 2 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -5 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 삼고초려 - 207년 유비가 제갈량을 세 번 찾아감",
+      "tags": ["episode", "recruitment", "diplomacy", "turning_point"]
+    },
+    {
+      "id": "rel_romance_of_the_three_kingdoms",
+      "layer": "relational",
+      "name": "삼국지연의",
+      "period": {
+        "year": 220,
+        "turn_range": { "earliest": 85, "latest": 100 }
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jia_xu" } },
+          { "type": "character_alive", "params": { "character_id": "gan_ning" } },
+          { "type": "character_alive", "params": { "character_id": "kan_ze" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jia_xu", "role": "protagonist", "required": true },
+        { "character_id": "gan_ning", "role": "supporter", "required": true },
+        { "character_id": "kan_ze", "role": "supporter", "required": false },
+        { "character_id": "jiang_wei", "role": "observer", "required": false },
+        { "character_id": "gongsun_zan", "role": "supporter", "required": false },
+        { "character_id": "guo_jia", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "한 왕조가 무너지고 천하가 셋으로 나뉘는 대세가 확정되려 한다. 가후는 조비에게 한 황제의 선양을 받으라 진언하고, 오의 감녕은 강동의 독립을 공고히 한다. 각 세력의 모사들이 새 시대의 판을 짜는 가운데, 한실 부흥의 꿈은 점점 희미해져 간다. 천하의 지식인들은 이 격변의 시대를 기록하기 시작하니, 후세에 전해질 이야기가 만들어지고 있었다. 가후의 냉정한 계산이 삼국의 시대를 여는 마지막 한 수가 된다.",
+        "flavor": "한 왕조의 저물녘, 세 개의 별이 동시에 떠올랐다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "romance_support_transition",
+          "text": "시대의 흐름을 받아들이고 새 질서를 지지한다",
+          "effects": [
+            { "type": "stat_change", "target": "jia_xu", "value": { "intelligence": 3 } },
+            { "type": "resource_change", "target": "wei", "value": { "type": "legitimacy", "amount": 20 } },
+            { "type": "loyalty_change", "target": "jia_xu", "value": 10 }
+          ]
+        },
+        {
+          "id": "romance_resist_change",
+          "text": "한실 부흥의 뜻을 품고 저항 세력을 규합한다",
+          "effects": [
+            { "type": "resource_change", "target": "later-han", "value": { "type": "morale", "amount": 15 } },
+            { "type": "relationship_change", "target": "kan_ze", "value": { "character_id": "jia_xu", "change": -10 } },
+            { "type": "faction_war", "target": "wei", "value": { "attacker": "later-han", "defender": "wei" } }
+          ]
+        },
+        {
+          "id": "romance_broker_balance",
+          "text": "삼국 간 세력 균형을 조율하여 전면전을 막는다",
+          "effects": [
+            { "type": "stat_change", "target": "jia_xu", "value": { "politics": 5 } },
+            { "type": "faction_peace", "target": "wei", "value": { "faction_a": "wei", "faction_b": "wu" } },
+            { "type": "resource_change", "target": "wei", "value": { "type": "gold", "amount": -1500 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 삼국지연의 - 한말 삼국 정립의 대서사",
+      "tags": ["episode", "political", "era_transition"]
+    },
+    {
+      "id": "rel_chain_stratagem",
+      "layer": "relational",
+      "name": "연환계",
+      "period": {
+        "year": 192,
+        "turn_range": { "earliest": 15, "latest": 30 }
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jia_xu" } },
+          { "type": "character_alive", "params": { "character_id": "kan_ze" } },
+          { "type": "character_alive", "params": { "character_id": "dong_zhuo" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jia_xu", "role": "observer", "required": true },
+        { "character_id": "kan_ze", "role": "supporter", "required": true },
+        { "character_id": "dong_zhuo", "role": "target", "required": false },
+        { "character_id": "pang_tong", "role": "supporter", "required": false },
+        { "character_id": "lu_bu", "role": "antagonist", "required": false },
+        { "character_id": "wang_yun", "role": "protagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "왕윤이 동탁과 여포 사이에 초선을 놓아 이간질을 꾸미니, 이것이 바로 천고의 연환계이다. 절세미인 한 명이 천하를 호령하던 폭군의 마음을 흔들고, 그 양아들의 창끝을 아비에게 돌리게 만든다. 가후는 이 계략의 치밀함에 감탄하면서도 그 뒤에 닥칠 혼란을 예감한다. 동탁이 쓰러지면 장안은 피바다가 될 것이며, 그 혼란 속에서 누가 천하를 주울 것인가. 한 줄의 계략이 시대를 뒤엎으려 하고 있다.",
+        "flavor": "미인의 눈물 한 방울이 폭군의 목을 벤다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "chain_support_plot",
+          "text": "왕윤의 계략을 돕고 동탁 제거에 가담한다",
+          "effects": [
+            { "type": "character_death", "target": "dong_zhuo", "value": { "cause": "assassination" } },
+            { "type": "stat_change", "target": "wang_yun", "value": { "politics": 5 } },
+            { "type": "resource_change", "target": "later-han", "value": { "type": "morale", "amount": 30 } },
+            { "type": "unlock_event", "target": "later-han", "value": "rel_post_dongzhuo_chaos" }
+          ]
+        },
+        {
+          "id": "chain_warn_dongzhuo",
+          "text": "동탁에게 계략을 밀고하여 왕윤을 제거한다",
+          "effects": [
+            { "type": "character_death", "target": "wang_yun", "value": { "cause": "execution" } },
+            { "type": "loyalty_change", "target": "jia_xu", "value": 15 },
+            { "type": "relationship_change", "target": "lu_bu", "value": { "character_id": "jia_xu", "change": -20 } },
+            { "type": "resource_change", "target": "dong-zhuo", "value": { "type": "fear", "amount": 20 } }
+          ]
+        },
+        {
+          "id": "chain_observe_chaos",
+          "text": "어느 편에도 서지 않고 혼란 뒤의 기회를 노린다",
+          "effects": [
+            { "type": "stat_change", "target": "jia_xu", "value": { "intelligence": 3, "politics": 2 } },
+            { "type": "resource_change", "target": "jia_xu", "value": { "type": "influence", "amount": 10 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 연환계 - 192년 왕윤의 동탁 제거 계략",
+      "tags": ["episode", "stratagem", "assassination", "beauty_trap"]
+    },
+    {
+      "id": "rel_wuzhang_plains",
+      "layer": "relational",
+      "name": "오장원",
+      "period": {
+        "year": 234,
+        "month": 8,
+        "turn_range": { "earliest": 110, "latest": 125 }
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "sima_yi" } },
+          { "type": "character_alive", "params": { "character_id": "liu_bei" } },
+          { "type": "character_alive", "params": { "character_id": "zhuge_liang" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "sima_yi", "role": "antagonist", "required": true },
+        { "character_id": "liu_bei", "role": "observer", "required": true },
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "오장원에 가을바람이 불고, 제갈량의 등불이 꺼져가고 있다. 다섯 번째 북벌에 나선 촉의 승상은 병상에 누워서도 위연의 반기를 경계하고, 강유에게 후사를 맡긴다. 맞은편 진영에서 사마의는 굳게 수비만 하며 시간의 편에 섰다. 별이 떨어지면 천하의 지략가가 사라지고, 촉한의 꿈도 함께 저문다. 출사표에 담았던 선제의 유지를 끝내 이루지 못한 한 사내의 마지막 밤이 깊어간다.",
+        "flavor": "오장원의 별이 지면, 천하에 그를 대적할 자도 사라진다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "wuzhang_final_gambit",
+          "text": "남은 힘을 모아 사마의에게 최후의 결전을 강요한다",
+          "effects": [
+            { "type": "army_change", "target": "zhuge_liang", "value": -10000 },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "martial": -3 } },
+            { "type": "army_change", "target": "sima_yi", "value": -8000 },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 15 } }
+          ]
+        },
+        {
+          "id": "wuzhang_orderly_retreat",
+          "text": "후사를 정리하고 강유에게 병법을 전수한 뒤 퇴각한다",
+          "effects": [
+            { "type": "stat_change", "target": "jiang_wei", "value": { "intelligence": 5, "martial": 3 } },
+            { "type": "character_death", "target": "zhuge_liang", "value": { "cause": "illness" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -20 } },
+            { "type": "unlock_event", "target": "shu", "value": "rel_memorial_on_dispatching_the_troops" }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 오장원 - 234년 제갈량의 마지막 북벌과 병사",
+      "tags": ["episode", "battle", "death", "legacy", "decisive"]
+    },
+    {
+      "id": "rel_longzhong_plan",
+      "layer": "relational",
+      "name": "융중대",
+      "period": {
+        "year": 207,
+        "turn_range": { "earliest": 50, "latest": 65 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jiang_wei" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "lu_su" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jiang_wei", "role": "observer", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "lu_su", "role": "observer", "required": false },
+        { "character_id": "dong_zhuo", "role": "observer", "required": false },
+        { "character_id": "ma_chao", "role": "supporter", "required": false },
+        { "character_id": "pang_de", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "융중의 초당에서 제갈량이 천하의 형세를 논한다. 형주와 익주를 취하고 오와 연합하여 위에 맞서라는 대전략은 유비 진영 전체를 흥분시킨다. 관우에게는 형주 방비의 중책이 맡겨지고, 먼 훗날 강유가 이 대계를 이어받게 될 운명이 씌어진다. 한편 오의 노숙 역시 비슷한 전략을 손권에게 진언하고 있으니, 천하삼분의 구도는 남과 북에서 동시에 그려지고 있었다. 한 편의 대책이 반세기의 전쟁을 설계한다.",
+        "flavor": "초당의 지도 위에 그은 세 줄의 선이 천하를 갈랐다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "longzhong_follow",
+          "text": "융중대를 충실히 따라 형주 확보에 주력한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "strategy", "amount": 20 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "politics": 2 } },
+            { "type": "territory_change", "target": "shu", "value": { "city": "jingzhou", "action": "fortify" } },
+            { "type": "faction_alliance", "target": "shu", "value": { "faction_a": "shu", "faction_b": "wu" } }
+          ]
+        },
+        {
+          "id": "longzhong_modify",
+          "text": "형주를 포기하고 서쪽으로만 진출하는 수정안을 채택한다",
+          "effects": [
+            { "type": "territory_change", "target": "shu", "value": { "city": "yizhou", "action": "focus" } },
+            { "type": "faction_peace", "target": "wu", "value": { "faction_a": "shu", "faction_b": "wu" } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "politics": -2 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "food", "amount": 5000 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 융중대 - 207년 제갈량의 천하삼분지계",
+      "tags": ["episode", "strategy", "diplomacy", "turning_point"]
+    },
+    {
+      "id": "rel_weeping_as_ma_su_is_executed",
+      "layer": "relational",
+      "name": "읍참마속",
+      "period": {
+        "year": 228,
+        "month": 1,
+        "turn_range": { "earliest": 95, "latest": 110 }
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "ma_liang" } },
+          { "type": "character_alive", "params": { "character_id": "ma_su" } },
+          { "type": "character_alive", "params": { "character_id": "meng_huo" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "ma_liang", "role": "observer", "required": true },
+        { "character_id": "ma_su", "role": "target", "required": true },
+        { "character_id": "meng_huo", "role": "observer", "required": false },
+        { "character_id": "xu_shu", "role": "observer", "required": false },
+        { "character_id": "wei_yan", "role": "supporter", "required": false },
+        { "character_id": "liu_bei", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "제1차 북벌의 관건은 가정이었다. 제갈량은 마속에게 가정 수비를 맡겼으나, 마속은 산 위에 진을 치는 치명적 실수를 저질렀다. 장합의 위군이 수로를 끊자 촉군은 갈증에 무너지고, 가정은 하루 만에 함락된다. 마량은 동생의 참담한 패배 소식에 말을 잃었다. 제갈량은 눈물을 흘리며 군법에 따라 마속의 목을 베니, 이것이 바로 읍참마속이다. 선제가 '마속은 말만 앞서니 크게 쓰지 마라'고 남긴 유언이 뼈아프게 되살아난다.",
+        "flavor": "승상의 눈물이 군법의 칼날 위에 떨어졌다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "masu_execute",
+          "text": "군법대로 마속을 참수하여 기강을 세운다",
+          "effects": [
+            { "type": "character_death", "target": "ma_su", "value": { "cause": "execution" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "discipline", "amount": 25 } },
+            { "type": "relationship_change", "target": "ma_liang", "value": { "character_id": "zhuge_liang", "change": -15 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -10 } }
+          ]
+        },
+        {
+          "id": "masu_spare",
+          "text": "마속을 용서하고 감옥에 가두어 재기의 기회를 준다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "discipline", "amount": -15 } },
+            { "type": "loyalty_change", "target": "ma_su", "value": 20 },
+            { "type": "relationship_change", "target": "ma_liang", "value": { "character_id": "zhuge_liang", "change": 10 } },
+            { "type": "stat_change", "target": "ma_su", "value": { "martial": -3 } }
+          ]
+        },
+        {
+          "id": "masu_demote",
+          "text": "마속을 병사로 강등하고 공을 세워 속죄하게 한다",
+          "effects": [
+            { "type": "stat_change", "target": "ma_su", "value": { "martial": -2, "politics": -2 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "discipline", "amount": 5 } },
+            { "type": "loyalty_change", "target": "ma_su", "value": -5 },
+            { "type": "loyalty_change", "target": "wei_yan", "value": -5 }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 읍참마속 - 228년 가정 전투 패배 후 마속 처형",
+      "tags": ["episode", "execution", "discipline", "tragedy"]
+    },
+    {
+      "id": "rel_battle_of_yiling",
+      "layer": "relational",
+      "name": "이릉대전",
+      "period": {
+        "year": 222,
+        "month": 6,
+        "turn_range": { "earliest": 88, "latest": 100 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "gan_ning" } },
+          { "type": "character_alive", "params": { "character_id": "jiang_wei" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "gan_ning", "role": "antagonist", "required": true },
+        { "character_id": "jiang_wei", "role": "supporter", "required": true },
+        { "character_id": "guan_yu", "role": "observer", "required": false },
+        { "character_id": "guan_xing", "role": "supporter", "required": false },
+        { "character_id": "lu_su", "role": "observer", "required": false },
+        { "character_id": "ma_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "관우의 죽음에 분노한 유비가 오 정벌의 대군을 일으켰다. 70만 대군이 이릉에 진을 치니 그 행렬이 700리에 달한다. 그러나 육손은 인내로 버티다가 한여름의 화공을 퍼부으니, 촉군의 연영이 일시에 불바다가 된다. 감녕이 이끄는 오의 수군이 퇴로를 차단하고, 관흥과 장포가 겨우 유비를 구출해낸다. 의형제의 복수를 위해 시작된 전쟁이 촉한의 국력을 반 토막 내는 재앙으로 끝났다.",
+        "flavor": "700리 연영이 하룻밤의 불길에 삼켜졌다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "yiling_retreat_early",
+          "text": "육손의 함정을 간파하고 조기에 퇴각한다",
+          "effects": [
+            { "type": "army_change", "target": "liu_bei", "value": -20000 },
+            { "type": "stat_change", "target": "jiang_wei", "value": { "intelligence": 3 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -10 } }
+          ]
+        },
+        {
+          "id": "yiling_fight_through",
+          "text": "화공을 뚫고 결사적으로 이릉을 공략한다",
+          "effects": [
+            { "type": "army_change", "target": "liu_bei", "value": -50000 },
+            { "type": "army_change", "target": "gan_ning", "value": -15000 },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -30 } },
+            { "type": "stat_change", "target": "guan_xing", "value": { "martial": 3 } }
+          ]
+        },
+        {
+          "id": "yiling_negotiate_peace",
+          "text": "원한을 삼키고 오에 화친을 제안한다",
+          "effects": [
+            { "type": "faction_peace", "target": "wu", "value": { "faction_a": "shu", "faction_b": "wu" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": -3000 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -15 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "charisma": -2 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 이릉대전 - 222년 유비의 오 정벌과 화공 대패",
+      "tags": ["episode", "battle", "decisive", "fire_attack"]
+    },
+    {
+      "id": "rel_battle_of_changban",
+      "layer": "relational",
+      "name": "장판파 전투",
+      "period": {
+        "year": 208,
+        "month": 9,
+        "turn_range": { "earliest": 55, "latest": 70 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jia_xu" } },
+          { "type": "character_alive", "params": { "character_id": "gan_ning" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jia_xu", "role": "antagonist", "required": true },
+        { "character_id": "gan_ning", "role": "observer", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": false },
+        { "character_id": "dong_zhuo", "role": "observer", "required": false },
+        { "character_id": "wen_chou", "role": "antagonist", "required": false },
+        { "character_id": "sun_quan", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "조조의 대군이 유비를 쫓아 장판파에 이르렀다. 10만 백성을 데리고 남하하던 유비군은 기병의 추격에 산산이 흩어지고, 유비의 가족마저 적진에 남겨졌다. 이때 조자룡이 홀로 적진을 7차례 돌파하며 아두를 품에 안고 돌아오니, 조조마저 그 용맹에 감탄한다. 장비는 장판교 위에서 홀로 버티며 사자후를 질러 조조군을 물리친다. 가후는 이 장면을 지켜보며 유비 진영의 장수들이 범상치 않음을 조조에게 경고한다.",
+        "flavor": "한 사람의 외침에 만군이 물러섰다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "changban_charge_rescue",
+          "text": "조자룡과 함께 적진으로 돌입해 나머지 가족도 구출한다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 2 } },
+            { "type": "army_change", "target": "guan_yu", "value": -3000 },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 25 } },
+            { "type": "loyalty_change", "target": "guan_yu", "value": 10 }
+          ]
+        },
+        {
+          "id": "changban_strategic_retreat",
+          "text": "백성을 버리고 정예병만으로 강하로 신속히 퇴각한다",
+          "effects": [
+            { "type": "army_change", "target": "liu_bei", "value": -5000 },
+            { "type": "stat_change", "target": "liu_bei", "value": { "charisma": -5 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -15 } },
+            { "type": "stat_change", "target": "jia_xu", "value": { "intelligence": 2 } }
+          ]
+        },
+        {
+          "id": "changban_hold_bridge",
+          "text": "장판교에서 결사 방어하여 시간을 벌고 전원 도강한다",
+          "effects": [
+            { "type": "army_change", "target": "liu_bei", "value": -8000 },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 20 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "charisma": 3 } },
+            { "type": "faction_alliance", "target": "shu", "value": { "faction_a": "shu", "faction_b": "wu" } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 장판파 전투 - 208년 조조 추격전과 조자룡/장비의 활약",
+      "tags": ["episode", "battle", "heroic", "retreat"]
+    },
+    {
+      "id": "rel_battle_of_red_cliffs",
+      "layer": "relational",
+      "name": "적벽대전",
+      "period": {
+        "year": 208,
+        "month": 11,
+        "turn_range": { "earliest": 58, "latest": 72 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jia_xu" } },
+          { "type": "character_alive", "params": { "character_id": "gan_ning" } },
+          { "type": "character_alive", "params": { "character_id": "kan_ze" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jia_xu", "role": "antagonist", "required": true },
+        { "character_id": "gan_ning", "role": "protagonist", "required": true },
+        { "character_id": "kan_ze", "role": "supporter", "required": false },
+        { "character_id": "guo_jia", "role": "observer", "required": false },
+        { "character_id": "guan_yu", "role": "supporter", "required": false },
+        { "character_id": "lu_su", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "조조의 80만 대군이 장강을 건너 남하하니, 천하 통일이 눈앞에 다가온 듯하다. 그러나 주유와 제갈량의 연합 계략이 적벽의 밤하늘을 붉게 물들인다. 감녕은 선봉에 서서 화선을 이끌고 조조의 수군으로 돌진하고, 간택은 거짓 항복서를 전달하여 조조를 속이는 데 성공한다. 동남풍이 불어오는 순간 수천 척의 전선이 일시에 불타오르니, 이것이 바로 천고에 길이 남을 적벽대전이다. 가후는 패전의 불길 속에서 조조를 간신히 구출해낸다.",
+        "flavor": "동남풍 한 줄기가 천하의 판을 뒤집었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "redcliffs_fire_attack",
+          "text": "화공을 감행하여 조조의 수군을 전멸시킨다",
+          "effects": [
+            { "type": "army_change", "target": "jia_xu", "value": -60000 },
+            { "type": "army_change", "target": "gan_ning", "value": -5000 },
+            { "type": "stat_change", "target": "gan_ning", "value": { "martial": 3 } },
+            { "type": "resource_change", "target": "wu", "value": { "type": "morale", "amount": 30 } },
+            { "type": "faction_war", "target": "wei", "value": { "attacker": "wu", "defender": "wei" } }
+          ]
+        },
+        {
+          "id": "redcliffs_naval_blockade",
+          "text": "화공 대신 장강 봉쇄로 조조를 고립시킨다",
+          "effects": [
+            { "type": "army_change", "target": "jia_xu", "value": -20000 },
+            { "type": "resource_change", "target": "wei", "value": { "type": "food", "amount": -10000 } },
+            { "type": "stat_change", "target": "kan_ze", "value": { "intelligence": 3 } },
+            { "type": "resource_change", "target": "wu", "value": { "type": "morale", "amount": 15 } }
+          ]
+        },
+        {
+          "id": "redcliffs_pursue_cao",
+          "text": "도주하는 조조를 화용도에서 차단하여 사로잡는다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "charisma": 5 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 20 } },
+            { "type": "relationship_change", "target": "guan_yu", "value": { "character_id": "jia_xu", "change": -10 } },
+            { "type": "resource_change", "target": "wei", "value": { "type": "morale", "amount": -30 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 적벽대전 - 208년 손유 연합군의 조조군 대파",
+      "tags": ["episode", "battle", "decisive", "fire_attack", "naval"]
+    },
+    {
+      "id": "rel_red_hare",
+      "layer": "relational",
+      "name": "적토마",
+      "period": {
+        "year": 195,
+        "turn_range": { "earliest": 20, "latest": 40 }
+      },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "dong_zhuo" } },
+          { "type": "character_alive", "params": { "character_id": "meng_huo" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "dong_zhuo", "role": "supporter", "required": true },
+        { "character_id": "meng_huo", "role": "observer", "required": false },
+        { "character_id": "sun_quan", "role": "observer", "required": false },
+        { "character_id": "lu_bu", "role": "antagonist", "required": false },
+        { "character_id": "yuan_shao", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "하루에 천 리를 달린다는 전설의 명마 적토마가 세상에 나타났다. 동탁이 여포를 회유하기 위해 이 말을 선물했으나, 여포가 쓰러진 뒤 적토마의 행방이 묘연해졌다. 조조가 관우의 마음을 사기 위해 적토마를 건네니, 관우는 이 말이 있으면 형님 유비를 하루 만에 찾아갈 수 있다며 기뻐한다. 천하의 명마는 천하의 영웅을 알아보는 법이다. 적토마의 등에 오른 관우의 위세가 한층 높아진다.",
+        "flavor": "명마는 영웅을 알아보고, 영웅은 명마를 아낀다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "red_hare_accept",
+          "text": "적토마를 받아들여 관우의 기동력을 높인다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 3 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "cavalry", "amount": 500 } },
+            { "type": "relationship_change", "target": "guan_yu", "value": { "character_id": "cao_cao", "change": 5 } }
+          ]
+        },
+        {
+          "id": "red_hare_refuse",
+          "text": "조조의 선물을 거절하여 의리를 지킨다",
+          "effects": [
+            { "type": "loyalty_change", "target": "guan_yu", "value": 20 },
+            { "type": "stat_change", "target": "guan_yu", "value": { "charisma": 3 } },
+            { "type": "relationship_change", "target": "guan_yu", "value": { "character_id": "cao_cao", "change": -10 } }
+          ]
+        },
+        {
+          "id": "red_hare_gift_forward",
+          "text": "적토마를 받되 다른 장수에게 넘겨 사기를 높인다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 15 } },
+            { "type": "relationship_change", "target": "guan_yu", "value": { "character_id": "cao_cao", "change": -5 } },
+            { "type": "stat_change", "target": "ma_chao", "value": { "martial": 2 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 적토마 - 동탁→여포→관우로 이어진 명마의 서사",
+      "tags": ["episode", "mount", "loyalty", "gift"]
+    },
+    {
+      "id": "rel_plan_for_three_kingdoms",
+      "layer": "relational",
+      "name": "천하삼분지계",
+      "period": {
+        "year": 208,
+        "turn_range": { "earliest": 55, "latest": 70 }
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jiang_wei" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "lu_su" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jiang_wei", "role": "observer", "required": true },
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "lu_su", "role": "supporter", "required": false },
+        { "character_id": "dong_zhuo", "role": "observer", "required": false },
+        { "character_id": "ma_chao", "role": "supporter", "required": false },
+        { "character_id": "pang_de", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "천하삼분의 대세가 점차 현실로 드러나고 있다. 위는 북방을 장악하고, 오는 강동에 터를 잡았으며, 유비는 형주에서 기회를 엿보고 있다. 관우는 형주의 군사적 요충으로서 오와 위 사이의 균형추 역할을 해야 한다. 노숙은 손권에게 유비와의 동맹이 위에 맞서는 유일한 길임을 역설하고, 강유는 이 대세 속에서 촉한의 미래를 구상한다. 세 갈래의 힘이 팽팽하게 맞서는 이 균형이 얼마나 오래갈 것인가.",
+        "flavor": "셋이 서야 솥이 된다. 하나가 무너지면 모두 쏟아진다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "three_kingdoms_alliance",
+          "text": "오와 동맹을 강화하고 위 견제에 집중한다",
+          "effects": [
+            { "type": "faction_alliance", "target": "shu", "value": { "faction_a": "shu", "faction_b": "wu" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "diplomacy", "amount": 20 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "politics": 2 } },
+            { "type": "relationship_change", "target": "lu_su", "value": { "character_id": "guan_yu", "change": 15 } }
+          ]
+        },
+        {
+          "id": "three_kingdoms_expand",
+          "text": "삼분의 틀을 깨고 독자적으로 영토를 확장한다",
+          "effects": [
+            { "type": "territory_change", "target": "shu", "value": { "city": "hanzhong", "action": "contest" } },
+            { "type": "army_change", "target": "guan_yu", "value": 5000 },
+            { "type": "relationship_change", "target": "lu_su", "value": { "character_id": "guan_yu", "change": -20 } },
+            { "type": "faction_war", "target": "wu", "value": { "attacker": "shu", "defender": "wu" } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 천하삼분지계 - 위/오/촉 삼국 정립의 대전략",
+      "tags": ["episode", "strategy", "diplomacy", "balance_of_power"]
+    },
+    {
+      "id": "rel_green_dragon_crescent_blade",
+      "layer": "relational",
+      "name": "청룡언월도",
+      "period": {
+        "year": 190,
+        "turn_range": { "earliest": 10, "latest": 25 }
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "guan_xing" } },
+          { "type": "character_alive", "params": { "character_id": "pang_de" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "guan_xing", "role": "supporter", "required": true },
+        { "character_id": "pang_de", "role": "antagonist", "required": false },
+        { "character_id": "sun_jian", "role": "observer", "required": false },
+        { "character_id": "sun_quan", "role": "observer", "required": false },
+        { "character_id": "yan_liang", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 천하의 대장장이에게 82근의 언월도를 주문하니, 완성된 날 칼날 위에 청룡의 무늬가 떠올랐다 하여 청룡언월도라 이름 붙인다. 이 칼을 첫 시험한 것이 바로 화웅의 목을 벤 일전이었으니, 따뜻했던 술이 아직 식지 않았다. 관흥은 아버지의 칼솜씨를 보며 언젠가 이 칼을 이을 것을 다짐한다. 적장 방덕은 훗날 이 칼 앞에 무릎을 꿇게 되리라는 것을 아직 모른다. 82근의 무게가 한 사내의 의지와 합쳐져 전설이 되려 하고 있다.",
+        "flavor": "칼이 주인을 택하듯, 영웅이 무기를 택한다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "green_dragon_master",
+          "text": "청룡언월도를 관우의 평생 무기로 삼는다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 5 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 15 } },
+            { "type": "unlock_event", "target": "shu", "value": "rel_guan_yu_slays_hua_xiong" }
+          ]
+        },
+        {
+          "id": "green_dragon_legacy",
+          "text": "관흥에게 청룡언월도의 수련을 시작하게 한다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_xing", "value": { "martial": 5 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 2 } },
+            { "type": "relationship_change", "target": "guan_xing", "value": { "character_id": "guan_yu", "change": 20 } },
+            { "type": "loyalty_change", "target": "guan_xing", "value": 15 }
+          ]
+        },
+        {
+          "id": "green_dragon_dual_weapons",
+          "text": "청룡언월도 외에 다른 무기도 함께 단련한다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "martial": 3, "intelligence": 1 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": -500 } },
+            { "type": "stat_change", "target": "guan_xing", "value": { "martial": 2 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 청룡언월도 - 관우의 상징 무기, 82근의 전설",
+      "tags": ["episode", "weapon", "legacy", "heroic"]
+    },
+    {
+      "id": "rel_memorial_on_dispatching_the_troops",
+      "layer": "relational",
+      "name": "출사표",
+      "period": {
+        "year": 227,
+        "month": 3,
+        "turn_range": { "earliest": 93, "latest": 108 }
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jiang_wei" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "sima_yi" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jiang_wei", "role": "supporter", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": false },
+        { "character_id": "sun_quan", "role": "observer", "required": false },
+        { "character_id": "sun_ce", "role": "observer", "required": false },
+        { "character_id": "yuan_shao", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량이 후주 유선에게 출사표를 올린다. '선제께서 창업을 이루지 못하시고 중도에 무너지셨으니, 천하는 셋으로 나뉘어 익주가 피폐해졌습니다.' 한 글자 한 글자에 선제 유비에 대한 충성과 한실 부흥의 비원이 담겨 있다. 강유는 이 글을 읽고 북벌의 뜻을 다지며, 관우의 유지도 함께 되새긴다. 사마의는 촉의 북벌 소식에 대비태세를 강화한다. 읽는 자마다 눈물을 흘리지 않는 이가 없으니, 이것이 바로 천고의 명문 출사표이다.",
+        "flavor": "붓 끝에서 흐르는 것은 먹이 아니라 피눈물이었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "memorial_northern_expedition",
+          "text": "출사표의 뜻에 따라 즉시 북벌을 개시한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 30 } },
+            { "type": "army_change", "target": "jiang_wei", "value": 10000 },
+            { "type": "faction_war", "target": "wei", "value": { "attacker": "shu", "defender": "wei" } },
+            { "type": "stat_change", "target": "jiang_wei", "value": { "martial": 2 } }
+          ]
+        },
+        {
+          "id": "memorial_strengthen_first",
+          "text": "국력을 기른 뒤에 북벌하자고 진언한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "food", "amount": 8000 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": 3000 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -10 } },
+            { "type": "stat_change", "target": "jiang_wei", "value": { "politics": 3 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 출사표 - 227년 제갈량이 유선에게 올린 상소문",
+      "tags": ["episode", "political", "loyalty", "literature"]
+    },
+    {
+      "id": "rel_seven_captures_of_meng_huo",
+      "layer": "relational",
+      "name": "칠종칠금",
+      "period": {
+        "year": 225,
+        "month": 5,
+        "turn_range": { "earliest": 90, "latest": 105 }
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jiang_wei" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "meng_huo" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jiang_wei", "role": "supporter", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": false },
+        { "character_id": "yuan_shao", "role": "observer", "required": false },
+        { "character_id": "wei_yan", "role": "supporter", "required": false },
+        { "character_id": "liu_bei", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "남만의 왕 맹획이 반란을 일으키니, 제갈량이 직접 남정군을 이끌고 내려간다. 맹획을 사로잡았으나 풀어주고, 또 잡았으나 또 풀어주기를 일곱 번이나 반복한다. 위연은 이해할 수 없다며 분개하지만, 제갈량은 마음을 얻지 못하면 땅을 얻어도 소용없다고 답한다. 마침내 일곱 번째 풀려난 맹획이 무릎을 꿇으며 진심으로 항복하니, 남방은 영원히 안정된다. 칼로 베지 않고 마음으로 이긴 전쟁이 여기 있다.",
+        "flavor": "일곱 번 잡고 일곱 번 풀어주니, 결국 마음을 사로잡았다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "seven_captures_mercy",
+          "text": "칠종칠금의 전략을 끝까지 밀고 나간다",
+          "effects": [
+            { "type": "relationship_change", "target": "meng_huo", "value": { "character_id": "zhuge_liang", "change": 30 } },
+            { "type": "faction_peace", "target": "nanman", "value": { "faction_a": "shu", "faction_b": "nanman" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 15 } },
+            { "type": "loyalty_change", "target": "meng_huo", "value": 25 }
+          ]
+        },
+        {
+          "id": "seven_captures_execute",
+          "text": "세 번째 포획 후 맹획을 처형하여 반란을 근절한다",
+          "effects": [
+            { "type": "character_death", "target": "meng_huo", "value": { "cause": "execution" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "territory_defense", "amount": 10 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -5 } },
+            { "type": "faction_war", "target": "nanman", "value": { "attacker": "nanman", "defender": "shu" } }
+          ]
+        },
+        {
+          "id": "seven_captures_alliance",
+          "text": "맹획에게 관직을 주고 남만과 군사 동맹을 맺는다",
+          "effects": [
+            { "type": "faction_alliance", "target": "shu", "value": { "faction_a": "shu", "faction_b": "nanman" } },
+            { "type": "character_join", "target": "meng_huo", "value": { "faction": "shu", "role": "vassal" } },
+            { "type": "army_change", "target": "jiang_wei", "value": 5000 },
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": -2000 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 칠종칠금 - 225년 제갈량의 남만 정벌과 맹획 일곱 번 포획",
+      "tags": ["episode", "campaign", "mercy", "pacification"]
+    },
+    {
+      "id": "rel_battle_of_hefei",
+      "layer": "relational",
+      "name": "합비 전투",
+      "period": {
+        "year": 215,
+        "month": 8,
+        "turn_range": { "earliest": 70, "latest": 85 }
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "dong_zhuo" } },
+          { "type": "character_alive", "params": { "character_id": "sima_yi" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "observer", "required": true },
+        { "character_id": "dong_zhuo", "role": "observer", "required": true },
+        { "character_id": "sima_yi", "role": "supporter", "required": false },
+        { "character_id": "xu_shu", "role": "observer", "required": false },
+        { "character_id": "xu_huang", "role": "supporter", "required": false },
+        { "character_id": "sun_jian", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "장료가 800명의 결사대로 손권의 10만 대군을 격파하니, 합비의 이름이 천하에 떨친다. 손권은 소요진에서 간신히 목숨을 건졌으며, 오의 장수 진무가 전사한다. 이 싸움은 강동의 아이들도 '장료가 온다'는 말에 울음을 그칠 정도로 충격적이었다. 관우는 이 소식을 듣고 위의 장수들이 결코 만만치 않음을 깨닫는다. 사마의는 이 전투를 분석하며 수적 열세에서도 승리할 수 있는 전법을 연구한다.",
+        "flavor": "800의 결사가 10만의 겁을 만들었다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "hefei_reinforce_wu",
+          "text": "오에 원군을 보내 위의 합비 방어선을 돌파한다",
+          "effects": [
+            { "type": "army_change", "target": "guan_yu", "value": -5000 },
+            { "type": "faction_alliance", "target": "shu", "value": { "faction_a": "shu", "faction_b": "wu" } },
+            { "type": "relationship_change", "target": "sun_quan", "value": { "character_id": "guan_yu", "change": 15 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 10 } }
+          ]
+        },
+        {
+          "id": "hefei_exploit_distraction",
+          "text": "오와 위가 합비에서 붙는 틈을 타 형주를 강화한다",
+          "effects": [
+            { "type": "territory_change", "target": "shu", "value": { "city": "jingzhou", "action": "fortify" } },
+            { "type": "army_change", "target": "guan_yu", "value": 3000 },
+            { "type": "stat_change", "target": "guan_yu", "value": { "intelligence": 2 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "food", "amount": 3000 } }
+          ]
+        },
+        {
+          "id": "hefei_stay_neutral",
+          "text": "양쪽의 전투를 관망하며 어부지리를 노린다",
+          "effects": [
+            { "type": "stat_change", "target": "sima_yi", "value": { "intelligence": 2 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": 1500 } },
+            { "type": "relationship_change", "target": "sun_quan", "value": { "character_id": "guan_yu", "change": -10 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 합비 전투 - 215년 장료의 800 결사대 vs 손권 10만",
+      "tags": ["episode", "battle", "heroic", "defense"]
+    },
+    {
+      "id": "rel_later_memorial_on_dispatching_the_troops",
+      "layer": "relational",
+      "name": "후출사표",
+      "period": {
+        "year": 228,
+        "month": 11,
+        "turn_range": { "earliest": 98, "latest": 112 }
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "character_id": "jiang_wei" } },
+          { "type": "character_alive", "params": { "character_id": "guan_yu" } },
+          { "type": "character_alive", "params": { "character_id": "sima_yi" } }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "jiang_wei", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": false },
+        { "character_id": "sun_quan", "role": "observer", "required": false },
+        { "character_id": "sun_ce", "role": "observer", "required": false },
+        { "character_id": "yuan_shao", "role": "observer", "required": false }
+      ],
+      "narrative": {
+        "text": "제1차 북벌이 가정의 패배로 좌절된 뒤, 제갈량이 다시 출사표를 올린다. '신이 죽을 때까지 힘을 다하겠나이다.' 조정의 반대파는 전쟁의 무모함을 지적하지만, 제갈량은 좌시하면 촉한은 서서히 죽을 뿐이라 반박한다. 강유는 이 두 번째 출사표에서 승상의 비장한 각오를 읽고 눈물을 삼킨다. 사마의 역시 촉이 다시 움직일 것을 예감하고 방어를 준비한다. 죽음을 각오한 한 사람의 의지가 국가의 운명을 건 도박을 시작한다.",
+        "flavor": "鞠躬盡瘁 死而後已 — 온 힘을 다하여 죽은 뒤에야 그치겠다.",
+        "generation": "ai_generated"
+      },
+      "choices": [
+        {
+          "id": "later_memorial_second_expedition",
+          "text": "후출사표의 뜻을 받들어 제2차 북벌을 감행한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": 20 } },
+            { "type": "army_change", "target": "jiang_wei", "value": 8000 },
+            { "type": "resource_change", "target": "shu", "value": { "type": "food", "amount": -5000 } },
+            { "type": "faction_war", "target": "wei", "value": { "attacker": "shu", "defender": "wei" } }
+          ]
+        },
+        {
+          "id": "later_memorial_consolidate",
+          "text": "북벌을 보류하고 내치에 집중하여 국력을 회복한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "type": "food", "amount": 6000 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "gold", "amount": 2000 } },
+            { "type": "stat_change", "target": "jiang_wei", "value": { "politics": 3 } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "morale", "amount": -15 } }
+          ]
+        },
+        {
+          "id": "later_memorial_eastern_alliance",
+          "text": "오와 동시 북벌을 약속하여 위를 양면에서 압박한다",
+          "effects": [
+            { "type": "faction_alliance", "target": "shu", "value": { "faction_a": "shu", "faction_b": "wu" } },
+            { "type": "resource_change", "target": "shu", "value": { "type": "diplomacy", "amount": 15 } },
+            { "type": "army_change", "target": "jiang_wei", "value": 5000 },
+            { "type": "relationship_change", "target": "sun_quan", "value": { "character_id": "jiang_wei", "change": 10 } }
+          ]
+        }
+      ],
+      "effects": [],
+      "historical_basis": "에피소드: 후출사표 - 228년 제갈량의 두 번째 북벌 상소문",
+      "tags": ["episode", "political", "loyalty", "determination"]
+    }
+  ]
+}

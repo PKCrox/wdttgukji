@@ -1,0 +1,155 @@
+{
+  "name_kr": "황개",
+  "name_en": "Huang Gai",
+  "name_cn": "黃蓋",
+  "courtesy_kr": "공복",
+  "courtesy_cn": "公覆",
+  "faction": "wu",
+  "tier": 1,
+  "role": "고육지계, 적벽 화공",
+  "stats": null,
+  "novel_presence": {
+    "first_chapter": 5,
+    "last_chapter": 67,
+    "chapters": "5-7,15,43-44,46-47,49-50,55,67",
+    "chapter_count": 7
+  },
+  "biography": {
+    "namu": {
+      "overview": "강동십이호신(江東十二虎臣)黃蓋황개 작위 관내후(關内侯) 최종직위 편장군(偏將軍) 성씨 황(黃) 휘 개(蓋) 자 공복(公覆) 생몰기간 (? ~ 215(?)) 고향 형주 영릉군 천릉현\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 산월족으로부터 지켜 다스리다2.3. 적벽대전2.4. 무릉만의 태수2.5. 죽음3. 삼국지연의4. 평가5. 기타6. 미디어 믹스7. 둘러보기",
+      "biography": "황개는 어렸을 때부터 고아가 되어 어린 나이 때부터 흉난을 만나고 일찍이 갖은 고생을 겪었으나, 굳센 의지가 있어 비록 빈천한 삶을 살아도 범용한 보통 사람들과 스스로 같지 않아 항상 땔나무를 지는 틈에도 책을 공부하고 병법를 강독했다는 것이 오서에 있는 그의 옛 생활의 설명.처음에는 군의 관리가 되었는데 효렴으로 천거되어 공부에 불려간다. 그 후 손견을 따라 남의 도적들을 격파하고 북에서는 동탁을 격파하는 등 공을 세우니 별부사마로 배수된다. 손견이 죽은 후, 황개는 손책을 수행하며 태사자와 만날 때도 수행하였으며 무봉 교위로 있을 때는 황조를 공격하는데 참가한다.후에 손책이 죽고 손권이 뒤를 이은 다음에는 손권을 수행하면서 몸에 갑옷을 입고 전진하였으며, 위험한 지역까지 가서 성을 공략했다.",
+      "evaluation": "정사 삼국지에서 황개는 용모는 엄숙하고 굳세며, 병사를 기르기를 잘하니, 매번 정토할 때마다 사졸들이 모두 다투어 선두에 나섰을 정도였으며 관직에 임하여서는 결단력이 있어, 일이 지체되는 게 없었느니, 국인들이 그를 사모하였다고 한다.",
+      "anecdotes": "민간 설화에서의 포지션은 용사. 괴물 오징어가 나와서 마을을 공격하자 활 3발로 오징어를 발라버렸다는 민간 설화가 있다.무기는 철편(鐵鞭)을 쓴다고 하는데, 편 항목에서 보이듯이 이는 채찍이 아니라 몽둥이에 가깝다.",
+      "death": "황개는 관직에 있다 병으로 죽었다.사람들은 그의 죽음을 슬퍼하며 황개 형상의 그림을 그려서, 사시사철 제사를 지냈으며 나중에 손권이 제위에 오르자, 그의 공을 추론하여 그의 아들 황병에게 관내후의 작을 하사했다.황개의 몰년에 대해 215년이라는 주장이 있는데 이는 손교전에 손유와 같이 죽었다고 해석될 수 있는 말이 있기 때문에 그렇다. 그렇다면 손유가 215년에 죽었기 때문에 황개도 215년에 죽었다는 말이 된다. 215년이라면 합비 전투 때 손권을 구하다가 다쳐 병을 얻어 죽었을 가능성이 크다."
+    },
+    "wiki_en": {
+      "summary": "Huang Gai, courtesy name Gongfu, was a military general who served under the warlord Sun Quan during the late Eastern Han dynasty of China. He previously served under Sun Quan's predecessors – Sun Jian and Sun Ce.",
+      "sections": {
+        "Lead": "Huang Gai (pronunciationⓘ) (fl. 180s–210s), courtesy name Gongfu, was a military general who served under the warlord Sun Quan during the late Eastern Han dynasty of China. He previously served under Sun Quan's predecessors – Sun Jian (Sun Quan's father) and Sun Ce (Sun Quan's elder brother).[1]",
+        "Early life": "Huang Gai was from Quanling County (泉陵縣), Lingling Commandery (零陵郡), which is present-day Lingling District, Yongzhou, Hunan.[2] He was a descendant of Huang Zilian (黃子廉), a former Administrator of Nanyang Commandery. Huang Gai's grandfather moved from Nanyang to Lingling and had remained there since. Huang Gai was orphaned at a young age and he experienced hardships in his early days. However, he had high ambitions and, despite being poor, he worked hard and read books and studied military arts on his own.[3]",
+        "Early career and service under Sun Jian and Sun Ce": "Huang Gai later became a minor official in the local commandery office before he was nominated as a xiaolian and employed as an assistant in the office of one of the Three Ducal Ministers. Around the 180s, when the warlord Sun Jian was raising a militia to help government forces suppress the Yellow Turban Rebellion, Huang Gai responded to the call and became one of Sun Jian's subordinates. Huang Gai accompanied Sun Jian in attacking bandits in the region and also participated in the campaign against Dong Zhuo under Sun Jian's banner. Huang Gai was later appointed as a Major of Separate Command (別部司馬). After Sun Jian's death in 191, Huang Gai continued to serve under Sun Jian's eldest son, Sun Ce, and later under Sun Quan, Sun Ce's younger brother. He was involved in Sun Ce's conquests in the Jiangdong region.[4]",
+        "Later career and death": "Huang Gai was promoted to General of the Household of Martial Edge (武鋒中郎將). When the tribal people in Wuling Commandery (武陵郡; around present-day Changde, Hunan) started a rebellion, Huang Gai was appointed as the Administrator of Wuling and was sent to quell the uprising. At that time, there were only 500 troops in the commandery and they were heavily outnumbered by the rebels. However, Huang Gai ordered the city gates to be opened, and when about half of the rebel army had entered, he launched an assault on them, killing hundreds of enemies while the surviving ones fled. Huang Gai later succeeded in pacifying the rebellion over the following three months by targeting the rebel chiefs and pardoning the rebels who surrendered. By summer, all the tribal chiefs had submitted to Huang Gai. Peace was restored in Wuling.[12]\n\nLater, when Huang Gai received news that Yiyang County was under attack by bandits, he led his forces to fight the bandits and succeeded in restoring peace in the region. Huang Gai was subsequently promoted to Lieutenant-General (偏將軍). He died in office while serving as the Administrator of Wuling Commandery.[13]"
+      }
+    },
+    "wiki_zh": {
+      "summary": "黃蓋（2世紀—215年前），字公覆，荊州零陵泉陵（今湖南零陵北）人。東漢末年將領，官至偏將軍、武陵太守，東吳孫氏三代元勳之一；是江東十二虎臣之一。赤壁之戰中率先提出火攻計策，親自詐降從而大敗曹操。\n",
+      "sections": {
+        "Introduction": "黃蓋（2世紀—215年前），字公覆，荊州零陵泉陵（今湖南零陵北）人。東漢末年將領，官至偏將軍、武陵太守，東吳孫氏三代元勳之一；是江東十二虎臣之一。赤壁之戰中率先提出火攻計策，親自詐降從而大敗曹操。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 46,
+      "text": "「莫說三個月；便支三十個月糧草，也不濟事！若是這個月破的便破；若是這個月破不的，只可依張子布之言，棄甲倒戈，北面而降之耳！」周瑜勃然變色大怒曰：「吾奉主公之命，督兵破曹，敢有再言降者必斬。",
+      "text_length": 94
+    },
+    {
+      "chapter": 46,
+      "text": "某受吳侯三世厚恩，無以為報，故獻此計，以破曹操。吾雖受苦，亦無所恨。吾遍觀軍中，無一人可為心腹者。惟公素有忠義之心，敢以心腹相告。",
+      "text_length": 65
+    },
+    {
+      "chapter": 46,
+      "text": "莫說三個月；便支三十個月糧草，也不濟事！若是這個月破的便破；若是這個月破不的，只可依張子布之言，棄甲倒戈，北面而降之耳！",
+      "text_length": 60
+    },
+    {
+      "chapter": 46,
+      "text": "「彼眾我寡，不宜久持，何不用火攻之？」瑜曰：「誰教公獻此計？」蓋曰：「某出自己意，非他人之所教也。",
+      "text_length": 49
+    },
+    {
+      "chapter": 46,
+      "text": "「吾自隨破虜將軍，縱橫東南，已歷三世，那有你來？」\n\n瑜大怒，喝令速斬。",
+      "text_length": 36
+    },
+    {
+      "chapter": 7,
+      "text": "今活捉黃祖在此，得一人入城講和，將黃祖去換主公屍首。",
+      "text_length": 26
+    },
+    {
+      "chapter": 46,
+      "text": "「某受吳侯三世厚恩，無以為報，故獻此計，以破曹操。",
+      "text_length": 25
+    },
+    {
+      "chapter": 46,
+      "text": "吾自隨破虜將軍，縱橫東南，已歷三世，那有你來？",
+      "text_length": 23
+    },
+    {
+      "chapter": 46,
+      "text": "某受孫氏厚恩，雖肝腦塗地，亦無怨悔。",
+      "text_length": 18
+    },
+    {
+      "chapter": 46,
+      "text": "彼眾我寡，不宜久持，何不用火攻之？",
+      "text_length": 17
+    },
+    {
+      "chapter": 46,
+      "text": "某出自己意，非他人之所教也。",
+      "text_length": 14
+    },
+    {
+      "chapter": 47,
+      "text": "「非公能辯，則蓋徒受苦矣。",
+      "text_length": 13
+    },
+    {
+      "chapter": 47,
+      "text": "非公能辯，則蓋徒受苦矣。",
+      "text_length": 12
+    },
+    {
+      "chapter": 46,
+      "text": "實有此意。未知肯否？",
+      "text_length": 10
+    },
+    {
+      "chapter": 46,
+      "text": "「某願行此計。",
+      "text_length": 7
+    },
+    {
+      "chapter": 46,
+      "text": "「某死亦無怨。",
+      "text_length": 7
+    },
+    {
+      "chapter": 47,
+      "text": "「書已修下了。",
+      "text_length": 7
+    },
+    {
+      "chapter": 46,
+      "text": "某願行此計。",
+      "text_length": 6
+    },
+    {
+      "chapter": 46,
+      "text": "某死亦無怨。",
+      "text_length": 6
+    },
+    {
+      "chapter": 47,
+      "text": "書已修下了。",
+      "text_length": 6
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": false,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-16T10:52:17.274Z"
+}

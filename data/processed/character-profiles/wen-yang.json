@@ -1,0 +1,66 @@
+{
+  "name_kr": "문앙",
+  "name_en": "Wen Yang",
+  "name_cn": "文鴦",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 1,
+  "role": "후기 맹장",
+  "stats": {
+    "leadership": 76,
+    "war": 91,
+    "intelligence": 60,
+    "politics": 32,
+    "charisma": 63,
+    "total": 322,
+    "birth": 222,
+    "death": 285
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      110,
+      111,
+      112
+    ],
+    "chapter_count": 3
+  },
+  "biography": {
+    "namu": {
+      "overview": "문앙(文鴦)문숙 | 文俶작위(조위)관내후(關內侯)최종직위조위장군서진가절(加節) 동이교위(東夷校尉)성씨문(文)명숙(俶)자차건(次騫)아버지문흠(文欽)생몰연도238년~291년고향예주(豫州) 초국(譙國) 초현(譙縣)\n\n1. 개요2. 정사 삼국지2.1. 관구검의 난2.2. 제갈탄의 난2.3. 독발수기능의 난2.4. 죽음3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 삼국지 조조전 온라인4.3. 삼국전투기4.4. 진삼국무쌍 시리즈4.5. 킹덤 스토리4.6. 반삼국지",
+      "death": "〈제갈탄전〉에 주석으로 달린 《진제공찬》에 따르면 양주에서 이민족을 격파하여 명성을 얻은 문앙은 태강 연간(280년~289년)에 동이교위가 되고 가절을 받았다. 그 직무를 맡게 되자 사마염에게 인사를 하러 갔는데 사마염은 문앙을 보고 싫어해서 다른 일을 빌어 문앙의 관직을 빼앗았다.사마염이 어떠한 이유로 문앙을 싫어했는지는 불명이지만 삼촌인 사마사의 죽음을 초래하고, 아버지인 사마소와 여러 번 충돌했던지라 원망을 가졌을 가능성이 있다. 인정상 이해 못할 일도 아닌 셈. 다만 이러한 일이 있었지만 어쨌든 아군 진영으로 항복해 온 장수인 데다가 이미 아버지 사마소 대에 사면을 받았고 나름대로 제갈탄 토벌의 공신인 것을 감안했는지 사마염이 문앙을 죽이거나 하지는 않았다.〈사마요전〉에 따르면 제갈탄의 외손자 사마요는 문앙이 자신의 어머니인 제갈태비의 일족에게 복수를 할까 봐 근심했다. 291년에 가남풍이 양준 일파를 숙청하는 과정에서 문앙은 사마요에게 양준 일파로 몰려 삼족이 멸족당했다."
+    },
+    "wiki_en": {
+      "summary": "Wen Chu, courtesy name Ciqian, better known as Wen Yang, was a military officer of the Jin dynasty of China. He previously served in the state of Cao Wei during the Three Kingdoms period. In 255, he participated in a rebellion in Shouchun started by his father, Wen Qin, and another Wei general, Guanqiu Jian. However, the rebellion was suppressed and Wen Qin and his family were forced to defect to Eastern Wu, Wei's rival state. In 257, when another rebellion broke out in Shouchun, Wen Qin and his sons led troops from Wu to support the rebel leader, Zhuge Dan. However, by 258, when the odds were against him, Zhuge Dan became increasingly suspicious of Wen Qin and eventually executed him. Wen Yang and his younger brother, Wen Hu (文虎), escaped from Shouchun and surrendered to the Wei regent, Sima Zhao, and assisted him in suppressing the revolt. Wen Yang continued serving under the Jin dynasty, which replaced the Wei regime in February 266, and achieved fame for leading successful military campaigns against tribal rebels led by Tufa Shujineng in northwestern China. In April 291, he was falsely accused of plotting a rebellion with Yang Jun, an ousted regent, and was arrested and executed along with his family.",
+      "sections": {
+        "Lead": "Wen Chu (238[1] –  23 April 291[3]),[2] courtesy name Ciqian, better known as Wen Yang,[b] was a military officer of the Jin dynasty of China. He previously served in the state of Cao Wei during the Three Kingdoms period. In 255, he participated in a rebellion in Shouchun started by his father, Wen Qin, and another Wei general, Guanqiu Jian. However, the rebellion was suppressed and Wen Qin and his family were forced to defect to Eastern Wu, Wei's rival state. In 257, when another rebellion broke out in Shouchun, Wen Qin and his sons led troops from Wu to support the rebel leader, Zhuge Dan. However, by 258, when the odds were against him, Zhuge Dan became increasingly suspicious of Wen Qin and eventually executed him. Wen Yang and his younger brother, Wen Hu (文虎), escaped from Shouchun and surrendered to the Wei regent, Sima Zhao, and assisted him in suppressing the revolt. Wen Yang continued serving under the Jin dynasty, which replaced the Wei regime in February 266, and achieved fame for leading successful military campaigns against tribal rebels led by Tufa Shujineng in northwestern China. In April 291, he was falsely accused of plotting a rebellion with Yang Jun, an ousted regent, and was arrested and executed along with his family.\n\n- Wen Qin (father)",
+        "Death": "During the Taikang era (280–289), Wen Yang was appointed Colonel of the Dongyi (東夷校尉). He visited Emperor Wu (Sima Yan) at his imperial court to bid the emperor farewell before leaving to assume office. However, Emperor Wu did not like Wen Yang after meeting him and found an excuse to remove him from his appointment. In April 291, during the reign of Emperor Hui, after the regent Yang Jun was ousted from power, Zhuge Dan's maternal grandson and son of Sima Zhou, Sima Yao (司馬繇), the Duke of Dong'an (東安公), bore a grudge against Wen Yang for the downfall of his maternal grandfather so he falsely accused Wen Yang of plotting a rebellion with Yang Jun. Wen Yang was arrested and executed along with his family.[2][16]"
+      }
+    },
+    "wiki_zh": {
+      "summary": "文鴦（238年—291年4月23日），字次騫，本名文俶，鴦是小名，沛國譙縣人，魏末晉初名將，歷仕魏、吳、晉勢力。初時隨父文欽反叛司馬氏當權下的魏國，後兵敗與父和弟投奔東吳。在諸葛誕叛亂中，文欽由於與諸葛誕意見分歧而被殺，文鸯因而投降返回魏。晉時期大破鮮卑、羯有功，291年被東安王司馬繇指控謀反，在八王之亂中被夷滅三族。\n",
+      "sections": {
+        "Introduction": "文鴦（238年—291年4月23日），字次騫，本名文俶，鴦是小名，沛國譙縣人，魏末晉初名將，歷仕魏、吳、晉勢力。初時隨父文欽反叛司馬氏當權下的魏國，後兵敗與父和弟投奔東吳。在諸葛誕叛亂中，文欽由於與諸葛誕意見分歧而被殺，文鸯因而投降返回魏。晉時期大破鮮卑、羯有功，291年被東安王司馬繇指控謀反，在八王之亂中被夷滅三族。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 110,
+      "text": "今夜黃昏，父引二千五百兵，從城南殺來；兒引二千五百兵，從城北殺來。三更時分，要在魏寨會合。",
+      "text_length": 45
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-16T10:52:17.233Z"
+}

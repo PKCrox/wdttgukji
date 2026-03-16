@@ -1,0 +1,161 @@
+{
+  "name_kr": "서황",
+  "name_en": "Xu Huang",
+  "name_cn": "徐晃",
+  "courtesy_kr": "공명",
+  "courtesy_cn": "公明",
+  "faction": "wei",
+  "tier": 1,
+  "role": "번성 구원, 주아부 재현",
+  "stats": {
+    "leadership": 88,
+    "war": 90,
+    "intelligence": 74,
+    "politics": 48,
+    "charisma": 71,
+    "total": 371,
+    "birth": 165,
+    "death": 228
+  },
+  "novel_presence": {
+    "first_chapter": 13,
+    "last_chapter": 94,
+    "chapters": "13-14,19,22-27,30-33,46,48,50,56-59,67-68,71-72,75-76,79,86,94",
+    "chapter_count": 14
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위 오자양장(五子良將) [ 펼치기 · 접기 ]전장군우장군좌장군좌장군우장군장료악진우금장합서황\n\n오자양장(五子良將)조위의 우장군서황徐晃시호장후(壯侯)작위도정후(都亭侯) → 녹향후(逯鄕侯) → 양후(楊侯) → 양평후(陽平侯)최종직위우장군(右將軍)겸 가절(假節)성씨서(徐)휘황(晃)자공명(公明)생몰 기간?~227년고향사례(司隸) 하동군(河東郡) 양현(楊縣)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 서주에서2.3. 관도대전2.4. 하북 평정2.5. 형주 정벌2.6. 남군 공방전2.7. 상요 토벌2.8. 관중 평정2.9. 장로 정벌2.10. 한중 공방전2.11. 번성 공방전2.12. 조비 휘하 (위나라 건국)2.13. 조예 휘하2.14. 죽음3. 삼국지연의4. 평가5. 미디어 믹스",
+      "biography": "군리(郡吏)가 되어 거기장군 양봉을 따라 도적을 토벌해 공을 세웠고 기도위에 임명되었다.이각, 곽사가 장안에서 난을 일으키자 서황은 양봉을 설득해 천자와 함께 낙양으로 돌아가도록 했는데 양봉이 이 계책을 따랐다. 천자가 황하를 건너 하동군 안읍현에 이르렀고 서황을 도정후에 봉했다. 낙양에 도착하자 한섬, 동승이 날마다 서로 다투어 싸웠다. 서황이 양봉을 설득해 조조에 귀부하라 했는데 양봉이 이를 좇으려 하다 후회했다. 조조가 예주 양국에서 양봉을 토벌하자 서황은 마침내 조조에 귀부했다.조조가 서황에게 군사를 주어 하남군 권현, 원무현의 도적을 공격하게 해 서황이 그들을 격파하고 비장군에 임명되었다.",
+      "evaluation": "성품이 매우 엄격하여 생활이 검소하고 언행을 삼갔으며 어람에 인용된 위략에 따르면 밑의 장수들과 병사들을 쉴 틈도 없이 부려먹어 병사들이 이르길 \"밥도 제대로 못 먹는 건, 서황에게 속해서다\"라고 투덜거렸다고 한다. 서황은 이 말을 듣고 웃으며 \"내가 니들 솥을 부수기라도 했더냐\"며 넘어갔다고 한다.조조를 만난 뒤로 충성할 시간도 적다며 교우관계는 넓지 않았다. 하지만 번성 공방전에서 관우와 적으로 만났을 당시 허물없이 이런저런 사담을 나누다 공사 구분 때문에 갑자기 병사들에게 죽이라 명하자 관우가 무슨 소리냐면서 당황한 걸 볼 때, 관우와는 제법 친분이 있었던 것 같다. 정사에 나온 여러 가지 면모를 보았을 때 성격이 과묵하고 무뚝뚝해서 그런 것으로 보인다.한 가지 의문점은 여포 수하 시절의 장료처럼 서황도 양봉의 수하로 있을 적의 행적이 거의 없다는 것이다. 양봉과 함께 천자를 호위하다가 나중에 조조와 대립하지 말라고 간언하는 것 정도뿐이다. 아무래도 정사 삼국지의 특성상 인물의 열전에 본인에게 흑역사가 되는 것이나, 패전기록, 약점이 될 만한 것들 등이 아예 누락되거나 완곡하게 표현되어 기록되기 때문일 가능성이 그러한 행적의 가능성이 있긴하나, 어디까지 추측일 뿐이며, 큰 패전이나 약점이라면 기록은 분명 남기 때문에 당시의 행적이 서황의 전체 열전에 큰 부분을 차지할 바는 없었던 것으로 보인다. 서황의 출신지 하동군은 백파적의 주 무대였고, 백파적 출신 양봉의 밑에서 일했다는 점으로 인해 서황도 백파적 출신이었을 가능성이 제시되고 있는데, 만약 실제로 백파적 출신이었다면, 서황에게는 유리할 것 없는 흑역사에 가까운 이야기였을 테니, 당연히 기록에서 빼 버렸을 가능성이 높다.조인, 장료, 우금, 장합, 악진과 더불어 조조군의 에이스라는 평이 많으며, 그중에서도 서황은 단연 활약이 돋보인다. 용맹하고 과단성 있으며, 과묵한 데다가 지모도 있기에 많은 총애를 받았다. 참모의 지시를 충실히 이행하여 전투를 승리로 이끄는 데에는 그를 능가할 자가 없었기에 수많은 대전의 가장 중요한 시점에서 모습을 드러낸다.흔히 용감무식한 장수로 인식받기 쉽지만 실제로는 유독 맹장이 많았던 조조군 사이에서도 장료, 장합과 함께 네임드 중에서는 몇 안 되는 지용무상의 장수였다. 양봉에게 조조에게 투항할 것을 진언한 것이나 조조에게 역양 정벌의 중요성을 진언한 부분에서 단지 군사적인 면만이 아닌 상당한 대국적 식견을 겸비했다는 것을 알 수 있으며, 서황전에 따르면 정찰의 중요성을 인식하고 승산이 없는 전투를 함부로 벌이지 않았다는 기록에서 그의 신중한 성격을 엿볼 수 있다.무패장군이라고 평가하는 사람들이 있지만, 이건 창천항로에서 칭한 서황의 별명이고, 실제로도 무패인지는 알 수 없다. 다만 불리한 기록은 은폐하는 경향이 있는 삼국지의 특징을 감안해도 그렇고 무패라고 단정 짓기엔 기록이 부족하다. 무엇보다 스스로 야전사령관으로 이끈 것에 대해서는 ‘혹시 모름’ 정도일지 모르나, 전역 단위로 보면 패배가 분명 있다.분명 대군을 이끌고 내려온 적벽대전에서는 무제기 말고는 명확한 기록이 나오지 않기에 어떤 장수가 참전했는지 알 수 없으나, 전후 조인, 서황 등의 장수에게 형주의 수비를 맡긴 것을 보면 정황상 서황도 적벽의 참패를 조조와 같이 맛봤을 것이고, 남군 공방전 때도 참전했다는 기록이 있으나 결국 조인이 남군을 포기하고 형북으로 철수했으니 서황도 남군 사수라는 임무에서 실패하고 조인을 따라 물러났다는 의미다.그리고 조비가 헌제에게 선양을 받아 황제로 즉위하면서 후한을 멸망시키고 위나라를 건국한 이후에 남군으로의 오나라 공격군의 일원으로 조진, 하후상, 장합, 문빙 등과 함께 언급되는데, 서황의 경우 정벌군의 일원으로서만 기록되었을 뿐, 그 기간 동안의 행적에 대해 구체적으로 서술된 것이 없다. 결국 주연의 분전에 힘입어 위군의 남군 공격은 실패로 끝난다.초기의 위군 무장들 중에서는 3,100호로 장합(4,300호)과 대장군인 조인(3,500호) 다음으로 많은 식읍을 받은 인물이기도 하다. 이건 워낙 오래 살아서 그런 것도 있는 것 같은데, 그가 죽었을 당시는 조예 시절이었고 제갈근이 오나라 군대를 이끌고 위나라에 진군했을 당시에도 백전노장으로서 일선에 나서서 싸웠다.",
+      "death": "서황은 성정이 검약하고 삼가고 신중하여 군을 이끌 때는 늘 멀리까지 정찰했다. 우선 이기지 못하리라 생각되면 뒤에 싸우고 싸움에 이겨 추격할 때는 이익을 다투어 사졸들은 밥 먹을 틈도 없었다. 서황은 늘 탄식하며 말했다.옛 사람들은 명군(明君)을 만나지 못한 것을 근심했으나 오늘 나는 다행으로 명군을 만났으니, 늘 공을 세우기 위해 스스로 노력할 뿐 어찌 사사로운 명예를 좇겠는가!끝내 교우를 맺어 붕당을 만들지 않았다.병이 위독해지자 유언을 남겨 자신이 죽은 후 평상복으로 염하라 했다.227년에 죽으니, 시호를 내려 장후(壯侯)라 했다. 아들 서개가 후사를 이었다. 서개가 죽자 아들 서패(徐覇)가 후사를 이었다. 조예는 서황의 봉호를 나누어 서황의 아들과 손자 20명을 열후에 봉했다."
+    },
+    "wiki_en": {
+      "summary": "Xu Huang, courtesy name Gongming, was a Chinese military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He later served in the state of Cao Wei during the Three Kingdoms period under the first two rulers, Cao Pi and Cao Rui, before his death at the start of Cao Rui's reign. Xu Huang is best noted for breaking the siege at the Battle of Fancheng in 219 by routing the enemy commander Guan Yu on the field.",
+      "sections": {
+        "Lead": "Xu Huang (pronunciationⓘ) (died 227),[1] courtesy name Gongming, was a Chinese military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He later served in the state of Cao Wei during the Three Kingdoms period under the first two rulers, Cao Pi and Cao Rui, before his death at the start of Cao Rui's reign. Xu Huang is best noted for breaking the siege at the Battle of Fancheng in 219 by routing the enemy commander Guan Yu on the field.\n\nChen Shou, who wrote the third-century historical text Sanguozhi, named Xu Huang as one of the Five Elite Generals of Cao Wei, alongside Yu Jin, Zhang He, Yue Jin and Zhang Liao.[2]",
+        "Early life and service under Yang Feng": "Xu Huang was born in Yang County (楊縣), Hedong Commandery, which is located southeast of present-day Hongtong County, Shanxi,[3] in the late Eastern Han dynasty. He served as a minor official in the commandery office in his youth. Later, he became a subordinate of Yang Feng, a former White Wave Bandit who later became a general under the Han central government. Xu Huang later followed Yang Feng to attack rebels and was commissioned as a Cavalry Commandant (騎都尉) as a reward for his efforts.[4]\n\nBetween 192 and 195, Li Jue and Guo Si controlled the Han central government and held the figurehead Emperor Xian hostage in the imperial capital, Chang'an (present-day Xi'an, Shaanxi).[5] In 195, internal conflict broke out between Li Jue and Guo Si, whose respective factions started warring with each other in the streets of Chang'an. Yang Feng and Xu Huang were Li Jue's subordinates at the time. In the same year, Xu Huang managed to convince Yang Feng to escort Emperor Xian from Chang'an back to the old Han imperial capital, Luoyang. After Emperor Xian made it safely to Anyi County (安邑縣; west of present-day Xia County, Shanxi), he rewarded Xu Huang by granting him the peerage of a Marquis of a Chief Village (都亭侯).[6]\n\nAfter they returned to Luoyang with Emperor Xian, internal conflict broke out between the generals Han Xian and Dong Cheng, who were among those who escorted the emperor back to Luoyang. During this time, Xu Huang persuaded Yang Feng to summon the warlord Cao Cao to Luoya... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "徐晃，字公明，三國時期河東郡楊縣（今中国山西省洪洞縣東南）人，三國時期曹魏著名將領，五子良將之一。早年隨楊奉保護皇帝劉協，公元200年官渡之戰擊殺文醜，又襲殺押運袁軍糧車的將領韓猛，此戰徐晃功勞最大。協助曹操平定河北攻鄴城、戰袁譚、征烏桓、討張魯，公元219年襄樊之戰以聲東擊西的戰術，击败蜀漢頭號名將关羽，并且解救樊城，因为在此役中治军严整井然有序而被曹操称赞有“周亚夫之风”。曹丕称帝后，徐晃被加为右将军，于227年病逝，谥曰壮侯。\n",
+      "sections": {
+        "Introduction": "徐晃（? 年—227年），字公明，三國時期河東郡楊縣（今中国山西省洪洞縣東南）人，三國時期曹魏著名將領，五子良將之一。早年隨楊奉保護皇帝劉協，公元200年官渡之戰擊殺文醜，又襲殺押運袁軍糧車的將領韓猛，此戰徐晃功勞最大。協助曹操平定河北攻鄴城、戰袁譚、征烏桓、討張魯，公元219年襄樊之戰以聲東擊西的戰術，击败蜀漢頭號名將关羽，并且解救樊城，因为在此役中治军严整井然有序而被曹操称赞有“周亚夫之风”。曹丕称帝后，徐晃被加为右将军，于227年病逝，谥曰壮侯。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 58,
+      "text": "今丞相盛兵在此，賊亦全部見屯關上，此去河西，必無準備；若得一軍暗渡蒲阪津，先截賊歸路，丞相逕發河北擊之，賊兩不相應，勢必危矣。",
+      "text_length": 63
+    },
+    {
+      "chapter": 58,
+      "text": "累諫不從。當日晃在關上點糧草，比及知道，小將軍已下關了。晃恐有失，連忙趕去，已中賊奸計矣。",
+      "text_length": 45
+    },
+    {
+      "chapter": 69,
+      "text": "吾聞魏王早晚受禪，將登大寶，公與王長史必高遷。望不相棄，曲賜提攜，感德非淺！",
+      "text_length": 38
+    },
+    {
+      "chapter": 58,
+      "text": "此是馬超要激將軍廝殺，切不可與戰。待丞相大軍來，必有主畫。",
+      "text_length": 29
+    },
+    {
+      "chapter": 26,
+      "text": "「賊將休放箭！」張遼低頭急躲，一箭射中頭盔，將簪纓射去。",
+      "text_length": 28
+    },
+    {
+      "chapter": 56,
+      "text": "「袍已在此，汝何敢強奪！」褚更不回答，竟飛馬來奪袍。",
+      "text_length": 26
+    },
+    {
+      "chapter": 71,
+      "text": "昔韓信背水為陣，所謂『置之死地而後生』也。",
+      "text_length": 21
+    },
+    {
+      "chapter": 58,
+      "text": "「此是馬超要激將軍廝殺，切不可與戰。",
+      "text_length": 18
+    },
+    {
+      "chapter": 69,
+      "text": "「德偉與王長史甚厚，吾三人特來告求。",
+      "text_length": 18
+    },
+    {
+      "chapter": 56,
+      "text": "汝射紅心，不足為異。看吾單取錦袍！",
+      "text_length": 17
+    },
+    {
+      "chapter": 67,
+      "text": "「吾若知此處如此險惡，必不起兵來。",
+      "text_length": 17
+    },
+    {
+      "chapter": 69,
+      "text": "德偉與王長史甚厚，吾三人特來告求。",
+      "text_length": 17
+    },
+    {
+      "chapter": 71,
+      "text": "「汝可引步軍拒敵，看我引馬軍破之。",
+      "text_length": 17
+    },
+    {
+      "chapter": 67,
+      "text": "吾若知此處如此險惡，必不起兵來。",
+      "text_length": 16
+    },
+    {
+      "chapter": 71,
+      "text": "汝可引步軍拒敵，看我引馬軍破之。",
+      "text_length": 16
+    },
+    {
+      "chapter": 76,
+      "text": "今日乃國家之事，某不敢以私廢公。",
+      "text_length": 16
+    },
+    {
+      "chapter": 14,
+      "text": "以臣弒主，大不義也，吾決不為。",
+      "text_length": 15
+    },
+    {
+      "chapter": 69,
+      "text": "雖有報國之心，未有討賊之計。",
+      "text_length": 14
+    },
+    {
+      "chapter": 56,
+      "text": "袍已在此，汝何敢強奪！",
+      "text_length": 11
+    },
+    {
+      "chapter": 94,
+      "text": "「某願為先鋒。",
+      "text_length": 7
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-16T10:52:17.210Z"
+}

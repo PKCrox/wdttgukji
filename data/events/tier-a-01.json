@@ -1,0 +1,1343 @@
+{
+  "total": 18,
+  "events": [
+    {
+      "id": "hist_200_boma",
+      "layer": "historical",
+      "name": "백마 전투",
+      "period": {
+        "year": 200
+      },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 199, "max": 202 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_liao" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "zhang_liao", "role": "supporter", "required": false },
+        { "character_id": "yuan_shao", "role": "antagonist", "required": false },
+        { "character_id": "yan_liang", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "원소의 선봉 안량이 백마진을 포위하니, 조조군의 사기가 크게 흔들렸다. 조조는 관우에게 출격을 명하고, 관우는 적진 한복판으로 적토마를 몰았다. 만군 속에서 안량의 깃발을 발견한 관우는 청룡언월도를 휘둘러 단칼에 그 목을 베었다. 원소군이 혼비백산하여 포위가 풀리니, 이 하루의 무훈이 관우의 이름을 천하에 떨치게 하였다.",
+        "flavor": "적토마의 울음소리가 피바람을 가르고, 안량의 머리가 먼지 위로 떨어졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wei", "value": "yuan-shao" },
+        { "type": "unlock_event", "target": "hist_200_guandu", "value": "백마 승리로 관도대전의 서막이 열린다" }
+      ],
+      "choices": [
+        {
+          "id": "boma_charge",
+          "text": "관우에게 단기필마로 적장을 베게 한다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "army_change", "target": "yuan-shao", "value": { "delta": -5000 } },
+            { "type": "loyalty_change", "target": "guan_yu", "value": -5, "duration_turns": 0 }
+          ]
+        },
+        {
+          "id": "boma_combined",
+          "text": "장료와 관우를 함께 출격시켜 협공한다",
+          "effects": [
+            { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 10 } },
+            { "type": "stat_change", "target": "zhang_liao", "value": { "stat": "fame", "delta": 10 } },
+            { "type": "army_change", "target": "yuan-shao", "value": { "delta": -8000 } },
+            { "type": "relationship_change", "target": "guan_yu", "value": { "with": "zhang_liao", "delta": 15 } }
+          ]
+        },
+        {
+          "id": "boma_lure",
+          "text": "유인책을 써서 안량을 매복지로 끌어들인다",
+          "effects": [
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "intellect", "delta": 5 } },
+            { "type": "army_change", "target": "yuan-shao", "value": { "delta": -10000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -2000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 25-26회, 정사 위서 무제기. 관우가 안량을 참수한 백마 전투.",
+      "tags": ["battle", "heroic_duel"]
+    },
+    {
+      "id": "hist_208_changban",
+      "layer": "historical",
+      "name": "장판파 전투",
+      "period": {
+        "year": 208
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 207, "max": 210 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhao_yun" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_fei" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhao_yun", "role": "supporter", "required": true },
+        { "character_id": "zhang_fei", "role": "supporter", "required": false },
+        { "character_id": "cao_cao", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "조조의 철기 오천이 번개처럼 몰아치자 유비의 군사와 백성 수만이 뿔뿔이 흩어졌다. 조운은 포위 속으로 되돌아가 유비의 어린 아들 아두를 품에 안고 적진을 종횡무진하며 일곱 차례나 포위를 뚫었다. 장비는 장판교 위에 홀로 서서 사자후를 내질렀으니, 조조군 백만이 감히 한 걸음도 나서지 못했다. 다리 위의 장비, 피투성이 갑옷의 조운 - 이 하루가 유비 진영의 충의를 천하에 각인시켰다.",
+        "flavor": "장판교 위에 선 장비의 포효에 강물이 역류하고, 조조군의 말이 뒷걸음질 쳤다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "army_change", "target": "shu", "value": { "delta": -15000 } },
+        { "type": "unlock_event", "target": "hist_208_red-cliffs", "value": "장판파 탈출 후 손권과의 동맹이 급해진다" }
+      ],
+      "choices": [
+        {
+          "id": "changban_rescue",
+          "text": "조운에게 아두를 구출하게 하고 장비가 다리를 지킨다",
+          "effects": [
+            { "type": "stat_change", "target": "zhao_yun", "value": { "stat": "fame", "delta": 25 } },
+            { "type": "stat_change", "target": "zhang_fei", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "loyalty_change", "target": "zhao_yun", "value": 15 },
+            { "type": "loyalty_change", "target": "zhang_fei", "value": 10 }
+          ]
+        },
+        {
+          "id": "changban_retreat",
+          "text": "즉시 전군 퇴각을 명령하여 병력을 보존한다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -5000 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": -10 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "gold", "delta": -500 } }
+          ]
+        },
+        {
+          "id": "changban_ambush",
+          "text": "소수 정예로 야간 기습을 시도하여 조조군을 교란한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -3000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -8000 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "command", "delta": 5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 41-42회. 장판파 전투, 조운의 단기 구출과 장비의 장판교 일갈.",
+      "tags": ["battle", "heroic_duel", "retreat"]
+    },
+    {
+      "id": "hist_228_chencang",
+      "layer": "historical",
+      "name": "진창 전투",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 227, "max": 230 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 두 번째 북벌의 칼끝을 진창으로 향했으나, 위의 수장 학소가 천 명의 수비병으로 성을 철벽같이 지켰다. 촉군이 운제와 충차를 동원하여 밤낮으로 공격했으나 학소는 불화살과 돌을 쏟아부어 번번이 물리쳤다. 이십여 일의 공성전 끝에 촉군의 군량이 바닥나고, 위의 원군 소식이 들려왔다. 제갈량은 통한의 눈물을 삼키며 퇴각을 명하니, 작은 성 하나가 천하의 지략가를 꺾은 것이다.",
+        "flavor": "진창성 위에서 타오르는 불화살이 밤하늘을 수놓고, 촉군의 함성이 점차 잦아들었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -3000 } }
+      ],
+      "choices": [
+        {
+          "id": "chencang_siege",
+          "text": "전력을 다해 공성전을 계속한다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -8000 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -5000 } },
+            { "type": "territory_change", "target": "shu", "value": { "city": "chencang", "action": "capture" } }
+          ]
+        },
+        {
+          "id": "chencang_bypass",
+          "text": "진창을 우회하여 다른 목표를 공략한다",
+          "effects": [
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "command", "delta": 5 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -2000 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -2000 } }
+          ]
+        },
+        {
+          "id": "chencang_withdraw",
+          "text": "군량을 보존하며 퇴각한다",
+          "effects": [
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": -5 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": 2000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -1000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 97회, 정사 위서 학소전. 제갈량 2차 북벌 시 진창 공성 실패.",
+      "tags": ["battle", "siege", "northern_expedition"]
+    },
+    {
+      "id": "hist_219_fancheng",
+      "layer": "historical",
+      "name": "번성 공방전",
+      "period": {
+        "year": 219
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 218, "max": 221 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_ren" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "xu_huang" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "cao_ren", "role": "antagonist", "required": true },
+        { "character_id": "xu_huang", "role": "antagonist", "required": false },
+        { "character_id": "pang_de", "role": "antagonist", "required": false },
+        { "character_id": "yu_jin", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 형주의 정예를 이끌고 번성으로 북진하니, 조인이 성문을 굳게 닫고 수비에 들어갔다. 때마침 한수가 범람하여 우금의 칠군이 물에 잠기고, 관우는 수군을 풀어 위군을 격파했다. 방덕은 항복을 거부하다 참수되고, 우금은 수만 병사와 함께 무릎을 꿇었다. 관우의 위세가 천하를 진동시키니, 조조마저 천도를 논의할 지경이었다. 그러나 이 승리의 빛 뒤에는 형주 공백이라는 치명적 그림자가 드리워지고 있었다.",
+        "flavor": "한수의 탁류가 위군의 진영을 삼키고, 물 위에 뜬 투구들 사이로 관우의 전선이 미끄러졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": "wei" },
+        { "type": "unlock_event", "target": "hist_219_maicheng", "value": "번성 전투가 형주 위기의 도화선이 된다" }
+      ],
+      "choices": [
+        {
+          "id": "fancheng_flood",
+          "text": "수공을 활용하여 위군 칠군을 수몰시킨다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -30000 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 30 } },
+            { "type": "character_death", "target": "pang_de", "value": "참수" },
+            { "type": "army_change", "target": "shu", "value": { "delta": -3000 } }
+          ]
+        },
+        {
+          "id": "fancheng_siege_cautious",
+          "text": "장기 포위전으로 전환하며 형주 방비를 유지한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -10000 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -5000 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 10 } }
+          ]
+        },
+        {
+          "id": "fancheng_negotiate",
+          "text": "우금에게 항복을 권유하며 외교전을 편다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": 10000 } },
+            { "type": "stat_change", "target": "guan_yu", "value": { "stat": "charm", "delta": 10 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -8000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 73-74회, 정사 촉서 관우전. 관우의 번성 공격과 수엄칠군.",
+      "tags": ["battle", "flood", "decisive"]
+    },
+    {
+      "id": "hist_200_guandu",
+      "layer": "historical",
+      "name": "관도대전",
+      "period": {
+        "year": 200
+      },
+      "location": "yanzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 199, "max": 202 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "xun_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guo_jia" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "xun_yu", "role": "supporter", "required": true },
+        { "character_id": "guo_jia", "role": "supporter", "required": false },
+        { "character_id": "yuan_shao", "role": "antagonist", "required": false },
+        { "character_id": "yan_liang", "role": "antagonist", "required": false },
+        { "character_id": "wen_chou", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "원소가 칠십만 대군을 이끌고 남하하니, 조조의 병력은 그 십분의 일에도 미치지 못했다. 군량이 바닥나 퇴각을 고민하는 조조에게 순욱이 서신을 보내어 결사항전을 권하고, 곽가는 원소의 열 가지 약점을 조목조목 짚었다. 결정적 순간, 원소의 모사 허유가 투항하여 오소의 군량 창고 위치를 알려주었다. 조조가 친히 경기병을 이끌고 오소를 급습하여 불태우니, 칠십만 대군이 하룻밤에 와해되었다.",
+        "flavor": "오소의 하늘이 붉게 타오르고, 원소 진영에서 터져 나오는 비명이 황하까지 울려 퍼졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wei", "value": "yuan-shao" },
+        { "type": "army_change", "target": "yuan-shao", "value": { "delta": -50000 } }
+      ],
+      "choices": [
+        {
+          "id": "guandu_raid_wuchao",
+          "text": "허유의 정보를 믿고 오소 군량고를 기습한다",
+          "effects": [
+            { "type": "army_change", "target": "yuan-shao", "value": { "delta": -40000 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "fame", "delta": 30 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "command", "delta": 10 } },
+            { "type": "territory_change", "target": "wei", "value": { "city": "jizhou", "action": "contest" } }
+          ]
+        },
+        {
+          "id": "guandu_defend",
+          "text": "허유를 의심하고 방어 태세를 유지한다",
+          "effects": [
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -8000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -5000 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "fame", "delta": 5 } }
+          ]
+        },
+        {
+          "id": "guandu_negotiate",
+          "text": "원소에게 화친을 제안하여 시간을 벌고 내부 분열을 유도한다",
+          "effects": [
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "intellect", "delta": 5 } },
+            { "type": "resource_change", "target": "wei", "value": { "resource": "gold", "delta": -3000 } },
+            { "type": "relationship_change", "target": "yuan-shao", "value": { "with": "wei", "delta": -20 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 30회, 정사 위서 무제기. 삼국지 3대 전투 중 하나, 조조의 역전승.",
+      "tags": ["battle", "decisive", "fire_attack", "supply_raid"]
+    },
+    {
+      "id": "hist_217_hanzhong",
+      "layer": "historical",
+      "name": "한중 공방전",
+      "period": {
+        "year": 217
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 216, "max": 219 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "fa_zheng" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "huang_zhong" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "fa_zheng", "role": "supporter", "required": true },
+        { "character_id": "huang_zhong", "role": "supporter", "required": false },
+        { "character_id": "cao_cao", "role": "antagonist", "required": false },
+        { "character_id": "xiahou_yuan", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "유비가 익주의 국력을 총동원하여 한중으로 진군하니, 법정이 지형을 이용한 전략을 헌책했다. 정군산에서 황충이 하후연을 참하고, 조조가 직접 대군을 이끌고 오자 유비는 험준한 지형에 의지하여 수비에 집중했다. 조조군은 보급선이 길어져 지치고, 유비는 '닭갈비'라는 조조의 한탄을 기회로 총공세를 펼쳤다. 마침내 조조가 철군하니, 유비가 한중왕에 오르는 역사적 순간이 열렸다.",
+        "flavor": "정군산 꼭대기에서 바라본 한중 분지에 촉군의 깃발이 바람에 나부꼈다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": "wei" },
+        { "type": "unlock_event", "target": "hist_219_mount-dingjun", "value": "한중 전역이 정군산 결전으로 이어진다" }
+      ],
+      "choices": [
+        {
+          "id": "hanzhong_aggressive",
+          "text": "법정의 계책에 따라 고지를 선점하고 적극 공세를 펼친다",
+          "effects": [
+            { "type": "territory_change", "target": "shu", "value": { "city": "hanzhong", "action": "capture" } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 25 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -10000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -15000 } }
+          ]
+        },
+        {
+          "id": "hanzhong_defensive",
+          "text": "험지에 진을 치고 조조군이 지쳐 물러나길 기다린다",
+          "effects": [
+            { "type": "territory_change", "target": "shu", "value": { "city": "hanzhong", "action": "capture" } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -8000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -3000 } }
+          ]
+        },
+        {
+          "id": "hanzhong_guerrilla",
+          "text": "소규모 유격전으로 조조의 보급선을 끊는다",
+          "effects": [
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -10000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -5000 } },
+            { "type": "stat_change", "target": "fa_zheng", "value": { "stat": "intellect", "delta": 10 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 70-72회, 정사 촉서 선주전. 유비의 한중 쟁탈전(217-219).",
+      "tags": ["battle", "campaign", "territory"]
+    },
+    {
+      "id": "hist_215_hefei",
+      "layer": "historical",
+      "name": "합비대전",
+      "period": {
+        "year": 215
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 214, "max": 217 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_liao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yue_jin" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhang_liao", "role": "protagonist", "required": true },
+        { "character_id": "yue_jin", "role": "supporter", "required": true },
+        { "character_id": "sun_quan", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "손권이 십만 대군을 이끌고 합비를 포위했으나, 장료는 고작 팔백의 결사대를 선발하여 새벽에 돌격을 감행했다. 장료가 직접 선두에서 수십 명을 베며 오군 진영 깊숙이 돌입하니, 십만 대군이 혼란에 빠졌다. 손권이 퇴각을 명하고 소요진을 건너려 할 때 장료가 추격하여 하마터면 사로잡을 뻔했다. 이후 강동의 아이들이 울면 '장료가 온다'는 말에 울음을 그쳤다 하니, 팔백 대 십만의 전설이 이렇게 태어났다.",
+        "flavor": "새벽안개 사이로 팔백 기병의 함성이 터지자, 오군 십만의 깃발이 일제히 흔들렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wei", "value": "wu" }
+      ],
+      "choices": [
+        {
+          "id": "hefei_charge",
+          "text": "장료의 팔백 결사대로 새벽 기습을 감행한다",
+          "effects": [
+            { "type": "stat_change", "target": "zhang_liao", "value": { "stat": "fame", "delta": 35 } },
+            { "type": "army_change", "target": "wu", "value": { "delta": -15000 } },
+            { "type": "stat_change", "target": "sun_quan", "value": { "stat": "fame", "delta": -15 } }
+          ]
+        },
+        {
+          "id": "hefei_hold",
+          "text": "성문을 닫고 완벽한 수성전을 펼친다",
+          "effects": [
+            { "type": "army_change", "target": "wu", "value": { "delta": -5000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -2000 } },
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -3000 } }
+          ]
+        },
+        {
+          "id": "hefei_sortie_pursuit",
+          "text": "출격 후 퇴각하는 손권을 끝까지 추격한다",
+          "effects": [
+            { "type": "stat_change", "target": "zhang_liao", "value": { "stat": "fame", "delta": 25 } },
+            { "type": "army_change", "target": "wu", "value": { "delta": -20000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -5000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 67회, 정사 위서 장료전. 장료 팔백으로 손권 십만을 격파한 합비대전.",
+      "tags": ["battle", "heroic_duel", "decisive"]
+    },
+    {
+      "id": "hist_228_jieting",
+      "layer": "historical",
+      "name": "가정 전투",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 227, "max": 230 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "ma_su" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_he" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "ma_su", "role": "protagonist", "required": true },
+        { "character_id": "zhang_he", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량의 제1차 북벌이 순조롭게 진행되던 중, 가정의 수비가 관건이 되었다. 제갈량은 마속에게 가정 수비를 맡겼으나, 마속은 병법서만 읽고 실전을 모르는 자답게 산 위에 진을 쳤다. 위의 명장 장합이 수원을 끊자 촉군은 물 한 모금 구하지 못하고 무너졌다. 가정이 함락되니 북벌 전체가 수포로 돌아가고, 제갈량은 군법에 따라 마속의 목을 베며 눈물을 흘렸다.",
+        "flavor": "산 위에서 타오르는 갈증의 불길이 촉한의 꿈을 태웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -5000 } }
+      ],
+      "choices": [
+        {
+          "id": "jieting_mountain",
+          "text": "마속의 판단을 존중하여 산 위에 진을 친다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -15000 } },
+            { "type": "character_death", "target": "ma_su", "value": "군법 처형" },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": -10 } }
+          ]
+        },
+        {
+          "id": "jieting_road",
+          "text": "마속을 제지하고 도로변에 수비 진지를 구축한다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -5000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -8000 } },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "command", "delta": 5 } }
+          ]
+        },
+        {
+          "id": "jieting_retreat_preserve",
+          "text": "가정을 포기하고 전군을 철수시켜 전력을 보존한다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -2000 } },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": -5 } },
+            { "type": "loyalty_change", "target": "ma_su", "value": -20 }
+          ]
+        }
+      ],
+      "historical_basis": "연의 95-96회, 정사 촉서 마속전. 제갈량 1차 북벌의 결정적 패인.",
+      "tags": ["battle", "strategic_failure", "northern_expedition"]
+    },
+    {
+      "id": "hist_219_maicheng",
+      "layer": "historical",
+      "name": "맥성 전투",
+      "period": {
+        "year": 219
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 218, "max": 221 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_meng" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_xun" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "lu_meng", "role": "antagonist", "required": true },
+        { "character_id": "lu_xun", "role": "antagonist", "required": false },
+        { "character_id": "sun_quan", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 번성에서 위세를 떨치는 사이, 여몽이 백의도강의 기책으로 형주를 기습 점령했다. 돌아갈 곳을 잃은 관우의 병사들은 하나둘 이탈하고, 천하의 무신은 맥성이라는 초라한 작은 성에 갇혔다. 관우는 결사 돌파를 시도했으나 오군의 매복에 걸려 생포되었다. 항복을 거부한 관우의 목이 손권에게 보내지니, 도원결의의 한 기둥이 무너지고 삼국의 판도가 뒤흔들렸다.",
+        "flavor": "맥성의 성벽에 기댄 관우의 눈에 비친 것은, 형주의 불타는 하늘이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "wu", "value": { "city": "jingzhou", "action": "capture" } },
+        { "type": "faction_war", "target": "shu", "value": "wu" }
+      ],
+      "choices": [
+        {
+          "id": "maicheng_breakout",
+          "text": "정예 기병으로 야간 돌파를 시도한다",
+          "effects": [
+            { "type": "character_death", "target": "guan_yu", "value": "매복 전사" },
+            { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -20000 } }
+          ]
+        },
+        {
+          "id": "maicheng_surrender",
+          "text": "형세를 인정하고 손권에게 항복을 청한다",
+          "effects": [
+            { "type": "character_leave", "target": "guan_yu", "value": "항복" },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": -20 } },
+            { "type": "loyalty_change", "target": "guan_yu", "value": -50 }
+          ]
+        },
+        {
+          "id": "maicheng_hold",
+          "text": "맥성을 사수하며 촉의 원군을 기다린다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -10000 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -3000 } },
+            { "type": "character_death", "target": "guan_yu", "value": "아사 순절" }
+          ]
+        }
+      ],
+      "historical_basis": "연의 76-77회, 정사 촉서 관우전. 여몽의 백의도강과 관우의 최후.",
+      "tags": ["battle", "betrayal", "character_death", "decisive"]
+    },
+    {
+      "id": "hist_219_mount-dingjun",
+      "layer": "historical",
+      "name": "정군산 전투",
+      "period": {
+        "year": 219
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 218, "max": 221 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "huang_zhong" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "fa_zheng" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "huang_zhong", "role": "supporter", "required": true },
+        { "character_id": "fa_zheng", "role": "supporter", "required": false },
+        { "character_id": "xiahou_yuan", "role": "antagonist", "required": false },
+        { "character_id": "zhang_he", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "법정이 정군산의 지형을 살피고 고지 점령을 건의하니, 유비가 이를 따랐다. 하후연이 수비 병력을 분산시킨 틈을 노려, 황충이 노장의 기백으로 산 정상에서 돌격을 감행했다. 급경사를 타고 내리꽂히는 황충의 일격에 하후연이 두 동강 나니, 위군의 사기가 일시에 무너졌다. 조조의 사촌이자 서부군단의 기둥이 꺾인 것이다. 이 승리로 한중 전역의 대세가 유비에게 기울었다.",
+        "flavor": "정군산 꼭대기에서 쏟아져 내려오는 황충의 칼날은, 석양빛보다 붉었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "xiahou_yuan", "value": "전사" },
+        { "type": "army_change", "target": "wei", "value": { "delta": -10000 } }
+      ],
+      "choices": [
+        {
+          "id": "dingjun_highground",
+          "text": "법정의 계책대로 고지를 점령하고 황충이 돌격한다",
+          "effects": [
+            { "type": "stat_change", "target": "huang_zhong", "value": { "stat": "fame", "delta": 30 } },
+            { "type": "character_death", "target": "xiahou_yuan", "value": "황충에게 참수" },
+            { "type": "territory_change", "target": "shu", "value": { "city": "hanzhong", "action": "contest" } }
+          ]
+        },
+        {
+          "id": "dingjun_encircle",
+          "text": "정군산을 포위하여 하후연의 보급을 차단한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -8000 } },
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -5000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -3000 } }
+          ]
+        },
+        {
+          "id": "dingjun_night_raid",
+          "text": "야습으로 하후연의 본진을 기습한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -12000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -6000 } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "command", "delta": 5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 71회, 정사 촉서 황충전. 황충이 하후연을 참한 정군산 전투.",
+      "tags": ["battle", "heroic_duel", "decisive"]
+    },
+    {
+      "id": "hist_228_qishan",
+      "layer": "historical",
+      "name": "기산 전투",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 227, "max": 230 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_he" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true },
+        { "character_id": "zhang_he", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량이 출사표를 올리고 기산을 향해 진군하니, 천수와 남안 삼군이 잇달아 촉에 항복했다. 위 조정은 급히 사마의를 기용하여 촉군을 막게 했고, 두 천재의 숙명적 대결이 기산 벌판에서 시작되었다. 제갈량의 팔진도와 목우유마가 위군을 혼란에 빠뜨렸으나, 사마의는 거북이처럼 웅크려 결전을 피했다. 보급선이 촉의 아킬레스건임을 꿰뚫은 사마의의 지구전에, 제갈량은 번번이 결정타를 날리지 못했다.",
+        "flavor": "기산의 바람이 촉과 위의 깃발을 동시에 나부끼게 하니, 누구의 바람인지 알 수 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": "wei" },
+        { "type": "unlock_event", "target": "hist_228_jieting", "value": "기산 전역 중 가정 수비가 관건이 된다" }
+      ],
+      "choices": [
+        {
+          "id": "qishan_offensive",
+          "text": "전 병력을 동원하여 사마의와 정면 결전을 강요한다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -12000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -15000 } },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "command", "delta": 10 } }
+          ]
+        },
+        {
+          "id": "qishan_divide",
+          "text": "기산을 교란하면서 다른 경로로 장안을 노린다",
+          "effects": [
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "intellect", "delta": 10 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -6000 } },
+            { "type": "territory_change", "target": "shu", "value": { "city": "changan", "action": "contest" } }
+          ]
+        },
+        {
+          "id": "qishan_fortify",
+          "text": "점령한 삼군을 공고히 하고 보급선을 안정시킨다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": 3000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -3000 } },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 92-96회, 정사 촉서 제갈량전. 제갈량의 1차 북벌과 기산 전투.",
+      "tags": ["battle", "campaign", "northern_expedition", "rivalry"]
+    },
+    {
+      "id": "hist_208_red-cliffs",
+      "layer": "historical",
+      "name": "적벽대전",
+      "period": {
+        "year": 208
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 207, "max": 210 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhou_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "sun_quan", "role": "protagonist", "required": true },
+        { "character_id": "zhou_yu", "role": "supporter", "required": true },
+        { "character_id": "liu_bei", "role": "supporter", "required": false },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false },
+        { "character_id": "cao_cao", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "조조가 팔십만 대군을 이끌고 남하하니, 장강 이남이 두려움에 떨었다. 손권은 주전과 화전 사이에서 고뇌했으나, 주유와 제갈량이 한 목소리로 결전을 주장했다. 황개의 고육계와 동남풍을 빌리는 제갈량의 기도가 어우러져, 불화살을 실은 작은 배들이 조조의 연환계에 묶인 전선을 향해 돌진했다. 장강이 불바다로 변하고 조조군이 궤멸하니, 이 하룻밤의 불길이 천하삼분의 판도를 결정지었다.",
+        "flavor": "동남풍이 장강 위의 화선을 밀어보내자, 하늘과 강물이 모두 붉게 타올랐다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wu", "value": "wei" },
+        { "type": "faction_alliance", "target": "wu", "value": "shu" },
+        { "type": "army_change", "target": "wei", "value": { "delta": -200000 } }
+      ],
+      "choices": [
+        {
+          "id": "redcliffs_fire",
+          "text": "황개의 화공과 연환계를 실행한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -300000 } },
+            { "type": "stat_change", "target": "zhou_yu", "value": { "stat": "fame", "delta": 30 } },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 25 } },
+            { "type": "territory_change", "target": "wu", "value": { "city": "jingzhou", "action": "contest" } }
+          ]
+        },
+        {
+          "id": "redcliffs_naval",
+          "text": "수군의 우위를 살려 정면 해전을 벌인다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -100000 } },
+            { "type": "army_change", "target": "wu", "value": { "delta": -20000 } },
+            { "type": "stat_change", "target": "zhou_yu", "value": { "stat": "command", "delta": 15 } }
+          ]
+        },
+        {
+          "id": "redcliffs_surrender",
+          "text": "조조에게 항복하여 강동을 보전한다",
+          "effects": [
+            { "type": "stat_change", "target": "sun_quan", "value": { "stat": "fame", "delta": -40 } },
+            { "type": "loyalty_change", "target": "zhou_yu", "value": -30 },
+            { "type": "faction_peace", "target": "wu", "value": "wei" }
+          ]
+        }
+      ],
+      "historical_basis": "연의 43-50회, 정사 오서 주유전. 삼국지 3대 전투의 정점.",
+      "tags": ["battle", "decisive", "fire_attack", "alliance"]
+    },
+    {
+      "id": "hist_228_shiting",
+      "layer": "historical",
+      "name": "석정 전투",
+      "period": {
+        "year": 228
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 227, "max": 230 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_xun" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "sun_quan", "role": "protagonist", "required": true },
+        { "character_id": "lu_xun", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "위의 대사마 조휴가 십만 대군으로 오를 침공하자, 육손이 석정에서 요격을 결정했다. 오군은 험준한 지형을 이용하여 위군을 골짜기 깊숙이 유인한 뒤, 퇴로를 끊고 삼면에서 포위 공격을 가했다. 조휴의 대군은 진퇴양난에 빠져 만여 명의 사상자를 내며 참패했다. 이 승리로 동오의 장강 방어선이 더욱 공고해지고, 육손은 이릉대전에 이어 또 한 번 대도독의 역량을 증명했다.",
+        "flavor": "석정의 좁은 골짜기에 울려 퍼지는 오군의 북소리가 위군의 사기를 조각조각 부쉈다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wu", "value": "wei" }
+      ],
+      "choices": [
+        {
+          "id": "shiting_ambush",
+          "text": "골짜기에 매복을 설치하고 조휴를 유인한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -20000 } },
+            { "type": "stat_change", "target": "lu_xun", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "stat_change", "target": "lu_xun", "value": { "stat": "intellect", "delta": 10 } }
+          ]
+        },
+        {
+          "id": "shiting_frontal",
+          "text": "수군과 육군의 합동 작전으로 정면 대응한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -12000 } },
+            { "type": "army_change", "target": "wu", "value": { "delta": -8000 } },
+            { "type": "stat_change", "target": "sun_quan", "value": { "stat": "command", "delta": 5 } }
+          ]
+        },
+        {
+          "id": "shiting_withdraw",
+          "text": "위험을 피해 장강 이남으로 철수한다",
+          "effects": [
+            { "type": "stat_change", "target": "sun_quan", "value": { "stat": "fame", "delta": -10 } },
+            { "type": "territory_change", "target": "wei", "value": { "city": "yangzhou", "action": "contest" } },
+            { "type": "army_change", "target": "wu", "value": { "delta": -2000 } }
+          ]
+        }
+      ],
+      "historical_basis": "정사 오서 육손전. 228년 석정 전투, 육손이 조휴를 대파.",
+      "tags": ["battle", "ambush", "defensive"]
+    },
+    {
+      "id": "hist_211_tong-pass",
+      "layer": "historical",
+      "name": "동관 전투",
+      "period": {
+        "year": 211
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 210, "max": 213 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "xu_chu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "ma_chao" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "xu_chu", "role": "supporter", "required": true },
+        { "character_id": "ma_chao", "role": "antagonist", "required": false },
+        { "character_id": "han_sui", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "마초가 서량의 기병 십만을 이끌고 동관으로 밀려오니, 그 기세가 천지를 뒤흔들었다. 마초의 창술에 조조가 수염을 자르고 전포를 벗어던지며 간신히 목숨을 건진 일화는 천하의 웃음거리가 되었다. 허저가 벌거벗은 몸으로 마초와 일기토를 벌여 간담을 서늘하게 했으나 승부가 나지 않았다. 결국 조조는 가후의 이간책을 써서 마초와 한수 사이를 갈라놓으니, 무력이 아닌 계략으로 서량군을 와해시켰다.",
+        "flavor": "위수의 모래바람 속에서 마초의 은갑이 번쩍이자, 조조군 장수들의 얼굴이 흙빛으로 변했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wei", "value": "xiliang" }
+      ],
+      "choices": [
+        {
+          "id": "tongpass_stratagem",
+          "text": "가후의 이간책을 써서 마초와 한수를 이간질한다",
+          "effects": [
+            { "type": "relationship_change", "target": "ma_chao", "value": { "with": "han_sui", "delta": -50 } },
+            { "type": "army_change", "target": "xiliang", "value": { "delta": -30000 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "intellect", "delta": 10 } }
+          ]
+        },
+        {
+          "id": "tongpass_duel",
+          "text": "허저를 내세워 마초와 무력 대결로 승부를 가른다",
+          "effects": [
+            { "type": "stat_change", "target": "xu_chu", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -10000 } },
+            { "type": "army_change", "target": "xiliang", "value": { "delta": -15000 } }
+          ]
+        },
+        {
+          "id": "tongpass_fortify",
+          "text": "동관을 굳게 지키며 서량군의 식량이 떨어질 때를 기다린다",
+          "effects": [
+            { "type": "resource_change", "target": "xiliang", "value": { "resource": "food", "delta": -8000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -3000 } },
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -5000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 58-59회, 정사 위서 무제기. 마초의 동관 침공과 조조의 이간책.",
+      "tags": ["battle", "heroic_duel", "stratagem"]
+    },
+    {
+      "id": "hist_197_wancheng",
+      "layer": "historical",
+      "name": "완성 전투",
+      "period": {
+        "year": 197
+      },
+      "location": "yuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 196, "max": 199 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dian_wei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_xiu" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "dian_wei", "role": "supporter", "required": true },
+        { "character_id": "zhang_xiu", "role": "antagonist", "required": false },
+        { "character_id": "jia_xu", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "장수가 항복하여 완성에 머물던 조조는 방심한 나머지 장수의 숙모를 탐했으니, 이것이 화근이 되었다. 가후의 계략에 따라 장수가 야습을 감행하자, 조조의 친위대는 불의의 기습에 허를 찔렸다. 전위는 문 앞에서 쌍극을 휘두르며 조조의 퇴각 시간을 벌었으나, 온 몸에 수십 개의 창이 꽂힌 채 장렬히 전사했다. 조조는 장남 조앙과 조카 조안민, 그리고 가장 신뢰하던 호위무사를 하룻밤에 모두 잃었다.",
+        "flavor": "전위의 쌍극이 마지막 적을 쓰러뜨리고, 그의 무릎이 땅에 닿은 뒤에도 적들은 감히 다가오지 못했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "dian_wei", "value": "전사" }
+      ],
+      "choices": [
+        {
+          "id": "wancheng_dianwei_guard",
+          "text": "전위에게 후퇴를 엄호하게 하고 조조가 탈출한다",
+          "effects": [
+            { "type": "character_death", "target": "dian_wei", "value": "장렬한 전사" },
+            { "type": "stat_change", "target": "dian_wei", "value": { "stat": "fame", "delta": 30 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -8000 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "fame", "delta": -10 } }
+          ]
+        },
+        {
+          "id": "wancheng_preempt",
+          "text": "장수의 음모를 사전에 감지하고 선제 공격한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -3000 } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "intellect", "delta": 10 } },
+            { "type": "relationship_change", "target": "cao_cao", "value": { "with": "zhang_xiu", "delta": -30 } }
+          ]
+        },
+        {
+          "id": "wancheng_surrender_accept",
+          "text": "장수의 항복을 예우하고 숙모를 건드리지 않는다",
+          "effects": [
+            { "type": "character_join", "target": "zhang_xiu", "value": "wei" },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "charm", "delta": 10 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": 5000 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 16회, 정사 위서 전위전. 완성에서의 장수 반란과 전위의 최후.",
+      "tags": ["battle", "ambush", "character_death", "tragedy"]
+    },
+    {
+      "id": "hist_234_wuzhang-plains",
+      "layer": "historical",
+      "name": "오장원 전투",
+      "period": {
+        "year": 234
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 233, "max": 236 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량의 다섯 번째이자 마지막 북벌이 오장원에서 사마의와 맞닥뜨렸다. 제갈량은 둔전을 일구며 장기전을 준비했으나, 과로와 병마가 그의 몸을 갉아먹고 있었다. 칠성등에 기도하여 수명을 빌었으나 위연의 실수로 등불이 꺼지고, 운명을 받아들인 제갈량은 마지막 계략을 짜 두었다. 오장원의 가을바람에 별이 떨어지니, 한실 부흥의 꿈이 함께 스러졌다. 사마의가 빈 진영을 보고 추격하다 나무 인형에 놀라 물러나니, '죽은 공명이 산 중달을 물리쳤다'는 말이 퍼졌다.",
+        "flavor": "오장원의 가을바람이 촛불을 꺼뜨리듯, 한 시대의 빛이 조용히 사그라들었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhuge_liang", "value": "병사" },
+        { "type": "faction_war", "target": "shu", "value": "wei" }
+      ],
+      "choices": [
+        {
+          "id": "wuzhang_decisive",
+          "text": "마지막 힘을 짜내 사마의와 총력전을 벌인다",
+          "effects": [
+            { "type": "army_change", "target": "shu", "value": { "delta": -20000 } },
+            { "type": "army_change", "target": "wei", "value": { "delta": -25000 } },
+            { "type": "character_death", "target": "zhuge_liang", "value": "전장에서 과로사" },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 20 } }
+          ]
+        },
+        {
+          "id": "wuzhang_prolong",
+          "text": "칠성등 기도로 수명 연장을 시도하며 둔전을 지속한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": 5000 } },
+            { "type": "character_death", "target": "zhuge_liang", "value": "병사" },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 30 } }
+          ]
+        },
+        {
+          "id": "wuzhang_orderly_retreat",
+          "text": "후사를 정리하고 질서 있게 촉군을 철수시킨다",
+          "effects": [
+            { "type": "character_death", "target": "zhuge_liang", "value": "귀환 중 병사" },
+            { "type": "army_change", "target": "shu", "value": { "delta": -3000 } },
+            { "type": "stat_change", "target": "sima_yi", "value": { "stat": "fame", "delta": -10 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 103-104회, 정사 촉서 제갈량전. 제갈량의 최후와 오장원.",
+      "tags": ["battle", "character_death", "northern_expedition", "tragedy", "rivalry"]
+    },
+    {
+      "id": "hist_198_xiapi",
+      "layer": "historical",
+      "name": "하비성 전투",
+      "period": {
+        "year": 198
+      },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 197, "max": 200 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "supporter", "required": true },
+        { "character_id": "lu_bu", "role": "antagonist", "required": false },
+        { "character_id": "chen_gong", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "조조가 대군을 이끌고 하비를 포위하니, 여포는 성 안에서 술에 절어 있었다. 진궁이 여러 차례 출격을 건의했으나 여포는 번번이 거절하고, 마침내 부하 후성과 위속이 반란을 일으켜 진궁을 묶어 바쳤다. 사수와 비수의 물을 끌어들여 성을 수몰시킨 조조 앞에, 포박당한 천하제일의 무장이 끌려왔다. 여포가 항복을 구걸하자 유비가 '정원과 동탁의 일을 잊으셨습니까'라 말했고, 조조는 여포를 교수형에 처했다.",
+        "flavor": "하비성 위로 흘러넘치는 탁류 속에서, 적토마의 울음소리만이 주인의 최후를 알리고 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "lu_bu", "value": "처형" },
+        { "type": "character_death", "target": "chen_gong", "value": "처형" },
+        { "type": "territory_change", "target": "wei", "value": { "city": "xuzhou", "action": "capture" } }
+      ],
+      "choices": [
+        {
+          "id": "xiapi_flood",
+          "text": "사수와 비수를 끌어들여 수공으로 하비를 수몰시킨다",
+          "effects": [
+            { "type": "character_death", "target": "lu_bu", "value": "포박 후 처형" },
+            { "type": "character_death", "target": "chen_gong", "value": "포박 후 처형" },
+            { "type": "territory_change", "target": "wei", "value": { "city": "xuzhou", "action": "capture" } },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "fame", "delta": 15 } }
+          ]
+        },
+        {
+          "id": "xiapi_siege",
+          "text": "장기 포위전으로 성 안의 식량이 다할 때를 기다린다",
+          "effects": [
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -5000 } },
+            { "type": "character_death", "target": "lu_bu", "value": "부하 반란 후 포박" },
+            { "type": "army_change", "target": "wei", "value": { "delta": -2000 } }
+          ]
+        },
+        {
+          "id": "xiapi_recruit_lubu",
+          "text": "여포의 항복을 받아들여 휘하에 둔다",
+          "effects": [
+            { "type": "character_join", "target": "lu_bu", "value": "wei" },
+            { "type": "stat_change", "target": "cao_cao", "value": { "stat": "command", "delta": 10 } },
+            { "type": "loyalty_change", "target": "lu_bu", "value": -30 }
+          ]
+        }
+      ],
+      "historical_basis": "연의 19회, 정사 위서 여포전. 하비 수공과 여포의 최후.",
+      "tags": ["battle", "siege", "flood", "character_death"]
+    },
+    {
+      "id": "hist_244_xingshi",
+      "layer": "historical",
+      "name": "흥세 전투",
+      "period": {
+        "year": 244
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 243, "max": 246 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_shuang" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "cao_shuang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "위의 대장군 조상이 공명을 세우고자 십만 대군으로 한중을 침공했으나, 촉의 왕평이 흥세에서 험준한 지형에 의지하여 완강히 저항했다. 위군은 좁은 산길에서 병력의 수적 우위를 발휘하지 못하고, 보급로마저 끊길 위기에 처했다. 참군 양위가 '진은 죽기 쉽고 물러남은 어려운 곳'이라며 철군을 간언했으나 조상은 체면 때문에 주저했다. 결국 비경과 우명의 지연전에 시간을 빼앗기고, 비축량은 끝나 대량의 전사자와 장비를 버린 채 퇴각하니, 조상의 군사적 무능이 천하에 드러났다.",
+        "flavor": "흥세의 험로를 메운 위군의 시체 위로, 촉의 깃발이 묵묵히 바람에 흔들렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "wei", "value": "shu" },
+        { "type": "army_change", "target": "wei", "value": { "delta": -20000 } }
+      ],
+      "choices": [
+        {
+          "id": "xingshi_press",
+          "text": "체면을 세우기 위해 공격을 강행한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -30000 } },
+            { "type": "stat_change", "target": "cao_shuang", "value": { "stat": "fame", "delta": -20 } },
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -10000 } }
+          ]
+        },
+        {
+          "id": "xingshi_withdraw",
+          "text": "양위의 간언을 듣고 신속히 철군한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -5000 } },
+            { "type": "stat_change", "target": "cao_shuang", "value": { "stat": "fame", "delta": -5 } },
+            { "type": "resource_change", "target": "wei", "value": { "resource": "food", "delta": -3000 } }
+          ]
+        },
+        {
+          "id": "xingshi_flank",
+          "text": "별동대를 보내 촉군 후방을 우회 공격한다",
+          "effects": [
+            { "type": "army_change", "target": "wei", "value": { "delta": -10000 } },
+            { "type": "army_change", "target": "shu", "value": { "delta": -5000 } },
+            { "type": "stat_change", "target": "cao_shuang", "value": { "stat": "command", "delta": 5 } }
+          ]
+        }
+      ],
+      "historical_basis": "정사 촉서 왕평전. 244년 조상의 한중 침공 실패와 흥세 전투.",
+      "tags": ["battle", "campaign", "strategic_failure"]
+    }
+  ]
+}

@@ -1,0 +1,1268 @@
+{
+  "total": 29,
+  "events": [
+    {
+      "id": "novel_ch70_유비_한중_원정_시작",
+      "layer": "historical",
+      "name": "유비 한중 원정 시작",
+      "period": {
+        "year": 218
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_fei" }
+          },
+          {
+            "type": "faction_controls",
+            "params": { "faction_id": "shu", "city_id": "chengdu" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhang_fei", "role": "supporter", "required": false },
+        { "character_id": "zhang_he", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "유비가 익주를 평정한 뒤, 북쪽 한중을 노린다. 한중은 촉의 인후와 같은 땅이니, 이를 얻지 못하면 성도는 언제든 위협받을 수밖에 없다. 장비와 제장을 이끌고 한중으로의 대규모 원정이 시작된다.",
+        "flavor": "촉의 용이 북을 향해 머리를 들다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": { "enemy": "wei", "theater": "hanzhong" } },
+        { "type": "army_change", "target": "shu", "value": -15000, "duration_turns": 0 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 70회: 한중 공방전 시작",
+      "tags": ["novel_chapter", "battle", "campaign"]
+    },
+    {
+      "id": "novel_ch70_장비_장합_격파",
+      "layer": "historical",
+      "name": "장비 장합 격파",
+      "period": {
+        "year": 218
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_fei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_he" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch70_유비_한중_원정_시작" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhang_fei", "role": "protagonist", "required": true },
+        { "character_id": "zhang_he", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "장비가 파서 일대에서 장합과 맞붙는다. 장비는 매일 술에 취한 척하며 장합의 방심을 유도하고, 결국 좁은 산길에서 매복을 펼쳐 위군을 대파한다. 장합은 간신히 몸만 빠져 도주한다.",
+        "flavor": "익덕의 호기, 지략까지 겸비하다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhang_fei", "value": { "stat": "fame", "delta": 10 } },
+        { "type": "army_change", "target": "wei", "value": -8000 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 70회: 한중 공방전 시작",
+      "tags": ["novel_chapter", "battle", "tactics"]
+    },
+    {
+      "id": "novel_ch71_황충이_하후연_참수",
+      "layer": "historical",
+      "name": "황충이 하후연 참수",
+      "period": {
+        "year": 219,
+        "month": 1
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "huang_zhong" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "xiahou_yuan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch70_유비_한중_원정_시작" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "huang_zhong", "role": "protagonist", "required": true },
+        { "character_id": "xiahou_yuan", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "정군산 전투. 법정의 계책에 따라 황충이 산 위에서 기세를 축적한 뒤 일거에 돌격한다. 하후연이 녹각을 수리하러 나선 틈을 놓치지 않고 돌진하여 단칼에 참수한다. 위군의 한중 방어선이 무너지는 결정적 순간이다.",
+        "flavor": "노장의 칼날이 정군산을 물들이다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "xiahou_yuan", "value": { "cause": "killed_in_battle", "killer": "huang_zhong" } },
+        { "type": "stat_change", "target": "huang_zhong", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "army_change", "target": "wei", "value": -12000 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 71회: 황충 정군산 전투",
+      "tags": ["novel_chapter", "battle", "decisive", "character_death"]
+    },
+    {
+      "id": "novel_ch72_조조_한중_철수",
+      "layer": "historical",
+      "name": "조조 한중 철수",
+      "period": {
+        "year": 219,
+        "month": 3
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch71_황충이_하후연_참수" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "하후연을 잃은 조조가 직접 대군을 이끌고 한중에 도착하지만, 유비군은 험준한 지형에 의지해 결전을 피한다. 보급선이 길어지고 사기가 떨어지자, 조조는 '계륵'이라는 말을 남기며 결국 한중에서 철군한다.",
+        "flavor": "계륵 -- 먹자니 맛이 없고, 버리자니 아깝다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "hanzhong", "value": { "from": "wei", "to": "shu" } },
+        { "type": "army_change", "target": "wei", "value": -5000 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 72회: 유비 한중 차지",
+      "tags": ["novel_chapter", "retreat", "strategic"]
+    },
+    {
+      "id": "novel_ch72_유비_한중_확보",
+      "layer": "historical",
+      "name": "유비 한중 확보",
+      "period": {
+        "year": 219,
+        "month": 5
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch72_조조_한중_철수" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조조가 물러간 한중을 유비가 완전히 장악한다. 익주와 한중을 잇는 촉의 영토가 비로소 완성되며, 유비의 세력은 전성기를 맞이한다. 위연을 한중태수로 임명하여 북방 방어를 맡긴다.",
+        "flavor": "촉의 북쪽 문이 닫히다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "hanzhong", "value": { "owner": "shu" } },
+        { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": 5000 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 72회: 유비 한중 차지",
+      "tags": ["novel_chapter", "territory", "milestone"]
+    },
+    {
+      "id": "novel_ch73_유비_한중왕_선언",
+      "layer": "historical",
+      "name": "유비 한중왕 선언",
+      "period": {
+        "year": 219,
+        "month": 7
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch72_유비_한중_확보" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": false },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "한중을 차지한 유비가 스스로 한중왕에 오른다. 군신들의 추대를 받아 면류관을 쓰고, 관우를 전장군, 장비를 우장군, 마초를 좌장군, 황충을 후장군에 봉한다. 이로써 촉의 오호대장군 체제가 확립된다.",
+        "flavor": "한실의 부흥, 그 첫 번째 선언",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "authority", "delta": 30 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "loyalty_change", "target": "shu", "value": 10 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 73회: 유비 한중왕 등극",
+      "tags": ["novel_chapter", "political", "milestone", "coronation"]
+    },
+    {
+      "id": "novel_ch73_관우_양양_공격_시작",
+      "layer": "historical",
+      "name": "관우 양양 공격 시작",
+      "period": {
+        "year": 219,
+        "month": 7
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch73_유비_한중왕_선언" }
+          },
+          {
+            "type": "faction_controls",
+            "params": { "faction_id": "shu", "city_id": "jingzhou" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "한중왕 등극의 기세를 몰아, 관우가 형주에서 북벌을 개시한다. 양양과 번성을 향해 대군을 진격시키며, 위의 남방 방어선을 정면으로 압박한다. 그러나 형주의 후방은 오나라의 눈 앞에 고스란히 노출되어 있다.",
+        "flavor": "의기의 칼날이 북으로 향하나, 등 뒤의 그림자는 보지 못하다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": { "enemy": "wei", "theater": "jingzhou" } },
+        { "type": "army_change", "target": "shu", "value": -10000 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 73회: 유비 한중왕 등극",
+      "tags": ["novel_chapter", "battle", "campaign"]
+    },
+    {
+      "id": "novel_ch74_방덕이_관우와_대결",
+      "layer": "historical",
+      "name": "방덕이 관우와 대결",
+      "period": {
+        "year": 219,
+        "month": 8
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "pang_de" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch73_관우_양양_공격_시작" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "pang_de", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "antagonist", "required": true },
+        { "character_id": "yu_jin", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "위의 방덕이 관 앞에 관을 짊어지고 나와 관우에게 결사의 의지를 보인다. 두 장수의 일기토는 백여 합에 이르도록 승부가 나지 않는다. 방덕이 암전을 쏘아 관우의 팔을 맞히지만, 결정적인 승기를 잡지는 못한다.",
+        "flavor": "관을 메고 싸우는 자, 그 기개 하늘을 찌르다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "pang_de", "value": { "stat": "fame", "delta": 10 } },
+        { "type": "stat_change", "target": "guan_yu", "value": { "stat": "health", "delta": -15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 74회: 방덕 vs 관우",
+      "tags": ["novel_chapter", "battle", "duel"]
+    },
+    {
+      "id": "novel_ch74_우금_투항",
+      "layer": "historical",
+      "name": "우금 투항",
+      "period": {
+        "year": 219,
+        "month": 8
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yu_jin" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch74_방덕이_관우와_대결" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "yu_jin", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "antagonist", "required": true },
+        { "character_id": "pang_de", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 한수의 물길을 이용해 번성 일대를 수공한다. 우금의 칠군이 물에 잠기고, 삼만 위군이 궤멸한다. 방덕은 끝까지 항전하다 사로잡혀 참수되지만, 우금은 무릎을 꿇고 항복한다. 조조가 '나를 삼십 년간 섬기더니'라 탄식할 만한 치욕이었다.",
+        "flavor": "수몰칠군 -- 한수가 관운장의 군사가 되다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "pang_de", "value": { "cause": "executed", "killer": "guan_yu" } },
+        { "type": "character_leave", "target": "yu_jin", "value": { "from_faction": "wei", "reason": "surrender" } },
+        { "type": "army_change", "target": "wei", "value": -30000 },
+        { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 25 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 74회: 방덕 vs 관우",
+      "tags": ["novel_chapter", "battle", "flood_attack", "character_death", "surrender"]
+    },
+    {
+      "id": "novel_ch75_화타가_관우의_팔뼈를_긁어_독_제거",
+      "layer": "historical",
+      "name": "화타가 관우의 팔뼈를 긁어 독 제거",
+      "period": {
+        "year": 219,
+        "month": 9
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "hua_tuo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch74_방덕이_관우와_대결" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "hua_tuo", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "방덕의 독화살에 맞은 관우의 오른팔이 낫지 않는다. 명의 화타가 찾아와 뼈를 긁어 독을 제거하겠다고 한다. 관우는 마취를 거부하고 바둑을 두며 수술을 받는다. 뼛소리가 들리는 가운데에도 안색 하나 변하지 않으니, 화타가 '천하에 이런 분은 처음'이라 감탄한다.",
+        "flavor": "괄골요독 -- 살을 가르고 뼈를 긁으니, 신은 아프지 않느냐",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "guan_yu", "value": { "stat": "health", "delta": 20 } },
+        { "type": "stat_change", "target": "guan_yu", "value": { "stat": "fame", "delta": 10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 75회: 관우 독화살 치료 (화타)",
+      "tags": ["novel_chapter", "personal", "legendary", "medical"]
+    },
+    {
+      "id": "novel_ch76_여몽이_백의도강으로_형주_함락",
+      "layer": "historical",
+      "name": "여몽이 백의도강으로 형주 함락",
+      "period": {
+        "year": 219,
+        "month": 11
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_meng" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch73_관우_양양_공격_시작" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "lu_meng", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 번성 공략에 전력을 쏟는 사이, 오의 여몽이 병을 핑계로 직위를 내려놓고 무명의 육손을 후임으로 세운다. 관우가 방비를 풀자, 여몽은 병사들을 상인으로 위장시켜 장강을 건넌다. 백의도강. 형주의 봉화대가 하나도 올라오지 못한 채 성문이 열린다.",
+        "flavor": "흰옷을 입은 병사들이 강을 건널 때, 형주는 이미 끝나 있었다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "jingzhou", "value": { "from": "shu", "to": "wu" } },
+        { "type": "stat_change", "target": "lu_meng", "value": { "stat": "fame", "delta": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 76회: 여몽 형주 습격",
+      "tags": ["novel_chapter", "battle", "deception", "decisive", "territory"]
+    },
+    {
+      "id": "novel_ch77_관우_포로_후_처형",
+      "layer": "historical",
+      "name": "관우 포로 후 처형",
+      "period": {
+        "year": 219,
+        "month": 12
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch76_여몽이_백의도강으로_형주_함락" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": true },
+        { "character_id": "sun_quan", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "형주를 잃고 퇴각하던 관우가 맥성에서 포위당한다. 탈출을 시도하지만 오의 매복에 걸려 부자가 함께 사로잡힌다. 손권이 항복을 권유하나 관우는 '옥은 깨질지언정 온전한 기와가 되지는 않겠다'며 거절한다. 결국 부자가 함께 처형된다.",
+        "flavor": "맥성의 달빛 아래, 의의 칼이 꺾이다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "guan_yu", "value": { "cause": "executed", "killer": "sun_quan" } },
+        { "type": "relationship_change", "target": "liu_bei", "value": { "towards": "sun_quan", "delta": -50 } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "morale", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 77회: 관우 포획 및 처형",
+      "tags": ["novel_chapter", "character_death", "decisive", "tragedy"]
+    },
+    {
+      "id": "novel_ch77_관우의_혼령_출현",
+      "layer": "historical",
+      "name": "관우의 혼령 출현",
+      "period": {
+        "year": 220,
+        "month": 1
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch77_관우_포로_후_처형" }
+          }
+        ],
+        "priority": 40
+      },
+      "participants": [
+        { "character_id": "guan_yu", "role": "protagonist", "required": false },
+        { "character_id": "lu_meng", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "관우가 죽은 뒤, 그의 혼령이 떠돈다는 소문이 형주 일대에 퍼진다. 여몽이 연회 중에 갑자기 '관운장이 여기 있다!'고 외치며 피를 토하고 쓰러진다. 며칠 뒤 여몽도 세상을 떠나니, 사람들은 관우의 원혼이 복수한 것이라 수군거린다.",
+        "flavor": "산 자도 죽은 자도, 형주의 원한에서 벗어나지 못하다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "lu_meng", "value": { "cause": "illness" } },
+        { "type": "stat_change", "target": "wu", "value": { "stat": "morale", "delta": -10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 77회: 관우 포획 및 처형",
+      "tags": ["novel_chapter", "supernatural", "character_death"]
+    },
+    {
+      "id": "novel_ch78_조조가_화타_처형",
+      "layer": "historical",
+      "name": "조조가 화타 처형",
+      "period": {
+        "year": 220,
+        "month": 1
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "hua_tuo" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "hua_tuo", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "두통에 시달리는 조조가 명의 화타를 불러들인다. 화타는 두개골을 열어 풍연을 제거해야 한다고 진단하지만, 조조는 '내 머리를 열겠다고? 나를 죽이려는 것이냐'며 화타를 투옥시킨다. 천하의 명의가 옥중에서 의서를 전하려 하나 거절당하고, 끝내 처형된다.",
+        "flavor": "의심이 명의의 칼보다 날카로웠다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "hua_tuo", "value": { "cause": "executed", "killer": "cao_cao" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 78회: 화타 처형, 조조 사망",
+      "tags": ["novel_chapter", "character_death", "political"]
+    },
+    {
+      "id": "novel_ch78_조조_사망",
+      "layer": "historical",
+      "name": "조조 사망",
+      "period": {
+        "year": 220,
+        "month": 3
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch78_조조가_화타_처형" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "cao_pi", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "화타를 죽인 뒤 조조의 두통은 더욱 악화된다. 낙양에서 병세가 위독해지자 후사를 정리하고, 아들 조비에게 위왕의 자리를 넘긴다. '천하의 영웅은 사군과 조조뿐'이라 말하던 난세의 간웅이, 66세의 나이로 숨을 거둔다.",
+        "flavor": "난세의 간웅, 마침내 눈을 감다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cao_cao", "value": { "cause": "illness" } },
+        { "type": "stat_change", "target": "wei", "value": { "stat": "stability", "delta": -20 } },
+        { "type": "unlock_event", "target": "novel_ch79_조비와_조식의_갈등", "value": true }
+      ],
+      "choices": [],
+      "historical_basis": "연의 78회: 화타 처형, 조조 사망",
+      "tags": ["novel_chapter", "character_death", "milestone", "era_end"]
+    },
+    {
+      "id": "novel_ch79_조비와_조식의_갈등",
+      "layer": "historical",
+      "name": "조비와 조식의 갈등",
+      "period": {
+        "year": 220,
+        "month": 4
+      },
+      "location": "ye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_pi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch78_조조_사망" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "cao_pi", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조조 사후, 위왕을 계승한 조비가 문학에 뛰어난 아우 조식을 경계한다. 조식이 장례에 늦게 도착한 것을 빌미로 처단하려 하지만, 어머니 변태후의 간절한 만류에 우선 유배로 마무리한다.",
+        "flavor": "형제의 피가 왕좌를 적시려 하다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "cao_pi", "value": { "towards": "cao_zhi", "delta": -30 } },
+        { "type": "stat_change", "target": "wei", "value": { "stat": "stability", "delta": -5 } }
+      ],
+      "choices": [
+        {
+          "id": "spare_cao_zhi",
+          "text": "조식을 용서하고 영지로 보낸다",
+          "effects": [
+            { "type": "relationship_change", "target": "cao_pi", "value": { "towards": "cao_zhi", "delta": 10 } },
+            { "type": "stat_change", "target": "wei", "value": { "stat": "stability", "delta": 5 } }
+          ]
+        },
+        {
+          "id": "punish_cao_zhi",
+          "text": "조식의 관직을 박탈하고 유폐시킨다",
+          "effects": [
+            { "type": "stat_change", "target": "cao_pi", "value": { "stat": "authority", "delta": 5 } },
+            { "type": "stat_change", "target": "wei", "value": { "stat": "stability", "delta": -5 } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 79회: 조비 형제간 다툼",
+      "tags": ["novel_chapter", "political", "family_conflict"]
+    },
+    {
+      "id": "novel_ch79_칠보시",
+      "layer": "historical",
+      "name": "칠보시",
+      "period": {
+        "year": 220,
+        "month": 4
+      },
+      "location": "ye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_pi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch79_조비와_조식의_갈등" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "cao_pi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조비가 조식에게 일곱 걸음 안에 시를 짓지 못하면 죽이겠다고 명한다. 조식이 걸음을 옮기며 읊조린다. '콩대를 태워 콩을 삶으니, 콩이 솥 안에서 울며 말하네. 본래 한 뿌리에서 났거늘, 어찌 이리 급하게 볶아대는가.' 조비도 눈물을 흘리며 차마 죽이지 못한다.",
+        "flavor": "본시동근생, 상전하태급 -- 같은 뿌리에서 났건만",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao_pi", "value": { "stat": "fame", "delta": -5 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 79회: 조비 형제간 다툼",
+      "tags": ["novel_chapter", "personal", "literary", "legendary"]
+    },
+    {
+      "id": "novel_ch80_조비_위나라_건국",
+      "layer": "historical",
+      "name": "조비 위나라 건국",
+      "period": {
+        "year": 220,
+        "month": 10
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_pi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch78_조조_사망" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "cao_pi", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조비가 헌제에게 선양을 강요한다. 400년 한실이 마침내 끊기고, 조비가 낙양에서 위나라 황제에 오른다. 국호를 위, 연호를 황초라 하니, 천하삼분의 시대가 본격적으로 열린다.",
+        "flavor": "한실 사백 년의 불이 꺼지다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao_pi", "value": { "stat": "authority", "delta": 50 } },
+        { "type": "territory_change", "target": "luoyang", "value": { "owner": "wei" } },
+        { "type": "custom", "target": "later-han", "value": { "action": "dissolve_faction" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 80회: 조비 선양 받음, 유비 칭제",
+      "tags": ["novel_chapter", "political", "milestone", "era_change", "usurpation"]
+    },
+    {
+      "id": "novel_ch80_유비_촉한_건국_선언",
+      "layer": "historical",
+      "name": "유비 촉한 건국 선언",
+      "period": {
+        "year": 221,
+        "month": 4
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch80_조비_위나라_건국" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "조비가 한실을 찬탈했다는 소식에 유비가 성도에서 황제에 오른다. 국호를 한, 연호를 장무라 하고, 한실의 정통을 잇겠다 선언한다. 제갈량을 승상에 임명하며, 촉한의 기틀을 다진다. 그러나 유비의 마음은 이미 오나라를 향한 복수심으로 가득하다.",
+        "flavor": "한실의 불씨를 서촉에서 다시 피우다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "authority", "delta": 50 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 15 } },
+        { "type": "loyalty_change", "target": "shu", "value": 15 }
+      ],
+      "choices": [],
+      "historical_basis": "연의 80회: 조비 선양 받음, 유비 칭제",
+      "tags": ["novel_chapter", "political", "milestone", "coronation"]
+    },
+    {
+      "id": "novel_ch81_장비_부하에_의해_살해됨",
+      "layer": "historical",
+      "name": "장비 부하에 의해 살해됨",
+      "period": {
+        "year": 221,
+        "month": 6
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_fei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch80_유비_촉한_건국_선언" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhang_fei", "role": "protagonist", "required": true },
+        { "character_id": "liu_bei", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "유비의 동오 원정을 앞두고, 장비는 부하들에게 사흘 안에 백기와 백갑을 만들라고 독촉한다. 불가능한 명령에 분노한 부장 범강과 장달이 술에 취해 잠든 장비를 암살한다. 도원결의의 삼형제 중 또 하나가 쓰러진다.",
+        "flavor": "만인지적의 용맹도, 부하의 원한은 막지 못했다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhang_fei", "value": { "cause": "assassinated", "killer": "fan_jiang" } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "morale", "delta": -20 } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "morale", "delta": -15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 81회: 장비 암살",
+      "tags": ["novel_chapter", "character_death", "tragedy", "assassination"]
+    },
+    {
+      "id": "novel_ch81_유비_동정_결심",
+      "layer": "historical",
+      "name": "유비 동정 결심",
+      "period": {
+        "year": 221,
+        "month": 7
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch81_장비_부하에_의해_살해됨" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch77_관우_포로_후_처형" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "관우에 이어 장비까지 잃은 유비가 오나라를 칠 것을 선언한다. 제갈량과 조운이 간절히 말리지만, 유비는 '형제의 원수를 갚지 못하면 황제의 자리가 무슨 의미냐'며 듣지 않는다. 70만 대군을 이끌고 동쪽으로 출진한다.",
+        "flavor": "이성은 서쪽에 남겨두고, 분노만 동쪽으로 가져가다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": { "enemy": "wu" } },
+        { "type": "army_change", "target": "shu", "value": -50000 }
+      ],
+      "choices": [
+        {
+          "id": "proceed_war",
+          "text": "동오를 친다. 형제의 원수를 반드시 갚는다.",
+          "effects": [
+            { "type": "faction_war", "target": "shu", "value": { "enemy": "wu" } },
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 5 } }
+          ],
+          "next_event": "novel_ch82_유비_대군으로_오나라_침공"
+        },
+        {
+          "id": "accept_counsel",
+          "text": "제갈량의 간언을 받아들여 북벌을 우선한다.",
+          "effects": [
+            { "type": "stat_change", "target": "liu_bei", "value": { "stat": "wisdom", "delta": 10 } },
+            { "type": "loyalty_change", "target": "shu", "value": 5 }
+          ]
+        }
+      ],
+      "historical_basis": "연의 81회: 장비 암살",
+      "tags": ["novel_chapter", "decision", "campaign", "revenge"]
+    },
+    {
+      "id": "novel_ch82_유비_대군으로_오나라_침공",
+      "layer": "historical",
+      "name": "유비 대군으로 오나라 침공",
+      "period": {
+        "year": 222,
+        "month": 1
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch81_유비_동정_결심" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "sun_quan", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "유비가 촉의 정예를 이끌고 장강 상류에서 오나라로 밀어붙인다. 초반에 오의 여러 장수를 연파하며 승승장구한다. 손권이 화친을 구하지만 유비는 일축하고, 형주에서 이릉에 이르는 700리에 연영을 설치한다.",
+        "flavor": "700리 연영 -- 복수의 불길이 장강을 따라 번지다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "army_change", "target": "wu", "value": -15000 },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "fame", "delta": 5 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 82회: 유비 손권 공격",
+      "tags": ["novel_chapter", "battle", "campaign"]
+    },
+    {
+      "id": "novel_ch83_육손의_화공으로_유비_대패",
+      "layer": "historical",
+      "name": "육손의 화공으로 유비 대패",
+      "period": {
+        "year": 222,
+        "month": 6
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_xun" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch82_유비_대군으로_오나라_침공" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "lu_xun", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "이릉대전. 육손이 반 년 넘게 수비에 전념하며 촉군의 예봉을 피한다. 한여름, 유비의 700리 연영이 숲 속에 자리 잡은 것을 확인하고 화공을 명한다. 바람을 타고 번진 불길에 촉의 40여 영채가 순식간에 잿더미가 된다. 유비의 대군이 궤멸한다.",
+        "flavor": "이릉의 불길이 촉의 꿈을 태우다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "army_change", "target": "shu", "value": -60000 },
+        { "type": "stat_change", "target": "lu_xun", "value": { "stat": "fame", "delta": 25 } },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "health", "delta": -30 } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "morale", "delta": -25 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 83회: 이릉대전",
+      "tags": ["novel_chapter", "battle", "decisive", "fire_attack"]
+    },
+    {
+      "id": "novel_ch84_육손이_제갈량의_팔진도에_갇힘",
+      "layer": "historical",
+      "name": "육손이 제갈량의 팔진도에 갇힘",
+      "period": {
+        "year": 222,
+        "month": 7
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_xun" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch83_육손의_화공으로_유비_대패" }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        { "character_id": "lu_xun", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "승세를 몰아 추격하던 육손이 어복포에서 돌무더기 진형에 빠진다. 제갈량이 미리 설치해둔 팔진도로, 안개와 살기가 가득하여 길을 잃는다. 제갈량의 장인 황승언의 인도로 겨우 빠져나온 육손은 추격을 포기한다.",
+        "flavor": "돌무더기 사이에 만고의 지략이 숨 쉬다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 84회: 육손 팔진도에 빠지다",
+      "tags": ["novel_chapter", "tactics", "supernatural", "legendary"]
+    },
+    {
+      "id": "novel_ch84_유비_퇴각",
+      "layer": "historical",
+      "name": "유비 퇴각",
+      "period": {
+        "year": 222,
+        "month": 8
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch83_육손의_화공으로_유비_대패" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "이릉의 참패 후 간신히 탈출한 유비가 백제성으로 물러난다. 대군을 잃고 형제마저 모두 잃은 유비는 체력과 기력이 급격히 쇠한다. 부끄러움에 성도로 돌아가지 못하고 백제성에 머무른다.",
+        "flavor": "백제성에 내리는 비가, 노황제의 눈물인지 하늘의 눈물인지",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "health", "delta": -20 } },
+        { "type": "faction_peace", "target": "shu", "value": { "with": "wu" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 84회: 육손 팔진도에 빠지다",
+      "tags": ["novel_chapter", "retreat", "tragedy"]
+    },
+    {
+      "id": "novel_ch85_제갈량에게_후사_부탁",
+      "layer": "historical",
+      "name": "제갈량에게 후사 부탁",
+      "period": {
+        "year": 223,
+        "month": 4
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch84_유비_퇴각" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": true },
+        { "character_id": "liu_shan", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "백제성에서 유비가 제갈량을 불러 유언을 남긴다. '그대의 재능은 조비의 열 배이니, 반드시 나라를 안정시킬 수 있을 것이오. 만일 아들이 보필할 만하면 보필하고, 보필할 수 없다면 그대가 스스로 취하시오.' 제갈량이 눈물을 흘리며 '신이 고간지절로 보답하겠습니다'라고 맹세한다.",
+        "flavor": "백제성 탁고 -- 한 시대가 다음 시대에게 유산을 남기다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "authority", "delta": 30 } },
+        { "type": "loyalty_change", "target": "zhuge_liang", "value": 30 },
+        { "type": "unlock_event", "target": "novel_ch85_유비_사망", "value": true }
+      ],
+      "choices": [],
+      "historical_basis": "연의 85회: 유비 백제성 탁고",
+      "tags": ["novel_chapter", "political", "legendary", "succession"]
+    },
+    {
+      "id": "novel_ch85_유비_사망",
+      "layer": "historical",
+      "name": "유비 사망",
+      "period": {
+        "year": 223,
+        "month": 6
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch85_제갈량에게_후사_부탁" }
+          }
+        ],
+        "priority": 95
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false },
+        { "character_id": "liu_shan", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량에게 후사를 부탁한 유비가 백제성에서 63세의 나이로 숨을 거둔다. 짚신 장수에서 시작하여 한중왕, 촉한의 황제에까지 이른 파란만장한 생이 막을 내린다. 유선이 뒤를 이어 즉위하고, 제갈량이 모든 국사를 총괄한다.",
+        "flavor": "도원의 약속은 이승에서 끝나지만, 한실의 꿈은 아직 살아 있다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "character_death", "target": "liu_bei", "value": { "cause": "illness" } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "stability", "delta": -25 } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "morale", "delta": -20 } },
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "authority", "delta": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 85회: 유비 백제성 탁고",
+      "tags": ["novel_chapter", "character_death", "milestone", "era_end"]
+    },
+    {
+      "id": "novel_ch86_조비의_오나라_원정_실패",
+      "layer": "historical",
+      "name": "조비의 오나라 원정 실패",
+      "period": {
+        "year": 224
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_pi" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch80_조비_위나라_건국" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "cao_pi", "role": "protagonist", "required": true },
+        { "character_id": "sun_quan", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "조비가 대군을 이끌고 오나라를 정벌하려 하지만, 장강의 천험과 오의 수군 앞에 번번이 좌절한다. 강 위에 갑자기 안개가 끼고 파도가 거세지자, 조비는 '하늘이 남북을 나눈 것이 이 강'이라 탄식하며 회군한다.",
+        "flavor": "장강은 천하를 나누는 하늘의 칼이었다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "army_change", "target": "wei", "value": -10000 },
+        { "type": "stat_change", "target": "cao_pi", "value": { "stat": "fame", "delta": -5 } },
+        { "type": "faction_peace", "target": "wei", "value": { "with": "wu" } }
+      ],
+      "choices": [],
+      "historical_basis": "연의 86회: 조비 오나라 공격 실패",
+      "tags": ["novel_chapter", "battle", "failed_campaign"]
+    },
+    {
+      "id": "novel_ch87_제갈량_남정_시작",
+      "layer": "historical",
+      "name": "제갈량 남정 시작",
+      "period": {
+        "year": 225,
+        "month": 3
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch85_유비_사망" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "유비 사후 남중 일대가 반란을 일으킨다. 제갈량은 북벌을 위해 먼저 후방을 안정시켜야 한다고 판단하고, 직접 남정에 나선다. 마속의 '마음을 공격하는 것이 상책'이라는 진언을 받아들여, 맹획을 무력이 아닌 감화로 복종시키겠다는 전략을 세운다.",
+        "flavor": "남을 치러 가는 길, 진정한 승리는 칼이 아닌 마음에 있다",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": { "enemy": "nanman" } },
+        { "type": "army_change", "target": "shu", "value": -20000 }
+      ],
+      "choices": [
+        {
+          "id": "capture_and_release",
+          "text": "잡아도 풀어주며 마음을 얻는다 (칠종칠금 전략)",
+          "effects": [
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "faction_alliance", "target": "shu", "value": { "with": "nanman" } }
+          ]
+        },
+        {
+          "id": "suppress_by_force",
+          "text": "군사력으로 신속하게 진압한다",
+          "effects": [
+            { "type": "army_change", "target": "nanman", "value": -30000 },
+            { "type": "territory_change", "target": "yizhou", "value": { "owner": "shu" } }
+          ]
+        }
+      ],
+      "historical_basis": "연의 87회: 남만 정벌 시작",
+      "tags": ["novel_chapter", "campaign", "pacification", "southern_expedition"]
+    }
+  ]
+}

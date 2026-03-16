@@ -1,0 +1,312 @@
+{
+  "batch": 11,
+  "chapters": [
+    {
+      "chapter_number": 101,
+      "title_kr": "농상에서 제갈량이 신병을 꾸미고, 검각에서 장합이 계략에 빠지다",
+      "summary_kr": "제갈량이 네 대의 사륜거에 자신의 모습을 꾸며 사마의를 속이고 농상의 밀을 모두 수확한다. 이엄이 군량 조달 실패를 숨기려 거짓 급보를 보내 제갈량을 회군시켰다가 파직되어 서인으로 강등된다. 퇴각하는 촉군을 추격한 장합이 목문도에서 제갈량의 복병에 걸려 난시에 맞아 전사한다.",
+      "key_events": [
+        {
+          "event": "제갈량이 신병(神兵) 위장술로 사마의를 속이고 농상의 밀을 수확",
+          "participants": ["zhuge-liang", "sima-yi"],
+          "year": 231
+        },
+        {
+          "event": "장합이 목문도 매복에 걸려 전사",
+          "participants": ["zhang-he", "zhuge-liang", "wei-yan"],
+          "year": 231
+        },
+        {
+          "event": "이엄이 군량 허위 보고로 파직, 서인으로 강등",
+          "participants": ["li-yan", "zhuge-liang", "liu-shan"],
+          "year": 231
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "사륜거 4대에 자신의 모습을 꾸며 사마의군을 속이고 농상의 밀을 수확함" },
+        { "character": "sima-yi", "action": "신병에 속아 성문을 닫고 3일간 출병하지 못함" },
+        { "character": "zhang-he", "action": "퇴각하는 촉군을 추격하다 목문도에서 난시에 맞아 전사" },
+        { "character": "wei-yan", "action": "관흥과 교대로 장합을 유인하여 목문도까지 끌어들임" },
+        { "character": "li-yan", "action": "군량 미조달을 숨기려 거짓 급보를 보내고, 후주에게 허위 보고하다 발각되어 서인으로 강등" }
+      ]
+    },
+    {
+      "chapter_number": 102,
+      "title_kr": "사마의가 북원과 위교를 점거하고, 제갈량이 목우유마를 만들다",
+      "summary_kr": "제갈량이 다섯 번째 기산 출병을 감행하여 북원 기습과 위수 부교 소각을 시도하나 사마의에게 간파당해 대패한다. 제갈량이 목우유마를 발명하여 검각에서 기산까지 군량을 운송하자, 사마의가 이를 모방하여 제작하지만 제갈량의 계책으로 오히려 위군의 군량을 탈취당한다. 위군의 항복 사기극을 꿰뚫은 제갈량이 반격하여 위군을 크게 무찌른다.",
+      "key_events": [
+        {
+          "event": "제갈량 제5차 기산 출병, 북원 기습 실패",
+          "participants": ["zhuge-liang", "sima-yi"],
+          "year": 234
+        },
+        {
+          "event": "제갈량이 목우유마를 발명하여 군량 운송",
+          "participants": ["zhuge-liang"],
+          "year": 234
+        },
+        {
+          "event": "사마의가 목우유마를 모방 제작했으나 제갈량에게 군량을 탈취당함",
+          "participants": ["sima-yi", "zhuge-liang"],
+          "year": 234
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "목우유마를 발명하고, 위군의 항장 사기극을 간파하여 역이용함" },
+        { "character": "sima-yi", "action": "제갈량의 북원 기습을 예측하고 대비하여 촉군을 격파함" },
+        { "character": "jiang-wei", "action": "북원 기습에 참전하고, 군량 탈환전에서 위군을 격파함" },
+        { "character": "wei-yan", "action": "북원 도하 작전에 참전하고, 군량 탈환전에서 협공함" }
+      ]
+    },
+    {
+      "chapter_number": 103,
+      "title_kr": "상방곡에서 사마의가 곤경에 빠지고, 오장원에서 제갈량이 수명 연장을 빌다",
+      "summary_kr": "제갈량이 상방곡에 사마의 부자를 유인하여 화공으로 섬멸 직전까지 몰아가나 갑작스런 폭우로 불이 꺼져 사마의가 탈출한다. 오장원에 진을 친 제갈량이 여인 옷을 보내 사마의를 도발하지만 사마의는 끝내 출전을 거부하고, 사자를 통해 제갈량의 건강 악화를 간파한다. 제갈량이 수명 연장을 위해 칠성등 양성법을 행하던 중, 위연이 급히 장막에 뛰어들어 주등을 꺼뜨린다.",
+      "key_events": [
+        {
+          "event": "상방곡 화공: 사마의 부자를 화공으로 포위했으나 폭우로 탈출",
+          "participants": ["zhuge-liang", "sima-yi", "wei-yan"],
+          "year": 234
+        },
+        {
+          "event": "제갈량이 사마의에게 여인 옷을 보내 도발하나 거부당함",
+          "participants": ["zhuge-liang", "sima-yi"],
+          "year": 234
+        },
+        {
+          "event": "제갈량의 칠성등 양성법, 위연이 주등을 꺼뜨림",
+          "participants": ["zhuge-liang", "wei-yan", "jiang-wei"],
+          "year": 234
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "상방곡 화공을 설계하고, 오장원에서 칠성등 수명 연장 의식을 거행함" },
+        { "character": "sima-yi", "action": "상방곡에서 구사일생으로 탈출하고, 여인 옷 모욕을 참으며 출전 거부를 관철함" },
+        { "character": "wei-yan", "action": "사마의 유인 임무를 수행하고, 급보를 전하려다 칠성등 주등을 꺼뜨림" },
+        { "character": "jiang-wei", "action": "칠성등 의식을 호위하고, 위연이 주등을 꺼뜨리자 분노하여 검을 뽑음" }
+      ]
+    },
+    {
+      "chapter_number": 104,
+      "title_kr": "큰 별이 떨어지며 한나라 승상이 하늘로 돌아가고, 나무 인형을 보고 위나라 도독이 혼비백산하다",
+      "summary_kr": "제갈량이 후사를 강유에게 맡기고, 마대에게 밀계를 전수하며, 양의에게 퇴각 계획과 위연 반란 대비 금낭을 남긴 뒤 오장원에서 향년 54세로 병사한다. 제갈량의 유언대로 촉군이 발상하지 않고 조용히 퇴각하다가, 추격해 온 사마의가 수레 위의 제갈량 목상을 보고 혼비백산하여 50여 리를 도주한다. 위연은 제갈량 사후 병권을 요구하며 양의에게 항명하고, 잔도를 불태워 귀로를 차단한다.",
+      "key_events": [
+        {
+          "event": "제갈량 오장원에서 병사 (향년 54세, 건흥 12년 8월 23일)",
+          "participants": ["zhuge-liang", "jiang-wei", "yang-yi"],
+          "year": 234
+        },
+        {
+          "event": "사마의가 제갈량 목상을 보고 혼비백산하여 퇴주 ('죽은 제갈량이 산 중달을 쫓다')",
+          "participants": ["sima-yi", "jiang-wei"],
+          "year": 234
+        },
+        {
+          "event": "위연이 잔도를 불태우고 반란을 일으킴",
+          "participants": ["wei-yan", "yang-yi"],
+          "year": 234
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "강유에게 병서를 전수하고, 양의에게 금낭계를 남기며, 마대에게 밀계를 내린 뒤 병사" },
+        { "character": "sima-yi", "action": "오장원을 추격하다 제갈량 목상을 보고 50여 리 도주" },
+        { "character": "jiang-wei", "action": "제갈량의 병서와 연노법을 전수받고 후군을 맡아 퇴각" },
+        { "character": "wei-yan", "action": "양의의 지휘를 거부하고 잔도를 불태워 촉군 귀로를 차단" },
+        { "character": "yang-yi", "action": "제갈량의 유언을 따라 퇴각을 지휘하고 금낭계를 보관" }
+      ]
+    },
+    {
+      "chapter_number": 105,
+      "title_kr": "무후가 미리 금낭계를 남기고, 위주가 승로반을 뜯어오다",
+      "summary_kr": "양의가 제갈량의 금낭계를 펼쳐 위연에게 '누가 감히 나를 죽이랴'를 세 번 외치게 한 뒤, 배후의 마대가 위연을 참수한다. 제갈량의 유해가 성도로 돌아와 정군산에 안장되고, 충무후로 추시되며, 강유와 장완이 후사를 맡는다. 위주 조예는 대규모 토목공사에 빠져 한무제의 승로반을 장안에서 뜯어오고, 군신의 간언을 무시하며 궁실을 짓다가 공손연의 반란 소식을 접한다.",
+      "key_events": [
+        {
+          "event": "마대가 제갈량의 금낭계에 따라 위연을 참수",
+          "participants": ["wei-yan", "ma-dai", "yang-yi"],
+          "year": 234
+        },
+        {
+          "event": "제갈량 정군산에 안장, 충무후 추시",
+          "participants": ["zhuge-liang", "liu-shan"],
+          "year": 234
+        },
+        {
+          "event": "양의가 원망을 품다 서인으로 폄적, 자결",
+          "participants": ["yang-yi"],
+          "year": 235
+        },
+        {
+          "event": "위주 조예의 대규모 토목공사와 승로반 이설",
+          "participants": ["cao-rui"],
+          "year": 235
+        }
+      ],
+      "character_actions": [
+        { "character": "ma-dai", "action": "제갈량의 밀계대로 위연이 세 번 외칠 때 뒤에서 참수" },
+        { "character": "wei-yan", "action": "'누가 감히 나를 죽이랴' 한 번 외치자마자 마대에게 참수당함" },
+        { "character": "yang-yi", "action": "금낭계로 위연을 처치하고 영구를 성도로 호송하나, 이후 불만을 품다 폄적되어 자결" },
+        { "character": "liu-shan", "action": "제갈량을 정군산에 안장하고 충무후로 추시, 장완을 승상으로 임명" },
+        { "character": "cao-rui", "action": "대규모 궁실 건설을 감행하고 장안에서 승로반을 뜯어옴" }
+      ]
+    },
+    {
+      "chapter_number": 106,
+      "title_kr": "공손연이 양평에서 패사하고, 사마의가 꾀병으로 조상을 속이다",
+      "summary_kr": "사마의가 4만 병력으로 요동의 공손연을 정벌하여, 양평성을 포위해 군량을 고갈시킨 뒤 공손연 부자를 참수하고 요동을 평정한다. 위주 조예가 병사하면서 태자 조방과 조상, 사마의에게 탁고하자, 조상이 사마의를 태부로 높여 실권을 빼앗고 하안 등 측근을 등용하여 전횡한다. 사마의가 꾀병을 꾸며 이승의 방문에 귀머거리와 중병 연기를 하여 조상의 경계심을 완전히 풀어놓는다.",
+      "key_events": [
+        {
+          "event": "사마의가 요동 공손연을 정벌하여 양평에서 참수",
+          "participants": ["sima-yi", "gongsun-yuan"],
+          "year": 238
+        },
+        {
+          "event": "위주 조예 붕어, 조방 즉위 (8세), 사마의-조상 공동 보정",
+          "participants": ["cao-rui", "cao-fang", "sima-yi", "cao-shuang"],
+          "year": 239
+        },
+        {
+          "event": "사마의가 꾀병으로 조상 측의 이승을 속임",
+          "participants": ["sima-yi", "cao-shuang"],
+          "year": 249
+        }
+      ],
+      "character_actions": [
+        { "character": "sima-yi", "action": "공손연을 양평에서 격파 후 참수하고, 귀환 후 꾀병으로 조상의 경계를 풀어놓음" },
+        { "character": "cao-rui", "action": "사마의와 조상에게 탁고하고 붕어" },
+        { "character": "cao-shuang", "action": "사마의를 태부로 격상시켜 병권을 빼앗고 하안 등 측근과 전횡" },
+        { "character": "cao-fang", "action": "8세에 즉위하여 조상과 사마의의 보정을 받음" }
+      ]
+    },
+    {
+      "chapter_number": 107,
+      "title_kr": "위주가 사마씨에게 정권을 넘기고, 강유가 우두산에서 패하다",
+      "summary_kr": "사마의가 조상이 고평릉 참배를 위해 출성한 틈을 타 쿠데타를 일으켜 낙양을 장악하고, 조상 삼형제와 하안 등 일당을 삼족멸하여 위나라 실권을 완전히 장악한다. 하후패가 사마씨의 숙청을 피해 촉한에 항복하며, 강유에게 등애와 종회라는 위나라 신진 인재의 위험성을 경고한다. 강유가 하후패와 함께 첫 북벌을 시도하여 곡산에 거점을 구축하나, 곽회와 진태에게 수원을 차단당하고 우두산 전투에서 패퇴한다.",
+      "key_events": [
+        {
+          "event": "사마의의 고평릉 쿠데타: 조상 삼형제와 하안 일당을 삼족멸",
+          "participants": ["sima-yi", "cao-shuang"],
+          "year": 249
+        },
+        {
+          "event": "하후패가 촉한에 항복, 등애와 종회의 존재를 경고",
+          "participants": ["xiahou-ba", "jiang-wei", "deng-ai", "zhong-hui"],
+          "year": 249
+        },
+        {
+          "event": "강유의 제1차 북벌: 곡산-우두산 전투에서 패배",
+          "participants": ["jiang-wei", "xiahou-ba", "guo-huai", "chen-tai"],
+          "year": 249
+        }
+      ],
+      "character_actions": [
+        { "character": "sima-yi", "action": "고평릉 쿠데타를 일으켜 조상 일당을 주멸하고 위나라 실권을 장악" },
+        { "character": "cao-shuang", "action": "환범의 간언을 무시하고 병권을 반납한 뒤 삼족멸당함" },
+        { "character": "xiahou-ba", "action": "사마씨 숙청을 피해 촉한에 항복하고, 등애-종회의 위험성을 경고" },
+        { "character": "jiang-wei", "action": "하후패와 제1차 북벌을 시도하나 우두산에서 패퇴" }
+      ]
+    },
+    {
+      "chapter_number": 108,
+      "title_kr": "정봉이 눈 속에서 단병접전을 벌이고, 손준이 연회에서 밀계를 실행하다",
+      "summary_kr": "사마의가 사망하고 사마사가 대장군으로 위나라 실권을 이어받으며, 오나라에서는 손권이 71세로 붕어하고 손량이 즉위하여 제갈각이 보정한다. 사마사가 오나라를 삼로로 침공하나, 정봉이 눈보라 속에서 단병 기습으로 동흥 전투에서 위군을 대파한다. 승리에 고무된 제갈각이 20만 대군으로 위나라를 역습하나 신성 공략에 실패하고, 귀국 후 전횡하다가 손준과 손량의 밀계로 연회 중 참살되고 삼족이 멸해진다.",
+      "key_events": [
+        {
+          "event": "사마의 사망, 사마사가 대장군으로 계승",
+          "participants": ["sima-yi", "sima-shi"],
+          "year": 251
+        },
+        {
+          "event": "손권 붕어 (71세), 손량 즉위, 제갈각 보정",
+          "participants": ["sun-quan", "sun-liang", "zhuge-ke"],
+          "year": 252
+        },
+        {
+          "event": "정봉의 동흥 대첩: 눈 속 단병접전으로 위군 격파",
+          "participants": ["ding-feng", "zhuge-ke"],
+          "year": 252
+        },
+        {
+          "event": "제갈각이 신성 공략 실패 후 손준에게 참살당함",
+          "participants": ["zhuge-ke", "sun-jun"],
+          "year": 253
+        }
+      ],
+      "character_actions": [
+        { "character": "sima-yi", "action": "병사하며 두 아들에게 국정을 신중히 처리할 것을 유언" },
+        { "character": "sima-shi", "action": "대장군으로 위나라 병권을 계승하고, 오나라 삼로 침공을 명령" },
+        { "character": "sun-quan", "action": "71세로 붕어하며 제갈각에게 후사를 탁고" },
+        { "character": "ding-feng", "action": "3천 병사로 눈보라 속 단병 기습을 감행하여 동흥에서 위군을 대파" },
+        { "character": "zhuge-ke", "action": "동흥 대첩 후 위나라 역습에 나서나 신성에서 실패, 귀국 후 전횡하다 연회에서 참살" }
+      ]
+    },
+    {
+      "chapter_number": 109,
+      "title_kr": "사마씨를 곤경에 빠뜨린 한나라 장수의 기묘한 계략과, 조방을 폐위한 위나라의 과보",
+      "summary_kr": "강유가 20만 대군으로 북벌에 나서 서질을 참살하고 사마소를 철롱산에 포위하여 수원을 끊지만, 곽회가 강족 미당왕을 포섭하여 역이용함으로써 촉군이 대패한다. 강유가 빈 활시위로 곽회를 속이다 곽회의 화살을 낚아채 역사하여 곽회를 사살한다. 사마사가 위나라 조정을 전횡하며 조방의 밀조를 적발한 뒤, 하후현-이풍-장집을 삼족멸하고 장황후를 사사한 뒤 조방을 폐위하고 고귀향공 조모를 옹립한다.",
+      "key_events": [
+        {
+          "event": "강유의 제2차 북벌: 서질 참살, 사마소를 철롱산에 포위",
+          "participants": ["jiang-wei", "sima-zhao", "xu-zhi"],
+          "year": 253
+        },
+        {
+          "event": "곽회가 강족을 포섭하여 촉군을 역습, 강유가 곽회를 사살",
+          "participants": ["jiang-wei", "guo-huai", "chen-tai"],
+          "year": 253
+        },
+        {
+          "event": "사마사가 조방의 밀조를 적발하고, 하후현-이풍-장집을 삼족멸",
+          "participants": ["sima-shi", "cao-fang", "xiahou-xuan"],
+          "year": 254
+        },
+        {
+          "event": "사마사가 조방을 폐위하고 고귀향공 조모를 옹립",
+          "participants": ["sima-shi", "cao-fang", "cao-mao"],
+          "year": 254
+        }
+      ],
+      "character_actions": [
+        { "character": "jiang-wei", "action": "서질을 참살하고 사마소를 철롱산에 포위, 빈 활시위 전술로 곽회를 사살" },
+        { "character": "sima-zhao", "action": "철롱산에 포위되어 전멸 위기에 처했으나 곽회의 구원으로 탈출" },
+        { "character": "guo-huai", "action": "강족 미당왕을 포섭하여 촉군을 역습했으나 강유의 화살에 전사" },
+        { "character": "sima-shi", "action": "조방의 밀조를 적발하여 하후현 등을 삼족멸하고, 조방을 폐위하여 조모를 옹립" },
+        { "character": "cao-fang", "action": "혈서 밀조로 사마사 주살을 도모하나 발각되어 폐위" },
+        { "character": "cao-mao", "action": "고귀향공으로 옹립되어 위나라 제4대 황제로 즉위" }
+      ]
+    },
+    {
+      "chapter_number": 110,
+      "title_kr": "문앙이 단기로 대군을 물리치고, 강유가 배수진으로 대적을 깨뜨리다",
+      "summary_kr": "관구검과 문흠이 사마사의 폐립을 명분으로 회남에서 거병하나, 18세의 문앙이 단기로 수백 위장을 물리치는 맹위를 떨침에도 불구하고 진압되어 관구검은 참수되고 문흠은 오나라로 도주한다. 사마사가 안구 종양 수술 후유증과 전쟁 스트레스로 사망하고, 사마소가 대장군직을 이어받아 위나라 실권을 장악한다. 강유가 도서 전투에서 배수진을 치고 왕경의 7만 위군을 대파하여 만여 급을 참수하는 대승을 거두나, 적도성 공략 중 등애의 의병 전술에 속아 퇴각한다.",
+      "key_events": [
+        {
+          "event": "관구검-문흠의 회남 거병, 문앙의 단기퇴적",
+          "participants": ["wen-yang", "guanqiu-jian", "wen-qin", "sima-shi"],
+          "year": 255
+        },
+        {
+          "event": "사마사 사망, 사마소가 대장군직 계승",
+          "participants": ["sima-shi", "sima-zhao"],
+          "year": 255
+        },
+        {
+          "event": "강유의 도서 대첩: 배수진으로 왕경의 7만 위군 대파",
+          "participants": ["jiang-wei", "wang-jing"],
+          "year": 255
+        },
+        {
+          "event": "등애가 의병 전술로 강유의 적도성 공략을 좌절시킴",
+          "participants": ["deng-ai", "chen-tai", "jiang-wei"],
+          "year": 255
+        }
+      ],
+      "character_actions": [
+        { "character": "wen-yang", "action": "18세의 나이로 단기필마 위군 수백 장수를 수차례 격퇴하여 조자룡에 비견됨" },
+        { "character": "sima-shi", "action": "회남 반란을 진압하나 안구 종양 파열로 사망, 사마소에게 유언" },
+        { "character": "sima-zhao", "action": "형의 유언을 받아 대장군직을 계승하고 위나라 실권 장악" },
+        { "character": "jiang-wei", "action": "도서에서 배수진으로 왕경 7만군을 대파하나, 등애의 의병에 속아 적도성에서 철수" },
+        { "character": "deng-ai", "action": "적도성 주변에 20여 처 의병을 배치하여 강유를 기만, 퇴각시킴" }
+      ]
+    }
+  ]
+}

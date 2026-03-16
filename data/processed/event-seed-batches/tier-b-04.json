@@ -1,0 +1,1363 @@
+{
+  "total": 26,
+  "seeds": [
+    {
+      "id": "hist_216/05/29__",
+      "layer": "historical",
+      "name": "조조 위왕 책봉",
+      "period": {
+        "year": "216/05/29"
+      },
+      "location": "장안",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "216/05/292"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 조조 위왕 책봉",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_217-219__",
+      "layer": "historical",
+      "name": "한중 공방전",
+      "period": {
+        "year": "217-219"
+      },
+      "location": "한중",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "217-2192"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 한중 공방전",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_219/03__",
+      "layer": "historical",
+      "name": "하후연 전사",
+      "period": {
+        "year": "219/03"
+      },
+      "location": "한중",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "219/032"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xiahou_yuan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "xiahou_yuan",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "huang_zhong",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 하후연 전사",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_219/06__",
+      "layer": "historical",
+      "name": "유비 한중 탈환",
+      "period": {
+        "year": "219/06"
+      },
+      "location": "한중",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "219/062"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 유비 한중 탈환",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_219/08__",
+      "layer": "historical",
+      "name": "번성 전투",
+      "period": {
+        "year": "219/08"
+      },
+      "location": "번성",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "219/082"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 번성 전투",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_220/01__",
+      "layer": "historical",
+      "name": "관우 사망",
+      "period": {
+        "year": "220/01"
+      },
+      "location": "형주",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "220/012"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 관우 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_220/03/15__",
+      "layer": "historical",
+      "name": "조조 사망",
+      "period": {
+        "year": "220/03/15"
+      },
+      "location": "낙양",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "220/03/152"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 조조 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_220/12/11__",
+      "layer": "historical",
+      "name": "조비 위나라 건국",
+      "period": {
+        "year": "220/12/11"
+      },
+      "location": "장안",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "220/12/112"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_pi"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "cao_pi",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 조비 위나라 건국",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_221/04/06__",
+      "layer": "historical",
+      "name": "유비 촉한 건국",
+      "period": {
+        "year": "221/04/06"
+      },
+      "location": "성도",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "221/04/062"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 유비 촉한 건국",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_221/08__",
+      "layer": "historical",
+      "name": "이릉대전",
+      "period": {
+        "year": "221/08"
+      },
+      "location": "이릉",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "221/082"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 이릉대전",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_227__",
+      "layer": "historical",
+      "name": "제갈량 출사표 상주",
+      "period": {
+        "year": 227
+      },
+      "location": "촉한 조정",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 226,
+              "max": 229
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 제갈량 출사표 상주",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_228/01__",
+      "layer": "historical",
+      "name": "제갈량 북벌 개시",
+      "period": {
+        "year": "228/01"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "228/012"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 제갈량 북벌 개시",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_228/02__",
+      "layer": "historical",
+      "name": "가정 전투",
+      "period": {
+        "year": "228/02"
+      },
+      "location": "가정",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "228/022"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_he"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 가정 전투",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_228/05__",
+      "layer": "historical",
+      "name": "강유 제갈량 합류",
+      "period": {
+        "year": "228/05"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "228/052"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jiang_wei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 강유 제갈량 합류",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_229__2_",
+      "layer": "historical",
+      "name": "제2차 북벌",
+      "period": {
+        "year": 229
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 228,
+              "max": 231
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 제2차 북벌",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_230__3_",
+      "layer": "historical",
+      "name": "제3차 북벌",
+      "period": {
+        "year": 230
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 229,
+              "max": 232
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 제3차 북벌",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_231/03__",
+      "layer": "historical",
+      "name": "기산 전투",
+      "period": {
+        "year": "231/03"
+      },
+      "location": "기산",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "231/032"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 기산 전투",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_234/03__",
+      "layer": "historical",
+      "name": "오장원 전투 (최후)",
+      "period": {
+        "year": "234/03"
+      },
+      "location": "오장원",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "234/032"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 오장원 전투 (최후)",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_234/10/08__",
+      "layer": "historical",
+      "name": "제갈량 사망",
+      "period": {
+        "year": "234/10/08"
+      },
+      "location": "오장원",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "234/10/082"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 제갈량 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_229/05/23__",
+      "layer": "historical",
+      "name": "손권 오나라 건국",
+      "period": {
+        "year": "229/05/23"
+      },
+      "location": "건업",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "229/05/232"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 손권 오나라 건국",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_252/05/21__",
+      "layer": "historical",
+      "name": "손권 사망",
+      "period": {
+        "year": "252/05/21"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "252/05/212"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 손권 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_260/06/02__",
+      "layer": "historical",
+      "name": "사마소 조모 시해",
+      "period": {
+        "year": "260/06/02"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "260/06/022"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_zhao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_mao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_zhao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_mao",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 사마소 조모 시해",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_263/12/17__",
+      "layer": "historical",
+      "name": "위나라 촉한 정복",
+      "period": {
+        "year": "263/12/17"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "263/12/172"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "deng_ai"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhong_hui"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "deng_ai",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhong_hui",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "liu_shan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 위나라 촉한 정복",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_265/09/06__",
+      "layer": "historical",
+      "name": "사마소 사망",
+      "period": {
+        "year": "265/09/06"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "265/09/062"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_zhao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_zhao",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 사마소 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_266/02/08__",
+      "layer": "historical",
+      "name": "사마염 진나라 건국",
+      "period": {
+        "year": "266/02/08"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "266/02/082"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 사마염 진나라 건국",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_279-280__",
+      "layer": "historical",
+      "name": "진나라의 오나라 정복",
+      "period": {
+        "year": "279-280"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "279-2802"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 진나라의 오나라 정복",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    }
+  ]
+}

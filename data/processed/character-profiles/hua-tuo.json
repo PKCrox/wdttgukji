@@ -1,0 +1,152 @@
+{
+  "name_kr": "화타",
+  "name_en": "Hua Tuo",
+  "name_cn": "華佗",
+  "courtesy_kr": "원화",
+  "courtesy_cn": "元化",
+  "faction": "other",
+  "tier": 1,
+  "role": "신의(神醫)",
+  "stats": null,
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      15,
+      29,
+      75,
+      78
+    ],
+    "chapter_count": 4
+  },
+  "biography": {
+    "namu": {
+      "overview": "후한서(後漢書) [ 본기(本紀) ]1권 「광무제기(光武帝紀)」2권 「명제기(明帝紀)」 3권 「장제기(章帝紀)」 유수유장유달4권 「화제상제기(和帝殤帝紀)」 5권 「안제기(安帝紀)」 6권 「순제충제질제기(順帝沖帝質帝紀)」 유조 · 유륭유호유보 · 유병 · 유찬7권 「환제기(桓帝紀)」 8권 「영제기(霊帝紀)」 9권 「헌제기(獻帝紀)」 유지유굉유협10권 「황후기(皇后紀)」 곽성통 · 음여화 · 명덕황후 · 장덕황후 · 효화황후 · 등수 · 염희 · 양납 · 양여영 · 등맹녀 · 두묘 · 효인황후 · 효령황후 · 영사황후 · 복수 · 조절 · 무양장공주 · 열양공주 · 관도공주 · 육양공주 · 역읍공주 · 획가장공주 · 평양공주 · 융려공주 · 평지공주 · 심수공주 · 평고공주 · 준의공주 · 무안공주 · 노양공주 · 낙평공주 · 성안공주 · 무덕장공주 · 평읍공주 · 음안공주 · 수무장공주 · 공읍공주 · 임영공주 · 문희공주 · 무양장공주 · 관군장공주 · 여양장공주 · 양안장공주 · 영음장공주 · 양적장공주 · 만년공주※ 사마표의 속한서는 志에 해당. 후한서 문서 참고 [ 열전(列傳) ]11권 「유현유분자열전(劉玄劉盆子列傳)」 12권 「왕유장이팽노열전(王劉張李彭盧列傳)」 유현 · 유분자왕창 · 유영 · 방맹 · 장보 · 왕굉 · 이헌 · 팽총 · 노방13권 「외효공손술열전(隗囂公孫述列傳)」 14권 「종실사왕삼후열전(宗室四王三侯列傳)」 외효 · 공손술유연 · 유량 · 유지 · 유흡 · 유사 · 유순 · 유가15권 「이왕등내열전(李王鄧來列傳)」 16권 「등구열전(鄧寇列傳)」 17권 「풍잠가열전(馮岑賈列傳)」 이통 · 왕상 · 등신 · 내흡등우 · 구순풍이 · 잠팽 · 가복18권 「오갑진장전(吳蓋陳臧列傳)」 19권 「경엄열전(耿弇列傳)」 20권 「요기왕패채준열전(銚期王霸祭遵列傳)」 오한 · 갑연 · 진준 · 장궁 경엄요기 · 왕패 · 채준21권 「임이만비유경열전(任李萬邳劉耿列傳)」 22권 「주경왕두마유부견마열전(朱景王杜馬劉傅堅馬列傳)」 임광 · 이충 · 만수 · 비동 · 유식 · 경순주우 · 경단 · 왕량 · 두무 · 마성 · 유륭 · 부준 · 견담 · 마무23권 「두융열전(竇融列傳)」 24권 「마원열전(馬援列傳)」 25권 「탁노위유열전(卓魯魏劉列傳傳)」 두융 두헌마원탁무 · 노공 · 위패 · 유관26권 「복후송채풍조모위열전(伏侯宋蔡馮趙牟韋列傳)」 27권 「선장이왕두곽오승정조열전(宣張二王杜郭吳承鄭趙列傳)」 복담 · 후패 · 송홍송유 · 채무 · 풍근 · 조희 · 모융 · 위표선병 · 장담 · 왕담 · 왕량 · 두림 · 곽단 · 오량 · 승궁 · 정균 · 조전조계28권 「환담풍연열전(桓譚馮衍列傳)」 29권 「신도강포영질운열전(申屠剛鮑永郅惲列傳)」 30권 「소경양후낭의양해열전(蘇竟楊厚郞顗襄楷列傳)」 환담 · 풍연신도강 · 포영포욱 · 질운소경 · 양후 · 낭의 · 양해31권 「곽두공장염왕소양가육열전(郭杜孔張廉王蘇羊賈陸列傳)」 32권 「번굉음식열전(樊宏陰識列傳)」 곽급 · 두시 · 공분 · 장감 · 염범 · 왕당 · 소장 · 양속 · 가종 · 육강범굉 · 음식33권 「주풍우정주열전(朱馮虞鄭周列傳)」 34권 「양통열전(梁統列傳)」 35권 「장조정열전(張曹鄭列傳)」 주부 · 풍방풍석 유희 · 우연 · 정홍 · 주장양통장순 · 조포 · 정현36권 「정범진가장열전(鄭范陳賈張列傳)」 37권 「환영정홍열전(桓榮丁鴻列傳)」 38권 「장법등풍탁양열전(張法滕馮度楊列傳)」 정흥 · 범승 · 진원 · 가규 · 장패환영환언 주총 · 정홍장종 · 법웅 · 등무 · 풍곤 · 도상 · 양선39권 「유조순우강유주조열전(劉趙淳于江劉周趙列傳)」 40권 「반표열전(班彪列傳)」 유평 · 조효 · 순우공 · 강혁 · 유반유개 · 주반 · 조자반표41권 「제오종리송한열전(第五鍾離宋寒列傳)」 42권 「광무십왕열전(光武十王列傳)」 제오륜 · 종리의 · 송균 · 한랑유강 · 유보 · 유강 · 유연 · 유언 · 유영 · 유창 · 유형 · 유형 · 유경43권 「주악하열전(朱樂何列傳)」 44권 「등장서장호열전(鄧張徐張胡列傳)」 45권 「원장한주열전(袁張韓周列傳)」 주휘 · 악회 · 하창등표 · 장우 · 서방 · 장민 · 호광원안 · 장포 · 한릉 · 주영46권 「곽진열전(郭陳列傳)」 47권 「반양열전(班梁列傳)」 곽궁 · 진총반초 · 양근48권 「양이적응곽원서열전(楊李翟應霍爰徐列傳)」 49권 「왕충왕부중장통열전(王充王符仲長統列傳)」 양종 · 이법 · 적포 · 응봉 · 곽서 · 원연 · 서구왕충 · 왕부 · 중장통50권 「명제팔왕열전(明帝八王列傳)」 51권 「이진방진교열전(李陳龐陳橋列傳)」 유건 · 유선 · 유공 · 유당 · 유연 · 유창 · 유병 · 유장이순 · 진선 · 방참시연 · 진귀 · 교현52권 「최인전(崔駰傳)」 53권 「주황서강신도열전(周黃徐姜申屠列傳)」 54권 「양진열전(楊震列傳)」 최인주섭 · 황헌 · 서섭 · 강굉 · 신도반양진사마포 마영55권 「장제팔왕열전(章帝八王列傳)」 유항 · 유전 · 유경 · 유수 · 유개(劉開) · 유숙 · 유만세 · 유승56권 「장왕충진열전(張王种陳列傳)」 57권 「두난유이유사열전(杜欒劉李劉謝列傳)」 58권 「우부갑장열전(虞傅蓋臧列傳)」 장호 · 왕공 · 충고 · 진구두근 · 난파 · 유도 · 이운 · 유유 · 사필 우후 · 부섭 · 갑훈 · 장홍59권 「장형열전(張衡列傳)」 60권 「마융채옹열전(馬融蔡邕列傳)」 61권 「좌주황열전(左周黃傳)」 장형마융 · 채옹 좌웅 · 주거 · 황경62권 「순한종진열전(荀韓鍾陳列傳)」 63권 「이두열전(李杜列傳)」 64권 「오연사노조열전(吳延史盧趙列傳)」 순숙 · 한소 · 종호 · 진식이고이섭 조준 · 두교오우 · 연독 · 사필 · 노식 · 조기65권 「황보장단열전(皇甫張段列)」 66권 「진왕열전(陳王列傳)」 황보규 · 장환 · 단경진번 · 왕윤67권 「당고열전(黨錮列傳)」 유숙 · 이응이수 · 두밀 · 유우 · 위영 · 하복 · 종자 · 파숙 · 범방 · 윤훈윤목 · 채연 · 양척 · 장검 · 진상 · 공욱 · 원강 · 유유 · 가표 · 하옹68권 「곽부허열전(郭符許列傳)」 69권 「두하열전(竇何列傳)」 70권 「정공순열전(鄭孔荀列傳)」 곽태 · 부융 · 허소두무 · 하진정태 · 공융 · 순욱71권 「황보숭주준열전(皇甫嵩朱儁列傳)」 72권 「동탁열전(董卓列傳)」 73권 「유우공손찬도겸열전(劉虞公孫瓚陶謙列傳)」 황보숭 · 주준동탁유우 · 공손찬 · 도겸74권 「원소유표열전(袁紹劉表列傳)」 75권 「유언원술여포열전(劉焉袁術呂布列傳)」 원소 원담 · 원상 · 유표유언 · 원술 · 여포76권 「순리열전(循吏列傳)」 위립 · 임연 · 왕경 · 진원 · 왕환 · 허형 · 맹상 · 제오방 · 유구유광 · 유총 · 구람 · 동회77권 「혹리열전(酷吏列傳)」 동선 · 번엽 · 이장 · 주우 · 황창 · 양구 · 왕길78권 「환자열전(宦者列傳)」 정중 · 채륜 · 손정 · 조등 · 선초 · 서황 · 구원 · 좌관 · 당형 · 후람 · 조절 · 여강 · 장양 · 조충79권 「유림열전(儒林列傳)」 유곤 · 규단 · 임안 · 양정 · 장흥 · 대빙 · 손기 · 구양흡 · 모장 · 송등 · 장순 · 윤민 · 주방 · 공희 · 양륜 · 고후 · 포함 · 위응 · 복공 · 임말 · 경란 · 설한 · 두무 · 소순 · 양인 · 조엽 · 위굉 · 동균 · 정공 · 주택 · 손감 · 종흥 · 견우 · 누망 · 정증 · 장현 · 이육 · 하휴 · 복건 · 영용 · 사해 · 허신 · 채현80권 「문원열전(文苑列傳)」 두독 · 왕륭 · 하공 · 부의 · 황향 · 유의 · 이우 · 소순 · 유진 · 갈공 · 왕일 · 최기 · 변소 · 장승 · 조일 · 유량 · 변양 · 역염 · 후근 · 고표 · 장초 · 예형81권 「독행열전(獨行列傳)」 초현 · 이업 · 유무 · 온서 · 팽수 · 삭로방 · 주가 · 범식 · 이선 · 왕돈 · 장무 · 육속 · 대봉 · 이충 · 무융 · 진중 · 뇌의 · 범염 · 대취 · 조포 · 상허 · 양보 · 유익 · 왕열82권 「방술열전(方術列傳)」 임문공 · 곽헌 · 허양 · 고획 · 왕교 · 사이오 · 양유 · 이남 · 이합 · 단예 · 요부 · 절상 · 번영 · 당단 · 공사목 · 허만 · 조언 · 번지장 · 선양 · 한열 · 동부 · 곽옥 · 화타 · 서등 · 비장방 · 소자훈 · 유근 · 좌자 · 허자훈 · 해노고 · 장초 · 왕진 · 학맹절 · 유화평83권 「일민열전(逸民列傳)」 상장 · 봉맹 · 주당 · 왕패 · 엄광 · 정단 · 양홍 · 고봉 · 대동 · 한강 · 교신 · 대량 · 법진 · 한음노보 · 진류노보 · 방공84권 「열녀전(列女傳)」 환소군 · 조아(趙阿) · 반소 · 이목강 · 조아(曹娥) · 여영 · 마륜 · 조아(趙娥) · 순채 · 조원강 · 숙선웅 · 채염85권 「동이열전(東夷列傳)」 86권 「남만서남이열전(南蠻西南夷列傳)」 87권 「서강전(西羌傳)」 부여국 · 읍루 · 고구려 · 북옥저 · 한 · 왜남만 · 서남이서강88권 「서역전(西域傳)」 구미국 · 우전국 · 서야국 · 자합국 · 덕약국 · 안식국 · 대진국 · 대월지국 · 고부국 · 천축국 · 동리국 · 율과국 · 엄국 · 엄채국 · 사거국 · 소륵국 · 언기국 · 포류국 · 이지국 · 동저미국89권 「남흉노열전(南匈奴列傳)」 90권 「오환선비열전(烏桓鮮卑列傳)」 남흉노오환 · 선비※ 흠정 24사 관련 틀 둘러보기\n\n위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n華陀145년(?)~208년 이전1. 개요2. 정사 삼국지3. 삼국지연의4. 여담5. 미디어 믹스"
+    },
+    "wiki_en": {
+      "summary": "Hua Tuo, courtesy name Yuanhua, was a Chinese physician who lived during the late Eastern Han dynasty. Historical texts, such as Records of the Three Kingdoms and Book of the Later Han record Hua Tuo as having been the first person in China to use anaesthesia during surgery. He used a general anaesthetic combining wine with a herbal concoction called mafeisan. Besides being respected for his expertise in surgery and anaesthesia, Hua Tuo was famous for his abilities in acupuncture, moxibustion, herbal medicine and medical daoyin exercises. He developed the Wuqinxi from studying the movements of the tiger, deer, bear, ape and crane.",
+      "sections": {
+        "Lead": "Hua Tuo (c. 140–208), courtesy name Yuanhua, was a Chinese physician who lived during the late Eastern Han dynasty.[1] Historical texts, such as Records of the Three Kingdoms and Book of the Later Han record Hua Tuo as having been the first person in China to use anaesthesia during surgery. He used a general anaesthetic combining wine with a herbal concoction called mafeisan (麻沸散; literally \"cannabis boil powder\"). Besides being respected for his expertise in surgery and anaesthesia, Hua Tuo was famous for his abilities in acupuncture, moxibustion, herbal medicine and medical daoyin exercises. He developed the Wuqinxi (五禽戲; literally \"Exercise of the Five Animals\") from studying the movements of the tiger, deer, bear, ape and crane.",
+        "Legacy": "The Song dynasty Confucianist scholar Ye Mengde (1077–1148) criticised the Sanguozhi and Houhanshu biographies of Hua Tuo as being mythological. His essay, \"Physicians Cannot Raise the Dead\", repeated the descriptions of Hua Tuo using anaesthesia to perform internal surgery, and reasoned,\n\nThere is absolutely no principle whereby to account for this. That which makes a human being a human being is his physical form, and that which enlivens the physical form is the vital breath. I have no way of knowing whether [Hua Tuo]'s medicine could make a person intoxicated to the point of unconsciousness so that he could endure being cut open and could fully recuperate, causing the damaged portions to grow back together again. However, once the abdomen, back, intestines, or stomach have been cut open and dissected, how can they again be infused with vital breath? Being in such a condition, how could they be brought back to life again? If [Hua Tuo] could do this, then whoever was subjected to the punishment of dismemberment could be brought back to life again and there would no longer be any reason for carrying out royal punishments [involving physical mutilation].[22]\n\nIn later times, a set of 34 paravertebral acupuncture points was named \"Hua Tuo Jiaji\" (華佗夹脊) in his honour. Hua Tuo is considered a shenyi (神醫, \"divine physician\") and is worshipped as a medicinal deity or immortal in some Chinese temples.[citation needed] \"Hua Tuo zaishi\" (華佗再世; \"Hua Tuo reincarnated\") is also an honour... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "華佗（145年—208年），字元化，名旉（讀音同「敷」），沛国谯县（今安徽亳州市）人，东汉末年的方士、醫師。華佗與董奉和張仲景被并稱為“建安三神醫”。与扁鹊、张仲景及李时珍并称中國古代四大名医。\n",
+      "sections": {
+        "Introduction": "華佗（145年—208年），字元化，名旉（讀音同「敷」），沛国谯县（今安徽亳州市）人，东汉末年的方士、醫師。華佗與董奉和張仲景被并稱為“建安三神醫”。与扁鹊、张仲景及李时珍并称中國古代四大名医。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 75,
+      "text": "當於靜處立一標柱，上釘大環，請君侯將臂穿於環中，以繩繫之，然後以被蒙其首。吾用尖刀割開皮肉，直至於骨，刮去骨上箭毒，用藥敷之，以線縫其口，方可無事。但恐君侯懼耳。",
+      "text_length": 81
+    },
+    {
+      "chapter": 78,
+      "text": "大王頭腦疼痛，因患風而起。病根在腦袋中，風涎不能出。枉服湯藥，不可治療。某有一法：先飲麻肺湯，然後用利斧砍開腦袋，取出風涎，方可除根。",
+      "text_length": 67
+    },
+    {
+      "chapter": 78,
+      "text": "大王曾聞關公中毒箭，傷其右臂，某刮骨療毒，關公略無懼色；今大王小可之疾，何多疑焉？",
+      "text_length": 41
+    },
+    {
+      "chapter": 75,
+      "text": "「某聞君侯高義，特來醫治，豈望報乎？」堅辭不受，留藥一帖，以敷瘡口，辭別而去。",
+      "text_length": 39
+    },
+    {
+      "chapter": 75,
+      "text": "「此乃弩箭所傷，其中有烏頭之藥，直透入骨；若不早治，此臂無用矣。",
+      "text_length": 32
+    },
+    {
+      "chapter": 75,
+      "text": "此乃弩箭所傷，其中有烏頭之藥，直透入骨；若不早治，此臂無用矣。",
+      "text_length": 31
+    },
+    {
+      "chapter": 75,
+      "text": "君侯箭瘡雖治，然須愛護。切勿怒氣傷觸。過百日後，平復如舊矣。",
+      "text_length": 30
+    },
+    {
+      "chapter": 78,
+      "text": "『痛者內有鍼十個，癢者內有黑白棋子二枚。",
+      "text_length": 20
+    },
+    {
+      "chapter": 75,
+      "text": "某為醫一生，未嘗見此。君侯真天神也！",
+      "text_length": 18
+    },
+    {
+      "chapter": 75,
+      "text": "某聞君侯高義，特來醫治，豈望報乎？",
+      "text_length": 17
+    },
+    {
+      "chapter": 78,
+      "text": "「大王頭腦疼痛，因患風而起。",
+      "text_length": 14
+    },
+    {
+      "chapter": 75,
+      "text": "某自有治法。但恐君侯懼耳。",
+      "text_length": 13
+    },
+    {
+      "chapter": 75,
+      "text": "「君侯箭瘡雖治，然須愛護。",
+      "text_length": 13
+    },
+    {
+      "chapter": 78,
+      "text": "『此因多食魚腥，故有此毒。",
+      "text_length": 13
+    },
+    {
+      "chapter": 75,
+      "text": "「某為醫一生，未嘗見此。",
+      "text_length": 12
+    },
+    {
+      "chapter": 75,
+      "text": "「某便下手，君侯勿驚。",
+      "text_length": 11
+    },
+    {
+      "chapter": 75,
+      "text": "某便下手，君侯勿驚。",
+      "text_length": 10
+    },
+    {
+      "chapter": 78,
+      "text": "『此飲食不下之病。",
+      "text_length": 9
+    },
+    {
+      "chapter": 15,
+      "text": "「此易事耳。",
+      "text_length": 6
+    },
+    {
+      "chapter": 78,
+      "text": "『內有飛物。",
+      "text_length": 6
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": false,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-16T10:52:17.297Z"
+}

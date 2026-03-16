@@ -1,0 +1,1444 @@
+{
+  "total": 29,
+  "seeds": [
+    {
+      "id": "novel_ch1_황건적의_난_발발",
+      "layer": "historical",
+      "name": "황건적의 난 발발",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_jiao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 1회: 도원결의, 황건적의 난",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 1,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch1_유비_관우_장비_도원결의",
+      "layer": "historical",
+      "name": "유비/관우/장비 도원결의",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_jiao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 1회: 도원결의, 황건적의 난",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 1,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch2_장비가_부패한_관리_폭행",
+      "layer": "historical",
+      "name": "장비가 부패한 관리 폭행",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_ling"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_fei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "emperor_ling",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 2,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch2_후한_영제_사망",
+      "layer": "historical",
+      "name": "후한 영제 사망",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_ling"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_fei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "emperor_ling",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 2,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch2_환관_반란",
+      "layer": "historical",
+      "name": "환관 반란",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_fei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_ling"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_fei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "emperor_ling",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 2,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch3_동탁_권력_장악",
+      "layer": "historical",
+      "name": "동탁 권력 장악",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ding_yuan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 3회: 동탁 권력 장악",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 3,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch3_여포_정원_살해",
+      "layer": "historical",
+      "name": "여포 정원 살해",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ding_yuan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 3회: 동탁 권력 장악",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 3,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch4_소제_폐위",
+      "layer": "historical",
+      "name": "소제 폐위",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_xian"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "emperor_xian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 4회: 태자 폐위, 헌제 옹립",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 4,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch4_헌제_즉위",
+      "layer": "historical",
+      "name": "헌제 즉위",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_xian"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "emperor_xian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 4회: 태자 폐위, 헌제 옹립",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 4,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch5_제후들의_반동탁_연합_결성",
+      "layer": "historical",
+      "name": "제후들의 반동탁 연합 결성",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 5회: 반동탁 연합군 결성",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 5,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch5_호뢰관_전투",
+      "layer": "historical",
+      "name": "호뢰관 전투",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 5회: 반동탁 연합군 결성",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 5,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch6_동탁이_낙양_불태움",
+      "layer": "historical",
+      "name": "동탁이 낙양 불태움",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 6회: 동탁 낙양 방화 및 천도",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 6,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch6_장안으로_천도",
+      "layer": "historical",
+      "name": "장안으로 천도",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 6회: 동탁 낙양 방화 및 천도",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 6,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch7_손견_옥새_획득",
+      "layer": "historical",
+      "name": "손견 옥새 획득",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_jian"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "sun_jian",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "yuan_shu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 7회: 손견의 옥새 획득",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 7,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch8_왕윤이_초선을_이용한_이간계",
+      "layer": "historical",
+      "name": "왕윤이 초선을 이용한 이간계",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "wang_yun"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "diao_chan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "wang_yun",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "diao_chan",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 8회: 왕윤의 미인계 (초선)",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 8,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch9_여포가_동탁_살해",
+      "layer": "historical",
+      "name": "여포가 동탁 살해",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "lu_bu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "wang_yun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 9회: 동탁 암살",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 9,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch10_이각과_곽사가_장안_장악",
+      "layer": "historical",
+      "name": "이각과 곽사가 장안 장악",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "li_jue"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guo_si"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "li_jue",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guo_si",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 10회: 이각/곽사 장안 장악, 조조 서주 공격",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 10,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch10_조조_서주_침공_시작",
+      "layer": "historical",
+      "name": "조조 서주 침공 시작",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "li_jue"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guo_si"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "li_jue",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guo_si",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 10회: 이각/곽사 장안 장악, 조조 서주 공격",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 10,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch11_유비_서주_인수",
+      "layer": "historical",
+      "name": "유비 서주 인수",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "tao_qian"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "tao_qian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 11회: 유비 서주 획득",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 11,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch12_여포의_서주_침공",
+      "layer": "historical",
+      "name": "여포의 서주 침공",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "lu_bu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 12회: 여포 서주 공격",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 12,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch13_이각_곽사_충돌",
+      "layer": "historical",
+      "name": "이각/곽사 충돌",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "li_jue"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guo_si"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "li_jue",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guo_si",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 13회: 조정 내분",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 13,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch14_조조가_헌제를_허도로_옮기고_실권_장악",
+      "layer": "historical",
+      "name": "조조가 헌제를 허도로 옮기고 실권 장악",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_xian"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "emperor_xian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 14회: 조조 헌제를 꼭두각시로",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 14,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch15_손책이_원술에게_옥새_맡기고_병력_확보",
+      "layer": "historical",
+      "name": "손책이 원술에게 옥새 맡기고 병력 확보",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_ce"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "sun_ce",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "yuan_shu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 15회: 손책 옥새로 병력 확보",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 15,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch16_원술의_책략",
+      "layer": "historical",
+      "name": "원술의 책략",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 16회: 원술과 유비/여포의 갈등",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 16,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch17_원술_스스로_황제_칭함",
+      "layer": "historical",
+      "name": "원술 스스로 황제 칭함",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shu",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 17회: 원술 칭제",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 17,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch18_조조와_장수의_전투",
+      "layer": "historical",
+      "name": "조조와 장수의 전투",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_xiu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhang_xiu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "dian_wei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 18회: 조조 vs 장수",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 18,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch19_여포_하비에서_패배_후_처형",
+      "layer": "historical",
+      "name": "여포 하비에서 패배 후 처형",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "lu_bu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "chen_gong",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 19회: 여포 최후 - 하비 전투",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 19,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch20_동승이_조조_암살을_위한_밀서_받음",
+      "layer": "historical",
+      "name": "동승이 조조 암살을 위한 밀서 받음",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_xian"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "emperor_xian",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 20회: 동승의 의대조",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 20,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch21_조조와_유비_술자리에서_영웅_논함",
+      "layer": "historical",
+      "name": "조조와 유비 술자리에서 영웅 논함",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 21회: 조조와 유비의 영웅론",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 21,
+      "_completeness": 0.3
+    }
+  ]
+}

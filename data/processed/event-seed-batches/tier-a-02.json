@@ -1,0 +1,1203 @@
+{
+  "total": 18,
+  "seeds": [
+    {
+      "id": "hist_222_yiling",
+      "layer": "historical",
+      "name": "이릉대전",
+      "period": {
+        "year": 222
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 221,
+              "max": 224
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_liang",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-yiling.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_263_yinping",
+      "layer": "historical",
+      "name": "음평 전투",
+      "period": {
+        "year": 263
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 262,
+              "max": 265
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "deng_ai"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "deng_ai",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: battle-of-yinping.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_190_-against-dong-zhuo",
+      "layer": "historical",
+      "name": "반동탁 연합",
+      "period": {
+        "year": 190
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 189,
+              "max": 192
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_jian"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "yuan_shu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "li_ru",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: coalition-against-dong-zhuo.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_280_-of-eastern-wu",
+      "layer": "historical",
+      "name": "동오 멸망",
+      "period": {
+        "year": 280
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 279,
+              "max": 282
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yan"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: fall-of-eastern-wu.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_263_-of-shu-han",
+      "layer": "historical",
+      "name": "촉한 멸망",
+      "period": {
+        "year": 263
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 262,
+              "max": 265
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhong_hui"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "deng_ai"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_zhao"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhong_hui",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "deng_ai",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sima_zhao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_shan",
+          "role": "antagonist",
+          "required": false
+        },
+        {
+          "character_id": "jiang_wei",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: fall-of-shu-han.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_193_-of-xu-province",
+      "layer": "historical",
+      "name": "서주 대학살",
+      "period": {
+        "year": 193
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 192,
+              "max": 195
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "tao_qian"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "tao_qian",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: massacre-of-xu-province.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_225_-captures-of-meng-huo",
+      "layer": "historical",
+      "name": "칠종칠금",
+      "period": {
+        "year": 225
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 224,
+              "max": 227
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: seven-captures-of-meng-huo.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_263_-of-reunification",
+      "layer": "historical",
+      "name": "삼국통일전쟁",
+      "period": {
+        "year": 263
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 262,
+              "max": 265
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: war-of-reunification.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_184_-turban-rebellion",
+      "layer": "historical",
+      "name": "황건적의 난",
+      "period": {
+        "year": 184
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 183,
+              "max": 186
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_jian"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_jiao",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: yellow-turban-rebellion.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "hist_199_-shao-vs-gongsun-zan",
+      "layer": "historical",
+      "name": "원소 대 공손찬",
+      "period": {
+        "year": 199
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 198,
+              "max": 201
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_zan",
+          "role": "antagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "전투 데이터: yuan-shao-vs-gongsun-zan.json",
+      "tags": [
+        "battle"
+      ],
+      "_source": "battles",
+      "_completeness": 0.6
+    },
+    {
+      "id": "rel_battle_of_jieting",
+      "layer": "relational",
+      "name": "가정 전투",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jiang_wei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_liang",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "ma_su",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "fa_zheng",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 가정 전투",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_selfinjury_scheme",
+      "layer": "relational",
+      "name": "고육지계",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gan_ning"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "kan_ze"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jiang_wei"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "gan_ning",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "kan_ze",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "jiang_wei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_su",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "pang_tong",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 고육지계",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_empty_fort_strategy",
+      "layer": "relational",
+      "name": "공성계",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xun_yu"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "xun_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 공성계",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_battle_of_guandu",
+      "layer": "relational",
+      "name": "관도대전",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jia_xu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guo_jia"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jia_xu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_zan",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "guo_jia",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "ma_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 관도대전",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_short_song_style_duan_ge_xing",
+      "layer": "relational",
+      "name": "단가행",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_pi",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "xiahou_dun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 단가행",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_oath_of_the_peach_garden",
+      "layer": "relational",
+      "name": "도원결의",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "gongsun_zan",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_ce",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 도원결의",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_bronze_sparrow_terrace",
+      "layer": "relational",
+      "name": "동작대",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "da_qiao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "xu_huang"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "lu_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "da_qiao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "xu_huang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_ce",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_xiu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 동작대",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    },
+    {
+      "id": "rel_beauty_trap",
+      "layer": "relational",
+      "name": "미인계",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jia_xu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_tong"
+            }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jia_xu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "pang_tong",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_shangxiang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "에피소드: 미인계",
+      "tags": [
+        "episode"
+      ],
+      "_source": "episodes",
+      "_completeness": 0.5
+    }
+  ]
+}

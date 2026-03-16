@@ -1,0 +1,359 @@
+{
+  "batch": 12,
+  "chapters": [
+    {
+      "chapter_number": 111,
+      "title_kr": "등사재가 지략으로 강백약을 물리치고, 제갈탄이 의로써 사마소를 토벌하다",
+      "summary_kr": "등애가 강유의 다섯 가지 출병 이유를 예측하고 기산에 아홉 개 영채를 세워 방비하니, 강유가 동정으로 우회하여 남안을 치려 하나 무성산과 단곡에서 등애의 매복에 걸려 대패한다. 장억이 목숨을 바쳐 강유를 구출하나 촉군은 큰 피해를 입고, 강유는 제갈량의 가정 전례를 따라 자청하여 강등된다. 한편 사마소가 전횡을 일삼자 회남의 제갈탄이 의병을 일으켜 사마소를 토벌하고, 동오에 원군을 청하여 대전을 준비한다.",
+      "key_events": [
+        {
+          "event": "등애가 기산에 구채를 세워 강유의 북벌을 방비하다",
+          "participants": ["deng-ai", "jiang-wei"],
+          "year": 256
+        },
+        {
+          "event": "강유가 단곡에서 등애의 매복에 대패하다",
+          "participants": ["jiang-wei", "deng-ai"],
+          "year": 256
+        },
+        {
+          "event": "장억이 강유를 구출하고 전사하다",
+          "participants": ["jiang-wei"],
+          "year": 256
+        },
+        {
+          "event": "제갈탄이 회남에서 사마소 토벌의 의병을 일으키다",
+          "participants": ["zhuge-dan", "sima-zhao"],
+          "year": 257
+        }
+      ],
+      "character_actions": [
+        { "character": "deng-ai", "action": "강유의 출병 이유 다섯 가지를 예측하고 기산에 구채를 설치하여 방비하다" },
+        { "character": "jiang-wei", "action": "동정으로 우회하여 남안을 치려 하나 단곡에서 대패하고 후장군으로 자청 강등하다" },
+        { "character": "zhuge-dan", "action": "사마소의 전횡에 분노하여 양주를 점령하고 동오에 원군을 요청하다" },
+        { "character": "sima-zhao", "action": "천하병마대도독을 자칭하고 찬탈의 마음을 품다" }
+      ]
+    },
+    {
+      "chapter_number": 112,
+      "title_kr": "수춘을 구하다 우전이 절개로 죽고, 장성을 취하다 강백약이 혈전하다",
+      "summary_kr": "사마소가 태후와 위주를 대동하고 26만 대군으로 수춘을 포위하니, 종회의 계략으로 오군이 차단되고 성안의 식량이 바닥나 내분이 일어난다. 제갈탄이 문흠을 참살하자 문앙·문호 형제가 위에 투항하고, 결국 수춘이 함락되어 제갈탄은 참수되며 그 부하 수백 명이 끝까지 항복을 거부하고 죽음을 택한다. 오장 우전은 의리를 지켜 전사하고, 강유는 위의 장성을 공격하여 등애의 아들 등충과 격전을 벌이나, 제갈탄 패사 소식에 철군한다.",
+      "key_events": [
+        {
+          "event": "사마소가 26만 대군으로 수춘을 포위하다",
+          "participants": ["sima-zhao", "zhuge-dan"],
+          "year": 258
+        },
+        {
+          "event": "제갈탄이 문흠을 참살하고 문앙·문호가 위에 투항하다",
+          "participants": ["zhuge-dan", "wen-yang"],
+          "year": 258
+        },
+        {
+          "event": "수춘이 함락되고 제갈탄이 참수되다",
+          "participants": ["zhuge-dan", "sima-zhao"],
+          "year": 258
+        },
+        {
+          "event": "오장 우전이 항복을 거부하고 전사하다",
+          "participants": ["yu-quan"],
+          "year": 258
+        },
+        {
+          "event": "강유가 장성을 공격하여 등충과 격전하다",
+          "participants": ["jiang-wei", "deng-ai"],
+          "year": 258
+        }
+      ],
+      "character_actions": [
+        { "character": "sima-zhao", "action": "태후와 위주를 대동하여 수춘을 포위하고 제갈탄을 멸족시키다" },
+        { "character": "zhong-hui", "action": "이간책과 포위전략으로 수춘 함락에 핵심 공헌을 하다" },
+        { "character": "zhuge-dan", "action": "수춘에서 끝까지 항전하다 참수되고 삼족이 멸해지다" },
+        { "character": "jiang-wei", "action": "장성을 공격하여 등충과 교전하나 수춘 패전 소식에 철군하다" },
+        { "character": "deng-ai", "action": "장성에서 수비하며 강유를 견제하다" }
+      ]
+    },
+    {
+      "chapter_number": 113,
+      "title_kr": "정봉이 계책을 세워 손침을 베고, 강유가 진법으로 등애를 격파하다",
+      "summary_kr": "동오에서 손침이 황제 손량을 폐하고 손휴를 옹립하나, 정봉의 계략으로 납일 연회에서 손침이 참수되어 전횡이 종식된다. 강유는 기산에서 등애와 진법 대결을 벌여 장사권지진으로 등애를 포위하고, 사마망이 구원하여 탈출시키나 기산 구채를 모두 빼앗기고 등애는 네 발의 화살을 맞고 대패한다. 그러나 등애와 사마망이 반간계를 써서 환관 황호를 통해 유선에게 참소하니, 강유가 소환당하여 공이 허사가 된다.",
+      "key_events": [
+        {
+          "event": "손침이 손량을 폐하고 손휴를 새 황제로 옹립하다",
+          "participants": ["sun-chen", "sun-xiu"],
+          "year": 258
+        },
+        {
+          "event": "정봉이 계략으로 납일 연회에서 손침을 주살하다",
+          "participants": ["ding-feng", "sun-chen", "sun-xiu"],
+          "year": 258
+        },
+        {
+          "event": "강유가 장사권지진으로 등애를 포위하여 대파하다",
+          "participants": ["jiang-wei", "deng-ai"],
+          "year": 259
+        },
+        {
+          "event": "등애가 반간계를 써서 강유를 소환시키다",
+          "participants": ["deng-ai", "jiang-wei", "liu-shan"],
+          "year": 259
+        }
+      ],
+      "character_actions": [
+        { "character": "ding-feng", "action": "납일 연회에서 손침을 처단하는 계략을 세워 동오의 전횡을 종식시키다" },
+        { "character": "jiang-wei", "action": "팔진법을 변형한 장사권지진으로 등애를 격파하고 기산 구채를 탈취하다" },
+        { "character": "deng-ai", "action": "진법 대결에서 패하고 네 발의 화살을 맞으나, 반간계로 강유를 소환시키다" },
+        { "character": "liu-shan", "action": "환관 황호의 참소를 믿고 강유를 소환하다" }
+      ]
+    },
+    {
+      "chapter_number": 114,
+      "title_kr": "조모가 수레를 몰아 남궐에서 죽고, 강유가 양곡을 버려 위병을 이기다",
+      "summary_kr": "위주 조모가 사마소의 전횡을 참지 못하고 수백 명의 시위병을 이끌고 남궐로 출격하나, 가충의 지시를 받은 성제에게 창으로 찔려 시해당한다. 사마소는 성제를 능지처참하여 책임을 전가하고, 조환(조오)을 새 황제로 세워 허수아비 천자로 삼는다. 강유는 왕관의 거짓 투항을 간파하여 장계취계로 등애를 담산곡에 유인하여 대파하나, 왕관이 촉의 군량을 불태우고 잔도를 훼손하여 완전한 승리를 거두지 못한다.",
+      "key_events": [
+        {
+          "event": "위주 조모가 사마소 토벌을 위해 출격하다가 시해당하다",
+          "participants": ["cao-mao", "sima-zhao", "jia-chong"],
+          "year": 260
+        },
+        {
+          "event": "사마소가 조환을 새 위주로 옹립하다",
+          "participants": ["sima-zhao", "cao-huan"],
+          "year": 260
+        },
+        {
+          "event": "강유가 왕관의 거짓 투항을 역이용하여 등애를 담산곡에서 대파하다",
+          "participants": ["jiang-wei", "deng-ai"],
+          "year": 260
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-mao", "action": "사마소 타도를 위해 수백 명을 이끌고 출격하나 성제의 창에 시해당하다" },
+        { "character": "sima-zhao", "action": "조모 시해 후 성제를 희생양으로 삼고 조환을 허수아비 황제로 세우다" },
+        { "character": "jia-chong", "action": "성제에게 조모를 죽이라고 명하여 시해를 직접 지휘하다" },
+        { "character": "jiang-wei", "action": "왕관의 사기 투항을 간파하고 장계취계로 등애를 담산곡에서 대파하다" },
+        { "character": "deng-ai", "action": "담산곡에서 매복에 걸려 대패하고 갑옷과 투구를 버리고 보병에 섞여 간신히 탈출하다" }
+      ]
+    },
+    {
+      "chapter_number": 115,
+      "title_kr": "조서로 철군하니 후주가 참언을 믿고, 둔전을 핑계 삼아 강유가 화를 피하다",
+      "summary_kr": "강유가 여덟 번째 북벌에 나서 도양을 공격하나 하후패가 등애의 매복에 전사하고, 등애와 사마망의 협공으로 연패한다. 황호가 염우를 앞세워 강유를 교체하려 하고 세 차례 조서로 철군을 명하니, 강유는 울분을 삼키고 물러난다. 극정의 충고를 받아 답중에서 둔전하며 병권을 유지하는 보신책을 택하고, 사마소는 종회를 진서장군으로 삼아 본격적인 촉 정벌을 결의한다.",
+      "key_events": [
+        {
+          "event": "하후패가 도양에서 등애의 매복에 전사하다",
+          "participants": ["xiahou-ba", "deng-ai"],
+          "year": 262
+        },
+        {
+          "event": "황호가 후주에게 참소하여 강유를 소환하다",
+          "participants": ["huang-hao", "liu-shan", "jiang-wei"],
+          "year": 262
+        },
+        {
+          "event": "강유가 답중에서 둔전하며 화를 피하다",
+          "participants": ["jiang-wei"],
+          "year": 262
+        },
+        {
+          "event": "사마소가 종회와 등애에게 촉 정벌을 명하다",
+          "participants": ["sima-zhao", "zhong-hui", "deng-ai"],
+          "year": 263
+        }
+      ],
+      "character_actions": [
+        { "character": "jiang-wei", "action": "여덟 번째 북벌에서 연패한 뒤 극정의 조언으로 답중 둔전을 택하여 화를 피하다" },
+        { "character": "deng-ai", "action": "도양에서 하후패를 격살하고 강유를 연파하다" },
+        { "character": "liu-shan", "action": "황호의 말을 믿고 세 차례 조서를 내려 강유를 소환하다" },
+        { "character": "sima-zhao", "action": "종회를 진서장군으로 임명하고 촉 정벌 계획을 확정하다" },
+        { "character": "zhong-hui", "action": "촉 정벌의 진군도를 미리 작성하여 사마소에게 인정받다" }
+      ]
+    },
+    {
+      "chapter_number": 116,
+      "title_kr": "종회가 병력을 나누어 한중으로 진격하고, 무후가 정군산에 현성하다",
+      "summary_kr": "종회가 10여만 대군을 이끌고 한중으로 진격하여 양평관을 함락하니, 수비장 부첨은 장렬히 자결하고 장서는 배반하여 항복한다. 정군산에서 제갈량의 혼령이 종회에게 현현하여 무고한 백성을 죽이지 말라 당부하니, 종회가 감복하여 보국안민 깃발을 세우고 한중 백성을 위무한다. 강유는 답중에서 등애·왕기·견홍·양흔의 사면 협공을 돌파하고, 제갈서의 차단을 기함곡으로 속여 돌파한 뒤 검각으로 향하는데, 관구에 이미 군대가 자리잡고 있다.",
+      "key_events": [
+        {
+          "event": "종회가 양평관을 함락하고 한중을 장악하다",
+          "participants": ["zhong-hui"],
+          "year": 263
+        },
+        {
+          "event": "부첨이 양평관에서 장렬히 자결하고 장서가 항복하다",
+          "participants": ["fu-qian", "jiang-shu"],
+          "year": 263
+        },
+        {
+          "event": "제갈량의 혼령이 정군산에서 종회에게 현현하다",
+          "participants": ["zhuge-liang", "zhong-hui"],
+          "year": 263
+        },
+        {
+          "event": "강유가 등애의 포위를 돌파하고 검각으로 향하다",
+          "participants": ["jiang-wei", "deng-ai"],
+          "year": 263
+        }
+      ],
+      "character_actions": [
+        { "character": "zhong-hui", "action": "양평관을 함락하고 한중을 장악한 뒤, 무후의 묘에 제사하고 보국안민을 선포하다" },
+        { "character": "fu-qian", "action": "장서의 배반으로 양평관이 함락되자 장렬히 자결하다" },
+        { "character": "jiang-wei", "action": "사면의 포위를 돌파하고 기함곡으로 제갈서를 속여 음평교를 탈출한 뒤 검각으로 향하다" },
+        { "character": "deng-ai", "action": "답중에서 강유를 사면으로 압박하나 놓치다" },
+        { "character": "liu-shan", "action": "무녀의 말을 믿고 강유의 급보를 무시하여 방비를 소홀히 하다" }
+      ]
+    },
+    {
+      "chapter_number": 117,
+      "title_kr": "등사재가 음평을 몰래 넘고, 제갈첨이 면죽에서 전사하다",
+      "summary_kr": "등애가 700리 험로를 돌파하여 음평 소로로 기습 진군하니, 마천령에서 담요로 몸을 감싸 절벽을 굴러 내려가는 결사 행군 끝에 강유성을 함락한다. 제갈첨이 성도의 7만 병력을 이끌고 면죽에서 등애를 맞아 두 차례 대승하나, 세 번째 교전에서 복병에 걸려 전사하고 아들 제갈상도 뒤따라 돌격하여 장렬히 전사한다. 등애는 면죽을 함락하고 성도로 진격하니, 촉한의 운명이 경각에 달린다.",
+      "key_events": [
+        {
+          "event": "등애가 음평 소로 700리를 돌파하여 강유성을 기습 함락하다",
+          "participants": ["deng-ai"],
+          "year": 263
+        },
+        {
+          "event": "제갈첨이 면죽에서 등애와 싸우다 전사하다",
+          "participants": ["zhuge-zhan", "deng-ai"],
+          "year": 263
+        },
+        {
+          "event": "제갈상이 아버지의 원수를 갚겠다며 돌격하여 전사하다",
+          "participants": ["zhuge-shang"],
+          "year": 263
+        },
+        {
+          "event": "등애가 면죽을 함락하고 성도로 진격하다",
+          "participants": ["deng-ai"],
+          "year": 263
+        }
+      ],
+      "character_actions": [
+        { "character": "deng-ai", "action": "음평 소로 700리 험로를 결사 돌파하고 담요에 몸을 감싸 절벽을 굴러내려 강유성을 기습 탈취하다" },
+        { "character": "zhuge-zhan", "action": "성도 7만 군을 이끌고 면죽에서 등애를 두 번 대파하나 세 번째 전투에서 전사하다" },
+        { "character": "zhuge-shang", "action": "아버지 전사 소식에 '살아서 무엇하랴'며 돌격하여 장렬히 전사하다" },
+        { "character": "zhong-hui", "action": "검각에서 강유와 대치하며 등애의 음평 진군을 무모하다고 비웃다" },
+        { "character": "jiang-wei", "action": "검각을 굳게 지키며 종회의 공격을 차단하다" }
+      ]
+    },
+    {
+      "chapter_number": 118,
+      "title_kr": "조묘에 통곡하며 한 왕이 효로 죽고, 서천에 들어가 두 장수가 공을 다투다",
+      "summary_kr": "등애가 성도에 이르자 초주의 건의로 후주 유선이 항복을 결정하니, 북지왕 유심은 처자를 죽이고 소열묘에서 자결하여 한실의 마지막 절개를 보인다. 유선이 옥새를 바치고 촉한이 멸망하자, 강유는 종회에게 거짓 항복하며 한실 부흥의 계책을 품고 종회와 의형제를 맺는다. 등애가 독단적으로 유선을 부풍왕에 봉하겠다는 등의 상주를 올리자 사마소가 반심을 의심하고, 종회도 등애의 반역을 고발하여 두 장수의 공다툼이 시작된다.",
+      "key_events": [
+        {
+          "event": "유선이 촉한의 항복을 결정하고 옥새를 바치다",
+          "participants": ["liu-shan", "deng-ai"],
+          "year": 263
+        },
+        {
+          "event": "북지왕 유심이 처자를 죽이고 소열묘에서 자결하다",
+          "participants": ["liu-chen"],
+          "year": 263
+        },
+        {
+          "event": "촉한이 멸망하다 (호구 28만, 남녀 94만, 갑사 10만 2천)",
+          "participants": ["liu-shan", "deng-ai"],
+          "year": 263
+        },
+        {
+          "event": "강유가 종회에게 거짓 항복하며 한실 부흥을 도모하다",
+          "participants": ["jiang-wei", "zhong-hui"],
+          "year": 264
+        },
+        {
+          "event": "등애가 독단 전행하여 사마소의 의심을 사다",
+          "participants": ["deng-ai", "sima-zhao"],
+          "year": 264
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-shan", "action": "초주의 건의를 받아들여 등애에게 항복하고 촉한을 멸망시키다" },
+        { "character": "liu-chen", "action": "'선제의 기업을 버릴 수 없다'며 처자를 죽이고 소열묘에서 자결하다" },
+        { "character": "jiang-wei", "action": "장병들의 분노를 달래며 종회에게 거짓 항복하고 한실 부흥의 비밀 계책을 꾸미다" },
+        { "character": "deng-ai", "action": "유선을 부풍왕에 봉하고 오 정벌을 건의하는 등 독단 전행하다" },
+        { "character": "zhong-hui", "action": "등애의 반역을 사마소에게 고발하고 등애의 상주문을 위조하다" }
+      ]
+    },
+    {
+      "chapter_number": 119,
+      "title_kr": "거짓 항복의 교묘한 계책이 허사가 되고, 다시 선양을 받아 그대로 본뜨다",
+      "summary_kr": "종회가 위관을 시켜 등애 부자를 감거에 가두고, 강유와 함께 곽태후의 유조를 빙자하여 사마소 토벌을 도모하나, 호열의 밀서가 유출되어 위장들이 반란을 일으킨다. 종회와 강유 모두 난군 속에서 죽고, 등애도 전속에게 참살되어 세 장수가 모두 비참한 최후를 맞는다. 사마소 사후 아들 사마염이 진왕을 잇고, 위주 조환에게 선양을 받아 진(晋)을 건국하니, 위나라가 멸망한다.",
+      "key_events": [
+        {
+          "event": "종회와 강유가 사마소 토벌을 도모하다 실패하다",
+          "participants": ["zhong-hui", "jiang-wei"],
+          "year": 264
+        },
+        {
+          "event": "종회, 강유, 등애가 모두 비명에 죽다",
+          "participants": ["zhong-hui", "jiang-wei", "deng-ai"],
+          "year": 264
+        },
+        {
+          "event": "유선이 낙양으로 이송되어 안락공에 봉해지고 '이곳이 즐거워 촉을 생각하지 않는다'고 말하다",
+          "participants": ["liu-shan", "sima-zhao"],
+          "year": 264
+        },
+        {
+          "event": "사마소가 병사하고 사마염이 진왕을 잇다",
+          "participants": ["sima-zhao", "sima-yan"],
+          "year": 265
+        },
+        {
+          "event": "사마염이 위 조환으로부터 선양을 받아 진(晋)을 건국하다",
+          "participants": ["sima-yan", "cao-huan"],
+          "year": 265
+        }
+      ],
+      "character_actions": [
+        { "character": "jiang-wei", "action": "종회를 이용하여 한실 부흥을 꾀하나 심장통이 발작하여 실패하고, '내 계책이 이루어지지 않으니 천명이로다'며 자결하다" },
+        { "character": "zhong-hui", "action": "등애를 제거하고 반역을 도모하나 위장들의 반란으로 난군 속에 죽다" },
+        { "character": "deng-ai", "action": "감거에서 풀려나다 전속에게 참살당하다" },
+        { "character": "liu-shan", "action": "낙양에서 안락공으로 봉해져 '차간락 불사촉'이라 말하다" },
+        { "character": "sima-yan", "action": "진왕을 이어받고 위 조환에게 선양을 받아 진(晋)을 건국하고 태시 원년을 선포하다" }
+      ]
+    },
+    {
+      "chapter_number": 120,
+      "title_kr": "두예를 천거하니 노장이 새 계책을 바치고, 손호가 항복하니 삼분이 하나로 돌아가다",
+      "summary_kr": "오주 손호가 폭정을 일삼아 충신 40여 명을 살해하고 주색에 빠지니, 양호가 양양에서 덕치로 민심을 얻고 육항과 적국 간의 의리를 나누며 오 정벌의 시기를 기다린다. 양호 사후 유언으로 천거된 두예가 대도독이 되어 20여만 수륙군을 이끌고 오를 공격하고, 왕준이 철쇄와 철추를 불로 녹이며 장강을 돌파한다. 손호가 관을 메고 스스로 결박하여 항복하니 삼국이 진(晋)으로 통일되어, 천하대세 합久必分 分久必合의 이치가 완성된다.",
+      "key_events": [
+        {
+          "event": "양호가 양양에서 덕치로 오와 대치하며 정벌 시기를 기다리다",
+          "participants": ["yang-hu", "lu-kang"],
+          "year": 272
+        },
+        {
+          "event": "양호가 병사하며 두예를 후임으로 천거하다",
+          "participants": ["yang-hu", "du-yu", "sima-yan"],
+          "year": 278
+        },
+        {
+          "event": "진이 20여만 대군으로 오를 정벌하다",
+          "participants": ["du-yu", "wang-jun", "sima-yan"],
+          "year": 280
+        },
+        {
+          "event": "왕준이 철쇄를 불태우고 장강을 돌파하여 석두성에 입성하다",
+          "participants": ["wang-jun"],
+          "year": 280
+        },
+        {
+          "event": "손호가 항복하여 삼국이 진으로 통일되다 (삼분귀일통)",
+          "participants": ["sun-hao", "sima-yan"],
+          "year": 280
+        }
+      ],
+      "character_actions": [
+        { "character": "sun-hao", "action": "폭정과 주색으로 오를 몰락시키고, 최후에 관을 메고 자결하여 왕준에게 항복하다" },
+        { "character": "yang-hu", "action": "양양에서 덕치로 민심을 얻고 육항과 의리를 나누며, 임종 시 두예를 천거하다" },
+        { "character": "lu-kang", "action": "양호의 덕에 감복하여 약을 받아 마시고, 직언으로 손호에게 간하다 병권을 빼앗기다" },
+        { "character": "du-yu", "action": "대도독으로서 '파죽지세'로 오를 공략하고 건업 공략을 지휘하다" },
+        { "character": "wang-jun", "action": "대뗏목과 화거로 철쇄·철추를 무력화하고 장강을 돌파하여 석두성을 함락하다" },
+        { "character": "sima-yan", "action": "양호와 두예의 건의를 따라 오 정벌을 결단하고 삼국 통일을 완성하다" }
+      ]
+    }
+  ]
+}

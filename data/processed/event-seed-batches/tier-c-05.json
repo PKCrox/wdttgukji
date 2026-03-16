@@ -1,0 +1,1341 @@
+{
+  "total": 29,
+  "seeds": [
+    {
+      "id": "novel_ch87_맹획_첫_포획",
+      "layer": "historical",
+      "name": "맹획 첫 포획",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 87회: 남만 정벌 시작",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 87,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch88_맹획_2_3차_포획_및_석방",
+      "layer": "historical",
+      "name": "맹획 2-3차 포획 및 석방",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 88회: 칠종칠금 (2-3차)",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 88,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch89_맹획_4_5차_포획_및_석방",
+      "layer": "historical",
+      "name": "맹획 4-5차 포획 및 석방",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 89회: 칠종칠금 (4-5차)",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 89,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch90_맹획_7차_포획_후_진심_귀순",
+      "layer": "historical",
+      "name": "맹획 7차 포획 후 진심 귀순",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 90회: 칠종칠금 완성, 축융부인",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 90,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch90_축융부인_등장",
+      "layer": "historical",
+      "name": "축융부인 등장",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 90회: 칠종칠금 완성, 축융부인",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 90,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch91_제갈량_출사표_상주",
+      "layer": "historical",
+      "name": "제갈량 출사표 상주",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 91회: 출사표, 제1차 북벌",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 91,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch91_북벌_개시",
+      "layer": "historical",
+      "name": "북벌 개시",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 91회: 출사표, 제1차 북벌",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 91,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch92_강유가_제갈량에_합류",
+      "layer": "historical",
+      "name": "강유가 제갈량에 합류",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "jiang_wei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 92회: 강유 등장",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 92,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch93_제갈량이_왕랑을_말로_죽임",
+      "layer": "historical",
+      "name": "제갈량이 왕랑을 말로 죽임",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 93회: 왕랑과의 설전",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 93,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch94_제갈량_빈_성에서_사마의_물리침",
+      "layer": "historical",
+      "name": "제갈량 빈 성에서 사마의 물리침",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 94회: 공성계 (빈성계)",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 94,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch95_마속의_전략적_실패",
+      "layer": "historical",
+      "name": "마속의 전략적 실패",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 95회: 가정 전투, 마속 실패",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 95,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch95_제갈량_읍참마속",
+      "layer": "historical",
+      "name": "제갈량 읍참마속",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 95회: 가정 전투, 마속 실패",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 95,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch96_마속_군법으로_처형",
+      "layer": "historical",
+      "name": "마속 군법으로 처형",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhao_yun"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhao_yun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 96회: 마속 처형, 조운 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 96,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch96_조운_병사",
+      "layer": "historical",
+      "name": "조운 병사",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhao_yun"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_su",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhao_yun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 96회: 마속 처형, 조운 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 96,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch97_제갈량_2차_북벌_개시",
+      "layer": "historical",
+      "name": "제갈량 2차 북벌 개시",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 97회: 제2차 북벌",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 97,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch98_계속되는_위_촉_공방전",
+      "layer": "historical",
+      "name": "계속되는 위/촉 공방전",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 98회: 3차 북벌",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 98,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch99_계속되는_북벌_전쟁",
+      "layer": "historical",
+      "name": "계속되는 북벌 전쟁",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 99회: 4차 북벌",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 99,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch100_제갈량과_사마의의_치열한_두뇌전",
+      "layer": "historical",
+      "name": "제갈량과 사마의의 치열한 두뇌전",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 100회: 사마의와의 대결",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 100,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch101_장합_전사",
+      "layer": "historical",
+      "name": "장합 전사",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_he"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_he",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 101회: 장합 전사",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 101,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch102_제갈량_목우유마_수레_발명",
+      "layer": "historical",
+      "name": "제갈량 목우유마(수레) 발명",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 102회: 5차 북벌, 목우유마",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 102,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch102_위_촉_공방전_지속",
+      "layer": "historical",
+      "name": "위/촉 공방전 지속",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 102회: 5차 북벌, 목우유마",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 102,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
+      "layer": "historical",
+      "name": "제갈량 상방곡에서 사마의 화공 시도, 비로 실패",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 103회: 상방곡 전투",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 103,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch104_제갈량_별_떨어짐_의식_실패",
+      "layer": "historical",
+      "name": "제갈량 별 떨어짐 의식 실패",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 104,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch104_오장원에서_사망",
+      "layer": "historical",
+      "name": "오장원에서 사망",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 104,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch104_사마의_퇴각_죽은_공명이_산_중달을_쫓다_",
+      "layer": "historical",
+      "name": "사마의 퇴각 (죽은 공명이 산 중달을 쫓다)",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 104,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch105_위연_제갈량_사후_반란",
+      "layer": "historical",
+      "name": "위연 제갈량 사후 반란",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "wei_yan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "wei_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 105회: 위연 반란, 양의와의 대립",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 105,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch105_마대에게_참수됨",
+      "layer": "historical",
+      "name": "마대에게 참수됨",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "wei_yan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "wei_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 105회: 위연 반란, 양의와의 대립",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 105,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch106_공손연_반란_진압",
+      "layer": "historical",
+      "name": "공손연 반란 진압",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_yuan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_yuan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 106회: 사마의 권력 장악",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 106,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch106_사마의_조위_실권_장악",
+      "layer": "historical",
+      "name": "사마의 조위 실권 장악",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_yuan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_yuan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 106회: 사마의 권력 장악",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 106,
+      "_completeness": 0.3
+    }
+  ]
+}

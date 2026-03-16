@@ -1,0 +1,1508 @@
+{
+  "total": 25,
+  "events": [
+    {
+      "id": "novel_ch107_사마의_쿠데타_성공",
+      "layer": "historical",
+      "name": "사마의 쿠데타 성공",
+      "period": {
+        "year": 249
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 248, "max": 251 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_zhao" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_zhao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "사마의가 오랜 칩거 끝에 마침내 칼을 뽑았다. 조상이 천자를 모시고 고평릉에 제사하러 나간 틈을 타, 사마의는 낙양성 무기고를 점거하고 성문을 봉쇄했다. 사마사와 사마소는 각각 군사를 이끌고 궁성을 장악했으며, 조상은 돌아와 보았으나 이미 모든 것이 끝나 있었다. 위나라의 실권은 이로써 사마씨 일가에 넘어갔다.",
+        "flavor": "병든 노인의 탈을 쓴 이리가 마침내 이빨을 드러냈다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "authority", "delta": 40 }
+        },
+        {
+          "type": "character_death",
+          "target": "cao_shuang",
+          "value": "executed"
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "stability", "delta": -15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 107회: 사마사/사마소 권력 계승",
+      "tags": ["novel_chapter", "coup", "politics", "decisive"]
+    },
+    {
+      "id": "novel_ch108_손권_사망",
+      "layer": "historical",
+      "name": "손권 사망",
+      "period": {
+        "year": 252
+      },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 251, "max": 254 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "강동의 벽호 손권이 71세의 나이로 건업에서 눈을 감았다. 적벽에서 조조를 물리치고, 형주를 탈환하며, 이릉에서 유비를 격파한 패업의 주인이었으나, 말년에는 후계 다툼으로 조정이 피로 물들었다. 태자 손량이 즉위하였으나 나이 어려, 제갈각이 보정대신이 되었다.",
+        "flavor": "세 나라를 세운 마지막 군주가 떠나며, 오나라의 쇠락이 시작되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "sun_quan",
+          "value": "natural"
+        },
+        {
+          "type": "stat_change",
+          "target": "wu",
+          "value": { "stat": "leadership_quality", "delta": -30 }
+        },
+        {
+          "type": "resource_change",
+          "target": "wu",
+          "value": { "resource": "stability", "delta": -20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 108회: 손권 사망, 강유 북벌 재개",
+      "tags": ["novel_chapter", "death", "succession"]
+    },
+    {
+      "id": "novel_ch108_강유의_북벌_재개",
+      "layer": "historical",
+      "name": "강유의 북벌 재개",
+      "period": {
+        "year": 253
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 252, "max": 255 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          },
+          {
+            "type": "faction_controls",
+            "params": { "faction_id": "shu", "city_id": "hanzhong" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "제갈무후의 유지를 이어받은 강유가 다시 한중에서 군사를 일으켰다. 스승의 뜻을 완수하겠다는 일념으로 위나라 국경을 향해 진군했으나, 촉한 조정 안에서는 이미 염전 기운이 퍼지고 있었다. 비용은 국고를 갉아먹고, 백성은 지쳐갔지만, 강유의 눈에는 오직 장안만이 보였다.",
+        "flavor": "승상의 그림자를 좇는 장수의 북벌은 집념인가, 집착인가.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "gold", "delta": -200 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "manpower", "delta": -5000 }
+        },
+        {
+          "type": "faction_war",
+          "target": "shu",
+          "value": { "enemy": "wei" }
+        }
+      ],
+      "choices": [
+        {
+          "id": "ch108_support_northern",
+          "text": "전력을 다해 북벌을 지원한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "jiang_wei",
+              "value": { "delta": 20000 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "gold", "delta": -300 }
+            }
+          ]
+        },
+        {
+          "id": "ch108_limit_expedition",
+          "text": "제한된 병력만 내보낸다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "jiang_wei",
+              "value": { "delta": 8000 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "stability", "delta": 5 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 108회: 손권 사망, 강유 북벌 재개",
+      "tags": ["novel_chapter", "war", "northern_expedition"]
+    },
+    {
+      "id": "novel_ch109_사마사_조방_폐위",
+      "layer": "historical",
+      "name": "사마사 조방 폐위",
+      "period": {
+        "year": 254
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 253, "max": 256 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_fang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch107_사마의_쿠데타_성공" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        {
+          "character_id": "cao_fang",
+          "role": "target",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "사마사가 위나라 황제 조방을 폐위했다. 조방이 밀조를 내려 사마씨를 제거하려 했으나, 음모가 사전에 발각되었다. 사마사는 태후에게 폐위 조서를 올리게 하고, 조방을 제왕(齊王)으로 강등한 뒤 조모를 새 황제로 세웠다. 천자는 이제 사마씨 손 위의 꼭두각시에 불과했다.",
+        "flavor": "옥좌의 주인이 바뀌어도, 진정한 권력의 소재지는 변하지 않았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_leave",
+          "target": "cao_fang",
+          "value": "deposed"
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "legitimacy", "delta": -20 }
+        },
+        {
+          "type": "stat_change",
+          "target": "wei",
+          "value": { "stat": "sima_influence", "delta": 20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 109회: 사마사 폐제",
+      "tags": ["novel_chapter", "politics", "deposition"]
+    },
+    {
+      "id": "novel_ch110_관구검과_문흠의_반란",
+      "layer": "historical",
+      "name": "관구검과 문흠의 반란",
+      "period": {
+        "year": 255
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 254, "max": 257 }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch109_사마사_조방_폐위" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [],
+      "narrative": {
+        "text": "사마사의 전횡에 분개한 관구검과 문흠이 수춘에서 군사를 일으켰다. 조씨 황실의 충신을 자처한 이들은 사마사 토벌을 기치로 내걸었으나, 사마사는 대군을 이끌고 신속히 진압했다. 관구검은 도주 중 살해당하고, 문흠은 오나라로 망명했다. 이 반란 진압 과정에서 사마사는 눈의 혹이 터져 중상을 입었고, 곧 사망했다.",
+        "flavor": "충의의 깃발은 펄럭였으나, 시대의 바람은 이미 사마씨를 향해 불고 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "stability", "delta": -10 }
+        },
+        {
+          "type": "character_death",
+          "target": "guanqiu_jian",
+          "value": "killed_in_battle"
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 110회: 관구검/문흠 반란",
+      "tags": ["novel_chapter", "rebellion", "politics"]
+    },
+    {
+      "id": "novel_ch111_등애와_강유의_대결_시작",
+      "layer": "historical",
+      "name": "등애와 강유의 대결 시작",
+      "period": {
+        "year": 256
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 255, "max": 258 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "deng_ai" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "deng_ai",
+          "role": "antagonist",
+          "required": true
+        },
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "강유의 북벌군 앞에 새로운 적수가 나타났다. 둔전에서 잔뼈가 굵은 등애는 농서 지형을 훤히 꿰뚫고 있었고, 강유의 우회 전략을 번번이 간파했다. 단곡에서 두 장수가 처음 격돌했을 때, 강유는 이 말 더듬는 사내가 자신의 운명을 결정지을 자임을 아직 몰랐다.",
+        "flavor": "둔전병 출신의 말더듬이가 제갈량의 제자를 상대한다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "deng_ai",
+          "value": { "stat": "fame", "delta": 15 }
+        },
+        {
+          "type": "faction_war",
+          "target": "shu",
+          "value": { "enemy": "wei" }
+        }
+      ],
+      "choices": [
+        {
+          "id": "ch111_flank_longxi",
+          "text": "농서를 우회하여 기습한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "jiang_wei",
+              "value": { "stat": "tactics_risk", "delta": 15 }
+            }
+          ]
+        },
+        {
+          "id": "ch111_direct_assault",
+          "text": "정면으로 등애와 맞선다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "jiang_wei",
+              "value": { "delta": -3000 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 111회: 등애 vs 강유",
+      "tags": ["novel_chapter", "battle", "rivalry"]
+    },
+    {
+      "id": "novel_ch112_제갈탄의_반위_반란",
+      "layer": "historical",
+      "name": "제갈탄의 반위 반란",
+      "period": {
+        "year": 257
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 256, "max": 259 }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch110_관구검과_문흠의_반란" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [],
+      "narrative": {
+        "text": "수춘에서 또다시 반기가 올랐다. 제갈탄은 오나라의 원군을 끌어들여 사마소에 대항했다. 관구검의 실패를 보고도 일어선 것은, 사마씨의 찬탈이 임박했음을 직감했기 때문이었다. 그러나 사마소는 26만 대군으로 수춘을 포위했고, 오나라 원군은 포위망을 뚫지 못했다. 1년 간의 농성 끝에 성은 함락되고, 제갈탄은 참수되었다.",
+        "flavor": "회남 삼반(三叛)의 마지막 불꽃이 꺼지며, 위나라 조정에서 사마씨를 막을 자는 사라졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "zhuge_dan",
+          "value": "executed"
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "stability", "delta": 10 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_zhao",
+          "value": { "stat": "authority", "delta": 15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 112회: 제갈탄 반란",
+      "tags": ["novel_chapter", "rebellion", "siege"]
+    },
+    {
+      "id": "novel_ch113_강유의_계속되는_전쟁",
+      "layer": "historical",
+      "name": "강유의 계속되는 전쟁",
+      "period": {
+        "year": 258
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 257, "max": 260 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "강유는 쉼 없이 위나라 국경을 두드렸다. 제갈탄의 반란으로 위나라 동쪽이 혼란한 틈을 노려 출병했으나, 등애의 방어선은 좀처럼 뚫리지 않았다. 촉한의 국력은 전쟁이 반복될수록 소진되어갔고, 성도 조정에서는 비장군(費禕) 사후 강유를 견제할 자가 없어 불안만 커졌다.",
+        "flavor": "열한 번의 출사(出師)가 남긴 것은 깃발뿐이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "gold", "delta": -150 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "manpower", "delta": -3000 }
+        },
+        {
+          "type": "stat_change",
+          "target": "shu",
+          "value": { "stat": "war_weariness", "delta": 15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 113회: 강유 북벌 지속",
+      "tags": ["novel_chapter", "war", "northern_expedition"]
+    },
+    {
+      "id": "novel_ch114_사마소가_조모_시해",
+      "layer": "historical",
+      "name": "사마소가 조모 시해",
+      "period": {
+        "year": 260
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 259, "max": 262 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_zhao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_mao" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "sima_zhao",
+          "role": "antagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_mao",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "\"사마소의 마음을 길 가는 사람도 다 안다.\" 젊은 황제 조모는 이 말을 남기고, 직접 칼을 들어 사마소를 치러 나섰다. 그러나 충성스러운 신하는 남아있지 않았고, 성제가의 부하 성찬이 황제를 찔러 시해했다. 사마소는 성찬에게 죄를 뒤집어씌우고, 조환을 허수아비 황제로 올렸다.",
+        "flavor": "옥좌에서 내려와 칼을 든 천자. 그의 용기만이 이 시대에 남은 유일한 충절이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "cao_mao",
+          "value": "assassinated"
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "legitimacy", "delta": -30 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_zhao",
+          "value": { "stat": "authority", "delta": 20 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_zhao",
+          "value": { "stat": "infamy", "delta": 25 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 114회: 조모 시해",
+      "tags": ["novel_chapter", "regicide", "politics", "decisive"]
+    },
+    {
+      "id": "novel_ch114_강유_전쟁_지속",
+      "layer": "historical",
+      "name": "강유 전쟁 지속",
+      "period": {
+        "year": 260
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 259, "max": 262 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "deng_ai" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "deng_ai",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "위나라에서 황제가 시해당하는 와중에도 강유의 북벌은 멈추지 않았다. 그러나 등애는 농서의 요지마다 보루를 쌓고 촉군의 보급선을 끊는 전법으로 맞섰다. 강유가 진군하면 등애가 막고, 강유가 물러서면 등애가 추격했다. 두 장수의 공방은 교착 상태에 빠졌다.",
+        "flavor": "창과 방패의 끝없는 대결. 그러나 시간은 방패 쪽 편이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "manpower", "delta": -2000 }
+        },
+        {
+          "type": "stat_change",
+          "target": "jiang_wei",
+          "value": { "stat": "fatigue", "delta": 10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 114회: 조모 시해",
+      "tags": ["novel_chapter", "war", "northern_expedition"]
+    },
+    {
+      "id": "novel_ch115_강유_퇴각",
+      "layer": "historical",
+      "name": "강유 퇴각",
+      "period": {
+        "year": 262
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 261, "max": 264 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "후주 유선이 환관 황호의 말을 듣고 강유를 소환하는 조서를 내렸다. 강유는 분하고 억울했으나 군령을 거스를 수 없어 답중으로 물러나 둔전했다. 수십 년간 피로써 지킨 전선이 이렇게 무너지고 있었다. 강유는 후주에게 상소하여 양안관과 음평관의 방비를 강화할 것을 간청했으나, 황호가 이를 묵살했다.",
+        "flavor": "충신의 상소는 환관의 휴지통에 묻혔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "jiang_wei",
+          "value": { "stat": "morale", "delta": -20 }
+        },
+        {
+          "type": "stat_change",
+          "target": "shu",
+          "value": { "stat": "border_defense", "delta": -25 }
+        }
+      ],
+      "choices": [
+        {
+          "id": "ch115_fortify_passes",
+          "text": "독단으로 관문 방비를 강화한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "shu",
+              "value": { "stat": "border_defense", "delta": 15 }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "jiang_wei",
+              "value": { "faction": "shu", "delta": -10 }
+            }
+          ]
+        },
+        {
+          "id": "ch115_obey_recall",
+          "text": "조서에 순종하여 답중에 머문다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "shu",
+              "value": { "stat": "border_defense", "delta": -10 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 115회: 강유 퇴각, 황호의 방해",
+      "tags": ["novel_chapter", "politics", "retreat"]
+    },
+    {
+      "id": "novel_ch115_환관_황호의_간섭으로_약화",
+      "layer": "historical",
+      "name": "환관 황호의 간섭으로 약화",
+      "period": {
+        "year": 262
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 261, "max": 264 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          },
+          {
+            "type": "faction_controls",
+            "params": { "faction_id": "shu", "city_id": "chengdu" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "target",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "환관 황호가 후주 유선의 총애를 등에 업고 촉한 조정을 농단했다. 강유를 경원하고 우장군 염우를 끌어들여 강유를 대체하려 했다. 성도의 귀족들은 향락에 빠지고, 승상부의 규율은 무너진 지 오래였다. 제갈공명이 이 모습을 보았다면 출사표의 먹이 마르기도 전에 통곡했으리라.",
+        "flavor": "나라를 좀먹는 것은 바깥의 적이 아니라, 안의 좀이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "stability", "delta": -20 }
+        },
+        {
+          "type": "stat_change",
+          "target": "shu",
+          "value": { "stat": "corruption", "delta": 25 }
+        },
+        {
+          "type": "stat_change",
+          "target": "shu",
+          "value": { "stat": "military_readiness", "delta": -15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 115회: 강유 퇴각, 황호의 방해",
+      "tags": ["novel_chapter", "politics", "corruption", "decline"]
+    },
+    {
+      "id": "novel_ch116_등애와_종회의_촉한_침공_시작",
+      "layer": "historical",
+      "name": "등애와 종회의 촉한 침공 시작",
+      "period": {
+        "year": 263
+      },
+      "location": "changan",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 262, "max": 265 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "deng_ai" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhong_hui" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_zhao" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        {
+          "character_id": "deng_ai",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhong_hui",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_zhao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "사마소가 마침내 촉한 정벌의 칼을 뽑았다. 종회에게 10만, 등애에게 3만을 주어 두 갈래로 진군시켰다. 종회는 한중을 정면으로 압박하고, 등애는 음평의 험로를 통해 촉한의 뒤를 찌르는 대담한 작전이었다. 삼국 시대의 종막이 열리고 있었다.",
+        "flavor": "18만 대군이 촉으로 향한다. 공명이 지키지 못한 것을, 강유 혼자 막을 수 있을까.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "faction_war",
+          "target": "wei",
+          "value": { "enemy": "shu" }
+        },
+        {
+          "type": "army_change",
+          "target": "wei",
+          "value": { "delta": -180000 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 116회: 등애/종회 촉 침공",
+      "tags": ["novel_chapter", "war", "invasion", "decisive"]
+    },
+    {
+      "id": "novel_ch116_한중_함락",
+      "layer": "historical",
+      "name": "한중 함락",
+      "period": {
+        "year": 263
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 262, "max": 265 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhong_hui" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch116_등애와_종회의_촉한_침공_시작" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "zhong_hui",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "jiang_wei",
+          "role": "antagonist",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "종회의 대군이 한중으로 쏟아져 들어왔다. 강유가 답중에 있는 사이, 한중의 수비군은 종회의 압도적인 병력 앞에 속절없이 무너졌다. 양안관과 악성이 차례로 함락되었고, 촉한이 40년간 지켜온 북방 방벽이 하룻밤 사이에 사라졌다. 강유는 급히 군사를 돌려 검각에서 종회를 저지하려 했다.",
+        "flavor": "한중은 촉한의 방패였다. 방패가 깨지는 소리가 성도까지 들렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "territory_change",
+          "target": "hanzhong",
+          "value": { "from": "shu", "to": "wei" }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "stability", "delta": -25 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 116회: 등애/종회 촉 침공",
+      "tags": ["novel_chapter", "battle", "territory_loss"]
+    },
+    {
+      "id": "novel_ch117_제갈첨_면죽에서_전사",
+      "layer": "historical",
+      "name": "제갈첨 면죽에서 전사",
+      "period": {
+        "year": 263
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 263, "max": 265 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_shan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch116_한중_함락" }
+          }
+        ],
+        "priority": 75
+      },
+      "participants": [
+        {
+          "character_id": "liu_shan",
+          "role": "observer",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "등애가 음평 700리 험로를 넘어 강유의 배후로 나타났다. 촉한 최후의 방어선 면죽관에서 제갈공명의 아들 제갈첨과 손자 제갈상이 결사 항전했다. 아버지의 이름에 부끄럽지 않게 싸우겠다며 돌격한 제갈첨은 장렬히 전사했고, 제갈상 또한 적진에 뛰어들어 목숨을 바쳤다. 제갈씨 삼대의 충절이 면죽 들판에서 끝났다.",
+        "flavor": "아버지가 다하지 못한 충을 아들이 피로 갚았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "zhuge_zhan",
+          "value": "killed_in_battle"
+        },
+        {
+          "type": "character_death",
+          "target": "zhuge_shang",
+          "value": "killed_in_battle"
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "stability", "delta": -30 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 117회: 제갈첨 전사, 유선 항복",
+      "tags": ["novel_chapter", "battle", "heroic_death", "last_stand"]
+    },
+    {
+      "id": "novel_ch117_유선_항복_결정",
+      "layer": "historical",
+      "name": "유선 항복 결정",
+      "period": {
+        "year": 263
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 263, "max": 265 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_shan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch117_제갈첨_면죽에서_전사" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        {
+          "character_id": "liu_shan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "면죽이 뚫리자 성도에는 공포가 퍼졌다. 후주 유선은 광록대부 초주의 진언을 받아들여 자진 투항을 결정했다. 스스로 몸을 묶고 관을 끌고 성 밖으로 나가 등애에게 항복했다. 유비가 반평생을 바쳐 세운 촉한이 42년 만에 멸망했다. 검각에서 종회와 대치 중이던 강유는 이 소식을 듣고 칼로 바위를 내리쳤다.",
+        "flavor": "선주의 나라, 승상의 꿈, 오호대장군의 피가 서린 사직이 무릎을 꿇었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "territory_change",
+          "target": "chengdu",
+          "value": { "from": "shu", "to": "wei" }
+        },
+        {
+          "type": "territory_change",
+          "target": "yizhou",
+          "value": { "from": "shu", "to": "wei" }
+        },
+        {
+          "type": "custom",
+          "target": "shu",
+          "value": { "action": "faction_destroyed" }
+        }
+      ],
+      "choices": [
+        {
+          "id": "ch117_surrender",
+          "text": "항복하여 백성의 목숨을 살린다",
+          "effects": [
+            {
+              "type": "custom",
+              "target": "shu",
+              "value": { "action": "faction_destroyed", "method": "surrender" }
+            }
+          ]
+        },
+        {
+          "id": "ch117_fight_to_death",
+          "text": "성도를 사수하며 끝까지 싸운다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": { "delta": -10000 }
+            },
+            {
+              "type": "resource_change",
+              "target": "chengdu",
+              "value": { "resource": "population", "delta": -50000 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 117회: 제갈첨 전사, 유선 항복",
+      "tags": ["novel_chapter", "surrender", "fall_of_shu", "decisive"]
+    },
+    {
+      "id": "novel_ch117_유심_자결",
+      "layer": "historical",
+      "name": "유심 자결",
+      "period": {
+        "year": 263
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 263, "max": 265 }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch117_유선_항복_결정" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        {
+          "character_id": "liu_shan",
+          "role": "observer",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "후주가 항복을 결정하자, 다섯째 아들 북지왕 유심은 통곡하며 말했다. \"선제께서 창업하신 기업을 하루아침에 남에게 넘기다니, 차라리 싸우다 죽는 것이 옳습니다.\" 아무도 듣지 않자 유심은 소혜묘(昭烈廟)에 들어가 선주 유비의 위패 앞에서 처자와 함께 자결했다. 항복한 아버지 곁에서, 아들만이 한실의 마지막 긍지를 지켰다.",
+        "flavor": "항복한 군주의 아들이 죽음으로 남긴 것은, 사라져가는 나라의 마지막 체면이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "liu_chen",
+          "value": "suicide"
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 117회: 제갈첨 전사, 유선 항복",
+      "tags": ["novel_chapter", "death", "loyalty", "tragedy"]
+    },
+    {
+      "id": "novel_ch118_강유가_종회와_함께_반란_시도_실패",
+      "layer": "historical",
+      "name": "강유가 종회와 함께 반란 시도, 실패",
+      "period": {
+        "year": 264
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 263, "max": 266 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhong_hui" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch117_유선_항복_결정" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhong_hui",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "촉한이 멸망한 후에도 강유는 포기하지 않았다. 종회의 야심을 간파한 강유는 그를 부추겨 사마소에게 반기를 들도록 했다. 종회는 등애를 모함하여 가두고 스스로 촉 땅의 왕이 되려 했다. 강유의 진짜 목적은 종회를 이용해 위나라를 혼란에 빠뜨리고 촉한을 부흥시키는 것이었다. 그러나 종회의 부하 장수들이 반발하여 성도에서 병란이 일어났다.",
+        "flavor": "멸망한 나라를 되살리려는 마지막 도박. 주사위는 이미 던져졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "chengdu",
+          "value": { "resource": "stability", "delta": -30 }
+        },
+        {
+          "type": "character_death",
+          "target": "zhong_hui",
+          "value": "killed_in_battle"
+        },
+        {
+          "type": "character_death",
+          "target": "deng_ai",
+          "value": "executed"
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 118회: 강유의 마지막 반란",
+      "tags": ["novel_chapter", "rebellion", "intrigue", "desperate"]
+    },
+    {
+      "id": "novel_ch118_강유_자결",
+      "layer": "historical",
+      "name": "강유 자결",
+      "period": {
+        "year": 264
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 263, "max": 266 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch118_강유가_종회와_함께_반란_시도_실패" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        {
+          "character_id": "jiang_wei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "반란이 실패로 돌아가자, 강유는 하늘을 우러러 외쳤다. \"내 계책이 이루어지지 않은 것은 하늘의 뜻이로다!\" 그리고 스스로 목을 찔러 자결했다. 제갈공명에게 병법을 배운 이래 30년간 북벌에 바친 일생이 성도 한복판에서 끝났다. 후세 사람들은 그의 충절을 기리면서도, 무리한 전쟁이 촉한의 멸망을 앞당겼다고 한탄했다.",
+        "flavor": "승상의 유지를 가슴에 품은 채, 마지막 전사가 쓰러졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "jiang_wei",
+          "value": "suicide"
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 118회: 강유의 마지막 반란",
+      "tags": ["novel_chapter", "death", "heroic_death", "loyalty", "tragedy"]
+    },
+    {
+      "id": "novel_ch119_사마염_조환에게서_선양",
+      "layer": "historical",
+      "name": "사마염 조환에게서 선양",
+      "period": {
+        "year": 265
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 264, "max": 267 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch117_유선_항복_결정" }
+          }
+        ],
+        "priority": 85
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "사마소 사후, 그 아들 사마염이 진왕(晉王)의 자리를 물려받았다. 위나라 원제 조환에게 선양을 강요하여, 마침내 위나라의 국호를 진(晉)으로 바꾸었다. 조비가 한나라에서 빼앗은 옥좌를, 이제 사마씨가 조씨에게서 빼앗았다. 45년 전 조비의 선양극이 그대로 재현된 것이다.",
+        "flavor": "빼앗은 자가 빼앗기다. 역사의 수레바퀴는 정확히 한 바퀴를 돌았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "custom",
+          "target": "wei",
+          "value": { "action": "faction_transformed", "new_faction": "western-jin" }
+        },
+        {
+          "type": "character_leave",
+          "target": "cao_huan",
+          "value": "abdicated"
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_yan",
+          "value": { "stat": "authority", "delta": 50 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 119회: 사마염 진나라 건국",
+      "tags": ["novel_chapter", "abdication", "politics", "dynasty_change", "decisive"]
+    },
+    {
+      "id": "novel_ch119_진나라_건국",
+      "layer": "historical",
+      "name": "진나라 건국",
+      "period": {
+        "year": 265
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 265, "max": 267 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch119_사마염_조환에게서_선양" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "사마염이 낙양에서 천자의 자리에 올라 국호를 진(晉), 연호를 태시(泰始)로 선포했다. 사마의의 쿠데타에서 시작된 사마씨 삼대의 야망이 마침내 결실을 맺었다. 위나라 관료들은 새 왕조에 고개를 숙였고, 백성들은 또 하나의 천명이 바뀌었음을 담담히 받아들였다. 이제 남은 것은 강남의 오나라 하나뿐이었다.",
+        "flavor": "사마씨 삼대가 이루어낸 것을, 조씨 삼대가 잃었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "custom",
+          "target": "western-jin",
+          "value": { "action": "faction_established" }
+        },
+        {
+          "type": "resource_change",
+          "target": "western-jin",
+          "value": { "resource": "legitimacy", "delta": 30 }
+        },
+        {
+          "type": "resource_change",
+          "target": "western-jin",
+          "value": { "resource": "stability", "delta": 20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 119회: 사마염 진나라 건국",
+      "tags": ["novel_chapter", "dynasty_founding", "politics", "decisive"]
+    },
+    {
+      "id": "novel_ch120_양호와_육항의_대결과_우정",
+      "layer": "historical",
+      "name": "양호와 육항의 대결과 우정",
+      "period": {
+        "year": 272
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 270, "max": 275 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "observer",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "진나라 양호와 오나라 육항이 형주 국경을 사이에 두고 대치했다. 두 장수는 적이었으나 서로의 인품을 존경했다. 양호가 보낸 약을 육항은 의심 없이 마셨고, 육항이 보낸 술을 양호도 거리낌 없이 마셨다. 이 기이한 우정은 난세의 마지막 아름다움이었다. 육항이 먼저 세상을 떠나자, 양호는 오나라 정벌을 위제에게 간언했다.",
+        "flavor": "적장에게 약을 보내고 술을 건네는 것. 전장 위에 핀 마지막 의리.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "wu",
+          "value": { "stat": "border_defense", "delta": -15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
+      "tags": ["novel_chapter", "diplomacy", "rivalry", "honor"]
+    },
+    {
+      "id": "novel_ch120_진나라_오나라_정복",
+      "layer": "historical",
+      "name": "진나라 오나라 정복",
+      "period": {
+        "year": 280
+      },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 279, "max": 281 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          }
+        ],
+        "priority": 90
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "진 무제 사마염이 6로 대군을 일으켜 오나라를 정벌했다. 왕준이 이끄는 수군이 장강을 따라 동쪽으로 질주하며, 오나라가 장강에 설치한 철쇄를 불태워 끊었다. 오나라 말제 손호는 폭정으로 민심을 잃은 지 오래였고, 장수들은 싸우지 않고 항복했다. 건업이 함락되고, 손호는 면박하고 관을 끌며 항복했다.",
+        "flavor": "장강의 철쇄도 왕조의 운을 붙잡지 못했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "territory_change",
+          "target": "jianye",
+          "value": { "from": "wu", "to": "western-jin" }
+        },
+        {
+          "type": "territory_change",
+          "target": "yangzhou",
+          "value": { "from": "wu", "to": "western-jin" }
+        },
+        {
+          "type": "territory_change",
+          "target": "jingzhou",
+          "value": { "from": "wu", "to": "western-jin" }
+        },
+        {
+          "type": "territory_change",
+          "target": "jiaozhou",
+          "value": { "from": "wu", "to": "western-jin" }
+        },
+        {
+          "type": "custom",
+          "target": "wu",
+          "value": { "action": "faction_destroyed" }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
+      "tags": ["novel_chapter", "war", "conquest", "fall_of_wu", "decisive"]
+    },
+    {
+      "id": "novel_ch120_삼국_통일",
+      "layer": "historical",
+      "name": "삼국 통일",
+      "period": {
+        "year": 280
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 280, "max": 282 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch120_진나라_오나라_정복" }
+          }
+        ],
+        "priority": 95
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "오나라가 멸망하며 삼국 시대가 막을 내렸다. 후한 말 황건적의 난 이래 96년, 위촉오 정립 이래 60년 간의 전란이 끝나고, 천하는 다시 하나가 되었다. 진 무제가 낙양에서 천하 통일을 선포하자, 백성들은 환호 속에 눈물을 흘렸다. 그러나 이 태평도 오래가지 못할 것이었다.",
+        "flavor": "합쳐진 것은 반드시 나뉘고, 나뉜 것은 반드시 합쳐진다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "custom",
+          "target": "western-jin",
+          "value": { "action": "unification_complete" }
+        },
+        {
+          "type": "resource_change",
+          "target": "western-jin",
+          "value": { "resource": "stability", "delta": 30 }
+        },
+        {
+          "type": "resource_change",
+          "target": "western-jin",
+          "value": { "resource": "legitimacy", "delta": 50 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
+      "tags": ["novel_chapter", "unification", "decisive", "endgame"]
+    },
+    {
+      "id": "novel_ch120_천하대세에_대한_최종_성찰",
+      "layer": "historical",
+      "name": "천하대세에 대한 최종 성찰",
+      "period": {
+        "year": 280
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch120_삼국_통일" }
+          }
+        ],
+        "priority": 100
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "observer",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "천하대세 합이필분(合而必分), 분이필합(分而必合). 황건의 난으로 시작된 난세는 수많은 영웅호걸을 낳았다. 조조의 간웅, 유비의 인덕, 손권의 노련함, 제갈량의 지모, 관우의 의기. 그 모든 영웅이 떠나고 난 뒤, 천하를 거머쥔 것은 참았던 자 사마의의 후손이었다. 역사는 묻는다. 영웅의 시대가 끝나고 남은 것은 무엇인가.",
+        "flavor": "한 편의 긴 꿈이 끝났다. 영웅들의 자리에 무덤만이 남았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        {
+          "type": "custom",
+          "target": "western-jin",
+          "value": { "action": "game_epilogue" }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
+      "tags": ["novel_chapter", "epilogue", "reflection"]
+    }
+  ]
+}

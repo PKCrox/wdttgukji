@@ -1,0 +1,1379 @@
+{
+  "total": 29,
+  "seeds": [
+    {
+      "id": "novel_ch46_제갈량이_안개_속에서_화살_수집",
+      "layer": "historical",
+      "name": "제갈량이 안개 속에서 화살 수집",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_su"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_su",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 46회: 제갈량 초선차전",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 46,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch47_황개의_거짓_항복_계획",
+      "layer": "historical",
+      "name": "황개의 거짓 항복 계획",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "huang_gai"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "huang_gai",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhou_yu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 47회: 황개 고육지계",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 47,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch48_방통이_조조에게_배를_묶도록_유도",
+      "layer": "historical",
+      "name": "방통이 조조에게 배를 묶도록 유도",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_tong"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "pang_tong",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 48회: 연환계, 방통의 쇄선 전략",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 48,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch49_제갈량_동남풍_기원",
+      "layer": "historical",
+      "name": "제갈량 동남풍 기원",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhou_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "huang_gai",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 49회: 적벽대전 - 화공",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 49,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch49_황개_화공으로_조조_함대_전소",
+      "layer": "historical",
+      "name": "황개 화공으로 조조 함대 전소",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhou_yu",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "huang_gai",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 49회: 적벽대전 - 화공",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 49,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch50_관우가_의리로_조조를_놓아줌",
+      "layer": "historical",
+      "name": "관우가 의리로 조조를 놓아줌",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "guan_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 50회: 관우 화용도에서 조조 석방",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 50,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch51_주유_남군_공략_시도",
+      "layer": "historical",
+      "name": "주유 남군 공략 시도",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhou_yu",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 51회: 주유 남군 공격",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 51,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch52_유비_형주_남부_4군_점령",
+      "layer": "historical",
+      "name": "유비 형주 남부 4군 점령",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 52회: 유비 남방 영토 점령",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 52,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch53_황충과_위연이_유비에게_귀순",
+      "layer": "historical",
+      "name": "황충과 위연이 유비에게 귀순",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "huang_zhong"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "wei_yan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "huang_zhong",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "wei_yan",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 53회: 황충/위연 유비 합류",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 53,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch54_유비가_손상향과_결혼",
+      "layer": "historical",
+      "name": "유비가 손상향과 결혼",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_shangxiang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_shangxiang",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 54회: 유비 손권 여동생과 혼인",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 54,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch55_주유의_대촉_전략_실패",
+      "layer": "historical",
+      "name": "주유의 대촉 전략 실패",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhou_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 55회: 주유와 제갈량 대결 지속",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 55,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch56_제갈량이_주유를_분노케_함",
+      "layer": "historical",
+      "name": "제갈량이 주유를 분노케 함",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhou_yu",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 56회: 주유 삼기주유 (1차)",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 56,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch57_주유_사망",
+      "layer": "historical",
+      "name": "주유 사망",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_tong"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhou_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "pang_tong",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 57회: 주유 사망, 방통 유비 합류",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 57,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch57_방통이_유비에게_합류",
+      "layer": "historical",
+      "name": "방통이 유비에게 합류",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhou_yu"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_tong"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhou_yu",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "pang_tong",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 57회: 주유 사망, 방통 유비 합류",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 57,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch58_마등_처형",
+      "layer": "historical",
+      "name": "마등 처형",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_teng"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_teng",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 58회: 마등 사망, 마초 거병",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 58,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch58_마초_복수의_거병",
+      "layer": "historical",
+      "name": "마초 복수의 거병",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_teng"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_teng",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_chao",
+          "role": "supporter",
+          "required": false
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 58회: 마등 사망, 마초 거병",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 58,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch59_마초의_맹렬한_공격",
+      "layer": "historical",
+      "name": "마초의 맹렬한 공격",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_chao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 59회: 마초 vs 조조 동관 전투",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 59,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch59_조조_수염_자르고_도주",
+      "layer": "historical",
+      "name": "조조 수염 자르고 도주",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_chao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 59회: 마초 vs 조조 동관 전투",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 59,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch60_유비_유장의_초청으로_입촉",
+      "layer": "historical",
+      "name": "유비 유장의 초청으로 입촉",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_zhang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_zhang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 60회: 유비 익주 침공 시작",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 60,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch61_손상향이_유선을_데려가려_시도",
+      "layer": "historical",
+      "name": "손상향이 유선을 데려가려 시도",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_shangxiang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhao_yun"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "sun_shangxiang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "zhao_yun",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 61회: 손상향 오로 돌아감",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 61,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch62_유비와_유장_전쟁_시작",
+      "layer": "historical",
+      "name": "유비와 유장 전쟁 시작",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_zhang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_zhang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 62회: 유비 촉 정복 전투",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 62,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch63_방통_화살에_전사",
+      "layer": "historical",
+      "name": "방통 화살에 전사",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "pang_tong"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "pang_tong",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 63회: 방통 낙봉파에서 전사",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 63,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch64_마초_유비에_귀순",
+      "layer": "historical",
+      "name": "마초 유비에 귀순",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_chao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "ma_chao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_bei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 64회: 마초 유비에 합류",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 64,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch65_유장_항복",
+      "layer": "historical",
+      "name": "유장 항복",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_zhang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_zhang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 65회: 유장 항복, 성도 함락",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 65,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch65_유비_익주_차지",
+      "layer": "historical",
+      "name": "유비 익주 차지",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_zhang"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_zhang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 65회: 유장 항복, 성도 함락",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 65,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch66_장료_합비에서_손권군_대파",
+      "layer": "historical",
+      "name": "장료 합비에서 손권군 대파",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_liao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_liao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 66회: 합비 전투 - 장료의 활약",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 66,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch67_합비_공방전_지속",
+      "layer": "historical",
+      "name": "합비 공방전 지속",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_liao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "zhang_liao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sun_quan",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 67회: 합비 전투 계속",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 67,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch68_도사_좌자의_기행",
+      "layer": "historical",
+      "name": "도사 좌자의 기행",
+      "period": {},
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 68회: 좌자 조조를 놀리다",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 68,
+      "_completeness": 0.3
+    },
+    {
+      "id": "novel_ch69_관로의_예언과_초자연적_사건",
+      "layer": "historical",
+      "name": "관로의 예언과 초자연적 사건",
+      "period": {},
+      "trigger": {
+        "conditions": [],
+        "priority": 50
+      },
+      "participants": [],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연의 69회: 관로의 점술",
+      "tags": [
+        "novel_chapter"
+      ],
+      "_source": "romance-chapters",
+      "_chapter": 69,
+      "_completeness": 0.3
+    }
+  ]
+}

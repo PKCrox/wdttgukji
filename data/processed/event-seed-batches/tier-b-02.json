@@ -1,0 +1,1569 @@
+{
+  "total": 29,
+  "seeds": [
+    {
+      "id": "hist_222_battle_of_yiling",
+      "layer": "historical",
+      "name": "이릉대전 - 육손의 화공",
+      "period": {
+        "year": 222
+      },
+      "location": "이릉",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 221,
+              "max": 224
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_xun"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_xun",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 이릉대전 - 육손의 화공",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "유비의 동정 실패. 촉한 국력 크게 약화"
+    },
+    {
+      "id": "hist_223_liu_bei_dies_liu_shan_succeeds",
+      "layer": "historical",
+      "name": "유비 사망, 유선 즉위",
+      "period": {
+        "year": 223
+      },
+      "location": "백제성",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 222,
+              "max": 225
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_shan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "liu_shan",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhuge_liang",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 유비 사망, 유선 즉위",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "세대교체. 제갈량에게 탁고"
+    },
+    {
+      "id": "hist_225_seven_captures_of_meng_huo",
+      "layer": "historical",
+      "name": "칠종칠금 - 남만 정벌",
+      "period": {
+        "year": 225
+      },
+      "location": "남중",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 224,
+              "max": 227
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "meng_huo"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "meng_huo",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 칠종칠금 - 남만 정벌",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "남방 안정화"
+    },
+    {
+      "id": "hist_227_first_northern_expedition_chu_shi_biao",
+      "layer": "historical",
+      "name": "제갈량 제1차 북벌, 출사표",
+      "period": {
+        "year": 227
+      },
+      "location": "한중→위",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 226,
+              "max": 229
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 제갈량 제1차 북벌, 출사표",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "출사표 제출. 북벌 시작"
+    },
+    {
+      "id": "hist_228_battle_of_jieting_ma_su_defeated",
+      "layer": "historical",
+      "name": "가정 전투 - 마속 패배",
+      "period": {
+        "year": 228
+      },
+      "location": "가정",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 227,
+              "max": 230
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "ma_su"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "ma_su",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 가정 전투 - 마속 패배",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "마속의 전략적 실패, 제갈량의 읍참마속"
+    },
+    {
+      "id": "hist_228_second_northern_expedition",
+      "layer": "historical",
+      "name": "제2차 북벌",
+      "period": {
+        "year": 228
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 227,
+              "max": 230
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 제2차 북벌",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "위나라의 저항"
+    },
+    {
+      "id": "hist_229_sun_quan_founds_eastern_wu",
+      "layer": "historical",
+      "name": "손권 오나라 건국, 삼국정립 완성",
+      "period": {
+        "year": 229
+      },
+      "location": "건업",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 228,
+              "max": 231
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 손권 오나라 건국, 삼국정립 완성",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "삼국 체제 완성"
+    },
+    {
+      "id": "hist_231_fourth_northern_expedition_zhang_he_dies",
+      "layer": "historical",
+      "name": "제4차 북벌, 장합 전사",
+      "period": {
+        "year": 231
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 230,
+              "max": 233
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhang_he",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 제4차 북벌, 장합 전사",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "전략적 교착 상태"
+    },
+    {
+      "id": "hist_234_battle_of_wuzhang_plains_zhuge_liang_die",
+      "layer": "historical",
+      "name": "오장원 전투 - 제갈량 사망",
+      "period": {
+        "year": 234
+      },
+      "location": "오장원",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 233,
+              "max": 236
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhuge_liang"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhuge_liang",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "sima_yi",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 오장원 전투 - 제갈량 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "제갈량의 최후. 촉한 북벌의 사실상 종료"
+    },
+    {
+      "id": "hist_238_gongsun_yuan_s_rebellion_suppressed",
+      "layer": "historical",
+      "name": "공손연 반란 진압",
+      "period": {
+        "year": 238
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 237,
+              "max": 240
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_yuan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "gongsun_yuan",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 공손연 반란 진압",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "위나라 동방 국경 안정"
+    },
+    {
+      "id": "hist_239_cao_rui_dies",
+      "layer": "historical",
+      "name": "조예(위 명제) 사망",
+      "period": {
+        "year": 239
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 238,
+              "max": 241
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_rui"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_fang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "cao_rui",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_fang",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 조예(위 명제) 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "어린 황제 조방에게 양위"
+    },
+    {
+      "id": "hist_249_gaoping_ling_incident_sima_yi_seizes_pow",
+      "layer": "historical",
+      "name": "고평릉 사변 - 사마의 쿠데타",
+      "period": {
+        "year": 249
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 248,
+              "max": 251
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yi"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_shuang"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yi",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_shuang",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 고평릉 사변 - 사마의 쿠데타",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "사마씨가 위나라 실권 장악"
+    },
+    {
+      "id": "hist_252_sun_quan_dies",
+      "layer": "historical",
+      "name": "손권 사망",
+      "period": {
+        "year": 252
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 251,
+              "max": 254
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_quan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sun_quan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 손권 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "오나라 후계 위기"
+    },
+    {
+      "id": "hist_260_sima_zhao_assassinates_emperor_cao_mao",
+      "layer": "historical",
+      "name": "사마소, 조모 시해",
+      "period": {
+        "year": 260
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 259,
+              "max": 262
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_zhao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_mao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_zhao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_mao",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 사마소, 조모 시해",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "위나라 황실 권위 완전 몰락"
+    },
+    {
+      "id": "hist_265_western_jin_founded",
+      "layer": "historical",
+      "name": "서진 건국",
+      "period": {
+        "year": 265
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 264,
+              "max": 267
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 서진 건국",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "사마염이 위나라에서 선양받아 진나라 건국"
+    },
+    {
+      "id": "hist_280_eastern_wu_falls_china_unified",
+      "layer": "historical",
+      "name": "오나라 멸망, 삼국 통일",
+      "period": {
+        "year": 280
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 279,
+              "max": 282
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sima_yan"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sima_yan",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 오나라 멸망, 삼국 통일",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-namuwiki",
+      "_completeness": 0.4,
+      "_significance": "삼국시대 종결. 서진에 의한 통일"
+    },
+    {
+      "id": "hist_184/04/01__",
+      "layer": "historical",
+      "name": "하진 대장군 임명",
+      "period": {
+        "year": "184/04/01"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "184/04/012"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "he_jin"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "he_jin",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 하진 대장군 임명",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_184/04__",
+      "layer": "historical",
+      "name": "도원결의",
+      "period": {
+        "year": "184/04"
+      },
+      "location": "장비의 저택",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "184/042"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "liu_bei"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "guan_yu"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "liu_bei",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "guan_yu",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "zhang_fei",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 도원결의",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_184/08__",
+      "layer": "historical",
+      "name": "장로 거병",
+      "period": {
+        "year": "184/08"
+      },
+      "location": "익주",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "184/082"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "zhang_lu"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "zhang_lu",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 장로 거병",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_187__",
+      "layer": "historical",
+      "name": "손책 남방 정복 시작",
+      "period": {
+        "year": 187
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 186,
+              "max": 189
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_ce"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sun_ce",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 손책 남방 정복 시작",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_189/05/13__",
+      "layer": "historical",
+      "name": "후한 영제 사망",
+      "period": {
+        "year": "189/05/13"
+      },
+      "location": "낙양",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "189/05/132"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "emperor_ling"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "emperor_ling",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 후한 영제 사망",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_189/09/22__",
+      "layer": "historical",
+      "name": "십상시의 난",
+      "period": {
+        "year": "189/09/22"
+      },
+      "location": "황궁",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "189/09/222"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 십상시의 난",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_189/09/28__",
+      "layer": "historical",
+      "name": "동탁 권력 장악",
+      "period": {
+        "year": "189/09/28"
+      },
+      "location": "낙양",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "189/09/282"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 동탁 권력 장악",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_190__",
+      "layer": "historical",
+      "name": "반동탁 연합군 결성",
+      "period": {
+        "year": 190
+      },
+      "location": "각지",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 189,
+              "max": 192
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "yuan_shao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "cao_cao",
+          "role": "supporter",
+          "required": true
+        },
+        {
+          "character_id": "sun_jian",
+          "role": "supporter",
+          "required": false
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 반동탁 연합군 결성",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_190/01__",
+      "layer": "historical",
+      "name": "동탁 토벌전",
+      "period": {
+        "year": "190/01"
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "190/012"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 동탁 토벌전",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_190/04/09__",
+      "layer": "historical",
+      "name": "동탁 낙양 불태우고 천도",
+      "period": {
+        "year": "190/04/09"
+      },
+      "location": "낙양→장안",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "190/04/092"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "lu_bu"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "dong_zhuo",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "lu_bu",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 동탁 낙양 불태우고 천도",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_190/05__",
+      "layer": "historical",
+      "name": "양성 전투",
+      "period": {
+        "year": "190/05"
+      },
+      "location": "양성",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "190/052"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "cao_cao"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "dong_zhuo"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "cao_cao",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "dong_zhuo",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 양성 전투",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_191__vs_",
+      "layer": "historical",
+      "name": "공손찬 vs 원소 충돌",
+      "period": {
+        "year": 191
+      },
+      "location": "기주",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": 190,
+              "max": 193
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "gongsun_zan"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "yuan_shao"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "gongsun_zan",
+          "role": "protagonist",
+          "required": true
+        },
+        {
+          "character_id": "yuan_shao",
+          "role": "supporter",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 공손찬 vs 원소 충돌",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    },
+    {
+      "id": "hist_191/04__",
+      "layer": "historical",
+      "name": "손책 낙양 입성",
+      "period": {
+        "year": "191/04"
+      },
+      "location": "낙양",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": {
+              "min": null,
+              "max": "191/042"
+            }
+          },
+          {
+            "type": "character_alive",
+            "params": {
+              "character_id": "sun_ce"
+            }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        {
+          "character_id": "sun_ce",
+          "role": "protagonist",
+          "required": true
+        }
+      ],
+      "narrative": {
+        "text": "{TODO: LLM 서사 생성 필요}",
+        "generation": "manual"
+      },
+      "effects": [],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 손책 낙양 입성",
+      "tags": [
+        "timeline"
+      ],
+      "_source": "timeline-yellow",
+      "_completeness": 0.4,
+      "_significance": ""
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "name_kr": "우금",
+  "name_en": "Yu Jin",
+  "name_cn": "于禁",
+  "courtesy_kr": "문칙",
+  "courtesy_cn": "文則",
+  "faction": "wei",
+  "tier": 1,
+  "role": "군율의 화신, 번성 항복",
+  "stats": null,
+  "novel_presence": {
+    "chapters_from_cooccurrence": [
+      10,
+      11,
+      12,
+      14,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24,
+      26,
+      27,
+      30,
+      31,
+      33,
+      39,
+      40,
+      41,
+      45,
+      46,
+      48,
+      58,
+      59,
+      66,
+      73,
+      74,
+      75,
+      79,
+      82
+    ],
+    "chapter_count": 29
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위 오자양장(五子良將) [ 펼치기 · 접기 ]전장군우장군좌장군좌장군우장군장료악진우금장합서황\n\n오자양장(五子良將)조위의 안원장군우금于禁 시호여후(厲侯) 작위 익수정후(益壽亭侯) 최종직위 안원장군(安遠將軍) 성씨우(于) 휘금(禁) 자문칙(文則) 생몰 기간 ?년~221년 고향 연주(兗州) 태산군(泰山郡) 거평현(鉅平縣)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 복양 전투2.3. 여남 전투2.4. 완 전투2.5. 수춘 전투2.6. 관도대전2.7. 박망파 전투2.8. 창희 토벌2.9. 진란 토벌2.10. 형주 정벌2.11. 번성 공방전2.12. 오나라에서의 행적2.13. 죽음 (위나라 건국)3. 삼국지연의4. 평가4.1. 부정적 평가4.2. 긍정적 평가4.3. 투항에 대한 논쟁5. 기타6. 미디어 믹스",
+      "biography": "연주 태산군 거평현 사람으로 황건적이 봉기하자 포신이 무리들을 불러 모았고 우금이 이에 의탁해서 뒤따랐다. 조조가 연주를 다스리게 되자 우금은 그의 무리와 함께 나아가 도백(都伯)이 되었고 장군 왕랑에 속했다. 왕랑이 그를 높이 평가해, 우금이 대장군을 맡을 재능이 있다고 추천했다. 조조가 우금을 불러 대화를 나누어 보고 군사마로 삼고, 군을 이끌고 서주로 나아가 광위를 공격하게 하여 이를 함락시켰다. 함진도위에 임명했다.",
+      "evaluation": "진수의 평에서도 나와있듯이, 오자양장 중에서도 조조에게 가장 큰 신임을 받은 장수였기에 활약이 대단했다는 건 부정할 수 없다. 특히 관도대전에서 토산을 쌓아 원소의 군대를 막아낸 일이 대표적이다. 그러나 번성 공방전에서의 실책으로 조비에게는 물론이고 조조에게마저 박한 평가를 받으며 안타까운 최후를 당했다.",
+      "anecdotes": "2009년 12월 조조의 묘로 추정되는 고분이 발굴되었지만 우금이 목숨을 구걸하는 모습이 그려진 벽화는 보이지 않았다. 발견된 화상석이 그 벽화가 아니냐는 논쟁도 돌았으나 탁본 결과 전혀 다른 그림으로 밝혀졌는데 그 무덤이 조조의 무덤이 맞는지도 확실치 않다.북송시대 시인 공평중(생몰년도 미상)이 지은 시로 ‘우장군(于將軍)’이 있는데 우금에 대해서 지은 시다.#",
+      "military": "조조를 수행해 복양에서 여포를 토벌했는데, 별도 군으로 성 남쪽에서 여포의 2진영을 격파했다. 또한 별도로 군을 인솔해 연주 동평국 수창현에서 고아를 격파했다. 조조를 수행해 연주 동평국 수장현, 제음군 정도현과 이호현을 공격하고, 진류군 옹구현에서 장초를 포위해 모두 함락시켰다.",
+      "death": "220년 조비가 헌제에게 선양을 받아 황제로 즉위하면서 후한을 멸망시키고 위나라를 건국한 이후에 손권은 번국을 칭하며 우금을 돌려보냈다. 조비는 우금을 불렀다. 우금은 수염과 머리카락이 희어지고 형용이 초췌했는데, 눈물을 흘리며 머리를 조아렸다. 조비는 순림보와 맹명시의 고사를 들어 그를 위로하고 안원장군에 임명했다.번성에서의 패배는 수재가 사납게 닥친 것일 뿐 싸움에서 잘못한 것이 아니니 우금의 관등을 복구한다.그리고 오에 사자로 보내고자 한다며 우선 업에 가서 조조의 능묘에 참배하라고 했다.그런데 앞에서는 이렇게 네 잘못도 아니지 않느냐며 용서한다는 투로 달래놓고는, 뒤로는 미리 사람을 보내 능옥(陵屋)에 관우가 싸움에서 이기고 방덕이 분노하며 우금이 비굴하게 항복하는 그림을 그리게 했다. 우금은 이를 보고 부끄럽고 분한 마음에 머리가 하얗게 세어 화병으로 죽었다.아들인 우규가 후사를 이어 익수정후에 봉해졌다. 시호를 내려 여후(厲侯)라 했다. 시법에서 갈 려(厲)는 죄없는 사람들을 살육한 경우(殺戮無辜曰厲)를 의미한다. 우금은 죽고 나서도 모욕을 받은 것이다. 조조의 묘정에는 수많은 공신들이 모셔졌으나 우금만은 모셔지지 않았다.북송의 사마광은 자치통감에서 이렇게 평했다.우금은 수만 명의 무리를 거느리고 싸우다가 패하였으나 죽지도 않았고, 산 채로 적에게 항복하였다가 다시 돌아왔으니 문제(조비)가 그를 버리는 것도 가능하였고, 죽이는 것도 가능하였습니다. 그러나 능묘에 있는 집에다가 그림을 그려서 그를 욕되게 한 것은 임금답지 않은 행위입니다."
+    },
+    "wiki_en": {
+      "summary": "Yu Jin, courtesy name Wenze, was a Chinese general who served under the warlord Cao Cao during the end of the Han dynasty. He joined Cao Cao in 192 around the start of the civil wars leading to the collapse of the eastern Han dynasty, and fought in many of the campaigns which established his position as a central figure in the period. In 219, Yu Jin was tasked with leading forces to relieve Cao Cao's general Cao Ren, who was being besieged in Fancheng by Liu Bei's general Guan Yu, but his armies were destroyed in a flood due to heavy rains. Yu Jin surrendered to Guan Yu and became a prisoner-of-war, but was transferred to the custody of another warlord, Sun Quan, after Sun Quan's forces captured Guan Yu's bases in late 219.",
+      "sections": {
+        "Lead": "Yu Jin (died between September 221 and January 222[2]), courtesy name Wenze, was a Chinese general who served under the warlord Cao Cao during the end of the Han dynasty. He joined Cao Cao in 192 around the start of the civil wars leading to the collapse of the eastern Han dynasty, and fought in many of the campaigns which established his position as a central figure in the period. In 219, Yu Jin was tasked with leading forces to relieve Cao Cao's general Cao Ren, who was being besieged in Fancheng by Liu Bei's general Guan Yu, but his armies were destroyed in a flood due to heavy rains. Yu Jin surrendered to Guan Yu and became a prisoner-of-war, but was transferred to the custody of another warlord, Sun Quan, after Sun Quan's forces captured Guan Yu's bases in late 219.\n\nSun Quan treated Yu Jin like a guest and in 221 sent him back to the state of Cao Wei, which was founded in late 220 by Cao Cao's successor, Cao Pi, who ended the Eastern Han dynasty. Cao Pi pardoned Yu Jin and restored him to the position of a general. However, Yu Jin died later that year in regret after visiting Cao Cao's tomb, where he saw illustrations of the Battle of Fancheng depicting his surrender to Guan Yu.[1] Chen Shou, who wrote the third-century historical text Sanguozhi, named Yu Jin as one of the Five Elite Generals of his time, alongside Zhang He, Yue Jin, Zhang Liao and Xu Huang.[3]\n\n- Yu Gui\n\n- at least one other son",
+        "Early career": "Yu Jin was born in Juping County (鉅平縣), Taishan Commandery (泰山郡), which is in present-day Tai'an, Shandong,[4] in the late Eastern Han dynasty. In the early 180s, when the Yellow Turban Rebellion broke out, Yu Jin responded to the Han government's call for volunteers to serve in the imperial army and help to suppress the revolt. He became a subordinate of the general Bao Xin,[5] who was based in Yan Province (covering present-day southwestern Shandong and eastern Henan).\n\nIn 192,[6] after the warlord Cao Cao took charge of Yan Province, Yu Jin and his fellow volunteers were appointed as doubos (都伯; an officer leading 100 men) and placed under the command of Wang Lang. Wang Lang felt that Yu Jin was extraordinary and had the potential to become a great general, so he recommended Yu Jin to Cao Cao.[7] Cao Cao commissioned Yu Jin as a Major (司馬) after interviewing him, and then sent him to attack Guangwei (廣威), a location in Xu Province, which was governed by Tao Qian. Yu Jin successfully conquered Guangwei and was promoted to Commandant Who Breaks Formations (陷陣都尉).[8]",
+        "Later life and death": "Yu Jin remained as a prisoner-of-war in Guan Yu's base in Jing Province until late 219, when Liu Bei's territories in the province were captured by Sun Quan's general Lü Meng in a stealth invasion. Guan Yu was captured and executed by Sun Quan's forces. Yu Jin was released and brought to Wu (Sun Quan's domain),[47] where he was treated like a guest. However, he was also ridiculed and humiliated by Yu Fan, an official serving under Sun Quan.[d]\n\nCao Cao died in March 220 and was succeeded by his son Cao Pi. Later that year, Cao Pi ended the Eastern Han dynasty and established the state of Cao Wei with him as its first emperor.[48] Sun Quan pledged allegiance to Cao Pi in 221 and sent Yu Jin back to Wei in autumn.[49]\n\nBy then, Yu Jin was a pallid-looking old man with a head full of grey hair. He knelt down, kowtowed and cried when he met Cao Pi.[50] Cao Pi comforted him, told him about Xun Linfu[e] and Mengmingshi,[f] and then commissioned him as General Who Stabilises Distant Lands (安遠將軍).[51]\n\nCao Pi wanted to send Yu Jin as his personal representative to meet Sun Quan. Before Yu Jin left, Cao Pi ordered him to visit Cao Cao's tomb at Gaoling (高陵) in Ye (in present-day Handan, Hebei). There, Yu Jin saw illustrations of the Battle of Fancheng, in which he was depicted surrendering to Guan Yu, while Pang De was portrayed in a ferocious and courageous manner. He was so filled with regret that he fell ill, and then died. Cao Pi granted him the posthumous title \"Marquis Li\",[48] ... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "于禁（—221年），字文則，泰山鉅平县（今中国山東省泰安市宁阳县磁窑镇）人，东汉末曹魏左将军，五子良將之一。以堅毅穩重著稱，但對待部下嚴厲，杀舊友昌豨以奉公。早年攻呂布、征黄巾、禦張繡、破袁術、拒袁紹，戰功赫赫。淯水之難，唯有于禁能安定局面，讓曹軍重整旗鼓，曹操称赞「將軍在亂討暴，整兵堅壘，有不可動之節，雖古之名將，何以加之！」\n",
+      "sections": {
+        "Introduction": "于禁（—221年），字文則，泰山鉅平县（今中国山東省泰安市宁阳县磁窑镇）人，东汉末曹魏左将军，五子良將之一。以堅毅穩重著稱，但對待部下嚴厲，杀舊友昌豨以奉公。早年攻呂布、征黄巾、禦張繡、破袁術、拒袁紹，戰功赫赫。淯水之難，唯有于禁能安定局面，讓曹軍重整旗鼓，曹操称赞「將軍在亂討暴，整兵堅壘，有不可動之節，雖古之名將，何以加之！」\n\n在樊城之戰中因遭水災所困，率領七軍向關羽投降。后關羽兵敗麥城，于禁又以俘虜的身份落入東吳手中。歸魏後遭到魏文帝曹丕以壁畫嘲諷投降之事，羞慚怨恨，病發而亡，諡曰厲侯。北宋孔平仲作《于將軍》詩，叹「淯水之師勇冠世，英雄成敗皆偶然。」"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 74,
+      "text": "大軍屯於川口，地勢甚低；雖有土山，離營稍遠，今秋雨連綿，軍士艱辛。近有人報說荊州兵移於高阜處，又於漢水口預備戰筏；倘江水泛漲，我軍危矣。宜早為計。",
+      "text_length": 73
+    },
+    {
+      "chapter": 74,
+      "text": "「聞將軍戰關公，百合之上，未得便宜，何不且退軍避之？」德奮然曰：「魏王命將軍為大將，何太弱也？吾來日與關某共決一死，誓不退避！」禁不敢阻而回。",
+      "text_length": 71
+    },
+    {
+      "chapter": 11,
+      "text": "某今日上山觀望，濮陽之西，呂布有一寨，約無多軍。今夜彼將謂我軍敗走，必不準備，可引兵擊之；若得寨，布軍必懼：此為上策。",
+      "text_length": 59
+    },
+    {
+      "chapter": 74,
+      "text": "「眼見關公箭瘡舉發，不能動作；不若乘此機會，統七軍一擁殺入寨中，可救樊城之圍。",
+      "text_length": 39
+    },
+    {
+      "chapter": 74,
+      "text": "眼見關公箭瘡舉發，不能動作；不若乘此機會，統七軍一擁殺入寨中，可救樊城之圍。",
+      "text_length": 38
+    },
+    {
+      "chapter": 74,
+      "text": "「匹夫惑吾軍心耶！再有多言者斬之！」成何羞慚而退，卻來見龐德，說此事。",
+      "text_length": 35
+    },
+    {
+      "chapter": 74,
+      "text": "「大軍屯於川口，地勢甚低；雖有土山，離營稍遠，今秋雨連綿，軍士艱辛。",
+      "text_length": 34
+    },
+    {
+      "chapter": 16,
+      "text": "今賊追兵在後，不時即至；若不先準備，何以拒敵？分辯小事，退敵大事。",
+      "text_length": 33
+    },
+    {
+      "chapter": 39,
+      "text": "「前軍都督且住！」\n\n夏侯惇正走之間，見于禁從後軍奔來，便問何故。",
+      "text_length": 33
+    },
+    {
+      "chapter": 74,
+      "text": "魏王有戒：關公智勇雙全。他雖中箭，只恐有詐，故鳴金收軍。",
+      "text_length": 28
+    },
+    {
+      "chapter": 11,
+      "text": "「某今日上山觀望，濮陽之西，呂布有一寨，約無多軍。",
+      "text_length": 25
+    },
+    {
+      "chapter": 74,
+      "text": "聞將軍戰關公，百合之上，未得便宜，何不且退軍避之？",
+      "text_length": 25
+    },
+    {
+      "chapter": 39,
+      "text": "君言是也。吾當往前為都督言之。君可止住後軍。",
+      "text_length": 22
+    },
+    {
+      "chapter": 39,
+      "text": "「南道路狹，山川相逼，樹木叢雜，可防火攻。",
+      "text_length": 21
+    },
+    {
+      "chapter": 74,
+      "text": "上命差遣，身不由己。望君侯憐憫，誓以死報。",
+      "text_length": 21
+    },
+    {
+      "chapter": 39,
+      "text": "南道路狹，山川相逼，樹木叢雜，可防火攻。",
+      "text_length": 20
+    },
+    {
+      "chapter": 41,
+      "text": "「你可引輕騎追劉琮母子殺之，以絕後患。",
+      "text_length": 19
+    },
+    {
+      "chapter": 41,
+      "text": "你可引輕騎追劉琮母子殺之，以絕後患。",
+      "text_length": 18
+    },
+    {
+      "chapter": 74,
+      "text": "匹夫惑吾軍心耶！再有多言者斬之！",
+      "text_length": 16
+    },
+    {
+      "chapter": 73,
+      "text": "「某求一將作先鋒，領兵同去。",
+      "text_length": 14
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": false,
+    "novel_appearances": false,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-16T10:52:17.213Z"
+}

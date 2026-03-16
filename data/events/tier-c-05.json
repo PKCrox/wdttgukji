@@ -1,0 +1,1584 @@
+{
+  "total": 29,
+  "events": [
+    {
+      "id": "novel_ch87_맹획_첫_포획",
+      "layer": "historical",
+      "name": "맹획 첫 포획",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          },
+          {
+            "type": "year_range",
+            "params": { "min": 224, "max": 227 }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 남만 정벌에 나서 첫 전투에서 맹획을 사로잡았다. 그러나 맹획은 불복하며 다시 싸우겠다 외쳤고, 제갈량은 웃으며 그를 풀어주었다. 마속의 '마음을 공략하라'는 진언이 제갈량의 전략을 이끌었다.",
+        "flavor": "공심위상(攻心爲上) -- 마음을 치는 것이 최상이다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 5 }
+        },
+        {
+          "type": "faction_war",
+          "target": "shu",
+          "value": { "enemy": "nanman" }
+        }
+      ],
+      "choices": [
+        {
+          "id": "release_menghuo",
+          "text": "맹획을 석방하여 진심으로 귀순시킨다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "meng_huo",
+              "value": { "stat": "loyalty_to_captor", "delta": 10 }
+            }
+          ],
+          "next_event": "novel_ch88_맹획_2_3차_포획_및_석방"
+        },
+        {
+          "id": "execute_menghuo",
+          "text": "맹획을 처형하여 남만의 기세를 꺾는다.",
+          "effects": [
+            {
+              "type": "character_death",
+              "target": "meng_huo",
+              "value": { "cause": "execution" }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "reputation", "delta": -10 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 87회: 남만 정벌 시작",
+      "tags": ["novel_chapter", "southern_campaign", "capture", "diplomacy"]
+    },
+    {
+      "id": "novel_ch88_맹획_2_3차_포획_및_석방",
+      "layer": "historical",
+      "name": "맹획 2-3차 포획 및 석방",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch87_맹획_첫_포획" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "맹획은 동도나와 아회남만 부족의 지원을 얻어 반격했으나, 제갈량의 계략에 연이어 두 번 더 사로잡혔다. 매번 석방될 때마다 맹획의 표정에서 분노보다 당혹이 짙어졌다. 제갈량은 묵묵히 차를 따르며 기다렸다.",
+        "flavor": "세 번을 잡아도 풀어주니, 만인이 의아해하되 공명만 태연했다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 3 }
+        },
+        {
+          "type": "stat_change",
+          "target": "meng_huo",
+          "value": { "stat": "loyalty_to_captor", "delta": 15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 88회: 칠종칠금 (2-3차)",
+      "tags": ["novel_chapter", "southern_campaign", "capture", "seven_captures"]
+    },
+    {
+      "id": "novel_ch89_맹획_4_5차_포획_및_석방",
+      "layer": "historical",
+      "name": "맹획 4-5차 포획 및 석방",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch88_맹획_2_3차_포획_및_석방" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "맹획은 목록대왕의 독천과 맹수 부대를 빌려 촉군을 위협했다. 독수가 흐르는 강과 맹수가 뛰어다니는 전장 -- 그러나 제갈량은 목수로 만든 짐승 모형으로 맹수를 쫓고, 약초로 독을 해독했다. 네 번째, 다섯 번째 포획. 맹획의 눈에 경외가 서렸다.",
+        "flavor": "독천을 건너고 맹수를 물리치니, 사람의 지혜가 자연을 넘었다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "intelligence", "delta": 2 }
+        },
+        {
+          "type": "army_change",
+          "target": "nanman",
+          "value": { "delta": -3000 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 89회: 칠종칠금 (4-5차)",
+      "tags": ["novel_chapter", "southern_campaign", "capture", "seven_captures"]
+    },
+    {
+      "id": "novel_ch90_맹획_7차_포획_후_진심_귀순",
+      "layer": "historical",
+      "name": "맹획 7차 포획 후 진심 귀순",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch89_맹획_4_5차_포획_및_석방" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "일곱 번째로 사로잡힌 맹획이 마침내 무릎을 꿇었다. '승상의 하늘 같은 은혜에 남만은 대대로 반란하지 않겠습니다.' 제갈량은 맹획의 손을 잡아 일으키며, 남만의 자치를 약속했다. 칠종칠금 -- 무력이 아닌 마음으로 천하의 절반을 얻은 순간이었다.",
+        "flavor": "일곱 번 잡고 일곱 번 놓으니, 드디어 마음이 항복했다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "faction_peace",
+          "target": "shu",
+          "value": { "with": "nanman" }
+        },
+        {
+          "type": "faction_alliance",
+          "target": "shu",
+          "value": { "ally": "nanman" }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 15 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "stability", "delta": 20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 90회: 칠종칠금 완성, 축융부인",
+      "tags": ["novel_chapter", "southern_campaign", "seven_captures", "diplomacy", "decisive"]
+    },
+    {
+      "id": "novel_ch90_축융부인_등장",
+      "layer": "historical",
+      "name": "축융부인 등장",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch89_맹획_4_5차_포획_및_석방" }
+          }
+        ],
+        "priority": 50
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "맹획의 아내 축융부인이 직접 전장에 나섰다. 비도를 던지며 촉장 수명을 사로잡는 그녀의 무용은 남만 전사들의 사기를 하늘로 치솟게 했다. 그러나 제갈량의 매복 계략에 결국 포획되었고, 남편과 함께 석방되었다.",
+        "flavor": "만왕의 아내가 칼을 들면, 남만의 바람이 일어난다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "meng_huo",
+          "value": { "stat": "morale", "delta": 10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 90회: 칠종칠금 완성, 축융부인",
+      "tags": ["novel_chapter", "southern_campaign", "female_warrior"]
+    },
+    {
+      "id": "novel_ch91_제갈량_출사표_상주",
+      "layer": "historical",
+      "name": "제갈량 출사표 상주",
+      "period": {
+        "year": 227,
+        "month": 3
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "year_range",
+            "params": { "min": 226, "max": 228 }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch90_맹획_7차_포획_후_진심_귀순" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 후주 유선에게 출사표를 올렸다. '신은 본래 포의(布衣)로, 남양에서 밭을 갈았습니다...' 선제의 유지를 받들어 한실을 회복하겠다는 비장한 결의가 담긴 글이었다. 조정의 신하들이 눈물을 흘렸고, 유선도 감복하여 북벌을 윤허했다.",
+        "flavor": "출사표를 읽고 눈물 흘리지 않는 자, 충신이 아니다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 20 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "morale", "delta": 15 }
+        },
+        {
+          "type": "unlock_event",
+          "target": "shu",
+          "value": { "event_id": "novel_ch91_북벌_개시" }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 91회: 출사표, 제1차 북벌",
+      "tags": ["novel_chapter", "northern_expedition", "literature", "declaration"]
+    },
+    {
+      "id": "novel_ch91_북벌_개시",
+      "layer": "historical",
+      "name": "제1차 북벌 개시",
+      "period": {
+        "year": 228,
+        "month": 1
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch91_제갈량_출사표_상주" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 한중에서 30만 대군을 이끌고 북벌에 나섰다. 남안, 안정, 천수 세 군이 연이어 항복하며 초반 전세는 촉에 유리하게 전개되었다. 위나라 조정은 크게 동요했고, 사마의를 급히 불러 대도독에 임명했다.",
+        "flavor": "한실 부흥의 깃발이 기산(祁山)에 꽂혔다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "faction_war",
+          "target": "shu",
+          "value": { "enemy": "wei" }
+        },
+        {
+          "type": "army_change",
+          "target": "shu",
+          "value": { "delta": -5000, "reason": "expedition_cost" }
+        },
+        {
+          "type": "territory_change",
+          "target": "shu",
+          "value": { "gain": ["yongzhou"], "temporary": true }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 91회: 출사표, 제1차 북벌",
+      "tags": ["novel_chapter", "northern_expedition", "campaign_start", "battle"]
+    },
+    {
+      "id": "novel_ch92_강유가_제갈량에_합류",
+      "layer": "historical",
+      "name": "강유가 제갈량에 합류",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "jiang_wei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch91_북벌_개시" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "jiang_wei", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "천수군의 젊은 장수 강유가 제갈량의 계략에 당해 투항했다. 제갈량은 강유의 재능을 한눈에 알아보고 크게 기뻐하며 말했다. '내 뒤를 이을 자를 얻었다.' 강유는 병법에 밝고 담략이 있어, 제갈량이 평생의 학문을 전수할 제자로 삼았다.",
+        "flavor": "기산에서 용을 얻으니, 와룡의 학문이 이어질 그릇이었다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_join",
+          "target": "jiang_wei",
+          "value": { "faction": "shu" }
+        },
+        {
+          "type": "relationship_change",
+          "target": "zhuge_liang",
+          "value": { "with": "jiang_wei", "relation": "mentor", "delta": 30 }
+        },
+        {
+          "type": "stat_change",
+          "target": "jiang_wei",
+          "value": { "stat": "intelligence", "delta": 5 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 92회: 강유 등장",
+      "tags": ["novel_chapter", "northern_expedition", "recruitment", "succession"]
+    },
+    {
+      "id": "novel_ch93_제갈량이_왕랑을_말로_죽임",
+      "layer": "historical",
+      "name": "제갈량이 왕랑을 말로 죽임",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch91_북벌_개시" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "위나라의 원로 대신 왕랑이 진전에서 제갈량에게 항복을 권했다. '천명이 위에 있거늘 어찌 거역하는가?' 제갈량은 왕랑의 변절을 하나하나 열거하며 통렬히 꾸짖었다. 왕랑은 분기탱천하여 말에서 떨어져 죽었다. 혀 하나로 적장을 죽인 것이다.",
+        "flavor": "붓보다 강한 것은 혀요, 혀보다 강한 것은 의(義)다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "wang_lang",
+          "value": { "cause": "shame" }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 10 }
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "morale", "delta": -15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 93회: 왕랑과의 설전",
+      "tags": ["novel_chapter", "northern_expedition", "debate", "verbal_duel"]
+    },
+    {
+      "id": "novel_ch94_제갈량_빈_성에서_사마의_물리침",
+      "layer": "historical",
+      "name": "공성계 -- 빈 성에서 사마의를 물리침",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch91_북벌_개시" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "가정 패전 후 제갈량은 서성에 고작 2천5백 병력만 남겨둔 채 사마의의 15만 대군과 마주했다. 제갈량은 성문을 활짝 열고 성루에 올라 거문고를 탔다. 사마의는 복병을 의심하여 전군 퇴각을 명했다. 신과 같은 담력과 사마의의 심리를 꿰뚫은 한 수였다.",
+        "flavor": "빈 성에 거문고 소리만 울리니, 15만 대군이 물러갔다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 15 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "reputation", "delta": -5 }
+        }
+      ],
+      "choices": [
+        {
+          "id": "empty_fort",
+          "text": "성문을 열고 거문고를 타며 공성계를 펼친다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "reputation", "delta": 15 }
+            }
+          ]
+        },
+        {
+          "id": "retreat_early",
+          "text": "병력을 모아 서성을 포기하고 철수한다.",
+          "effects": [
+            {
+              "type": "territory_change",
+              "target": "wei",
+              "value": { "gain": ["yongzhou"] }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": { "stat": "reputation", "delta": -5 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 94회: 공성계 (빈성계)",
+      "tags": ["novel_chapter", "northern_expedition", "stratagem", "empty_fort", "iconic"]
+    },
+    {
+      "id": "novel_ch95_마속의_전략적_실패",
+      "layer": "historical",
+      "name": "마속의 가정 실수",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "ma_su" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch91_북벌_개시" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "ma_su", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": true },
+        { "character_id": "zhang_he", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량은 마속에게 가정 수비를 맡기며 산 아래 진을 치라 당부했다. 그러나 마속은 병법의 글귀만 믿고 산 위에 진을 쳤다. 장합이 수로를 끊자 촉군은 갈증에 무너졌고, 가정은 하루 만에 함락되었다. 제1차 북벌의 운명이 이 산 위에서 결정되었다.",
+        "flavor": "책 위의 병법과 땅 위의 전쟁은 달랐다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "territory_change",
+          "target": "wei",
+          "value": { "gain": ["yongzhou"] }
+        },
+        {
+          "type": "army_change",
+          "target": "shu",
+          "value": { "delta": -10000 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "morale", "delta": -20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 95회: 가정 전투, 마속 실패",
+      "tags": ["novel_chapter", "northern_expedition", "battle", "defeat", "decisive"]
+    },
+    {
+      "id": "novel_ch95_제갈량_읍참마속",
+      "layer": "historical",
+      "name": "읍참마속 -- 눈물로 마속을 베다",
+      "period": {
+        "year": 228
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "ma_su" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch95_마속의_전략적_실패" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "ma_su", "role": "target", "required": true },
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량은 군법에 따라 마속의 참수를 명했다. 마속과는 밤새 병법을 논하던 사이였고, 유비가 임종 시 '마속은 말이 실제보다 크니 크게 쓰지 마시오'라 경고했던 인재였다. 제갈량은 눈물을 흘리며 칼을 내렸다. 사사로운 정으로 군법을 어길 수 없었다.",
+        "flavor": "읍참마속(泣斬馬謖) -- 눈물을 흘리며 벤다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "ma_su",
+          "value": { "cause": "execution" }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "reputation", "delta": 5 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "discipline", "delta": 15 }
+        }
+      ],
+      "choices": [
+        {
+          "id": "execute_masu",
+          "text": "군법대로 마속을 처형한다.",
+          "effects": [
+            {
+              "type": "character_death",
+              "target": "ma_su",
+              "value": { "cause": "execution" }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "discipline", "delta": 15 }
+            }
+          ]
+        },
+        {
+          "id": "spare_masu",
+          "text": "마속을 용서하고 강등 처분한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "ma_su",
+              "value": { "stat": "rank", "delta": -3 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "discipline", "delta": -10 }
+            }
+          ]
+        }
+      ],
+      "historical_basis": "연의 95회: 가정 전투, 마속 실패",
+      "tags": ["novel_chapter", "northern_expedition", "execution", "discipline", "iconic"]
+    },
+    {
+      "id": "novel_ch96_마속_군법으로_처형",
+      "layer": "historical",
+      "name": "제갈량 자진 강등",
+      "period": {
+        "year": 228
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch95_제갈량_읍참마속" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량은 가정 패전의 책임을 지고 스스로 승상에서 우장군으로 세 등급 강등을 청했다. '마속을 잘못 쓴 것은 제 허물입니다.' 자신에게도 엄격한 법 집행은 촉한 전군의 기강을 바로잡았다. 그러나 제1차 북벌의 실패는 되돌릴 수 없었다.",
+        "flavor": "부하를 벤 칼로 자신도 벨 줄 아는 것이 진정한 법치다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "rank", "delta": -3 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "discipline", "delta": 10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 96회: 마속 처형, 조운 사망",
+      "tags": ["novel_chapter", "northern_expedition", "self_demotion", "leadership"]
+    },
+    {
+      "id": "novel_ch96_조운_병사",
+      "layer": "historical",
+      "name": "조운 병사",
+      "period": {
+        "year": 229
+      },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhao_yun" }
+          },
+          {
+            "type": "year_range",
+            "params": { "min": 228, "max": 230 }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhao_yun", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "오호대장군의 마지막 생존자, 상산 조자룡이 병으로 세상을 떠났다. 장판교에서 유선을 구하고, 한수에서 홀로 조조의 대군을 물리쳤던 불패의 장수였다. 제갈량은 비보를 듣고 탄식했다. '나의 팔 하나가 잘려나갔구나.' 촉한의 마지막 영웅 시대가 저물었다.",
+        "flavor": "자룡이 떠나니, 유비의 시대가 비로소 끝났다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "zhao_yun",
+          "value": { "cause": "illness" }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "morale", "delta": -15 }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "morale", "delta": -10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 96회: 마속 처형, 조운 사망",
+      "tags": ["novel_chapter", "death", "hero", "five_tiger_generals"]
+    },
+    {
+      "id": "novel_ch97_제갈량_2차_북벌_개시",
+      "layer": "historical",
+      "name": "제2차 북벌 개시",
+      "period": {
+        "year": 228,
+        "month": 12
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch95_제갈량_읍참마속" }
+          },
+          {
+            "type": "year_range",
+            "params": { "min": 228, "max": 230 }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 다시 한중에서 군사를 일으켜 진창을 공격했다. 위의 학소가 천 명으로 성을 지키며 20여 일을 버텼고, 군량이 다한 촉군은 결국 철수해야 했다. 돌아가는 길에 추격하던 위장 왕쌍을 참살하여 체면을 세웠으나, 두 번째 북벌도 실패로 끝났다.",
+        "flavor": "진창성 하나를 넘지 못하니, 북벌의 길이 얼마나 먼가.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "army_change",
+          "target": "shu",
+          "value": { "delta": -3000 }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "supply", "delta": -15 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 97회: 제2차 북벌",
+      "tags": ["novel_chapter", "northern_expedition", "campaign", "siege"]
+    },
+    {
+      "id": "novel_ch98_계속되는_위_촉_공방전",
+      "layer": "historical",
+      "name": "제3차 북벌 -- 위촉 공방전",
+      "period": {
+        "year": 229
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch97_제갈량_2차_북벌_개시" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 세 번째로 기산에 출병했다. 위의 무도, 음평 두 군을 빼앗으며 전세를 유리하게 이끌었으나, 장안 방면의 위군 증원에 막혀 결정적 돌파에 실패했다. 사마의는 수비에 전념하며 촉군의 보급선이 길어지기를 기다렸다.",
+        "flavor": "기산의 깃발이 세 번째 꽂혔으나, 장안은 여전히 멀었다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "territory_change",
+          "target": "shu",
+          "value": { "gain": ["yongzhou"], "temporary": true }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "supply", "delta": -10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 98회: 3차 북벌",
+      "tags": ["novel_chapter", "northern_expedition", "campaign", "stalemate"]
+    },
+    {
+      "id": "novel_ch99_계속되는_북벌_전쟁",
+      "layer": "historical",
+      "name": "제4차 북벌",
+      "period": {
+        "year": 231
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch98_계속되는_위_촉_공방전" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 네 번째 북벌을 감행했다. 기산에서 사마의와 정면 대결을 벌여 위군을 대파하고, 갑옷 5천 벌과 군량 만여 석을 노획했다. 그러나 후방에서 이엄이 군량 보급을 지연시키는 바람에 눈물을 머금고 철군해야 했다.",
+        "flavor": "전장의 승리가 조정의 실책 앞에 무너졌다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "supply", "delta": -20 }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "morale", "delta": -5 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 99회: 4차 북벌",
+      "tags": ["novel_chapter", "northern_expedition", "campaign", "supply_failure"]
+    },
+    {
+      "id": "novel_ch100_제갈량과_사마의의_치열한_두뇌전",
+      "layer": "historical",
+      "name": "제갈량과 사마의의 두뇌전",
+      "period": {
+        "year": 231
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch99_계속되는_북벌_전쟁" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량과 사마의의 대결은 단순한 전투를 넘어 심리전으로 번졌다. 제갈량이 공격하면 사마의는 틀어박혀 나오지 않았고, 제갈량이 물러나면 사마의가 추격했다. 두 천재의 치밀한 계산이 매 순간 부딪쳤다. 중원의 운명을 건 두뇌 싸움이었다.",
+        "flavor": "와룡과 중달, 서로를 아는 것이 두려움의 시작이었다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "intelligence", "delta": 3 }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "fatigue", "delta": 5 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 100회: 사마의와의 대결",
+      "tags": ["novel_chapter", "northern_expedition", "rivalry", "psychology"]
+    },
+    {
+      "id": "novel_ch101_장합_전사",
+      "layer": "historical",
+      "name": "장합 전사",
+      "period": {
+        "year": 231
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_he" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch99_계속되는_북벌_전쟁" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhang_he", "role": "protagonist", "required": true },
+        { "character_id": "zhuge_liang", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "촉군이 철수하자 사마의는 장합에게 추격을 명했다. 장합은 매복을 우려해 반대했으나 명령을 거부할 수 없었다. 목문도의 좁은 협곡에서 제갈량의 매복에 걸려 화살 세례를 받고 전사했다. 위의 오자양장 마지막 생존자가 쓰러진 순간이었다.",
+        "flavor": "장합이 목문도에서 쓰러지니, 조조의 맹장 시대가 끝났다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "zhang_he",
+          "value": { "cause": "ambush" }
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "morale", "delta": -10 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "reputation", "delta": -3 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 101회: 장합 전사",
+      "tags": ["novel_chapter", "northern_expedition", "death", "ambush", "five_generals_wei"]
+    },
+    {
+      "id": "novel_ch102_제갈량_목우유마_수레_발명",
+      "layer": "historical",
+      "name": "목우유마 발명",
+      "period": {
+        "year": 234
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch101_장합_전사" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량이 제5차 북벌을 준비하며 목우유마를 발명했다. 소와 말 형태의 기계식 운반 수레로, 산악 지형에서도 군량 수송이 가능했다. 사마의가 이를 탈취해 모방했으나, 제갈량은 숨겨진 장치를 이용해 위군의 목우유마를 정지시키고 군량을 도로 빼앗았다.",
+        "flavor": "나무로 만든 소와 말이 촉도의 험한 길을 걸었다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "unlock_tech",
+          "target": "shu",
+          "value": { "tech": "wooden_ox_horse" }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "supply", "delta": 20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 102회: 5차 북벌, 목우유마",
+      "tags": ["novel_chapter", "northern_expedition", "invention", "logistics"]
+    },
+    {
+      "id": "novel_ch102_위_촉_공방전_지속",
+      "layer": "historical",
+      "name": "제5차 북벌 전개",
+      "period": {
+        "year": 234
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch102_제갈량_목우유마_수레_발명" }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 오장원에 진을 치고 사마의와 최후의 대치에 들어갔다. 촉군은 둔전을 실시하며 장기전을 준비했다. 사마의는 깊이 참호를 파고 절대 싸우지 않는 전략으로 맞섰다. 제갈량이 여자 옷을 보내 도발했으나, 사마의는 웃으며 받아들였다.",
+        "flavor": "오장원에서 두 군대가 서로를 노려보며 시간이 흘렀다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "supply", "delta": -10 }
+        },
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "fatigue", "delta": 10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 102회: 5차 북벌, 목우유마",
+      "tags": ["novel_chapter", "northern_expedition", "stalemate", "wuzhang_plains"]
+    },
+    {
+      "id": "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
+      "layer": "historical",
+      "name": "상방곡 화공 -- 하늘이 내린 비",
+      "period": {
+        "year": 234
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch102_위_촉_공방전_지속" }
+          }
+        ],
+        "priority": 65
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량이 상방곡에 사마의 부자를 유인해 사방에 불을 질렀다. 불길이 하늘을 덮자 사마의는 죽음을 각오하고 아들들을 끌어안았다. 그 순간 갑작스런 폭우가 쏟아져 불길이 꺼졌다. 제갈량은 하늘을 올려다보며 탄식했다. '일을 꾀하는 것은 사람이나, 이루는 것은 하늘이로다.'",
+        "flavor": "모사재인(謀事在人), 성사재천(成事在天).",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "morale", "delta": -15 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "luck", "delta": 10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 103회: 상방곡 전투",
+      "tags": ["novel_chapter", "northern_expedition", "fire_attack", "fate", "iconic"]
+    },
+    {
+      "id": "novel_ch104_제갈량_별_떨어짐_의식_실패",
+      "layer": "historical",
+      "name": "칠성등 기도 -- 수명 연장 의식 실패",
+      "period": {
+        "year": 234,
+        "month": 8
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "병세가 깊어진 제갈량은 장막 안에 49개의 등불을 세워 칠성등 기도를 올렸다. 주등(主燈)이 7일간 꺼지지 않으면 수명이 연장되는 도술이었다. 6일째 밤, 급보를 전하러 달려온 위연이 장막에 뛰어들며 주등을 발로 꺼뜨렸다. 제갈량은 붓을 놓으며 조용히 눈을 감았다.",
+        "flavor": "49개의 불꽃 중 하나가 꺼지니, 천하의 밤이 깊어졌다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "zhuge_liang",
+          "value": { "stat": "health", "delta": -100 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
+      "tags": ["novel_chapter", "northern_expedition", "ritual", "fate", "wuzhang_plains"]
+    },
+    {
+      "id": "novel_ch104_오장원에서_사망",
+      "layer": "historical",
+      "name": "제갈량 오장원에서 별세",
+      "period": {
+        "year": 234,
+        "month": 8
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch104_제갈량_별_떨어짐_의식_실패" }
+          }
+        ],
+        "priority": 80
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "건흥 12년 8월, 제갈량이 오장원 군중에서 54세로 별세했다. 임종 전 강유에게 병법서와 연노(連弩)의 제작법을 전수하고, 양의에게 퇴각 계획을 맡겼다. '내 죽은 뒤에도 나의 목상(木像)을 세워 사마의를 속여라.' 한실 부흥의 꿈은 여기서 멈추었다.",
+        "flavor": "출사미첩신선사(出師未捷身先死), 장사영웅루만건(長使英雄淚滿巾).",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "zhuge_liang",
+          "value": { "cause": "illness" }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "morale", "delta": -30 }
+        },
+        {
+          "type": "stat_change",
+          "target": "shu",
+          "value": { "stat": "political_stability", "delta": -25 }
+        },
+        {
+          "type": "unlock_event",
+          "target": "shu",
+          "value": { "event_id": "novel_ch105_위연_제갈량_사후_반란" }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
+      "tags": ["novel_chapter", "death", "wuzhang_plains", "decisive", "iconic"]
+    },
+    {
+      "id": "novel_ch104_사마의_퇴각_죽은_공명이_산_중달을_쫓다_",
+      "layer": "historical",
+      "name": "죽은 공명이 산 중달을 쫓다",
+      "period": {
+        "year": 234,
+        "month": 9
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch104_오장원에서_사망" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "sima_yi", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량 사후 양의가 계획대로 퇴각을 시작했다. 사마의가 추격해오자 촉군이 진을 돌려 제갈량의 목상을 내세웠다. 사마의는 제갈량이 살아있다고 착각하고 혼비백산 도주했다. 백성들이 비웃었다. '죽은 공명이 산 중달을 쫓아냈다.' 사마의는 웃으며 말했다. '산 자의 일은 알겠으나, 죽은 자의 일은 모르겠노라.'",
+        "flavor": "사중달(死仲達)을 쫓은 것이 아니라, 살아 있는 공포를 쫓은 것이다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "reputation", "delta": -10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
+      "tags": ["novel_chapter", "retreat", "deception", "iconic", "humorous"]
+    },
+    {
+      "id": "novel_ch105_위연_제갈량_사후_반란",
+      "layer": "historical",
+      "name": "위연의 반란",
+      "period": {
+        "year": 234
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "wei_yan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch104_오장원에서_사망" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "wei_yan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량 사후 위연이 반기를 들었다. 양의의 퇴각 명령을 거부하고 길을 막으며 병권을 요구했다. '승상이 죽었으니 내가 대군을 이끌어야 한다!' 그러나 제갈량은 이미 생전에 위연의 반심을 예견하고 마대에게 밀계를 내려둔 상태였다.",
+        "flavor": "와룡이 떠난 자리에서 뒤통수의 반골이 드러났다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "stability", "delta": -15 }
+        }
+      ],
+      "choices": [
+        {
+          "id": "support_wei_yan",
+          "text": "위연의 손을 들어 북벌을 계속한다.",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "wei_yan",
+              "value": { "stat": "authority", "delta": 20 }
+            },
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "discipline", "delta": -20 }
+            }
+          ]
+        },
+        {
+          "id": "follow_zhuge_plan",
+          "text": "제갈량의 유계대로 양의를 지지하고 철수한다.",
+          "effects": [
+            {
+              "type": "resource_change",
+              "target": "shu",
+              "value": { "resource": "discipline", "delta": 10 }
+            }
+          ],
+          "next_event": "novel_ch105_마대에게_참수됨"
+        }
+      ],
+      "historical_basis": "연의 105회: 위연 반란, 양의와의 대립",
+      "tags": ["novel_chapter", "rebellion", "internal_conflict", "succession_crisis"]
+    },
+    {
+      "id": "novel_ch105_마대에게_참수됨",
+      "layer": "historical",
+      "name": "위연 참수",
+      "period": {
+        "year": 234
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "wei_yan" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch105_위연_제갈량_사후_반란" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "wei_yan", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "양의가 위연 앞에서 외쳤다. '네가 감히 반역이냐! 세 번 외쳐봐라!' 위연이 '누가 감히 나를 죽이겠느냐!'라 세 번 외치자, 뒤에서 마대가 칼을 내리쳤다. 제갈량이 죽기 전에 마대에게 전해둔 밀계가 실행된 것이다. 위연은 용맹한 장수였으나, 끝내 제갈량의 손바닥을 벗어나지 못했다.",
+        "flavor": "반골이 있다 했으니, 그 칼은 이미 예정되어 있었다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "wei_yan",
+          "value": { "cause": "execution" }
+        },
+        {
+          "type": "resource_change",
+          "target": "shu",
+          "value": { "resource": "stability", "delta": 10 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 105회: 위연 반란, 양의와의 대립",
+      "tags": ["novel_chapter", "execution", "prophecy_fulfilled"]
+    },
+    {
+      "id": "novel_ch106_공손연_반란_진압",
+      "layer": "historical",
+      "name": "공손연 반란 진압",
+      "period": {
+        "year": 238
+      },
+      "location": "youzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "gongsun_yuan" }
+          },
+          {
+            "type": "year_range",
+            "params": { "min": 237, "max": 240 }
+          }
+        ],
+        "priority": 55
+      },
+      "participants": [
+        { "character_id": "sima_yi", "role": "protagonist", "required": true },
+        { "character_id": "gongsun_yuan", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "요동의 공손연이 스스로 연왕(燕王)을 칭하며 위에 반기를 들었다. 사마의가 4만 군을 이끌고 원정에 나서, 양평성을 포위하고 수공(水攻)으로 함락시켰다. 공손연은 도주하다 참수되었다. 사마의는 요동을 평정하며 위나라 내에서의 군사적 위상을 확고히 했다.",
+        "flavor": "요동의 반란을 진압하니, 사마의의 칼이 천하에 서기 시작했다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "character_death",
+          "target": "gongsun_yuan",
+          "value": { "cause": "battle" }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "reputation", "delta": 15 }
+        },
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "military_authority", "delta": 20 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 106회: 사마의 권력 장악",
+      "tags": ["novel_chapter", "rebellion", "conquest", "sima_rise"]
+    },
+    {
+      "id": "novel_ch106_사마의_조위_실권_장악",
+      "layer": "historical",
+      "name": "사마의 조위 실권 장악",
+      "period": {
+        "year": 249
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "event_completed",
+            "params": { "event_id": "novel_ch106_공손연_반란_진압" }
+          },
+          {
+            "type": "year_range",
+            "params": { "min": 248, "max": 251 }
+          }
+        ],
+        "priority": 70
+      },
+      "participants": [
+        { "character_id": "sima_yi", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "조상이 조방을 데리고 조조 묘소를 참배하러 낙양을 비운 틈을 타, 사마의가 쿠데타를 일으켰다. 병을 핑계로 10년을 숨죽이다 마침내 발톱을 드러낸 것이다. 성문과 무기고를 장악하고 조상의 병권을 박탈했다. 조상이 항복하자 삼족을 멸했다. 위나라의 실권은 이제 완전히 사마씨의 것이 되었다.",
+        "flavor": "인내가 야망을 감추는 가면이었음을, 천하가 비로소 알았다.",
+        "generation": "ai_reviewed"
+      },
+      "effects": [
+        {
+          "type": "stat_change",
+          "target": "sima_yi",
+          "value": { "stat": "political_power", "delta": 50 }
+        },
+        {
+          "type": "resource_change",
+          "target": "wei",
+          "value": { "resource": "stability", "delta": -20 }
+        },
+        {
+          "type": "stat_change",
+          "target": "wei",
+          "value": { "stat": "imperial_authority", "delta": -30 }
+        }
+      ],
+      "choices": [],
+      "historical_basis": "연의 106회: 사마의 권력 장악",
+      "tags": ["novel_chapter", "coup", "sima_rise", "power_seizure", "decisive"]
+    }
+  ]
+}

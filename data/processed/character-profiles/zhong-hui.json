@@ -1,0 +1,162 @@
+{
+  "name_kr": "종회",
+  "name_en": "Zhong Hui",
+  "name_cn": "鍾會",
+  "courtesy_kr": "사계",
+  "courtesy_cn": "士季",
+  "faction": "wei",
+  "tier": 1,
+  "role": "촉한 멸망 주도",
+  "stats": {
+    "leadership": 82,
+    "war": 51,
+    "intelligence": 91,
+    "politics": 79,
+    "charisma": 66,
+    "total": 369,
+    "birth": 225,
+    "death": 264
+  },
+  "novel_presence": {
+    "first_chapter": 107,
+    "last_chapter": 120,
+    "chapters": "107,110,112,115-120",
+    "chapter_count": 4
+  },
+  "biography": {
+    "namu": {
+      "overview": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위 사도(司徒) [ 펼치기 · 접기 ]초대제2대제3대제4대화흠왕랑동소진교제5대제6대제7대제8대한기위진고유정충제9대제10대제11대종회하증사마망한 대장군 · 후한 태위 · 후한 대사공 · 후한 대사농 조위 태위 · 조위 사도 · 조위 사공 · 촉한 재상 · 손오 승상\n\n조위의 진서장군(鎭西將軍) [ 펼치기 · 접기 ]1대2대3대4대조진등애위관종회※ 둘러보기 :후한의 태위 (太尉) ·조위의 태위 (太尉) · 조위의 사도 (司徒) · 조위의 사공 (司空) · 손오의 승상 (丞相)\n\n현후(縣侯)종회鍾會인물화를 보면 등을 보이고 있다. 이는 종회가 반역을 일으킨다는 암시를 담았다. 작위 관내후(關內侯) → 무정후(武亭侯) → 진후(陳侯) → 현후(縣侯) 최종직위 사도(司徒) 성씨 종(鍾) 휘 회(會) 자 사계(士季) 아버지 종요(鍾繇) 어머니 장창포(張昌蒲) 생몰기간 225년 ~ 264년 3월 3일 고향 예주(豫州) 영천군(穎川郡) 장사현(長社縣) 사망지 익주(益州) 촉군(蜀郡) 성도현(成都縣) 사도 재임기간 263년 12월 19일 ~ 264년 1월 18일\n\n1. 개요2. 생애2.1. 초기 생애2.2. 하안 살롱의 일원2.3. 사마씨의 측근으로2.4. 견제질2.5. 촉한 정벌군2.6. 종회·강유의 난2.7. 사후3. 평가4. 여담5. 미디어 믹스",
+      "biography": "종회의 어머니 장창포는 자녀의 교육에 열정적이었기 때문에 종회는 어릴 때부터 열공을 시작했다.종회는 어려서부터 머리가 좋은 것으로 이름이 알려져 있었다. 종회의 아버지 종요는 중호군 장제가 \"사람의 눈동자를 관찰하면 그 사람을 충분히 알 수 있다\"는 말을 듣고 다섯 살인 종회를 장제와 만나보게 했다. 장제는 종회가 평범한 사람이 아니라고 말했다.종회에 대한 일화 중《세설신어》의 기록으로 연의에도 쓰인 이야기가 하나 있다. 종회가 7세 때 한 살 위인 형 종육과 함께 조비를 알현했는데, 종육은 땀을 비오듯이 흘렸고 종회는 흘리지 않았다. 조비가 그 이유를 물으니, 종육은 '천자의 위엄을 대하니 무섭고 떨리어 땀이 나온다'고 대답했고 종회는 '천자의 위엄을 대하니 무섭고 떨리어 감히 땀이 나지 않는다'고 했다. 그런데 조비가 사망한 226년에 종회는 2세였으므로 그냥 야사일 뿐이지 사실은 아니다.세설신어에 또 다른 이야기가 있다종육(鍾毓) 형제가 어릴 때, 아버지가 낮잠이 들었기에 함께 약주(藥酒)를 훔쳐 마셨다.아버지는 이때 일어나 있었지만 우선 거짓으로 잠든 체하며 그들을 봤다. 종육은 절을 한 후에 마시는데, 종회는 절을 하지 않고 마시는 것이었다. 이윽고 아버지가 일어나서 종육에게 물었다.\"어찌하여 절을 하였느냐?\"종육이 말하길\"술은 예를 갖추어야 하는 것이기에, 감히 절을 하지 않을 수 없었습니다\" 이번에는 종회에게 물었다.\"어찌하여 절 하지 않았느냐?\"종회가 말하길\"훔치는 것이 애초에 예에 어긋난 일이기에, 절을 하지 않았습니다.\"《세설신어》에 또 다른 일화가 있는데, 종회는 순제북(순욱)의 외삼촌이었지만 사이가 안 좋았다. 순제북은 소유한 비싼 보검 한 자루를 어머니 종부인(종회의 누나)에게 맡겨 두고 있었는데 종회는 글씨를 잘 써서 순제북의 필적을 모방해 종부인에게 편지를 써 보검을 얻고 돌려주지 않았다. 순제북은 고민하다가 종육, 종회 형제가 비싸게 지은 집에 몰래들어가 문당에 돌아가신 종요의 모습을 그려놓았다. 종육, 종회 형제가 문에 들어서서 이 그림을 보고 크게 부친 생각이 나서 그 집을 그대로 비워두어 폐가가 되어버렸다.",
+      "evaluation": "會見利忘義, 好爲事端, 寵過必亂, 不可大任.종회는 눈앞의 이익을 보면 의리를 잊어버리고 사달을 일으키는 것을 좋아하며, 총애가 지나치면 틀림없이 반란을 일으킬 것이니 대임을 맡길 수 없습니다.『진서(역사책)』, 「후비전(后妃傳)」, 왕원희鍾會不得遂其亂者, 以有衛瓘故也. 語曰: 『猛獸不如群狐』, 卿等十餘人, 何懼王鎭惡!종회가 결국 반란을 일으키지 못한 것은 위관이 있었기 때문이다. '맹수 한 마리가 여우 떼만도 못하다'는 말이 있는데, 열 명 남짓 되는 경들이 어찌 왕진악을 두려워하느냐!『자치통감』, 유유인격 면에서 비판을 받기도 한다. 승장이면서 패장 강유에게 이용당해 반란을 일으켜 전우인 제갈서와 등애를 모함하거나 죽림칠현 중 한 명이었던 혜강을 죽이고, 허저의 아들 허의조차도 길을 닦던 도중 실수했다는 이유로 죽여버리는 일련의 행동을 볼 때 인격적으로 절대 좋은 사람은 아니었다. 물론 허의가 만든 길을 종회가 건너던 중 말이 넘어지고 바로 촉한군이 공습해서 목숨이 위태로운 상황까지 가긴 했지만 이때 종회의 부하들 모두가 그래도 명색이 허저쯤 되는 공신의 혈육인데 함부로 죽이면 안 된다고 반대했었다. 그럼에도 종회는 다 씹고 기어이 허의를 베고야 말았다. 허저 정도면 오자양장 다음가는 위나라의 공신급 장수이다. 이 역시 원인이 되어 종회와 척을 진 부하가 분명히 있었을 것이다. 종회가 반란을 일으켰다는 사실을 알게 되었을 때 너도 나도 종회를 죽이겠다고 들이닥쳤고 종회 휘하의 병사들마저 대부분 이반해 버렸으니 평소 그의 인망을 알 수 있는 부분이다.능력 면에서도 문제가 좀 있는데 종회가 반란을 일으켰을 때 명분이나 일처리도 허접하기 그지 없다. 지금까지 사마소에게 잘 붙어먹으면서 권력을 휘둘렸던 작자가 하루 아침에 사마소의 전횡을 비판하며 반역을 하는데 대체 누가 이를 곧이 곧대로 받아들이고 따르겠는가. 반란씩이나 되는 큰일을 도모하는데 정작 명분이 없는 게 문제였다. 그런 주제에 결단력이 좋은 것도 아니고 상술했듯이 부하들한테 인심을 얻은 것도 아니었다. 주변에서 위장들을 가둔 이상 어서 죽이라고 한 것이 아마 종회에겐 거의 유일무이한 찬스였을텐데 종회가 망설이며 우물거릴 뿐 실행에 옮기지 못하고 있었고 그 사이 위의 제장들이 다 갇혔다는 소식은 위군 전체에게 퍼진 뒤였다.더군다나 자신이 반면교사로 삼을 만한 인물이 없었던 것도 아닌 게 그 전에 소위 수춘삼반이라 불리는 왕릉과 관구검과 제갈탄-문흠의 난이 있었음에도 불구하고 그들로부터 어떠한 교훈도 얻지 못했다. 관구검은 최소한 해당 지역에서 인망이 있었고 최소한의 명분이 확실했으며 사마의 사후인 시점이고 아직까지 사마사의 능력이 검증된 것은 아니었기 때문에 타이밍도 나쁘지 않았다. 제갈탄은 관구검의 반란을 반면교사 삼아서 인심 확보에 더욱 주력했으며 명분도 갖췄고 사마사가 죽고 난 이후라 타이밍마저 나쁘지 않았다. 게다가 제갈탄에게는 문앙이라는 인간흉기와 동맹인 동오가 있고 동오 역시 혼자서 무쌍을 찍는 정봉이 있었으며 위의 근심거리 중 하나인 촉한도 이때를 틈타 군대를 움직였다는 기록도 있기에 확실히 승부를 걸어 볼만 했다.무엇보다도 수춘삼반 당시 종회는 매 반란마다 진압군으로서 종군하며 큰 활약을 하였기에 누구보다도 반란의 현장을 잘 알았다. 근데 종회는 반란씩이나 꿈꾸면서 인망 관리를 전혀 하지 않았고 명분이 아예 없는 수준이었는데다 자기가 활용할 장수라고는 자기 사람들인지도 확실치 않고 본인이 일방적으로 러브콜을 보내는 것이나 다름없던 촉한 출신 항장들인 강유, 장익, 요화 등 밖에 없으며 사마소와 중앙군이 건재하고 각 군의 장수들마저 병권을 여전히 가지고 있는데도 반란을 일으킨 것이다.거기에 등애를 견제하는 것까지는 좋았지만 지나치게 견제하는 바람에 사마소의 의심을 샀고 위관의 경우 알면서도 막지 못했으며 반란을 일으킨 자신에게 찬동하지 않는 위의 장수들을 가두는 병크까지 저지른다. 당연한거 아닌가 싶겠지만 한두 명도 아니고 거의 대부분의 장수가 찬동하지 않았는데 그들 모두를 가둬 그 부하들을 적으로 만든데다 임시방편으로 가두기만 했을 뿐 병권을 빼앗은 것도 아니고 죽여서 후환을 없앤 것도 아니었기 때문이다. 결국 이런 허술한 일처리 때문에 반란이 성공하기는 커녕 오히려 역풍을 맞아 본인의 목숨을 잃은 것은 물론이거니와 강유의 일족은 몰살당하고 촉한의 2세대 명장인 장익을 포함해 수백명의 장수와 이전 촉한의 태자였던 유선(劉璿)마저 살해당하는 성도대학살이 벌어지는 참사가 일어난다.제갈탄의 난을 제압할 때 까지만 해도 그럭저럭 똑똑해 보였고 사마소가 신뢰했던 점이나 세실신어 등에 그가 똑똑했다는 평가가 곳곳에 나오는 만큼 명성이나 능력이 제법 대단한 것처럼 보였으나, 실상 까보니 제갈각의 오만함과 자기 과신 및 막장 처세, 마속의 아집과 지휘능력부재, 위연의 불량한 성격과 무모함, 양의의 충성심 결핍과 개판인 대인관계, 이막의 증오심이라는 단점이란 단점은 죄다 합쳐놓은 인간이었다.그나마도 제갈각은 최소한 권력자에 오르기 전까지는 처세를 잘한데다 그 자신이 독단으로 실천해서 성공한 일이 많았다는 점에서 종회랑은 비교가 안 된다. 비록 명문가의 자제라거나 병크를 저질러서 일족이 몰살당했다는 점은 비슷하지만. 마속의 경우도 실책을 저질러서 전쟁을 하나 말아먹은 거 뿐이지 자기 고집으로 명분 없는 반란을 일으키거나 학살전을 초래하진 않았기에 종회보단 나은 점이 분명히 있다. 물론 둘 다 제갈탄의 반란, 남중정벌에 참가해 권력자의 신임을 얻었으나 별다른 성과 없이 병신짓만 저지른 점은 비슷하다. 그리고 위연은 성격은 영 아니었지만 실력은 확실했고, 양의는 적어도 진짜로 촉한을 배신하지는 않았다.물론 아무 것도 안한 건 아니라 강유를 우대했고 성도 입성 후에도 촉한 출신의 관리들과 친하게 지내는 등 최소한의 관리는 했지만, 애초에 자기 수하도 관리 못하는데 이래봤자 아무 소용이 없다.가끔 고도의 촉까들은 성도대학살과 강유의 몰락을 순전히 강유 탓으로만 돌리는데 잘 생각해보면 강유의 불운은 종회와 손을 잡은 거였다. 그리고 강유의 목적이 촉한의 부흥인 이상 좋건 싫건 야심가 종회와 손을 잡는 것 말고는 다른 선택의 여지가 없었다. 이미 성도 및 전 촉 지역이 점령당하고 촉장들은 군권을 잃어버리고 유선도 위군의 수중에 넘어간 상황에서 강유가 할 수 있는 방법은 다 포기하고 은퇴해 조용히 여생을 마치던가, 아니면 빠른 시일 내에 위나라 세력을 이용해 내분을 일으켜 촉한의 부활을 시도하는 도박 뿐이었다. 사실 시간을 오래 끌 수도 없었다. 오래 끌면 국력이 넘사벽인 위 정부에 의해 촉한 영토 전체가 완전히 통제되고 유선을 비롯한 황족들은 위로 갈 테니까. 실제로 촉한 정벌 이후 등애는 촉한의 병사들과 촉한이 힘들게 쌓아놓은 재산들을 고스란히 위나라 것으로 이용해 동오를 칠 궁리를 시작했으며 성도반란 이후 촉한의 구신들과 황족들은 낙양으로 끌려 가고 남아있던 촉장들은 진나라 장수로서 서촉을 다스리는 처지가 된다.여기서 만일 종회가 명분, 인망 관리, 결단력 등 뭐 하나라도 제대로 갖췄다면 성도를 점령하고 위와 대치하면서 후일을 도모할 수 있었을 것이다. 물론 강유는 촉한의 부흥을, 종회는 자기 나라를 세우는 것을 염두에 뒀으므로 각자의 목적이 달랐으니 암투는 감수해야겠지만. 다만 종회가 자립하는 경우에도 소수의 촉한 정벌군의 병력만 가지고 위나라 본토의 사마씨랑 촉한 현지인 간에 고립되는 상황이니 위나라 정벌군에 토벌당하거나 강유가 통수쳐서 촉한 부흥을 시키는 와중에 비명횡사할 가능성이 다분하였을 것이다. 어느 쪽이든 반란을 실행한 그 순간부터 살해당하는 것은 확정이었다는 것."
+    },
+    "wiki_en": {
+      "summary": "Zhong Hui, courtesy name Shiji, was a Chinese calligrapher, essayist, military general, and politician of the state of Cao Wei during the Three Kingdoms period of China. He was the younger son of Zhang Changpu with Zhong Yao, who served as the Grand Tutor in the Wei imperial court. He was already known for being insightful, intelligent and knowledgeable since he was young. Zhong Hui rose to prominence in the 250s when he became a close aide to Sima Zhao, the regent and de facto ruler of Wei. He advised Sima Zhao on how to deal with Zhuge Dan's Rebellion in Shouchun from 257 to 258 and was highly regarded by the latter. With Sima Zhao's help, Zhong Hui steadily moved up the ranks and became one of the key figures in the Wei government.",
+      "sections": {
+        "Lead": "Zhong Hui (225 – 3 March 264),[a] courtesy name Shiji, was a Chinese calligrapher, essayist, military general, and politician of the state of Cao Wei during the Three Kingdoms period of China. He was the younger son of Zhang Changpu with Zhong Yao, who served as the Grand Tutor in the Wei imperial court. He was already known for being insightful, intelligent and knowledgeable since he was young. Zhong Hui rose to prominence in the 250s when he became a close aide to Sima Zhao, the regent and de facto ruler of Wei. He advised Sima Zhao on how to deal with Zhuge Dan's Rebellion in Shouchun from 257 to 258 and was highly regarded by the latter. With Sima Zhao's help, Zhong Hui steadily moved up the ranks and became one of the key figures in the Wei government.\n\nIn 263, the Wei imperial court ordered Zhong Hui, Deng Ai and Zhuge Xu to lead separate armies to attack and conquer Wei's rival state, Shu Han. During and after the campaign against Shu, Zhong Hui framed Zhuge Xu and Deng Ai for cowardice and treason respectively, and seized command of their troops. By the time Shu surrendered to Wei in 263, Zhong Hui was in full control of all the Wei military forces in Shu territory. In 264, with backing from Jiang Wei, a former Shu general, Zhong Hui started a rebellion against Sima Zhao. However, the revolt failed when Zhong Hui's plan to purge several Wei officers – because he was worried that they would not support him – was leaked out. The officers escaped from custody, regrouped ... (truncated)",
+        "Early life and career": "Zhong Hui's ancestral home was in Changshe County (長社縣), Yingchuan Commandery (潁川郡), which is located east of present-day Changge, Henan. He was the younger son of Zhong Yao, who served as the Grand Tutor (太傅) in the Wei imperial court; he was about five years old when Zhong Yao died in 230. At a young age, he was already known for being insightful and intelligent.[Sanguozhi 3] His mother, Zhang Changpu, was known for being very strict with her son and for her influential role in his early education.\n\nThe Wei official Jiang Ji wrote in one of his works that one can tell what a person's character is like by observing his/her eye pupils. When Zhong Hui was four years old, his father sent him to meet Jiang Ji, who noted that the boy was extraordinary. By the time Zhong Hui reached adulthood, he was already famous for being hardworking, well read, and versed in different types of arts. During the Zhengshi era (240–249) of the reign of Cao Fang, he served as a Gentleman Cadet of the Imperial Library (秘書郎) and was later promoted to Attendant Gentleman of the Palace Writers and Masters of Writing (尚書中書侍郎). He was awarded the title of a Secondary Marquis (爵關內) when Cao Mao ascended the throne in 254.[Sanguozhi 4]\n\nZhong Hui studied the Yijing.[b] After his death, a 20-volume book titled Dao Lun (道論) was discovered in his house. The book, which was believed to be written by Zhong Hui, discussed either Legalist or Logician philosophy even though its title suggests it was about Taoism. ... (truncated)",
+        "Downfall and death": "Zhong Hui had long harboured the intention of rebelling against Wei. When he saw that Deng Ai behaved in an autocratic manner even though his military command was authorised by the Wei imperial court, he secretly reported to the court that Deng was plotting a rebellion. He was skilled in imitating people's handwriting. After intercepting a report written by Deng Ai to the Wei imperial court, he edited the report to make it sound arrogant and demanding. At the same time, he also destroyed a letter from Sima Zhao to Deng Ai.[Sanguozhi zhu 3] The Wei government fell for Zhong Hui's ruse and ordered Deng Ai to be arrested and transported back to Luoyang in a prison cart. Sima Zhao was worried that Deng Ai would not submit, so he ordered Zhong Hui and Wei Guan to arrest Deng Ai. With Zhong Hui and his troops following behind, Wei Guan went to Deng Ai's camp in Chengdu and used Sima Zhao's letter of authorisation to order Deng's soldiers to put down their weapons. Deng Ai was arrested and placed in a prison cart.[Sanguozhi 21]\n\nZhong Hui had been wary of Deng Ai, so after Deng was arrested, he immediately assumed command of the Wei forces in the former Shu territories. He was overwhelmed by feelings of megalomania after seeing that he wielded great power in his hands, so he decided to rebel against Wei. He came up with a strategy for capturing the Wei capital, Luoyang, in the following sequence:\n\nZhong Hui received a letter from Sima Zhao, which read: \"I fear Deng Ai might not subm... (truncated)"
+      }
+    },
+    "wiki_zh": {
+      "summary": "鍾會（225年—264年3月3日），字士季，潁川郡長社县（今中国河南省長葛東部）人，三国時期曹魏大臣，官至司徒。曹魏太傅鍾繇的幼子、異母兄鍾毓也在曹魏官至後將軍。是滅亡蜀漢的曹魏將領之一，同時也有玄學家、書法家的一面。入蜀後和姜維聯手發動叛變，最後死於亂軍之中。\n",
+      "sections": {
+        "Introduction": "鍾會（225年—264年3月3日），字士季，潁川郡長社县（今中国河南省長葛東部）人，三国時期曹魏大臣，官至司徒。曹魏太傅鍾繇的幼子、異母兄鍾毓也在曹魏官至後將軍。是滅亡蜀漢的曹魏將領之一，同時也有玄學家、書法家的一面。入蜀後和姜維聯手發動叛變，最後死於亂軍之中。",
+        "司馬家族": "- 《三國志》注引《世語》寫，司馬師命中書令虞松作表，幾經修改不能滿意，鍾會幫助虞松更改了五個字，司馬師因此認識到鍾會的才能。而鍾會為了應付虞松口中「博學明識，無所不貫」的司馬師，閉門精思了十天。兩人見面談了一整天，結束後司馬師拍手嘆息說：「此真王佐材也！」裴松之不認同這篇記載，他認為鍾會的名聲應該不需要透過虞松引薦給司馬師。\n- 《世說新語·賢媛篇》中寫許允捲入政爭被司馬師殺害，司馬師派鍾會拜訪許允的妻兒，許允的妻子認為兒子們的才能不高，囑咐兒子們平常心面對即可。鍾會回去後，許允的兒子們並沒有被牽連。\n- 《世說新語·排調篇》寫司馬昭與陳群的兒子陳泰、陳矯的兒子陳騫同車，呼喚鍾會上車，還沒等他來就先開車了，後來碰面的時候司馬昭說：「與人期行，何以遲遲？望卿遙遙不至。」意思是因鍾會父親鍾繇的「繇」與「遙」同音，故意拿父諱的諧音戲弄他。鍾會不甘示弱回答：「矯然懿實，何必同群？」用八個字講出三人父親的名字。司馬昭不放棄直接明來，問：「皋繇何如人？」鍾會又答：「上不及堯、舜，下不逮周、孔，亦一時之懿士。」同樣在《世說新語·排調篇》，也有另一篇講鍾毓被司馬師、陳泰以及武周的兒子武陔等人戲弄的故事，鍾毓同樣用「古之懿士」「君子周而不比，群而不黨」回答。\n- 《三國志》注引《漢晉春秋》、及《晉書》寫，鍾會死後屍體無人殮葬，向雄便出面收葬鍾會。原來數年前王經因曹髦事被殺，向雄曾為王經哭喪，向雄事後因別的事件而被關押，時任司隸校尉的鍾會任命在監獄中的向雄為都官從事，即司隸校尉屬官。司馬昭責問向雄：「王經去世，你在東市哭他，我不問罪。鍾會叛逆，你又安葬，我若寬容你，那還有王法嗎？」向雄說：「從前先王掩埋刑人的屍體，仁流朽骨，當時難道先占卜功過後才安葬嗎？現在法已施行，依法已完備。我因道義所感化而收葬他，道義上也沒有過錯。法立於上，敎弘於下，為什麼一定要讓我立身於違背生死常理呢？殿下把他的枯骨棄在荒野，作為將來的賢人的口實，不太可惜嗎？」司馬昭聽後款待並放過了向雄。\n- 《晉書》寫，西晉時馮紞意圖阻礙張華的仕途，向司馬炎進言表示，鍾會之亂司馬昭也有責任，因司馬昭太過重用鍾會。司馬炎問：「當今難道有像鍾會的人嗎？」馮紞給予暗示。日後張華果然不被司馬炎重用。"
+      }
+    }
+  },
+  "dialogues": [
+    {
+      "chapter": 112,
+      "text": "今諸葛誕雖敗，壽春城中糧草尚多，更有吳兵屯安豐以為犄角之勢，今吳兵四面攻圍，彼緩則堅守，急則死戰。吳兵或乘勢夾攻，吾軍無益。不如三面攻之，留南門大路，容賊自走；走而擊之，可全勝也。吳兵遠來，糧必不繼。我引輕騎抄在其後，可不戰而自破矣。",
+      "text_length": 117
+    },
+    {
+      "chapter": 116,
+      "text": "「吾今統十萬之眾到此，如早早出降，各依品級陞用；如執迷不降，打破關隘，玉石俱焚！」傅僉大怒，令蔣舒把關，自引三千兵殺下關來。",
+      "text_length": 62
+    },
+    {
+      "chapter": 115,
+      "text": "蜀若聞我兵大進，必求救於東吳也：故先布聲勢，作伐吳之狀，吳必不敢妄動。一年之內，蜀已破，船已成，而伐吳，豈不順乎？",
+      "text_length": 57
+    },
+    {
+      "chapter": 117,
+      "text": "陰平小路，皆高山峻嶺，若蜀以百餘人守其險要，斷其歸路，則鄧艾之兵皆餓死矣。吾只以正道而行，何愁蜀地不破乎！",
+      "text_length": 53
+    },
+    {
+      "chapter": 112,
+      "text": "「今諸葛誕雖敗，壽春城中糧草尚多，更有吳兵屯安豐以為犄角之勢，今吳兵四面攻圍，彼緩則堅守，急則死戰。",
+      "text_length": 50
+    },
+    {
+      "chapter": 119,
+      "text": "郭太后臨崩有遺詔在此，為司馬昭南闕弒君，大逆無道，早晚將篡魏，命吾討之。汝等各自簽名，共成此事。",
+      "text_length": 48
+    },
+    {
+      "chapter": 110,
+      "text": "「大將軍新亡，人心未定，將軍若留守於此，萬一朝廷有奱，悔之何及？」昭從之，即起兵還屯洛水之南。",
+      "text_length": 47
+    },
+    {
+      "chapter": 112,
+      "text": "不然；古之用兵者，全國為上，戳其元惡而已。若盡坑之，是不仁也。不如放歸江南，以顯中國之寬大。",
+      "text_length": 46
+    },
+    {
+      "chapter": 115,
+      "text": "「吾欲令汝為大將，去伐東吳，可乎？」會曰：「主公之意，本不欲伐吳，實欲伐蜀也。",
+      "text_length": 39
+    },
+    {
+      "chapter": 116,
+      "text": "吾今統十萬之眾到此，如早早出降，各依品級陞用；如執迷不降，打破關隘，玉石俱焚！",
+      "text_length": 39
+    },
+    {
+      "chapter": 117,
+      "text": "「陰平小路，皆高山峻嶺，若蜀以百餘人守其險要，斷其歸路，則鄧艾之兵皆餓死矣。",
+      "text_length": 38
+    },
+    {
+      "chapter": 119,
+      "text": "「郭太后臨崩有遺詔在此，為司馬昭南闕弒君，大逆無道，早晚將篡魏，命吾討之。",
+      "text_length": 37
+    },
+    {
+      "chapter": 115,
+      "text": "「蜀若聞我兵大進，必求救於東吳也：故先布聲勢，作伐吳之狀，吳必不敢妄動。",
+      "text_length": 36
+    },
+    {
+      "chapter": 118,
+      "text": "「伯約來何遲也？」維正色流涕曰：「國家全師在吾，今日至此，猶為速也。",
+      "text_length": 34
+    },
+    {
+      "chapter": 119,
+      "text": "「吾夜夢大蛇數千條咬吾，主何吉凶？」維曰：「夢龍蛇者，皆吉慶之兆也。",
+      "text_length": 34
+    },
+    {
+      "chapter": 112,
+      "text": "「罪在文欽，今文欽已亡，二子勢窮來歸，若殺降將，是堅城內人之心也。",
+      "text_length": 33
+    },
+    {
+      "chapter": 112,
+      "text": "罪在文欽，今文欽已亡，二子勢窮來歸，若殺降將，是堅城內人之心也。",
+      "text_length": 32
+    },
+    {
+      "chapter": 110,
+      "text": "大將軍新亡，人心未定，將軍若留守於此，萬一朝廷有奱，悔之何及？",
+      "text_length": 31
+    },
+    {
+      "chapter": 117,
+      "text": "「吾奉天子明詔，晉公鈞命，特來伐蜀，便是鄧艾有罪，亦當斬之。",
+      "text_length": 30
+    },
+    {
+      "chapter": 117,
+      "text": "吾奉天子明詔，晉公鈞命，特來伐蜀，便是鄧艾有罪，亦當斬之。",
+      "text_length": 29
+    }
+  ],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": true,
+    "wiki_zh": true,
+    "stats": true,
+    "novel_appearances": true,
+    "dialogues": true,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-16T10:52:17.226Z"
+}

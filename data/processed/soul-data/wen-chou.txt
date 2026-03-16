@@ -1,0 +1,29 @@
+=== 문추 (文醜, Wen Chou) ===
+자: 불명 (불명)
+진영: other | 티어: 1 | 역할: 원소 맹장
+
+## 능력치
+통솔:78 무력:94 지력:25 정치:25 매력:38 총합:260
+생:161 몰:200
+
+## 연의 등장
+?~?회, 총 12개 회차
+회차: 5,6,7,22,26,27,28,41,45,49,50,77
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+[26회] 劉玄德屢敗之將，於軍不利。既主公要他去時，某分三萬軍，教他為後部。
+
+[26회] 「劉玄德屢敗之將，於軍不利。
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[anecdotes] <삼국지연의>에서는 안량과 더불어 원소군의 쌍두마차 격이었던 무장이자 완벽한 띄워주기용 미드카더. 정사에서도 안량과 함께 하북의 명장이라고 적고 있지만 패배한 기록 밖에 남아있지 않아서 <삼국지연의>에 비하면 입지가 미묘하다. 또한 안량과는 평소에도 형제처럼 지내던 절친한 사이였다고 나온다.좀 기묘하게도 얼굴(顔)이 잘 생겼다(良)는 안량과는 달리 이름이 ‘더러울 추(醜)’다.옛날 판본에서는 간체자를 丑(축)이라고 여겨 '문축'이라고 번역된 곳도 많다.
+
+
+## EN Wikipedia
+Wen Chou was a military general serving under the warlord Yuan Shao during the late Eastern Han dynasty of China. His force was defeated by that of rival warlord Cao Cao in the Battle of Yan Ford and he was killed in the midst of battle.

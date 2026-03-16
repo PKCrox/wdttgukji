@@ -1,0 +1,1277 @@
+{
+  "total": 29,
+  "events": [
+    {
+      "id": "hist_222_battle_of_yiling",
+      "layer": "historical",
+      "name": "이릉대전 - 육손의 화공",
+      "period": {
+        "year": 222
+      },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 221, "max": 224 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_xun" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "lu_xun", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "관우의 원수를 갚겠다는 일념으로 동오를 향해 대군을 이끈 유비였으나, 이릉에서 오의 젊은 도독 육손이 놓은 화공에 진영이 통째로 불태워졌다. 700리에 걸친 연영이 하룻밤 사이에 잿더미가 되었고, 촉한의 정예 병력은 돌이킬 수 없이 궤멸하였다.",
+        "flavor": "칠백 리 연영에 불이 붙자 밤하늘이 낮처럼 밝았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "army_change", "target": "shu", "value": -50000 },
+        { "type": "stat_change", "target": "liu_bei", "value": { "stat": "health", "delta": -40 } },
+        { "type": "stat_change", "target": "lu_xun", "value": { "stat": "fame", "delta": 30 } },
+        { "type": "resource_change", "target": "shu", "value": { "resource": "morale", "delta": -25 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 이릉대전 - 육손의 화공",
+      "tags": ["timeline", "battle", "decisive", "fire_attack"]
+    },
+    {
+      "id": "hist_223_liu_bei_dies_liu_shan_succeeds",
+      "layer": "historical",
+      "name": "유비 사망, 유선 즉위",
+      "period": {
+        "year": 223
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 222, "max": 225 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_shan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "liu_shan", "role": "supporter", "required": true },
+        { "character_id": "zhuge_liang", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "이릉의 참패 이후 백제성으로 물러난 유비는 병세가 깊어져 다시는 일어나지 못했다. 임종 자리에서 제갈량에게 어린 아들 유선을 부탁하며, '그대의 재주가 조비보다 열 배니 반드시 나라를 안정시킬 것'이라 말했다. 탁고를 받은 제갈량은 눈물을 흘리며 죽음으로 보답하겠다 맹세하였다.",
+        "flavor": "선제가 눈을 감자, 백제성에 통곡이 끊이지 않았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "liu_bei", "value": "illness" },
+        { "type": "stat_change", "target": "liu_shan", "value": { "stat": "authority", "delta": 50 } },
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "authority", "delta": 30 } },
+        { "type": "resource_change", "target": "shu", "value": { "resource": "morale", "delta": -20 } }
+      ],
+      "choices": [
+        {
+          "id": "entrust_zhuge",
+          "text": "제갈량에게 전권을 위임한다",
+          "effects": [
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "authority", "delta": 20 } },
+            { "type": "loyalty_change", "target": "zhuge_liang", "value": 15 }
+          ]
+        },
+        {
+          "id": "council_rule",
+          "text": "원로 대신들의 합의체로 운영한다",
+          "effects": [
+            { "type": "resource_change", "target": "shu", "value": { "resource": "stability", "delta": 10 } },
+            { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "authority", "delta": -10 } }
+          ]
+        }
+      ],
+      "historical_basis": "연표 (namuwiki): 유비 사망, 유선 즉위",
+      "tags": ["timeline", "succession", "death", "political"]
+    },
+    {
+      "id": "hist_225_seven_captures_of_meng_huo",
+      "layer": "historical",
+      "name": "칠종칠금 - 남만 정벌",
+      "period": {
+        "year": 225
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 224, "max": 227 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "meng_huo" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "meng_huo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "북벌의 후방을 안정시키기 위해 제갈량은 남중으로 군을 이끌었다. 남만왕 맹획을 일곱 번 사로잡고 일곱 번 풀어주며, 무력이 아닌 마음으로 굴복시키는 공심 전략을 펼쳤다. 마침내 맹획이 스스로 항복을 청하며 다시는 배반하지 않겠다 맹세하니, 촉한의 남방은 완전히 안정되었다.",
+        "flavor": "일곱 번째 풀려난 맹획이 무릎 꿇으며 말했다. '승상의 은혜는 하늘과 같습니다.'",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "shu", "value": { "region": "nanman", "control": true } },
+        { "type": "faction_peace", "target": "nanman", "value": "shu" },
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "character_join", "target": "meng_huo", "value": "shu" }
+      ],
+      "choices": [
+        {
+          "id": "release_menghuo",
+          "text": "맹획을 다시 풀어주고 마음을 얻는다",
+          "effects": [
+            { "type": "faction_peace", "target": "nanman", "value": "shu" },
+            { "type": "character_join", "target": "meng_huo", "value": "shu" },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "gold", "delta": -500 } }
+          ]
+        },
+        {
+          "id": "execute_menghuo",
+          "text": "맹획을 처형하고 남중을 직접 통치한다",
+          "effects": [
+            { "type": "character_death", "target": "meng_huo", "value": "execution" },
+            { "type": "territory_change", "target": "shu", "value": { "region": "nanman", "control": true } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "stability", "delta": -15 } }
+          ]
+        }
+      ],
+      "historical_basis": "연표 (namuwiki): 칠종칠금 - 남만 정벌",
+      "tags": ["timeline", "campaign", "diplomacy", "southern"]
+    },
+    {
+      "id": "hist_227_first_northern_expedition_chu_shi_biao",
+      "layer": "historical",
+      "name": "제갈량 제1차 북벌, 출사표",
+      "period": {
+        "year": 227
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 226, "max": 229 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "제갈량은 유선에게 출사표를 올려 북벌의 대의를 밝혔다. '선제께서 창업의 뜻을 이루지 못하고 중도에 돌아가시니, 오늘 천하는 셋으로 나뉘어 있습니다.' 한실 부흥의 비장한 결의를 품고 한중에서 10만 대군을 이끌어 위나라를 향해 진군하였다.",
+        "flavor": "출사표를 읽고 눈물 흘리지 않는 자는 충신이 아니라 했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu", "value": "wei" },
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "fame", "delta": 25 } },
+        { "type": "army_change", "target": "shu", "value": -10000 },
+        { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -3000 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 제갈량 제1차 북벌, 출사표",
+      "tags": ["timeline", "campaign", "northern_expedition", "political"]
+    },
+    {
+      "id": "hist_228_battle_of_jieting_ma_su_defeated",
+      "layer": "historical",
+      "name": "가정 전투 - 마속 패배",
+      "period": {
+        "year": 228
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 227, "max": 230 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "ma_su" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "ma_su", "role": "target", "required": true },
+        { "character_id": "zhang_he", "role": "antagonist", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량은 가정의 요충지를 마속에게 맡겼으나, 마속은 병법의 이론만 믿고 산 위에 진을 쳤다. 위장 장합이 수원을 끊자 촉군은 갈증에 무너져 대패하였다. 제1차 북벌의 성과가 일시에 물거품이 되고, 제갈량은 눈물을 머금고 마속을 참수하였다.",
+        "flavor": "제갈량이 눈물을 흘리며 말했다. '마속을 죽이는 것이 아니라 군법을 살리는 것이다.'",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "ma_su", "value": "execution" },
+        { "type": "stat_change", "target": "zhuge_liang", "value": { "stat": "authority", "delta": -10 } },
+        { "type": "army_change", "target": "shu", "value": -15000 },
+        { "type": "stat_change", "target": "zhang_he", "value": { "stat": "fame", "delta": 15 } }
+      ],
+      "choices": [
+        {
+          "id": "execute_masu",
+          "text": "군법대로 마속을 참수한다 (읍참마속)",
+          "effects": [
+            { "type": "character_death", "target": "ma_su", "value": "execution" },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "discipline", "delta": 20 } }
+          ]
+        },
+        {
+          "id": "spare_masu",
+          "text": "마속을 용서하고 속죄의 기회를 준다",
+          "effects": [
+            { "type": "stat_change", "target": "ma_su", "value": { "stat": "loyalty", "delta": 30 } },
+            { "type": "resource_change", "target": "shu", "value": { "resource": "discipline", "delta": -15 } }
+          ]
+        }
+      ],
+      "historical_basis": "연표 (namuwiki): 가정 전투 - 마속 패배",
+      "tags": ["timeline", "battle", "northern_expedition", "execution"]
+    },
+    {
+      "id": "hist_228_second_northern_expedition",
+      "layer": "historical",
+      "name": "제2차 북벌",
+      "period": {
+        "year": 228
+      },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 227, "max": 230 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "가정의 패배를 교훈 삼아 제갈량은 같은 해 겨울 다시 북벌에 나섰다. 진창을 목표로 진군하였으나 위군의 완강한 저항과 보급 문제로 성을 함락시키지 못했다. 양식이 다하자 제갈량은 무리하지 않고 질서정연하게 퇴각하였다.",
+        "flavor": "북벌의 길은 멀고, 촉한의 국력은 유한했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "resource_change", "target": "shu", "value": { "resource": "food", "delta": -2000 } },
+        { "type": "army_change", "target": "shu", "value": -5000 }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 제2차 북벌",
+      "tags": ["timeline", "campaign", "northern_expedition"]
+    },
+    {
+      "id": "hist_229_sun_quan_founds_eastern_wu",
+      "layer": "historical",
+      "name": "손권 오나라 건국, 삼국정립 완성",
+      "period": {
+        "year": 229
+      },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 228, "max": 231 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sun_quan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "손권이 마침내 건업에서 황제를 칭하고 국호를 오라 하니, 위-촉-오 삼국이 정립하는 형세가 완성되었다. 조비가 세운 위, 유비가 세운 촉에 이어 손권이 마지막 황좌에 오른 것이다. 천하를 셋으로 나누어 다투는 삼국시대의 구도가 비로소 갖추어졌다.",
+        "flavor": "세 황제, 세 도읍, 세 천하. 한 하늘 아래 세 해가 떠올랐다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sun_quan", "value": { "stat": "authority", "delta": 50 } },
+        { "type": "resource_change", "target": "wu", "value": { "resource": "morale", "delta": 30 } },
+        { "type": "faction_alliance", "target": "wu", "value": "shu" }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 손권 오나라 건국, 삼국정립 완성",
+      "tags": ["timeline", "political", "founding", "diplomacy"]
+    },
+    {
+      "id": "hist_231_fourth_northern_expedition_zhang_he_dies",
+      "layer": "historical",
+      "name": "제4차 북벌, 장합 전사",
+      "period": {
+        "year": 231
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 230, "max": 233 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true },
+        { "character_id": "zhang_he", "role": "target", "required": false }
+      ],
+      "narrative": {
+        "text": "제갈량의 네 번째 북벌에서 사마의가 위군 총사령관으로 맞섰다. 두 천재 전략가의 첫 대결은 기산 일대에서 교착되었으나, 퇴각하는 촉군을 추격하던 위장 장합이 목문도에서 매복에 걸려 전사하였다. 위나라는 오호장군의 마지막 생존자를 잃었다.",
+        "flavor": "장합의 화살이 떨어지니, 오호장군의 시대도 끝났다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhang_he", "value": "killed_in_battle" },
+        { "type": "stat_change", "target": "sima_yi", "value": { "stat": "fame", "delta": 10 } },
+        { "type": "army_change", "target": "wei", "value": -8000 }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 제4차 북벌, 장합 전사",
+      "tags": ["timeline", "battle", "northern_expedition", "death"]
+    },
+    {
+      "id": "hist_234_battle_of_wuzhang_plains_zhuge_liang_die",
+      "layer": "historical",
+      "name": "오장원 전투 - 제갈량 사망",
+      "period": {
+        "year": 234
+      },
+      "location": "yongzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 233, "max": 236 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhuge_liang" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhuge_liang", "role": "protagonist", "required": true },
+        { "character_id": "sima_yi", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "다섯 번째이자 마지막 북벌에서 제갈량은 오장원에 진을 치고 사마의와 대치하였다. 그러나 과로로 쌓인 병이 깊어져 진중에서 별이 떨어지듯 숨을 거두었다. 촉한은 한실 부흥의 꿈을 실현할 유일한 천재를 잃었으며, 북벌은 사실상 종막을 내렸다.",
+        "flavor": "장성이 떨어지다 — 사마의가 촉군의 퇴각을 보며 탄식했다. '천하의 기재로다.'",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhuge_liang", "value": "illness" },
+        { "type": "resource_change", "target": "shu", "value": { "resource": "morale", "delta": -40 } },
+        { "type": "stat_change", "target": "sima_yi", "value": { "stat": "authority", "delta": 20 } },
+        { "type": "faction_peace", "target": "shu", "value": "wei" }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 오장원 전투 - 제갈량 사망",
+      "tags": ["timeline", "death", "northern_expedition", "decisive"]
+    },
+    {
+      "id": "hist_238_gongsun_yuan_s_rebellion_suppressed",
+      "layer": "historical",
+      "name": "공손연 반란 진압",
+      "period": {
+        "year": 238
+      },
+      "location": "youzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 237, "max": 240 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "gongsun_yuan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sima_yi", "role": "protagonist", "required": true },
+        { "character_id": "gongsun_yuan", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "요동의 공손연이 자립하여 연왕을 칭하고 오나라와 손을 잡으려 하자, 사마의가 4만 대군을 이끌고 원정에 나섰다. 양평성을 포위하고 비가 퍼붓는 가운데 한 달을 버텨 마침내 성이 함락되었다. 공손연은 도주 중 참수되었고, 요동은 위나라의 판도에 완전히 편입되었다.",
+        "flavor": "폭우 속에서도 진을 풀지 않으니, 사마의의 인내는 천하 제일이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "gongsun_yuan", "value": "killed_in_battle" },
+        { "type": "territory_change", "target": "wei", "value": { "region": "liaodong", "control": true } },
+        { "type": "stat_change", "target": "sima_yi", "value": { "stat": "fame", "delta": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 공손연 반란 진압",
+      "tags": ["timeline", "campaign", "rebellion", "political"]
+    },
+    {
+      "id": "hist_239_cao_rui_dies",
+      "layer": "historical",
+      "name": "조예(위 명제) 사망",
+      "period": {
+        "year": 239
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 238, "max": 241 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_rui" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_fang" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "cao_rui", "role": "protagonist", "required": true },
+        { "character_id": "cao_fang", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "위 명제 조예가 36세의 나이로 붕어하고, 양자인 어린 조방이 뒤를 이었다. 조예는 임종 시 사마의와 조상에게 보정을 부탁하였으나, 이 탁고는 훗날 두 권신의 치명적 권력 다툼으로 이어지게 된다. 위나라 조씨 황실의 실권은 이때부터 서서히 기울기 시작했다.",
+        "flavor": "두 보정 대신의 밀약 — 하나의 황좌를 둘이 나눌 수는 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cao_rui", "value": "illness" },
+        { "type": "stat_change", "target": "cao_fang", "value": { "stat": "authority", "delta": 30 } },
+        { "type": "stat_change", "target": "sima_yi", "value": { "stat": "authority", "delta": 15 } },
+        { "type": "resource_change", "target": "wei", "value": { "resource": "stability", "delta": -10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 조예(위 명제) 사망",
+      "tags": ["timeline", "succession", "death", "political"]
+    },
+    {
+      "id": "hist_249_gaoping_ling_incident_sima_yi_seizes_pow",
+      "layer": "historical",
+      "name": "고평릉 사변 - 사마의 쿠데타",
+      "period": {
+        "year": 249
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 248, "max": 251 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yi" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_shuang" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sima_yi", "role": "protagonist", "required": true },
+        { "character_id": "cao_shuang", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "사마의는 십여 년간 병을 핑계로 은인자중하다가, 조상이 황제를 데리고 고평릉에 참배 나간 틈을 노려 낙양의 무기고와 성문을 장악했다. 돌아온 조상은 저항 한 번 못 하고 항복하였으나, 삼족이 멸문되는 참혹한 결말을 맞았다. 이로써 위나라의 실권은 완전히 사마씨 가문에 넘어갔다.",
+        "flavor": "칼을 뽑지 않고 십 년을 참았으니, 뽑은 칼에는 망설임이 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cao_shuang", "value": "execution" },
+        { "type": "stat_change", "target": "sima_yi", "value": { "stat": "authority", "delta": 50 } },
+        { "type": "resource_change", "target": "wei", "value": { "resource": "stability", "delta": -20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 고평릉 사변 - 사마의 쿠데타",
+      "tags": ["timeline", "coup", "political", "decisive"]
+    },
+    {
+      "id": "hist_252_sun_quan_dies",
+      "layer": "historical",
+      "name": "손권 사망",
+      "period": {
+        "year": 252
+      },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 251, "max": 254 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_quan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sun_quan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "70세의 손권이 건업에서 생을 마감하니, 삼국을 세운 영웅 중 가장 오래 살아남은 군주였다. 그러나 만년에 태자를 폐하고 후사를 바꾸는 등 혼란스러운 조치를 남겨, 오나라 조정은 곧 격렬한 권신 다툼의 소용돌이에 빠졌다. 손씨가 쌓아 올린 강동의 기업은 안에서부터 흔들리기 시작했다.",
+        "flavor": "강동의 호랑이가 눈을 감으니, 궁중에는 여우들이 날뛰었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "sun_quan", "value": "old_age" },
+        { "type": "resource_change", "target": "wu", "value": { "resource": "stability", "delta": -30 } },
+        { "type": "resource_change", "target": "wu", "value": { "resource": "morale", "delta": -20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 손권 사망",
+      "tags": ["timeline", "death", "succession", "political"]
+    },
+    {
+      "id": "hist_260_sima_zhao_assassinates_emperor_cao_mao",
+      "layer": "historical",
+      "name": "사마소, 조모 시해",
+      "period": {
+        "year": 260
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 259, "max": 262 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_zhao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_mao" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sima_zhao", "role": "protagonist", "required": true },
+        { "character_id": "cao_mao", "role": "target", "required": true }
+      ],
+      "narrative": {
+        "text": "위 황제 조모는 '사마소의 마음은 길 가는 사람도 안다'며 친히 칼을 들고 사마소를 치려 나섰다. 그러나 수백의 근위병으로는 사마소의 대군을 당해낼 수 없었고, 황제는 길 위에서 부하 장수의 창에 찔려 죽었다. 천자가 신하에게 시해당하는 전대미문의 사태로, 위나라 황실의 권위는 완전히 소멸하였다.",
+        "flavor": "'사마소의 마음을 모르는 자가 어디 있으랴' — 이 말이 천하에 퍼지니 사마소도 두려워했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cao_mao", "value": "assassination" },
+        { "type": "stat_change", "target": "sima_zhao", "value": { "stat": "authority", "delta": 30 } },
+        { "type": "stat_change", "target": "sima_zhao", "value": { "stat": "fame", "delta": -20 } },
+        { "type": "resource_change", "target": "wei", "value": { "resource": "stability", "delta": -25 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 사마소, 조모 시해",
+      "tags": ["timeline", "assassination", "political", "decisive"]
+    },
+    {
+      "id": "hist_265_western_jin_founded",
+      "layer": "historical",
+      "name": "서진 건국",
+      "period": {
+        "year": 265
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 264, "max": 267 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sima_yan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "사마소의 아들 사마염이 위나라 마지막 황제 조환으로부터 선양을 받아 진나라를 세웠다. 조비가 한으로부터 선양받은 것을 45년 만에 그대로 되돌려 받은 셈이었다. 삼국 중 가장 강대했던 위는 그 힘으로 천하를 차지한 것이 아니라 신하에게 나라를 빼앗겼다.",
+        "flavor": "조씨가 한에게 한 일을 사마씨가 조씨에게 했으니, 하늘의 뜻인가 사람의 업인가.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sima_yan", "value": { "stat": "authority", "delta": 80 } },
+        { "type": "resource_change", "target": "western-jin", "value": { "resource": "morale", "delta": 30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 서진 건국",
+      "tags": ["timeline", "founding", "political", "succession"]
+    },
+    {
+      "id": "hist_280_eastern_wu_falls_china_unified",
+      "layer": "historical",
+      "name": "오나라 멸망, 삼국 통일",
+      "period": {
+        "year": 280
+      },
+      "location": "jianye",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 279, "max": 282 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sima_yan" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sima_yan", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "서진의 대군이 장강을 건너 건업을 함락시키니, 오나라 마지막 황제 손호가 항복하였다. 황건적의 난 이래 96년, 적벽대전 이래 72년, 삼국이 정립한 이래 51년 만에 천하가 하나로 통일되었다. 그러나 진의 태평은 오래가지 못했으니, 이는 또 다른 난세의 서곡에 불과했다.",
+        "flavor": "왕준의 전함이 장강을 가를 때, 천하의 분열은 비로소 끝나고 — 또 다른 분열이 시작되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "western-jin", "value": { "region": "jiangdong", "control": true } },
+        { "type": "stat_change", "target": "sima_yan", "value": { "stat": "fame", "delta": 50 } },
+        { "type": "resource_change", "target": "western-jin", "value": { "resource": "morale", "delta": 40 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (namuwiki): 오나라 멸망, 삼국 통일",
+      "tags": ["timeline", "conquest", "unification", "decisive"]
+    },
+    {
+      "id": "hist_184_he_jin_appointed_general",
+      "layer": "historical",
+      "name": "하진 대장군 임명",
+      "period": {
+        "year": 184,
+        "month": 4
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 183, "max": 185 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "he_jin" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "he_jin", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "황건적의 난이 천하를 뒤흔들자, 외척 하진이 대장군에 임명되어 토벌군을 총지휘하게 되었다. 백정 출신이라는 비아냥을 뒤로하고, 하진은 한 제국의 군권을 한 손에 쥐었다. 이 인사는 훗날 환관 세력과의 치명적인 충돌로 이어지는 도화선이 된다.",
+        "flavor": "칼을 드는 손이 한때 고기를 잡던 손이라 해서 그 칼이 무딜 이유는 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "he_jin", "value": { "stat": "authority", "delta": 40 } },
+        { "type": "stat_change", "target": "he_jin", "value": { "stat": "military", "delta": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 하진 대장군 임명",
+      "tags": ["timeline", "political", "appointment"]
+    },
+    {
+      "id": "hist_184_oath_of_the_peach_garden",
+      "layer": "historical",
+      "name": "도원결의",
+      "period": {
+        "year": 184,
+        "month": 4
+      },
+      "location": "youzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 183, "max": 185 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "liu_bei" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "guan_yu" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "liu_bei", "role": "protagonist", "required": true },
+        { "character_id": "guan_yu", "role": "supporter", "required": true },
+        { "character_id": "zhang_fei", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "황건적이 횡행하는 난세에 유비, 관우, 장비 세 사람이 장비의 복숭아밭에서 의형제를 맺었다. '같은 해 같은 달 같은 날에 태어나지는 못했으나, 같은 해 같은 달 같은 날에 죽기를 원하노라.' 이 맹세는 삼국시대 가장 유명한 의리의 서사가 되었다.",
+        "flavor": "복숭아꽃이 흩날리는 아래서 세 영웅이 하늘에 맹세하니, 그날의 바람은 천하를 흔들었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relationship_change", "target": "liu_bei", "value": { "other": "guan_yu", "relation": "sworn_brother", "delta": 50 } },
+        { "type": "relationship_change", "target": "liu_bei", "value": { "other": "zhang_fei", "relation": "sworn_brother", "delta": 50 } },
+        { "type": "relationship_change", "target": "guan_yu", "value": { "other": "zhang_fei", "relation": "sworn_brother", "delta": 50 } },
+        { "type": "character_join", "target": "guan_yu", "value": "liu_bei" },
+        { "type": "character_join", "target": "zhang_fei", "value": "liu_bei" }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 도원결의",
+      "tags": ["timeline", "oath", "personal", "founding"]
+    },
+    {
+      "id": "hist_184_zhang_lu_uprising",
+      "layer": "historical",
+      "name": "장로 거병",
+      "period": {
+        "year": 184,
+        "month": 8
+      },
+      "location": "yizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 183, "max": 186 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "zhang_lu" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "zhang_lu", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "오두미도의 교주 장로가 한중 일대에서 거병하여 독자적 세력을 구축하기 시작했다. 종교적 권위로 백성을 규합하고 의사(義舍)를 세워 나그네에게 밥과 잠자리를 제공하는 독특한 통치를 펼쳤다. 한중은 난세 속에서 기이하게 평온한 섬이 되었다.",
+        "flavor": "길 위에 의사가 서고, 지나는 자 모두 배불리 먹으니 — 이것이 태평인가 사교인가.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "zhang_lu", "value": { "region": "hanzhong", "control": true } },
+        { "type": "stat_change", "target": "zhang_lu", "value": { "stat": "charisma", "delta": 20 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 장로 거병",
+      "tags": ["timeline", "rebellion", "religious"]
+    },
+    {
+      "id": "hist_187_sun_ce_southern_conquest_begins",
+      "layer": "historical",
+      "name": "손책 남방 정복 시작",
+      "period": {
+        "year": 187
+      },
+      "location": "yangzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 186, "max": 189 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_ce" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sun_ce", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "소패왕으로 불리는 손책이 아버지 손견의 유지를 이어 강동 일대를 정복하기 시작했다. 단기필마로 시작한 그의 행군은 강을 건너고 성을 넘어 양주 전역을 휩쓸었다. 후일 동오의 터전이 될 강동 6군의 기반은 이 젊은 영웅의 손에서 닦여졌다.",
+        "flavor": "아버지가 남긴 것은 옥새 하나와 천하를 품을 꿈 하나뿐이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sun_ce", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "stat_change", "target": "sun_ce", "value": { "stat": "military", "delta": 15 } },
+        { "type": "army_change", "target": "sun_ce", "value": 5000 }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 손책 남방 정복 시작",
+      "tags": ["timeline", "campaign", "conquest"]
+    },
+    {
+      "id": "hist_189_emperor_ling_dies",
+      "layer": "historical",
+      "name": "후한 영제 사망",
+      "period": {
+        "year": 189,
+        "month": 5
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 188, "max": 190 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "emperor_ling" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "emperor_ling", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "매관매직으로 국고를 탕진하고 환관에게 조정을 맡긴 후한 영제가 34세로 붕어하였다. 그의 죽음은 후계 다툼의 뇌관을 당기는 신호탄이 되었다. 외척 하진과 환관 십상시, 그리고 변방의 군벌들이 모두 낙양을 향해 칼을 뽑아 드는 혼란의 서막이 열렸다.",
+        "flavor": "황제가 죽자 제국의 봉인이 풀렸다 — 낙양을 향해 모든 이리가 달려왔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "emperor_ling", "value": "illness" },
+        { "type": "resource_change", "target": "later-han", "value": { "resource": "stability", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 후한 영제 사망",
+      "tags": ["timeline", "death", "succession", "political"]
+    },
+    {
+      "id": "hist_189_ten_eunuchs_incident",
+      "layer": "historical",
+      "name": "십상시의 난",
+      "period": {
+        "year": 189,
+        "month": 9
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 188, "max": 191 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shao" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "yuan_shao", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "대장군 하진이 환관 세력을 제거하려다 역으로 십상시에게 살해당하는 참극이 벌어졌다. 분노한 원소가 군사를 이끌고 궁궐에 난입하여 환관 2천여 명을 도륙하니, 낙양의 궁궐은 피바다가 되었다. 후한 조정의 양대 세력이 한순간에 모두 소멸하며, 권력의 진공 상태가 만들어졌다.",
+        "flavor": "궁궐 안에서 칼이 부딪히는 소리가 들릴 때, 궁궐 밖에서는 더 큰 칼이 다가오고 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "he_jin", "value": "assassination" },
+        { "type": "stat_change", "target": "yuan_shao", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "resource_change", "target": "later-han", "value": { "resource": "stability", "delta": -40 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 십상시의 난",
+      "tags": ["timeline", "coup", "political", "massacre"]
+    },
+    {
+      "id": "hist_189_dong_zhuo_seizes_power",
+      "layer": "historical",
+      "name": "동탁 권력 장악",
+      "period": {
+        "year": 189,
+        "month": 9
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 188, "max": 191 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "protagonist", "required": true },
+        { "character_id": "lu_bu", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "하진의 부름을 받고 서량에서 올라온 동탁이 십상시의 난으로 권력이 비어 있는 낙양을 장악했다. 천하무적 여포를 양아들로 삼고, 소제를 폐위시켜 헌제를 세운 뒤 스스로 태사가 되었다. 서량의 정예 기병이 황성 거리를 활보하니, 후한 400년의 질서가 한 사내의 주먹 앞에 무너졌다.",
+        "flavor": "늑대가 양의 우리에 들어왔다 — 그것도 가장 큰 늑대가.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "authority", "delta": 60 } },
+        { "type": "character_join", "target": "lu_bu", "value": "dong-zhuo" },
+        { "type": "resource_change", "target": "later-han", "value": { "resource": "stability", "delta": -30 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 동탁 권력 장악",
+      "tags": ["timeline", "political", "coup", "tyranny"]
+    },
+    {
+      "id": "hist_190_anti_dong_zhuo_coalition",
+      "layer": "historical",
+      "name": "반동탁 연합군 결성",
+      "period": {
+        "year": 190
+      },
+      "location": null,
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 192 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "yuan_shao", "role": "protagonist", "required": true },
+        { "character_id": "cao_cao", "role": "supporter", "required": true },
+        { "character_id": "sun_jian", "role": "supporter", "required": false }
+      ],
+      "narrative": {
+        "text": "동탁의 폭정에 맞서 각지의 제후들이 원소를 맹주로 삼아 연합군을 결성하였다. 조조, 원술, 손견, 공손찬 등 18로 제후가 군사를 이끌고 모여들었으나, 명분은 같아도 속셈은 저마다 달랐다. 이 연합은 동탁을 쫓아내는 데는 성공하였으나, 해산 후 제후들끼리의 더 큰 전란의 씨앗이 되었다.",
+        "flavor": "18개의 깃발이 한 방향을 가리키되, 18개의 마음은 제각각이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_alliance", "target": "yuan-shao", "value": "later-han" },
+        { "type": "faction_war", "target": "yuan-shao", "value": "dong-zhuo" },
+        { "type": "stat_change", "target": "yuan_shao", "value": { "stat": "fame", "delta": 30 } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "fame", "delta": 15 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 반동탁 연합군 결성",
+      "tags": ["timeline", "alliance", "political", "military"]
+    },
+    {
+      "id": "hist_190_dong_zhuo_punitive_campaign",
+      "layer": "historical",
+      "name": "동탁 토벌전",
+      "period": {
+        "year": 190,
+        "month": 1
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 191 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "연합군이 낙양을 향해 진군하자 동탁은 수도의 방어보다 후퇴를 택했다. 낙양 주변에서 소규모 교전이 벌어졌으나, 연합군은 내부 분열로 결정적 타격을 주지 못했다. 손견이 선봉에서 분전했으나 다른 제후들의 지원은 미미했다.",
+        "flavor": "연합군의 칼끝은 동탁이 아니라 서로를 향하고 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "dong_zhuo", "value": { "stat": "authority", "delta": -10 } },
+        { "type": "army_change", "target": "dong-zhuo", "value": -5000 }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 동탁 토벌전",
+      "tags": ["timeline", "battle", "campaign"]
+    },
+    {
+      "id": "hist_190_dong_zhuo_burns_luoyang",
+      "layer": "historical",
+      "name": "동탁 낙양 불태우고 천도",
+      "period": {
+        "year": 190,
+        "month": 4
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 191 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "lu_bu" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "dong_zhuo", "role": "protagonist", "required": true },
+        { "character_id": "lu_bu", "role": "supporter", "required": true }
+      ],
+      "narrative": {
+        "text": "연합군의 압박에 동탁은 낙양을 버리고 장안으로 천도를 결정했다. 떠나기 전 200년 도읍의 궁궐과 종묘에 불을 질러 잿더미로 만들고, 황릉을 도굴하여 금은보화를 약탈하였다. 백만 백성을 강제로 서쪽으로 끌고 가니, 길 위에 시체가 산을 이루었다.",
+        "flavor": "동탁이 떠난 뒤 낙양에는 궁궐 터의 재와 흩어진 뼈만 남았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "territory_change", "target": "dong-zhuo", "value": { "region": "luoyang", "control": false } },
+        { "type": "territory_change", "target": "dong-zhuo", "value": { "region": "changan", "control": true } },
+        { "type": "resource_change", "target": "later-han", "value": { "resource": "population", "delta": -100000 } },
+        { "type": "resource_change", "target": "dong-zhuo", "value": { "resource": "gold", "delta": 5000 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 동탁 낙양 불태우고 천도",
+      "tags": ["timeline", "destruction", "political", "atrocity"]
+    },
+    {
+      "id": "hist_190_battle_of_yangcheng",
+      "layer": "historical",
+      "name": "양성 전투",
+      "period": {
+        "year": 190,
+        "month": 5
+      },
+      "location": "yuzhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 189, "max": 191 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "cao_cao" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "dong_zhuo" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "cao_cao", "role": "protagonist", "required": true },
+        { "character_id": "dong_zhuo", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "다른 제후들이 관망하는 가운데 조조는 단독으로 동탁 추격에 나섰으나, 양성에서 복병에 걸려 대패하였다. 말을 잃고 화살에 맞으면서도 간신히 목숨만 건져 탈출했다. 이 참패는 조조에게 병력 없이는 뜻을 펼 수 없다는 뼈아픈 교훈을 남겼다.",
+        "flavor": "패배한 조조가 이를 갈며 말했다. '언젠가 이 치욕을 반드시 되갚겠다.'",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "army_change", "target": "cao_cao", "value": -3000 },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "health", "delta": -15 } },
+        { "type": "stat_change", "target": "cao_cao", "value": { "stat": "fame", "delta": 10 } }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 양성 전투",
+      "tags": ["timeline", "battle", "defeat"]
+    },
+    {
+      "id": "hist_191_gongsun_zan_vs_yuan_shao",
+      "layer": "historical",
+      "name": "공손찬 vs 원소 충돌",
+      "period": {
+        "year": 191
+      },
+      "location": "jizhou",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 190, "max": 193 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "gongsun_zan" }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "yuan_shao" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "gongsun_zan", "role": "protagonist", "required": true },
+        { "character_id": "yuan_shao", "role": "antagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "반동탁 연합이 해산된 후, 하북의 패권을 두고 공손찬과 원소가 정면 충돌하였다. 백마의장(白馬義從)으로 이름 높은 공손찬의 기마대와 원소의 보병이 기주 일대에서 격돌했다. 이 전쟁은 수년간 이어지며 하북을 피로 물들이고, 최종적으로 원소의 승리로 귀결된다.",
+        "flavor": "맹주의 투구를 벗자마자 옛 동맹의 목을 겨누었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "gongsun_zan", "value": "yuan-shao" },
+        { "type": "army_change", "target": "gongsun_zan", "value": -5000 },
+        { "type": "army_change", "target": "yuan-shao", "value": -3000 }
+      ],
+      "choices": [],
+      "historical_basis": "연표 (yellow): 공손찬 vs 원소 충돌",
+      "tags": ["timeline", "battle", "rivalry"]
+    },
+    {
+      "id": "hist_191_sun_jian_enters_luoyang",
+      "layer": "historical",
+      "name": "손견 낙양 입성",
+      "period": {
+        "year": 191,
+        "month": 4
+      },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          {
+            "type": "year_range",
+            "params": { "min": 190, "max": 192 }
+          },
+          {
+            "type": "character_alive",
+            "params": { "character_id": "sun_jian" }
+          }
+        ],
+        "priority": 60
+      },
+      "participants": [
+        { "character_id": "sun_jian", "role": "protagonist", "required": true }
+      ],
+      "narrative": {
+        "text": "연합군 중 가장 용맹하게 싸운 손견이 마침내 폐허가 된 낙양에 입성하였다. 동탁이 불태운 잔해 속에서 전국옥새를 발견하고 몰래 품었으니, 이 옥새는 훗날 손씨 가문의 야망과 비극의 씨앗이 된다. 손견은 황릉을 수습하고 낙양의 잔해를 정리한 유일한 제후였다.",
+        "flavor": "폐허 속에서 옥새를 주운 손견 — 보배를 얻었으나 재앙도 함께 주웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sun_jian", "value": { "stat": "fame", "delta": 20 } },
+        { "type": "resource_change", "target": "sun_jian", "value": { "resource": "imperial_seal", "delta": 1 } }
+      ],
+      "choices": [
+        {
+          "id": "keep_seal",
+          "text": "옥새를 비밀리에 품는다",
+          "effects": [
+            { "type": "resource_change", "target": "sun_jian", "value": { "resource": "imperial_seal", "delta": 1 } },
+            { "type": "relationship_change", "target": "sun_jian", "value": { "other": "yuan_shao", "relation": "hostility", "delta": 30 } }
+          ]
+        },
+        {
+          "id": "return_seal",
+          "text": "옥새를 조정에 반납한다",
+          "effects": [
+            { "type": "stat_change", "target": "sun_jian", "value": { "stat": "fame", "delta": 20 } },
+            { "type": "loyalty_change", "target": "sun_jian", "value": 10 }
+          ]
+        }
+      ],
+      "historical_basis": "연표 (yellow): 손견 낙양 입성",
+      "tags": ["timeline", "political", "treasure"]
+    }
+  ]
+}

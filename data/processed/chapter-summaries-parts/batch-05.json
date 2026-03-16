@@ -1,0 +1,404 @@
+{
+  "batch": 5,
+  "chapters": [
+    {
+      "chapter_number": 41,
+      "title_kr": "유현덕이 백성을 이끌고 강을 건너고, 조자룡이 단기로 주인을 구하다",
+      "summary_kr": "조조의 대군이 번성으로 진격하자 유비는 백성 십여만 명을 이끌고 강릉을 향해 남하하나, 하루에 겨우 십여 리밖에 이동하지 못한다. 당양 장판파에서 조조의 기병에 급습당해 유비 일행이 뿔뿔이 흩어지고, 조운은 홀로 적진을 뚫으며 미부인과 아두를 찾아 나선다. 미부인은 아두를 조운에게 맡기고 고정에 몸을 던져 자결하며, 조운은 아두를 품에 안고 조조군 명장 오십여 명을 베며 중위를 돌파한다.",
+      "key_events": [
+        {
+          "event": "유비가 백성 십여만 명을 이끌고 번성에서 강릉으로 남하",
+          "participants": ["liu-bei", "zhuge-liang"],
+          "year": 208
+        },
+        {
+          "event": "서서가 조조의 사자로 유비를 찾아와 항복을 권하나 오히려 조조군 정보를 알려줌",
+          "participants": ["liu-bei"],
+          "year": 208
+        },
+        {
+          "event": "위연이 양양성 문을 열어 유비를 맞으려 하나 문빙과 교전",
+          "participants": ["liu-bei"],
+          "year": 208
+        },
+        {
+          "event": "조조가 유종과 채부인을 살해하도록 명령",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "당양 장판파에서 조조 기병의 야습으로 유비군 궤멸",
+          "participants": ["liu-bei", "cao-cao", "zhang-fei", "zhao-yun"],
+          "year": 208
+        },
+        {
+          "event": "조운이 단기로 적진을 돌파하며 아두를 구출 (장판파 전투)",
+          "participants": ["zhao-yun", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "미부인이 아두를 조운에게 맡기고 고정에 투신 자결",
+          "participants": ["zhao-yun"],
+          "year": 208
+        },
+        {
+          "event": "조운이 하후은을 죽이고 청강검을 획득",
+          "participants": ["zhao-yun"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "liu-bei", "action": "백성을 버리지 못하고 함께 남하하며 하루 십여 리만 이동" },
+        { "character": "zhao-yun", "action": "단기로 조조 대군을 뚫고 아두를 구출하며 명장 오십여 명을 참살" },
+        { "character": "cao-cao", "action": "조운의 용맹에 감탄하여 생포 명령을 내림 (화살 사용 금지)" },
+        { "character": "zhuge-liang", "action": "관우를 강하로 보내 유기에게 원군을 청하게 함" },
+        { "character": "zhang-fei", "action": "후위를 맡아 유비의 퇴각을 엄호" }
+      ]
+    },
+    {
+      "chapter_number": 42,
+      "title_kr": "장익덕이 장판교에서 크게 소란을 피우고, 유예주가 한진구로 패주하다",
+      "summary_kr": "조운이 아두를 품에 안고 장판교에 도착하자 장비가 다리 위에서 홀로 조조 대군을 막아선다. 장비의 세 번의 호통에 조조군이 간담이 서늘해져 일제히 퇴각하고, 하후걸은 놀라 낙마하여 죽는다. 유비는 한진구에서 관우의 원군과 유기의 수군 지원을 받아 위기를 벗어나고, 제갈량과 노숙이 손권과의 동맹을 위해 시상으로 향한다.",
+      "key_events": [
+        {
+          "event": "유비가 아두를 땅에 내던지며 조운의 충성에 감사 표시",
+          "participants": ["liu-bei", "zhao-yun"],
+          "year": 208
+        },
+        {
+          "event": "장비가 장판교에서 홀로 조조 백만 대군을 물리침",
+          "participants": ["zhang-fei", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "관우가 강하에서 만 명의 군사를 이끌고 한진구에서 유비를 구원",
+          "participants": ["guan-yu", "liu-bei"],
+          "year": 208
+        },
+        {
+          "event": "유기가 수군을 이끌고 유비를 맞이하러 옴",
+          "participants": ["liu-bei"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 노숙과 함께 시상으로 출발하여 손오 동맹을 추진",
+          "participants": ["zhuge-liang", "lu-su"],
+          "year": 208
+        },
+        {
+          "event": "조조가 강릉을 점령하고 손권에게 격문을 보내 위협",
+          "participants": ["cao-cao", "sun-quan"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhang-fei", "action": "장판교에서 세 번 호통 질러 조조 대군을 퇴각시킴" },
+        { "character": "zhao-yun", "action": "아두를 유비에게 무사히 전달" },
+        { "character": "liu-bei", "action": "아두를 땅에 던지며 '이 아이 때문에 하마터면 대장을 잃을 뻔했다' 탄식" },
+        { "character": "guan-yu", "action": "강하에서 만 명의 군사를 이끌고 와서 조조 추격군을 격퇴" },
+        { "character": "zhuge-liang", "action": "노숙과 함께 시상으로 가서 손권 설득 계획 수립" },
+        { "character": "lu-su", "action": "강하에 조문차 방문하여 유비 진영과 접촉하고 제갈량을 동오로 초청" }
+      ]
+    },
+    {
+      "chapter_number": 43,
+      "title_kr": "제갈량이 혀로 여러 유생과 논쟁하고, 노자경이 힘써 여러 의견을 물리치다",
+      "summary_kr": "제갈량이 시상에 도착하여 동오의 문관들과 설전을 벌이는데, 장소를 필두로 우번, 보즐, 설종, 육적, 엄준, 정덕추 등이 차례로 유비의 패전을 조롱하며 항복을 주장하나 제갈량이 모두 논파한다. 제갈량은 손권을 만나 일부러 조조의 강대함을 강조하며 항복을 권하는 척 격장법을 쓰고, 분노한 손권은 자리를 박차고 물러나지만 노숙의 중재로 다시 만나 파조 방략을 논의한다. 손권은 제갈량의 '강노지말(강한 쇠뇌도 끝에는 비단을 뚫지 못한다)' 분석에 크게 기뻐하며 동맹 결의를 굳히고, 오국태의 유언을 떠올려 주유를 부르기로 결심한다.",
+      "key_events": [
+        {
+          "event": "제갈량이 동오 문관들과 설전하여 모두 논파 (설전군유)",
+          "participants": ["zhuge-liang"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 손권을 격장법으로 자극하여 항전 결의를 이끌어냄",
+          "participants": ["zhuge-liang", "sun-quan"],
+          "year": 208
+        },
+        {
+          "event": "노숙이 손권에게 항복하면 안 되는 이유를 설명",
+          "participants": ["lu-su", "sun-quan"],
+          "year": 208
+        },
+        {
+          "event": "손권이 오국태의 유언을 떠올리고 주유 소환을 결심",
+          "participants": ["sun-quan"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "동오 모사 7명을 차례로 논파하고 손권을 격장법으로 자극하여 항전 결의 유도" },
+        { "character": "sun-quan", "action": "제갈량의 분석에 기뻐하며 동맹을 결의하고 주유 소환 결심" },
+        { "character": "lu-su", "action": "손권에게 '군신은 항복해도 되지만 주공은 항복할 수 없다'고 진언" }
+      ]
+    },
+    {
+      "chapter_number": 44,
+      "title_kr": "공명이 지혜로 주유를 격분시키고, 손권이 결단을 내려 조조를 격파하기로 하다",
+      "summary_kr": "주유가 파양호에서 돌아와 항전파와 항복파를 모두 만난 뒤, 제갈량을 만나 일부러 항복을 주장하자 제갈량은 '이교를 조조에게 바치면 된다'는 말로 주유를 격분시킨다. 소교가 자신의 아내임을 깨닫고 분노한 주유는 조조와 불구대천의 적임을 선언하며, 이튿날 손권 앞에서 조조의 네 가지 병가 금기를 분석해 결전을 주장한다. 손권이 안건을 칼로 내리치며 항전을 결의하고 주유를 대도독에 임명하며, 주유는 군대를 편성하고 제갈근에게 제갈량 포섭을 시도하나 실패한다.",
+      "key_events": [
+        {
+          "event": "제갈량이 동작대부를 읊어 주유를 격분시킴 (이교 이야기)",
+          "participants": ["zhuge-liang", "zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "주유가 손권에게 조조군의 네 가지 금기를 분석하며 결전 주장",
+          "participants": ["zhou-yu", "sun-quan"],
+          "year": 208
+        },
+        {
+          "event": "손권이 안건을 칼로 베며 항전을 결의, 주유를 대도독에 임명",
+          "participants": ["sun-quan", "zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "주유가 군대를 편성하고 수군 출진 명령",
+          "participants": ["zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "제갈근이 제갈량에게 동오 투항을 권유하나 실패",
+          "participants": ["zhuge-liang"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhou-yu", "action": "제갈량의 도발에 격분하여 항전을 결의하고 손권에게 조조의 네 가지 금기를 분석" },
+        { "character": "zhuge-liang", "action": "동작대부를 읊어 주유를 자극하고 항전 결의를 이끌어냄" },
+        { "character": "sun-quan", "action": "안건을 칼로 베며 '항복을 말하는 자는 이 안건과 같다'고 선언, 주유를 대도독에 임명" }
+      ]
+    },
+    {
+      "chapter_number": 45,
+      "title_kr": "삼강구에서 조조가 패하고, 군영회에서 장간이 계책에 빠지다",
+      "summary_kr": "주유가 유비를 유인하여 암살하려 하나 관우가 배후에서 검을 잡고 서 있어 감히 손대지 못하고, 제갈량이 위험을 알아채고 유비를 무사히 돌려보낸다. 삼강구 첫 전투에서 감녕, 한당, 장흠이 조조 수군을 격파하고, 주유는 조조 수채를 정탐하여 채모와 장윤의 수군 역량을 경계한다. 조조의 옛 동문 장간이 설객으로 오나 주유가 군영회를 베풀어 역이용하고, 가짜 서신으로 장간을 속여 조조가 채모와 장윤을 참수하게 만드는 이간계를 성공시킨다.",
+      "key_events": [
+        {
+          "event": "주유가 유비를 유인하여 암살 기도하나 관우의 위압에 포기",
+          "participants": ["zhou-yu", "liu-bei", "guan-yu"],
+          "year": 208
+        },
+        {
+          "event": "삼강구 수전에서 감녕 등 동오군이 조조 수군을 격파",
+          "participants": ["zhou-yu", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "주유가 군영회를 베풀어 장간을 속이고 가짜 서신으로 이간계 실행",
+          "participants": ["zhou-yu", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "조조가 이간계에 속아 수군도독 채모와 장윤을 참수",
+          "participants": ["cao-cao", "zhou-yu"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhou-yu", "action": "유비 암살 기도 후 포기, 군영회로 장간을 속여 이간계 성공" },
+        { "character": "guan-yu", "action": "유비 배후에서 검을 쥐고 서서 주유의 암살 기도를 무력화" },
+        { "character": "zhuge-liang", "action": "주유의 살기를 알아채고 유비를 무사 귀환시킴" },
+        { "character": "cao-cao", "action": "장간이 가져온 가짜 서신에 속아 채모와 장윤을 참수" }
+      ]
+    },
+    {
+      "chapter_number": 46,
+      "title_kr": "기묘한 계책으로 공명이 화살을 빌리고, 비밀 계책을 바쳐 황개가 매를 맞다",
+      "summary_kr": "주유가 제갈량을 죽이려 삼일 내 화살 십만 개 조달을 명하자, 제갈량은 노숙에게 빌린 배 이십 척에 풀단을 싣고 안개 낀 밤에 조조 수채로 접근하여 화살을 빗발치듯 받아낸다. 십만여 개의 화살을 얻어 돌아온 제갈량에게 주유도 탄복하고, 두 사람이 손바닥에 '화(火)' 자를 써서 서로의 계책이 일치함을 확인한다. 한편 황개가 주유에게 고육계를 자원하여 공개적으로 오십 대의 곤장을 맞고, 감택이 거짓 항복서를 작성하여 조조에게 전달할 준비를 한다.",
+      "key_events": [
+        {
+          "event": "제갈량이 초선차전으로 조조 수군에서 화살 십만여 개를 빌려옴",
+          "participants": ["zhuge-liang", "cao-cao", "lu-su"],
+          "year": 208
+        },
+        {
+          "event": "제갈량과 주유가 손바닥에 '화(火)' 자를 써서 화공 방략 일치를 확인",
+          "participants": ["zhuge-liang", "zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "조조가 채중, 채화를 거짓 항복으로 동오에 파견",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "황개가 고육계를 자원하여 주유에게 공개적으로 오십 곤장을 맞음",
+          "participants": ["zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "감택이 황개의 거짓 항복서를 전달하기로 자원",
+          "participants": ["zhou-yu"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "안개 낀 밤에 초선차전으로 화살 십만여 개를 조조군에서 빌려옴" },
+        { "character": "zhou-yu", "action": "제갈량의 신기묘산에 탄복하고 황개의 고육계를 실행" },
+        { "character": "cao-cao", "action": "안개 속에서 화살만 퍼부으며 기습에 대비하다 화살을 빼앗김" },
+        { "character": "lu-su", "action": "제갈량에게 배 이십 척과 군사를 비밀리에 빌려줌" }
+      ]
+    },
+    {
+      "chapter_number": 47,
+      "title_kr": "감택이 은밀히 거짓 항복서를 바치고, 방통이 교묘히 연환계를 가르치다",
+      "summary_kr": "감택이 어부로 변장하여 조조 진영에 황개의 거짓 항복서를 전달하는데, 조조가 날짜를 정하지 않은 점을 추궁하자 감택은 '배주작절, 불가정기(주인을 배반하는 일에 어찌 날짜를 정하랴)'라며 역으로 조조를 설득한다. 채중, 채화의 밀보가 도착하여 황개 매질 사실이 확인되자 조조가 항복을 믿고, 감택과 감녕이 거짓으로 배신을 연기하며 채중, 채화를 역이용한다. 주유의 사주를 받은 방통이 장간에 의해 조조 진영으로 유인되어 연환계를 바치니, 조조가 전선을 쇠사슬로 연결하도록 명한다.",
+      "key_events": [
+        {
+          "event": "감택이 조조에게 황개의 거짓 항복서를 전달하고 설득에 성공",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "감녕이 채중, 채화를 역이용하여 거짓 내응 약속",
+          "participants": ["zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "장간이 다시 동오를 방문했다가 방통을 만나 조조에게 데려감",
+          "participants": ["zhou-yu", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "방통이 조조에게 연환계를 바쳐 전선을 쇠사슬로 연결하게 함",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "서서가 방통의 계략을 간파하나 유비에 대한 의리로 묵인",
+          "participants": ["cao-cao"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "감택의 설득과 채중 채화의 밀보를 믿고 황개 항복을 수락, 방통의 연환계를 채용하여 전선 연결" },
+        { "character": "zhou-yu", "action": "방통을 이용한 연환계와 채중 채화 역이용 계획을 총지휘" }
+      ]
+    },
+    {
+      "chapter_number": 48,
+      "title_kr": "장강에서 연회를 벌이며 조조가 시를 읊고, 전선을 사슬로 잠가 북군이 무용을 뽐내다",
+      "summary_kr": "방통이 조조 진영을 떠나며 서서를 만나는데, 서서가 연환계를 간파하자 방통은 마등과 한수의 반란 소문을 퍼뜨려 서서가 산관으로 빠져나갈 구실을 만들어준다. 조조는 달밤에 장강 위에서 대연회를 베풀고 단가행을 읊으며 기세를 올리나, 유복이 불길한 시구를 지적하자 취기에 창으로 찔러 죽인다. 연결된 전선이 평지처럼 안정되어 북군이 기세를 올리지만, 정욱이 화공의 위험을 경고하고 조조는 겨울에 동남풍이 불 리 없다며 일축한다.",
+      "key_events": [
+        {
+          "event": "방통이 서서에게 탈출 계책을 알려주고 서서가 산관으로 떠남",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "조조가 장강 위에서 대연회를 베풀고 단가행(短歌行)을 읊음",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "조조가 유복을 취중에 창으로 찔러 죽임",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "연환된 전선으로 수군 조련 성공, 정욱이 화공 위험을 경고하나 조조가 일축",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "한당과 주태가 초촉, 장남을 격살하고 수전에서 승리",
+          "participants": ["zhou-yu"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "cao-cao", "action": "장강 위 대연회에서 단가행을 읊고, 불길함을 지적한 유복을 살해, 화공 경고를 일축" },
+        { "character": "zhou-yu", "action": "연결된 조조 전선을 관찰하고 화공 불가피함을 인식하나 동남풍 부재에 고뇌하여 피를 토하고 쓰러짐" }
+      ]
+    },
+    {
+      "chapter_number": 49,
+      "title_kr": "칠성단에서 제갈량이 바람을 빌고, 삼강구에서 주유가 불을 놓다",
+      "summary_kr": "제갈량이 주유의 병이 동남풍의 부재 때문임을 간파하고 남병산에 칠성단을 쌓아 기문둔갑으로 동남풍을 빌어오겠다고 제안한다. 11월 20일 갑자일에 과연 동남대풍이 일어나고, 주유는 즉시 감녕, 태사자, 여몽, 능통, 동습 등 여섯 대로 군을 배치하며 황개의 화선 이십 척을 출격시킨다. 황개가 '선봉 황개' 깃발을 꽂고 적벽으로 돌진하여 조조 수채에 불을 지르니, 쇠사슬로 연결된 전선이 일시에 화염에 휩싸이고 적벽대전의 대화재가 시작된다.",
+      "key_events": [
+        {
+          "event": "제갈량이 주유의 병을 진단하고 '만사구비 지결동풍' 16자를 써줌",
+          "participants": ["zhuge-liang", "zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 남병산 칠성단에서 동남풍을 빌어옴 (칠성단 제풍)",
+          "participants": ["zhuge-liang"],
+          "year": 208
+        },
+        {
+          "event": "주유가 동남풍에 제갈량 암살을 명령하나 조운이 미리 탈출시킴",
+          "participants": ["zhou-yu", "zhuge-liang", "zhao-yun"],
+          "year": 208
+        },
+        {
+          "event": "주유가 여섯 방면 공격을 배치하고 황개 화선 출격 명령",
+          "participants": ["zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "황개가 화선 이십 척으로 조조 수채에 돌입, 적벽대전 화공 개시",
+          "participants": ["cao-cao", "zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "제갈량이 조운, 장비, 관우에게 각각 오림, 호로곡, 화용도 매복을 지시",
+          "participants": ["zhuge-liang", "zhao-yun", "zhang-fei", "guan-yu"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "zhuge-liang", "action": "칠성단에서 동남풍을 빌어오고, 조운 장비 관우에게 조조 패주로의 매복을 지시" },
+        { "character": "zhou-yu", "action": "동남풍이 일자 즉시 6방면 공격을 배치하고 적벽 화공을 총지휘" },
+        { "character": "zhao-yun", "action": "제갈량을 먼저 탈출시키고 오림 소로에 매복" },
+        { "character": "guan-yu", "action": "화용도에 오백 교도수와 매복하여 조조를 기다림" },
+        { "character": "cao-cao", "action": "황개의 항복을 믿고 기다리다 화공에 당함" }
+      ]
+    },
+    {
+      "chapter_number": 50,
+      "title_kr": "제갈량이 지혜로 화용도를 계산하고, 관운장이 의리로 조조를 놓아주다",
+      "summary_kr": "적벽대전에서 대패한 조조가 장료의 호위를 받아 간신히 탈출하여 오림으로 도주하나, 여몽, 능통, 감녕, 조운이 차례로 매복하여 공격하고 장판파에서 장비가 또다시 조조를 가로막는다. 화용도 좁은 길에서 마침내 관우와 마주친 조조는 옛날의 은의를 호소하고, 관우는 의리에 못 이겨 결국 조조와 잔병들을 모두 놓아준다. 겨우 27기만 이끌고 남군에 도착한 조조는 곽가를 그리워하며 통곡하고, 조인에게 남군을 맡기고 허도로 퇴각하며 장료 악진 이전에게 합비를 지키게 한다.",
+      "key_events": [
+        {
+          "event": "적벽대전 본전: 황개의 화공으로 조조 수군 전멸, 조조 대패",
+          "participants": ["cao-cao", "zhou-yu"],
+          "year": 208
+        },
+        {
+          "event": "조운이 오림에서 조조 패잔병을 습격",
+          "participants": ["zhao-yun", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "장비가 호로곡 갈래길에서 조조를 매복 공격",
+          "participants": ["zhang-fei", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "관우가 화용도에서 조조를 만나 옛 은의를 생각하여 놓아줌",
+          "participants": ["guan-yu", "cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "조조가 남군에 도착하여 곽가를 그리워하며 통곡",
+          "participants": ["cao-cao"],
+          "year": 208
+        },
+        {
+          "event": "조조가 허도로 퇴각하며 조인에게 남군, 장료에게 합비 수비를 맡김",
+          "participants": ["cao-cao"],
+          "year": 208
+        }
+      ],
+      "character_actions": [
+        { "character": "guan-yu", "action": "화용도에서 조조의 옛 은의 호소에 의리를 지켜 놓아줌" },
+        { "character": "cao-cao", "action": "세 번 웃으며 '주유와 제갈량은 지모가 부족하다' 호언하다 매번 매복에 당함" },
+        { "character": "zhao-yun", "action": "오림에서 조조 패잔병을 기습하여 큰 타격" },
+        { "character": "zhang-fei", "action": "호로곡에서 조조를 매복 공격, 허저 장료 서황과 혼전" },
+        { "character": "zhuge-liang", "action": "조조의 패주 경로를 정확히 예측하여 세 곳에 매복을 배치하고 관우의 의기를 이용" }
+      ]
+    }
+  ]
+}
