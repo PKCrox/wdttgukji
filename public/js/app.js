@@ -308,9 +308,9 @@ function renderFactionPreviewMap(sc, highlightFaction) {
         const fc = PREVIEW_FC[nearest.owner];
         if (fc) {
           const isHighlight = nearest.owner === highlightFaction;
-          const base = isHighlight ? 0.50 : (highlightFaction ? 0.15 : 0.28);
+          const base = isHighlight ? 0.55 : (highlightFaction ? 0.12 : 0.35);
           const dist = Math.sqrt(minDist);
-          const boost = dist < 80 * scale ? 0.12 * (1 - dist / (80 * scale)) : 0;
+          const boost = dist < 80 * scale ? 0.15 * (1 - dist / (80 * scale)) : 0;
           const alpha = base + boost;
           ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},${alpha.toFixed(3)})`;
           ctx.fillRect(gx * step, gy * step, step, step);

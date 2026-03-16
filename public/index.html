@@ -46,17 +46,17 @@
 
   <!-- 세력 선택 화면 -->
   <div id="faction-screen" class="hidden">
-    <canvas id="faction-map"></canvas>
-    <div class="faction-select-overlay">
-      <div class="faction-select-content">
-        <h2 class="faction-select-title">세력을 선택하세요</h2>
-        <p class="faction-select-sub">208년 적벽대전 — 당신은 누구의 편에 서겠습니까?</p>
-        <div class="faction-cards" id="faction-cards"></div>
-        <div class="faction-select-actions">
-          <button id="btn-confirm-faction" class="btn-primary" disabled>시작</button>
-          <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
-        </div>
+    <div class="faction-sidebar">
+      <h2 class="faction-select-title">세력 선택</h2>
+      <p class="faction-select-sub">208년 적벽대전</p>
+      <div class="faction-cards" id="faction-cards"></div>
+      <div class="faction-select-actions">
+        <button id="btn-confirm-faction" class="btn-primary" disabled>시작</button>
+        <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
       </div>
+    </div>
+    <div class="faction-map-area">
+      <canvas id="faction-map"></canvas>
     </div>
   </div>
 
