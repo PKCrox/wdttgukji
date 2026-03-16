@@ -1,3 +1,5 @@
+import { getSkillEffects, hasSkill } from './skills.js';
+
 // EnhancedCombat — 다중 라운드 전술 전투
 //
 // 전투 흐름:
@@ -173,6 +175,28 @@ export function resolveEnhancedCombat(attacker, defender, options = {}, state = 
   // 진형 병력 요구 체크
   if (atkFormation.armyRequirement && atkArmy < defArmy * atkFormation.armyRequirement) {
     atkFormBonus *= 0.8; // 병력 부족으로 진형 효과 감소
+  }
+
+  // ── 장수 스킬 보너스 ──
+  if (hasSkill(atkLead, 'charge_master') && attacker.formation === 'charge') {
+    atkFormBonus *= (1 + getSkillEffects(atkLead.skills, 'charge_attack'));
+  }
+  if (hasSkill(defLead, 'iron_wall') && defender.formation === 'turtle') {
+    defFormBonus *= (1 + getSkillEffects(defLead.skills, 'turtle_defense'));
+  }
+  if (hasSkill(atkLead, 'ambush_master') && attacker.formation === 'ambush') {
+    atkFormBonus *= (1 + getSkillEffects(atkLead.skills, 'ambush_formation'));
+  }
+  if (hasSkill(atkLead, 'cavalry') && terrain === 'plains') {
+    atkFormBonus *= (1 + getSkillEffects(atkLead.skills, 'plains_combat'));
+  }
+  if (terrain === 'river') {
+    if (hasSkill(atkLead, 'naval')) {
+      atkFormBonus *= (1 + getSkillEffects(atkLead.skills, 'river_combat'));
+    }
+    if (hasSkill(defLead, 'naval')) {
+      defFormBonus *= (1 + getSkillEffects(defLead.skills, 'river_combat'));
+    }
   }
 
   for (let round = 1; round <= maxRounds; round++) {
@@ -393,9 +417,17 @@ function tryBestStratagem(user, target, terrain, userArmy, targetArmy) {
       chance += strat.terrainBonus[terrain];
     }
 
+    // 스킬 보너스 (화공 스킬 등)
+    if (key === 'fire_attack') {
+      chance += getSkillEffects(user.skills, 'fire_stratagem');
+    }
+
     // 상대 방어 (counterStat)
     const counterVal = target.stats?.[strat.counterStat] || 50;
     chance -= counterVal * 0.003;
+
+    // 간파 스킬로 계략 방어
+    chance -= getSkillEffects(target.skills, 'counter_stratagem');
 
     chance = Math.max(0.05, Math.min(0.8, chance));
 
@@ -424,8 +456,13 @@ function tryBestStratagem(user, target, terrain, userArmy, targetArmy) {
  * 장수 일기토 (1v1)
  */
 export function resolveDuel(charA, charB) {
-  const warA = (charA.stats?.war || 50) + Math.random() * 20 - 10;
-  const warB = (charB.stats?.war || 50) + Math.random() * 20 - 10;
+  let warA = (charA.stats?.war || 50) + Math.random() * 20 - 10;
+  let warB = (charB.stats?.war || 50) + Math.random() * 20 - 10;
+
+  // 일기토 스킬 보너스
+  warA += getSkillEffects(charA?.skills, 'duel_war_bonus');
+  warB += getSkillEffects(charB?.skills, 'duel_war_bonus');
+
   const margin = Math.abs(warA - warB);
 
   const winner = warA >= warB ? 'attacker' : 'defender';

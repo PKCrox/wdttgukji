@@ -3,6 +3,8 @@
 import { checkEvents, applyEffects, isPlayerEvent } from './event-engine.js';
 import { settleAllCities } from './domestic.js';
 import { checkDefections, updateLoyalty, checkCaptiveEscapes } from './character-manager.js';
+import { advanceConstruction } from './buildings.js';
+import { advanceResearch } from './tech-tree.js';
 import { getCharName } from '../data/names.js';
 
 const MAX_EVENTS_PER_TURN = 3;
@@ -76,12 +78,18 @@ export function endTurn(state) {
   // 4. 포로 탈출 체크
   checkCaptiveEscapes(state);
 
-  // 5. 휴전 만료
+  // 5. 건설 진행
+  advanceConstruction(state);
+
+  // 6. 연구 진행
+  advanceResearch(state);
+
+  // 7. 휴전 만료
   state.expireTruces();
 
-  // 6. 게임오버 체크
+  // 8. 게임오버 체크
   state.checkGameOver();
 
-  // 7. 턴 진행
+  // 9. 턴 진행
   state.advanceMonth();
 }

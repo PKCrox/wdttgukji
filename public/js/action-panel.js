@@ -7,13 +7,20 @@ import { calculateDiplomacyChance } from '../../engine/core/diplomacy.js';
 import * as diplomacy from '../../engine/core/diplomacy.js';
 import * as charMgr from '../../engine/core/character-manager.js';
 import { getCharName } from './sidebar.js';
+import { canBuild, startConstruction, getAvailableBuildings, BUILDINGS } from '../../engine/core/buildings.js';
+import { getAvailableTechs, startResearch, getResearchStatus, TECHS } from '../../engine/core/tech-tree.js';
+import { ESPIONAGE_ACTIONS, calculateEspionageChance, executeEspionage } from '../../engine/core/espionage.js';
+import { canMoveArmy, moveArmy, previewMovement } from '../../engine/core/troop-movement.js';
 
 // ─── 행동 카테고리 ───
 const CATEGORIES = {
   domestic: { name: '내정', icon: '⚒' },
   military: { name: '군사', icon: '⚔' },
   diplomacy: { name: '외교', icon: '🤝' },
-  personnel: { name: '인사', icon: '👤' }
+  personnel: { name: '인사', icon: '👤' },
+  build: { name: '건설', icon: '🏗' },
+  research: { name: '연구', icon: '📜' },
+  espionage: { name: '첩보', icon: '🕵' }
 };
 
 export class ActionPanel {
@@ -40,8 +47,8 @@ export class ActionPanel {
     tabBar.className = 'action-tabs';
 
     const categories = isOwned
-      ? ['domestic', 'military', 'personnel', 'diplomacy']
-      : ['military', 'diplomacy'];
+      ? ['domestic', 'military', 'personnel', 'diplomacy', 'build', 'research', 'espionage']
+      : ['military', 'diplomacy', 'espionage'];
 
     for (const cat of categories) {
       const tab = document.createElement('button');
@@ -71,6 +78,15 @@ export class ActionPanel {
         break;
       case 'diplomacy':
         this._buildDiplomacyActions(content, cityId, state, faction, noActions);
+        break;
+      case 'build':
+        this._buildBuildingActions(content, cityId, state, faction, noActions);
+        break;
+      case 'research':
+        this._buildResearchActions(content, cityId, state, faction, noActions);
+        break;
+      case 'espionage':
+        this._buildEspionageActions(content, cityId, state, faction, noActions);
         break;
     }
 
@@ -160,6 +176,26 @@ export class ActionPanel {
             `${state.factions[fId].name}에 선전포고`,
             'declare_war', { targetFaction: fId, disabled: noActions },
             container);
+        }
+      }
+
+      // 병력 이동 (같은 세력 인접 도시)
+      const friendlyNeighbors = this._getFriendlyNeighbors(cityId, state);
+      if (friendlyNeighbors.length > 0 && city.army > 0) {
+        const moveHeader = document.createElement('div');
+        moveHeader.className = 'action-faction-header';
+        moveHeader.textContent = '병력 이동';
+        container.appendChild(moveHeader);
+
+        for (const n of friendlyNeighbors) {
+          const target = state.cities[n];
+          const preview = previewMovement(state, cityId, Math.floor(city.army * 0.5));
+          this._addButton(
+            `→ ${target.name}에 병력 절반(${Math.floor(city.army * 0.5).toLocaleString()}) 이동`,
+            'move_troops', {
+              fromCity: cityId, toCity: n, amount: Math.floor(city.army * 0.5), generals: [],
+              disabled: noActions || city.army < 1000
+            }, container);
         }
       }
     } else if (city.owner) {
@@ -322,6 +358,110 @@ export class ActionPanel {
     }
   }
 
+  // ─── 건설 ───
+
+  _buildBuildingActions(container, cityId, state, faction, noActions) {
+    const city = state.cities[cityId];
+    const buildings = getAvailableBuildings(state, cityId);
+
+    // 현재 건물 표시
+    if (city.buildings && Object.keys(city.buildings).length > 0) {
+      const header = document.createElement('div');
+      header.className = 'action-hint';
+      let buildingText = '현재: ';
+      for (const [bId, b] of Object.entries(city.buildings)) {
+        const name = BUILDINGS[bId]?.name || bId;
+        buildingText += b.building ? `${name}(건설중 ${b.turnsLeft}턴) ` : `${name} Lv.${b.level} `;
+      }
+      header.textContent = buildingText;
+      container.appendChild(header);
+    }
+
+    for (const b of buildings) {
+      const existing = city.buildings?.[b.id];
+      const levelStr = existing ? `Lv.${existing.level}→${existing.level + 1}` : 'Lv.1';
+      this._addButton(
+        `${b.name} ${levelStr} (금 ${b.cost}) — ${BUILDINGS[b.id]?.desc || ''}`,
+        'build', {
+          cityId, buildingId: b.id,
+          disabled: noActions || !b.canBuild,
+          cost: `금 ${b.cost}`
+        }, container);
+    }
+  }
+
+  // ─── 연구 ───
+
+  _buildResearchActions(container, cityId, state, faction, noActions) {
+    const status = getResearchStatus(state, state.player.factionId);
+
+    if (status.researching) {
+      const hint = document.createElement('div');
+      hint.className = 'action-hint';
+      hint.textContent = `연구 중: ${status.name} (${status.turnsLeft}턴 남음)`;
+      container.appendChild(hint);
+    }
+
+    const hint2 = document.createElement('div');
+    hint2.className = 'action-hint';
+    hint2.textContent = `완료된 연구: ${status.completedCount}개`;
+    container.appendChild(hint2);
+
+    const techs = getAvailableTechs(state, state.player.factionId);
+    for (const t of techs) {
+      this._addButton(
+        `${t.name} [${t.category}] (금 ${t.cost}, ${t.turns}턴)${!t.available ? ` — ${t.reason}` : ''}`,
+        'start_research', {
+          techId: t.id,
+          disabled: noActions || !t.available,
+          cost: `금 ${t.cost}`
+        }, container);
+    }
+  }
+
+  // ─── 첩보 ───
+
+  _buildEspionageActions(container, cityId, state, faction, noActions) {
+    const city = state.cities[cityId];
+    const isOwned = city.owner === state.player.factionId;
+
+    if (isOwned) {
+      const hint = document.createElement('div');
+      hint.className = 'action-hint';
+      hint.textContent = '적 도시를 선택하면 첩보 활동을 수행할 수 있습니다';
+      container.appendChild(hint);
+      return;
+    }
+
+    // 적 도시에 대한 첩보 행동
+    const myChars = state.getCharactersOfFaction(state.player.factionId);
+    const spies = myChars.filter(c => c.stats.intellect >= 60).sort((a, b) => b.stats.intellect - a.stats.intellect);
+    const bestSpy = spies[0];
+
+    if (!bestSpy) {
+      const hint = document.createElement('div');
+      hint.className = 'action-hint';
+      hint.textContent = '지력 60 이상의 장수가 없어 첩보 불가';
+      container.appendChild(hint);
+      return;
+    }
+
+    const spyHeader = document.createElement('div');
+    spyHeader.className = 'action-hint';
+    spyHeader.textContent = `첩자: ${getCharName(bestSpy.id)} (지력 ${bestSpy.stats.intellect})`;
+    container.appendChild(spyHeader);
+
+    for (const [actionId, action] of Object.entries(ESPIONAGE_ACTIONS)) {
+      const { chance } = calculateEspionageChance(state, bestSpy.id, cityId, actionId);
+      this._addButton(
+        `${action.name} (성공률 ${Math.round(chance * 100)}%, 금 ${action.cost}) — ${action.desc}`,
+        'espionage', {
+          spyId: bestSpy.id, targetCityId: cityId, actionType: actionId,
+          disabled: noActions || faction.gold < action.cost
+        }, container);
+    }
+  }
+
   // ─── 유틸 ───
 
   _addButton(label, actionType, params = {}, container = null) {
@@ -333,6 +473,23 @@ export class ActionPanel {
       if (this.onAction) this.onAction(actionType, params);
     });
     (container || this.buttons).appendChild(btn);
+  }
+
+  _getFriendlyNeighbors(cityId, state) {
+    const result = [];
+    if (!this._connections) return result;
+    for (const [a, b] of this._connections) {
+      let neighbor = null;
+      if (a === cityId) neighbor = b;
+      else if (b === cityId) neighbor = a;
+      if (neighbor) {
+        const city = state.cities[neighbor];
+        if (city && city.owner === state.player.factionId) {
+          result.push(neighbor);
+        }
+      }
+    }
+    return result;
   }
 
   _getEnemyNeighbors(cityId, state) {
@@ -605,6 +762,46 @@ export function executePlayerAction(actionType, params, state) {
       if (!success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}를 ${state.cities[params.cityId].name} 태수로 임명`, 'player');
+      return true;
+    }
+
+    // ── 건설 ──
+    case 'build': {
+      const result = startConstruction(state, params.cityId, params.buildingId);
+      if (!result.success) return false;
+      state.actionsRemaining--;
+      return true;
+    }
+
+    // ── 연구 ──
+    case 'start_research': {
+      const result = startResearch(state, state.player.factionId, params.techId);
+      if (!result.success) return false;
+      state.actionsRemaining--;
+      const tech = TECHS[params.techId];
+      state.log(`${tech?.name || params.techId} 연구 시작 (${result.turns}턴)`, 'research');
+      return true;
+    }
+
+    // ── 첩보 ──
+    case 'espionage': {
+      const result = executeEspionage(state, params.spyId, params.targetCityId, params.actionType);
+      state.actionsRemaining--;
+      if (result.success) {
+        state.log(`첩보 성공: ${result.actionName}`, 'espionage');
+      } else {
+        let msg = `첩보 실패: ${result.actionName}`;
+        if (result.captured) msg += ' (첩자 포로!)';
+        state.log(msg, 'espionage');
+      }
+      return true;
+    }
+
+    // ── 병력 이동 ──
+    case 'move_troops': {
+      const result = moveArmy(state, params.fromCity, params.toCity, params.amount, params.generals || [], this._connections);
+      if (!result.success) return false;
+      state.actionsRemaining--;
       return true;
     }
 

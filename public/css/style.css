@@ -1116,6 +1116,25 @@ body {
 
 .char-close-btn:hover { border-color: var(--accent); color: var(--accent); }
 
+/* === 캐릭터 모달 신규 섹션 === */
+.char-growth, .char-skills, .char-equipment {
+  margin-top: 0.8rem;
+}
+.char-growth h4, .char-skills h4, .char-equipment h4 {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+.skill-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  background: transparent;
+  cursor: default;
+}
+
 /* === 게임오버 === */
 .gameover h2 {
   font-family: 'Noto Serif KR', serif;

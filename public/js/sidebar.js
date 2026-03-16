@@ -1,6 +1,9 @@
 // Sidebar — 도시 정보, 세력 요약, 캐릭터 상세
 
-import { getCharName } from '../../engine/data/names.js';
+import { getCharName, getSkillName, getItemName } from '../../engine/data/names.js';
+import { SKILLS } from '../../engine/core/skills.js';
+import { ITEMS } from '../../engine/core/items.js';
+import { getGrowthInfo } from '../../engine/core/growth.js';
 
 const FACTION_COLORS = {
   wei: '#4A90D9',
@@ -254,6 +257,41 @@ export function showCharacterModal(charId, state) {
       </div>
       <div style="text-align:right;font-size:0.75rem;color:var(--text-dim);margin-top:0.3rem">총합 ${total}</div>
     </div>`;
+
+  // 레벨/경험치
+  const growth = getGrowthInfo(char);
+  if (growth.level > 0) {
+    html += `<div class="char-growth"><h4>성장</h4>
+      <div style="font-size:0.8rem;color:var(--text-bright)">Lv.${growth.level} ${growth.nextLevelExp > 0 ? `(다음 레벨까지 ${growth.nextLevelExp} EXP)` : '(최대)'}</div>
+    </div>`;
+  }
+
+  // 스킬
+  if (char.skills && char.skills.length > 0) {
+    html += `<div class="char-skills"><h4>특기</h4><div style="display:flex;flex-wrap:wrap;gap:0.3rem">`;
+    for (const sId of char.skills) {
+      const skill = SKILLS[sId];
+      const name = getSkillName(sId);
+      const typeColor = { combat: '#E74C3C', domestic: '#2ECC71', social: '#F39C12', espionage: '#9B59B6', support: '#4A90D9', tech: '#1ABC9C' }[skill?.type] || '#666';
+      html += `<span class="skill-badge" style="border-color:${typeColor};color:${typeColor}" title="${skill?.desc || ''}">${name}</span>`;
+    }
+    html += `</div></div>`;
+  }
+
+  // 장비
+  if (char.equipment) {
+    const equipped = Object.entries(char.equipment).filter(([, v]) => v);
+    if (equipped.length > 0) {
+      html += `<div class="char-equipment"><h4>장비</h4>`;
+      const slotNames = { weapon: '무기', armor: '갑옷', horse: '말', accessory: '보물' };
+      for (const [slot, itemId] of equipped) {
+        const item = ITEMS[itemId];
+        const rColor = { legendary: '#FFD700', rare: '#9B59B6', common: '#95A5A6' }[item?.rarity] || '#666';
+        html += `<div style="font-size:0.8rem;margin:0.15rem 0"><span style="color:var(--text-dim)">${slotNames[slot]}</span> <span style="color:${rColor}">${getItemName(itemId)}</span></div>`;
+      }
+      html += `</div>`;
+    }
+  }
 
   // 관계
   if (rels.length > 0) {

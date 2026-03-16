@@ -392,6 +392,21 @@ export class GameState {
         city.publicOrder = Math.min(100, eco + 5);
         city.naturalBonus = {};
       }
+      // 건물 시스템 호환
+      if (!city.buildings) city.buildings = {};
+    }
+    // 캐릭터 신규 필드 호환 (스킬/장비/성장/잠재력)
+    for (const [, c] of Object.entries(state.characters)) {
+      if (!c.skills) c.skills = [];
+      if (!c.equipment) c.equipment = { weapon: null, armor: null, horse: null, accessory: null };
+      if (c.experience == null) c.experience = 0;
+      if (c.level == null) c.level = 1;
+      if (!c.potential) c.potential = {};
+    }
+    // 세력 신규 필드 호환 (연구/인벤토리)
+    for (const [, f] of Object.entries(state.factions)) {
+      if (!f.research) f.research = { completed: [], current: null };
+      if (!f.inventory) f.inventory = [];
     }
     return state;
   }

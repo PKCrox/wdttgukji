@@ -6,6 +6,10 @@ import { attemptCapture } from '../core/character-manager.js';
 import { investTrack } from '../core/domestic.js';
 import { aiDiplomacy } from '../core/diplomacy.js';
 import { getCharName } from '../data/names.js';
+import { canBuild, startConstruction, BUILDINGS } from '../core/buildings.js';
+import { getAvailableTechs, startResearch } from '../core/tech-tree.js';
+import { executeEspionage, ESPIONAGE_ACTIONS } from '../core/espionage.js';
+import { moveArmy } from '../core/troop-movement.js';
 
 export function decideAndExecute(factionId, state, connections) {
   const faction = state.getFaction(factionId);
@@ -76,6 +80,24 @@ export function decideAndExecute(factionId, state, connections) {
       state.cities[capital.id].army += recruits;
       actions.push(`${faction.name}: ${state.cities[capital.id].name}에서 ${recruits}명 모집`);
     }
+  }
+
+  // ── 8. 건설 (자금 여유 + 건물 슬롯 여유) ──
+  if (faction.gold > 5000 && Math.random() < 0.3) {
+    const buildAction = aiBuild(factionId, state);
+    if (buildAction) actions.push(buildAction);
+  }
+
+  // ── 9. 기술 연구 ──
+  if (!faction.research?.current && faction.gold > 3000 && Math.random() < 0.25) {
+    const researchAction = aiResearch(factionId, state);
+    if (researchAction) actions.push(researchAction);
+  }
+
+  // ── 10. 병력 재배치 ──
+  if (myCities.length > 1 && Math.random() < 0.2) {
+    const moveAction = aiTroopMovement(factionId, state, connections);
+    if (moveAction) actions.push(moveAction);
   }
 
   for (const action of actions) {
@@ -180,6 +202,70 @@ function aiHandleCaptives(factionId, state, tendency) {
     return `${faction.name}: 포로 ${getCharName(captive.id)}를 석방`;
   }
 
+  return null;
+}
+
+// ─── AI 건설 ───
+
+function aiBuild(factionId, state) {
+  const cities = state.getCitiesOfFaction(factionId);
+  const faction = state.getFaction(factionId);
+
+  // 우선순위: 병영 > 시장 > 성벽 > 곡창
+  const priority = ['barracks', 'market', 'walls', 'granary'];
+
+  for (const city of cities) {
+    for (const buildingId of priority) {
+      const check = canBuild(state, city.id, buildingId);
+      if (check.canBuild && faction.gold >= check.cost * 2) { // 여유 있을 때만
+        const result = startConstruction(state, city.id, buildingId);
+        if (result.success) {
+          return `${faction.name}: ${state.cities[city.id].name}에 ${BUILDINGS[buildingId].name} 건설 시작`;
+        }
+      }
+    }
+  }
+  return null;
+}
+
+// ─── AI 연구 ───
+
+function aiResearch(factionId, state) {
+  const faction = state.getFaction(factionId);
+  const available = getAvailableTechs(state, factionId);
+
+  // 가용한 것 중 비용 가장 낮은 것 선택
+  const affordable = available.filter(t => t.available).sort((a, b) => a.cost - b.cost);
+  if (affordable.length === 0) return null;
+
+  const tech = affordable[0];
+  const result = startResearch(state, factionId, tech.id);
+  if (result.success) {
+    return `${faction.name}: ${tech.name} 연구 시작 (${result.turns}턴)`;
+  }
+  return null;
+}
+
+// ─── AI 병력 재배치 ───
+
+function aiTroopMovement(factionId, state, connections) {
+  const cities = state.getCitiesOfFaction(factionId);
+  if (cities.length < 2) return null;
+
+  const faction = state.getFaction(factionId);
+
+  // 병력 과잉 도시 → 병력 부족 도시로 이동
+  const sorted = cities.sort((a, b) => b.army - a.army);
+  const strongest = sorted[0];
+  const weakest = sorted[sorted.length - 1];
+
+  if (strongest.army > weakest.army * 3 && strongest.army > 10000) {
+    const transfer = Math.floor(strongest.army * 0.2);
+    const result = moveArmy(state, strongest.id, weakest.id, transfer, [], connections);
+    if (result.success) {
+      return `${faction.name}: ${state.cities[strongest.id].name} → ${state.cities[weakest.id].name} 병력 ${transfer}명 이동`;
+    }
+  }
   return null;
 }
 

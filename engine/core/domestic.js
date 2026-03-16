@@ -1,3 +1,5 @@
+import { getBuildingEffects } from './buildings.js';
+
 // Domestic — 4트랙 내정 시스템 (농업/상업/기술/치안)
 //
 // 투자 메카닉:
@@ -78,8 +80,9 @@ export function investTrack(cityId, track, state, governorId = null) {
     }
   }
 
-  // 기술 레벨 보너스
-  const techBonus = (city.technology || 0) * TECH_EFFICIENCY.invest_bonus;
+  // 기술 레벨 보너스 + 학당 기술 속도 보너스
+  const bEffects = getBuildingEffects(city);
+  const techBonus = (city.technology || 0) * TECH_EFFICIENCY.invest_bonus + (bEffects.techSpeed || 0);
 
   // 체감 수익: 수치가 높을수록 상승 폭 감소
   // 0~40: 풀 게인, 40~70: 80%, 70~90: 50%, 90~100: 30%
@@ -137,12 +140,13 @@ export function settleCity(cityId, state) {
   const faction = state.getFaction(city.owner);
   if (!faction) return;
 
+  const bEffects = getBuildingEffects(city);
   const popFactor = city.population / 50000; // 인구 스케일 팩터
 
-  // 1. 상업 → 금 수입
+  // 1. 상업 → 금 수입 (건물 상업 보너스 적용)
   const bonus = city.naturalBonus || {};
   const commMult = bonus.commerce || 1.0;
-  const income = Math.floor(city.commerce * GOLD_PER_COMM * popFactor * commMult);
+  const income = Math.floor(city.commerce * GOLD_PER_COMM * popFactor * commMult * (1 + (bEffects.commerce || 0) / 100));
   faction.gold += income;
 
   // 2. 농업 → 식량 생산
@@ -150,8 +154,9 @@ export function settleCity(cityId, state) {
   const foodProd = Math.floor(city.agriculture * FOOD_PER_AGRI * popFactor * agriMult);
   city.food += foodProd;
 
-  // 3. 식량 소비
-  const foodCost = Math.floor(city.army * FOOD_PER_SOLDIER + city.population * FOOD_PER_POP);
+  // 3. 식량 소비 (곡창 보존 효과로 소비 절감)
+  const rawFoodCost = Math.floor(city.army * FOOD_PER_SOLDIER + city.population * FOOD_PER_POP);
+  const foodCost = Math.floor(rawFoodCost * (1 - (bEffects.foodPreservation || 0)));
   city.food = Math.max(0, city.food - foodCost);
 
   // 4. 식량 부족 → 탈영 + 사기 하락
@@ -168,11 +173,12 @@ export function settleCity(cityId, state) {
   const popGrowth = POP_GROWTH_BASE + (POP_GROWTH_ORDER_BONUS * orderFactor);
   city.population += Math.floor(city.population * popGrowth);
 
-  // 6. 사기 자연 조정 (50 기준)
-  if (city.morale > 50) {
-    city.morale = Math.max(50, city.morale - MORALE_DECAY);
-  } else if (city.morale < 50) {
-    city.morale = Math.min(50, city.morale + MORALE_DECAY);
+  // 6. 사기 자연 조정 (50 + 건물 사기 보너스 기준)
+  const moraleFloor = 50 + (bEffects.morale || 0);
+  if (city.morale > moraleFloor) {
+    city.morale = Math.max(moraleFloor, city.morale - MORALE_DECAY);
+  } else if (city.morale < moraleFloor) {
+    city.morale = Math.min(moraleFloor, city.morale + MORALE_DECAY);
   }
 
   // 7. 치안 자연 감소 (병력 적으면 치안 하락)
