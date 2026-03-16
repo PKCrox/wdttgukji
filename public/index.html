@@ -44,6 +44,30 @@
     </div>
   </div>
 
+  <!-- 세력 선택 화면 -->
+  <div id="faction-screen" class="hidden">
+    <div class="faction-select-content">
+      <h2 class="faction-select-title">세력을 선택하세요</h2>
+      <p class="faction-select-sub">208년 적벽대전 — 당신은 누구의 편에 서겠습니까?</p>
+      <div class="faction-cards" id="faction-cards"></div>
+      <div class="faction-select-actions">
+        <button id="btn-confirm-faction" class="btn-primary" disabled>시작</button>
+        <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 도입 스토리 -->
+  <div id="intro-screen" class="hidden">
+    <div class="intro-content">
+      <div class="intro-year">208년</div>
+      <h2 id="intro-title" class="intro-title"></h2>
+      <div id="intro-narrative" class="intro-narrative"></div>
+      <div class="intro-stats" id="intro-stats"></div>
+      <button id="btn-start-game" class="btn-primary">천하에 나서다</button>
+    </div>
+  </div>
+
   <!-- 게임 화면 -->
   <div id="game-screen" class="hidden">
     <!-- 상단 바 -->

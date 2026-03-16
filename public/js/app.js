@@ -19,6 +19,7 @@ let sidebar = null;
 let actionPanel = null;
 let processing = false;
 let logVisible = false;
+let selectedFaction = null;
 
 // --- 초기화 ---
 async function init() {
@@ -27,12 +28,15 @@ async function init() {
   actionPanel = new ActionPanel();
 
   // 버튼 바인딩
-  document.getElementById('btn-new-game').addEventListener('click', startNewGame);
+  document.getElementById('btn-new-game').addEventListener('click', showFactionSelect);
   document.getElementById('btn-load-game').addEventListener('click', loadGame);
   document.getElementById('btn-next-turn').addEventListener('click', nextTurn);
   document.getElementById('btn-save').addEventListener('click', saveGame);
   document.getElementById('btn-menu').addEventListener('click', returnToMenu);
   document.getElementById('btn-restart').addEventListener('click', returnToMenu);
+  document.getElementById('btn-confirm-faction').addEventListener('click', showIntro);
+  document.getElementById('btn-back-to-start').addEventListener('click', backToStart);
+  document.getElementById('btn-start-game').addEventListener('click', startNewGame);
 
   // 턴 로그 토글
   document.getElementById('btn-toggle-log').addEventListener('click', toggleLog);
@@ -50,18 +54,169 @@ async function init() {
   }
 }
 
-async function startNewGame() {
+// --- 세력 선택 데이터 ---
+const FACTION_META = {
+  wei: {
+    leader: '조조 (曹操)',
+    diff: 'easy', diffLabel: '쉬움',
+    desc: '천하의 절반을 이미 손에 넣은 난세의 간웅. 압도적 병력과 인재로 남하를 노린다.',
+    intro: [
+      '건안 13년. 천하의 절반이 이미 당신의 손 안에 있다.',
+      '형주의 유종이 항복하며 수군까지 얻었다. 80만 대군을 이끌고 장강을 건너면 강동의 손권과 떠돌이 유비 따위는 단숨에 쓸어버릴 수 있다.',
+      '그러나 전쟁은 언제나 변수가 있는 법. 남방의 풍토, 수전에 익숙지 않은 북방 병사들, 그리고 아직 항복하지 않은 자들의 절박함 —',
+      '천하통일의 마지막 퍼즐을 맞춰라.',
+    ],
+  },
+  shu: {
+    leader: '유비 (劉備)',
+    diff: 'hard', diffLabel: '어려움',
+    desc: '형주에서 겨우 버티는 한실의 후예. 제갈량의 천하삼분지계가 유일한 희망.',
+    intro: [
+      '건안 13년. 당신에게 남은 것은 형주 한 귀퉁이와 4만의 병사, 그리고 사람들.',
+      '조조의 80만 대군이 남하하고 있다. 혼자서는 버틸 수 없다. 제갈량이 말했다 — 강동의 손권과 손잡으면 살 길이 있다고.',
+      '한실 부흥의 대의를 내걸었지만, 지금은 살아남는 것이 먼저다. 적벽에서 기적을 만들 수 있다면, 삼분천하의 한 축이 될 수 있다.',
+      '바닥에서 시작하는 역전의 서사. 당신의 선택이 역사를 바꾼다.',
+    ],
+  },
+  wu: {
+    leader: '손권 (孫權)',
+    diff: 'normal', diffLabel: '보통',
+    desc: '강동의 젊은 군주. 아버지와 형이 남긴 기반 위에서 난세를 헤쳐나간다.',
+    intro: [
+      '건안 13년. 아버지 손견, 형 손책이 피로 일군 강동 땅이 위기에 처했다.',
+      '조조가 80만을 이끌고 남하한다. 조정의 대신들은 항복을 외치고, 무장들은 결전을 부르짖는다. 결정은 당신의 몫이다.',
+      '주유와 노숙이 있고, 장강의 천험이 있다. 유비와 손을 잡으면 승산이 생긴다 — 하지만 동맹은 영원하지 않다.',
+      '지금은 함께 싸우되, 전쟁이 끝난 뒤의 판도까지 내다봐라.',
+    ],
+  },
+  liu_zhang: {
+    leader: '유장 (劉璋)',
+    diff: 'hard', diffLabel: '어려움',
+    desc: '익주의 안일한 군주. 비옥한 땅이 있지만 야심도, 인재도 부족하다.',
+    intro: [
+      '건안 13년. 익주와 성도는 천혜의 요새다. 촉도(蜀道)의 험준함이 외적을 막아주고, 비옥한 분지가 백성을 먹여살린다.',
+      '그러나 편안함은 독이 되었다. 조조가 한중을 넘보고, 유비가 형주에서 서쪽을 바라본다. 장로가 북쪽에서 호시탐탐 노린다.',
+      '아버지 유언이 남긴 땅을 지키는 것만으로도 벅차다. 인재는 떠나고, 신하들은 각자의 속셈이 있다.',
+      '난세에서 안일함은 죽음이다. 살아남으려면 변해야 한다.',
+    ],
+  },
+  zhang_lu: {
+    leader: '장로 (張魯)',
+    diff: 'vhard', diffLabel: '매우 어려움',
+    desc: '한중의 오두미도 교주. 작은 땅, 적은 병력. 생존 자체가 도전.',
+    intro: [
+      '건안 13년. 한중 땅 하나, 병사 만 명. 이것이 당신의 전부다.',
+      '북쪽의 조조는 관중을 평정한 뒤 언제든 남하할 수 있고, 남쪽의 유장과는 오랜 원한이 있다. 사방이 적이다.',
+      '오두미도의 신도들이 당신을 따르지만, 전쟁은 신앙만으로 이길 수 없다.',
+      '최소한의 자원으로 최대한의 외교를 펼쳐라. 한중의 지형을 이용하고, 강자들 사이에서 살아남는 길을 찾아라.',
+    ],
+  },
+};
+
+const FACTION_LEADERS = {
+  wei: 'cao_cao', shu: 'liu_bei', wu: 'sun_quan',
+  liu_zhang: 'liu_zhang_char', zhang_lu: 'zhang_lu_char',
+};
+
+// --- 세력 선택 화면 ---
+async function showFactionSelect() {
   try {
     scenario = await loadScenario('/engine/data/scenarios/208-red-cliffs.json');
     const rawEvents = await loadEvents('/data/events/all-events.json');
     allEvents = filterEventsForScenario(rawEvents, 208, 225);
-
-    state = new GameState(scenario);
-    initGameScreen();
   } catch (err) {
-    console.error('Failed to start game:', err);
+    console.error('Failed to load scenario:', err);
     alert('게임 데이터 로드 실패: ' + err.message);
+    return;
   }
+
+  selectedFaction = null;
+  document.getElementById('btn-confirm-faction').disabled = true;
+
+  const container = document.getElementById('faction-cards');
+  container.innerHTML = '';
+
+  const COLORS = { wei: '#4A90D9', shu: '#2ECC71', wu: '#E74C3C', liu_zhang: '#F39C12', zhang_lu: '#9B59B6' };
+  const ORDER = ['wei', 'shu', 'wu', 'liu_zhang', 'zhang_lu'];
+
+  for (const fid of ORDER) {
+    const f = scenario.factions[fid];
+    const meta = FACTION_META[fid];
+    const cities = Object.values(scenario.cities).filter(c => c.owner === fid);
+    const army = cities.reduce((a, c) => a + c.army, 0);
+    const chars = Object.values(scenario.characters).filter(c => c.faction === fid);
+
+    const card = document.createElement('div');
+    card.className = 'faction-card';
+    card.dataset.faction = fid;
+    card.innerHTML = `
+      <span class="faction-card-diff ${meta.diff}">${meta.diffLabel}</span>
+      <div class="faction-card-name">
+        <span class="faction-card-dot" style="background:${COLORS[fid]}"></span>
+        ${f.name}
+      </div>
+      <div class="faction-card-leader">${meta.leader}</div>
+      <div class="faction-card-stats">
+        <span>도시 <span class="val">${cities.length}성</span></span>
+        <span>병력 <span class="val">${(army/10000).toFixed(1)}만</span></span>
+        <span>자금 <span class="val">${f.gold.toLocaleString()}</span></span>
+        <span>장수 <span class="val">${chars.length}명</span></span>
+      </div>
+      <div class="faction-card-desc">${meta.desc}</div>
+    `;
+
+    card.addEventListener('click', () => {
+      container.querySelectorAll('.faction-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      selectedFaction = fid;
+      document.getElementById('btn-confirm-faction').disabled = false;
+    });
+
+    container.appendChild(card);
+  }
+
+  document.getElementById('start-screen').classList.add('hidden');
+  document.getElementById('faction-screen').classList.remove('hidden');
+}
+
+function backToStart() {
+  document.getElementById('faction-screen').classList.add('hidden');
+  document.getElementById('start-screen').classList.remove('hidden');
+}
+
+// --- 도입 스토리 ---
+function showIntro() {
+  if (!selectedFaction) return;
+  const meta = FACTION_META[selectedFaction];
+  const f = scenario.factions[selectedFaction];
+  const cities = Object.values(scenario.cities).filter(c => c.owner === selectedFaction);
+  const army = cities.reduce((a, c) => a + c.army, 0);
+  const chars = Object.values(scenario.characters).filter(c => c.faction === selectedFaction);
+
+  document.getElementById('intro-title').textContent = `${f.name} — ${meta.leader}`;
+  document.getElementById('intro-narrative').innerHTML = meta.intro.map(p => `<p>${p}</p>`).join('');
+  document.getElementById('intro-stats').innerHTML = `
+    <div class="intro-stat"><div class="label">영토</div><div class="value">${cities.length}성</div></div>
+    <div class="intro-stat"><div class="label">병력</div><div class="value">${(army/10000).toFixed(1)}만</div></div>
+    <div class="intro-stat"><div class="label">장수</div><div class="value">${chars.length}명</div></div>
+  `;
+
+  document.getElementById('faction-screen').classList.add('hidden');
+  document.getElementById('intro-screen').classList.remove('hidden');
+}
+
+// --- 게임 시작 ---
+async function startNewGame() {
+  // 선택한 세력으로 오버라이드
+  if (selectedFaction) {
+    scenario.playerFaction = selectedFaction;
+    scenario.playerCharacter = FACTION_LEADERS[selectedFaction];
+  }
+
+  state = new GameState(scenario);
+
+  document.getElementById('intro-screen').classList.add('hidden');
+  initGameScreen();
 }
 
 function loadGame() {
@@ -93,6 +248,8 @@ function saveGame() {
 function returnToMenu() {
   document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('gameover-modal').classList.add('hidden');
+  document.getElementById('faction-screen').classList.add('hidden');
+  document.getElementById('intro-screen').classList.add('hidden');
   document.getElementById('start-screen').classList.remove('hidden');
 
   const saved = localStorage.getItem('wdttgukji_save');
@@ -100,6 +257,7 @@ function returnToMenu() {
   btn.disabled = !saved;
   btn.style.opacity = saved ? '1' : '0.4';
 
+  selectedFaction = null;
   logVisible = false;
 }
 

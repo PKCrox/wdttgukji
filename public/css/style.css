@@ -155,6 +155,214 @@ body {
   justify-content: center;
 }
 
+/* === 세력 선택 화면 === */
+#faction-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background: radial-gradient(ellipse at center, #1a1020 0%, #0a0a0f 70%);
+}
+
+.faction-select-content {
+  text-align: center;
+  max-width: 720px;
+  width: 95%;
+  padding: 2rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.faction-select-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.8rem;
+  color: var(--accent);
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+
+.faction-select-sub {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.faction-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.faction-card {
+  position: relative;
+  padding: 1.2rem 1rem;
+  background: var(--bg-panel);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.faction-card:hover {
+  border-color: var(--text-dim);
+  background: var(--bg-hover);
+  transform: translateY(-2px);
+}
+
+.faction-card.selected {
+  border-color: var(--accent);
+  background: rgba(201, 168, 76, 0.08);
+  box-shadow: 0 0 20px rgba(201, 168, 76, 0.15);
+}
+
+.faction-card-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.faction-card-name {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--text-bright);
+  margin-bottom: 0.15rem;
+}
+
+.faction-card-leader {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 0.6rem;
+}
+
+.faction-card-stats {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.faction-card-stats span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faction-card-stats .val { color: var(--text); font-weight: 600; }
+
+.faction-card-diff {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text-dim);
+}
+
+.faction-card-diff.easy { color: var(--success); background: rgba(46,204,113,0.1); }
+.faction-card-diff.normal { color: var(--accent); background: rgba(201,168,76,0.1); }
+.faction-card-diff.hard { color: var(--danger); background: rgba(231,76,60,0.1); }
+.faction-card-diff.vhard { color: #ff4444; background: rgba(255,68,68,0.1); }
+
+.faction-card-desc {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.faction-select-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* === 도입 스토리 === */
+#intro-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background: radial-gradient(ellipse at center, #1a1020 0%, #0a0a0f 70%);
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.intro-year {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--accent);
+  opacity: 0.25;
+  margin-bottom: -0.5rem;
+}
+
+.intro-title {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.8rem;
+  color: var(--text-bright);
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.intro-narrative {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--text);
+  text-align: left;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.intro-narrative p {
+  margin-bottom: 1rem;
+}
+
+.intro-narrative p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: rgba(201, 168, 76, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.intro-stat {
+  text-align: center;
+}
+
+.intro-stat .label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-bottom: 0.2rem;
+}
+
+.intro-stat .value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 /* === 버튼 === */
 .btn-primary, .btn-secondary, .btn-small, .btn-turn, .btn-action {
   border: none;
