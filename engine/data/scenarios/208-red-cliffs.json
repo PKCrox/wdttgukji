@@ -172,6 +172,62 @@
       "agriculture": 45, "commerce": 30, "technology": 20, "publicOrder": 35,
       "naturalBonus": { "agriculture": 1.1 },
       "buildings": {}
+    },
+    "nanyang": {
+      "name": "남양", "owner": "wei", "governor": null,
+      "population": 38000, "defense": 55, "food": 10000, "army": 15000, "morale": 68,
+      "agriculture": 55, "commerce": 60, "technology": 45, "publicOrder": 60,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "xiangyang": {
+      "name": "양양", "owner": "shu", "governor": null,
+      "population": 35000, "defense": 65, "food": 12000, "army": 12000, "morale": 72,
+      "agriculture": 60, "commerce": 55, "technology": 50, "publicOrder": 65,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "changsha": {
+      "name": "장사", "owner": "shu", "governor": null,
+      "population": 28000, "defense": 40, "food": 9000, "army": 6000, "morale": 60,
+      "agriculture": 55, "commerce": 45, "technology": 35, "publicOrder": 55,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "wuling": {
+      "name": "무릉", "owner": "shu", "governor": null,
+      "population": 18000, "defense": 30, "food": 7000, "army": 4000, "morale": 55,
+      "agriculture": 40, "commerce": 30, "technology": 30, "publicOrder": 45,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "kuaiji": {
+      "name": "회계", "owner": "wu", "governor": null,
+      "population": 30000, "defense": 45, "food": 10000, "army": 8000, "morale": 70,
+      "agriculture": 55, "commerce": 50, "technology": 40, "publicOrder": 60,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "lujiang": {
+      "name": "여강", "owner": "wu", "governor": null,
+      "population": 32000, "defense": 50, "food": 10000, "army": 10000, "morale": 72,
+      "agriculture": 50, "commerce": 55, "technology": 45, "publicOrder": 60,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "qingzhou": {
+      "name": "청주", "owner": "wei", "governor": null,
+      "population": 25000, "defense": 40, "food": 8000, "army": 10000, "morale": 62,
+      "agriculture": 50, "commerce": 45, "technology": 35, "publicOrder": 55,
+      "naturalBonus": {},
+      "buildings": {}
+    },
+    "tianshui": {
+      "name": "천수", "owner": "wei", "governor": null,
+      "population": 18000, "defense": 45, "food": 6000, "army": 6000, "morale": 55,
+      "agriculture": 35, "commerce": 35, "technology": 30, "publicOrder": 45,
+      "naturalBonus": {},
+      "buildings": {}
     }
   },
 
@@ -659,8 +715,7 @@
     "luoyang:changan": "mountain",
     "luoyang:yanzhou": "plains",
     "changan:yongzhou": "plains",
-    "yuzhou:jingzhou": "river",
-    "jingzhou:yangzhou": "river",
+    "yuzhou:nanyang": "plains",
     "jingzhou:yizhou": "mountain",
     "jingzhou:jiaozhou": "forest",
     "xuzhou:yangzhou": "river",
@@ -668,7 +723,24 @@
     "yizhou:chengdu": "mountain",
     "yizhou:hanzhong": "mountain",
     "hanzhong:changan": "mountain",
-    "hanzhong:yongzhou": "mountain"
+    "hanzhong:yongzhou": "mountain",
+    "nanyang:luoyang": "plains",
+    "nanyang:xuchang": "plains",
+    "nanyang:xiangyang": "river",
+    "xiangyang:jingzhou": "river",
+    "xiangyang:changsha": "river",
+    "changsha:jingzhou": "river",
+    "changsha:wuling": "forest",
+    "changsha:jiaozhou": "forest",
+    "wuling:yizhou": "mountain",
+    "kuaiji:jianye": "river",
+    "lujiang:yangzhou": "river",
+    "lujiang:jianye": "river",
+    "lujiang:jingzhou": "river",
+    "qingzhou:xuzhou": "plains",
+    "qingzhou:jizhou": "plains",
+    "tianshui:changan": "mountain",
+    "tianshui:yongzhou": "plains"
   },
 
   "cityPositions": {
@@ -689,7 +761,15 @@
     "yizhou":   { "x": 330, "y": 490 },
     "chengdu":  { "x": 260, "y": 520 },
     "hanzhong": { "x": 340, "y": 400 },
-    "jiaozhou": { "x": 480, "y": 600 }
+    "jiaozhou": { "x": 480, "y": 600 },
+    "nanyang":  { "x": 470, "y": 360 },
+    "xiangyang": { "x": 500, "y": 420 },
+    "changsha": { "x": 560, "y": 530 },
+    "wuling":   { "x": 440, "y": 540 },
+    "kuaiji":   { "x": 800, "y": 520 },
+    "lujiang":  { "x": 650, "y": 460 },
+    "qingzhou": { "x": 760, "y": 220 },
+    "tianshui": { "x": 250, "y": 270 }
   },
 
   "connections": [
@@ -706,8 +786,7 @@
     ["luoyang", "changan"],
     ["luoyang", "yanzhou"],
     ["changan", "yongzhou"],
-    ["yuzhou", "jingzhou"],
-    ["jingzhou", "yangzhou"],
+    ["yuzhou", "nanyang"],
     ["jingzhou", "yizhou"],
     ["jingzhou", "jiaozhou"],
     ["xuzhou", "yangzhou"],
@@ -715,6 +794,23 @@
     ["yizhou", "chengdu"],
     ["yizhou", "hanzhong"],
     ["hanzhong", "changan"],
-    ["hanzhong", "yongzhou"]
+    ["hanzhong", "yongzhou"],
+    ["nanyang", "luoyang"],
+    ["nanyang", "xuchang"],
+    ["nanyang", "xiangyang"],
+    ["xiangyang", "jingzhou"],
+    ["xiangyang", "changsha"],
+    ["changsha", "jingzhou"],
+    ["changsha", "wuling"],
+    ["changsha", "jiaozhou"],
+    ["wuling", "yizhou"],
+    ["kuaiji", "jianye"],
+    ["lujiang", "yangzhou"],
+    ["lujiang", "jianye"],
+    ["lujiang", "jingzhou"],
+    ["qingzhou", "xuzhou"],
+    ["qingzhou", "jizhou"],
+    ["tianshui", "changan"],
+    ["tianshui", "yongzhou"]
   ]
 }

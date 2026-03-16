@@ -26,10 +26,18 @@ const CATEGORIES = {
 export class ActionPanel {
   constructor() {
     this.panel = document.getElementById('action-panel');
+    this.contentArea = document.getElementById('action-panel-content');
     this.buttons = document.getElementById('action-buttons');
+    this.tabBar = document.getElementById('action-tab-bar');
+    this.titleEl = document.getElementById('action-panel-title');
     this.onAction = null;
     this._connections = [];
     this._activeCategory = null;
+
+    // 닫기 버튼
+    document.getElementById('action-panel-close').addEventListener('click', () => {
+      this.hide();
+    });
   }
 
   show(cityId, state) {
@@ -40,11 +48,13 @@ export class ActionPanel {
     const faction = state.getFaction(state.player.factionId);
     const noActions = state.actionsRemaining <= 0;
 
-    this.buttons.innerHTML = '';
+    // 헤더 도시명 업데이트
+    const ownerName = city.owner ? (state.factions[city.owner]?.name || '') : '';
+    this.titleEl.textContent = `${city.name}${ownerName ? ` — ${ownerName}` : ''}`;
 
-    // 카테고리 탭
-    const tabBar = document.createElement('div');
-    tabBar.className = 'action-tabs';
+    // 탭 바 (하단 고정)
+    this.tabBar.innerHTML = '';
+    this.buttons.innerHTML = '';
 
     const categories = isOwned
       ? ['domestic', 'military', 'personnel', 'diplomacy', 'build', 'research', 'espionage']
@@ -53,14 +63,13 @@ export class ActionPanel {
     for (const cat of categories) {
       const tab = document.createElement('button');
       tab.className = 'action-tab' + (cat === (this._activeCategory || categories[0]) ? ' active' : '');
-      tab.textContent = `${CATEGORIES[cat].name}`;
+      tab.textContent = `${CATEGORIES[cat].icon} ${CATEGORIES[cat].name}`;
       tab.addEventListener('click', () => {
         this._activeCategory = cat;
         this.show(cityId, state);
       });
-      tabBar.appendChild(tab);
+      this.tabBar.appendChild(tab);
     }
-    this.buttons.appendChild(tabBar);
 
     const activeCategory = this._activeCategory || categories[0];
     const content = document.createElement('div');

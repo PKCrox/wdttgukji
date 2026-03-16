@@ -46,13 +46,16 @@
 
   <!-- 세력 선택 화면 -->
   <div id="faction-screen" class="hidden">
-    <div class="faction-select-content">
-      <h2 class="faction-select-title">세력을 선택하세요</h2>
-      <p class="faction-select-sub">208년 적벽대전 — 당신은 누구의 편에 서겠습니까?</p>
-      <div class="faction-cards" id="faction-cards"></div>
-      <div class="faction-select-actions">
-        <button id="btn-confirm-faction" class="btn-primary" disabled>시작</button>
-        <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
+    <canvas id="faction-map"></canvas>
+    <div class="faction-select-overlay">
+      <div class="faction-select-content">
+        <h2 class="faction-select-title">세력을 선택하세요</h2>
+        <p class="faction-select-sub">208년 적벽대전 — 당신은 누구의 편에 서겠습니까?</p>
+        <div class="faction-cards" id="faction-cards"></div>
+        <div class="faction-select-actions">
+          <button id="btn-confirm-faction" class="btn-primary" disabled>시작</button>
+          <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
+        </div>
       </div>
     </div>
   </div>
@@ -122,10 +125,17 @@
       </aside>
     </div>
 
-    <!-- 하단 행동 패널 -->
-    <footer id="action-panel" class="hidden">
-      <div id="action-buttons"></div>
-    </footer>
+    <!-- 행동 패널 (탭 바 하단 고정 + 콘텐츠 위로) -->
+    <div id="action-panel" class="hidden">
+      <div id="action-panel-content">
+        <div id="action-panel-header">
+          <span id="action-panel-title">도시 행동</span>
+          <button id="action-panel-close">&times;</button>
+        </div>
+        <div id="action-buttons"></div>
+      </div>
+      <div id="action-tab-bar"></div>
+    </div>
 
     <!-- 턴 로그 -->
     <div id="turn-log" class="hidden">
@@ -135,6 +145,20 @@
       </div>
       <div id="turn-log-content"></div>
     </div>
+  </div>
+
+  <!-- 턴 결산 프로그레스 바 (상단 바 바로 아래) -->
+  <div id="tr-progress-bar" class="hidden"><div id="tr-progress-fill"></div></div>
+
+  <!-- 턴 결산 로그 패널 (좌하단, 맵 위에 떠있음) -->
+  <div id="turn-resolution" class="hidden">
+    <div class="tr-header">
+      <span id="tr-phase-label" class="tr-phase"></span>
+      <span id="tr-counter" class="tr-counter">0 / 0</span>
+      <button id="tr-skip" class="btn-small">건너뛰기</button>
+    </div>
+    <div id="tr-items" class="tr-items"></div>
+    <div class="tr-hint">클릭/Space 빠르게 · ESC 건너뛰기</div>
   </div>
 
   <!-- 이벤트 모달 -->

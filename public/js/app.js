@@ -8,6 +8,7 @@ import { MapRenderer } from './map-renderer.js';
 import { EventUI } from './event-ui.js';
 import { Sidebar, getCharName, FACTION_COLORS, showCharacterModal } from './sidebar.js';
 import { ActionPanel, executePlayerAction } from './action-panel.js';
+import { TurnResolution, getLogIcon } from './turn-resolution.js';
 
 // --- 글로벌 상태 ---
 let state = null;
@@ -19,6 +20,7 @@ let sidebar = null;
 let actionPanel = null;
 let processing = false;
 let logVisible = false;
+let turnResolution = null;
 let selectedFaction = null;
 
 // --- 초기화 ---
@@ -26,6 +28,7 @@ async function init() {
   eventUI = new EventUI();
   sidebar = new Sidebar();
   actionPanel = new ActionPanel();
+  turnResolution = new TurnResolution();
 
   // 버튼 바인딩
   document.getElementById('btn-new-game').addEventListener('click', showFactionSelect);
@@ -216,6 +219,7 @@ async function showFactionSelect() {
       card.classList.add('selected');
       selectedFaction = fid;
       document.getElementById('btn-confirm-faction').disabled = false;
+      renderFactionPreviewMap(scenario, fid);
     });
 
     container.appendChild(card);
@@ -223,6 +227,177 @@ async function showFactionSelect() {
 
   document.getElementById('start-screen').classList.add('hidden');
   document.getElementById('faction-screen').classList.remove('hidden');
+
+  // 초기 맵 렌더 (선택 없는 상태)
+  renderFactionPreviewMap(scenario, null);
+}
+
+// --- 세력 선택 프리뷰 맵 ---
+const PREVIEW_FC = {
+  wei:       [130,180,255],
+  shu:       [39,201,106],
+  wu:        [231,85,60],
+  liu_zhang: [245,166,35],
+  zhang_lu:  [166,107,190],
+};
+const PREVIEW_RIVERS = {
+  yellow: [[150,240],[200,260],[260,290],[320,280],[380,270],[430,265],[480,270],[530,255],[580,250],[630,248],[680,240],[740,230],[800,225],[860,220]],
+  yangtze: [[150,510],[200,500],[260,495],[310,480],[370,465],[430,455],[490,445],[540,438],[590,425],[640,415],[690,408],[740,430],[790,440],[850,445]],
+};
+const PREVIEW_COAST = [[800,60],[810,130],[805,180],[790,230],[780,280],[790,320],[800,370],[810,420],[800,460],[790,500],[780,550],[770,600],[760,680]];
+
+function renderFactionPreviewMap(sc, highlightFaction) {
+  const canvas = document.getElementById('faction-map');
+  if (!canvas) return;
+  const ctr = canvas.parentElement;
+  const dpr = window.devicePixelRatio || 1;
+  const w = ctr.clientWidth, h = ctr.clientHeight;
+  canvas.width = w * dpr;
+  canvas.height = h * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  const scale = Math.min(w / 920, h / 700) * 0.95;
+  const ox = (w - 920 * scale) / 2;
+  const oy = (h - 700 * scale) / 2;
+  const s = (x, y) => ({ x: x * scale + ox, y: y * scale + oy });
+
+  // 배경
+  ctx.fillStyle = 'rgb(20,18,15)';
+  ctx.fillRect(0, 0, w, h);
+
+  // 바다
+  ctx.save();
+  ctx.beginPath();
+  let cp = s(PREVIEW_COAST[0][0], PREVIEW_COAST[0][1]);
+  ctx.moveTo(cp.x, cp.y);
+  for (let i = 1; i < PREVIEW_COAST.length; i++) {
+    cp = s(PREVIEW_COAST[i][0], PREVIEW_COAST[i][1]);
+    ctx.lineTo(cp.x, cp.y);
+  }
+  ctx.lineTo(w, h); ctx.lineTo(w, 0); ctx.closePath();
+  ctx.fillStyle = 'rgba(10,22,40,0.4)';
+  ctx.fill();
+  ctx.restore();
+
+  // 보로노이 영토
+  const positions = sc.cityPositions;
+  const seeds = [];
+  for (const [id, pos] of Object.entries(positions)) {
+    const city = sc.cities[id];
+    const sp = s(pos.x, pos.y);
+    seeds.push({ x: sp.x, y: sp.y, owner: city?.owner || null, id });
+  }
+
+  const step = Math.max(4, Math.round(8 * scale));
+  const cols = Math.ceil(w / step);
+  const rows = Math.ceil(h / step);
+
+  for (let gy = 0; gy < rows; gy++) {
+    for (let gx = 0; gx < cols; gx++) {
+      const px = gx * step + step / 2;
+      const py = gy * step + step / 2;
+      let minDist = Infinity, nearest = null;
+      for (const sd of seeds) {
+        const d = (px - sd.x) ** 2 + (py - sd.y) ** 2;
+        if (d < minDist) { minDist = d; nearest = sd; }
+      }
+      if (nearest?.owner) {
+        const fc = PREVIEW_FC[nearest.owner];
+        if (fc) {
+          const isHighlight = nearest.owner === highlightFaction;
+          const base = isHighlight ? 0.50 : (highlightFaction ? 0.15 : 0.28);
+          const dist = Math.sqrt(minDist);
+          const boost = dist < 80 * scale ? 0.12 * (1 - dist / (80 * scale)) : 0;
+          const alpha = base + boost;
+          ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},${alpha.toFixed(3)})`;
+          ctx.fillRect(gx * step, gy * step, step, step);
+        }
+      }
+    }
+  }
+
+  // 강
+  ctx.save();
+  ctx.lineCap = 'round';
+  for (const [name, pts] of Object.entries(PREVIEW_RIVERS)) {
+    const rgb = name === 'yellow' ? [190,170,80] : [70,150,220];
+    ctx.beginPath();
+    const p0 = s(pts[0][0], pts[0][1]);
+    ctx.moveTo(p0.x, p0.y);
+    for (let i = 1; i < pts.length - 1; i++) {
+      const c = s(pts[i][0], pts[i][1]);
+      const n = s(pts[i+1][0], pts[i+1][1]);
+      ctx.quadraticCurveTo(c.x, c.y, (c.x + n.x) / 2, (c.y + n.y) / 2);
+    }
+    const last = s(pts[pts.length-1][0], pts[pts.length-1][1]);
+    ctx.lineTo(last.x, last.y);
+    ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.30)`;
+    ctx.lineWidth = 5 * scale;
+    ctx.stroke();
+  }
+  ctx.restore();
+
+  // 도시 점 + 이름
+  ctx.textAlign = 'center';
+  for (const [id, pos] of Object.entries(positions)) {
+    const city = sc.cities[id];
+    const sp = s(pos.x, pos.y);
+    const fc = PREVIEW_FC[city?.owner];
+    const isHighlight = city?.owner === highlightFaction;
+    const dimmed = highlightFaction && !isHighlight;
+
+    // 도시 원
+    const r = (city?.capital ? 8 : 5) * scale;
+    ctx.beginPath();
+    ctx.arc(sp.x, sp.y, r, 0, Math.PI * 2);
+    if (fc) {
+      const a = dimmed ? 0.3 : 0.9;
+      ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},${a})`;
+    } else {
+      ctx.fillStyle = 'rgba(100,100,100,0.4)';
+    }
+    ctx.fill();
+
+    // 선택된 세력 도시: 글로우
+    if (isHighlight) {
+      ctx.beginPath();
+      ctx.arc(sp.x, sp.y, r + 4 * scale, 0, Math.PI * 2);
+      ctx.strokeStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},0.5)`;
+      ctx.lineWidth = 2 * scale;
+      ctx.stroke();
+    }
+
+    // 도시 이름
+    const fontSize = (city?.capital ? 11 : 9) * scale;
+    ctx.font = `${isHighlight ? '700' : '400'} ${fontSize}px "Noto Sans KR", sans-serif`;
+    ctx.fillStyle = dimmed ? 'rgba(200,200,200,0.3)' : 'rgba(240,230,210,0.85)';
+    ctx.fillText(city?.name || id, sp.x, sp.y - r - 4 * scale);
+  }
+
+  // 세력 이름 라벨 (중심 좌표)
+  if (highlightFaction) {
+    const hlCities = Object.entries(positions).filter(([id]) => sc.cities[id]?.owner === highlightFaction);
+    if (hlCities.length > 0) {
+      const cx = hlCities.reduce((a, [, p]) => a + p.x, 0) / hlCities.length;
+      const cy = hlCities.reduce((a, [, p]) => a + p.y, 0) / hlCities.length;
+      const center = s(cx, cy + 30);
+      const fc = PREVIEW_FC[highlightFaction];
+      ctx.font = `900 ${18 * scale}px "Noto Serif KR", serif`;
+      ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},0.6)`;
+      ctx.textAlign = 'center';
+      ctx.fillText(sc.factions[highlightFaction]?.name || '', center.x, center.y);
+    }
+  }
+
+  // 비네팅
+  const vg = ctx.createRadialGradient(w/2, h/2, Math.min(w,h)*0.3, w/2, h/2, Math.max(w,h)*0.7);
+  vg.addColorStop(0, 'rgba(0,0,0,0)');
+  vg.addColorStop(1, 'rgba(0,0,0,0.5)');
+  ctx.fillStyle = vg;
+  ctx.fillRect(0, 0, w, h);
 }
 
 function backToStart() {
@@ -435,14 +610,13 @@ function initGameScreen() {
   updateUI();
 }
 
-// --- 턴 진행 ---
+// --- 턴 진행 (결산 오버레이 방식) ---
 async function nextTurn() {
   if (processing || !state || state.gameOver) return;
   processing = true;
   document.getElementById('btn-next-turn').disabled = true;
 
   try {
-    // 이벤트 펄스 초기화
     map.clearEventPulses();
 
     // 병력 스냅샷 (이동 감지용)
@@ -453,20 +627,41 @@ async function nextTurn() {
       ownerBefore[cid] = c.owner;
     }
 
-    // 1. 이벤트 체크
+    const resolutionItems = [];
+    let logMark = state.currentTurnLog.length;
+
+    // ── Phase 1: 이벤트 ──
     const playerEvents = executeTurnEvents(state, allEvents);
 
-    // 2. 플레이어 이벤트 처리 + 이벤트 도시 펄스
-    for (const event of playerEvents) {
-      // 이벤트 관련 도시에 펄스
-      addEventPulsesForEvent(event);
+    // AI 이벤트 로그 수집
+    const eventLogs = state.currentTurnLog.slice(logMark);
+    for (const entry of eventLogs) {
+      resolutionItems.push({
+        phase: '이벤트', icon: getLogIcon(entry.type),
+        text: entry.message, type: entry.type,
+      });
+    }
+    logMark = state.currentTurnLog.length;
 
+    // 플레이어 이벤트 → 기존 모달로 처리 (선택지 인터랙션 필요)
+    for (const event of playerEvents) {
+      addEventPulsesForEvent(event);
       const choiceId = await eventUI.show(event);
       processPlayerChoice(state, event, choiceId);
       updateUI();
     }
 
-    // 3. AI 세력 행동
+    // 플레이어 선택 로그 수집
+    const playerChoiceLogs = state.currentTurnLog.slice(logMark);
+    for (const entry of playerChoiceLogs) {
+      resolutionItems.push({
+        phase: '이벤트', icon: getLogIcon(entry.type),
+        text: entry.message, type: entry.type,
+      });
+    }
+    logMark = state.currentTurnLog.length;
+
+    // ── Phase 2: AI 행동 ──
     for (const [factionId, faction] of Object.entries(state.factions)) {
       if (factionId === state.player.factionId) continue;
       if (!faction.active) continue;
@@ -477,17 +672,77 @@ async function nextTurn() {
       decideAndExecute(factionId, state, scenario.connections);
     }
 
-    // 4. 자원 결산 + 턴 진행
-    endTurn(state);
+    const aiLogs = state.currentTurnLog.slice(logMark);
+    for (const entry of aiLogs) {
+      resolutionItems.push({
+        phase: 'AI 행동', icon: getLogIcon(entry.type),
+        text: entry.message, type: entry.type,
+      });
+    }
 
-    // 5. 병력 이동 애니메이션 감지
+    // ── Phase 3: 결산 ──
+    // 자원 스냅샷 (endTurn 전)
+    const playerFaction = state.getFaction(state.player.factionId);
+    const goldBefore = playerFaction.gold;
+    const playerCities = state.getCitiesOfFaction(state.player.factionId);
+    const foodBefore = playerCities.reduce((sum, c) => sum + c.food, 0);
+
+    const turnLogBefore = state.turnLog.length;
+    const currentLogMark = state.currentTurnLog.length;
+
+    endTurn(state); // settleAll → loyalty → defections → captives → construction → research → truces → gameOver → advanceMonth (clears currentTurnLog)
+
+    // 자원 스냅샷 (endTurn 후)
+    const goldAfter = playerFaction.gold;
+    const playerCitiesAfter = state.getCitiesOfFaction(state.player.factionId);
+    const foodAfter = playerCitiesAfter.reduce((sum, c) => sum + c.food, 0);
+
+    // 결산 로그 수집 (advanceMonth가 currentTurnLog→turnLog로 이동시킴)
+    const allNewTurnLogs = state.turnLog.slice(turnLogBefore);
+    const settleLogs = allNewTurnLogs.slice(currentLogMark);
+
+    // 금/식량 변동 요약
+    const goldDelta = goldAfter - goldBefore;
+    if (goldDelta !== 0) {
+      resolutionItems.push({
+        phase: '결산', icon: goldDelta >= 0 ? '💰' : '💸',
+        text: `금 ${goldDelta >= 0 ? '+' : ''}${goldDelta.toLocaleString()} (보유: ${goldAfter.toLocaleString()})`,
+        type: goldDelta >= 0 ? 'income' : 'warning',
+      });
+    }
+    const foodDelta = foodAfter - foodBefore;
+    if (foodDelta !== 0) {
+      resolutionItems.push({
+        phase: '결산', icon: foodDelta >= 0 ? '🌾' : '🔥',
+        text: `식량 ${foodDelta >= 0 ? '+' : ''}${foodDelta.toLocaleString()}`,
+        type: foodDelta >= 0 ? 'food' : 'warning',
+      });
+    }
+
+    // 결산 페이즈 로그 (배신, 건설 완료, 연구 완료, 반란 등)
+    for (const entry of settleLogs) {
+      resolutionItems.push({
+        phase: '결산', icon: getLogIcon(entry.type),
+        text: entry.message, type: entry.type,
+      });
+    }
+
+    // 아무 일도 없었으면 평화 메시지
+    if (resolutionItems.length === 0) {
+      resolutionItems.push({
+        phase: '결산', icon: '☀️',
+        text: '평화로운 한 달이 지나갔다.', type: 'info',
+      });
+    }
+
+    // ── 결산 오버레이 표시 ──
+    await turnResolution.show(resolutionItems);
+
+    // ── 후처리 ──
     detectAndAnimateMovements(armyBefore, ownerBefore, state);
-
-    // 6. UI 갱신
     updateUI();
     updateTurnLog();
 
-    // 6. 게임오버 체크
     if (state.gameOver) {
       showGameOver();
     }
