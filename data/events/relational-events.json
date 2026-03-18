@@ -1,0 +1,3096 @@
+{
+  "total": 100,
+  "generated_at": "2026-03-18T18:00:00.000Z",
+  "layer_distribution": {
+    "relational": 100
+  },
+  "category_distribution": {
+    "loyalty_betrayal": 15,
+    "master_student": 10,
+    "rivalry": 15,
+    "marriage_alliance": 10,
+    "revenge": 15,
+    "recruitment": 15,
+    "sworn_brotherhood": 10,
+    "internal_conflict": 10
+  },
+  "events": [
+    {
+      "id": "rel_loyalty_001",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "미방의 형주 헌납",
+      "period": { "year": 219 },
+      "location": "jiangling",
+      "trigger": {
+        "conditions": [
+          { "type": "character_relation", "params": { "a": "mi-fang", "b": "guan-yu", "relation": "subordinate", "tension_min": 70 } },
+          { "type": "faction_war", "params": { "attacker_faction": "wu" } }
+        ],
+        "priority": 90
+      },
+      "participants": ["mi-fang", "guan-yu", "lv-meng"],
+      "narrative": {
+        "text": "관우의 가혹한 질책에 치를 떨던 미방은, 여몽의 대군이 강릉 앞에 다다르자 성문을 열어젖혔다. '살아서 벌 받느니 차라리 항복하여 목숨을 부지하리라.' 형주의 허리가 한순간에 꺾였다.",
+        "flavor": "성문이 열리는 삐걱거리는 소리가, 관우에게는 천둥보다 무거웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "city_transfer", "target": "jiangling", "value": { "from": "shu", "to": "wu" } },
+        { "type": "relation_change", "target": "mi-fang", "value": { "faction": "wu", "loyalty": -80 } },
+        { "type": "morale_change", "target": "guan-yu", "value": { "delta": -30 } }
+      ],
+      "choices": [
+        {
+          "label": "미방을 용서하고 재기를 도모",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 10 } }],
+          "description": "배신자에게도 기회를 준다는 소문이 퍼져 민심을 얻는다."
+        },
+        {
+          "label": "미방의 가족을 처벌",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intimidation", "delta": 15 } }],
+          "description": "배신의 대가를 분명히 하여 다른 이의 변절을 억제한다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_002",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "방덕의 사생결단",
+      "period": { "year": 219 },
+      "location": "fancheng",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "pang-de", "location": "fancheng" } },
+          { "type": "faction_war", "params": { "attacker": "guan-yu" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["pang-de", "guan-yu", "yu-jin"],
+      "narrative": {
+        "text": "관에 누워 출전하는 방덕. '마초는 마초, 나는 나다. 위왕(魏王)께 바칠 것은 이 목숨뿐.' 번성 수전에서 우금이 항복하는 와중에도 방덕만은 끝까지 싸우다 포로가 되었으나 무릎 꿇기를 거부했다.",
+        "flavor": "관 위에 새겨진 '必死' 두 글자가 빗물에 번져도 여전히 선명했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "pang-de", "value": { "loyalty_to_wei": 100 } },
+        { "type": "morale_change", "target": "wei_soldiers", "value": { "delta": 20 } }
+      ],
+      "choices": [
+        {
+          "label": "방덕의 충절을 기리다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 15 } }],
+          "description": "적장이라도 그 충절은 본받을 만하다."
+        },
+        {
+          "label": "항복을 강요하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intimidation", "delta": 10 } }],
+          "description": "살려두면 후환이 된다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_003",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "우금의 굴욕적 항복",
+      "period": { "year": 219 },
+      "location": "fancheng",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "yu-jin", "location": "fancheng" } },
+          { "type": "event_occurred", "params": { "event": "flood_fancheng" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["yu-jin", "guan-yu", "cao-cao"],
+      "narrative": {
+        "text": "조조 오자양장(五子良將)의 필두, 삼십 년을 함께한 노장 우금이 수몰된 진중에서 무릎을 꿇었다. 조조가 탄식했다. '내가 우금을 삼십 년 알았건만, 위급할 때 방덕만도 못할 줄이야.'",
+        "flavor": "흙탕물 속에서 건져 올린 우금의 갑옷에서 녹물이 흘렀다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "yu-jin", "value": { "reputation": -50, "loyalty_to_wei": -30 } },
+        { "type": "morale_change", "target": "wei_soldiers", "value": { "delta": -20 } }
+      ],
+      "choices": [
+        {
+          "label": "우금을 후대하여 위나라를 조롱",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 10 } }],
+          "description": "적장의 항복을 선전하여 위군 사기를 떨어뜨린다."
+        },
+        {
+          "label": "포로로 가두다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 5 } }],
+          "description": "인질로 활용할 가치가 있다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_004",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "주창의 순절",
+      "period": { "year": 219 },
+      "location": "maicheng",
+      "trigger": {
+        "conditions": [
+          { "type": "character_death", "params": { "char": "guan-yu" } },
+          { "type": "character_alive", "params": { "char": "zhou-cang" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["zhou-cang", "guan-yu"],
+      "narrative": {
+        "text": "관우의 수급이 돌아오지 않는다는 소식에, 주창은 청룡언월도를 한 번 어루만진 뒤 벽을 향해 머리를 부딪쳤다. '관장군님이 계시지 않는 천하에, 주창이 있을 이유도 없소.' 그의 충성은 이 한마디로 완결되었다.",
+        "flavor": "피 묻은 청룡도가 벽에 기대어진 채, 주인을 잃은 칼이 되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhou-cang", "value": { "cause": "suicide" } },
+        { "type": "morale_change", "target": "shu_soldiers", "value": { "delta": -15 } }
+      ],
+      "choices": [
+        {
+          "label": "주창의 충절을 기리는 사당을 세우다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 10 } }],
+          "description": "이런 충신이 있었기에 관우가 관우였다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_005",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "맹달의 이중 투항",
+      "period": { "year": 228 },
+      "location": "shangyong",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "meng-da", "faction": "wei" } },
+          { "type": "diplomacy_contact", "params": { "from": "shu", "to": "meng-da" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["meng-da", "zhuge-liang", "sima-yi"],
+      "narrative": {
+        "text": "위에서 환영받지 못하는 맹달이 다시 촉으로 돌아가려 한다. 제갈량은 맹달의 귀순을 유도하지만 사마의는 이를 눈치채고 팔일 강행군으로 상용을 기습한다. 이중 배신자의 최후는 허무했다.",
+        "flavor": "'충성'이라는 단어를 입에 올릴 자격이 없는 자의 말로.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "meng-da", "value": { "cause": "killed_in_battle" } },
+        { "type": "relation_change", "target": "shu", "value": { "northern_front_disrupted": true } }
+      ],
+      "choices": [
+        {
+          "label": "맹달을 서둘러 지원하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": -10 } }],
+          "description": "병력 분산의 위험이 있지만 상용 확보 기회."
+        },
+        {
+          "label": "맹달을 포기하고 본대 집중",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 5 } }],
+          "description": "믿을 수 없는 자에게 병력을 낭비할 수 없다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_006",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "장송의 밀서",
+      "period": { "year": 211 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhang-song", "faction": "yizhou" } },
+          { "type": "diplomacy_contact", "params": { "from": "liu-bei" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["zhang-song", "liu-bei", "liu-zhang"],
+      "narrative": {
+        "text": "조조에게 모욕당한 장송은 익주의 지도를 품에 안고 유비를 찾아간다. '유장은 지킬 만한 주군이 아니오.' 한 장의 지도가 천하삼분의 열쇠가 되었으나, 장송 자신은 형 장숙의 밀고로 처형당한다.",
+        "flavor": "비단에 그려진 익주 지도의 잉크가 아직 마르기도 전에, 그 주인의 피가 먼저 말랐다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "diplomacy_change", "target": "liu-bei", "value": { "yizhou_access": true } },
+        { "type": "character_death", "target": "zhang-song", "value": { "cause": "executed" } }
+      ],
+      "choices": [
+        {
+          "label": "장송의 정보를 최대한 활용",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 20 } }],
+          "description": "익주 지리를 완벽히 파악하여 진군 경로를 확보."
+        },
+        {
+          "label": "장송을 의심하고 거리를 두다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 5 } }],
+          "description": "주군을 배신하는 자를 어찌 믿으랴."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_007",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "서서의 어머니",
+      "period": { "year": 207 },
+      "location": "xinye",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "xu-shu", "faction": "shu" } },
+          { "type": "event_trigger", "params": { "type": "hostage_taken" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["xu-shu", "liu-bei", "cao-cao"],
+      "narrative": {
+        "text": "어머니의 위조 편지를 받은 서서가 눈물을 흘리며 유비에게 하직을 고한다. '주공의 은혜를 잊지 못하나, 어머니를 버릴 수는 없습니다.' 유비 또한 눈물로 전송하고 서서는 떠나며 제갈량을 천거한다.",
+        "flavor": "서서가 말 위에서 세 번 뒤돌아보았고, 유비는 나무를 베어 길을 넓혔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_transfer", "target": "xu-shu", "value": { "from": "shu", "to": "wei" } },
+        { "type": "event_trigger", "target": "three_visits", "value": { "unlocked": true } }
+      ],
+      "choices": [
+        {
+          "label": "서서를 붙잡아 두다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": -20 } }],
+          "description": "인재를 잃지는 않지만 불효를 강요하는 셈."
+        },
+        {
+          "label": "눈물로 전송하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 15 } }],
+          "description": "서서가 천거하는 와룡(제갈량)이라는 더 큰 기회가 열린다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_008",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "위연의 반란 혐의",
+      "period": { "year": 234 },
+      "location": "wuzhangyuan",
+      "trigger": {
+        "conditions": [
+          { "type": "character_death", "params": { "char": "zhuge-liang" } },
+          { "type": "character_alive", "params": { "char": "wei-yan" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["wei-yan", "yang-yi", "ma-dai"],
+      "narrative": {
+        "text": "제갈량 사후, 양의가 철군을 주도하자 위연이 분노하여 독자 행동에 나선다. '승상이 돌아가셨으니 내가 계속 싸우겠다!' 그러나 양의의 공작과 마대의 추격으로 위연은 반역자라는 누명을 쓰고 참수된다.",
+        "flavor": "마대의 칼날이 위연의 목을 가르는 순간, 촉한은 최후의 맹장을 잃었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "wei-yan", "value": { "cause": "executed" } },
+        { "type": "morale_change", "target": "shu_military", "value": { "delta": -25 } }
+      ],
+      "choices": [
+        {
+          "label": "위연의 편을 들다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 15 } }],
+          "description": "최강의 장수를 살린다. 그러나 군부 분열의 위험."
+        },
+        {
+          "label": "양의의 철군 명령을 따르다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "승상의 유지를 따르는 것이 안전하다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_009",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "여포의 세 번째 배신",
+      "period": { "year": 198 },
+      "location": "xiapi",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "lv-bu", "location": "xiapi" } },
+          { "type": "siege_ongoing", "params": { "attacker": "cao-cao" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["lv-bu", "cao-cao", "liu-bei"],
+      "narrative": {
+        "text": "하비성이 수몰되고 여포는 백문루에서 포박되어 끌려온다. '나를 써주시오, 천하를 함께 취합시다.' 유비가 한마디 던진다. '정원과 동탁을 잊으셨습니까?' 조조가 고개를 끄덕이자 교수대가 준비된다.",
+        "flavor": "삼성가노(三姓家奴)의 최후는, 한 줄 밧줄로 마감되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "lv-bu", "value": { "cause": "executed" } },
+        { "type": "item_transfer", "target": "cao-cao", "value": { "item": "red_hare" } }
+      ],
+      "choices": [
+        {
+          "label": "여포를 등용하다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 30 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": -25 } }
+          ],
+          "description": "천하 최강의 무장을 얻지만 언제 뒤통수를 칠지..."
+        },
+        {
+          "label": "처형하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 15 } }],
+          "description": "기를 수 없는 독사는 일찍 제거하는 것이 상책."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_010",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "진도의 백이병 사수",
+      "period": { "year": 223 },
+      "location": "yongan",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "chen-dao", "location": "yongan" } },
+          { "type": "character_death", "params": { "char": "liu-bei" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["chen-dao", "zhuge-liang", "liu-bei"],
+      "narrative": {
+        "text": "유비 사후 영안(永安)의 방어를 맡은 진도. 백이병(白毦兵) 천여 명으로 오나라와의 최전선을 지킨다. 제갈량이 서찰에 썼다. '진도는 조운에 버금가는 충의의 장수다.' 연의에 이름조차 없지만, 촉한의 방패였다.",
+        "flavor": "흰 깃털 투구의 백이병이 영안 성벽 위에 도열하면, 오나라 척후는 발길을 돌렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "defense_bonus", "target": "yongan", "value": { "delta": 20 } },
+        { "type": "relation_change", "target": "chen-dao", "value": { "reputation": 15 } }
+      ],
+      "choices": [
+        {
+          "label": "진도에게 증원을 보내다",
+          "effects": [{ "type": "stat_change", "target": "yongan", "value": { "stat": "defense", "delta": 10 } }],
+          "description": "영안이 뚫리면 성도까지 열린다."
+        },
+        {
+          "label": "북벌에 병력 집중",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 10 } }],
+          "description": "진도를 믿고 최소 병력으로 방어를 맡긴다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_011",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "동윤의 황호 억제",
+      "period": { "year": 243 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "dong-yun" } },
+          { "type": "event_trigger", "params": { "type": "eunuch_influence_rising" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["dong-yun", "huang-hao", "liu-shan"],
+      "narrative": {
+        "text": "환관 황호가 점점 유선의 총애를 받으며 세력을 키우려 하지만, 시중 동윤이 번번이 막아선다. '폐하, 환관에게 정사를 맡기시면 선제의 유지에 어긋납니다.' 동윤이 살아있는 한 황호는 고개를 들지 못한다.",
+        "flavor": "동윤의 눈빛 앞에서 황호는 항상 한 발 물러섰다. 그 한 발이 촉한의 수명이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "chengdu", "value": { "stat": "stability", "delta": 15 } },
+        { "type": "relation_change", "target": "huang-hao", "value": { "influence": -20 } }
+      ],
+      "choices": [
+        {
+          "label": "동윤을 지지하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "환관의 전횡을 막는 것이 국가의 기반."
+        },
+        {
+          "label": "황호를 이용하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 10 } }],
+          "description": "환관의 정보망도 쓸모가 있다. 위험한 선택."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_012",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "한당의 삼대 충성",
+      "period": { "year": 208 },
+      "location": "chibi",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "han-dang", "location": "chibi" } },
+          { "type": "battle_phase", "params": { "phase": "fire_attack" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["han-dang", "huang-gai", "zhou-yu"],
+      "narrative": {
+        "text": "손견 때부터 삼대를 섬긴 한당이 적벽의 화염 속에서 돌격한다. 오십이 넘은 나이에도 갑옷을 벗지 않는 노장. 황개의 화선(火船)이 조조 수군을 태울 때 한당이 후속 돌격을 지휘했다.",
+        "flavor": "불꽃이 장강을 물들일 때, 노장의 눈에도 불꽃이 타올랐다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "morale_change", "target": "wu_soldiers", "value": { "delta": 15 } },
+        { "type": "stat_change", "target": "han-dang", "value": { "stat": "reputation", "delta": 10 } }
+      ],
+      "choices": [
+        {
+          "label": "한당을 선봉에 세우다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 10 } }],
+          "description": "노장의 경험이 젊은 병사들에게 용기를 준다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_013",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "조루의 맥성 동행",
+      "period": { "year": 219 },
+      "location": "maicheng",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhao-lei" } },
+          { "type": "character_retreat", "params": { "char": "guan-yu", "to": "maicheng" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["zhao-lei", "guan-yu"],
+      "narrative": {
+        "text": "형주가 무너지고 관우가 맥성으로 퇴각할 때, 대부분의 병사가 흩어졌지만 조루는 끝까지 남았다. '도독의 직분은 주장과 함께 하는 것입니다.' 미방처럼 항복할 수도 있었지만, 그는 관우와 함께 포로가 되어 처형당한다.",
+        "flavor": "이름 없는 충신의 최후. 역사는 미방의 배신만 기억하지만.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhao-lei", "value": { "cause": "executed" } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "reputation", "delta": 5 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_loyalty_014",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "채모의 형주 항복",
+      "period": { "year": 208 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_death", "params": { "char": "liu-biao" } },
+          { "type": "faction_approach", "params": { "faction": "wei" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["cai-mao", "liu-cong", "cao-cao"],
+      "narrative": {
+        "text": "유표가 죽자 채모는 유종을 앞세워 형주를 조조에게 바쳤다. 채씨 가문의 권력을 유지하기 위한 실리적 선택. 연의에서는 이후 적벽대전에서 수군 도독이 되지만, 주유의 이간계로 조조에게 참수당한다.",
+        "flavor": "가문을 지키려 주군을 판 자의 최후가, 다른 주군의 의심으로 끝났다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "city_transfer", "target": "jingzhou", "value": { "from": "liu-biao", "to": "wei" } },
+        { "type": "character_death", "target": "cai-mao", "value": { "cause": "executed_by_ally" } }
+      ],
+      "choices": [
+        {
+          "label": "유종을 보호하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 10 } }],
+          "description": "어린 주군을 지켜주면 형주 인심을 얻을 수 있다."
+        },
+        {
+          "label": "형주 인재를 빼내다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 10 } }],
+          "description": "혼란을 틈타 형주의 현자들을 초빙한다."
+        }
+      ]
+    },
+    {
+      "id": "rel_loyalty_015",
+      "layer": "relational",
+      "category": "loyalty_betrayal",
+      "name": "유봉의 거부와 최후",
+      "period": { "year": 220 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "guan_yu_death" } },
+          { "type": "character_alive", "params": { "char": "liu-feng" } }
+        ],
+        "priority": 82
+      },
+      "participants": ["liu-feng", "liu-bei", "zhuge-liang"],
+      "narrative": {
+        "text": "관우가 죽고, 맹달이 투항하고, 상용도 잃었다. 유비 앞에 끌려온 유봉이 울며 호소한다. '맹달이 막아서서 갈 수 없었습니다!' 그러나 제갈량이 진언한다. '유봉은 강경하니, 유선의 후사가 불안합니다.' 양자의 목이 떨어졌다.",
+        "flavor": "봉(封)과 선(禪) — 아버지가 이름에 담은 야심이, 아들의 목숨을 앗아갔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "liu-feng", "value": { "cause": "executed_by_father" } },
+        { "type": "stat_change", "target": "liu-bei", "value": { "stat": "morale", "delta": -10 } }
+      ],
+      "choices": [
+        {
+          "label": "유봉을 용서하고 전선에 보내다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 10 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": -15 } }
+          ],
+          "description": "무력 79의 맹장을 살리지만 후계 문제가 남는다."
+        },
+        {
+          "label": "사사(賜死)하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "후계의 안정을 위해 비정한 결단."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_001",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "삼고초려",
+      "period": { "year": 207 },
+      "location": "longzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "event_trigger", "params": { "type": "three_visits_unlocked" } },
+          { "type": "character_present", "params": { "char": "liu-bei", "location": "xinye" } }
+        ],
+        "priority": 95
+      },
+      "participants": ["liu-bei", "zhuge-liang"],
+      "narrative": {
+        "text": "두 번이나 빈집을 찾고도 세 번째 눈보라를 뚫고 융중을 찾아간 유비. 잠에서 깬 제갈량이 '천하삼분지계(天下三分之計)'를 펼치는 순간, 난세의 지도가 다시 그려졌다.",
+        "flavor": "초당 앞 매화가 눈 속에 피어있었고, 유비의 무릎에는 눈이 소복이 쌓여 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "zhuge-liang", "value": { "to_faction": "shu" } },
+        { "type": "strategy_unlock", "target": "shu", "value": { "strategy": "three_kingdoms_plan" } }
+      ],
+      "choices": [
+        {
+          "label": "천하삼분지계를 채택",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 30 } }],
+          "description": "형주→익주→북벌 순서로 천하를 도모한다."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_002",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "제갈량의 출사표",
+      "period": { "year": 227 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "zhuge-liang" } },
+          { "type": "event_trigger", "params": { "type": "northern_expedition_start" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["zhuge-liang", "liu-shan", "dong-yun"],
+      "narrative": {
+        "text": "'선제께서 창업이 반도 이루지 못한 채 중도에 붕어하셨으니...' 출사표를 올리며 제갈량은 동윤·장완·비의를 내치에 천거한다. '궁중의 일은 비의·동윤에게, 영외의 일은 향총에게 물으소서.'",
+        "flavor": "출사표를 읽는 신하들의 눈에서 눈물이 흘렀고, 유선만이 멍하니 앉아있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "dong-yun", "value": { "role": "shizhong", "authority": 20 } },
+        { "type": "morale_change", "target": "shu_all", "value": { "delta": 20 } }
+      ],
+      "choices": [
+        {
+          "label": "출사표의 인사를 따르다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 15 } }],
+          "description": "제갈량이 천거한 인재들이 내정을 안정시킨다."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_003",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "여몽의 오하아몽 탈피",
+      "period": { "year": 215 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "lv-meng" } },
+          { "type": "character_stat", "params": { "char": "lv-meng", "stat": "intelligence", "min": 60 } }
+        ],
+        "priority": 72
+      },
+      "participants": ["lv-meng", "sun-quan", "lu-su"],
+      "narrative": {
+        "text": "손권이 여몽에게 학문을 권하고, 여몽이 병서를 읽기 시작한다. 훗날 노숙이 여몽과 대화하다 놀라 말한다. '더 이상 오하의 아몽(吳下阿蒙)이 아니구나!' 여몽이 웃으며 답한다. '사흘을 떨어져 있으면 눈을 비비고 다시 봐야지요.'",
+        "flavor": "칼을 잡던 손에 죽간(竹簡)을 잡으니, 형주가 두려워할 이유가 생겼다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "lv-meng", "value": { "stat": "intelligence", "delta": 15 } },
+        { "type": "strategy_unlock", "target": "wu", "value": { "strategy": "jingzhou_recovery" } }
+      ],
+      "choices": [
+        {
+          "label": "여몽에게 형주 작전을 맡기다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 15 } }],
+          "description": "문무를 겸비한 여몽이야말로 형주 탈환의 적임자."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_004",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "손건의 유비 전송",
+      "period": { "year": 200 },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "sun-qian", "faction": "shu" } },
+          { "type": "diplomacy_needed", "params": { "target": "liu-biao" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["sun-qian", "liu-bei", "liu-biao"],
+      "narrative": {
+        "text": "서주를 잃고 방랑하는 유비를 위해 손건이 형주로 먼저 가서 유표와의 만남을 주선한다. 정현(鄭玄)에게 유학을 배운 손건의 교양과 화술이 유표의 마음을 열었다. 유비의 형주 시대가 시작된다.",
+        "flavor": "손건의 세 치 혀가, 유비에게 열 년의 안식처를 마련했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "diplomacy_change", "target": "liu-bei", "value": { "jingzhou_access": true } },
+        { "type": "stat_change", "target": "sun-qian", "value": { "stat": "reputation", "delta": 10 } }
+      ],
+      "choices": [
+        {
+          "label": "손건의 외교를 적극 지원",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 10 } }],
+          "description": "외교관에게 충분한 선물과 권한을 줘야 협상이 된다."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_005",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "강유, 제갈량의 후계",
+      "period": { "year": 228 },
+      "location": "tianshui",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhuge-liang", "location": "tianshui" } },
+          { "type": "character_present", "params": { "char": "jiang-wei", "faction": "wei" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["zhuge-liang", "jiang-wei"],
+      "narrative": {
+        "text": "제갈량이 첫 북벌에서 천수의 젊은 장수 강유를 만나고 감탄한다. '이 사람이야말로 양주 상사(上士)라. 내 병법을 전수할 만하다.' 강유는 위를 배신하고 촉에 투항하며, 제갈량의 병법을 계승하는 마지막 제자가 된다.",
+        "flavor": "한 사람의 유산이 한 사람의 어깨 위에 얹어졌다. 그 무게가 촉한의 운명을 30년 더 이어갔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "jiang-wei", "value": { "to_faction": "shu" } },
+        { "type": "stat_change", "target": "jiang-wei", "value": { "stat": "intelligence", "delta": 10 } }
+      ],
+      "choices": [
+        {
+          "label": "강유에게 병법을 전수하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "succession", "delta": 20 } }],
+          "description": "후계자를 기르는 것이야말로 최고의 투자."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_006",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "제갈각의 아버지 걱정",
+      "period": { "year": 234 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "zhuge-ke" } },
+          { "type": "character_alive", "params": { "char": "zhuge-jin" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["zhuge-ke", "zhuge-jin", "sun-quan"],
+      "narrative": {
+        "text": "아들의 재기(才氣)를 보며 제갈근이 탄식한다. '우리 집안을 흥하게 할 자도 이 아이고, 망하게 할 자도 이 아이다.' 손권 앞에서 말재간으로 당나귀 에피소드를 해결하는 제갈각의 재치가 빛나지만, 아버지만은 웃지 못한다.",
+        "flavor": "총명한 아들을 둔 아비의 눈에, 기쁨보다 불안이 먼저 비쳤다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhuge-ke", "value": { "stat": "reputation", "delta": 15 } },
+        { "type": "foreshadow", "target": "zhuge-ke", "value": { "event": "zhuge_ke_downfall" } }
+      ],
+      "choices": [
+        {
+          "label": "제갈각을 중용하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 15 } }],
+          "description": "뛰어난 인재를 쓰지 않을 이유가 없다."
+        },
+        {
+          "label": "아버지의 경고에 귀 기울이다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "재주만 보고 쓰면 화를 부를 수 있다."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_007",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "마속의 가정 참패",
+      "period": { "year": 228 },
+      "location": "jieting",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "jieting" } },
+          { "type": "character_present", "params": { "char": "ma-su" } }
+        ],
+        "priority": 90
+      },
+      "participants": ["zhuge-liang", "ma-su", "wang-ping"],
+      "narrative": {
+        "text": "마량의 동생 마속을 아꼈던 제갈량이 가정 수비를 맡겼으나, 마속은 산 위에 진을 치는 교과서적 실수를 범한다. 왕평이 만류했으나 마속은 듣지 않았다. 장합의 군대가 수원을 끊고 대패. 눈물을 흘리며 마속을 참하는 제갈량.",
+        "flavor": "눈물이 칼날을 적시고, 그 칼날이 북벌의 꿈을 베었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "ma-su", "value": { "cause": "executed" } },
+        { "type": "strategy_change", "target": "shu", "value": { "northern_expedition": "failed" } }
+      ],
+      "choices": [
+        {
+          "label": "마속을 참하다 (읍참마속)",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "military_discipline", "delta": 20 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "morale", "delta": -10 } }
+          ],
+          "description": "군법은 군법이다. 사사로운 정으로 흐트러질 수 없다."
+        },
+        {
+          "label": "마속을 살려두다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "military_discipline", "delta": -15 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": -10 } }
+          ],
+          "description": "인재가 아깝지만 군기가 무너진다."
+        }
+      ]
+    },
+    {
+      "id": "rel_master_008",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "보즐의 빈한한 수학",
+      "period": { "year": 195 },
+      "location": "jiangnan",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "bu-zhi" } },
+          { "type": "event_trigger", "params": { "type": "early_career" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["bu-zhi"],
+      "narrative": {
+        "text": "전란을 피해 강남으로 내려온 보즐은 빈한하여 멜론 밭에서 과일을 팔며 생계를 이었다. 그러면서도 학문을 놓지 않았고, 훗날 손권에게 발탁되어 교주 평정에서 두각을 나타낸다. 승상까지 오른 입지전적 인물.",
+        "flavor": "멜론 장수의 붓이 만 리의 상소문을 쓸 줄 누가 알았겠는가.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "bu-zhi", "value": { "stat": "reputation", "delta": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_master_009",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "우번의 역경 강의",
+      "period": { "year": 230 },
+      "location": "jiaozhi",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "yu-fan", "status": "exiled" } }
+        ],
+        "priority": 50
+      },
+      "participants": ["yu-fan"],
+      "narrative": {
+        "text": "유배지 교지(交趾)에서도 우번은 역경(易經) 연구를 멈추지 않았다. 현지의 학자와 관리들이 우번에게 배우러 왔고, 유배지가 일종의 학당이 되었다. 입은 화를 부르지만 머리는 빛을 잃지 않는다.",
+        "flavor": "유배지의 초가집에서 역경을 강의하는 학자. 혀가 닳지 않는 한 가르침도 멈추지 않는다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "jiaozhi", "value": { "stat": "culture", "delta": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_master_010",
+      "layer": "relational",
+      "category": "master_student",
+      "name": "미축의 전재산 투자",
+      "period": { "year": 196 },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "mi-zhu" } },
+          { "type": "character_present", "params": { "char": "liu-bei" } }
+        ],
+        "priority": 68
+      },
+      "participants": ["mi-zhu", "liu-bei"],
+      "narrative": {
+        "text": "동해 제일의 거상 미축이 노복 2천 명과 금은 재물을 모조리 유비에게 바친다. 여동생까지 시집보내니, 이것은 투자가 아니라 운명을 건 도박. '장군이 천하를 바로잡으실 분이라 믿습니다.' 유비 인생 최대의 재정적 지원.",
+        "flavor": "장부 한 권 없이 전 재산을 넘긴 거상의 눈에는, 천하를 보는 안목이 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu-bei", "value": { "stat": "economy", "delta": 30 } },
+        { "type": "relation_change", "target": "mi-zhu", "value": { "loyalty": 95 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_rivalry_001",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "양의 vs 위연 — 불꽃 갈등",
+      "period": { "year": 230 },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "yang-yi", "b": "wei-yan", "faction": "shu" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["yang-yi", "wei-yan", "zhuge-liang"],
+      "narrative": {
+        "text": "양의는 위연의 칼에 겁먹어 우는 척하고, 위연은 양의의 잔소리에 이를 간다. 북벌 진중에서 두 사람이 만나면 피가 튀고, 제갈량만이 간신히 사이를 잡는다. '둘 다 쓸모 있으니 참아라.'",
+        "flavor": "제갈량의 가장 큰 적은 사마의가 아니라 이 둘의 내분이었을지도.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "morale_change", "target": "shu_command", "value": { "delta": -10 } },
+        { "type": "relation_change", "target": "yang-yi,wei-yan", "value": { "tension": 90 } }
+      ],
+      "choices": [
+        {
+          "label": "양의를 후방으로 보내다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "logistics", "delta": -10 } }],
+          "description": "갈등은 줄지만 군수 능력이 빠진다."
+        },
+        {
+          "label": "위연을 선봉으로 보내다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 10 } }],
+          "description": "거리를 벌리는 것이 최선."
+        },
+        {
+          "label": "둘 다 참고 쓰다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": -5 } }],
+          "description": "제갈량이 살아있는 동안만 가능한 선택."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_002",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "제갈량 vs 사마의 — 오장원",
+      "period": { "year": 234 },
+      "location": "wuzhangyuan",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "wuzhangyuan" } }
+        ],
+        "priority": 92
+      },
+      "participants": ["zhuge-liang", "sima-yi"],
+      "narrative": {
+        "text": "제갈량이 여자 옷을 보내 사마의를 도발하지만, 사마의는 웃으며 받았다. '제갈량은 먹는 것이 적고 일이 많다 하니, 오래 버티지 못하리라.' 천재의 최후는 별이 떨어지는 것으로 끝났고, 사마의의 인내가 승리했다.",
+        "flavor": "별이 떨어진 밤, 사마의는 비로소 잠을 잤다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhuge-liang", "value": { "cause": "illness" } },
+        { "type": "faction_change", "target": "shu", "value": { "northern_expedition": "ended" } }
+      ],
+      "choices": [
+        {
+          "label": "총공격을 명하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 15 } }],
+          "description": "마지막 전투. 모든 것을 건다."
+        },
+        {
+          "label": "질서 있게 퇴각하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 15 } }],
+          "description": "사후에도 군대를 온전히 보존하는 것이 승상의 유지."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_003",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "주유 vs 제갈량 — 동풍을 빌리다",
+      "period": { "year": 208 },
+      "location": "chibi",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "zhou-yu", "b": "zhuge-liang", "location": "chibi" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["zhou-yu", "zhuge-liang"],
+      "narrative": {
+        "text": "연의의 주유는 제갈량을 제거하려 했으나 번번이 한 수 앞서가는 공명에게 당한다. '기유생량하생유(旣生瑜何生亮) — 하늘이 주유를 낳고 어찌 제갈량까지 낳았는가!' 실제 역사에서는 둘의 관계가 이보다 나았으나, 연의의 이 라이벌 구도가 삼국지의 극적 긴장감을 만든다.",
+        "flavor": "동남풍이 부는 밤, 두 천재의 계략이 장강 위에서 교차했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "battle_bonus", "target": "allied_forces", "value": { "fire_attack_enabled": true } },
+        { "type": "relation_change", "target": "zhou-yu,zhuge-liang", "value": { "rivalry": 90 } }
+      ],
+      "choices": [
+        {
+          "label": "제갈량을 제거하려 하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": -20 } }],
+          "description": "동맹을 깨뜨리는 위험한 선택."
+        },
+        {
+          "label": "협력하여 조조를 물리치다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 20 } }],
+          "description": "적벽의 승리가 천하삼분을 열어젖힌다."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_004",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "관우 vs 황충 — 노장 대결",
+      "period": { "year": 219 },
+      "location": "changsha",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "guan-yu", "b": "huang-zhong", "location": "changsha" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["guan-yu", "huang-zhong"],
+      "narrative": {
+        "text": "장사 공략전에서 관우와 황충이 일기토를 벌인다. 황충이 말에서 떨어지자 관우가 죽이지 않고, 황충도 관우를 저격할 기회에 빗나가게 쏜다. 무인의 예법이 통한 순간. 이후 황충은 유비에게 투항한다.",
+        "flavor": "노장의 활시위가 떨렸지만, 화살은 일부러 빗나갔다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "huang-zhong", "value": { "to_faction": "shu" } },
+        { "type": "relation_change", "target": "guan-yu,huang-zhong", "value": { "respect": 80 } }
+      ],
+      "choices": [
+        {
+          "label": "황충을 예로 맞이하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 10 } }],
+          "description": "무인의 예로 만난 인연."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_005",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "능통 vs 감녕 — 아버지의 원수",
+      "period": { "year": 208 },
+      "location": "wu_camp",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "ling-tong", "b": "gan-ning", "faction": "wu" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["ling-tong", "gan-ning", "sun-quan"],
+      "narrative": {
+        "text": "감녕이 능조를 죽였다. 능조의 아들 능통은 감녕을 원수로 여기고 칼을 뽑으려 하지만, 손권이 중재한다. '과거의 원한을 나라의 일에 섞지 마라.' 결국 능통은 합비 전투에서 감녕과 나란히 싸우며 서서히 원한을 풀어간다.",
+        "flavor": "아버지를 죽인 자와 같은 전장에 서는 것. 그것이 국가가 개인에게 요구하는 것이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "ling-tong,gan-ning", "value": { "tension": -30 } },
+        { "type": "morale_change", "target": "wu_soldiers", "value": { "delta": 10 } }
+      ],
+      "choices": [
+        {
+          "label": "감녕을 처벌하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": -15 } }],
+          "description": "능통의 원한은 풀리지만 최강의 맹장을 잃는다."
+        },
+        {
+          "label": "화해를 중재하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "둘 다 살리는 것이 군주의 역량."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_006",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "조진 vs 제갈량 — 서부전선",
+      "period": { "year": 228 },
+      "location": "western_front",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "cao-zhen", "b": "zhuge-liang" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["cao-zhen", "zhuge-liang", "hao-zhao"],
+      "narrative": {
+        "text": "연의에서는 제갈량에게 패배하는 것으로 그려지나, 정사의 조진은 학소를 진창에 배치하여 제갈량의 초기 북벌을 모두 막아낸 훌륭한 사령관이었다. 조진이 죽은 뒤에야 사마의가 서부전선을 맡게 된다.",
+        "flavor": "조진이 살아있는 한, 위나라의 서쪽은 안전했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "defense_bonus", "target": "wei_west", "value": { "delta": 15 } },
+        { "type": "stat_change", "target": "cao-zhen", "value": { "stat": "reputation", "delta": 10 } }
+      ],
+      "choices": [
+        {
+          "label": "학소를 진창에 배치하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "defense", "delta": 20 } }],
+          "description": "수성의 명장 학소가 진창을 지키면 제갈량도 뚫지 못한다."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_007",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "손환 vs 유비 — 이릉 선봉전",
+      "period": { "year": 222 },
+      "location": "yiling",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "yiling" } },
+          { "type": "character_present", "params": { "char": "sun-huan" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["sun-huan", "liu-bei", "lu-xun"],
+      "narrative": {
+        "text": "이릉 전투 초기, 유비의 대군이 밀려오자 젊은 손환이 최전선에서 버텨낸다. 수적 열세에도 불구하고 성을 사수하며 육손의 화공 시간을 벌어주었다. 유비마저 '저 젊은 놈이 제법이군' 하고 경계했다.",
+        "flavor": "이십대 청년이 황제의 군대를 막아세운 밤. 이것이 손씨 종실의 저력이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "battle_bonus", "target": "wu", "value": { "time_bought": true } },
+        { "type": "stat_change", "target": "sun-huan", "value": { "stat": "reputation", "delta": 15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_rivalry_008",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "학소 vs 제갈량 — 진창 공성전",
+      "period": { "year": 228 },
+      "location": "chencang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "hao-zhao", "location": "chencang" } },
+          { "type": "siege_incoming", "params": { "attacker": "zhuge-liang" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["hao-zhao", "zhuge-liang"],
+      "narrative": {
+        "text": "천여 명의 수비대로 제갈량의 수만 대군을 20여 일간 막아낸 학소. 운제(雲梯), 충차(衝車), 화공까지 모든 공성 수단을 무력화시켰다. 제갈량이 사자를 보내 항복을 권유하자 학소가 답했다. '위의 장수는 항복하지 않는다.'",
+        "flavor": "진창의 성벽에 꽂힌 촉군의 화살이 고슴도치처럼 빽빽했지만, 성문은 열리지 않았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "battle_result", "target": "chencang", "value": { "defender_wins": true } },
+        { "type": "stat_change", "target": "hao-zhao", "value": { "stat": "reputation", "delta": 25 } }
+      ],
+      "choices": [
+        {
+          "label": "공성을 계속하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": -10 } }],
+          "description": "병력 소모가 극심하다."
+        },
+        {
+          "label": "우회로를 찾다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 10 } }],
+          "description": "정면돌파가 안 되면 돌아가야 한다."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_009",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "우번 vs 미방 — 배신자 앞에서",
+      "period": { "year": 220 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "yu-fan", "faction": "wu" } },
+          { "type": "character_present", "params": { "char": "mi-fang", "faction": "wu" } }
+        ],
+        "priority": 60
+      },
+      "participants": ["yu-fan", "mi-fang"],
+      "narrative": {
+        "text": "미방이 오나라에 항복한 후, 우번과 마주쳤다. 미방이 배에서 우번에게 인사하자 우번이 쏘아붙였다. '배신자에게 절하는 법은 내가 배우지 못했소.' 미방이 부끄러워 얼굴을 들지 못했다.",
+        "flavor": "칼보다 날카로운 우번의 혀가, 배신자의 체면을 도려냈다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "mi-fang", "value": { "stat": "morale", "delta": -20 } },
+        { "type": "stat_change", "target": "yu-fan", "value": { "stat": "reputation", "delta": 5 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_rivalry_010",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "주방의 단발사서",
+      "period": { "year": 228 },
+      "location": "poyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhou-fang" } },
+          { "type": "diplomacy_contact", "params": { "from": "cao-xiu" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["zhou-fang", "cao-xiu", "lu-xun"],
+      "narrative": {
+        "text": "주방은 머리카락을 자르면서까지 조휴에게 위장 항복 편지를 보냈다. '손권에게 억울하게 형벌을 받아 원한이 사무칩니다.' 조휴가 이를 믿고 대군을 이끌고 석정(石亭)으로 진군했다가 육손의 매복에 걸려 대패한다.",
+        "flavor": "자른 머리카락 한 웅큼이, 위나라 10만 대군의 무덤을 팠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "battle_result", "target": "shiting", "value": { "wu_wins": true } },
+        { "type": "character_death", "target": "cao-xiu", "value": { "cause": "illness_after_defeat" } }
+      ],
+      "choices": [
+        {
+          "label": "매복 작전을 승인하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 20 } }],
+          "description": "주방의 계략과 육손의 지휘가 합쳐진 완벽한 작전."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_011",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "동습의 최후 — 폭풍 속에서",
+      "period": { "year": 217 },
+      "location": "ruxu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "dong-xi", "location": "ruxu" } },
+          { "type": "weather_event", "params": { "type": "storm" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["dong-xi"],
+      "narrative": {
+        "text": "유수(濡須) 수전에서 폭풍이 불어 배가 전복되려 하자, 부하들이 작은 배로 탈출하자고 했다. 동습이 꾸짖었다. '대장부가 어찌 적 앞에서 배를 버리겠는가!' 끝내 배와 함께 침몰한다.",
+        "flavor": "파도가 동습을 삼켰을 때, 그의 눈에는 겁 대신 분노가 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "dong-xi", "value": { "cause": "drowned_in_battle" } },
+        { "type": "morale_change", "target": "wu_navy", "value": { "delta": -10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_rivalry_012",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "제갈각의 합비 원정 실패",
+      "period": { "year": 253 },
+      "location": "hefei",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhuge-ke" } },
+          { "type": "battle_phase", "params": { "battle": "hefei_253" } }
+        ],
+        "priority": 82
+      },
+      "participants": ["zhuge-ke", "zhang-te"],
+      "narrative": {
+        "text": "단양 토벌의 성공에 자만한 제갈각이 20만 대군으로 합비 신성을 공격한다. 그러나 위나라 장특의 완강한 수비와 역병(疫病)으로 오군이 와해된다. 수만의 병사가 죽었지만 제갈각은 실패를 인정하지 않고 더 공격을 고집한다.",
+        "flavor": "20만을 이끌고 가서 시체의 산을 쌓고 돌아왔다. 그것이 자만의 대가였다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "wu", "value": { "stat": "military", "delta": -25 } },
+        { "type": "stat_change", "target": "zhuge-ke", "value": { "stat": "reputation", "delta": -30 } }
+      ],
+      "choices": [
+        {
+          "label": "퇴각을 명하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "더 이상의 희생은 무의미하다."
+        },
+        {
+          "label": "공격을 계속하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": -15 } }],
+          "description": "여기서 물러서면 끝이다."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_013",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "반장의 관우 포획",
+      "period": { "year": 219 },
+      "location": "maicheng_outskirts",
+      "trigger": {
+        "conditions": [
+          { "type": "character_retreat", "params": { "char": "guan-yu" } },
+          { "type": "character_present", "params": { "char": "pan-zhang" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["pan-zhang", "guan-yu", "ma-zhong-wu"],
+      "narrative": {
+        "text": "맥성을 탈출한 관우가 익주로 향하는 길목에서 반장 부대의 매복에 걸린다. 부장 마충이 관우를 생포한다. 도박꾼 출신의 거친 무장이 무성(武聖)의 최후를 마감한 아이러니.",
+        "flavor": "청룡언월도가 땅에 떨어지는 소리가, 천하에 울렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_capture", "target": "guan-yu", "value": { "captured_by": "pan-zhang" } },
+        { "type": "stat_change", "target": "pan-zhang", "value": { "stat": "reputation", "delta": 20 } }
+      ],
+      "choices": [
+        {
+          "label": "관우를 항복시키려 하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 5 } }],
+          "description": "관우가 항복할 리 없지만..."
+        },
+        {
+          "label": "즉시 처형하다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": -10 } }
+          ],
+          "description": "살려두면 유비의 복수전이 더 무서워진다."
+        }
+      ]
+    },
+    {
+      "id": "rel_rivalry_014",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "능조 vs 감녕 — 강하 전투",
+      "period": { "year": 203 },
+      "location": "xiakou",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "xiakou" } },
+          { "type": "character_present", "params": { "char": "ling-cao" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["ling-cao", "gan-ning"],
+      "narrative": {
+        "text": "황조 토벌전에서 선봉에 선 능조가 적진 깊숙이 돌격한다. 그러나 감녕의 화살이 능조를 관통한다. 이 한 발의 화살이 이후 수십 년간 능통과 감녕의 원한을 만들어낸다.",
+        "flavor": "아버지의 피가 강물에 번지는 것을 아들 능통은 보지 못했다. 하지만 평생 잊지 못했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "ling-cao", "value": { "cause": "killed_by_gan-ning" } },
+        { "type": "relation_change", "target": "ling-tong,gan-ning", "value": { "tension": 95 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_rivalry_015",
+      "layer": "relational",
+      "category": "rivalry",
+      "name": "낙통의 간언 거부",
+      "period": { "year": 225 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "luo-tong" } },
+          { "type": "event_trigger", "params": { "type": "heavy_taxation" } }
+        ],
+        "priority": 60
+      },
+      "participants": ["luo-tong", "sun-quan"],
+      "narrative": {
+        "text": "낙통이 간절한 상소로 백성의 고통과 과도한 세금을 호소한다. '대의가 분명하고 언사가 간절하며 이치는 지극했다.' 그러나 손권은 듣지 않았다. 유능하되 뜻을 펴지 못한 관리의 비극.",
+        "flavor": "아무리 좋은 약이라도 입을 닫으면 소용없다. 손권의 귀는 이미 닫혀 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "wu", "value": { "stat": "stability", "delta": -5 } },
+        { "type": "stat_change", "target": "luo-tong", "value": { "stat": "morale", "delta": -10 } }
+      ],
+      "choices": [
+        {
+          "label": "간언을 받아들이다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "economy", "delta": -5 } }],
+          "description": "단기 세수는 줄지만 민심이 안정된다."
+        },
+        {
+          "label": "무시하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "economy", "delta": 5 } }],
+          "description": "세수를 유지하지만 장기적으로 민심이 이반된다."
+        }
+      ]
+    },
+    {
+      "id": "rel_marriage_001",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "유비와 손부인 — 정략결혼",
+      "period": { "year": 209 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "diplomacy_state", "params": { "between": ["shu", "wu"], "state": "alliance" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["liu-bei", "sun-shangxiang", "sun-quan", "zhuge-liang"],
+      "narrative": {
+        "text": "손권이 여동생을 유비에게 시집보내 동맹을 굳히려 한다. 주유의 미인계를 제갈량이 역이용하여 실제 혼인을 성사시킨다. 그러나 손부인은 무예를 좋아하는 강한 성격으로, 시녀들이 칼을 차고 다녀 유비가 방에 들어갈 때마다 겁을 먹었다.",
+        "flavor": "신방에 칼이 진열되어 있었다. 이것이 정략결혼의 풍경이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "diplomacy_change", "target": "shu,wu", "value": { "alliance_strength": 20 } },
+        { "type": "relation_change", "target": "liu-bei,sun-quan", "value": { "tension": -15 } }
+      ],
+      "choices": [
+        {
+          "label": "혼인을 받아들이다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 15 } }],
+          "description": "촉오동맹의 가장 확실한 담보."
+        },
+        {
+          "label": "혼인을 거부하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "independence", "delta": 10 } }],
+          "description": "오나라의 간섭을 원치 않는다."
+        }
+      ]
+    },
+    {
+      "id": "rel_marriage_002",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "조조와 문소 — 전리품인가 인연인가",
+      "period": { "year": 199 },
+      "location": "wancheng",
+      "trigger": {
+        "conditions": [
+          { "type": "city_captured", "params": { "city": "wancheng", "by": "cao-cao" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["cao-cao", "zhang-xiu"],
+      "narrative": {
+        "text": "완성을 점령한 조조가 장수의 숙모를 취하자, 분노한 장수가 야습을 가한다. 조조는 전위(典韋)와 장남 조앙을 잃는 대가를 치른다. 호색이 부른 참극.",
+        "flavor": "한 여인 때문에 최강의 호위와 장자를 잃었다. 천하를 도모하는 자의 아킬레스건.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cao-ang", "value": { "cause": "killed_in_ambush" } },
+        { "type": "character_death", "target": "dian-wei", "value": { "cause": "killed_in_ambush" } }
+      ],
+      "choices": [
+        {
+          "label": "장수에게 복수하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 10 } }],
+          "description": "아들과 호위의 원수를 갚아야 한다."
+        },
+        {
+          "label": "장수의 항복을 받아들이다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 15 } }],
+          "description": "원수와도 화해할 수 있는 도량이 천하를 얻는 법."
+        }
+      ]
+    },
+    {
+      "id": "rel_marriage_003",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "오경의 손씨 연결",
+      "period": { "year": 175 },
+      "location": "wujun",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "wu-jing" } },
+          { "type": "event_trigger", "params": { "type": "early_era" } }
+        ],
+        "priority": 50
+      },
+      "participants": ["wu-jing", "sun-jian"],
+      "narrative": {
+        "text": "오부인이 손견에게 시집가면서 동생 오경도 손씨 가문과 운명을 함께하게 된다. 이후 오경은 단양태수가 되어 손책의 거병을 지원한다. 한 번의 혼인이 한 가문의 세대를 바꾼 전형적 사례.",
+        "flavor": "누이의 혼례가 동생의 인생을 결정했다. 삼국시대의 가문 정치.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "wu-jing,sun-jian", "value": { "alliance": 80 } },
+        { "type": "city_access", "target": "danyang", "value": { "to": "sun" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_marriage_004",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "미축의 여동생 헌상",
+      "period": { "year": 196 },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "mi-zhu" } },
+          { "type": "character_present", "params": { "char": "liu-bei" } }
+        ],
+        "priority": 68
+      },
+      "participants": ["mi-zhu", "liu-bei"],
+      "narrative": {
+        "text": "유비가 조조에게 서주를 빼앗기고 실의에 빠져있을 때, 미축이 여동생을 시집보내며 전 재산을 바친다. 유비에게 정실부인과 거액의 군자금을 동시에 제공한 결혼. 이것은 사랑이 아니라 정치적 투자였지만, 그 충성만은 진심이었다.",
+        "flavor": "재물과 여동생과 목숨까지. 미축이 유비에게 바치지 않은 것은 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu-bei", "value": { "stat": "economy", "delta": 25 } },
+        { "type": "relation_change", "target": "mi-zhu,liu-bei", "value": { "loyalty": 95 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_marriage_005",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "손책과 대교 — 강동의 신랑",
+      "period": { "year": 199 },
+      "location": "wancheng_area",
+      "trigger": {
+        "conditions": [
+          { "type": "city_captured", "params": { "city": "wan_area", "by": "sun-ce" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["sun-ce", "zhou-yu"],
+      "narrative": {
+        "text": "손책과 주유가 교씨 자매를 맞이한다. 손책은 대교를, 주유는 소교를. 강동의 두 영웅이 처남매부가 되어 결속이 더욱 단단해진다. 난세의 영웅에게도 사랑이 있었다.",
+        "flavor": "강동에 이보다 어울리는 한 쌍이 없었고, 이보다 짧은 행복도 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "sun-ce,zhou-yu", "value": { "bond": 95 } },
+        { "type": "morale_change", "target": "wu_all", "value": { "delta": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_marriage_006",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "손권의 관우 구혼 거절",
+      "period": { "year": 215 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "diplomacy_contact", "params": { "from": "sun-quan", "to": "guan-yu" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["sun-quan", "guan-yu"],
+      "narrative": {
+        "text": "손권이 아들과 관우의 딸의 혼인을 제안한다. 관우가 분노하며 거절. '호랑이의 딸을 어찌 개의 아들에게 시집보내겠는가!' 이 모욕이 손권으로 하여금 형주 탈환을 결심하게 만든 도화선.",
+        "flavor": "한마디의 모욕이 천하의 판도를 바꿨다. 외교는 무력보다 날카로운 칼이다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "sun-quan,guan-yu", "value": { "tension": 50 } },
+        { "type": "strategy_unlock", "target": "wu", "value": { "strategy": "jingzhou_invasion" } }
+      ],
+      "choices": [
+        {
+          "label": "혼인을 수락하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 20 } }],
+          "description": "오나라와의 관계를 유지한다."
+        },
+        {
+          "label": "거절하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 5 } }],
+          "description": "자존심은 지키지만 적을 만든다."
+        }
+      ]
+    },
+    {
+      "id": "rel_marriage_007",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "조조의 딸들 — 황제 가문 편입",
+      "period": { "year": 213 },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "cao-cao" } },
+          { "type": "political_event", "params": { "type": "royal_marriage" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["cao-cao", "xian-di"],
+      "narrative": {
+        "text": "조조가 세 딸을 헌제에게 시집보내 외척이 된다. 형식적으로는 충신이 황제에게 딸을 바치는 것이지만, 실질적으로는 황제를 감시하는 족쇄. 참위(簒位)로 가는 포석이었다.",
+        "flavor": "딸을 보내면서 감시자도 함께 보냈다. 이것이 조조식 충성이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao-cao", "value": { "stat": "political_power", "delta": 20 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_marriage_008",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "유비와 감부인 — 소박한 시작",
+      "period": { "year": 194 },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "liu-bei", "location": "xuzhou" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["liu-bei"],
+      "narrative": {
+        "text": "유비의 첫 번째 오래 함께한 부인 감부인. 유선의 생모. 방랑하는 유비를 따라 조조에게 포로가 되기도 하고, 장판파에서 위험에 빠지기도 한다. 영화롭지 않았지만 유비 일생에서 가장 오래 함께한 여인.",
+        "flavor": "천하를 방랑하는 남편을 따라다닌 여인. 그 인내가 촉한의 뿌리.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "liu-bei", "value": { "stability": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_marriage_009",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "채모의 외척 정치",
+      "period": { "year": 195 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "cai-mao" } },
+          { "type": "character_alive", "params": { "char": "liu-biao" } }
+        ],
+        "priority": 60
+      },
+      "participants": ["cai-mao", "liu-biao"],
+      "narrative": {
+        "text": "채모의 누이가 유표의 후처가 되면서 채씨 가문이 형주의 실권을 장악한다. 채모는 이 외척 관계를 무기로 유종을 후계로 밀고, 유비를 견제하며, 최종적으로 형주를 조조에게 바치는 결정까지 한다.",
+        "flavor": "누이 하나가 시집가서 한 가문이 한 주(州)를 지배했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cai-mao", "value": { "stat": "political_power", "delta": 25 } },
+        { "type": "faction_change", "target": "jingzhou", "value": { "power_holder": "cai-mao" } }
+      ],
+      "choices": [
+        {
+          "label": "채씨 세력을 견제하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "외척의 전횡을 막아야 형주가 안정된다."
+        },
+        {
+          "label": "채씨와 협력하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 10 } }],
+          "description": "현실적으로 형주 최대 세력과 손잡는 것이 편하다."
+        }
+      ]
+    },
+    {
+      "id": "rel_marriage_010",
+      "layer": "relational",
+      "category": "marriage_alliance",
+      "name": "황월영의 재능",
+      "period": { "year": 207 },
+      "location": "longzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhuge-liang", "location": "longzhong" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["zhuge-liang", "huang-yueying"],
+      "narrative": {
+        "text": "황승언이 제갈량에게 말했다. '내 딸은 못생겼지만 재주는 자네에게 뒤지지 않소.' 제갈량이 흔쾌히 청혼. 당시 사람들이 놀려댔으나, 황월영의 기계공학 지식이 목우유마(木牛流馬)의 바탕이 되었다는 설이 있다.",
+        "flavor": "천하의 제갈량이 외모를 보지 않고 재능을 택했다. 이것이 와룡의 안목.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "zhuge-liang", "value": { "stat": "technology", "delta": 10 } },
+        { "type": "tech_unlock", "target": "shu", "value": { "tech": "wooden_ox" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_001",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "유비의 이릉 원정 — 관우의 복수",
+      "period": { "year": 221 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "guan_yu_death" } },
+          { "type": "character_alive", "params": { "char": "liu-bei" } }
+        ],
+        "priority": 92
+      },
+      "participants": ["liu-bei", "zhao-yun", "zhuge-liang"],
+      "narrative": {
+        "text": "관우와 장비의 죽음에 분노한 유비가 제갈량·조운의 만류를 무시하고 대군을 이끌고 오나라를 공격한다. '형제의 원수를 갚지 못하면 무슨 면목으로 천하를 논하랴!' 그러나 이릉에서 육손의 화공에 대패, 백제성에서 병사한다.",
+        "flavor": "도원결의의 맹세가 천하통일의 꿈보다 무거웠다. 그것이 유비였다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_war", "target": "shu,wu", "value": { "battle": "yiling" } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "military", "delta": -40 } }
+      ],
+      "choices": [
+        {
+          "label": "원정을 강행하다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 10 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": -30 } }
+          ],
+          "description": "형제의 의리를 지키지만 국가를 위험에 빠뜨린다."
+        },
+        {
+          "label": "제갈량의 만류를 듣다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 20 } }],
+          "description": "이성적 판단. 촉오동맹을 복원하고 위를 도모한다."
+        }
+      ]
+    },
+    {
+      "id": "rel_revenge_002",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "장비의 분노 — 미방과 사인방",
+      "period": { "year": 221 },
+      "location": "langzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "guan_yu_death" } },
+          { "type": "character_alive", "params": { "char": "zhang-fei" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["zhang-fei", "fan-jiang", "zhang-da"],
+      "narrative": {
+        "text": "관우의 죽음에 미쳐버린 장비가 부하들을 매일 때린다. '삼 일 안에 백의(白衣)와 백갑(白甲)을 만들어라!' 범강·장달이 기한을 못 맞추면 죽게 생겼다며 선수를 친다. 잠든 장비의 목이 잘렸다.",
+        "flavor": "형의 원수를 갚으려는 분노가, 자기 목을 잘랐다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhang-fei", "value": { "cause": "assassinated" } },
+        { "type": "morale_change", "target": "shu_all", "value": { "delta": -20 } }
+      ],
+      "choices": [
+        {
+          "label": "장비를 진정시키다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 15 } }],
+          "description": "분노를 가라앉히고 부하 대우를 개선시킨다."
+        }
+      ]
+    },
+    {
+      "id": "rel_revenge_003",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "관흥의 반장 참살",
+      "period": { "year": 222 },
+      "location": "yiling",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "yiling" } },
+          { "type": "character_present", "params": { "char": "guan-xing" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["guan-xing", "pan-zhang"],
+      "narrative": {
+        "text": "이릉 전투 중 관흥이 아버지 관우를 잡은 반장을 만나 참살한다 (연의). 청룡언월도를 되찾아 아버지의 원수를 갚는다. 정사에서 반장은 자연사했으나, 연의의 이 장면은 관우 팬들의 카타르시스.",
+        "flavor": "아버지의 칼로 아버지의 원수를 벤다. 이보다 완벽한 복수가 있을까.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "pan-zhang", "value": { "cause": "killed_by_guan-xing" } },
+        { "type": "item_transfer", "target": "guan-xing", "value": { "item": "green_dragon_blade" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_004",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "능통의 합비 사투",
+      "period": { "year": 215 },
+      "location": "hefei",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "hefei_215" } },
+          { "type": "character_present", "params": { "char": "ling-tong" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["ling-tong", "zhang-liao"],
+      "narrative": {
+        "text": "합비에서 장료가 손권의 본진을 기습할 때, 능통이 몸을 던져 손권의 퇴각을 엄호한다. 수십 명의 부하가 전멸하고 능통 자신도 중상을 입지만 손권을 무사히 빠져나가게 한다. 아버지를 잃은 아들이 주군을 지키는 것으로 충의를 증명.",
+        "flavor": "아버지의 원수를 갚지는 못했지만, 아버지의 충성만은 물려받았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "ling-tong", "value": { "stat": "reputation", "delta": 20 } },
+        { "type": "stat_change", "target": "sun-quan", "value": { "stat": "safety", "delta": 1 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_005",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "마초의 부친 복수전",
+      "period": { "year": 211 },
+      "location": "tong_pass",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "ma_teng_execution" } },
+          { "type": "character_alive", "params": { "char": "ma-chao" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["ma-chao", "cao-cao", "ma-teng"],
+      "narrative": {
+        "text": "조조에게 아버지 마등이 처형당한 후, 마초가 서량 기병을 이끌고 복수전을 벌인다. 동관에서 조조를 몰아붙여 수염을 자르고 옷을 벗어 도망치게 만든다. 그러나 결국 가후의 이간계에 당해 한수와 분열, 패배한다.",
+        "flavor": "아버지의 원수 앞에서 칼을 휘두르는 마초. 그 눈에는 피눈물이 맺혀 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "battle_result", "target": "tong_pass", "value": { "initially_favorable_to": "ma-chao" } },
+        { "type": "stat_change", "target": "cao-cao", "value": { "stat": "safety", "delta": -1 } }
+      ],
+      "choices": [
+        {
+          "label": "한수와 연합을 유지하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 15 } }],
+          "description": "서량 연합군의 힘으로 조조를 압박."
+        },
+        {
+          "label": "단독 공격을 감행하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 5 } }],
+          "description": "배신당할 걱정은 없지만 병력이 부족하다."
+        }
+      ]
+    },
+    {
+      "id": "rel_revenge_006",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "손권의 황조 토벌",
+      "period": { "year": 208 },
+      "location": "xiakou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "sun-quan" } },
+          { "type": "character_alive", "params": { "char": "huang-zu" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["sun-quan", "huang-zu", "gan-ning", "dong-xi"],
+      "narrative": {
+        "text": "손견의 원수 황조. 손책이 죽고 손권이 뒤를 이어 마침내 황조를 토벌한다. 감녕과 동습이 선봉에서 활약하고, 황조는 참수된다. 아버지의 원수를 세 번째 대에서 갚은 손씨 가문.",
+        "flavor": "삼대에 걸친 원한이 한칼에 끊어졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "huang-zu", "value": { "cause": "killed_in_battle" } },
+        { "type": "city_capture", "target": "xiakou", "value": { "by": "wu" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_007",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "관색의 남만 원정",
+      "period": { "year": 225 },
+      "location": "nanman",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "guan-suo" } },
+          { "type": "campaign", "params": { "type": "southern_expedition" } }
+        ],
+        "priority": 58
+      },
+      "participants": ["guan-suo", "zhuge-liang"],
+      "narrative": {
+        "text": "관우의 3남 관색이 남만 정벌에 참전한다. 아버지의 무용을 물려받아 만왕 맹획의 장수들을 쓰러뜨린다. 비록 가공의 인물이지만, 관우 가문의 맥을 잇는 젊은 맹장.",
+        "flavor": "관우의 피가 남만의 밀림에서도 빛났다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "guan-suo", "value": { "stat": "reputation", "delta": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_008",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "손준의 제갈각 암살",
+      "period": { "year": 253 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "hefei_253_defeat" } },
+          { "type": "character_alive", "params": { "char": "zhuge-ke" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["zhuge-ke", "sun-jun"],
+      "narrative": {
+        "text": "합비 대패 후에도 권력을 놓지 않는 제갈각. 신하들의 원망이 극에 달하자 손준이 연회를 빙자하여 제갈각을 암살한다. 아버지 제갈근의 예언이 현실이 되었다. '이 아이가 집안을 망하게 할 것이다.'",
+        "flavor": "재주가 넘쳤던 청년의 최후는, 연회장의 핏자국이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "zhuge-ke", "value": { "cause": "assassinated" } },
+        { "type": "stat_change", "target": "wu", "value": { "stat": "stability", "delta": -15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_009",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "여포의 정원 살해",
+      "period": { "year": 189 },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "lv-bu" } },
+          { "type": "diplomacy_contact", "params": { "from": "dong-zhuo" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["lv-bu", "ding-yuan", "dong-zhuo"],
+      "narrative": {
+        "text": "동탁이 적토마를 미끼로 여포를 유혹한다. 여포는 양부 정원을 살해하고 동탁에게 투항. 첫 번째 배신. 이후 동탁도 같은 운명을 맞이할 줄, 동탁 자신도 몰랐다.",
+        "flavor": "적토마 한 필에 양부를 팔았다. 이것이 삼성가노의 시작.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "ding-yuan", "value": { "cause": "killed_by_lv-bu" } },
+        { "type": "character_transfer", "target": "lv-bu", "value": { "to": "dong-zhuo" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_010",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "미축의 수치사",
+      "period": { "year": 220 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "mi_fang_betrayal" } },
+          { "type": "character_alive", "params": { "char": "mi-zhu" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["mi-zhu", "liu-bei", "mi-fang"],
+      "narrative": {
+        "text": "동생 미방의 배신 소식에 미축이 스스로를 결박하고 유비 앞에 나아가 사죄한다. 유비가 위로했다. '아우의 죄가 형의 죄는 아니오.' 그러나 미축은 수치심을 이기지 못하고 병들어 죽는다.",
+        "flavor": "전 재산을 바친 충신이, 동생 한 명 때문에 무너졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "mi-zhu", "value": { "cause": "died_of_shame" } },
+        { "type": "morale_change", "target": "shu_command", "value": { "delta": -10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_011",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "양의의 자멸",
+      "period": { "year": 235 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "wei_yan_death" } },
+          { "type": "character_alive", "params": { "char": "yang-yi" } }
+        ],
+        "priority": 68
+      },
+      "participants": ["yang-yi", "jiang-wan"],
+      "narrative": {
+        "text": "위연을 제거하고 공을 세운 양의. 그러나 제갈량의 후계는 장완이 맡는다. 분노한 양의가 불만을 터뜨린다. '차라리 위나라에 항복할 것을 그랬다!' 이 말이 밀고되어 서인(庶人)으로 추방, 결국 자살한다.",
+        "flavor": "적을 이기고도 스스로 무너진 자. 가장 큰 적은 자기 자신이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "yang-yi", "value": { "cause": "suicide_in_exile" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_012",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "왕평의 가정 증언",
+      "period": { "year": 228 },
+      "location": "jieting",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "jieting_aftermath" } },
+          { "type": "character_alive", "params": { "char": "wang-ping" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["wang-ping", "zhuge-liang", "ma-su"],
+      "narrative": {
+        "text": "가정에서 마속의 작전을 만류한 유일한 장수 왕평. 마속이 산에 진을 치자 왕평이 반대했으나 무시당했다. 패전 후 왕평만이 병사를 수습하여 질서 있게 퇴각. 제갈량이 왕평의 충언을 인정하여 중용한다.",
+        "flavor": "들리지 않은 간언이 옳았음을 증명하는 데 수만 명의 피가 필요했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "wang-ping", "value": { "stat": "reputation", "delta": 15 } },
+        { "type": "stat_change", "target": "wang-ping", "value": { "stat": "rank", "delta": 2 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_013",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "조앙의 전사 — 아버지의 대가",
+      "period": { "year": 197 },
+      "location": "wancheng",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "wancheng_ambush" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["cao-ang", "cao-cao", "dian-wei"],
+      "narrative": {
+        "text": "장수의 야습에서 조앙이 아버지 조조에게 말을 양보하고 대신 전사한다. 절륜거(絕倫車)를 든 전위가 문 앞에서 최후의 저항을 하는 사이, 조조는 가까스로 탈출. 아버지의 호색이 아들의 목숨을 앗아간 비극.",
+        "flavor": "아들의 말 위에서 도망치는 아버지. 이 장면이 조조의 평생 트라우마였다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "cao-ang", "value": { "cause": "killed_saving_father" } },
+        { "type": "character_death", "target": "dian-wei", "value": { "cause": "killed_in_rearguard" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_revenge_014",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "우번의 반복 유배",
+      "period": { "year": 229 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "yu-fan" } },
+          { "type": "event_trigger", "params": { "type": "outspoken_criticism" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["yu-fan", "sun-quan"],
+      "narrative": {
+        "text": "연회에서 취한 손권이 신하들에게 술을 강권하자 우번이 취한 척 바닥에 누웠다가, 손권이 자리를 뜨자 다시 일어났다. 들킨 우번이 매를 맞을 뻔하자 '신이 취한 게 아니라 폐하가 취하신 겁니다'라고 응수. 또 유배.",
+        "flavor": "혀가 칼보다 날카로운 자. 그 대가도 칼보다 무거웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "yu-fan", "value": { "stat": "reputation", "delta": 5 } },
+        { "type": "stat_change", "target": "yu-fan", "value": { "stat": "position", "delta": -1 } }
+      ],
+      "choices": [
+        {
+          "label": "우번을 용서하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "wisdom", "delta": 10 } }],
+          "description": "직언을 듣는 것이 명군의 도리."
+        },
+        {
+          "label": "유배 보내다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "authority", "delta": 5 } }],
+          "description": "면전에서 왕을 조롱하는 것은 용납할 수 없다."
+        }
+      ]
+    },
+    {
+      "id": "rel_revenge_015",
+      "layer": "relational",
+      "category": "revenge",
+      "name": "마대의 위연 참수",
+      "period": { "year": 234 },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "zhuge_liang_death" } },
+          { "type": "character_alive", "params": { "char": "ma-dai" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["ma-dai", "wei-yan", "yang-yi"],
+      "narrative": {
+        "text": "제갈량의 유명(遺命)에 따라 마대가 위연을 추격한다. 위연이 '누가 감히 나를 죽이겠는가!'고 외치자 마대가 뒤에서 일격. '내가 죽이겠다!' 촉한 최후의 맹장이 쓰러진다.",
+        "flavor": "자신감이 마지막 말이 된 자. 그의 뒤에는 항상 누군가 서 있었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "wei-yan", "value": { "cause": "killed_by_ma-dai" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_001",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "조조의 관우 우대",
+      "period": { "year": 200 },
+      "location": "xuchang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "guan-yu", "faction": "wei" } }
+        ],
+        "priority": 82
+      },
+      "participants": ["cao-cao", "guan-yu"],
+      "narrative": {
+        "text": "하비에서 포로가 된 관우에게 조조가 극진한 대우를 한다. 적토마, 한수정후(漢壽亭侯) 작위, 미녀와 금은보화까지. 그러나 관우의 마음은 끝까지 유비에게 있었다. '조조의 은혜를 모르는 바 아니나, 형님의 의리를 저버릴 수 없소.'",
+        "flavor": "천하의 조조가 줄 수 있는 것을 다 줘도, 의리 하나를 살 수 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao-cao", "value": { "stat": "reputation", "delta": 10 } },
+        { "type": "relation_change", "target": "guan-yu,cao-cao", "value": { "respect": 70, "loyalty": 0 } }
+      ],
+      "choices": [
+        {
+          "label": "관우를 강제로 잡아두다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": -20 } }],
+          "description": "의리를 꺾으면 천하의 인재가 등을 돌린다."
+        },
+        {
+          "label": "관우를 보내주다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 20 } }],
+          "description": "적이 되더라도 의리는 의리. 조조의 도량이 빛난다."
+        }
+      ]
+    },
+    {
+      "id": "rel_recruit_002",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "유비의 방통 등용",
+      "period": { "year": 209 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "pang-tong", "status": "unaffiliated" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["liu-bei", "pang-tong", "zhuge-liang", "lu-su"],
+      "narrative": {
+        "text": "못생긴 외모 때문에 처음에는 현령(縣令)으로만 배치된 방통. 노숙과 제갈량의 추천으로 유비가 재평가하여 부군사중랑장으로 발탁. '복룡(伏龍)과 봉추(鳳雛) 중 하나를 얻으면 천하를 얻는다'는 예언의 나머지 반쪽.",
+        "flavor": "외모가 아닌 재능을 보는 것. 이것이 인재를 모으는 자의 자격.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "pang-tong", "value": { "to_faction": "shu", "role": "advisor" } },
+        { "type": "stat_change", "target": "shu", "value": { "stat": "intelligence", "delta": 15 } }
+      ],
+      "choices": [
+        {
+          "label": "방통을 중용하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "intelligence", "delta": 15 } }],
+          "description": "와룡과 봉추를 동시에 얻은 유비."
+        }
+      ]
+    },
+    {
+      "id": "rel_recruit_003",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "손권의 감녕 발탁",
+      "period": { "year": 204 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "gan-ning", "status": "wandering" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["sun-quan", "gan-ning", "zhou-yu"],
+      "narrative": {
+        "text": "강도(江盜) 출신 감녕이 황조에게서 이탈하여 손권에게 투항한다. 주유와 여몽이 추천하여 손권이 중용. 방종한 성격이지만 전투에서는 무류의 용맹. '백기 습격(百騎劫營)'으로 조조 진영을 기습한 전설적 장면.",
+        "flavor": "해적이 장군이 되었다. 난세에는 출신보다 칼솜씨가 이력서다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "gan-ning", "value": { "to_faction": "wu" } },
+        { "type": "stat_change", "target": "wu", "value": { "stat": "military", "delta": 15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_004",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "조조의 허저 발견",
+      "period": { "year": 197 },
+      "location": "qiao",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "xu-chu", "status": "bandit_leader" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["cao-cao", "xu-chu"],
+      "narrative": {
+        "text": "허저가 소 한 마리를 끌고 적의 진영에서 교환을 하던 중, 소가 끌려가려 하자 꼬리를 잡아 백보 이상 끌어왔다. 이 괴력의 소문을 들은 조조가 등용. 이후 호위대장 '호치(虎癡)'가 되어 조조의 생명을 여러 차례 구한다.",
+        "flavor": "소 꼬리를 잡아끈 남자가, 천하의 주인을 지키는 방패가 되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "xu-chu", "value": { "to_faction": "wei" } },
+        { "type": "stat_change", "target": "cao-cao", "value": { "stat": "bodyguard", "delta": 1 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_005",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "손권의 태사자 포용",
+      "period": { "year": 200 },
+      "location": "jiangdong",
+      "trigger": {
+        "conditions": [
+          { "type": "character_death", "params": { "char": "sun-ce" } },
+          { "type": "character_alive", "params": { "char": "taishi-ci" } }
+        ],
+        "priority": 68
+      },
+      "participants": ["sun-quan", "taishi-ci"],
+      "narrative": {
+        "text": "손책과 일기토를 벌인 끝에 항복한 태사자. 손책 사후에도 손권에게 충성을 유지하며 합비 전선의 핵심이 된다. 적과 싸워서 항복시킨 장수가 가장 충성스러운 장수가 된다는 역설.",
+        "flavor": "어제의 적이 오늘의 방패. 이것이 손씨 가문의 인재 경영법.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "taishi-ci", "value": { "stat": "loyalty", "delta": 20 } },
+        { "type": "defense_bonus", "target": "wu_north", "value": { "delta": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_006",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "유비의 위연 발탁",
+      "period": { "year": 219 },
+      "location": "hanzhong",
+      "trigger": {
+        "conditions": [
+          { "type": "city_captured", "params": { "city": "hanzhong", "by": "liu-bei" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["liu-bei", "wei-yan"],
+      "narrative": {
+        "text": "한중을 점령한 유비가 한중태수에 위연을 임명한다. 모두가 장비를 예상했으나 유비의 파격 인사. 위연이 선언한다. '조조가 천하의 병사를 모아 온다면 대왕을 위해 막겠고, 부장이 10만을 이끌고 온다면 삼켜버리겠습니다!'",
+        "flavor": "장비가 아닌 위연을 택한 유비의 안목. 이것이 인사의 묘미.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "wei-yan", "value": { "stat": "position", "delta": 3 } },
+        { "type": "defense_bonus", "target": "hanzhong", "value": { "delta": 20 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_007",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "제갈각의 단양 토벌",
+      "period": { "year": 234 },
+      "location": "danyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhuge-ke" } },
+          { "type": "event_trigger", "params": { "type": "danyang_campaign" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["zhuge-ke", "sun-quan"],
+      "narrative": {
+        "text": "아무도 맡으려 하지 않는 단양 산월족 토벌을 제갈각이 자원한다. 아버지 제갈근마저 반대했지만, 제갈각은 3년 만에 산월족을 복속시키고 수만 명의 병사를 모집하여 개선한다. 이 성공이 이후의 교만을 낳는다.",
+        "flavor": "첫 성공이 너무 컸다. 그래서 두 번째 실패를 인정하지 못했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "wu", "value": { "stat": "military", "delta": 20 } },
+        { "type": "stat_change", "target": "zhuge-ke", "value": { "stat": "reputation", "delta": 25 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_008",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "조조의 서황 등용",
+      "period": { "year": 196 },
+      "location": "north_china",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "xu-huang", "status": "wandering" } }
+        ],
+        "priority": 62
+      },
+      "participants": ["cao-cao", "xu-huang"],
+      "narrative": {
+        "text": "양봉 휘하의 장수였던 서황이 조조에게 귀순한다. 이후 오자양장(五子良將)의 한 명이 되어 번성 구원전에서 관우를 물리치는 대공을 세운다. 조조가 감탄. '서장군의 전법이 나에게 주아부(周亞夫)를 보는 듯하다!'",
+        "flavor": "무명의 장수가 천하의 명장이 되기까지. 조조의 인재 경영이 빛난 사례.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "xu-huang", "value": { "to_faction": "wei" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_009",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "유비의 황충 영입",
+      "period": { "year": 209 },
+      "location": "changsha",
+      "trigger": {
+        "conditions": [
+          { "type": "city_captured", "params": { "city": "changsha" } },
+          { "type": "character_alive", "params": { "char": "huang-zhong" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["liu-bei", "huang-zhong", "guan-yu"],
+      "narrative": {
+        "text": "관우와의 일기토에서 서로 살려준 인연으로 황충이 유비에게 투항한다. 60이 넘은 노장이지만 정군산 전투에서 하후연을 참하는 대공을 세워 오호대장군에 봉해진다. 관우가 '같은 반열에 서기 싫다'고 불만을 표했지만.",
+        "flavor": "늙은 활시위가 쏜 화살이, 하후연의 목을 관통했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "huang-zhong", "value": { "to_faction": "shu" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_010",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "유비의 법정 등용",
+      "period": { "year": 214 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "city_captured", "params": { "city": "chengdu", "by": "liu-bei" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["liu-bei", "fa-zheng"],
+      "narrative": {
+        "text": "장송의 추천으로 유비와 연결된 법정. 익주 내부의 정보를 제공하며 유비의 익주 점령을 돕는다. 이후 한중 공략의 핵심 참모가 되며, 제갈량조차 법정만은 제어하지 못했다. 유비가 가장 신뢰한 군사.",
+        "flavor": "제갈량이 전략가라면, 법정은 전술가였다. 유비에게는 둘 다 필요했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "shu", "value": { "stat": "intelligence", "delta": 15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_011",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "손권의 육손 중용",
+      "period": { "year": 221 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "event_trigger", "params": { "type": "yiling_preparation" } },
+          { "type": "character_alive", "params": { "char": "lu-xun" } }
+        ],
+        "priority": 82
+      },
+      "participants": ["sun-quan", "lu-xun"],
+      "narrative": {
+        "text": "유비의 대군이 밀려오자 손권이 문관 출신의 젊은 육손을 총사령관으로 임명한다. 노장들이 불만을 표했지만, 육손의 인내와 화공 전략이 이릉에서 유비를 대파한다. 파격 인사의 최고 성공 사례.",
+        "flavor": "서생의 한 줄기 불이, 황제의 대군을 태웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "lu-xun", "value": { "stat": "position", "delta": 5 } },
+        { "type": "battle_result", "target": "yiling", "value": { "wu_wins": true } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_012",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "조조의 장료 등용",
+      "period": { "year": 198 },
+      "location": "xiapi",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "lv_bu_execution" } },
+          { "type": "character_alive", "params": { "char": "zhang-liao" } }
+        ],
+        "priority": 75
+      },
+      "participants": ["cao-cao", "zhang-liao", "guan-yu"],
+      "narrative": {
+        "text": "여포 멸망 후 포로가 된 장료. 관우의 천거로 조조가 등용하니, 이후 합비에서 800명으로 손권 10만 대군을 격파하는 전설을 만든다. '장료가 온다!'는 오나라 아이들의 울음을 그치게 하는 공포의 대명사가 된다.",
+        "flavor": "포로에서 전설로. 조조의 인재 발탁이 만든 최고의 성공작.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "zhang-liao", "value": { "to_faction": "wei" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_013",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "유비의 조운 발견",
+      "period": { "year": 191 },
+      "location": "north_china",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhao-yun", "faction": "gongsun-zan" } }
+        ],
+        "priority": 68
+      },
+      "participants": ["liu-bei", "zhao-yun", "gongsun-zan"],
+      "narrative": {
+        "text": "공손찬 휘하에서 만난 유비와 조운. 첫 만남에서 서로를 알아본 인연. 공손찬이 패망한 후 조운이 유비를 찾아가니, 유비가 기뻐하며 같은 침대에서 잤다. 이후 30년간 유비의 가장 충성스러운 호위가 된다.",
+        "flavor": "한 번 마주한 눈빛이, 평생의 충성을 결정했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_recruitment", "target": "zhao-yun", "value": { "to_faction": "shu" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_014",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "여몽의 형주 작전 — 백의도강",
+      "period": { "year": 219 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "lv-meng" } },
+          { "type": "strategy_active", "params": { "strategy": "jingzhou_recovery" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["lv-meng", "lu-xun", "guan-yu"],
+      "narrative": {
+        "text": "여몽이 병을 핑계로 은퇴한 척 육손을 후임으로 추천한다. 관우가 방심한 사이 백의(白衣) 상인으로 위장한 오군이 강을 건넌다. 형주 주둔군이 무혈로 항복하며, 관우의 후방이 무너진다.",
+        "flavor": "병든 척한 여우가, 뛰어다니는 호랑이를 잡았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "city_transfer", "target": "jingzhou", "value": { "from": "shu", "to": "wu" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_recruit_015",
+      "layer": "relational",
+      "category": "recruitment",
+      "name": "오경의 손책 지원",
+      "period": { "year": 194 },
+      "location": "danyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "wu-jing" } },
+          { "type": "character_alive", "params": { "char": "sun-ce" } }
+        ],
+        "priority": 60
+      },
+      "participants": ["wu-jing", "sun-ce"],
+      "narrative": {
+        "text": "외삼촌 오경이 단양태수의 지위를 활용하여 손책의 강동 거병을 지원한다. 병력과 물자, 그리고 단양이라는 교두보를 제공. 외삼촌의 지원 없이는 손책의 강동 평정이 훨씬 어려웠을 것.",
+        "flavor": "가족의 힘. 손씨 가문의 기반은 외척의 지원으로 시작되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "sun-ce", "value": { "stat": "military", "delta": 15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_001",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "도원결의",
+      "period": { "year": 184 },
+      "location": "zhuo_county",
+      "trigger": {
+        "conditions": [
+          { "type": "event_trigger", "params": { "type": "game_start" } }
+        ],
+        "priority": 99
+      },
+      "participants": ["liu-bei", "guan-yu", "zhang-fei"],
+      "narrative": {
+        "text": "복숭아꽃이 피는 정원에서 유비·관우·장비 세 사람이 의형제를 맺는다. '같은 해 같은 달 같은 날에 태어나지는 못했으나, 같은 해 같은 달 같은 날에 죽기를 원하노라.' 삼국지 최고의 명장면.",
+        "flavor": "세 사람의 맹세가 한 시대의 판도를 바꿨다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "liu-bei,guan-yu,zhang-fei", "value": { "sworn_brothers": true, "bond": 100 } },
+        { "type": "morale_change", "target": "shu_all", "value": { "delta": 30 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_002",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "손책과 주유의 총각지교",
+      "period": { "year": 190 },
+      "location": "jiangdong",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "sun-ce", "b": "zhou-yu" } }
+        ],
+        "priority": 85
+      },
+      "participants": ["sun-ce", "zhou-yu"],
+      "narrative": {
+        "text": "같은 해에 태어난 두 영웅이 어린 시절부터 우정을 쌓는다. 주유가 집을 내어주고, 손책이 주유의 재주를 알아본다. 이후 교씨 자매를 함께 맞이하며 처남매부까지 된다. 삼국지 최고의 브로맨스.",
+        "flavor": "두 영웅이 손을 잡으니, 강동이 흔들렸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "sun-ce,zhou-yu", "value": { "bond": 95 } },
+        { "type": "stat_change", "target": "wu", "value": { "stat": "cohesion", "delta": 20 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_003",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "관우의 화용도 의리",
+      "period": { "year": 208 },
+      "location": "huarong_trail",
+      "trigger": {
+        "conditions": [
+          { "type": "event_occurred", "params": { "event": "chibi_victory" } },
+          { "type": "character_present", "params": { "char": "guan-yu", "location": "huarong" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["guan-yu", "cao-cao"],
+      "narrative": {
+        "text": "적벽 대패 후 화용도를 지나는 조조. 관우가 길을 막고 서 있다. 조조가 옛 은혜를 호소하자, 관우의 칼이 떨린다. 결국 길을 내어준다. 군법을 어긴 것이지만, 이것이 관우라는 인물의 본질.",
+        "flavor": "적을 놓아준 것은 약함이 아니라, 의리라는 무기의 무게 때문이었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_escape", "target": "cao-cao", "value": { "released_by": "guan-yu" } },
+        { "type": "stat_change", "target": "guan-yu", "value": { "stat": "reputation", "delta": 20 } }
+      ],
+      "choices": [
+        {
+          "label": "조조를 참하다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 30 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": -15 } }
+          ],
+          "description": "천하의 판도가 바뀐다. 그러나 은혜를 저버린다."
+        },
+        {
+          "label": "조조를 놓아주다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 25 } }],
+          "description": "의리를 지킨다. 천하는 다시 기회가 있다."
+        }
+      ]
+    },
+    {
+      "id": "rel_sworn_004",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "조조와 원소 — 어린 시절 친구",
+      "period": { "year": 200 },
+      "location": "guandu",
+      "trigger": {
+        "conditions": [
+          { "type": "battle_phase", "params": { "battle": "guandu" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["cao-cao", "yuan-shao"],
+      "narrative": {
+        "text": "어린 시절 함께 장난치던 친구가 관도에서 천하의 패권을 놓고 격돌한다. 조조가 원소의 서신 더미를 태우며 말했다. '원소와 내통한 자들의 편지다. 읽지 않겠다.' 과거의 우정이 현재의 관용이 된 순간.",
+        "flavor": "같이 놀던 동무가 적이 되어 만났을 때, 조조는 편지를 불태워 과거를 용서했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "cao-cao", "value": { "stat": "reputation", "delta": 15 } },
+        { "type": "morale_change", "target": "wei_soldiers", "value": { "delta": 15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_005",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "유비와 진도 — 예주의 인연",
+      "period": { "year": 194 },
+      "location": "yuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "chen-dao" } },
+          { "type": "character_present", "params": { "char": "liu-bei" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["chen-dao", "liu-bei"],
+      "narrative": {
+        "text": "유비가 예주에 있을 때부터 따른 진도. 조운과 비슷한 시기에 합류하여 평생 유비를 호위한다. 연의에 한 줄도 나오지 않지만, 정사에서 '조운에 버금간다'는 평가. 이름 없는 충성이 가장 깊은 충성.",
+        "flavor": "역사가 기억하지 않는 충성. 그러나 유비는 기억했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "chen-dao,liu-bei", "value": { "loyalty": 90 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_006",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "주창과 관우의 첫 만남",
+      "period": { "year": 200 },
+      "location": "woniu_mountain",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "zhou-cang" } },
+          { "type": "character_present", "params": { "char": "guan-yu" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["zhou-cang", "guan-yu"],
+      "narrative": {
+        "text": "와우산에서 산적 두목 주창이 관우를 다시 만나 무릎을 꿇는다. '황건적 시절부터 관장군님의 의기에 반했습니다. 부디 수하로 거두어주십시오.' 관우가 허락하니, 주창은 이후 청룡도를 들고 관우의 그림자가 된다.",
+        "flavor": "한 번 감복한 마음이 평생의 충성이 되었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "zhou-cang,guan-yu", "value": { "loyalty": 99 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_007",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "유비와 미축 — 재산을 건 의리",
+      "period": { "year": 196 },
+      "location": "xuzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "mi-zhu" } },
+          { "type": "faction_crisis", "params": { "faction": "liu-bei" } }
+        ],
+        "priority": 70
+      },
+      "participants": ["mi-zhu", "liu-bei"],
+      "narrative": {
+        "text": "유비가 모든 것을 잃었을 때 미축이 모든 것을 바친다. 이것은 거래가 아니라 의리였다. 촉한에서 미축이 제갈량보다 높은 서열을 받은 것은, 능력이 아니라 이 의리에 대한 보답이었다.",
+        "flavor": "가장 어려울 때 손 내민 사람이, 가장 높은 자리에 앉았다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "mi-zhu,liu-bei", "value": { "bond": 95 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_008",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "손건·간옹·미축 트리오",
+      "period": { "year": 200 },
+      "location": "liu-bei_camp",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "chars": ["sun-qian", "jian-yong", "mi-zhu"], "faction": "shu" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["sun-qian", "jian-yong", "mi-zhu"],
+      "narrative": {
+        "text": "유비 방랑기의 삼인방: 미축(재정), 손건(외교), 간옹(협상). 전투는 관우·장비가 맡고, 이 셋이 유비의 정치적 생존을 담당했다. 화려하지 않지만 유비가 살아남을 수 있었던 보이지 않는 힘.",
+        "flavor": "칼 들지 않은 세 사람이, 칼로 이길 수 없는 전쟁을 이겼다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "liu-bei", "value": { "stat": "diplomacy", "delta": 15 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_009",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "한당·황개·정보 — 원종공신",
+      "period": { "year": 190 },
+      "location": "jiangdong",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "chars": ["han-dang", "huang-gai", "cheng-pu"], "faction": "wu" } }
+        ],
+        "priority": 60
+      },
+      "participants": ["han-dang", "huang-gai", "cheng-pu"],
+      "narrative": {
+        "text": "손견 시절부터 삼대를 섬긴 원종공신 트리오. 한당은 기마궁사, 황개는 수전 용사, 정보는 노련한 지휘관. 젊은 손권의 권위가 부족할 때 이 세 노장이 군부를 안정시켰다.",
+        "flavor": "세 명의 늙은 사자가 젊은 왕을 지켰다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "morale_change", "target": "wu_soldiers", "value": { "delta": 15 } },
+        { "type": "stat_change", "target": "wu", "value": { "stat": "stability", "delta": 10 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_sworn_010",
+      "layer": "relational",
+      "category": "sworn_brotherhood",
+      "name": "보즐의 교주 동행",
+      "period": { "year": 210 },
+      "location": "jiaozhi",
+      "trigger": {
+        "conditions": [
+          { "type": "character_present", "params": { "char": "bu-zhi" } },
+          { "type": "event_trigger", "params": { "type": "southern_pacification" } }
+        ],
+        "priority": 55
+      },
+      "participants": ["bu-zhi"],
+      "narrative": {
+        "text": "빈한하던 시절 함께 고생한 벗들과 교주(베트남)까지 내려가 변방을 다스린 보즐. 중앙에서 출세하기보다 변경에서 실적을 쌓아 올라간 진정한 능력자. 동행한 벗들과의 우정이 교주 평정의 힘이었다.",
+        "flavor": "변방에서 시작한 우정이, 승상부에서 꽃피었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "city_pacify", "target": "jiaozhi", "value": { "by": "bu-zhi" } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_conflict_001",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "이궁의 변 — 오나라 후계 분쟁",
+      "period": { "year": 241 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "sun-quan" } },
+          { "type": "event_trigger", "params": { "type": "succession_crisis" } }
+        ],
+        "priority": 82
+      },
+      "participants": ["sun-quan", "sun-he", "sun-ba", "lu-xun", "bu-zhi"],
+      "narrative": {
+        "text": "손권의 두 아들 손화(태자)와 손패(노왕)의 세력 다툼이 오나라를 갈라놓는다. 육손은 태자 편을 들다 손권의 질책을 받고 분사(憤死)한다. 보즐도 태자 편. 10년에 걸친 내분으로 오나라의 국력이 크게 약화된다.",
+        "flavor": "적국의 칼보다 집안의 다툼이 더 무서웠다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_death", "target": "lu-xun", "value": { "cause": "died_of_grief" } },
+        { "type": "stat_change", "target": "wu", "value": { "stat": "stability", "delta": -30 } }
+      ],
+      "choices": [
+        {
+          "label": "태자를 지지하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "정통 후계를 지지하여 분쟁을 조기 종결."
+        },
+        {
+          "label": "중립을 지키다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "safety", "delta": 10 } }],
+          "description": "어느 쪽이 이기든 자신은 살아남는다."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_002",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "촉한 북벌론 vs 안내론",
+      "period": { "year": 227 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "zhuge-liang" } },
+          { "type": "political_event", "params": { "type": "northern_expedition_debate" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["zhuge-liang", "li-yan", "qiao-zhou"],
+      "narrative": {
+        "text": "제갈량의 북벌을 반대하는 세력이 있다. 이엄(李嚴)은 북벌에 소극적이고, 초주(譙周)는 안내(安內)를 주장한다. 제갈량의 카리스마로 북벌이 관철되지만, 이 노선 갈등은 촉한이 멸망할 때까지 계속된다.",
+        "flavor": "싸워야 사는가, 지켜야 사는가. 이 논쟁에 정답은 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_debate", "target": "shu", "value": { "topic": "northern_expedition" } }
+      ],
+      "choices": [
+        {
+          "label": "북벌을 지지하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 15 } }],
+          "description": "공격이 최선의 방어. 위나라를 견제해야 촉이 산다."
+        },
+        {
+          "label": "안내를 지지하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "economy", "delta": 15 } }],
+          "description": "국력을 기르고 때를 기다리는 것이 현실적."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_003",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "동윤 사후 — 황호의 발호",
+      "period": { "year": 246 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_death", "params": { "char": "dong-yun" } }
+        ],
+        "priority": 80
+      },
+      "participants": ["huang-hao", "liu-shan", "jiang-wei"],
+      "narrative": {
+        "text": "동윤이 죽자 환관 황호가 즉시 발호한다. 유선의 총애를 독차지하며 정사를 농단. 강유가 황호를 제거하려 했으나 유선이 막는다. 촉한 멸망의 결정적 내부 요인. 동윤 한 명이 막고 있던 것이 얼마나 컸는지 증명.",
+        "flavor": "한 사람의 죽음이 한 나라의 멸망을 앞당겼다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "shu", "value": { "stat": "stability", "delta": -25 } },
+        { "type": "stat_change", "target": "huang-hao", "value": { "stat": "influence", "delta": 30 } }
+      ],
+      "choices": [
+        {
+          "label": "황호를 제거하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 20 } }],
+          "description": "위험하지만 촉한을 구할 수 있는 유일한 방법."
+        },
+        {
+          "label": "방관하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": -10 } }],
+          "description": "군주의 총신에 손대면 자기 목이 위험하다."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_004",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "위나라 사마씨 찬탈 — 고평릉 사변",
+      "period": { "year": 249 },
+      "location": "luoyang",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "sima-yi" } },
+          { "type": "political_event", "params": { "type": "coup" } }
+        ],
+        "priority": 88
+      },
+      "participants": ["sima-yi", "cao-shuang"],
+      "narrative": {
+        "text": "조상(曹爽)이 낙양을 비운 사이, 늙고 병든 척하던 사마의가 쿠데타를 일으킨다. 조씨 정권이 무너지고 사마씨가 실권을 장악한다. 조조가 경계했던 '사마의는 호시탐탐 남의 것을 노린다'는 예언이 현실이 된다.",
+        "flavor": "인내의 끝에 쿠데타가 있었다. 천하를 얻으려면 때를 기다려야 한다는 것을 사마의가 증명했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_change", "target": "wei", "value": { "power_holder": "sima" } },
+        { "type": "character_death", "target": "cao-shuang", "value": { "cause": "executed" } }
+      ],
+      "choices": [
+        {
+          "label": "사마의를 지지하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "political_power", "delta": 20 } }],
+          "description": "승자의 편에 선다."
+        },
+        {
+          "label": "조씨를 지키다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "reputation", "delta": 15 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "safety", "delta": -20 } }
+          ],
+          "description": "충의를 지키지만 목숨이 위험하다."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_005",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "원씨 형제의 분열",
+      "period": { "year": 202 },
+      "location": "north_china",
+      "trigger": {
+        "conditions": [
+          { "type": "character_death", "params": { "char": "yuan-shao" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["yuan-tan", "yuan-shang", "yuan-xi", "cao-cao"],
+      "narrative": {
+        "text": "원소 사후, 세 아들 원담·원상·원희가 권력을 놓고 싸운다. 조조는 이 분열을 이용하여 각개격파한다. 원담은 조조에게 투항했다가 배신, 원상은 공손강에게 도망갔다가 목이 잘린다.",
+        "flavor": "아버지가 남긴 천하 최대의 세력이, 아들들의 욕심으로 세 조각 나서 사라졌다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "faction_collapse", "target": "yuan", "value": { "split_into": ["yuan-tan", "yuan-shang", "yuan-xi"] } }
+      ],
+      "choices": [
+        {
+          "label": "원담과 동맹하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 10 } }],
+          "description": "분열을 이용한다."
+        },
+        {
+          "label": "모두 공격하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "military", "delta": 15 } }],
+          "description": "싸우는 놈 위에 나는 놈."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_006",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "이엄의 군량 사보타주",
+      "period": { "year": 231 },
+      "location": "chengdu",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "li-yan" } },
+          { "type": "campaign_active", "params": { "type": "northern_expedition" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["li-yan", "zhuge-liang"],
+      "narrative": {
+        "text": "유비의 탁고(託孤) 중신이었던 이엄이 북벌 군량 수송을 방해한다. 비가 와서 못 보냈다고 거짓 보고한 뒤, 제갈량이 퇴각하자 '왜 퇴각했느냐'고 비난. 제갈량이 편지를 공개하여 이엄을 서인으로 추방.",
+        "flavor": "탁고를 받은 중신이 탁고를 배신했다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "campaign_end", "target": "shu", "value": { "reason": "supply_sabotage" } },
+        { "type": "stat_change", "target": "li-yan", "value": { "stat": "position", "delta": -5 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_conflict_007",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "형주 반환 분쟁",
+      "period": { "year": 215 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "diplomacy_state", "params": { "between": ["shu", "wu"], "state": "tense" } }
+        ],
+        "priority": 78
+      },
+      "participants": ["liu-bei", "sun-quan", "guan-yu", "lu-su"],
+      "narrative": {
+        "text": "적벽 이후 빌린 형주를 유비가 돌려주지 않는다. '익주를 얻으면 돌려주겠소' → 익주를 얻고도 '양주를 얻으면...' 손권의 인내가 한계에 다다르고, 이것이 훗날 형주 침공의 불씨가 된다.",
+        "flavor": "빌린 것은 돌려줘야 한다. 이 간단한 원칙을 지키지 않아 전쟁이 났다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "shu,wu", "value": { "tension": 40 } }
+      ],
+      "choices": [
+        {
+          "label": "형주를 반환하다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 20 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "territory", "delta": -15 } }
+          ],
+          "description": "동맹을 살린다. 그러나 북벌의 교두보를 잃는다."
+        },
+        {
+          "label": "형주를 고수하다",
+          "effects": [
+            { "type": "stat_change", "target": "player", "value": { "stat": "territory", "delta": 5 } },
+            { "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": -20 } }
+          ],
+          "description": "전략적 요충지를 지키지만 오나라를 적으로 만든다."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_008",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "관우의 오호대장군 불만",
+      "period": { "year": 219 },
+      "location": "jingzhou",
+      "trigger": {
+        "conditions": [
+          { "type": "event_trigger", "params": { "type": "five_tiger_generals" } }
+        ],
+        "priority": 65
+      },
+      "participants": ["guan-yu", "liu-bei", "huang-zhong"],
+      "narrative": {
+        "text": "유비가 한중왕에 즉위하며 오호대장군을 봉하자, 관우가 불쾌해한다. '황충 같은 늙은이와 같은 반열에 서라니!' 비시(費詩)가 설득하여 겨우 관인을 받게 하지만, 관우의 자존심 문제는 촉한 내부의 잠재적 갈등 요소.",
+        "flavor": "무성(武聖)의 자존심이, 때로는 동맹보다 컸다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "relation_change", "target": "guan-yu,huang-zhong", "value": { "tension": 30 } }
+      ],
+      "choices": [
+        {
+          "label": "관우를 따로 위로하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 10 } }],
+          "description": "자존심을 세워주면 불만이 가라앉는다."
+        }
+      ]
+    },
+    {
+      "id": "rel_conflict_009",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "손권의 우번 유배",
+      "period": { "year": 225 },
+      "location": "wu_capital",
+      "trigger": {
+        "conditions": [
+          { "type": "character_alive", "params": { "char": "yu-fan" } },
+          { "type": "event_trigger", "params": { "type": "banquet_incident" } }
+        ],
+        "priority": 60
+      },
+      "participants": ["sun-quan", "yu-fan"],
+      "narrative": {
+        "text": "또다시 연회에서 손권을 모욕한 우번이 교지(交趾)로 유배된다. 지력 86의 천재 학자가 변경으로 쫓겨나는 아까움. 그러나 우번의 혀는 죽을 때까지 멈추지 않았다.",
+        "flavor": "천재를 쓸 줄 모르는 것이 아니라, 천재의 입을 견딜 수 없었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "stat_change", "target": "wu", "value": { "stat": "intelligence", "delta": -10 } },
+        { "type": "stat_change", "target": "yu-fan", "value": { "stat": "position", "delta": -3 } }
+      ],
+      "choices": []
+    },
+    {
+      "id": "rel_conflict_010",
+      "layer": "relational",
+      "category": "internal_conflict",
+      "name": "유봉·맹달 갈등",
+      "period": { "year": 219 },
+      "location": "shangyong",
+      "trigger": {
+        "conditions": [
+          { "type": "characters_coexist", "params": { "a": "liu-feng", "b": "meng-da", "location": "shangyong" } }
+        ],
+        "priority": 72
+      },
+      "participants": ["liu-feng", "meng-da"],
+      "narrative": {
+        "text": "상용에서 유봉과 맹달이 충돌한다. 유봉이 맹달의 군악대(鼓吹)를 빼앗는 등 거만하게 굴자, 맹달은 이를 위나라 투항의 명분으로 삼는다. '유봉은 함부로 굴고, 관우 구원도 안 하고...' 유봉의 성격 결함이 상용 상실의 원인.",
+        "flavor": "군악대 하나를 빼앗아서, 한 성(城)을 잃었다.",
+        "generation": "ai_generated"
+      },
+      "effects": [
+        { "type": "character_transfer", "target": "meng-da", "value": { "from": "shu", "to": "wei" } },
+        { "type": "city_loss", "target": "shangyong", "value": { "lost_by": "shu" } }
+      ],
+      "choices": [
+        {
+          "label": "유봉을 질책하다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "stability", "delta": 5 } }],
+          "description": "유봉의 행동을 바로잡아 맹달의 이탈을 막는다."
+        },
+        {
+          "label": "맹달을 달래다",
+          "effects": [{ "type": "stat_change", "target": "player", "value": { "stat": "diplomacy", "delta": 5 } }],
+          "description": "맹달의 불만을 들어주어 투항을 방지한다."
+        }
+      ]
+    }
+  ]
+}
