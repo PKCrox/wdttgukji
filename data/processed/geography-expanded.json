@@ -1,0 +1,1770 @@
+{
+  "total_cities": 42,
+  "total_routes": 57,
+  "terrain_types": {
+    "plains": {
+      "food": 2,
+      "commerce": 1,
+      "defense": 0,
+      "desc": "평야 — 식량 풍부, 방어 취약"
+    },
+    "mountain": {
+      "food": -1,
+      "commerce": -1,
+      "defense": 3,
+      "desc": "산지 — 방어 유리, 경제 약세"
+    },
+    "river": {
+      "food": 1,
+      "commerce": 2,
+      "defense": 1,
+      "desc": "수변 — 수운 + 식량, 수군 필요"
+    },
+    "forest": {
+      "food": 1,
+      "commerce": -1,
+      "defense": 2,
+      "desc": "삼림 — 매복 유리, 교역 불편"
+    },
+    "marsh": {
+      "food": 0,
+      "commerce": -1,
+      "defense": 2,
+      "desc": "습지 — 기동 불리, 방어 유리"
+    },
+    "desert": {
+      "food": -2,
+      "commerce": 1,
+      "defense": 1,
+      "desc": "사막 — 식량 부족, 실크로드"
+    },
+    "coastal": {
+      "food": 1,
+      "commerce": 3,
+      "defense": 0,
+      "desc": "해안 — 교역 활발, 해적 위험"
+    },
+    "mountain_pass": {
+      "food": -2,
+      "commerce": -2,
+      "defense": 5,
+      "desc": "관문 — 최고 방어, 경제 없음"
+    }
+  },
+  "generated_at": "2026-03-18T16:33:13.278Z",
+  "cities": [
+    {
+      "id": "luoyang",
+      "name": {
+        "kr": "낙양",
+        "cn": "洛陽",
+        "en": "Luoyang"
+      },
+      "position": {
+        "x": 480,
+        "y": 380
+      },
+      "province": "sili",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 10,
+      "description": "후한 수도, 천하의 중심",
+      "base_resources": {
+        "population": 8,
+        "food_potential": 9,
+        "commerce_potential": 10,
+        "defense_bonus": 0
+      },
+      "battles": [
+        "낙양 함락",
+        "동탁 토벌"
+      ],
+      "raw_summary": "얼리터우 유적 박물관 4천 년 정도의 역사를 가진, 중국의 여러 도시 중에서도 가장 오래된 곳이다. 선사 시대부터 중원 지방의 주요 신석기 문화 중 하나인 얼리터우 (二里头, 이리두) 문화의 중심이었다. 본격적으로 역사에 등장한 때는 전설적인 하나라 시기이며, 그 후로 장안과 함께 중국의 양대 도시로 성장했다."
+    },
+    {
+      "id": "xuchang",
+      "name": {
+        "kr": "허창",
+        "cn": "許昌",
+        "en": "Xuchang"
+      },
+      "position": {
+        "x": 520,
+        "y": 420
+      },
+      "province": "yuzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 9,
+      "description": "조조의 수도, 헌제 거처",
+      "base_resources": {
+        "population": 7,
+        "food_potential": 10,
+        "commerce_potential": 8,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": "관웨리원한리전닝야오밍밍샤한위허창시천여우웨이자이후춘양 [ 음반 목록 ] UNLOCK싱글 1집2019. 05. 06 UNUSUAL싱글 2집2019. 10. 21 摇啊摇미니 1집2020. 01. 18 U-Night Flight정규 1집2020. 05. 06 UNFORGETTABLE싱글 3집2020. 09. 30 [ 관련 문서 ]음반활동광고 및 화보\n\n허창시何昶希이름허창시何昶希Hé Chǎngxī본명何伟héwěi출생1997년 11월 24일 (28세)후난성 웨양시국적 중국민족한족신체183cm 65kg학력베이징현대음악연수학원소속각성동방링크\n\n1. 개요2. 활동3. 출연작3.1. 드라마3.2. 영화4. 수상5. 기타"
+    },
+    {
+      "id": "ye",
+      "name": {
+        "kr": "업",
+        "cn": "鄴",
+        "en": "Ye"
+      },
+      "position": {
+        "x": 510,
+        "y": 290
+      },
+      "province": "jizhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 8,
+      "description": "원소→조조의 북방 거점",
+      "base_resources": {
+        "population": 7,
+        "food_potential": 9,
+        "commerce_potential": 7,
+        "defense_bonus": 0
+      },
+      "battles": [
+        "업성 공방전"
+      ],
+      "raw_summary": "원소와 조조가 세운 조위 대의 업성 (업 북성). 서북쪽 공터의 3대가 보인다춘추시대 제나라 환공이 처음 건립했다고 전해지며, 전국시대에는 위나라의 영토로, 서문표가 부임하여 치수를 위해 인신공양을 하는 무당을 처단하고 장수에 수리시설을 만들어 홍수를 이겨냈다는 이야기가 유명하다. 전국 말 위나라가 대부분의 영토를 진나라에게 뜯기는 등 망해가면서 북방 지역인 업성은 조나라에 넘어갔으나, 3년 만에 다시 진나라가 왕전을 앞세워 탈취. 통일 진제국의 36군 편제에서는 조군(趙郡, 한단군)에 속하였으며, 전한 초에 한단 일대가 제후왕의 봉지인 조국(趙國)이 되면서 여기서 분리되어 위군(魏郡)의 치소가 된다.후한 말부터 기주의 주도이며 원래 전한-후한 시절에는 상산국에 속한 고읍현이 주도였다. 또한 하북평야의 중심에 있어 위진남북조 시대에 매우 번창한 도시였다. 한복과 원소가 각각 본거지로 삼았으며, 조조가 원소 세력을 멸망시킨 뒤(208년) 위공(魏公) 작위를 받은 이후에 허도를 떠나 이"
+    },
+    {
+      "id": "chenliu",
+      "name": {
+        "kr": "진류",
+        "cn": "陳留",
+        "en": "Chenliu"
+      },
+      "position": {
+        "x": 530,
+        "y": 370
+      },
+      "province": "yanzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 6,
+      "description": "조조 거병지, 연주 요충",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 9,
+        "commerce_potential": 6,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "puyang",
+      "name": {
+        "kr": "복양",
+        "cn": "濮陽",
+        "en": "Puyang"
+      },
+      "position": {
+        "x": 540,
+        "y": 330
+      },
+      "province": "yanzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 5,
+      "description": "연주 전장, 조조vs여포 격전지",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 8,
+        "commerce_potential": 5,
+        "defense_bonus": 0
+      },
+      "battles": [
+        "복양 전투",
+        "조조vs여포"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "runan",
+      "name": {
+        "kr": "여남",
+        "cn": "汝南",
+        "en": "Runan"
+      },
+      "position": {
+        "x": 540,
+        "y": 450
+      },
+      "province": "yuzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 5,
+      "description": "유비 잠시 거점, 황건적 출몰지",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 9,
+        "commerce_potential": 5,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "changan",
+      "name": {
+        "kr": "장안",
+        "cn": "長安",
+        "en": "Chang'an"
+      },
+      "position": {
+        "x": 330,
+        "y": 370
+      },
+      "province": "yongzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 9,
+      "description": "서한 수도, 동탁 천도지",
+      "base_resources": {
+        "population": 7,
+        "food_potential": 8,
+        "commerce_potential": 8,
+        "defense_bonus": 0
+      },
+      "battles": [
+        "장안 함락",
+        "이각곽사의 난"
+      ],
+      "raw_summary": "1. 중국의 옛 지명2. 한국의 지명2.1. 장안구2.2. 장안동2.3. 장안읍2.4. 장안면2.4.1. 경기도 화성시 장안면2.4.2. 충청북도 보은군 장안면3. 고구려의 지명4. 김헌창이 건국한 한반도의 국가"
+    },
+    {
+      "id": "tianshui",
+      "name": {
+        "kr": "천수",
+        "cn": "天水",
+        "en": "Tianshui"
+      },
+      "position": {
+        "x": 240,
+        "y": 350
+      },
+      "province": "yongzhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 7,
+      "description": "강유 고향, 제갈량 북벌 목표",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 3,
+        "commerce_potential": 2,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "천수 전투",
+        "제갈량 1차 북벌"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "longxi",
+      "name": {
+        "kr": "농서",
+        "cn": "隴西",
+        "en": "Longxi"
+      },
+      "position": {
+        "x": 200,
+        "y": 330
+      },
+      "province": "yongzhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "description": "서쪽 관문, 강족 접경",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 2,
+        "commerce_potential": 1,
+        "defense_bonus": 3
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "wuwei",
+      "name": {
+        "kr": "무위",
+        "cn": "武威",
+        "en": "Wuwei"
+      },
+      "position": {
+        "x": 150,
+        "y": 280
+      },
+      "province": "liangzhou",
+      "terrain": {
+        "type": "desert",
+        "food": -2,
+        "commerce": 1,
+        "defense": 1,
+        "desc": "사막 — 식량 부족, 실크로드"
+      },
+      "strategic_importance": 6,
+      "description": "마등/마초 거점, 실크로드 요충",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 0,
+        "commerce_potential": 6,
+        "defense_bonus": 1
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "nanpi",
+      "name": {
+        "kr": "남피",
+        "cn": "南皮",
+        "en": "Nanpi"
+      },
+      "position": {
+        "x": 560,
+        "y": 270
+      },
+      "province": "jizhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "description": "원소 보조 거점",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 7,
+        "commerce_potential": 4,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "ji",
+      "name": {
+        "kr": "계",
+        "cn": "薊",
+        "en": "Ji"
+      },
+      "position": {
+        "x": 560,
+        "y": 200
+      },
+      "province": "youzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 7,
+      "description": "유주 수도, 공손찬/유우 거점",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 6,
+        "commerce_potential": 6,
+        "defense_bonus": 0
+      },
+      "battles": [
+        "공손찬vs원소"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "liaodong",
+      "name": {
+        "kr": "요동",
+        "cn": "遼東",
+        "en": "Liaodong"
+      },
+      "position": {
+        "x": 680,
+        "y": 150
+      },
+      "province": "youzhou",
+      "terrain": {
+        "type": "forest",
+        "food": 1,
+        "commerce": -1,
+        "defense": 2,
+        "desc": "삼림 — 매복 유리, 교역 불편"
+      },
+      "strategic_importance": 5,
+      "description": "공손도 독립 세력, 변경",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 4,
+        "commerce_potential": 2,
+        "defense_bonus": 2
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "jinyang",
+      "name": {
+        "kr": "진양",
+        "cn": "晉陽",
+        "en": "Jinyang"
+      },
+      "position": {
+        "x": 430,
+        "y": 260
+      },
+      "province": "bingzhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "description": "병주 수도, 북방 방어선",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 3,
+        "commerce_potential": 2,
+        "defense_bonus": 3
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "pingyuan",
+      "name": {
+        "kr": "평원",
+        "cn": "平原",
+        "en": "Pingyuan"
+      },
+      "position": {
+        "x": 570,
+        "y": 310
+      },
+      "province": "qingzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "description": "유비 초기 거점, 청주 접경",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 8,
+        "commerce_potential": 4,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "beihai",
+      "name": {
+        "kr": "북해",
+        "cn": "北海",
+        "en": "Beihai"
+      },
+      "position": {
+        "x": 620,
+        "y": 320
+      },
+      "province": "qingzhou",
+      "terrain": {
+        "type": "coastal",
+        "food": 1,
+        "commerce": 3,
+        "defense": 0,
+        "desc": "해안 — 교역 활발, 해적 위험"
+      },
+      "strategic_importance": 4,
+      "description": "공융 거점, 동부 해안",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 6,
+        "commerce_potential": 7,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "xiapi",
+      "name": {
+        "kr": "하비",
+        "cn": "下邳",
+        "en": "Xiapi"
+      },
+      "position": {
+        "x": 590,
+        "y": 400
+      },
+      "province": "xuzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "description": "서주 수도, 여포 최후의 거점",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 7,
+        "commerce_potential": 7,
+        "defense_bonus": 1
+      },
+      "battles": [
+        "하비 전투",
+        "여포 포위전"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "guangling",
+      "name": {
+        "kr": "광릉",
+        "cn": "廣陵",
+        "en": "Guangling"
+      },
+      "position": {
+        "x": 610,
+        "y": 430
+      },
+      "province": "xuzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 5,
+      "description": "동부 서주, 회남 접경",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 6,
+        "commerce_potential": 7,
+        "defense_bonus": 1
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "xiaopei",
+      "name": {
+        "kr": "소패",
+        "cn": "小沛",
+        "en": "Xiaopei"
+      },
+      "position": {
+        "x": 570,
+        "y": 390
+      },
+      "province": "xuzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "description": "유비 초기 거점",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 7,
+        "commerce_potential": 4,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "xiangyang",
+      "name": {
+        "kr": "양양",
+        "cn": "襄陽",
+        "en": "Xiangyang"
+      },
+      "position": {
+        "x": 440,
+        "y": 460
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 9,
+      "description": "형주 수도, 유표 거점, 천하 요충",
+      "base_resources": {
+        "population": 7,
+        "food_potential": 8,
+        "commerce_potential": 9,
+        "defense_bonus": 1
+      },
+      "battles": [
+        "형주 공방전",
+        "양양 포위전"
+      ],
+      "raw_summary": "자세한 내용은 샹양시 문서를 참고하십시오.과거 초나라의 부수도였던 언의 근처이며, 장강 가운데 가장 북단의 한수와 접한 형주의 북단에 있다. 남양을 차지한 원술과 대립했던 유표가 양양에 자리를 잡고 양양 지역의 주요 호족인 괴씨와 채씨 일족과 인연을 맺으면서 주요 거점으로 활용 했었다. 본래 전한 이후로 형주자사의 치소는 무릉이었으며 양양은 중요한 거점이 아니었으나 후한 말 형주 자사인 유표가 양양을 본거지로 삼으면서 중국사에서 양양의 이름이 등장하기 시작한다. 이후 동탁의 장안 천도와 중원의 환란으로 난민들이 형주에 몰려들면서 양양은 크게 발전하였고 삼국지 당시에는 위의 형주 방면 최전선으로서 오의 강릉과 함께 형주의 가장 중요한 거점이 되었다. 양양은 강북-촉-강남의 교통을 잇는 유일한 거점이었기 때문에 이후 오호십육국, 남북조, 오대십국, 남송 등등 중국 대대로 강북과 강남의 왕조들이 세력 다툼을 할 때마다 가장 치열한 전투를 벌이는 곳으로서 중국 역사의 최요충지 중 하나로 자"
+    },
+    {
+      "id": "jiangling",
+      "name": {
+        "kr": "강릉",
+        "cn": "江陵",
+        "en": "Jiangling"
+      },
+      "position": {
+        "x": 420,
+        "y": 510
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 8,
+      "description": "형주 남부 수도, 장강 요충",
+      "base_resources": {
+        "population": 6,
+        "food_potential": 8,
+        "commerce_potential": 8,
+        "defense_bonus": 1
+      },
+      "battles": [
+        "적벽대전 후 강릉 쟁탈"
+      ],
+      "raw_summary": "자세한 내용은 징저우시 문서를 참고하십시오.(옛 강릉성 징저우는) 후베이성 남쪽 후난성과 경계 지점에 위치한다. 동쪽으로 우한(武汉, 무한), 서쪽으로 싼샤(三峽 : 장강삼협), 북쪽으로 징먼(荆门, 형문)과 접한다. 양쯔강 유역의 평야지대로 서고동저(西高東低)의 지형이며 호수와 강이 밀집된 지역이다. 장강과 한수가 근접해 두 강을 연결하는 운하가 있는 요충지이다.아열대 몬순 기후로 사계절이 뚜렷하다. 연평균기온 섭씨 16℃이며 연강우량은 1200mm다.고대왕국들이 번성했던 곳이니만큼 곳곳에 관련 유적들이 많다. 기원전 3세기경에 처음 세워 여러 차례 보수 및 증축 과정을 거친 고성의 성벽이 대표적이다. 현재 성벽은 청나라 때인 17세기 중엽 재건한 것으로 높이가 9m, 전체길이가 9.3km에 이른다. 곳곳에서 나오는 고대 왕국의 유물들이 징저우 박물관에 있다."
+    },
+    {
+      "id": "wan",
+      "name": {
+        "kr": "완",
+        "cn": "宛",
+        "en": "Wan"
+      },
+      "position": {
+        "x": 470,
+        "y": 440
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 6,
+      "description": "남양, 장수 거점, 제갈량 수학지",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 9,
+        "commerce_potential": 6,
+        "defense_bonus": 0
+      },
+      "battles": [
+        "완성 전투",
+        "장수vs조조"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "changsha",
+      "name": {
+        "kr": "장사",
+        "cn": "長沙",
+        "en": "Changsha"
+      },
+      "position": {
+        "x": 440,
+        "y": 580
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 5,
+      "description": "형남 4군 맹주, 황충 거점",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 7,
+        "commerce_potential": 7,
+        "defense_bonus": 1
+      },
+      "battles": [
+        "장사 공략",
+        "황충 귀순"
+      ],
+      "raw_summary": "자세한 내용은 창사시 문서를 참고하십시오.삼국지에서 형주 남부 사군의 큰 형으로 거의 깡촌 취급받던 나머지 3군과는 다르게 예전부터 도시의 규모가 컸다. 문제는 그래서 그런지 주인이 자주 바뀌던 곳이다. 황건적의 난 당시에는 손견이 태수였다가 손견이 죽은 뒤에는 한현(그리고 황충과 위연이 나오는)이 태수였다가 이 시기에 촉한에 넘어갔다. 하지만 익양대치로 또 다시 오나라로 들어갔다. 손견이 오나라 황제인 손권의 아버지라는 점을 보면 결과적으로는 옛 주인이 얻은 셈이었다.장사(長沙)는 현재에도 중국어로 비슷하게 \"창사\"라고 부른다. 삼국시대 이후에 담성(潭城)이라고 부르다가 명나라 때 이름을 회복했다. 후난성의 성도이자 가장 큰 도시로, 교통의 요충지다. 마오쩌둥의 고향이다."
+    },
+    {
+      "id": "jiangxia",
+      "name": {
+        "kr": "강하",
+        "cn": "江夏",
+        "en": "Jiangxia"
+      },
+      "position": {
+        "x": 490,
+        "y": 490
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "description": "형주 동부, 유기→손권, 현 우한",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 6,
+        "commerce_potential": 8,
+        "defense_bonus": 1
+      },
+      "battles": [],
+      "raw_summary": "자세한 내용은 우한시 문서를 참고하십시오.강하(江夏)는 강동으로 이어지는 요충지로 14개 현을 거느렸다. 원래 한나라 이전에는 남군에 속했다. 말릉이 건업(지금의 남경=난징)으로 바뀐 것처럼 강하 역시 오의 마지막 황제 손호의 일시적 천도(264~266) 이후 서진 때부터 본격적으로 무창(武昌)이라고 불렀다. 한수가 장강에 합류하는 요충지이다.재미있게도 무창은 후대에 명명한 이름이지만 삼국지연의에서는 이 이름이 나온다. 서량과 비슷하다. 코에이의 삼국지 시리즈에서는 이를 반영해서인지 무창이 안 나오는데, 정작 서량은 계속 나오다가 삼국지 13부터 사라졌다.중화인민공화국 때부터 지금처럼 우한(武汉, 무한)으로 불렀다. 무창에서 북서쪽으로 한수 이북 지역인 한커우(汉口, 한구), 무창에서 남서쪽으로 한수와 장강의 합류 지점에 있던 한양(汉陽)과 합병하여 무창과 한구/한양에서 한 글자씩 따서 우한시를 만들면서 우한이라 불리기 시작했다. 아주 없던 이름은 아니고, 이 세 도시를 모아서 '무"
+    },
+    {
+      "id": "xinye",
+      "name": {
+        "kr": "신야",
+        "cn": "新野",
+        "en": "Xinye"
+      },
+      "position": {
+        "x": 460,
+        "y": 450
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "description": "유비 형주 초기 거점",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 7,
+        "commerce_potential": 4,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "shangyong",
+      "name": {
+        "kr": "상용",
+        "cn": "上庸",
+        "en": "Shangyong"
+      },
+      "position": {
+        "x": 380,
+        "y": 430
+      },
+      "province": "jingzhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 5,
+      "description": "유봉/맹달 거점, 한중↔형주 연결",
+      "base_resources": {
+        "population": 2,
+        "food_potential": 2,
+        "commerce_potential": 1,
+        "defense_bonus": 3
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "shouchun",
+      "name": {
+        "kr": "수춘",
+        "cn": "壽春",
+        "en": "Shouchun"
+      },
+      "position": {
+        "x": 560,
+        "y": 460
+      },
+      "province": "yangzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "description": "양주 북부 수도, 원술 거점",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 7,
+        "commerce_potential": 7,
+        "defense_bonus": 1
+      },
+      "battles": [
+        "수춘 전투",
+        "제갈탄의 난"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "lujiang",
+      "name": {
+        "kr": "여강",
+        "cn": "廬江",
+        "en": "Lujiang"
+      },
+      "position": {
+        "x": 560,
+        "y": 490
+      },
+      "province": "yangzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 5,
+      "description": "강북 양주, 수군 거점",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 6,
+        "commerce_potential": 6,
+        "defense_bonus": 1
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "wuchang",
+      "name": {
+        "kr": "무창",
+        "cn": "武昌",
+        "en": "Wuchang"
+      },
+      "position": {
+        "x": 510,
+        "y": 510
+      },
+      "province": "yangzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "description": "손권 임시 수도, 장강 방어선",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 6,
+        "commerce_potential": 8,
+        "defense_bonus": 1
+      },
+      "battles": [
+        "무창 천도"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "jianye",
+      "name": {
+        "kr": "건업",
+        "cn": "建業",
+        "en": "Jianye"
+      },
+      "position": {
+        "x": 590,
+        "y": 480
+      },
+      "province": "yangzhou",
+      "terrain": {
+        "type": "river",
+        "food": 1,
+        "commerce": 2,
+        "defense": 1,
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 9,
+      "description": "오나라 수도, 현 남경",
+      "base_resources": {
+        "population": 7,
+        "food_potential": 7,
+        "commerce_potential": 10,
+        "defense_bonus": 1
+      },
+      "battles": [],
+      "raw_summary": "고대 건업(건강)의 석두성(石頭城), 손권이 거소를 이곳으로 옮긴 212년에 석성으로 건축하였다."
+    },
+    {
+      "id": "kuaiji",
+      "name": {
+        "kr": "회계",
+        "cn": "會稽",
+        "en": "Kuaiji"
+      },
+      "position": {
+        "x": 640,
+        "y": 510
+      },
+      "province": "yangzhou",
+      "terrain": {
+        "type": "coastal",
+        "food": 1,
+        "commerce": 3,
+        "defense": 0,
+        "desc": "해안 — 교역 활발, 해적 위험"
+      },
+      "strategic_importance": 4,
+      "description": "강동 남부, 후방 생산기지",
+      "base_resources": {
+        "population": 4,
+        "food_potential": 6,
+        "commerce_potential": 7,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "chengdu",
+      "name": {
+        "kr": "성도",
+        "cn": "成都",
+        "en": "Chengdu"
+      },
+      "position": {
+        "x": 260,
+        "y": 500
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "plains",
+        "food": 2,
+        "commerce": 1,
+        "defense": 0,
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 9,
+      "description": "촉한 수도, 천부지국",
+      "base_resources": {
+        "population": 7,
+        "food_potential": 11,
+        "commerce_potential": 8,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": "쓰촨성행정구역 [ 펼치기 · 접기 ]지급행정구지급시 18, 자치주 3현급행정구시할구 55, 현급시 19, 현 105, 자치현 4청두시성도 成都市우허우구武侯区진장구锦江区칭양구青羊区진뉴구金牛区청화구成华区룽취안이구龙泉驿区칭바이장구青白江区신두구新都区원장구温江区솽류구双流区피두구郫都区신진구新津区두장옌시都江堰市펑저우시彭州市충라이시邛崃市충저우시崇州市젠양시简阳市진탕현金堂县다이현大邑县푸장현蒲江县쯔궁시自贡市쯔류징구自流井区궁징구贡井区다안구大安区옌탄구沿滩区룽현荣县푸순현富顺县판즈화시攀枝花市둥구东区시구西区런허구仁和区미이현米易县옌볜현盐边县루저우시泸州市장양구江阳区나시구纳溪区룽마탄구龙马潭区루현泸县허장현合江县쉬융현叙永县구린현古蔺县더양시德阳市징양구旌阳区뤄장구罗江区광한시广汉市스팡시什邡市몐주시绵竹市중장현中江县몐양시绵阳市푸청구涪城区유셴구游仙区안저우구安州区장유시江油市싼타이현三台县옌팅현盐亭县쯔퉁현梓潼县핑우현平武县베이촨 창족 자치현北川羌族自治县광위안시广元市리저우구利州区자오화구昭化区차오톈구朝天区왕창현旺苍县칭촨현青川县젠거현剑阁县창시"
+    },
+    {
+      "id": "hanzhong",
+      "name": {
+        "kr": "한중",
+        "cn": "漢中",
+        "en": "Hanzhong"
+      },
+      "position": {
+        "x": 320,
+        "y": 420
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 9,
+      "description": "촉한 북방 관문, 유비 왕호 선포",
+      "base_resources": {
+        "population": 5,
+        "food_potential": 5,
+        "commerce_potential": 3,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "한중 쟁탈전",
+        "정군산 전투"
+      ],
+      "raw_summary": "잘 상상이 안 되지만 초나라의 영토였다. 한수 지역을 중심으로 일어난 초나라가 성장하면서 장강 유역까지 영향력을 행사하게 되었고, 초나라의 중심지도 형주로 옮겨지면서 중심지에서 벗어나게 된다. 그러나 전국시대 들어 팽창한 진에게 한중을 빼앗긴 초나라는 현재의 쓰촨-충칭 지역인 파촉에 대한 영향력도 상실하게 되고, 결국 지속적으로 진나라에게 압박을 받아 수도 영마저 빼앗기게 되면서 몰락했다.한고조 유방과 서초패왕 항우가 아직 군벌로서 진에 반기를 들고 연합하던 시절, 누가 진의 수도 함양성(현 셴양시)에 먼저 입성하는지를 두고 경합을 벌였다. 초 의제는 진의 본토인 관중 (현재의 섬서성 지역)에 먼저 진입하는 자를 관중왕에 봉할 것이라고 명하였기 때문이다. 결국 승자는 유방이었으나, 반진 연합군의 맹주에 가까운 중추적 역할을 하던 것은 초나라의 후계라는 정통성을 가진 항우의 세력이었기 때문에 유방은 관중 대신 훗날의 위협을 제거할 겸 첩첩산중의 분지라 진출이 어려운 한중을 영지로 받았"
+    },
+    {
+      "id": "jiameng",
+      "name": {
+        "kr": "검맹관",
+        "cn": "葭萌關",
+        "en": "Jiamengguan"
+      },
+      "position": {
+        "x": 290,
+        "y": 450
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "description": "익주 입구, 유비 입촉 거점",
+      "base_resources": {
+        "population": 2,
+        "food_potential": 2,
+        "commerce_potential": 1,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "유비 입촉",
+        "검맹관 대치"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "jianning",
+      "name": {
+        "kr": "건녕",
+        "cn": "建寧",
+        "en": "Jianning"
+      },
+      "position": {
+        "x": 260,
+        "y": 600
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "forest",
+        "food": 1,
+        "commerce": -1,
+        "defense": 2,
+        "desc": "삼림 — 매복 유리, 교역 불편"
+      },
+      "strategic_importance": 5,
+      "description": "남중 수도, 맹획 토벌전",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 5,
+        "commerce_potential": 1,
+        "defense_bonus": 2
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "yongchang",
+      "name": {
+        "kr": "영창",
+        "cn": "永昌",
+        "en": "Yongchang"
+      },
+      "position": {
+        "x": 200,
+        "y": 620
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "forest",
+        "food": 1,
+        "commerce": -1,
+        "defense": 2,
+        "desc": "삼림 — 매복 유리, 교역 불편"
+      },
+      "strategic_importance": 3,
+      "description": "익주 최남단, 남만 접경",
+      "base_resources": {
+        "population": 2,
+        "food_potential": 4,
+        "commerce_potential": 1,
+        "defense_bonus": 2
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "baidi",
+      "name": {
+        "kr": "백제성",
+        "cn": "白帝城",
+        "en": "Baidi"
+      },
+      "position": {
+        "x": 330,
+        "y": 490
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "description": "유비 임종지, 익주 동쪽 관문",
+      "base_resources": {
+        "population": 2,
+        "food_potential": 2,
+        "commerce_potential": 1,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "이릉 전투 후 유비 퇴각"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "panyu",
+      "name": {
+        "kr": "번우",
+        "cn": "番禺",
+        "en": "Panyu"
+      },
+      "position": {
+        "x": 420,
+        "y": 680
+      },
+      "province": "jiaozhou",
+      "terrain": {
+        "type": "coastal",
+        "food": 1,
+        "commerce": 3,
+        "defense": 0,
+        "desc": "해안 — 교역 활발, 해적 위험"
+      },
+      "strategic_importance": 3,
+      "description": "교주 수도, 사섭 거점, 현 광저우",
+      "base_resources": {
+        "population": 3,
+        "food_potential": 5,
+        "commerce_potential": 7,
+        "defense_bonus": 0
+      },
+      "battles": [],
+      "raw_summary": null
+    },
+    {
+      "id": "hulao",
+      "name": {
+        "kr": "호뢰관",
+        "cn": "虎牢關",
+        "en": "Hulao Pass"
+      },
+      "position": {
+        "x": 490,
+        "y": 370
+      },
+      "province": "sili",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 7,
+      "description": "낙양 동쪽 관문, 삼영전여포",
+      "base_resources": {
+        "population": 1,
+        "food_potential": 0,
+        "commerce_potential": 0,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "호뢰관 전투",
+        "삼영전여포"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "tongguan",
+      "name": {
+        "kr": "동관",
+        "cn": "潼關",
+        "en": "Tong Pass"
+      },
+      "position": {
+        "x": 400,
+        "y": 370
+      },
+      "province": "sili",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 8,
+      "description": "관중 동쪽 관문, 마초vs조조 격전",
+      "base_resources": {
+        "population": 1,
+        "food_potential": 0,
+        "commerce_potential": 0,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "동관 전투",
+        "마초vs조조"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "jiange",
+      "name": {
+        "kr": "검각",
+        "cn": "劍閣",
+        "en": "Jiange"
+      },
+      "position": {
+        "x": 280,
+        "y": 460
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 8,
+      "description": "촉한 최후 방어선, 강유vs종회",
+      "base_resources": {
+        "population": 1,
+        "food_potential": 0,
+        "commerce_potential": 0,
+        "defense_bonus": 3
+      },
+      "battles": [
+        "검각 방어전",
+        "강유vs종회"
+      ],
+      "raw_summary": null
+    },
+    {
+      "id": "yangpingguan",
+      "name": {
+        "kr": "양평관",
+        "cn": "陽平關",
+        "en": "Yangping Pass"
+      },
+      "position": {
+        "x": 300,
+        "y": 430
+      },
+      "province": "yizhou",
+      "terrain": {
+        "type": "mountain",
+        "food": -1,
+        "commerce": -1,
+        "defense": 3,
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 7,
+      "description": "한중 입구, 장로 거점",
+      "base_resources": {
+        "population": 1,
+        "food_potential": 1,
+        "commerce_potential": 0,
+        "defense_bonus": 3
+      },
+      "battles": [],
+      "raw_summary": null
+    }
+  ],
+  "routes": [
+    {
+      "from": "luoyang",
+      "to": "xuchang",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "luoyang",
+      "to": "chenliu",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "luoyang",
+      "to": "hulao",
+      "distance": 1,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "hulao",
+      "to": "chenliu",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xuchang",
+      "to": "chenliu",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xuchang",
+      "to": "runan",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "chenliu",
+      "to": "puyang",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "puyang",
+      "to": "ye",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "luoyang",
+      "to": "tongguan",
+      "distance": 3,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "tongguan",
+      "to": "changan",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "changan",
+      "to": "tianshui",
+      "distance": 4,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "tianshui",
+      "to": "longxi",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "longxi",
+      "to": "wuwei",
+      "distance": 4,
+      "type": "desert_road",
+      "bidirectional": true
+    },
+    {
+      "from": "ye",
+      "to": "nanpi",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "nanpi",
+      "to": "ji",
+      "distance": 4,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "ji",
+      "to": "liaodong",
+      "distance": 6,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "ye",
+      "to": "jinyang",
+      "distance": 4,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "nanpi",
+      "to": "pingyuan",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "pingyuan",
+      "to": "beihai",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "puyang",
+      "to": "pingyuan",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "chenliu",
+      "to": "xiapi",
+      "distance": 4,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xiapi",
+      "to": "guangling",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xiapi",
+      "to": "xiaopei",
+      "distance": 1,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "guangling",
+      "to": "shouchun",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "runan",
+      "to": "xiapi",
+      "distance": 4,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xiaopei",
+      "to": "pingyuan",
+      "distance": 4,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xuchang",
+      "to": "wan",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "wan",
+      "to": "xiangyang",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "wan",
+      "to": "xinye",
+      "distance": 1,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xinye",
+      "to": "xiangyang",
+      "distance": 1,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "xiangyang",
+      "to": "jiangling",
+      "distance": 2,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "jiangling",
+      "to": "changsha",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "jiangxia",
+      "to": "xiangyang",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "jiangxia",
+      "to": "jiangling",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "shangyong",
+      "to": "xiangyang",
+      "distance": 3,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "changsha",
+      "to": "panyu",
+      "distance": 5,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "shouchun",
+      "to": "lujiang",
+      "distance": 2,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "lujiang",
+      "to": "wuchang",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "shouchun",
+      "to": "runan",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "lujiang",
+      "to": "jianye",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "wuchang",
+      "to": "jiangxia",
+      "distance": 2,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "jianye",
+      "to": "kuaiji",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "guangling",
+      "to": "jianye",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "hanzhong",
+      "to": "yangpingguan",
+      "distance": 1,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "yangpingguan",
+      "to": "changan",
+      "distance": 4,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "hanzhong",
+      "to": "jiameng",
+      "distance": 2,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "jiameng",
+      "to": "chengdu",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "chengdu",
+      "to": "baidi",
+      "distance": 4,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "baidi",
+      "to": "jiangling",
+      "distance": 3,
+      "type": "river",
+      "bidirectional": true
+    },
+    {
+      "from": "chengdu",
+      "to": "jianning",
+      "distance": 4,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "jianning",
+      "to": "yongchang",
+      "distance": 3,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "shangyong",
+      "to": "hanzhong",
+      "distance": 3,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "chengdu",
+      "to": "jiange",
+      "distance": 2,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "jiange",
+      "to": "hanzhong",
+      "distance": 2,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "tianshui",
+      "to": "hanzhong",
+      "distance": 4,
+      "type": "mountain_pass",
+      "bidirectional": true
+    },
+    {
+      "from": "panyu",
+      "to": "jianning",
+      "distance": 5,
+      "type": "road",
+      "bidirectional": true
+    },
+    {
+      "from": "panyu",
+      "to": "changsha",
+      "distance": 5,
+      "type": "road",
+      "bidirectional": true
+    }
+  ]
+}

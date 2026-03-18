@@ -118,24 +118,6 @@
     }
   },
   "cities": {
-    "yanzhou": {
-      "name": "연주",
-      "owner": "wei",
-      "governor": "cao_ren",
-      "population": 45000,
-      "defense": 60,
-      "food": 12000,
-      "army": 25000,
-      "morale": 75,
-      "agriculture": 65,
-      "commerce": 70,
-      "technology": 55,
-      "publicOrder": 75,
-      "naturalBonus": {
-        "commerce": 1.1
-      },
-      "buildings": {}
-    },
     "xuchang": {
       "name": "허창",
       "owner": "wei",
@@ -159,40 +141,6 @@
           "turnsLeft": 0
         }
       }
-    },
-    "yuzhou": {
-      "name": "예주",
-      "owner": "wei",
-      "governor": "cao_cao",
-      "population": 40000,
-      "defense": 55,
-      "food": 18000,
-      "army": 80000,
-      "morale": 85,
-      "agriculture": 60,
-      "commerce": 60,
-      "technology": 50,
-      "publicOrder": 60,
-      "naturalBonus": {},
-      "buildings": {}
-    },
-    "xuzhou": {
-      "name": "서주",
-      "owner": "wei",
-      "governor": "zhang_liao",
-      "population": 35000,
-      "defense": 50,
-      "food": 9000,
-      "army": 18000,
-      "morale": 72,
-      "agriculture": 70,
-      "commerce": 55,
-      "technology": 45,
-      "publicOrder": 55,
-      "naturalBonus": {
-        "agriculture": 1.1
-      },
-      "buildings": {}
     },
     "luoyang": {
       "name": "낙양",
@@ -236,92 +184,6 @@
         }
       }
     },
-    "jizhou": {
-      "name": "기주",
-      "owner": "wei",
-      "governor": null,
-      "population": 38000,
-      "defense": 50,
-      "food": 11000,
-      "army": 15000,
-      "morale": 68,
-      "agriculture": 65,
-      "commerce": 55,
-      "technology": 45,
-      "publicOrder": 60,
-      "naturalBonus": {
-        "agriculture": 1.1
-      },
-      "buildings": {}
-    },
-    "youzhou": {
-      "name": "유주",
-      "owner": "wei",
-      "governor": null,
-      "population": 25000,
-      "defense": 45,
-      "food": 7000,
-      "army": 12000,
-      "morale": 60,
-      "agriculture": 35,
-      "commerce": 40,
-      "technology": 30,
-      "publicOrder": 45,
-      "naturalBonus": {},
-      "buildings": {}
-    },
-    "bingzhou": {
-      "name": "병주",
-      "owner": "wei",
-      "governor": null,
-      "population": 20000,
-      "defense": 40,
-      "food": 6000,
-      "army": 10000,
-      "morale": 58,
-      "agriculture": 30,
-      "commerce": 30,
-      "technology": 25,
-      "publicOrder": 40,
-      "naturalBonus": {},
-      "buildings": {}
-    },
-    "jingzhou": {
-      "name": "형주",
-      "owner": "shu",
-      "governor": "liu_bei",
-      "population": 55000,
-      "defense": 70,
-      "food": 20000,
-      "army": 40000,
-      "morale": 75,
-      "agriculture": 75,
-      "commerce": 65,
-      "technology": 55,
-      "publicOrder": 65,
-      "naturalBonus": {
-        "agriculture": 1.15
-      },
-      "buildings": {}
-    },
-    "yangzhou": {
-      "name": "양주",
-      "owner": "wu",
-      "governor": "lu_su",
-      "population": 42000,
-      "defense": 60,
-      "food": 14000,
-      "army": 25000,
-      "morale": 78,
-      "agriculture": 70,
-      "commerce": 80,
-      "technology": 55,
-      "publicOrder": 70,
-      "naturalBonus": {
-        "commerce": 1.15
-      },
-      "buildings": {}
-    },
     "jianye": {
       "name": "건업",
       "owner": "wu",
@@ -345,24 +207,6 @@
           "turnsLeft": 0
         }
       }
-    },
-    "yizhou": {
-      "name": "익주",
-      "owner": "liu_zhang",
-      "governor": null,
-      "population": 35000,
-      "defense": 45,
-      "food": 10000,
-      "army": 15000,
-      "morale": 65,
-      "agriculture": 60,
-      "commerce": 50,
-      "technology": 40,
-      "publicOrder": 50,
-      "naturalBonus": {
-        "agriculture": 1.1
-      },
-      "buildings": {}
     },
     "chengdu": {
       "name": "성도",
@@ -422,56 +266,6 @@
       "naturalBonus": {
         "technology": 1.1
       },
-      "buildings": {}
-    },
-    "yongzhou": {
-      "name": "옹주",
-      "owner": "wei",
-      "governor": null,
-      "population": 15000,
-      "defense": 35,
-      "food": 5000,
-      "army": 5000,
-      "morale": 50,
-      "agriculture": 25,
-      "commerce": 25,
-      "technology": 20,
-      "publicOrder": 35,
-      "naturalBonus": {},
-      "buildings": {}
-    },
-    "jiaozhou": {
-      "name": "교주",
-      "owner": "shu",
-      "governor": "ma_liang",
-      "population": 15000,
-      "defense": 30,
-      "food": 8000,
-      "army": 8000,
-      "morale": 60,
-      "agriculture": 45,
-      "commerce": 30,
-      "technology": 20,
-      "publicOrder": 35,
-      "naturalBonus": {
-        "agriculture": 1.1
-      },
-      "buildings": {}
-    },
-    "nanyang": {
-      "name": "남양",
-      "owner": "wei",
-      "governor": null,
-      "population": 38000,
-      "defense": 55,
-      "food": 10000,
-      "army": 15000,
-      "morale": 68,
-      "agriculture": 55,
-      "commerce": 60,
-      "technology": 45,
-      "publicOrder": 60,
-      "naturalBonus": {},
       "buildings": {}
     },
     "xiangyang": {
@@ -554,22 +348,6 @@
       "naturalBonus": {},
       "buildings": {}
     },
-    "qingzhou": {
-      "name": "청주",
-      "owner": "wei",
-      "governor": null,
-      "population": 25000,
-      "defense": 40,
-      "food": 8000,
-      "army": 10000,
-      "morale": 62,
-      "agriculture": 50,
-      "commerce": 45,
-      "technology": 35,
-      "publicOrder": 55,
-      "naturalBonus": {},
-      "buildings": {}
-    },
     "tianshui": {
       "name": "천수",
       "owner": "wei",
@@ -585,12 +363,282 @@
       "publicOrder": 45,
       "naturalBonus": {},
       "buildings": {}
+    },
+    "chenliu": {
+      "name": "진류",
+      "owner": "wei",
+      "population": 29250,
+      "army": 17500,
+      "morale": 75,
+      "food": 7800,
+      "commerce": 46
+    },
+    "puyang": {
+      "name": "복양",
+      "owner": "wei",
+      "population": 15750,
+      "army": 7500,
+      "morale": 70,
+      "food": 4200,
+      "commerce": 25
+    },
+    "runan": {
+      "name": "여남",
+      "owner": "wei",
+      "population": 40000,
+      "army": 80000,
+      "morale": 85,
+      "food": 18000,
+      "commerce": 60
+    },
+    "xiapi": {
+      "name": "하비",
+      "owner": "wei",
+      "population": 17500,
+      "army": 10800,
+      "morale": 72,
+      "food": 4500,
+      "commerce": 28
+    },
+    "guangling": {
+      "name": "광릉",
+      "owner": "wei",
+      "population": 10500,
+      "army": 4500,
+      "morale": 67,
+      "food": 2700,
+      "commerce": 17
+    },
+    "xiaopei": {
+      "name": "소패",
+      "owner": "wei",
+      "population": 7000,
+      "army": 2700,
+      "morale": 67,
+      "food": 1800,
+      "commerce": 11
+    },
+    "nanpi": {
+      "name": "남피",
+      "owner": "wei",
+      "population": 38000,
+      "army": 15000,
+      "morale": 68,
+      "food": 11000,
+      "commerce": 55
+    },
+    "ji": {
+      "name": "계",
+      "owner": "wei",
+      "population": 16250,
+      "army": 7200,
+      "morale": 60,
+      "food": 4550,
+      "commerce": 26
+    },
+    "liaodong": {
+      "name": "요동",
+      "owner": "wei",
+      "population": 8750,
+      "army": 4800,
+      "morale": 55,
+      "food": 2450,
+      "commerce": 14
+    },
+    "jinyang": {
+      "name": "진양",
+      "owner": "wei",
+      "population": 20000,
+      "army": 10000,
+      "morale": 58,
+      "food": 6000,
+      "commerce": 30
+    },
+    "jiangling": {
+      "name": "강릉",
+      "owner": "shu",
+      "population": 35750,
+      "army": 30000,
+      "morale": 75,
+      "food": 13000,
+      "commerce": 42
+    },
+    "jiangxia": {
+      "name": "강하",
+      "owner": "wu",
+      "population": 13750,
+      "army": 8000,
+      "morale": 70,
+      "food": 5000,
+      "commerce": 16
+    },
+    "xinye": {
+      "name": "신야",
+      "owner": "shu",
+      "population": 5500,
+      "army": 2000,
+      "morale": 70,
+      "food": 2000,
+      "commerce": 7
+    },
+    "shouchun": {
+      "name": "수춘",
+      "owner": "wu",
+      "population": 27300,
+      "army": 17500,
+      "morale": 78,
+      "food": 9100,
+      "commerce": 52
+    },
+    "wuchang": {
+      "name": "무창",
+      "owner": "wu",
+      "population": 14700,
+      "army": 7500,
+      "morale": 73,
+      "food": 4900,
+      "commerce": 28
+    },
+    "jiameng": {
+      "name": "검맹관",
+      "owner": "liu_zhang",
+      "population": 21000,
+      "army": 10500,
+      "morale": 65,
+      "food": 6000,
+      "commerce": 30
+    },
+    "jianning": {
+      "name": "건녕",
+      "owner": "liu_zhang",
+      "population": 8750,
+      "army": 3000,
+      "morale": 60,
+      "food": 2500,
+      "commerce": 13
+    },
+    "yongchang": {
+      "name": "영창",
+      "owner": "liu_zhang",
+      "population": 5250,
+      "army": 1500,
+      "morale": 60,
+      "food": 1500,
+      "commerce": 8
+    },
+    "longxi": {
+      "name": "농서",
+      "owner": "wei",
+      "population": 9000,
+      "army": 3500,
+      "morale": 50,
+      "food": 3000,
+      "commerce": 15
+    },
+    "wuwei": {
+      "name": "무위",
+      "owner": "wei",
+      "population": 6000,
+      "army": 1500,
+      "morale": 50,
+      "food": 2000,
+      "commerce": 10
+    },
+    "panyu": {
+      "name": "번우",
+      "owner": "shu",
+      "population": 15000,
+      "army": 8000,
+      "morale": 60,
+      "food": 8000,
+      "commerce": 30
+    },
+    "pingyuan": {
+      "name": "평원",
+      "owner": "wei",
+      "population": 15000,
+      "army": 6500,
+      "morale": 62,
+      "food": 4800,
+      "commerce": 27
+    },
+    "beihai": {
+      "name": "북해",
+      "owner": "wei",
+      "population": 10000,
+      "army": 3500,
+      "morale": 57,
+      "food": 3200,
+      "commerce": 18
+    },
+    "wan": {
+      "name": "완",
+      "owner": "wei",
+      "population": 38000,
+      "army": 15000,
+      "morale": 68,
+      "food": 10000,
+      "commerce": 60
+    },
+    "hulao": {
+      "name": "호뢰관",
+      "owner": "wei",
+      "population": 3000,
+      "army": 5000,
+      "morale": 80,
+      "food": 1000,
+      "commerce": 500
+    },
+    "tongguan": {
+      "name": "동관",
+      "owner": "wei",
+      "population": 2000,
+      "army": 8000,
+      "morale": 85,
+      "food": 800,
+      "commerce": 300
+    },
+    "jiange": {
+      "name": "검각",
+      "owner": "liu_zhang",
+      "population": 2000,
+      "army": 6000,
+      "morale": 75,
+      "food": 600,
+      "commerce": 200
+    },
+    "yangpingguan": {
+      "name": "양평관",
+      "owner": "zhang_lu",
+      "population": 1500,
+      "army": 4000,
+      "morale": 70,
+      "food": 500,
+      "commerce": 200
+    },
+    "shangyong": {
+      "name": "상용",
+      "owner": "liu_zhang",
+      "population": 8000,
+      "army": 3000,
+      "morale": 60,
+      "food": 2000,
+      "commerce": 1000
+    },
+    "baidi": {
+      "name": "백제성",
+      "owner": "liu_zhang",
+      "population": 5000,
+      "army": 2000,
+      "morale": 65,
+      "food": 1500,
+      "commerce": 800
     }
   },
   "characters": {
     "cao_cao": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "runan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -623,7 +671,7 @@
     },
     "cao_ren": {
       "faction": "wei",
-      "city": "yanzhou",
+      "city": "wan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -687,7 +735,7 @@
     },
     "cao_hong": {
       "faction": "wei",
-      "city": "xuchang",
+      "city": "chenliu",
       "alive": true,
       "status": "active",
       "stats": {
@@ -719,7 +767,7 @@
     },
     "xiahou_dun": {
       "faction": "wei",
-      "city": "yanzhou",
+      "city": "luoyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -785,7 +833,7 @@
     },
     "zhang_liao": {
       "faction": "wei",
-      "city": "xuzhou",
+      "city": "xiapi",
       "alive": true,
       "status": "active",
       "stats": {
@@ -818,7 +866,7 @@
     },
     "xu_chu": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "xuchang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -850,7 +898,7 @@
     },
     "xu_huang": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "luoyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -915,7 +963,7 @@
     },
     "jia_xu": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "runan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -948,7 +996,7 @@
     },
     "yu_jin": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "runan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1013,7 +1061,7 @@
     },
     "yue_jin": {
       "faction": "wei",
-      "city": "yanzhou",
+      "city": "puyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1079,7 +1127,7 @@
     },
     "liu_bei": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1112,7 +1160,7 @@
     },
     "guan_yu": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "xiangyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1145,7 +1193,7 @@
     },
     "zhang_fei": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1178,7 +1226,7 @@
     },
     "zhao_yun": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1211,7 +1259,7 @@
     },
     "zhuge_liang": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1245,7 +1293,7 @@
     },
     "huang_zhong": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "changsha",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1277,7 +1325,7 @@
     },
     "wei_yan": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "changsha",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1310,7 +1358,7 @@
     },
     "ma_liang": {
       "faction": "shu",
-      "city": "jiaozhou",
+      "city": "changsha",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1342,7 +1390,7 @@
     },
     "xu_shu": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1407,7 +1455,7 @@
     },
     "zhou_yu": {
       "faction": "wu",
-      "city": "yangzhou",
+      "city": "shouchun",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1440,7 +1488,7 @@
     },
     "lu_su": {
       "faction": "wu",
-      "city": "yangzhou",
+      "city": "jiangxia",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1506,7 +1554,7 @@
     },
     "huang_gai": {
       "faction": "wu",
-      "city": "yangzhou",
+      "city": "shouchun",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1572,7 +1620,7 @@
     },
     "zhou_tai": {
       "faction": "wu",
-      "city": "jianye",
+      "city": "wuchang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1637,7 +1685,7 @@
     },
     "liu_biao": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": false,
       "status": "dead",
       "stats": {
@@ -1827,7 +1875,7 @@
     },
     "cheng_yu": {
       "faction": "wei",
-      "city": "xuchang",
+      "city": "chenliu",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1893,7 +1941,7 @@
     },
     "man_chong": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "wan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -1923,7 +1971,7 @@
     },
     "li_dian": {
       "faction": "wei",
-      "city": "yanzhou",
+      "city": "puyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2015,7 +2063,7 @@
     },
     "wen_pin": {
       "faction": "wei",
-      "city": "nanyang",
+      "city": "jiangxia",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2047,7 +2095,7 @@
     },
     "cai_mao": {
       "faction": "wei",
-      "city": "nanyang",
+      "city": "wan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2077,7 +2125,7 @@
     },
     "liu_ye": {
       "faction": "wei",
-      "city": "xuchang",
+      "city": "runan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2173,7 +2221,7 @@
     },
     "wang_lang": {
       "faction": "wei",
-      "city": "xuzhou",
+      "city": "xiapi",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2363,7 +2411,7 @@
     },
     "han_hao": {
       "faction": "wei",
-      "city": "yuzhou",
+      "city": "jinyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2393,7 +2441,7 @@
     },
     "zhang_yun": {
       "faction": "wei",
-      "city": "nanyang",
+      "city": "wan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2483,7 +2531,7 @@
     },
     "mi_zhu": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2515,7 +2563,7 @@
     },
     "mi_fang": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2545,7 +2593,7 @@
     },
     "jian_yong": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2577,7 +2625,7 @@
     },
     "sun_qian": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2607,7 +2655,7 @@
     },
     "guan_ping": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "xiangyang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2637,7 +2685,7 @@
     },
     "liu_feng": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "xinye",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2667,7 +2715,7 @@
     },
     "liao_hua": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2697,7 +2745,7 @@
     },
     "chen_dao": {
       "faction": "shu",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2727,7 +2775,7 @@
     },
     "cheng_pu": {
       "faction": "wu",
-      "city": "yangzhou",
+      "city": "wuchang",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2789,7 +2837,7 @@
     },
     "ling_tong": {
       "faction": "wu",
-      "city": "jianye",
+      "city": "kuaiji",
       "alive": true,
       "status": "active",
       "stats": {
@@ -2819,7 +2867,7 @@
     },
     "han_dang": {
       "faction": "wu",
-      "city": "yangzhou",
+      "city": "shouchun",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3223,7 +3271,7 @@
     },
     "li_yan": {
       "faction": "liu_zhang",
-      "city": "yizhou",
+      "city": "shangyong",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3255,7 +3303,7 @@
     },
     "yang_huai": {
       "faction": "liu_zhang",
-      "city": "yizhou",
+      "city": "jiameng",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3285,7 +3333,7 @@
     },
     "gao_pei": {
       "faction": "liu_zhang",
-      "city": "yizhou",
+      "city": "jiameng",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3315,7 +3363,7 @@
     },
     "deng_xian": {
       "faction": "liu_zhang",
-      "city": "yizhou",
+      "city": "jiameng",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3345,7 +3393,7 @@
     },
     "wang_lei": {
       "faction": "liu_zhang",
-      "city": "chengdu",
+      "city": "jianning",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3439,7 +3487,7 @@
     },
     "wu_lan": {
       "faction": "liu_zhang",
-      "city": "yizhou",
+      "city": "jiameng",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3529,7 +3577,7 @@
     },
     "yang_song": {
       "faction": "zhang_lu",
-      "city": "hanzhong",
+      "city": "yangpingguan",
       "alive": true,
       "status": "active",
       "stats": {
@@ -3561,7 +3609,7 @@
     },
     "pang_tong": {
       "faction": "none",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "wandering",
       "stats": {
@@ -3626,7 +3674,7 @@
     },
     "ma_teng": {
       "faction": "none",
-      "city": "tianshui",
+      "city": "wuwei",
       "alive": true,
       "status": "wandering",
       "stats": {
@@ -3718,7 +3766,7 @@
     },
     "deng_zhi": {
       "faction": "none",
-      "city": "yizhou",
+      "city": "jiameng",
       "alive": true,
       "status": "wandering",
       "stats": {
@@ -3748,7 +3796,7 @@
     },
     "xu_jing": {
       "faction": "none",
-      "city": "jiaozhou",
+      "city": "panyu",
       "alive": true,
       "status": "wandering",
       "stats": {
@@ -3780,7 +3828,7 @@
     },
     "fei_yi": {
       "faction": "none",
-      "city": "jingzhou",
+      "city": "jiangling",
       "alive": true,
       "status": "wandering",
       "stats": {
@@ -3809,6 +3857,342 @@
       },
       "experience": 0,
       "level": 1
+    },
+    "niu_jin": {
+      "name": "우금",
+      "faction": "wei",
+      "city": "xiaopei",
+      "stats": {
+        "command": 70,
+        "war": 72,
+        "intellect": 55,
+        "politics": 45,
+        "charisma": 50
+      },
+      "loyalty": 80,
+      "potential": 66,
+      "skills": [],
+      "alive": true
+    },
+    "zang_ba": {
+      "name": "장패",
+      "faction": "wei",
+      "city": "xiapi",
+      "stats": {
+        "command": 68,
+        "war": 74,
+        "intellect": 52,
+        "politics": 40,
+        "charisma": 55
+      },
+      "loyalty": 75,
+      "potential": 65,
+      "skills": [],
+      "alive": true
+    },
+    "cao_zhang_2": {
+      "name": "조창",
+      "faction": "wei",
+      "city": "nanpi",
+      "stats": {
+        "command": 65,
+        "war": 80,
+        "intellect": 40,
+        "politics": 35,
+        "charisma": 55
+      },
+      "loyalty": 90,
+      "potential": 62,
+      "skills": [],
+      "alive": true
+    },
+    "wang_shuang": {
+      "name": "왕쌍",
+      "faction": "wei",
+      "city": "longxi",
+      "stats": {
+        "command": 55,
+        "war": 78,
+        "intellect": 35,
+        "politics": 30,
+        "charisma": 40
+      },
+      "loyalty": 80,
+      "potential": 56,
+      "skills": [],
+      "alive": true
+    },
+    "leng_bao": {
+      "name": "냉포",
+      "faction": "liu_zhang",
+      "city": "jianning",
+      "stats": {
+        "command": 45,
+        "war": 55,
+        "intellect": 35,
+        "politics": 30,
+        "charisma": 35
+      },
+      "loyalty": 60,
+      "potential": 45,
+      "skills": [],
+      "alive": true
+    },
+    "shi_xie": {
+      "name": "사섭",
+      "faction": "shu",
+      "city": "panyu",
+      "stats": {
+        "command": 55,
+        "war": 40,
+        "intellect": 70,
+        "politics": 75,
+        "charisma": 72
+      },
+      "loyalty": 60,
+      "potential": 55,
+      "skills": [],
+      "alive": true
+    },
+    "pan_zhang_npc": {
+      "name": "반장",
+      "faction": "wu",
+      "city": "wuchang",
+      "stats": {
+        "command": 60,
+        "war": 68,
+        "intellect": 48,
+        "politics": 42,
+        "charisma": 40
+      },
+      "loyalty": 75,
+      "potential": 59,
+      "skills": [],
+      "alive": true
+    },
+    "zhu_huan_npc": {
+      "name": "주환",
+      "faction": "wu",
+      "city": "shouchun",
+      "stats": {
+        "command": 68,
+        "war": 70,
+        "intellect": 60,
+        "politics": 50,
+        "charisma": 55
+      },
+      "loyalty": 80,
+      "potential": 66,
+      "skills": [],
+      "alive": true
+    },
+    "sun_huan_npc": {
+      "name": "손환",
+      "faction": "wu",
+      "city": "kuaiji",
+      "stats": {
+        "command": 55,
+        "war": 58,
+        "intellect": 52,
+        "politics": 48,
+        "charisma": 55
+      },
+      "loyalty": 85,
+      "potential": 55,
+      "skills": [],
+      "alive": true
+    },
+    "hulao_guard": {
+      "name": "호뢰관 수비장",
+      "faction": "wei",
+      "city": "hulao",
+      "stats": {
+        "command": 50,
+        "war": 55,
+        "intellect": 40,
+        "politics": 35,
+        "charisma": 40
+      },
+      "loyalty": 70,
+      "potential": 48,
+      "skills": [],
+      "alive": true
+    },
+    "tongguan_guard": {
+      "name": "동관 수비장",
+      "faction": "wei",
+      "city": "tongguan",
+      "stats": {
+        "command": 55,
+        "war": 60,
+        "intellect": 42,
+        "politics": 38,
+        "charisma": 42
+      },
+      "loyalty": 75,
+      "potential": 52,
+      "skills": [],
+      "alive": true
+    },
+    "xing_daorong": {
+      "name": "형도영",
+      "faction": "shu",
+      "city": "wuling",
+      "stats": {
+        "command": 42,
+        "war": 55,
+        "intellect": 30,
+        "politics": 28,
+        "charisma": 35
+      },
+      "loyalty": 65,
+      "potential": 42,
+      "skills": [],
+      "alive": true
+    },
+    "liu_qi_npc": {
+      "name": "유기",
+      "faction": "wu",
+      "city": "lujiang",
+      "stats": {
+        "command": 40,
+        "war": 35,
+        "intellect": 48,
+        "politics": 52,
+        "charisma": 55
+      },
+      "loyalty": 70,
+      "potential": 41,
+      "skills": [],
+      "alive": true
+    },
+    "chen_deng_npc": {
+      "name": "진등",
+      "faction": "wei",
+      "city": "guangling",
+      "stats": {
+        "command": 65,
+        "war": 50,
+        "intellect": 78,
+        "politics": 72,
+        "charisma": 68
+      },
+      "loyalty": 75,
+      "potential": 64,
+      "skills": [],
+      "alive": true
+    },
+    "tian_chou_npc": {
+      "name": "전주",
+      "faction": "wei",
+      "city": "ji",
+      "stats": {
+        "command": 60,
+        "war": 55,
+        "intellect": 68,
+        "politics": 62,
+        "charisma": 58
+      },
+      "loyalty": 80,
+      "potential": 61,
+      "skills": [],
+      "alive": true
+    },
+    "gongsun_kang_npc": {
+      "name": "공손강",
+      "faction": "wei",
+      "city": "liaodong",
+      "stats": {
+        "command": 58,
+        "war": 60,
+        "intellect": 52,
+        "politics": 55,
+        "charisma": 48
+      },
+      "loyalty": 50,
+      "potential": 57,
+      "skills": [],
+      "alive": true
+    },
+    "lu_kai_npc": {
+      "name": "여개",
+      "faction": "liu_zhang",
+      "city": "yongchang",
+      "stats": {
+        "command": 52,
+        "war": 45,
+        "intellect": 65,
+        "politics": 60,
+        "charisma": 55
+      },
+      "loyalty": 70,
+      "potential": 54,
+      "skills": [],
+      "alive": true
+    },
+    "liu_bei_p": {
+      "name": "유비 옛 부하",
+      "faction": "wei",
+      "city": "pingyuan",
+      "stats": {
+        "command": 45,
+        "war": 50,
+        "intellect": 40,
+        "politics": 38,
+        "charisma": 42
+      },
+      "loyalty": 60,
+      "potential": 45,
+      "skills": [],
+      "alive": true
+    },
+    "sun_guan": {
+      "name": "손관",
+      "faction": "wei",
+      "city": "beihai",
+      "stats": {
+        "command": 48,
+        "war": 52,
+        "intellect": 42,
+        "politics": 40,
+        "charisma": 45
+      },
+      "loyalty": 65,
+      "potential": 47,
+      "skills": [],
+      "alive": true
+    },
+    "yang_huai_2": {
+      "name": "양회",
+      "faction": "liu_zhang",
+      "city": "jiange",
+      "stats": {
+        "command": 58,
+        "war": 62,
+        "intellect": 45,
+        "politics": 40,
+        "charisma": 45
+      },
+      "loyalty": 75,
+      "potential": 55,
+      "skills": [],
+      "alive": true
+    },
+    "yan_yan_guard": {
+      "name": "엄안",
+      "faction": "liu_zhang",
+      "city": "baidi",
+      "stats": {
+        "command": 62,
+        "war": 72,
+        "intellect": 48,
+        "politics": 38,
+        "charisma": 50
+      },
+      "loyalty": 80,
+      "potential": 61,
+      "skills": [],
+      "alive": true
     }
   },
   "unaffiliatedPool": {
@@ -4148,6 +4532,524 @@
     "qingzhou:jizhou": "plains",
     "tianshui:changan": "mountain",
     "tianshui:yongzhou": "plains"
+  },
+  "mapLayout": {
+    "baseAsset": "/assets/maps/red-cliffs-base.svg",
+    "designWidth": 1600,
+    "designHeight": 900,
+    "safeBounds": {
+      "left": 100,
+      "top": 70,
+      "right": 1490,
+      "bottom": 840
+    },
+    "cityAnchors": {
+      "youzhou": {
+        "x": 1230,
+        "y": 118
+      },
+      "jizhou": {
+        "x": 920,
+        "y": 180
+      },
+      "bingzhou": {
+        "x": 600,
+        "y": 170
+      },
+      "ye": {
+        "x": 930,
+        "y": 278
+      },
+      "yanzhou": {
+        "x": 990,
+        "y": 388
+      },
+      "xuzhou": {
+        "x": 1230,
+        "y": 392
+      },
+      "xuchang": {
+        "x": 812,
+        "y": 360
+      },
+      "yuzhou": {
+        "x": 804,
+        "y": 456
+      },
+      "luoyang": {
+        "x": 648,
+        "y": 318
+      },
+      "changan": {
+        "x": 404,
+        "y": 296
+      },
+      "yongzhou": {
+        "x": 288,
+        "y": 364
+      },
+      "jingzhou": {
+        "x": 840,
+        "y": 554
+      },
+      "yangzhou": {
+        "x": 1240,
+        "y": 552
+      },
+      "jianye": {
+        "x": 1382,
+        "y": 560
+      },
+      "yizhou": {
+        "x": 354,
+        "y": 554
+      },
+      "chengdu": {
+        "x": 238,
+        "y": 622
+      },
+      "hanzhong": {
+        "x": 406,
+        "y": 428
+      },
+      "jiaozhou": {
+        "x": 960,
+        "y": 816
+      },
+      "nanyang": {
+        "x": 694,
+        "y": 414
+      },
+      "xiangyang": {
+        "x": 776,
+        "y": 494
+      },
+      "changsha": {
+        "x": 954,
+        "y": 694
+      },
+      "wuling": {
+        "x": 708,
+        "y": 688
+      },
+      "kuaiji": {
+        "x": 1456,
+        "y": 662
+      },
+      "lujiang": {
+        "x": 1106,
+        "y": 540
+      },
+      "qingzhou": {
+        "x": 1222,
+        "y": 250
+      },
+      "tianshui": {
+        "x": 190,
+        "y": 248
+      }
+    },
+    "roads": [
+      {
+        "from": "tianshui",
+        "to": "changan",
+        "grade": "major"
+      },
+      {
+        "from": "tianshui",
+        "to": "yongzhou",
+        "grade": "normal"
+      },
+      {
+        "from": "yongzhou",
+        "to": "changan",
+        "grade": "major"
+      },
+      {
+        "from": "changan",
+        "to": "luoyang",
+        "grade": "major"
+      },
+      {
+        "from": "bingzhou",
+        "to": "jizhou",
+        "grade": "normal"
+      },
+      {
+        "from": "jizhou",
+        "to": "ye",
+        "grade": "major"
+      },
+      {
+        "from": "jizhou",
+        "to": "youzhou",
+        "grade": "major"
+      },
+      {
+        "from": "ye",
+        "to": "yanzhou",
+        "grade": "major"
+      },
+      {
+        "from": "yanzhou",
+        "to": "xuchang",
+        "grade": "major"
+      },
+      {
+        "from": "yanzhou",
+        "to": "xuzhou",
+        "grade": "major"
+      },
+      {
+        "from": "xuchang",
+        "to": "luoyang",
+        "grade": "major"
+      },
+      {
+        "from": "xuchang",
+        "to": "yuzhou",
+        "grade": "normal"
+      },
+      {
+        "from": "yuzhou",
+        "to": "nanyang",
+        "grade": "normal"
+      },
+      {
+        "from": "nanyang",
+        "to": "xiangyang",
+        "grade": "major"
+      },
+      {
+        "from": "xiangyang",
+        "to": "jingzhou",
+        "grade": "major"
+      },
+      {
+        "from": "jingzhou",
+        "to": "changsha",
+        "grade": "major"
+      },
+      {
+        "from": "jingzhou",
+        "to": "lujiang",
+        "grade": "normal"
+      },
+      {
+        "from": "lujiang",
+        "to": "yangzhou",
+        "grade": "major"
+      },
+      {
+        "from": "lujiang",
+        "to": "jianye",
+        "grade": "major"
+      },
+      {
+        "from": "jianye",
+        "to": "kuaiji",
+        "grade": "major"
+      },
+      {
+        "from": "hanzhong",
+        "to": "changan",
+        "grade": "normal"
+      },
+      {
+        "from": "hanzhong",
+        "to": "yizhou",
+        "grade": "major"
+      },
+      {
+        "from": "yizhou",
+        "to": "chengdu",
+        "grade": "major"
+      },
+      {
+        "from": "yizhou",
+        "to": "wuling",
+        "grade": "normal"
+      },
+      {
+        "from": "wuling",
+        "to": "changsha",
+        "grade": "major"
+      },
+      {
+        "from": "changsha",
+        "to": "jiaozhou",
+        "grade": "normal"
+      },
+      {
+        "from": "qingzhou",
+        "to": "xuzhou",
+        "grade": "major"
+      }
+    ],
+    "territoryPolygons": {
+      "wei": [
+        [
+          120,
+          94
+        ],
+        [
+          640,
+          86
+        ],
+        [
+          1040,
+          110
+        ],
+        [
+          1310,
+          134
+        ],
+        [
+          1468,
+          210
+        ],
+        [
+          1492,
+          316
+        ],
+        [
+          1430,
+          412
+        ],
+        [
+          1290,
+          436
+        ],
+        [
+          1124,
+          440
+        ],
+        [
+          1012,
+          420
+        ],
+        [
+          900,
+          386
+        ],
+        [
+          810,
+          334
+        ],
+        [
+          674,
+          286
+        ],
+        [
+          536,
+          246
+        ],
+        [
+          402,
+          238
+        ],
+        [
+          296,
+          276
+        ],
+        [
+          206,
+          244
+        ],
+        [
+          146,
+          178
+        ]
+      ],
+      "shu": [
+        [
+          610,
+          458
+        ],
+        [
+          782,
+          448
+        ],
+        [
+          944,
+          498
+        ],
+        [
+          1082,
+          620
+        ],
+        [
+          1106,
+          846
+        ],
+        [
+          880,
+          860
+        ],
+        [
+          650,
+          786
+        ],
+        [
+          590,
+          622
+        ]
+      ],
+      "wu": [
+        [
+          1018,
+          448
+        ],
+        [
+          1456,
+          442
+        ],
+        [
+          1512,
+          530
+        ],
+        [
+          1500,
+          840
+        ],
+        [
+          1080,
+          844
+        ],
+        [
+          1018,
+          634
+        ]
+      ],
+      "liu_zhang": [
+        [
+          122,
+          472
+        ],
+        [
+          404,
+          450
+        ],
+        [
+          498,
+          566
+        ],
+        [
+          430,
+          804
+        ],
+        [
+          186,
+          816
+        ],
+        [
+          110,
+          636
+        ]
+      ],
+      "zhang_lu": [
+        [
+          346,
+          354
+        ],
+        [
+          468,
+          354
+        ],
+        [
+          534,
+          434
+        ],
+        [
+          486,
+          534
+        ],
+        [
+          356,
+          510
+        ],
+        [
+          318,
+          418
+        ]
+      ]
+    },
+    "labels": [
+      {
+        "text": "하북",
+        "x": 940,
+        "y": 120,
+        "size": 42
+      },
+      {
+        "text": "관중",
+        "x": 438,
+        "y": 256,
+        "size": 36
+      },
+      {
+        "text": "중원",
+        "x": 792,
+        "y": 286,
+        "size": 42
+      },
+      {
+        "text": "형주",
+        "x": 834,
+        "y": 516,
+        "size": 38
+      },
+      {
+        "text": "강동",
+        "x": 1262,
+        "y": 514,
+        "size": 36
+      },
+      {
+        "text": "익주",
+        "x": 276,
+        "y": 536,
+        "size": 42
+      },
+      {
+        "text": "남중",
+        "x": 842,
+        "y": 768,
+        "size": 34
+      }
+    ],
+    "landmarks": [
+      {
+        "type": "river",
+        "text": "황하",
+        "x": 830,
+        "y": 210
+      },
+      {
+        "type": "river",
+        "text": "장강",
+        "x": 1020,
+        "y": 566
+      },
+      {
+        "type": "mountain",
+        "text": "태행산",
+        "x": 706,
+        "y": 242
+      },
+      {
+        "type": "mountain",
+        "text": "진령",
+        "x": 572,
+        "y": 420
+      },
+      {
+        "type": "mountain",
+        "text": "촉도",
+        "x": 318,
+        "y": 486
+      }
+    ]
   },
   "cityPositions": {
     "youzhou": {
