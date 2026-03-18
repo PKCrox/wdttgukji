@@ -268,8 +268,11 @@ export function applyEffects(effects, state) {
 // --- 이벤트 체크: 발화 가능한 이벤트 목록 반환 ---
 
 export function checkEvents(events, state) {
+  const mode = state.narrativeMode || 'both';
   const triggered = [];
   for (const event of events) {
+    // 정사/연의 모드 필터
+    if (mode !== 'both' && event.mode && event.mode !== 'both' && event.mode !== mode) continue;
     if (evaluateTrigger(event, state)) {
       triggered.push(event);
     }

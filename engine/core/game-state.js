@@ -32,8 +32,17 @@ export class GameState {
     this.gameOver = false;
     this.winner = null;
 
+    // 정사/연의 분기 모드: 'history' | 'romance' | 'both'
+    this.narrativeMode = scenario.narrativeMode || 'both';
+
     // 외교 기록 (턴별 행동 추적)
     this.diplomacyLog = [];
+    this.aiState = {};
+    this.turnSummary = createEmptyTurnSummary(this.turn);
+
+    for (const factionId of Object.keys(this.factions)) {
+      this.ensureAIState(factionId);
+    }
   }
 
   // ─── 조회: 기본 ───
@@ -162,6 +171,34 @@ export class GameState {
     this.currentTurnLog.push({ turn: this.turn, year: this.year, month: this.month, message, type });
   }
 
+  // ─── 변경: AI/턴 요약 ───
+
+  ensureAIState(factionId) {
+    if (!this.aiState) this.aiState = {};
+    if (!this.aiState[factionId]) {
+      this.aiState[factionId] = {
+        posture: 'build',
+        targetFactionId: null,
+        targetCityId: null,
+        stagingCityId: null,
+        turnsSinceWar: 0,
+        pressureScore: 0,
+      };
+    }
+    return this.aiState[factionId];
+  }
+
+  resetTurnSummary() {
+    this.turnSummary = createEmptyTurnSummary(this.turn);
+    return this.turnSummary;
+  }
+
+  recordSummary(category, payload) {
+    if (!this.turnSummary) this.resetTurnSummary();
+    if (!this.turnSummary[category]) this.turnSummary[category] = [];
+    this.turnSummary[category].push(payload);
+  }
+
   // ─── 변경: 턴 ───
 
   advanceMonth() {
@@ -192,6 +229,11 @@ export class GameState {
     if (b.truces) delete b.truces[factionA];
     // 평판 하락 (휴전 파기 시 추가 하락)
     this._adjustReputation(factionA, -10);
+    this.recordSummary('warsStarted', {
+      fromFaction: factionA,
+      toFaction: factionB,
+      turn: this.turn,
+    });
   }
 
   makePeace(factionA, factionB, truceDuration = 6) {
@@ -348,6 +390,39 @@ export class GameState {
       return true;
     }
 
+    // 내부 실험용: 압도적 패권 장악 시 조기 종료
+    if (this.turn >= 60 && activeFactions.length >= 2) {
+      const ranked = activeFactions
+        .map(([id, faction]) => ({
+          id,
+          faction,
+          cities: this.getCitiesOfFaction(id).length,
+          army: this.getTotalArmy(id),
+        }))
+        .sort((a, b) => b.cities - a.cities || b.army - a.army);
+
+      const leader = ranked[0];
+      const runnerUp = ranked[1];
+      const totalCities = Object.keys(this.cities).length;
+      const cityThreshold = this.turn >= 260
+        ? Math.max(9, Math.ceil(totalCities * 0.34))
+        : this.turn >= 180
+          ? Math.max(10, Math.ceil(totalCities * 0.38))
+          : Math.max(12, Math.ceil(totalCities * 0.45));
+      const cityMultiplier = this.turn >= 260 ? 1.25 : this.turn >= 180 ? 1.5 : 2;
+      const armyMultiplier = this.turn >= 260 ? 1.05 : this.turn >= 180 ? 1.15 : 1.35;
+      const cityGapEnough = leader.cities >= cityThreshold
+        && leader.cities >= (runnerUp?.cities || 1) * cityMultiplier;
+      const armyGapEnough = leader.army >= Math.max(1, (runnerUp?.army || 1) * armyMultiplier);
+
+      if (cityGapEnough && armyGapEnough) {
+        this.gameOver = true;
+        this.winner = leader.id;
+        this.log(`${leader.faction.name}이(가) 중원 패권을 장악했습니다!`, 'gameover');
+        return true;
+      }
+    }
+
     return false;
   }
 
@@ -364,7 +439,9 @@ export class GameState {
       currentTurnLog: this.currentTurnLog,
       actionsRemaining: this.actionsRemaining,
       gameOver: this.gameOver, winner: this.winner,
-      diplomacyLog: this.diplomacyLog
+      diplomacyLog: this.diplomacyLog,
+      aiState: this.aiState,
+      turnSummary: this.turnSummary
     });
   }
 
@@ -375,9 +452,14 @@ export class GameState {
     // 이전 세이브 호환: 누락 필드 기본값
     if (!state.connectionTerrains) state.connectionTerrains = {};
     if (!state.diplomacyLog) state.diplomacyLog = [];
+    if (!state.aiState) state.aiState = {};
+    if (!state.turnSummary) state.turnSummary = createEmptyTurnSummary(state.turn || 1);
     for (const [, f] of Object.entries(state.factions)) {
       if (f.reputation == null) f.reputation = 100;
       if (!f.truces) f.truces = {};
+    }
+    for (const factionId of Object.keys(state.factions)) {
+      state.ensureAIState(factionId);
     }
     for (const [, c] of Object.entries(state.characters)) {
       if (!c.status) c.status = c.alive ? 'active' : 'dead';
@@ -410,4 +492,17 @@ export class GameState {
     }
     return state;
   }
+}
+
+function createEmptyTurnSummary(turn = 1) {
+  return {
+    turn,
+    warsStarted: [],
+    citiesCaptured: [],
+    buildingsCompleted: [],
+    techCompleted: [],
+    rebellions: [],
+    shortages: [],
+    majorEvents: [],
+  };
 }

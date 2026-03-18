@@ -1,8 +1,8 @@
-// app.js — 왜 다 턴 가지구 진입점
+// app.js — 우당탕탕삼국지 진입점
 
 import { GameState } from '../../engine/core/game-state.js';
 import { loadScenario, loadEvents, filterEventsForScenario } from '../../engine/data/loader.js';
-import { executeTurnEvents, processPlayerChoice, endTurn } from '../../engine/core/turn-loop.js';
+import { executeTurnEvents, processPlayerChoice, endTurn, buildTurnSummary } from '../../engine/core/turn-loop.js';
 import { decideAndExecute } from '../../engine/ai/faction-ai.js';
 import { MapRenderer } from './map-renderer.js';
 import { EventUI } from './event-ui.js';
@@ -18,8 +18,9 @@ let map = null;
 let eventUI = null;
 let sidebar = null;
 let actionPanel = null;
+let selectedNarrativeMode = 'both'; // 'history' | 'romance' | 'both'
 let processing = false;
-let logVisible = false;
+let logVisible = true;
 let turnResolution = null;
 let selectedFaction = null;
 
@@ -41,13 +42,19 @@ async function init() {
   document.getElementById('btn-back-to-start').addEventListener('click', backToStart);
   document.getElementById('btn-start-game').addEventListener('click', startNewGame);
   document.getElementById('intro-dialogue').addEventListener('click', advanceDialogue);
+  document.getElementById('btn-open-command').addEventListener('click', openSelectedCityCommand);
 
-  // 턴 로그 토글
   document.getElementById('btn-toggle-log').addEventListener('click', toggleLog);
-  document.getElementById('btn-close-log').addEventListener('click', () => {
-    document.getElementById('turn-log').classList.add('hidden');
-    document.getElementById('btn-toggle-log').classList.remove('active');
-    logVisible = false;
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter') return;
+    if (document.getElementById('game-screen').classList.contains('hidden')) return;
+    if (!map?.selectedCity || processing) return;
+    if (!document.getElementById('event-modal').classList.contains('hidden')) return;
+    if (!document.getElementById('char-modal').classList.contains('hidden')) return;
+    if (!document.getElementById('turn-resolution').classList.contains('hidden')) return;
+    if (actionPanel?.isOpen()) return;
+    e.preventDefault();
+    openSelectedCityCommand();
   });
 
   // 이어하기 버튼 상태
@@ -117,6 +124,29 @@ const FACTION_META = {
   },
 };
 
+const OPENING_OBJECTIVES = {
+  wei: [
+    '남하 전선을 정리하고 형주 병력을 한 축으로 몰아붙인다.',
+    '초반 몇 턴은 연구나 병참보다 전선 집결과 압박이 우선이다.',
+  ],
+  shu: [
+    '생존이 최우선이다. 외교와 내정으로 첫 파도를 버틴다.',
+    '형주의 약한 도시를 보강하고 연구/건설 한 축을 빠르게 연다.',
+  ],
+  wu: [
+    '강동 수비와 전선 정비가 먼저다. 무리한 선공보다 방어 준비를 우선한다.',
+    '외교와 연구를 통해 반격 타이밍을 만든다.',
+  ],
+  liu_zhang: [
+    '익주의 안전지대를 활용해 내정과 방어 시설을 정비한다.',
+    '전선이 열리기 전에 병력과 치안을 같이 쌓는다.',
+  ],
+  zhang_lu: [
+    '한중 관문 방어와 치안 유지가 핵심이다.',
+    '병력 손실 없이 시간을 벌며 연구와 방비를 축적한다.',
+  ],
+};
+
 const FACTION_LEADERS = {
   wei: 'cao_cao', shu: 'liu_bei', wu: 'sun_quan',
   liu_zhang: 'liu_zhang_char', zhang_lu: 'zhang_lu_char',
@@ -180,7 +210,9 @@ async function showFactionSelect() {
   }
 
   selectedFaction = null;
-  document.getElementById('btn-confirm-faction').disabled = true;
+  const confirmBtn = document.getElementById('btn-confirm-faction');
+  confirmBtn.disabled = true;
+  confirmBtn.textContent = '세력을 선택하십시오';
 
   const container = document.getElementById('faction-cards');
   container.innerHTML = '';
@@ -218,18 +250,53 @@ async function showFactionSelect() {
       container.querySelectorAll('.faction-card').forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
       selectedFaction = fid;
-      document.getElementById('btn-confirm-faction').disabled = false;
+      confirmBtn.disabled = false;
+      confirmBtn.textContent = `${f.name}으로 출정`;
       renderFactionPreviewMap(scenario, fid);
+      renderFactionPreviewPanel(scenario, fid);
     });
 
     container.appendChild(card);
   }
 
+  // 정사/연의 모드 셀렉터
+  let modeContainer = document.getElementById('narrative-mode-selector');
+  if (!modeContainer) {
+    modeContainer = document.createElement('div');
+    modeContainer.id = 'narrative-mode-selector';
+    modeContainer.style.cssText = 'display:flex;gap:8px;justify-content:center;margin:12px 0 4px';
+    const modes = [
+      { id: 'both', label: '혼합', desc: '정사+연의 모두' },
+      { id: 'history', label: '정사', desc: '역사 기록 기반' },
+      { id: 'romance', label: '연의', desc: '소설적 드라마' },
+    ];
+    for (const m of modes) {
+      const btn = document.createElement('button');
+      btn.className = 'mode-btn' + (m.id === selectedNarrativeMode ? ' active' : '');
+      btn.dataset.mode = m.id;
+      btn.title = m.desc;
+      btn.textContent = m.label;
+      btn.style.cssText = 'padding:6px 16px;border:1px solid #555;border-radius:4px;background:' +
+        (m.id === selectedNarrativeMode ? '#c9a84c' : '#2a2a2a') + ';color:' +
+        (m.id === selectedNarrativeMode ? '#1a1a1a' : '#ccc') + ';cursor:pointer;font-size:13px';
+      btn.addEventListener('click', () => {
+        selectedNarrativeMode = m.id;
+        modeContainer.querySelectorAll('button').forEach(b => {
+          const isActive = b.dataset.mode === m.id;
+          b.style.background = isActive ? '#c9a84c' : '#2a2a2a';
+          b.style.color = isActive ? '#1a1a1a' : '#ccc';
+        });
+      });
+      modeContainer.appendChild(btn);
+    }
+    document.getElementById('faction-cards').before(modeContainer);
+  }
+
   document.getElementById('start-screen').classList.add('hidden');
   document.getElementById('faction-screen').classList.remove('hidden');
 
-  // 초기 맵 렌더 (선택 없는 상태)
   renderFactionPreviewMap(scenario, null);
+  renderFactionPreviewPanel(scenario, null);
 }
 
 // --- 세력 선택 프리뷰 맵 ---
@@ -400,6 +467,66 @@ function renderFactionPreviewMap(sc, highlightFaction) {
   ctx.fillRect(0, 0, w, h);
 }
 
+function renderFactionPreviewPanel(sc, factionId) {
+  const panel = document.getElementById('faction-preview-card');
+  if (!panel || !sc) return;
+
+  const COLORS = {
+    wei: '#4A90D9',
+    shu: '#2ECC71',
+    wu: '#E74C3C',
+    liu_zhang: '#F39C12',
+    zhang_lu: '#9B59B6'
+  };
+
+  if (!factionId) {
+    panel.innerHTML = `
+      <div class="faction-preview-kicker">적벽대전 전장</div>
+      <div class="faction-preview-title">누구의 깃발 아래 설 것인가</div>
+      <div class="faction-preview-copy">
+        위는 남하를 강행하고, 오는 장강을 붙들며, 촉은 생존과 외교 사이를 줄타기합니다.
+        익주와 한중 역시 관망만으로는 버틸 수 없습니다.
+      </div>
+      <div class="faction-preview-grid">
+        <div class="faction-preview-stat"><span class="label">핵심 축</span><span class="value">조조 · 유비 · 손권</span></div>
+        <div class="faction-preview-stat"><span class="label">시작 압박</span><span class="value">남하 / 연합 / 생존</span></div>
+        <div class="faction-preview-stat"><span class="label">판세 성격</span><span class="value">외교와 전쟁 동시 개막</span></div>
+        <div class="faction-preview-stat"><span class="label">추천 흐름</span><span class="value">맵을 눌러 세력을 고르십시오</span></div>
+      </div>
+      <div class="faction-preview-footer">좌측에서 세력을 선택하면 시작 목표와 전력, 전장 위치가 즉시 갱신됩니다.</div>
+    `;
+    return;
+  }
+
+  const faction = sc.factions[factionId];
+  const meta = FACTION_META[factionId];
+  const cities = Object.values(sc.cities).filter(city => city.owner === factionId);
+  const army = cities.reduce((sum, city) => sum + city.army, 0);
+  const chars = Object.values(sc.characters).filter(char => char.faction === factionId);
+  const allies = (faction.allies || []).map(id => sc.factions[id]?.name).filter(Boolean).join(' · ') || '없음';
+  const enemies = (faction.enemies || []).map(id => sc.factions[id]?.name).filter(Boolean).join(' · ') || '없음';
+  const objectives = OPENING_OBJECTIVES[factionId] || [];
+  const color = COLORS[factionId] || '#c19a55';
+
+  panel.innerHTML = `
+    <div class="faction-preview-kicker" style="color:${color}">${meta.diffLabel} 난도</div>
+    <div class="faction-preview-title">${faction.name}</div>
+    <div class="faction-preview-meta">${meta.leader}</div>
+    <div class="faction-preview-copy">${meta.desc}</div>
+    <div class="faction-preview-grid">
+      <div class="faction-preview-stat"><span class="label">보유 도시</span><span class="value">${cities.length}성</span></div>
+      <div class="faction-preview-stat"><span class="label">총병력</span><span class="value">${(army / 10000).toFixed(1)}만</span></div>
+      <div class="faction-preview-stat"><span class="label">장수</span><span class="value">${chars.length}명</span></div>
+      <div class="faction-preview-stat"><span class="label">자금</span><span class="value">${faction.gold.toLocaleString()}</span></div>
+    </div>
+    <div class="faction-preview-objectives">
+      <h3>오프닝 목표</h3>
+      <ul>${objectives.map(line => `<li>${line}</li>`).join('')}</ul>
+    </div>
+    <div class="faction-preview-footer">우호: ${allies}<br>적대: ${enemies}</div>
+  `;
+}
+
 function backToStart() {
   document.getElementById('faction-screen').classList.add('hidden');
   document.getElementById('start-screen').classList.remove('hidden');
@@ -415,11 +542,19 @@ function showIntro() {
   const chars = Object.values(scenario.characters).filter(c => c.faction === selectedFaction);
 
   document.getElementById('intro-title').textContent = `${f.name} — ${meta.leader}`;
+  document.getElementById('intro-brief').textContent = meta.desc;
   document.getElementById('intro-narrative').innerHTML = meta.intro.map(p => `<p>${p}</p>`).join('');
   document.getElementById('intro-stats').innerHTML = `
     <div class="intro-stat"><div class="label">영토</div><div class="value">${cities.length}성</div></div>
     <div class="intro-stat"><div class="label">병력</div><div class="value">${(army/10000).toFixed(1)}만</div></div>
     <div class="intro-stat"><div class="label">장수</div><div class="value">${chars.length}명</div></div>
+    <div class="intro-stat"><div class="label">자금</div><div class="value">${f.gold.toLocaleString()}</div></div>
+    <div class="intro-stat"><div class="label">우호</div><div class="value">${(f.allies || []).map(id => scenario.factions[id]?.name).filter(Boolean).join(' · ') || '없음'}</div></div>
+    <div class="intro-stat"><div class="label">적대</div><div class="value">${(f.enemies || []).map(id => scenario.factions[id]?.name).filter(Boolean).join(' · ') || '없음'}</div></div>
+  `;
+  document.getElementById('intro-objectives').innerHTML = `
+    <h3>출정 목표</h3>
+    <ul>${(OPENING_OBJECTIVES[selectedFaction] || []).map(line => `<li>${line}</li>`).join('')}</ul>
   `;
 
   // 대화 시퀀스 초기화
@@ -436,6 +571,7 @@ function showIntro() {
     dlgEl.classList.add('hidden');
     startBtn.classList.remove('hidden');
   }
+  startBtn.textContent = `${f.name}의 운명을 맡는다`;
 
   document.getElementById('faction-screen').classList.add('hidden');
   document.getElementById('intro-screen').classList.remove('hidden');
@@ -497,6 +633,8 @@ async function startNewGame() {
     scenario.playerCharacter = FACTION_LEADERS[selectedFaction];
   }
 
+  // 정사/연의 모드 적용
+  scenario.narrativeMode = selectedNarrativeMode;
   state = new GameState(scenario);
 
   document.getElementById('intro-screen').classList.add('hidden');
@@ -531,6 +669,7 @@ function saveGame() {
 
 function returnToMenu() {
   if (dialogueState._timer) clearInterval(dialogueState._timer);
+  actionPanel?.hide();
   document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('gameover-modal').classList.add('hidden');
   document.getElementById('faction-screen').classList.add('hidden');
@@ -543,13 +682,18 @@ function returnToMenu() {
   btn.style.opacity = saved ? '1' : '0.4';
 
   selectedFaction = null;
-  logVisible = false;
+  logVisible = true;
 }
 
 // --- 게임 화면 초기화 ---
 function initGameScreen() {
+  const gameScreen = document.getElementById('game-screen');
   document.getElementById('start-screen').classList.add('hidden');
-  document.getElementById('game-screen').classList.remove('hidden');
+  gameScreen.classList.remove('hidden');
+  gameScreen.classList.remove('chronicle-collapsed');
+  gameScreen.classList.remove('city-rail-open');
+  document.getElementById('btn-toggle-log').classList.add('active');
+  logVisible = true;
 
   // 맵 초기화
   const canvas = document.getElementById('game-map');
@@ -560,9 +704,13 @@ function initGameScreen() {
   sidebar.onCharacterClick = (charId) => {
     showCharacterModal(charId, state);
   };
+  sidebar.onOpenCommand = () => {
+    openSelectedCityCommand();
+  };
+  sidebar.setOpeningBrief(OPENING_OBJECTIVES[state.player.factionId] || []);
 
   // 맵 클릭 이벤트
-  canvas.addEventListener('click', (e) => {
+  canvas.onclick = (e) => {
     if (processing) return;
     const rect = canvas.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -572,17 +720,21 @@ function initGameScreen() {
     if (cityId) {
       map.selectedCity = cityId;
       sidebar.showCityDetail(cityId, state);
-      actionPanel.show(cityId, state);
+      actionPanel.setContext(cityId, state);
+      document.getElementById('game-screen').classList.add('city-rail-open');
     } else {
       map.selectedCity = null;
-      sidebar.clearCityDetail();
+      sidebar.clearCityDetail(state);
+      actionPanel.setContext(null, state);
       actionPanel.hide();
+      document.getElementById('game-screen').classList.remove('city-rail-open');
     }
+    updateMapSelectionPanel();
     map.render(state);
-  });
+  };
 
   // 맵 호버
-  canvas.addEventListener('mousemove', (e) => {
+  canvas.onmousemove = (e) => {
     const rect = canvas.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -592,17 +744,17 @@ function initGameScreen() {
       canvas.style.cursor = cityId ? 'pointer' : 'crosshair';
       map.render(state);
     }
-  });
+  };
 
   // 행동 콜백
   actionPanel.onAction = (actionType, params) => {
     if (processing) return;
-    const success = executePlayerAction(actionType, params, state);
+    const success = executePlayerAction(actionType, params, state, scenario.connections);
     if (success) {
       updateUI();
       if (map.selectedCity) {
         sidebar.showCityDetail(map.selectedCity, state);
-        actionPanel.show(map.selectedCity, state);
+        actionPanel.setContext(map.selectedCity, state);
       }
     }
   };
@@ -615,6 +767,7 @@ async function nextTurn() {
   if (processing || !state || state.gameOver) return;
   processing = true;
   document.getElementById('btn-next-turn').disabled = true;
+  actionPanel.hide();
 
   try {
     map.clearEventPulses();
@@ -720,6 +873,11 @@ async function nextTurn() {
     }
 
     // 결산 페이즈 로그 (배신, 건설 완료, 연구 완료, 반란 등)
+    const summaryItems = buildTurnSummary(state);
+    for (const item of summaryItems) {
+      resolutionItems.push(item);
+    }
+
     for (const entry of settleLogs) {
       resolutionItems.push({
         phase: '결산', icon: getLogIcon(entry.type),
@@ -839,7 +997,6 @@ function getNeighborCities(cityId) {
 function updateUI() {
   if (!state || !map) return;
 
-  // 상단 바
   document.getElementById('year-display').textContent = `${state.year}년`;
   document.getElementById('month-display').textContent = `${state.month}월`;
   document.getElementById('turn-display').textContent = `턴 ${state.turn}`;
@@ -854,34 +1011,32 @@ function updateUI() {
   document.getElementById('actions-display').textContent = `행동: ${state.actionsRemaining}/3`;
   document.getElementById('rep-display').textContent = `평판: ${faction.reputation || 100}`;
 
-  // 맵
+  updateChronicleSummary();
+  updateMapSelectionPanel();
   map.render(state);
-
-  // 사이드바
-  sidebar.updateFactionSummary(state);
+  if (map.selectedCity) {
+    sidebar.showCityDetail(map.selectedCity, state);
+    actionPanel.setContext(map.selectedCity, state);
+    document.getElementById('game-screen').classList.add('city-rail-open');
+  } else {
+    sidebar.showOverview(state);
+    actionPanel.setContext(null, state);
+    document.getElementById('game-screen').classList.remove('city-rail-open');
+  }
+  updateTurnLogContent();
 }
 
-// --- 턴 로그 (누적, 토글 방식) ---
+// --- 좌측 연대기 레일 토글 ---
 function toggleLog() {
-  const logContainer = document.getElementById('turn-log');
+  const gameScreen = document.getElementById('game-screen');
   const btn = document.getElementById('btn-toggle-log');
-
-  if (logVisible) {
-    logContainer.classList.add('hidden');
-    btn.classList.remove('active');
-    logVisible = false;
-  } else {
-    updateTurnLogContent();
-    logContainer.classList.remove('hidden');
-    btn.classList.add('active');
-    logVisible = true;
-  }
+  logVisible = !logVisible;
+  gameScreen.classList.toggle('chronicle-collapsed', !logVisible);
+  btn.classList.toggle('active', logVisible);
 }
 
 function updateTurnLog() {
-  if (logVisible) {
-    updateTurnLogContent();
-  }
+  updateTurnLogContent();
 }
 
 function updateTurnLogContent() {
@@ -902,8 +1057,8 @@ function updateTurnLogContent() {
   logContent.innerHTML = '';
   const turns = [...grouped.keys()].sort((a, b) => b - a);
 
-  // 최근 10턴만 표시
-  for (const turn of turns.slice(0, 10)) {
+  // 최근 20턴만 표시
+  for (const turn of turns.slice(0, 20)) {
     const entries = grouped.get(turn);
     const first = entries[0];
 
@@ -919,6 +1074,74 @@ function updateTurnLogContent() {
       logContent.appendChild(div);
     }
   }
+}
+
+function updateChronicleSummary() {
+  const dateEl = document.getElementById('chronicle-date');
+  const factionsEl = document.getElementById('chronicle-factions');
+  if (!dateEl || !factionsEl || !state) return;
+
+  dateEl.textContent = `${state.year}년 ${state.month}월 · 턴 ${state.turn}`;
+
+  const ranked = Object.entries(state.factions)
+    .filter(([, faction]) => faction.active)
+    .map(([factionId, faction]) => {
+      const cities = state.getCitiesOfFaction(factionId);
+      const army = state.getTotalArmy(factionId);
+      const score = cities.length * 100000 + army + (faction.reputation || 100) * 100;
+      return { factionId, faction, cities, army, score };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  factionsEl.innerHTML = ranked.slice(0, 5).map((entry, index) => `
+    <div class="chronicle-faction">
+      <div class="chronicle-faction-rank">${index + 1}</div>
+      <div class="chronicle-faction-main">
+        <div class="chronicle-faction-name">
+          <span class="chronicle-faction-dot" style="background:${FACTION_COLORS[entry.factionId] || '#666'}"></span>
+          <span>${entry.faction.name}</span>
+        </div>
+        <div class="chronicle-faction-meta">${entry.cities.length}성 · 병력 ${formatArmy(entry.army)} · 평판 ${entry.faction.reputation || 100}</div>
+      </div>
+      <div class="chronicle-faction-score">보유 ${entry.cities.length}성<br>총군 ${entry.army.toLocaleString()}</div>
+    </div>
+  `).join('');
+}
+
+function updateMapSelectionPanel() {
+  const panel = document.getElementById('map-selection-panel');
+  const cityEl = document.getElementById('map-selection-city');
+  const ownerEl = document.getElementById('map-selection-owner');
+  const button = document.getElementById('btn-open-command');
+  if (!panel || !cityEl || !ownerEl || !button) return;
+
+  if (!map?.selectedCity || !state?.cities?.[map.selectedCity]) {
+    panel.classList.add('hidden');
+    button.textContent = '명령 열기';
+    button.disabled = true;
+    return;
+  }
+
+  const city = state.cities[map.selectedCity];
+  const faction = city.owner ? state.factions[city.owner] : null;
+  panel.classList.remove('hidden');
+  cityEl.textContent = city.name;
+  ownerEl.textContent = faction
+    ? `${faction.name} · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`
+    : `무주지 · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`;
+  button.textContent = `${city.name} 명령`;
+  button.disabled = false;
+}
+
+function openSelectedCityCommand() {
+  if (!map?.selectedCity || !state || processing) return;
+  actionPanel.open(map.selectedCity, state);
+}
+
+function formatArmy(value) {
+  if (value >= 10000) return `${(value / 10000).toFixed(1)}만`;
+  if (value >= 1000) return `${Math.floor(value / 1000)}천`;
+  return value.toLocaleString();
 }
 
 function showGameOver() {
@@ -951,7 +1174,7 @@ function showGameOver() {
 function showToast(message) {
   const toast = document.createElement('div');
   toast.textContent = message;
-  toast.style.cssText = 'position:fixed;top:60px;left:50%;transform:translateX(-50%);background:var(--accent);color:#0a0a0f;padding:0.5rem 1.5rem;border-radius:6px;font-weight:600;font-size:0.85rem;z-index:200;opacity:0;transition:opacity 0.3s';
+  toast.style.cssText = 'position:fixed;top:76px;left:50%;transform:translateX(-50%);background:linear-gradient(180deg,#dabb7b 0%,#b88a3e 100%);color:#24160b;padding:0.65rem 1.5rem;border-radius:999px;border:1px solid rgba(96,63,22,0.5);font-weight:700;font-size:0.85rem;z-index:200;opacity:0;transition:opacity 0.3s;box-shadow:0 12px 24px rgba(0,0,0,0.24)';
   document.body.appendChild(toast);
   requestAnimationFrame(() => { toast.style.opacity = '1'; });
   setTimeout(() => {
