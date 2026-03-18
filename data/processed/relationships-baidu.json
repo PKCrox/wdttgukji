@@ -1,28 +1,186 @@
 {
-  "total": 737,
+  "total": 1511,
   "type_distribution": {
+    "defection": 438,
+    "mentioned": 620,
+    "family": 47,
     "succession": 3,
-    "betrayal": 82,
-    "defection": 257,
-    "marriage": 54,
-    "close_friend": 25,
-    "family": 15,
-    "spouse": 13,
-    "parent_child": 6,
+    "betrayal": 159,
+    "marriage": 120,
+    "close_friend": 34,
+    "spouse": 14,
+    "parent_child": 13,
     "collateral": 5,
-    "mentioned": 239,
-    "sworn_brothers": 12,
-    "nemesis": 26
+    "sworn_brothers": 23,
+    "apprentice": 4,
+    "nemesis": 31
   },
   "source_distribution": {
-    "infobox": 3,
-    "keyword": 456,
-    "section": 39,
-    "summary": 239
+    "keyword": 809,
+    "summary": 620,
+    "section": 78,
+    "infobox": 4
   },
-  "generated_at": "2026-03-18T16:42:38.187Z",
+  "generated_at": "2026-03-18T16:58:50.003Z",
   "source": "baidu_baike",
   "relationships": [
+    {
+      "a": "bu_zhi",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "渐渐趋于稳定，法令遂得到执行。后来益州郡大姓雍闿杀害了刘备任命的益州太守正昂，通过士燮表示希望向孙权投降，步骘接纳并安抚他。因此加拜平戎将军 [29]，封广信侯。 [12]",
+      "intensity": 50
+    },
+    {
+      "a": "bu_zhi",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "渐渐趋于稳定，法令遂得到执行。后来益州郡大姓雍闿杀害了刘备任命的益州太守正昂，通过士燮表示希望向孙权投降，步骘接纳并安抚他。因此加拜平戎将军 [29]，封广信侯。 [12]",
+      "intensity": 50
+    },
+    {
+      "a": "bu_zhi",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，步骘生平与正史大体相当。于孙策死后 [40]，孙权广纳贤士时前来投奔 [40]。 [40]曹操平定荆州后，大军百万压吴境。张昭、步骘等主降，后诸葛亮出使东吴 [46",
+      "intensity": 50
+    },
+    {
+      "a": "bu_zhi",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，步骘生平与正史大体相当。于孙策死后 [40]，孙权广纳贤士时前来投奔 [40]。 [40]曹操平定荆州后，大军百万压吴境。张昭、步骘等主降，后诸葛亮出使东吴 [46",
+      "intensity": 50
+    },
+    {
+      "a": "bu_zhi",
+      "b": "sun_ce",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，步骘生平与正史大体相当。于孙策死后 [40]，孙权广纳贤士时前来投奔 [40]。 [40]曹操平定荆州后，大军百万压吴境。张昭、步骘等主降，后诸葛亮出使东吴 [46",
+      "intensity": 50
+    },
+    {
+      "a": "bu_zhi",
+      "b": "zhang_zhao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，步骘生平与正史大体相当。于孙策死后 [40]，孙权广纳贤士时前来投奔 [40]。 [40]曹操平定荆州后，大军百万压吴境。张昭、步骘等主降，后诸葛亮出使东吴 [46",
+      "intensity": 50
+    },
+    {
+      "a": "bu_zhi",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "bu_zhi",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cai_wenji",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "于生母早死，是以由正室丁氏抚养大。二十岁时被举为孝廉。建安二年（197年），曹昂随曹操出征张绣，张绣投降，曹操纳了张济的遗孀（小说《三国演义》中为邹氏 [11]），张绣因此怀恨曹操。 [1]曹操听说张",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "zhang_xiu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "于生母早死，是以由正室丁氏抚养大。二十岁时被举为孝廉。建安二年（197年），曹昂随曹操出征张绣，张绣投降，曹操纳了张济的遗孀（小说《三国演义》中为邹氏 [11]），张绣因此怀恨曹操。 [1]曹操听说张",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_cao",
+      "type": "family",
+      "source": "section",
+      "section": "家庭成员",
+      "evidence": "家庭成员에서 曹操 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_pi",
+      "type": "family",
+      "source": "section",
+      "section": "家庭成员",
+      "evidence": "家庭成员에서 曹丕 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_zhi",
+      "type": "family",
+      "source": "section",
+      "section": "家庭成员",
+      "evidence": "家庭成员에서 曹植 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_zhang",
+      "type": "family",
+      "source": "section",
+      "section": "家庭成员",
+      "evidence": "家庭成员에서 曹彰 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_chong",
+      "type": "family",
+      "source": "section",
+      "section": "家庭成员",
+      "evidence": "家庭成员에서 曹冲 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ang",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ang",
+      "b": "zhang_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张绣 언급",
+      "intensity": 30
+    },
     {
       "a": "cao_cao",
       "b": "cao_pi",
@@ -107,15 +265,6 @@
     {
       "a": "cao_cao",
       "b": "dian_wei",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "失天下人心，不可。” [332]建安二年（197年）正月，曹操讨伐割据宛城的张绣，驻军淯水。张绣举众投降，旋即复叛，曹操长子曹昂、侄子曹安民、猛将典韦战死（参见词条宛城之战）。曹操引兵退还舞阴，张绣派",
-      "intensity": 50
-    },
-    {
-      "a": "cao_cao",
-      "b": "cao_ang",
       "type": "defection",
       "source": "keyword",
       "keyword": "投降",
@@ -557,6 +706,164 @@
       "intensity": 30
     },
     {
+      "a": "cao_chong",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_chun",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_chun",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_chun",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_chun",
+      "b": "cao_ren",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "，在曹洪与荀攸的坚守下，张郃、高览无法攻破。等到曹操火烧乌巢后，张郃与高览烧毁了攻营的器械，到曹营去投降。曹洪生怕中计，不敢接受他们投降。荀攸说：“张郃因为计策不为袁绍采用，一怒之下来投奔，您有什么可",
+      "intensity": 50
+    },
+    {
+      "a": "cao_hong",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "，在曹洪与荀攸的坚守下，张郃、高览无法攻破。等到曹操火烧乌巢后，张郃与高览烧毁了攻营的器械，到曹营去投降。曹洪生怕中计，不敢接受他们投降。荀攸说：“张郃因为计策不为袁绍采用，一怒之下来投奔，您有什么可",
+      "intensity": 50
+    },
+    {
+      "a": "cao_hong",
+      "b": "zhang_he",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "，在曹洪与荀攸的坚守下，张郃、高览无法攻破。等到曹操火烧乌巢后，张郃与高览烧毁了攻营的器械，到曹营去投降。曹洪生怕中计，不敢接受他们投降。荀攸说：“张郃因为计策不为袁绍采用，一怒之下来投奔，您有什么可",
+      "intensity": 50
+    },
+    {
+      "a": "cao_hong",
+      "b": "xun_you",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "，在曹洪与荀攸的坚守下，张郃、高览无法攻破。等到曹操火烧乌巢后，张郃与高览烧毁了攻营的器械，到曹营去投降。曹洪生怕中计，不敢接受他们投降。荀攸说：“张郃因为计策不为袁绍采用，一怒之下来投奔，您有什么可",
+      "intensity": 50
+    },
+    {
+      "a": "cao_hong",
+      "b": "cao_cao",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 曹操 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_hong",
+      "b": "cao_xiu",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 曹休 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_hong",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "zhang_fei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张飞 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "liu_biao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘表 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "ma_chao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 马超 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_hong",
+      "b": "zhang_he",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张郃 언급",
+      "intensity": 30
+    },
+    {
       "a": "cao_pi",
       "b": "sun_quan",
       "type": "defection",
@@ -681,6 +988,747 @@
       "intensity": 30
     },
     {
+      "a": "cao_ren",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "之为忧。此时曹仁进言：“南方诸县以为我军当下有官渡之急，不能解救他们，而刘备此时却以大军压境，他们的背叛是正常的事。但刘备刚刚带领袁绍的兵，还未能得其所用，一击便可破了。”曹操同意其言，于是令曹仁遣骑",
+      "intensity": 80
+    },
+    {
+      "a": "cao_ren",
+      "b": "liu_bei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "之为忧。此时曹仁进言：“南方诸县以为我军当下有官渡之急，不能解救他们，而刘备此时却以大军压境，他们的背叛是正常的事。但刘备刚刚带领袁绍的兵，还未能得其所用，一击便可破了。”曹操同意其言，于是令曹仁遣骑",
+      "intensity": 80
+    },
+    {
+      "a": "cao_ren",
+      "b": "yuan_shao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "之为忧。此时曹仁进言：“南方诸县以为我军当下有官渡之急，不能解救他们，而刘备此时却以大军压境，他们的背叛是正常的事。但刘备刚刚带领袁绍的兵，还未能得其所用，一击便可破了。”曹操同意其言，于是令曹仁遣骑",
+      "intensity": 80
+    },
+    {
+      "a": "cao_ren",
+      "b": "guan_yu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "内施加了大量的繇役。同年十月，荆州境内的宛城吏民终于不堪忍受大量的繇役。于是，宛城守将侯音与吏民共同反叛，并抄掠附近郡县的百姓数千人，又与关羽联合。曹仁仓促应战，当月便开始围攻宛城 [22-23]。建",
+      "intensity": 80
+    },
+    {
+      "a": "cao_ren",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，曹仁于曹操起兵时与曹洪一同前来投奔，并随曹操一同参与讨董战役。后从征袁术、吕布、张绣，参加官渡之战，多立功勋。曹操平定北方后决意南",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ren",
+      "b": "lv_bu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，曹仁于曹操起兵时与曹洪一同前来投奔，并随曹操一同参与讨董战役。后从征袁术、吕布、张绣，参加官渡之战，多立功勋。曹操平定北方后决意南",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ren",
+      "b": "yuan_shu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，曹仁于曹操起兵时与曹洪一同前来投奔，并随曹操一同参与讨董战役。后从征袁术、吕布、张绣，参加官渡之战，多立功勋。曹操平定北方后决意南",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ren",
+      "b": "cao_hong",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，曹仁于曹操起兵时与曹洪一同前来投奔，并随曹操一同参与讨董战役。后从征袁术、吕布、张绣，参加官渡之战，多立功勋。曹操平定北方后决意南",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ren",
+      "b": "zhang_xiu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，曹仁于曹操起兵时与曹洪一同前来投奔，并随曹操一同参与讨董战役。后从征袁术、吕布、张绣，参加官渡之战，多立功勋。曹操平定北方后决意南",
+      "intensity": 50
+    },
+    {
+      "a": "cao_ren",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "zhou_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周瑜 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "ma_chao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 马超 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "yuan_shu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁术 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_ren",
+      "b": "tao_qian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陶谦 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "cao_ren",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 曹仁 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_xiu",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "sima_yi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马懿 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "xiahou_dun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯惇 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "zhang_liao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张辽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_xiu",
+      "b": "cao_zhen",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹真 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_cao",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹操 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhang",
+      "b": "sun_jian",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 孙坚 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_pi",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹丕 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_zhi",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹植 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_chong",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹冲 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhang",
+      "b": "cao_zhi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹植 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhen",
+      "b": "cao_pi",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "前后功勋，进封东乡侯。当时曹丕开始置凉州刺史一职，任命安定太守邹岐为刺史。张掖郡人张进挟持太守在酒泉反叛，率军阻拦邹岐赴任。曹真遣费曜进军讨平张进的叛乱。后回洛阳，升至上军大将军，都督中外诸军事，假节",
+      "intensity": 80
+    },
+    {
+      "a": "cao_zhen",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "力挫诸葛诸葛亮首出祁山太和二年（228年），蜀汉丞相诸葛亮北伐，南安、天水和安定三郡皆投降蜀汉。曹叡于是亲征至长安，遣曹真为督诸军驻于郿，曹真派右将军张郃进军援救，于街亭之战中大破马谡。",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhen",
+      "b": "zhang_he",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "力挫诸葛诸葛亮首出祁山太和二年（228年），蜀汉丞相诸葛亮北伐，南安、天水和安定三郡皆投降蜀汉。曹叡于是亲征至长安，遣曹真为督诸军驻于郿，曹真派右将军张郃进军援救，于街亭之战中大破马谡。",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhen",
+      "b": "ma_su",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "力挫诸葛诸葛亮首出祁山太和二年（228年），蜀汉丞相诸葛亮北伐，南安、天水和安定三郡皆投降蜀汉。曹叡于是亲征至长安，遣曹真为督诸军驻于郿，曹真派右将军张郃进军援救，于街亭之战中大破马谡。",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhen",
+      "b": "cao_cao",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹操 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhen",
+      "b": "yuan_shu",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 袁术 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhen",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhen",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhen",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cao_zhi",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "宓妃留枕《文选·洛神赋注》说：魏东阿王曹植曾在汉末求娶甄氏为妻，曹操却将她许给曹丕。甄后去世后，曹植入朝，曹丕将她的遗物玉带金镂枕送给曹植。曹植离京归国",
+      "intensity": 70
+    },
+    {
+      "a": "cao_zhi",
+      "b": "cao_pi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "宓妃留枕《文选·洛神赋注》说：魏东阿王曹植曾在汉末求娶甄氏为妻，曹操却将她许给曹丕。甄后去世后，曹植入朝，曹丕将她的遗物玉带金镂枕送给曹植。曹植离京归国",
+      "intensity": 70
+    },
+    {
+      "a": "cao_zhi",
+      "b": "cao_cao",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹操 언급",
+      "intensity": 50
+    },
+    {
+      "a": "cao_zhi",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "chen_gong",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "弓弩齐发射杀郝萌的部曲，天亮还营。（《册府元龟》则记载吕布与高顺一同前往平叛。）陈宫像郝萌的部将曹性反叛，与郝萌对战，郝萌刺伤曹性，曹性斩断郝萌一臂，高顺乘势斩下郝萌的首级，用床担着受伤的曹性前往见吕",
+      "intensity": 80
+    },
+    {
+      "a": "chen_gong",
+      "b": "gao_shun",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "弓弩齐发射杀郝萌的部曲，天亮还营。（《册府元龟》则记载吕布与高顺一同前往平叛。）陈宫像郝萌的部将曹性反叛，与郝萌对战，郝萌刺伤曹性，曹性斩断郝萌一臂，高顺乘势斩下郝萌的首级，用床担着受伤的曹性前往见吕",
+      "intensity": 80
+    },
+    {
+      "a": "chen_gong",
+      "b": "lv_bu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "曹军开凿沟渠，引沂水、泗水来灌城。 [7]到了十二月，吕布军心崩溃，部将侯成、宋宪、魏续叛变，缚陈宫投降曹操。吕布与麾下登上白门楼，见曹军攻势猛烈，只得下城投降。 [14]曹操攻克下邳，面见吕布和陈宫",
+      "intensity": 50
+    },
+    {
+      "a": "chen_gong",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "chen_gong",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
+      "a": "chen_qun",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "。”意指对于人事没有厚薄之分），贵雅而执名杖义，不会为媚人而违背道德。建安二十四年（219年），魏讽谋反时，黄门侍郎刘廙之弟刘伟被魏讽诱同，如今按罪连坐，刘廙亦当诛。陈群便向曹操进言，曹操亦道：“刘廙",
+      "intensity": 80
+    },
+    {
+      "a": "chen_qun",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "chen_qun",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "chen_qun",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "zhou_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周瑜 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "sun_jian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙坚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "cao_ren",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_pu",
+      "b": "zhang_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "群雄并起，必有命世，有能力平息天下之乱的人出现，这就需要智者审慎地加以抉择，得主者昌，失主者亡。陈宫背叛曹公，迎接吕布进城，四周郡县皆响应，似乎有作为，然君观之，吕布何如人！吕布粗暴少亲信，刚直而又无",
+      "intensity": 80
+    },
+    {
+      "a": "cheng_yu",
+      "b": "chen_gong",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "群雄并起，必有命世，有能力平息天下之乱的人出现，这就需要智者审慎地加以抉择，得主者昌，失主者亡。陈宫背叛曹公，迎接吕布进城，四周郡县皆响应，似乎有作为，然君观之，吕布何如人！吕布粗暴少亲信，刚直而又无",
+      "intensity": 80
+    },
+    {
+      "a": "cheng_yu",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "昱为尚书。其时兖州尚未绥抚停当，于是又以程昱为东中郎将，领济阴太守，都督兖州事。刘备失去徐州后，前来归附曹操。程昱对曹操说：“我观刘备有雄才又非常得人心，终究不会居于人下，不如乘早把他除掉。”曹操说：",
+      "intensity": 50
+    },
+    {
+      "a": "cheng_yu",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "知足不辱建安十三年（208年），曹操南征荆州，刘琮投降，刘备奔吴求助。有人认为孙权必杀刘备，程昱却料道：“孙权新任在位，尚未为海内所忌惮。而曹公无敌于",
+      "intensity": 50
+    },
+    {
+      "a": "cheng_yu",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "生未其位程昱生性刚戾，与人多有不和。有人诬告程昱谋反，而曹操却对其赐待益厚。建安十八年（213年），程昱与荀攸等人共劝曹操进位魏公，同年，魏国建立。",
+      "intensity": 80
+    },
+    {
+      "a": "cheng_yu",
+      "b": "xun_you",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "生未其位程昱生性刚戾，与人多有不和。有人诬告程昱谋反，而曹操却对其赐待益厚。建安十八年（213年），程昱与荀攸等人共劝曹操进位魏公，同年，魏国建立。",
+      "intensity": 80
+    },
+    {
+      "a": "cheng_yu",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "xun_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 荀彧 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "cao_ren",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "chen_gong",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陈宫 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "yuan_tan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁谭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "cheng_yu",
+      "b": "yuan_shang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁尚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "da_qiao",
+      "b": "zhou_yu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "乔家故井清朝《古今图书集成》记载：乔家故井在潜山县彰法山。汉乔公居此，二女皆国色。孙策克皖，娶大乔，周瑜娶小乔，二乔曾把用剩下的残脂粉投入井中，因此井水有脂粉色。 [7]",
+      "intensity": 70
+    },
+    {
+      "a": "da_qiao",
+      "b": "sun_ce",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "乔家故井清朝《古今图书集成》记载：乔家故井在潜山县彰法山。汉乔公居此，二女皆国色。孙策克皖，娶大乔，周瑜娶小乔，二乔曾把用剩下的残脂粉投入井中，因此井水有脂粉色。 [7]",
+      "intensity": 70
+    },
+    {
+      "a": "da_qiao",
+      "b": "xiao_qiao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "乔家故井清朝《古今图书集成》记载：乔家故井在潜山县彰法山。汉乔公居此，二女皆国色。孙策克皖，娶大乔，周瑜娶小乔，二乔曾把用剩下的残脂粉投入井中，因此井水有脂粉色。 [7]",
+      "intensity": 70
+    },
+    {
+      "a": "da_qiao",
+      "b": "zhou_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周瑜 언급",
+      "intensity": 30
+    },
+    {
+      "a": "da_qiao",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
       "a": "deng_ai",
       "b": "jiang_wei",
       "type": "defection",
@@ -766,6 +1814,82 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 司马昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "deng_zhi",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "文学形象在小说《三国演义》中，邓芝形象与正史相似。原为益州牧刘璋的手下，刘备取蜀之际归降。邓芝曾向诸葛亮献联吴抗曹之计，奉命出使东吴，顺利完成使命，为孙权所敬服。第一次北伐之际，邓芝任",
+      "intensity": 50
+    },
+    {
+      "a": "deng_zhi",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "文学形象在小说《三国演义》中，邓芝形象与正史相似。原为益州牧刘璋的手下，刘备取蜀之际归降。邓芝曾向诸葛亮献联吴抗曹之计，奉命出使东吴，顺利完成使命，为孙权所敬服。第一次北伐之际，邓芝任",
+      "intensity": 50
+    },
+    {
+      "a": "deng_zhi",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "文学形象在小说《三国演义》中，邓芝形象与正史相似。原为益州牧刘璋的手下，刘备取蜀之际归降。邓芝曾向诸葛亮献联吴抗曹之计，奉命出使东吴，顺利完成使命，为孙权所敬服。第一次北伐之际，邓芝任",
+      "intensity": 50
+    },
+    {
+      "a": "deng_zhi",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "文学形象在小说《三国演义》中，邓芝形象与正史相似。原为益州牧刘璋的手下，刘备取蜀之际归降。邓芝曾向诸葛亮献联吴抗曹之计，奉命出使东吴，顺利完成使命，为孙权所敬服。第一次北伐之际，邓芝任",
+      "intensity": 50
+    },
+    {
+      "a": "deng_zhi",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "deng_zhi",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "deng_zhi",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "deng_zhi",
+      "b": "zhao_yun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 赵云 언급",
+      "intensity": 30
+    },
+    {
+      "a": "deng_zhi",
+      "b": "cao_zhen",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹真 언급",
       "intensity": 30
     },
     {
@@ -1023,6 +2147,168 @@
       "intensity": 30
     },
     {
+      "a": "ding_feng",
+      "b": "liu_bei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "的丁奉前期多次与徐盛搭档出战，赤壁之战期间，丁奉曾与徐盛奉周瑜之命去七星坛追杀诸葛亮。 [46]刘备娶亲回荆州后，周瑜又令徐盛、丁奉率兵追击刘备。 [47]曹丕率大军伐吴被徐盛火攻击败，张辽保护曹丕撤",
+      "intensity": 70
+    },
+    {
+      "a": "ding_feng",
+      "b": "zhuge_liang",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "的丁奉前期多次与徐盛搭档出战，赤壁之战期间，丁奉曾与徐盛奉周瑜之命去七星坛追杀诸葛亮。 [46]刘备娶亲回荆州后，周瑜又令徐盛、丁奉率兵追击刘备。 [47]曹丕率大军伐吴被徐盛火攻击败，张辽保护曹丕撤",
+      "intensity": 70
+    },
+    {
+      "a": "ding_feng",
+      "b": "zhou_yu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "的丁奉前期多次与徐盛搭档出战，赤壁之战期间，丁奉曾与徐盛奉周瑜之命去七星坛追杀诸葛亮。 [46]刘备娶亲回荆州后，周瑜又令徐盛、丁奉率兵追击刘备。 [47]曹丕率大军伐吴被徐盛火攻击败，张辽保护曹丕撤",
+      "intensity": 70
+    },
+    {
+      "a": "ding_feng",
+      "b": "cao_pi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "的丁奉前期多次与徐盛搭档出战，赤壁之战期间，丁奉曾与徐盛奉周瑜之命去七星坛追杀诸葛亮。 [46]刘备娶亲回荆州后，周瑜又令徐盛、丁奉率兵追击刘备。 [47]曹丕率大军伐吴被徐盛火攻击败，张辽保护曹丕撤",
+      "intensity": 70
+    },
+    {
+      "a": "ding_feng",
+      "b": "zhang_liao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "的丁奉前期多次与徐盛搭档出战，赤壁之战期间，丁奉曾与徐盛奉周瑜之命去七星坛追杀诸葛亮。 [46]刘备娶亲回荆州后，周瑜又令徐盛、丁奉率兵追击刘备。 [47]曹丕率大军伐吴被徐盛火攻击败，张辽保护曹丕撤",
+      "intensity": 70
+    },
+    {
+      "a": "ding_feng",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ding_feng",
+      "b": "gan_ning",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 甘宁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ding_feng",
+      "b": "pan_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 潘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "dong_yun",
+      "b": "zhuge_liang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "翼赞王室三国志12中的董允诸葛亮去世后，魏延与杨仪争执再起，互相控告对方谋反。董允与蒋琬都保举杨仪而质疑魏延的行动。其后尚书令蒋琬担任了益州刺史，他上书刘禅，希望能对费祎、",
+      "intensity": 80
+    },
+    {
+      "a": "dong_yun",
+      "b": "wei_yan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "翼赞王室三国志12中的董允诸葛亮去世后，魏延与杨仪争执再起，互相控告对方谋反。董允与蒋琬都保举杨仪而质疑魏延的行动。其后尚书令蒋琬担任了益州刺史，他上书刘禅，希望能对费祎、",
+      "intensity": 80
+    },
+    {
+      "a": "dong_yun",
+      "b": "liu_shan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "翼赞王室三国志12中的董允诸葛亮去世后，魏延与杨仪争执再起，互相控告对方谋反。董允与蒋琬都保举杨仪而质疑魏延的行动。其后尚书令蒋琬担任了益州刺史，他上书刘禅，希望能对费祎、",
+      "intensity": 80
+    },
+    {
+      "a": "dong_yun",
+      "b": "jiang_wan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "翼赞王室三国志12中的董允诸葛亮去世后，魏延与杨仪争执再起，互相控告对方谋反。董允与蒋琬都保举杨仪而质疑魏延的行动。其后尚书令蒋琬担任了益州刺史，他上书刘禅，希望能对费祎、",
+      "intensity": 80
+    },
+    {
+      "a": "dong_yun",
+      "b": "fei_yi",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "翼赞王室三国志12中的董允诸葛亮去世后，魏延与杨仪争执再起，互相控告对方谋反。董允与蒋琬都保举杨仪而质疑魏延的行动。其后尚书令蒋琬担任了益州刺史，他上书刘禅，希望能对费祎、",
+      "intensity": 80
+    },
+    {
+      "a": "dong_yun",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "dong_yun",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "dong_yun",
+      "b": "liu_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "dong_yun",
+      "b": "liu_shan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘禅 언급",
+      "intensity": 30
+    },
+    {
+      "a": "dong_yun",
+      "b": "jiang_wan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 蒋琬 언급",
+      "intensity": 30
+    },
+    {
+      "a": "dong_yun",
+      "b": "fei_yi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 费祎 언급",
+      "intensity": 30
+    },
+    {
       "a": "dong_zhuo",
       "b": "lv_bu",
       "type": "defection",
@@ -1126,6 +2412,57 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 王允 언급",
+      "intensity": 30
+    },
+    {
+      "a": "du_yu",
+      "b": "jiang_wei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "三路，大举进攻蜀汉。杜预被委任为主力军统帅、镇西将军钟会的长史。魏军攻灭蜀汉后，钟会联合蜀汉降将姜维谋反，准备杀害同行的魏将，以割据益州。次年（264年）正月，钟会在实施计划时，被乱兵杀死。在这场变乱",
+      "intensity": 80
+    },
+    {
+      "a": "du_yu",
+      "b": "zhong_hui",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "三路，大举进攻蜀汉。杜预被委任为主力军统帅、镇西将军钟会的长史。魏军攻灭蜀汉后，钟会联合蜀汉降将姜维谋反，准备杀害同行的魏将，以割据益州。次年（264年）正月，钟会在实施计划时，被乱兵杀死。在这场变乱",
+      "intensity": 80
+    },
+    {
+      "a": "du_yu",
+      "b": "sima_zhao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "集团。司马昭在掌握了政权后，为了巩固、扩大统治基础，广招人才。在这一背景下，杜预也被用为尚书郎，同时娶了司马昭的妹妹高陆公主为妻。甘露二年（257年），河东人乐祥上书陈述杜畿的功绩，于是司马氏封杜预为",
+      "intensity": 70
+    },
+    {
+      "a": "du_yu",
+      "b": "zhong_hui",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 钟会 언급",
+      "intensity": 30
+    },
+    {
+      "a": "du_yu",
+      "b": "sima_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "du_yu",
+      "b": "sima_yan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马炎 언급",
       "intensity": 30
     },
     {
@@ -1284,6 +2621,166 @@
       "intensity": 30
     },
     {
+      "a": "fei_shi",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "刘备在涪县击败刘璋军的抵抗后，领兵进逼绵竹，费诗率先举城归附。公元214年（建安十九年）夏，刘璋战败投降，刘备自领益州牧，以费诗为督军从事。后出任牂柯郡太守，又转任益州前部司马。 [2-4]",
+      "intensity": 50
+    },
+    {
+      "a": "fei_shi",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "刘备在涪县击败刘璋军的抵抗后，领兵进逼绵竹，费诗率先举城归附。公元214年（建安十九年）夏，刘璋战败投降，刘备自领益州牧，以费诗为督军从事。后出任牂柯郡太守，又转任益州前部司马。 [2-4]",
+      "intensity": 50
+    },
+    {
+      "a": "fei_shi",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "25年（建兴三年春），费诗随丞相诸葛亮南征四郡。其秋，南征取得胜利，费诗随诸葛亮来到朱提郡汉阳县。时投降蜀汉的李鸿来拜会诸葛亮，得到诸葛亮的接见，费诗和蒋琬亦同时在座会见李鸿。李鸿说：“我前不久经过孟",
+      "intensity": 50
+    },
+    {
+      "a": "fei_shi",
+      "b": "jiang_wan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "25年（建兴三年春），费诗随丞相诸葛亮南征四郡。其秋，南征取得胜利，费诗随诸葛亮来到朱提郡汉阳县。时投降蜀汉的李鸿来拜会诸葛亮，得到诸葛亮的接见，费诗和蒋琬亦同时在座会见李鸿。李鸿说：“我前不久经过孟",
+      "intensity": 50
+    },
+    {
+      "a": "fei_shi",
+      "b": "zhuge_liang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "孟达写信互相通报消息啊！”费诗却当场表达了反对的意见，进言道：“孟达这个小子，昔日对刘璋不忠，后来又背叛先主，这种反复小人哪里值得我们写信给他！”诸葛亮听后沉默而没表态。但是诸葛亮仍想引诱孟达作外援以",
+      "intensity": 80
+    },
+    {
+      "a": "fei_shi",
+      "b": "liu_zhang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "孟达写信互相通报消息啊！”费诗却当场表达了反对的意见，进言道：“孟达这个小子，昔日对刘璋不忠，后来又背叛先主，这种反复小人哪里值得我们写信给他！”诸葛亮听后沉默而没表态。但是诸葛亮仍想引诱孟达作外援以",
+      "intensity": 80
+    },
+    {
+      "a": "fei_shi",
+      "b": "meng_da",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "孟达写信互相通报消息啊！”费诗却当场表达了反对的意见，进言道：“孟达这个小子，昔日对刘璋不忠，后来又背叛先主，这种反复小人哪里值得我们写信给他！”诸葛亮听后沉默而没表态。但是诸葛亮仍想引诱孟达作外援以",
+      "intensity": 80
+    },
+    {
+      "a": "fei_shi",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "小说《三国演义》中出场于第65、73与91回，形象较历史上大致相同，为蜀汉官员。刘备攻取益州后，擢用归降的费诗。 [17]刘备自称汉中王，曹操得知后结连东吴，欲夺取荆州。诸葛亮建议进攻樊城以挫敌计，刘",
+      "intensity": 50
+    },
+    {
+      "a": "fei_shi",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_shi",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_shi",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_shi",
+      "b": "huang_zhong",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 黄忠 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_shi",
+      "b": "liu_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_shi",
+      "b": "jiang_wan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 蒋琬 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_yi",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_yi",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_yi",
+      "b": "wei_yan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 魏延 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_yi",
+      "b": "liu_shan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘禅 언급",
+      "intensity": 30
+    },
+    {
+      "a": "fei_yi",
+      "b": "jiang_wan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 蒋琬 언급",
+      "intensity": 30
+    },
+    {
       "a": "gan_ning",
       "b": "liu_biao",
       "type": "betrayal",
@@ -1383,6 +2880,497 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_lan",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "面派轻骑支援乌巢，一面派张郃、高览攻击曹洪。曹操斩杀淳于琼，轻骑败走，高览、张郃得知后烧毁攻橹，率众投降。高览之后的生平事迹史书无载。 [1-3] [5]<a class=\"imageLink_ES9",
+      "intensity": 50
+    },
+    {
+      "a": "gao_lan",
+      "b": "zhang_he",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "面派轻骑支援乌巢，一面派张郃、高览攻击曹洪。曹操斩杀淳于琼，轻骑败走，高览、张郃得知后烧毁攻橹，率众投降。高览之后的生平事迹史书无载。 [1-3] [5]<a class=\"imageLink_ES9",
+      "intensity": 50
+    },
+    {
+      "a": "gao_lan",
+      "b": "cao_hong",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "面派轻骑支援乌巢，一面派张郃、高览攻击曹洪。曹操斩杀淳于琼，轻骑败走，高览、张郃得知后烧毁攻橹，率众投降。高览之后的生平事迹史书无载。 [1-3] [5]<a class=\"imageLink_ES9",
+      "intensity": 50
+    },
+    {
+      "a": "gao_lan",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "人际关系播报编辑最初为袁绍的部将，官渡之战后归降曹操。 [11]",
+      "intensity": 50
+    },
+    {
+      "a": "gao_lan",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_lan",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_lan",
+      "b": "zhao_yun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 赵云 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_lan",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_lan",
+      "b": "xu_chu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 许褚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_lan",
+      "b": "zhang_he",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张郃 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_shun",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "。 [3] [22]建安元年（196年），吕布趁刘备东击袁术于淮水时，袭取刘备的根据地下邳。之后刘备投降吕布，吕布命刘备屯驻于小沛（今沛县），而自称为徐州刺史。",
+      "intensity": 50
+    },
+    {
+      "a": "gao_shun",
+      "b": "lv_bu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "。 [3] [22]建安元年（196年），吕布趁刘备东击袁术于淮水时，袭取刘备的根据地下邳。之后刘备投降吕布，吕布命刘备屯驻于小沛（今沛县），而自称为徐州刺史。",
+      "intensity": 50
+    },
+    {
+      "a": "gao_shun",
+      "b": "yuan_shu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "。 [3] [22]建安元年（196年），吕布趁刘备东击袁术于淮水时，袭取刘备的根据地下邳。之后刘备投降吕布，吕布命刘备屯驻于小沛（今沛县），而自称为徐州刺史。",
+      "intensity": 50
+    },
+    {
+      "a": "gao_shun",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "误的事情难道可以一再发生吗？”虽然吕布知道高顺忠心于己，可是吕布并没有重用高顺，紧接着吕布因为郝萌的谋反，对高顺变得更加疏远，凭借和魏续有外内之亲，夺取全部高顺所领导的陷阵营士兵给魏续，直到当要战争的",
+      "intensity": 80
+    },
+    {
+      "a": "gao_shun",
+      "b": "chen_gong",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "] 十二月癸酉日（199年2月7日 [16]），高顺、陈宫被侯成、宋宪、魏续叛将所捉拿，吕布不得已而投降。 [10-11]之后陈宫、高顺、吕布等人被擒到曹操面前，吕布、陈宫、高顺皆被缢杀，然后斩首送到",
+      "intensity": 50
+    },
+    {
+      "a": "gao_shun",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_shun",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_shun",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_shun",
+      "b": "xiahou_dun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯惇 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gao_shun",
+      "b": "zhang_liao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张辽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "liu_bei",
+      "type": "apprentice",
+      "source": "keyword",
+      "keyword": "师从",
+      "evidence": "还把女儿嫁给他为妻。 [2] [85]三国杀 公孙瓒原画熹平四年（175），侯太守派他到河南缑氏山，师从涿郡人卢植，学习儒学经典，在这里结识了刘备、刘德然，刘备将公孙瓒当作兄长看待。 [86]学业结束",
+      "intensity": 60
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "zhao_yun",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "史，单经为兖州刺史，各设置郡、县。冀州长吏皆望风响应 [16] [43] [52]，例如赵云就率郡兵投奔公孙瓒。公孙瓒仗着强大的兵力再次向邺城的袁绍发难，并进军到界桥。",
+      "intensity": 50
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "史，单经为兖州刺史，各设置郡、县。冀州长吏皆望风响应 [16] [43] [52]，例如赵云就率郡兵投奔公孙瓒。公孙瓒仗着强大的兵力再次向邺城的袁绍发难，并进军到界桥。",
+      "intensity": 50
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "dong_zhuo",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "第一条罪状。董卓入京后劫持君主，袁绍不能出谋献策，来帮助主上，却丢弃符节，奔窜逃亡。辱没了他的职务，背叛了他的君主，这是他的第二条罪状。袁绍为渤海太守时，悄悄准备兵马，即将攻打董卓，却不把此事告诉自己",
+      "intensity": 80
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "yuan_shao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "第一条罪状。董卓入京后劫持君主，袁绍不能出谋献策，来帮助主上，却丢弃符节，奔窜逃亡。辱没了他的职务，背叛了他的君主，这是他的第二条罪状。袁绍为渤海太守时，悄悄准备兵马，即将攻打董卓，却不把此事告诉自己",
+      "intensity": 80
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "阵亡。 [19]公孙瓒又趁胜向南攻克郡县，到达平原，派自己所设的青州刺史田楷占据齐国。刘备大概是此时投奔公孙瓒，被任命为别部司马。 [59] [92]本年冬，公孙瓒又派兵到龙凑挑战，并联络徐州刺史陶谦",
+      "intensity": 50
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "tao_qian",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "阵亡。 [19]公孙瓒又趁胜向南攻克郡县，到达平原，派自己所设的青州刺史田楷占据齐国。刘备大概是此时投奔公孙瓒，被任命为别部司马。 [59] [92]本年冬，公孙瓒又派兵到龙凑挑战，并联络徐州刺史陶谦",
+      "intensity": 50
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "sun_jian",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 孙坚 언급",
+      "intensity": 50
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "yuan_shu",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 袁术 언급",
+      "intensity": 50
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "sun_jian",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "往助袁术与孙坚一同攻打周昂，为流矢所中而死。公孙范，以勃海兵助公孙瓒。在界桥之战中与公孙瓒一同败走。结义兄弟卜数师刘纬台、贩缯李移子、贾人乐何当。后辈儿子公孙续，被公孙瓒派往黑山求张燕来救已迟，后为屠",
+      "intensity": 100
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "yuan_shu",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "往助袁术与孙坚一同攻打周昂，为流矢所中而死。公孙范，以勃海兵助公孙瓒。在界桥之战中与公孙瓒一同败走。结义兄弟卜数师刘纬台、贩缯李移子、贾人乐何当。后辈儿子公孙续，被公孙瓒派往黑山求张燕来救已迟，后为屠",
+      "intensity": 100
+    },
+    {
+      "a": "gongsun_zan",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "gu_yong",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "教子有方三国志12的顾雍顾雍教子有方。有次孙权出嫁一个侄女，嫁给顾氏的外甥，婚宴请了顾雍父子及孙子顾谭（时任位高的选曹尚书）。当时君臣们非常欢洽，顾谭多喝而醉，",
+      "intensity": 70
+    },
+    {
+      "a": "gu_yong",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_ping",
+      "b": "guan_yu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "“羽初出军围樊，梦猪啮其足，语子平曰：‘吾今年衰矣，然不得还！’” [2]地方志《关帝志》记载，关羽娶胡氏为妻，公元178年，胡氏生下了关平。 [1]",
+      "intensity": 70
+    },
+    {
+      "a": "guan_ping",
+      "b": "guan_yu",
+      "type": "parent_child",
+      "source": "section",
+      "section": "有无后代",
+      "evidence": "有无后代에서 关羽 언급",
+      "intensity": 90
+    },
+    {
+      "a": "guan_ping",
+      "b": "pang_de",
+      "type": "parent_child",
+      "source": "section",
+      "section": "有无后代",
+      "evidence": "有无后代에서 庞德 언급",
+      "intensity": 90
+    },
+    {
+      "a": "guan_ping",
+      "b": "guan_yu",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "桃园",
+      "evidence": "为本戏《关大王独赴单刀会》第三折。写关羽赴鲁肃宴请之前，对义子关平的一番教诲京剧《收关平》 [27]桃园弟兄古城团聚，大宴三军，操练人马。一日，关羽游猎，夜宿关定庄，关定仰慕关羽仁义，命子关平认关羽为",
+      "intensity": 100
+    },
+    {
+      "a": "guan_ping",
+      "b": "lu_su",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "桃园",
+      "evidence": "为本戏《关大王独赴单刀会》第三折。写关羽赴鲁肃宴请之前，对义子关平的一番教诲京剧《收关平》 [27]桃园弟兄古城团聚，大宴三军，操练人马。一日，关羽游猎，夜宿关定庄，关定仰慕关羽仁义，命子关平认关羽为",
+      "intensity": 100
+    },
+    {
+      "a": "guan_ping",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "联姻",
+      "evidence": "方才捉住了妖狐京剧、秦腔《走麦城》 [24-25]曹操遣使约孙权暗袭荆州，孙权命诸葛瑾往见关羽，代子联姻，事成则吴蜀合兵击魏。诸葛瑾会羽被拒，孙权决联魏攻荆州。孙权遣吕蒙督师，吕蒙以荆襄之间烽火台联接",
+      "intensity": 70
+    },
+    {
+      "a": "guan_ping",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "联姻",
+      "evidence": "方才捉住了妖狐京剧、秦腔《走麦城》 [24-25]曹操遣使约孙权暗袭荆州，孙权命诸葛瑾往见关羽，代子联姻，事成则吴蜀合兵击魏。诸葛瑾会羽被拒，孙权决联魏攻荆州。孙权遣吕蒙督师，吕蒙以荆襄之间烽火台联接",
+      "intensity": 70
+    },
+    {
+      "a": "guan_ping",
+      "b": "lv_meng",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "联姻",
+      "evidence": "方才捉住了妖狐京剧、秦腔《走麦城》 [24-25]曹操遣使约孙权暗袭荆州，孙权命诸葛瑾往见关羽，代子联姻，事成则吴蜀合兵击魏。诸葛瑾会羽被拒，孙权决联魏攻荆州。孙权遣吕蒙督师，吕蒙以荆襄之间烽火台联接",
+      "intensity": 70
+    },
+    {
+      "a": "guan_ping",
+      "b": "zhuge_jun",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "联姻",
+      "evidence": "方才捉住了妖狐京剧、秦腔《走麦城》 [24-25]曹操遣使约孙权暗袭荆州，孙权命诸葛瑾往见关羽，代子联姻，事成则吴蜀合兵击魏。诸葛瑾会羽被拒，孙权决联魏攻荆州。孙权遣吕蒙督师，吕蒙以荆襄之间烽火台联接",
+      "intensity": 70
+    },
+    {
+      "a": "guan_ping",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_ping",
+      "b": "cao_ren",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "liu_bei",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "，兴原随父羽在荆州 [4]，羽水淹七军后，关兴前往汉中报喜。后荆州失陷，关羽被杀，关兴与张飞之子张苞结义。跟随刘备参与伐吴的战役，拜为龙骧将军。在杀入敌阵时遇到杀父仇人潘璋，并紧追逃跑的潘璋而迷路。在",
+      "intensity": 100
+    },
+    {
+      "a": "guan_xing",
+      "b": "guan_yu",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "，兴原随父羽在荆州 [4]，羽水淹七军后，关兴前往汉中报喜。后荆州失陷，关羽被杀，关兴与张飞之子张苞结义。跟随刘备参与伐吴的战役，拜为龙骧将军。在杀入敌阵时遇到杀父仇人潘璋，并紧追逃跑的潘璋而迷路。在",
+      "intensity": 100
+    },
+    {
+      "a": "guan_xing",
+      "b": "zhang_fei",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "，兴原随父羽在荆州 [4]，羽水淹七军后，关兴前往汉中报喜。后荆州失陷，关羽被杀，关兴与张飞之子张苞结义。跟随刘备参与伐吴的战役，拜为龙骧将军。在杀入敌阵时遇到杀父仇人潘璋，并紧追逃跑的潘璋而迷路。在",
+      "intensity": 100
+    },
+    {
+      "a": "guan_xing",
+      "b": "zhang_bao",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "，兴原随父羽在荆州 [4]，羽水淹七军后，关兴前往汉中报喜。后荆州失陷，关羽被杀，关兴与张飞之子张苞结义。跟随刘备参与伐吴的战役，拜为龙骧将军。在杀入敌阵时遇到杀父仇人潘璋，并紧追逃跑的潘璋而迷路。在",
+      "intensity": 100
+    },
+    {
+      "a": "guan_xing",
+      "b": "pan_zhang",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "，兴原随父羽在荆州 [4]，羽水淹七军后，关兴前往汉中报喜。后荆州失陷，关羽被杀，关兴与张飞之子张苞结义。跟随刘备参与伐吴的战役，拜为龙骧将军。在杀入敌阵时遇到杀父仇人潘璋，并紧追逃跑的潘璋而迷路。在",
+      "intensity": 100
+    },
+    {
+      "a": "guan_xing",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "zhang_fei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张飞 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "guan_ping",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关平 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "zhang_bao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张苞 언급",
+      "intensity": 30
+    },
+    {
+      "a": "guan_xing",
+      "b": "pan_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 潘璋 언급",
       "intensity": 30
     },
     {
@@ -1674,14 +3662,6 @@
       "intensity": 30
     },
     {
-      "a": "guan_yu",
-      "b": "guan_ping",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 关平 언급",
-      "intensity": 30
-    },
-    {
       "a": "guo_jia",
       "b": "yuan_shao",
       "type": "defection",
@@ -1796,6 +3776,295 @@
       "intensity": 30
     },
     {
+      "a": "han_dang",
+      "b": "sun_quan",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 孙权 언급",
+      "intensity": 50
+    },
+    {
+      "a": "han_dang",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_dang",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_dang",
+      "b": "sun_jian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙坚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_sui",
+      "b": "dong_zhuo",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "共同策划进攻山东诸将。二人见天下大乱，也想要依靠董卓起兵。 [13]初平三年（192年），韩遂、马腾投降朝廷，率众来到长安。李傕控制下的朝廷任命韩遂为镇西将军，遣还金城，马腾任征西将军，驻军郿县。 [",
+      "intensity": 50
+    },
+    {
+      "a": "han_sui",
+      "b": "ma_teng",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "共同策划进攻山东诸将。二人见天下大乱，也想要依靠董卓起兵。 [13]初平三年（192年），韩遂、马腾投降朝廷，率众来到长安。李傕控制下的朝廷任命韩遂为镇西将军，遣还金城，马腾任征西将军，驻军郿县。 [",
+      "intensity": 50
+    },
+    {
+      "a": "han_sui",
+      "b": "ma_teng",
+      "type": "nemesis",
+      "source": "keyword",
+      "keyword": "仇敌",
+      "evidence": "乱，马腾不再东行，而与韩遂结为异姓兄弟，甚为亲近。 [18]后来，因部曲间的矛盾，马腾、韩遂二人成为仇敌，马腾攻韩遂，韩遂败走，又合兵还攻马腾，二人成为仇敌，韩遂杀掉了马腾的妻儿，二人连年交战。 [1",
+      "intensity": 90
+    },
+    {
+      "a": "han_sui",
+      "b": "ma_chao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "张鲁。让夏侯渊等率军出河东与钟繇合兵。而马超、侯选、程银、李堪、张横、梁兴、成宜、马玩、杨秋九部意图反叛，推举韩遂为都督。韩遂当时刚讨平张猛回师，马超便劝韩遂一同起兵。马超对韩遂说道：“如今，我马超弃",
+      "intensity": 80
+    },
+    {
+      "a": "han_sui",
+      "b": "xiahou_yuan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "张鲁。让夏侯渊等率军出河东与钟繇合兵。而马超、侯选、程银、李堪、张横、梁兴、成宜、马玩、杨秋九部意图反叛，推举韩遂为都督。韩遂当时刚讨平张猛回师，马超便劝韩遂一同起兵。马超对韩遂说道：“如今，我马超弃",
+      "intensity": 80
+    },
+    {
+      "a": "han_sui",
+      "b": "zhang_lu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "张鲁。让夏侯渊等率军出河东与钟繇合兵。而马超、侯选、程银、李堪、张横、梁兴、成宜、马玩、杨秋九部意图反叛，推举韩遂为都督。韩遂当时刚讨平张猛回师，马超便劝韩遂一同起兵。马超对韩遂说道：“如今，我马超弃",
+      "intensity": 80
+    },
+    {
+      "a": "han_sui",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "奋击，大破韩遂军，韩遂败走西平。 [33] [81]韩遂让阎行别领西平郡。阎行便纠集他的部曲欲杀韩遂投降，响应夏侯渊，乘夜攻击韩遂不能取胜，于是带着家人去投降曹操。韩遂叹道：“丈夫困厄，祸起于婚姻啊！",
+      "intensity": 50
+    },
+    {
+      "a": "han_sui",
+      "b": "xiahou_yuan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "奋击，大破韩遂军，韩遂败走西平。 [33] [81]韩遂让阎行别领西平郡。阎行便纠集他的部曲欲杀韩遂投降，响应夏侯渊，乘夜攻击韩遂不能取胜，于是带着家人去投降曹操。韩遂叹道：“丈夫困厄，祸起于婚姻啊！",
+      "intensity": 50
+    },
+    {
+      "a": "han_sui",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "并威胁阎行。韩遂听说阎行的父亲还活着，想要让他一同遇害，以此来坚定阎行的意志，于是强行把自己的小女儿嫁给阎行，阎行不得已而娶韩遂女。曹操果然怀疑阎行。 [32]建安十九年（214年）春，韩遂徙金城，进",
+      "intensity": 70
+    },
+    {
+      "a": "han_sui",
+      "b": "ma_teng",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "人际关系播报编辑结义兄弟：马腾 [18]女婿：阎行，娶韩遂小女儿 [32]",
+      "intensity": 100
+    },
+    {
+      "a": "han_sui",
+      "b": "ma_teng",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "人际关系播报编辑结义兄弟：马腾 [18]女婿：阎行，娶韩遂小女儿 [32]",
+      "intensity": 70
+    },
+    {
+      "a": "han_sui",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_sui",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_sui",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_sui",
+      "b": "sun_jian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙坚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_sui",
+      "b": "xiahou_yuan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯渊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "han_sui",
+      "b": "ma_teng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 马腾 언급",
+      "intensity": 30
+    },
+    {
+      "a": "he_jin",
+      "b": "dong_zhuo",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "尚书得诏板，怀疑有假，说：“请大将军出来共同商议。” [13]中黄门把何进的脑袋掷给尚书，说：“何进谋反，已经杀掉了。”于是袁绍等人借此机会带兵入宫，将宦官全部杀光。而后董卓依先前召令入京，不久即废少",
+      "intensity": 80
+    },
+    {
+      "a": "he_jin",
+      "b": "yuan_shao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "尚书得诏板，怀疑有假，说：“请大将军出来共同商议。” [13]中黄门把何进的脑袋掷给尚书，说：“何进谋反，已经杀掉了。”于是袁绍等人借此机会带兵入宫，将宦官全部杀光。而后董卓依先前召令入京，不久即废少",
+      "intensity": 80
+    },
+    {
+      "a": "he_jin",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "he_jin",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "hua_tuo",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "hua_xin",
+      "b": "sun_ce",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "当时会稽郡军队众多，最后他们都得到了孙策的原谅宽恕，无需顾虑。” [8]华歆知道孙策善于用兵，连夜作投降檄文，派遣官吏迎接，华歆穿布衣葛巾奉迎孙策，孙策便率军入城，对华歆说：“先生年高德劭，远近所归。",
+      "intensity": 50
+    },
+    {
+      "a": "hua_xin",
+      "b": "taishi_ci",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "略，调查庐陵与鄱阳人民是否亲附华歆，让其想带多少兵去自由决定，太史慈仅要求率数十人前往，带回刘繇部众归附孙策，向孙策汇报：“华歆无施政具体方略，仅顾自保。僮芝谎称受诏，占据庐陵自任太守；鄱阳民众也不服",
+      "intensity": 50
+    },
+    {
+      "a": "hua_xin",
+      "b": "sun_quan",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "好友",
+      "evidence": "留我是养一个无用之物，这不是好办法。”孙权听了很高兴，于是答应送他入京。听说华歆要进京赴任，他的宾朋好友及昔日同事千余人都赶来相送，并赠送了“数百金”的巨额钱物。华歆是来者不拒，暗中却在赠金上作了标记",
+      "intensity": 80
+    },
+    {
+      "a": "hua_xin",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "hua_xin",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "hua_xin",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "hua_xin",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "hua_xin",
+      "b": "yu_fan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 虞翻 언급",
+      "intensity": 30
+    },
+    {
       "a": "huang_gai",
       "b": "cao_cao",
       "type": "defection",
@@ -1868,6 +4137,32 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 孙坚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "huang_yueying",
+      "b": "zhuge_liang",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "择偶。我有一位相貌丑陋的女儿，生得黄头发黑皮肤，但是才能和你相匹配。”结果诸葛亮答应了，马上将黄氏迎娶过来。黄月英当时的人将这件事当作笑话，乡间有句谚语说：“莫学诸葛亮娶妻，正中了阿承的丑女儿。”黄氏",
+      "intensity": 70
+    },
+    {
+      "a": "huang_yueying",
+      "b": "liu_biao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "然发现岳父一家的社会关系非常复杂。岳父和刘表是连襟，当年，荆州首屈一指的实力派人物蔡瑁将两个姐姐分别嫁给了刘表和黄承彦。也就是说，刘表现在不仅仅是诸葛亮叔叔的好朋友，还是自己妻子的姨父，关系更进了一步",
+      "intensity": 70
+    },
+    {
+      "a": "huang_yueying",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
       "intensity": 30
     },
     {
@@ -1980,6 +4275,99 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "huangfu_song",
+      "b": "dong_zhuo",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "这是抗命不遵。他眼见京师不宁，踌躇不进，这是心怀不轨。董卓所做的两事不容宽赦，且他残暴无情，将士不愿归附。大人身为元帅，倚仗国威讨伐罪臣，上能体现忠义，下能铲除奸凶，这正是当年齐桓、晋文的做法。”皇甫",
+      "intensity": 50
+    },
+    {
+      "a": "huangfu_song",
+      "b": "dong_zhuo",
+      "type": "parent_child",
+      "source": "section",
+      "section": "后代",
+      "evidence": "后代에서 董卓 언급",
+      "intensity": 90
+    },
+    {
+      "a": "huangfu_song",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jia_kui",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "邺城，高干迫于形势而降曹，被命为并州刺史。次年，曹操率军北上援救被乌桓围困于犷平的左度辽将军鲜于辅。归降不久的高干趁机在并州反叛，并勾结河内人张晟、河东人卫固、弘农人张琰等，祸乱于崤山、渑水之间。起初",
+      "intensity": 50
+    },
+    {
+      "a": "jia_kui",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "，被命为并州刺史。次年，曹操率军北上援救被乌桓围困于犷平的左度辽将军鲜于辅。归降不久的高干趁机在并州反叛，并勾结河内人张晟、河东人卫固、弘农人张琰等，祸乱于崤山、渑水之间。起初，贾逵不知张琰已谋叛，前",
+      "intensity": 80
+    },
+    {
+      "a": "jia_kui",
+      "b": "cao_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "魏氏忠臣贾逵非常忠诚，如当中被郭援威逼仍宁死不愿向他投降。另在曹操死后，鄢陵侯曹彰由长安赶来，问曹操的玺绶时，贾逵则严肃地说：“天子在邺，国有储辅。先王",
+      "intensity": 50
+    },
+    {
+      "a": "jia_kui",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jia_kui",
+      "b": "sima_yi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马懿 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jia_kui",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jia_kui",
+      "b": "cao_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹休 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jia_kui",
+      "b": "man_chong",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 满宠 언급",
       "intensity": 30
     },
     {
@@ -2120,6 +4508,127 @@
       "intensity": 30
     },
     {
+      "a": "jian_yong",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "环画-简雍《火凤燎原》的简雍（右下）建安十九年（214年），刘备将刘璋在成都包围，简雍被派去游说刘璋投降，刘璋答应，并与简雍同车出城投降。刘备定益州后，论功行赏，拜简雍为昭德将军，待遇仅次于麋竺，与孙",
+      "intensity": 50
+    },
+    {
+      "a": "jian_yong",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "环画-简雍《火凤燎原》的简雍（右下）建安十九年（214年），刘备将刘璋在成都包围，简雍被派去游说刘璋投降，刘璋答应，并与简雍同车出城投降。刘备定益州后，论功行赏，拜简雍为昭德将军，待遇仅次于麋竺，与孙",
+      "intensity": 50
+    },
+    {
+      "a": "jian_yong",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "中，简雍形象与正史相似。与刘备同乡。随其周旋，任幕宾。刘备投袁绍，后想要离去，简雍为其设计脱身。刘璋投降时，以简雍为使，简雍坐于车中，有意的傲睨自若，为秦宓所斥责。不久，拜简雍为昭德将军。",
+      "intensity": 50
+    },
+    {
+      "a": "jian_yong",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jian_yong",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jian_yong",
+      "b": "liu_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jiang_wan",
+      "b": "jiang_wei",
+      "type": "parent_child",
+      "source": "section",
+      "section": "后代",
+      "evidence": "后代에서 姜维 언급",
+      "intensity": 90
+    },
+    {
+      "a": "jiang_wan",
+      "b": "zhong_hui",
+      "type": "parent_child",
+      "source": "section",
+      "section": "后代",
+      "evidence": "后代에서 钟会 언급",
+      "intensity": 90
+    },
+    {
+      "a": "jiang_wan",
+      "b": "liu_shan",
+      "type": "parent_child",
+      "source": "section",
+      "section": "后代",
+      "evidence": "后代에서 刘禅 언급",
+      "intensity": 90
+    },
+    {
+      "a": "jiang_wan",
+      "b": "jiang_wei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "后代蒋斌，蒋琬长子，承袭蒋琬爵位，官至绥武将军、汉城护军。蜀汉亡后，投降钟会，在成都为乱兵所杀。 [13]蒋显，蒋琬次子，官至太子仆。蜀汉灭亡时，刘禅命其前往剑阁令姜维",
+      "intensity": 50
+    },
+    {
+      "a": "jiang_wan",
+      "b": "zhong_hui",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "后代蒋斌，蒋琬长子，承袭蒋琬爵位，官至绥武将军、汉城护军。蜀汉亡后，投降钟会，在成都为乱兵所杀。 [13]蒋显，蒋琬次子，官至太子仆。蜀汉灭亡时，刘禅命其前往剑阁令姜维",
+      "intensity": 50
+    },
+    {
+      "a": "jiang_wan",
+      "b": "liu_shan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "后代蒋斌，蒋琬长子，承袭蒋琬爵位，官至绥武将军、汉城护军。蜀汉亡后，投降钟会，在成都为乱兵所杀。 [13]蒋显，蒋琬次子，官至太子仆。蜀汉灭亡时，刘禅命其前往剑阁令姜维",
+      "intensity": 50
+    },
+    {
+      "a": "jiang_wan",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "jiang_wan",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
       "a": "jiang_wei",
       "b": "zhuge_liang",
       "type": "defection",
@@ -2172,15 +4681,6 @@
       "keyword": "谋反",
       "evidence": "一日，邓艾遭钟会陷害，被曹魏下令以槛车押回洛阳。 [66]此时钟会自认为功名盖世，不可再为人下，于是谋反。姜维发觉钟会的异心，认为可以趁机复兴蜀汉，就对钟会说：“听闻您自淮南平叛以来，算无遗策，晋道克",
       "intensity": 80
-    },
-    {
-      "a": "jiang_wei",
-      "b": "jiang_wan",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "63年），钟会伐蜀，率领大军围住汉、乐二城，久攻不下。钟会无奈，写信给驻守在汉城的蒋琬之子蒋斌，劝其投降，但遭到拒绝。 [24]而此时关口守将蒋舒献关投降，傅佥战死。钟会于是只留轻军围汉城，自率大军长",
-      "intensity": 50
     },
     {
       "a": "jiang_wei",
@@ -2239,6 +4739,456 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 费祎 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ju_shou",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ju_shou",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "kan_ze",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "kan_ze",
+      "b": "yu_fan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 虞翻 언급",
+      "intensity": 30
+    },
+    {
+      "a": "kong_rong",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "想当然耳曹操攻屠邺城，袁绍家的妇人和幼子 [82]多被掳掠。曹操的儿子曹丕私自娶了袁熙的妻子甄氏。孔融写信给曹操，说：“武王伐纣，把妲己赏赐给周公。”曹操不明白，但因为孔融学识渊",
+      "intensity": 70
+    },
+    {
+      "a": "kong_rong",
+      "b": "yuan_shao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "想当然耳曹操攻屠邺城，袁绍家的妇人和幼子 [82]多被掳掠。曹操的儿子曹丕私自娶了袁熙的妻子甄氏。孔融写信给曹操，说：“武王伐纣，把妲己赏赐给周公。”曹操不明白，但因为孔融学识渊",
+      "intensity": 70
+    },
+    {
+      "a": "kong_rong",
+      "b": "cao_pi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "想当然耳曹操攻屠邺城，袁绍家的妇人和幼子 [82]多被掳掠。曹操的儿子曹丕私自娶了袁熙的妻子甄氏。孔融写信给曹操，说：“武王伐纣，把妲己赏赐给周公。”曹操不明白，但因为孔融学识渊",
+      "intensity": 70
+    },
+    {
+      "a": "kong_rong",
+      "b": "yuan_xi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "想当然耳曹操攻屠邺城，袁绍家的妇人和幼子 [82]多被掳掠。曹操的儿子曹丕私自娶了袁熙的妻子甄氏。孔融写信给曹操，说：“武王伐纣，把妲己赏赐给周公。”曹操不明白，但因为孔融学识渊",
+      "intensity": 70
+    },
+    {
+      "a": "kong_rong",
+      "b": "cao_cao",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "好友",
+      "evidence": "融口出怨言，为郗虑宾客所听闻。郗虑素来与孔融不睦，于是将此事告诉曹操，孔融被下狱弃市。妻子都被诛杀。好友脂习冒险为其收尸。 [70]",
+      "intensity": 80
+    },
+    {
+      "a": "kong_rong",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "kong_rong",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "kong_rong",
+      "b": "yuan_tan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁谭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lady_zhen",
+      "b": "yuan_shao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "居都在一起，关系十分亲密。 [12]建安年间（196年—220年 [126]），袁绍为他的次子袁熙聘娶了甄氏为妻。 [2] [126]建安四年 [127]（199年），袁绍打败公孙瓒，任命甄氏的丈夫袁",
+      "intensity": 70
+    },
+    {
+      "a": "lady_zhen",
+      "b": "yuan_xi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "居都在一起，关系十分亲密。 [12]建安年间（196年—220年 [126]），袁绍为他的次子袁熙聘娶了甄氏为妻。 [2] [126]建安四年 [127]（199年），袁绍打败公孙瓒，任命甄氏的丈夫袁",
+      "intensity": 70
+    },
+    {
+      "a": "lady_zhen",
+      "b": "gongsun_zan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "居都在一起，关系十分亲密。 [12]建安年间（196年—220年 [126]），袁绍为他的次子袁熙聘娶了甄氏为妻。 [2] [126]建安四年 [127]（199年），袁绍打败公孙瓒，任命甄氏的丈夫袁",
+      "intensity": 70
+    },
+    {
+      "a": "lady_zhen",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "起头来，曹丕看见她美貌非凡，便心悦于她。曹操听闻了曹丕的心思，就为他迎娶了甄氏。 [15-16]甄氏嫁给曹丕后，擅室数岁， [17]生下儿子曹叡和女儿曹氏（东乡公主）。甄氏对曹丕妾侍中有宠的劝勉她们努",
+      "intensity": 70
+    },
+    {
+      "a": "lady_zhen",
+      "b": "cao_pi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "起头来，曹丕看见她美貌非凡，便心悦于她。曹操听闻了曹丕的心思，就为他迎娶了甄氏。 [15-16]甄氏嫁给曹丕后，擅室数岁， [17]生下儿子曹叡和女儿曹氏（东乡公主）。甄氏对曹丕妾侍中有宠的劝勉她们努",
+      "intensity": 70
+    },
+    {
+      "a": "lady_zhen",
+      "b": "cao_zhi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "李善注引《汉书音义》：宓妃，是伏羲的女儿，溺死于洛水中成为洛水之神。《昭明文选》说：魏东阿王曹植曾求娶甄氏为妃，曹操却将她许给曹丕。甄后被进谗而赐死后，曹丕将她的遗物玉带金镂枕送给曹植。曹植离京归国途",
+      "intensity": 70
+    },
+    {
+      "a": "lady_zhen",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lady_zhen",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lady_zhen",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lady_zhen",
+      "b": "yuan_xi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁熙 언급",
+      "intensity": 30
+    },
+    {
+      "a": "li_dian",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。 [1-2]于是，曹操派李乾回到乘氏，",
+      "intensity": 50
+    },
+    {
+      "a": "li_dian",
+      "b": "lv_bu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。 [1-2]于是，曹操派李乾回到乘氏，",
+      "intensity": 50
+    },
+    {
+      "a": "li_dian",
+      "b": "chen_gong",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。 [1-2]于是，曹操派李乾回到乘氏，",
+      "intensity": 50
+    },
+    {
+      "a": "li_dian",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "巾军，又跟随曹操攻打袁术，征讨徐州。兴平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。",
+      "intensity": 80
+    },
+    {
+      "a": "li_dian",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "巾军，又跟随曹操攻打袁术，征讨徐州。兴平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。",
+      "intensity": 80
+    },
+    {
+      "a": "li_dian",
+      "b": "yuan_shu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "巾军，又跟随曹操攻打袁术，征讨徐州。兴平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。",
+      "intensity": 80
+    },
+    {
+      "a": "li_dian",
+      "b": "chen_gong",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "巾军，又跟随曹操攻打袁术，征讨徐州。兴平元年（194年），乘曹操攻打徐州之计，留守兖州的张邈、陈宫等反叛，迎接吕布入主兖州，兖州各郡县纷纷归附吕布。吕布军到达乘氏，李氏宗族在李进的领导下，保住了乘氏。",
+      "intensity": 80
+    },
+    {
+      "a": "li_dian",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "li_dian",
+      "b": "xiahou_dun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯惇 언급",
+      "intensity": 30
+    },
+    {
+      "a": "li_dian",
+      "b": "yu_jin",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 于禁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "li_yan",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "1]李严建安十八年（213年），刘璋任李严为护军，费观为参军，在绵竹一带抵抗刘备。李严与费观率领部众投降刘备，刘备任命李严为裨将军。平定成都后，李严被任命为犍为太守、兴业将军。 [1] [12]益州在",
+      "intensity": 50
+    },
+    {
+      "a": "li_yan",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "1]李严建安十八年（213年），刘璋任李严为护军，费观为参军，在绵竹一带抵抗刘备。李严与费观率领部众投降刘备，刘备任命李严为裨将军。平定成都后，李严被任命为犍为太守、兴业将军。 [1] [12]益州在",
+      "intensity": 50
+    },
+    {
+      "a": "li_yan",
+      "b": "fei_guan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "1]李严建安十八年（213年），刘璋任李严为护军，费观为参军，在绵竹一带抵抗刘备。李严与费观率领部众投降刘备，刘备任命李严为裨将军。平定成都后，李严被任命为犍为太守、兴业将军。 [1] [12]益州在",
+      "intensity": 50
+    },
+    {
+      "a": "li_yan",
+      "b": "liu_bei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "（223年），刘禅继位，李严被封为都乡侯，假节，加光禄勋。 [3] [20]刘备去世后，益州大姓雍闿反叛。李严给雍闿写了一封六张纸的信，向雍闿说明利害，常颀行部南下时以此信晓喻雍闿。但雍闿傲慢无礼，只",
+      "intensity": 80
+    },
+    {
+      "a": "li_yan",
+      "b": "liu_shan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "（223年），刘禅继位，李严被封为都乡侯，假节，加光禄勋。 [3] [20]刘备去世后，益州大姓雍闿反叛。李严给雍闿写了一封六张纸的信，向雍闿说明利害，常颀行部南下时以此信晓喻雍闿。但雍闿傲慢无礼，只",
+      "intensity": 80
+    },
+    {
+      "a": "li_yan",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "备大军进攻绵竹时，刘璋任命李严守绵竹抵抗刘备，和黄忠战了四十多回合不分胜负，被孔明安排黄忠诈败包围后投降。夷陵之战后，在刘备死前，召诸葛亮和李严听受遗命，刘备病死后，诸葛亮在回成都前任命李严守永安宫，",
+      "intensity": 50
+    },
+    {
+      "a": "li_yan",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "li_yan",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "li_yan",
+      "b": "liu_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liao_hua",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liao_hua",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liao_hua",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liao_hua",
+      "b": "jiang_wei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 姜维 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liao_hua",
+      "b": "deng_ai",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 邓艾 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liao_hua",
+      "b": "zhong_hui",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 钟会 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ling_tong",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "虽然身在军队，却仍亲待贤人，接近士人，轻财重义，成为当时所推仰的国士。 [3]先前凌统之杀父仇人甘宁投奔孙权。凌统怨恨甘宁，甘宁也防备凌统，尽量避免和他见面。孙权命令凌统，不得与甘宁为仇。曾经两人在吕",
+      "intensity": 50
+    },
+    {
+      "a": "ling_tong",
+      "b": "gan_ning",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "虽然身在军队，却仍亲待贤人，接近士人，轻财重义，成为当时所推仰的国士。 [3]先前凌统之杀父仇人甘宁投奔孙权。凌统怨恨甘宁，甘宁也防备凌统，尽量避免和他见面。孙权命令凌统，不得与甘宁为仇。曾经两人在吕",
+      "intensity": 50
+    },
+    {
+      "a": "ling_tong",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ling_tong",
+      "b": "zhou_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周瑜 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ling_tong",
+      "b": "lv_meng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕蒙 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ling_tong",
+      "b": "zhang_liao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张辽 언급",
       "intensity": 30
     },
     {
@@ -2370,15 +5320,6 @@
     {
       "a": "liu_bei",
       "b": "liu_zhang",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "77]建安十八年（213年），刘璋派遣刘璝、泠苞、张任、邓贤、吴懿等在涪阻击刘备，都被刘备打败，吴懿投降。刘璋又派李严、费观统帅绵竹诸军阻击刘备，李严率众投降。刘备军力益强，分军平定各县。同时调诸葛亮",
-      "intensity": 50
-    },
-    {
-      "a": "liu_bei",
-      "b": "li_yan",
       "type": "defection",
       "source": "keyword",
       "keyword": "投降",
@@ -2674,6 +5615,481 @@
       "intensity": 30
     },
     {
+      "a": "liu_feng",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "达演奏鼓乐的乐队，孟达一方面害怕刘备治罪，另一方面又对刘封十分忿恨，于是修书一封给刘备，然后率领部曲投降曹魏。 [5]",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "meng_da",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "达演奏鼓乐的乐队，孟达一方面害怕刘备治罪，另一方面又对刘封十分忿恨，于是修书一封给刘备，然后率领部曲投降曹魏。 [5]",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "cao_pi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "被赐自尽孟达投降魏国之后，魏文帝曹丕派遣夏侯尚督率徐晃、孟达等军，袭取东三郡。孟达写信给刘封，劝刘封投降，但被刘",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "xu_huang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "被赐自尽孟达投降魏国之后，魏文帝曹丕派遣夏侯尚督率徐晃、孟达等军，袭取东三郡。孟达写信给刘封，劝刘封投降，但被刘",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "liu_bei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "派遣夏侯尚督率徐晃、孟达等军，袭取东三郡。孟达写信给刘封，劝刘封投降，但被刘封拒绝。 [6-7]申仪背叛刘封，刘封被孟达、徐晃等击败退走成都，申耽也投降曹魏。刘封回到成都后，刘备责备他欺凌孟达，且不救",
+      "intensity": 80
+    },
+    {
+      "a": "liu_feng",
+      "b": "xu_huang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "派遣夏侯尚督率徐晃、孟达等军，袭取东三郡。孟达写信给刘封，劝刘封投降，但被刘封拒绝。 [6-7]申仪背叛刘封，刘封被孟达、徐晃等击败退走成都，申耽也投降曹魏。刘封回到成都后，刘备责备他欺凌孟达，且不救",
+      "intensity": 80
+    },
+    {
+      "a": "liu_feng",
+      "b": "meng_da",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "派遣夏侯尚督率徐晃、孟达等军，袭取东三郡。孟达写信给刘封，劝刘封投降，但被刘封拒绝。 [6-7]申仪背叛刘封，刘封被孟达、徐晃等击败退走成都，申耽也投降曹魏。刘封回到成都后，刘备责备他欺凌孟达，且不救",
+      "intensity": 80
+    },
+    {
+      "a": "liu_feng",
+      "b": "liu_bei",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 刘备 언급",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "liu_shan",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 刘禅 언급",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "刘封、孟达求援，刘封误听孟达离间之言，不发兵救援，终使关羽为孙权所杀。刘备为此感到非常愤恨，孟达畏罪投降曹魏，与徐晃将兵伐上庸，并修书刘封劝降。刘封大怒，扯书斩使，与孟达交战，三合击败孟达，但旋即遭到",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "刘封、孟达求援，刘封误听孟达离间之言，不发兵救援，终使关羽为孙权所杀。刘备为此感到非常愤恨，孟达畏罪投降曹魏，与徐晃将兵伐上庸，并修书刘封劝降。刘封大怒，扯书斩使，与孟达交战，三合击败孟达，但旋即遭到",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "liu_biao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "《三国演义》中，刘封生平与正史大体相当，为罗侯寇氏之子，年少时就成了孤儿，被舅舅刘泌收养。刘备到荆州投奔刘表后，将刘封收为义子。刘封随刘备参与了新野、赤壁之战，累立战功。刘封刘备攻打汉中时，刘封率兵接",
+      "intensity": 50
+    },
+    {
+      "a": "liu_feng",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_feng",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_feng",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_feng",
+      "b": "zhang_fei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张飞 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_feng",
+      "b": "zhao_yun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 赵云 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_feng",
+      "b": "xu_huang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 徐晃 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_feng",
+      "b": "meng_da",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孟达 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "sun_quan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "细，咸决于亮”。同年，刘禅册张飞之女张氏为皇后。这一年，蜀汉国内叛乱四起，先有牂牁郡太守朱褒占据本郡反叛，后有夷王高定起兵。诸葛亮为稳定形势，派尚书郎邓芝出使吴国，与孙权修好。魏军五路攻蜀的消息传到成",
+      "intensity": 80
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhuge_liang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "细，咸决于亮”。同年，刘禅册张飞之女张氏为皇后。这一年，蜀汉国内叛乱四起，先有牂牁郡太守朱褒占据本郡反叛，后有夷王高定起兵。诸葛亮为稳定形势，派尚书郎邓芝出使吴国，与孙权修好。魏军五路攻蜀的消息传到成",
+      "intensity": 80
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhang_fei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "细，咸决于亮”。同年，刘禅册张飞之女张氏为皇后。这一年，蜀汉国内叛乱四起，先有牂牁郡太守朱褒占据本郡反叛，后有夷王高定起兵。诸葛亮为稳定形势，派尚书郎邓芝出使吴国，与孙权修好。魏军五路攻蜀的消息传到成",
+      "intensity": 80
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhong_hui",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "国亡投降景耀六年（263年），姜维听闻钟会于关中治兵，于是上书给刘禅调兵遣将以做准备，但黄皓告诉刘禅敌人",
+      "intensity": 50
+    },
+    {
+      "a": "liu_shan",
+      "b": "deng_ai",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "许刘禅住在原来的宫中。 [64] [74]魏景元五年（264年）正月，邓艾被收捕。钟会进入成都，图谋反叛曹魏，以姜维为爪牙，而姜维准备借钟会之手诛杀魏将，之后杀死钟会，尽坑魏兵，复兴蜀汉，并写密信给刘",
+      "intensity": 80
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhong_hui",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "许刘禅住在原来的宫中。 [64] [74]魏景元五年（264年）正月，邓艾被收捕。钟会进入成都，图谋反叛曹魏，以姜维为爪牙，而姜维准备借钟会之手诛杀魏将，之后杀死钟会，尽坑魏兵，复兴蜀汉，并写密信给刘",
+      "intensity": 80
+    },
+    {
+      "a": "liu_shan",
+      "b": "liu_bei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "中被人卖了。建安十六年（211年），扶风人刘括避乱入汉中，买得因乱失散的刘备长子刘禅，遂养以为子，为娶妻立家，刘禅只记得其父字玄德。邻居有姓简的一个人，后来刘备攻下益州简某当了将军，刘备派遣简某到汉中",
+      "intensity": 70
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhang_fei",
+      "type": "spouse",
+      "source": "section",
+      "section": "妻妾",
+      "evidence": "妻妾에서 张飞 언급",
+      "intensity": 80
+    },
+    {
+      "a": "liu_shan",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhao_yun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 赵云 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "jiang_wei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 姜维 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "deng_ai",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 邓艾 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "zhong_hui",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 钟会 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_shan",
+      "b": "sima_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_yan",
+      "b": "dong_zhuo",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "尉刘璋都留在京城跟随献帝，唯独第三子别部司马刘瑁跟随刘焉。刘焉得知陈留人吴懿之妹有大贵之相，就让刘瑁娶吴氏。刘焉在益州，不受权臣董卓调遣，董卓便收捕刘范兄弟三人，在郿坞私设牢房来关押他们。后来，刘焉自",
+      "intensity": 70
+    },
+    {
+      "a": "liu_yan",
+      "b": "liu_zhang",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "尉刘璋都留在京城跟随献帝，唯独第三子别部司马刘瑁跟随刘焉。刘焉得知陈留人吴懿之妹有大贵之相，就让刘瑁娶吴氏。刘焉在益州，不受权臣董卓调遣，董卓便收捕刘范兄弟三人，在郿坞私设牢房来关押他们。后来，刘焉自",
+      "intensity": 70
+    },
+    {
+      "a": "liu_yan",
+      "b": "wu_yi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "尉刘璋都留在京城跟随献帝，唯独第三子别部司马刘瑁跟随刘焉。刘焉得知陈留人吴懿之妹有大贵之相，就让刘瑁娶吴氏。刘焉在益州，不受权臣董卓调遣，董卓便收捕刘范兄弟三人，在郿坞私设牢房来关押他们。后来，刘焉自",
+      "intensity": 70
+    },
+    {
+      "a": "liu_yan",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "份建立的割据势力为三国时代最早的一批，同时是持续时间较长的，直到建安十九年（214年）其子刘璋向刘备投降才终结。",
+      "intensity": 50
+    },
+    {
+      "a": "liu_yan",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "份建立的割据势力为三国时代最早的一批，同时是持续时间较长的，直到建安十九年（214年）其子刘璋向刘备投降才终结。",
+      "intensity": 50
+    },
+    {
+      "a": "liu_yan",
+      "b": "liu_biao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘表 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_yan",
+      "b": "zhang_lu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张鲁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_yan",
+      "b": "ma_teng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 马腾 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_ye",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "出，祸今至矣。”但刘勋不听，坚持出兵。而孙策果然从后乘虚袭击刘勋，刘勋失败后，于建安四年（199年）投奔曹操。 [3]刘晔",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "sun_ce",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "出，祸今至矣。”但刘勋不听，坚持出兵。而孙策果然从后乘虚袭击刘勋，刘勋失败后，于建安四年（199年）投奔曹操。 [3]刘晔",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "取胜，劝夏侯惇等不要退军。夏侯惇见后相信，于是回去告诉曹操，曹操于是进攻张卫，张卫不敌退走。张鲁不久投降，曹操得汉中。刘晔及后即劝曹操进攻刘备新占的蜀地，认为攻占汉中后令蜀人震惊，只要进攻他们就会望风",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "xiahou_dun",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "取胜，劝夏侯惇等不要退军。夏侯惇见后相信，于是回去告诉曹操，曹操于是进攻张卫，张卫不敌退走。张鲁不久投降，曹操得汉中。刘晔及后即劝曹操进攻刘备新占的蜀地，认为攻占汉中后令蜀人震惊，只要进攻他们就会望风",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "zhang_lu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "取胜，劝夏侯惇等不要退军。夏侯惇见后相信，于是回去告诉曹操，曹操于是进攻张卫，张卫不敌退走。张鲁不久投降，曹操得汉中。刘晔及后即劝曹操进攻刘备新占的蜀地，认为攻占汉中后令蜀人震惊，只要进攻他们就会望风",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "投降，曹操得汉中。刘晔及后即劝曹操进攻刘备新占的蜀地，认为攻占汉中后令蜀人震惊，只要进攻他们就会望风归附；否则让诸葛亮、关羽、张飞等人稳定人心，据守险要，那日后就难以征服。但曹操不听。七日后，有从蜀地",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "投降，曹操得汉中。刘晔及后即劝曹操进攻刘备新占的蜀地，认为攻占汉中后令蜀人震惊，只要进攻他们就会望风归附；否则让诸葛亮、关羽、张飞等人稳定人心，据守险要，那日后就难以征服。但曹操不听。七日后，有从蜀地",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "zhang_fei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "投降，曹操得汉中。刘晔及后即劝曹操进攻刘备新占的蜀地，认为攻占汉中后令蜀人震惊，只要进攻他们就会望风归附；否则让诸葛亮、关羽、张飞等人稳定人心，据守险要，那日后就难以征服。但曹操不听。七日后，有从蜀地",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "cao_pi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "知人魏讽在东汉末年很有名声，卿相以下的官员都与他诚心结交。公元220年（延康元年），刘备将领孟达率众投降，曹丕对孟达甚为器重，任命他为新城太守，加散骑常侍；当时的人都称他有“乐毅之量”。而刘晔一见他们",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "meng_da",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "知人魏讽在东汉末年很有名声，卿相以下的官员都与他诚心结交。公元220年（延康元年），刘备将领孟达率众投降，曹丕对孟达甚为器重，任命他为新城太守，加散骑常侍；当时的人都称他有“乐毅之量”。而刘晔一见他们",
+      "intensity": 50
+    },
+    {
+      "a": "liu_ye",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_ye",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "liu_ye",
+      "b": "zhang_lu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张鲁 언급",
+      "intensity": 30
+    },
+    {
       "a": "liu_zhang",
       "b": "fei_guan",
       "type": "marriage",
@@ -2699,15 +6115,6 @@
       "keyword": "仇敌",
       "evidence": "张鲁骄纵，不听刘璋号令，巴夷杜濩、朴胡、袁约等人又背叛刘璋投靠张鲁。刘璋大怒，杀死张鲁母弟，双方成为仇敌，刘璋派和德中郎将庞羲与李思等人攻击张鲁，但多次被张鲁击败。 [5] [23] [56]后来，赵",
       "intensity": 90
-    },
-    {
-      "a": "liu_zhang",
-      "b": "li_yan",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "48]建安十八年（213年），刘璋遣刘璝、冷苞、张任、邓贤、吴懿等在涪县抵御刘备，结果战败，吴懿率军投降，其他人退守绵竹。刘璋没有选择坚壁清野，使刘备得到了充足的物资，进而攻击绵竹。刘璋又遣李严、费观",
-      "intensity": 50
     },
     {
       "a": "liu_zhang",
@@ -3007,6 +6414,22 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 陶谦 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lu_kang",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lu_kang",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
       "intensity": 30
     },
     {
@@ -3429,6 +6852,89 @@
       "intensity": 30
     },
     {
+      "a": "lu_zhi",
+      "b": "yuan_shu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "[21] [48]同年八月，发生政变，何进被杀，袁术等人攻烧宫门，张让、段珪等人对何太后声称何进部下谋反，于是带着太后、刘辩及陈留王刘协出逃，又劫持省内宫属，走到北宫。卢植持着戈站在阁道窗下，抬起头指",
+      "intensity": 80
+    },
+    {
+      "a": "lu_zhi",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lu_zhi",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lu_zhi",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lu_zhi",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lu_zhi",
+      "b": "gongsun_zan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 公孙瓒 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lv_dai",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "沙三郡，而安成、攸、永新、茶陵四县的官吏一道进入阴山城，聚合兵众抗拒吕岱，吕岱进攻围寨，这些人众全都投降，三郡于是平定。孙权留下吕岱镇守长沙。安成县县长吴砀及中郎将袁龙等响应关羽，再为反乱。吴砀占据攸",
+      "intensity": 50
+    },
+    {
+      "a": "lv_dai",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "沙三郡，而安成、攸、永新、茶陵四县的官吏一道进入阴山城，聚合兵众抗拒吕岱，吕岱进攻围寨，这些人众全都投降，三郡于是平定。孙权留下吕岱镇守长沙。安成县县长吴砀及中郎将袁龙等响应关羽，再为反乱。吴砀占据攸",
+      "intensity": 50
+    },
+    {
+      "a": "lv_dai",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "lv_dai",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
       "a": "ma_chao",
       "b": "cao_cao",
       "type": "betrayal",
@@ -3576,6 +7082,386 @@
       "intensity": 30
     },
     {
+      "a": "ma_dai",
+      "b": "ma_chao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "庙唐家河保护区·青溪古镇·老北川马岱雕像五丈原 武侯庙马岱雕像建安十八年（213年）九月，马岱随马超投奔汉中依附张鲁。 [4]<div style=\"display:none\" class=\"valu",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "zhang_lu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "庙唐家河保护区·青溪古镇·老北川马岱雕像五丈原 武侯庙马岱雕像建安十八年（213年）九月，马岱随马超投奔汉中依附张鲁。 [4]<div style=\"display:none\" class=\"valu",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "马岱随之周旋。曾在潼关前打败钟繇。建安十九年，马岱随马超救援刘璋，曾与张飞大战十余合败北，旋即随马超归降刘备。刘禅登基后，跟随丞相诸葛亮南征孟获和北伐曹魏。马岱久经沙场、多负辛劳，作战冷静而勇猛，深得",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "马岱随之周旋。曾在潼关前打败钟繇。建安十九年，马岱随马超救援刘璋，曾与张飞大战十余合败北，旋即随马超归降刘备。刘禅登基后，跟随丞相诸葛亮南征孟获和北伐曹魏。马岱久经沙场、多负辛劳，作战冷静而勇猛，深得",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "zhang_fei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "马岱随之周旋。曾在潼关前打败钟繇。建安十九年，马岱随马超救援刘璋，曾与张飞大战十余合败北，旋即随马超归降刘备。刘禅登基后，跟随丞相诸葛亮南征孟获和北伐曹魏。马岱久经沙场、多负辛劳，作战冷静而勇猛，深得",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "meng_huo",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "马岱随之周旋。曾在潼关前打败钟繇。建安十九年，马岱随马超救援刘璋，曾与张飞大战十余合败北，旋即随马超归降刘备。刘禅登基后，跟随丞相诸葛亮南征孟获和北伐曹魏。马岱久经沙场、多负辛劳，作战冷静而勇猛，深得",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "马岱随之周旋。曾在潼关前打败钟繇。建安十九年，马岱随马超救援刘璋，曾与张飞大战十余合败北，旋即随马超归降刘备。刘禅登基后，跟随丞相诸葛亮南征孟获和北伐曹魏。马岱久经沙场、多负辛劳，作战冷静而勇猛，深得",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "liu_shan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "马岱随之周旋。曾在潼关前打败钟繇。建安十九年，马岱随马超救援刘璋，曾与张飞大战十余合败北，旋即随马超归降刘备。刘禅登基后，跟随丞相诸葛亮南征孟获和北伐曹魏。马岱久经沙场、多负辛劳，作战冷静而勇猛，深得",
+      "intensity": 50
+    },
+    {
+      "a": "ma_dai",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_dai",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_dai",
+      "b": "ma_chao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 马超 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_dai",
+      "b": "wei_yan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 魏延 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_liang",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_liang",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_liang",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_liang",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_liang",
+      "b": "zhang_fei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张飞 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_liang",
+      "b": "ma_su",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 马谡 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_su",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_teng",
+      "b": "dong_zhuo",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "腾共同策划进攻山东诸将。二人见天下大乱，也想要依靠董卓起兵。 [5]初平三年（192年），马腾、韩遂投降朝廷，率众到达长安。当时董卓已死，李傕等人专权，于是拜韩遂为镇西将军，遣还金城，马腾为征西将军，",
+      "intensity": 50
+    },
+    {
+      "a": "ma_teng",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "中。曹操打败张鲁后，将其交给张鲁处置，张鲁亲手杀了他。 [24]孙子：马承，袭爵斄乡侯。孙女：马氏，嫁给刘备之子安平王刘理。",
+      "intensity": 70
+    },
+    {
+      "a": "ma_teng",
+      "b": "liu_bei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "中。曹操打败张鲁后，将其交给张鲁处置，张鲁亲手杀了他。 [24]孙子：马承，袭爵斄乡侯。孙女：马氏，嫁给刘备之子安平王刘理。",
+      "intensity": 70
+    },
+    {
+      "a": "ma_teng",
+      "b": "zhang_lu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "中。曹操打败张鲁后，将其交给张鲁处置，张鲁亲手杀了他。 [24]孙子：马承，袭爵斄乡侯。孙女：马氏，嫁给刘备之子安平王刘理。",
+      "intensity": 70
+    },
+    {
+      "a": "ma_teng",
+      "b": "ma_chao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "情还是败露了，马腾和儿子马休、马铁全部被杀。马腾的死讯传出后，马超和韩遂为了替他报仇，于是在西凉起兵反叛。 [22]此外，戏说三国志演义的民国小说《反三国演义》中说他有叫作马云騄的女儿，纯属虚构。",
+      "intensity": 80
+    },
+    {
+      "a": "ma_teng",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "ma_teng",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "man_chong",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "营建新城太和三年（229年）春天，据投降者的消息，东吴进入战备状态，扬言要到江北来狩猎，孙权要亲自出马。满宠估计敌人一定会袭击西阳，于是",
+      "intensity": 50
+    },
+    {
+      "a": "man_chong",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "man_chong",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "man_chong",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "man_chong",
+      "b": "cao_ren",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "man_chong",
+      "b": "cao_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹休 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "，于是命刘封自汉中乘沔水下统领孟达的军队，与孟达会合于上庸。 [3] [20-21]上庸太守申耽举众投降。 [22]关羽包围樊城、襄阳时，曾要求刘封和孟达发兵，自行援助。而刘封和孟达以郡县偏僻又归附不",
+      "intensity": 50
+    },
+    {
+      "a": "meng_da",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "耽举众投降。 [22]关羽包围樊城、襄阳时，曾要求刘封和孟达发兵，自行援助。而刘封和孟达以郡县偏僻又归附不久为由，拒绝了关羽的要求。不料，关羽的战局很快就急转直下。关羽覆败后，刘备非常痛恨。而刘封、孟",
+      "intensity": 50
+    },
+    {
+      "a": "meng_da",
+      "b": "xu_huang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "后，派遣征南将军夏侯尚督领徐晃、孟达等诸军袭取东三郡。孟达写信给刘封（详见《在魏与刘封书》），劝刘封投降，但被刘封拒绝。 [5-6] [26]申仪背叛刘封，刘封败走。 [7] [27]孟达登上白马塞，",
+      "intensity": 50
+    },
+    {
+      "a": "meng_da",
+      "b": "liu_bei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "表孟达勾结蜀人。《魏略》记载，魏帝曹叡依旧不信，司马懿派参军梁几查明此事，之后劝孟达入朝，孟达惊惧而反叛。《晋书》记载，司马懿为防止孟达立即起事，写信安抚他说：“将军过去抛弃刘备，托身于国家，国家将疆",
+      "intensity": 80
+    },
+    {
+      "a": "meng_da",
+      "b": "sima_yi",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "表孟达勾结蜀人。《魏略》记载，魏帝曹叡依旧不信，司马懿派参军梁几查明此事，之后劝孟达入朝，孟达惊惧而反叛。《晋书》记载，司马懿为防止孟达立即起事，写信安抚他说：“将军过去抛弃刘备，托身于国家，国家将疆",
+      "intensity": 80
+    },
+    {
+      "a": "meng_da",
+      "b": "liu_ye",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "轶事典故播报编辑孟达归魏后，论者多称他有乐毅之量。而刘晔一见孟达，便说他必定反叛。 [39]司马懿认为孟达言行倾巧，不可任用，屡次进谏，但都未被听从。 [31]《华阳国志》记载",
+      "intensity": 80
+    },
+    {
+      "a": "meng_da",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "sima_yi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马懿 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "fa_zheng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 法正 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_da",
+      "b": "liu_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
       "a": "meng_huo",
       "b": "zhuge_liang",
       "type": "defection",
@@ -3607,6 +7493,186 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 马谡 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_you",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "meng_you",
+      "b": "meng_huo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孟获 언급",
+      "intensity": 30
+    },
+    {
+      "a": "mi_zhu",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "布乘刘备与袁术僵持之时，趁机偷袭下邳，并虏获刘备的妻子。刘备只好驻扎在广陵郡的海西县。麋竺特意将妹妹嫁给刘备，又将两千名下人及金银货帛资助刘备的军队，使面对危难的刘备重新振作。后来曹操想上表荐麋竺为嬴",
+      "intensity": 70
+    },
+    {
+      "a": "mi_zhu",
+      "b": "liu_bei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "布乘刘备与袁术僵持之时，趁机偷袭下邳，并虏获刘备的妻子。刘备只好驻扎在广陵郡的海西县。麋竺特意将妹妹嫁给刘备，又将两千名下人及金银货帛资助刘备的军队，使面对危难的刘备重新振作。后来曹操想上表荐麋竺为嬴",
+      "intensity": 70
+    },
+    {
+      "a": "mi_zhu",
+      "b": "yuan_shu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "布乘刘备与袁术僵持之时，趁机偷袭下邳，并虏获刘备的妻子。刘备只好驻扎在广陵郡的海西县。麋竺特意将妹妹嫁给刘备，又将两千名下人及金银货帛资助刘备的军队，使面对危难的刘备重新振作。后来曹操想上表荐麋竺为嬴",
+      "intensity": 70
+    },
+    {
+      "a": "mi_zhu",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "抑郁而终建安二十四年（219年），孙权手下大将吕蒙袭取荆州，时任南郡太守的麋芳献城投降，前将军关羽因此兵败身亡。麋竺把自己绑起来去向刘备请罪，刘备反过来安慰他，认为弟弟的罪与兄长无关",
+      "intensity": 50
+    },
+    {
+      "a": "mi_zhu",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "抑郁而终建安二十四年（219年），孙权手下大将吕蒙袭取荆州，时任南郡太守的麋芳献城投降，前将军关羽因此兵败身亡。麋竺把自己绑起来去向刘备请罪，刘备反过来安慰他，认为弟弟的罪与兄长无关",
+      "intensity": 50
+    },
+    {
+      "a": "mi_zhu",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "抑郁而终建安二十四年（219年），孙权手下大将吕蒙袭取荆州，时任南郡太守的麋芳献城投降，前将军关羽因此兵败身亡。麋竺把自己绑起来去向刘备请罪，刘备反过来安慰他，认为弟弟的罪与兄长无关",
+      "intensity": 50
+    },
+    {
+      "a": "mi_zhu",
+      "b": "lv_meng",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "抑郁而终建安二十四年（219年），孙权手下大将吕蒙袭取荆州，时任南郡太守的麋芳献城投降，前将军关羽因此兵败身亡。麋竺把自己绑起来去向刘备请罪，刘备反过来安慰他，认为弟弟的罪与兄长无关",
+      "intensity": 50
+    },
+    {
+      "a": "mi_zhu",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "弟麋芳，字子方，与糜竺跟随刘备，任南郡太守，后投降孙权。 [14]妹妹麋夫人，在刘备落难时，麋竺将她嫁给刘备。 [14]",
+      "intensity": 70
+    },
+    {
+      "a": "mi_zhu",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "mi_zhu",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "mi_zhu",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "mi_zhu",
+      "b": "lv_meng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕蒙 언급",
+      "intensity": 30
+    },
+    {
+      "a": "mi_zhu",
+      "b": "tao_qian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陶谦 언급",
+      "intensity": 30
+    },
+    {
+      "a": "pan_zhang",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "小说形象潘璋脸谱在小说《三国演义》中潘璋于孙策死后 [25]，孙权广纳贤士时前来投奔 [25]，征讨黄祖时，潘璋生擒苏飞。赤壁之战时，潘璋领三千兵接应董袭，从江中攻击曹操。刘备完婚",
+      "intensity": 50
+    },
+    {
+      "a": "pan_zhang",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "小说形象潘璋脸谱在小说《三国演义》中潘璋于孙策死后 [25]，孙权广纳贤士时前来投奔 [25]，征讨黄祖时，潘璋生擒苏飞。赤壁之战时，潘璋领三千兵接应董袭，从江中攻击曹操。刘备完婚",
+      "intensity": 50
+    },
+    {
+      "a": "pan_zhang",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "小说形象潘璋脸谱在小说《三国演义》中潘璋于孙策死后 [25]，孙权广纳贤士时前来投奔 [25]，征讨黄祖时，潘璋生擒苏飞。赤壁之战时，潘璋领三千兵接应董袭，从江中攻击曹操。刘备完婚",
+      "intensity": 50
+    },
+    {
+      "a": "pan_zhang",
+      "b": "sun_ce",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "小说形象潘璋脸谱在小说《三国演义》中潘璋于孙策死后 [25]，孙权广纳贤士时前来投奔 [25]，征讨黄祖时，潘璋生擒苏飞。赤壁之战时，潘璋领三千兵接应董袭，从江中攻击曹操。刘备完婚",
+      "intensity": 50
+    },
+    {
+      "a": "pan_zhang",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "pan_zhang",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
       "intensity": 30
     },
     {
@@ -3842,6 +7908,312 @@
       "intensity": 30
     },
     {
+      "a": "qiao_zhou",
+      "b": "deng_ai",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "日，就会发生不测之变，还能顺利到南中吗？”大臣中有人反驳谯周说：“现在邓艾离成都不远了，假如他不接受投降，又该怎么办？”谯周说：“如今东吴还没有归附魏国，形势迫使邓艾不得不受降，受降之后不得不礼遇。如",
+      "intensity": 50
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "zhuge_liang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "此感到不安。为什么呢？因为南方是僻远的少数民族地区，平时我们没有得到他们什么物力人力的供给，他们还想反叛。自从丞相诸葛亮南征，以兵势压境相逼，他们势穷才俯首归顺，自此而后才交纳官税。我们用来供养军队，",
+      "intensity": 80
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "演义》中，谯周多以星相家和反战者的角色出现。谯周本是益州牧刘璋手下，刘备围成都，谯周论天命，力劝刘璋投降，投降后被刘备任用。 [31]曹丕废献帝自立，光禄大夫谯周与诸葛亮、许靖等商议，谯周言天象祥瑞，",
+      "intensity": 50
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "zhuge_liang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "演义》中，谯周多以星相家和反战者的角色出现。谯周本是益州牧刘璋手下，刘备围成都，谯周论天命，力劝刘璋投降，投降后被刘备任用。 [31]曹丕废献帝自立，光禄大夫谯周与诸葛亮、许靖等商议，谯周言天象祥瑞，",
+      "intensity": 50
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "cao_pi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "演义》中，谯周多以星相家和反战者的角色出现。谯周本是益州牧刘璋手下，刘备围成都，谯周论天命，力劝刘璋投降，投降后被刘备任用。 [31]曹丕废献帝自立，光禄大夫谯周与诸葛亮、许靖等商议，谯周言天象祥瑞，",
+      "intensity": 50
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "演义》中，谯周多以星相家和反战者的角色出现。谯周本是益州牧刘璋手下，刘备围成都，谯周论天命，力劝刘璋投降，投降后被刘备任用。 [31]曹丕废献帝自立，光禄大夫谯周与诸葛亮、许靖等商议，谯周言天象祥瑞，",
+      "intensity": 50
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "deng_ai",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 邓艾 언급",
+      "intensity": 30
+    },
+    {
+      "a": "qiao_zhou",
+      "b": "liu_shan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘禅 언급",
+      "intensity": 30
+    },
+    {
+      "a": "quan_cong",
+      "b": "sun_ce",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "别驾从事，朝廷就诏拜全柔为会稽东部都尉。三国志11 全琮建安元年（196年），孙策进兵江东，全柔举兵归附孙策，孙策表全柔为丹杨都尉。全柔曾使全琮运谷米数千斛到吴，有所交易。但全琮到后，散用谷米，救济贫",
+      "intensity": 50
+    },
+    {
+      "a": "quan_cong",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "人。孙权于是召全琮回牛渚，罢东安郡。 [9]黄龙元年（229年），全琮迁升为卫将军、左护军、徐州牧，娶孙权之女公主孙鲁班。 [10]孙权使太子孙登出征，既已出军，至于安乐，群臣莫敢劝谏。全琮密表道：“",
+      "intensity": 70
+    },
+    {
+      "a": "quan_cong",
+      "b": "sun_deng",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "人。孙权于是召全琮回牛渚，罢东安郡。 [9]黄龙元年（229年），全琮迁升为卫将军、左护军、徐州牧，娶孙权之女公主孙鲁班。 [10]孙权使太子孙登出征，既已出军，至于安乐，群臣莫敢劝谏。全琮密表道：“",
+      "intensity": 70
+    },
+    {
+      "a": "quan_cong",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "父亲全柔，汉灵帝时，举孝廉并曾在汉朝为官，后来投奔孙策，先后在孙策、孙权帐下仕官，迁。",
+      "intensity": 50
+    },
+    {
+      "a": "quan_cong",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "quan_cong",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "quan_cong",
+      "b": "cao_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹休 언급",
+      "intensity": 30
+    },
+    {
+      "a": "quan_cong",
+      "b": "sun_deng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙登 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shamoke",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shamoke",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shamoke",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shamoke",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shamoke",
+      "b": "gan_ning",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 甘宁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shamoke",
+      "b": "zhou_tai",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周泰 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shen_pei",
+      "b": "yuan_shao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "岱与审配有矛盾，就通过蒋奇对袁绍说：“审配在任独揽权力，宗族大，兵力强，而且两个儿子在南方，他必定想反叛。”郭图、辛评也这么认为。袁绍于是任命孟岱为监军，代替审配把守邺县。护军逢纪同审配不和，袁绍就这",
+      "intensity": 80
+    },
+    {
+      "a": "shen_pei",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "面拦截，打败了袁尚，袁尚逃到漳水弯曲处扎下营寨，曹操又将其包围，尚未合围，袁尚害怕，派阴夔、陈琳请求投降，曹操不答应。袁尚只好回头逃奔蓝口，曹操再次进兵，很快包围了袁尚。袁尚的部将马延等人临阵投降，部",
+      "intensity": 50
+    },
+    {
+      "a": "shen_pei",
+      "b": "yuan_shang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "面拦截，打败了袁尚，袁尚逃到漳水弯曲处扎下营寨，曹操又将其包围，尚未合围，袁尚害怕，派阴夔、陈琳请求投降，曹操不答应。袁尚只好回头逃奔蓝口，曹操再次进兵，很快包围了袁尚。袁尚的部将马延等人临阵投降，部",
+      "intensity": 50
+    },
+    {
+      "a": "shen_pei",
+      "b": "yuan_tan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "到平原去进攻袁谭，留审配、苏由镇守邺城。曹操进军到洹水，苏由打算为曹操作内应，因密谋泄露，苏由就出城投奔曹操。曹操大军到达邺城后，上筑土山，下挖地道，发动进攻。袁尚委任的武安县县长尹楷驻军毛城，以保护",
+      "intensity": 50
+    },
+    {
+      "a": "shen_pei",
+      "b": "xu_huang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "攻击袁谭，致使谭困而投敌。曹操围邺，审配拒守数月不下，后其侄审荣开门迎敌，审配死战，被徐晃所擒，拒不投降，北跪受刑，引颈就刃。 [19]",
+      "intensity": 50
+    },
+    {
+      "a": "shen_pei",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shen_pei",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "shen_pei",
+      "b": "yuan_shang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁尚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sima_lang",
+      "b": "dong_zhuo",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "，但是有人告发司马朗想要逃亡，军队便抓住他去见董卓，董卓对司马朗说：“你和我已去世的儿子同岁，为何要背叛！”司马朗回答说：“明公以高世之功德，在天下大乱中辅助天子，清除了宦官的秽乱，举荐了许多贤士，这",
+      "intensity": 80
+    },
+    {
+      "a": "sima_lang",
+      "b": "sima_yi",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 司马懿 언급",
+      "intensity": 50
+    },
+    {
+      "a": "sima_lang",
+      "b": "sima_yan",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 司马炎 언급",
+      "intensity": 50
+    },
+    {
+      "a": "sima_lang",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sima_lang",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sima_lang",
+      "b": "xiahou_dun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯惇 언급",
+      "intensity": 30
+    },
+    {
       "a": "sima_shi",
       "b": "sima_yi",
       "type": "betrayal",
@@ -3898,6 +8270,22 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 司马炎 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sima_yan",
+      "b": "sima_yi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马懿 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sima_yan",
+      "b": "sima_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马昭 언급",
       "intensity": 30
     },
     {
@@ -3992,15 +8380,6 @@
     },
     {
       "a": "sima_yi",
-      "b": "meng_da",
-      "type": "betrayal",
-      "source": "keyword",
-      "keyword": "反叛",
-      "evidence": "孟达言行虚伪狡诈，不可信任，多次劝谏却未被采纳，仍任命孟达兼任新城太守。 [103]诸葛亮想促使孟达反叛之事败露，于是派遣郭模假装归降魏国，途经申仪驻地时，故意泄露孟达的反叛计划。孟达听闻计划泄露，准",
-      "intensity": 80
-    },
-    {
-      "a": "sima_yi",
       "b": "ma_dai",
       "type": "defection",
       "source": "keyword",
@@ -4077,14 +8456,6 @@
       "intensity": 30
     },
     {
-      "a": "sima_yi",
-      "b": "meng_da",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 孟达 언급",
-      "intensity": 30
-    },
-    {
       "a": "sima_zhao",
       "b": "jiang_wei",
       "type": "defection",
@@ -4152,14 +8523,6 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 钟会 언급",
-      "intensity": 30
-    },
-    {
-      "a": "sima_zhao",
-      "b": "sima_yan",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 司马炎 언급",
       "intensity": 30
     },
     {
@@ -4309,6 +8672,168 @@
       "intensity": 30
     },
     {
+      "a": "sun_deng",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "曹丕几次派人索要孙登作为人质，都被孙权推辞掉了 [2]。黄武四年 [30]（225年），孙权为孙登聘娶周瑜之女为王太子妃，命程秉从吴郡迎接周妃至武昌，教诲孙登，孙权对这次婚姻相当重视。后来，芮玄的女儿",
+      "intensity": 70
+    },
+    {
+      "a": "sun_deng",
+      "b": "zhou_yu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "曹丕几次派人索要孙登作为人质，都被孙权推辞掉了 [2]。黄武四年 [30]（225年），孙权为孙登聘娶周瑜之女为王太子妃，命程秉从吴郡迎接周妃至武昌，教诲孙登，孙权对这次婚姻相当重视。后来，芮玄的女儿",
+      "intensity": 70
+    },
+    {
+      "a": "sun_deng",
+      "b": "cao_pi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "曹丕几次派人索要孙登作为人质，都被孙权推辞掉了 [2]。黄武四年 [30]（225年），孙权为孙登聘娶周瑜之女为王太子妃，命程秉从吴郡迎接周妃至武昌，教诲孙登，孙权对这次婚姻相当重视。后来，芮玄的女儿",
+      "intensity": 70
+    },
+    {
+      "a": "sun_deng",
+      "b": "sun_quan",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "挚友",
+      "evidence": "皇后。”孙权说：“你的母亲在哪？”孙登回答说：“在吴郡。”孙权沉默无语。嘉禾六年（237年），孙登的挚友陈表去世。陈表的家中财物全部用来供养士人，去世当天，他的妻子儿女都没有居处，孙登亲自为他们选建屋",
+      "intensity": 80
+    },
+    {
+      "a": "sun_deng",
+      "b": "sun_quan",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 孙权 언급",
+      "intensity": 50
+    },
+    {
+      "a": "sun_deng",
+      "b": "sun_jian",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 孙坚 언급",
+      "intensity": 50
+    },
+    {
+      "a": "sun_deng",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_deng",
+      "b": "zhou_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周瑜 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_deng",
+      "b": "zhuge_ke",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛恪 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_huan",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_huan",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_huan",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_huan",
+      "b": "lv_meng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕蒙 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_huan",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_qian",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "安元年（196年），刘备被吕布击败后，孙乾也跟随刘备流亡四方。 [2-3]建安五年（200年），刘备背叛曹操，想向北与袁绍联合，便派孙乾出使与袁绍结盟。 [4]",
+      "intensity": 80
+    },
+    {
+      "a": "sun_qian",
+      "b": "liu_bei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "安元年（196年），刘备被吕布击败后，孙乾也跟随刘备流亡四方。 [2-3]建安五年（200年），刘备背叛曹操，想向北与袁绍联合，便派孙乾出使与袁绍结盟。 [4]",
+      "intensity": 80
+    },
+    {
+      "a": "sun_qian",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "安元年（196年），刘备被吕布击败后，孙乾也跟随刘备流亡四方。 [2-3]建安五年（200年），刘备背叛曹操，想向北与袁绍联合，便派孙乾出使与袁绍结盟。 [4]",
+      "intensity": 80
+    },
+    {
+      "a": "sun_qian",
+      "b": "yuan_shao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "安元年（196年），刘备被吕布击败后，孙乾也跟随刘备流亡四方。 [2-3]建安五年（200年），刘备背叛曹操，想向北与袁绍联合，便派孙乾出使与袁绍结盟。 [4]",
+      "intensity": 80
+    },
+    {
+      "a": "sun_qian",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
       "a": "sun_quan",
       "b": "sun_ce",
       "type": "defection",
@@ -4355,15 +8880,6 @@
     },
     {
       "a": "sun_quan",
-      "b": "lv_dai",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "罗厉等人同时发乱 [234]。嘉禾四年（235年）夏，孙权令吕岱督率刘纂、唐咨等人分兵讨伐。随春率先投降，被任命为偏将军，李桓、罗厉等都被擒斩。 [179]嘉禾六年（237年）二月，陆逊奉命督军征讨彭",
-      "intensity": 50
-    },
-    {
-      "a": "sun_quan",
       "b": "sima_yi",
       "type": "betrayal",
       "source": "keyword",
@@ -4374,15 +8890,6 @@
     {
       "a": "sun_quan",
       "b": "zhang_liao",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "归附",
-      "evidence": "烈，割据江东，地方数千里，兵精足用，英雄乐业。 [54]鲁肃：“孙讨虏聪明仁惠，敬贤礼士，江表英豪咸归附之。” [183]张辽：“向有紫髯将军，长上短下，便马善射。” [1]程昱：“孙权新在位，未为海",
-      "intensity": 50
-    },
-    {
-      "a": "sun_quan",
-      "b": "cheng_yu",
       "type": "defection",
       "source": "keyword",
       "keyword": "归附",
@@ -4447,6 +8954,125 @@
       "intensity": 30
     },
     {
+      "a": "sun_shangxiang",
+      "b": "liu_bei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "联姻",
+      "evidence": "联姻刘备赤壁之战后，孙权因为畏惧刘备，所以进献当时二十岁左右的妹妹给当时四十九岁的刘备来巩固关系。 ",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "联姻",
+      "evidence": "联姻刘备赤壁之战后，孙权因为畏惧刘备，所以进献当时二十岁左右的妹妹给当时四十九岁的刘备来巩固关系。 ",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "zhang_fei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "云和张飞一起在江上拦截，方重夺刘禅，从此她一去不返，杳无音讯。三年后（214年）刘备定益州后，正式改娶吴懿之妹为正室，此后事迹不详。《三国志》中也再没记载过孙夫人回吴后所发生的事情。 [8-9]",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "liu_shan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "云和张飞一起在江上拦截，方重夺刘禅，从此她一去不返，杳无音讯。三年后（214年）刘备定益州后，正式改娶吴懿之妹为正室，此后事迹不详。《三国志》中也再没记载过孙夫人回吴后所发生的事情。 [8-9]",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "wu_yi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "云和张飞一起在江上拦截，方重夺刘禅，从此她一去不返，杳无音讯。三年后（214年）刘备定益州后，正式改娶吴懿之妹为正室，此后事迹不详。《三国志》中也再没记载过孙夫人回吴后所发生的事情。 [8-9]",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "zhao_yun",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "葛亮识破，安排赵云陪伴前往，先拜会周瑜的岳父乔国老，乔国老说动吴国太在甘露寺见面，吴国太真的将孙夫人嫁给刘备。孙权与周瑜被人嘲笑“周郎妙计安天下，赔了夫人又折兵”。比喻想占便宜，反而受到双重损失。",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "zhou_yu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "葛亮识破，安排赵云陪伴前往，先拜会周瑜的岳父乔国老，乔国老说动吴国太在甘露寺见面，吴国太真的将孙夫人嫁给刘备。孙权与周瑜被人嘲笑“周郎妙计安天下，赔了夫人又折兵”。比喻想占便宜，反而受到双重损失。",
+      "intensity": 70
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "zhao_yun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 赵云 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "fa_zheng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 法正 언급",
+      "intensity": 30
+    },
+    {
+      "a": "sun_shangxiang",
+      "b": "liu_shan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘禅 언급",
+      "intensity": 30
+    },
+    {
       "a": "taishi_ci",
       "b": "sun_ce",
       "type": "defection",
@@ -4480,6 +9106,169 @@
       "intensity": 30
     },
     {
+      "a": "tao_qian",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "随即西拔襄贲，所过之处多所残戮。 [51]陶谦眼见日暮途穷，打算逃回老家丹阳，正在这时，陈留太守张邈背叛曹操，与其弟原广陵太守张超迎吕布入兖州，曹操只好回师平叛。同年，陶谦病逝 [28-29]（一说陶",
+      "intensity": 80
+    },
+    {
+      "a": "tao_qian",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "随即西拔襄贲，所过之处多所残戮。 [51]陶谦眼见日暮途穷，打算逃回老家丹阳，正在这时，陈留太守张邈背叛曹操，与其弟原广陵太守张超迎吕布入兖州，曹操只好回师平叛。同年，陶谦病逝 [28-29]（一说陶",
+      "intensity": 80
+    },
+    {
+      "a": "tian_feng",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "持久战术三国志12的田丰曹操害怕袁绍渡过黄河，就加紧攻打刘备，不到一个月将刘备打败。刘备投奔袁绍，袁绍这才进兵攻许县。田丰认为既然失去前面的时机，眼下不宜出兵，就劝阻袁绍说：“曹操已经打败",
+      "intensity": 50
+    },
+    {
+      "a": "tian_feng",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "持久战术三国志12的田丰曹操害怕袁绍渡过黄河，就加紧攻打刘备，不到一个月将刘备打败。刘备投奔袁绍，袁绍这才进兵攻许县。田丰认为既然失去前面的时机，眼下不宜出兵，就劝阻袁绍说：“曹操已经打败",
+      "intensity": 50
+    },
+    {
+      "a": "tian_feng",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "持久战术三国志12的田丰曹操害怕袁绍渡过黄河，就加紧攻打刘备，不到一个月将刘备打败。刘备投奔袁绍，袁绍这才进兵攻许县。田丰认为既然失去前面的时机，眼下不宜出兵，就劝阻袁绍说：“曹操已经打败",
+      "intensity": 50
+    },
+    {
+      "a": "tian_feng",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "tian_feng",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "tian_feng",
+      "b": "xun_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 荀彧 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wang_lang",
+      "b": "tao_qian",
+      "type": "apprentice",
+      "source": "keyword",
+      "keyword": "师从",
+      "evidence": "辅弼陶谦王朗早年师从太尉杨赐，因通晓经籍而拜郎中，任菑丘县长。 [1]中平二年（185年），杨赐逝世，王朗因而弃官为",
+      "intensity": 60
+    },
+    {
+      "a": "wang_lang",
+      "b": "sun_ce",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "王朗所部击退 [7]。后来，经由孙策之叔孙静的献策，王朗兵败逃亡交州，出海到东冶时，遭孙策追击，只得投降。因为王朗儒雅，所以孙策只对王朗进行诘问斥责而不作加害，孙策亦曾派重臣张昭劝王朗为他效命，但王朗",
+      "intensity": 50
+    },
+    {
+      "a": "wang_lang",
+      "b": "zhang_zhao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "王朗所部击退 [7]。后来，经由孙策之叔孙静的献策，王朗兵败逃亡交州，出海到东冶时，遭孙策追击，只得投降。因为王朗儒雅，所以孙策只对王朗进行诘问斥责而不作加害，孙策亦曾派重臣张昭劝王朗为他效命，但王朗",
+      "intensity": 50
+    },
+    {
+      "a": "wang_lang",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wang_lang",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wang_lang",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wang_lang",
+      "b": "tao_qian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陶谦 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wang_yun",
+      "b": "lv_bu",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "多万人，又与董卓的旧部樊稠、李蒙等人会合，一同攻打长安，围城八日。 [42]六月一日，吕布军中的蜀兵反叛，引李傕军入城，汉军崩溃，吕布战败出逃，在青锁门停住，招呼王允一同逃走。王允断然拒绝，对吕布说：",
+      "intensity": 80
+    },
+    {
+      "a": "wang_yun",
+      "b": "cao_cao",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 曹操 언급",
+      "intensity": 50
+    },
+    {
+      "a": "wang_yun",
+      "b": "sima_yi",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 司马懿 언급",
+      "intensity": 50
+    },
+    {
+      "a": "wang_yun",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
       "a": "wei_yan",
       "b": "liu_shan",
       "type": "betrayal",
@@ -4491,15 +9280,6 @@
     {
       "a": "wei_yan",
       "b": "jiang_wan",
-      "type": "betrayal",
-      "source": "keyword",
-      "keyword": "谋反",
-      "evidence": "兵撤退。魏延大怒，日夜兼程，赶在杨仪大军前面，所走过的地方都烧绝阁道。杨仪和魏延都互相上表刘禅说对方谋反，刘禅问侍中董允、留府长史蒋琬到底是谁想造反，董、蒋二人都担保杨仪而怀疑魏延。魏延先占据南谷口，",
-      "intensity": 80
-    },
-    {
-      "a": "wei_yan",
-      "b": "dong_yun",
       "type": "betrayal",
       "source": "keyword",
       "keyword": "谋反",
@@ -4556,6 +9336,332 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_chou",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_chou",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_chou",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_chou",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_chou",
+      "b": "xun_you",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 荀攸 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_pin",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "，其子刘琮继位。 [20]当时曹操起兵南征荆州，刘琮与众官商议，决定举荆州之地投降曹操，又唤文聘一起归降，文聘说：“聘不能保全本州土地，如此失职，只应待罚而已。”曹操接收荆汉后，文聘才往见曹操，曹操问",
+      "intensity": 50
+    },
+    {
+      "a": "wen_pin",
+      "b": "liu_biao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "（208年），刘表死后，其子刘琮继位。 [20]当时曹操起兵南征荆州，刘琮与众官商议，决定举荆州之地投降曹操，又唤文聘一起归降，文聘说：“聘不能保全本州土地，如此失职，只应待罚而已。”曹操接收荆汉后，",
+      "intensity": 50
+    },
+    {
+      "a": "wen_pin",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_pin",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_pin",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_pin",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_pin",
+      "b": "liu_biao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘表 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_pin",
+      "b": "yue_jin",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 乐进 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_qin",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "谋反",
+      "evidence": "涯三国志系列中 文钦形象文钦年少时以名将之子、勇敢果断而闻名。 [8]建安二十四年（219年），魏讽谋反，文钦因“辞语相连”受到牵连被下狱治罪，被拷打了数百下，按律应当处死，但曹操念及他是部将文稷之子",
+      "intensity": 80
+    },
+    {
+      "a": "wen_qin",
+      "b": "deng_ai",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "向前不能战斗，退后到寿春又怕遭到吴军袭击，前后无路，无计可施。淮南将士的家乡都在北边，军心涣散，相继投降。只有淮南新近归属的当地农民愿意为他们打仗。司马师派兖州刺史邓艾统率泰山的各路军队有几万人到乐嘉",
+      "intensity": 50
+    },
+    {
+      "a": "wen_qin",
+      "b": "sima_shi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "向前不能战斗，退后到寿春又怕遭到吴军袭击，前后无路，无计可施。淮南将士的家乡都在北边，军心涣散，相继投降。只有淮南新近归属的当地农民愿意为他们打仗。司马师派兖州刺史邓艾统率泰山的各路军队有几万人到乐嘉",
+      "intensity": 50
+    },
+    {
+      "a": "wen_qin",
+      "b": "sima_shi",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "是吉祥的征兆，于是借郭太后的口吻，下诏历数大将军司马师的罪状（详见《罪状司马师表》），发布天下，举兵反叛司马师。并在城西设坛，歃血为盟。 [13]毌丘俭、文钦反叛后，派人找镇南将军诸葛诞，让他召收豫州",
+      "intensity": 80
+    },
+    {
+      "a": "wen_qin",
+      "b": "sima_zhao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "待了。”蒋班、焦彝力劝，文钦大怒，而诸葛诞打算杀死二人，二人非常害怕，又清楚诸葛诞必定失败，于是翻城投降司马昭。之后，司马昭又用计诱使全怿等人开门投降。 [41-42]",
+      "intensity": 50
+    },
+    {
+      "a": "wen_qin",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_qin",
+      "b": "sima_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_qin",
+      "b": "sima_shi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马师 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_qin",
+      "b": "zhuge_ke",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛恪 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_yang",
+      "b": "sima_zhao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "复投魏国三国志12的文鸯文钦父子率领麾下奔往项城坚守，毌丘俭身死后，文鸯随文钦投降吴国。 [13]甘露二年（257年）五月，魏国征东大将军诸葛诞在寿春起兵反司马昭，吴国命令文钦父",
+      "intensity": 50
+    },
+    {
+      "a": "wen_yang",
+      "b": "sima_shi",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "文鸯文鸯单骑退雄兵——汪国新绘在小说《三国演义》中，文鸯本名文淑，小字阿鸯。文钦协同毌丘俭举兵在寿春反叛，讨伐司马师。文鸯与父文钦请命保守乐嘉城，协议与文钦兵分两路，夜晚袭击司马师的城西军营，文鸯在司",
+      "intensity": 80
+    },
+    {
+      "a": "wen_yang",
+      "b": "sima_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "wen_yang",
+      "b": "sima_shi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马师 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xi_zhicai",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xi_zhicai",
+      "b": "xun_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 荀彧 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "jiang_wei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "），魏国的陇西、南安、金城、西平等地诸羌人首领俄何烧戈、伐同、蛾遮塞等联合起来反叛魏国，包围城镇，并投降蜀汉，蜀汉将领姜维出兵陇右来接应他们，凉州胡人首领治无戴也呼应反叛。夏侯霸当时率诸军屯兵在为翅，",
+      "intensity": 50
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "jiang_wei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "2]正始八年（247年），魏国的陇西、南安、金城、西平等地诸羌人首领俄何烧戈、伐同、蛾遮塞等联合起来反叛魏国，包围城镇，并投降蜀汉，蜀汉将领姜维出兵陇右来接应他们，凉州胡人首领治无戴也呼应反叛。夏侯霸",
+      "intensity": 80
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "sima_yi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归降",
+      "evidence": "归降蜀汉嘉平元年（249年），司马懿发动政变，杀死原来执掌魏国大权的大将军曹爽，曹爽的表弟、夏侯霸堂",
+      "intensity": 50
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "zhang_fei",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "人迎接夏侯霸。夏侯霸早在建安五年（200年）时，夏侯霸的堂妹夏侯氏外出打柴时被蜀汉重臣张飞发现，张飞娶其为妻，生下的女儿成为了后主刘禅的皇后。所以召见夏侯霸时，刘禅宽慰他说：“卿的父亲是自己在交战之中",
+      "intensity": 70
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "liu_shan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "人迎接夏侯霸。夏侯霸早在建安五年（200年）时，夏侯霸的堂妹夏侯氏外出打柴时被蜀汉重臣张飞发现，张飞娶其为妻，生下的女儿成为了后主刘禅的皇后。所以召见夏侯霸时，刘禅宽慰他说：“卿的父亲是自己在交战之中",
+      "intensity": 70
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "sima_yi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马懿 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "jiang_wei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 姜维 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "xiahou_yuan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯渊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "cao_zhen",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹真 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_ba",
+      "b": "liu_shan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘禅 언급",
       "intensity": 30
     },
     {
@@ -4675,6 +9781,100 @@
       "intensity": 30
     },
     {
+      "a": "xiahou_shang",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "以派兵悄悄前去，出其不意，那样一定能消灭他们。”于是他和徐晃带领一部分士兵一举攻下了上庸，蜀将孟达等投降，刘封败走，夏侯尚平定三郡九县，升为征南大将军。当时，孙权虽对魏国称臣，但夏侯尚加紧做出进攻的准",
+      "intensity": 50
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "xu_huang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "以派兵悄悄前去，出其不意，那样一定能消灭他们。”于是他和徐晃带领一部分士兵一举攻下了上庸，蜀将孟达等投降，刘封败走，夏侯尚平定三郡九县，升为征南大将军。当时，孙权虽对魏国称臣，但夏侯尚加紧做出进攻的准",
+      "intensity": 50
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "liu_feng",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "以派兵悄悄前去，出其不意，那样一定能消灭他们。”于是他和徐晃带领一部分士兵一举攻下了上庸，蜀将孟达等投降，刘封败走，夏侯尚平定三郡九县，升为征南大将军。当时，孙权虽对魏国称臣，但夏侯尚加紧做出进攻的准",
+      "intensity": 50
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "meng_da",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "以派兵悄悄前去，出其不意，那样一定能消灭他们。”于是他和徐晃带领一部分士兵一举攻下了上庸，蜀将孟达等投降，刘封败走，夏侯尚平定三郡九县，升为征南大将军。当时，孙权虽对魏国称臣，但夏侯尚加紧做出进攻的准",
+      "intensity": 50
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "sima_yi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "被婿灭族晋景帝司马师早年曾迎娶夏侯尚之女夏侯徽为夫人，婚后生有五女，但魏明帝曹叡在位时期，司马师的父亲司马懿居于上将重位，而司马",
+      "intensity": 70
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "sima_shi",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "被婿灭族晋景帝司马师早年曾迎娶夏侯尚之女夏侯徽为夫人，婚后生有五女，但魏明帝曹叡在位时期，司马师的父亲司马懿居于上将重位，而司马",
+      "intensity": 70
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "xiahou_yuan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 夏侯渊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "cao_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹彰 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiahou_shang",
+      "b": "zhuge_jun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛瑾 언급",
+      "intensity": 30
+    },
+    {
       "a": "xiahou_yuan",
       "b": "zhang_fei",
       "type": "marriage",
@@ -4748,6 +9948,66 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 于禁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "sun_quan",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "199年），周瑜随孙策攻破皖城后纳小乔为妾。 [13]周瑜育有二子一女，分别为周循、周胤及一女。周循娶孙权长女全公主，周胤娶孙氏宗女，女儿配太子孙登。 [13]周瑜于建安十五年（210年）病逝后，小乔",
+      "intensity": 70
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "zhou_yu",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "199年），周瑜随孙策攻破皖城后纳小乔为妾。 [13]周瑜育有二子一女，分别为周循、周胤及一女。周循娶孙权长女全公主，周胤娶孙氏宗女，女儿配太子孙登。 [13]周瑜于建安十五年（210年）病逝后，小乔",
+      "intensity": 70
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "sun_ce",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "199年），周瑜随孙策攻破皖城后纳小乔为妾。 [13]周瑜育有二子一女，分别为周循、周胤及一女。周循娶孙权长女全公主，周胤娶孙氏宗女，女儿配太子孙登。 [13]周瑜于建安十五年（210年）病逝后，小乔",
+      "intensity": 70
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "sun_deng",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "199年），周瑜随孙策攻破皖城后纳小乔为妾。 [13]周瑜育有二子一女，分别为周循、周胤及一女。周循娶孙权长女全公主，周胤娶孙氏宗女，女儿配太子孙登。 [13]周瑜于建安十五年（210年）病逝后，小乔",
+      "intensity": 70
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "zhou_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 周瑜 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xiao_qiao",
+      "b": "da_qiao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 大乔 언급",
       "intensity": 30
     },
     {
@@ -4890,11 +10150,27 @@
       "intensity": 30
     },
     {
-      "a": "xu_huang",
-      "b": "liu_feng",
+      "a": "xu_sheng",
+      "b": "cao_cao",
       "type": "mentioned",
       "source": "summary",
-      "evidence": "요약에서 刘封 언급",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xu_sheng",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xu_sheng",
+      "b": "cao_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹休 언급",
       "intensity": 30
     },
     {
@@ -4973,6 +10249,237 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xu_you",
+      "b": "dong_zhuo",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "投靠袁绍中平六年（189年），袁绍从董卓处逃出，投奔冀州，许攸跟随并成为袁绍的谋士。 [4]初平年间，许攸跟随袁绍在冀州时，曾在坐席言议。 [29]",
+      "intensity": 50
+    },
+    {
+      "a": "xu_you",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "投靠袁绍中平六年（189年），袁绍从董卓处逃出，投奔冀州，许攸跟随并成为袁绍的谋士。 [4]初平年间，许攸跟随袁绍在冀州时，曾在坐席言议。 [29]",
+      "intensity": 50
+    },
+    {
+      "a": "xu_you",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "许攸性格贪财，而当时，许攸家里的人犯法，留守邺城的审配将许攸的妻小逮捕，许攸知道后大怒，就背叛袁绍，投奔曹操。 [7] [23-24]曹操听说许攸来了，跣足出迎，高兴地说：“子远来了，大事就可成了！”",
+      "intensity": 50
+    },
+    {
+      "a": "xu_you",
+      "b": "shen_pei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "许攸性格贪财，而当时，许攸家里的人犯法，留守邺城的审配将许攸的妻小逮捕，许攸知道后大怒，就背叛袁绍，投奔曹操。 [7] [23-24]曹操听说许攸来了，跣足出迎，高兴地说：“子远来了，大事就可成了！”",
+      "intensity": 50
+    },
+    {
+      "a": "xu_you",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": " [16]许攸性格贪财，而当时，许攸家里的人犯法，留守邺城的审配将许攸的妻小逮捕，许攸知道后大怒，就背叛袁绍，投奔曹操。 [7] [23-24]曹操听说许攸来了，跣足出迎，高兴地说：“子远来了，大事就",
+      "intensity": 80
+    },
+    {
+      "a": "xu_you",
+      "b": "yuan_shao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": " [16]许攸性格贪财，而当时，许攸家里的人犯法，留守邺城的审配将许攸的妻小逮捕，许攸知道后大怒，就背叛袁绍，投奔曹操。 [7] [23-24]曹操听说许攸来了，跣足出迎，高兴地说：“子远来了，大事就",
+      "intensity": 80
+    },
+    {
+      "a": "xu_you",
+      "b": "shen_pei",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": " [16]许攸性格贪财，而当时，许攸家里的人犯法，留守邺城的审配将许攸的妻小逮捕，许攸知道后大怒，就背叛袁绍，投奔曹操。 [7] [23-24]曹操听说许攸来了，跣足出迎，高兴地说：“子远来了，大事就",
+      "intensity": 80
+    },
+    {
+      "a": "xu_you",
+      "b": "zhang_he",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "忘记今天的（耻辱和仇恨）。”听完，曹操同意杀淳于琼。 [8]乌巢失守后，正在攻打曹军营寨的张郃、高览投降，袁军全盘崩溃，袁绍仅带着八百骑兵逃回河北，曹操大获全胜。 [17]",
+      "intensity": 50
+    },
+    {
+      "a": "xu_you",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xu_you",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xu_you",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "荀攸说：“徐晃。”于是派徐晃及史涣半路截击，打败了韩猛，烧了他押送的军用物资。 [13]适逢许攸前来投降，说袁绍派淳于琼等人率一万多士兵押运粮食，将领骄恣，士兵懈怠，可以中途截击。众人都怀疑他，只有荀",
+      "intensity": 50
+    },
+    {
+      "a": "xun_you",
+      "b": "xu_huang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "荀攸说：“徐晃。”于是派徐晃及史涣半路截击，打败了韩猛，烧了他押送的军用物资。 [13]适逢许攸前来投降，说袁绍派淳于琼等人率一万多士兵押运粮食，将领骄恣，士兵懈怠，可以中途截击。众人都怀疑他，只有荀",
+      "intensity": 50
+    },
+    {
+      "a": "xun_you",
+      "b": "xu_you",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "荀攸说：“徐晃。”于是派徐晃及史涣半路截击，打败了韩猛，烧了他押送的军用物资。 [13]适逢许攸前来投降，说袁绍派淳于琼等人率一万多士兵押运粮食，将领骄恣，士兵懈怠，可以中途截击。众人都怀疑他，只有荀",
+      "intensity": 50
+    },
+    {
+      "a": "xun_you",
+      "b": "zhang_he",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "黄河以北。张郃前来投降时，曹洪怀疑他，不敢接受，荀攸对曹洪说：“张郃的计谋不被袁绍采用，一怒之下前来投奔，您怀疑他什么呢？”曹洪这才接受了张郃等的投降。 [15]",
+      "intensity": 50
+    },
+    {
+      "a": "xun_you",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "天下就平定了，这个机会不能失啊！”曹操说：“很好。”于是答应与袁谭结亲，随即派兵击败袁尚。这以后袁谭背叛，荀攸又随从曹操在南皮斩杀袁谭。冀州平定，曹操上奏汉献帝为荀攸请求封爵说：“军师荀攸，从开始就辅",
+      "intensity": 80
+    },
+    {
+      "a": "xun_you",
+      "b": "yuan_tan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "天下就平定了，这个机会不能失啊！”曹操说：“很好。”于是答应与袁谭结亲，随即派兵击败袁尚。这以后袁谭背叛，荀攸又随从曹操在南皮斩杀袁谭。冀州平定，曹操上奏汉献帝为荀攸请求封爵说：“军师荀攸，从开始就辅",
+      "intensity": 80
+    },
+    {
+      "a": "xun_you",
+      "b": "yuan_shang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "背叛",
+      "evidence": "天下就平定了，这个机会不能失啊！”曹操说：“很好。”于是答应与袁谭结亲，随即派兵击败袁尚。这以后袁谭背叛，荀攸又随从曹操在南皮斩杀袁谭。冀州平定，曹操上奏汉献帝为荀攸请求封爵说：“军师荀攸，从开始就辅",
+      "intensity": 80
+    },
+    {
+      "a": "xun_you",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "lv_bu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕布 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "guo_jia",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 郭嘉 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "xun_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 荀彧 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "zhang_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张绣 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "yuan_tan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁谭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "xun_you",
+      "b": "yuan_shang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁尚 언급",
       "intensity": 30
     },
     {
@@ -5104,6 +10611,413 @@
       "intensity": 30
     },
     {
+      "a": "yan_liang",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "有威名。颜良与文丑一起作为袁绍军队的勇将而闻名，少府孔融以袁绍军队的颜良、文丑勇冠三军而劝谏曹操应该投降袁绍。建安五年（200年）二月，袁绍、曹操于官渡交战。袁绍派大将郭图、淳于琼、颜良进围白马。袁绍",
+      "intensity": 50
+    },
+    {
+      "a": "yan_liang",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "有威名。颜良与文丑一起作为袁绍军队的勇将而闻名，少府孔融以袁绍军队的颜良、文丑勇冠三军而劝谏曹操应该投降袁绍。建安五年（200年）二月，袁绍、曹操于官渡交战。袁绍派大将郭图、淳于琼、颜良进围白马。袁绍",
+      "intensity": 50
+    },
+    {
+      "a": "yan_liang",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "]吕布夺取兖州后，袁绍听从审配之言，令颜良率五万兵助曹操攻吕布；当时吕布已被曹操击败，得知后便去徐州投奔刘备。 [22]曹袁交兵，颜良统十万精兵为前部，攻刘延于白马。刘延屡次告急，曹操派15万军队兵分",
+      "intensity": 50
+    },
+    {
+      "a": "yan_liang",
+      "b": "lv_bu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "]吕布夺取兖州后，袁绍听从审配之言，令颜良率五万兵助曹操攻吕布；当时吕布已被曹操击败，得知后便去徐州投奔刘备。 [22]曹袁交兵，颜良统十万精兵为前部，攻刘延于白马。刘延屡次告急，曹操派15万军队兵分",
+      "intensity": 50
+    },
+    {
+      "a": "yan_liang",
+      "b": "shen_pei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "]吕布夺取兖州后，袁绍听从审配之言，令颜良率五万兵助曹操攻吕布；当时吕布已被曹操击败，得知后便去徐州投奔刘备。 [22]曹袁交兵，颜良统十万精兵为前部，攻刘延于白马。刘延屡次告急，曹操派15万军队兵分",
+      "intensity": 50
+    },
+    {
+      "a": "yan_liang",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yan_liang",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yan_liang",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yan_liang",
+      "b": "xun_you",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 荀攸 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yan_yan",
+      "b": "zhang_fei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "军到达江州，严颜据守不降，张飞将其攻破，占领江州，并生擒严颜，张飞对严颜大喝到：“大军到来，你怎么不投降还敢与我大战！”严颜回到：“你们无理侵夺我们疆土，我们这里只有断头将军，没有投降将军！”张飞大怒",
+      "intensity": 50
+    },
+    {
+      "a": "yan_yan",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "：&quot;斫头便斫，何怒耶！&quot;飞壮其忠节，释之。 [9]此处称严颜抵抗刘备军之事在刘璋投降后，与三国志张飞传、华阳国志的记载不同。 [2] [8]",
+      "intensity": 50
+    },
+    {
+      "a": "yan_yan",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "：&quot;斫头便斫，何怒耶！&quot;飞壮其忠节，释之。 [9]此处称严颜抵抗刘备军之事在刘璋投降后，与三国志张飞传、华阳国志的记载不同。 [2] [8]",
+      "intensity": 50
+    },
+    {
+      "a": "yan_yan",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yan_yan",
+      "b": "zhang_fei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张飞 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yan_yan",
+      "b": "liu_zhang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘璋 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yang_hu",
+      "b": "sima_yi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "军政大权。政变之后，司马懿大举剪除曹爽集团，与曹爽有关的很多人遭到株连。羊祜的岳父夏侯霸为逃避杀戮，投降了蜀汉。王沈也因为是曹爽的故吏而被罢免，于是，对羊祜说：“我常常记住你以前说的话。”羊祜却安慰他",
+      "intensity": 50
+    },
+    {
+      "a": "yang_hu",
+      "b": "liu_shan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "都城下，汉中一带的蜀兵，像鸟栖于巢一样不敢出动。这也并非蜀人不愿战，实在是力量不足与我军抗衡。到刘禅投降时，蜀地各营垒官兵便悄然四散。目前江淮的难渡不会超过剑阁，山川的险要不会超过岷山汉水，孙皓的暴虐",
+      "intensity": 50
+    },
+    {
+      "a": "yang_hu",
+      "b": "lu_kang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆抗 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yu_fan",
+      "b": "sun_ce",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "好友",
+      "evidence": "家里再有老母亲，你可以回家了。”虞翻这才返回家中。 [4]虞翻回去以后，孙策再次任命他为功曹，用对待好友的礼仪对待他，亲自到虞翻的家里探访他。 [5]",
+      "intensity": 80
+    },
+    {
+      "a": "yu_fan",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "于是派遣吕蒙偷袭关羽镇守的荆州。吕蒙率军进攻南郡，南郡太守麋芳开城出降。当时吕蒙军尚在沙丘上庆祝南郡投降，虞翻此时劝吕蒙小心城中会有伏兵，江陵城中只有麋芳跟吴军是一心的；其他人居心叵测，劝吕蒙应尽快入",
+      "intensity": 50
+    },
+    {
+      "a": "yu_fan",
+      "b": "lv_meng",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "于是派遣吕蒙偷袭关羽镇守的荆州。吕蒙率军进攻南郡，南郡太守麋芳开城出降。当时吕蒙军尚在沙丘上庆祝南郡投降，虞翻此时劝吕蒙小心城中会有伏兵，江陵城中只有麋芳跟吴军是一心的；其他人居心叵测，劝吕蒙应尽快入",
+      "intensity": 50
+    },
+    {
+      "a": "yu_fan",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "归附",
+      "evidence": "孙权劝告到：“大王饮酒之后杀掉有名的念书人，就算虞翻有罪，天下人谁笃信？何况大王向来能包容贤人使众人归附，因而天下人都来投奔，今朝一下子功败垂成，行吗？”孙权说：“曹孟德尚且杀了孔文举，我杀个虞翻有什",
+      "intensity": 50
+    },
+    {
+      "a": "yu_fan",
+      "b": "cao_cao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "酒之后杀掉有名的念书人，就算虞翻有罪，天下人谁笃信？何况大王向来能包容贤人使众人归附，因而天下人都来投奔，今朝一下子功败垂成，行吗？”孙权说：“曹孟德尚且杀了孔文举，我杀个虞翻有什么！”刘基说：“曹操",
+      "intensity": 50
+    },
+    {
+      "a": "yu_fan",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yu_fan",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yu_fan",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yu_jin",
+      "b": "zhang_xiu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "久经善战建安二年（197年），于禁随曹操至宛城，张绣投降。旋即张绣复叛，曹操的阵营被张绣军队忽然袭击，应付来不及，便各自退兵，非常混乱。唯独于禁约束部下",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "zhang_liao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "但我岂可以因此而失节！”自临与昌豨决别，陨涕而斩之。当时曹操军在淳于，闻而叹曰：“昌豨不向我投降，而投奔于禁，是命运啊！”更加器重于禁，东海平定以后，曹操上表汉献帝表功于禁、乐进、张辽三人，于禁因此拜",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "yue_jin",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "但我岂可以因此而失节！”自临与昌豨决别，陨涕而斩之。当时曹操军在淳于，闻而叹曰：“昌豨不向我投降，而投奔于禁，是命运啊！”更加器重于禁，东海平定以后，曹操上表汉献帝表功于禁、乐进、张辽三人，于禁因此拜",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "杀死昌豨建安十一年（206年），昌豨投降曹操后再次反叛，曹操派遣于禁征讨。于禁急攻昌豨，但是未能攻克昌豨的据点。于是，曹操又派夏侯渊领兵与于禁一同作战",
+      "intensity": 80
+    },
+    {
+      "a": "yu_jin",
+      "b": "xiahou_yuan",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "杀死昌豨建安十一年（206年），昌豨投降曹操后再次反叛，曹操派遣于禁征讨。于禁急攻昌豨，但是未能攻克昌豨的据点。于是，曹操又派夏侯渊领兵与于禁一同作战",
+      "intensity": 80
+    },
+    {
+      "a": "yu_jin",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "汉水暴涨，平地水丈，于禁等七军皆被淹没。于禁与诸将登高望水，无所回避，关羽乘坐大船攻击于禁，于禁举军投降。 [37]于禁的军司马东里衮、护军浩周皆在军没后被关羽生擒。 [66]庞德则宁死不屈，被关羽所",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "pang_de",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "汉水暴涨，平地水丈，于禁等七军皆被淹没。于禁与诸将登高望水，无所回避，关羽乘坐大船攻击于禁，于禁举军投降。 [37]于禁的军司马东里衮、护军浩周皆在军没后被关羽生擒。 [66]庞德则宁死不屈，被关羽所",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "xiahou_dun",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，于禁于曹操招贤之时前来投奔。曹操起兵为父复仇，于禁与夏侯惇、典韦同为先锋。 [67]宛城之战中果断斩杀企图叛乱的青州军，因",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "dian_wei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "文学形象在小说《三国演义》中，于禁于曹操招贤之时前来投奔。曹操起兵为父复仇，于禁与夏侯惇、典韦同为先锋。 [67]宛城之战中果断斩杀企图叛乱的青州军，因",
+      "intensity": 50
+    },
+    {
+      "a": "yu_jin",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yu_jin",
+      "b": "cao_pi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹丕 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yuan_shang",
+      "b": "ma_chao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "被说服，并派马超、庞德救援钟繇。钟繇趁郭援渡河时攻击，大破郭援。庞德更将郭援斩首。南单于见郭援被杀后投降。 [13] [31]袁谭、袁尚在黎阳与曹操连续交战，多次败退，只得固守黎阳城。 [12]建安八",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_shang",
+      "b": "pang_de",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "被说服，并派马超、庞德救援钟繇。钟繇趁郭援渡河时攻击，大破郭援。庞德更将郭援斩首。南单于见郭援被杀后投降。 [13] [31]袁谭、袁尚在黎阳与曹操连续交战，多次败退，只得固守黎阳城。 [12]建安八",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_tan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "被说服，并派马超、庞德救援钟繇。钟繇趁郭援渡河时攻击，大破郭援。庞德更将郭援斩首。南单于见郭援被杀后投降。 [13] [31]袁谭、袁尚在黎阳与曹操连续交战，多次败退，只得固守黎阳城。 [12]建安八",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_xi",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "城的时候，袁谭背曹，趁机抄掠攻占了甘陵、安平、勃海、河间，之后又进攻在中山的袁尚。袁尚战败，跑到故安投奔袁熙。 [5] [19]",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_shang",
+      "b": "zhang_liao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "、辽西单于楼班、右北平单于能臣抵之率领数万骑逆战。曹操大将张辽在白狼山之战斩杀蹋顿及名王以下，胡、汉投降者二十多万口。 [24]战败的袁尚与袁熙投奔辽东的公孙康，当时袁尚还有数千名骑兵。跟随袁尚的还有",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "并把族人的女儿作为自己的女儿，嫁给他们为妻。其中辽西单于蹋顿势力强大，受到袁绍厚待，所以袁尚兄弟前去投奔他，想借着他的势力夺回冀州。 [25] [33]建安十二年（207年），田畴帮助曹操为向导征讨柳",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_shao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "嫁给",
+      "evidence": "入幽州，略得十多万户汉人。后来袁绍和他们打好关系，立他们的酋豪为单于，并把族人的女儿作为自己的女儿，嫁给他们为妻。其中辽西单于蹋顿势力强大，受到袁绍厚待，所以袁尚兄弟前去投奔他，想借着他的势力夺回冀州",
+      "intensity": 70
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_tan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁谭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yuan_shang",
+      "b": "yuan_xi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁熙 언급",
+      "intensity": 30
+    },
+    {
       "a": "yuan_shao",
       "b": "yuan_shu",
       "type": "defection",
@@ -5141,34 +11055,7 @@
     },
     {
       "a": "yuan_shao",
-      "b": "gongsun_zan",
-      "type": "betrayal",
-      "source": "keyword",
-      "keyword": "背叛",
-      "evidence": "，反而举东郡之兵与之对抗。 [154]袁绍兴兵围城一年，最终攻破东郡。本来袁绍爱重臧洪，想要原谅他的背叛，但臧洪不愿屈服、宁愿求死，于是袁绍处死了他。 [36]公孙瓒兼并了刘虞后，刘虞旧部鲜于辅等招引",
-      "intensity": 80
-    },
-    {
-      "a": "yuan_shao",
-      "b": "gongsun_zan",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "派遣其子公孙续向黑山军求救。袁绍上架云梯，下挖地道，不断加强攻势，易京危如累卵，公孙瓒手下的将领有的投降、有的溃散。 [39]建安四年（199年）春，公孙续、张燕带领十万救兵分三路向易京进发。公孙瓒派",
-      "intensity": 50
-    },
-    {
-      "a": "yuan_shao",
       "b": "liu_bei",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投奔",
-      "evidence": "]，并随即在二月出兵攻打白马。 [184]曹操害怕袁绍渡过黄河，就加紧攻打刘备，终于将刘备打败，刘备投奔袁绍，被袁氏礼待 [228]。田丰次进谏说：“作持久之计，不急开战，只要分兵袭扰河南。不出三年，",
-      "intensity": 50
-    },
-    {
-      "a": "yuan_shao",
-      "b": "tian_feng",
       "type": "defection",
       "source": "keyword",
       "keyword": "投奔",
@@ -5213,15 +11100,6 @@
     },
     {
       "a": "yuan_shao",
-      "b": "shen_pei",
-      "type": "betrayal",
-      "source": "keyword",
-      "keyword": "谋反",
-      "evidence": "留存的书信资料，如袁绍盟友刘表、下属审配均提及袁尚是袁绍的正统继承人，袁谭与辛评、郭图后来分裂河北是谋反 [218-219] [286]；但魏晋之后的史书则记录为，袁绍属意袁尚继位但去世之前没来得及立",
-      "intensity": 80
-    },
-    {
-      "a": "yuan_shao",
       "b": "yuan_tan",
       "type": "family",
       "source": "section",
@@ -5253,14 +11131,6 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 董卓 언급",
-      "intensity": 30
-    },
-    {
-      "a": "yuan_shao",
-      "b": "gongsun_zan",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 公孙瓒 언급",
       "intensity": 30
     },
     {
@@ -5360,6 +11230,227 @@
       "intensity": 30
     },
     {
+      "a": "yuan_tan",
+      "b": "yuan_shao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "操的军营，他必然无处可回了。”于是派高览、张郃等人进攻曹操军营，攻不下来。二将听说淳于琼等人战败，就投奔曹操。这时袁绍军中惊恐慌乱，彻底溃败。袁绍和袁谭等人头戴幅巾，骑着马，与八百名骑兵渡过黄河，到达",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_tan",
+      "b": "zhang_he",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投奔",
+      "evidence": "操的军营，他必然无处可回了。”于是派高览、张郃等人进攻曹操军营，攻不下来。二将听说淳于琼等人战败，就投奔曹操。这时袁绍军中惊恐慌乱，彻底溃败。袁绍和袁谭等人头戴幅巾，骑着马，与八百名骑兵渡过黄河，到达",
+      "intensity": 50
+    },
+    {
+      "a": "yuan_tan",
+      "b": "yuan_shang",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "。但击破袁尚后，我的势力更加强盛，哪可能会疲敝，让他有机可乘呢？”曹操为了使袁谭暂时安心，让其子曹整娶袁谭女儿为媳妇，之后引军退还。 [7] [34-35]",
+      "intensity": 70
+    },
+    {
+      "a": "yuan_tan",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "地点。” [36] [42]在乐进镇守襄阳期间，乐进曾击退关羽、苏非，南郡诸郡山谷蛮夷纷纷前往乐进处投降。 [17]后又于寻口与文聘联手击败关羽 [20]。之后征讨刘备手下临沮长杜普、旌阳长梁大，皆大",
+      "intensity": 50
+    },
+    {
+      "a": "yue_jin",
+      "b": "guan_yu",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "地点。” [36] [42]在乐进镇守襄阳期间，乐进曾击退关羽、苏非，南郡诸郡山谷蛮夷纷纷前往乐进处投降。 [17]后又于寻口与文聘联手击败关羽 [20]。之后征讨刘备手下临沮长杜普、旌阳长梁大，皆大",
+      "intensity": 50
+    },
+    {
+      "a": "yue_jin",
+      "b": "wen_pin",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "地点。” [36] [42]在乐进镇守襄阳期间，乐进曾击退关羽、苏非，南郡诸郡山谷蛮夷纷纷前往乐进处投降。 [17]后又于寻口与文聘联手击败关羽 [20]。之后征讨刘备手下临沮长杜普、旌阳长梁大，皆大",
+      "intensity": 50
+    },
+    {
+      "a": "yue_jin",
+      "b": "sun_quan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "力悬殊，诸将都对此指示感到疑惑。三人在逍遥津之战紧密配合，大破吴军，几获孙权。 [25]战后，张辽问投降的东吴士兵，刚有个紫色胡须、上身长腿短、善于骑射的人是谁，东吴降卒说那就是孙权。张辽和乐进相遇，",
+      "intensity": 50
+    },
+    {
+      "a": "yue_jin",
+      "b": "zhang_liao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "力悬殊，诸将都对此指示感到疑惑。三人在逍遥津之战紧密配合，大破吴军，几获孙权。 [25]战后，张辽问投降的东吴士兵，刚有个紫色胡须、上身长腿短、善于骑射的人是谁，东吴降卒说那就是孙权。张辽和乐进相遇，",
+      "intensity": 50
+    },
+    {
+      "a": "yue_jin",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "zhang_liao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张辽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "li_dian",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 李典 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "yuan_tan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁谭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "yue_jin",
+      "b": "yuan_shang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁尚 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_bao",
+      "b": "zhang_fei",
+      "type": "parent_child",
+      "source": "infobox",
+      "field": "父亲",
+      "evidence": "父亲: 张飞 [1] [2]",
+      "intensity": 90
+    },
+    {
+      "a": "zhang_bao",
+      "b": "liu_bei",
+      "type": "nemesis",
+      "source": "keyword",
+      "keyword": "死敌",
+      "evidence": "养，将其视作蜀汉的希望和接班人 [7]。张苞随刘备伐吴时，在宜都之战中三十回合击败东吴猛将谢旌，并刺死敌将李异、生擒崔禹。夷陵之战中，张苞令韩当、周泰不敢应战。北伐时期，张苞曾在凤鸣山之战中杀入重围，",
+      "intensity": 90
+    },
+    {
+      "a": "zhang_bao",
+      "b": "zhou_tai",
+      "type": "nemesis",
+      "source": "keyword",
+      "keyword": "死敌",
+      "evidence": "养，将其视作蜀汉的希望和接班人 [7]。张苞随刘备伐吴时，在宜都之战中三十回合击败东吴猛将谢旌，并刺死敌将李异、生擒崔禹。夷陵之战中，张苞令韩当、周泰不敢应战。北伐时期，张苞曾在凤鸣山之战中杀入重围，",
+      "intensity": 90
+    },
+    {
+      "a": "zhang_bao",
+      "b": "han_dang",
+      "type": "nemesis",
+      "source": "keyword",
+      "keyword": "死敌",
+      "evidence": "养，将其视作蜀汉的希望和接班人 [7]。张苞随刘备伐吴时，在宜都之战中三十回合击败东吴猛将谢旌，并刺死敌将李异、生擒崔禹。夷陵之战中，张苞令韩当、周泰不敢应战。北伐时期，张苞曾在凤鸣山之战中杀入重围，",
+      "intensity": 90
+    },
+    {
+      "a": "zhang_bao",
+      "b": "guan_yu",
+      "type": "sworn_brothers",
+      "source": "keyword",
+      "keyword": "结义",
+      "evidence": "文学形象在小说《三国演义》中描写张苞与关羽次子关兴结义，并使用父亲的家传蛇矛为兵器，勇猛剽悍，武艺高强 [12]。可惜正当风华正茂之时，却死于脑外伤，",
+      "intensity": 100
+    },
+    {
+      "a": "zhang_bao",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_bao",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_bao",
+      "b": "zhang_fei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张飞 언급",
+      "intensity": 30
+    },
+    {
       "a": "zhang_fei",
       "b": "yuan_shao",
       "type": "defection",
@@ -5393,15 +11484,6 @@
       "source": "keyword",
       "keyword": "投降",
       "evidence": "。”关羽、张飞于是停止了抱怨。 [9]建安十三年（208年 [82]），曹操挥师南下，刘表病死，刘琮投降。刘备得知后南逃，数十万百姓相随，曹操率领五千精骑急追刘备，一日一夜，行三百余里，追到当阳境内的",
-      "intensity": 50
-    },
-    {
-      "a": "zhang_fei",
-      "b": "yan_yan",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "州，江州守将严颜据守不降，张飞将其攻破，占领江州，并生擒严颜，张飞对严颜大喝到：“大军到来，你怎么不投降还敢与我大战！”严颜回到：“你们无理侵夺我们疆土，我们这里只有断头将军，没有投降将军！”张飞大怒",
       "intensity": 50
     },
     {
@@ -5525,25 +11607,8 @@
       "intensity": 30
     },
     {
-      "a": "zhang_fei",
-      "b": "yan_yan",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 严颜 언급",
-      "intensity": 30
-    },
-    {
       "a": "zhang_he",
       "b": "cao_cao",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投降",
-      "evidence": "是诬陷道：“张郃对我军的失败感到高兴，并且出言不逊。”张郃、高览等将领惧怕被追究，于是烧掉了攻城橹，投降了曹洪。 [4]在张郃投降时，曹操还没有回营。 [6]等到回营后，曹操听说张郃已经向曹洪投降，非",
-      "intensity": 50
-    },
-    {
-      "a": "zhang_he",
-      "b": "cao_hong",
       "type": "defection",
       "source": "keyword",
       "keyword": "投降",
@@ -5687,14 +11752,6 @@
     },
     {
       "a": "zhang_he",
-      "b": "cao_hong",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 曹洪 언급",
-      "intensity": 30
-    },
-    {
-      "a": "zhang_he",
       "b": "cao_zhen",
       "type": "mentioned",
       "source": "summary",
@@ -5743,15 +11800,6 @@
       "keyword": "谋反",
       "evidence": "智破谋反建安十三年（208年），当时，荆州尚未安定，人心尚未归附。曹操在那一年，重新组建了许多军队。张辽",
       "intensity": 80
-    },
-    {
-      "a": "zhang_liao",
-      "b": "yu_jin",
-      "type": "defection",
-      "source": "keyword",
-      "keyword": "投奔",
-      "evidence": "盖等去讨伐陈兰。当时，于禁的军队率先到达，梅成诈降于禁。于禁中计，轻率地回军。梅成旋即复叛，带其军众投奔陈兰，二人又率众转入灊县之山中自守 [160]，占据了地利。灊县的山有天柱山（在今安徽省潜山市 ",
-      "intensity": 50
     },
     {
       "a": "zhang_liao",
@@ -5884,14 +11932,6 @@
       "intensity": 30
     },
     {
-      "a": "zhang_liao",
-      "b": "ling_tong",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 凌统 언급",
-      "intensity": 30
-    },
-    {
       "a": "zhang_lu",
       "b": "liu_zhang",
       "type": "defection",
@@ -5936,17 +11976,233 @@
       "intensity": 30
     },
     {
-      "a": "zhao_yun",
+      "a": "zhang_song",
+      "b": "zhang_lu",
+      "type": "nemesis",
+      "source": "keyword",
+      "keyword": "仇敌",
+      "evidence": "阻挡他呢？”刘璋说道：“我也深以为忧，但想不到应对的方案。”张松说道：“刘豫州，是使君的同宗、曹公的仇敌，善于用兵，如果令他讨伐张鲁，必定能得胜。等攻破张鲁，益州实力强盛，曹公再来也无能为力了。”张松",
+      "intensity": 90
+    },
+    {
+      "a": "zhang_song",
+      "b": "liu_bei",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "好友",
+      "evidence": "被乱棍打出。张松归蜀时途经荆州，为刘备所厚待，于是将西川地理图献予刘备，劝刘备取益州，愿为内应，并派好友孟达、法正帮助刘备。后来，刘备入蜀后假意归还，张松信以为真，写信劝阻，被兄长张肃发现，被告发，全",
+      "intensity": 80
+    },
+    {
+      "a": "zhang_song",
+      "b": "fa_zheng",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "好友",
+      "evidence": "被乱棍打出。张松归蜀时途经荆州，为刘备所厚待，于是将西川地理图献予刘备，劝刘备取益州，愿为内应，并派好友孟达、法正帮助刘备。后来，刘备入蜀后假意归还，张松信以为真，写信劝阻，被兄长张肃发现，被告发，全",
+      "intensity": 80
+    },
+    {
+      "a": "zhang_song",
+      "b": "meng_da",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "好友",
+      "evidence": "被乱棍打出。张松归蜀时途经荆州，为刘备所厚待，于是将西川地理图献予刘备，劝刘备取益州，愿为内应，并派好友孟达、法正帮助刘备。后来，刘备入蜀后假意归还，张松信以为真，写信劝阻，被兄长张肃发现，被告发，全",
+      "intensity": 80
+    },
+    {
+      "a": "zhang_song",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_song",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_song",
+      "b": "zhang_lu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张鲁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "cao_cao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "趁军队迁移时袭击曹营，曹操没有防备而战败。 [4]）三国志12的张绣曹操从舞阴回军后，南阳、章陵诸县反叛响应张绣，曹操令曹洪率兵征讨。曹洪作战不利，还屯叶县，张绣、刘表多次攻打他。 [26]建安三年（",
+      "intensity": 80
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "liu_biao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "趁军队迁移时袭击曹营，曹操没有防备而战败。 [4]）三国志12的张绣曹操从舞阴回军后，南阳、章陵诸县反叛响应张绣，曹操令曹洪率兵征讨。曹洪作战不利，还屯叶县，张绣、刘表多次攻打他。 [26]建安三年（",
+      "intensity": 80
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "cao_hong",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "趁军队迁移时袭击曹营，曹操没有防备而战败。 [4]）三国志12的张绣曹操从舞阴回军后，南阳、章陵诸县反叛响应张绣，曹操令曹洪率兵征讨。曹洪作战不利，还屯叶县，张绣、刘表多次攻打他。 [26]建安三年（",
+      "intensity": 80
+    },
+    {
+      "a": "zhang_xiu",
       "b": "yuan_shao",
       "type": "defection",
       "source": "keyword",
-      "keyword": "投奔",
-      "evidence": "平二年（191年），赵云受常山郡（时为常山王国，建安十一年改为郡治。 [1]）推举，率领本郡义从吏兵投奔公孙瓒。公孙瓒对赵云说：“听说冀州的人都想要依附袁绍，怎么唯独你能迷途知返呢？”赵云回答说：“天",
+      "keyword": "投降",
+      "evidence": "招降张绣，并与贾诩结好。张绣准备同意，贾诩却当着张绣的面回绝了袁绍的来使，准确地指出袁绍不能容人，而投降曹操有三点优势：曹操奉天子以令天下，名正言顺；曹操兵力较弱，更愿意拉拢盟友；曹操志向远大，一定能",
       "intensity": 50
     },
     {
+      "a": "zhang_xiu",
+      "b": "cao_cao",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "16]在十一月率部众归顺曹操。 [29]张绣到达后，曹操牵着张绣的手，一起参加宴会，为自己的儿子曹均娶了张绣的女儿，并封张绣为扬武将军。 [6]建安五年（200年），张绣参加了官渡之战，力战有功，升为",
+      "intensity": 70
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "zhao_yun",
+      "type": "apprentice",
+      "source": "keyword",
+      "keyword": "师从",
+      "evidence": "凤枪”威震天下。后来与赵云大战三百回合，被赵云的七探蛇盘枪杀死。从此赵云成了真正的枪王。张任、张绣均师从童渊，赵云是童渊的关门弟子，童渊是张绣、张任、赵云的师父。童渊本来只收徒两人，一人是“宛城侯”张",
+      "intensity": 60
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "zhang_ren",
+      "type": "apprentice",
+      "source": "keyword",
+      "keyword": "师从",
+      "evidence": "凤枪”威震天下。后来与赵云大战三百回合，被赵云的七探蛇盘枪杀死。从此赵云成了真正的枪王。张任、张绣均师从童渊，赵云是童渊的关门弟子，童渊是张绣、张任、赵云的师父。童渊本来只收徒两人，一人是“宛城侯”张",
+      "intensity": 60
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "dong_zhuo",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 董卓 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_xiu",
+      "b": "yuan_shao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 袁绍 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_yi",
+      "b": "jiang_wei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "禅动向不明。张翼等人于是随姜维向东进入巴西郡，绕道退至广汉郡郪县一带，以察明虚实，不久后得到后主刘禅投降的敕令，于是与姜维等到涪县向钟会投降。 [23-25]曹魏景元五年（264年）一月，张翼随钟会回",
+      "intensity": 50
+    },
+    {
+      "a": "zhang_yi",
+      "b": "zhong_hui",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "禅动向不明。张翼等人于是随姜维向东进入巴西郡，绕道退至广汉郡郪县一带，以察明虚实，不久后得到后主刘禅投降的敕令，于是与姜维等到涪县向钟会投降。 [23-25]曹魏景元五年（264年）一月，张翼随钟会回",
+      "intensity": 50
+    },
+    {
+      "a": "zhang_yi",
+      "b": "liu_shan",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "禅动向不明。张翼等人于是随姜维向东进入巴西郡，绕道退至广汉郡郪县一带，以察明虚实，不久后得到后主刘禅投降的敕令，于是与姜维等到涪县向钟会投降。 [23-25]曹魏景元五年（264年）一月，张翼随钟会回",
+      "intensity": 50
+    },
+    {
+      "a": "zhang_yi",
+      "b": "liu_bei",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "历史上的张翼有不少艺术修改。张翼初次登场时身份为刘璋麾下部将，与刘璝、张任、卓膺等同守雒城。随着卓膺投降，张任也被捕处斩后，仅剩刘璝于雒城抵抗刘备的进攻，后张翼于城楼上刺杀刘璝，投降刘备军。刘备攻打汉",
+      "intensity": 50
+    },
+    {
+      "a": "zhang_yi",
+      "b": "liu_zhang",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "历史上的张翼有不少艺术修改。张翼初次登场时身份为刘璋麾下部将，与刘璝、张任、卓膺等同守雒城。随着卓膺投降，张任也被捕处斩后，仅剩刘璝于雒城抵抗刘备的进攻，后张翼于城楼上刺杀刘璝，投降刘备军。刘备攻打汉",
+      "intensity": 50
+    },
+    {
+      "a": "zhang_yi",
+      "b": "zhang_ren",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "历史上的张翼有不少艺术修改。张翼初次登场时身份为刘璋麾下部将，与刘璝、张任、卓膺等同守雒城。随着卓膺投降，张任也被捕处斩后，仅剩刘璝于雒城抵抗刘备的进攻，后张翼于城楼上刺杀刘璝，投降刘备军。刘备攻打汉",
+      "intensity": 50
+    },
+    {
+      "a": "zhang_yi",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_yi",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhang_yi",
+      "b": "jiang_wei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 姜维 언급",
+      "intensity": 30
+    },
+    {
       "a": "zhao_yun",
-      "b": "gongsun_zan",
+      "b": "yuan_shao",
       "type": "defection",
       "source": "keyword",
       "keyword": "投奔",
@@ -6079,14 +12335,6 @@
     },
     {
       "a": "zhao_yun",
-      "b": "liu_shan",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 刘禅 언급",
-      "intensity": 30
-    },
-    {
-      "a": "zhao_yun",
       "b": "gongsun_zan",
       "type": "mentioned",
       "source": "summary",
@@ -6134,6 +12382,145 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 司马师 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhong_yao",
+      "b": "pang_de",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "了以后，果然轻易地渡汾河，众人劝止，不听。还未渡到河中央，锺繇发兵进击，将其打得大败，斩杀郭援，单于投降。 [6] [50-51]郭援本是锺繇之甥，被马腾手下庞德亲手所杀，庞德并不知道他便是郭援。锺繇",
+      "intensity": 50
+    },
+    {
+      "a": "zhong_yao",
+      "b": "ma_teng",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "了以后，果然轻易地渡汾河，众人劝止，不听。还未渡到河中央，锺繇发兵进击，将其打得大败，斩杀郭援，单于投降。 [6] [50-51]郭援本是锺繇之甥，被马腾手下庞德亲手所杀，庞德并不知道他便是郭援。锺繇",
+      "intensity": 50
+    },
+    {
+      "a": "zhong_yao",
+      "b": "zhong_hui",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "配偶正妻贾氏，孙氏被休后再娶。妾室孙氏，因妒害张氏为锺繇所休。 [30]张氏，字昌蒲，太原兹氏人，钟会生母。 [20] [31",
+      "intensity": 70
+    },
+    {
+      "a": "zhong_yao",
+      "b": "deng_ai",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "，卒赠车骑将军，谥曰惠侯。2.钟会，张昌蒲所生 [20]，官至司徒，册封陈郡侯，与邓艾分兵灭蜀后意图反叛，被杀。外甥郭援， 袁尚任命的河东太守，锺繇联合马腾大破郭援，郭援被时为马腾部将的庞德斩杀 [7",
+      "intensity": 80
+    },
+    {
+      "a": "zhong_yao",
+      "b": "zhong_hui",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "，卒赠车骑将军，谥曰惠侯。2.钟会，张昌蒲所生 [20]，官至司徒，册封陈郡侯，与邓艾分兵灭蜀后意图反叛，被杀。外甥郭援， 袁尚任命的河东太守，锺繇联合马腾大破郭援，郭援被时为马腾部将的庞德斩杀 [7",
+      "intensity": 80
+    },
+    {
+      "a": "zhong_yao",
+      "b": "pang_de",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "，卒赠车骑将军，谥曰惠侯。2.钟会，张昌蒲所生 [20]，官至司徒，册封陈郡侯，与邓艾分兵灭蜀后意图反叛，被杀。外甥郭援， 袁尚任命的河东太守，锺繇联合马腾大破郭援，郭援被时为马腾部将的庞德斩杀 [7",
+      "intensity": 80
+    },
+    {
+      "a": "zhong_yao",
+      "b": "ma_teng",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "，卒赠车骑将军，谥曰惠侯。2.钟会，张昌蒲所生 [20]，官至司徒，册封陈郡侯，与邓艾分兵灭蜀后意图反叛，被杀。外甥郭援， 袁尚任命的河东太守，锺繇联合马腾大破郭援，郭援被时为马腾部将的庞德斩杀 [7",
+      "intensity": 80
+    },
+    {
+      "a": "zhong_yao",
+      "b": "yuan_shang",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "，卒赠车骑将军，谥曰惠侯。2.钟会，张昌蒲所生 [20]，官至司徒，册封陈郡侯，与邓艾分兵灭蜀后意图反叛，被杀。外甥郭援， 袁尚任命的河东太守，锺繇联合马腾大破郭援，郭援被时为马腾部将的庞德斩杀 [7",
+      "intensity": 80
+    },
+    {
+      "a": "zhong_yao",
+      "b": "ma_chao",
+      "type": "betrayal",
+      "source": "keyword",
+      "keyword": "反叛",
+      "evidence": "文学形象在小说《三国演义》中，锺繇形象与正史相似。初为长安郡守，马超反叛时，引军攻打长安，锺繇率军防卫。后城破，锺繇从东门弃城而走，退守潼关。 [88]后献帝令锺繇草拟",
+      "intensity": 80
+    },
+    {
+      "a": "zhong_yao",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhou_tai",
+      "b": "zhao_yun",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "知己",
+      "evidence": "不减魏之许褚、蜀之赵云也。壮哉丈夫！可用可用！不独救权，且再救徐盛，益不可及矣！而仲谋报之，亦可谓一知己矣。 [12]",
+      "intensity": 80
+    },
+    {
+      "a": "zhou_tai",
+      "b": "xu_chu",
+      "type": "close_friend",
+      "source": "keyword",
+      "keyword": "知己",
+      "evidence": "不减魏之许褚、蜀之赵云也。壮哉丈夫！可用可用！不独救权，且再救徐盛，益不可及矣！而仲谋报之，亦可谓一知己矣。 [12]",
+      "intensity": 80
+    },
+    {
+      "a": "zhou_tai",
+      "b": "cao_cao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹操 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhou_tai",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhou_tai",
+      "b": "sun_ce",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙策 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhou_tai",
+      "b": "zhu_ran",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 朱然 언급",
       "intensity": 30
     },
     {
@@ -6264,15 +12651,6 @@
     },
     {
       "a": "zhou_yu",
-      "b": "sun_deng",
-      "type": "marriage",
-      "source": "keyword",
-      "keyword": "娶",
-      "evidence": "子侄周妃：周瑜之女，一说名为周彻，嫁太子孙登（孙权长子）周循：周瑜长子，官至骑都尉，娶公主孙鲁班（孙权之女） [170]周胤：周瑜次子，娶孙氏宗室女，兴业都尉，封都乡侯，因罪免周峻：周",
-      "intensity": 70
-    },
-    {
-      "a": "zhou_yu",
       "b": "xiao_qiao",
       "type": "sworn_brothers",
       "source": "keyword",
@@ -6303,6 +12681,222 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 张昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_huan",
+      "b": "sun_quan",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 孙权 언급",
+      "intensity": 50
+    },
+    {
+      "a": "zhu_huan",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_huan",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_huan",
+      "b": "cao_ren",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹仁 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_huan",
+      "b": "cao_xiu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹休 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "sun_ce",
+      "type": "marriage",
+      "source": "keyword",
+      "keyword": "娶",
+      "evidence": "兄弟朱才，朱然二弟，继承朱治之爵，官至偏将军。朱纪，朱然三弟，娶了孙策之女，官至校尉。朱纬，朱然四弟，数岁早夭。朱万，朱然五弟，数岁早夭。 [19]",
+      "intensity": 70
+    },
+    {
+      "a": "zhu_ran",
+      "b": "liu_bei",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 刘备 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "guan_yu",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 关羽 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "lv_meng",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 吕蒙 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "zhang_he",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 张郃 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhu_ran",
+      "b": "cao_zhen",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 曹真 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "zhong_hui",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "和焦彝于是劝诸葛诞不要再等东吴援兵，率全军攻向一方突围，但诸葛诞不听，更意图要斩杀二人，二人于是出城投降。不久，司马昭亦听从钟会计谋，令全怿和全端等人率数千兵出降，寿春守军因而震惊恐惧。 [11]",
+      "intensity": 50
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "sima_zhao",
+      "type": "defection",
+      "source": "keyword",
+      "keyword": "投降",
+      "evidence": "和焦彝于是劝诸葛诞不要再等东吴援兵，率全军攻向一方突围，但诸葛诞不听，更意图要斩杀二人，二人于是出城投降。不久，司马昭亦听从钟会计谋，令全怿和全端等人率数千兵出降，寿春守军因而震惊恐惧。 [11]",
+      "intensity": 50
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "zhuge_liang",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 诸葛亮 언급",
+      "intensity": 50
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "zhuge_jun",
+      "type": "family",
+      "source": "section",
+      "section": "亲属成员",
+      "evidence": "亲属成员에서 诸葛瑾 언급",
+      "intensity": 50
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "sima_zhao",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马昭 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_dan",
+      "b": "sima_shi",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 司马师 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_ke",
+      "b": "zhuge_liang",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 诸葛亮 언급",
+      "intensity": 50
+    },
+    {
+      "a": "zhuge_ke",
+      "b": "zhuge_jun",
+      "type": "family",
+      "source": "section",
+      "section": "家族成员",
+      "evidence": "家族成员에서 诸葛瑾 언급",
+      "intensity": 50
+    },
+    {
+      "a": "zhuge_ke",
+      "b": "sun_quan",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 孙权 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_ke",
+      "b": "zhuge_liang",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛亮 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_ke",
+      "b": "lu_xun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 陆逊 언급",
+      "intensity": 30
+    },
+    {
+      "a": "zhuge_ke",
+      "b": "zhuge_jun",
+      "type": "mentioned",
+      "source": "summary",
+      "evidence": "요약에서 诸葛瑾 언급",
       "intensity": 30
     },
     {
@@ -6407,14 +13001,6 @@
       "type": "mentioned",
       "source": "summary",
       "evidence": "요약에서 刘表 언급",
-      "intensity": 30
-    },
-    {
-      "a": "zhuge_liang",
-      "b": "liu_shan",
-      "type": "mentioned",
-      "source": "summary",
-      "evidence": "요약에서 刘禅 언급",
       "intensity": 30
     }
   ]

@@ -1,0 +1,19 @@
+{
+  "slug": "sys-zhugenu",
+  "category": "system",
+  "baidu_term": "诸葛连弩",
+  "url": "https://baike.baidu.com/item/%E8%AF%B8%E8%91%9B%E8%BF%9E%E5%BC%A9",
+  "crawled_at": "2026-03-18T16:58:13.791Z",
+  "title": "诸葛连弩",
+  "summary": "在帝国时代III中，中国有一个攻击极低的兵种——诸葛弩（Zhu Kou Nu），初始攻击只有5点，但他射速极快，是一般弩兵的3倍（要升级成为精锐后才能兑现，估计BUG），他的生命值不多，只有90点。",
+  "sections": [],
+  "infobox": {
+    "中文名": "诸葛连弩",
+    "游戏作品": "帝国时代III",
+    "攻击值": "5点",
+    "优点": "射速极快，是一般弩兵的3倍"
+  },
+  "battle_data": null,
+  "section_count": 0,
+  "has_infobox": true
+}
