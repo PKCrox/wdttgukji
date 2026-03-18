@@ -1,0 +1,93 @@
+{
+  "name_kr": "부손",
+  "name_en": "Fu Xun",
+  "name_cn": "傅巽",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 13,
+      "war": 10,
+      "intelligence": 70,
+      "politics": 71,
+      "charisma": 45
+    },
+    "rotk12": {
+      "leadership": 29,
+      "war": 13,
+      "intelligence": 70,
+      "politics": 72
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 40–41",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Fu Rui"
+        }
+      ],
+      "ranks": [
+        "Officer of the Imperial Secretariat",
+        "Senior Clerk in the Department of the East",
+        "Officer of the Imperial Secretariat",
+        "Cavalier Regular Attendant",
+        "General"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.439Z"
+}

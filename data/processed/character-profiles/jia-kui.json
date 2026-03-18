@@ -60,7 +60,77 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 174–228",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Chong"
+        },
+        {
+          "relation": "member",
+          "name": "Grandchildren"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Bao"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Nanfeng"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Fu"
+        },
+        {
+          "relation": "member",
+          "name": "Father-in-Law"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Fu"
+        }
+      ],
+      "ranks": [
+        "Chief of Hedong",
+        "Magistrate of Mianchi",
+        "Administrator of Hongnong",
+        "Counsellor Remonstrant",
+        "Prefect of Ye",
+        "Administrator of Wei",
+        "Inspector of Yu"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -73,7 +143,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -84,6 +154,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.028Z"
+  "source_count": 4,
+  "generated_at": "2026-03-18T12:13:17.403Z"
 }

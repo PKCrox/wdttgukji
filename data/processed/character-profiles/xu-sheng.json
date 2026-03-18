@@ -59,7 +59,31 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 55–56",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Kai"
+        }
+      ],
+      "ranks": [
+        "Major With a Separate Command, Chief of Zhaisang",
+        "Colonel, Magistrate of Wuhu County",
+        "General of the Gentlemen of the Household",
+        "General Who Established Martial, Marquis of the Capital District, Prefect of Lujiang",
+        "General Who Pacifies the East, Marquis of Wuhu"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 4917,
@@ -118,7 +142,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": true,
@@ -129,6 +153,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-18T10:20:10.047Z"
+  "source_count": 7,
+  "generated_at": "2026-03-18T12:13:17.429Z"
 }

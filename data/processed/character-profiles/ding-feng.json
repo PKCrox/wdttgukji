@@ -63,7 +63,7 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 55–56",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
       "family": [
@@ -77,20 +77,10 @@
         }
       ],
       "ranks": [
-        "Pian Jiangjun",
-        "General of the Frontal Force (Guanjun Jiangjun)",
-        "Marquis of the Capital District",
-        "General Who Destroys the Criminals",
-        "Marquis of the Greater Capital District",
-        "General of Tiger Prestige",
-        "Marquis of Anfeng",
-        "General of the Left",
-        "Great General, Left-Right Protectorate",
-        "Grand Administrator of Xuzhou (AD 260)",
-        "Da Sima of the Right and Military Consult of the Left"
+        "General of the Rear"
       ],
       "historical_notes": "",
-      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tBefore the 220s, he was only a minor officer under Gan Ning, and so most of his achievements before then (including the slaying of Zhang Liao) are fictional",
+      "novel_notes": "",
       "quotes": []
     },
     "sgz_english": {
@@ -159,5 +149,5 @@
     "relationships": false
   },
   "source_count": 8,
-  "generated_at": "2026-03-18T10:20:10.047Z"
+  "generated_at": "2026-03-18T12:13:17.430Z"
 }

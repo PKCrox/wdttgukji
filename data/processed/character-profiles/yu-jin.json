@@ -84,7 +84,25 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 10–12",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Yu Gui"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 2,
       "total_char_count": 25161,
@@ -244,7 +262,7 @@
     "wiki_en": true,
     "wiki_zh": true,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": true,
@@ -255,6 +273,6 @@
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 8,
-  "generated_at": "2026-03-18T10:20:09.909Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T12:13:17.284Z"
 }

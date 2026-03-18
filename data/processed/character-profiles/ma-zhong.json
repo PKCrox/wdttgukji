@@ -41,23 +41,10 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 87–91",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Sons"
-        },
-        {
-          "relation": "member",
-          "name": "Ma Xiu"
-        },
-        {
-          "relation": "member",
-          "name": "Ma Hui"
-        }
-      ],
+      "family": [],
       "ranks": [],
       "historical_notes": "",
       "novel_notes": "",
@@ -87,5 +74,5 @@
     "relationships": false
   },
   "source_count": 2,
-  "generated_at": "2026-03-18T10:20:10.060Z"
+  "generated_at": "2026-03-18T12:13:17.452Z"
 }

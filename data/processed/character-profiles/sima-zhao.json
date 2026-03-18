@@ -66,46 +66,11 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 211–265",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Father"
-        },
-        {
-          "relation": "member",
-          "name": "Sima Yi"
-        },
-        {
-          "relation": "member",
-          "name": "Mother"
-        },
-        {
-          "relation": "member",
-          "name": "Zhang Chunhua"
-        },
-        {
-          "relation": "member",
-          "name": "Son"
-        },
-        {
-          "relation": "member",
-          "name": "Sima Yan"
-        },
-        {
-          "relation": "member",
-          "name": "Wife"
-        },
-        {
-          "relation": "member",
-          "name": "Wang Yuanji"
-        }
-      ],
-      "ranks": [
-        "Marquis of Xincheng, General of the Gentlemen of the Agricultural Colonies, Cavalier Attendant-in-Ordinary, Gentleman Consultant, General Who Tranquilizes the East, Marshal of Yangzhou, General of the Guards, (Acting) General of the Capital Forces, Grand General, Intendant of the Affairs of the Masters of Writing, Grand Marshal, Duke of Jin, Chancellor of the State, King of Jin"
-      ],
+      "family": [],
+      "ranks": [],
       "historical_notes": "",
       "novel_notes": "",
       "quotes": []
@@ -174,5 +139,5 @@
     "relationships": false
   },
   "source_count": 7,
-  "generated_at": "2026-03-18T10:20:10.037Z"
+  "generated_at": "2026-03-18T12:13:17.413Z"
 }

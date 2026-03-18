@@ -40,7 +40,40 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 182–249",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Uncle/Adoptive Father"
+        },
+        {
+          "relation": "member",
+          "name": "Zhu Zhi"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Shi Ji"
+        }
+      ],
+      "ranks": [
+        "Governor of Danyang",
+        "General of Pian",
+        "Governor of Jiangling (AD 220)",
+        "Marquis of Yong’an, General of Zhengbei (AD 222)",
+        "General of Piaoji (229)",
+        "Great General"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, he was not slain by Zhao Yun at Yiling.",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 3699,
@@ -90,7 +123,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": true,
@@ -101,6 +134,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.069Z"
+  "source_count": 4,
+  "generated_at": "2026-03-18T12:13:17.467Z"
 }

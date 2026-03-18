@@ -40,7 +40,49 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 178–228",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zhao"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zuan"
+        },
+        {
+          "relation": "member",
+          "name": "Descendants"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Shi and his son Cao Pi"
+        }
+      ],
+      "ranks": [
+        "Colonel of the Cavalry",
+        "Commander of the Imperial Guard",
+        "General Who Directs the Army",
+        "Marquis of Dongyang Commune",
+        "General Who Guards the South",
+        "General Who Conquers the East",
+        "Marquis of Anyang Commune",
+        "General-in-Chief Who Conquers the East",
+        "Protector of Yang Province",
+        "Marquis of Changping",
+        "Valiant Marquis (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 6696,
@@ -93,7 +135,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": true,
@@ -104,6 +146,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.056Z"
+  "source_count": 4,
+  "generated_at": "2026-03-18T12:13:17.445Z"
 }

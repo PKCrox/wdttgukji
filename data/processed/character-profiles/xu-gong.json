@@ -1,0 +1,80 @@
+{
+  "name_kr": "허공",
+  "name_en": "Xu Gong",
+  "name_cn": "許貢",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 47,
+      "war": 65,
+      "intelligence": 61,
+      "politics": 52,
+      "charisma": 65
+    },
+    "rotk12": {
+      "leadership": 44,
+      "war": 66,
+      "intelligence": 64,
+      "politics": 64
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Grand Administrator of Wu"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, Xu Gong was never a subordinate of Sun Ce, but rather always resisted him.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.494Z"
+}

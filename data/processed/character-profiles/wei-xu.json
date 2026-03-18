@@ -1,0 +1,87 @@
+{
+  "name_kr": "위속",
+  "name_en": "Wei Xu",
+  "name_cn": "魏続",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 70,
+      "war": 79,
+      "intelligence": 27,
+      "politics": 33,
+      "charisma": 31
+    },
+    "rotk12": {
+      "leadership": 67,
+      "war": 78,
+      "intelligence": 31,
+      "politics": 32
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 18–19",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Relative"
+        },
+        {
+          "relation": "member",
+          "name": "Lü Bu"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tNever killed by Yan Liang.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.488Z"
+}

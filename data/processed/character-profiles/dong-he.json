@@ -41,26 +41,11 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 64–65",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Son"
-        },
-        {
-          "relation": "member",
-          "name": "Dong Yun"
-        }
-      ],
-      "ranks": [
-        "Magistrate",
-        "Prefect of Chengdu",
-        "Dependent State of Badong",
-        "Grand Administrator of Yizhou",
-        "General of the Gentlemen of the Household Manager of the Army."
-      ],
+      "family": [],
+      "ranks": [],
       "historical_notes": "",
       "novel_notes": "",
       "quotes": []
@@ -96,5 +81,5 @@
     "relationships": false
   },
   "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.060Z"
+  "generated_at": "2026-03-18T12:13:17.451Z"
 }

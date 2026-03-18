@@ -60,42 +60,12 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 150–204",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Father"
-        },
-        {
-          "relation": "member",
-          "name": "Gongsun Yan"
-        },
-        {
-          "relation": "member",
-          "name": "Sons"
-        },
-        {
-          "relation": "member",
-          "name": "Gongsun Kang"
-        },
-        {
-          "relation": "member",
-          "name": "Gongsun Gong"
-        }
-      ],
-      "ranks": [
-        "Gentlemen Cadet",
-        "Officer of Imperial Secretariat",
-        "Inspector of Ji",
-        "Administrator of Liaodong",
-        "Marquis of Liaodong",
-        "Governor of Ping",
-        "General Who is Firm and Majestic",
-        "Marquis of Yongning District"
-      ],
-      "historical_notes": "Gongsun Du, called ‘Gongsun Du the Warlike’ in the novel SGYY, was the governor of Liaodong during the Late-Han era. He was born in the middle of the second century AD (Gardiner 60; also see Gardiner 92) in either Xiangping, the capital of Liaodong, or in Xuantu (another commandery entirely) (Gardiner 60). Both Liaodong and Xuantu bordered numerous hostile factions such as Puyo (in Chinese: Fuyu), Koguryo (in Chinese: Gaogouli) and the Xianbei. All of these foreign groups assaulted the region in Gongsun Du’s early lifetime (Gardiner 61).\n\nAround AD 167, when Gongsun Du was aged 18 by Chinese reckoning, Du began his career as a public official in the staff of Liaodong’s governor Gongsun Yu (Gardiner 62). Gongsun Yu became attached to his new subordinate and eventually arranged for Du’s formal education and marriage. Gongsun Du was eventually recommended for service at the Han capital and left for there in AD 169 (Gardiner 62). He was appointed to a post in the Palace Secretariat and then later received rank as the Inspector of Qizhou (Gardiner 62–63). By this time, the Late-Han dynasty was beginning to unravel as it faced numerous rebellions, bankruptcy and local warlords usurping power. In AD 189, the warlord Dong Zhou took control of the Han capital. Although several provincial lords raised troops to oppose Dong Zhou, others benefited from his rise to power. One such man was Gongsun Du. Dong Zhou’s officer Xu Rong (who happened to be a man from Liaodong commandery himself) recommended Gongsun Du for higher office. As a result, Gongsun Du was made Governor of Liaodong in AD 189 (Gardiner 64; see also Gardiner 92).\n\nOfficial Chinese sources seem to indicate that Gongsun Du’s first step as governor was to carry out a systematic purge of all his personal enemies. Gardiner, however, offers the explanation that Gongsun Du was probably attempting to secure his authority by eliminating potential adversaries with armed retainers [adversaries that might in the future attempt... (truncated)",
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
       "novel_notes": "",
       "quotes": []
     },
@@ -123,5 +93,5 @@
     "relationships": false
   },
   "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.074Z"
+  "generated_at": "2026-03-18T12:13:17.473Z"
 }

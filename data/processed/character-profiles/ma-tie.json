@@ -1,0 +1,101 @@
+{
+  "name_kr": "마철",
+  "name_en": "Ma Tie",
+  "name_cn": "馬鉄",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 71,
+      "war": 66,
+      "intelligence": 60,
+      "politics": 47,
+      "charisma": 59
+    },
+    "rotk12": {
+      "leadership": 70,
+      "war": 62,
+      "intelligence": 58,
+      "politics": 52
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Teng"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Chao"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Xiu"
+        }
+      ],
+      "ranks": [
+        "Colonel of the Cavalry"
+      ],
+      "historical_notes": "Ma Tie was a son of Ma Teng. He accompanied his father to Ye city when Ma Teng was persuaded to take up rank there. Though granted a rank himself, he was executed alongside his father when Ma Chao later revolted.\n\nA Biographical Dictionary of the Later-Han to Three Kingdoms by Dr. Rafe de Crespigny",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.451Z"
+}

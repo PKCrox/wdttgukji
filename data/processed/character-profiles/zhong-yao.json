@@ -59,7 +59,78 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 151–230",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Hao"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Di"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Yan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Hui"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Guo Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Yu"
+        }
+      ],
+      "ranks": [
+        "Gentleman in Attendance of the Yellow Gates",
+        "Palace Attendant",
+        "Supervisor of the Masters of Writing",
+        "Colonel Director of Retainers",
+        "Grand Judge",
+        "Chancellor of State",
+        "Grand Judge",
+        "Grand Commandant"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -75,7 +146,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -86,6 +157,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.035Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.411Z"
 }

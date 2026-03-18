@@ -41,16 +41,34 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 76–77",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [],
-      "ranks": [
-        "General of the Left",
-        "Gentleman of the General Staff",
-        "Zhaowen Jiangjun"
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Li Tong"
+        },
+        {
+          "relation": "member",
+          "name": "Older Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Li Xu"
+        }
       ],
-      "historical_notes": "",
+      "ranks": [
+        "“Gang” Marquis (or Firm Marquis",
+        "Inherited from Li Tong",
+        "C. AD 209)",
+        "Gentleman General of the Centre Who Demonstrates Righteousness (C. AD 220)"
+      ],
+      "historical_notes": "Li Ji was Li Tong’s youngest son. When Li Tong died of illness around c. AD 209 his fief was posthumously increased by 200 households from 400 households. Li Ji inherited his rank though he was described in an edict issued by Cao Pi (c. AD 220) as ‘mediocre in ability’. In that same edict, though, Cao Pi promoted Li Ji to the rank of Gentleman General of the Centre who Demonstrates Righteousness. (1)\n\n(1): SGZ Wei 18, Li Tong’s biography. Translation by Zhai Rong.",
       "novel_notes": "",
       "quotes": []
     },
@@ -78,5 +96,5 @@
     "relationships": false
   },
   "source_count": 2,
-  "generated_at": "2026-03-18T10:20:10.065Z"
+  "generated_at": "2026-03-18T12:13:17.459Z"
 }

@@ -52,7 +52,18 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Military Inspector"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -65,7 +76,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -76,6 +87,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.079Z"
+  "source_count": 4,
+  "generated_at": "2026-03-18T12:13:17.479Z"
 }

@@ -58,7 +58,40 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Ling Tong"
+        },
+        {
+          "relation": "member",
+          "name": "Grandsons"
+        },
+        {
+          "relation": "member",
+          "name": "Ling Lie"
+        },
+        {
+          "relation": "member",
+          "name": "Ling Feng"
+        }
+      ],
+      "ranks": [
+        "Chief of Yongping",
+        "Colonel Who Routs the Caitiffs"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -71,7 +104,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -82,6 +115,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.067Z"
+  "source_count": 4,
+  "generated_at": "2026-03-18T12:13:17.463Z"
 }

@@ -1,0 +1,153 @@
+{
+  "name_kr": "손등",
+  "name_en": "Sun Deng",
+  "name_cn": "孫登",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 59,
+      "war": 39,
+      "intelligence": 79,
+      "politics": 74,
+      "charisma": 84
+    },
+    "rotk12": {
+      "leadership": 62,
+      "war": 37,
+      "intelligence": 79,
+      "politics": 80
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 209–241",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jian"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Xu"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Lu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun He"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ba"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Fen"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Xiu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Liang"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Luyu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Luban"
+        },
+        {
+          "relation": "member",
+          "name": "Father-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Cheng Bing"
+        }
+      ],
+      "ranks": [
+        "Heir"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.464Z"
+}

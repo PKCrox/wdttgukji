@@ -1,0 +1,98 @@
+{
+  "name_kr": "염포",
+  "name_en": "Yan Pu",
+  "name_cn": "閻圃",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 31,
+      "war": 28,
+      "intelligence": 82,
+      "politics": 78,
+      "charisma": 69
+    },
+    "rotk12": {
+      "leadership": 29,
+      "war": 25,
+      "intelligence": 82,
+      "politics": 79
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 64–65",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Yan Mu"
+        },
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Dong"
+        }
+      ],
+      "ranks": [
+        "Officer of the Department of Merits",
+        "Marquis"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.487Z"
+}

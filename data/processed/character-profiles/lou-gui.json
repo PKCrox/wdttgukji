@@ -52,7 +52,16 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "Lou Gui, styled Zibo, was a man of courage and ambition. In the early 190s he achieved recognition northwest of Jing by gathering refugees from Chang’an under his banner. He supported Liu Biao initially but turned to Cao Cao, an old acquaintance. He was given high rank as an advisor but no command.\n\nLuo Gui participated in campaigns against the Yuan family through Ji province, then followed Cao Cao into Jing. There Lou Gui advised Cao Cao that that Liu Cong’s offer to surrender was genuine because he had come with his official insignia. He went on to distinguish himself in Cao Cao’s campaigns against Ma Chao, where his recommendations included the construction of a temporary fortification of wetted sand to protect the bridgehead over the Yellow River.\n\nLou Gui was favored by Cao Cao and, as a result, accumulated great wealth. It is said, though, that he came to overstep the boundaries of his position and as a consequence Cao Cao had him executed. (1)\n\n1: Source: Sanguozhi Wei 12",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -65,7 +74,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -76,6 +85,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.081Z"
+  "source_count": 4,
+  "generated_at": "2026-03-18T12:13:17.482Z"
 }

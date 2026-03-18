@@ -62,7 +62,148 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 236–290",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhao"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Yuanji"
+        },
+        {
+          "relation": "member",
+          "name": "Wives"
+        },
+        {
+          "relation": "member",
+          "name": "Yang Jun"
+        },
+        {
+          "relation": "member",
+          "name": "Yang Zhi"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Gui"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhong"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Jian"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Wei"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Xian"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhi"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Yǎn"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Yun"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Gai"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Xia"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Mo"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Ai"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Ying"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Yàn"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Chi"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Hui and eight others"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Sima You"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Shi"
+        },
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Yi"
+        }
+      ],
+      "ranks": [
+        "Prince of Jin",
+        "Emperor"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -78,7 +219,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -89,6 +230,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.038Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.414Z"
 }

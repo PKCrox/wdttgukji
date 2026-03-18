@@ -67,26 +67,11 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 163–225",
+      "life_span": "AD 111–112",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Brother"
-        },
-        {
-          "relation": "member",
-          "name": "Zhou Ping"
-        }
-      ],
-      "ranks": [
-        "Major With a Separate Command",
-        "Chief of Chunju Prefecture",
-        "Chief of Yichun Prefecture",
-        "Controller of Ruxu, General Who Pacifies the Caitiffs",
-        "Grand Administrator of Hanzhong, General of Roused Valour, Marquis of Lingyang"
-      ],
+      "family": [],
+      "ranks": [],
       "historical_notes": "",
       "novel_notes": "",
       "quotes": []
@@ -268,5 +253,5 @@
     "relationships": false
   },
   "source_count": 11,
-  "generated_at": "2026-03-18T10:20:09.991Z"
+  "generated_at": "2026-03-18T12:13:17.358Z"
 }

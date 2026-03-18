@@ -99,75 +99,11 @@
       }
     },
     "kongming": {
-      "life_span": "AD 163–212",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Elder Brothers"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Yan"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Chen"
-        },
-        {
-          "relation": "member",
-          "name": "Son"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Yun"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Can"
-        },
-        {
-          "relation": "member",
-          "name": "Cousin"
-        },
-        {
-          "relation": "member",
-          "name": "Xun You"
-        },
-        {
-          "relation": "member",
-          "name": "Grandsons"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Han"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Yi"
-        },
-        {
-          "relation": "member",
-          "name": "Nephews"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Shao"
-        },
-        {
-          "relation": "member",
-          "name": "Xun Hong"
-        }
-      ],
-      "ranks": [
-        "Filial and Incorrupt, Prefect of the Palace Guards (AD 189)",
-        "Major (AD 191)",
-        "Imperial Counsellor, Chief of the Imperial Secretariat",
-        "Marquis of Wansui Commune (AD 203)",
-        "Imperial Household Grandee, Honorary Palace Attendant",
-        "Respectful Marquis (Posthumous)"
-      ],
+      "family": [],
+      "ranks": [],
       "historical_notes": "",
       "novel_notes": "",
       "quotes": []
@@ -365,5 +301,5 @@
     "relationships": true
   },
   "source_count": 12,
-  "generated_at": "2026-03-18T10:20:09.819Z"
+  "generated_at": "2026-03-18T12:13:17.187Z"
 }

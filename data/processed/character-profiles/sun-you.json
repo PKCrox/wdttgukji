@@ -1,0 +1,83 @@
+{
+  "name_kr": "손유",
+  "name_en": "Sun You",
+  "name_cn": "孫瑜",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 75,
+      "war": 64,
+      "intelligence": 68,
+      "politics": 72,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 77,
+      "war": 70,
+      "intelligence": 68,
+      "politics": 69
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 177–215",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Colonel of Respect and Uprightness",
+        "Grand Administrator of Danyang (AD 204)",
+        "General Who Calms the Distant",
+        "General Who Manifests Might"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tSun Yu is replaced in some versions of the novel with Sun He, his cousin.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.465Z"
+}

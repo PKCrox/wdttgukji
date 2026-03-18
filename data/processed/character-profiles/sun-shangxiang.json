@@ -61,7 +61,41 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Husband"
+        },
+        {
+          "relation": "member",
+          "name": "Quan Shang"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Quan Ji"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Chen"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -142,7 +176,7 @@
     "wiki_en": true,
     "wiki_zh": true,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": true,
@@ -153,6 +187,6 @@
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 9,
-  "generated_at": "2026-03-18T10:20:09.999Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T12:13:17.365Z"
 }

@@ -41,16 +41,12 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 18–19",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
       "family": [],
-      "ranks": [
-        "Aide",
-        "Gentleman Attendant",
-        "General Who Upholds Loyalty"
-      ],
-      "historical_notes": "Sun Qian, styled Gongyou, hailed from Beihai. When Liu Bei took command of Xuzhou Sun Qian was recommended to him by Zheng Xuan, and was appointed an aide, and followed Liu Bei across the land. When Liu Bei left Cao Cao he sent Sun Qian to establish relations with Yuan Shao, and before entering Jingzhou Sun Qian was dispatched with Mi Zhu to meet Liu Biao—and both missions went smoothly.\n\nWhile in Jingzhou Liu Biao wrote Yuan Shang to express how troubled he became over his separation with Yuan Tan while discussing with Liu Bei and Sun Qian. This shows how highly he regarded Sun Qian’s view. When Liu Bei took authority in Yizhou Sun Qian was promoted from Gentleman Attendant to General Who Upholds Loyalty, the same rank as Jian Yong. Some time later he passed away. (1)\n\n(1): Primary source: Sanguozhi translation by Lady Wu.",
+      "ranks": [],
+      "historical_notes": "",
       "novel_notes": "",
       "quotes": []
     },
@@ -85,5 +81,5 @@
     "relationships": false
   },
   "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.060Z"
+  "generated_at": "2026-03-18T12:13:17.453Z"
 }

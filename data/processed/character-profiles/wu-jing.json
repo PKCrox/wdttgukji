@@ -1,0 +1,138 @@
+{
+  "name_kr": "오경",
+  "name_en": "Wu Jing",
+  "name_cn": "呉景",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 73,
+      "war": 60,
+      "intelligence": 57,
+      "politics": 67,
+      "charisma": 69
+    },
+    "rotk12": {
+      "leadership": 69,
+      "war": 66,
+      "intelligence": 52,
+      "politics": 65
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Wu Fen"
+        },
+        {
+          "relation": "member",
+          "name": "Wu Qi"
+        },
+        {
+          "relation": "member",
+          "name": "Grandsons"
+        },
+        {
+          "relation": "member",
+          "name": "Wu An"
+        },
+        {
+          "relation": "member",
+          "name": "Wu Xuan"
+        },
+        {
+          "relation": "member",
+          "name": "In-Law"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jian"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ce"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        }
+      ],
+      "ranks": [
+        "Colonel of the Cavalry",
+        "Grand Administrator of Danyang",
+        "General of the Interior Who Supervises the Army",
+        "Grand Administrator of Guanling",
+        "Grand Administrator of Danyang",
+        "General Who Manifests Martial Power"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.466Z"
+}

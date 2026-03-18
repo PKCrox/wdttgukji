@@ -61,7 +61,97 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 217–282",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Kui"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Wives"
+        },
+        {
+          "relation": "member",
+          "name": "Li Wan"
+        },
+        {
+          "relation": "member",
+          "name": "Guo Huai"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Limin"
+        },
+        {
+          "relation": "member",
+          "name": "Daughters"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Bao"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Nanfeng"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-laws"
+        },
+        {
+          "relation": "member",
+          "name": "Sima You"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhong"
+        },
+        {
+          "relation": "member",
+          "name": "Han Shou"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Han Mi"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -94,7 +184,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": true,
@@ -105,6 +195,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.070Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.469Z"
 }

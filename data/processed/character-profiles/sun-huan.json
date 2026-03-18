@@ -40,7 +40,51 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 82–84",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sun He"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Zhu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jun"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Shao"
+        }
+      ],
+      "ranks": [
+        "General of the Gentleman of the Household Who Gives Tranquillity to the East"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 5257,
@@ -60,7 +104,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": false,
@@ -71,6 +115,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 2,
-  "generated_at": "2026-03-18T10:20:10.068Z"
+  "source_count": 3,
+  "generated_at": "2026-03-18T12:13:17.465Z"
 }

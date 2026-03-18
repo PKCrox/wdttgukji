@@ -41,7 +41,7 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 157–198",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
       "affiliations": [],
       "family": [
@@ -51,48 +51,11 @@
         },
         {
           "relation": "member",
-          "name": "Liu Wei"
-        },
-        {
-          "relation": "member",
-          "name": "Brother"
-        },
-        {
-          "relation": "member",
-          "name": "Liu Dai"
-        },
-        {
-          "relation": "member",
-          "name": "Uncle"
-        },
-        {
-          "relation": "member",
-          "name": "Liu Chong"
-        },
-        {
-          "relation": "member",
-          "name": "Sons"
-        },
-        {
-          "relation": "member",
-          "name": "Liu Ji"
-        },
-        {
-          "relation": "member",
-          "name": "Liu Shao"
-        },
-        {
-          "relation": "member",
-          "name": "Liu Shang"
+          "name": "Liu Shan"
         }
       ],
       "ranks": [
-        "County Magistrate in Liang",
-        "Assistant Officer",
-        "Marquis of Mouping",
-        "Gentleman of the Palace",
-        "Imperial Inspector of Yang Province",
-        "Grand Administrator of Danyang"
+        "Prince of Anding"
       ],
       "historical_notes": "",
       "novel_notes": "",
@@ -129,5 +92,5 @@
     "relationships": false
   },
   "source_count": 3,
-  "generated_at": "2026-03-18T10:20:10.085Z"
+  "generated_at": "2026-03-18T12:13:17.488Z"
 }

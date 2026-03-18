@@ -61,7 +61,39 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 70–73",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Meng Ta"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Deng Xian"
+        }
+      ],
+      "ranks": [
+        "Governor of Yidu",
+        "Chamberlain",
+        "General for Establishing Prowess",
+        "Village Lord of P’ing-Yang",
+        "Grand Administrator of Xincheng"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDid not historically kill Xu Huang.",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -77,7 +109,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -88,6 +120,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.046Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.428Z"
 }

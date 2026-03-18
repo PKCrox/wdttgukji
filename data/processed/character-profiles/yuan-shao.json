@@ -68,77 +68,13 @@
       "sections": {}
     },
     "kongming": {
-      "life_span": "AD 142–202",
+      "life_span": "AD 001–202",
       "courtesy_name": null,
-      "affiliations": [
-        "Date: 12/2012\n\tReplies: 23"
-      ],
-      "family": [
-        {
-          "relation": "member",
-          "name": "Possible Fathers"
-        },
-        {
-          "relation": "member",
-          "name": "Yuan Feng"
-        },
-        {
-          "relation": "member",
-          "name": "Yuan Cheng"
-        },
-        {
-          "relation": "member",
-          "name": "Wife"
-        },
-        {
-          "relation": "member",
-          "name": "Lady Liu"
-        },
-        {
-          "relation": "member",
-          "name": "Sons"
-        },
-        {
-          "relation": "member",
-          "name": "Yuan Tan"
-        },
-        {
-          "relation": "member",
-          "name": "Yuan Xi"
-        },
-        {
-          "relation": "member",
-          "name": "Yuan Shang"
-        },
-        {
-          "relation": "member",
-          "name": "Cousins"
-        },
-        {
-          "relation": "member",
-          "name": "Yuan Xu"
-        },
-        {
-          "relation": "member",
-          "name": "Son-in-law"
-        },
-        {
-          "relation": "member",
-          "name": "Gao Gan"
-        }
-      ],
-      "ranks": [
-        "Chief of Puyang",
-        "Attendant Imperial Clerk",
-        "Colonel of the Central Army",
-        "Grand Administrator of Bohai, Marquis of Kangxiang",
-        "General of Chariots and Cavalry (Self-Proclaimed)",
-        "Governor of Jizhou",
-        "Grand Commandant",
-        "General-in-Chief"
-      ],
-      "historical_notes": "Yuan Shao was a grandson of Yuan Tang, a minister who held high rank within the Han Dynasty. It is unclear who his father was. When corrupt eunuchs dominated the Han court, Yuan Shao was one of the men who rose up in arms against them. Later, he protested Dong Zhuo’s military takeover of the capital. In AD 190, Yuan Shao and some other warlords drafted troops to fight with Dong Zhuo. Dong Zhuo attempted to make peace with Yuan Shao, but Shao slew several of the envoys that greeted him.\n\nThe Han Emperor became a puppet of Dong Zhuo. Yuan Shao and Han Fu wished to set up Liu Yu as Emperor in his place, but the proposal was abandoned when Liu Yu himself disagreed with this course of action. Eventually, Dong Zhuo was driven from the capital. Han Fu, who formerly had supplied Yuan Shao’s army, stopped sending as many provisions. Qu Yi revolted against Han Fu at around the same time. In response to these developments, Yuan Shao loosely allied with Qu Yi and Gongsun Zan against Han Fu.\n\nGongsun Zan fought successfully with Han Fu for some time. Han Fu, worried, surrendered the province of Ji to Yuan Shao. It wasn’t long before Han Fu grew suspicious of Yuan Shao’s nature and fled to join the warlord Zhang Miao. He later committed suicide after believing there was a conspiracy against him.\n\nAt this time, relations between Yuan Shao and his relative, Yuan Shu, had also broken down. Yuan Shao dispatched Zhou Ang to try to seize Yangcheng from Yuan Shu. In the course of the battle though, a cousin of Gongsun Zan’s was killed. This unfortunate event enraged Gongsun Zan. Yuan Shao fought with and defeated Gongsun Zan at Jieqiao (Jie Bridge) and in other battles. Gongsun Zan fled to You Province. In AD 193 the two forces made a short truce.\n\nYuan Shao took this occasion to fight with a group of brigands known as the Black Mountain Bandits. He slew thousands of them, decimating camps left and right. At this time, the famed general Lü Bu had fled from place to place and was current... (truncated)",
-      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tYuan Shao was described to be in his late 20s in the late AD 160s. This contradicts his traditional birth date of AD 154. [Rafe de Crespigny]\n\tYuan Shao’s relation to Yuan Shu is unclear due to a lack of information on Shao’s parentage. What is clear is that Yuan Shao and Yuan Shu are both grandsons of Yuan Tang and thus were either brothers or cousins, depending on the source.",
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
       "quotes": []
     },
     "sgz_english": {
@@ -325,5 +261,5 @@
     "relationships": false
   },
   "source_count": 11,
-  "generated_at": "2026-03-18T10:20:09.895Z"
+  "generated_at": "2026-03-18T12:13:17.269Z"
 }

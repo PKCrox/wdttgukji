@@ -1,0 +1,126 @@
+{
+  "name_kr": "전종",
+  "name_en": "Quan Cong",
+  "name_cn": "全琮",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 70,
+      "intelligence": 73,
+      "politics": 72,
+      "charisma": 64
+    },
+    "rotk12": {
+      "leadership": 78,
+      "war": 72,
+      "intelligence": 75,
+      "politics": 61
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Quan Rou"
+        },
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Luban"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Quan Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Grandchild"
+        },
+        {
+          "relation": "member",
+          "name": "Quan Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Qian Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Quan Jing"
+        }
+      ],
+      "ranks": [
+        "Colonel Who Displays Majesty",
+        "Governor of Yang Hua",
+        "General Who Pacifies the South, Governor of Qian Tang",
+        "Governor of the Nine Rivers",
+        "General of the Guards, Left Commissioner over the Army, Governor of Xu Zhou",
+        "Commander-in-Chief of the Right Army, Army Instructor of the Left Army"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.467Z"
+}

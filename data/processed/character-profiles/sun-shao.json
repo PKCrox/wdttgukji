@@ -1,0 +1,114 @@
+{
+  "name_kr": "손소",
+  "name_en": "Sun Shao",
+  "name_cn": "孫韶",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 82,
+      "war": 78,
+      "intelligence": 73,
+      "politics": 68,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 80,
+      "war": 79,
+      "intelligence": 76,
+      "politics": 69
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ce"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Da Qiao"
+        },
+        {
+          "relation": "member",
+          "name": "Sun"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        }
+      ],
+      "ranks": [
+        "Marquis of Wu",
+        "Marquis of Shangyu"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.464Z"
+}

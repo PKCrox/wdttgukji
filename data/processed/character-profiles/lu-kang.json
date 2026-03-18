@@ -60,7 +60,82 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 226–274",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 11/2002\n\tReplies: 54"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ce"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Xun"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Tan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Yan"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Ji"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Xuan"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Yun"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Dan"
+        }
+      ],
+      "ranks": [
+        "Colonel Who Builds Might",
+        "Lijie Zhonglangjiang",
+        "Chief Inspector of Chaishang",
+        "General Who Maintains the Army",
+        "General-in-Chief Who Maintains the Army",
+        "Governor of Yizhou",
+        "Chief Controller of Xinling, Xiling, Yidao, Lexiang, and Gong’an",
+        "Du Hu",
+        "Da Si Ma",
+        "Governor of Jingzhou"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -76,7 +151,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -87,6 +162,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.046Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.429Z"
 }

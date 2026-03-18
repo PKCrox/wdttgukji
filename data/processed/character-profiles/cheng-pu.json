@@ -59,7 +59,36 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 44–45",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Cheng Zi"
+        }
+      ],
+      "ranks": [
+        "Chief Commandant of the Wu Commandery",
+        "Chief Commandant of Danyang",
+        "General of the Inner Guard Who Destroys the Bandits",
+        "Grand Administrator of Lingling",
+        "Right Chief Commander",
+        "Major-General",
+        "Grand Administrator of Jiangxia",
+        "Grand Administrator of Nanjun",
+        "Grand Administrator of Jiangxia",
+        "General Who Terrifies Criminals"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tThe ‘Magnificent Five of Wu’ is a fan creation with no historical basis. Cheng Pu was not a part of any such group.",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 4010,
@@ -120,7 +149,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": true,
@@ -131,6 +160,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-18T10:20:10.046Z"
+  "source_count": 7,
+  "generated_at": "2026-03-18T12:13:17.429Z"
 }

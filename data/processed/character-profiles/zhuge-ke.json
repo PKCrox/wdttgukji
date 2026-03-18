@@ -1,0 +1,105 @@
+{
+  "name_kr": "제갈각",
+  "name_en": "Zhuge Ke",
+  "name_cn": "諸葛恪",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 72,
+      "war": 46,
+      "intelligence": 90,
+      "politics": 80,
+      "charisma": 49
+    },
+    "rotk12": {
+      "leadership": 72,
+      "war": 47,
+      "intelligence": 90,
+      "politics": 80
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 203–253",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Jin"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Chuo"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Jian"
+        }
+      ],
+      "ranks": [
+        "Imperial Guardian"
+      ],
+      "historical_notes": "Zhuge Ke was the son of Zhuge Jin of Wu. He was a nephew to Zhuge Liang. He initially served as a tutor to Sun Deng. In AD 234, Ke sought to be appointed as the official in charge of Danyang. Though Zhuge Ke insisted that he could raise a large army drafted from the people of the region, numerous scholars (including his father Zhuge Jin apparently) doubted his ability. Zhuge Ke was nevertheless appointed to be Prefect of Danyang. In this capacity, Zhuge Ke launched a campaign against the hills people of the area. He forced dissidents into submission and recruited more soldiers into the army as promised. He also collected grain.*\n\nZhuge Ke was greatly admired by Sun Quan. Sun Quan entrusted him, among others, to affairs of state while he was on his deathbed. Following Sun Quan’s demise, Zhuge Ke learned of Sun Hong’s intent to assassinate him. Zhuge Ke summoned Sun Hong to a meeting and killed him instead. Zhuge Ke thereafter held high rank under the next Wu Emperor, Sun Liang. In this position, Zhuge Ke canceled all overdue debts and abolished custom duties. He also insisted that Imperial princes of Wu move their residences away from the Jiang river, which was a strategic location for Wu’s navy. He rebuilt a dam at Dongxing and further constructed two fortresses atop the nearby hills. These actions were generally popular and well-received.\n\nIn AD 253, Wei assaulted Dongxing. Zhuge Ke led an army to relieve it. Wei built pontoon bridges and took up positions nearby the dam. However, the Wei forces were unable to directly approach the fortifications that Zhuge Ke had previously built. Although it was still winter, the Wu general Ding Feng ordered his troops to take off most of their armor and attack enemy positions. The Wei soldiers merely scoffed at the ridiculous invading force. This, however, led to their demise. Ding Feng’s soldiers charged and fully routed them. Zhuge Ke’s forces pursued Wei, putting several officers to death, capturing supplies, weapons, animals... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.467Z"
+}

@@ -1,0 +1,141 @@
+{
+  "name_kr": "손교",
+  "name_en": "Sun Jiao",
+  "name_cn": "孫皎",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 60,
+      "intelligence": 69,
+      "politics": 71,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 77,
+      "war": 72,
+      "intelligence": 67,
+      "politics": 71
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 180–219",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Gao"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Huan"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Qian"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yin"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Xi"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Zi"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Mi"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        }
+      ],
+      "ranks": [
+        "Colonel Who Guards the Army, General Who Conquers the Caitiffs"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.464Z"
+}

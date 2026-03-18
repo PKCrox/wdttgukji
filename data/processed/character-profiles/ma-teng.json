@@ -61,7 +61,74 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 150–212",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Claimed Ancestor"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Ping"
+        },
+        {
+          "relation": "member",
+          "name": "Sworn Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Han Sui"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Chao"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Tie"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Xiu"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Yunlu f"
+        }
+      ],
+      "ranks": [
+        "Major",
+        "Lieutenant-General",
+        "General of the West",
+        "General Who Conquers the East",
+        "General Who Conquers the West",
+        "General of the Front",
+        "Marquis of Huaili",
+        "Commandant of the Palace Guard"
+      ],
+      "historical_notes": "Ma Teng was allegedly a descendant of the famed Han general Ma Yuan. He was half-Qiang, tall, and strong. In 187, Ma Teng held a military post under the Han general Geng Bi. At the time, a large revolt was brewing in Liang province. Ma Teng joined a number of officers in mutinying against their superior Geng Bi, in effect joining the rebels.\n\nFrom that time on, Ma Teng became a major leader of the rebels. Along with Song Jian, Han Sui and others, Ma Teng had full autonomy from the Han. When Dong Zhuo came into power as Prime Minister, Ma Teng was even granted the rank “General Who Conquers the West” by the Han. Later, Ma Teng established a sort of alliance with Han Sui. After Dong Zhuo’s death, Ma Teng and Han Sui jointly decided to attack Dong Zhuo’s successors and take Chang’an. This expedition ended in failure. To make matters worse, Ma Teng had a falling out with Han Sui and was defeated in battle against him. Ma Teng withdrew to Huaili, a location close to Chang’an.\n\nIn AD 202, Cao Cao was warring with Yuan Shang. Yuan Shang’s officer Guo Yuan and Cao Cao’s officer Zhong Yao both jointly sent messengers to Ma Teng asking for support. Ma Teng was indecisive at first. In the end, Fu Gan and Zhang Ji convinced him to side with Cao Cao. Ma Teng sent his son Ma Chao and general Pang De to fight with Guo Yuan. In AD 205, Ma Teng further assisted Cao Cao by sending troops to fight the warlord Zhang Cheng.\n\nZhang Ji later convinced Ma Teng to accept a rank and serve Cao Cao. Ma Teng accepted this offer. He was appointed Minister of the Guards. This was a nominal rank that meant little in practice; Ma Teng was more or less just a very well taken care of prisoner within the city of Ye. Ma Teng’s son, Ma Chao, assumed his father’s position as warlord in the meanwhile. When Ma Chao later revolted against Cao Cao in AD 211, however, Ma Teng was executed by Cao Cao.\n\nSources: A Biographical Dictionary of the Later-Han to Three Kingdoms by Dr. Rafe de Crespigny, To Establish ... (truncated)",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDid not participate in the campaign against Dong Zhuo. Rather, was allied with Zhuo.\n\tWasn’t executed before Ma Chao’s attack but a year afterwards.\n\tDidn’t take part in the Girdle Decree.",
+      "quotes": []
+    },
     "sgz_english": null
   },
   "koei_official": null,
@@ -77,7 +144,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": false,
     "koei_official": false,
     "fandom": false,
@@ -88,6 +155,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.042Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.418Z"
 }

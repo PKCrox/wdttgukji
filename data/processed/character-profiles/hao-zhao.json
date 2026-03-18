@@ -59,7 +59,29 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 96–97",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Hao Kai"
+        }
+      ],
+      "ranks": [
+        "Commander of a Division",
+        "General of Miscellaneous Title",
+        "Marquis"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 4522,
@@ -82,7 +104,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": false,
@@ -93,6 +115,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-18T10:20:10.033Z"
+  "source_count": 6,
+  "generated_at": "2026-03-18T12:13:17.408Z"
 }

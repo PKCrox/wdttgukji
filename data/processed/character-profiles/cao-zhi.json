@@ -40,7 +40,84 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 192–232",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Cao"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Empress Bian"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Pi"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zhang"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Xiong"
+        },
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Cui"
+        },
+        {
+          "relation": "member",
+          "name": "In-law"
+        },
+        {
+          "relation": "member",
+          "name": "Cui Yan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Miao"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zhi"
+        }
+      ],
+      "ranks": [
+        "Earl of Pingyuan (AD 212)",
+        "Earl of Linzi (AD 215)",
+        "Enemy-Defeating General (AD 220) Earl of Anxiang (AD 223",
+        "Demotion)",
+        "Earl of Yingcheng (AD 223)",
+        "Prince of Chen (AD 232)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 10376,
@@ -60,7 +137,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": false,
@@ -71,6 +148,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 2,
-  "generated_at": "2026-03-18T10:20:10.055Z"
+  "source_count": 3,
+  "generated_at": "2026-03-18T12:13:17.444Z"
 }

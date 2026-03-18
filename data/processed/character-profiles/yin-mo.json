@@ -40,7 +40,16 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 3954,
@@ -60,7 +69,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": false,
@@ -71,6 +80,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 2,
-  "generated_at": "2026-03-18T10:20:10.064Z"
+  "source_count": 3,
+  "generated_at": "2026-03-18T12:13:17.456Z"
 }

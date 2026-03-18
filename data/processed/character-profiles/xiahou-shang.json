@@ -40,7 +40,53 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 184–226",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Cao of Deyang"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Xuan"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Hui"
+        },
+        {
+          "relation": "member",
+          "name": "wife of He Shi"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou De f"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 6425,
@@ -60,7 +106,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": false,
@@ -71,6 +117,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 2,
-  "generated_at": "2026-03-18T10:20:10.056Z"
+  "source_count": 3,
+  "generated_at": "2026-03-18T12:13:17.446Z"
 }

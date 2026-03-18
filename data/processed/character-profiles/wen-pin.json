@@ -59,7 +59,57 @@
       "summary": "",
       "sections": {}
     },
-    "kongming": null,
+    "kongming": {
+      "life_span": "AD 41–42",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Wen Dai"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Son"
+        },
+        {
+          "relation": "member",
+          "name": "Wen Xiu"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Wen Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Second Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Wen Hou"
+        }
+      ],
+      "ranks": [
+        "Governor of Jiangxia",
+        "Marquis Within the Imperial Domain",
+        "Marquis of Yanshou Village",
+        "General Who Exterminates Rebels",
+        "Marquis of Changan County",
+        "General of the Rear",
+        "Marquis of Xinye"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
     "sgz_english": {
       "translation_count": 1,
       "total_char_count": 5185,
@@ -79,7 +129,7 @@
     "wiki_en": false,
     "wiki_zh": false,
     "history": false,
-    "kongming": false,
+    "kongming": true,
     "sgz_en": true,
     "koei_official": false,
     "fandom": false,
@@ -90,6 +140,6 @@
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-18T10:20:10.034Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T12:13:17.409Z"
 }

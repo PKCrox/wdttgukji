@@ -1,0 +1,111 @@
+{
+  "name_kr": "진규",
+  "name_en": "Chen Gui",
+  "name_cn": "陳珪",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 16,
+      "war": 5,
+      "intelligence": 83,
+      "politics": 79,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 30,
+      "war": 4,
+      "intelligence": 82,
+      "politics": 77
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 16–19",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Chen Deng"
+        },
+        {
+          "relation": "member",
+          "name": "Chen Ying"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Chen Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Chen Qiu"
+        }
+      ],
+      "ranks": [
+        "County Magistrate in Beihai",
+        "Chancellor of Jibei",
+        "Chancellor of Pei"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T12:13:17.492Z"
+}
