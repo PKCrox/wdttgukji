@@ -7,700 +7,4107 @@
   "description": "208년 초, 유표가 병사하고 형주는 혼란에 빠졌다. 유비는 형주의 일부를 확보했으나 조조 80만 대군이 남하 중이다. 손권의 오나라와 연합하여 적벽에서 운명을 건 결전을 준비해야 한다.",
   "playerFaction": "shu",
   "playerCharacter": "liu_bei",
-
   "factions": {
     "wei": {
-      "name": "위", "color": "#4A90D9", "leader": "cao_cao",
-      "gold": 80000, "tech": 4, "allies": [], "enemies": ["shu"], "active": true,
-      "reputation": 90, "truces": {},
-      "research": { "completed": [], "current": null },
-      "inventory": ["bright_armor", "seven_star", "formation_map"]
+      "name": "위",
+      "color": "#4A90D9",
+      "leader": "cao_cao",
+      "gold": 80000,
+      "tech": 4,
+      "allies": [],
+      "enemies": [
+        "shu",
+        "wu"
+      ],
+      "active": true,
+      "reputation": 90,
+      "truces": {},
+      "research": {
+        "completed": [],
+        "current": null
+      },
+      "inventory": [
+        "bright_armor",
+        "seven_star",
+        "formation_map"
+      ]
     },
     "shu": {
-      "name": "촉", "color": "#2ECC71", "leader": "liu_bei",
-      "gold": 12000, "tech": 2, "allies": [], "enemies": ["wei"], "active": true,
-      "reputation": 130, "truces": {},
-      "research": { "completed": [], "current": null },
-      "inventory": ["taiping_book"]
+      "name": "촉",
+      "color": "#2ECC71",
+      "leader": "liu_bei",
+      "gold": 12000,
+      "tech": 2,
+      "allies": [
+        "wu"
+      ],
+      "enemies": [
+        "wei"
+      ],
+      "active": true,
+      "reputation": 130,
+      "truces": {
+        "wu": 18
+      },
+      "research": {
+        "completed": [],
+        "current": null
+      },
+      "inventory": [
+        "taiping_book"
+      ]
     },
     "wu": {
-      "name": "오", "color": "#E74C3C", "leader": "sun_quan",
-      "gold": 35000, "tech": 3, "allies": [], "enemies": [], "active": true,
-      "reputation": 110, "truces": {},
-      "research": { "completed": [], "current": null },
-      "inventory": ["silver_armor"]
+      "name": "오",
+      "color": "#E74C3C",
+      "leader": "sun_quan",
+      "gold": 35000,
+      "tech": 3,
+      "allies": [
+        "shu"
+      ],
+      "enemies": [
+        "wei"
+      ],
+      "active": true,
+      "reputation": 110,
+      "truces": {
+        "shu": 18
+      },
+      "research": {
+        "completed": [],
+        "current": null
+      },
+      "inventory": [
+        "silver_armor"
+      ]
     },
     "liu_zhang": {
-      "name": "유장", "color": "#F39C12", "leader": "liu_zhang_char",
-      "gold": 40000, "tech": 2, "allies": [], "enemies": [], "active": true,
-      "reputation": 100, "truces": {},
-      "research": { "completed": [], "current": null },
+      "name": "유장",
+      "color": "#F39C12",
+      "leader": "liu_zhang_char",
+      "gold": 40000,
+      "tech": 2,
+      "allies": [],
+      "enemies": [],
+      "active": true,
+      "reputation": 100,
+      "truces": {},
+      "research": {
+        "completed": [],
+        "current": null
+      },
       "inventory": []
     },
     "zhang_lu": {
-      "name": "장로", "color": "#9B59B6", "leader": "zhang_lu_char",
-      "gold": 15000, "tech": 1, "allies": [], "enemies": [], "active": true,
-      "reputation": 100, "truces": {},
-      "research": { "completed": [], "current": null },
+      "name": "장로",
+      "color": "#9B59B6",
+      "leader": "zhang_lu_char",
+      "gold": 15000,
+      "tech": 1,
+      "allies": [],
+      "enemies": [],
+      "active": true,
+      "reputation": 100,
+      "truces": {},
+      "research": {
+        "completed": [],
+        "current": null
+      },
       "inventory": []
     }
   },
-
   "cities": {
     "yanzhou": {
-      "name": "연주", "owner": "wei", "governor": "cao_ren",
-      "population": 45000, "defense": 60, "food": 12000, "army": 25000, "morale": 75,
-      "agriculture": 65, "commerce": 70, "technology": 55, "publicOrder": 75,
-      "naturalBonus": { "commerce": 1.1 },
+      "name": "연주",
+      "owner": "wei",
+      "governor": "cao_ren",
+      "population": 45000,
+      "defense": 60,
+      "food": 12000,
+      "army": 25000,
+      "morale": 75,
+      "agriculture": 65,
+      "commerce": 70,
+      "technology": 55,
+      "publicOrder": 75,
+      "naturalBonus": {
+        "commerce": 1.1
+      },
       "buildings": {}
     },
     "xuchang": {
-      "name": "허창", "owner": "wei", "governor": "xun_yu",
-      "population": 55000, "defense": 75, "food": 18000, "army": 30000, "morale": 80,
-      "agriculture": 70, "commerce": 85, "technology": 70, "publicOrder": 85,
-      "naturalBonus": { "technology": 1.15 },
-      "buildings": { "market": { "level": 1, "building": false, "turnsLeft": 0 } }
+      "name": "허창",
+      "owner": "wei",
+      "governor": "xun_yu",
+      "population": 55000,
+      "defense": 75,
+      "food": 18000,
+      "army": 30000,
+      "morale": 80,
+      "agriculture": 70,
+      "commerce": 85,
+      "technology": 70,
+      "publicOrder": 85,
+      "naturalBonus": {
+        "technology": 1.15
+      },
+      "buildings": {
+        "market": {
+          "level": 1,
+          "building": false,
+          "turnsLeft": 0
+        }
+      }
     },
     "yuzhou": {
-      "name": "예주", "owner": "wei", "governor": "cao_cao",
-      "population": 40000, "defense": 55, "food": 18000, "army": 80000, "morale": 85,
-      "agriculture": 60, "commerce": 60, "technology": 50, "publicOrder": 60,
+      "name": "예주",
+      "owner": "wei",
+      "governor": "cao_cao",
+      "population": 40000,
+      "defense": 55,
+      "food": 18000,
+      "army": 80000,
+      "morale": 85,
+      "agriculture": 60,
+      "commerce": 60,
+      "technology": 50,
+      "publicOrder": 60,
       "naturalBonus": {},
       "buildings": {}
     },
     "xuzhou": {
-      "name": "서주", "owner": "wei", "governor": "zhang_liao",
-      "population": 35000, "defense": 50, "food": 9000, "army": 18000, "morale": 72,
-      "agriculture": 70, "commerce": 55, "technology": 45, "publicOrder": 55,
-      "naturalBonus": { "agriculture": 1.1 },
+      "name": "서주",
+      "owner": "wei",
+      "governor": "zhang_liao",
+      "population": 35000,
+      "defense": 50,
+      "food": 9000,
+      "army": 18000,
+      "morale": 72,
+      "agriculture": 70,
+      "commerce": 55,
+      "technology": 45,
+      "publicOrder": 55,
+      "naturalBonus": {
+        "agriculture": 1.1
+      },
       "buildings": {}
     },
     "luoyang": {
-      "name": "낙양", "owner": "wei", "governor": null,
-      "population": 30000, "defense": 70, "food": 8000, "army": 10000, "morale": 65,
-      "agriculture": 45, "commerce": 50, "technology": 60, "publicOrder": 55,
-      "naturalBonus": { "technology": 1.1 },
+      "name": "낙양",
+      "owner": "wei",
+      "governor": null,
+      "population": 30000,
+      "defense": 70,
+      "food": 8000,
+      "army": 10000,
+      "morale": 65,
+      "agriculture": 45,
+      "commerce": 50,
+      "technology": 60,
+      "publicOrder": 55,
+      "naturalBonus": {
+        "technology": 1.1
+      },
       "buildings": {}
     },
     "ye": {
-      "name": "업성", "owner": "wei", "governor": "cao_pi",
-      "population": 50000, "defense": 80, "food": 20000, "army": 35000, "morale": 78,
-      "agriculture": 75, "commerce": 80, "technology": 65, "publicOrder": 80,
-      "naturalBonus": { "commerce": 1.15 },
-      "buildings": { "barracks": { "level": 1, "building": false, "turnsLeft": 0 } }
+      "name": "업성",
+      "owner": "wei",
+      "governor": "cao_pi",
+      "population": 50000,
+      "defense": 80,
+      "food": 20000,
+      "army": 35000,
+      "morale": 78,
+      "agriculture": 75,
+      "commerce": 80,
+      "technology": 65,
+      "publicOrder": 80,
+      "naturalBonus": {
+        "commerce": 1.15
+      },
+      "buildings": {
+        "barracks": {
+          "level": 1,
+          "building": false,
+          "turnsLeft": 0
+        }
+      }
     },
     "jizhou": {
-      "name": "기주", "owner": "wei", "governor": null,
-      "population": 38000, "defense": 50, "food": 11000, "army": 15000, "morale": 68,
-      "agriculture": 65, "commerce": 55, "technology": 45, "publicOrder": 60,
-      "naturalBonus": { "agriculture": 1.1 },
+      "name": "기주",
+      "owner": "wei",
+      "governor": null,
+      "population": 38000,
+      "defense": 50,
+      "food": 11000,
+      "army": 15000,
+      "morale": 68,
+      "agriculture": 65,
+      "commerce": 55,
+      "technology": 45,
+      "publicOrder": 60,
+      "naturalBonus": {
+        "agriculture": 1.1
+      },
       "buildings": {}
     },
     "youzhou": {
-      "name": "유주", "owner": "wei", "governor": null,
-      "population": 25000, "defense": 45, "food": 7000, "army": 12000, "morale": 60,
-      "agriculture": 35, "commerce": 40, "technology": 30, "publicOrder": 45,
+      "name": "유주",
+      "owner": "wei",
+      "governor": null,
+      "population": 25000,
+      "defense": 45,
+      "food": 7000,
+      "army": 12000,
+      "morale": 60,
+      "agriculture": 35,
+      "commerce": 40,
+      "technology": 30,
+      "publicOrder": 45,
       "naturalBonus": {},
       "buildings": {}
     },
     "bingzhou": {
-      "name": "병주", "owner": "wei", "governor": null,
-      "population": 20000, "defense": 40, "food": 6000, "army": 10000, "morale": 58,
-      "agriculture": 30, "commerce": 30, "technology": 25, "publicOrder": 40,
+      "name": "병주",
+      "owner": "wei",
+      "governor": null,
+      "population": 20000,
+      "defense": 40,
+      "food": 6000,
+      "army": 10000,
+      "morale": 58,
+      "agriculture": 30,
+      "commerce": 30,
+      "technology": 25,
+      "publicOrder": 40,
       "naturalBonus": {},
       "buildings": {}
     },
     "jingzhou": {
-      "name": "형주", "owner": "shu", "governor": "liu_bei",
-      "population": 55000, "defense": 70, "food": 20000, "army": 40000, "morale": 75,
-      "agriculture": 75, "commerce": 65, "technology": 55, "publicOrder": 65,
-      "naturalBonus": { "agriculture": 1.15 },
+      "name": "형주",
+      "owner": "shu",
+      "governor": "liu_bei",
+      "population": 55000,
+      "defense": 70,
+      "food": 20000,
+      "army": 40000,
+      "morale": 75,
+      "agriculture": 75,
+      "commerce": 65,
+      "technology": 55,
+      "publicOrder": 65,
+      "naturalBonus": {
+        "agriculture": 1.15
+      },
       "buildings": {}
     },
     "yangzhou": {
-      "name": "양주", "owner": "wu", "governor": "lu_su",
-      "population": 42000, "defense": 60, "food": 14000, "army": 25000, "morale": 78,
-      "agriculture": 70, "commerce": 80, "technology": 55, "publicOrder": 70,
-      "naturalBonus": { "commerce": 1.15 },
+      "name": "양주",
+      "owner": "wu",
+      "governor": "lu_su",
+      "population": 42000,
+      "defense": 60,
+      "food": 14000,
+      "army": 25000,
+      "morale": 78,
+      "agriculture": 70,
+      "commerce": 80,
+      "technology": 55,
+      "publicOrder": 70,
+      "naturalBonus": {
+        "commerce": 1.15
+      },
       "buildings": {}
     },
     "jianye": {
-      "name": "건업", "owner": "wu", "governor": "sun_quan",
-      "population": 50000, "defense": 70, "food": 16000, "army": 30000, "morale": 82,
-      "agriculture": 65, "commerce": 85, "technology": 60, "publicOrder": 80,
-      "naturalBonus": { "commerce": 1.2 },
-      "buildings": { "market": { "level": 1, "building": false, "turnsLeft": 0 } }
+      "name": "건업",
+      "owner": "wu",
+      "governor": "sun_quan",
+      "population": 50000,
+      "defense": 70,
+      "food": 16000,
+      "army": 30000,
+      "morale": 82,
+      "agriculture": 65,
+      "commerce": 85,
+      "technology": 60,
+      "publicOrder": 80,
+      "naturalBonus": {
+        "commerce": 1.2
+      },
+      "buildings": {
+        "market": {
+          "level": 1,
+          "building": false,
+          "turnsLeft": 0
+        }
+      }
     },
     "yizhou": {
-      "name": "익주", "owner": "liu_zhang", "governor": null,
-      "population": 35000, "defense": 45, "food": 10000, "army": 15000, "morale": 65,
-      "agriculture": 60, "commerce": 50, "technology": 40, "publicOrder": 50,
-      "naturalBonus": { "agriculture": 1.1 },
+      "name": "익주",
+      "owner": "liu_zhang",
+      "governor": null,
+      "population": 35000,
+      "defense": 45,
+      "food": 10000,
+      "army": 15000,
+      "morale": 65,
+      "agriculture": 60,
+      "commerce": 50,
+      "technology": 40,
+      "publicOrder": 50,
+      "naturalBonus": {
+        "agriculture": 1.1
+      },
       "buildings": {}
     },
     "chengdu": {
-      "name": "성도", "owner": "liu_zhang", "governor": "liu_zhang_char",
-      "population": 55000, "defense": 65, "food": 18000, "army": 25000, "morale": 70,
-      "agriculture": 80, "commerce": 70, "technology": 55, "publicOrder": 70,
-      "naturalBonus": { "agriculture": 1.2 },
-      "buildings": { "granary": { "level": 1, "building": false, "turnsLeft": 0 } }
+      "name": "성도",
+      "owner": "liu_zhang",
+      "governor": "liu_zhang_char",
+      "population": 55000,
+      "defense": 65,
+      "food": 18000,
+      "army": 25000,
+      "morale": 70,
+      "agriculture": 80,
+      "commerce": 70,
+      "technology": 55,
+      "publicOrder": 70,
+      "naturalBonus": {
+        "agriculture": 1.2
+      },
+      "buildings": {
+        "granary": {
+          "level": 1,
+          "building": false,
+          "turnsLeft": 0
+        }
+      }
     },
     "hanzhong": {
-      "name": "한중", "owner": "zhang_lu", "governor": "zhang_lu_char",
-      "population": 22000, "defense": 55, "food": 8000, "army": 12000, "morale": 65,
-      "agriculture": 50, "commerce": 40, "technology": 35, "publicOrder": 65,
-      "naturalBonus": { "publicOrder": 1.15 },
+      "name": "한중",
+      "owner": "zhang_lu",
+      "governor": "zhang_lu_char",
+      "population": 22000,
+      "defense": 55,
+      "food": 8000,
+      "army": 12000,
+      "morale": 65,
+      "agriculture": 50,
+      "commerce": 40,
+      "technology": 35,
+      "publicOrder": 65,
+      "naturalBonus": {
+        "publicOrder": 1.15
+      },
       "buildings": {}
     },
     "changan": {
-      "name": "장안", "owner": "wei", "governor": null,
-      "population": 28000, "defense": 60, "food": 7000, "army": 8000, "morale": 55,
-      "agriculture": 40, "commerce": 45, "technology": 50, "publicOrder": 50,
-      "naturalBonus": { "technology": 1.1 },
+      "name": "장안",
+      "owner": "wei",
+      "governor": null,
+      "population": 28000,
+      "defense": 60,
+      "food": 7000,
+      "army": 8000,
+      "morale": 55,
+      "agriculture": 40,
+      "commerce": 45,
+      "technology": 50,
+      "publicOrder": 50,
+      "naturalBonus": {
+        "technology": 1.1
+      },
       "buildings": {}
     },
     "yongzhou": {
-      "name": "옹주", "owner": "wei", "governor": null,
-      "population": 15000, "defense": 35, "food": 5000, "army": 5000, "morale": 50,
-      "agriculture": 25, "commerce": 25, "technology": 20, "publicOrder": 35,
+      "name": "옹주",
+      "owner": "wei",
+      "governor": null,
+      "population": 15000,
+      "defense": 35,
+      "food": 5000,
+      "army": 5000,
+      "morale": 50,
+      "agriculture": 25,
+      "commerce": 25,
+      "technology": 20,
+      "publicOrder": 35,
       "naturalBonus": {},
       "buildings": {}
     },
     "jiaozhou": {
-      "name": "교주", "owner": "shu", "governor": "ma_liang",
-      "population": 15000, "defense": 30, "food": 8000, "army": 8000, "morale": 60,
-      "agriculture": 45, "commerce": 30, "technology": 20, "publicOrder": 35,
-      "naturalBonus": { "agriculture": 1.1 },
+      "name": "교주",
+      "owner": "shu",
+      "governor": "ma_liang",
+      "population": 15000,
+      "defense": 30,
+      "food": 8000,
+      "army": 8000,
+      "morale": 60,
+      "agriculture": 45,
+      "commerce": 30,
+      "technology": 20,
+      "publicOrder": 35,
+      "naturalBonus": {
+        "agriculture": 1.1
+      },
       "buildings": {}
     },
     "nanyang": {
-      "name": "남양", "owner": "wei", "governor": null,
-      "population": 38000, "defense": 55, "food": 10000, "army": 15000, "morale": 68,
-      "agriculture": 55, "commerce": 60, "technology": 45, "publicOrder": 60,
+      "name": "남양",
+      "owner": "wei",
+      "governor": null,
+      "population": 38000,
+      "defense": 55,
+      "food": 10000,
+      "army": 15000,
+      "morale": 68,
+      "agriculture": 55,
+      "commerce": 60,
+      "technology": 45,
+      "publicOrder": 60,
       "naturalBonus": {},
       "buildings": {}
     },
     "xiangyang": {
-      "name": "양양", "owner": "shu", "governor": null,
-      "population": 35000, "defense": 65, "food": 12000, "army": 12000, "morale": 72,
-      "agriculture": 60, "commerce": 55, "technology": 50, "publicOrder": 65,
+      "name": "양양",
+      "owner": "shu",
+      "governor": null,
+      "population": 35000,
+      "defense": 65,
+      "food": 12000,
+      "army": 12000,
+      "morale": 72,
+      "agriculture": 60,
+      "commerce": 55,
+      "technology": 50,
+      "publicOrder": 65,
       "naturalBonus": {},
       "buildings": {}
     },
     "changsha": {
-      "name": "장사", "owner": "shu", "governor": null,
-      "population": 28000, "defense": 40, "food": 9000, "army": 6000, "morale": 60,
-      "agriculture": 55, "commerce": 45, "technology": 35, "publicOrder": 55,
+      "name": "장사",
+      "owner": "shu",
+      "governor": null,
+      "population": 28000,
+      "defense": 40,
+      "food": 9000,
+      "army": 6000,
+      "morale": 60,
+      "agriculture": 55,
+      "commerce": 45,
+      "technology": 35,
+      "publicOrder": 55,
       "naturalBonus": {},
       "buildings": {}
     },
     "wuling": {
-      "name": "무릉", "owner": "shu", "governor": null,
-      "population": 18000, "defense": 30, "food": 7000, "army": 4000, "morale": 55,
-      "agriculture": 40, "commerce": 30, "technology": 30, "publicOrder": 45,
+      "name": "무릉",
+      "owner": "shu",
+      "governor": null,
+      "population": 18000,
+      "defense": 30,
+      "food": 7000,
+      "army": 4000,
+      "morale": 55,
+      "agriculture": 40,
+      "commerce": 30,
+      "technology": 30,
+      "publicOrder": 45,
       "naturalBonus": {},
       "buildings": {}
     },
     "kuaiji": {
-      "name": "회계", "owner": "wu", "governor": null,
-      "population": 30000, "defense": 45, "food": 10000, "army": 8000, "morale": 70,
-      "agriculture": 55, "commerce": 50, "technology": 40, "publicOrder": 60,
+      "name": "회계",
+      "owner": "wu",
+      "governor": null,
+      "population": 30000,
+      "defense": 45,
+      "food": 10000,
+      "army": 8000,
+      "morale": 70,
+      "agriculture": 55,
+      "commerce": 50,
+      "technology": 40,
+      "publicOrder": 60,
       "naturalBonus": {},
       "buildings": {}
     },
     "lujiang": {
-      "name": "여강", "owner": "wu", "governor": null,
-      "population": 32000, "defense": 50, "food": 10000, "army": 10000, "morale": 72,
-      "agriculture": 50, "commerce": 55, "technology": 45, "publicOrder": 60,
+      "name": "여강",
+      "owner": "wu",
+      "governor": null,
+      "population": 32000,
+      "defense": 50,
+      "food": 10000,
+      "army": 10000,
+      "morale": 72,
+      "agriculture": 50,
+      "commerce": 55,
+      "technology": 45,
+      "publicOrder": 60,
       "naturalBonus": {},
       "buildings": {}
     },
     "qingzhou": {
-      "name": "청주", "owner": "wei", "governor": null,
-      "population": 25000, "defense": 40, "food": 8000, "army": 10000, "morale": 62,
-      "agriculture": 50, "commerce": 45, "technology": 35, "publicOrder": 55,
+      "name": "청주",
+      "owner": "wei",
+      "governor": null,
+      "population": 25000,
+      "defense": 40,
+      "food": 8000,
+      "army": 10000,
+      "morale": 62,
+      "agriculture": 50,
+      "commerce": 45,
+      "technology": 35,
+      "publicOrder": 55,
       "naturalBonus": {},
       "buildings": {}
     },
     "tianshui": {
-      "name": "천수", "owner": "wei", "governor": null,
-      "population": 18000, "defense": 45, "food": 6000, "army": 6000, "morale": 55,
-      "agriculture": 35, "commerce": 35, "technology": 30, "publicOrder": 45,
+      "name": "천수",
+      "owner": "wei",
+      "governor": null,
+      "population": 18000,
+      "defense": 45,
+      "food": 6000,
+      "army": 6000,
+      "morale": 55,
+      "agriculture": 35,
+      "commerce": 35,
+      "technology": 30,
+      "publicOrder": 45,
       "naturalBonus": {},
       "buildings": {}
     }
   },
-
   "characters": {
     "cao_cao": {
-      "faction": "wei", "city": "yuzhou", "alive": true, "status": "active",
-      "stats": { "command": 96, "war": 72, "intellect": 91, "politics": 94, "charisma": 96 },
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 96,
+        "war": 72,
+        "intellect": 91,
+        "politics": 94,
+        "charisma": 96
+      },
       "loyalty": 100,
-      "skills": ["insight", "governance"],
-      "equipment": { "weapon": "heaven_sword", "armor": null, "horse": "shadow", "accessory": "mengde_book" },
-      "potential": { "command": 100, "war": 82, "intellect": 96, "politics": 98, "charisma": 100 },
+      "skills": [
+        "insight",
+        "governance"
+      ],
+      "equipment": {
+        "weapon": "heaven_sword",
+        "armor": null,
+        "horse": "shadow",
+        "accessory": "mengde_book"
+      },
+      "potential": {
+        "command": 100,
+        "war": 82,
+        "intellect": 96,
+        "politics": 98,
+        "charisma": 100
+      },
       "experience": 0,
       "level": 1
     },
     "cao_ren": {
-      "faction": "wei", "city": "yanzhou", "alive": true, "status": "active",
-      "stats": { "command": 85, "war": 82, "intellect": 56, "politics": 54, "charisma": 58 },
+      "faction": "wei",
+      "city": "yanzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 85,
+        "war": 82,
+        "intellect": 56,
+        "politics": 54,
+        "charisma": 58
+      },
       "loyalty": 95,
-      "skills": ["iron_wall"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 95, "war": 92, "intellect": 66, "politics": 64, "charisma": 68 },
+      "skills": [
+        "iron_wall"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 95,
+        "war": 92,
+        "intellect": 66,
+        "politics": 64,
+        "charisma": 68
+      },
       "experience": 0,
       "level": 1
     },
     "cao_pi": {
-      "faction": "wei", "city": "ye", "alive": true, "status": "active",
-      "stats": { "command": 73, "war": 58, "intellect": 80, "politics": 86, "charisma": 68 },
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 73,
+        "war": 58,
+        "intellect": 80,
+        "politics": 86,
+        "charisma": 68
+      },
       "loyalty": 100,
-      "skills": ["governance"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 83, "war": 68, "intellect": 90, "politics": 96, "charisma": 78 },
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 83,
+        "war": 68,
+        "intellect": 90,
+        "politics": 96,
+        "charisma": 78
+      },
       "experience": 0,
       "level": 1
     },
     "cao_hong": {
-      "faction": "wei", "city": "xuchang", "alive": true, "status": "active",
-      "stats": { "command": 72, "war": 78, "intellect": 43, "politics": 41, "charisma": 50 },
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 72,
+        "war": 78,
+        "intellect": 43,
+        "politics": 41,
+        "charisma": 50
+      },
       "loyalty": 93,
-      "skills": ["charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 82, "war": 88, "intellect": 53, "politics": 51, "charisma": 60 },
+      "skills": [
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 82,
+        "war": 88,
+        "intellect": 53,
+        "politics": 51,
+        "charisma": 60
+      },
       "experience": 0,
       "level": 1
     },
     "xiahou_dun": {
-      "faction": "wei", "city": "yanzhou", "alive": true, "status": "active",
-      "stats": { "command": 84, "war": 90, "intellect": 50, "politics": 55, "charisma": 82 },
+      "faction": "wei",
+      "city": "yanzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 84,
+        "war": 90,
+        "intellect": 50,
+        "politics": 55,
+        "charisma": 82
+      },
       "loyalty": 100,
-      "skills": ["duel_master", "cavalry"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 94, "war": 95, "intellect": 60, "politics": 65, "charisma": 92 },
+      "skills": [
+        "duel_master",
+        "cavalry"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 94,
+        "war": 95,
+        "intellect": 60,
+        "politics": 65,
+        "charisma": 92
+      },
       "experience": 0,
       "level": 1
     },
     "xiahou_yuan": {
-      "faction": "wei", "city": "changan", "alive": true, "status": "active",
-      "stats": { "command": 82, "war": 86, "intellect": 46, "politics": 40, "charisma": 60 },
+      "faction": "wei",
+      "city": "changan",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 82,
+        "war": 86,
+        "intellect": 46,
+        "politics": 40,
+        "charisma": 60
+      },
       "loyalty": 98,
-      "skills": ["cavalry", "charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 92, "war": 96, "intellect": 56, "politics": 55, "charisma": 70 },
+      "skills": [
+        "cavalry",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 92,
+        "war": 96,
+        "intellect": 56,
+        "politics": 55,
+        "charisma": 70
+      },
       "experience": 0,
       "level": 1
     },
     "zhang_liao": {
-      "faction": "wei", "city": "xuzhou", "alive": true, "status": "active",
-      "stats": { "command": 89, "war": 92, "intellect": 74, "politics": 62, "charisma": 78 },
+      "faction": "wei",
+      "city": "xuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 89,
+        "war": 92,
+        "intellect": 74,
+        "politics": 62,
+        "charisma": 78
+      },
       "loyalty": 92,
-      "skills": ["duel_master", "charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 99, "war": 97, "intellect": 84, "politics": 72, "charisma": 88 },
+      "skills": [
+        "duel_master",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 99,
+        "war": 97,
+        "intellect": 84,
+        "politics": 72,
+        "charisma": 88
+      },
       "experience": 0,
       "level": 1
     },
     "xu_chu": {
-      "faction": "wei", "city": "yuzhou", "alive": true, "status": "active",
-      "stats": { "command": 70, "war": 96, "intellect": 25, "politics": 15, "charisma": 52 },
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 70,
+        "war": 96,
+        "intellect": 25,
+        "politics": 15,
+        "charisma": 52
+      },
       "loyalty": 95,
-      "skills": ["duel_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 80, "war": 100, "intellect": 40, "politics": 30, "charisma": 62 },
+      "skills": [
+        "duel_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 80,
+        "war": 100,
+        "intellect": 40,
+        "politics": 30,
+        "charisma": 62
+      },
       "experience": 0,
       "level": 1
     },
     "xu_huang": {
-      "faction": "wei", "city": "yuzhou", "alive": true, "status": "active",
-      "stats": { "command": 85, "war": 88, "intellect": 67, "politics": 58, "charisma": 71 },
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 85,
+        "war": 88,
+        "intellect": 67,
+        "politics": 58,
+        "charisma": 71
+      },
       "loyalty": 90,
-      "skills": ["ambush_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 95, "war": 98, "intellect": 77, "politics": 68, "charisma": 81 },
+      "skills": [
+        "ambush_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 95,
+        "war": 98,
+        "intellect": 77,
+        "politics": 68,
+        "charisma": 81
+      },
       "experience": 0,
       "level": 1
     },
     "xun_yu": {
-      "faction": "wei", "city": "xuchang", "alive": true, "status": "active",
-      "stats": { "command": 55, "war": 15, "intellect": 96, "politics": 95, "charisma": 85 },
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 55,
+        "war": 15,
+        "intellect": 96,
+        "politics": 95,
+        "charisma": 85
+      },
       "loyalty": 78,
-      "skills": ["governance", "charm"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 65, "war": 30, "intellect": 100, "politics": 100, "charisma": 95 },
+      "skills": [
+        "governance",
+        "charm"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 65,
+        "war": 30,
+        "intellect": 100,
+        "politics": 100,
+        "charisma": 95
+      },
       "experience": 0,
       "level": 1
     },
     "jia_xu": {
-      "faction": "wei", "city": "yuzhou", "alive": true, "status": "active",
-      "stats": { "command": 86, "war": 48, "intellect": 97, "politics": 85, "charisma": 57 },
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 86,
+        "war": 48,
+        "intellect": 97,
+        "politics": 85,
+        "charisma": 57
+      },
       "loyalty": 80,
-      "skills": ["insight", "spy_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 96, "war": 58, "intellect": 100, "politics": 95, "charisma": 67 },
+      "skills": [
+        "insight",
+        "spy_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 96,
+        "war": 58,
+        "intellect": 100,
+        "politics": 95,
+        "charisma": 67
+      },
       "experience": 0,
       "level": 1
     },
     "yu_jin": {
-      "faction": "wei", "city": "yuzhou", "alive": true, "status": "active",
-      "stats": { "command": 82, "war": 79, "intellect": 68, "politics": 60, "charisma": 55 },
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 82,
+        "war": 79,
+        "intellect": 68,
+        "politics": 60,
+        "charisma": 55
+      },
       "loyalty": 85,
-      "skills": ["iron_wall"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 92, "war": 89, "intellect": 78, "politics": 70, "charisma": 65 },
+      "skills": [
+        "iron_wall"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 92,
+        "war": 89,
+        "intellect": 78,
+        "politics": 70,
+        "charisma": 65
+      },
       "experience": 0,
       "level": 1
     },
     "zhang_he": {
-      "faction": "wei", "city": "ye", "alive": true, "status": "active",
-      "stats": { "command": 88, "war": 86, "intellect": 62, "politics": 52, "charisma": 65 },
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 88,
+        "war": 86,
+        "intellect": 62,
+        "politics": 52,
+        "charisma": 65
+      },
       "loyalty": 88,
-      "skills": ["ambush_master", "cavalry"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 98, "war": 96, "intellect": 72, "politics": 62, "charisma": 75 },
+      "skills": [
+        "ambush_master",
+        "cavalry"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 98,
+        "war": 96,
+        "intellect": 72,
+        "politics": 62,
+        "charisma": 75
+      },
       "experience": 0,
       "level": 1
     },
     "yue_jin": {
-      "faction": "wei", "city": "yanzhou", "alive": true, "status": "active",
-      "stats": { "command": 80, "war": 84, "intellect": 55, "politics": 48, "charisma": 60 },
+      "faction": "wei",
+      "city": "yanzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 80,
+        "war": 84,
+        "intellect": 55,
+        "politics": 48,
+        "charisma": 60
+      },
       "loyalty": 90,
-      "skills": ["charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 90, "war": 94, "intellect": 65, "politics": 58, "charisma": 70 },
+      "skills": [
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 90,
+        "war": 94,
+        "intellect": 65,
+        "politics": 58,
+        "charisma": 70
+      },
       "experience": 0,
       "level": 1
     },
     "sima_yi": {
-      "faction": "wei", "city": "ye", "alive": true, "status": "active",
-      "stats": { "command": 93, "war": 55, "intellect": 98, "politics": 92, "charisma": 70 },
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 93,
+        "war": 55,
+        "intellect": 98,
+        "politics": 92,
+        "charisma": 70
+      },
       "loyalty": 60,
-      "skills": ["insight", "spy_master", "inventor"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 98, "war": 65, "intellect": 100, "politics": 97, "charisma": 80 },
+      "skills": [
+        "insight",
+        "spy_master",
+        "inventor"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 98,
+        "war": 65,
+        "intellect": 100,
+        "politics": 97,
+        "charisma": 80
+      },
       "experience": 0,
       "level": 1
     },
-
     "liu_bei": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 75, "war": 73, "intellect": 74, "politics": 78, "charisma": 99 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 75,
+        "war": 73,
+        "intellect": 74,
+        "politics": 78,
+        "charisma": 99
+      },
       "loyalty": 100,
-      "skills": ["charm", "governance"],
-      "equipment": { "weapon": "paired_swords", "armor": null, "horse": "hex_mark", "accessory": null },
-      "potential": { "command": 85, "war": 83, "intellect": 84, "politics": 88, "charisma": 100 },
+      "skills": [
+        "charm",
+        "governance"
+      ],
+      "equipment": {
+        "weapon": "paired_swords",
+        "armor": null,
+        "horse": "hex_mark",
+        "accessory": null
+      },
+      "potential": {
+        "command": 85,
+        "war": 83,
+        "intellect": 84,
+        "politics": 88,
+        "charisma": 100
+      },
       "experience": 0,
       "level": 1
     },
     "guan_yu": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 92, "war": 97, "intellect": 75, "politics": 62, "charisma": 93 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 92,
+        "war": 97,
+        "intellect": 75,
+        "politics": 62,
+        "charisma": 93
+      },
       "loyalty": 100,
-      "skills": ["duel_master", "naval"],
-      "equipment": { "weapon": "green_dragon", "armor": null, "horse": "red_hare", "accessory": null },
-      "potential": { "command": 97, "war": 100, "intellect": 85, "politics": 72, "charisma": 98 },
+      "skills": [
+        "duel_master",
+        "naval"
+      ],
+      "equipment": {
+        "weapon": "green_dragon",
+        "armor": null,
+        "horse": "red_hare",
+        "accessory": null
+      },
+      "potential": {
+        "command": 97,
+        "war": 100,
+        "intellect": 85,
+        "politics": 72,
+        "charisma": 98
+      },
       "experience": 0,
       "level": 1
     },
     "zhang_fei": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 83, "war": 98, "intellect": 42, "politics": 28, "charisma": 72 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 83,
+        "war": 98,
+        "intellect": 42,
+        "politics": 28,
+        "charisma": 72
+      },
       "loyalty": 100,
-      "skills": ["duel_master", "charge_master"],
-      "equipment": { "weapon": "serpent_spear", "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 93, "war": 100, "intellect": 52, "politics": 43, "charisma": 82 },
+      "skills": [
+        "duel_master",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": "serpent_spear",
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 93,
+        "war": 100,
+        "intellect": 52,
+        "politics": 43,
+        "charisma": 82
+      },
       "experience": 0,
       "level": 1
     },
     "zhao_yun": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 86, "war": 96, "intellect": 73, "politics": 65, "charisma": 82 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 86,
+        "war": 96,
+        "intellect": 73,
+        "politics": 65,
+        "charisma": 82
+      },
       "loyalty": 100,
-      "skills": ["duel_master", "cavalry"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 96, "war": 100, "intellect": 83, "politics": 75, "charisma": 92 },
+      "skills": [
+        "duel_master",
+        "cavalry"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 96,
+        "war": 100,
+        "intellect": 83,
+        "politics": 75,
+        "charisma": 92
+      },
       "experience": 0,
       "level": 1
     },
     "zhuge_liang": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 92, "war": 38, "intellect": 100, "politics": 95, "charisma": 92 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 92,
+        "war": 38,
+        "intellect": 100,
+        "politics": 95,
+        "charisma": 92
+      },
       "loyalty": 100,
-      "skills": ["fire_attack", "insight", "inventor"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": "art_of_war" },
-      "potential": { "command": 97, "war": 53, "intellect": 100, "politics": 100, "charisma": 97 },
+      "skills": [
+        "fire_attack",
+        "insight",
+        "inventor"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": "art_of_war"
+      },
+      "potential": {
+        "command": 97,
+        "war": 53,
+        "intellect": 100,
+        "politics": 100,
+        "charisma": 97
+      },
       "experience": 0,
       "level": 1
     },
     "huang_zhong": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 82, "war": 92, "intellect": 52, "politics": 40, "charisma": 65 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 82,
+        "war": 92,
+        "intellect": 52,
+        "politics": 40,
+        "charisma": 65
+      },
       "loyalty": 85,
-      "skills": ["duel_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 92, "war": 97, "intellect": 62, "politics": 55, "charisma": 75 },
+      "skills": [
+        "duel_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 92,
+        "war": 97,
+        "intellect": 62,
+        "politics": 55,
+        "charisma": 75
+      },
       "experience": 0,
       "level": 1
     },
     "wei_yan": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 85, "war": 90, "intellect": 56, "politics": 35, "charisma": 48 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 85,
+        "war": 90,
+        "intellect": 56,
+        "politics": 35,
+        "charisma": 48
+      },
       "loyalty": 70,
-      "skills": ["charge_master", "ambush_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 95, "war": 95, "intellect": 66, "politics": 50, "charisma": 58 },
+      "skills": [
+        "charge_master",
+        "ambush_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 95,
+        "war": 95,
+        "intellect": 66,
+        "politics": 50,
+        "charisma": 58
+      },
       "experience": 0,
       "level": 1
     },
     "ma_liang": {
-      "faction": "shu", "city": "jiaozhou", "alive": true, "status": "active",
-      "stats": { "command": 45, "war": 30, "intellect": 82, "politics": 88, "charisma": 78 },
+      "faction": "shu",
+      "city": "jiaozhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 45,
+        "war": 30,
+        "intellect": 82,
+        "politics": 88,
+        "charisma": 78
+      },
       "loyalty": 95,
-      "skills": ["governance"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 55, "war": 45, "intellect": 92, "politics": 98, "charisma": 88 },
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 55,
+        "war": 45,
+        "intellect": 92,
+        "politics": 98,
+        "charisma": 88
+      },
       "experience": 0,
       "level": 1
     },
     "xu_shu": {
-      "faction": "shu", "city": "jingzhou", "alive": true, "status": "active",
-      "stats": { "command": 60, "war": 55, "intellect": 88, "politics": 78, "charisma": 75 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 60,
+        "war": 55,
+        "intellect": 88,
+        "politics": 78,
+        "charisma": 75
+      },
       "loyalty": 90,
-      "skills": ["insight"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 70, "war": 65, "intellect": 98, "politics": 88, "charisma": 85 },
+      "skills": [
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 70,
+        "war": 65,
+        "intellect": 98,
+        "politics": 88,
+        "charisma": 85
+      },
       "experience": 0,
       "level": 1
     },
-
     "sun_quan": {
-      "faction": "wu", "city": "jianye", "alive": true, "status": "active",
-      "stats": { "command": 76, "war": 67, "intellect": 80, "politics": 89, "charisma": 95 },
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 76,
+        "war": 67,
+        "intellect": 80,
+        "politics": 89,
+        "charisma": 95
+      },
       "loyalty": 100,
-      "skills": ["governance", "charm"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 86, "war": 77, "intellect": 90, "politics": 99, "charisma": 100 },
+      "skills": [
+        "governance",
+        "charm"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 86,
+        "war": 77,
+        "intellect": 90,
+        "politics": 99,
+        "charisma": 100
+      },
       "experience": 0,
       "level": 1
     },
     "zhou_yu": {
-      "faction": "wu", "city": "yangzhou", "alive": true, "status": "active",
-      "stats": { "command": 93, "war": 80, "intellect": 96, "politics": 80, "charisma": 90 },
+      "faction": "wu",
+      "city": "yangzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 93,
+        "war": 80,
+        "intellect": 96,
+        "politics": 80,
+        "charisma": 90
+      },
       "loyalty": 95,
-      "skills": ["fire_attack", "naval"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 98, "war": 90, "intellect": 100, "politics": 90, "charisma": 95 },
+      "skills": [
+        "fire_attack",
+        "naval"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 98,
+        "war": 90,
+        "intellect": 100,
+        "politics": 90,
+        "charisma": 95
+      },
       "experience": 0,
       "level": 1
     },
     "lu_su": {
-      "faction": "wu", "city": "yangzhou", "alive": true, "status": "active",
-      "stats": { "command": 68, "war": 42, "intellect": 90, "politics": 88, "charisma": 85 },
+      "faction": "wu",
+      "city": "yangzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 68,
+        "war": 42,
+        "intellect": 90,
+        "politics": 88,
+        "charisma": 85
+      },
       "loyalty": 92,
-      "skills": ["charm", "logistics"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 78, "war": 52, "intellect": 95, "politics": 98, "charisma": 95 },
+      "skills": [
+        "charm",
+        "logistics"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 78,
+        "war": 52,
+        "intellect": 95,
+        "politics": 98,
+        "charisma": 95
+      },
       "experience": 0,
       "level": 1
     },
     "gan_ning": {
-      "faction": "wu", "city": "jianye", "alive": true, "status": "active",
-      "stats": { "command": 86, "war": 94, "intellect": 76, "politics": 18, "charisma": 58 },
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 86,
+        "war": 94,
+        "intellect": 76,
+        "politics": 18,
+        "charisma": 58
+      },
       "loyalty": 88,
-      "skills": ["naval", "charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 96, "war": 99, "intellect": 86, "politics": 33, "charisma": 68 },
+      "skills": [
+        "naval",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 96,
+        "war": 99,
+        "intellect": 86,
+        "politics": 33,
+        "charisma": 68
+      },
       "experience": 0,
       "level": 1
     },
     "huang_gai": {
-      "faction": "wu", "city": "yangzhou", "alive": true, "status": "active",
-      "stats": { "command": 78, "war": 80, "intellect": 72, "politics": 55, "charisma": 70 },
+      "faction": "wu",
+      "city": "yangzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 78,
+        "war": 80,
+        "intellect": 72,
+        "politics": 55,
+        "charisma": 70
+      },
       "loyalty": 95,
-      "skills": ["fire_attack", "iron_wall"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 88, "war": 90, "intellect": 82, "politics": 65, "charisma": 80 },
+      "skills": [
+        "fire_attack",
+        "iron_wall"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 88,
+        "war": 90,
+        "intellect": 82,
+        "politics": 65,
+        "charisma": 80
+      },
       "experience": 0,
       "level": 1
     },
     "taishi_ci": {
-      "faction": "wu", "city": "jianye", "alive": true, "status": "active",
-      "stats": { "command": 82, "war": 92, "intellect": 60, "politics": 48, "charisma": 78 },
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 82,
+        "war": 92,
+        "intellect": 60,
+        "politics": 48,
+        "charisma": 78
+      },
       "loyalty": 90,
-      "skills": ["duel_master", "cavalry"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 92, "war": 97, "intellect": 70, "politics": 58, "charisma": 88 },
+      "skills": [
+        "duel_master",
+        "cavalry"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 92,
+        "war": 97,
+        "intellect": 70,
+        "politics": 58,
+        "charisma": 88
+      },
       "experience": 0,
       "level": 1
     },
     "zhou_tai": {
-      "faction": "wu", "city": "jianye", "alive": true, "status": "active",
-      "stats": { "command": 80, "war": 90, "intellect": 55, "politics": 42, "charisma": 65 },
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 80,
+        "war": 90,
+        "intellect": 55,
+        "politics": 42,
+        "charisma": 65
+      },
       "loyalty": 93,
-      "skills": ["iron_wall", "duel_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 90, "war": 95, "intellect": 65, "politics": 52, "charisma": 75 },
+      "skills": [
+        "iron_wall",
+        "duel_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 90,
+        "war": 95,
+        "intellect": 65,
+        "politics": 52,
+        "charisma": 75
+      },
       "experience": 0,
       "level": 1
     },
     "kan_ze": {
-      "faction": "wu", "city": "jianye", "alive": true, "status": "active",
-      "stats": { "command": 43, "war": 49, "intellect": 83, "politics": 86, "charisma": 73 },
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 43,
+        "war": 49,
+        "intellect": 83,
+        "politics": 86,
+        "charisma": 73
+      },
       "loyalty": 90,
-      "skills": ["spy_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 53, "war": 59, "intellect": 93, "politics": 96, "charisma": 83 },
+      "skills": [
+        "spy_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 53,
+        "war": 59,
+        "intellect": 93,
+        "politics": 96,
+        "charisma": 83
+      },
       "experience": 0,
       "level": 1
     },
-
     "liu_biao": {
-      "faction": "shu", "city": "jingzhou", "alive": false, "status": "dead",
-      "stats": { "command": 45, "war": 20, "intellect": 68, "politics": 82, "charisma": 75 },
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": false,
+      "status": "dead",
+      "stats": {
+        "command": 45,
+        "war": 20,
+        "intellect": 68,
+        "politics": 82,
+        "charisma": 75
+      },
       "loyalty": 0,
       "skills": [],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 55, "war": 35, "intellect": 78, "politics": 92, "charisma": 85 },
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 55,
+        "war": 35,
+        "intellect": 78,
+        "politics": 92,
+        "charisma": 85
+      },
       "experience": 0,
       "level": 1
     },
-
     "liu_zhang_char": {
-      "faction": "liu_zhang", "city": "chengdu", "alive": true, "status": "active",
-      "stats": { "command": 38, "war": 22, "intellect": 52, "politics": 60, "charisma": 55 },
+      "faction": "liu_zhang",
+      "city": "chengdu",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 38,
+        "war": 22,
+        "intellect": 52,
+        "politics": 60,
+        "charisma": 55
+      },
       "loyalty": 100,
       "skills": [],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 53, "war": 37, "intellect": 62, "politics": 70, "charisma": 65 },
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 53,
+        "war": 37,
+        "intellect": 62,
+        "politics": 70,
+        "charisma": 65
+      },
       "experience": 0,
       "level": 1
     },
     "fa_zheng": {
-      "faction": "liu_zhang", "city": "chengdu", "alive": true, "status": "active",
-      "stats": { "command": 62, "war": 48, "intellect": 92, "politics": 82, "charisma": 60 },
+      "faction": "liu_zhang",
+      "city": "chengdu",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 62,
+        "war": 48,
+        "intellect": 92,
+        "politics": 82,
+        "charisma": 60
+      },
       "loyalty": 50,
-      "skills": ["insight", "spy_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 72, "war": 58, "intellect": 97, "politics": 92, "charisma": 70 },
+      "skills": [
+        "insight",
+        "spy_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 72,
+        "war": 58,
+        "intellect": 97,
+        "politics": 92,
+        "charisma": 70
+      },
       "experience": 0,
       "level": 1
     },
     "zhang_song": {
-      "faction": "liu_zhang", "city": "chengdu", "alive": true, "status": "active",
-      "stats": { "command": 30, "war": 15, "intellect": 88, "politics": 80, "charisma": 35 },
+      "faction": "liu_zhang",
+      "city": "chengdu",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 30,
+        "war": 15,
+        "intellect": 88,
+        "politics": 80,
+        "charisma": 35
+      },
       "loyalty": 30,
-      "skills": ["spy_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 45, "war": 30, "intellect": 98, "politics": 90, "charisma": 50 },
+      "skills": [
+        "spy_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 45,
+        "war": 30,
+        "intellect": 98,
+        "politics": 90,
+        "charisma": 50
+      },
       "experience": 0,
       "level": 1
     },
-
     "zhang_lu_char": {
-      "faction": "zhang_lu", "city": "hanzhong", "alive": true, "status": "active",
-      "stats": { "command": 52, "war": 45, "intellect": 58, "politics": 62, "charisma": 65 },
+      "faction": "zhang_lu",
+      "city": "hanzhong",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 52,
+        "war": 45,
+        "intellect": 58,
+        "politics": 62,
+        "charisma": 65
+      },
       "loyalty": 100,
-      "skills": ["charm"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 62, "war": 55, "intellect": 68, "politics": 72, "charisma": 75 },
+      "skills": [
+        "charm"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 62,
+        "war": 55,
+        "intellect": 68,
+        "politics": 72,
+        "charisma": 75
+      },
       "experience": 0,
       "level": 1
     },
     "pang_de": {
-      "faction": "zhang_lu", "city": "hanzhong", "alive": true, "status": "active",
-      "stats": { "command": 81, "war": 92, "intellect": 48, "politics": 35, "charisma": 62 },
+      "faction": "zhang_lu",
+      "city": "hanzhong",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 81,
+        "war": 92,
+        "intellect": 48,
+        "politics": 35,
+        "charisma": 62
+      },
       "loyalty": 70,
-      "skills": ["duel_master", "charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": "golden_claw", "accessory": null },
-      "potential": { "command": 91, "war": 97, "intellect": 58, "politics": 50, "charisma": 72 },
-      "experience": 0,
-      "level": 1
-    }
-  },
-
-  "unaffiliatedPool": {
-    "pang_tong": {
-      "faction": null, "city": "jingzhou", "alive": true, "status": "wandering",
-      "stats": { "command": 86, "war": 25, "intellect": 98, "politics": 88, "charisma": 55 },
-      "loyalty": 0,
-      "skills": ["fire_attack", "insight"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 96, "war": 40, "intellect": 100, "politics": 98, "charisma": 65 },
-      "experience": 0,
-      "level": 1
-    },
-    "ma_chao": {
-      "faction": null, "city": "yongzhou", "alive": true, "status": "wandering",
-      "stats": { "command": 88, "war": 97, "intellect": 42, "politics": 25, "charisma": 72 },
-      "loyalty": 0,
-      "skills": ["cavalry", "duel_master", "charge_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 98, "war": 100, "intellect": 52, "politics": 40, "charisma": 82 },
+      "skills": [
+        "duel_master",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": "golden_claw",
+        "accessory": null
+      },
+      "potential": {
+        "command": 91,
+        "war": 97,
+        "intellect": 58,
+        "politics": 50,
+        "charisma": 72
+      },
       "experience": 0,
       "level": 1
     },
-    "yan_yan": {
-      "faction": null, "city": "yizhou", "alive": true, "status": "wandering",
-      "stats": { "command": 75, "war": 82, "intellect": 48, "politics": 52, "charisma": 68 },
-      "loyalty": 0,
-      "skills": ["iron_wall"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 85, "war": 92, "intellect": 58, "politics": 62, "charisma": 78 },
+    "cheng_yu": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 70,
+        "war": 49,
+        "intellect": 90,
+        "politics": 79,
+        "charisma": 58
+      },
+      "loyalty": 90,
+      "skills": [
+        "insight",
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 80,
+        "war": 59,
+        "intellect": 100,
+        "politics": 89,
+        "charisma": 68
+      },
       "experience": 0,
       "level": 1
     },
-    "jiang_wan": {
-      "faction": null, "city": "jingzhou", "alive": true, "status": "wandering",
-      "stats": { "command": 52, "war": 22, "intellect": 82, "politics": 90, "charisma": 75 },
-      "loyalty": 0,
-      "skills": ["governance"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 62, "war": 37, "intellect": 92, "politics": 95, "charisma": 85 },
+    "xun_you": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 73,
+        "war": 26,
+        "intellect": 94,
+        "politics": 88,
+        "charisma": 84
+      },
+      "loyalty": 92,
+      "skills": [
+        "insight",
+        "spy_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 83,
+        "war": 36,
+        "intellect": 100,
+        "politics": 98,
+        "charisma": 94
+      },
       "experience": 0,
       "level": 1
     },
-    "fei_yi": {
-      "faction": null, "city": "yangzhou", "alive": true, "status": "wandering",
-      "stats": { "command": 48, "war": 18, "intellect": 80, "politics": 92, "charisma": 82 },
-      "loyalty": 0,
-      "skills": ["governance", "charm"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 58, "war": 33, "intellect": 90, "politics": 97, "charisma": 92 },
+    "man_chong": {
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 86,
+        "war": 62,
+        "intellect": 82,
+        "politics": 85,
+        "charisma": 81
+      },
+      "loyalty": 88,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 96,
+        "war": 72,
+        "intellect": 92,
+        "politics": 95,
+        "charisma": 91
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "li_dian": {
+      "faction": "wei",
+      "city": "yanzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 78,
+        "war": 77,
+        "intellect": 80,
+        "politics": 73,
+        "charisma": 61
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 88,
+        "war": 87,
+        "intellect": 90,
+        "politics": 83,
+        "charisma": 71
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cao_chun": {
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 76,
+        "war": 71,
+        "intellect": 63,
+        "politics": 43,
+        "charisma": 75
+      },
+      "loyalty": 95,
+      "skills": [
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 86,
+        "war": 81,
+        "intellect": 73,
+        "politics": 53,
+        "charisma": 85
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cao_xiu": {
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 76,
+        "war": 75,
+        "intellect": 63,
+        "politics": 59,
+        "charisma": 69
+      },
+      "loyalty": 95,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 86,
+        "war": 85,
+        "intellect": 73,
+        "politics": 69,
+        "charisma": 79
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "wen_pin": {
+      "faction": "wei",
+      "city": "nanyang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 81,
+        "war": 83,
+        "intellect": 66,
+        "politics": 68,
+        "charisma": 70
+      },
+      "loyalty": 75,
+      "skills": [
+        "siege_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 91,
+        "war": 93,
+        "intellect": 76,
+        "politics": 78,
+        "charisma": 80
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cai_mao": {
+      "faction": "wei",
+      "city": "nanyang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 75,
+        "war": 67,
+        "intellect": 77,
+        "politics": 74,
+        "charisma": 56
+      },
+      "loyalty": 70,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 85,
+        "war": 77,
+        "intellect": 87,
+        "politics": 84,
+        "charisma": 66
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "liu_ye": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 48,
+        "war": 28,
+        "intellect": 93,
+        "politics": 74,
+        "charisma": 71
+      },
+      "loyalty": 85,
+      "skills": [
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 58,
+        "war": 38,
+        "intellect": 100,
+        "politics": 84,
+        "charisma": 81
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "dong_zhao": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 28,
+        "war": 26,
+        "intellect": 80,
+        "politics": 86,
+        "charisma": 60
+      },
+      "loyalty": 88,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 38,
+        "war": 36,
+        "intellect": 90,
+        "politics": 96,
+        "charisma": 70
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "chen_qun": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 30,
+        "war": 14,
+        "intellect": 77,
+        "politics": 97,
+        "charisma": 77
+      },
+      "loyalty": 90,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 40,
+        "war": 24,
+        "intellect": 87,
+        "politics": 100,
+        "charisma": 87
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "wang_lang": {
+      "faction": "wei",
+      "city": "xuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 47,
+        "war": 35,
+        "intellect": 78,
+        "politics": 81,
+        "charisma": 49
+      },
+      "loyalty": 82,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 57,
+        "war": 45,
+        "intellect": 88,
+        "politics": 91,
+        "charisma": 59
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "hua_xin": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 22,
+        "war": 34,
+        "intellect": 83,
+        "politics": 82,
+        "charisma": 8
+      },
+      "loyalty": 80,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 32,
+        "war": 44,
+        "intellect": 93,
+        "politics": 92,
+        "charisma": 18
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "chen_lin": {
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 17,
+        "war": 9,
+        "intellect": 77,
+        "politics": 80,
+        "charisma": 72
+      },
+      "loyalty": 78,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 27,
+        "war": 19,
+        "intellect": 87,
+        "politics": 90,
+        "charisma": 82
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "hao_zhao": {
+      "faction": "wei",
+      "city": "changan",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 89,
+        "war": 79,
+        "intellect": 78,
+        "politics": 62,
+        "charisma": 72
+      },
+      "loyalty": 90,
+      "skills": [
+        "siege_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 99,
+        "war": 89,
+        "intellect": 88,
+        "politics": 72,
+        "charisma": 82
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cao_zhang": {
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 82,
+        "war": 90,
+        "intellect": 40,
+        "politics": 35,
+        "charisma": 76
+      },
+      "loyalty": 95,
+      "skills": [
+        "duel_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 92,
+        "war": 100,
+        "intellect": 50,
+        "politics": 45,
+        "charisma": 86
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "jia_kui": {
+      "faction": "wei",
+      "city": "xuchang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 77,
+        "war": 62,
+        "intellect": 82,
+        "politics": 86,
+        "charisma": 78
+      },
+      "loyalty": 85,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 87,
+        "war": 72,
+        "intellect": 92,
+        "politics": 96,
+        "charisma": 88
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "han_hao": {
+      "faction": "wei",
+      "city": "yuzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 71,
+        "war": 72,
+        "intellect": 70,
+        "politics": 87,
+        "charisma": 66
+      },
+      "loyalty": 88,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 81,
+        "war": 82,
+        "intellect": 80,
+        "politics": 97,
+        "charisma": 76
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "zhang_yun": {
+      "faction": "wei",
+      "city": "nanyang",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 73,
+        "war": 68,
+        "intellect": 48,
+        "politics": 55,
+        "charisma": 49
+      },
+      "loyalty": 65,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 83,
+        "war": 78,
+        "intellect": 58,
+        "politics": 65,
+        "charisma": 59
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cao_ang": {
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 74,
+        "war": 62,
+        "intellect": 68,
+        "politics": 74,
+        "charisma": 77
+      },
+      "loyalty": 95,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 84,
+        "war": 72,
+        "intellect": 78,
+        "politics": 84,
+        "charisma": 87
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cao_rui": {
+      "faction": "wei",
+      "city": "ye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 72,
+        "war": 52,
+        "intellect": 82,
+        "politics": 82,
+        "charisma": 88
+      },
+      "loyalty": 95,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 82,
+        "war": 62,
+        "intellect": 92,
+        "politics": 92,
+        "charisma": 98
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "mi_zhu": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 24,
+        "war": 30,
+        "intellect": 72,
+        "politics": 83,
+        "charisma": 82
+      },
+      "loyalty": 90,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 34,
+        "war": 40,
+        "intellect": 82,
+        "politics": 93,
+        "charisma": 92
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "mi_fang": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 57,
+        "war": 62,
+        "intellect": 31,
+        "politics": 27,
+        "charisma": 18
+      },
+      "loyalty": 55,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 67,
+        "war": 72,
+        "intellect": 41,
+        "politics": 37,
+        "charisma": 28
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "jian_yong": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 20,
+        "war": 32,
+        "intellect": 74,
+        "politics": 71,
+        "charisma": 74
+      },
+      "loyalty": 85,
+      "skills": [
+        "charm"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 30,
+        "war": 42,
+        "intellect": 84,
+        "politics": 81,
+        "charisma": 84
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "sun_qian": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 30,
+        "war": 35,
+        "intellect": 72,
+        "politics": 87,
+        "charisma": 88
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 40,
+        "war": 45,
+        "intellect": 82,
+        "politics": 97,
+        "charisma": 98
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "guan_ping": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 77,
+        "war": 82,
+        "intellect": 68,
+        "politics": 60,
+        "charisma": 76
+      },
+      "loyalty": 95,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 87,
+        "war": 92,
+        "intellect": 78,
+        "politics": 70,
+        "charisma": 86
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "liu_feng": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 75,
+        "war": 79,
+        "intellect": 44,
+        "politics": 50,
+        "charisma": 76
+      },
+      "loyalty": 80,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 85,
+        "war": 89,
+        "intellect": 54,
+        "politics": 60,
+        "charisma": 86
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "liao_hua": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 73,
+        "war": 76,
+        "intellect": 64,
+        "politics": 49,
+        "charisma": 66
+      },
+      "loyalty": 88,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 83,
+        "war": 86,
+        "intellect": 74,
+        "politics": 59,
+        "charisma": 76
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "chen_dao": {
+      "faction": "shu",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 79,
+        "war": 74,
+        "intellect": 65,
+        "politics": 50,
+        "charisma": 72
+      },
+      "loyalty": 90,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 89,
+        "war": 84,
+        "intellect": 75,
+        "politics": 60,
+        "charisma": 82
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "cheng_pu": {
+      "faction": "wu",
+      "city": "yangzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 84,
+        "war": 79,
+        "intellect": 79,
+        "politics": 74,
+        "charisma": 85
+      },
+      "loyalty": 92,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 94,
+        "war": 89,
+        "intellect": 89,
+        "politics": 84,
+        "charisma": 95
+      },
       "experience": 0,
       "level": 1
     },
     "lu_meng": {
-      "faction": null, "city": "yangzhou", "alive": true, "status": "wandering",
-      "stats": { "command": 84, "war": 78, "intellect": 88, "politics": 72, "charisma": 68 },
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 91,
+        "war": 81,
+        "intellect": 89,
+        "politics": 78,
+        "charisma": 82
+      },
+      "loyalty": 88,
+      "skills": [
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 100,
+        "war": 91,
+        "intellect": 99,
+        "politics": 88,
+        "charisma": 92
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "ling_tong": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 77,
+        "war": 89,
+        "intellect": 55,
+        "politics": 40,
+        "charisma": 71
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 87,
+        "war": 99,
+        "intellect": 65,
+        "politics": 50,
+        "charisma": 81
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "han_dang": {
+      "faction": "wu",
+      "city": "yangzhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 76,
+        "war": 86,
+        "intellect": 59,
+        "politics": 53,
+        "charisma": 67
+      },
+      "loyalty": 90,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 86,
+        "war": 96,
+        "intellect": 69,
+        "politics": 63,
+        "charisma": 77
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "pan_zhang": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 77,
+        "war": 78,
+        "intellect": 69,
+        "politics": 34,
+        "charisma": 7
+      },
+      "loyalty": 80,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 87,
+        "war": 88,
+        "intellect": 79,
+        "politics": 44,
+        "charisma": 17
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "xu_sheng": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 87,
+        "war": 81,
+        "intellect": 78,
+        "politics": 65,
+        "charisma": 73
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 97,
+        "war": 91,
+        "intellect": 88,
+        "politics": 75,
+        "charisma": 83
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "ding_feng": {
+      "faction": "wu",
+      "city": "kuaiji",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 81,
+        "war": 80,
+        "intellect": 71,
+        "politics": 55,
+        "charisma": 56
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 91,
+        "war": 90,
+        "intellect": 81,
+        "politics": 65,
+        "charisma": 66
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "lv_fan": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 73,
+        "war": 59,
+        "intellect": 75,
+        "politics": 74,
+        "charisma": 67
+      },
+      "loyalty": 88,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 83,
+        "war": 69,
+        "intellect": 85,
+        "politics": 84,
+        "charisma": 77
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "zhang_zhao": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 33,
+        "war": 3,
+        "intellect": 84,
+        "politics": 97,
+        "charisma": 80
+      },
+      "loyalty": 90,
+      "skills": [
+        "governance",
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 43,
+        "war": 13,
+        "intellect": 94,
+        "politics": 100,
+        "charisma": 90
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "gu_yong": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 43,
+        "war": 18,
+        "intellect": 80,
+        "politics": 90,
+        "charisma": 76
+      },
+      "loyalty": 88,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 53,
+        "war": 28,
+        "intellect": 90,
+        "politics": 100,
+        "charisma": 86
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "lv_dai": {
+      "faction": "wu",
+      "city": "kuaiji",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 79,
+        "war": 72,
+        "intellect": 70,
+        "politics": 72,
+        "charisma": 56
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 89,
+        "war": 82,
+        "intellect": 80,
+        "politics": 82,
+        "charisma": 66
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "dong_xi": {
+      "faction": "wu",
+      "city": "kuaiji",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 71,
+        "war": 80,
+        "intellect": 52,
+        "politics": 43,
+        "charisma": 58
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 81,
+        "war": 90,
+        "intellect": 62,
+        "politics": 53,
+        "charisma": 68
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "zhu_zhi": {
+      "faction": "wu",
+      "city": "kuaiji",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 71,
+        "war": 57,
+        "intellect": 73,
+        "politics": 73,
+        "charisma": 76
+      },
+      "loyalty": 90,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 81,
+        "war": 67,
+        "intellect": 83,
+        "politics": 83,
+        "charisma": 86
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "lu_xun": {
+      "faction": "wu",
+      "city": "kuaiji",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 96,
+        "war": 69,
+        "intellect": 95,
+        "politics": 87,
+        "charisma": 90
+      },
+      "loyalty": 82,
+      "skills": [
+        "charge_master",
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 100,
+        "war": 79,
+        "intellect": 100,
+        "politics": 97,
+        "charisma": 100
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "zhu_ran": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 86,
+        "war": 66,
+        "intellect": 71,
+        "politics": 60,
+        "charisma": 79
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 96,
+        "war": 76,
+        "intellect": 81,
+        "politics": 70,
+        "charisma": 89
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "bu_zhi": {
+      "faction": "wu",
+      "city": "jianye",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 80,
+        "war": 52,
+        "intellect": 83,
+        "politics": 86,
+        "charisma": 70
+      },
+      "loyalty": 80,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 90,
+        "war": 62,
+        "intellect": 93,
+        "politics": 96,
+        "charisma": 80
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "li_yan": {
+      "faction": "liu_zhang",
+      "city": "yizhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 83,
+        "war": 84,
+        "intellect": 75,
+        "politics": 74,
+        "charisma": 52
+      },
+      "loyalty": 75,
+      "skills": [
+        "siege_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 93,
+        "war": 94,
+        "intellect": 85,
+        "politics": 84,
+        "charisma": 62
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "yang_huai": {
+      "faction": "liu_zhang",
+      "city": "yizhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 63,
+        "war": 69,
+        "intellect": 67,
+        "politics": 63,
+        "charisma": 47
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 73,
+        "war": 79,
+        "intellect": 77,
+        "politics": 73,
+        "charisma": 57
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "gao_pei": {
+      "faction": "liu_zhang",
+      "city": "yizhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 66,
+        "war": 62,
+        "intellect": 71,
+        "politics": 54,
+        "charisma": 41
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 76,
+        "war": 72,
+        "intellect": 81,
+        "politics": 64,
+        "charisma": 51
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "deng_xian": {
+      "faction": "liu_zhang",
+      "city": "yizhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 62,
+        "war": 72,
+        "intellect": 45,
+        "politics": 36,
+        "charisma": 49
+      },
+      "loyalty": 80,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 72,
+        "war": 82,
+        "intellect": 55,
+        "politics": 46,
+        "charisma": 59
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "wang_lei": {
+      "faction": "liu_zhang",
+      "city": "chengdu",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 29,
+        "war": 30,
+        "intellect": 77,
+        "politics": 79,
+        "charisma": 72
+      },
+      "loyalty": 90,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 39,
+        "war": 40,
+        "intellect": 87,
+        "politics": 89,
+        "charisma": 82
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "qiao_zhou": {
+      "faction": "liu_zhang",
+      "city": "chengdu",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 10,
+        "war": 6,
+        "intellect": 66,
+        "politics": 72,
+        "charisma": 54
+      },
+      "loyalty": 70,
+      "skills": [
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 20,
+        "war": 16,
+        "intellect": 76,
+        "politics": 82,
+        "charisma": 64
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "fei_shi": {
+      "faction": "liu_zhang",
+      "city": "chengdu",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 16,
+        "war": 28,
+        "intellect": 64,
+        "politics": 72,
+        "charisma": 65
+      },
+      "loyalty": 75,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 26,
+        "war": 38,
+        "intellect": 74,
+        "politics": 82,
+        "charisma": 75
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "wu_lan": {
+      "faction": "liu_zhang",
+      "city": "yizhou",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 66,
+        "war": 80,
+        "intellect": 35,
+        "politics": 36,
+        "charisma": 51
+      },
+      "loyalty": 78,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 76,
+        "war": 90,
+        "intellect": 45,
+        "politics": 46,
+        "charisma": 61
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "yang_ren": {
+      "faction": "zhang_lu",
+      "city": "hanzhong",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 71,
+        "war": 78,
+        "intellect": 56,
+        "politics": 42,
+        "charisma": 54
+      },
+      "loyalty": 85,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 81,
+        "war": 88,
+        "intellect": 66,
+        "politics": 52,
+        "charisma": 64
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "yang_ang": {
+      "faction": "zhang_lu",
+      "city": "hanzhong",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 67,
+        "war": 71,
+        "intellect": 39,
+        "politics": 35,
+        "charisma": 42
+      },
+      "loyalty": 80,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 77,
+        "war": 81,
+        "intellect": 49,
+        "politics": 45,
+        "charisma": 52
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "yang_song": {
+      "faction": "zhang_lu",
+      "city": "hanzhong",
+      "alive": true,
+      "status": "active",
+      "stats": {
+        "command": 10,
+        "war": 5,
+        "intellect": 30,
+        "politics": 36,
+        "charisma": 2
+      },
+      "loyalty": 55,
+      "skills": [
+        "spy_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 20,
+        "war": 15,
+        "intellect": 40,
+        "politics": 46,
+        "charisma": 12
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "pang_tong": {
+      "faction": "none",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 78,
+        "war": 34,
+        "intellect": 97,
+        "politics": 85,
+        "charisma": 69
+      },
       "loyalty": 0,
-      "skills": ["naval", "ambush_master"],
-      "equipment": { "weapon": null, "armor": null, "horse": null, "accessory": null },
-      "potential": { "command": 94, "war": 88, "intellect": 98, "politics": 82, "charisma": 78 },
+      "skills": [
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 88,
+        "war": 44,
+        "intellect": 100,
+        "politics": 95,
+        "charisma": 79
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "ma_chao": {
+      "faction": "none",
+      "city": "tianshui",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 88,
+        "war": 97,
+        "intellect": 44,
+        "politics": 26,
+        "charisma": 82
+      },
+      "loyalty": 0,
+      "skills": [
+        "duel_master",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 98,
+        "war": 100,
+        "intellect": 54,
+        "politics": 36,
+        "charisma": 92
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "ma_teng": {
+      "faction": "none",
+      "city": "tianshui",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 82,
+        "war": 80,
+        "intellect": 51,
+        "politics": 59,
+        "charisma": 89
+      },
+      "loyalty": 0,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 92,
+        "war": 90,
+        "intellect": 61,
+        "politics": 69,
+        "charisma": 99
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "ma_dai": {
+      "faction": "none",
+      "city": "tianshui",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 81,
+        "war": 85,
+        "intellect": 56,
+        "politics": 54,
+        "charisma": 74
+      },
+      "loyalty": 0,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 91,
+        "war": 95,
+        "intellect": 66,
+        "politics": 64,
+        "charisma": 84
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "han_sui": {
+      "faction": "none",
+      "city": "tianshui",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 89,
+        "war": 70,
+        "intellect": 77,
+        "politics": 61,
+        "charisma": 80
+      },
+      "loyalty": 0,
+      "skills": [
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 99,
+        "war": 80,
+        "intellect": 87,
+        "politics": 71,
+        "charisma": 90
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "deng_zhi": {
+      "faction": "none",
+      "city": "yizhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 73,
+        "war": 52,
+        "intellect": 81,
+        "politics": 85,
+        "charisma": 88
+      },
+      "loyalty": 0,
+      "skills": [],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 83,
+        "war": 62,
+        "intellect": 91,
+        "politics": 95,
+        "charisma": 98
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "xu_jing": {
+      "faction": "none",
+      "city": "jiaozhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 14,
+        "war": 5,
+        "intellect": 68,
+        "politics": 79,
+        "charisma": 69
+      },
+      "loyalty": 0,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 24,
+        "war": 15,
+        "intellect": 78,
+        "politics": 89,
+        "charisma": 79
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "fei_yi": {
+      "faction": "none",
+      "city": "jingzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 77,
+        "war": 30,
+        "intellect": 83,
+        "politics": 92,
+        "charisma": 83
+      },
+      "loyalty": 0,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 87,
+        "war": 40,
+        "intellect": 93,
+        "politics": 100,
+        "charisma": 93
+      },
       "experience": 0,
       "level": 1
     }
   },
-
+  "unaffiliatedPool": {
+    "pang_tong": {
+      "faction": null,
+      "city": "jingzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 86,
+        "war": 25,
+        "intellect": 98,
+        "politics": 88,
+        "charisma": 55
+      },
+      "loyalty": 0,
+      "skills": [
+        "fire_attack",
+        "insight"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 96,
+        "war": 40,
+        "intellect": 100,
+        "politics": 98,
+        "charisma": 65
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "ma_chao": {
+      "faction": null,
+      "city": "yongzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 88,
+        "war": 97,
+        "intellect": 42,
+        "politics": 25,
+        "charisma": 72
+      },
+      "loyalty": 0,
+      "skills": [
+        "cavalry",
+        "duel_master",
+        "charge_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 98,
+        "war": 100,
+        "intellect": 52,
+        "politics": 40,
+        "charisma": 82
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "yan_yan": {
+      "faction": null,
+      "city": "yizhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 75,
+        "war": 82,
+        "intellect": 48,
+        "politics": 52,
+        "charisma": 68
+      },
+      "loyalty": 0,
+      "skills": [
+        "iron_wall"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 85,
+        "war": 92,
+        "intellect": 58,
+        "politics": 62,
+        "charisma": 78
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "jiang_wan": {
+      "faction": null,
+      "city": "jingzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 52,
+        "war": 22,
+        "intellect": 82,
+        "politics": 90,
+        "charisma": 75
+      },
+      "loyalty": 0,
+      "skills": [
+        "governance"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 62,
+        "war": 37,
+        "intellect": 92,
+        "politics": 95,
+        "charisma": 85
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "fei_yi": {
+      "faction": null,
+      "city": "yangzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 48,
+        "war": 18,
+        "intellect": 80,
+        "politics": 92,
+        "charisma": 82
+      },
+      "loyalty": 0,
+      "skills": [
+        "governance",
+        "charm"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 58,
+        "war": 33,
+        "intellect": 90,
+        "politics": 97,
+        "charisma": 92
+      },
+      "experience": 0,
+      "level": 1
+    },
+    "lu_meng": {
+      "faction": null,
+      "city": "yangzhou",
+      "alive": true,
+      "status": "wandering",
+      "stats": {
+        "command": 84,
+        "war": 78,
+        "intellect": 88,
+        "politics": 72,
+        "charisma": 68
+      },
+      "loyalty": 0,
+      "skills": [
+        "naval",
+        "ambush_master"
+      ],
+      "equipment": {
+        "weapon": null,
+        "armor": null,
+        "horse": null,
+        "accessory": null
+      },
+      "potential": {
+        "command": 94,
+        "war": 88,
+        "intellect": 98,
+        "politics": 82,
+        "charisma": 78
+      },
+      "experience": 0,
+      "level": 1
+    }
+  },
   "relationships": [
-    { "a": "liu_bei", "b": "guan_yu", "type": "sworn_brothers", "intensity": 100 },
-    { "a": "liu_bei", "b": "zhang_fei", "type": "sworn_brothers", "intensity": 100 },
-    { "a": "guan_yu", "b": "zhang_fei", "type": "sworn_brothers", "intensity": 100 },
-    { "a": "liu_bei", "b": "zhuge_liang", "type": "lord_vassal", "intensity": 95 },
-    { "a": "liu_bei", "b": "zhao_yun", "type": "lord_vassal", "intensity": 90 },
-    { "a": "cao_cao", "b": "guan_yu", "type": "respect", "intensity": 85 },
-    { "a": "cao_cao", "b": "liu_bei", "type": "rivalry", "intensity": 90 },
-    { "a": "sun_quan", "b": "zhou_yu", "type": "lord_vassal", "intensity": 88 },
-    { "a": "sun_quan", "b": "lu_su", "type": "lord_vassal", "intensity": 85 },
-    { "a": "zhou_yu", "b": "zhuge_liang", "type": "rivalry", "intensity": 75 },
-    { "a": "cao_cao", "b": "xiahou_dun", "type": "family", "intensity": 95 },
-    { "a": "cao_cao", "b": "xun_yu", "type": "lord_vassal", "intensity": 80 },
-    { "a": "cao_cao", "b": "jia_xu", "type": "lord_vassal", "intensity": 78 },
-    { "a": "liu_bei", "b": "pang_tong", "type": "respect", "intensity": 60 },
-    { "a": "zhuge_liang", "b": "pang_tong", "type": "friendship", "intensity": 85 },
-    { "a": "ma_chao", "b": "cao_cao", "type": "enmity", "intensity": 95 }
+    {
+      "a": "liu_bei",
+      "b": "guan_yu",
+      "type": "sworn_brothers",
+      "intensity": 100
+    },
+    {
+      "a": "liu_bei",
+      "b": "zhang_fei",
+      "type": "sworn_brothers",
+      "intensity": 100
+    },
+    {
+      "a": "guan_yu",
+      "b": "zhang_fei",
+      "type": "sworn_brothers",
+      "intensity": 100
+    },
+    {
+      "a": "liu_bei",
+      "b": "zhuge_liang",
+      "type": "lord_vassal",
+      "intensity": 95
+    },
+    {
+      "a": "liu_bei",
+      "b": "zhao_yun",
+      "type": "lord_vassal",
+      "intensity": 90
+    },
+    {
+      "a": "cao_cao",
+      "b": "guan_yu",
+      "type": "respect",
+      "intensity": 85
+    },
+    {
+      "a": "cao_cao",
+      "b": "liu_bei",
+      "type": "rivalry",
+      "intensity": 90
+    },
+    {
+      "a": "sun_quan",
+      "b": "zhou_yu",
+      "type": "lord_vassal",
+      "intensity": 88
+    },
+    {
+      "a": "sun_quan",
+      "b": "lu_su",
+      "type": "lord_vassal",
+      "intensity": 85
+    },
+    {
+      "a": "zhou_yu",
+      "b": "zhuge_liang",
+      "type": "rivalry",
+      "intensity": 75
+    },
+    {
+      "a": "cao_cao",
+      "b": "xiahou_dun",
+      "type": "family",
+      "intensity": 95
+    },
+    {
+      "a": "cao_cao",
+      "b": "xun_yu",
+      "type": "lord_vassal",
+      "intensity": 80
+    },
+    {
+      "a": "cao_cao",
+      "b": "jia_xu",
+      "type": "lord_vassal",
+      "intensity": 78
+    },
+    {
+      "a": "liu_bei",
+      "b": "pang_tong",
+      "type": "respect",
+      "intensity": 60
+    },
+    {
+      "a": "zhuge_liang",
+      "b": "pang_tong",
+      "type": "friendship",
+      "intensity": 85
+    },
+    {
+      "a": "ma_chao",
+      "b": "cao_cao",
+      "type": "enmity",
+      "intensity": 95
+    }
   ],
-
   "connectionTerrains": {
     "youzhou:jizhou": "plains",
     "jizhou:bingzhou": "plains",
@@ -742,75 +4149,278 @@
     "tianshui:changan": "mountain",
     "tianshui:yongzhou": "plains"
   },
-
   "cityPositions": {
-    "youzhou":  { "x": 720, "y": 80 },
-    "jizhou":   { "x": 640, "y": 150 },
-    "bingzhou": { "x": 480, "y": 130 },
-    "ye":       { "x": 600, "y": 200 },
-    "yanzhou":  { "x": 620, "y": 280 },
-    "xuzhou":   { "x": 720, "y": 300 },
-    "xuchang":  { "x": 570, "y": 340 },
-    "yuzhou":   { "x": 520, "y": 380 },
-    "luoyang":  { "x": 470, "y": 300 },
-    "changan":  { "x": 360, "y": 310 },
-    "yongzhou": { "x": 280, "y": 350 },
-    "jingzhou": { "x": 520, "y": 460 },
-    "yangzhou":  { "x": 680, "y": 420 },
-    "jianye":   { "x": 740, "y": 460 },
-    "yizhou":   { "x": 330, "y": 490 },
-    "chengdu":  { "x": 260, "y": 520 },
-    "hanzhong": { "x": 340, "y": 400 },
-    "jiaozhou": { "x": 480, "y": 600 },
-    "nanyang":  { "x": 470, "y": 360 },
-    "xiangyang": { "x": 500, "y": 420 },
-    "changsha": { "x": 560, "y": 530 },
-    "wuling":   { "x": 440, "y": 540 },
-    "kuaiji":   { "x": 800, "y": 520 },
-    "lujiang":  { "x": 650, "y": 460 },
-    "qingzhou": { "x": 760, "y": 220 },
-    "tianshui": { "x": 250, "y": 270 }
+    "youzhou": {
+      "x": 720,
+      "y": 80
+    },
+    "jizhou": {
+      "x": 640,
+      "y": 150
+    },
+    "bingzhou": {
+      "x": 480,
+      "y": 130
+    },
+    "ye": {
+      "x": 600,
+      "y": 200
+    },
+    "yanzhou": {
+      "x": 620,
+      "y": 280
+    },
+    "xuzhou": {
+      "x": 720,
+      "y": 300
+    },
+    "xuchang": {
+      "x": 570,
+      "y": 340
+    },
+    "yuzhou": {
+      "x": 520,
+      "y": 380
+    },
+    "luoyang": {
+      "x": 470,
+      "y": 300
+    },
+    "changan": {
+      "x": 360,
+      "y": 310
+    },
+    "yongzhou": {
+      "x": 280,
+      "y": 350
+    },
+    "jingzhou": {
+      "x": 520,
+      "y": 460
+    },
+    "yangzhou": {
+      "x": 680,
+      "y": 420
+    },
+    "jianye": {
+      "x": 740,
+      "y": 460
+    },
+    "yizhou": {
+      "x": 330,
+      "y": 490
+    },
+    "chengdu": {
+      "x": 260,
+      "y": 520
+    },
+    "hanzhong": {
+      "x": 340,
+      "y": 400
+    },
+    "jiaozhou": {
+      "x": 480,
+      "y": 600
+    },
+    "nanyang": {
+      "x": 470,
+      "y": 360
+    },
+    "xiangyang": {
+      "x": 500,
+      "y": 420
+    },
+    "changsha": {
+      "x": 560,
+      "y": 530
+    },
+    "wuling": {
+      "x": 440,
+      "y": 540
+    },
+    "kuaiji": {
+      "x": 800,
+      "y": 520
+    },
+    "lujiang": {
+      "x": 650,
+      "y": 460
+    },
+    "qingzhou": {
+      "x": 760,
+      "y": 220
+    },
+    "tianshui": {
+      "x": 250,
+      "y": 270
+    }
   },
-
   "connections": [
-    ["youzhou", "jizhou"],
-    ["jizhou", "bingzhou"],
-    ["jizhou", "yanzhou"],
-    ["jizhou", "ye"],
-    ["ye", "yanzhou"],
-    ["yanzhou", "xuzhou"],
-    ["yanzhou", "yuzhou"],
-    ["yanzhou", "xuchang"],
-    ["xuchang", "yuzhou"],
-    ["xuchang", "luoyang"],
-    ["luoyang", "changan"],
-    ["luoyang", "yanzhou"],
-    ["changan", "yongzhou"],
-    ["yuzhou", "nanyang"],
-    ["jingzhou", "yizhou"],
-    ["jingzhou", "jiaozhou"],
-    ["xuzhou", "yangzhou"],
-    ["yangzhou", "jianye"],
-    ["yizhou", "chengdu"],
-    ["yizhou", "hanzhong"],
-    ["hanzhong", "changan"],
-    ["hanzhong", "yongzhou"],
-    ["nanyang", "luoyang"],
-    ["nanyang", "xuchang"],
-    ["nanyang", "xiangyang"],
-    ["xiangyang", "jingzhou"],
-    ["xiangyang", "changsha"],
-    ["changsha", "jingzhou"],
-    ["changsha", "wuling"],
-    ["changsha", "jiaozhou"],
-    ["wuling", "yizhou"],
-    ["kuaiji", "jianye"],
-    ["lujiang", "yangzhou"],
-    ["lujiang", "jianye"],
-    ["lujiang", "jingzhou"],
-    ["qingzhou", "xuzhou"],
-    ["qingzhou", "jizhou"],
-    ["tianshui", "changan"],
-    ["tianshui", "yongzhou"]
+    [
+      "youzhou",
+      "jizhou"
+    ],
+    [
+      "jizhou",
+      "bingzhou"
+    ],
+    [
+      "jizhou",
+      "yanzhou"
+    ],
+    [
+      "jizhou",
+      "ye"
+    ],
+    [
+      "ye",
+      "yanzhou"
+    ],
+    [
+      "yanzhou",
+      "xuzhou"
+    ],
+    [
+      "yanzhou",
+      "yuzhou"
+    ],
+    [
+      "yanzhou",
+      "xuchang"
+    ],
+    [
+      "xuchang",
+      "yuzhou"
+    ],
+    [
+      "xuchang",
+      "luoyang"
+    ],
+    [
+      "luoyang",
+      "changan"
+    ],
+    [
+      "luoyang",
+      "yanzhou"
+    ],
+    [
+      "changan",
+      "yongzhou"
+    ],
+    [
+      "yuzhou",
+      "nanyang"
+    ],
+    [
+      "jingzhou",
+      "yizhou"
+    ],
+    [
+      "jingzhou",
+      "jiaozhou"
+    ],
+    [
+      "xuzhou",
+      "yangzhou"
+    ],
+    [
+      "yangzhou",
+      "jianye"
+    ],
+    [
+      "yizhou",
+      "chengdu"
+    ],
+    [
+      "yizhou",
+      "hanzhong"
+    ],
+    [
+      "hanzhong",
+      "changan"
+    ],
+    [
+      "hanzhong",
+      "yongzhou"
+    ],
+    [
+      "nanyang",
+      "luoyang"
+    ],
+    [
+      "nanyang",
+      "xuchang"
+    ],
+    [
+      "nanyang",
+      "xiangyang"
+    ],
+    [
+      "xiangyang",
+      "jingzhou"
+    ],
+    [
+      "xiangyang",
+      "changsha"
+    ],
+    [
+      "changsha",
+      "jingzhou"
+    ],
+    [
+      "changsha",
+      "wuling"
+    ],
+    [
+      "changsha",
+      "jiaozhou"
+    ],
+    [
+      "wuling",
+      "yizhou"
+    ],
+    [
+      "kuaiji",
+      "jianye"
+    ],
+    [
+      "lujiang",
+      "yangzhou"
+    ],
+    [
+      "lujiang",
+      "jianye"
+    ],
+    [
+      "lujiang",
+      "jingzhou"
+    ],
+    [
+      "qingzhou",
+      "xuzhou"
+    ],
+    [
+      "qingzhou",
+      "jizhou"
+    ],
+    [
+      "tianshui",
+      "changan"
+    ],
+    [
+      "tianshui",
+      "yongzhou"
+    ]
+  ],
+  "wanderers": [
+    "pang_tong",
+    "ma_chao",
+    "ma_teng",
+    "ma_dai",
+    "han_sui",
+    "deng_zhi",
+    "xu_jing",
+    "fei_yi"
   ]
 }
