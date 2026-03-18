@@ -15,7 +15,7 @@
 ### 설치 & 실행
 
 ```bash
-# 1. 클론 (77MB raw 데이터 포함, 1~2분 걸릴 수 있음)
+# 1. 클론 (91MB+ raw 데이터 포함, 1~2분 걸릴 수 있음)
 git clone https://github.com/PKCrox/wdttgukji.git
 cd wdttgukji
 
@@ -48,8 +48,8 @@ git push origin djg
 | 작업 | 경로 | 설명 |
 |---|---|---|
 | 게임 플레이 | `http://localhost:3001` | 로컬 서버 or Vercel |
-| soul.md 검수 | `data/characters/*.soul.md` | 73명 캐릭터 성격/가치관 |
-| soul-data 확인 | `data/processed/soul-data/*.txt` | 343명 14소스 퓨전 원본 |
+| soul.md 검수 | `data/characters/*.soul.md` | 426명 캐릭터 성격/가치관 |
+| soul-data 확인 | `data/processed/soul-data/*.txt` | 427명 14소스 퓨전 원본 |
 | 밸런스 조정 | `scripts/balance/train.js` | 밸런스 상수 (~120개 파라미터) |
 | 밸런스 목표 | `scripts/balance/program.md` | 에이전트 지시문 |
 | 이벤트 | `data/events/all-events.json` | 337개 게임 이벤트 |
@@ -76,7 +76,7 @@ LLM 기반 에이전틱 파이프라인으로 이 병목을 해소할 수 있다
 
 ## 데이터 분석 기반 전략
 
-### 현재 확보 데이터 (14개 소스, ~77MB raw + ~14MB processed)
+### 현재 확보 데이터 (16개 소스, ~91MB raw + ~18MB processed)
 
 | 카테고리 | 소스 | 규모 | 활용 |
 |---|---|---|---|
@@ -94,8 +94,10 @@ LLM 기반 에이전틱 파이프라인으로 이 병목을 해소할 수 있다
 | GitHub 데이터 | `crawl-github-rotk-data.js` | 20 파일 (6.3MB) | 구조화 게임 데이터 |
 | 연의 120회 (한국어) | `crawl-novel.js` | 120회 전문 | 한국어 연의 |
 | 세계관/전투 | `crawl-world.js`, `crawl-battles.js` | 종합 | 지리·전투 레퍼런스 |
+| **百度百科 W1** | `crawl-baidu.js` | **86건** (50캐릭터+18지리+15전투+8주제) | 중문 원전 데이터 |
+| **百度百科 W2** | `crawl-baidu-wave2.js` | **183건** (116캐릭터+31전투+25이벤트+10세력+15시스템) | 심층 크롤 |
 
-### 크롤러 인벤토리 (20개)
+### 크롤러 인벤토리 (22개)
 
 | 스크립트 | 소스 | 설명 |
 |---|---|---|
@@ -117,6 +119,8 @@ LLM 기반 에이전틱 파이프라인으로 이 병목을 해소할 수 있다
 | `crawl-gamecity.js` | gamecity.ne.jp | RTK14 1000명 명단 |
 | `crawl-koei-official.js` | koeitecmo | RTK14 공식 바이오 |
 | `crawl-github-rotk-data.js` | GitHub | ROTK-XI-Tools, LTKDEX 등 |
+| `crawl-baidu.js` | 百度百科 | W1: 캐릭터50+지리18+전투15+주제8 |
+| `crawl-baidu-wave2.js` | 百度百科 | W2: 캐릭터116+전투31+이벤트25+세력10+시스템15 |
 
 모든 크롤러: `--resume` 재개, `--delay N` 요청간격(ms), 에러 시 graceful fallback.
 
@@ -240,9 +244,9 @@ Phase B — LLM 생성 (Claude Opus, $0 — 세션 내 서브에이전트)
 |---|---|---|---|---|
 | P1 | 연의 원문 처리 | `process-novel-chapters.js` | `novel-dialogues.json` + `novel-cooccurrence.json` + `novel-chapter-index.json` | 3.9MB |
 | P2 | **14소스 캐릭터 퓨전** | `fuse-character-profiles.js` | `character-profiles/*.json` (**346개**) | ~12MB |
-| P3 | 관계 그래프 | `extract-relationships.js` | `relationship-graph.json` | 287K |
+| P3 | 관계 그래프 | `extract-relationships.js` | `relationship-graph.json` (926 엣지, 16타입) | 540K |
 | P4 | 이벤트 시드 | `extract-event-seeds.js` | `event-seeds.json` (337 seeds) | 414K |
-| P5 | 지리/세력 | `structure-geography.js` | `geography.json` + `factions.json` | 28K |
+| P5 | 지리/세력 | `structure-geography.js` | `geography-expanded.json` (42도시+57루트+8지형) | 85K |
 | P6 | 정사 처리 | `process-history.js` | 정사 프로필 15명 | — |
 | P7 | 커뮤니티 분석 | `process-community.js` | 감정 분석 96명 | — |
 | P8 | **Soul-data 추출** | `extract-soul-data.js` | `soul-data/*.txt` (**343명**, 12섹션) | ~4MB |
@@ -250,6 +254,8 @@ Phase B — LLM 생성 (Claude Opus, $0 — 세션 내 서브에이전트)
 | — | Soul.md v2 | 26× Claude Opus 서브에이전트 | `data/characters/*.soul.md` (73명) | 664K |
 | — | 이벤트 생성 | 13× Claude Opus 서브에이전트 | `data/events/all-events.json` (337 이벤트) | 880K |
 | — | 120회 요약 | 12× Claude Opus 서브에이전트 | `novel-chapter-summaries.json` (120회, 484 이벤트) | 287K |
+| P9 | 바이두 관계 추출 | `process-baidu-relationships.js` | `relationships-baidu.json` (1511→926 병합, 485 확정) | 850K |
+| P10 | 바이두 전투 구조화 | `process-baidu-battles.js` | `battles-structured.json` (39전투, 13전략유형) | 180K |
 
 ### P7 Soul.md v2 — 품질 기준
 
@@ -523,18 +529,25 @@ Territory:
 - [x] Gamecity RTK14 1000명 명단 크롤링
 - [x] GitHub 구조화 데이터 수집 (3 repos, 20 files, 6.3MB)
 - [x] Reddit 커뮤니티 센티먼트 수집
+- [x] 百度百科 Wave 1: 86/91건 (캐릭터50+지리18+전투15+주제8)
+- [x] 百度百科 Wave 2: 183/197건 (캐릭터116+전투31+이벤트25+세력10+시스템15)
+- [x] 지리 확장: 18→42도시 + 4관문, 57루트, 8지형
+- [x] 208 시나리오 마이그레이션: 州급→구체도시 43개, 123캐릭터
 
 ### Phase 0.5: 데이터 가공 파이프라인 ✅
 - [x] P1: 연의 원문 처리 — 대사 추출 + 화자 귀속 + 동시출현 매트릭스
 - [x] P2: **14소스 캐릭터 퓨전** — **346개 프로필** (14개 소스 융합 + 10-전략 이름 교차참조)
 - [x] P3: 관계 그래프 — 타입/강도/근거 기반 관계 엣지
 - [x] P4: 이벤트 시드 — 337개 시드 (전투28 + 에피소드26 + 연표113 + 연의170)
-- [x] P5: 지리/세력 구조화 — 18개 도시 + 24개 연결 + 11개 세력
+- [x] P5: 지리/세력 구조화 — 42도시 + 57루트 + 8지형 + 11세력
 - [x] P6: 120회 요약 — 회차별 한국어 요약 + 484 이벤트 + 566 캐릭터 액션
 - [x] P7: Soul.md v2 — 73명 전원 Claude Opus 생성 (평균 7,800자, 12.5 회차인용)
 - [x] P8: **Soul-data 추출** — **343명** (12섹션: 능력치, 연의, 대사, 관계, 연표, 나무위키, EN Wiki, 정사, 백과사전, 정사영역, 멀티버전, 커뮤니티)
 - [x] P9: 이벤트 생성 — 337개 완전한 게임 이벤트 (97개 선택지 포함, event-schema 준수)
 - [x] Px: 이름 교차참조 — 440/455 매칭 (96.7%, 10-전략 캐스케이딩)
+- [x] P9: 바이두 관계 추출 — 926 엣지 (485 확정), 16타입
+- [x] P10: 바이두 전투 구조화 — 39전투, 13전략유형 (火攻/奇袭/伏兵/围城/离间 등)
+- [x] 이벤트 분기 2차 확장 — 167개 선택지 추가 → 309 멀티초이스
 
 > 상세: [데이터 가공 파이프라인](#데이터-가공-파이프라인) 섹션 참조
 
@@ -810,8 +823,8 @@ wdttgukji/
 │   ├── generate/           # LLM 생성 헬퍼 (extract-soul-data.js 등)
 │   └── balance/            # 밸런스 오토리서치 (headless-sim, optimizer, configs/)
 ├── data/
-│   ├── raw/                # 크롤링 원본 (gitignore, ~77MB, 14소스)
-│   ├── characters/         # soul.md v2 (73명, 664K)
+│   ├── raw/                # 크롤링 원본 (~91MB, 16소스)
+│   ├── characters/         # soul.md v2 (426명)
 │   ├── events/             # 게임 이벤트 (all-events.json, 337개, 880K)
 │   └── processed/          # 중간 산출물 (~14MB)
 │       ├── character-profiles/  # 346개 통합 프로필 (14소스 퓨전)
