@@ -1,0 +1,85 @@
+{
+  "name_kr": "기령",
+  "name_en": "Ji Ling",
+  "name_cn": "紀霊",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 78,
+    "war": 83,
+    "intelligence": 51,
+    "politics": 48,
+    "charisma": 55,
+    "total": 315,
+    "birth": 155,
+    "death": 199
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 78,
+      "war": 81,
+      "intelligence": 58,
+      "politics": 50,
+      "charisma": 59
+    },
+    "rotk11": {
+      "leadership": 78,
+      "war": 83,
+      "intelligence": 51,
+      "politics": 48,
+      "charisma": 55
+    },
+    "rotk12": {
+      "leadership": 78,
+      "war": 83,
+      "intelligence": 51,
+      "politics": 48
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.081Z"
+}

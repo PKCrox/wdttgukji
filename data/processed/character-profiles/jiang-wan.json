@@ -1,0 +1,131 @@
+{
+  "name_kr": "장완",
+  "name_en": "Jiang Wan",
+  "name_cn": "蔣琬",
+  "courtesy_kr": "공엄",
+  "courtesy_cn": "公琰",
+  "faction": "shu",
+  "tier": 2,
+  "role": "제갈량 후임 승상",
+  "stats": {
+    "leadership": 78,
+    "war": 34,
+    "intelligence": 84,
+    "politics": 93,
+    "charisma": 81,
+    "total": 370,
+    "birth": 188,
+    "death": 246
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 74,
+      "war": 39,
+      "intelligence": 85,
+      "politics": 93,
+      "charisma": 81
+    },
+    "rotk11": {
+      "leadership": 78,
+      "war": 34,
+      "intelligence": 84,
+      "politics": 93,
+      "charisma": 81
+    },
+    "rotk12": {
+      "leadership": 78,
+      "war": 34,
+      "intelligence": 84,
+      "politics": 93
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말, 삼국시대 촉한의 재상. 장빈과 장현의 아버지. 자는 공염(公琰).제갈량의 뒤를 이어 약 12년간 촉한의 실질적 2인자 역할을 하였으며 사후에는 비의가 그 역할을 이어받게 된다. 이 세 사람(제갈량, 장완, 비의)에 동윤을 더해서 촉한의 사상(四相), 사영(四英)이라고 불렸다.",
+      "생애(정사)": "형주 영릉군 상향현 사람으로 약관의 나이에 천릉현에 사는 외종제 유민(劉敏)과 함께 이름이 알려졌으며 장완은 주서과의 신분으로 유비를 따라 촉 땅으로 들어가 광도현의 장이 되었는데 정확한 시기는 알 수 없다. 다만 유비가 일찍이 유람하다가 갑자기 광도현을 방문한 적이 있었는데 이 때 장완이 하라는 일은 안 하고 술에 취해 있는 것을 보고 매우 노여워하며 처형하려고 했다. 그러자 군사장군 제갈량이 유비에게 간청하며 말했다.장완은 국가의 그릇이지, 백리를 다스릴 인재가 아닙니다. 그의 정무 처리는 백성들을 안정시키는 것을 근본으로 하고 있으며 겉모습을 장식하는 것을 우선시하지 않습니다. 원컨대 주공께서는 다시 살펴 주십시오.유비는 제갈량을 아꼈으므로 제갈량의 말을 들어 장완을 벌하지 않는 대신 관직을 박탈했다. 장완은 면직된 후 한밤중에 소 한 마리가 문앞에서 머리에 피를 철철 흘리는 꿈을 꾸자, 매우 언짢아하여 해몽가인 조직(趙直)을 불러 물어보았다. 조직은 다음과 같이 말했다.대체로 피를 보는 것은 일이 분명해졌음을 의미합니다. 소의 뿔과 귀는 '공(公)' 자의 형상을 하고 있으니 당신의 지위는 반드시 공(公)에 이를 것입니다. 아주 길한 징조입니다.오래지 않아 장완은 십방현의 현령이 되었다가 유비가 한중왕이 되자 성도로 들어가 상서랑이 됐다.하지만 유비에게 광도현 사건으로 밉보였는지 중용되지는 못했다. 물론 그것만이 중용되지 못한 이유가 아니고 하필 장완은 오에 항복한 반준과 인척 사이였던 것도 한 몫 했다. 관우의 죽음으로 불구대천의 원수가 된 오에 항복한 배신자의 인척을 중용할 리가 없었을 것이다. 그러나 유비 사후 제갈량이 승상이 되었을 때 초빙되어 본격적으로 촉한의 핵심인재로 활약하기 시작했다. 사실 장완의 능력도 능력이지만 이릉대전을 전후해서 촉한의 인재가 많이 죽었던 점도 이유라면 이유였을 것이다.건흥 원년(223년)에 승상 제갈량은 막부를 열고, 장완을 초빙하여 동조연(東曺椽)으로 임명했다. 장완은 무재에 천거되었지만 유옹(劉邕), 음화(陰化), 방연(龐延), 요순(廖淳)에게 끝까지 양보하려 하였다. 제갈량은 장완을 깨우치며 말했다. 생각해 보십시오. 가까이 있는 자를 배반하고, 도덕을 버리고, 백성을 파멸시키는 것은 사람들이 마음속으로 동정하지 않습니다. 사실 또 멀고 가까운 사람들 에게 그 사퇴하려는 뜻을 이해시키지 못합니다. 때문에 그대는 자신의 공업과 덕행을 나타내어 이 선발의 타당함과 중요함을 밝혀야만 합니다.건흥 5년(227년)에 장완은 참군으로 승진했다. 제갈량이 한중에 주둔하고 있을 때, 장완은 유부장사(승상대리) 장예와 부에 남아 일을 총괄했다. 건흥 8년(230년)에 (장예가 죽자) 장예를 대신하여 장사가 되었고, 무군장군(撫軍將軍)을 더했다. 제갈량은 자주 밖으로 출정 나갔지만, 장완은 매번 식량과 병사를 충분히 공급해 주었다. 제갈량은 항상 이렇게 말했다. 공염(장완)은 뜻을 충성과 고아함에 두고 있으니, 나와 함께 제왕의 대업을 도와줄 사람이다.제갈량의 북벌이 진행되는 동안에는 자리를 비운 승상을 대신하여 각종 사무를 총괄하였다. 더불어 식량과 병사를 모집하여 후방보급 임무에 충실하였다. 덕분에 제갈량은 장완을 매우 마음에 들어하였으며 후주 유선에게 은밀히 표를 올려 자신이 만약 불행한 일을 당했을 때 자신을 대신할 후계자로 지목하였다.《화양국지》<유후주지>에 더 자세한 정황이 나오는데 제갈량이 은밀히 후주에게 상주하기를 \"양의의 성정은 성급하고 마음이 좁으니, 혹시 신에게 무슨 일이 있으면 장완에게 신을 대신케 하소서.\" 라 하였다. 즉, 승상부에서 높은 직위에 있던 양의가 자신의 사후 조정을 전횡하지 못하도록 배제하기 위한 목적도 있었던 것이다.생각해보면 당연한 일이다. 한고제 유방이 전선에서 항우와 싸울 때, 그는 가장 믿을 수 있는 소하에게 후방을 맡겨 보급을 담당하도록 했다. 유비 또한 한중에서 조조와 격돌할 때 제갈량을 성도에 남겨 보급을 담당하도록 했다. 가장 믿음직한 수하는 오히려 내 곁에 두지 않는다. 대신 내가 자리를 비웠을 때 나를 대신하도록 하는 법이다. ... (truncated)"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 87–89",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Jiang Bin"
+        },
+        {
+          "relation": "member",
+          "name": "Jiang Xian"
+        }
+      ],
+      "ranks": [
+        "Zhou Shu Zuo",
+        "Head of Guang Du County",
+        "Governor of Shen Fang County",
+        "Shang Shu Lang",
+        "Dong Cao Yuan",
+        "Can Jun",
+        "Fu Jun Jiang Jun",
+        "Shan Shu Ling",
+        "Du Hu Jiang Jun",
+        "Da Jiang Jun",
+        "An Yang Ting Hou",
+        "Da Si Ma"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 8910,
+      "first_translation": {
+        "translator": "ChenQiang",
+        "excerpt": "Jiang Wan (Gongyan)\n蔣琬 (公琰)\nLived AD ?–246\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 44 (Shu 14)\nbyChen Qiang\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744913971' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744913941' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744913941' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nJiang Wan, styledGongyanhails from prefecture LingLing, Xiang Xiang county. Together with his cousin, Liu Min from Quan Ling county, Jiang Wan was already quite a renowned person at the age of 20.\nHe entered Shu together with Liu Bei as a zhou shu zuo and was later promoted to the head of Guang Du county. Liu Bei, on an inspection, suddenly came to Guang Du and saw a drunken Jiang Wan neglecting his official duties. Liu Bei was angered by what he saw and had wanted to convict and punish Jiang Wan severely. However, Zhuge Liang interceded and said, “Jiang Wan is a pillar of our country and his talents should not be restricted to governing a small county. His ideals stresses firmly on a stable and peaceful state for the commoners while never emphasizing on decorated appearances. I hope my Lord further investigates the manner.” Liu Bei had always respected Zhuge Liang and thus decided not to convict Jiang Wan while only stripped away his office in haste.\nAfter this incident, Jiang Wan dreamt of a bull’s head hanging in front of a door, with blood dripping down continually. He detested this dream and summoned Zhao Zhi, a dreams sayer, to find... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.044Z"
+}

@@ -1,0 +1,164 @@
+{
+  "total_characters": 15,
+  "total_works": 2,
+  "total_authors": 1,
+  "generated_at": "2026-03-18T09:15:14.310Z",
+  "characters": [
+    {
+      "name_kr": "조조",
+      "name_en": "Cao Cao",
+      "total_text_length": 99399,
+      "sections_count": 9,
+      "has_evaluation": true,
+      "has_quotes": true,
+      "history_insights_count": 9
+    },
+    {
+      "name_kr": "등애",
+      "name_en": "Deng Ai",
+      "total_text_length": 24696,
+      "sections_count": 19,
+      "has_evaluation": true,
+      "has_quotes": false,
+      "history_insights_count": 2
+    },
+    {
+      "name_kr": "관우",
+      "name_en": "Guan Yu",
+      "total_text_length": 57296,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 4
+    },
+    {
+      "name_kr": "곽가",
+      "name_en": "Guo Jia",
+      "total_text_length": 23130,
+      "sections_count": 17,
+      "has_evaluation": true,
+      "has_quotes": false,
+      "history_insights_count": 2
+    },
+    {
+      "name_kr": "강유",
+      "name_en": "Jiang Wei",
+      "total_text_length": 58874,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 1
+    },
+    {
+      "name_kr": "유비",
+      "name_en": "Liu Bei",
+      "total_text_length": 206216,
+      "sections_count": 7,
+      "has_evaluation": true,
+      "has_quotes": false,
+      "history_insights_count": 9
+    },
+    {
+      "name_kr": "여포",
+      "name_en": "Lu Bu",
+      "total_text_length": 58325,
+      "sections_count": 21,
+      "has_evaluation": true,
+      "has_quotes": false,
+      "history_insights_count": 6
+    },
+    {
+      "name_kr": "육손",
+      "name_en": "Lu Xun",
+      "total_text_length": 30981,
+      "sections_count": 18,
+      "has_evaluation": true,
+      "has_quotes": false,
+      "history_insights_count": 3
+    },
+    {
+      "name_kr": "사마의",
+      "name_en": "Sima Yi",
+      "total_text_length": 57496,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 2
+    },
+    {
+      "name_kr": "손권",
+      "name_en": "Sun Quan",
+      "total_text_length": 96158,
+      "sections_count": 8,
+      "has_evaluation": true,
+      "has_quotes": false,
+      "history_insights_count": 5
+    },
+    {
+      "name_kr": "순욱",
+      "name_en": "Xun Yu",
+      "total_text_length": 23122,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 3
+    },
+    {
+      "name_kr": "장비",
+      "name_en": "Zhang Fei",
+      "total_text_length": 17062,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 4
+    },
+    {
+      "name_kr": "조운",
+      "name_en": "Zhao Yun",
+      "total_text_length": 33876,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 3
+    },
+    {
+      "name_kr": "주유",
+      "name_en": "Zhou Yu",
+      "total_text_length": 29307,
+      "sections_count": 16,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 4
+    },
+    {
+      "name_kr": "제갈량",
+      "name_en": "Zhuge Liang",
+      "total_text_length": 20334,
+      "sections_count": 1,
+      "has_evaluation": false,
+      "has_quotes": false,
+      "history_insights_count": 2
+    }
+  ],
+  "works": [
+    {
+      "id": "zhengshi-main",
+      "title": "정사 삼국지",
+      "sections_count": 29,
+      "text_length": 39131
+    },
+    {
+      "id": "zhengshi-weishu",
+      "title": "위서(삼국지)",
+      "sections_count": 3,
+      "text_length": 6986
+    }
+  ],
+  "authors": [
+    {
+      "id": "author-peisongzhi",
+      "title": "배송지",
+      "sections_count": 5
+    }
+  ]
+}

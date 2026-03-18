@@ -64,3 +64,34 @@
 
 ## EN Wikipedia
 Guan Xing, courtesy name Anguo, was an official of the state of Shu Han in the Three Kingdoms period of China.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 77–78
+[역사] Guan Xing was the son of Guan Yu. Unfortunately, there is not much known about him historically. He had several official appointments within Shu-Han and was said to be admired by Zhuge Liang, however (de Crespigny 276).
+
+According to the Old Book of Tang, his descendants moved to Xindu.
+
+In the Romance of the Three Kingdoms novel, he kills Pan Zhang and participates in Zhuge Liang’s Northern Campaigns alongside Zhang Bao. These things did not happen historically.
+
+Work Cited:
+
+De Crespigny, Rafe. A Biographical Dictionary of Later Han to the Three Kingdoms: (AD 23–220). Leiden [u.a.: Brill, 2007. Print.
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Was more a civil administrator than a warrior.
+	Did not kill Pan Zhang.
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통76 무86 지63 정52 매72
+rotk11: 통76 무86 지62 정58 매75
+rotk12: 통76 무86 지67 정58 매?
+
+## 커뮤니티 평가
+(없음)

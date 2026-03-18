@@ -17,6 +17,28 @@
     "birth": 183,
     "death": 245
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 97,
+      "war": 66,
+      "intelligence": 95,
+      "politics": 90,
+      "charisma": 90
+    },
+    "rotk11": {
+      "leadership": 96,
+      "war": 69,
+      "intelligence": 95,
+      "politics": 87,
+      "charisma": 90
+    },
+    "rotk12": {
+      "leadership": 94,
+      "war": 69,
+      "intelligence": 95,
+      "politics": 87
+    }
+  },
   "novel_presence": {
     "first_chapter": 38,
     "last_chapter": 119,
@@ -48,7 +70,91 @@
       "sections": {
         "Introduction": "陸遜（183年—245年3月19日），本名陸議，字伯言，吴郡吴县（今江苏省苏州市）人，三國時代吳國軍事家、政治家，负责统领吴国军事和政治多年，并同时掌管民事，辅佐太子等。历任吴国大都督、上大将军、丞相。63岁去世，孙休时追谥昭侯。"
       }
+    },
+    "history": {
+      "summary": "손오 승상(丞相) [ 펼치기 · 접기 ]초대제2대제3대제4대대리손소고옹육손보즐주거제5대대리제6대제7대좌승상손준손은손침복양흥육개우승상제9대제10대만욱연장제한 대장군 · 후한 태위 · 후한 대사공 · 후한 대사농 조위 태위 · 조위 사도 · 조위 사공 · 촉한 재상 · 손오 승상\n\n손오의 승상육손陸遜성씨육(陸)휘손(遜)자백언(伯言)출생183년한나라 양주(揚州) 오군(吳郡) 오현(吳縣)사망245년 2월 (향년 62세)손오재임 기간손오 승상244년 ~ 245년 2월시호소후(昭侯)작호화정후(華亭侯) → 누후(婁侯) → 강릉후(江陵侯) → 누후(婁侯)최종 직위승상(丞相)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 손가와의 화친2.3. 번성 공방전2.4. 700리 촉영을 불사르다, 이릉대전2.5. 외교와 내정2.6. 석정 전투2.7. 건업에서(오나라 건국)2.8. 4차 합비 공방전2.9. 형주에서 보여준 지략2.10. 손권과의 말년2.11. 이궁지쟁 사건과 최후2.12. 사후3. 삼국... (truncated)",
+      "sections": {
+        "개요": "후한 말과 삼국시대 오나라의 인물. 오나라의 개국군주이며 초대 황제인 손권 휘하의 장수이자 손권의 조카사위. 초명은 육의(陸議)로, 229년 경에 개명한 것으로 보이는데, 손(遜)은 사실상 손(孫)이라는 걸 감안하면 개명의 배경에 손권과 육손의 관계가 반영되었다고 할 수 있다. 비록 말년에 삐걱했으나 결국 육손의 아들 육항이나 그 자손들이 대체적으로 손오에 충성을 다했다.자는 백언(伯言). 아내는 손씨, 아들은 육연과 육항, 동생은 육모.",
+        "초기 생애": "육씨는 오의 사성이라 불리는 강동의 유력한 호족으로 육손은 그 방계로 태어났다. 육씨세공에 따르면 육손의 조부 육우는 배움에 정진하여 성문교위 직책을 맡았다. 육손의 아버지 육준은 육가 집안을 이루고 관직은 구강도위까지 이르렀다.양주 오군 오현 사람인 육손은 어려서 부친을 여의고 당조부인 여강태수 육강의 임지에서 성장했다. 그런데 집안의 대표이던 육강이 원술의 군량 요청을 거절하여 당시 원술의 휘하에서 일하던 손책에게 공격을 당하니, 그는 아들인 육적과 육손 등 육씨 일족을 모두 오현으로 피난시켰다. 결국 196년에 육강이 손책과의 싸움에서 져서 죽자 그의 뒤를 이을 육적이 너무 어렸던 덕에 육손이 육적을 대신해 집안을 관리했다. 주목할 점은 육손도 육적보다 고작 5살 많았을 뿐 이 때 나이는 성년도 되지 않은 14세였다는 점이다.손책이 세상을 떠난 뒤, 그의 뒤를 이은 손권이 권력을 잡고 어느 정도 시간이 흐른 203년, 육손은 21세의 나이에 손권 아래의 막부에 임명되었다. 그는 동서조령사를 거쳐 해창현의 둔전교위로 임명되어 해창현의 정무를 관리했다. 육손은 해창현에 큰 한재가 닥쳤을 때 곡식 창고를 열어 백성들을 구제하고 백성들에게 농업과 양잠을 권유하고 감독하여 백성들에게 큰 혜택을 주었다.육손은 손권에게 오군, 회계군, 단양군의 숲속에 숨어있는 사람들을 소집해야 한다고 요청했다. 육손은 새로 수집한 병사들을 데리고 가서 예전부터 회계의 문제거리였던 산적의 우두머리 반림을 토벌하고 남은 무리의 항복을 받아내니 육손이 이끄는 병사는 2천 명까지 그 수가 늘었다.하제전에 따르면 216년, 파양의 백성 우돌이 조조의 인수를 받고 백성들을 변화시켜 도적으로 만들었으며, 능양현, 시안현, 경현이 모두 우돌과 서로 호응했다. 하제와 육손은 우돌을 토벌하여 무찔러서 수천 명의 머리를 베었으며, 나머지 무리들은 두려워하며 복종했다. 단양의 세 현은 모두 투항했으며, 정예 병사를 총 8천 명 얻었다.육손은 정위교위로 임명되었고, 군대를 이포(利浦)에 주둔시켰다. 하제는 안동장군에 임명되고, 산음후로 봉해졌으며, 밖으로 나가 장강가에 주둔하여 부주 상류 지역으로부터 환까지 지휘하게 되었다.",
+        "평가": "오나라 건국 신화의 주인공으로 형주를 도모하고, 이릉과 석정의 대승으로 오나라를 구한 무패의 화신이다. 오의 사성의 일원으로 대도독과 승상에 오르며 손권에게 군사와 정치 양쪽에서 중용되었으나 말년에는 버림받고 분사하였다. 주유 이상으로 공적이 큰 인물로 정사 <삼국지>에서 신하의 신분으로서 단독 열전이 실린 사람은 제갈량과 육손뿐이다.여몽과 더불어 관우를 참수하고 형주를 차지하였으며, 이릉에서 유비를 상대로 대승하여 형주 점령을 공고히 했고, 이후 형주목이 되어 형주를 안정시켰다. 석정에서는 조휴를 상대로 대승하여 다시 한 번 오나라를 구해냈고, 이 승리로 말미암아 손권은 황제에 즉위하고 오나라를 건국한다. 그러나 이후 자신의 출신과 행보로 인해 손권과 다른 길을 걷게 된다. 아이러니하게도 유비와 조휴를 분사시켰으나, 결국 자신의 최후도 그와 같았다.보통 대중매체에서 비중이 가장 높은 주유가 정사에서는 노숙, 여몽이랑 세트 취급이고 반대로 주유의 하위호환 취급인 육손의 비중이 엄청나게 높다는 것. 물론 대중매체에서도 육손이 지략과 카리스마가 주유에 약간 못 미칠 뿐 침착함, 무력 등을 포함한 종합적인 면에서는 주유보다 뛰어난 것으로 묘사되는 케이스도 많다."
+      }
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 56464,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Lu Xun (Boyan)\n陸遜 (伯言)\nLived AD 183–245\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 58 (Wu 13)\nbyLady Wu,Sonken\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744927188' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744925096' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744924640' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLu Xun (陸遜), styled Boyan (伯言), was originally named Yi (議). A native of Wu (吳), in the commandery of Wu (吳), Lu Xun came from a prosperous and famous family east of the Yangtze River.ASince he was orphaned at a young age, he lived with his granduncle Lu Kang (陸康), who was then the grand administrator of Lujiang (廬江). When Lu Kang found out that he was about to be attacked by Yuan Shu (袁術), who had long borne a grudge against him, he sent Lu Xun and his own family back to Wu for safety. Since Lu Xun was several years older than Lu Kang’s son Lu Ji (陸績), he kept his family in order for him.\nFromOde of the Lu Family: Lu Xun’s grandfather, Lu Yu (陸紆), had the style name of Shupen (叔盆). He was a virtuous man, quick in wits, and served as a Colonel of the City Gates. Lu Xun’s father, Lu Jun (陸駿), who had the style name of Jicai (季才), was magnanimous and trustworthy, greatly loved by the different families in the clan. The highest rank he held was Chief Commandant of Jiujiang (九江).\nWhen Sun Quan (孫權) was made a general, Lu Xun was twenty-one years of age, and began his career by working in Sun Quan’s office. After serving as a consultant clerk ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 60,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -165,11 +271,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.268Z"
+  "source_count": 13,
+  "generated_at": "2026-03-18T10:20:09.988Z"
 }

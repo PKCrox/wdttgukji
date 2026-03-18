@@ -1,0 +1,100 @@
+{
+  "name_kr": "동화",
+  "name_en": "Dong He",
+  "name_cn": "董和",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 59,
+      "war": 35,
+      "intelligence": 73,
+      "politics": 84,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 57,
+      "war": 34,
+      "intelligence": 75,
+      "politics": 87
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 64–65",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Dong Yun"
+        }
+      ],
+      "ranks": [
+        "Magistrate",
+        "Prefect of Chengdu",
+        "Dependent State of Badong",
+        "Grand Administrator of Yizhou",
+        "General of the Gentlemen of the Household Manager of the Army."
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5730,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Dong He (Youzai)\n董和 (幼宰)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyZL181\nonMarch 1st, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740868200' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756749282' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740886262' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740857402' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nDong He, styledYouzai, was fromZhijiang,Nan commandery. His ancestors were originally fromJiangzhou,Ba commandery.\nDuring the last stages ofHan,[Dong] Heled his clan and kin to move west. TheGovernorofYi province,Liu Zhang, had him serve asChiefofNiubi[牛鞞長],AJiangyuan[江原長], andPrefectofChengdu[成都令]. The lands of Shu [蜀] were rich and abundant, and the social customs of the time were those of extravagance and wastefulness. The households of businesspeople wore the dresses of lords and consumed exquisite food. Whether for marriages or funerals, entire family properties would be spent on such.[Dong] Heled as a model of frugality, wearing poor clothes and eating coarse food.1He curbed and controlled those who were overstepping and acting brazenly2by formulating regulations against such, and wherever he was, he would always transform the customs into one of goodness. They were in awe of him and did not violate [laws]. Those who were mighty and powerful in the counties feared the stringent laws of[Dong] Heand persuaded[Liu] Zhangto transfer[Dong] Heto becomeChief CommandantofBadong Dependent States[巴東屬國都尉]. The officials, commoners, old, an... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.060Z"
+}

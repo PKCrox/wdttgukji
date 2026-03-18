@@ -17,6 +17,28 @@
     "birth": 163,
     "death": 212
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 10,
+      "war": 16,
+      "intelligence": 77,
+      "politics": 76,
+      "charisma": 41
+    },
+    "rotk11": {
+      "leadership": 52,
+      "war": 14,
+      "intelligence": 95,
+      "politics": 98,
+      "charisma": 93
+    },
+    "rotk12": {
+      "leadership": 62,
+      "war": 14,
+      "intelligence": 95,
+      "politics": 98
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       10,
@@ -69,7 +91,151 @@
       "sections": {
         "Introduction": "荀（）彧（）（163年—212年），字文若，潁川郡潁陰縣（今河南省许昌市魏都区）人，朗陵侯相荀淑之孙。東漢末年的政治家、戰略家，亦是曹操謀臣，官至侍中兼光祿大夫，封万岁亭侯，被比喻为如同西汉的張良。曾表示反对曹操称魏公，不久后去世，諡曰敬侯，追贈為太尉。因其曾任尚書令數十年，被稱為「荀令君」。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {
+        "생애(정사)": "### 개요\n1. 개요2. 초기 생애3. 조조에게 임관4. 서주 대학살5. 복양 전투6. 삼보의 난7. 조조 휘하8. 완 전투9. 양 전투10. 관도대전11. 하북 평정12. 조조 휘하13. 형주 정벌14. 조조 휘하15. 죽음\n\n### 개요\n\n\n### 초기 생애\n《전략》에 따르면 중상시 당형(唐衡)이 자신의 딸을 여남 사람 부공명(傅公明)에게 시집보내려고 했지만 공명이 승낙을 하지 않자 순욱에게 보내려고 했다. 순욱의 아버지 순곤은 당형의 권세를 생각하여 순욱에게 당형의 딸을 맞이하게 하였다. 사람들은 순욱이 그 사실을 속였다고 한다.순욱이 어릴 때 남양의 하옹이 순욱을 기이하게 여기며 이렇게 말했다.왕을 보좌할 재능을 가지고 있구나!《어림》에 따르면 공숭은 젊어서 스무 살이 안 되었을 때, 순욱과 함께 태학에서 유학했다.\n\n### 조조에게 임관\n〈종요전〉주석《후한서》에 따르면 음수는 영천태수로 있을 때 유능한 인재를 많이 등용했다. 그 가운데 오관연 장중, 찰공조 종요, 주부 순욱, 주기연 장례, 적조연 두우, 효렴 순유, 계리 곽도 등은 모두 국가의 동량이 되었다.189년, 효렴으로 천거되어 수궁령에 배수되었다. 동탁의 난 때, 외직으로 나가 보필하는 관리가 되길 구하였다. 항보 현령에 제수되었으나, 마침내 관직으로 버리고 돌아와서 고향의 부로들에게 말했다.영천은 4면에서 전쟁이 벌어질 수 있는 땅인데, 천하에 변란이 있어 항상 군대의 충돌이 생길 것이니, 마땅히 이곳을 떠나 오래 머무르지 마십시오.고향 사람들이 많이 땅을 생각해 주저하며 머뭇거리고 있었는데, 기주목으로 같은 군 사람인 한복이 기병을 보내 맞이하려 하게 되자, 따르는 자가 없으니 순욱만 그의 종족들을 데리고 기주에 이르렀다. 원소가 이미 한복의 지위를 박탈하였으나, 순욱은 중요하고 지위가 높은 손님의 예로 대우했다. 순욱의 형제 순심 및 같은 군 사람인 신평, 곽도는 원소에게 임명되었다. 순욱은 원소가 끝내 대사를 이룰 수 없다고 생각했다.이때 조조가 분무장군이 되어 동군에 있었는데, 191년, 순욱은 원소를 버리고 조조를 따랐다. 조조가 크게 기뻐하며 말했다.나의 자방(장량)이로다.그리고는 사마로 삼으니, 이때 나이가 29세였다. 밑에서 서술하듯이 이 시기에는 순욱이 항상 종군하며 조조의 전투를 보좌하였다고 한다.이때에, 동탁의 위세가 천하를 능멸하고 있었는데, 조조가 순욱에게 묻자 순욱이 말했다.동탁의 포학이 이미 극심하여 필히 변란으로 끝날 것이니 할 만한 것이 없습니다.동탁이 이각 등을 보내니 관동으로 나가 가는 곳마다 노략질하고 영천, 진류에 이르렀다가 돌아왔다. 고향 사람들 중 머물러 있던 자들은 많이 살해되고 노략질당했다.다음 해 조조가 연주목을 맡고, 후에 진동장군이 되었는데, 순욱을 항상 사마로서 종군하게 했다.\n\n### 서주 대학살\n194년, 조조가 도겸을 정벌하면서 순욱을 연주에 머물게 해 남은 일을 맡겼다. 즉, 당시 순욱은 서주로 같이 가지 않았으므로 그에게 이 사건에 대한 책임을 지우기엔 어렵다. 다만 조조의 첫 번째 주(州) 단위 외정인 ... (truncated)"
+      }
+    },
+    "kongming": {
+      "life_span": "AD 163–212",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Elder Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yan"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Chen"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yun"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Can"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Xun You"
+        },
+        {
+          "relation": "member",
+          "name": "Grandsons"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Han"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Hong"
+        }
+      ],
+      "ranks": [
+        "Filial and Incorrupt, Prefect of the Palace Guards (AD 189)",
+        "Major (AD 191)",
+        "Imperial Counsellor, Chief of the Imperial Secretariat",
+        "Marquis of Wansui Commune (AD 203)",
+        "Imperial Household Grandee, Honorary Palace Attendant",
+        "Respectful Marquis (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 72689,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Xun Yu (Wenruo)\n荀彧 (文若)\nLived AD 162–212\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 10 (Wei 10)\nbyLady Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744998525' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744997822' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744997822' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXun Yu, styled Wenruo, was a man from Yinghang in Yingchuan. His grandfather, Xun Shu, styled Jihe, was Prefect of Langling. During the reigns of Emperors Xun and Huan of Han, he was famous through the land. He had eight sons, who were known as the “Eight Dragons”. Xun Yu’s father, Xun Gun, served as Chancellor of Jinan, and his uncle Xun Shuang was Grand Minister of Works.A\nThe Continued History of Han: Xun Shu was a brilliant person. Wang Chang and Li Ying treated him as their mentor, and he served as chancellor of Langling. He was nicknamed Master Superhuman.\nZhang Fan’sAnnals of Han: Xun Shu was of great learning and lofty virtues, and being of the same mind as Li Gu and Li Ying he was good friends with them. He had promoted Li Zhao from a lowly position, and befriended Huang Shudu in his [Huang’s] childhood. He was selected as “Virtuous and Upright” and appointed a government position. Because his proposals belittled Liang [Ji],1he was sent off to serve as chancellor to the Marquis of Langling, and he died in office. He had eight sons: Jian, Gun, Jing, Shou, Xian, Shuang, Su, and Fu. Xun Shuang was styled Ciming, and was fond of learning ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "rotkxi",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 43,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -186,11 +352,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.126Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.819Z"
 }

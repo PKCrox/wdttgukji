@@ -17,6 +17,21 @@
     "birth": 193,
     "death": 222
   },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 72,
+      "war": 86,
+      "intelligence": 67,
+      "politics": 63,
+      "charisma": 86
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 70,
+      "politics": 63
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       32
@@ -41,7 +56,55 @@
         "Introduction": "孫夫人（182年后—211年后），吴郡富春（今浙江省杭州市）人，东汉末年讨虏将军孙权之妹，左将军刘备夫人。其名不詳，京劇常以「尚香」為名。",
         "评价": "- 陳壽《三国志·蜀书·法正传》：“才捷刚猛，多有诸兄之风。”\n- 陳壽《三国志·蜀书·趙雲传》引用《（趙）雲別傳》曰：“此时先主孙夫人以权妹骄豪，多将吴吏兵，纵横不法。”"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK12",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 83,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -78,11 +141,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.278Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:09.999Z"
 }

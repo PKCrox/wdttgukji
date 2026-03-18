@@ -71,3 +71,47 @@ Pang De: 군신 (강도75, 서량 시절 부하 → 독립)
 
 ## EN Wikipedia
 Ma Chao (176–222), courtesy name Mengqi, was a Chinese military general and warlord who lived in the late Eastern Han dynasty and early Three Kingdoms period of China. A descendant of the general Ma Yuan, Ma Chao was the eldest son of Ma Teng, a prominent warlord in Liang Province. In 211, he formed a coalition with Han Sui and other northwestern warlords and revolted against the Han central gover
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 176–222
+[역사] Ma Chao was born in Maoling and was the son of Ma Teng, a half-Qiang warlord of the West. In the novel, Romance of the Three Kingdoms, Ma Chao is featured as one of the 5 Tiger Generals of Shu. Historically, Ma Chao did not do all that much in the service of Liu Bei, but did accomplish a great deal as the chief successor of his own father, Ma Teng.
+
+Ma Chao commanded his father’s forces at the Battle of Fen River (Pingyang) in AD 202. In this fight, the joint armies under Ma Chao’s and Zhong Yao’s command won a victory against Yuan Shang’s general, Guo Yuan.
+
+In AD 210, Cao Cao summoned Ma Teng to the capital of the Han dynasty (at the time), Xuchang. Ma Chao continued to lead Ma Teng’s troops in the West, however. For a time, there was an uneasy peace between Ma Chao and Cao Cao. When Cao
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Ma Chao probably did not participate in Ma Teng’s attack on Li Jue. If he did fight in this campaign, he did not slay Wang Fang or capture Li Meng.
+	Ma Chao commanded Ma Teng’s troops in the Battle of Fen River (AD 202), a battle that is not mentioned in Romance of the Three Kingdoms.
+	Ma Chao did not slay Li Tong around Tong Pass.
+	Contrary to the novel, Ma Teng, Chao’s father, was killed after Ma Chao rebelled against Cao Cao.
+	Ma Chao never fo
+
+## 정사 영역본 (Kongming SGZ)
+Ma Chao (Mengqi)
+馬超 (孟起)
+Lived AD 176–222
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 36 (Shu 6)
+byZL181
+onAugust 19th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1755637210' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758166985' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1755651614' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1713850583' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Ma Chao, styledMengqi, was fromMaoling[茂陵],Youfufeng[右扶風].
+His father was[Ma] Teng. During the end [of the reign] of theKeenEmperor, he,Bian Zhang, an
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통89 무96 지43 정23 매82
+rotk11: 통88 무97 지44 정26 매82
+rotk12: 통93 무97 지44 정26 매?
+
+## 커뮤니티 평가
+감정점수: 82, 언급: undefined회
+키워드: 

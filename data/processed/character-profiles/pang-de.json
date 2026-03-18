@@ -17,6 +17,28 @@
     "birth": 170,
     "death": 219
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 93,
+      "intelligence": 71,
+      "politics": 50,
+      "charisma": 70
+    },
+    "rotk11": {
+      "leadership": 80,
+      "war": 94,
+      "intelligence": 70,
+      "politics": 44,
+      "charisma": 70
+    },
+    "rotk12": {
+      "leadership": 89,
+      "war": 94,
+      "intelligence": 75,
+      "politics": 44
+    }
+  },
   "novel_presence": {
     "first_chapter": 58,
     "last_chapter": 78,
@@ -43,7 +65,95 @@
       "sections": {
         "Introduction": "龐德（184年前—219年），亦作龐悳，字令明，涼州南安狟道（今甘肅省天水市武山縣四門鎮）人；東漢末年名將，武藝出眾、膽烈過人，原屬馬超父子，後於建安二十年（215年）隨張魯歸順曹操。官至立義將軍、關門亭侯，死後被曹丕諡曰壯侯。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 58–59",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Pang Hui"
+        }
+      ],
+      "ranks": [
+        "Colonel",
+        "General of the Gentleman of the Household, Marquis of a Chief Commune",
+        "General of Righteousness, Marquis of Guan Men Ting",
+        "‘White Horse General’ (Nickname)",
+        "General of the Commandant of the Capital, Marquis of Li (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 9049,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Pang De (Lingming)\n龐德 (令明)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 18 (Wei 18)\nbyjiuwan (Giao Chau)\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742704944' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742704815' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742704815' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nPang De styled Lingming was from HuanADao of the Nan An prefecture. When he was younger he started out from Jun Li Zhou as an Attendant Clerk.\nPei Song Zhi’s annotations: Thehuancharacter [in Huan Dao] is pronounced with the pitch ofhuan.1•••\nThe two different Chinese charactershuanare different. Pei Song Zhi was telling how to pronounce the word properly.↩\nIn the middle of Beginning Peace2(middle of Chu Ping), he served Ma Teng in quelling the Qiang rebellion. Achieving many accomplishments, he was promoted to colonel (xiao wei).•••\nThe reign years for Chu Ping started in AD 190 In the year AD 194 the reign style was changed to Prosperous Tranquility (Xin Ping). So this would place Pang De pacification of the Qiang to occur sometime during AD 191–192.↩\nIn the middle of Rebuilt Tranquility3(middle of Jian An), Tai Zu (Cao Cao) led a punitive expedition on Yuan Tan, Yuan Shang at Li Yang. Yuan Tan dispatched Guo Yuan and Gao Gan to await the obtainment of He Dong. [Cao Cao] sent out Zhong Yao to lead several generals at the pass. Pang De and Ma Teng’s son–Ma Chao defended against Guo Yuan while Gao Gan was at Ping Yang. Pang De as... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -145,11 +255,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.223Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.927Z"
 }

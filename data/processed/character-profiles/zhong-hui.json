@@ -17,6 +17,28 @@
     "birth": 225,
     "death": 264
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 84,
+      "war": 56,
+      "intelligence": 91,
+      "politics": 79,
+      "charisma": 57
+    },
+    "rotk11": {
+      "leadership": 82,
+      "war": 51,
+      "intelligence": 91,
+      "politics": 79,
+      "charisma": 66
+    },
+    "rotk12": {
+      "leadership": 82,
+      "war": 51,
+      "intelligence": 91,
+      "politics": 79
+    }
+  },
   "novel_presence": {
     "first_chapter": 107,
     "last_chapter": 120,
@@ -43,7 +65,76 @@
         "Introduction": "鍾會（225年—264年3月3日），字士季，潁川郡長社县（今中国河南省長葛東部）人，三国時期曹魏大臣，官至司徒。曹魏太傅鍾繇的幼子、異母兄鍾毓也在曹魏官至後將軍。是滅亡蜀漢的曹魏將領之一，同時也有玄學家、書法家的一面。入蜀後和姜維聯手發動叛變，最後死於亂軍之中。",
         "司馬家族": "- 《三國志》注引《世語》寫，司馬師命中書令虞松作表，幾經修改不能滿意，鍾會幫助虞松更改了五個字，司馬師因此認識到鍾會的才能。而鍾會為了應付虞松口中「博學明識，無所不貫」的司馬師，閉門精思了十天。兩人見面談了一整天，結束後司馬師拍手嘆息說：「此真王佐材也！」裴松之不認同這篇記載，他認為鍾會的名聲應該不需要透過虞松引薦給司馬師。\n- 《世說新語·賢媛篇》中寫許允捲入政爭被司馬師殺害，司馬師派鍾會拜訪許允的妻兒，許允的妻子認為兒子們的才能不高，囑咐兒子們平常心面對即可。鍾會回去後，許允的兒子們並沒有被牽連。\n- 《世說新語·排調篇》寫司馬昭與陳群的兒子陳泰、陳矯的兒子陳騫同車，呼喚鍾會上車，還沒等他來就先開車了，後來碰面的時候司馬昭說：「與人期行，何以遲遲？望卿遙遙不至。」意思是因鍾會父親鍾繇的「繇」與「遙」同音，故意拿父諱的諧音戲弄他。鍾會不甘示弱回答：「矯然懿實，何必同群？」用八個字講出三人父親的名字。司馬昭不放棄直接明來，問：「皋繇何如人？」鍾會又答：「上不及堯、舜，下不逮周、孔，亦一時之懿士。」同樣在《世說新語·排調篇》，也有另一篇講鍾毓被司馬師、陳泰以及武周的兒子武陔等人戲弄的故事，鍾毓同樣用「古之懿士」「君子周而不比，群而不黨」回答。\n- 《三國志》注引《漢晉春秋》、及《晉書》寫，鍾會死後屍體無人殮葬，向雄便出面收葬鍾會。原來數年前王經因曹髦事被殺，向雄曾為王經哭喪，向雄事後因別的事件而被關押，時任司隸校尉的鍾會任命在監獄中的向雄為都官從事，即司隸校尉屬官。司馬昭責問向雄：「王經去世，你在東市哭他，我不問罪。鍾會叛逆，你又安葬，我若寬容你，那還有王法嗎？」向雄說：「從前先王掩埋刑人的屍體，仁流朽骨，當時難道先占卜功過後才安葬嗎？現在法已施行，依法已完備。我因道義所感化而收葬他，道義上也沒有過錯。法立於上，敎弘於下，為什麼一定要讓我立身於違背生死常理呢？殿下把他的枯骨棄在荒野，作為將來的賢人的口實，不太可惜嗎？」司馬昭聽後款待並放過了向雄。\n- 《晉書》寫，西晉時馮紞意圖阻礙張華的仕途，向司馬炎進言表示，鍾會之亂司馬昭也有責任，因司馬昭太過重用鍾會。司馬炎問：「當今難道有像鍾會的人嗎？」馮紞給予暗示。日後張華果然不被司馬炎重用。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 225–264",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Yao"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Yu"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "Zhong Hui was a son of Zhong Yao. Zhong Yao had been an important commander of Cao Cao’s, and was also a famous calligrapher. (0) Like his father, Zhong Yao, Zhong Hui was also a man of many talents. Even as a teenager, Zhong Hui became renowned for his intellect alongside Wang Bi. (1) The latter was to become a famous commentator on the Laozi. (Zhong Hui apparently wrote his own commentaries on the Laozi (2) as well).\n\nDuring Zhong Hui’s lifetime, the power of the Wei Emperors began to wane. At first, Cao Shuang, the son of the Wei general Cao Zhen, held power at the Wei court. Zhong Hui began his official career at this time as an assistant in the palace library. He was soon promoted as a deputy secretary at the Central Secretariat (3). In AD 249, Sima Yi managed to overthrow Cao Shuang’s regime and kill Cao Shuang as well as a great number of his partisans. Sima Yi’s son, Sima Shi, followed in Sima Yi’s footsteps as the dominant minister of the Wei court.\n\nIn the year AD 255, the Wei generals Guanqiu Jian and Wen Qin revolted against Sima Shi’s rule from the city of Shouchun. This was the second occasion that officers from the city of Shouchun had revolted against the Sima family (the first insurrection had been carried out by Wang Ling and Linghu Yu in AD 251 against Sima Yi (4)). At the time of Guanqiu Jian’s rebellion, Sima Shi had recently had a tumor removed from his eye (5). His injury was grave, and many officers suggested that Sima Fu or some other underling resist the rebels in Sima Shi’s place. Zhong Hui, Fu Jia and Wang Su, however, urged Sima Shi to lead the campaign himself. Sima Shi was hesitant initially, but eventually decided that the affair was urgent and required his personal attention. Zhong Hui served as an adviser to Sima Shi afterward, but his exact role in this capacity is somewhat unclear. (6)\n\nGuanqiu Jian’s mutiny was eventually crushed, but Sima Shi died shortly afterward. When Sima Zhao followed in Sima Shi’s footsteps as the dominant... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK6",
+      "ROTK9",
+      "ROTK11",
+      "rotk12",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 4",
+      "Warriors Orochi 3"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -152,11 +243,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.226Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:09.930Z"
 }

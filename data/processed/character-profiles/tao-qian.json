@@ -1,0 +1,126 @@
+{
+  "name_kr": "도겸",
+  "name_en": "Tao Qian",
+  "name_cn": "陶謙",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 51,
+    "war": 27,
+    "intelligence": 63,
+    "politics": 63,
+    "charisma": 77,
+    "total": 281,
+    "birth": 132,
+    "death": 194
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 50,
+      "war": 33,
+      "intelligence": 65,
+      "politics": 65,
+      "charisma": 77
+    },
+    "rotk11": {
+      "leadership": 51,
+      "war": 27,
+      "intelligence": 63,
+      "politics": 63,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 51,
+      "war": 27,
+      "intelligence": 64,
+      "politics": 63
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 실존 인물2. 가상 인물"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 132–194",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Tao Shang"
+        },
+        {
+          "relation": "member",
+          "name": "Tao Ying"
+        },
+        {
+          "relation": "member",
+          "name": "Father-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Gan Gong"
+        }
+      ],
+      "ranks": [
+        "Imperial Secretariat",
+        "County Magistrate in Lujiang",
+        "Magistrate in Jibei",
+        "Inspector of Yu",
+        "Inspector of Xuzhou",
+        "Imperial Protector of Xuzhou",
+        "General of the East",
+        "Marquis of Liyang"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tThreatened historically to put a later adviser of Sun Ce’s, Lü Fan, to torture. Was probably not the benevolent ruler as he appears to be in Romance of the Three Kingdoms.\n\tTao Qian did not offer Xuzhou to Liu Bei, let alone three times. He did, however, explain to his subordinates that only Liu Bei could restore order to Xuzhou. Kong Rong and Chen Deng asked him to govern.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.082Z"
+}

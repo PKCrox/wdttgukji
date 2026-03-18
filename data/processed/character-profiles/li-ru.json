@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "동탁의 참모",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 66,
+      "war": 59,
+      "intelligence": 93,
+      "politics": 76,
+      "charisma": 35
+    },
+    "rotk12": {
+      "leadership": 61,
+      "war": 26,
+      "intelligence": 93,
+      "politics": 75
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       3,
@@ -36,8 +51,28 @@
       "sections": {
         "Introduction": "李儒（？—？），字文优，袁崧《后汉书》作李孝儒，東漢末期的博士，司隶左馮翊郃阳人。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Prefect of the Gentlemen of the Palace"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDid not have Lady Tang strangled. [HHS:10B]",
+      "quotes": []
+    },
+    "sgz_english": null
   },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
   "dialogues": [
     {
       "chapter": 4,
@@ -145,11 +180,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.285Z"
+  "source_count": 6,
+  "generated_at": "2026-03-18T10:20:10.006Z"
 }

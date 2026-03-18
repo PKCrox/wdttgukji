@@ -17,6 +17,28 @@
     "birth": 154,
     "death": 202
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 80,
+      "war": 69,
+      "intelligence": 76,
+      "politics": 77,
+      "charisma": 91
+    },
+    "rotk11": {
+      "leadership": 81,
+      "war": 69,
+      "intelligence": 70,
+      "politics": 73,
+      "charisma": 90
+    },
+    "rotk12": {
+      "leadership": 81,
+      "war": 69,
+      "intelligence": 70,
+      "politics": 73
+    }
+  },
   "novel_presence": {
     "first_chapter": 2,
     "last_chapter": 93,
@@ -40,7 +62,148 @@
         "Introduction": "袁绍（？—202年6月28日），字本初，汝南郡汝阳县（今河南省商水县）人，為东汉末年割據勢力之一。曾帶兵進宮誅殺十常侍，後被各路諸侯推舉為盟主討伐董卓。在易京之戰擊敗公孫瓚後，其勢力達到巔峰；極盛時期據有冀州、幽州、并州、青州等河朔四州，官至大將軍，使其一度成為東漢末年實力最強的諸侯。但在官渡之戰慘敗給曹操而受到重挫，接著在倉亭之戰再敗給曹軍，不久後就病逝。",
         "评价": "- 赵忠：「袁本初坐作声价，好养死士，不知此儿终欲何作。」（《三国志·魏书·董二袁刘传第六》）\n- 董卓：「但杀二袁儿，则天下自服矣。」（《后汉纪·孝献皇帝纪卷第二十六》）\n- 荀谌：「袁氏一时之杰。」（《资治通鉴·卷第六十》）\n- 鲍信：「袁绍为盟主，因权夺利，将自生乱，是复有一卓也。」（《资治通鉴·卷第六十》）\n- 沮授：「将军弱冠登朝，则播名海内；值废立之际，则忠义奋发；单骑出奔，则董卓怀怖；济河而北，则勃海稽首。振一郡之卒，撮冀州之众，威震河朔，名重天下。」（《后汉书·袁绍刘表列传第六十四下》）\n- 公孙瓒：「袁氏之攻，似若神鬼，鼓角鸣于地中，梯冲舞吾楼上。」（《三国志·魏书·二公孙陶四张传第八》）\n- 袁术：「今君拥有四州，民户百万，以强则无与比大，论德则无与比高。」（《三国志·魏书·董二袁刘传第六》）\n- 和洽：「本初乘资，虽能强大，然雄豪方起，全未可必也。」（《三国志·魏书·和常杨杜赵裴传第二十三》）\n- 曹操：「吾知绍之为人，志大而智小，色厉而膽薄，忌克而少威，兵多而分画不明，将骄而政令不一，土地虽广，粮食虽丰，适足以为吾奉也」，「袁绍虽有大志，而见事迟」「及至袁绍据河北，兵势强盛，孤自度势，实不敌之。」（《让县自明本志令》）\n- 荀彧：「布衣之雄耳，能聚人而不能用」「紹貌外寬而內忌，任人而疑其心」、「绍迟重少决，失在后机」、「绍御军宽缓，法令不立，士卒虽众，其实难用」、「绍凭世资，从容饰智，以收名誉，故士之寡能好问者多归之」「兵雖多而法不整」\n- 荀攸：「绍以宽厚得众心。」（《资治通鉴·卷第六十四》）\n- 程昱：「夫袁绍据燕、赵之地，有并天下之心，而智不能济也。」（《三国志·魏书·程郭董刘蒋刘传第十四》）\n- 郭嘉：「袁公徒欲效周公之下士，而未知用人之机。多端寡要，好谋无决，欲与共济天下大难，定霸王之业，难矣！」「袁绍有恩于民夷。」（《三国志·魏书·程郭董刘蒋刘传第十四》）\n- 王粲：「袁绍有姿貌、威容，爱士养名。既累世台司，宾客所归，加以倾心折节，莫不争赴其庭，士无贵贱，与之抗礼。」（《英雄记》）\n- 杨阜：「袁公宽而不断，好谋而少决；不断则无威，少决则失后事，今虽强，终不能成大业。」（《三国志·魏书·辛毗杨阜高堂隆传第二十五》）\n- 孙权：「老贼欲废汉自立久矣，徒忌二袁、吕布、刘表与孤耳。」（《三国志·吴书九·周瑜鲁肃吕蒙传第九》）\n- 曹丕：「绍遇因运，得收英雄之谋，假士民之力，东苞巨海之实，西举全晋之地，南阻白渠黄河，北有劲弓胡马，地方二千里，众数十万，可谓威矣。当此之时，无敌于天下，视霸王易于覆手，而不能抑遏愚妻，显别嫡庶，婉恋私爱，宠子以貌；其后败绩丧师，身以疾死，邪臣饰奸，二子相屠，坟土未干，而宗庙为墟，其误至矣。」（《典论》）\n- 臧洪：「諸袁事漢，四世五公，可謂受恩。今王室衰弱，無扶翼之意，欲因際會，希冀非望，多殺忠良以立姦威。洪親見呼張陳留為兄，則洪府君亦宜為弟，同共勠力，為國除害，何為擁眾觀人屠滅！惜洪力劣，不能推刃為天下報仇，何謂服乎！」\n- 陳容：「將軍舉大事，欲為天下除暴，而專先誅忠義，豈合天意！臧洪發舉為郡將，奈何殺之！」\n- 《献帝春秋》：「绍为人政宽，百姓德之。河北士女莫不伤怨，市巷挥泪，如或丧亲。」\n- 范晔：「袁紹初以豪俠得眾，遂懷雄霸之圖，天下勝兵舉旗者，莫不假以為名。及臨場決敵，則悍夫爭命；深籌高議，則智士傾心。盛哉乎，其所資也！」「绍外宽雅有局度，忧喜不形于色，而性矜愎自高，短于从善，故至于败。」「绍姿弘雅，表亦长者。称雄河外，擅强南夏。鱼俪汉舳，云屯冀马。窥图讯鼎，禋天类社。既云天工... (truncated)"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 142–202",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 12/2012\n\tReplies: 23"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Possible Fathers"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Cheng"
+        },
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Tan"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Xi"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Shang"
+        },
+        {
+          "relation": "member",
+          "name": "Cousins"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Xu"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Gao Gan"
+        }
+      ],
+      "ranks": [
+        "Chief of Puyang",
+        "Attendant Imperial Clerk",
+        "Colonel of the Central Army",
+        "Grand Administrator of Bohai, Marquis of Kangxiang",
+        "General of Chariots and Cavalry (Self-Proclaimed)",
+        "Governor of Jizhou",
+        "Grand Commandant",
+        "General-in-Chief"
+      ],
+      "historical_notes": "Yuan Shao was a grandson of Yuan Tang, a minister who held high rank within the Han Dynasty. It is unclear who his father was. When corrupt eunuchs dominated the Han court, Yuan Shao was one of the men who rose up in arms against them. Later, he protested Dong Zhuo’s military takeover of the capital. In AD 190, Yuan Shao and some other warlords drafted troops to fight with Dong Zhuo. Dong Zhuo attempted to make peace with Yuan Shao, but Shao slew several of the envoys that greeted him.\n\nThe Han Emperor became a puppet of Dong Zhuo. Yuan Shao and Han Fu wished to set up Liu Yu as Emperor in his place, but the proposal was abandoned when Liu Yu himself disagreed with this course of action. Eventually, Dong Zhuo was driven from the capital. Han Fu, who formerly had supplied Yuan Shao’s army, stopped sending as many provisions. Qu Yi revolted against Han Fu at around the same time. In response to these developments, Yuan Shao loosely allied with Qu Yi and Gongsun Zan against Han Fu.\n\nGongsun Zan fought successfully with Han Fu for some time. Han Fu, worried, surrendered the province of Ji to Yuan Shao. It wasn’t long before Han Fu grew suspicious of Yuan Shao’s nature and fled to join the warlord Zhang Miao. He later committed suicide after believing there was a conspiracy against him.\n\nAt this time, relations between Yuan Shao and his relative, Yuan Shu, had also broken down. Yuan Shao dispatched Zhou Ang to try to seize Yangcheng from Yuan Shu. In the course of the battle though, a cousin of Gongsun Zan’s was killed. This unfortunate event enraged Gongsun Zan. Yuan Shao fought with and defeated Gongsun Zan at Jieqiao (Jie Bridge) and in other battles. Gongsun Zan fled to You Province. In AD 193 the two forces made a short truce.\n\nYuan Shao took this occasion to fight with a group of brigands known as the Black Mountain Bandits. He slew thousands of them, decimating camps left and right. At this time, the famed general Lü Bu had fled from place to place and was current... (truncated)",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tYuan Shao was described to be in his late 20s in the late AD 160s. This contradicts his traditional birth date of AD 154. [Rafe de Crespigny]\n\tYuan Shao’s relation to Yuan Shu is unclear due to a lack of information on Shao’s parentage. What is clear is that Yuan Shao and Yuan Shu are both grandsons of Yuan Tang and thus were either brothers or cousins, depending on the source.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 66944,
+      "first_translation": {
+        "translator": "JackYuan",
+        "excerpt": "Yuan Shao (Benchu)\n袁紹 (本初)\nLived AD 154–202\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 6 (Wei 6)\nbyJack Yuan\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742524395' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742524331' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742521592' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYuan Shao, styled Benchu, was from Ruyang in Ru’nan.1His great-great-grandfather A was the Minister over the Masses of Han. Four generations of the clan since An had occupied the positions of the ‘Three Excellencies’ and its power resonated throughout the empire.AShao had an impressive appearance and could condescend to show respect to those below him. He had many followers and even the Grand Progenitor [Cao Cao] was acquainted with him in his youth. As Departmental Head under the General-in-Chief, he was made Attendant Imperial Clerk.BSoon afterward he was reassigned to become Colonel of the Central Army and reached Sili.•••\nHan dynasty Ruyang was situated to the southwest of present day Shangshui 商水 in eastern Henan 河南 province. It was a populous agricultural basin irrigated by the numerous tributaries of the Huai 淮, home to a number of locally prominent gentry clans. The first individual of the Yuan clan to be mentioned by the standard histories is a certain Yuan Liang 袁良, grandfather of Yuan An, who held the minor post of Prefect 令 around CE 25 and risen to office for his learning in the Yi jing. An, the son of Liang’s eldest son Chang ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II"
+    ]
+  },
+  "community": {
+    "sentiment_score": 74,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -149,11 +312,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.199Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.895Z"
 }

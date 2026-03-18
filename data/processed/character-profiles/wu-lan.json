@@ -1,0 +1,78 @@
+{
+  "name_kr": "오란",
+  "name_en": "Wu Lan",
+  "name_cn": "呉蘭",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 63,
+      "war": 80,
+      "intelligence": 34,
+      "politics": 36,
+      "charisma": 51
+    },
+    "rotk12": {
+      "leadership": 68,
+      "war": 80,
+      "intelligence": 35,
+      "politics": 36
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 62–65",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tThe ZZTJ claims he was killed in losing to Cao Hong’s men, the SGZ says when he lost to the Di people.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.061Z"
+}

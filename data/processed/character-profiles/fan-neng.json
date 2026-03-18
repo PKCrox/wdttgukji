@@ -1,0 +1,78 @@
+{
+  "name_kr": "번능",
+  "name_en": "Fan Neng",
+  "name_cn": "樊能",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 70,
+      "war": 61,
+      "intelligence": 47,
+      "politics": 31,
+      "charisma": 57
+    },
+    "rotk12": {
+      "leadership": 69,
+      "war": 61,
+      "intelligence": 36,
+      "politics": 31
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "Sent by Liu Yao to guard the eastern bank of the Yagzi at Hengjiang, he and Yu Mi held off Yuan Shu’s officers Sun Ben and Wu Jing for more then a year. Yuan Shu then sent Sun Ce who took Niuzhu then started defeating Zhai Rong and Xie Li. Fan Neng countered by attacking Niuzhu but Sun Ce came back to drive him off, capturing “more than ten thousand” men and woman in the process.",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.082Z"
+}

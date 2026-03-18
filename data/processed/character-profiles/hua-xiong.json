@@ -1,0 +1,133 @@
+{
+  "name_kr": "화웅",
+  "name_en": "Hua Xiong",
+  "name_cn": "華雄",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 81,
+    "war": 92,
+    "intelligence": 56,
+    "politics": 40,
+    "charisma": 57,
+    "total": 326,
+    "birth": 155,
+    "death": 190
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 81,
+      "war": 93,
+      "intelligence": 52,
+      "politics": 39,
+      "charisma": 57
+    },
+    "rotk11": {
+      "leadership": 81,
+      "war": 92,
+      "intelligence": 56,
+      "politics": 40,
+      "charisma": 57
+    },
+    "rotk12": {
+      "leadership": 88,
+      "war": 92,
+      "intelligence": 61,
+      "politics": 40
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "\"닭 잡는 데 어찌 소 잡는 칼을 쓰려 하십니까?\" - 삼국지연의후한 말의 인물로 동탁의 부하 장수.",
+      "기타": "일단 정사《삼국지》에서는 분명히 도독 화웅으로 나온다. 그런데 이에 대해 청나라 시대의《삼국지집해》에서 반비(潘眉)는 화웅의 계급이 도독이 아니라 도위이고 본명도 섭웅이라고 불러야 한다고 주장하고 있다. 이로 인해 화웅의 본명이 섭웅(葉雄)이 아니냐는 것이 논란이 있다. 애초에 정사《삼국지》에 멀쩡히 등장하는 화웅을 청나라 시절에 쓰인 해설서를 근거로 하여 섭웅이라고 볼 이유는 없는 셈. 이와 별개로 후한 말부터 삼국시대에 걸친 무장 중에 섭씨가 없긴 해도 해당 성씨는 춘추시대 말기 초나라의 장수인 심윤술의 아들 심제량이 섭 땅에 봉해져 이를 성씨로 삼았다고 전해진다.《자치통감》과《통지》(通志-남송의 역사서)에도 짤막하게 섭웅이란 사람이 있다고 나오는데 모두 삼국시대로부터 700년 이상 뒤의 저작들이다. 아무래도 송대에 화웅을 잘못 본 게 퍼진 듯. 왜냐면 송대 이전의 서적에서는 섭웅에 관한 기록이 전무하기 때문이다. 일본의 삼국지 관련 팬덤에서는 화웅과 섭웅이 두 명 있는게 아니냐는 논란도 잠깐 일었으나 둘 다 정사〈손견전〉에만 등장하는 인물이고, 섭씨성을 가진 무장이 없다는 것을 이유로 현재는 부정적. 어쨌든 한중일 삼국 모두 일반적으로 화웅이라는 이름으로 쓰이고 있고, 영어권에서도 'Hua Xiong'으로 알려져 있다. 만일 섭웅이라는 주장이 옳다고 해도, 주요한 자료에서 섭웅이라고 쓰는 곳이 아무데도 없으니 현실적으로는 화웅으로 쓰는 것이 적합하다고 볼 수 있다.적 세력의 선봉장으로 나와 계속해서 승승장구를 하면서 압박을 주다가 주인공에게 죽으며 결과적으로 주인공을 띄워주는 역할을 한다는 점에서, 성경의 골리앗과 유사하다. 둘 다 거한이라는 공통점도 있다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, did not slay Yu She, Fang Yue or Pan Feng, none of whom appear in the histories.\n\tHistorically, was not sent to face the Coalition with an independant command. Instead, he was a minor officer under Hu Zhen and Lü Bu.\n\tDid not kill or even pursue Zu Mao. Xu Rong pursued.\n\tWas not killed by Guan Yu. Was killed in battle with Sun Jian by his troops.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTK12",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 3"
+    ]
+  },
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.089Z"
+}

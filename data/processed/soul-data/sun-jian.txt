@@ -72,3 +72,41 @@ Sun Quan: 부자 (강도88, 오 건국자)
 
 ## EN Wikipedia
 Sun Jian (155–191?), courtesy name Wentai, was a Chinese military general, politician, and warlord who lived during the late Eastern Han dynasty of China. He allied himself with Yuan Shu in 190 when warlords from eastern China formed a coalition to oust Dong Zhuo, a tyrannical warlord who held the puppet Emperor Xian of Han in his power. Although he controlled neither many troops nor much land, Su
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 155–192
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Sun Jian gave the Imperial Seal to Yuan Shu after finding it in a well. He did not hold the Seal for himself.
+	During the coalition against Dong Zhuo, Sun Jian served as a subordinate of Yuan Shu, not as himself.
+	Sun Jian did not withdraw from the anti-Dong Zhuo alliance, but rather was the only general to achieve success in the operations.
+	Sun Jian attacked Liu Biao on Yuan Shu’s orders, not because Liu Biao attacked first. In addition, during
+
+## 정사 영역본 (Kongming SGZ)
+Sun Jian (Wentai)
+孫堅 (文台)
+Lived AD 155–192
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 46 (Wu 1)
+byJack Yuan
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742521556' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742521540' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742521361' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Sun Jian had the style Wentai and was a man from Fuchun in Wujun. It was very likely that he was a descendant of Sun Wu.
+In his youth, he was a civil officer a
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통98 무89 지77 정72 매91
+rotk11: 통93 무90 지74 정73 매91
+rotk12: 통94 무90 지79 정73 매?
+
+## 커뮤니티 평가
+감정점수: 79, 언급: undefined회
+키워드: 

@@ -1,0 +1,87 @@
+{
+  "name_kr": "능조",
+  "name_en": "Ling Cao",
+  "name_cn": "凌操",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": {
+    "leadership": 75,
+    "war": 81,
+    "intelligence": 42,
+    "politics": 35,
+    "charisma": 55,
+    "total": 288,
+    "birth": 165,
+    "death": 203
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 75,
+      "war": 79,
+      "intelligence": 42,
+      "politics": 36,
+      "charisma": 54
+    },
+    "rotk11": {
+      "leadership": 75,
+      "war": 81,
+      "intelligence": 42,
+      "politics": 35,
+      "charisma": 55
+    },
+    "rotk12": {
+      "leadership": 75,
+      "war": 81,
+      "intelligence": 42,
+      "politics": 36
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "凌操(? ~ 203년)1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 진삼국무쌍 시리즈4.3. 삼국전투기4.4. 삼국지톡4.5. 화봉요원"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.067Z"
+}

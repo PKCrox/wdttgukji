@@ -1,0 +1,147 @@
+{
+  "name_kr": "순심",
+  "name_en": "Xun Chen",
+  "name_cn": "荀諶",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 20,
+      "war": 21,
+      "intelligence": 79,
+      "politics": 74,
+      "charisma": 68
+    },
+    "rotk12": {
+      "leadership": 34,
+      "war": 25,
+      "intelligence": 78,
+      "politics": 78
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Shu"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Gan"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Kun"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Xun You"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Can"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Shang"
+        },
+        {
+          "relation": "member",
+          "name": "and six others"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Han"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Kai"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tXun Chen was sent to persuade Han Fu to split power by Yuan Shao, he was not an officer of Han Fu.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.053Z"
+}

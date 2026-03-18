@@ -1,0 +1,76 @@
+{
+  "name_kr": "장흠",
+  "name_en": "Jiang Qin",
+  "name_cn": "蔣欽",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 78,
+      "war": 87,
+      "intelligence": 53,
+      "politics": 42,
+      "charisma": 78
+    },
+    "rotk12": {
+      "leadership": 78,
+      "war": 84,
+      "intelligence": 54,
+      "politics": 42
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 10336,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Jiang Qin (Gongyi)\n蔣欽 (公奕)\nLived AD ?–219\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyZL181\nonMarch 1st, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740793380' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756851379' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740811425' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709762325' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nJiang Qin, styledGongyi, was fromShouchun[壽春],Jiujiang[九江].\nWhenSun Cewas reliant onYuan Shu,[Jiang] Qinfollowed and tendered his service, and when[Sun] Ceferrieda cross to the east, he was conferred to beMajor of a Separate Unit, being given troops. He and[Sun] Cetraveled and pacified three commanderies,1and he also followed along in stabilizingYuzhang[豫章]. He was transferred to serve asCounty CommandantofGeyang[葛陽尉], then served asChiefof three counties in succession. He suppressed bandits and was madeCommandant of the West Sector. The bandits ofZhi[冶] inKuaiji[會稽],Lü HeandQin Lang, among others, caused chaos and[Jiang] Qinled troops to suppress and attack them. He thus captured[Lü] Heand[Qin] Lang. Five counties were pacified. He was transferred to becomeHousehold General who Suppresses the [Shan]yue.Jingju[涇拘] andZhaoyang[昭陽] were made taxpaying cities for him. WhenHe Qiwas suppressing bandits that were inYou[黝],[Jiang] Qindirected ten thousand troops and joined forces with[He] Qi. The bandits ofYou[黝] werepacified.•••\nThe “three commanderies” presumably refer toWu commandery,Danyang commandery, andKuaiji commandery.↩\nHe followed ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.069Z"
+}

@@ -1,0 +1,123 @@
+{
+  "name_kr": "채화",
+  "name_en": "Cai He",
+  "name_cn": "蔡和",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 41,
+      "war": 49,
+      "intelligence": 2,
+      "politics": 14,
+      "charisma": 23
+    },
+    "rotk12": {
+      "leadership": 39,
+      "war": 50,
+      "intelligence": 1,
+      "politics": 26
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 46–47",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Mao"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Zhong"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Xun"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Cai"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Cong"
+        }
+      ],
+      "ranks": [
+        "Liu Biao",
+        "Wei Kingdom",
+        "Wu Kingdom"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas never at Chibi or killed, like the rest of the Cai’s he simply vanished from the records when Jing fell.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.056Z"
+}

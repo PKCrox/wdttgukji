@@ -1,0 +1,108 @@
+{
+  "name_kr": "국연",
+  "name_en": "Guo Yuan",
+  "name_cn": "国淵",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 50,
+    "war": 19,
+    "intelligence": 71,
+    "politics": 86,
+    "charisma": 74,
+    "total": 300,
+    "birth": 160,
+    "death": 219
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 52,
+      "war": 21,
+      "intelligence": 71,
+      "politics": 88,
+      "charisma": 74
+    },
+    "rotk11": {
+      "leadership": 50,
+      "war": 19,
+      "intelligence": 71,
+      "politics": 86,
+      "charisma": 74
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 국민연금공단의 비공식 약칭2. 국제연합의 약칭 유엔3. 삼국지의 인물들3.1. 후한 말과 삼국시대 위나라의 관료 國淵3.2. 후한 말과 삼국시대의 반역자 麴演"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Zhong Yao"
+        }
+      ],
+      "ranks": [
+        "Grand Administrator of Hedong"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5617,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Guo Yuan (Zini)\n國淵 (子尼)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonAugust 30th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1756574400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757194910' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1756588812' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1756577669' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nGuo Yuan, styledZini, was fromGai[蓋],Le’an[樂安].\nHe treatedZheng Xuanas a teacher.ALater, he and others, includingBing YuanandGuan Ning, fled the chaos toLiaodong[遼東].B\nTheSeparate Biography of[Zheng] Xuanstates:[Guo] Yuaninitially did not have a famed reputation.[Zheng] Xuanpraised him, saying, “GuoZiniis a magnificent talent! I have witnessed such a person who will certainly become a critical worker for the state!”\nTheBook of WeibyWang Chenstates:[Guo] Yuanwas eager in studying and he was fond of the ancients. When he was inLiaodong[遼東], he would often teach on mountains and on cliffs. Many scholars respected and admired him. From this, he gained a famed reputation.\nWhen he returned to his former lands, theGrand Progenitorrecruited him to serve asbureaucratic clerkunder theExcellency of Works. Each time he was in the government court for a discussion, he would always speak candidly and with a forthright expression. Whenever he withdrew, he was without any private ties.\nTheGrand Progenitorwanted to expand the Field Garrison system and tasked[Guo] Yuanwith directing the work.[Guo] Yuanwould frequently explain downsides and benefits, he would examine t... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.079Z"
+}

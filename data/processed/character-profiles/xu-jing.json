@@ -1,0 +1,120 @@
+{
+  "name_kr": "허정",
+  "name_en": "Xu Jing",
+  "name_cn": "許靖",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 4,
+      "war": 4,
+      "intelligence": 67,
+      "politics": 78,
+      "charisma": 69
+    },
+    "rotk12": {
+      "leadership": 23,
+      "war": 5,
+      "intelligence": 68,
+      "politics": 79
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 152–222",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Yang"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Hun"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Kun"
+        },
+        {
+          "relation": "member",
+          "name": "Great-nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Chen Zhi"
+        }
+      ],
+      "ranks": [
+        "Reporting Officer",
+        "Palace Assistant Imperial Clerk",
+        "Grand Administrator of Ba",
+        "Grand Administrator of Guanghan",
+        "Grand Administrator of Shu",
+        "Chief Clerk to the General of the Left",
+        "Grand Tutor",
+        "Excellency over the Masses"
+      ],
+      "historical_notes": "Xu Jing was praised as a good judge of character and ability in his younger years. He served in the capital but fled during Dong Zhuo’s reign. He traveled south to avoid conflicts and initially settled in Yang province, where he gathered and cared for many refugees. However, when Sun Ce conquered Kuaiji, Xu Jing and his refugees fled to Jiao territory. In 208, he left Jiao to serve as an administrator under Liu Zhang. He joined Liu Bei in 214 and became a trusted civil aide. In 219, he was made Grand Tutor to the King of Han Zhong (Liu Bei). When Liu Bei claimed the imperial title in 221, Xu Jing was named Minister Over the Masses. He died the next year.\n\nXu Jing was well respected for his contributions to the philosophical discussions of the time and for the love and kindness he showed to refugees. However, his abilities were questioned by Fa Zheng, who believed that Xu Jing had an empty reputation.\n\n- “A Biographical Dictionary of the Later Han and Three Kingdoms” by Rafe de Crespigny",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.088Z"
+}

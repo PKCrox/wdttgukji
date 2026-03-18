@@ -1,0 +1,106 @@
+{
+  "name_kr": "주연",
+  "name_en": "Zhu Ran",
+  "name_cn": "朱然",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 86,
+      "war": 66,
+      "intelligence": 71,
+      "politics": 60,
+      "charisma": 79
+    },
+    "rotk12": {
+      "leadership": 79,
+      "war": 69,
+      "intelligence": 71,
+      "politics": 60
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 3699,
+      "first_translation": {
+        "translator": "DukeOfGoats",
+        "excerpt": "Zhu Ran (Yifeng)\n朱然 (義封)\nLived AD 182–249\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 56 (Wu 11)\nbyDuke of Goats\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745174765' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744993669' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744931997' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhu Ran, styled Yifeng, was son of sister of Zhu Zhi. He was originally called Shi Ran. Earlier on, Zhu Zhi didn’t have a son, he was thus adopted by Zhi at age 13. When he was young, he studied together with Sun Quan, and hence became very good friends. When Sun Quan became the ruler, Zhu Zhi was 19 at the time, Sun Quan was amazed at Zhu Ran’s abilities and appointed him to be governor of Danyang. He was later given 2,000 men to settle some mountain bandits, claimed victory within 1 month. Cao Cao invaded Ruxu, Zhu Ran managed to race time and constructed the fortifications before Cao’s arrival. He was promoted to General of Pian for this. In AD 219, he participated in Lü Meng’s invasion of Jingzhou, Zhu Ran captured Guan Yu in Linju.\nOn Lü Meng’s deathbed, Sun Quan asked Meng, \"Who should I appoint as commander after you?” Meng replied, “Zhu Ran is the capable one.” After Meng died, Sun Quan appointed Zhu Ran as governor of Jiangling. In AD 222, Liu Bei lead an angry revenging army to attack Wu. Zhu Ran fought under Lu Xun, he was given only 5,000 men, Ran crushed Liu Bei’s spearhead, pursued Liu Bei’s retreating army, and cut down se... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK12",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3"
+    ]
+  },
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.069Z"
+}

@@ -1,0 +1,155 @@
+{
+  "name_kr": "왕윤",
+  "name_en": "Wang Yun",
+  "name_cn": "王允",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 27,
+      "war": 5,
+      "intelligence": 73,
+      "politics": 78,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 26,
+      "war": 6,
+      "intelligence": 68,
+      "politics": 80
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 137–192",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Shi"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Gai"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Ding"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Hong"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Mao"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Hei"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Diaochan f"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Chen"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Ling"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Hong"
+        }
+      ],
+      "ranks": [
+        "Attendant Officer",
+        "Imperial Clerk in the Censorate",
+        "Inspector of Yu",
+        "Gentleman of the Household in Attendance",
+        "Intendant of Henan",
+        "Grand Coachman",
+        "Minister over the Masses"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas not Diaochan’s father. She did not exist.\n\tTurned Lü Bu against Dong Zhuo over an unnamed maid by chance, not through a premeditated plot.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.085Z"
+}

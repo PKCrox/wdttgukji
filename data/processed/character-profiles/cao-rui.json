@@ -1,0 +1,128 @@
+{
+  "name_kr": "조예",
+  "name_en": "Cao Rui",
+  "name_cn": "曹叡",
+  "courtesy_kr": "원중",
+  "courtesy_cn": "元仲",
+  "faction": "wei",
+  "tier": 2,
+  "role": "위 2대 황제, 명제",
+  "stats": {
+    "leadership": 72,
+    "war": 52,
+    "intelligence": 82,
+    "politics": 82,
+    "charisma": 88,
+    "total": 376,
+    "birth": 205,
+    "death": 239
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 75,
+      "war": 48,
+      "intelligence": 84,
+      "politics": 82,
+      "charisma": 90
+    },
+    "rotk11": {
+      "leadership": 72,
+      "war": 52,
+      "intelligence": 82,
+      "politics": 82,
+      "charisma": 88
+    },
+    "rotk12": {
+      "leadership": 72,
+      "war": 52,
+      "intelligence": 82,
+      "politics": 82
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "삼국시대 위나라의 2대 황제. 조조의 손자이자 초대 황제 조비의 장남으로 자(字)는 원중(元仲)이다.묘호는 열조(烈祖), 시호는 명제(明帝). 실제로 재위한 군주 중 나라를 세우지 않았는데도 조(祖)자의 묘호를 최초로 받은 황제이기도 하다. 특이하게 열조는 조예가 생전에 자칭하여 공표한 묘호이다. 중국사에서 유일하게 생전에 황제가 묘호를 스스로 결정하고 정식으로 공인한 사례인데, 자신의 정통성과 후세의 평가를 생각하여 이런 결단을 내린 것으로 추측되지만, 본래는 사후에 후손들이 올리는 묘호를 자기 스스로 생전에 결정하고 자신의 칭호로 사용한 것은 워낙 상식에 어긋난 행보였고 이후에도 이런 비상식적인 짓을 저지른 군주가 없었기 때문에 후세의 많은 역사가들에게 비판을 받았다. 아무튼, 조예의 열조 묘호는 후대의 평가와는 아무 상관없다.재위 초기에는 새파랗게 젊은 나이에 황제로 등극하였음에도 위나라를 건국한 개국군주이며 초대 황제인 조비의 장남이라는 정통성으로 강력한 황권을 휘둘렀고, 촉한과 오나라의 공격을 수차례 막아내 나라를 반석 위에 올렸다. 특히나 제갈량의 북벌 문서를 보면, 5차 북벌은 거의 조예가 혼자 막아냈다고도 볼 수 있다.반면 말년의 실정은 위나라 멸망의 시발점이 되었다. 오와 촉의 강한 군사적 역량으로 최측근 조휴, 조상 등이 거듭 패전해 사마씨 가문에게 병권과 재정권이 넘어가게 되었고, 누구 아들인지도 모르고 정통성도 희박하며, 후계자로서 역량도 부족한 조방을 후계자로 지명하고 자신은 젊은 나이에 죽으면서 위나라는 창업군주이며 초대 황제인 조비가 나라를 개국한 지 20년도 안 되어 멸망의 늪으로 빠져들게 된다.《정사 삼국지》의 저자인 진수는 \"요절하여 제국의 몰락을 앞당긴 황제\"라고 평했다.",
+      "평가": "위서를 쓴 왕침은 조예에 대해 다음과 같이 평했다.명제는 용모가 빼어나며 위엄도 갖추고 있었다. 그러나 명제는 황태자의 신분이었을 때부터 조정의 신하들과 가깝게 지내지 않았으며, 정치 문제에도 무관심하고, 오직 생각을 깊이 하고 서적에 몰두할 뿐이었다. 그러나 즉위하고부터는 대신을 예우하고 공적을 세운 자나 유능한 자를 선발하며 진실과 허위를 바꾸지 않고, 경박함이나 참언의 시초를 끊으려고 노력하였다. 또 군대를 출동시키거나 논의를 통해 중대한 일을 결정할 때에는 지략이 있는 신하, 장군, 대신들이 모두 명제의 계략에 따랐다.명제는 선천적으로 기억력이 탁월해 옆에서 모시는 신하들의 신상, 성격과 행위, 과거의 행동 또 그 부형자제의 성격 등에 이르기까지 한번 보고를 들으면 끝까지 잊어버리지 않았다. 특히 굴욕을 가슴에 담아 참아 내고, 직언을 잘 받아들이며, 신분이 낮은 관리나 백성들의 상소를 받아들였다. 한 달에 수천 봉서가 이르렀는데, 문장이 비루하더라도 끝까지 읽어 보기를 게을리하지 않았을 정도이다.다음은 정사 삼국지의 저자 진수의 평이다.명제는 침착하고 굳세며 결단력과 식견을 갖추고 있었으며, 마음에 임하여 행동하며, 백성들에게는 군주의 지극한 기개를 갖고 있었다. 그 당시 백성들은 생활이 피폐하고 온 천하는 분열되었으나, 명제는 선조의 빛나는 대업을 먼저 생각하거나, 왕업의 기틀을 다지지 않고 진시황이나 한무제를 급히 모방하여 궁전을 지었으니, 나라를 다스리는 원대한 관점으로서 헤아리면 이는 아마도 중대한 결함일 것인저!다음은 역사가 손성의 평이다.위 명제는 타고난 모습이 빼어났으며, 일어서면 머리카락이 땅에까지 늘어졌고, 말더듬이여서 말은 적게 하였지만, 가라앉아 있으면서도 강하였고, 결단 내리기를 좋아하였다. 처음에 여러 공들이 유조를 받아 보도하였는데, 황제는 이들 모두에게 한 지방의 임무를 주어서 이를 처리하게 하였으며, 정치는 자기 자신에게서 나오게 하였다. 예를 가지고 대신들을 우대하였으며, 관용적인 태도를 가지고 곧은 소리를 좋게 생각하였다. 비록 면전에서 지극한 간언을 하였다고 하더라도 그들을 꺾어버리거나 죽이지 아니하였으니, 임금이 갖고 있는 도량이 이처럼 위대하였다. 그러나 덕을 세우고 기풍을 내려줄 생각을 하지 아니하고, 유성(조씨들을 키우는 것)의 기초를 굳게 세우지 아니하였으니, 결국 대권이 한쪽으로 치우치게 하기에 이르렀고, 사직을 지킬 수 없었으니 슬픈 일이다!조예라는 인물에 대한 역사가들의 평은 보다시피 후한 편이다. 특히 손성이라는 인물은 모두까기 인형이라서 일단 까고 보는 인물이라는 것을 고려하면 더욱 그렇다. 우선 알아두자면, 왕조 시대 역사가들의 군주에 대한 평가 기준은 현대 사학과 다르다. 몇 대에 걸쳐 결과가 나오는 거시적 관점의 평가가 아니라 그 군주의 재임 당시 군주가 보여준 인간성, 품행 도량 및 행보가 얼마나 고결한가 혹은 결단력이 있는지로 평가한다.이런 면에서 볼 때 조예는 옛 역사가들에게 호평을 받을 군주였다. 아버지인 조비는 유능했으나 인간성에 문제가 있었고 결정적으로 단명하여 아쉬운 평가를 받는 인물이었다. 조예는 본인의 능력 및 결단력 등은 뛰어난 부분이 있고, 말년의 흑화도 신하들을 죽여대는 건 아니었기에 백성들은 모를까 신하들 입장에서는 싫게 생각할 이유가 없다고 볼 여지도 있었다.따라서 사서에 따르면, 조예는 어지러운 시기에 탁월한 결단력과 리더십을 보여줬지만, 정작 평화로운 시기에는 나태하고 사치스러운 암군이었다. 확실히 능력은 뛰어난 부분이 있었고 도량과 결단력 등은 영웅적인 면이 있었고 이게 외침이 빈번하던 시기에 두각을 드러냈지만, 자기 관리 면에서는 엄격함이 부족했고 방종하여 주된 외침이 대략적으로 마무리된 이후에는 이런 부분이 눈에 띄게 된다.즉위 초기에는 내치 부분에서도 두각을 드러낸 면모가 있다는 점을 생각해보면, 조예의 내치 능력이 무능한 게 아니라 어린 나이에 즉위하여 발생한 권력적 긴장과 외적의 침입으로 인한 개인적, 국가적 긴장 상태에서는 능력을 발휘하지만 외침도 성공적으로 막고 개인적 왕권과 위신도 어느 정도 반석에 오른 ... (truncated)",
+      "기타": "나이에 논란이 있다. 정사 삼국지 명제기에 따르면 조예는 239년에 죽었고 이때 나이는 36세였다. 이를 바탕으로 역산을 해보면 조예는 204년생이 된다. 하지만 조조가 업성을 무너뜨린 것이 204년 8월의 일이었기 때문에 조비가 업에 있던 원희의 처 견씨를 자신의 아내로 맞이한 것은 그 이후의 일이다. 따라서 문소황후 견씨가 이때 바로 조비의 아들을 임신했다고 하더라도 그 아이가 204년에 출생하는 것은 불가능하다. 결론적으로 조예가 204년생이 맞는다면 조예는 절대로 조비의 아들이 될 수 없다. 이에 대해 정사 삼국지에 주석을 단 배송지는 조예가 205년생이라는 의견을 적었다. 배송지는 조비와 견씨가 업성이 함락된 204년 8월에 바로 결혼했기 때문에 조예가 205년생이고 36세는 잘못된 계산이라고 주장했다. 한편 명제기의 다른 기록을 보면 조예는 15세에 무덕후가 되었다. 그리고 문제기에 따르면 조예가 무덕후가 된 것은 220년이다. 따라서 이것을 바탕으로 역산을 해보면 조예는 205년생이 아니라 206년생이 된다. 노필이 지은《삼국지집해》에 따르면 이에 대해 여러 가지 자료가 있는데 220년 이전에 조예가 이미 무덕후가 되었다는 자료 또한 존재한다. 어떤 자료가 맞는지 알 방법이 없으므로 조예가 정확히 몇 년 생인지는 단정지을 수 없는 상황이다. 만일 정사 삼국지의 진수가 시기를 곡해한 것이 맞다면 조예가 조비의 자식이 아님을 우회적으로 남겼다고 생각할 수도 있다.조예가 사후에 묻힌 능인 고평릉은 허난성 뤄양시 루양현에 소재해 있는데, 명청대 기록을 바탕으로 비정한 것이라 진위 논란이 존재한다. 현재 비정된 고평릉을 제외할 경우 제일 유력한 고평릉 후보는 서주촌 조위묘 M2호 무덤으로 여겨지나 아직 발굴이 진행되지 않았다.《세설신어》에 의하면 긴 머리의 미남이었다고 하는데 당시 위나라에서는 긴 머리가 유행했다고 한다. 패션 센스도 독특한 것을 추구했는지 꽃을 꽂은 모자와 소매가 짧은 비단옷을 입었다는 기록이 있다.《진서》 여복지에 따르면 \"천자의 관 앞뒤에 달린 류(旒, 관에 달린 구슬끈)에는 본래 백옥 구슬을 쓴다. 위명제가 여인의 장식을 좋아하여 이를 산호 구슬로 바꿨다.\"는 기록도 있다. 원문에는 '부인의 식(飾)'을 좋아한다고 되어있는데, 식(飾)자는 장식 뿐 아니라 분장 행위를 뜻하기도 하기 때문에 '조예는 여장을 좋아했다'고 해석할 수도 있다. 〈대군사 사마의〉에서 조예의 여장도 여기에 기반해서 나왔던 것이다. 어찌 보면 삼국 시대의 패셔니스타였던 듯. 여성의 의류나 장식 등을 밝히는 점에는 하안과도 연관이 있다고 할 수도 있는데 조예 사후 그의 시호를 명제로 정하는 걸 주도한 인물이(아마 황실의 큰어른 및 대학자라는 권위빨) 하안이었다는 것을 보면 재밌는 부분이다. 사실 조예와 하안의 평소 사이가 좋지 못했다는 것을 고려하면, 하안이 능력은 좋았던 모양. 하안의 경우 당대 최고의 미남 하후현은 물론 역시 훤칠하게 잘 생겼다는 기록이 있는 사마사와도 친했고, 왕필의 경우 본인 외모는 잘 모르겠으나 그 할아버지가 꽤나 잘생긴 외모(+가문) 덕분에 유표의 사위가 되었다고 하니, 어쨌든 미남 유전자 보유자일 확률이 높다. 하안이 좋아했던 하후현을 조예는 싫어했고 역시 미남이라고 추정할 근거가 있는 제갈탄 역시 싫어했다는 기록이 있다. 그래놓고 어떤 외모를 좋아했는가 하니 첫 번째로 사마의였다. 조예가 사마부를 처음 등용할 때 \"형(사마의)의 풍(風, 대개 외모)이 있는가?\"라고 묻고 그렇다니까 사마의가 둘로 늘어난 셈이라며 기뻐했다는데, 하여간 사마의의 외모 자체에 꽤 의미가 부여된 건 사실이다.사마의는 낭고상으로도 유명하지만, 이건 사마의의 통찰력에 대한 비유적 표현일 가능성이 높고, 형인 사마랑 관련 기록인 〈사마랑전〉에 따르면 그가 12세일 때 시험을 보는데 하도 덩치가 커서 나이를 속인 것 아니냐는 의혹을 받았고, 게다가 역시 한 덩치하는 동탁이 사마랑에 대해 '내 아들이랑 꼭 닮았다'고 평가했다고. 사마랑 본인 말에 따르면 집안 유전이라니 사마의와 사마부도 한 덩치했을 것이라고 충분히 유추가 ... (truncated)"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Pi"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Pan"
+        }
+      ],
+      "ranks": [
+        "Prince of Beihai"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 1550,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Cao Rui\n曹蕤\nLived AD ?–233\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 20 (Wei 20)\nbyZL181\nonOctober 13th, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1728861240' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1772752216' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740557946' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740544291' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTheGrievedPrinceofBeihai[北海悼王] was[Cao] Rui[曹蕤]. In the seventh year of theera [226], after theBrightEmperorascended the throne, he was installed asCounty PrinceofYangping[陽平縣王]. In the sixth year of theera [232], he changed fief toBeihai. In the first year of theera [233], he died. In the second year,[Cao] Zan, the son of thePrinceofLangye[琅邪王], received the succession of[Cao] Rui[曹蕤] and was enfeoffed asTownship Dukeof Chang [昌鄉公]. In the second year of theera [238], he was installed as Prince ofRao’an[饒安王]. In the seventh year of theera [246], he moved fief toWen’an[文安]. During theanderas, the fief gradually increased, joining with the previous for a total of three thousand and five hundred households."
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-18T10:20:10.032Z"
+}

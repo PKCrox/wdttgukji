@@ -65,3 +65,33 @@
 
 ## EN Wikipedia
 Zhou Tai, courtesy name Youping, was a military general serving under the warlord Sun Quan during the late Eastern Han dynasty and early Three Kingdoms period of China. He previously served under Sun Ce, Sun Quan's elder brother and predecessor.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 163–225
+
+## 정사 영역본 (Kongming SGZ)
+Zhou Tai (Youping)
+周泰 (幼平)
+Lived AD ?–225
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 55 (Wu 10)
+byLady Wu
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745016402' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745016336' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745016336' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhou Tai, styled Youping, was from Xiacai in Jiujiang commandery. Together with Jiang Qin, he served as Sun Ce’s bodyguard, and both men were known for their res
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통71 무63 지73 정62 매80
+rotk11: 통76 무91 지48 정38 매60
+rotk12: 통84 무91 지48 정38 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

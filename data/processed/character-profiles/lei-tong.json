@@ -1,0 +1,96 @@
+{
+  "name_kr": "뇌동",
+  "name_en": "Lei Tong",
+  "name_cn": "雷銅",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 69,
+    "war": 78,
+    "intelligence": 51,
+    "politics": 37,
+    "charisma": 53,
+    "total": 288,
+    "birth": 172,
+    "death": 218
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 70,
+      "war": 75,
+      "intelligence": 41,
+      "politics": 34,
+      "charisma": 51
+    },
+    "rotk11": {
+      "leadership": 69,
+      "war": 78,
+      "intelligence": 51,
+      "politics": 37,
+      "charisma": 53
+    },
+    "rotk12": {
+      "leadership": 69,
+      "war": 78,
+      "intelligence": 51,
+      "politics": 37
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "雷銅?~218년1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 요코야마 미츠테루 삼국지4.3. 영걸전 시리즈4.4. 삼국전투기4.5. 창천항로"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 62–65",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.060Z"
+}

@@ -1,0 +1,76 @@
+{
+  "name_kr": "유파",
+  "name_en": "Liu Ba",
+  "name_cn": "劉巴",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 13,
+      "war": 22,
+      "intelligence": 74,
+      "politics": 78,
+      "charisma": 58
+    },
+    "rotk12": {
+      "leadership": 29,
+      "war": 22,
+      "intelligence": 75,
+      "politics": 81
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 12926,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Liu Ba (Zichu)\n劉巴 (子初)\nLived AD 173–222\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyZL181\nonMarch 5th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1741183500' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760279647' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741201546' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740857627' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLiu Ba, styledZichu, was fromZhengyang[烝陽],Lingling[零陵].\nHe had a renowned reputation when he was young.ATheGovernorofJing province[荊州牧],Liu Biao, repeatedly recruited him and he was also nominated asOutstanding Talent, all of which he did not accept [荊州]. When[Liu] Biaodied,Excellency Caowent on an expedition againstJing province[荊州]. TheFormer Lordfled to theJiangnan region[江南] and many scholars of theJingchu region[荊楚] followed him like clouds [gathering].[Liu] Bawent north toExcellency Cao.Excellency Caorecruited him to serve as abureaucrat. He was dispatched to attract and admitChangsha[長沙],Lingling[零陵], andGuiyang[桂陽].BIt happened thatFormer Lordcaptured those three commanderies, and[Liu] Bawas unable to report back his mission. He then went afar intoJiaozhi[交阯].CTheFormer Lordthus was deeply resentful.[Liu] Balater arrived in Shu [蜀] fromJiaozhi[交阯].DSoon after, theFormer LordsettledYi province[益州].[Liu] Baapologized for his crimes and faults, and theFormer Lorddid not rebuke him.EZhugeKongmingrecommended him several times, so theFormer Lordrecruited him to serve asbureaucrat of the Western Bureauunder theGeneral of the Left.F\nTh... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.064Z"
+}

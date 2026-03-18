@@ -1,0 +1,146 @@
+{
+  "name_kr": "황보숭",
+  "name_en": "Huangfu Song",
+  "name_cn": "皇甫嵩",
+  "courtesy_kr": "의진",
+  "courtesy_cn": "義真",
+  "faction": "other",
+  "tier": 2,
+  "role": "황건적 토벌 명장",
+  "stats": {
+    "leadership": 87,
+    "war": 61,
+    "intelligence": 73,
+    "politics": 51,
+    "charisma": 72,
+    "total": 344,
+    "birth": 132,
+    "death": 195
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 93,
+      "war": 62,
+      "intelligence": 78,
+      "politics": 45,
+      "charisma": 82
+    },
+    "rotk11": {
+      "leadership": 87,
+      "war": 61,
+      "intelligence": 73,
+      "politics": 51,
+      "charisma": 72
+    },
+    "rotk12": {
+      "leadership": 92,
+      "war": 61,
+      "intelligence": 73,
+      "politics": 51
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 정치가이자, 군인으로 자는 의진(義眞)이며, 성은 황씨가 아니라 복성인 황보씨다. 황보규의 조카이자 황보력의 삼촌이며, 황보견수의 아버지다. 그의 증손으로 침구학가로 알려진 황보밀이 있다.양주 안정군 조나현 출신으로, 후한 말기에 활동하였던 장군이다. 부정부패가 만연하였던 후한에 드물었던 문무겸비한 충신이었다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Huangfu Gui"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Huangfu Li"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "One married to She Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "She Yuan"
+        }
+      ],
+      "ranks": [
+        "Grand Administrator of Beidi",
+        "General of the Gentlemen of the Household on the",
+        "Left",
+        "Marquis of a Chief District",
+        "General of Chariots and Cavalry on the Left",
+        "Governor of Ji Province",
+        "Marquis of Huaili",
+        "General of the Left",
+        "Palace Assistant Imperial Clerk",
+        "General Who Subdues the West",
+        "General of Chariots and Cavalry",
+        "Grand Commandant"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 0,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.051Z"
+}

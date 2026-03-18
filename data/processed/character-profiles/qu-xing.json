@@ -1,0 +1,81 @@
+{
+  "name_kr": "구성",
+  "name_en": "Qu Xing",
+  "name_cn": "区星",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 55,
+    "war": 70,
+    "intelligence": 38,
+    "politics": 29,
+    "charisma": 53,
+    "total": 245,
+    "birth": 157,
+    "death": 187
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 56,
+      "war": 71,
+      "intelligence": 31,
+      "politics": 29,
+      "charisma": 40
+    },
+    "rotk11": {
+      "leadership": 55,
+      "war": 70,
+      "intelligence": 38,
+      "politics": 29,
+      "charisma": 53
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 構成2. 舊姓3. 지명3.1. 평안북도 구성시(龜城市)3.2. 경기도 용인시 기흥구 구성동(駒城洞)을 비롯한 과거 구성읍 지역3.3. 경상북도 김천시 구성면(龜城面)4. 인명4.1. 후한 말의 인물4.2. 명나라의 인물4.3. PSYCHO-PASS의 등장인물 최구성"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.079Z"
+}

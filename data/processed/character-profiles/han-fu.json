@@ -1,0 +1,92 @@
+{
+  "name_kr": "한복",
+  "name_en": "Han Fu",
+  "name_cn": "韓馥",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 18,
+      "war": 10,
+      "intelligence": 29,
+      "politics": 63,
+      "charisma": 59
+    },
+    "rotk12": {
+      "leadership": 28,
+      "war": 3,
+      "intelligence": 27,
+      "politics": 62
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 149–191",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Han"
+        }
+      ],
+      "ranks": [
+        "Member of the Secretariat",
+        "Head of the Imperial Censorate",
+        "Governor of Ji Province (AD 189)",
+        "General Who Displays Majesty"
+      ],
+      "historical_notes": "Han Fu, styled Wenjie, was once a member of the Secretariat and later became head of the Imperial Censorate. He became Governor of Ji by appointment from Dong Zhuo in AD 189. Yuan Shao later convinced him to join in the coalition against Dong Zhuo, which Han Fu originally regarded as a private matter. He remained in Ye during the campaign.\n\nHan Fu’s fertile territory produced supplies upon which Yuan Shao depended. After the coalition broke apart, Han Fu attempted to control Yuan Shao by limiting those supplies. Yuan Shao contacted Han Fu’s mutinous officer Qu Yi, convinced Gongsun Zan to attack him from the north, and advanced on Han Fu’s territory down the Yellow River himself. Fearful of the outcome and advised by treacherous officers upon whom he thought he could depend, Han Fu surrendered his position to Yuan Shao.\n\nAlthough Yuan Shao had promised him that he would be taken care of, the gesture never materialized. Han Fu and his family were harassed and his supporters were either abandoned or killed. Han Fu fled to Zhang Miao, but when he came to suspect Zhang Miao of plotting against him as well, he took his own life.",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, Han Fu never served Cao Cao.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.088Z"
+}

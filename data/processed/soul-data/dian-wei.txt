@@ -53,3 +53,38 @@ Cao Cao: 군신 (강도75, 근위대장)
 
 ## EN Wikipedia
 Dian Wei was a military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. Famed for his enormous strength, Dian Wei excelled at wielding a pair of jis, each of which was said to weigh 40 jin. He was killed in action at the Battle of Wancheng while covering Cao Cao's escape from Zhang Xiu's forces.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 160–197
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Rather than two axes or long polearms Dian Wei used two hand-halberds. These were shortened versions of the ji halberd (as used by Lü Bu).
+	Dian Wei was neither drunk nor had his halberds been stolen during his heroic defense against Zhang Xiu’s attack.
+
+## 정사 영역본 (Kongming SGZ)
+Dian Wei
+典韋
+Lived AD 160–197
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 18 (Wei 18)
+byjiuwan (Giao Chau)
+in2004
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742844989' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699913' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742584685' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Dian Wei was a man from Chen Liu. His appearance was monstrous, with strength above ordinary men. He was a man that had determination and could be relied upon as 
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통59 무94 지34 정31 매56
+rotk11: 통56 무95 지35 정29 매58
+rotk12: 통72 무95 지35 정29 매?
+
+## 커뮤니티 평가
+감정점수: 92, 언급: undefined회
+키워드: 

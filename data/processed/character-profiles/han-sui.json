@@ -1,0 +1,91 @@
+{
+  "name_kr": "한수",
+  "name_en": "Han Sui",
+  "name_cn": "韓遂",
+  "courtesy_kr": "문약",
+  "courtesy_cn": "文約",
+  "faction": "other",
+  "tier": 2,
+  "role": "서량 군벌, 마등 맹우",
+  "stats": {
+    "leadership": 89,
+    "war": 70,
+    "intelligence": 77,
+    "politics": 61,
+    "charisma": 80,
+    "total": 377,
+    "birth": 142,
+    "death": 215
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 85,
+      "war": 72,
+      "intelligence": 75,
+      "politics": 65,
+      "charisma": 80
+    },
+    "rotk11": {
+      "leadership": 89,
+      "war": 70,
+      "intelligence": 77,
+      "politics": 61,
+      "charisma": 80
+    },
+    "rotk12": {
+      "leadership": 81,
+      "war": 75,
+      "intelligence": 82,
+      "politics": 61
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "장강(長江)의 지류. 중국 발음으로는 한수이. 산시성(陝西省) 한중시에서 발원, 샹양(襄陽), 징저우(荊州)을 거쳐 후베이성(湖北省)을 관통, 우한(武漢)에서 양쯔강과 합류한다. 전장 1,577km. 한강(漢江)이라고도 하며, 고대에는 면수(沔水)라고도 했다. 한국의 한강과 한자가 같은 것을 기념하여 샹양(襄陽)에서는 한중 한강 교류 행사가 열린다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.050Z"
+}

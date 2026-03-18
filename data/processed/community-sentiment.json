@@ -1,0 +1,3691 @@
+{
+  "total_characters": 96,
+  "total_text_units": 1526,
+  "sources": [
+    "reddit-dynastywarriors-abilities",
+    "reddit-dynastywarriors-balance",
+    "reddit-dynastywarriors-best-officer",
+    "reddit-dynastywarriors-romance-of-three-kingdoms",
+    "reddit-dynastywarriors-rotk",
+    "reddit-dynastywarriors-stats",
+    "reddit-dynastywarriors-worst-officer"
+  ],
+  "generated_at": "2026-03-18T09:15:18.663Z",
+  "characters": [
+    {
+      "name_kr": "여포",
+      "name_en": "Lu Bu",
+      "faction": "other",
+      "tier": 0,
+      "total_mentions": 135,
+      "sentiment_counts": {
+        "positive": 98,
+        "negative": 7,
+        "neutral": 30
+      },
+      "sentiment_score": 67,
+      "weighted_score": 7538,
+      "tier_mentions": [
+        "s tier",
+        "best",
+        "op",
+        "broken",
+        "strongest",
+        "worst",
+        "top 10",
+        "busted"
+      ],
+      "top_quotes": [
+        {
+          "quote": "I’m the English voice of Zhou Yu and Xiahou Yuan Hello Redditors of the Three Kingdoms! \n\nI’ve delayed promotions to be in solidarity with the SAG-AFTRA Interactive Strike, but with the strike now sus",
+          "score": 1272,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Do you miss/want the Bodyguard system to come back? While they seem op/broken  in like 3-4 since you can have up to more than 4 follow you and stat wise you can make them as strong as officers  in DW ",
+          "score": 429,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Do you miss/want the Bodyguard system to come back? While they seem op/broken  in like 3-4 since you can have up to more than 4 follow you and stat wise you can make them as strong as officers  in DW ",
+          "score": 428,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Will you ride into hell with Zhou Yu? Happy 25 years of Dynasty Warriors! Thank you to Koei Tecmo and Producer Tomohiko Sho for letting me be the English voice of Zhou Yu in Dynasty Warriors: Origins,",
+          "score": 389,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Weapons Tier List 2.0 after 100% Completion - Ultimate Warrior Difficulty **Weapons Tier List - Ultimate Warrior Difficulty**\n\nThis is an update to the tier list I wrote last week. I’ve completed 100%",
+          "score": 198,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "조조",
+      "name_en": "Cao Cao",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 107,
+      "sentiment_counts": {
+        "positive": 89,
+        "negative": 3,
+        "neutral": 15
+      },
+      "sentiment_score": 80,
+      "weighted_score": 4695,
+      "tier_mentions": [
+        "op",
+        "best",
+        "broken",
+        "strongest",
+        "busted",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "I've been wrong about Cao Cao? Throughout the years of playing Dynasty warriors I've always been a Wei stan. Xiahou Dun was the first character I played in DW2. With that I always seen Cao Cao as like",
+          "score": 212,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors themed Magic the Gathering Commander deck Fun fact: Magic The Gathering actually released a set in **1999** called *Portal Three Kingdoms*, based on the Chinese Three Kingdoms period.",
+          "score": 138,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "유비",
+      "name_en": "Liu Bei",
+      "faction": "shu",
+      "tier": 0,
+      "total_mentions": 99,
+      "sentiment_counts": {
+        "positive": 80,
+        "negative": 8,
+        "neutral": 11
+      },
+      "sentiment_score": 73,
+      "weighted_score": 4492,
+      "tier_mentions": [
+        "best",
+        "op",
+        "broken",
+        "worst",
+        "strongest"
+      ],
+      "top_quotes": [
+        {
+          "quote": "DW3 had Hypotheticals before they were cool! In DW3 if you play as certain characters, you have a chance to kill faction leaders before their time. In this case, I am playing Zhenji's Musou Mode and s",
+          "score": 235,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "I've been wrong about Cao Cao? Throughout the years of playing Dynasty warriors I've always been a Wei stan. Xiahou Dun was the first character I played in DW2. With that I always seen Cao Cao as like",
+          "score": 212,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "관우",
+      "name_en": "Guan Yu",
+      "faction": "shu",
+      "tier": 0,
+      "total_mentions": 72,
+      "sentiment_counts": {
+        "positive": 59,
+        "negative": 3,
+        "neutral": 10
+      },
+      "sentiment_score": 78,
+      "weighted_score": 3154,
+      "tier_mentions": [
+        "best",
+        "broken",
+        "strongest",
+        "op"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Guan Yu’s children look amazing in the RoTK games.",
+          "score": 260,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Some western people remember Xiahou Dun as Guan Yu's killer I talked to my friend on the topic of three kingdoms. When we mentioned Xiahou Dun, my friend referred Xiahou Dun as \"the guy that killed Gu",
+          "score": 226,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "제갈량",
+      "name_en": "Zhuge Liang",
+      "faction": "shu",
+      "tier": 0,
+      "total_mentions": 51,
+      "sentiment_counts": {
+        "positive": 45,
+        "negative": 1,
+        "neutral": 5
+      },
+      "sentiment_score": 86,
+      "weighted_score": 1890,
+      "tier_mentions": [
+        "s tier",
+        "op",
+        "best",
+        "weakest",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Just finished a summary video of romance of the three kingdoms and have decided that he is now my GOAT Yea yea Zhao Yun charged the enemy and saved Liu Bei's baby, Zhang Fei screamed so loud a guy die",
+          "score": 103,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Wei Yan Rework With Omega Force mentioning their desire to rework Wei Yan, I would like to see a more accurate portrayal of Wei Yan similar to his ROTK personality: Extremely brash, crude, but very va",
+          "score": 102,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Bromance confirmed. Liu bei and zhuge liang.",
+          "score": 85,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 82,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "조운",
+      "name_en": "Zhao Yun",
+      "faction": "shu",
+      "tier": 0,
+      "total_mentions": 47,
+      "sentiment_counts": {
+        "positive": 43,
+        "negative": 3,
+        "neutral": 1
+      },
+      "sentiment_score": 85,
+      "weighted_score": 2088,
+      "tier_mentions": [
+        "best",
+        "op",
+        "strongest",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Dynasty Warriors themed Magic the Gathering Commander deck Fun fact: Magic The Gathering actually released a set in **1999** called *Portal Three Kingdoms*, based on the Chinese Three Kingdoms period.",
+          "score": 138,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 119,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 1 - Zhao Yun Heya folks! It's your mod boy /u/OdaNobunaga24, here with a new weekly series to hopefully interest and educate you!\n\nThe history-based posts recently on th",
+          "score": 117,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 3 Remaster – In-Depth Demo Gameplay Analysis Alright folks, I’ve gone through the full demo gameplay footage many times and had my PS2 copy of Dynasty Warriors 3 running side by side ",
+          "score": 108,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "동탁",
+      "name_en": "Dong Zhuo",
+      "faction": "other",
+      "tier": 0,
+      "total_mentions": 39,
+      "sentiment_counts": {
+        "positive": 30,
+        "negative": 2,
+        "neutral": 7
+      },
+      "sentiment_score": 72,
+      "weighted_score": 1639,
+      "tier_mentions": [
+        "best",
+        "op",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "DLC Hu Lao Gate has infinite victory possibilities with many reactions: read the text Hu Lao's gate reverse in the DLC has four separate key enemies: Yan Liang, Sun Jian, Cao Cao, and Yuan Shao. He al",
+          "score": 129,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Finally a character upgrade Can we all at least agree on one thing about Dynasty Warriors Origins and how much of a god damn upgrade Dong Zhuo finally got. This man finally looks the part of a fierce ",
+          "score": 98,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "First encounter with Lu Bu actually scared me. I get to “The Assassination of Dong Zhuo”mission, this man had me shook for first time in decades!\n\nFirstly, the cutscene before the escape section with ",
+          "score": 67,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "장비",
+      "name_en": "Zhang Fei",
+      "faction": "shu",
+      "tier": 0,
+      "total_mentions": 34,
+      "sentiment_counts": {
+        "positive": 27,
+        "negative": 0,
+        "neutral": 7
+      },
+      "sentiment_score": 79,
+      "weighted_score": 2019,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Zhang Fei's actor Li Jingfei, of the 1994 Three Kingdoms, has passed away on on November 24. May he Rest in Peace and reunite with his brother.",
+          "score": 200,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "손권",
+      "name_en": "Sun Quan",
+      "faction": "wu",
+      "tier": 0,
+      "total_mentions": 34,
+      "sentiment_counts": {
+        "positive": 31,
+        "negative": 1,
+        "neutral": 2
+      },
+      "sentiment_score": 88,
+      "weighted_score": 906,
+      "tier_mentions": [
+        "best",
+        "broken",
+        "weakest",
+        "op",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 33: Daqiao I'm so used to putting these up late that I feel at a loss for what to put here now that one is actually going up on time. I think that's a bad sign. In othe",
+          "score": 64,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "How do you feel about the personality depictions of the officers in the Dynasty warriors series? I know most officers are very one-note or hyperbolic(ma chao is all about justice or sima zhao is haha ",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "List of weird historical mistakes/portrayals with explanations why I did this at 2 am I will go back and recheck when my brain is working.\n\nXiahou Dun - a badass fighter, in reality, he was incompeten",
+          "score": 46,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "If you think getting this weapon is a nightmare... well, you're not wrong. https://preview.redd.it/0vjnxz40w9ge1.png?width=2560&amp;format=png&amp;auto=webp&amp;s=ad0d1856a1f68fa918d171c6278e95ce77ec5",
+          "score": 43,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "손견",
+      "name_en": "Sun Jian",
+      "faction": "wu",
+      "tier": 0,
+      "total_mentions": 33,
+      "sentiment_counts": {
+        "positive": 27,
+        "negative": 1,
+        "neutral": 5
+      },
+      "sentiment_score": 79,
+      "weighted_score": 1784,
+      "tier_mentions": [
+        "op",
+        "best",
+        "strongest"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Sun Jian, the Potential Man of Dynasty Warriors Am I wrong?",
+          "score": 213,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Dynasty Warriors themed Magic the Gathering Commander deck Fun fact: Magic The Gathering actually released a set in **1999** called *Portal Three Kingdoms*, based on the Chinese Three Kingdoms period.",
+          "score": 138,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DLC Hu Lao Gate has infinite victory possibilities with many reactions: read the text Hu Lao's gate reverse in the DLC has four separate key enemies: Yan Liang, Sun Jian, Cao Cao, and Yuan Shao. He al",
+          "score": 129,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 119,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "원소",
+      "name_en": "Yuan Shao",
+      "faction": "other",
+      "tier": 0,
+      "total_mentions": 31,
+      "sentiment_counts": {
+        "positive": 25,
+        "negative": 2,
+        "neutral": 4
+      },
+      "sentiment_score": 74,
+      "weighted_score": 1851,
+      "tier_mentions": [
+        "best",
+        "op",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DW: Origins: That demo was peak any thoughts? \\-Characters: Despite the only one MC, i feel they started on the right foot introducing him. Thats all i will say as we don't know too much about him. He",
+          "score": 135,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DLC Hu Lao Gate has infinite victory possibilities with many reactions: read the text Hu Lao's gate reverse in the DLC has four separate key enemies: Yan Liang, Sun Jian, Cao Cao, and Yuan Shao. He al",
+          "score": 129,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "주유",
+      "name_en": "Zhou Yu",
+      "faction": "wu",
+      "tier": 0,
+      "total_mentions": 27,
+      "sentiment_counts": {
+        "positive": 20,
+        "negative": 0,
+        "neutral": 7
+      },
+      "sentiment_score": 74,
+      "weighted_score": 2411,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "I’m the English voice of Zhou Yu and Xiahou Yuan Hello Redditors of the Three Kingdoms! \n\nI’ve delayed promotions to be in solidarity with the SAG-AFTRA Interactive Strike, but with the strike now sus",
+          "score": 1272,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Will you ride into hell with Zhou Yu? Happy 25 years of Dynasty Warriors! Thank you to Koei Tecmo and Producer Tomohiko Sho for letting me be the English voice of Zhou Yu in Dynasty Warriors: Origins,",
+          "score": 389,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "I appreciate Zhou Yu being portrayed as being more sinister and expedient in the 1994 ROTK series. I've played most of the Dynasty Warruors games but I don't think that tension between Gongjin and Kon",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 33: Daqiao I'm so used to putting these up late that I feel at a loss for what to put here now that one is actually going up on time. I think that's a bad sign. In othe",
+          "score": 64,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "하후돈",
+      "name_en": "Xiahou Dun",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 25,
+      "sentiment_counts": {
+        "positive": 23,
+        "negative": 1,
+        "neutral": 1
+      },
+      "sentiment_score": 88,
+      "weighted_score": 1575,
+      "tier_mentions": [
+        "broken",
+        "best",
+        "top 10",
+        "op",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Some western people remember Xiahou Dun as Guan Yu's killer I talked to my friend on the topic of three kingdoms. When we mentioned Xiahou Dun, my friend referred Xiahou Dun as \"the guy that killed Gu",
+          "score": 226,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "I've been wrong about Cao Cao? Throughout the years of playing Dynasty warriors I've always been a Wei stan. Xiahou Dun was the first character I played in DW2. With that I always seen Cao Cao as like",
+          "score": 212,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Why Dynasty Warriors 4 is the best. There is so much player strategic flexability, and battle variety, it's friggin awesome!\n\nTo illustrate why DW4 is the best, I'll use an example: The Battle of Xia ",
+          "score": 129,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 119,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "손책",
+      "name_en": "Sun Ce",
+      "faction": "wu",
+      "tier": 0,
+      "total_mentions": 25,
+      "sentiment_counts": {
+        "positive": 22,
+        "negative": 0,
+        "neutral": 3
+      },
+      "sentiment_score": 88,
+      "weighted_score": 641,
+      "tier_mentions": [
+        "strongest",
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 33: Daqiao I'm so used to putting these up late that I feel at a loss for what to put here now that one is actually going up on time. I think that's a bad sign. In othe",
+          "score": 64,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 25 - Sun Ce So I accidentally decided to torture u/XiahouMao over the last week and the torture might be continuing for a while yet. Bless them for putting up with my bu",
+          "score": 56,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Part 3 of Officer Replacements, containing many Officers you probably don't care about! Zhang Lu was known as a Third Generation Celestial Master, instantly meaning that any character fitting this tro",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Honestly, 10/10 game (Second image has my stats) I'm can't express how fun this game was. It truly was a fantastic game, and the juxtupoation to the DW9 fiasco? Let's just say it was worth the wait ha",
+          "score": 39,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "초선",
+      "name_en": "Diao Chan",
+      "faction": "other",
+      "tier": 0,
+      "total_mentions": 22,
+      "sentiment_counts": {
+        "positive": 12,
+        "negative": 1,
+        "neutral": 9
+      },
+      "sentiment_score": 50,
+      "weighted_score": 957,
+      "tier_mentions": [
+        "op",
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Visions of Four Heroes — Three additional playable characters: Zhuhe, Diaochan and an unnamed hero featured at the end of the trailer.\n\n— Among the new weapons shown are a bow and a shengbiao. The pre",
+          "score": 190,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Why Dynasty Warriors 4 is the best. There is so much player strategic flexability, and battle variety, it's friggin awesome!\n\nTo illustrate why DW4 is the best, I'll use an example: The Battle of Xia ",
+          "score": 129,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Bruhh I don't get it I was just gonna make a comment but reddit acting up i guess wouldn't let me \nBut tell me why every single other outfit draft for dw9 diao chan is better than the one they picked.",
+          "score": 63,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "One of the new DLC items gave Halberd an unexpected but crazy buff (Spoilers for the DLC, obviously) I'm back with another weapon tech post; this one will be short, I promise. This one goes out to u/T",
+          "score": 61,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "마초",
+      "name_en": "Ma Chao",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 22,
+      "sentiment_counts": {
+        "positive": 18,
+        "negative": 0,
+        "neutral": 4
+      },
+      "sentiment_score": 82,
+      "weighted_score": 737,
+      "tier_mentions": [
+        "best",
+        "high tier",
+        "worst",
+        "strongest"
+      ],
+      "top_quotes": [
+        {
+          "quote": "They fumbled Wang Yi so bad. I'm not talking about design or her personality or her gameplay. I think she's a badass character. But in terms of the story, they got so much wrong with poor Wang Yi and ",
+          "score": 93,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "They fumbled Wang Yi so bad. I'm not talking about design or her personality or her gameplay. I think she's a badass character. But in terms of the story, they got so much wrong with poor Wang Yi and ",
+          "score": 92,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My attempt at making Lu Meng My favorite wu officer, had to try making him in Wo Long. I'm not sure whether I want the hair up or down and which of the 2 chest pieces to give him, lemme know what you ",
+          "score": 76,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 14 - Ma Chao 3800 words. 20k individual characters. This is, and will probably be for some time, the longest one yet. Good thing we're quarantined! Thanks again to u/Xia",
+          "score": 54,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "How do you feel about the personality depictions of the officers in the Dynasty warriors series? I know most officers are very one-note or hyperbolic(ma chao is all about justice or sima zhao is haha ",
+          "score": 52,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "사마의",
+      "name_en": "Sima Yi",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 21,
+      "sentiment_counts": {
+        "positive": 18,
+        "negative": 1,
+        "neutral": 2
+      },
+      "sentiment_score": 81,
+      "weighted_score": 645,
+      "tier_mentions": [
+        "best",
+        "top 30",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "DWR3 impressions and observations from Taipei Game Show Hello DW sub, \n\n*Processing img 45or2qhufngg1...*\n\nI made post when in line for the Dynasty Warriors 3 Remastered demo at the Taipei Games Show ",
+          "score": 94,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DWR3 impressions and observations from Taipei Game Show Hello DW sub, \n\n*Processing img 45or2qhufngg1...*\n\nI made post when in line for the Dynasty Warriors 3 Remastered demo at the Taipei Games Show ",
+          "score": 93,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "How do you feel about the personality depictions of the officers in the Dynasty warriors series? I know most officers are very one-note or hyperbolic(ma chao is all about justice or sima zhao is haha ",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Three Kingdoms 1994 TV series, Episodes 68-77 English subs released! LINK: [**https://gentlemenofthehan.wordpress.com/2025/04/16/rotk-1994-episodes-68-77-english-subs-release/**](https://gentlemenofth",
+          "score": 49,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 24 - Zhang Chunhua Alcohol poisoning is the reason this one is a tad late; as for whose, I will leave that to your imagination (it wasn't me; I am, however, slightly hun",
+          "score": 42,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "하후연",
+      "name_en": "Xiahou Yuan",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 20,
+      "sentiment_counts": {
+        "positive": 14,
+        "negative": 0,
+        "neutral": 6
+      },
+      "sentiment_score": 70,
+      "weighted_score": 1920,
+      "tier_mentions": [
+        "best",
+        "high tier"
+      ],
+      "top_quotes": [
+        {
+          "quote": "I’m the English voice of Zhou Yu and Xiahou Yuan Hello Redditors of the Three Kingdoms! \n\nI’ve delayed promotions to be in solidarity with the SAG-AFTRA Interactive Strike, but with the strike now sus",
+          "score": 1272,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The next warriors game needs to fix the basic troops I'm sure I'm not the first to say. But I've been playing some of the DW games, 3, 4, 5 and 8xl recently, I've generally been playing the series sin",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "A neat reminder that Dynasty Warriors may be surprisingly realistic when it comes to reflecting the actual status and tactics of Chinese armies during the decline of the Han Dynasty and the Three King",
+          "score": 36,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "조인",
+      "name_en": "Cao Ren",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 20,
+      "sentiment_counts": {
+        "positive": 17,
+        "negative": 0,
+        "neutral": 3
+      },
+      "sentiment_score": 85,
+      "weighted_score": 573,
+      "tier_mentions": [
+        "strongest",
+        "best",
+        "op",
+        "broken",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 79,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Defender of Chencang Hao Zhao My last Wei character for now. Since he’s a defensive general I based him off Cao Ren’d look a little plus an eyepatch cuz maybe he lost an eye like Xiahou Dun. As you ma",
+          "score": 44,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 23 - Cao Ren Done with uni (for now), so I ate a bunch of junk food to celebrate and as a result I was feeling really lazy to put this up. Luckily, I like you guys enoug",
+          "score": 42,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 22 - Hua Xiong Cao Ren's bio will be dummy thicc, and u/XiahouMao was dummy sicc this week so no Cao Ren. I will amend the previous post to mention Hua Xiong and Cao Ren",
+          "score": 41,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "강유",
+      "name_en": "Jiang Wei",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 20,
+      "sentiment_counts": {
+        "positive": 17,
+        "negative": 1,
+        "neutral": 2
+      },
+      "sentiment_score": 80,
+      "weighted_score": 615,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Should the DW games continue to go after Wuzhang Plains (AKA is it a cultural thing)? One of the first questions in Sho-P's DenFami interview was the question of Origin's focus on the pre-Three Kingdo",
+          "score": 69,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The next warriors game needs to fix the basic troops I'm sure I'm not the first to say. But I've been playing some of the DW games, 3, 4, 5 and 8xl recently, I've generally been playing the series sin",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 17 - Deng Ai I try to spend mother's day with my family and u/XiahouMao decides to call me out over Discord smh I'M TRYNA BE A GOOD BOI\n\n***\n\nDeng Ai, styled Shizai, the",
+          "score": 38,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "황개",
+      "name_en": "Huang Gai",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 19,
+      "sentiment_counts": {
+        "positive": 17,
+        "negative": 2,
+        "neutral": 0
+      },
+      "sentiment_score": 79,
+      "weighted_score": 1080,
+      "tier_mentions": [
+        "best",
+        "strongest",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 5 was one of the best titles Dynasty Warriors 5 might be old, but it's probably one of the best.  The soundtrack alone is incredibly amazing and I recommend you look it up on YouTube ",
+          "score": 76,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "장료",
+      "name_en": "Zhang Liao",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 18,
+      "sentiment_counts": {
+        "positive": 18,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 905,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 119,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 82,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 79,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 5 was one of the best titles Dynasty Warriors 5 might be old, but it's probably one of the best.  The soundtrack alone is incredibly amazing and I recommend you look it up on YouTube ",
+          "score": 76,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "장합",
+      "name_en": "Zhang He",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 17,
+      "sentiment_counts": {
+        "positive": 17,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 846,
+      "tier_mentions": [
+        "best",
+        "top 10",
+        "broken",
+        "op"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DWR3 impressions and observations from Taipei Game Show Hello DW sub, \n\n*Processing img 45or2qhufngg1...*\n\nI made post when in line for the Dynasty Warriors 3 Remastered demo at the Taipei Games Show ",
+          "score": 94,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DWR3 impressions and observations from Taipei Game Show Hello DW sub, \n\n*Processing img 45or2qhufngg1...*\n\nI made post when in line for the Dynasty Warriors 3 Remastered demo at the Taipei Games Show ",
+          "score": 93,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Best Officers in DW8XLAccording to a DW Newbie Been 2 weeks. DW8XL is the only one I've played and I'm in love. So in love that I came up with a top 10, coz why not. (Not including Lu Bu for obvious r",
+          "score": 85,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu's 5 Tiger Generals and the 5 Generals of Wei as foils 1. Guan Yu and Zhang Liao: Both are the leaders and most powerful of their respective groups, are honorable warriors, share a close friendship",
+          "score": 51,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "원술",
+      "name_en": "Yuan Shu",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 17,
+      "sentiment_counts": {
+        "positive": 13,
+        "negative": 0,
+        "neutral": 4
+      },
+      "sentiment_score": 76,
+      "weighted_score": 1388,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "I gotta thank this guy Shout out to Yuan Shu, for being the punching bag and experience farming for everything in this game. I was able to get level 101 because of him and his forces. I leveled up all",
+          "score": 304,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Why Dynasty Warriors 4 is the best. There is so much player strategic flexability, and battle variety, it's friggin awesome!\n\nTo illustrate why DW4 is the best, I'll use an example: The Battle of Xia ",
+          "score": 129,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "장각",
+      "name_en": "Zhang Jiao",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 17,
+      "sentiment_counts": {
+        "positive": 7,
+        "negative": 1,
+        "neutral": 9
+      },
+      "sentiment_score": 35,
+      "weighted_score": 630,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Nightowl Q&amp;A/Impressions after 80+ Hours of playing Origins (Vague Spoilers) Nightowl has super early access to the full game and answered some questions. Not going to dump a full transcript but b",
+          "score": 103,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Japanese report noted the return of Qiao sisters had been considered. Link to the article: [https://www.famitsu.com/article/202601/63110](https://www.famitsu.com/article/202601/63110)\n\nIt seems that t",
+          "score": 57,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 26 - Liu Bei (Part 1) Happy 6 Months to the Annals of History Series! This is by far the most engagement the subreddit gets, so I'm super thankful to all of you guys for",
+          "score": 47,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "My Greatest Achievement I have no reason for sharing this other than telling people who will probably understand quite how excited I was to do this, and the fact that no one in the real world really g",
+          "score": 38,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My Greatest Achievement I have no reason for sharing this other than telling people who will probably understand quite how excited I was to do this, and the fact that no one in the real world really g",
+          "score": 37,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "유선",
+      "name_en": "Liu Shan",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 15,
+      "sentiment_counts": {
+        "positive": 13,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 87,
+      "weighted_score": 581,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Liu Bei throwing his kid is not a point in favour of him being a dick I see this all the time when people discuss the history of the 3 Kingdoms; Liu Bei throwing his child at the ground like he just s",
+          "score": 83,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 82,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 79,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Should the DW games continue to go after Wuzhang Plains (AKA is it a cultural thing)? One of the first questions in Sho-P's DenFami interview was the question of Origin's focus on the pre-Three Kingdo",
+          "score": 69,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 19 - Liu Shan Exam crunch time is hitting me hard, sue me. u/XiahouMao and I have something special planned for next week too, so keep an eye out for that...\n\n***\n\nLiu S",
+          "score": 52,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "전위",
+      "name_en": "Dian Wei",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 13,
+      "sentiment_counts": {
+        "positive": 12,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 92,
+      "weighted_score": 477,
+      "tier_mentions": [
+        "best",
+        "top 10",
+        "broken",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Best Officers in DW8XLAccording to a DW Newbie Been 2 weeks. DW8XL is the only one I've played and I'm in love. So in love that I came up with a top 10, coz why not. (Not including Lu Bu for obvious r",
+          "score": 85,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My Greatest Achievement I have no reason for sharing this other than telling people who will probably understand quite how excited I was to do this, and the fact that no one in the real world really g",
+          "score": 38,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My Greatest Achievement I have no reason for sharing this other than telling people who will probably understand quite how excited I was to do this, and the fact that no one in the real world really g",
+          "score": 37,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "위연",
+      "name_en": "Wei Yan",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 13,
+      "sentiment_counts": {
+        "positive": 12,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 92,
+      "weighted_score": 610,
+      "tier_mentions": [
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Wei Yan Rework With Omega Force mentioning their desire to rework Wei Yan, I would like to see a more accurate portrayal of Wei Yan similar to his ROTK personality: Extremely brash, crude, but very va",
+          "score": 102,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "35 Hours in, a review why I believe DW9 is a great game. DW9, without a doubt, the most controversial release of the DW series, even more than DW6. The game is certainly not perfect. It has a ton of f",
+          "score": 80,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "35 Hours in, a review why I believe DW9 is a great game. DW9, without a doubt, the most controversial release of the DW series, even more than DW6. The game is certainly not perfect. It has a ton of f",
+          "score": 78,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "35 Hours in, a review why I believe DW9 is a great game. DW9, without a doubt, the most controversial release of the DW series, even more than DW6. The game is certainly not perfect. It has a ton of f",
+          "score": 76,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Fatal Flaw of a Warrior: Wei Yan's Tragic Indecision. In the intricate and treacherous political landscape of the Three Kingdoms, a single moment of hesitation can unravel a lifetime of loyalty an",
+          "score": 60,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "감녕",
+      "name_en": "Gan Ning",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 13,
+      "sentiment_counts": {
+        "positive": 13,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 489,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 82,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 79,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My attempt at making Lu Meng My favorite wu officer, had to try making him in Wo Long. I'm not sure whether I want the hair up or down and which of the 2 chest pieces to give him, lemme know what you ",
+          "score": 76,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "If you think getting this weapon is a nightmare... well, you're not wrong. https://preview.redd.it/0vjnxz40w9ge1.png?width=2560&amp;format=png&amp;auto=webp&amp;s=ad0d1856a1f68fa918d171c6278e95ce77ec5",
+          "score": 43,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "우금",
+      "name_en": "Yu Jin",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 12,
+      "sentiment_counts": {
+        "positive": 9,
+        "negative": 0,
+        "neutral": 3
+      },
+      "sentiment_score": 75,
+      "weighted_score": 486,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "My Yu Jin in wo long. This being my favorite newer officer, had to attempt it and show him some love.. I was limited, so I decided toake him how I'd imagine he'd look in wo.long while retaining his ba",
+          "score": 139,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 79,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 13 - Yu Jin A Happy Easter to you all! Unfortunately, it was Easter yesterday for us Australians, so I forewent the usual post in favour of getting drunk and eating too ",
+          "score": 31,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "조비",
+      "name_en": "Cao Pi",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 12,
+      "sentiment_counts": {
+        "positive": 10,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 83,
+      "weighted_score": 292,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Cow Cow in DW3 Was anyone else genuinely surprised to later find out that Cao Cao was mispronounced as “Cow Cow” in the early games?\n\nYears ago I was talking to a Chinese man in China about the histor",
+          "score": 81,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "How do you feel about the personality depictions of the officers in the Dynasty warriors series? I know most officers are very one-note or hyperbolic(ma chao is all about justice or sima zhao is haha ",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Some characters need to be buffed... So I've been playing a lot of WO4U, and I am currently in the middle of maxing out every character when I noticed how weak Cao Cao is. Like, I had no troubles leve",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The best characters to be added to Jin in the future. Fair warning; I don't know much about the female cast and haven't selected any to join the roster.\n\n\nI've made a post on who I wanted to see added",
+          "score": 17,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "손상향",
+      "name_en": "Sun Shangxiang",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 12,
+      "sentiment_counts": {
+        "positive": 11,
+        "negative": 1,
+        "neutral": 0
+      },
+      "sentiment_score": 83,
+      "weighted_score": 970,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 183,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "After playing all 3 routes, I can recommend a play order for new players My criteria is storyline &amp; difficulty.\n\nBeing based on the ROTK series, new players who never touched the series may want a",
+          "score": 181,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DWR3 impressions and observations from Taipei Game Show Hello DW sub, \n\n*Processing img 45or2qhufngg1...*\n\nI made post when in line for the Dynasty Warriors 3 Remastered demo at the Taipei Games Show ",
+          "score": 94,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "공손찬",
+      "name_en": "Gongsun Zan",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 12,
+      "sentiment_counts": {
+        "positive": 10,
+        "negative": 1,
+        "neutral": 1
+      },
+      "sentiment_score": 75,
+      "weighted_score": 434,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 1 - Zhao Yun Heya folks! It's your mod boy /u/OdaNobunaga24, here with a new weekly series to hopefully interest and educate you!\n\nThe history-based posts recently on th",
+          "score": 117,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 16 - Zhang He From one Zhang to another, and YIKES this was longer than I thought it would be I'm sorry u/XiahouMao\n\n***\n\nZhang He, styled Junyi, Renowned General! He ha",
+          "score": 49,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 26 - Liu Bei (Part 1) Happy 6 Months to the Annals of History Series! This is by far the most engagement the subreddit gets, so I'm super thankful to all of you guys for",
+          "score": 47,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Demo Strategy to Beat Si Shui Gate Best Strategy: Any Difficulty \n\nPair with Xiahou Dun or run it solo. Doing so will ensure that the bulk of your forces will still be participating in Battle. \n\nStart",
+          "score": 45,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "DW9E Custom Character code drop off Please upvote and share this post so people see if more often, as there is no official way to browse character uploads. If you need/want to get ahold of me, then se",
+          "score": 36,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "정보",
+      "name_en": "Cheng Pu",
+      "faction": "wu",
+      "tier": 2,
+      "total_mentions": 12,
+      "sentiment_counts": {
+        "positive": 11,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 92,
+      "weighted_score": 400,
+      "tier_mentions": [
+        "strongest",
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 22 - Hua Xiong Cao Ren's bio will be dummy thicc, and u/XiahouMao was dummy sicc this week so no Cao Ren. I will amend the previous post to mention Hua Xiong and Cao Ren",
+          "score": 41,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 30: Cheng Pu Dog ate my homework. Shush. Also I found out u/XiahouMao is [definitively a man](https://www.youtube.com/watch?v=-hBLTsiquLY), so that's neat! \n\n***\n\nCheng",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 20 - Han Dang (Not Clickbait) Okay, okay, we'll do it for real this time. I was so amused when the troll post got downvoted less than 5 minutes after going live. I was s",
+          "score": 32,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "여몽",
+      "name_en": "Lu Meng",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 11,
+      "sentiment_counts": {
+        "positive": 9,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 82,
+      "weighted_score": 375,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My attempt at making Lu Meng My favorite wu officer, had to try making him in Wo Long. I'm not sure whether I want the hair up or down and which of the 2 chest pieces to give him, lemme know what you ",
+          "score": 76,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The next warriors game needs to fix the basic troops I'm sure I'm not the first to say. But I've been playing some of the DW games, 3, 4, 5 and 8xl recently, I've generally been playing the series sin",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The next warriors game needs to fix the basic troops I'm sure I'm not the first to say. But I've been playing some of the DW games, 3, 4, 5 and 8xl recently, I've generally been playing the series sin",
+          "score": 35,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Lu Meng's survivability is insane. When you face the Depths of Torment, you get a -5 maximum health penalty each phase - but it's a flat decrease that doesn't account for modifiers as far as I can tel",
+          "score": 30,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "서황",
+      "name_en": "Xu Huang",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 10,
+      "sentiment_counts": {
+        "positive": 10,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 546,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 5 was one of the best titles Dynasty Warriors 5 might be old, but it's probably one of the best.  The soundtrack alone is incredibly amazing and I recommend you look it up on YouTube ",
+          "score": 76,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 5 was one of the best titles Dynasty Warriors 5 might be old, but it's probably one of the best.  The soundtrack alone is incredibly amazing and I recommend you look it up on YouTube ",
+          "score": 75,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu's 5 Tiger Generals and the 5 Generals of Wei as foils 1. Guan Yu and Zhang Liao: Both are the leaders and most powerful of their respective groups, are honorable warriors, share a close friendship",
+          "score": 51,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "노숙",
+      "name_en": "Lu Su",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 10,
+      "sentiment_counts": {
+        "positive": 10,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 404,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 1 - Zhao Yun Heya folks! It's your mod boy /u/OdaNobunaga24, here with a new weekly series to hopefully interest and educate you!\n\nThe history-based posts recently on th",
+          "score": 117,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Three Kingdoms Themed Yugioh Cards New Yugioh Archetype based on characters and events from the Romance of the Three Kingdoms, the Archetype is called \"Senka\". Figured there might be some interest in ",
+          "score": 41,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Honestly, 10/10 game (Second image has my stats) I'm can't express how fun this game was. It truly was a fantastic game, and the juxtupoation to the DW9 fiasco? Let's just say it was worth the wait ha",
+          "score": 39,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 26 - Liu Bei (Part 5 and FINAL) LIU BEI IS FINALLY COMPLETE! Lord bless u/XiahouMao for sticking with this bio for so long, and I can at least promise that you won't ne",
+          "score": 27,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "육손",
+      "name_en": "Lu Xun",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 10,
+      "sentiment_counts": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 4
+      },
+      "sentiment_score": 60,
+      "weighted_score": 557,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Nanman Campaign - DW4XL, Holy Hell I played on Hard mode and this is the first time it’s taken me almost the entire time limit to beat a level, EVER. \n\nBy the end of it it was just me and Lu Xun and I",
+          "score": 175,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Warriors Abyss getting a patch end of July Already discovered a few bugs since the release of Update 4, such as strengthened Imperial Seal not working, and a record of Sin that's supposed to give 20 r",
+          "score": 53,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Mi Zhu, Mi Fang, and Mishi So these are my custom attempts at Mi Zhu, Mi Fang, and Lady Mi who’s name I decided on Mishi. I had to make some quick throw away parents to retain their blood relation sin",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Warriors Abyss getting a patch end of July Already discovered a few bugs since the release of Update 4, such as strengthened Imperial Seal not working, and a record of Sin that's supposed to give 20 r",
+          "score": 52,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "여포의 딸",
+      "name_en": "Lu Lingqi",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 9,
+      "sentiment_counts": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 3
+      },
+      "sentiment_score": 67,
+      "weighted_score": 259,
+      "tier_mentions": [
+        "best",
+        "high tier"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Lu Lingqi Fan Manga: Under the Shadow of my Father #7 Hope everyone had a good week. Here are some more Lingqi fan manga before my Thanksgiving dinner. To anyone who celebrates a nice turkey dinner, H",
+          "score": 94,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Japanese report noted the return of Qiao sisters had been considered. Link to the article: [https://www.famitsu.com/article/202601/63110](https://www.famitsu.com/article/202601/63110)\n\nIt seems that t",
+          "score": 57,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Lu Lingqi Analysis This will be something of a long post, as I do adore Lingqi.\n\nSo someone at Koei was like, \"Hey so we kinda screwed up with Lu Bu in DW6, that was a bit ridi",
+          "score": 24,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Pang De weapon analysis Hello reader. I really like to play as him because 1. He's badass 2. That big ass club. I initially tried to make him play like Ma Chao, sat on horsebac",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Tips to complete empires on Chaos Hey guys just wanted to make a numbered post on tips to make sure you can play the game and win on chaos difficulty or even for beginners to get into it (I just compl",
+          "score": 16,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "사마사",
+      "name_en": "Sima Shi",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 9,
+      "sentiment_counts": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 78,
+      "weighted_score": 314,
+      "tier_mentions": [
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "How do you feel about the personality depictions of the officers in the Dynasty warriors series? I know most officers are very one-note or hyperbolic(ma chao is all about justice or sima zhao is haha ",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "The Annals of History: Episode 24 - Zhang Chunhua Alcohol poisoning is the reason this one is a tad late; as for whose, I will leave that to your imagination (it wasn't me; I am, however, slightly hun",
+          "score": 42,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 29: Wen Yang Gotta love work calls that go for 3 hours! For those wondering why I'm suddenly really bad at putting these up on time, that's my excuse this week. Next ti",
+          "score": 32,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Xin Xianying, Zhong Hui, and Deng Ai Storymode Concept - 6 Stages || Battle of Mt. Xingshi ||\n\n[Background]\n\nIn the year 244 AD, nearly a decade after the death of the great strategist Zhuge Liang, th",
+          "score": 19,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "하후패",
+      "name_en": "Xiahou Ba",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 9,
+      "sentiment_counts": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 78,
+      "weighted_score": 251,
+      "tier_mentions": [
+        "best",
+        "op",
+        "strongest"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Minor Spoilers] Impressions after 12+ hours Disclaimer: English is not my first language so please do pardon any glaring grammatical errors.\n\nLet's preface this write-up by saying that I've been a DW",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 17 - Deng Ai I try to spend mother's day with my family and u/XiahouMao decides to call me out over Discord smh I'M TRYNA BE A GOOD BOI\n\n***\n\nDeng Ai, styled Shizai, the",
+          "score": 38,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 8 - Xiahou Ba Ok, hopefully we should be back to a stable timeslot for these to go up. u/XiahouMao was sass-talking me the other day for being late, forgetting the one t",
+          "score": 26,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Minister of Ceremonies Xiahou Xuan I also find this guy very tragic. His Loyalty cost him everything. I wish he had listened to Xiahou Ba and left for Shu so he could survive. I tried to make him look",
+          "score": 21,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "서서",
+      "name_en": "Xu Shu",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 8,
+      "sentiment_counts": {
+        "positive": 8,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 255,
+      "tier_mentions": [
+        "broken",
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 22 - Hua Xiong Cao Ren's bio will be dummy thicc, and u/XiahouMao was dummy sicc this week so no Cao Ren. I will amend the previous post to mention Hua Xiong and Cao Ren",
+          "score": 41,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 21 - Xu Shu ***EDIT:*** So I didn't initially have an intro for this one because I'm stressed and forgetful, but then someone messaged me and was like \"hey bro, what's u",
+          "score": 27,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Warrior Orochi 5. Also Thoughts on Orochi as a whole I am sure many are tired ot Warriors Orochi posts, though lets face it, they are the best of the series. Looking it up, I have found out that Oroch",
+          "score": 26,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "종회",
+      "name_en": "Zhong Hui",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 8,
+      "sentiment_counts": {
+        "positive": 8,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 194,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 17 - Deng Ai I try to spend mother's day with my family and u/XiahouMao decides to call me out over Discord smh I'M TRYNA BE A GOOD BOI\n\n***\n\nDeng Ai, styled Shizai, the",
+          "score": 38,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Xin Xianying, Zhong Hui, and Deng Ai Storymode Concept - 6 Stages || Battle of Mt. Xingshi ||\n\n[Background]\n\nIn the year 244 AD, nearly a decade after the death of the great strategist Zhuge Liang, th",
+          "score": 19,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 16,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My GF played DW8:XL for the first time and nicknamed all the characters (Part 5 - FINAL) Hey all, been a little while! We decided to take a break between finishing the OG kingdom stories in chronologi",
+          "score": 16,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "등애",
+      "name_en": "Deng Ai",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 8,
+      "sentiment_counts": {
+        "positive": 8,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 234,
+      "tier_mentions": [
+        "best",
+        "broken",
+        "strongest",
+        "top tier",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 17 - Deng Ai I try to spend mother's day with my family and u/XiahouMao decides to call me out over Discord smh I'M TRYNA BE A GOOD BOI\n\n***\n\nDeng Ai, styled Shizai, the",
+          "score": 38,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Difference Guide for Warriors games (DW8 Vs. DW8E, SW4 Vs SW4-II) This guide is designed to help newcomers to the series decide on which game to get, and to more easily stop confusion. Dynasty Warrior",
+          "score": 33,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 29: Wen Yang Gotta love work calls that go for 3 hours! For those wondering why I'm suddenly really bad at putting these up on time, that's my excuse this week. Next ti",
+          "score": 32,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Wang Yuanji Analysis  I felt like the last one was a bit messy, so instead of revising it I'm writing a new one. \n\nWhat do Deng Ai, Lu Bu, Zuo Ci, Cao Ren and Yueying have in c",
+          "score": 21,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "진궁",
+      "name_en": "Chen Gong",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 8,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 5
+      },
+      "sentiment_score": 38,
+      "weighted_score": 391,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Why does Chen Gong seem vilified in Dynasty Warriors? I just started reading Romance of Three Kingdoms and I always assumed that I knew the story based off of Dynasty Warriors. But after getting past ",
+          "score": 84,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What if Lu Bu takes this advice from Chen Gong in ROTK 2010?",
+          "score": 38,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "60 Hours into DW 9 - Thoughts and Opinions (TLDR: Enjoying the Game, but the criticisms are valid). **Some Qualifiers/Disclaimers:**\n\n* I've sank 100+ hours into DW8XLCLE. Pretty much playing the livi",
+          "score": 37,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "60 Hours into DW 9 - Thoughts and Opinions (TLDR: Enjoying the Game, but the criticisms are valid). **Some Qualifiers/Disclaimers:**\n\n* I've sank 100+ hours into DW8XLCLE. Pretty much playing the livi",
+          "score": 35,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "사마소",
+      "name_en": "Sima Zhao",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 8,
+      "sentiment_counts": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 88,
+      "weighted_score": 298,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "How do you feel about the personality depictions of the officers in the Dynasty warriors series? I know most officers are very one-note or hyperbolic(ma chao is all about justice or sima zhao is haha ",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "The Annals of History: Episode 24 - Zhang Chunhua Alcohol poisoning is the reason this one is a tad late; as for whose, I will leave that to your imagination (it wasn't me; I am, however, slightly hun",
+          "score": 42,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Xin Xianying, Zhong Hui, and Deng Ai Storymode Concept - 6 Stages || Battle of Mt. Xingshi ||\n\n[Background]\n\nIn the year 244 AD, nearly a decade after the death of the great strategist Zhuge Liang, th",
+          "score": 19,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The best characters to be added to Jin in the future. Fair warning; I don't know much about the female cast and haven't selected any to join the roster.\n\n\nI've made a post on who I wanted to see added",
+          "score": 17,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "순욱",
+      "name_en": "Xun Yu",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 7,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 1,
+        "neutral": 2
+      },
+      "sentiment_score": 43,
+      "weighted_score": 522,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "I voiced Xun Yu in DW9. What do you want to hear differently if I get to voice him again? What's up everybody,\n\nI think you'll be relieved to know that I've been training, practicing, and working as a",
+          "score": 184,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Warriors Abyss getting a patch end of July Already discovered a few bugs since the release of Update 4, such as strengthened Imperial Seal not working, and a record of Sin that's supposed to give 20 r",
+          "score": 53,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Warriors Abyss getting a patch end of July Already discovered a few bugs since the release of Update 4, such as strengthened Imperial Seal not working, and a record of Sin that's supposed to give 20 r",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "The Annals of History: Episode 16 - Zhang He From one Zhang to another, and YIKES this was longer than I thought it would be I'm sorry u/XiahouMao\n\n***\n\nZhang He, styled Junyi, Renowned General! He ha",
+          "score": 49,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "가후",
+      "name_en": "Jia Xu",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 7,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 3
+      },
+      "sentiment_score": 57,
+      "weighted_score": 300,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 14 - Ma Chao 3800 words. 20k individual characters. This is, and will probably be for some time, the longest one yet. Good thing we're quarantined! Thanks again to u/Xia",
+          "score": 54,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "황충",
+      "name_en": "Huang Zhong",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 7,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 3
+      },
+      "sentiment_score": 57,
+      "weighted_score": 347,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "35 Hours in, a review why I believe DW9 is a great game. DW9, without a doubt, the most controversial release of the DW series, even more than DW6. The game is certainly not perfect. It has a ton of f",
+          "score": 80,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "35 Hours in, a review why I believe DW9 is a great game. DW9, without a doubt, the most controversial release of the DW series, even more than DW6. The game is certainly not perfect. It has a ton of f",
+          "score": 78,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "35 Hours in, a review why I believe DW9 is a great game. DW9, without a doubt, the most controversial release of the DW series, even more than DW6. The game is certainly not perfect. It has a ton of f",
+          "score": 76,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Mi Zhu, Mi Fang, and Mishi So these are my custom attempts at Mi Zhu, Mi Fang, and Lady Mi who’s name I decided on Mishi. I had to make some quick throw away parents to retain their blood relation sin",
+          "score": 52,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "My Progress On Restarting In DW5 &amp;#x200B;\n\nhttps://preview.redd.it/4ioi8yopevf51.png?width=1920&amp;format=png&amp;auto=webp&amp;s=d5e6c68d8908775b2fc269ec465f728b5bb9a991\n\nSo I started over from ",
+          "score": 23,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "태사자",
+      "name_en": "Taishi Ci",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 7,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 2,
+        "neutral": 1
+      },
+      "sentiment_score": 29,
+      "weighted_score": 253,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Forget 'Not changing a character's weapon', which characters SHOULD get a weapon change? I've always seen people complain about a character getting their weapon changed because 'they're previous one w",
+          "score": 35,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What if they made a Dynasty Warriors racing game? (Not serious, but kinda long) So, I was playing MarioKart earlier, and thought, \"What if we take our favorite semi-historical time period of war and d",
+          "score": 33,
+          "sentiment": "negative"
+        },
+        {
+          "quote": "What if they made a Dynasty Warriors racing game? (Not serious, but kinda long) So, I was playing MarioKart earlier, and thought, \"What if we take our favorite semi-historical time period of war and d",
+          "score": 33,
+          "sentiment": "negative"
+        },
+        {
+          "quote": "My Progress On Restarting In DW5 &amp;#x200B;\n\nhttps://preview.redd.it/4ioi8yopevf51.png?width=1920&amp;format=png&amp;auto=webp&amp;s=d5e6c68d8908775b2fc269ec465f728b5bb9a991\n\nSo I started over from ",
+          "score": 23,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "유표",
+      "name_en": "Liu Biao",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 7,
+      "sentiment_counts": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 251,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 25 - Sun Ce So I accidentally decided to torture u/XiahouMao over the last week and the torture might be continuing for a while yet. Bless them for putting up with my bu",
+          "score": 56,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 19 - Liu Shan Exam crunch time is hitting me hard, sue me. u/XiahouMao and I have something special planned for next week too, so keep an eye out for that...\n\n***\n\nLiu S",
+          "score": 52,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Part 3 of Officer Replacements, containing many Officers you probably don't care about! Zhang Lu was known as a Third Generation Celestial Master, instantly meaning that any character fitting this tro",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 30: Cheng Pu Dog ate my homework. Shush. Also I found out u/XiahouMao is [definitively a man](https://www.youtube.com/watch?v=-hBLTsiquLY), so that's neat! \n\n***\n\nCheng",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 20 - Han Dang (Not Clickbait) Okay, okay, we'll do it for real this time. I was so amused when the troll post got downvoted less than 5 minutes after going live. I was s",
+          "score": 32,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "축융",
+      "name_en": "Zhu Rong",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 7,
+      "sentiment_counts": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 86,
+      "weighted_score": 133,
+      "tier_mentions": [
+        "top 10",
+        "broken",
+        "best",
+        "op",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Best Officers in DW8XLAccording to a DW Newbie Been 2 weeks. DW8XL is the only one I've played and I'm in love. So in love that I came up with a top 10, coz why not. (Not including Lu Bu for obvious r",
+          "score": 85,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "This right here This right here is Makoshi after swearing he was going to be something someday he finally found solace in Zhang Lu’s kingdom 200AD he spent the first few months learning about the king",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Least Favorite Character? Hey all, I just wanted to ask who, in your opinions, is your, or are your least favorite characters? I am talking primarily about how Koei adapts them from the book, and not ",
+          "score": 16,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "곽가",
+      "name_en": "Guo Jia",
+      "faction": "wei",
+      "tier": 0,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 2,
+        "neutral": 0
+      },
+      "sentiment_score": 33,
+      "weighted_score": 357,
+      "tier_mentions": [
+        "op",
+        "strongest",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 119,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Terrible Character Never Again. Currently trying to complete Hidden Traversal 6 with every Wei character, so far this guy has by far given me the most trouble, taking 5 tries for him to complete a run",
+          "score": 28,
+          "sentiment": "negative"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Zuo Ci Analysis Zuo Ci is probably the closest we'll get to actual 'God mode' in this game. Does it make sense that here's a character who nobody knows who the fuck he is, and ",
+          "score": 17,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "악진",
+      "name_en": "Yue Jin",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 5,
+        "negative": 1,
+        "neutral": 0
+      },
+      "sentiment_score": 67,
+      "weighted_score": 334,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu's 5 Tiger Generals and the 5 Generals of Wei as foils 1. Guan Yu and Zhang Liao: Both are the leaders and most powerful of their respective groups, are honorable warriors, share a close friendship",
+          "score": 51,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu's 5 Tiger Generals and the 5 Generals of Wei as foils 1. Guan Yu and Zhang Liao: Both are the leaders and most powerful of their respective groups, are honorable warriors, share a close friendship",
+          "score": 50,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Terrible Character Never Again. Currently trying to complete Hidden Traversal 6 with every Wei character, so far this guy has by far given me the most trouble, taking 5 tries for him to complete a run",
+          "score": 28,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "name_kr": "방통",
+      "name_en": "Pang Tong",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 5,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 83,
+      "weighted_score": 264,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "PSA: Unlocking Unique Horses - Red Hare: Unlock by completing the story modes of Dong Zhuo, Lu Bu, and Guan Yu\n- Hex Mark: Unlock by completing the story modes of Liu Bei and Pang Tong\n- Shadow Runner",
+          "score": 61,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Quality of life additions that Abyss needs. I'll start with the obvious one, being able to purchase character levels with karma embers. Grinding for traversal 6 is a slog right now, so maybe 500 ember",
+          "score": 18,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "마속",
+      "name_en": "Ma Su",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 147,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Characters to \"Complete\" the DW Roster I know that DW has a large roster now with a handful of characters who are seemingly wasted, however, I do not believe that means that the playable character sel",
+          "score": 30,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Characters to \"Complete\" the DW Roster I know that DW has a large roster now with a handful of characters who are seemingly wasted, however, I do not believe that means that the playable character sel",
+          "score": 30,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Characters to \"Complete\" the DW Roster I know that DW has a large roster now with a handful of characters who are seemingly wasted, however, I do not believe that means that the playable character sel",
+          "score": 29,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Road to DW5 100% Update 3: Can anybody provide me with a less tedious challenge!? So while I was preparing for Liu Bei's musou mode I thought to myself \"I dont want to go searching for good weapons ac",
+          "score": 20,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Liu Bei's Forces - Shu Which officer would you like to be Playable Officer in the next DW10?\n\nHere are my prediction for Shu officer. I will try to break down",
+          "score": 19,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "주태",
+      "name_en": "Zhou Tai",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 254,
+      "tier_mentions": [
+        "best",
+        "top 10",
+        "broken"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Best Officers in DW8XLAccording to a DW Newbie Been 2 weeks. DW8XL is the only one I've played and I'm in love. So in love that I came up with a top 10, coz why not. (Not including Lu Bu for obvious r",
+          "score": 85,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 21 - Xu Shu ***EDIT:*** So I didn't initially have an intro for this one because I'm stressed and forgetful, but then someone messaged me and was like \"hey bro, what's u",
+          "score": 27,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "맹획",
+      "name_en": "Meng Huo",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 5,
+        "negative": 1,
+        "neutral": 0
+      },
+      "sentiment_score": 67,
+      "weighted_score": 104,
+      "tier_mentions": [
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Difference Guide for Warriors games (DW8 Vs. DW8E, SW4 Vs SW4-II) This guide is designed to help newcomers to the series decide on which game to get, and to more easily stop confusion. Dynasty Warrior",
+          "score": 33,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "This right here This right here is Makoshi after swearing he was going to be something someday he finally found solace in Zhang Lu’s kingdom 200AD he spent the first few months learning about the king",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The best characters to be added to Jin in the future. Fair warning; I don't know much about the female cast and haven't selected any to join the roster.\n\n\nI've made a post on who I wanted to see added",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Bizarre thing in ROTK XIV I found which I can't think of a logical reason for it I noticed this when I was toying around with doing an early Nanman campaign.  Basically make a CC Nanman lord in Yunnan",
+          "score": 12,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "왕평",
+      "name_en": "Wang Ping",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 6,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 146,
+      "tier_mentions": [
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Characters to \"Complete\" the DW Roster I know that DW has a large roster now with a handful of characters who are seemingly wasted, however, I do not believe that means that the playable character sel",
+          "score": 30,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Characters to \"Complete\" the DW Roster I know that DW has a large roster now with a handful of characters who are seemingly wasted, however, I do not believe that means that the playable character sel",
+          "score": 30,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Characters to \"Complete\" the DW Roster I know that DW has a large roster now with a handful of characters who are seemingly wasted, however, I do not believe that means that the playable character sel",
+          "score": 29,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Liu Bei's Forces - Shu Which officer would you like to be Playable Officer in the next DW10?\n\nHere are my prediction for Shu officer. I will try to break down",
+          "score": 19,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Liu Bei's Forces - Shu Which officer would you like to be Playable Officer in the next DW10?\n\nHere are my prediction for Shu officer. I will try to break down",
+          "score": 19,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "관평",
+      "name_en": "Guan Ping",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 6,
+      "sentiment_counts": {
+        "positive": 5,
+        "negative": 1,
+        "neutral": 0
+      },
+      "sentiment_score": 67,
+      "weighted_score": 240,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 32: Guan Ping Unlike previous instalments, this one is late for a happier reason, as a family member recently got married! I've been busy celebrating as a result, so I ",
+          "score": 41,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Guan Suo and Bao Sanniang were okay characters that got leapfrogged in relevancy by better additions to Shu It’s something of a meme that the Guan clan has way too many people in it in these games rel",
+          "score": 23,
+          "sentiment": "negative"
+        },
+        {
+          "quote": "Road to DW5 100% Update 3: Can anybody provide me with a less tedious challenge!? So while I was preparing for Liu Bei's musou mode I thought to myself \"I dont want to go searching for good weapons ac",
+          "score": 20,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Liao Hua Storymode Concept (Featuring Guan Yu, Guan Ping, and Zhou Cang) - 7 Stages || Skirmish at the Five Gates ||\n\n\n[Background]\n\n\nIn the year 200 AD, the warlords Cao Cao and Yuan Shao concluded t",
+          "score": 13,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "법정",
+      "name_en": "Fa Zheng",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 5,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 80,
+      "weighted_score": 78,
+      "tier_mentions": [
+        "op",
+        "strongest"
+      ],
+      "top_quotes": [
+        {
+          "quote": "My Experiences 'Hacking' Dynasty Tactics and Kessen 3 Not sure if anyone will care but I thought I'd share some of my experiences 'hacking' these games (using Cheat Engine).\n\nLet's start with Kessen 3",
+          "score": 23,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Zuo Ci Analysis Zuo Ci is probably the closest we'll get to actual 'God mode' in this game. Does it make sense that here's a character who nobody knows who the fuck he is, and ",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 16,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 15,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "대교",
+      "name_en": "Da Qiao",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 5,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 80,
+      "weighted_score": 313,
+      "tier_mentions": [
+        "op",
+        "strongest",
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Nanman Campaign - DW4XL, Holy Hell I played on Hard mode and this is the first time it’s taken me almost the entire time limit to beat a level, EVER. \n\nBy the end of it it was just me and Lu Xun and I",
+          "score": 175,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History - Episode 33: Daqiao I'm so used to putting these up late that I feel at a loss for what to put here now that one is actually going up on time. I think that's a bad sign. In othe",
+          "score": 64,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Zuo Ci Analysis Zuo Ci is probably the closest we'll get to actual 'God mode' in this game. Does it make sense that here's a character who nobody knows who the fuck he is, and ",
+          "score": 17,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "소교",
+      "name_en": "Xiao Qiao",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 5,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 80,
+      "weighted_score": 100,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Difference Guide for Warriors games (DW8 Vs. DW8E, SW4 Vs SW4-II) This guide is designed to help newcomers to the series decide on which game to get, and to more easily stop confusion. Dynasty Warrior",
+          "score": 33,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Xiao Qiao Analysis  Xiao Qiao is my second favourite (currently favourite) character to play. She's great fun, absolutely charming and cute as a button. She's So cute! Xiao Qia",
+          "score": 18,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Xiao Qiao Analysis  Xiao Qiao is my second favourite (currently favourite) character to play. She's great fun, absolutely charming and cute as a button. She's So cute! Xiao Qia",
+          "score": 16,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "제갈탄",
+      "name_en": "Zhuge Dan",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 5,
+      "sentiment_counts": {
+        "positive": 5,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 130,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Should the DW games continue to go after Wuzhang Plains (AKA is it a cultural thing)? One of the first questions in Sho-P's DenFami interview was the question of Origin's focus on the pre-Three Kingdo",
+          "score": 69,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 16,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My GF played DW8:XL for the first time and nicknamed all the characters (Part 5 - FINAL) Hey all, been a little while! We decided to take a break between finishing the OG kingdom stories in chronologi",
+          "score": 16,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 15,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What's up with the Zhuge Dan hate in Jin? Yeah I just don't get it. I played through every Jin route (DW8XL:CE) and stage and I just don't understand it. I read his bio, Jia Chong's, and Sima Zhao's a",
+          "score": 14,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "정봉",
+      "name_en": "Ding Feng",
+      "faction": "wu",
+      "tier": 2,
+      "total_mentions": 5,
+      "sentiment_counts": {
+        "positive": 5,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 111,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "List of weird historical mistakes/portrayals with explanations why I did this at 2 am I will go back and recheck when my brain is working.\n\nXiahou Dun - a badass fighter, in reality, he was incompeten",
+          "score": 46,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Warriors Abyss Character Proposal: Wu Edition So something I noticed while brainstorming some of these is that it appears *every character's unique tactic is unique*, meaning no two heroes have the sa",
+          "score": 29,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 16,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Sun Jian's Forces - Sun Ce's Forces - Wu (Sun Quan - Sun Hao) The problem within Wu is one of the most noticeable bulk in roster than other kingdom. Within th",
+          "score": 15,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "관색",
+      "name_en": "Guan Suo",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 5,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 1,
+        "neutral": 1
+      },
+      "sentiment_score": 40,
+      "weighted_score": 223,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 82,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "What If Mi Fang &amp; Zang Ba Were Added to DW7 Instead of Guan Suo &amp; Bao Sanniang? (#1 - Mi Fang) **SHORT VERSION / TLDR**\n\n○ Mi Fang is characterized as a young, reckless warrior with an intense",
+          "score": 79,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Difference Guide for Warriors games (DW8 Vs. DW8E, SW4 Vs SW4-II) This guide is designed to help newcomers to the series decide on which game to get, and to more easily stop confusion. Dynasty Warrior",
+          "score": 33,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Guan Suo and Bao Sanniang were okay characters that got leapfrogged in relevancy by better additions to Shu It’s something of a meme that the Guan clan has way too many people in it in these games rel",
+          "score": 23,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "name_kr": "화타",
+      "name_en": "Hua Tuo",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 4,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 50,
+      "weighted_score": 51,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Finally got Zuo Ci's Supreme Book of Magic in ROTK 3 During my Liu Shan run for the game, during the late game Zuo Ci actually came and gave me the book. I actually haven't gotten it before until now.",
+          "score": 20,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Finally got Zuo Ci's Supreme Book of Magic in ROTK 3 During my Liu Shan run for the game, during the late game Zuo Ci actually came and gave me the book. I actually haven't gotten it before until now.",
+          "score": 19,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "안량",
+      "name_en": "Yan Liang",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 4,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 75,
+      "weighted_score": 253,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "DLC Hu Lao Gate has infinite victory possibilities with many reactions: read the text Hu Lao's gate reverse in the DLC has four separate key enemies: Yan Liang, Sun Jian, Cao Cao, and Yuan Shao. He al",
+          "score": 129,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 16 - Zhang He From one Zhang to another, and YIKES this was longer than I thought it would be I'm sorry u/XiahouMao\n\n***\n\nZhang He, styled Junyi, Renowned General! He ha",
+          "score": 49,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My custom Lady Liu for Yuan Shao’s forces. So I saw someone else’s post where they posted their Lady Liu and it inspired me to post some of my officer creations. I originally had her with Yuan Shu’s r",
+          "score": 43,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Sons of Yuan Shao Hey guys, still creating caws. I wanted to make them close to their total war appearances but once again the armor options are too limited although im pretty happy how Tan turned out",
+          "score": 32,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "문추",
+      "name_en": "Wen Chou",
+      "faction": "other",
+      "tier": 1,
+      "total_mentions": 4,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 75,
+      "weighted_score": 241,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 1 - Zhao Yun Heya folks! It's your mod boy /u/OdaNobunaga24, here with a new weekly series to hopefully interest and educate you!\n\nThe history-based posts recently on th",
+          "score": 117,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 16 - Zhang He From one Zhang to another, and YIKES this was longer than I thought it would be I'm sorry u/XiahouMao\n\n***\n\nZhang He, styled Junyi, Renowned General! He ha",
+          "score": 49,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My custom Lady Liu for Yuan Shao’s forces. So I saw someone else’s post where they posted their Lady Liu and it inspired me to post some of my officer creations. I originally had her with Yuan Shu’s r",
+          "score": 43,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Sons of Yuan Shao Hey guys, still creating caws. I wanted to make them close to their total war appearances but once again the armor options are too limited although im pretty happy how Tan turned out",
+          "score": 32,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "곽회",
+      "name_en": "Guo Huai",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 4,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 68,
+      "tier_mentions": [
+        "op",
+        "strongest",
+        "best",
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Xin Xianying, Zhong Hui, and Deng Ai Storymode Concept - 6 Stages || Battle of Mt. Xingshi ||\n\n[Background]\n\nIn the year 244 AD, nearly a decade after the death of the great strategist Zhuge Liang, th",
+          "score": 19,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Zuo Ci Analysis Zuo Ci is probably the closest we'll get to actual 'God mode' in this game. Does it make sense that here's a character who nobody knows who the fuck he is, and ",
+          "score": 17,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My GF played DW8:XL for the first time and nicknamed all the characters (Part 5 - FINAL) Hey all, been a little while! We decided to take a break between finishing the OG kingdom stories in chronologi",
+          "score": 16,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Least Favorite Character? Hey all, I just wanted to ask who, in your opinions, is your, or are your least favorite characters? I am talking primarily about how Koei adapts them from the book, and not ",
+          "score": 16,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "사마염",
+      "name_en": "Sima Yan",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 4,
+      "sentiment_counts": {
+        "positive": 4,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 238,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Defender of Chencang Hao Zhao My last Wei character for now. Since he’s a defensive general I based him off Cao Ren’d look a little plus an eyepatch cuz maybe he lost an eye like Xiahou Dun. As you ma",
+          "score": 44,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Part 3 of Officer Replacements, containing many Officers you probably don't care about! Zhang Lu was known as a Third Generation Celestial Master, instantly meaning that any character fitting this tro",
+          "score": 40,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The best characters to be added to Jin in the future. Fair warning; I don't know much about the female cast and haven't selected any to join the roster.\n\n\nI've made a post on who I wanted to see added",
+          "score": 17,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "방덕",
+      "name_en": "Pang De",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 3,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 58,
+      "tier_mentions": [
+        "high tier"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Let's talk about Zhang Liao's weapon(s) We all know Zhang Liao, that needs no introduction, but the weirdest thing to me about him is his weapon(s). He's only changed it once in DW6 &amp; its been the",
+          "score": 21,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Road to DW5 100% Update 3: Can anybody provide me with a less tedious challenge!? So while I was preparing for Liu Bei's musou mode I thought to myself \"I dont want to go searching for good weapons ac",
+          "score": 20,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "[Dynasty Warriors 8 XL] Pang De weapon analysis Hello reader. I really like to play as him because 1. He's badass 2. That big ass club. I initially tried to make him play like Ma Chao, sat on horsebac",
+          "score": 17,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "순유",
+      "name_en": "Xun You",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 3,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 194,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Everything We Know About Dynasty Warriors: Origins Dynasty Warriors: Origins is the next generation of Dynasty Warriors combat. Coming off of a tepid Dynasty Warriors 9 and 9: Empires, this entry seek",
+          "score": 123,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Shu characters Since Origins spends a lot of time building up the early era of the Three Kingdoms rather then a single stage on the Yellow Turbans, Dong Zhuo and the early foundations, siding with Shu",
+          "score": 70,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "마등",
+      "name_en": "Ma Teng",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 3,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 103,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 14 - Ma Chao 3800 words. 20k individual characters. This is, and will probably be for some time, the longest one yet. Good thing we're quarantined! Thanks again to u/Xia",
+          "score": 54,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "ROTK14 added a fictional scenario I haven't seen in previous ROTKs, about Dong Cheng of all people Basically, when Liu Bei and Dong Cheng get the Imperial order to kill Cao Cao, in this timeline they ",
+          "score": 35,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Alternate Dynasty Warriors where YOU make the characters So I am a big fan of DW and have always wanted to make my own three kingdoms, including more characters for factions like: \nYuan Shao, Gongsun ",
+          "score": 14,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "비의",
+      "name_en": "Fei Yi",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 3,
+      "sentiment_counts": {
+        "positive": 3,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 37,
+      "tier_mentions": [
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Xin Xianying, Zhong Hui, and Deng Ai Storymode Concept - 6 Stages || Battle of Mt. Xingshi ||\n\n[Background]\n\nIn the year 244 AD, nearly a decade after the death of the great strategist Zhuge Liang, th",
+          "score": 19,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "허저",
+      "name_en": "Xu Chu",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 84,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 16 - Zhang He From one Zhang to another, and YIKES this was longer than I thought it would be I'm sorry u/XiahouMao\n\n***\n\nZhang He, styled Junyi, Renowned General! He ha",
+          "score": 49,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Forget 'Not changing a character's weapon', which characters SHOULD get a weapon change? I've always seen people complain about a character getting their weapon changed because 'they're previous one w",
+          "score": 35,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "문앙",
+      "name_en": "Wen Yang",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 48,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History - Episode 29: Wen Yang Gotta love work calls that go for 3 hours! For those wondering why I'm suddenly really bad at putting these up on time, that's my excuse this week. Next ti",
+          "score": 32,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "My GF played DW8:XL for the first time and nicknamed all the characters (Part 5 - FINAL) Hey all, been a little while! We decided to take a break between finishing the OG kingdom stories in chronologi",
+          "score": 16,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "마량",
+      "name_en": "Ma Liang",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 38,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Liu Bei's Forces - Shu Which officer would you like to be Playable Officer in the next DW10?\n\nHere are my prediction for Shu officer. I will try to break down",
+          "score": 19,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Dynasty Warriors 10 Wishlist/Prediction : Liu Bei's Forces - Shu Which officer would you like to be Playable Officer in the next DW10?\n\nHere are my prediction for Shu officer. I will try to break down",
+          "score": 19,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "이엄",
+      "name_en": "Li Yan",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 2
+      },
+      "sentiment_score": 0,
+      "weighted_score": 59,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Li Yan Co-Regent of Han \nI’m not a very creative person so i tried to make him look like his ROTK portrait I think it came out ok maybe ill switch out the headpiece. I’m gonna do Liu Feng last the. Mo",
+          "score": 30,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Li Yan Co-Regent of Han \nI’m not a very creative person so i tried to make him look like his ROTK portrait I think it came out ok maybe ill switch out the headpiece. I’m gonna do Liu Feng last the. Mo",
+          "score": 29,
+          "sentiment": "neutral"
+        }
+      ]
+    },
+    {
+      "name_kr": "종요",
+      "name_en": "Zhong Yao",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 112,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History - Episode 34: Zhong Hui WE BACK BOIZ N GURLZ\n\nLife has a tendency of getting in the way sometimes, doesn't it? It's fine, how late could we be?\n\n[checks notes]\n\nOK LOOK AT LEAST ",
+          "score": 58,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "The Annals of History: Episode 14 - Ma Chao 3800 words. 20k individual characters. This is, and will probably be for some time, the longest one yet. Good thing we're quarantined! Thanks again to u/Xia",
+          "score": 54,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "맹달",
+      "name_en": "Meng Da",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 148,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Liu Bei throwing his kid is not a point in favour of him being a dick I see this all the time when people discuss the history of the 3 Kingdoms; Liu Bei throwing his child at the ground like he just s",
+          "score": 83,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "Lesser known warriors of the three kingdoms #4 Meng Da",
+          "score": 65,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "육항",
+      "name_en": "Lu Kang",
+      "faction": "wu",
+      "tier": 2,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 31,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "What do you think about aging being added in the Dynasty Warriors series? I've been a huge fan of the RoTK series and DW series for quite a while now, and one addition that I really enjoyed that was a",
+          "score": 14,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "노식",
+      "name_en": "Lu Zhi",
+      "faction": "other",
+      "tier": 2,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 0,
+        "negative": 1,
+        "neutral": 1
+      },
+      "sentiment_score": -50,
+      "weighted_score": 62,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 26 - Liu Bei (Part 1) Happy 6 Months to the Annals of History Series! This is by far the most engagement the subreddit gets, so I'm super thankful to all of you guys for",
+          "score": 47,
+          "sentiment": "neutral"
+        },
+        {
+          "quote": "Yellow Turban Expansion Pack P2: The He Jin Coalition Force **He Jin** was an interesting one to make a design for. For someone presented as the Grand General against the Yellow Turbans, He Jin is rar",
+          "score": 15,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "name_kr": "한수",
+      "name_en": "Han Sui",
+      "faction": "other",
+      "tier": 2,
+      "total_mentions": 2,
+      "sentiment_counts": {
+        "positive": 2,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 89,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 14 - Ma Chao 3800 words. 20k individual characters. This is, and will probably be for some time, the longest one yet. Good thing we're quarantined! Thanks again to u/Xia",
+          "score": 54,
+          "sentiment": "positive"
+        },
+        {
+          "quote": "ROTK14 added a fictional scenario I haven't seen in previous ROTKs, about Dong Cheng of all people Basically, when Liu Bei and Dong Cheng get the Imperial order to kill Cao Cao, in this timeline they ",
+          "score": 35,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "장포",
+      "name_en": "Zhang Bao",
+      "faction": "shu",
+      "tier": 1,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 0,
+        "negative": 1,
+        "neutral": 0
+      },
+      "sentiment_score": -100,
+      "weighted_score": 15,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Yellow Turban Expansion Pack P2: The He Jin Coalition Force **He Jin** was an interesting one to make a design for. For someone presented as the Grand General against the Yellow Turbans, He Jin is rar",
+          "score": 15,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "name_kr": "감택",
+      "name_en": "Kan Ze",
+      "faction": "wu",
+      "tier": 1,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 5,
+      "tier_mentions": [],
+      "top_quotes": []
+    },
+    {
+      "name_kr": "조홍",
+      "name_en": "Cao Hong",
+      "faction": "wei",
+      "tier": 1,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 20,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Road to DW5 100% Update 3: Can anybody provide me with a less tedious challenge!? So while I was preparing for Liu Bei's musou mode I thought to myself \"I dont want to go searching for good weapons ac",
+          "score": 20,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "조진",
+      "name_en": "Cao Zhen",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 26,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 8 - Xiahou Ba Ok, hopefully we should be back to a stable timeslot for these to go up. u/XiahouMao was sass-talking me the other day for being late, forgetting the one t",
+          "score": 26,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "조예",
+      "name_en": "Cao Rui",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 3,
+      "tier_mentions": [
+        "best"
+      ],
+      "top_quotes": []
+    },
+    {
+      "name_kr": "진태",
+      "name_en": "Chen Tai",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 44,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Defender of Chencang Hao Zhao My last Wei character for now. Since he’s a defensive general I based him off Cao Ren’d look a little plus an eyepatch cuz maybe he lost an eye like Xiahou Dun. As you ma",
+          "score": 44,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "학소",
+      "name_en": "Hao Zhao",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 44,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "Defender of Chencang Hao Zhao My last Wei character for now. Since he’s a defensive general I based him off Cao Ren’d look a little plus an eyepatch cuz maybe he lost an eye like Xiahou Dun. As you ma",
+          "score": 44,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "견초",
+      "name_en": "Qian Zhao",
+      "faction": "wei",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 117,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 1 - Zhao Yun Heya folks! It's your mod boy /u/OdaNobunaga24, here with a new weekly series to hopefully interest and educate you!\n\nThe history-based posts recently on th",
+          "score": 117,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "마대",
+      "name_en": "Ma Dai",
+      "faction": "shu",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 19,
+      "tier_mentions": [
+        "worst"
+      ],
+      "top_quotes": [
+        {
+          "quote": "Xin Xianying, Zhong Hui, and Deng Ai Storymode Concept - 6 Stages || Battle of Mt. Xingshi ||\n\n[Background]\n\nIn the year 244 AD, nearly a decade after the death of the great strategist Zhuge Liang, th",
+          "score": 19,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "name_kr": "서성",
+      "name_en": "Xu Sheng",
+      "faction": "wu",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 5,
+      "tier_mentions": [],
+      "top_quotes": []
+    },
+    {
+      "name_kr": "주환",
+      "name_en": "Zhu Huan",
+      "faction": "wu",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 0
+      },
+      "sentiment_score": 100,
+      "weighted_score": 5,
+      "tier_mentions": [],
+      "top_quotes": []
+    },
+    {
+      "name_kr": "황보숭",
+      "name_en": "Huangfu Song",
+      "faction": "other",
+      "tier": 2,
+      "total_mentions": 1,
+      "sentiment_counts": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 1
+      },
+      "sentiment_score": 0,
+      "weighted_score": 47,
+      "tier_mentions": [],
+      "top_quotes": [
+        {
+          "quote": "The Annals of History: Episode 26 - Liu Bei (Part 1) Happy 6 Months to the Annals of History Series! This is by far the most engagement the subreddit gets, so I'm super thankful to all of you guys for",
+          "score": 47,
+          "sentiment": "neutral"
+        }
+      ]
+    }
+  ]
+}

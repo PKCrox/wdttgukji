@@ -61,3 +61,21 @@
 
 ## EN Wikipedia
 Lady Zhurong, sometimes referred to as Madam Zhurong, is a fictional character in the 14th-century Chinese historical novel Romance of the Three Kingdoms. She is the wife of the Nanman chieftain Meng Huo, who rules the lands in the Nanzhong region of the state of Shu Han during the Three Kingdoms period of China. She claims descent from the Chinese fire deity Zhurong, from whom she acquires her na
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통61 무85 지28 정22 매74
+rotk11: 통74 무85 지29 정24 매74
+rotk12: 통74 무85 지29 정24 매?
+
+## 커뮤니티 평가
+감정점수: 86, 언급: undefined회
+키워드: 

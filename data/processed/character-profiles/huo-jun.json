@@ -1,0 +1,116 @@
+{
+  "name_kr": "곽준",
+  "name_en": "Huo Jun",
+  "name_cn": "霍峻",
+  "courtesy_kr": "중막",
+  "courtesy_cn": "仲邈",
+  "faction": "shu",
+  "tier": 2,
+  "role": "가맹관 수비",
+  "stats": {
+    "leadership": 80,
+    "war": 66,
+    "intelligence": 73,
+    "politics": 62,
+    "charisma": 70,
+    "total": 351,
+    "birth": 178,
+    "death": 217
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 76,
+      "war": 65,
+      "intelligence": 71,
+      "politics": 64,
+      "charisma": 70
+    },
+    "rotk11": {
+      "leadership": 80,
+      "war": 66,
+      "intelligence": 73,
+      "politics": 62,
+      "charisma": 70
+    },
+    "rotk12": {
+      "leadership": 73,
+      "war": 66,
+      "intelligence": 73,
+      "politics": 62
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 178–217",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Elder Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Huo Du"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Huo Yi"
+        }
+      ],
+      "ranks": [
+        "General of the Gentlemen of the Household",
+        "Governor of Zitong",
+        "Major-General"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.046Z"
+}

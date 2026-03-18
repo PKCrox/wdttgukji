@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "촉한 2대 황제, 아두",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 3,
+      "war": 5,
+      "intelligence": 9,
+      "politics": 4,
+      "charisma": 64
+    },
+    "rotk12": {
+      "leadership": 3,
+      "war": 5,
+      "intelligence": 9,
+      "politics": 4
+    }
+  },
   "novel_presence": {
     "first_chapter": 34,
     "last_chapter": 120,
@@ -34,7 +49,150 @@
       "sections": {
         "Introduction": "劉禅（）（禅又音禅（），207年—271年），字公嗣，又字升之，幼名阿斗。漢昭烈帝劉備之子，蜀漢最後一位皇帝。陳壽著《三國志》稱其為後主，十六国时期的汉赵政权諡其为孝懷皇帝，史称漢懷帝或蜀漢後主。劉禪在位達41年（223年－263年），是整个三國時期在位時間最長的君主。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 207–271",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Bei"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Gan"
+        },
+        {
+          "relation": "member",
+          "name": "Wives"
+        },
+        {
+          "relation": "member",
+          "name": "Empress Zhang"
+        },
+        {
+          "relation": "member",
+          "name": "Brother-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Yong"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Li"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Xuan"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Yao"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Cong"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Zan"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Chen"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Xun"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Qian"
+        }
+      ],
+      "ranks": [
+        "Prince of Hanzhong",
+        "Heir Apparent",
+        "Emperor",
+        "Piao Qi Jiangjun",
+        "Duke of Anle"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDid not recall Zhuge Liang from any northern campaigns.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 87,
+    "top_keywords": []
   },
   "dialogues": [],
   "relationships": [],
@@ -42,11 +200,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.258Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:09.974Z"
 }

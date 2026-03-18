@@ -1,0 +1,87 @@
+{
+  "name_kr": "괴월",
+  "name_en": "Kuai Yue",
+  "name_cn": "蒯越",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 47,
+    "war": 27,
+    "intelligence": 82,
+    "politics": 88,
+    "charisma": 73,
+    "total": 317,
+    "birth": 157,
+    "death": 214
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 49,
+      "war": 33,
+      "intelligence": 84,
+      "politics": 87,
+      "charisma": 71
+    },
+    "rotk11": {
+      "leadership": 47,
+      "war": 27,
+      "intelligence": 82,
+      "politics": 88,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 47,
+      "war": 27,
+      "intelligence": 82,
+      "politics": 88
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 인물로 유표와 조조 휘하의 문관을 지냈으며, 자는 이도(異度). 형주 양양군 중로현 사람으로 한신의 부하 괴철의 후손이라고 하며, 큰 체구에 웅장한 자태가 있었다고 한다.연의에서는 괴량의 동생으로 나오지만 정사에서는 그런 언급이 없다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.078Z"
+}

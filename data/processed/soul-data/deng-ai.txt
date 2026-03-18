@@ -72,3 +72,40 @@
 
 ## EN Wikipedia
 Deng Ai, courtesy name Shizai, was a Chinese military general and politician of the state of Wei during the Three Kingdoms period of China. He is best known for his pivotal role in the Wei conquest of its rival state, Shu, in late 263. He was described as a very loyal subject who made great contributions to Wei, but was also noted for his arrogance and audacity, which led to his downfall and death
+
+## 정사삼국지
+[개요] 263년, 해가 가도 끈질기게 계속되는 강유의 북침에 골머리를 썩힌 사마소는 종회의 진언에 따라 촉한을 토벌할 계획을 세웠다. 종회는 장안 방면에서 양안(촉의 오른쪽에 해당) 방면으로 쳐들어가며 등애는 제갈서와 함께 옹주 방면에서 답중으로 쳐들어가 강유를 차단하는 역할을 했다.등애는 천수태수 왕기(王頎) 등을 파견하여 직접 강유의 진영을 공격하게 했으며, 농서태수 견홍 등을 보내 강유 군대의 앞에서 싸우도록 하고, 금성태수 양흔 등에게 감송으로 가도록 했다. 강유는 종회의 군대가 이미 한중에 진입하였다는 것을 듣고 물러나 돌아갔다. 양흔 등은 강천구까지 추격하여 큰 싸움을 하였고 강유가 패하여 달아난다.강유는 옹주가 길을 막고 교두에 주둔한다는 소식을 듣고 공함곡으로부터 북쪽 길로 들어가서 옹주 후방을 공격하려고 했다. 제갈서는 이 소식을 접하자 퇴각하여 30리를 돌아갔다. 이윽고 강유가 북쪽 길로부터 30여 리 정도 진입하였는데, 제갈서가 군을 물렸다는 소식을 듣고는 공격 계획을 
+[평가] 등애는 굳세고 강건하며 공훈과 업적을 세웠으나 재해를 방지하는 데에 어두웠고 재앙과 패망이 돌아왔으니, 어찌 멀리서는 제갈각에 대해 알아도 능히 가까이에서는 자신을 드러내지 못했는가? 이것은 대개 옛 사람들의 이른바 식견이 얕다는 것이다.진수촉한을 멸망시킨 명장으로, 사마의의 눈에 들어 외정, 내정 통틀어 후반기 최고의 공업을 쌓은 인물이지만 자기관리와 자신이 처한 상황에 대한 냉정한 평가의 부족으로 숙청되고 말았던 인물이다. 그래서 정사 삼국지의 저자였던 진수는 등애의 열전을 진짜 반란을 일으켰던 인물들과 묶어서 기록했다.사후, 단곡 전투의 공마저도 사마소가 가로채 진왕에 올라갈 때 써먹었다. 그것도 '단곡(段谷)의 싸움에서 기회를 타서 크게 이겼으니 장수를 참하고 깃발을 뽑아 죽인 적군의 숫자를 만 단위로 헤아렸다.' 새빨간 거짓말을 해가면서 뻥튀기 시킨 것이다. 그 공을 세운 게 진짜 누구인지는 전혀 언급되지 않는다. 등애는 거의 준역적 취급 당한다. 원래 만 명 타령은 고귀향
+
+
+## Kongming 영문 백과사전
+생몰: AD 197–264
+[역사] Deng Ai, perhaps the the greatest general of Wei, had an extensive career flush with victories. In the end, he was largely responsible for the defeat of Shu-Han at the hands of Wei. Deng Ai also had a serious stutter which he was made fun of commonly for and nicknamed himself, “Deng-eng-eng Ai.” His career will be outlined below.
+
+In AD 241, Deng Ai proposed digging canals and creating military agricultural colonies (tuntian) in the Southeast. His plans were approved by the court. Deng Ai’s suggestions were noted to have increased Wei’s store of provisions. (1)
+
+In AD 249, the Shu-Han general Jiang Wei decided to invade Yongzhou and build two fortresses in the region. Guo Huai, Chen Tai and Deng Ai went on campaign against him. They defeated the generals that Jiang Wei had installed and cu
+
+## 정사 영역본 (Kongming SGZ)
+Deng Ai (Shizai)
+鄧艾 (士載)
+Lived ADca.197–264
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 28 (Wei 28)
+byBattleroyale
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745351588' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744912805' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744912805' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Deng Ai zhi Shizai, was from Yi Yang county Ji Yang Xian. He lost his father when he was young and moved to Ru Nan county after Cao Cao capture Jing Zhou
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통94 무87 지89 정82 매70
+rotk11: 통94 무87 지89 정81 매70
+rotk12: 통93 무87 지89 정81 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

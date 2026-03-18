@@ -1,0 +1,53 @@
+=== 조충 (曹沖, Cao Chong) ===
+자: 불명 (불명)
+진영: wei | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 195–208
+
+## 정사 영역본 (Kongming SGZ)
+Cao Chong (Cangshu)
+曹沖 (倉舒)
+Lived AD 195–208
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+byjiuwan (Giao Chau)
+in2004
+No History Reference defined for Officer ID '21' Cao Chong (Cangshu). Biography cannot be tied to a scroll in the Sanguozhi.
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742776554' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699109' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742439918' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+The Prince of Deng Ai was Cao Chong styl
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통14 무7 지80 정74 매77
+rotk12: 통31 무21 지85 정79 매?
+
+## 커뮤니티 평가
+(없음)

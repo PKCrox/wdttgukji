@@ -1,0 +1,54 @@
+=== 장양 (張楊, Zhang Yang) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 151–198
+
+## 정사 영역본 (Kongming SGZ)
+Zhang Yang (Zhishu)
+張楊 (稚叔)
+Lived AD 151–198
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 8 (Wei 8)
+byZL181
+onApril 12th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1681297920' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758070366' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742656377' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742627071' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhang Yang, styledZhishu, was fromYunzhong[雲中].
+Because he supportedBing province[并州] through his valor and fierceness, he was madeClerk of Martial F
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통68 무70 지68 정60 매67
+rotk12: 통72 무70 지66 정58 매?
+
+## 커뮤니티 평가
+(없음)

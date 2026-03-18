@@ -17,6 +17,28 @@
     "birth": 155,
     "death": 220
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 99,
+      "war": 71,
+      "intelligence": 92,
+      "politics": 96,
+      "charisma": 96
+    },
+    "rotk11": {
+      "leadership": 96,
+      "war": 72,
+      "intelligence": 91,
+      "politics": 94,
+      "charisma": 96
+    },
+    "rotk12": {
+      "leadership": 99,
+      "war": 72,
+      "intelligence": 91,
+      "politics": 94
+    }
+  },
   "novel_presence": {
     "first_chapter": 1,
     "last_chapter": 120,
@@ -50,7 +72,356 @@
       "sections": {
         "Introduction": "曹操（155年—220年3月15日），字孟德，小字阿瞞，沛國譙縣（今安徽亳州）人。東漢末年丞相、軍事家、政治家、文學家和詩人，东汉末年主要群雄之一，职位为丞相，為漢末實際上的最高掌權者，亦是三国时代曹魏奠基者。父亲曹嵩。其子曹丕建立曹魏，追尊其廟號為太祖，追諡武皇帝。\n\n早年与袁绍相处甚厚，袁绍与何进欲尽诛阉宦，引董卓入京。后董卓祸乱朝野，授予曹操为骁骑校尉，想要与曹操共事。曹操更名改姓，东归陈留，聚义兵随多路诸侯一同讨伐董卓。后联盟破碎，曹操自行发展，实力逐渐积累。后董卓伏诛，操讨陶谦，征张绣，灭吕布，败袁术，在中原成功立足。初平三年（192年），据兖州，分化诱降黄巾军三十余万，选取其中精锐组建青州兵。建安元年（196年），迎汉献帝至许县，从此「挟天子以令诸侯」，实力颇为强盛。\n\n建安五年（200年），官渡之战击破袁绍大军，并持续向北，克灭袁尚、袁谭，北击乌桓一统北方，实力雄厚，睥睨天下。建安十三年（208年）进位丞相。同年发兵南征，刘琮束手，收服荆州。于是曹操决定继续南下，发兵二十余万，自称八十余万，意欲统一南方。然而在赤壁之战中被孙刘联军击败，元气大伤。建安十六年（211年），在渭南之战击破关中联军。建安二十年（215年），取汉中，次年（216年）自魏公进爵魏王。建安二十五年（220年）正月庚子，曹操薨於洛陽，終年65歲。\n\n曹操於建安年間權傾天下，在世时官至司空、大將軍，自任丞相，爵至魏王，谥号武王，汉献帝沦为他的傀儡皇帝，实际上由曹操掌管大权，故而诸葛亮称其为「挟天子以令诸侯」，曹操方则称为「奉天子以令不臣」。其被指為人多疑，長久以來以「奸雄」的形象流傳於世。但其为人也以礼贤下士而著称。其文笔为人称颂，诗文也流传于世。著作有《魏武帝集》，已佚失。毛宗岗评《三国演义》称曹操为「三绝」中的「奸绝」。"
       }
+    },
+    "history": {
+      "summary": "삼국시대 추존 군주 [ 펼치기 · 접기 ]조위처사군고제태제무제손오효의왕무열제장사환왕문제황제 · 황태자삼황오제 · 하 · 상 · 주 · 춘추시대 · 전국시대 · 진(秦) · 한사마진 · 오호십육국 · 남북조 · 수 · 당오대 · 십국 · 송 · 서하 · 요 · 금 · 원 · 명 · 청중화민국 국가원수 · 중화민국 총통 · 중화인민공화국\n\n조위 추존 황제조조 | 曹操조조 상상화 (삼재도회)출생155년후한 예주 패국 초현(現 안후이성 보저우시)사망220년 3월 15일 (향년 64~65세)후한 사례 하남윤 낙양(現 허난성 뤄양시)능묘고릉(高陵)재임기간후한의 사공196년 12월 ~ 208년 8월후한의 승상208년 8월 ~ 220년 3월 15일재위기간후한의 비정후196년 6월 ~ 196년 9월후한의 무평후196년 9월 ~ 213년 7월후한의 위공213년 7월 ~ 216년 5월 29일후한의 위왕216년 5월 29일 ~ 220년 3월 15일 [ 펼치기 · 접기 ]성씨조(曹)휘조(操)부모부황 태황제... (truncated)",
+      "sections": {
+        "개요": "조조중국 후한 말의 인물. 후한의 권신으로서 승상 자리에 올라 황실을 장악한 후한의 첫 번째 위왕(魏王, 제후왕)이며 삼국시대 위나라의 추존된 추존 황제. 추존 황제로서의 묘호는 태조(太祖), 시호는 무황제(武皇帝)이다.유비, 손권과 함께 삼국지를 대표하는 인물들 중 한 명으로, 뛰어난 군사적 능력과 카리스마를 바탕으로 후한의 정권을 장악하고 여러 군벌과의 전쟁에서 승리하여 중원을 상당 부분을 장악하여 훗날 220년에 아들인 조비가 후한을 멸망시키고 위나라를 건국할 수 있는 기반을 마련한 인물이다. 그러나 위나라가 천하통일과 안정적인 통치 기반을 마련하는 데 실패함에 따라 결과적으로는 춘추전국시대와 더불어 중국 역사에서도 손꼽히는 난세인 위진남북조시대의 시작을 알린 인물이기도 하다.고대부터 능력은 뛰어났던 영웅으로 여겨졌던 반면 자신이 신하로서 모시던 한 왕조를 무너뜨리는 데에 크게 일조했다는 점에서 망탁조의의 일원으로서 역적, 간신의 대명사로 불리기도 하였으며, 이런 양면적인 면모를 잘 나타내는 것이 조조를 평가하는 말인 이른바 치세의 능신, 난세의 간웅이다. 소설《삼국지연의》에서는 이러한 양면적인 면모를 더욱 부각시켜 유비의 숙적으로 묘사하여 지금까지도 삼국지의 한 축을 담당하는 주요 인물로 여겨진다.",
+        "생애": "### 개요\n曹操조조관련 문서 [ 펼치기 · 접기 ]생애생애전쟁·전투관도대전 · 동군 전투 · 번성 공방전 · 서주 침공 · 여포 토벌전 · 연주 구원전 · 유성 원정 · 유수구 전투 · 적벽대전 · 하북 평정 한중 공방전평가평가 · 업적과 능력고사계륵 · 논영회 · 노우지독 · 득롱망촉 · 망매해갈 · 수불석권소유물의천검 · 절영 · 조황비전 · 청강검기타고릉 · 기타 창작물 · VS 유비ㆍ망탁조의ㆍ서주 대학살 · 조위정통론 · 이놈의 목을 쳐라 · 더 이상 말할 필요가 없다\n\n1. 집안 배경2. 생애 초기2.1. 교현과 허소의 평가2.2. 건석의 숙부를 때려 죽이다2.3. 황건적의 난 이후 낙향2.4. 하진의 패망을 예견하다2.5. 여백사를 죽이다2.6. 동탁 토벌전3. 군웅할거3.1. 동군 전투3.2. 연주 구원전3.3. 원소와 공손찬의 대립3.4. 원술을 격파하다3.5. 서주 침공3.6. 복양 전투(장막+여포와의 대결)4. 협천자4.1. 유비를 받아들이다4.2. 완 전투(장수와의 대결)4.3. 수춘 전투(원술과의 대결)4.4. 양 전투(유표+장수와의 대결)4.5. 하비 공방전(여포와의 대결)5. 관도 전역5.1. 수고를 격파하다5.2. 관도대전 전초5.3. 유비를 격파하다5.4. 백마 전투5.5. 연진 전투5.6. 관도대전 上5.7. 관도대전 下5.8. 창정 전투6. 하북 전역6.1. 여양 전투6.2. 원가 내분6.3. 여광과 여상의 귀순6.4. 업 전투6.5. 하북 평정7. 적벽 전역7.1. 형주 정벌7.2. 적벽대전8. 적벽 이후8.1. 동관 전투8.2. 위수 전투8.3. 212년~213년 유수구 전투8.4. 마초의 재기8.5. 214년 유수구 전투8.6. 복황후와 그 일족을 죽이다8.7. 장로 정벌8.8. 216년~217년 유수구 전투8.9. 길비의 난8.10. 한중 공방전8.11. 번성 공방전8.12. 죽음\n\n### 집안 배경\n《삼국지》〈무제기〉에는 조조가 전한의 개국공신인 조참의 후손이라고 한다. 한편으로 조조는 권력의 정점에 서자 자신이 쓴《가전(家傳)》에서 스스로 조숙진탁(曹叔振鐸)의 후예라고 하였다. 진사왕 조식은《무제뢰(武帝誄)》에서 목무황(穆武皇)은 직(稷)의 후예라고 하였는데 배송지는 '이는 앞에서 말한 것과 다르다.'라고 하고 있다.한편 조조의 아들 조비는 자신의 종족이 순(舜)과 전욱에서 나온다고 하였으나 이 역시 후세의 조작으로 보인다. 한나라의 화덕을 순의 토덕을 이은 조씨가 이었다는 논리로 주장한 것인데, 경초(景初)에 이르러 조예는 고당륭의 견해에 따라서 위를 순(舜)의 후예라 하였다. 그러다 나중에 위는《선진문(禪晋文)》에서 “옛날 우리 조상은 우(虞)였다.”고 하였는데 이 쯤되면 자기네 조상을 누구로 하고 싶은 건지 헷갈릴 정도. 오죽했으면 위의 신하인 장제도 고당륭의 견해를 반박하고 역시 조씨의 조상이 누구인지에 관해서는 언급을 않았으나, \"위는 순의 후예가 아니므로 종족과 함께 나란히 제사를 올릴 수는 없으므로 태조를 끌어내려서 하늘과 함께 제사를 올리지 않는 것은 잘못된 일이다.\"라고 하였다... (truncated)",
+        "가족 관계": "양증조부 조절양조부모양할아버지 조등양할머니 고황후 오씨부모아버지 조숭: 조덕과 함께 낭야에서 조조를 찾아가던 중 도겸의 부하에 의해 조덕과 살해당한다.어머니 태황후 정씨형제자매남동생 조덕: 조숭과 함께 낭야에서 조조를 찾아가던 중 도겸의 부하에 의해 조숭과 살해당한다.남동생 조빈(曹彬): 조조의 아들 조균이 숙부 조빈의 뒤를 이었다는 기록이 있다.남동생 조옥(曹玉): 조조의 아들 조휘가 숙부 조옥의 뒤를 이었다는 기록이 있다.남동생 해양애후(海陽哀侯): 하후형의 장인어른으로, '해양애후'라는 봉호만 알려져 있고 본명은 불명이라서 조조의 동생들 중 유일하게 봉호가 알려지지 않은 조덕과 동일인이라는 설이 있다.친척조카 조안민: 완 전투에서 조앙과 전사한다.조휴: 촌수로는 상당히 먼 것으로 추정된다. 대사마를 역임했다.조진: 조위의 3대 황제 조예 때 군부 일인자로 활약한다.덕양향주 조씨: 조진의 누이이다.조인, 조순: 이 두 명은 형제로 조인이 형이다.조홍하후돈, 하후연: 하후돈, 하후연과 실제 관계가 어떤지는 불명이다. 하지만 하후연의 경우 부인이 정부인의 누이라고 하니 동서 관계로 인척이긴 하다. 또한 하후돈의 아들인 하후무와 조조의 딸 청하공주가 혼인함으로 사돈관계이기도 하다.처첩과 자녀들처 정부인: 첫 번째 정실. 여성 편력이 화려한 그 조조가 유일하게 몇 번이나 재결합하자고 애걸복걸했음에도 재결합에 실패한 여성이다.첩 유부인: 정부인과 함께 조조의 최초 처첩이다.1남 조앙: 완 전투에서 조안민과 전사한다.2남 조삭1녀 청하공주: 하후무의 부인이다.처 무선황후 변씨: 조비의 모친이자 훗날 왕후가 되는 변씨는 가기 출신이다. 정부인이 떠난 후 그녀가 두 번째 정실이 된다.1남 고조 문황제 조비2남 조창3남 조식4남 조웅첩 환부인: 조조의 서주 대학살 때 조조의 첩이 되었을 가능성이 있다.1남 조충2남 조거3남 조우: 조위의 마지막 황제 조환의 부친이다.첩 두씨: 여포를 토벌할 때 관우가 여포의 수하 진의록의 아내였던 두씨를 자신에게 달라고 했을 때 그러겠다고 약속했지만 실제로 보니 미인인지라 조조 자신이 취했다.1남 조림2남 조곤1녀 금향공주첩 진씨(秦氏)1남 조현2남 조준첩 윤씨: 조비 등과 형제처럼 자라난 하안의 어머니 윤씨는 하진의 며느리였지만 조조의 첩으로 개가했다.1남 조구첩 왕소의(王昭儀): 조간의 양모이다. 조조의 총애를 받았고 조비가 황제가 되는데 큰 힘이 되어주었다.첩 손희(孫姬)1남 조상2남 조표3남 조근첩 이희(李姬)1남 조승2남 조정3남 조경첩 주희(周姬)1남 조균첩 유희(劉姬)1남 조극첩 송희(宋姬)1남 조휘첩 조희(趙姬)1남 조무첩 진씨(陳氏): 조간의 친모이지만 조간이 어릴 때 죽었다.1남 조간: 조조가 환갑을 넘어서 본 막내로 조비와는 30살이나 차이 나서 조비를 보면 형이 아니라 할아버지라고 불러 조비가 \"난 할아버지가 아니라 형이다.\"라고 고쳐줬다고 한다. 심지어 자기 조카인 조예보다도 10살 이상 나이가 어렸다. 생모 미상딸 조헌딸 헌목황후 조씨(조절): 후한 헌제의 두 번째 황후. 후한의 마지막 황후... (truncated)",
+        "평가": "### 개요\n曹操조조관련 문서 [ 펼치기 · 접기 ]생애생애전쟁·전투관도대전 · 동군 전투 · 번성 공방전 · 서주 침공 · 여포 토벌전 · 연주 구원전 · 유성 원정 · 유수구 전투 · 적벽대전 · 하북 평정 한중 공방전평가평가 · 업적과 능력고사계륵 · 논영회 · 노우지독 · 득롱망촉 · 망매해갈 · 수불석권소유물의천검 · 절영 · 조황비전 · 청강검기타고릉 · 기타 창작물 · VS 유비ㆍ망탁조의ㆍ서주 대학살 · 조위정통론 · 이놈의 목을 쳐라 · 더 이상 말할 필요가 없다\n\n1. 개요2. 업적과 능력에 대한 평가3. 치세의 능신으로서3.1. 반동탁 연합군 참여3.2. 인간적인 면4. 시기별 평가4.1. 당대의 평가4.2. 후대의 평가4.3. 연의의 평가4.4. 현대의 평가\n\n### 개요\n\n\n### 업적과 능력에 대한 평가\n\n\n### 치세의 능신으로서\n청년 시절 조조는 상당한 의욕을 가지고 선정을 베풀고, 부정부패 척결을 주장하며, 관료로서도 상당한 수준의 선정을 베푼다.십상시 건석 처벌: 건석의 숙부가 조카의 권세를 내세우며 통금 시간 이후에 지나가려 하자 규정을 원칙대로 적용, 기어코 처벌했다. 조조의 뒷배경 때문에 무사하긴 했지만 십상시의 위세는 조조 본인도 모를 리가 없었을 텐데 끝내 처벌을 감행한 것. 이로 인해 조조의 명성이 자자해진다.제남상 시절의 선정: 제남상 시절 조조는 상당한 선정을 베풀었다.부정부패 척결 상소: 황제에게 잇따라 상소를 올리며 부정부패를 척결할 것을 주청했다.\n\n### 반동탁 연합군 참여\n조조는 동탁의 폭정에 대항하여 반동탁 연합군에 군대를 이끌고 가담한다.이후 어영부영 하는 연합군을 두고 조조는 단독으로 동탁을 공격하여 전투를 치르게 된다. 비록 서영 등에게 패하기는 했지만 연합군이랍시고 집결은 했는데 미적지근하여 내분에 휩싸였던 것을 고려하면 조조는 나름대로 필사적으로 동탁을 공격하고 몰아낼 생각을 한 것이라고 봐야 한다.이때 조조는 패배하여 군대의 대부분이 와해되는 피해를 입었지만 오히려 후대에는 높게 평가받는 계기가 된다. 이에 대해 삼국전투기에서 형양전투편에서 언급한다.\n\n### 인간적인 면\n굉장히 다면적인 면모가 보이는데, 아래의 시기별 평가들에도 종종 언급되기는 하나 인간의 좋은 면과 나쁜 면을 극과 극으로 보여주는 사례이기도 하다. 자신을 버리고 적대 세력에 망명하여 끝까지 항쟁하다 사로잡히고도 목숨을 구걸하기보다 의연히 죽음을 택한 진궁과의 일화나 이민족에게 납치당했던 채염을 다시 데려온 일화, 관우와의 일화 같은 미담들이 있는 반면 두 차례에 걸쳐 서주를 아주 작정하고 쑥대밭으로 만든다거나 자기의 심기를 건드리거나 쓸모없어진 인물을 죽여서 뒤끝을 보이는 등의 부정적인 이야기가 공존하고 있다.그래서 냉혈한으로 묘사되는 매체와 다르게 실제로는 감정적인 면이 강했을 것으로 많이 추측된다.\n\n### 시기별 평가\n\n\n### 당대의 평가\n한나라 말기, 천하가 크게 어지러워지자 영웅호걸들이 동시에 군사를 일으켰다. 그 중에서 원소는 4개의 주에 기반을 두어 호시탐탐 천하를 노렸고, 그 강성함은 ... (truncated)",
+        "어록": "寧敎我負天下人休敎天下人負我(영 교 아 부 천 하 인 휴 교 천 하 인 부 아)내가 천하 사람들을 저버릴지언정, 천하 사람들이 나를 저버리게 하지는 않을 것이오.《삼국지연의》에서 여백사를 살해한 조조에게 진궁이 왜 그랬는지 묻자 조조가 답한 후 이어서 한 말.그대는 태평세월의 간적(奸賊)이요, 난세의 영웅(英雄)이라.인물 평론가인 허소가 조조의 관상에 대해 한 평."
+      }
+    },
+    "kongming": {
+      "life_span": "AD 155–220",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 07/2010\n\tReplies: 58"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Great Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Jie"
+        },
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Teng"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Song"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Cao De"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Lü Boshe f"
+        },
+        {
+          "relation": "member",
+          "name": "Wives"
+        },
+        {
+          "relation": "member",
+          "name": "Empress Bian"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Ding"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Huan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons with Empress Bian"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Pi"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zhang"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zhi"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Xiong"
+        },
+        {
+          "relation": "member",
+          "name": "Sons with Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Ang"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Shuo"
+        },
+        {
+          "relation": "member",
+          "name": "Sons with Lady Huan"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Chong"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Ju"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Sons with Lady Du"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Lin"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Gun"
+        },
+        {
+          "relation": "member",
+          "name": "Sons with Lady Qin"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Xuan"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Jun"
+        },
+        {
+          "relation": "member",
+          "name": "Sons from Lady Yin"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Ju"
+        },
+        {
+          "relation": "member",
+          "name": "Sons with other consorts"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Gan"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Shan"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Biao"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Qin"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Cheng"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zheng"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Jun"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Ji"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Hui"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Mao"
+        },
+        {
+          "relation": "member",
+          "name": "Younger Cousins"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Ren"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Chun"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Hong"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Anmin"
+        },
+        {
+          "relation": "member",
+          "name": "Distant Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Xiu"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Zhen"
+        },
+        {
+          "relation": "member",
+          "name": "Horse"
+        },
+        {
+          "relation": "member",
+          "name": "Shadow Runner"
+        }
+      ],
+      "ranks": [
+        "Northern Commandant of Luoyang",
+        "Prefect of Dunqiu",
+        "Gentleman-Consultant of the Imperial Court",
+        "Chief Commandant of Cavalry",
+        "Chancellor of Jinan",
+        "Grand Administrator of Dongjun",
+        "Colonel in Charge of the Army",
+        "Colonel of the Resolute Cavalry",
+        "General Who Displays Firmness",
+        "Grand Administrator of Dongjun",
+        "Governor of Yanzhou",
+        "General Who Establishes Virtue",
+        "General Who Guards the East",
+        "Marquis of Feiting",
+        "Intendant of the Affairs of the Masters of Writing",
+        "Colonel Director of Retainers",
+        "General-in-Chief",
+        "Marquis of Wuping",
+        "Minister of Works",
+        "General of Chariots and Cavalry",
+        "Lieutenant-Chancellor",
+        "Duke of Wei",
+        "King of Wei",
+        "The Man"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tNever presented Dong Zhuo the “Seven-Star Sword.”\n\tWen Chou was killed in one of Cao Cao’s military plots.\n\tThere is no historic mention of Cao Cao killing civilians as he marched on Tao Qian, however the massacre he left in departure is recorded.\n\tCao Cao did not execute He Yi. [ZZTJ: 62]\n\tBecame Prime Minister on the 6th month of Jian’an (AD 208). Not earlier as presented in the novel.\n\tWas not tricked by Pang Tong into tying his ships at Chibi. He did this himself because his soldiers were sick.\n\tDid not execute Zuo Ci, nor did Zuo Ci predict his death.\n\tHad 25 sons; far from the five mentioned in the novel.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 336587,
+      "first_translation": {
+        "translator": "JackYuan",
+        "excerpt": "Cao Cao (Mengde)\n曹操 (孟德)\nLived AD 155–220\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 1 (Wei 1)\nbyJack Yuan\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744911875' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742434672' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742433491' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nThe Grand Martial Progenitor Emperor was a man from Qiao in Peiguo. He was surnamed Cao, named Cao, styled Mengde and a descendant of Cao Can, former Han Chancellor of the State. In the age of Emperor Huan, Cao Teng, The ‘Great Prolonger of Autumn’ Regular Palace Attendant, was enfeoffed as Marquis of Feiting. His adopted son Cao Song succeeded the title and himself reached the position of Grand Commandant. It is unknown, however, the details of his birth. Cao Song begot the Grand Progenitor [Cao Cao].\nIn his youth, the Grand Progenitor was clever, resourceful and demonstrated a deftness in politics. He often took the law into his own hands and was casual or frivolous, paying little attention to his duties. This led few of his contemporaries to regard him highly. Only Qiao Xuan of Liangguo and He Yong of Nanyang surmised that he had uncommon abilities. Qiao Xuan said to the Grand Progenitor: “All Under Heaven will soon fall into disorder, only a man of renowned ability can provide salvation. I fear that the only person who can restore peace will be you.” At the age of twenty, the Grand Progenitor was recommended as ‘Filially Pious and Incorru... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of The Three Kingdoms IX",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms artwork",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 80,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -244,11 +615,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.112Z"
+  "source_count": 13,
+  "generated_at": "2026-03-18T10:20:09.807Z"
 }

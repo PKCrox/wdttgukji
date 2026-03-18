@@ -1,0 +1,56 @@
+=== 장소 (張昭, Zhang Zhao) ===
+자: 불명 (불명)
+진영: wu | 티어: 3 | 역할: undefined
+
+## 능력치
+통솔:33 무력:3 지력:84 정치:97 매력:80 총합:297
+생:156 몰:236
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 1. 일반적인 의미1.1. 場所1.2. 長笑2. 동명이인2.1. 실존 인물2.2. 가상 인물
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Zhang Zhao (Zibu)
+張昭 (子布)
+Lived AD 155–236
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 52 (Wu 7)
+byLady Wu
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745016307' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745016159' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745016159' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhang Zhao, styled Zibu, was a native of Pengcheng. From his youth he was dedicated to learning, and was excellent at the li style calligraphy. He studied TheSpr
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통7 무32 지36 정63 매46
+rotk11: 통33 무3 지84 정97 매80
+rotk12: 통33 무3 지84 정97 매?
+
+## 커뮤니티 평가
+(없음)

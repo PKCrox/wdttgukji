@@ -1,0 +1,55 @@
+=== 누현 (楼玄, Lou Xuan) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+통솔:23 무력:22 지력:67 정치:77 매력:80 총합:269
+생:223 몰:275
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 오서(吳書) [ 펼치기 · 접기 ]1권 「손파로토역전(孫破虜討逆傳)」2권 「오주전(吳主傳)」손견 주준 · 손책손권 호주 정천 풍희3권 「삼사주전(三嗣主傳)」4권 「유요태사자사섭전(劉繇太史慈士燮傳)」손량 · 손휴 이형 · 손호 장제유요 착융 유기 · 태사자 · 사섭5권 「비빈전(妃嬪傳)」6권 「종실전(宗實傳)」}무열황후 · 사부인 · 서부인 · 보연사 · 대의황후 · 경회황후 반부인 · 전혜해 · 주부인 · 하희 · 등방란손정 · 손유 · 손교 · 손환(奐) · 손분(賁) 손보 · 손익 · 손광 · 손소 · 손환(桓)7권 「장고제갈보전(張顧諸葛步傳)」8권 「장엄정감설전(張嚴程闞薛傳)」장소 장분 장승 장휴· 고옹 고소 고담 고승 · 제갈근 제갈융 · 보즐 주소장굉 · 엄준 배현 · 정병 징숭 · 감택 당고 · 설종 설영9권 「주유노숙여몽전(周瑜魯肅呂蒙傳)」10권 「정황한장주진동감릉서반정전(程黃韓蔣周陳董甘凌徐潘丁傳)」주유 · 노숙 · 여몽정보 · 황개 · 한당 · 장흠 · 주태 ·진무 진표 동습 · 감녕 · 능통 · 서성 ·반장 · 정봉11권 「주치주연여범주환전(朱治朱然呂範朱桓傳)」12권 「우육장낙육오주전(虞陸張駱陸吾朱傳)」13권 「육손전(陸遜傳)」주치 · 주연 
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Lou Xuan (Chengxian)
+樓玄 (承先)
+Lifespan Unlisted
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 65 (Wu 20)
+byZL181
+onOctober 15th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697394720' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758160024' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742778914' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709626806' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Lou Xuan, styledChengxian, was fromQi[蘄],Pei commandery[沛郡], During the reign ofSun Xiu, he was Imperial Censor Supervising Agriculture. AfterSu
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통23 무20 지68 정75 매80
+rotk11: 통23 무22 지67 정77 매80
+
+## 커뮤니티 평가
+(없음)

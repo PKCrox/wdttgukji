@@ -1,0 +1,93 @@
+{
+  "name_kr": "공주",
+  "name_en": "Kong Zhou",
+  "name_cn": "孔伷",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 26,
+    "war": 16,
+    "intelligence": 68,
+    "politics": 78,
+    "charisma": 64,
+    "total": 252,
+    "birth": 151,
+    "death": 194
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 26,
+      "war": 13,
+      "intelligence": 68,
+      "politics": 77,
+      "charisma": 67
+    },
+    "rotk11": {
+      "leadership": 26,
+      "war": 16,
+      "intelligence": 68,
+      "politics": 78,
+      "charisma": 64
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "公主 ｜ Princess본래는 중국 천자국에서 황제의 딸에게 내리는 작위이다. 전한 시대에는 황제의 딸을 공주로, 제후의 딸을 옹주로 삼았고 이후 당나라부터 청나라까지 공주님은 황제의 딸의 작위로만 국한되었다. 한국사에서도 내부적으로는 천자국의 격을 사용했기 때문에 선화공주나 요석공주처럼 왕의 딸들에게 공주 칭호를 사용했다.현대 한국어에서는 왕자의 반대말로 왕녀보다 흔히 쓰이지만, 엄밀히 말해서 왕자King's Son의 반대말은 왕녀King's Daughter이고 공주Princess는 공Prince의 반대말이다. 공주Princess는 대군Prince처럼 '작위'의 개념이고, 특히 한국의 경우 모든 왕녀가 공주인 것도 아니기 때문이다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Reporting Officer",
+        "Inspector of Yu"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.076Z"
+}

@@ -1,0 +1,47 @@
+=== 관해 (管亥, Guan Hai) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+통솔:70 무력:82 지력:10 정치:5 매력:25 총합:192
+생:160 몰:193
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Withdrew from siege when reinforcements arrived, he wasn’t killed by Guan Yu.
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통71 무80 지14 정6 매25
+rotk11: 통70 무82 지10 정5 매25
+rotk12: 통70 무82 지10 정5 매?
+
+## 커뮤니티 평가
+(없음)

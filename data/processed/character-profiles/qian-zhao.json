@@ -1,0 +1,79 @@
+{
+  "name_kr": "견초",
+  "name_en": "Qian Zhao",
+  "name_cn": "牽招",
+  "courtesy_kr": "자경",
+  "courtesy_cn": "子經",
+  "faction": "wei",
+  "tier": 2,
+  "role": "위 변경 수비",
+  "stats": {
+    "leadership": 72,
+    "war": 69,
+    "intelligence": 73,
+    "politics": 75,
+    "charisma": 73,
+    "total": 362,
+    "birth": 168,
+    "death": 224
+  },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 72,
+      "war": 69,
+      "intelligence": 73,
+      "politics": 75,
+      "charisma": 73
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말과 삼국시대 위나라의 인물이며 자는 자경(子經)으로 기주 안평군 관진현 출신. 견가(牵嘉)와 견홍(牽弘)의 아버지다.《삼국지연의》에서는 등장하지 않고 정사에서만 나오는 인물이다.",
+      "초기 생애": "10살 때부터 악은 밑에서 공부해 악은이 하묘의 장사가 되자 따라가지만 189년에 십상시의 난으로 악은이 죽자 문하생 사로와 함께 악은의 시신을 수습해 고향으로 돌아가는데, 가는 도중에 도적을 만나자 사로 등은 모두 흩어져 도망갔다. 도적이 관을 쪼개 못을 뽑으려 하자 견초는 눈물을 흘리며 용서해 줄 것을 빌자 이를 의롭게 여긴 도적은 그를 살려주어 돌아가게 했으며, 이 일로 견초는 이름을 떨치게 된다.《태평어람》에 따르면 젊은 시절 유비와도 교분이 있었다고 한다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.040Z"
+}

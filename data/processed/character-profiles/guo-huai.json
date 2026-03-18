@@ -1,0 +1,198 @@
+{
+  "name_kr": "곽회",
+  "name_en": "Guo Huai",
+  "name_cn": "郭淮",
+  "courtesy_kr": "백제",
+  "courtesy_cn": "伯濟",
+  "faction": "wei",
+  "tier": 2,
+  "role": "옹량 방어, 강유 상대",
+  "stats": {
+    "leadership": 87,
+    "war": 78,
+    "intelligence": 81,
+    "politics": 75,
+    "charisma": 77,
+    "total": 398,
+    "birth": 187,
+    "death": 255
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 86,
+      "war": 77,
+      "intelligence": 82,
+      "politics": 75,
+      "charisma": 78
+    },
+    "rotk11": {
+      "leadership": 87,
+      "war": 78,
+      "intelligence": 81,
+      "politics": 75,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 87,
+      "war": 78,
+      "intelligence": 81,
+      "politics": 75
+    }
+  },
+  "novel_presence": {
+    "first_chapter": 70,
+    "last_chapter": 109,
+    "chapters": "70,93-99,101-103,107-109",
+    "chapter_count": 4
+  },
+  "biography": {
+    "namu": {
+      "개요": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n郭淮곽회 | Guō Huái 시호 정후(貞侯) 작위 관내후(關內侯)→사양정후(射陽亭侯)→도향후(都鄕侯)→양곡후(陽曲侯) 최종직위 거기장군(車騎將軍), 의동삼사(儀同三司) 성씨 곽(郭) 명 회(淮) 자 백제(伯濟) 아버지 곽온(郭縕) 생몰연도 ? ~ 255년 1월 30일 고향 병주(幷州) 태원군(太原郡) 양곡현(陽曲縣) 역임한 관직 [ 펼치기 · 접기 ] 조위(조조 → 조비→조예→조방→조모) 평원부승(平原府丞)→문하적조(門下賊曹)→병조의령사(兵曹議令史)→사마(司馬)→장사(長史)→옹주자사(雍州刺史)→건위장군(建威將軍) 옹주자사(雍州刺史)→양무장군(揚武將軍) 옹주자사(雍州刺史)→좌장군(左將軍) 옹주자... (truncated)",
+      "초기 생애": "병주 태원군 양곡현 사람으로 곽회의 조부는 대사농을 지낸 곽전(郭全), 아버지는 안문태수를 지낸 곽온(郭縕)인데 세도가 집안에서 태어났다. 그 당시 이런 유력 가문 출신들을 위한 등용 제도인 효렴으로 천거되었고, 평원부승으로 임명되었다. 조비가 오관중장랑이 되었을 때, 곽회를 불러 문하적조에 임명하였다.곽회는 승상병조의령사로 전임되었고 조조가 한중의 장로를 정벌하는 원정에 함께 수행한다.",
+      "평가": "한중 공방전으로부터 제갈량의 북벌과 강유의 북벌에 이르기까지 대촉전선의 핵심으로 활약했던 명장. 비록 무패의 장수까지는 아니지만 촉한의 북벌을 완벽에 가깝게 막아낸 장수로, 같은 전선에서 활약한 사마의나 장합에 결코 꿀리지 않는다고 평가된다. 특히 제갈량의 5차 북벌 당시 사마의를 비롯한 대다수 장수들과 이견을 보이며 제갈량의 의도를 잘 파악해 냈고 이후 강유에 포섭된 강인들을 적절히 제어했다. 강유는 곽회를 상대로 큰 전과를 올리기 힘들었다.곽회의 전과는 주로 시야가 넓은 전략안에서 나온다고 할 수 있다. 제갈량의 5차 북벌 당시 제갈량의 우회 기습을 예측한 것도 그렇고 곽회가 강유를 격파하는 방식을 보면 강유의 본군이 아닌 이민족들이나 부하 장수들을 위주로 때리고 이를 통해서 퇴각시키는 것에 가까우며 야전 지휘관의 역량인 전술적인 면으로 보면 강유를 제대로 압도했다기 보단 전략적으로 전쟁을 승리한 것으로 봐야 한다. 강유와 제대로 교전이 붙은 예는 하후패와 함께 싸운 247년의 도서 전투 밖에 없는데 도리어 화양국지에서는 강유가 246년에 아예 곽회와 하후패를 상대로 승리했다는 기록마저 나오며 화양국지교보도주의 주석에 따르면 이 전투는 사실 잘못된 연도에 기록된 것이지 사실은 247년에 곽회와 하후패를 이긴 전투라고 나온다. 결국 도서 전투는 화양국지, 정사 삼국지, 자치통감 서술을 따른다고 치면 이 전투의 결과로 강유가 이기고 호왕 백호문, 치무대를 굴복시켰으며 내지로 안치시키는걸 곽회는 막지 못하고 그 잔당 처리에만 만족해야 한 전투다. 이때 강유가 1만 밖에 지휘하지 못하는 시기였음을 고려하면 곽회의 전략적 능력은 굉장히 뛰어나다고 할 수 있어도 전술적 능력은 강유에 비해 높게 평가하지 못하는 부분이다.그렇다고 전술적 능력이 그렇게 떨어진다고 보기도 어렵다. 248년~249년의 전역은 곽회의 뛰어난 용병술을 엿볼 수 있는 대목이다. 다른 전투들에서도 일단 전략을 세우면, 자신이 직접 전투와 행군 등을 지휘해 그 전략을 실현시켰다. 그러면서도 대군은 한번도 말아먹지 않았단 점에서 강유와는 비교되는 점이 있다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Guo Pei"
+        },
+        {
+          "relation": "member",
+          "name": "Husband"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Chong"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Limin"
+        },
+        {
+          "relation": "member",
+          "name": "Daughters"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Nanfeng"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Step-daughters"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Bao"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-laws"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhong"
+        },
+        {
+          "relation": "member",
+          "name": "Han Shou"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK12",
+      "ROTK14",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 8",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": true,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-18T10:20:10.029Z"
+}

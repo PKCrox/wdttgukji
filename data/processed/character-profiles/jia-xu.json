@@ -17,6 +17,28 @@
     "birth": 147,
     "death": 223
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 81,
+      "war": 45,
+      "intelligence": 98,
+      "politics": 84,
+      "charisma": 56
+    },
+    "rotk11": {
+      "leadership": 86,
+      "war": 48,
+      "intelligence": 97,
+      "politics": 85,
+      "charisma": 57
+    },
+    "rotk12": {
+      "leadership": 88,
+      "war": 48,
+      "intelligence": 97,
+      "politics": 85
+    }
+  },
   "novel_presence": {
     "first_chapter": 9,
     "last_chapter": 86,
@@ -45,7 +67,112 @@
       "sections": {
         "Introduction": "贾诩（）（147年—223年8月11日），字文和，武威郡姑臧县（今甘肃武威市）人，东汉、三国谋士。官至太尉。汉末三国时期曹魏开国功臣、军事战略家，轻骑将军贾龚之子。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 147–223",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Mu"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Ji"
+        },
+        {
+          "relation": "member",
+          "name": "Jia Fang"
+        }
+      ],
+      "ranks": [
+        "Attendant",
+        "Chief Commandant of Pingjin",
+        "Colonel Who Exterminates the Caitiffs",
+        "Governor of the Zuopingyi Region",
+        "Imperial Household Grandee",
+        "General Who Proclaims Righteousness",
+        "Commander of the Palace Guard",
+        "Marquis of an Imperial Precinct",
+        "Governor of Ji Province",
+        "Grand Imperial Consultant",
+        "Grand Tutor",
+        "Marquis of Weishou Precinct"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 29407,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Jia Xu (Wenhe)\n賈詡 (文和)\nLived ADca.147–224\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 10 (Wei 10)\nbyLady Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744992110' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744991205' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744991205' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nJia Xu, styled Wenhe, was a man from Gozang in Wuwei. No one recognized his talents when he was young, but only Yan Zhong from Hanyang considered him to be extraordinary, and said of him that he had the genius of Zhang Liang and Chen Ping.1AHe was recommended to imperial service as a Filial and Incorrupt and served as an attendant [in the court in Luoyang], but later resigned due to illness. On the way westward back home, he encountered a group of Di tribe insurgents at Qian, who held him captive along with the few scores of men that he was travelling with. Jia Xu said [to the rebels], “Lord Duan is my maternal grandfather. Bury me apart from the others, as my family would pay a princely ransom for my body.” At that time, Grand Commandant Duan Jiong was a long-time campaigner in the frontier, and his name struck awe into all who dwelt in the west. Thus Jia Xu took his name to frighten the Di. Indeed, the Di dared not harm him, but sent him off after negotiating a pact with him. All the others were killed. Jia Xu in reality was not Duan’s grandson; this was just an indication of how capable he was at dealing with unexpectedsituations.•••\nZhang... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 57,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -162,11 +289,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.204Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.898Z"
 }

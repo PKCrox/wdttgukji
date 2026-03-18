@@ -17,6 +17,28 @@
     "birth": 168,
     "death": 223
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 90,
+      "war": 88,
+      "intelligence": 60,
+      "politics": 53,
+      "charisma": 80
+    },
+    "rotk11": {
+      "leadership": 89,
+      "war": 86,
+      "intelligence": 56,
+      "politics": 46,
+      "charisma": 76
+    },
+    "rotk12": {
+      "leadership": 89,
+      "war": 86,
+      "intelligence": 62,
+      "politics": 46
+    }
+  },
   "novel_presence": {
     "first_chapter": 5,
     "last_chapter": 86,
@@ -44,7 +66,141 @@
         "Introduction": "曹仁（168年—223年5月6日），字子孝，沛國譙縣（今安徽亳州）人，曹操族弟，漢末三國時期曹魏名將。早年出家，晚於弟弟曹純效忠曹操。常遇狀解圍，於情勢相當不利之惡戰仍能達成任務，善守能攻；南郡爭奪戰時抵擋周瑜劉備聯軍的進攻，阻擋一年之久，樊城之戰中雖被關羽以水圍城，但亦能激勵将士死守樊城直至徐晃救援，最终合兵擊退當時威震華夏的關羽。曹魏建立后，曹仁官至大司馬，封陳侯，諡曰忠，曹丕伐吳時於濡須之戰敗給東吳的朱桓，恥於敗於朱桓而一病不起。",
         "文学形象": "在小说《三国演义》中，曹仁于曹操起兵时与曹洪一同前来投奔，并随曹操一同参与讨董战役。后从征袁术、吕布、张绣，参加官渡之战，多立功勋。曹操平定北方后决意南征，曹仁率军先攻刘备，并列八门金锁阵以敌刘备，但阵法却被徐庶所破，因而败绩；樊城亦被刘备所取，曹仁败回。夏侯惇在博望坡失利后，曹操亲率大军南下，曹仁为前锋先至新野，此时刘备已将新野军民迁出，曹仁率众入城，中了诸葛亮的火计，急奔出城，又在白河中遭到水攻，其军大败。此后曹操于赤壁遭受火攻大败，曹仁引军自荆州前来接应。赤壁之战结束，周瑜乘胜进取荆州，与镇守南郡的曹仁大战，曹仁用曹操遗计诈败引周瑜入城，随命放箭，周瑜中箭败退 。然此后反中东吴军士诈降之计，被周瑜杀败。后曹仁随曹操西征马超、韩遂，平定汉中，并南下抵挡孙权的进攻，此后负责镇守襄阳。汉中之战后关羽进取襄阳、樊城，曹仁死守樊城，后于战中命令弓弩手放箭，射中关羽右臂。后曹操遣徐晃来援，终解樊城之围  。曹丕称帝后封曹仁为大司马。夷陵之战后，曹仁奉曹丕之命进军濡须口，却被守将朱桓杀败，回到洛阳，不久后病逝。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 168–223",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Bao"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Chi"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Cao"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Tai"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Kai"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Fan"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Chu"
+        }
+      ],
+      "ranks": [
+        "Major With a Separate Command",
+        "Colonel of Lifeng",
+        "Grand Administrator of Guangyang",
+        "Imperial Consultant",
+        "Marquis of Du Commune",
+        "General Who Conquers the South",
+        "Marquis of Anping Commune",
+        "General Who Tranquilizes the West",
+        "General of the Resolute Cavalry",
+        "General Who Conquers the South",
+        "General of the Chariots and Cavalry",
+        "Marquis of Chen",
+        "General-in-Chief",
+        "Commander-in-Chief"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 11450,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Cao Ren (Zixiao)\n曹仁 (子孝)\nLived AD 167–223\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744950175' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744949778' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744949778' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nCao Ren, styled Zixiao, was a cousin of Cao Cao, the Grand Progenitor.AHe was fond of riding, shooting, birding and hunting when he was young. When the heroes of the land rose in contention of power, Cao Ren also secretly gathered to himself a group of youth, more than a thousand all told, and traveled around between the Huai and the Si rivers. Eventually, he offered his service to Cao Cao, and was made Major with a Separate Command and Colonel of (Lifeng).\nWeishu: The grandfather of Cao Ren, Cao Bao, was the Grand Administrator of Yingchuan. Cao Ren’s father, Cao Chi, was a palace attendant and Colonel of the Chang River encampments.\nDuring Cao Cao’s conquest over Yuan Shu, Cao Ren killed and captured quite a number. He also participated in the battle of Xuzhou, and was often in the vanguard leading the mounted troops. In that operation he led a side attack to rout the men of Tao Qian’s general Lü You, and after rejoining the main forces at Peng city, he vanquished Tao Qian’s army. Afterwards, when Cao Cao’s forces went on to attack Fei, Hua, Jimo, and Kaiyang, and Tao Qian sent relief forces to those prefectures, Cao Ren led a company of ride... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 85,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -153,11 +309,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.217Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.917Z"
 }

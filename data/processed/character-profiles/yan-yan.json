@@ -1,0 +1,81 @@
+{
+  "name_kr": "엄안",
+  "name_en": "Yan Yan",
+  "name_cn": "厳顔",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 82,
+      "intelligence": 69,
+      "politics": 65,
+      "charisma": 74
+    },
+    "rotk12": {
+      "leadership": 82,
+      "war": 83,
+      "intelligence": 72,
+      "politics": 67
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 63–65",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Grand Administrator of Ba",
+        "General (Possibly)"
+      ],
+      "historical_notes": "Yan Yan hailed from Linjiang county in Ba commandery according to the Huayangguozhi. He served as the Grand Administrator of Ba under Liu Zhang. The Huayangguozhi claims that he served as General instead. Perhaps Yan Yan had both titles. When Liu Bei was invited into Shu by Liu Zhang and entered Ba commandery, Yan Yan clutched his heart and sighed over the invite, saying, “This can be said to be like sitting alone in a stranded mountain and arranging for a tiger to guard oneself!” Indeed, Liu Bei would revolt against Liu Zhang. Yan Yan was at Jiangzhou during the campaign, but he was defeated and captured alive by a general of Liu Bei, Zhang Fei. Zhang Fei scolded Yan Yan, saying, “When our great army arrived, why did you not surrender, but had the gall to oppose us in battle?!” Yan Yan replied, “You all are all insolent, invading and seizing my province! In my province, there are only decapitated generals, no submissive generals!” Zhang Fei was angry and ordered his attendants to decapitate Yan Yan, but Yan Yan maintained a composed expression, saying, “To sever my head is to sever my head! Why be enraged!” Zhang Fei was impressed and released him, inviting him to serve as a retainer.",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tNo indication of being old ever recorded historically.\n\tWas not heard of again after his surrender to Zhang Fei.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.060Z"
+}

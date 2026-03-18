@@ -1,0 +1,53 @@
+=== 윤묵 (尹黙, Yin Mo) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Yin Mo (Siqian)
+尹默 (思潛)
+Lived AD ?–ca.240
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+byZL181
+onMay 20th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1684607040' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758209370' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1758002482' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1757998606' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Yin Mo, styledSiqian, was fromFu[涪],Zitong[梓潼].
+Most of Yi province [益部] valued the New Text [studies]1and did not respect paragraphs and sentences.2[Yin] Moknew that this
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통11 무15 지65 정77 매62
+rotk12: 통26 무15 지66 정77 매?
+
+## 커뮤니티 평가
+(없음)

@@ -17,6 +17,28 @@
     "birth": 202,
     "death": 264
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 91,
+      "war": 89,
+      "intelligence": 90,
+      "politics": 68,
+      "charisma": 77
+    },
+    "rotk11": {
+      "leadership": 90,
+      "war": 89,
+      "intelligence": 90,
+      "politics": 67,
+      "charisma": 80
+    },
+    "rotk12": {
+      "leadership": 92,
+      "war": 89,
+      "intelligence": 90,
+      "politics": 67
+    }
+  },
   "novel_presence": {
     "first_chapter": 92,
     "last_chapter": 120,
@@ -43,7 +65,97 @@
       "sections": {
         "Introduction": "姜维（202年—264年3月3日），字伯約，涼州天水郡冀縣（今甘肅省天水市甘谷縣）人。三國時期蜀漢著名軍事家。原为曹魏天水郡中郎將，後降蜀漢，深受諸葛亮器重。蒋琬、費褘先後逝世後，姜維總領蜀漢軍权，官拜大将军，並先後十一次伐魏。其後，司馬昭滅蜀漢，姜維在劍閣防守鍾會。鄧艾出奇兵從陰平小路歷經艱辛，突然出現在成都附近，諸葛亮子諸葛瞻戰死，後主劉禪降魏，蜀漢滅亡。姜維打算利用鍾會的野心復國，遂降於鍾會並共同發動叛亂，但因事敗死於亂軍之中，享年六十二歲。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {
+        "생애(정사)": "### 개요\n1. 개요2. 촉한 귀순 이전3. 촉한으로 귀순 (227년~228년)3.1. 정사 삼국지의 기록3.2. 위략의 기록3.3. 강유의 귀순 과정 재구성4. 제갈량 시대 (228년~234년)5. 장완 시대 (234년~246년)6. 비의 시대 (246년~253년)7. 진지 & 강유 시대 (253년~258년)7.1. 적도와 도수7.2. 단곡 전투8. 유선 시대 (258년~263년)9. 촉한의 멸망 (263년~264년)10. 최후: 성도의 난 (264년)\n\n### 개요\n\n\n### 촉한 귀순 이전\n어린 시절에 강인(羌人)과의 전쟁 중에 아버지를 잃었다고 전해진다. 아버지 강경은 강인의 침입 때 태수를 보호하려다 전사하였고, 이에 강유가 아버지의 직책을 물려 받아 군에서 중랑으로 임명되었다. 강유의 어린 시절에 해당하는 시기 중(대략 206년 - 217년 무렵) 이 정도로 강인들이 침입했던 사건은 213년, 마초가 강인들과 연합, 조조를 공격했을 때 외에는 기록된 사건이 없다. 만약 이 당시 강경이 천수태수를 보호하려다 전사했다면, 마초 연합군에 의해 강유의 부친이 죽은 셈이다. 다만 이 외에도 다른 기현 침입이 있을 가능성은 배제할 수 없기에 정확한 사건은 알 수 없다.이때 정사 삼국지 강유전은 \"維為人好立功名，陰養死士，不脩布衣之業\"라 기록하고 있는데, 대강 \"강유는 입신 양명에 관심이 있어, 은밀히 자신을 위해 죽을 수 있는 병사들을 키우고, 평범한 일에 관심이 없다\"는 의미다. 강유가 나이는 어려도 자신의 미래에 대한 생각이 있었던 듯하다. 이렇게 말하면 그냥 용맹한 병사 정도로 생각할 수 있는데, 고대 중국에서 이런 \"사사\"들이 목숨을 거는 일은 단순히 전장에서 위험한 임무를 수행하는 정도가 아니다. 특별히 훈련받아 충성 대상을 향해 목숨을 아끼지 않는 자들, 한국식으로 하면 결사대, 주군의 명을 받고 주군과 반대하는 자들을 암살하는 자객 쯤으로 볼 수 있다. 또 사사가 중국어로 협객과 뜻이 통하는데 이는 강유가 어떤 유협집단의 지도자였을 가능성도 있다. 어린 나이부터 강유는 출세하기 위한 야심이 강했던 것이다.그러면서 주의 종사로 임명되었으며 또한 상계연으로 일을 하기도 하였다. 종사는 주에 새로운 자사 등이 임명되었을 때 각 군현의 인물들을 현지 정보 입수 차원에서 채용할 때 주어지는 자리였으며, 상계연은 중앙 정부에 해당 지역의 인구 및 특산물의 통계를 내어 중앙 정부에 보고하는 직책이다. 이 일은 문관 계통이니 중랑, 즉 무관 계통이었던 강유가 문관 계통으로 일을 바뀌었거나 능력이 뛰어나 양쪽을 겸업했을 수도 있다. 또 강유는 정현의 학문을 좋아했다고 하니 문관직에도 무리는 없었을 것이다.이 무렵 옹주자사 대리는 곽회로, 강유는 기간은 알 수 없지만 한 때 그는 곽회의 부하였다. 이후 강유의 북벌 당시 강유와 곽회가 지겹도록 서로를 적으로 대하는 점을 감안한다면 둘의 운명도 꽤나 얄궂은 듯. 더불어 촉한의 제갈량의 위나라 1차 침입 당시 곽회는 기현에서 상규로의 후퇴를 감행하여 강유가 촉한에 투항을 하게 되는 빌미를 제공하기... (truncated)"
+      }
+    },
+    "kongming": {
+      "life_span": "AD 202–264",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 01/2003\n\tReplies: 365"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Jiang Jiong"
+        }
+      ],
+      "ranks": [
+        "Wei Kingdom",
+        "Shu Kingdom"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 8745,
+      "first_translation": {
+        "translator": "Battleroyale",
+        "excerpt": "Jiang Wei (Boyue)\n姜維 (伯約)\nLived AD 202–264\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 44 (Shu 14)\nbyBattleroyale\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744912948' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744912928' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744912928' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nJiang Wei zhi Boyue was born in Tian Shui Yi Xuan. He lost his father when he was young and left only with his mother. His father was a county official who died in an attempt to protect the governor during an uprising by the northern tribes. As a result, Jiang Wei took over his father’s post and was tasked to advice the military affairs of the county.\nIn Jian Xin 6th year, Zhuge Liang launched the first northern expedition aiming at Qi Shan region. Several neighbouring counties of Tian Shui had surrendered to the Shu army. At that moment, Jiang Wei was patrolling the outskirts with his governor. Afraid that Jiang Wei might be colluding with the Shu army, the governor fled secretly at night. When Jiang Wei discovered about that, it was already too late and on returning to Yi Xuan, his own city refused to open the city gates. As such, Jiang Wei proceeded to meet Zhuge Liang. Coincidentally, the Shu army had suffered a setback at Jie Ting, when Zhang He defeated Ma Su. Zhuge Liang gave the order for a retreat back to Shu territory bringing Jiang Wei along with him. Jiang Wei was conferred the Duke of Yang Ting and he was only 27 years old ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 80,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -152,11 +264,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.255Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.971Z"
 }

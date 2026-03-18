@@ -1,0 +1,114 @@
+{
+  "name_kr": "양호",
+  "name_en": "Yang Hu",
+  "name_cn": "羊祜",
+  "courtesy_kr": "숙자",
+  "courtesy_cn": "叔子",
+  "faction": "other",
+  "tier": 2,
+  "role": "진 장수, 육항과 대치",
+  "stats": {
+    "leadership": 90,
+    "war": 64,
+    "intelligence": 84,
+    "politics": 87,
+    "charisma": 89,
+    "total": 414,
+    "birth": 221,
+    "death": 278
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 87,
+      "war": 65,
+      "intelligence": 87,
+      "politics": 85,
+      "charisma": 90
+    },
+    "rotk11": {
+      "leadership": 90,
+      "war": 64,
+      "intelligence": 84,
+      "politics": 87,
+      "charisma": 89
+    },
+    "rotk12": {
+      "leadership": 90,
+      "war": 64,
+      "intelligence": 84,
+      "politics": 87
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 良好2. 養護3. 兩湖3.1. 중국의 지명3.2. 한국의 지명4. 인물4.1. 춘추시대 노나라의 인물4.2. 삼국시대 위나라와 서진의 인물4.3. 수나라의 비정통 황제4.4. 탐라의 인물4.5. 송나라의 인물4.6. 명나라의 인물"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Yang Dao"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Cai"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.048Z"
+}

@@ -1,0 +1,96 @@
+{
+  "name_kr": "공도",
+  "name_en": "Gong Du",
+  "name_cn": "龔都",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 59,
+    "war": 70,
+    "intelligence": 23,
+    "politics": 22,
+    "charisma": 37,
+    "total": 211,
+    "birth": 164,
+    "death": 200
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 55,
+      "war": 72,
+      "intelligence": 25,
+      "politics": 23,
+      "charisma": 32
+    },
+    "rotk11": {
+      "leadership": 59,
+      "war": 70,
+      "intelligence": 23,
+      "politics": 22,
+      "charisma": 37
+    },
+    "rotk12": {
+      "leadership": 59,
+      "war": 70,
+      "intelligence": 23,
+      "politics": 22
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 일반적인 의미2. 대한민국의 지명3. 조선 왕조때의 정책4. 일본의 무술5. 후한 말의 인물 龔都6. 공항도둑의 준말7. 힙합 곡 공중도덕"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 26–28",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas not killed by Cao Cao’s forces historically. It was recorded only that his forces scattered after Liu Bei went to Liu Biao. [SGZ, ZZTJ]",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.072Z"
+}

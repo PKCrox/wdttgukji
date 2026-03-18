@@ -1,0 +1,108 @@
+{
+  "name_kr": "반준",
+  "name_en": "Pan Jun",
+  "name_cn": "潘濬",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 69,
+      "war": 27,
+      "intelligence": 67,
+      "politics": 88,
+      "charisma": 21
+    },
+    "rotk12": {
+      "leadership": 61,
+      "war": 18,
+      "intelligence": 68,
+      "politics": 82
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Pan Zhu"
+        },
+        {
+          "relation": "member",
+          "name": "Pan Mi"
+        },
+        {
+          "relation": "member",
+          "name": "In-Law"
+        },
+        {
+          "relation": "member",
+          "name": "Jiang Wan"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        }
+      ],
+      "ranks": [
+        "Assistant Officer",
+        "Assistant Officer at Headquarters",
+        "General",
+        "Minister of Ceremonies"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tNoted as a popular governor and earnest man, not the jealous unfit man of the novel.\n\tInitially refused Wu and feigned sickness",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.068Z"
+}

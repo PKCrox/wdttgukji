@@ -1,0 +1,87 @@
+{
+  "name_kr": "장익",
+  "name_en": "Zhang Yi",
+  "name_cn": "張翼",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 74,
+      "intelligence": 71,
+      "politics": 68,
+      "charisma": 70
+    },
+    "rotk12": {
+      "leadership": 75,
+      "war": 74,
+      "intelligence": 76,
+      "politics": 72
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Grand Minister of Agriculture"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4936,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Zhang Yi (Bogong)\n張翼 (伯恭)\nLived AD ?–264\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 45 (Shu 15)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745016142' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745015892' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745015892' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Yi, styled Bogong, was from Wuyang in Qianwei. His great-great-grandfather Zhang Hao, and his great-grandfather Zhang Gang, the Grand Administrator of Guangling, were both men of renown.AAt the time when the Former Ruler (Liu Bei) pacified Yi Province and took over as Governor, Zhang Yi was a secretary in his office. In the end of the Jian’an period, Zhang Yi was recommend to the court as a “Filial and Incorrupt”, and was made Chief of Jiangyang. Later, he was made Prefect of Peiling, and then promoted to be Grand Administrator of Zitong. Eventually he became the Grand Administrator of Guanghan, and then of Shu Commandary. In the 9th year of Jianxing (AD 231), he became Chief Controller of Laijiang, and General of the Interior who Pacifies the South.\nAuthor’s Note: Pei Songzhi’s additional biographies of Zhang Hao and Zhang Gang omitted here.\nZhang Yi was strict in upholding the laws, and was not popular with the commoners. Liu Zhou rose in rebellion, and Zhang Yi rallied an army to quell the uprising. Before Liu Zhou could be subdued, an imperial order arrived, commanding Zhang Yi’s return to the capital. All those serving under him hel... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.065Z"
+}

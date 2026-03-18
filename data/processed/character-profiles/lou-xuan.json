@@ -1,0 +1,88 @@
+{
+  "name_kr": "누현",
+  "name_en": "Lou Xuan",
+  "name_cn": "楼玄",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 23,
+    "war": 22,
+    "intelligence": 67,
+    "politics": 77,
+    "charisma": 80,
+    "total": 269,
+    "birth": 223,
+    "death": 275
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 23,
+      "war": 20,
+      "intelligence": 68,
+      "politics": 75,
+      "charisma": 80
+    },
+    "rotk11": {
+      "leadership": 23,
+      "war": 22,
+      "intelligence": 67,
+      "politics": 77,
+      "charisma": 80
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "오서(吳書) [ 펼치기 · 접기 ]1권 「손파로토역전(孫破虜討逆傳)」2권 「오주전(吳主傳)」손견 주준 · 손책손권 호주 정천 풍희3권 「삼사주전(三嗣主傳)」4권 「유요태사자사섭전(劉繇太史慈士燮傳)」손량 · 손휴 이형 · 손호 장제유요 착융 유기 · 태사자 · 사섭5권 「비빈전(妃嬪傳)」6권 「종실전(宗實傳)」}무열황후 · 사부인 · 서부인 · 보연사 · 대의황후 · 경회황후 반부인 · 전혜해 · 주부인 · 하희 · 등방란손정 · 손유 · 손교 · 손환(奐) · 손분(賁) 손보 · 손익 · 손광 · 손소 · 손환(桓)7권 「장고제갈보전(張顧諸葛步傳)」8권 「장엄정감설전(張嚴程闞薛傳)」장소 장분 장승 장휴· 고옹 고소 고담 고승 · 제갈근 제갈융 · 보즐 주소장굉 · 엄준 배현 · 정병 징숭 · 감택 당고 · 설종 설영9권 「주유노숙여몽전(周瑜魯肅呂蒙傳)」10권 「정황한장주진동감릉서반정전(程黃韓蔣周陳董甘凌徐潘丁傳)」주유 · 노숙 · 여몽정보 · 황개 · 한당 · 장흠 · 주태 ·진무 진표 동습 · 감녕 · 능통 · 서성 ·반장 · 정봉11권 「주치주연여범주환전(朱治朱然呂範朱桓傳)」12권 「우육장낙육오주전(虞陸張駱陸吾朱傳)」13권 「육손전(陸遜傳)」주치 · 주연 주적 · 여범 여거 · 주환 주이우번 우사 주육 · 육적 · 장온 · 낙통 육모 · 오찬 ·주거육손 육항14권 「오주오자전(吳主五子傳)」손등 · 손려 · 손화 · 손패 · 손분(奮)15권 「하전여주종리전(賀全呂周鍾離傳)」16권 「반준육개전(潘濬陸凱傳)」17권 「시의호종전(是儀胡綜傳)」하제 · 전종 · 여대 · 주방 · 종리목반준 · 육개 육윤시의 · 호종 서상18권 「오범유돈조달전(吳範劉惇趙達傳)」19권 「제갈등이손복양전(諸葛滕二孫濮陽傳)」20권 「왕누하위화전(王樓賀韋華傳)」오범 위등 · 유돈 · 조달제갈각 섭우 · 등윤 · 손준 유찬 · 손침 · 복양흥왕번 · 누현 · 하소 · 위소 · 화핵관련 틀: 위서 촉서※ 흠정 24사 관련 틀 둘러보기"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5955,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Lou Xuan (Chengxian)\n樓玄 (承先)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 65 (Wu 20)\nbyZL181\nonOctober 15th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697394720' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758160024' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742778914' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709626806' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLou Xuan, styledChengxian, was fromQi[蘄],Pei commandery[沛郡], During the reign ofSun Xiu, he was Imperial Censor Supervising Agriculture. AfterSun Haoassumed the throne, he,Wang Fan,Guo Chuo, andWan Yuwere all madeCavalier Regular Palace Attendants. He left to beGrand AdministratorofKuaiji, then entered to beMinister of Finance.\nIn the past, people who were in charge of the palace were selected from those intimate and close [with the emperor] to work, but[Wan] Yuexplained that for such intimate priviness and close knowledge, it was proper to use good people. Thus,[Sun] Haoreleased a decree, orderingdirecting officialsto seek loyal and pure officials and accept them in nominations.[Lou] Xuanwas employed to become Guardian of the Palace, Officer of the Palace, and Master of Hall Affairs.[Lou] Xuanwould go from being among theNine Ministersto wielding blades and being in attendance as a guard. He was upright as a person and he was a leading exemplar. He obeyed the laws and acted virtuously. His responses were candid and honest, and he opposed the will of[Sun] Haoon numerous occasions, thus receiving his resentment.\nLater, there we... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.081Z"
+}

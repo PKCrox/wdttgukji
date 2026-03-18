@@ -1,0 +1,53 @@
+=== 이회 (李恢, Li Hui) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Li Hui (De’ang)
+李恢 (德昂)
+Lived AD ?–231
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+byZL181
+onMarch 28th, 2025
+No History Reference defined for Officer ID '310' Li Hui (De’ang). Biography cannot be tied to a scroll in the Sanguozhi.
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1743121320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757008495' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1743135755' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1743050969' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Li Hui, styledDe’ang, was fromYuyuan[俞元],Jianning[
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통76 무60 지77 정76 매72
+rotk12: 통79 무65 지79 정77 매?
+
+## 커뮤니티 평가
+(없음)

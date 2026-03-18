@@ -54,6 +54,16 @@ for (const char of ALL_CHARACTERS) {
   // EN 위키 요약
   const enSummary = (p.biography?.wiki_en?.summary || '').substring(0, 400);
 
+  // 정사삼국지 핵심 (최대 1500자)
+  const historySections = p.biography?.history?.sections || {};
+  let historyText = '';
+  for (const [k, v] of Object.entries(historySections)) {
+    if (!v || typeof v !== 'string') continue;
+    const add = `[${k}] ${v.substring(0, 500)}\n`;
+    if (historyText.length + add.length > 1500) break;
+    historyText += add;
+  }
+
   const out = `=== ${p.name_kr} (${p.name_cn}, ${p.name_en}) ===
 자: ${p.courtesy_kr || '불명'} (${p.courtesy_cn || '불명'})
 진영: ${p.faction} | 티어: ${p.tier} | 역할: ${p.role}
@@ -80,6 +90,30 @@ ${namuText || '(없음)'}
 
 ## EN Wikipedia
 ${enSummary || '(없음)'}
+
+## 정사삼국지
+${historyText || '(없음)'}
+
+## Kongming 영문 백과사전
+${p.biography?.kongming ? [
+  p.biography.kongming.life_span ? `생몰: ${p.biography.kongming.life_span}` : '',
+  p.biography.kongming.courtesy_name ? `자: ${p.biography.kongming.courtesy_name}` : '',
+  p.biography.kongming.historical_notes ? `[역사] ${p.biography.kongming.historical_notes.substring(0, 800)}` : '',
+  p.biography.kongming.novel_notes ? `[연의] ${p.biography.kongming.novel_notes.substring(0, 500)}` : '',
+  (p.biography.kongming.quotes || []).slice(0, 3).map(q => `"${q}"`).join('\n'),
+].filter(Boolean).join('\n') : '(없음)'}
+
+## 정사 영역본 (Kongming SGZ)
+${p.biography?.sgz_english?.first_translation?.excerpt ? p.biography.sgz_english.first_translation.excerpt.substring(0, 1000) : '(없음)'}
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+${p.stats_multi ? Object.entries(p.stats_multi).map(([ver, s]) =>
+  `${ver}: 통${s.leadership||'?'} 무${s.war||'?'} 지${s.intelligence||'?'} 정${s.politics||'?'} 매${s.charisma||'?'}`
+).join('\n') : '(없음)'}
+
+## 커뮤니티 평가
+${p.community ? `감정점수: ${p.community.sentiment_score}, 언급: ${p.community.mention_count}회
+키워드: ${(p.community.top_keywords || []).join(', ')}` : '(없음)'}
 `;
 
   writeFileSync(join(OUT, `${fn}.txt`), out, 'utf-8');

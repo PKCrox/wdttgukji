@@ -1,0 +1,159 @@
+{
+  "name_kr": "순유",
+  "name_en": "Xun You",
+  "name_cn": "荀攸",
+  "courtesy_kr": "공달",
+  "courtesy_cn": "公達",
+  "faction": "wei",
+  "tier": 2,
+  "role": "순욱 조카, 군략가",
+  "stats": {
+    "leadership": 73,
+    "war": 26,
+    "intelligence": 94,
+    "politics": 88,
+    "charisma": 84,
+    "total": 365,
+    "birth": 157,
+    "death": 214
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 73,
+      "war": 25,
+      "intelligence": 94,
+      "politics": 88,
+      "charisma": 86
+    },
+    "rotk11": {
+      "leadership": 73,
+      "war": 26,
+      "intelligence": 94,
+      "politics": 88,
+      "charisma": 84
+    },
+    "rotk12": {
+      "leadership": 73,
+      "war": 26,
+      "intelligence": 94,
+      "politics": 88
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "荀攸(157년~214년)후한 말의 인물이자 군벌인 조조를 섬겼던 군사(軍師)로, 자(字)는 공달(公達)이다. 시호는 경후(敬侯).",
+      "초기 생애": "같이 조조를 섬겼던 순욱의 칠촌 조카로 조부인 순담(荀曇)은 광릉태수가 되었다. 아버지인 순이(荀彝)는 주의 종사로 있었는데 순유가 어렸을 때 죽었다. 순유가 8살 때, 순유의 숙부인 순구가 술에 취해 잘못하여 순유의 귀에 상처를 낸 적이 있었다. 순유는 숙부의 방을 들어갔다 나왔다할 때 언제나 귀를 숨기고 숙부의 눈에 띄지 않으려고 하였다. 숙부는 뒤늦게 이 일을 듣고 알게 되어 놀라 사과하였고, 높이 평가하였다.순유가 13살 때, 장권(張權)이라는 사람이 순유에게 순유 아버지의 묘지기를 하고 싶다고 신청하였다. 순유는 이에 의혹을 품고 숙부인 순구에게 \"행동거지가 이상한데 혹시 무슨 나쁜 일을 저지른 적이 있지 않을까요.\" 라고 말하였다. 이 말을 들은 순구는 짚이는 게 있어 장권을 뒷조사해 보았고, 순유의 의혹대로 장권이 살인을 저지르고 도망쳐 온 것으로 밝혀졌다. 이 사건이 있은 뒤 순구는 순유의 학식을 더 높게 평가하게 되었다.하진이 정권을 잡았을때 순유는 원소와 음수 등에게 천거되어 황문시랑에 임명되나, 이후 동탁이 정권을 잡자 그 횡포에 분노하여 정태, 하옹 등과 함께 동탁을 암살할 계획을 세웠다. 그러나 사전에 발각되어 감옥에 투옥되어 사형이 결정되었다가, 사형이 집행되기 전에 동탁이 왕윤에게 암살당했기 때문에 풀려날 수 있었다.이후 활동할 수 있는 곳을 찾아 자신이 원하던 익주의 촉군태수(蜀郡太守)가 되려 했으나, 유언이 이미 교통로를 끊어버렸기에 형주에 머물게 되었다. 그리고 헌제를 자신의 본거지로 맞이한 조조에게서 편지가 오고, 군사로서 그를 섬기게 되었다.",
+      "평가": "조조의 패업을 지탱했던 명군사였다. 순유의 외조카인 신도가 조조가 기주를 얻을 때 순유가 무엇을 했는지 묻자 순유는 \"좌치(=신비)가 원담이 항복하도록 했고, 이에 왕사가 평정하러 갔을 뿐인데. 내가 아는 것이 뭐가 있겠느냐.\"라며 자신의 공을 숨겼고, 친지와 집안 식구들 누구도 순유에게 사무에 대한 일을 묻지 않았다는 기록이 전해질 정도로 순유는 평소 스스로의 공적을 내세우지 않았다.조조는 \"순유는 언뜻 보기엔 우둔해 보이나, 내면은 지혜를 가지고 있어 세심하고 용감하며, 선을 과시하지 않고, 번잡하고 성가신 일은 남에게 뒤집어씌우지 않는다. 안회와 영무자라도 순유 이상은 아닐 것이다.\"라고 높이 평가했다.조조의 두터운 신임을 받는 최측근이면서도 사치를 부리는 일도 없었고, 언제나 겸손하고 친절하여 친구가 많았다고 한다. 특히 종요와는 절친하여 순유가 죽을 때 남겨진 아이들의 뒷바라지를 종요에게 맡기겠다고 유언하였다. 그러나 두 아들 순집, 순적이 요절하여 순유의 집안은 위상이 추락하고 만다. 훗날 순유의 손자 순표(荀彪)가 성인이 된 후 다시 순유의 가문을 중흥시켰다.진수는 위서에서 순욱, 순유, 가후를 같이 묶었는데, 순욱이 조조군 부동의 1위 참모고 가후가 조비 때까지 살아 장수하며 지위를 누린 조위의 참모인 걸 생각하면 조조 휘하에서의 순유의 활약이 얼마나 굉장했을지를 알 수 있다.삼국지 위서에서는 순욱, 순유, 가후를 같은 권에 모았다. 즉, 조조군 최고의 3대 책사 중 한 명으로 꼽은 것. 실제로 순유는 전장에서 활약해 순욱 다음가는 공적을 쌓은 조조군 모사라 한다. 조조의 평가로도 순욱이 으뜸이고, 그 다음이 순유라고 하며 적을 쳐부순 것은 모두 순유의 공적이라고 할 정도로 압도적인 군공을 세웠다.순유는 그가 해놓은 업적에 비해서 저평가를 받는 편이다. 7촌 아저씨 순욱의 공이 워낙 크므로 책사 중 부동의 1위이기는 하지만, 순유는 병법부분에서 최고의 공적을 쌓았음에도 후세의 인식에선 개성 강한 가후와 곽가에게 밀려 인지도가 낮다. 그러나 실제 기록을 볼 때 조조군 진영 안에서 순유의 공을 능가할 만한 참모는 순욱밖에 없다. 조조군 참모들의 공적을 매긴다면 순욱 다음가는 부동의 2위인 인물이다. 순욱도 본래 공적에 비해 대중의 인식이 희미한 편이지만 그래도 대략적으로 조조 다음가는 No.1 이미지는 확고하고 자신의 패업을 이룩하게한 주군과 척을 지고 죽으면서까지 한실을 지키려한 마지막 충신이라는 흥미로운 스토리 라인이 있어 곧잘 회자되는 데 반해, 순유는 극적인 인상이 없어 캐릭터성도 없고 비중 있게 다루는 창작물도 거의 없다. 나와봐야 순욱 MK-2 취급인 게 상당수. 유능한 평생사를 지닌 사람보다 조용히 살다가 강렬한 한 방의 에피소드 하나를 지닌 사람이 더 유명한 것이 흔한 일이긴 하다. 어떤 의미에선 그냥 꾸준히 잘했다보니 후세에 개성있게 여겨질 만한 일화도 생기지 못했다고 봐야할지도. 순욱과 순유에 대해서 차이를 둘 때, 순유의 기록을 보면 의외로 세속적이고, 혈기 넘치는 모습이 많다. 가족관계나 사생활에 대해서도 이야기가 없는 순욱과 다르게, 순유는 본부인 외에 애첩 아무의 일화나, 주색을 즐기는 곽가와 어울리며 곽가랑 같이 조조를 말렸다는 것을 볼 때, 품행이 단정치 못하다는 곽가와도 의외로 잘 맞는 유형으로 보인다. 한나라의 충신이미지인 순욱처럼 순유 또한 한때는 동탁 암살을 시도할 정도로 의기 넘치는 충의지사였으나, 결국 한나라에 대한 충성에서 전향하여 조조의 신왕조 위나라를 더 중시하게 된 것으로 보인다.순욱의 아들 순찬은 순유가 신중하고 눈에 띄지 않게 행동하므로 도가의 사상에 의거해 '아버지 순욱보다 순유가 더 훌륭하다'는 발언을 한 적이 있는데, 위의 조조의 평가와 순찬의 평가를 볼 때 실제로 그다지 눈에 띄는 언행을 하는 타입은 아니었던 것 같다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 157–214",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Great Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Shang"
+        }
+      ],
+      "ranks": [
+        "Gentleman in Attendance of the Yellow Gates",
+        "Grand Administrator of Shu Commandery",
+        "Master of the Army",
+        "Prefect of the Masters of Writing"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 8",
+      "Warriors Orochi 2"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-18T10:20:10.035Z"
+}

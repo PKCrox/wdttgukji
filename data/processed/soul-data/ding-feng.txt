@@ -1,0 +1,62 @@
+=== 정봉 (丁奉, Ding Feng) ===
+자: 승연 (承淵)
+진영: wu | 티어: 2 | 역할: 설중기습, 오 후기 명장
+
+## 능력치
+통솔:81 무력:80 지력:71 정치:55 매력:56 총합:343
+생:190 몰:271
+
+## 연의 등장
+38~120회, 총 11개 회차
+회차: 38,44,49,51,55-56,75-76,83-84,86,108,117,119-120
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 삼국시대 오나라의 용장으로 양주 여강군 안풍현 사람.사실 정사에서는 제갈량 사후 삼국시대 중후기에 두각을 나타내는 인물이다. 정사에서 정봉이 215년/219년에 사망한 감녕 소속 장수였음을 생각하면 어리게 잡아도 200년 이전 생이며, 정봉의 커리어가 252년 동흥 전투부터 몰년인 271년까지에 집중되어 있음을 감안하면 50대에 처음 두각을 나타내고 70대까지 활약한 대기만성형 노장이라고 할 수 있다. 정사의《정황한장주진동감능서반정전》에서 마지막에 있다는 점에서도 역시 그가 후시대 인물이라는데 증거를 보탠다.
+[기타] 정봉의 가족묘는 2019년 난징시 구러우구 무푸산(幕府山) 남쪽 기슭에서 발굴되었다. 해당 묘는 벽돌묘로 추가적으로 합장한 흔적이 있다고 하며 도굴당해 출토 유물이 흐트러졌으나, 기마용, 유약토기, 청사기, 금은기, 유기, 동전, 철기, 지권벽돌, 칠기 등 다양한 유형이 출토되었다고 한다. 중국 CCTV 동영상 중국어 설명무덤이 발굴되면서 정봉의 부인은 251년에 사망했다는 사실과 해당 유적에서 출토된 기마용 유물에서 등자가 사용된 사실이 드러났다. 이는 등자 관련 유물로는 중국에서 가장 오래된 유물이며, 해당 유물이 발견되면서 최소한 중국의 삼국시대 말에는 강남에서도 원시적인 등자가 사용되었을 가능성이 높아졌다. #
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 55–56
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Before the 220s, he was only a minor officer under Gan Ning, and so most of his achievements before then (including the slaying of Zhang Liao) are fictional
+
+## 정사 영역본 (Kongming SGZ)
+Ding Feng (Chengyuan)
+丁奉 (承淵)
+Lived AD ?–271
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 55 (Wu 10)
+byHan Xin
+in2003
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745197514' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744993666' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744932255' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Ding Feng, styled Chengyuan, was originally from Anfeng County in Lujiang prefecture. Early in his career, because Ding Feng had shown that he was strong and 
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통67 무68 지52 정41 매59
+rotk11: 통81 무80 지71 정55 매56
+rotk12: 통81 무80 지75 정55 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

@@ -1,0 +1,114 @@
+{
+  "name_kr": "장소",
+  "name_en": "Zhang Zhao",
+  "name_cn": "張昭",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": {
+    "leadership": 33,
+    "war": 3,
+    "intelligence": 84,
+    "politics": 97,
+    "charisma": 80,
+    "total": 297,
+    "birth": 156,
+    "death": 236
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 7,
+      "war": 32,
+      "intelligence": 36,
+      "politics": 63,
+      "charisma": 46
+    },
+    "rotk11": {
+      "leadership": 33,
+      "war": 3,
+      "intelligence": 84,
+      "politics": 97,
+      "charisma": 80
+    },
+    "rotk12": {
+      "leadership": 33,
+      "war": 3,
+      "intelligence": 84,
+      "politics": 97
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 일반적인 의미1.1. 場所1.2. 長笑2. 동명이인2.1. 실존 인물2.2. 가상 인물"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Yan"
+        }
+      ],
+      "ranks": [
+        "Consultant"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 13200,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Zhang Zhao (Zibu)\n張昭 (子布)\nLived AD 155–236\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 52 (Wu 7)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745016307' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745016159' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745016159' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Zhao, styled Zibu, was a native of Pengcheng. From his youth he was dedicated to learning, and was excellent at the li style calligraphy. He studied TheSpring and Autumn Annals According to Zuounder Baihou Zi’an, and, being well-versed in all areas of literature, he became friends with Zhao Yu from Langya and Wang Lang of Donghai, and together they became well-known. While he was still newly capped [i.e., around 20 years of age], he was nominated as a Filial and Incorrupt, but declined the position.\nAt that time, he, along with Wang Lang, was involved in the debate regarding the ceremonial avoidance of the personal names of deceased emperors, and his arguments were highly praised by the intelligentsia of the area, including Chen Lin. Then, the Inspector of the area, Tao Qian, recommended Zhang Zhao to be an official Scholar, but again Zhang Zhao turned down the recommendation. Taking it to be disrespect toward himself, Tao Qian ordered him imprisoned; it was only through great efforts on Zhao Yu’s part that Zhang Zhao was spared.\nDuring the time of chaos at the end of the Han dynasty, many people from the Xu area sought refuge in the lan... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.069Z"
+}

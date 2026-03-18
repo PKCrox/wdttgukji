@@ -1,21 +1,26 @@
 {
-  "name_kr": "장포",
+  "name_kr": "장보",
   "name_en": "Zhang Bao",
-  "name_cn": "張苞",
+  "name_cn": "張宝",
   "courtesy_kr": null,
   "courtesy_cn": null,
-  "faction": "shu",
-  "tier": 1,
-  "role": "장비의 아들",
-  "stats": {
-    "leadership": 75,
-    "war": 87,
-    "intelligence": 48,
-    "politics": 46,
-    "charisma": 68,
-    "total": 324,
-    "birth": 198,
-    "death": 229
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 83,
+      "war": 69,
+      "intelligence": 79,
+      "politics": 60,
+      "charisma": 89
+    },
+    "rotk12": {
+      "leadership": 83,
+      "war": 71,
+      "intelligence": 81,
+      "politics": 76
+    }
   },
   "novel_presence": {
     "first_chapter": 81,
@@ -38,7 +43,30 @@
       "sections": {
         "Introduction": "張苞可能指下列人物：\n\n- 張苞 (督郵)：東漢末期人物，山陽高平縣人，為郡督郵。\n- 張苞 (中郎將)：東漢末期人物，李傕手下中郎將。\n- 張苞 (蜀漢)：東漢末期三國時代蜀漢人物，張飛長子。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "General of the Gentlemen of the Household"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": -100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -147,11 +175,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
-    "stats": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": false,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.260Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.086Z"
 }

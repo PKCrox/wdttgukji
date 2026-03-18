@@ -17,6 +17,28 @@
     "birth": 222,
     "death": 285
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 78,
+      "war": 91,
+      "intelligence": 61,
+      "politics": 43,
+      "charisma": 68
+    },
+    "rotk11": {
+      "leadership": 76,
+      "war": 91,
+      "intelligence": 60,
+      "politics": 32,
+      "charisma": 63
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 91,
+      "intelligence": 65,
+      "politics": 32
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       110,
@@ -42,7 +64,43 @@
       "sections": {
         "Introduction": "文鴦（238年—291年4月23日），字次騫，本名文俶，鴦是小名，沛國譙縣人，魏末晉初名將，歷仕魏、吳、晉勢力。初時隨父文欽反叛司馬氏當權下的魏國，後兵敗與父和弟投奔東吳。在諸葛誕叛亂中，文欽由於與諸葛誕意見分歧而被殺，文鸯因而投降返回魏。晉時期大破鮮卑、羯有功，291年被東安王司馬繇指控謀反，在八王之亂中被夷滅三族。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 4",
+      "Warriors Orochi 3"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -56,11 +114,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.233Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:09.940Z"
 }

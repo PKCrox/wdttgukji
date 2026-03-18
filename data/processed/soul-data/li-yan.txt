@@ -38,3 +38,33 @@ Li Yan, politician during Tang Dynasty and Wu
 Li Yan (artist), Chinese artist
 Athena Lee Yen, Taiwanese actress
 Yan
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Li Yan (Zhengfang)
+李嚴 (正方)
+Lived AD 166–206
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 40 (Shu 10)
+byDarkAnthem
+in2003
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744927538' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744927446' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744927446' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Li Yan, style Zhengfang, was a native of Nan Yang. He was a prefect Zhi Li when he was young, and he displayed great talent and capability. Liu Biao sent h
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통84 무83 지80 정81 매52
+rotk11: 통83 무84 지75 정74 매52
+rotk12: 통83 무84 지76 정74 매?
+
+## 커뮤니티 평가
+감정점수: 0, 언급: undefined회
+키워드: 

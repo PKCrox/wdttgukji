@@ -17,6 +17,28 @@
     "birth": 199,
     "death": 234
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 63,
+      "politics": 52,
+      "charisma": 72
+    },
+    "rotk11": {
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 62,
+      "politics": 58,
+      "charisma": 75
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 67,
+      "politics": 58
+    }
+  },
   "novel_presence": {
     "first_chapter": 74,
     "last_chapter": 102,
@@ -39,8 +61,89 @@
       "sections": {
         "Introduction": "關興（？—3世紀），字安國，三國時期蜀漢官吏。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 77–78",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Ping"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Tong"
+        }
+      ],
+      "ranks": [
+        "Palace Attendant",
+        "Superintendent of the Central Army"
+      ],
+      "historical_notes": "Guan Xing was the son of Guan Yu. Unfortunately, there is not much known about him historically. He had several official appointments within Shu-Han and was said to be admired by Zhuge Liang, however (de Crespigny 276).\n\nAccording to the Old Book of Tang, his descendants moved to Xindu.\n\nIn the Romance of the Three Kingdoms novel, he kills Pan Zhang and participates in Zhuge Liang’s Northern Campaigns alongside Zhang Bao. These things did not happen historically.\n\nWork Cited:\n\nDe Crespigny, Rafe. A Biographical Dictionary of Later Han to the Three Kingdoms: (AD 23–220). Leiden [u.a.: Brill, 2007. Print.",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas more a civil administrator than a warrior.\n\tDid not kill Pan Zhang.",
+      "quotes": []
+    },
+    "sgz_english": null
   },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTK13",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": null,
   "dialogues": [
     {
       "chapter": 92,
@@ -148,11 +251,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": false,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.259Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:09.975Z"
 }

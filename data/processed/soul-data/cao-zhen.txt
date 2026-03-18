@@ -1,0 +1,58 @@
+=== 조진 (曹真, Cao Zhen) ===
+자: 자단 (子丹)
+진영: wei | 티어: 2 | 역할: 대장군, 제갈량 방어
+
+## 능력치
+통솔:87 무력:74 지력:68 정치:72 매력:88 총합:389
+생:185 몰:231
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+230년: 제3차 북벌
+
+## 나무위키
+[개요] 후한 말과 삼국시대 위나라의 장수. 자는 자단(子丹). 조조의 조카뻘. 형제자매로 조빈과 덕양향주 조씨가 있다.
+[평가] 삼국지연의 후반부에 제갈량이 주인공 보정을 받고, 아울러 사마의가 최종 보스 보정을 받게 되면서 희생된 인물로 볼 수 있다.물론 그 빌드업 과정 중에 나름의 역할을 부여받았기에 연의에서도 조진은 일정 분량의 비중과 역할을 부여 받아 존재감을 보이기는 하니, 일각에서 언급하는 연의의 가장 큰 피해자까지는 아니다. 조진과 비슷한 급이지만 아예 활약을 통편집당한 주연보다는 확실히 사정이 낫다.그러나 정사 삼국지에서 묘사되는 조진은 독보적인 군재는 없어도 전장을 넓게 보고 정석적으로 움직이며 학소를 비롯한 장수들을 적재적소에 중용하여 제갈량의 초기 북벌을 모두 막아낸 훌륭한 대촉전선 총사령관이었는데, 이러한 업적들이 연의의 소설적 장치인 제갈량과 사마의의 라이벌 구도에 의해 대폭 축약된 것은 분명한 사실이기에 연의의 피해자 중 한 명인 것은 분명하다. 거기에다 연의에서 가장 치욕적인 죽음으로 각색당한 것은 덤이라고 할 수 있다.또한 조씨 혈족 2세대 측근 정치인으로서 조진의 역할은 위나라의 왕권 강화 및 안정에서의 측면도 매우 컸다. 실제로 조진 사후 위나라 조씨 왕권은 급속도로 약화되며, 결국 사마의 세력이 위나라를 찬탈하여 멸망시키고 서진을 건국하기에 이르른다.
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Cao Zhen (Zidan)
+曹真 (子丹)
+Lived AD ?–231
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 9 (Wei 9)
+byStephen So (Shu-Han Zhao Lie Di)
+in2000
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745032613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745032608' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745032608' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Cao Zhen, styled Zidan, was nephew of The Great Ancestor’s clan. When the Grand Ancestor raised his troops, Zhen’s father, Shao, was recruit
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통88 무72 지67 정71 매87
+rotk11: 통87 무74 지68 정72 매88
+rotk12: 통81 무74 지70 정72 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

@@ -17,6 +17,28 @@
     "birth": 175,
     "death": 234
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 85,
+      "war": 92,
+      "intelligence": 69,
+      "politics": 43,
+      "charisma": 34
+    },
+    "rotk11": {
+      "leadership": 81,
+      "war": 92,
+      "intelligence": 69,
+      "politics": 49,
+      "charisma": 45
+    },
+    "rotk12": {
+      "leadership": 85,
+      "war": 92,
+      "intelligence": 72,
+      "politics": 49
+    }
+  },
   "novel_presence": {
     "first_chapter": 41,
     "last_chapter": 105,
@@ -45,7 +67,79 @@
       "sections": {
         "Introduction": "魏延（2世紀—234年），字文長，荊州義陽郡人，三國時期蜀漢中期重要將領，作戰英勇、並有將略、屢立戰功，深得蜀主劉備信任、丞相諸葛亮重用。劉備時期任魏延鎮北將軍、漢中太守，於諸葛亮北伐時期出任前軍師，參與北伐時前線戰事之決策。建興十二年（234 年），諸葛亮病逝後，魏延因素來與長史楊儀不和，不願受其節制，於是在大軍撤退途中燒毀棧道，反攻楊儀，最終兵敗被殺，並夷滅三族。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Palace Attendant"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 92,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -162,11 +256,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.240Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.954Z"
 }

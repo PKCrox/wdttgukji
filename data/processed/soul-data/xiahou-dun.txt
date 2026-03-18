@@ -74,3 +74,38 @@ Cao Cao: 군신 (강도85, 혈족 맹장)
 
 ## EN Wikipedia
 Xiahou Dun, courtesy name Yuanrang, was a Chinese military general and politician serving under the warlord Cao Cao during the late Eastern Han dynasty of China. He served for a few months under Cao Cao's successor, Cao Pi, before his death. As one of Cao Cao's most trusted generals, Xiahou Dun aided the warlord in his campaigns against Lü Bu, Liu Bei, Sun Quan and others.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 160–220
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Xiahou Dun did not kill Cao Xing for shooting out his eye, nor did he consume it.
+
+## 정사 영역본 (Kongming SGZ)
+Xiahou Dun (Yuanrang)
+夏侯惇 (元讓)
+Lived ADca.160–220
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 9 (Wei 9)
+byZL181
+onDecember 5th, 2022
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1670241600' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1749357289' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742329734' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740784884' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Xiahou Dun, styledYuanrang, was fromQiao,Pei commandery, and was a descendant ofXiahou Ying.
+When he was fourteen, he studied under a teacher.
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통87 무89 지61 정76 매87
+rotk11: 통89 무90 지58 정70 매81
+rotk12: 통92 무90 지63 정70 매?
+
+## 커뮤니티 평가
+감정점수: 88, 언급: undefined회
+키워드: 

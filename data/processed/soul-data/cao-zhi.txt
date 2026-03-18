@@ -1,0 +1,53 @@
+=== 조식 (曹植, Cao Zhi) ===
+자: 불명 (불명)
+진영: wei | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Cao Zhi (Zijian)
+曹植 (子建)
+Lived AD 192–232
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 19 (Wei 19)
+byLady Wu
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745197148' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744953221' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744950488' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Cao Zhi (styled Zijian), the third son of Cao Cao and Prince Si of Chen, is widely acknowledged as the most accomplished writer and poet of the Jian’an era, and
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통20 무22 지85 정70 매79
+rotk12: 통33 무22 지81 정70 매?
+
+## 커뮤니티 평가
+(없음)

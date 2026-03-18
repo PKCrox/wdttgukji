@@ -1,0 +1,76 @@
+{
+  "name_kr": "조식",
+  "name_en": "Cao Zhi",
+  "name_cn": "曹植",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 20,
+      "war": 22,
+      "intelligence": 85,
+      "politics": 70,
+      "charisma": 79
+    },
+    "rotk12": {
+      "leadership": 33,
+      "war": 22,
+      "intelligence": 81,
+      "politics": 70
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 10376,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Cao Zhi (Zijian)\n曹植 (子建)\nLived AD 192–232\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 19 (Wei 19)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745197148' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744953221' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744950488' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nCao Zhi (styled Zijian), the third son of Cao Cao and Prince Si of Chen, is widely acknowledged as the most accomplished writer and poet of the Jian’an era, and his surviving works surpass that of the other writers of the time in both number and quality.\nAn easy-going man, Cao Zhi was never pompous or overly ceremonious with his friends. He was beloved of Cao Cao for his quick wit and ability to answer the most difficult of questions on the spot. In the earlier parts of his life he was given to partying and sports, but possessed genuine concern for his country. In spite of that, Cao Zhi was the object of suspicion of both Wei emperors he served under, and died at the age of 41 as a frustrated and depressed man, never having held an important position in government.\nCao Zhi’s literary talents showed at a young age. When he was still in his teens, he had already learnt many books and essays by heart, totaling a hundred thousand lines of text. Once, Cao Cao took all his sons up to the newly completed Bronze Sparrow Pavilion, and ordered each one of them to write an ode on it. Cao Zhi picked up the writing brush and composed such a beautiful poem... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.055Z"
+}

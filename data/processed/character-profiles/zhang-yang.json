@@ -1,0 +1,92 @@
+{
+  "name_kr": "장양",
+  "name_en": "Zhang Yang",
+  "name_cn": "張楊",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 68,
+      "war": 70,
+      "intelligence": 68,
+      "politics": 60,
+      "charisma": 67
+    },
+    "rotk12": {
+      "leadership": 72,
+      "war": 70,
+      "intelligence": 66,
+      "politics": 58
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 151–198",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Assistant Officer for Military Affairs",
+        "Major",
+        "General Who Establishes Righteousness",
+        "Grand Administrator of Henei",
+        "General Who Gives Tranquillity to the State",
+        "Commander-in-Chief"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 10934,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Zhang Yang (Zhishu)\n張楊 (稚叔)\nLived AD 151–198\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 8 (Wei 8)\nbyZL181\nonApril 12th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1681297920' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758070366' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742656377' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742627071' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Yang, styledZhishu, was fromYunzhong[雲中].\nBecause he supportedBing province[并州] through his valor and fierceness, he was madeClerk of Martial Fierceness.\nDuring the end of the reign of theKeenEmperor, the realm under heaven was in turmoil.Jian Shuo, who was a loved and favoredJunior Gentlemen of the Yellow Gatesof theEmperor, was appointedColonel of the Upper Armyof the Western Garden Army, the army being at the capital, so as to control the four directions. The powerful and mighty of the world were summoned to serve as his deputies and lieutenants. TheGrand ProgenitorandYuan Shaowere all madeColonelssubordinate to him.ATheInspectorofBing province[并州刺史],Ding Yuan, sent[Zhang] Yangto lead troops to[Jian] Shuoas temporaryMajor.\nTheAnnals of the Keen Emperorstates: TheHousehold General of the Rapid Tigers,Yuan Shao, was madeColonel of the Central Army; theColonel of the Garrison Cavalry,Bao Hong, was madeColonel of the Lower Army;Gentleman ConsultantCao Caowas madeCommandant for Military Standards;Zhao RongandFeng Fangwere madeColonels who Assists the Army; andXia MouandChunyu Qiongwere madeColonel of the Left ArmyandColonel of ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.086Z"
+}

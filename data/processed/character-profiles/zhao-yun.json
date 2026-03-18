@@ -17,6 +17,28 @@
     "birth": 168,
     "death": 229
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 91,
+      "war": 96,
+      "intelligence": 75,
+      "politics": 65,
+      "charisma": 81
+    },
+    "rotk11": {
+      "leadership": 91,
+      "war": 96,
+      "intelligence": 76,
+      "politics": 65,
+      "charisma": 81
+    },
+    "rotk12": {
+      "leadership": 96,
+      "war": 96,
+      "intelligence": 77,
+      "politics": 65
+    }
+  },
   "novel_presence": {
     "first_chapter": 7,
     "last_chapter": 97,
@@ -44,7 +66,124 @@
       "sections": {
         "Introduction": "趙雲（153年？—229年），字子龍，是漢末三國時期的蜀漢武將，生于常山真定（今河北省正定县），身高八尺（约185公分），姿顏雄偉。最初效忠公孫瓚，官渡之戰後效忠劉備、劉禪。歷任牙門將軍，偏將軍、領桂陽太守，翊軍將軍，領中護軍、征南將軍，封永昌亭侯，鎮東將軍。箕谷失利後貶為鎮軍將軍。后追諡曰順平侯，是为永昌亭顺平侯。\n\n陈寿在撰写《三国志》的时候，将赵云与关羽、张飞、马超、黄忠的事迹合记成《三国志·蜀书·关张马黄赵传》，罗贯中的長篇小說《三国演义》中又将該五人并称“五虎上将”，其“常胜将军”的形象广为世人所知。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {
+        "생애 (정사)": "### 개요\n1. 개요2. 초반 행적3. 공손찬 휘하에서4. 유비에게 임관5. 장판파 전투6. 형주에서7. 유비의 입촉8. 한중 공방전9. 이릉대전10. 남만 정벌11. 제갈량의 1차 북벌11.1. 전투 과정과 퇴각, 전후 처리12. 죽음12.1. 생몰년과 나이\n\n### 개요\n조운의 생애를 서술한 문서.기존에 진수가 쓴 《촉서》〈조운전〉은 〈황충전〉에 버금갈 정도로 허전했으나, 이후 배송지가 《조운별전》의 내용들을 인용해 주석으로 보충하여 기록으로 남겼다. 훗날 송의 역사가 사마광이 저술한 《자치통감》에서도 조운별전의 내용들을 차용하여 조운의 행적을 기록하였다.조운(趙雲)은 자(字)가 자룡(子龍)이고 기주 상산(常山) 진정(眞定) 사람이다. 본래 공손찬의 세력에 속했는데 공손찬이 유비에게 전해를 도와 원소를 막게 하니 조운이 함께 따라나서며 유비를 위해 기병을 지휘했다.조운은 신장이 8척에 용모가 웅장하며 위엄이 있었다. 본래 속한 군에서 천거되었는데 의종을 거느리고 공손찬에게 임관했다. 당시 원소가 기주목(冀州牧)을 칭하였고 공손찬은 기주 사람들이 원소를 따르는 것을 크게 우려하였다. 조운이 귀부해 오자 기뻐하면서도 조운을 우습게 여겼다, \"듣기로 그대가 속한 주의 사람들은 모두 원씨(袁氏)를 원한다던데 그대는 어찌 홀로 마음을 돌리고 미혹되어 반대로 행하는 것이오?\" 조운이 대답했다, \"천하가 흉흉하여 누가 옳고 그른지 알 수 없으며, 백성들이 마치 거꾸로 매달아 놓은 것처럼 위태로운 상황에 처하여 비주(鄙州)에서 논의하기를 어진 정치가 있는 곳을 따르기로 하였을 뿐 원공(袁公-원소)을 소홀히 하며 명장군(明將軍-공손찬)을 사사로이 따르자는 것은 아닙니다.\" 그리하여 공손찬과 함께 군사를 일으켜 정벌했다.유비도 이때 공손찬에게 의탁하고 있었는데 늘 조운을 맞아들여 그를 대우하니 조운이 심히 동하여 유비와 결탁하게 되었다. 조운의 형이 죽자 공손찬에게 말해 잠시 고향으로 돌아가게 되었는데 유비는 그가 돌아오지 않을 것이라 믿고 손을 맞잡으며 작별했다. 조운이 말했다, \"끝내 덕(德)을 저버리지는 않을 것입니다.\" 유비가 원소(袁紹)의 빈객이 되자 조운이 업(鄴)에서 그를 만났다. 유비는 조운과 같은 침상에서 함께 잠을 잤으며, 은밀히 조운을 보내 무리를 모으게 해 수백 명을 얻었는데 이들이 모두 좌장군 유비의 부곡(部曲)이라 칭했으나 원소는 이를 알지 못했다. 그리고는 선주를 따라 형주(荊州)에 이르렀다.유비가 당양(當陽) 장판(長阪)에서 조조에게 추격당해 처자를 버리고 남쪽으로 달아나자 조운이 유선과 감부인을 보호하여 모두 위난을 면할 수 있었다. 이후 아문장군(牙門將軍)으로 올랐다. 유비가 촉(蜀)으로 들어갈 때 조운은 형주에 남았다.당초 유비가 패했을 때 조운이 이미 북쪽으로 떠났다고 말하는 자가 있었다. 이에 선주가 수극(手戟)을 내던지며 말했다, \"자룡이 나를 버리고 달아났을 리 없다.\" 얼마 지나지 않아 조운이 도착했다.강남(江南)을 평정하는데 종군하여 편장군(偏將軍)이 되고 계양태수(桂陽太守)를 겸하여 기존의 계양태수였던 ... (truncated)"
+      }
+    },
+    "kongming": {
+      "life_span": "AD 168–229",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Yunlu f"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Zhao Guang"
+        },
+        {
+          "relation": "member",
+          "name": "Zhao Tong"
+        }
+      ],
+      "ranks": [
+        "General of the Standard (AD 208, Before Chi Bi)",
+        "Lieutenant-General (AD 208, After Chi Bi)",
+        "General of the Flying Army (AD 212)",
+        "General of Tiger Valor (Hu Wei Jiang Jun, AD 219, Nickname)",
+        "General Who Protects the Center (AD 222)",
+        "General Who Conquers the South (AD 222)",
+        "Marquis of Yongchang (AD 222)",
+        "General Who Guards the East",
+        "General of the Centre Army (AD 227, Demotion)",
+        "Marquis of Shunping (AD 261, Posthumous)",
+        "One of the ‘Five Tiger Generals’"
+      ],
+      "historical_notes": "Zhao Yun (Zilong) was said to be about 6’ 2’’ in height. Zhao Yun held office in his hometown county of Changshan until in AD 191 at the age of 23 he decided to serve as an officer under Gongsun Zan in preference to Yuan Shao who was also a powerful warlord near his home region (he decided to serve Gongsun Zan because he believed him to be more righteous). He met Liu Bei while under Gongsun Zan’s command. Liu Bei respected Zhao Yun. Yun led Liu Bei’s cavalry unit when Liu Bei was sent by Zan to aid Tian Kai against Yuan Shao. Zhao Yun later left Gongsun Zan’s forces, as he was unimpressed by his attitude, to attend his elder brother’s funeral.\n\nAfter about 6 years of absence during which time his activities were unknown, Zhao Yun reappeared in AD 200 where, in the city of Ye, he met Liu Bei when the latter was on the run after having been defeated by Cao Cao. Zhao Yun recruited a small band of men for Liu Bei to command.\n\nIn AD 207, Xiahou Dun attacked Liu Bei at Bowang. Zhao Yun competed in the battle and managed to capture and recruit the enemy general, Xiahou Lan.\n\nIn AD 208 Cao Cao assembled an army and marched south to take Jingzhou. Liu Cong, younger son of Liu Biao and the then leader of Jing, yielded. Liu Bei was forced to flee and headed towards Jiangling. Cao Cao sent 5000 elite light armoured cavalry after Liu Bei. Liu Bei was caught up with and routed at Changban. He then deserted his family and infantry and fled with Zhuge Liang, Zhang Fei, Zhao Yun and the cavalry. A short time afterwards, Zhao Yun turned back into the enemy’s location and managed to locate Liu Bei’s wife and son and safely escorted them back to Liu Bei. He was rewarded with the rank of ‘General of the Standard’. (It is interesting that the daughters were captured by the enemy whereas the wife and son escaped. I surmise that is likely that the daughters would have initially been together with the wife and son. I would say this because it seems unlikely that the mother would have been w... (truncated)",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tZhao Yun never served Yuan Shao.\n\tZhao Yun left Gongsun Zan along with Liu Bei, and from that point, remained in his service.\n\tZhao Yun did not slay Zhu Ran at Yiling.\n\tZhao Yun did not battle with or slay Zhu Zan.\n\tThe story in which Zhao Yun’s wife pricks him with a pin, causing in his death, is based on Chinese opera.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 3,
+      "total_char_count": 35910,
+      "first_translation": {
+        "translator": "Sonken",
+        "excerpt": "Zhao Yun (Zilong)\n趙雲 (子龍)\nLived ADca.168–229\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 36 (Shu 6)\nbySonken\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742431523' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742431459' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740600591' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAuthor’s Note: Currently this biography contains a few known translation errors. While pending re-translation please cross-reference material withthis alternative Sanguozhi translation. We apologize for any inconvenience.\nZhao Yun, Zilong (AD 168–229) hailed from Zhending of Changshan (present day Hebei Zhending). Zhao Yun was originally under Gongsun Zan and when Gongsun Zan ordered Liu Bei to assist Tian Kai to fend off Yuan Shao, Zhao Yun followed along as Liu Bei’s main cavalry forces.ADuring the time when Liu Bei was pursued by Cao Cao’s forces at Dangyang Changban, Liu Bei abandoned his wife and child to flee south. Zhao Yun carried the young child, who was Liu Shan and also protected Lady Gan, the mother of Liu Shan, hence all of them were able to escape the dangers. Zhao Yun was later appointed as YaMen JiangJun (General of the Standard). While Liu Bei entered the Shu region, Zhao Yun remained in Jingzhou.B\nFrom Zhao Yun Bie Zhuan: Zhao Yun was 8 chi tall (approx 1.89m) and had a commanding appearance. In the earlier days, he held office in a county. In the second year of Chuping (AD 191), Yuan Shao was declared as the governor of Yi... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms concept",
+      "ROTK12",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "rotk13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 85,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -161,11 +300,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.170Z"
+  "source_count": 13,
+  "generated_at": "2026-03-18T10:20:09.865Z"
 }

@@ -17,6 +17,28 @@
     "birth": 166,
     "death": 209
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 81,
+      "war": 90,
+      "intelligence": 67,
+      "politics": 59,
+      "charisma": 79
+    },
+    "rotk11": {
+      "leadership": 82,
+      "war": 93,
+      "intelligence": 66,
+      "politics": 58,
+      "charisma": 79
+    },
+    "rotk12": {
+      "leadership": 90,
+      "war": 93,
+      "intelligence": 69,
+      "politics": 58
+    }
+  },
   "novel_presence": {
     "first_chapter": 11,
     "last_chapter": 53,
@@ -42,7 +64,93 @@
       "sections": {
         "Introduction": "太史慈（166年—206年），字子義，東萊郡黄縣（今山東省龍口市）人，重信守義，弓馬熟練，箭法精良，東漢末年諸侯群雄孔融的客將，曾經為了報答對其母有恩的北海相孔融，而在黃巾軍包圍下單騎突圍向平原相劉備求援。後南下渡江投靠於同鄉的揚州牧劉繇，在神亭嶺一戰跟孫策單挑不分勝負，後劉繇敗於孫策後，率眾歸降孫策，助其平定江東一帶，其義名聲望連丞相曹操都以當歸欲招攬之，但太史慈仍然選擇效忠孫策。在劉繇病逝後，收攏士卒率部投靠的太史慈，在孫策、孫權的麾下，因其身份是依附於孫家的盟友與諸侯，所以凌駕於十二虎臣，(另與劉繇、士燮並傳)；於赤壁之戰前病逝，死時四十一歲。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 166–206",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Taishi Xiang"
+        }
+      ],
+      "ranks": [
+        "Rank-Breaking General of the Interior"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 20596,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Taishi Ci (Ziyi)\n太史慈 (子義)\nLived AD 166–206\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 49 (Wu 4)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744996832' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744996363' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744996363' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTaishi Ci, styled Ziyi, was a man from Huang in Donglai. He was fond of learning when he was a youth, and had served as a clerk in the reporting department in his commandery.1Once, the commandery office and the provincial office had a dispute, and as the matter could not be resolved, they were going to file complaint reports to the court [for arbitration]. Whoever could get his report read first would clearly have an advantage. Now, the provincial report had been sent, and the administrator of the commandery was worried that his version of the story would get there behind that of the province’s. And so, after considering all who could be appointed to the task of delivering the report, he chose the 21-year-old Taishi Ci.•••\nDepartment responsible for writing reports to send to the central government.↩\nDay and night Taishi Ci travelled, and soon he arrived at Luoyang. He went to the public entrance of the imperial offices, and saw that the provincial officer was still waiting to be admitted. So Taishi Ci said [to the provincial officer], “Sir, are you trying to submit a report?”\nThe officer answered, “Yes.”\n“Where is the report?” Taishi Ci asked... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 29,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -151,11 +259,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.273Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.993Z"
 }

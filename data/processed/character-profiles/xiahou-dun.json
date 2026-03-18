@@ -17,6 +17,28 @@
     "birth": 156,
     "death": 220
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 87,
+      "war": 89,
+      "intelligence": 61,
+      "politics": 76,
+      "charisma": 87
+    },
+    "rotk11": {
+      "leadership": 89,
+      "war": 90,
+      "intelligence": 58,
+      "politics": 70,
+      "charisma": 81
+    },
+    "rotk12": {
+      "leadership": 92,
+      "war": 90,
+      "intelligence": 63,
+      "politics": 70
+    }
+  },
   "novel_presence": {
     "first_chapter": 5,
     "last_chapter": 79,
@@ -46,7 +68,118 @@
       "sections": {
         "Introduction": "夏侯惇（2世紀—220年6月13日），字元让，別名盲夏侯，沛国谯县（今属安徽省亳州市）人，曹操的族兄。漢朝開國功臣之一夏侯嬰的後代。東漢末年曹操部下大將，官至大將軍，封高安鄉侯。曹操死後數月夏侯惇也因病去世。谥為忠侯。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 160–220",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Chong"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Mao"
+        }
+      ],
+      "ranks": [
+        "General Who Displays Firmness",
+        "Zhechong Xiaowei, Governor of Dong Prefecture",
+        "Governor of Chenliu",
+        "Governor of Jiyin",
+        "Jianwu Jiangjun",
+        "Duke of Gao an Xiang",
+        "Governor of He’nan",
+        "Fubo Jiangjun",
+        "General of the Van (AD 219)",
+        "‘Great General’",
+        "‘Loyal Duke’ (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tXiahou Dun did not kill Cao Xing for shooting out his eye, nor did he consume it.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 25530,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Xiahou Dun (Yuanrang)\n夏侯惇 (元讓)\nLived ADca.160–220\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyZL181\nonDecember 5th, 2022\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1670241600' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1749357289' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742329734' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740784884' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXiahou Dun, styledYuanrang, was fromQiao,Pei commandery, and was a descendant ofXiahou Ying.\nWhen he was fourteen, he studied under a teacher. There was someone who insulted the teacher, and[Xiahou] Dunkilled them. Thus, he was renowned for his fierce spirit.\nWhen theGrand Progenitorfirst rose up,[Xiahou] Dunaccompanied him as a lieutenant general, following him in expeditions. When theGrand Progenitorwas actingGeneral who Exerts Might, he appointed[Xiahou] DunasMajorand had him garrison atBaima. He was later promoted to beColonel who Breaks and ChargesandGrand AdministratorofDong commandery.\nWhen theGrand Progenitorlaunched an expedition againstTao Qian, he had[Xiahou] Dunremain behind to guardPuyang. WhenZhang Miaorebelled and welcomedLü Bu, the family of theGrand Progenitorwas inJuancheng.[Xiahou] Dunwent there with a light army and encountered[Lü] Bu. They fought each other.[Lü] Buwithdrew and enteredPuyang, seizing the army supplies of[Xiahou] Dun. They sent generals pretending to surrender, who together seized[Xiahou] Dun. They then demanded treasures and wealth. The army of[Xiahou] Dunwas in shock and terror, butHan H... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 88,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -163,11 +296,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.131Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.825Z"
 }

@@ -17,6 +17,28 @@
     "birth": 139,
     "death": 192
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 81,
+      "war": 83,
+      "intelligence": 68,
+      "politics": 22,
+      "charisma": 36
+    },
+    "rotk11": {
+      "leadership": 74,
+      "war": 87,
+      "intelligence": 69,
+      "politics": 19,
+      "charisma": 37
+    },
+    "rotk12": {
+      "leadership": 85,
+      "war": 87,
+      "intelligence": 73,
+      "politics": 59
+    }
+  },
   "novel_presence": {
     "first_chapter": 1,
     "last_chapter": 120,
@@ -46,7 +68,127 @@
         "Introduction": "董卓（139年？—192年5月22日），字仲穎，涼州陇西临洮（今甘肅岷县）人，东汉与羌的战争中崛起的汉军将领。董卓长期参与汉羌战争，先后跟过张奂、段颎两位汉军高级将领。董卓于汉灵帝时代担任并州刺史，河東太守，军衔至中郎将。受汉大将军何进调令进军东汉首都洛阳以脅迫十常侍，在十常侍与何进火拼並同时死亡的情况下利用手中军队独霸汉廷。之后废漢少帝劉辯為弘農王，立陳留王劉協為帝（即漢獻帝），並自封为东汉太尉、相国，引致董卓讨伐战。後來聯軍發生內鬨，转而成为各军阀互相争战的情況。董卓本人则被王允、吕布设计诛杀，死後部下李傕和郭汜兩人為了把持朝政互相火拼，皇帝与朝廷流离失所，各地州牧、刺史、太守佔据屬地完全脱离中央控制，开启東漢末年以至三国时代。",
         "影响": "董卓铸造小钱，导致“钱货不行”，直到魏明帝太和元年（227年）四月，稳定的五铢钱才在三国之一的曹魏得到恢复。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 10–11",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Dong Junya"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Dong"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Niu Fu"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Dong Bai"
+        },
+        {
+          "relation": "member",
+          "name": "Granddaughter"
+        },
+        {
+          "relation": "member",
+          "name": "Dong Bo"
+        }
+      ],
+      "ranks": [
+        "Major",
+        "Gentleman of the Palace",
+        "General of the Gentlemen of the Household of the East",
+        "General Who Routs the Caitiffs",
+        "General of the Van",
+        "Minister of Works",
+        "Grand Commandant",
+        "Marquis of Mei",
+        "Chancellor of State",
+        "Grand Master"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDong Zhuo was not historically saved by Liu Bei, Zhang Fei and Guan Yu while fighting the Yellow Turbans.\n\tDong Zhuo was never presented with the “Seven-Star Sword” by Cao Cao after a failed assassination attempt.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 72,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -163,11 +305,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.196Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.891Z"
 }

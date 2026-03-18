@@ -1,0 +1,109 @@
+{
+  "name_kr": "향랑",
+  "name_en": "Xiang Lang",
+  "name_cn": "向朗",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 28,
+      "war": 15,
+      "intelligence": 71,
+      "politics": 74,
+      "charisma": 70
+    },
+    "rotk12": {
+      "leadership": 28,
+      "war": 18,
+      "intelligence": 74,
+      "politics": 74
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 168–247",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Xiang Tao"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Xiang Chong"
+        }
+      ],
+      "ranks": [
+        "Grand Administrator of West Ba",
+        "Colonel of the Infantry",
+        "Chief Clerk of the Office of the Prime Minister",
+        "Superintendent of the Imperial Household",
+        "General of the Left",
+        "Marquis of Xianming Commune"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4856,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Xiang Lang (Juda)\n向朗 (巨達)\nLived ADca.168–247\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 41 (Shu 11)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744997736' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744997482' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744997482' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXiang Lang, styled Juda, was a native of Yicheng in Xiangyang.AHe was made Chief of Linju by Liu Biao. When Liu Biao died, he went to serve under Liu Bei. After Liu Bei conquered the lands south of the Yangtze, he appointed Xiang Lang to be in charge of all military and civil affairs of the four counties of Zigui, Yidao, Mushan, and Yiling. Once the lands of Shu were captured, Xiang Lang became Grand Administrator of West Ba (Baxi), before being transferred to Zangke and thence to Fangling. He became Colonel of the Infantry when the Latter Ruler (Liu Shan) came to the throne, and replaced Wang Lian as designated Chief Clerk of the office of the Prime Minister. During Prime Minister Zhuge Liang’s southern expedition he stayed behind to take care of the affairs of the home front, and in the 5th year of Jianxing (AD 227), he followed Zhuge Liang to Hanzhong.\nXiangyang Ji: In his youth, Xiang Lang studied under Sima Decao, and was close friends with Xu Yuanzhi (Xu Shu), Han Degao, and Pang Shiyuan (Pang Tong).\nXiang Lang had been friends with Ma Su. So when Ma Su attempted to escape,1Xiang Lang did not report him. For that Zhuge Liang grew an ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.066Z"
+}

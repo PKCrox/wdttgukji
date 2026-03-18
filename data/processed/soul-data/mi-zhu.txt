@@ -1,0 +1,54 @@
+=== 미축 (糜竺, Mi Zhu) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Mi Zhu (Zizhong)
+麋竺 (子仲)
+Lived AD ?–221
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 38 (Shu 8)
+byZL181
+onDecember 19th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1703026680' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758048319' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1758048304' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741927613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Mi Zhu, styledZizhong, was fromQu[朐],Donghai[東海].
+His ancestors had been merchants for generations. They had servants and retainers in the tens of tho
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통24 무30 지72 정83 매82
+rotk12: 통33 무29 지78 정83 매?
+
+## 커뮤니티 평가
+(없음)

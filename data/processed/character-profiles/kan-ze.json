@@ -17,6 +17,21 @@
     "birth": 182,
     "death": 243
   },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 43,
+      "war": 49,
+      "intelligence": 83,
+      "politics": 86,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 43,
+      "war": 49,
+      "intelligence": 83,
+      "politics": 86
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       38,
@@ -45,7 +60,19 @@
       "sections": {
         "Introduction": "阚泽（208年前—243年），字德潤，會稽山陰人，東漢末及三國时期的学者。\n\n闞澤雖然出身農家，但他非常好學，閱覽群書，更精通曆法，聞名當世。舉孝廉後曾當過錢唐縣長和郴縣縣令。孫權當驃騎將軍時，任命他為西曹掾。孫權稱帝後，任用闞澤為尚書，嘉禾年間任中書令、侍中。238年，受孫權吩咐教導十四歲的皇子孫和讀書和技藝。赤烏五年（242年）加任太子太傅。翌年十一月逝世，孫權因此而痛心，數日吃不下飯。\n\n闞澤是徐岳的学生，为刘洪的《乾象曆》做注，并且在东吴推行该曆法。因為努力鑽研儒學，封都鄉侯。另外他亦反對酷刑，呂壹犯姦淫罪而執法官員建議以酷刑懲治以儆效尤，他則認為在這個繁盛文明的年代，不應該再用這些酷刑。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -154,11 +181,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.275Z"
+  "source_count": 7,
+  "generated_at": "2026-03-18T10:20:09.995Z"
 }

@@ -17,6 +17,28 @@
     "birth": 165,
     "death": 228
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 89,
+      "war": 89,
+      "intelligence": 74,
+      "politics": 52,
+      "charisma": 73
+    },
+    "rotk11": {
+      "leadership": 88,
+      "war": 90,
+      "intelligence": 74,
+      "politics": 48,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 91,
+      "war": 90,
+      "intelligence": 78,
+      "politics": 48
+    }
+  },
   "novel_presence": {
     "first_chapter": 13,
     "last_chapter": 94,
@@ -42,7 +64,103 @@
       "sections": {
         "Introduction": "徐晃（? 年—227年），字公明，三國時期河東郡楊縣（今中国山西省洪洞縣東南）人，三國時期曹魏著名將領，五子良將之一。早年隨楊奉保護皇帝劉協，公元200年官渡之戰擊殺文醜，又襲殺押運袁軍糧車的將領韓猛，此戰徐晃功勞最大。協助曹操平定河北攻鄴城、戰袁譚、征烏桓、討張魯，公元219年襄樊之戰以聲東擊西的戰術，击败蜀漢頭號名將关羽，并且解救樊城，因为在此役中治军严整井然有序而被曹操称赞有“周亚夫之风”。曹丕称帝后，徐晃被加为右将军，于227年病逝，谥曰壮侯。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 169–227",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Gai"
+        }
+      ],
+      "ranks": [
+        "Commandery Official",
+        "Chief Commandant of the Cavalry",
+        "Marquis of a Chief Commune",
+        "Major-General",
+        "Marquis of a Chief Commune",
+        "General Who Crosses the Wilderness",
+        "General Who Pacifies Bandits",
+        "General of the Right",
+        "Marquis of Luxiang",
+        "Marquis of Yang",
+        "Marquis of Yangping"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tNever battled with or killed Wang Zhao.\n\tWas not killed by Meng Da.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 18338,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Xu Huang (Gongming)\n徐晃 (公明)\nLived ADca.169–227\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 17 (Wei 17)\nbyZL181\nonMarch 11th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1741658880' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760884678' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741673320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741535320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXu Huang, styledGongming, was fromYang[楊],Hedong[河東].\nHe served as an official for his commandery. He followed theGeneral of Chariots and Cavalry,Yang Feng, in suppressing traitors. Rendering achievements, he was conferred asCavalry Commandant. WhenLi JueandGuo Sicaused chaos inChang’an[長安],[Xu] Huangtold[Yang] Fengto return toLuoyang[洛陽] with theSon of Heaven.[Yang] Fengheeded his plan. TheSon of Heavenferried across theYellow River[河] toAnyi[安邑] and enfeoffed[Xu] HuangasMarquis of a Capital District. When they arrived atLuoyang[洛陽],Han XianandDong Chengstruggled with each other every day, so[Xu] Huangtold[Yang] Fengto submit to theGrand Progenitor.[Yang] Fenghad wanted to heeded him, but he regretted it later. When theGrand Progenitorsuppressed[Yang] FengatLiang[梁],[Xu] Huangjoined theGrand Progenitor. TheGrand Progenitorgave[Xu] Huangtroops and sent him to attack the rebels atJuan[卷] andYuanwu[原武].ABecause he defeated them, he was conferred asLieutenant General.\nHe followed in the expedition againstLü Bu, separating to gain the surrenders of the generals of[Lü] Bu,Zhao ShuandLi Zou, among others. He andShi HuanbeheadedSui Gu... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms Online",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK8",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -151,11 +269,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.210Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.905Z"
 }

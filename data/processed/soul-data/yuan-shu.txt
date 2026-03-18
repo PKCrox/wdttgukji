@@ -74,3 +74,40 @@
 
 ## EN Wikipedia
 Yuan Shu, courtesy name Gonglu, was a Chinese military general, politician, and warlord who lived during the late Eastern Han dynasty. He rose to prominence following the collapse of the Han central government in 189. He declared himself Emperor of China in 197 under the short-lived Zhong dynasty, two years before his death in 199.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 11–12
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Yuan Shu did stop sending supplies to Sun Jian during the battles against Dong Zhuo. Later, he reversed this decision and so Sun Jian was never truly damaged by Shu’s with-holding of supplies.
+	Yuan Shu did write Lü Bu offering supplies for his attack on Liu Bei in Xiapi, but this occurred after the attack itself, which was prompted by Xu Dan. [SGZ: 7]
+	While there is some limited room for debate, it seems the proper name of Yuan Shu’s Imperial S
+
+## 정사 영역본 (Kongming SGZ)
+Yuan Shu (Gonglu)
+袁術 (公路)
+Lived AD ?–199
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 6 (Wei 6)
+byZL181
+onFebruary 28th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740707820' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758247618' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740725976' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709669272' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Yuan Shuwas styledGonglu. He was the son of theExcellency of Works,[Yuan] Feng, and the younger cousin of[Yuan] Shao.
+He was famed for his gallant spi
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통52 무66 지72 정17 매44
+rotk11: 통44 무65 지61 정16 매39
+rotk12: 통44 무65 지65 정16 매?
+
+## 커뮤니티 평가
+감정점수: 76, 언급: undefined회
+키워드: 

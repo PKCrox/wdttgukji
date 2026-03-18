@@ -1,0 +1,88 @@
+{
+  "name_kr": "공손공",
+  "name_en": "Gongsun Gong",
+  "name_cn": "公孫恭",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 39,
+    "war": 17,
+    "intelligence": 68,
+    "politics": 61,
+    "charisma": 42,
+    "total": 227,
+    "birth": 174,
+    "death": 238
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 40,
+      "war": 24,
+      "intelligence": 64,
+      "politics": 61,
+      "charisma": 47
+    },
+    "rotk11": {
+      "leadership": 39,
+      "war": 17,
+      "intelligence": 68,
+      "politics": 61,
+      "charisma": 42
+    },
+    "rotk12": {
+      "leadership": 39,
+      "war": 17,
+      "intelligence": 69,
+      "politics": 61
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말, 동연의 제3대 수장이자 제1대 공손도의 아들로, 제2대 공손강의 아우. 유주 요동군 양평현 사람이다.",
+      "생애": "형 공손강이 요동을 다스릴 당시, 형이 요동왕이라면서 위로부터 작위받는 것을 거절하자 형을 대신해서 영녕향후라는 작위를 받았다. 공손강이 죽고 그의 아들들인 공손황과 공손연이 모두 나이가 어렸기 때문에 대신 요동 일대의 세력을 물려받았다. 그 후 220년에 조비가 헌제에게 선양을 받아 황제로 즉위하면서 후한을 멸망시키고 위나라를 건국한 이후에 거기장군 가절을 제수받았다. 그러나 228년, 조카 공손연에게 쫓겨나 10년 동안 유폐되어 있었다.238년 사마의의 정벌로 공손연이 죽음을 당하자 위군에게 구출되었으며 이후의 행적은 알 수 없다.비중은 공기지만 유명한 이유가 한 가지 있다. 《정사 삼국지》 <위서 공손도전>에 의하면 공손공은 병으로 음경이 위축되는 고자였다고 한다. 거기다 공손공은 자질이 부족하여 봉지를 다스릴 능력이 없었다고 할 정도로 무능한 인간이었다. 위군에게 구출된 후에 행적은 알 수 없으나, 공손황과 공손연처럼 죽음을 당했다는 기록도 없고 본인이 무능한데다 고자라서 자손을 이을 수가 없으니 살려줬을 가능성도 존재한다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.073Z"
+}

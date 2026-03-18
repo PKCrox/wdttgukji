@@ -8,6 +8,7 @@
   "tier": 1,
   "role": "신의(神醫)",
   "stats": null,
+  "stats_multi": null,
   "novel_presence": {
     "chapters_from_cooccurrence": [
       15,
@@ -33,7 +34,35 @@
       "sections": {
         "Introduction": "華佗（145年—208年），字元化，名旉（讀音同「敷」），沛国谯县（今安徽亳州市）人，东汉末年的方士、醫師。華佗與董奉和張仲景被并稱為“建安三神醫”。与扁鹊、张仲景及李时珍并称中國古代四大名医。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 110–207",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDid not meet with or heal Guan Yu.\n\tDied in AD 207 not AD 220, and not because he tried to assassinate Cao Cao. Rather, he was making excuses to avoid treating him. At one point he returned home, claiming his wife was ill. Cao Cao investigated, found it to be false, and had him imprisoned and later executed.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 28698,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Hua Tuo (Yuanhua)\n華佗 (元化)\nLived AD 110–207\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyjiuwan (Giao Chau)\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742699463' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699450' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742584685' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nHua Tuo12style Yuan Hua was a man from Qiao in the state of Pei. Fu (敷) was another name.AHe was a well-educated man and was familiar with the classics. The Chancellor (xiang) of Pei, Chen Gui recommended him for a prestigious post; the Grand Commandant (tai wei) Huang Wan offered him a position in his ranks as well, but Hua Tuo accepted neither position. He was skilled in the technique for nourishing one’s nature. The people in his era all thought he was around a hundred years old, yet he still looked quite young and rugged. He was highly skilled in prescribing medicines and curing illness. In preparing remedies, he required very little ingredients. He didn’t need to weigh the various herbs to mix for the remedy. In his mind he knew the exact proportions to add and mix. It was ready to drink as soon as the broth was finished boiling. After the patient was instructed on how to take the medicine, Hua Tuo would leave. Afterwards the patients’ condition would vastly improve. In cauterizations, he would burn in one or two places; and in each place there are no more than seven or eight separate cauterizations. The disease would then be eliminated. In acu... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 50,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -142,11 +171,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": false,
+    "multi_stats": false,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.297Z"
+  "source_count": 7,
+  "generated_at": "2026-03-18T10:20:10.019Z"
 }

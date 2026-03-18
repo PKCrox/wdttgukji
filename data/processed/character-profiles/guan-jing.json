@@ -1,0 +1,81 @@
+{
+  "name_kr": "관정",
+  "name_en": "Guan Jing",
+  "name_cn": "関靖",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 36,
+    "war": 52,
+    "intelligence": 72,
+    "politics": 63,
+    "charisma": 42,
+    "total": 265,
+    "birth": 158,
+    "death": 199
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 35,
+      "war": 50,
+      "intelligence": 73,
+      "politics": 68,
+      "charisma": 51
+    },
+    "rotk11": {
+      "leadership": 36,
+      "war": 52,
+      "intelligence": 72,
+      "politics": 63,
+      "charisma": 42
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 管井2. 후한 말의 인물 關靖3. 삼국지연의의 가공인물 關定4. 삼영화학그룹 이종환 회장의 호4.1. 서울대학교의 관정도서관"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.058Z"
+}

@@ -1,0 +1,93 @@
+{
+  "name_kr": "관통",
+  "name_en": "Guan Tong",
+  "name_cn": "関統",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 63,
+    "war": 60,
+    "intelligence": 61,
+    "politics": 63,
+    "charisma": 75,
+    "total": 322,
+    "birth": 218,
+    "death": 259
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 64,
+      "war": 58,
+      "intelligence": 60,
+      "politics": 62,
+      "charisma": 72
+    },
+    "rotk11": {
+      "leadership": 63,
+      "war": 60,
+      "intelligence": 61,
+      "politics": 63,
+      "charisma": 75
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 한자어 貫通1.1. FPS 용어1.2. 여신전생 시리즈의 스킬1.3. 페르소나 3의 속성1.4. 유희왕의 카드 효과2. 인물2.1. 삼국지의 인물들2.1.1. 삼국시대 촉한의 인물2.1.2. 후한 말의 인물2.2. 1997년 포켓몬스터 애니메이션의 등장인물"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 203–205",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Grand Administrator of Donglai",
+        "Grand Administrator of Le’an (AD 203–205)"
+      ],
+      "historical_notes": "Guan Tong served as Grand Administrator of Donglai under Yuan Tan. Early in the year, when Liu Xun raised a force at Tayin and opposed Yuan Tan, Yuan Tan despaired, “Now the whole province has rebelled! What have I done wrong?” Wang Xiu said, “Guan Tong is Grand Administrator of Donglai. Although he is on the coast he has not rebelled, and he will certainly come to help. Some days later Guan Tong did come to help, but his wife and children, who he left behind, were killed by bandits. Yuan Tan appointed him Grand Administrator of Le’an.\n\nAfter Cao Cao defeated Yuan Tan in early AD 205 all of Tan’s cities had surrendered to Cao Cao except Guan Tong in Le’an, who refused. When captured, Cao Cao ordered Wang Xiu to take Guan Tong’s head, but Wang Xiu saw Guan Tong as the loyal servant of a fallen state and, loosing his bonds, sent him to Cao Cao. Cao Cao was pleased and chose to pardon him, and he appointed Wang Xiu Senior Clerk in his offices as Minister of Works. (1)\n\n(1): ZZTJ 64; trans. de Crespigny, Rafe; To Establish Peace II 64 pp. 17, 37. It is not known what happened to Guan Tong after Cao Cao pardoned him. There is no mention of him having joined rank with Cao Cao.",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.058Z"
+}

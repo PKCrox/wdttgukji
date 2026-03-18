@@ -1,0 +1,81 @@
+{
+  "name_kr": "국의",
+  "name_en": "Guo Yi",
+  "name_cn": "",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 82,
+    "war": 78,
+    "intelligence": 51,
+    "politics": 18,
+    "charisma": 37,
+    "total": 266,
+    "birth": 146,
+    "death": 191
+  },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 82,
+      "war": 78,
+      "intelligence": 51,
+      "politics": 18,
+      "charisma": 37
+    },
+    "rotk12": {
+      "leadership": 82,
+      "war": 78,
+      "intelligence": 51,
+      "politics": 18
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 인물이자 원소의 수하 장수로《삼국지집해》에 따르면 양주 서평군 출신.《삼국지연의》에서는 그야말로 잡장 그 자체의 취급을 받았지만, 알고 보면 삼국지의 숨은 맹장으로 후한 말 군웅할거의 흐름을 바꿔버린 장군이다.",
+      "평가": "국의의 숙청 이유에 대해서는 스스로의 공적을 믿으며 교만방자했다는 기록 뿐이라 여러 가지 추론이 난무하나, 단순한 패전 책임 문제에 따른 숙청설, 혹은 애초에 원소와 연합 관계로 시작했고 독자적인 부곡을 거느리고 있었던 점에서 원소와 명확한 상하관계라기 보다는 반 종속적인 관계, 좀 더 정확하게 말하자면 객장에 가까운 관계였던 데다 시기적으로는 곽도, 심배와 원담, 고간으로 대표되는 원소의 친위 세력들이 점차 두각을 나타내고 있던 상황이었기에 권력 독점을 노린 원소의 집중적인 견제를 받았다는 설, 더 나아가서는 북방 전선의 핵심 책임자였던 국의의 입지에 더해 불궤라는 표현, 잔당들이 공손찬과 연합하고 있었다는 것 등에 주목해 원소의 권력 강화 움직임에 자극받은 국의가 공손찬과 원소의 대립각 사이에서 자신의 입지를 믿고 반란 혹은 독자적인 세력화 등의 계획을 품었다가 원소에게 선통수를 맞았다는 설 등으로 나뉜다.국의 자신의 본심이 어느 쪽이었든 간에 원소가 국의를 불러들여 죽인 뒤, 그 무리를 병합했다는 표현을 보면, 국의는 원소의 움직임을 예상치 못하고 순순히 소환에 응하다 죽게 된 것으로 보인다.기록은 절대적으로 부족하지만 국의는 숙청되고, 유우의 아들인 유화는 더 이상 기록상에서 등장하지 않으며, 선우보는 공손찬 멸망 이후 아예 조조 진영에서 활동하는 등, 원소 세력 내 북방 전선 핵심 인물들의 행보가 석연찮고, 국의 숙청 이후엔 원소 본인이 친정에 나서며 그 공백을 채우기 때문에 대대적인 숙청과 조직 개편이 있었다는 설도 있다.양주 출신이었던 점을 감안하면 이민족인 강족이나 대기병 전술에 능한 장수였을 공산이 크다. 당장 공손찬 상대로 얻은 전과를 보면 특히 기병을 박살내는 능력이 탁월했다고 볼 수 있다. 공손찬의 기병이 그 당시 상당한 위상이었음을 감안하면 전술로 그걸 무찌른 국의도 충분히 명장이라 할 수 있지만 처세에는 그다지 밝지 못했는지 일찍 숙청되면서 별로 잘 안 알려진 장수이다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.079Z"
+}

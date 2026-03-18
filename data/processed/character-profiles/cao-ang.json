@@ -1,0 +1,125 @@
+{
+  "name_kr": "조앙",
+  "name_en": "Cao Ang",
+  "name_cn": "曹昂",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 74,
+      "war": 62,
+      "intelligence": 68,
+      "politics": 74,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 74,
+      "war": 67,
+      "intelligence": 69,
+      "politics": 68
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 177–197",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Cao"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Son"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Wan"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Lian"
+        }
+      ],
+      "ranks": [
+        "Duke of Fengdao (AD 221",
+        "Posthumous)",
+        "Prince of Fengdao (AD 224",
+        "Posthumous)",
+        "Prince of Fengmin (AD 229",
+        "Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 4830,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Cao Ang (Zixiu)\n曹昂 (子脩)\nLived ADca.177–197\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyjiuwan (Giao Chau)\nin2004\nNo History Reference defined for Officer ID '18' Cao Ang (Zixiu). Biography cannot be tied to a scroll in the Sanguozhi.\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1772301937' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699330' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742439365' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nThe Prince of Feng Min Cao Ang1was styled Zixiu. At the Ruo Guan ceremony2he was recommended for Incorrupt and Filial Piety. He accompanied Tai Zu (Cao Cao) in the attack south [against Zhang Xiu]. Zhang Xiu was the cause for his death. No sons [was born to Cao Ang]. In the second year of Huang Chu [AD 221] he was given a posthumously title of Duke of Feng Dao. In the third year [of the same reign style thus AD 222] the Duke of Fan An, Cao Jun’s son Cao Wan3was adopted to Cao Ang to continue the line. He was bestowed as Duke of Zhong Du. That year, his title was switched to Duke of Chang Zi. In the fifth year [AD 224], Cao Ang’s title was raised to Prince of Feng Dao. In the third year of Tai He [AD 229], Cao Ang’s title was changed to Prince of [Feng] Min. In the sixth year of Jia Ping [AD 254] Cao Wan inherited Cao Ang’s title of Prince of Feng. Around Zheng Yuan4[AD 254] to the middle of Jing Yuan [AD 261-262], his fiefdom was increased by 2700 households. On Cao Wan’s death he was conferred the posthumous title of Prince of Go... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.055Z"
+}

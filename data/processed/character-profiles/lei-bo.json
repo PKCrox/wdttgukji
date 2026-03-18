@@ -1,0 +1,87 @@
+{
+  "name_kr": "뇌박",
+  "name_en": "Lei Bo",
+  "name_cn": "雷薄",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 62,
+    "war": 70,
+    "intelligence": 36,
+    "politics": 11,
+    "charisma": 15,
+    "total": 194,
+    "birth": 157,
+    "death": 206
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 63,
+      "war": 71,
+      "intelligence": 34,
+      "politics": 8,
+      "charisma": 7
+    },
+    "rotk11": {
+      "leadership": 62,
+      "war": 70,
+      "intelligence": 36,
+      "politics": 11,
+      "charisma": 15
+    },
+    "rotk12": {
+      "leadership": 62,
+      "war": 70,
+      "intelligence": 36,
+      "politics": 11
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "雷薄생몰년도 미상1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 영걸전 시리즈4.3. 삼국전투기4.4. 삼국지톡"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.081Z"
+}

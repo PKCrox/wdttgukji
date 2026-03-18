@@ -1,0 +1,76 @@
+{
+  "name_kr": "윤묵",
+  "name_en": "Yin Mo",
+  "name_cn": "尹黙",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 11,
+      "war": 15,
+      "intelligence": 65,
+      "politics": 77,
+      "charisma": 62
+    },
+    "rotk12": {
+      "leadership": 26,
+      "war": 15,
+      "intelligence": 66,
+      "politics": 77
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 3954,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Yin Mo (Siqian)\n尹默 (思潛)\nLived AD ?–ca.240\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonMay 20th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1684607040' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758209370' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1758002482' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1757998606' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYin Mo, styledSiqian, was fromFu[涪],Zitong[梓潼].\nMost of Yi province [益部] valued the New Text [studies]1and did not respect paragraphs and sentences.2[Yin] Moknew that this was shallow, so he travelled afar toJing province[荊州] and received teachings about the Ancient [Text] studies fromSimaDecaoandSongZhongzi. He comprehended all the various classics and histories, and he was especially specialized with theCommentary of Zuoon theChronicles. From the listings and examples of Liu Xin [劉歆] to the annotations and sayings of Zheng Zhong [鄭眾], Jia Kui [賈逵] and his son,ChenYuanfang, andFu Qian, he could generally recite them all without referencing the original [text]again.•••\nThe New Text studies sect was focused on Ruist texts that were written in the official script during theHan dynasty. A rival sect was the Ancient Text studies sect, which focused on rediscovered Ruist texts written in pre-Han scripts that had differences with the texts that the New Text studies sect endorsed.↩\n“Paragraphs and sentences” were often scrutinized by scholars of the Ancient Text studies sect, wanting its adherents to have an accurate understanding of each sentence and paragrap... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.064Z"
+}

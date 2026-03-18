@@ -17,6 +17,28 @@
     "birth": 176,
     "death": 220
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 53,
+      "intelligence": 95,
+      "politics": 82,
+      "charisma": 51
+    },
+    "rotk11": {
+      "leadership": 82,
+      "war": 47,
+      "intelligence": 94,
+      "politics": 78,
+      "charisma": 55
+    },
+    "rotk12": {
+      "leadership": 82,
+      "war": 47,
+      "intelligence": 94,
+      "politics": 78
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       60,
@@ -54,7 +76,96 @@
       "sections": {
         "Introduction": "法正（176年—220年），字孝直。東漢司隸右扶風郿（今陕西眉县）人，三國時蜀漢重臣；深有謀略，定軍山之戰策劃襲殺夏侯淵。劉備在世時，惟獨法正有諡號，死後追諡為翼侯。與曹魏謀士程昱和郭嘉一樣有性格缺陷（程昱太剛直易得罪人、郭嘉行為不檢、法正則是睚眥必報），但同樣善策奇謀，故陳壽譽其可比二人。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 174–219",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Fa Zhen"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Fa Miao"
+        }
+      ],
+      "ranks": [
+        "Prefect of Xindu",
+        "Colonel Consultant",
+        "Grand Administrator of Shu Commandary",
+        "General Who Rises in Prowess",
+        "Prefect Imperial Secretariat",
+        "General Who Protects the Army",
+        "Marquis of Yueyi"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tServed as adviser during the Hanzhong campaign (as opposed to Zhuge Liang).",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 80,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -163,11 +274,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.250Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:09.963Z"
 }

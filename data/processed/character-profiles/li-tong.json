@@ -1,0 +1,76 @@
+{
+  "name_kr": "이통",
+  "name_en": "Li Tong",
+  "name_cn": "李通",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 75,
+      "war": 84,
+      "intelligence": 52,
+      "politics": 49,
+      "charisma": 54
+    },
+    "rotk12": {
+      "leadership": 73,
+      "war": 81,
+      "intelligence": 62,
+      "politics": 63
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5971,
+      "first_translation": {
+        "translator": "ZhaiRong",
+        "excerpt": "Li Tong (Wenda)\n李通 (文達)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 18 (Wei 18)\nbyZhai Rong\nin2007\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1167652800' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745032191' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745032180' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745032180' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLi Tong, styled Wenda, came from Pingchun in Jiangxia. He was famed as a knight-errant in the area between the Changjiang and the Ru. Along with his fellow villager Chen Gong, he raised troops to move upon Langling, with many joining them. At that time, a man named Zhou Zhi, with some 2000 families under his command, was at a disagreement with Chen Gong and Li Tong. Li Tong wished to kill Zhou Zhi, but Chen Gong found such a thing difficult to do. Knowing that the latter would not interfere, Li Tong decided upon a scheme, inviting Zhou Zhi to a meeting and killing him while he was drunk. This caused a great commotion, and Li Tong led Chen Gong in executing the leaders of Zhou Zhi’s faction, then combining the remaining troops with their own. Later, Chen Gong’s wife’s brother Chen He killed him and took possession of his troops. Li Tong defeated Chen He, cutting off his head and placing him as a sacrifice on Chen Gong’s grave. He also captured alive the Yellow Turban commander-in-chief Wu Ba and several of his underlings. That year, there was a great famine. Li Tong used his family fortune to provide food for his soldiers, and as a result man... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.054Z"
+}

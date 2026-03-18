@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "조조 혈족 장수",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 57,
+      "war": 71,
+      "intelligence": 30,
+      "politics": 25,
+      "charisma": 11
+    },
+    "rotk12": {
+      "leadership": 66,
+      "war": 72,
+      "intelligence": 28,
+      "politics": 22
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       5,
@@ -61,7 +76,35 @@
       "sections": {
         "Introduction": "曹洪（约169年—232年），字子廉，沛國譙縣（今安徽亳縣）人，漢末三國時期曹魏重要將領，曹操堂弟。\n\n歷任扬武中郎将、谏议大夫、卫将军等，封都阳侯。因拒絕借錢給少年時的曹丕，讓心胸狹隘的曹丕對他記恨數十年，曹丕即位後將曹洪羅織罪名下獄，卞太后知道此事後脅迫郭皇后向曹丕求情，免去死罪的曹洪仍被削爵貶為庶民。曹丕死後曹叡即位，復曹洪爵位，拜曹洪為後將軍，封樂城侯，官至骠骑将军，死後谥為恭侯。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "Described as a man of poor quality, in the early 190s Cao Hong became a favorite of Tao Qian. The government of Xu Province deteriorated under his influence. (1)\n\n(1): de Crespigny, Rafe: A Biographical Dictionary of the Three Kingdoms",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6973,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Cao Hong (Zilian)\n曹洪 (子廉)\nLived AD 169–232\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744948865' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744948753' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744948753' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nCao Hong, styled Zilian, was a younger cousin of Cao Cao, the Great Progenitor.AWhen Cao Cao answered the call to arms to fight against Dong Zhuo, a general of Dong’s, Xu Rong, at Xingyang, defeated him. His horse was lost, and the enemy was hot in pursuit. Cao Hong dismounted, and gave his horse to Cao Cao, who declined the offer. Cao Hong said, “The world can do without Cao Hong, but not without you!” Thus he followed Cao Cao on foot to the Bian River. The river being a deep one, they could not ford it; Cao Hong went along the banks until he found a boat, with which he and Cao Cao crossed the river and fled back to Qiao commandery.\nCao Hong’s other uncle, Cao Ding, was [shangshuling], and he appointed Cao Hong to be Chief of Qichun prefecture.\nNow, Cao Hong had been good friends with Chen Wen, the Inspector of Yangzhou. And so he lead 1,000 of his personal troops to recruit more followers in Chen Wen’s land. By the Lu River he got 2,000 armored troops, and going east to Danyang, he recruited several thousand more men, before rejoining Cao Cao at Longkang.\nWhen Cao Cao attacked Xuzhou, Zhang Miao led all of Yanzhou to join Lü Bu in rebellion.... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -170,11 +213,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.303Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.027Z"
 }

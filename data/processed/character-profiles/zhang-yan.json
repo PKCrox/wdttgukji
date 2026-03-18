@@ -1,0 +1,110 @@
+{
+  "name_kr": "장연",
+  "name_en": "Zhang Yan",
+  "name_cn": "張燕",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 82,
+      "war": 80,
+      "intelligence": 54,
+      "politics": 55,
+      "charisma": 61
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 81,
+      "intelligence": 57,
+      "politics": 48
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Xin"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Fan"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Cheng"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Zhao"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4989,
+      "first_translation": {
+        "translator": "ZhaiRong",
+        "excerpt": "Zhang Yan\n張燕\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 8 (Wei 8)\nbyZhai Rong\nin2011\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1293883200' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745032550' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745032239' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745032239' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Yan, originally surnamed Chu, came from Zhending in Changshan. When the Yellow Turbans rose up in rebellion, Zhang Yan gathered some youths to form a band of brigands.AThey travelled around the the various hills and marshes, returning to Zhending with numbers in excess of ten thousand. Boling’s Zhang Niujiao1also led multitudes in revolt, styling himself Attendant Clerk who Commands Soldiers and joining with Zhang Yan. Yan persuaded Zhang Niujiao to take the role of commander-in-chief and together they attacked Yingtao. Zhang Niujiao was hit by a flying dart, and as he was dying of his wounds, he bid the throng receive Zhang Yan as their new leader, saying “You must make Yan your commander-in-chief.” After Zhang Niujiao died, the group made Yan their leader, who then changed his surname to Zhang. Yan was more swift and courageous than others, leading to the troops calling him the Flying Swallow.2BThe force gradually increased in strength. They built ties with forces from all the mountains and valleys of Changshan, Zhaojun, Zhongshan, Shangdang and Henei. Minor leaders like Sun Qing and Wang Dang each took their troops to join Zhang Yan, bringing th... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.087Z"
+}

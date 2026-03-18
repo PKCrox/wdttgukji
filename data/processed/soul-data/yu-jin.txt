@@ -68,3 +68,33 @@
 
 ## EN Wikipedia
 Yu Jin, courtesy name Wenze, was a Chinese general who served under the warlord Cao Cao during the end of the Han dynasty. He joined Cao Cao in 192 around the start of the civil wars leading to the collapse of the eastern Han dynasty, and fought in many of the campaigns which established his position as a central figure in the period. In 219, Yu Jin was tasked with leading forces to relieve Cao Ca
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Yu Jin (Wenze)
+于禁 (文則)
+Lived AD ?–221
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 17 (Wei 17)
+byZL181
+onMarch 14th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1741911600' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760056896' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741926015' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741535342' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Yu Jin, styledWenze, was fromJuping[鉅平],Taishan[泰山].
+When theYellow Scarvesrebelled,Bao Xinrecruited and gathered soldiers.[Yu] Jinwas among the followers
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통85 무77 지72 정63 매47
+rotk12: 통72 무79 지38 정40 매?
+
+## 커뮤니티 평가
+감정점수: 75, 언급: undefined회
+키워드: 

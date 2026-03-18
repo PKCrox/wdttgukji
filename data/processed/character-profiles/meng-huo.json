@@ -17,6 +17,28 @@
     "birth": 186,
     "death": 245
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 87,
+      "intelligence": 45,
+      "politics": 41,
+      "charisma": 78
+    },
+    "rotk11": {
+      "leadership": 76,
+      "war": 87,
+      "intelligence": 42,
+      "politics": 45,
+      "charisma": 80
+    },
+    "rotk12": {
+      "leadership": 87,
+      "war": 87,
+      "intelligence": 42,
+      "politics": 45
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       85,
@@ -47,7 +69,88 @@
       "sections": {
         "Introduction": "孟獲（？—？），三國時期益州建寧郡（以今曲靖市为中心的云南东部地区）人。蜀漢南方南中一帶豪強，曾加入雍闓的叛軍，後投降蜀漢，官至御史中丞。《三國志》中並未有其記載，見於《華陽國志》《漢晉春秋》《襄陽記》《資治通鑑》《通典》等。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 85–91",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Zhurong f"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Hua Man f"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWhether Meng Huo existed historically is a debated subject, though he does appear by name in Han Jin Chun Qiu and Hua Yang Guo Zhi, two sources cited by Pei Songzhi.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 67,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -156,11 +259,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.293Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:10.016Z"
 }

@@ -1,0 +1,114 @@
+{
+  "name_kr": "괴량",
+  "name_en": "Kuai Liang",
+  "name_cn": "蒯良",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 68,
+    "war": 33,
+    "intelligence": 88,
+    "politics": 82,
+    "charisma": 71,
+    "total": 342,
+    "birth": 155,
+    "death": 204
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 69,
+      "war": 37,
+      "intelligence": 88,
+      "politics": 82,
+      "charisma": 66
+    },
+    "rotk11": {
+      "leadership": 68,
+      "war": 33,
+      "intelligence": 88,
+      "politics": 82,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 68,
+      "war": 33,
+      "intelligence": 88,
+      "politics": 82
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 유표군 휘하의 문관이자 형주 양양군 중로현 사람으로 자는 자유(子柔). 괴균의 아버지.연의에서는 괴월의 형으로 나오지만 정사에서는 그런 언급이 없다.",
+      "기타": "중국어로 \"콰이 량\"으로 발음한지라 천조국의 대전 격투 게임인 모탈 컴뱃의 중국 닌자 서브제로이라는 개드립이 있다. 사실 꼭 그렇지만도 않은게 리우 캉은 유비와 종씨고 샤오 칸은 조조와 징기스칸에서 이름이 유래된거라는 설이 있다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Kuai Yue"
+        },
+        {
+          "relation": "member",
+          "name": "Kinsman"
+        },
+        {
+          "relation": "member",
+          "name": "Kong Qi"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.078Z"
+}

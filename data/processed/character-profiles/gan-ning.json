@@ -17,6 +17,28 @@
     "birth": 174,
     "death": 222
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 88,
+      "war": 93,
+      "intelligence": 75,
+      "politics": 20,
+      "charisma": 55
+    },
+    "rotk11": {
+      "leadership": 86,
+      "war": 94,
+      "intelligence": 76,
+      "politics": 18,
+      "charisma": 58
+    },
+    "rotk12": {
+      "leadership": 93,
+      "war": 94,
+      "intelligence": 76,
+      "politics": 18
+    }
+  },
   "novel_presence": {
     "first_chapter": 38,
     "last_chapter": 83,
@@ -45,7 +67,99 @@
         "Introduction": "甘宁（2世纪—217年以後），字兴霸，益州巴郡临江（今重庆市忠县）人，東漢末年三國時期东吴将领，曾經歷仕於劉表和黃祖麾下不被重用，轉投孫權麾下受到周瑜、呂蒙的推舉，官至西陵太守、折沖將軍。其功勛主要在曹魏的戰役中表現顯赫，勸孫權攻荊州進益州，隨周瑜攻曹仁奪南郡，隨魯肅鎮益陽峙關羽，隨孫權攻皖城擒朱光，隨呂蒙守濡需戰曹魏，隨蔣欽攻合肥護孫權，率百騎夜襲曹營，斬得數十首級而回。孫權曾稱贊道：“孟德有張遼，孤有甘興霸，足可敵矣”；是江表十二虎臣之一。",
         "评价": "- 陈寿《三国志》：「宁虽粗猛好杀，然开爽有计略，轻财敬士，能厚养健兒，健兒亦乐为用命。」“凡此诸将，皆江表之虎臣，孙氏之所厚待也。”\n- 韦曜《吳書》：「寧輕俠殺人，藏舍亡命，聞於郡中。其出入，步則陳車騎，水則連輕舟，侍從被文繡，所如光道路，住止常以繒錦維舟，去或割棄，以示奢也。」\n- 孫權：「甘興霸雖粗豪，有不如人意時，然其較略大丈夫也」、「孟德有張遼，孤有甘興霸，足相敵也。」\n- 呂蒙：「天下未定，鬥將如寧難得，宜容忍之。」\n- 陆机：“甘宁、凌统、程普、贺齐、朱桓、朱然之徒奋其威。”\n- 冯时行：“豪杰自不群，俗眼盖盲瞽。刘表既不识，那复论黄祖。翻然脱羁衔，渡江得英主。垂手立功勋，雄名诧千古。”\n- 《旧五代史卷五十三李存孝传》：“（李）存孝每临大敌，被重铠橐弓坐槊，仆人以二骑从，阵中易骑，轻捷如飞，独舞铁楇，挺身陷阵，万人辟易，盖古张辽、甘宁之比也。”\n- 章如愚：“如程普、黄盖、甘宁、徐盛、潘璋、朱然、朱桓、贺齐、凌统、全琮、吕范，皆智足以御众，勇足以却敌，未有不为守令之职者。”\n- 程公许：“蜀将如关、张、庞统，吴将如周瑜、鲁肃，志长命短，天下重惜之。而马超、黄忠、赵云、费祎、吕蒙、程普、步骘、甘宁辈皆智勇绝伦，足以当一面。”\n- 劉克莊：「甘寧關羽至今傳，名將為神自古然。生不封侯三萬戶，死猶廟食數千年。」\n- 郝经：“程普诸将皆江表虎臣，鏖兵卫主，攻坚轧敌，兴王定覇，孙氏兄弟卒立国建号，诸将之力也。若黄盖之水战而用火攻，能用奇者也；蒋钦之不挟私怨而举徐盛；凌统之亲贤下士轻财重义；陈表倾家养士妻子露立，并有良将之规。甘宁之奢侈、潘璋之不法，权皆容之，许宁报苏飞之恩，不使统复父操之雠，驭将之术也。丁奉恃功而骄，不容于虐主，宜哉！”“吴将剽轻，殆多谲计。莫肯下人，卒自称帝。摩创抚孤，动辄流涕。驾驭有术，驱策有方。果保江东，不负桓王。”\n- 羅貫中《三国志通俗演义》：“鼙鼓声喧震地来，吴师到处鬼神哀！百翎直贯曹家寨，尽说甘宁虎将才。”“巴郡甘兴霸，长江锦幔舟。关公不敢渡，曹操镇常忧。劫寨将轻骑，驱兵饮巨瓯。神鸦灵显圣，香火永千秋！”\n- 李贽：“观甘宁、凌统不共戴天，一朝改为刎颈之友，乃知世上无不解之仇，只是人不肯先为甘宁耳．吾劝世人勇为甘宁可也。”\n- 钟敬伯： “甘宁、凌统不共戴天之仇，一朝改为一刎颈之友，固丈夫事也。”\n- 黄恩彤：“先取荆，次取蜀，兴霸之策与孔明、公瑾略同，亦识时务之俊杰也。”"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 38–39",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Gan Huai"
+        },
+        {
+          "relation": "member",
+          "name": "Gan Shu"
+        }
+      ],
+      "ranks": [
+        "Chief of the Zhu Prefecture",
+        "Grand Administrator of Xiling",
+        "Rank-Breaking General"
+      ],
+      "historical_notes": "Gan Ning hailed from Nanyang commandery in Jing and became a famous commander of Wu during the Three Kingdoms era. Initially, Gan Ning was a bandit and outlaw. Eventually, Gan Ning entered the service of Liu Yan, a warlord established in the Riverlands (the Han province of ‘Yizhou’). Following Liu Yan’s death, Gan Ning revolted against Yan’s successor Liu Zhang. When the rebellion failed, Gan Ning went back to Jing province and sought employment with Liu Biao, another lord. Gan Ning came to serve Huang Zu.\n\nHuang Zu forced Gan Ning to stay in his service, but Huang Zu treated Gan Ning like a common soldier. In one instance, Gan Ning shot and killed Ling Cao, a general of Sun Quan’s. Even after this incident, Gan Ning was still treated poorly. At the urgings of Su Fei, an advisor of Huang Zu’s, Gan Ning was finally promoted to Chief of Zhu. Luckily for Gan Ning, Zhu happened to be located close to Sun Quan’s territories, and so Gan Ning was able to escape. Zhou Yu and Lü Meng, two generals under Sun Quan, entreated Sun Quan to allow Gan Ning into service. In AD 208, Xiakou was at last subjugated, and Huang Zu was finally slain. Sun Quan had made two boxes prior to this victory: One for the head of Huang Zu, and one for the head of his strategist, Su Fei. Gan Ning pleaded with Sun Quan to allow Su Fei, who had always been generous to Gan Ning in the past, amnesty. Because of this, Su Fei was let off scot-free. Gan Ning then obtained military command, but was moved to a distant commandery.\n\nAfter the battle of Chi Bi, Gan Ning was ordered to besiege and capture the city of Yiling. Although Gan Ning easily took the city, he was immediately surrounded and hard-pressed by the troops of Cao Ren. Despite the fact that his army was outnumbered and bombarded by siege towers, Gan Ning held Yiling long enough for Zhou Yu to repulse Cao Ren’s forces. Some tales allege that Guan Yu contemplated an attack on Wu’s holdings in Jing, but was so scared of Gan Ning that he aborted his ... (truncated)",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tGan Ning did not kill Yue Jin in battle.\n\tGan Ning was not killed by Shamoke. Died of illness.\n\tGan Ning is not mentioned in historic documentation as having died of dysentery.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 15286,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Gan Ning (Xingba)\n甘寧 (興霸)\nLived AD 175–ca.219\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744987290' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744986958' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744986958' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nGan Ning, styled Xingba, is a native of Linjiang in the Ba commandery.AAs a strong young man of the roaming chivalric ideal, he gathered a group of idle youths and became their leader. The group followed him, carrying bells; when the commoners heard the bells they knew that it was Ning coming.BWhenever someone met with him, from[commoner to] the senior scribes of the city, if they received Gan Ning well he would party along with them, and if not, he would unleash his followers to rob all their property. He went on like this, robbing and killing within the borders until he was 20-something years old. He stopped robbing and read quite a few works of the Masters. And so he went to seek Liu Biao’s patronage. As he was living in Nanyang, he was not introduced nor employed. After that he went to Huang Zu, but Zu also kept him as an ordinaryman.C\nWushu: Ning was originally a native of Nanyang, and first was a visitor in Ba Commandery.\nWushu: Ning took his chivalric code lightly and often killed people. He was infamous throughout the commandery for hiding in a house and committing murder there. When he went about, if he was on land he had rows of ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -162,11 +276,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.270Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.990Z"
 }

@@ -68,3 +68,33 @@ Cao Cao: 군신 (강도79, 독사 참모)
 
 ## EN Wikipedia
 Jia Xu, courtesy name Wenhe, was an official of the state of Cao Wei during the early Three Kingdoms period of China. He started his career in the late Eastern Han dynasty as a minor official. In 189, when the warlord Dong Zhuo took control of the Han central government, he assigned Jia Xu to the unit led by Niu Fu, his son-in-law. In May 192, after Dong Zhuo was assassinated by Lü Bu, Jia Xu advi
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 147–223
+
+## 정사 영역본 (Kongming SGZ)
+Jia Xu (Wenhe)
+賈詡 (文和)
+Lived ADca.147–224
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 10 (Wei 10)
+byLady Wu
+in2004
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744992110' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744991205' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744991205' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Jia Xu, styled Wenhe, was a man from Gozang in Wuwei. No one recognized his talents when he was young, but only Yan Zhong from Hanyang considered him to be extr
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통81 무45 지98 정84 매56
+rotk11: 통86 무48 지97 정85 매57
+rotk12: 통88 무48 지97 정85 매?
+
+## 커뮤니티 평가
+감정점수: 57, 언급: undefined회
+키워드: 

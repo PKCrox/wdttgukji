@@ -17,6 +17,28 @@
     "birth": 161,
     "death": 200
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 82,
+      "war": 95,
+      "intelligence": 24,
+      "politics": 23,
+      "charisma": 47
+    },
+    "rotk11": {
+      "leadership": 78,
+      "war": 94,
+      "intelligence": 25,
+      "politics": 25,
+      "charisma": 38
+    },
+    "rotk12": {
+      "leadership": 89,
+      "war": 93,
+      "intelligence": 47,
+      "politics": 34
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       5,
@@ -50,7 +72,28 @@
         "Introduction": "文醜（？—200年），是漢末三國時代武將，為袁绍手下之将領，與顏良齊名。建安五年（公元200年），顏良戰死後，與劉備共同攻擊曹軍，卻兵敗被亂軍圍攻所殺，死於延津之戰。現存的史書並未紀錄死於誰手，晉朝以後的野史多認為文醜與顏良同為關羽所殺。在《三国演义》中，文醜是为顏良報仇而被關羽斬殺。",
         "评价": "- 孔融：“颜良、文醜，勇冠三军。”（《三国志·卷十·魏书十·荀彧荀攸贾诩传第十》）\n- 荀彧：“颜良、文醜，一夫之勇耳，可一战而禽也。”（《三国志·卷十·魏书十·荀彧荀攸贾诩传第十》）\n- 陆游：“颜良文醜知何益，关羽张飞死可伤。等是人间号骁将，太山宁比一毫芒。”（读史）"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 26–28",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas not killed by Guan Yu. He died in battle with Cao Cao after falling for one of Cao Cao’s plots.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 75,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -69,11 +112,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.301Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.025Z"
 }

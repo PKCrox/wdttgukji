@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "형주 목사",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 62,
+      "war": 67,
+      "intelligence": 48,
+      "politics": 52,
+      "charisma": 63
+    },
+    "rotk12": {
+      "leadership": 48,
+      "war": 31,
+      "intelligence": 72,
+      "politics": 81
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       6,
@@ -70,7 +85,106 @@
       "sections": {
         "Introduction": "劉表（142年—208年），字景升，山陽郡高平縣（今山東省微山縣西北）人，汉朝宗室，是西漢魯恭王劉餘之子郁桹侯刘骄的九代孙。刘表身长八尺，是东汉末年的一个割据軍閥，領有荊楚數千里之地，並先後由漢廷授封官銜荊州刺史和鎮南將軍、荊州牧、封成武侯、假節。也是漢末的黨錮人士之一。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 142–208",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Qi"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Cong"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Xiu"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Pan"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Hu"
+        },
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Cai"
+        },
+        {
+          "relation": "member",
+          "name": "In-Law"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Mao"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Kai"
+        },
+        {
+          "relation": "member",
+          "name": "Horse"
+        },
+        {
+          "relation": "member",
+          "name": "Diluma [Dilu Horse] f"
+        },
+        {
+          "relation": "member",
+          "name": "Descendant"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Bi"
+        }
+      ],
+      "ranks": [
+        "Bei Jun Zhong Hou",
+        "Inspector of Jing Province",
+        "General Who Suppressed the South",
+        "Governor of Jing Province",
+        "Marquis of Cheng Wu"
+      ],
+      "historical_notes": "Liu Biao was born in AD 142. He was tall, smart, and handsome. In AD 190, Dong Zhuo appointed Liu Biao to be Inspector of Jing province. Thanks to the advice of Kuai Yue and Kuai Liang, Liu Biao established his authority in Jing. The following year, Sun Jian attacked Liu Biao, but was struck by an arrow and died. For several years afterward, Liu Biao consolidated his power within the region.\n\nLiu Biao turned Jing province into a haven for scholars and philosophers. He allowed Song Zhong to establish an academy for teaching the classics. From all over the land, a multitude of men of learning came to study in Liu Biao’s territory. Militarily, Liu Biao and his ally Zhang Xiu (mostly the latter) occasionally clashed with Cao Cao. When Cao Cao and Yuan Shao were at war, Liu Biao made no major move to help either side. After Cao Cao decisively trounced the Yuan family in the Northeast and other opponents, he loosed his forces on Jing. Meanwhile, Liu Biao’s vassal Huang Zu suffered defeat at the hands of the Sun family of the Southeast. At this critical and inopportune time, Liu Biao died of natural causes. His successor surrendered to Cao Cao.",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 11841,
+      "first_translation": {
+        "translator": "Battleroyale",
+        "excerpt": "Liu Biao (Jingsheng)\n劉表 (景升)\nLived AD 142–208\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 6 (Wei 6)\nbyBattleroyale\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744913262' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744913070' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744913070' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLiu Biao, styled Jingsheng, hailed from Shan Yang, Gao Ping.1He had a great reputation since young and was one of the “Eight Talents”, a name given to a group of eight prominent scholars during the later Han era. Standing slightly more than eight feet in height, Liu Biao had a big frame and a handsome look. After Liu Biao joined the government service, he was first appointed as one of the followers of the General-in-Chief (Da Jiang Jun) and given the rank of Bei Jun Zhong Hou (Captain of the Centre of the Northern Army, overall supervisors of the 5 colonels who commanded the 5 regiments of the Northern Army in the Capital).•••\nCertain English translated names for the military ranks and appointments are based on Rafe De Crespigny’s article on Later Han’s military organization. In addition, Pei Song Zhi’s annotations are not included in this translation.↩\nWhen Emperor Ling passed away, Liu Biao was appointed as the Inspector of Jing province, taking over the post from Wang Rui. During then, armies from various prefectures in the Guan Dong region were raised and punitive expeditions were sent against Dong Zhuo. Liu Biao too, led his Jing ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -179,11 +293,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.287Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.009Z"
 }

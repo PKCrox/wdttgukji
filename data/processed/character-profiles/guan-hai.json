@@ -1,0 +1,94 @@
+{
+  "name_kr": "관해",
+  "name_en": "Guan Hai",
+  "name_cn": "管亥",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 70,
+    "war": 82,
+    "intelligence": 10,
+    "politics": 5,
+    "charisma": 25,
+    "total": 192,
+    "birth": 160,
+    "death": 193
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 71,
+      "war": 80,
+      "intelligence": 14,
+      "politics": 6,
+      "charisma": 25
+    },
+    "rotk11": {
+      "leadership": 70,
+      "war": 82,
+      "intelligence": 10,
+      "politics": 5,
+      "charisma": 25
+    },
+    "rotk12": {
+      "leadership": 70,
+      "war": 82,
+      "intelligence": 10,
+      "politics": 5
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWithdrew from siege when reinforcements arrived, he wasn’t killed by Guan Yu.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.078Z"
+}

@@ -1,0 +1,48 @@
+=== 공도 (龔都, Gong Du) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+통솔:59 무력:70 지력:23 정치:22 매력:37 총합:211
+생:164 몰:200
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 1. 일반적인 의미2. 대한민국의 지명3. 조선 왕조때의 정책4. 일본의 무술5. 후한 말의 인물 龔都6. 공항도둑의 준말7. 힙합 곡 공중도덕
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 26–28
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Was not killed by Cao Cao’s forces historically. It was recorded only that his forces scattered after Liu Bei went to Liu Biao. [SGZ, ZZTJ]
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통55 무72 지25 정23 매32
+rotk11: 통59 무70 지23 정22 매37
+rotk12: 통59 무70 지23 정22 매?
+
+## 커뮤니티 평가
+(없음)

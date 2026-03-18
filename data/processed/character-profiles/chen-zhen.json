@@ -1,0 +1,101 @@
+{
+  "name_kr": "진진",
+  "name_en": "Chen Zhen",
+  "name_cn": "陳震",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 46,
+      "war": 54,
+      "intelligence": 66,
+      "politics": 76,
+      "charisma": 78
+    },
+    "rotk12": {
+      "leadership": 46,
+      "war": 46,
+      "intelligence": 69,
+      "politics": 76
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 28–29",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Chen Ji"
+        }
+      ],
+      "ranks": [
+        "Chief Commandant of the Northern Region",
+        "Grand Administrator of Wenshan Commandery",
+        "Imperial Secretariat",
+        "Head of the Imperial Secretariat Office",
+        "Commandant of the Palace Guard (One of the Nine Ministers)",
+        "Marquis of Chengyang Commune"
+      ],
+      "historical_notes": "Chen Zhen, styled Xiaoqi, hailed from Nanyang. When Liu Bei became Governor of Jing, Chen Zhen was hired to serve as a local officer and was stationed in various commanderies. When Liu Bei entered Shu, Chen Zhen remained in his service, where he progressed in rank and soon became Imperial Secretariat at the capital. When Sun Quan declared himself Emperor, Liu Bei sent Chen Zhen to offer his congratulations and to form an alliance, which he did, and they also fleshed out their countries’ border. When he died in AD 235, his son, Chen Ji, succeeded him.\n\nChen Zhen first appears in the novel in service to Yuan Shao, though in Sanguozhi it seems his first appearance is in service to Liu Bei. His actions under Yuan Shao are not unlike his duties with Liu Bei, where he performs diplomatic tasks such as delivering Liu Bei’s letter to Guan Yu in Luoyang, and meeting with Sun Ce to request aid against Cao Cao. Also in the novel, it was he who suggested to Liu Bei that he meet with the seer, Li Yan, while morning the deaths of his brothers. It is likely that his service to Yuan Shao is entirely fictional.",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tChen Zhen’s entire service under Yuan Shao is not recorded in Sanguozhi.\n\tChen Zhen did not recommend to Liu Bei that he meet the seer Li Yan, nor was he ordered to meet with him.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 10811,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Chen Zhen (Xiaoqi)\n陳震 (孝起)\nLived AD ?–235\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyZL181\nonFebruary 28th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740753420' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757778039' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740771487' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1713986886' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nChen Zhen, styledXiaoqi, was fromNanyang[南陽].\nWhen theFormer Lordwas leading asGovernorofJing province[荊州牧], he [Chen Zhen] was recruited to be aClerk, supervising the various commanderies. He followed theFormer Lordinto Shu [蜀]. When Shu [蜀] was stabilized, he served asChief Commandantof North Sector ofShu commandery[蜀郡北部都尉]. When the commandery name was changed, he becameGrand AdministratorofWenshan[汶山太守]. He was transferred to be inJianwei[犍為].\nIn the third year of theera [225], he entered to be conferred asSecretariat Minister. He was promoted to becomeDirector of the Secretariat. He undertook orders to become an envoy toWu.\nIn the seventh year [229],Sun Quanclaimed the imperial title.[Chen] Zhenwas madeMinister of the Guardsand he congratulated[Sun] Quanon his treading of the throne steps.Zhuge Liangwrote a letter to his older brother,[Zhuge] Jin, stating:\n“Xiaoqihas a loyal and pure personality, and as he ages, he grows more sincere. His praises for theeastandwest[relationship] makes it one of merriness and unity! He is quite precious!”\nWhen[Chen] Zhenwas entering the borders ofWu, he sent this message to the watchtowers:\n“T... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.065Z"
+}

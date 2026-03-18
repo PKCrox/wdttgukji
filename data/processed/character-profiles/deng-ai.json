@@ -17,6 +17,28 @@
     "birth": 197,
     "death": 264
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 94,
+      "war": 87,
+      "intelligence": 89,
+      "politics": 82,
+      "charisma": 70
+    },
+    "rotk11": {
+      "leadership": 94,
+      "war": 87,
+      "intelligence": 89,
+      "politics": 81,
+      "charisma": 70
+    },
+    "rotk12": {
+      "leadership": 93,
+      "war": 87,
+      "intelligence": 89,
+      "politics": 81
+    }
+  },
   "novel_presence": {
     "first_chapter": 107,
     "last_chapter": 120,
@@ -46,7 +68,104 @@
       "sections": {
         "Introduction": "鄧艾（195年—264年），字士载，本名鄧範，字士則，後因與同鄉人同名而改名，義陽棘陽（今河南新野）人，三國時曹魏後期名將。鄧艾多年在曹魏西邊戰線防備蜀漢姜維，後來偷渡陰平，逼使蜀帝劉禪投降，建立滅蜀奇功，獲封太尉。然而戰后他被鍾會聯合監軍衛瓘誣陷謀反遭到押解，不久衛瓘又因內訌殺了鍾會，鄧艾帳下軍官打算營救鄧艾，但衛瓘怕受鄧艾報復，便遣田續先行殺死鄧艾，其子鄧忠亦同殉此難。"
       }
+    },
+    "history": {
+      "summary": "조위 태위 [ 펼치기 · 접기 ]초대제2대제3대행태위사가후종요화흠장패제4대제5대제6대제7대사마의만총장제왕릉제8대제9대제10대제11대사마부고유등애왕상추증위진순욱한 대장군 · 후한 태위 · 후한 대사공 · 후한 대사농 조위 태위 · 조위 사도 · 조위 사공 · 촉한 재상 · 손오 승상\n\n조위의 진서장군(鎭西將軍) [ 펼치기 · 접기 ]1대2대3대4대조진등애위관종회※ 둘러보기 :후한의 태위 (太尉) ·조위의 태위 (太尉) · 조위의 사도 (司徒) · 조위의 사공 (司空) · 손오의 승상 (丞相)\n\n조위의 태위등애 | 鄧艾출생197년(?)형주 의양군 극양현사망264년익주 광한군 면죽현 서쪽재임기간조위의 태위263년 9월 ~ 264년 1월 [ 펼치기 · 접기 ]성씨등(鄧)휘애(艾) / 범(範)자사재(士載) / 사칙(士則)시호장후(壯侯)작위등후(鄧侯)최종직위태위 겸 위장군(衞將軍)\n\n1. 개요2. 정사 삼국지2.1. 어린 시절2.2. 태위 사마의의 눈에 들다2.3. 대운하 프로젝트2.4. 강유... (truncated)",
+      "sections": {
+        "개요": "263년, 해가 가도 끈질기게 계속되는 강유의 북침에 골머리를 썩힌 사마소는 종회의 진언에 따라 촉한을 토벌할 계획을 세웠다. 종회는 장안 방면에서 양안(촉의 오른쪽에 해당) 방면으로 쳐들어가며 등애는 제갈서와 함께 옹주 방면에서 답중으로 쳐들어가 강유를 차단하는 역할을 했다.등애는 천수태수 왕기(王頎) 등을 파견하여 직접 강유의 진영을 공격하게 했으며, 농서태수 견홍 등을 보내 강유 군대의 앞에서 싸우도록 하고, 금성태수 양흔 등에게 감송으로 가도록 했다. 강유는 종회의 군대가 이미 한중에 진입하였다는 것을 듣고 물러나 돌아갔다. 양흔 등은 강천구까지 추격하여 큰 싸움을 하였고 강유가 패하여 달아난다.강유는 옹주가 길을 막고 교두에 주둔한다는 소식을 듣고 공함곡으로부터 북쪽 길로 들어가서 옹주 후방을 공격하려고 했다. 제갈서는 이 소식을 접하자 퇴각하여 30리를 돌아갔다. 이윽고 강유가 북쪽 길로부터 30여 리 정도 진입하였는데, 제갈서가 군을 물렸다는 소식을 듣고는 공격 계획을 철회하고 몸을 돌려 교두를 통과했다. 이를 뒤늦게 판단한 제갈서가 급히 강유의 퇴로를 차단하려고 했지만 이미 강유는 퇴각을 완료한 이후였고 강유는 그대로 음평을 지나 검각에서 농성을 벌이기 시작했다. 이후 검각에서 종회와 강유 사이에 지리한 공방전이 벌어지게 된다.",
+        "평가": "등애는 굳세고 강건하며 공훈과 업적을 세웠으나 재해를 방지하는 데에 어두웠고 재앙과 패망이 돌아왔으니, 어찌 멀리서는 제갈각에 대해 알아도 능히 가까이에서는 자신을 드러내지 못했는가? 이것은 대개 옛 사람들의 이른바 식견이 얕다는 것이다.진수촉한을 멸망시킨 명장으로, 사마의의 눈에 들어 외정, 내정 통틀어 후반기 최고의 공업을 쌓은 인물이지만 자기관리와 자신이 처한 상황에 대한 냉정한 평가의 부족으로 숙청되고 말았던 인물이다. 그래서 정사 삼국지의 저자였던 진수는 등애의 열전을 진짜 반란을 일으켰던 인물들과 묶어서 기록했다.사후, 단곡 전투의 공마저도 사마소가 가로채 진왕에 올라갈 때 써먹었다. 그것도 '단곡(段谷)의 싸움에서 기회를 타서 크게 이겼으니 장수를 참하고 깃발을 뽑아 죽인 적군의 숫자를 만 단위로 헤아렸다.' 새빨간 거짓말을 해가면서 뻥튀기 시킨 것이다. 그 공을 세운 게 진짜 누구인지는 전혀 언급되지 않는다. 등애는 거의 준역적 취급 당한다. 원래 만 명 타령은 고귀향공의 조서에서 촉한군을 죽이거나 사로잡힌 게 만 명이라면서 '이 좋은 날 술을 내리니 내 맘이라고 생각하고 풍악을 울려라!' 라는 식으로 조모가 신하들의 사기를 높이기 위해 부풀린 조서를 내린 거였는데 정작 가장 큰 공로자인 등애 본인의 본전에서는 조환이 직접 등애 개인에게 내린 조서에 '촉장 10명에 천여 급의 목을 참수했으니 상을 받으라'고 분명히 말하고 있다.등애의 이런 처우는 그 자신이 자초한 것도 있었다. 등애가 죽은 후, 등애의 담당지역을 둘러 본 당빈은 등애를 다음과 같이 깠다.애초에 등애가 주살됐을 때, 문제(사마소)는 등애가 농우(隴右)에서 오래 있어서 본디 병사들의 마음을 얻었는데, 하루 아침에 이멸돼 변방의 형편과 사정이 혼란스러워질까 두려워 당빈에게 은밀히 살피게 했다. 당빈이 돌아와 황제에게 아뢰길,등애는 시기하고 각박하며 천성이 교활했고, 자신의 재능을 과시하며 재능과 학문을 믿어서, 순종하던 이는 (등애가) 형세를 식별한다고 여겼으나 직언하는 이는 무례한 짓을 한다고 여겼습니다. 비록 장사(長史)와 사마(司馬), 참좌(參佐)와 아문(牙門)이라도 답하며 뜻을 놓치면 번번이 함부로 욕을 먹고 모욕을 당했습니다. 처신이 무례하여 인심을 크게 잃었습니다. 또한 강제노역을 시행하길 좋아하여 자주 무리의 힘을 고달프게 했습니다. 농우에서 그를 매우 증오해서 그의 화를 기뻐하며 듣고, 그를 위해 일하길 원하지 않습니다. 지금 여러 군이 이미 이르러 내외를 압박하기에 충분하니, 근심으로 여기지 마시길 바라옵니다.진서 당빈전(열전 12권)등애가 담당지역인 농우에서 어지간히 욕을 먹었던 듯하다. 모범적인 목민관이라기 보다 뼈빠지게 일을 시키는 행보관에 가까웠던 것. 다만, 단작은 등애를 옹호하면서 등애가 1만 명의 병사를 가진 지휘관 시절에도 스스로 사졸의 역을 다했다고 썼다. 이런 점을 보면 본인이 자수성가한 인물인 만큼 자부심이 강하고, 자신의 부하에게도 상당한 능력과 노력을 요구하는 인물이었다고 할 수 있는데, 그 정도가 너무 지나쳐서 내부에 적... (truncated)"
+      }
+    },
+    "kongming": {
+      "life_span": "AD 197–264",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Deng Zhong"
+        }
+      ],
+      "ranks": [
+        "Imperial Secretariat Gentleman",
+        "Governor of Nan’an",
+        "Duke of Guannei",
+        "General Who Suppresses Bandits",
+        "Governor of Chengyang",
+        "Governor of Runan",
+        "Governor of Yanzhou",
+        "General Who Establishes Prestige",
+        "Duke of Fangcheng",
+        "Duke of Fangcheng Xiang",
+        "Deputy General Who Pacifies the West",
+        "Duke of Deng",
+        "General Who Suppresses the West",
+        "General Who Conquers the West",
+        "Grand Commandant"
+      ],
+      "historical_notes": "Deng Ai, perhaps the the greatest general of Wei, had an extensive career flush with victories. In the end, he was largely responsible for the defeat of Shu-Han at the hands of Wei. Deng Ai also had a serious stutter which he was made fun of commonly for and nicknamed himself, “Deng-eng-eng Ai.” His career will be outlined below.\n\nIn AD 241, Deng Ai proposed digging canals and creating military agricultural colonies (tuntian) in the Southeast. His plans were approved by the court. Deng Ai’s suggestions were noted to have increased Wei’s store of provisions. (1)\n\nIn AD 249, the Shu-Han general Jiang Wei decided to invade Yongzhou and build two fortresses in the region. Guo Huai, Chen Tai and Deng Ai went on campaign against him. They defeated the generals that Jiang Wei had installed and cut Jiang Wei off from reinforcing his subordinates. Guo Huai and Chen Tai then moved to strike rebellious Qiang tribes to the West. Deng Ai was left behind to fend off Jiang Wei. Jiang Wei sent a small force under Liao Hua to confront Deng Ai. Meanwhile, Jiang Wei and a larger host attacked Taocheng. Deng Ai accurately predicted Jiang Wei’s movements and impeded him from making any progress. Jiang Wei, in the end, retreated. (2)\n\nIn AD 251, Deng Ai proposed that the Wei court confer honors upon lesser chiefs of the Xiongnu. He also proposed that the Xiongnu communities be segregated from the Chinese. He hoped this would increase dissension among the Xiongnu, which were growing in number within Bing province. Sima Shi, who was the dominant regent at the Wei court at the time, adopted his proposals. (3) It is interesting to note that Deng Ai’s suggestions on this matter had, at best, short-term success. The Xiongnu under Liu Yuan and Liu Yao were able to topple the Western Jin dynasty (Xiong xcii). Deng Ai, though, at least had the foresight to acknowledge the Xiongnu as a major threat to internal stability.\n\nIn AD 255, Guanqiu Jian and Wen Qin launched an insurrection against Wei fro... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 12524,
+      "first_translation": {
+        "translator": "Battleroyale",
+        "excerpt": "Deng Ai (Shizai)\n鄧艾 (士載)\nLived ADca.197–264\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 28 (Wei 28)\nbyBattleroyale\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745351588' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744912805' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744912805' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nDeng Ai zhi Shizai, was from Yi Yang county Ji Yang Xian. He lost his father when he was young and moved to Ru Nan county after Cao Cao capture Jing Zhou. At twelve years old, Deng Ai accompanied his mother to Ying Chuan county. When young, Deng Ai had a habit of stuttering and thus was given only a lowly post in charge of guarding the farmland. Whenever Deng Ai saw mountainous, swampy or other different types of terrain in the wild, he would imagine himself positioning army camps at strategic positions in the terrain just like an army commander (much to the amusement of his friends). Subsequently, Deng Ai was promoted to be a minor administrative officer. During a trip to the court (to present accounting records), Deng Ai got acquainted with Sima Yi, the Tai Wei of the Wei Kingdom. Sima Yi saw that Deng Ai was a man of talent and transfer him to his department. Deng Ai was soon promoted to the post of Shang Shu Lang.\nAt that time, the Wei administration intended to embark on agricultural projects in order to boost the army food supplies. Deng Ai was thus dispatched to inspect Chen Xuan, Xiang Xuan and the region to the east till Shou ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -155,11 +274,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.229Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.934Z"
 }

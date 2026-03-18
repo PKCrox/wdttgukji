@@ -1,0 +1,63 @@
+=== 요화 (廖化, Liao Hua) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+통솔:73 무력:76 지력:64 정치:49 매력:66 총합:328
+생:170 몰:264
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 후한 말과 삼국시대 촉한의 장수다. 본래 이름은 요순(廖淳)이며, 자는 원검(元儉)이다. 형주 양양군 중로현 사람.
+[평가] 현대에서 요화의 평가는 흔히 말해 계륵에 가까운데, 이는 전적으로 삼국지연의를 필두로 한 2차 창작물에 의해 만들어진 이미지이다. 사실 삼국지연의만 놓고 보면 요화는 계륵이라고 평가받기에 딱 좋다. 등장 자체는 무려 관우의 오관육참 시기, 그러니까 얼추 200년 즈음부터 빠르게 등장하는데 관직은 정사를 따라가서 249년에도 태수직이나 맡고 있었고 260년이 다 돼서야 거기장군까지 올라간다. 삼국지연의만 놓고 보면 등장해서 50년 가까이 태수 직에 연연하다가 60년이 지나서야 알아주는 직책이 된 것이다. 오호대장군으로 대표되는 1세대에 비해 크게 떨어진 당시 촉한 말기의 네임밸류를 생각하면 '아, 요화는 크게 뛰어나진 않아도 충성심이 높고 오래 살아서 저기까지 올라갔구나.' 라고 평가받기 딱 좋은 상황인 것이다.그러나 실제로는 오호대장군이나 위연, 오의, 왕평, 강유, 장억, 마충 등의 촉한이 자랑하는 화려한 라인업의 장군들까진 아니어도 충분히 자신의 능력을 증명한 충성심 깊은 장수였다고 봐야 한다. 우선 임관 자체가 한중공방전 직후라고 하니 얼추 219년 즈음, 그리고 형주를 빼앗길 당시 탈출하여 오를 공격하려던 유비에게 합류해 의도태수 직을 맡았다 하니 이
+[기타] 정사만 따지면 나이 관련해서 그렇게 심하게 논란이 생길 인물은 아니었다. 그런데 삼국지연의에서 도적단의 우두머리로 나오고 하필 노란 두건을 한 데다 관우가 요화를 황건적의 잔당으로 지레짐작하면서 나이 논란이 시작되었다. 황건적의 난이 184년에 있었고, 적어도 그 때 20세 쯤이라고 가정해도 100살 가까이 살았단 얘기가 되기 때문이다. 연의에서 관우와 엮다 보니 산적이 되었고 하필 복색 때문에 황건적 잔당으로 오인당하면서 본의 아니게 장수하게 된 것이다. 연의 본문에서 요화가 황건적이라는 말은 전혀 없다. 요화는 그저 자체적으로 무리를 모아 일어난 독자적인 도적이었을 뿐이며 단지 노란 두건 차림이었을 뿐이었다. 그런데 관우가 요화를 황건적의 잔당으로 지레짐작하고 나중에 진짜 장각 휘하의 무장이었던 배원소, 주창이 등장하면서 이들과 혼동을 한 이들이 요화를 배원소, 주창처럼 장각 시절부터 활동한 황건적으로 오인해 오해를 키운 것이다. 물론 정사만 따져도 요화가 당대 기준으로 충분히 장수한 것은 사실이다. 촉서 종예전을 보면 258년 종예가 요화에게 "우리들의 나이가 이미 70을 넘었는데…(후략)…" 고 말했는데, 적게 잡아 189년생이라고 쳐도 76살은 산 
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 185–264
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	There is no historical mention of him being in the Yellow Scarves
+	Faked his own death to get back to Shu—he wasn’t sent as an envoy to Meng Da to request help
+
+## 정사 영역본 (Kongming SGZ)
+Liao Hua (Yuanjian)
+廖化 (元儉)
+Lived AD ?–263
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 45 (Shu 15)
+byLady Wu
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744994652' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744994615' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744994615' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Liao Hua, styled Yuanjian, and who was formally named Chun, was a native of Xiangyang. He was the chief secretary for Guan Yu, General of the Front. When Guan 
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통70 무71 지64 정49 매65
+rotk11: 통73 무76 지64 정49 매66
+rotk12: 통73 무76 지69 정49 매?
+
+## 커뮤니티 평가
+(없음)

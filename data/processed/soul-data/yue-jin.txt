@@ -64,3 +64,37 @@
 
 ## EN Wikipedia
 Yue Jin, courtesy name Wenqian, was a military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He was noted as much for his short stature as for his valour and ferocity on the battlefield. Yue Jin participated in most of Cao Cao's early military exploits, and gained multiple successes in the campaigns against Lü Bu, Liu Bei, remnants of the Yellow Turban rebels,
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 11–12
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Historically, was not killed by Gan Ning.
+
+## 정사 영역본 (Kongming SGZ)
+Yue Jin (Wenqian)
+樂進 (文謙)
+Lived AD ?–218
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 17 (Wei 17)
+byZL181
+onApril 12th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1681314960' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1743515976' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1743364601' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741535342' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Yue Jin, styledWenqian, was fromWei state,Yangping.
+In appearance, he was short and diminutive, but with his bravery and ferocity, he followed theGrand
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통80 무85 지53 정45 매70
+rotk12: 통80 무84 지56 정51 매?
+
+## 커뮤니티 평가
+감정점수: 67, 언급: undefined회
+키워드: 

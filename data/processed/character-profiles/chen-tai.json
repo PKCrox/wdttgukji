@@ -1,0 +1,100 @@
+{
+  "name_kr": "진태",
+  "name_en": "Chen Tai",
+  "name_cn": "陳泰",
+  "courtesy_kr": "현백",
+  "courtesy_cn": "玄伯",
+  "faction": "wei",
+  "tier": 2,
+  "role": "강유 방어, 명장",
+  "stats": {
+    "leadership": 84,
+    "war": 73,
+    "intelligence": 86,
+    "politics": 78,
+    "charisma": 77,
+    "total": 398,
+    "birth": 210,
+    "death": 260
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 85,
+      "war": 73,
+      "intelligence": 85,
+      "politics": 75,
+      "charisma": 75
+    },
+    "rotk11": {
+      "leadership": 84,
+      "war": 73,
+      "intelligence": 86,
+      "politics": 78,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 84,
+      "war": 77,
+      "intelligence": 86,
+      "politics": 78
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "중국 삼국시대 위나라의 무장이자 정치가이며 자는 현백(玄伯)으로 예주 영천군 허현 사람. 진군의 아들이자 순욱의 외손자다. 진순(陳恂)의 아버지이자 진온(陳溫)의 할아버지.",
+      "초기 생애": "집안 배경뿐만 아니라 능력과 인품도 출중했던 엘리트로 출사 후 승승장구하여 병주자사, 진위장군, 흉노중랑장 등을 역임했다. 관대하고 균형감 있는 통치로 수완을 발휘해 흉노인들로부터도 존경을 받았다고 한다.부전자전이라고 아버지처럼 매우 강직하고 청렴한 인물이었다. 가문이 가문이었던지라 여기저기서 선물이 많이 들어왔었는데, 이를 일절 손 대지 않고 발신자만 기록해 둔 다음, 상서로 승진하여 낙양에 돌아오자 이를 모두 다 돌려보냈다.",
+      "평가": "조국인 위나라에 대해 열렬히 충성하기보단 그저 흐르는 대로 몸을 맡기거나, 결국은 사마씨 라인에 의탁한 인물들이 다수를 넘어 절대였던 후반기 위나라에서 정말 보기 드물게 끝까지 위나라와 그 황제 조모에게 충성하고 끝내 황제에게 칼을 들이민 사마씨에게 반대한 충신이었다. 위나라를 위해서 사마씨를 도와 조상 일파를 숙청하는 걸 도왔다가 조모 살해가 벌어지자 사마씨를 손절하고 죽었다는 점 때문에 자신의 외조부인 순욱과 인생이 닮았다는 평이 많다.당시 사마소는 황제 시해라는 말도 안 되는 짓을 벌이고도 직접적 살인자인 성제를 참한 것을 빼고는 아무런 책임을 지지 않았고 오히려 하던 일과 직책을 거의 그대로 유지했는데 이에 대놓고 비판하는 사람을 찾기 힘들 정도였다. 그 정도로 나라 전체가 사마씨에게 장악당한 상황에서 진태와 같은 충언을 내뱉는 이는 역사를 뒤져봐도 찾기 힘들고, 당대와 후대의 평가가 모두 충신이라고 표현된다.단순히 말만 잘 하고 글이나 정책만 잘 내는 문관형의 인물이었냐면 그런 것도 아니었다. 상술하였듯이 진태는 그 곽회의 후임으로 대촉전선을 완벽하게 사수한 인물이었고, 강유에게 몇번이나 엿을 먹인 인물로 군재에도 상당한 재능이 있었다.곽회의 자리를 완벽하게 대체했고, 경험과 출신에서 불리한 점이 있던 등애가 대촉전선 사령관이 될 때까지 그 사이를 이어 주는 교두보 역할을 훌륭하게 해내 명장이라는 평가를 받아도 손색없지만 아쉽게도 그의 군사적인 능력에 대한 평가는 보이지 않는다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 11003,
+      "first_translation": {
+        "translator": "Battleroyale",
+        "excerpt": "Chen Tai (Xuanbo)\n陳泰 (玄伯)\nLived AD ?–260\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 22 (Wei 22)\nbyBattleroyale\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744912684' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744912226' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744912226' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nChen Tai, styled Xuanbo, was the son of Chen Qun. Being raised in an aristocratic family, Chen Tai received an excellent education and was well versed in scholarly and military matters. While his father was alive, Chen Tai was already holding the appointment of Shan Qi Shi Lang. In the 4th year of Qing Long (AD 236), Chen Qun passed away and Chen Tai inherited his father’s nobility title to become a Duke. Soon after, he left the position he held at the central government and took up a military appointment at the borders.\nFrom AD 240–241, Chen Tai was appointed as You Ji Jiang Jun (something like the general of the guerilla troops). Subsequently in AD 244, he was promoted to be the Inspector of the Bing province and Zhen Wei Jiang Jun (General who inspires awe). In addition, Chen Tai held the Wei’s court order (otherwise known as Jie in Chinese which gives the holder great authority to carry out the central government’s plan), controlled the military, political and judiciary functions of the Bing province and had the appointment as the Great Official of the Border (Jiang Da Li). Chen Tai adopted a pacification policy toward the minorities ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.033Z"
+}

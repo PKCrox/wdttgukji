@@ -1,0 +1,127 @@
+{
+  "name_kr": "채모",
+  "name_en": "Cai Mao",
+  "name_cn": "蔡瑁",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 64,
+      "intelligence": 77,
+      "politics": 75,
+      "charisma": 56
+    },
+    "rotk12": {
+      "leadership": 70,
+      "war": 70,
+      "intelligence": 77,
+      "politics": 72
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 34–35",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Cai He"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Zhong"
+        },
+        {
+          "relation": "member",
+          "name": "Cai Xun"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Cai"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Cong"
+        },
+        {
+          "relation": "member",
+          "name": "In Law"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Biao"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas more a civil official than a naval commander.\n\tDid not put Liu Cong into power against Liu Biao’s wishes.\n\tDid not try to kill Liu Bei.\n\tThere is little evidence that he was executed by Cao Cao.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.056Z"
+}

@@ -1,0 +1,98 @@
+{
+  "name_kr": "학소",
+  "name_en": "Hao Zhao",
+  "name_cn": "郝昭",
+  "courtesy_kr": "백도",
+  "courtesy_cn": "伯道",
+  "faction": "wei",
+  "tier": 2,
+  "role": "진창 수비, 제갈량 저지",
+  "stats": {
+    "leadership": 89,
+    "war": 79,
+    "intelligence": 78,
+    "politics": 62,
+    "charisma": 72,
+    "total": 380,
+    "birth": 185,
+    "death": 229
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 88,
+      "war": 77,
+      "intelligence": 78,
+      "politics": 63,
+      "charisma": 68
+    },
+    "rotk11": {
+      "leadership": 89,
+      "war": 79,
+      "intelligence": 78,
+      "politics": 62,
+      "charisma": 72
+    },
+    "rotk12": {
+      "leadership": 86,
+      "war": 79,
+      "intelligence": 78,
+      "politics": 62
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "중국 삼국시대 위나라의 인물이며 자는 백도(伯道)로 병주 태원군 사람. 수성(守城)의 대가."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4522,
+      "first_translation": {
+        "translator": "StephenSo",
+        "excerpt": "Hao Zhao (Bodao)\n郝昭 (伯道)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 3 (Wei 3)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2000\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745094963' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745032844' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745032791' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTranslator’s Introduction: This is a quick translation of Hao Zhao’s sub biography, from theWei Luecontained inSanguozhiWei 3: Cao Rui.\nPrior to this, [Cao Zhen] sent the general, Hao Zhao, to station in Chencang city. When Zhuge Liang came and surrounded the city, he was unable to capture it.\nHao Zhao, styled Bodao, was a man from Taiyuan and he was heroic and strong. When he was young, he entered the army as a commander of a division (buqu du) and had many military accomplishments. He was made General of Miscellaneous Title (zahao jiangjun) and was stationed in Hexi for ten or so years. The common people as well as foreign tribes were in awe of him. Zhuge Liang surrounded Chencang, sending a man from the same county as Hao Zhao, Jin Xiang, who outside the walls of the city, called out to try and persuade him to surrender. Hao Zhao answered him, “You are well acquainted with the laws of the House of Wei, and you know very well what kind of man I am. I have received much grace from the state and my house is important. There is nothing you can say; I have only to die. Return and thank Zhuge Liang for me; he may launch his... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.033Z"
+}

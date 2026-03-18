@@ -1,0 +1,100 @@
+{
+  "name_kr": "고순",
+  "name_en": "Gao Shun",
+  "name_cn": "高順",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 85,
+    "war": 86,
+    "intelligence": 55,
+    "politics": 46,
+    "charisma": 69,
+    "total": 341,
+    "birth": 162,
+    "death": 198
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 89,
+      "war": 85,
+      "intelligence": 51,
+      "politics": 42,
+      "charisma": 67
+    },
+    "rotk11": {
+      "leadership": 85,
+      "war": 86,
+      "intelligence": 55,
+      "politics": 46,
+      "charisma": 69
+    },
+    "rotk12": {
+      "leadership": 85,
+      "war": 86,
+      "intelligence": 60,
+      "politics": 46
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 인물. 여포의 수하 장수.고순은 정사(《정사 삼국지》,《후한서》)에 따로 열전을 남기진 못했고 〈여포전〉, 〈무제기〉, 〈선주전〉에 그의 기록이 부분적으로 남아있다.생년과 자를 비롯한 내용은 기록에 남아있지 않다. 송나라대 편찬된 태평어람(太平御覽)에 인용된 진류기구전(陳留耆舊傳)에 따르면 자가 효부(孝父)로 언급되어있으나, 이는 고유의 고조부인 고신(高愼)이라는 인물의 기록으로, 송나라 효종의 휘 였던 '신(昚)'을 피휘하기 위해 '신(愼)'을 '순(順)'으로 수정한 것으로 보인다.",
+      "평가": "장료, 장패와 함께 여포의 부하 장수로 등장하는 대표적 인물이지만 이 중 장료는 조조 휘하에 들어가기 전에는 두각을 보이지 않았으며, 장패는 사실상 반독립적으로 존재한 군벌이었고, 이해관계에 따랐을 뿐 여포에게 진심으로 충성한 것도 아니었기 때문에 여포 휘하에서 가장 능력있고 충성심 깊은 장수는 고순이라고 볼 수 있다.남은 기록으로 고순의 이미지를 구성하자면 그는 군재뿐만 아니라 인품과 식견도 뛰어났고 상명하복과 충성에 목숨을 거는, 마치 촉한의 조운과 같이 굉장히 모범적인 군인상이며 충신이다. 분명 군웅할거 시기의 유력 명장임에 틀림없을 것이다. 능력 이전에 이래저래 인간이 덜 됐던 여포에겐 정말 과분한 인재, 고작 여포 같은 범용한 인간과 함께 최후를 맞이한 게 안타깝다는 시각이 많다.여포의 유일한 군사인 진궁과는 굉장히 사이가 나빴는데 자세한 원인은 알 수 없으나, 여포의 충신이었던 고순 입장에선 충심 없이 그저 조조를 치기 위해 여포를 이용하려는 진궁이 영 곱게 보이진 않았을 것이다. 더구나 진궁은 여포가 잘 따르지 않자 학맹과 모의해 여포를 내치려 했다. 고순이 충직한 무인이자 여포군의 고참이었던 반면 진궁은 문인이었고 장막의 부하였다가 그의 죽음으로 오갈 곳이 없어져 합류한 신입이었던 점을 보면 성격이나 정치적 입지면에서도 반대되는 부분이 많다.그의 부대가 항상 이겨서 함진영이라 불렸다면서 왜 여포군은 조조군에게 패배해서 하비까지 몰렸는가라는 논란(?)과 비판도 있다. 간단하게 생각하면 강력한 정예부대인 걸 강조하다 보니 그런 칭호가 붙었을 것이다. 맹수의 이름을 가져다 쓴 호표기가 진짜로 호랑이, 표범으로 이루어진 맹수부대가 아니라 강맹함을 과시하는 의도인 것과 같다. 사실 전투에서 총사령관이나 휘하 장수 몇 명이 꾸준히 승전보를 올리지만 전체 전쟁에서는 불리해지거나 결국 패망하는 사례가 결코 드물지 않다. 그리고 주군인 여포가 군주로서는 워낙 무능해서 지속적으로 정치적, 외교적으로 실책을 반복하여 세력이 축소되는 수순인데다가 총사령관으로서도 개인의 무용은 뛰어나다고 해도 자주 지레 겁을 먹던가 아니면 무모히 싸우다가 실기하고 패배하는 사례가 반복되었기에 고순이 아무리 활약해도 여포를 비롯한 다른 아군들이 이기지 못하거나 실책을 저지른다면 고순 혼자서 뭘 어떻게 해볼 수 있는 상황이 아니다. 고순도 결국은 주군인 여포 세력의 일부를 이루는 장수일 뿐 총사령관은 주군인 여포이고 여포의 지휘를 받는 병력이 결국 전투의 승패를 결정한다. 게다가 막판에는 여포에게 자기 직속부대를 빼앗기면서 허수아비 상태에 놓였으니 별 수 있겠는가. 그야말로 주인 잘못 만나 개고생만 하다가 영 좋지 않은 최후를 맞은 불운한 인물이다. 현재의 삼국지 팬덤에선 도대체 이런 인물이 왜 여포에게 끝까지 충성을 다했는가라는 의문이 제기되고 있다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 11–12",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Chief Controller",
+        "General of the Gentlemen of the Household"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.071Z"
+}

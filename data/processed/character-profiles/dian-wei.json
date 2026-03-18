@@ -17,6 +17,28 @@
     "birth": 160,
     "death": 197
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 59,
+      "war": 94,
+      "intelligence": 34,
+      "politics": 31,
+      "charisma": 56
+    },
+    "rotk11": {
+      "leadership": 56,
+      "war": 95,
+      "intelligence": 35,
+      "politics": 29,
+      "charisma": 58
+    },
+    "rotk12": {
+      "leadership": 72,
+      "war": 95,
+      "intelligence": 35,
+      "politics": 29
+    }
+  },
   "novel_presence": {
     "first_chapter": 10,
     "last_chapter": 58,
@@ -43,7 +65,94 @@
       "sections": {
         "Introduction": "典韋（2世紀—197年），陳留郡己吾县（今河南省寧陵县）人，東漢末年群雄曹操麾下侍衛武將，因保護曹操而戰死。小說《三國演義》中稱典韋為「古之惡來」。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 160–197",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Dian Man"
+        }
+      ],
+      "ranks": [
+        "Major",
+        "Chief Commandant",
+        "Colonel"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tRather than two axes or long polearms Dian Wei used two hand-halberds. These were shortened versions of the ji halberd (as used by Lü Bu).\n\tDian Wei was neither drunk nor had his halberds been stolen during his heroic defense against Zhang Xiu’s attack.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 7628,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Dian Wei\n典韋\nLived AD 160–197\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 18 (Wei 18)\nbyjiuwan (Giao Chau)\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742844989' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699913' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742584685' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nDian Wei was a man from Chen Liu. His appearance was monstrous, with strength above ordinary men. He was a man that had determination and could be relied upon as a chivalrous person. The Liu clan of Xiang Yi and Li Yong of Sui Yang were rivals, of which Dian Wei reported to the former. Li Yong grew up in Fu Chun, as bei wei, he was very attentive. Dian Wei got onto a transport cart of chicken and wine with false intentions entered the gate. Upon the opening of the gates, he withdrew from his bosom, a small knife and killed Li Yong and his wife. He left after obtaining another cart. Li Yong’s residence was near the market, the market crowd all panicked [at the killing]. Pursuers numbered several hundred, but none dared approach Dian Wei. After travelling about four to fiveli1, he met his companion. They turned to fight before escaping. This was how the two met, they met because of heroic togetherness (hao jie).•••\nOne Chineseliis equivalent to 0.50km of the metric system or approximately 0.3107miles in the imperial system. So when Dian Wei travelled between 4 to 5li, it was 2km to 2.5km in the metric system or 1.24miles to 1.55 miles in the impe... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 92,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -130,11 +239,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.214Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.910Z"
 }

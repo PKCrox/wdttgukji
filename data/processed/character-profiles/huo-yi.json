@@ -1,0 +1,150 @@
+{
+  "name_kr": "곽익",
+  "name_en": "Huo Yi",
+  "name_cn": "霍弋",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 2,
+  "role": "남중 도독, 충절",
+  "stats": {
+    "leadership": 73,
+    "war": 69,
+    "intelligence": 69,
+    "politics": 74,
+    "charisma": 74,
+    "total": 359,
+    "birth": 207,
+    "death": 270
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 71,
+      "war": 67,
+      "intelligence": 70,
+      "politics": 71,
+      "charisma": 74
+    },
+    "rotk11": {
+      "leadership": 73,
+      "war": 69,
+      "intelligence": 69,
+      "politics": 74,
+      "charisma": 74
+    },
+    "rotk12": {
+      "leadership": 73,
+      "war": 69,
+      "intelligence": 69,
+      "politics": 74
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "촉서(蜀書) [ 펼치기 · 접기 ]1권 「유이목전(劉二牧傳)」2권 「선주전(先主傳)」3권 「후주전(後主傳)」유언 · 유장유비유선4권 「이주비자전(二主妃子傳)」5권 「제갈량전(諸葛亮傳)」6권 「관장마황조전(關張馬黃趙傳)」감부인 · 목황후 · 경애황후 · 장황후 · 유영 · 유리 · 유선(璿)제갈량 제갈교 제갈첨 동궐 번건관우 관흥 · 장비 장포 · 마초 마대 · 황충 · 조운 조통 조광7권 「방통법정전(龐統法正傳)」8권 「허미손간이진전(許糜孫簡伊秦傳)」9권 「동류마진동여전(董劉馬陳董呂傳)」방통 방굉 방림 · 법정허정 · 미축 · 손건 · 간옹 · 이적 · 진밀동화 · 유파 · 마량 마속 · 진진 · 동윤 진지 · 여예10권 「유팽요이유위양전(劉彭廖李劉魏楊傳)」11권 「곽왕상장양비전(霍王向張楊費傳)」12권 「두주두허맹래윤이초극전(杜周杜許孟來尹李譙郤傳)」유봉 맹달 · 팽양 · 요립 · 이엄 · 유염 · 위연 · 양의곽준 곽익 나헌 · 왕련 · 상랑 상총 · 장예 · 양홍 하지 · 비시두미 · 주군 장유 · 두경 · 허자 · 맹광 · 내민 · 윤묵 · 이선 · 초주 초수 · 극정13권 「황이여마왕장전(黃李呂馬王張傳)」14권 「장완비의강유전(蔣琬費禕姜維傳)」15권 「등장종양전(鄧張宗楊傳)」황권 · 이회 · 여개 · 마충 · 왕평 구부 · 장억장완 장빈 장현 유민 · 비의 · 강유등지 · 장익 · 종예 요화 · 양희관련 틀: 위서 오서※ 흠정 24사 관련 틀 둘러보기\n\n霍弋곽익작위 열후(列侯) 최종직위 촉한안남장군(安南將軍) 조위남중제독(南中都督) 성씨 곽(霍) 휘 익(弋) 자 소선(紹先) 아버지 곽준(霍峻) 생년 216년 이전 몰년 268년 이후 ~ 271년 이전 역임한 관직 [ 펼치기 · 접기 ] 촉한 태자사인(太子舍人)→알자(謁者)→기실(記室)→황문시랑(黃門侍郞)→중서자(中庶子)→참군(參軍)·내강둔부이도독(庲降屯部貳都督)→참군(參軍)·내강둔부이도독(庲降屯部貳都督)·호군(護軍) →영창태수(永昌太守)→감군(監軍)·익군장군(翊軍將軍)·건녕태수(建寧太守)→안남장군(安南將軍) 조위 남중제독(南中都督) 서진 불명\n\n1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 삼국전투기"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Huo Jun"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Huo Du"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Father"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Shan"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Xuan"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Huo Biao"
+        }
+      ],
+      "ranks": [
+        "Personal Sectary to Zhuge Liang",
+        "Gentleman Within the Yellow Gates",
+        "Advisor to the Army",
+        "Second Deputy Chief Controller",
+        "Protector of the Army",
+        "Governor of Yongchang",
+        "General of the Assistant Army",
+        "Governor of Jianning",
+        "General Who Pacifies the South",
+        "Chief Controller of Nanzhong",
+        "Marquis Within the Imperial Domain"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.045Z"
+}

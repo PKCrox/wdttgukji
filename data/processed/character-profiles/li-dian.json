@@ -1,0 +1,159 @@
+{
+  "name_kr": "이전",
+  "name_en": "Li Dian",
+  "name_cn": "李典",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 77,
+      "intelligence": 80,
+      "politics": 72,
+      "charisma": 61
+    },
+    "rotk12": {
+      "leadership": 78,
+      "war": 77,
+      "intelligence": 79,
+      "politics": 74
+    }
+  },
+  "novel_presence": {
+    "first_chapter": 5,
+    "last_chapter": 68,
+    "chapters": "5-6,11-12,14,16,18,22-24,27,30-33,35-36,39-40,42,48,50,53,67-68",
+    "chapter_count": 15
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 181–217",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Li Qian"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Li Zheng"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Li Zhen"
+        }
+      ],
+      "ranks": [
+        "Gentleman of the Household",
+        "Governor of Lihu",
+        "Bi Jiang Jun",
+        "General Who Captures Caitiffs",
+        "Marquis of a Chief Village",
+        "General Who Breaks the Caitiffs"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tLi Dian did not capture Huang Shao. [ZZTJ: 62]",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6692,
+      "first_translation": {
+        "translator": "StephenSo",
+        "excerpt": "Li Dian (Mancheng)\n李典 (曼成)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 18 (Wei 18)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2000\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745627601' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745626494' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745626494' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLi Dian, styled Mancheng, was a man of Juye, Shanyang. He and his father, Li Qian, had heroic qualities and being host to about a thousand families, lived in Cheng Shi. In the middle of [the reign of] Chuping [AD 190–193], Li Dian along with many went to follow the Grand Ancestor (Cao Cao), breaking the Yellow Turbans at Shouzhang. And again, he was involved in the attack against Yuan Shu and the conquering of Xuzhou. During the troubles caused by Lu Bu, the Grand Ancestor sent Li Qian back to Cheng Shi and help reassure the various counties. The Aide-de-camp (Bie Jia) of Lu Bu, Xue Lan, and Secretary (Zhi Zhong) Li Feng, summoned Li Qian, hoping to rebel together. Li Qian did not listen to them and so he was killed. The Grand Ancestor sent Qian’s son, Li Zheng, to lead their troops together with various generals to strike at Xue Lan and Li Feng. Xue Lan and Li Feng were defeated, and because of his achievements in pacifying the various counties of Yuzhou, he was moved to become Inspector (Ci Shi) of Qingzhou. Li Zheng died and Li Dian moved his residence to Yinling and became Gentleman of the Household (Zhong Lang J... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": true,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.054Z"
+}

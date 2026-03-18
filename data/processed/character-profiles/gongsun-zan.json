@@ -17,6 +17,28 @@
     "birth": 152,
     "death": 199
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 85,
+      "war": 84,
+      "intelligence": 67,
+      "politics": 66,
+      "charisma": 79
+    },
+    "rotk11": {
+      "leadership": 84,
+      "war": 83,
+      "intelligence": 70,
+      "politics": 46,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 84,
+      "war": 83,
+      "intelligence": 75,
+      "politics": 46
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       1,
@@ -58,7 +80,55 @@
       "sections": {
         "Introduction": "公孙瓒（161年前—199年），字伯圭（出《劉寬碑陰》名字取自圭瓚一詞，文史多作伯珪，當取碑），东汉末期人物，幽州辽西令支人，曾任前將軍，封易侯。\n\n曾与刘备和刘德然共同师事于卢植。镇守辽西时曾与烏桓、鮮卑等交战，尽选白马为先锋，自号“白马义从”。当时袁术派遣孙坚驻屯于阳城以拒董卓，袁绍派周昂夺取孙坚驻守之处，袁术便派公孙瓒从弟公孙越与孙坚一同攻打周昂，公孙越为流矢所中死；公孙瓚以其之死归罪于袁绍，因此和袁绍争夺北方连年交战。\n\n公孫瓚佔據幽州後，由於先前斬殺政見相左的漢室宗親劉虞以及日後的政略失誤，導致公孫瓚的人心和勢力逐步衰退。建安四年（199年）被袁绍击败，先将其姊妹妻儿全部缢死，然后引火自焚；在公孙瓒自焚时，袁绍士兵登上公孙瓒所在高台并将其斩首。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 159–199",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Xu"
+        },
+        {
+          "relation": "member",
+          "name": "Cousins"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Yue"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Fan"
+        }
+      ],
+      "ranks": [
+        "Prefect of Zhuo",
+        "Chief Commandant of Cavalry",
+        "Colonel Who Brings the Caitiffs to Surrender",
+        "General of the Van",
+        "Marquis of Yi"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, he was beheaded by Yuan Shao’s men. [ZZTJ]",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 75,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -167,11 +237,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.292Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.014Z"
 }

@@ -17,6 +17,28 @@
     "birth": 148,
     "death": 222
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 86,
+      "war": 94,
+      "intelligence": 66,
+      "politics": 58,
+      "charisma": 74
+    },
+    "rotk11": {
+      "leadership": 86,
+      "war": 93,
+      "intelligence": 60,
+      "politics": 52,
+      "charisma": 75
+    },
+    "rotk12": {
+      "leadership": 90,
+      "war": 93,
+      "intelligence": 65,
+      "politics": 52
+    }
+  },
   "novel_presence": {
     "first_chapter": 53,
     "last_chapter": 83,
@@ -43,7 +65,104 @@
       "sections": {
         "Introduction": "黃忠（2世紀—220年或222年），字漢升，一說字汉叔，荊州南陽郡（今河南省南陽市）人，漢末三國時蜀漢的著名將領。本為漢末群雄劉表部下中郎將，接受長沙太守韓玄指揮，後成為劉備部將，歷任討虜將軍、征西將軍，官至後將軍，去世後諡號為剛侯。陈寿在撰写《三国志》的时候，将黃忠与關羽、張飛、馬超、趙雲合为一传（〈蜀书·关张马黄赵传〉），而罗贯中亦因此於其長篇小說《三国演义》中将該五人并称「五虎上将」，广为世人所知，黄忠也逐渐成为了老当益壮的代名词。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 55–56",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Huang Xu"
+        }
+      ],
+      "ranks": [
+        "General of the Gentlemen of the Household",
+        "Acting Major-General",
+        "General Who Exterminates the Caitiffs",
+        "General Who Subdues the West (AD 219)",
+        "General of the Rear (AD 219)",
+        "Marquis of the Imperial Domain",
+        "Marquis Gang (Posthumous)",
+        "One of the ‘Five Tiger Generals’"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas not ‘fought with and released’ by Guan Yu. With Han Xian, he surrendered to Liu Bei’s army by choice.\n\tHuang Zhong was not the chief commander of Shu’s Hanzhong campaign. Liu Bei was.\n\tDied before the battle of Yi Ling, thus did not participate.\n\tNo record of him being “old”",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 3,
+      "total_char_count": 10402,
+      "first_translation": {
+        "translator": "JackYuan",
+        "excerpt": "Huang Zhong (Hansheng)\n黃忠 (漢升)\nLived AD ?–219\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 36 (Shu 6)\nbyJack Yuan\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742885839' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742429871' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742429761' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nHuang Zhong was styled Hansheng and a man from Nanyang. Governor of Jingzhou Liu Biao made him a General of the Gentlemen of the Household and had him garrison Youxian in Changsha with nephew Liu Yan. Then Duke Cao conquered Jingzhou and Huang Zhong was made acting major-general, continuing to fulfill his former role. When the Former Lord secured the various commanderies of the south, Huang Zhong joined him and followed Liu into Shu. At Jiameng, he received command to besiege Liu Zhang. Huang Zhong frequently charged into battle himself and was a resolute and courageous commander of the three armies. After Yizhou was secured, he was assigned General who Exterminates the Caitiffs.\nIn the twenty-fourth year of Jian’an [219], Huang Zhong attacked Xiahou Yuan at Mount Dingjun in Hanzhong. Xiahou Yuan’s troops were elite but on every charge Huang was at the forefront, to rouse his soldiers. The drums roused the Heavens and the roar of the soldiers resonated through the gorges. At the first clash Xiahou Yuan was beheaded and his troops greatly defeated. Hence Huang Zhong was promoted to the position of General who Subdues the West. That year, ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 57,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -160,11 +279,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.238Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.946Z"
 }

@@ -1,0 +1,76 @@
+{
+  "name_kr": "하후상",
+  "name_en": "Xiahou Shang",
+  "name_cn": "夏侯尚",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 78,
+      "war": 68,
+      "intelligence": 79,
+      "politics": 66,
+      "charisma": 59
+    },
+    "rotk12": {
+      "leadership": 79,
+      "war": 72,
+      "intelligence": 75,
+      "politics": 65
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6425,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Xiahou Shang (Boren)\n夏侯尚 (伯仁)\nLived ADca.184–226\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyZL181\nonAugust 24th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1756054500' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757613643' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1756068936' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1756047978' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXiahou Shang, styledBoren, was the son of a cousin of[Xiahou] Yuan.\nHe was intimate and friendly with theCivil Emperor.AWhen theGrand ProgenitorstabilizedJi province[冀州],[Xiahou] Shangwas madeArmy Major. [Xiahou Shang] led cavalry when he was following in expeditions and conquests. He later becameLiterary Fellow of the General of All Purposes.\nTheBook of Weistates:[Xiahou] Shanghad wisdom and strategy in planning and preparing. TheCivil Emperorvalued him, and they were friends from when they were of humble status.\nWhen the State ofWeiwas first established, he was promoted toAttending Gentleman at the Yellow Gates. When the Hu ofDai commandery[代郡] revolted, theMarquisofYanling[鄢陵侯],[Cao] Zhang, was sent to suppress them;[Xiahou] Shangparticipated in military matters for[Cao] Zhang. They stabilized the lands ofDai[代] and returned. When theGrand Progenitordied atLuoyang[洛陽],[Xiahou] Shang,bearing tally, transported the catalpa coffin1toYe[鄴]. Due to his past achievements, he was enfeoffed asDistrict Marquisof Pingling [平陵亭侯], conferred asCavalier Regular Attendant, and promoted toArmy Leader of the Center.•••\nCatalpa coffins were... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.056Z"
+}

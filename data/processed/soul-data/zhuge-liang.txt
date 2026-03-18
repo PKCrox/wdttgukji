@@ -97,3 +97,46 @@ Sima Yi: 적대 (강도73, 93~104회 북벌 대립)
 
 ## EN Wikipedia
 Zhuge Liang, courtesy name Kongming, was a Chinese statesman and strategist who lived through the collapse of the Eastern Han dynasty and became the principal architect of the Shu Han state. He served as chancellor under its founding emperor Liu Bei from 221 and as regent to the young emperor Liu Shan after 223 until his death.
+
+## 정사삼국지
+[생애(정사)] ### 개요
+제갈량諸葛亮 [ 펼치기 · 접기 ]생애생애 (제갈량의 북벌 · 추풍오장원)인간관계평가평가 · 업적 · 논란 기타관련 일화들 · 미디어 믹스 (연의) · 무후사 · 출사표
+
+1. 출생2. 청년기3. 유비를 따르다4. 촉한의 국력을 강화시키다5. 남만 정벌6. 제갈량의 북벌7. 오장원에 지는 별8. 묘소9. 관련 문서
+
+### 출생
+서주(徐州) 낭야국(琅邪國) 양도현(陽都縣)(현 산둥성 린이시 이난현) 출신으로 다른 제갈 가문도 이곳에서 태어났다. 형제로는 7살 연상의 형 제갈근, 이름이 알려지지 않은 누나 2명, 동생 제갈균이 있다. 기록을 분석하면 형 제갈근은 동복형제고 동생 제갈균은 이복형제라고 추정할 수 있는 정황이 존재하나, 상반되는 기록 또한 있어서 확실히는 알 수 없다.사서에 따르면 한에서 사예교위를 지낸 제갈풍의 후손으로 부친 제갈규는 한 말기 연주 태산군에서 군승을 지냈고 제갈량이 어릴 때 사망했다. 이에 숙부 제갈현이 제갈량 형제들을 도맡았다. 이 무렵에 
+
+
+## Kongming 영문 백과사전
+생몰: AD 181–234
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Zhuge Liang did not plan the events of the Battle of Chibi or change the winds. He did not ‘borrow arrows’ from Cao Cao, Sun Quan did: one side of his boat became so heavy with crossbow bolts that he turned to avoid capsizing.
+	Zhuge Liang did not have a great rivalry with Zhou Yu or plot his death. He did not attend Zhou Yu’s funeral. Pang Tong, however, did mourn his passing.
+	Was not adviser during the Hanzhong campaign. This responsibility wa
+
+## 정사 영역본 (Kongming SGZ)
+Zhuge Liang (Kongming)
+諸葛亮 (孔明)
+Lived AD 181–234
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 35 (Shu 5)
+byJack Yuan
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742435536' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742435020' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742434981' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhuge Liang had the style Kongming and was from Yangdu in Langya. He was a descendant of Zhuge Feng, who had been the Colonel Director of Retainers duri
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통93 무37 지100 정98 매92
+rotk11: 통92 무38 지100 정95 매92
+rotk12: 통98 무38 지100 정95 매?
+
+## 커뮤니티 평가
+감정점수: 86, 언급: undefined회
+키워드: 

@@ -1,0 +1,57 @@
+=== 장완 (蔣琬, Jiang Wan) ===
+자: 공엄 (公琰)
+진영: shu | 티어: 2 | 역할: 제갈량 후임 승상
+
+## 능력치
+통솔:78 무력:34 지력:84 정치:93 매력:81 총합:370
+생:188 몰:246
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 후한 말, 삼국시대 촉한의 재상. 장빈과 장현의 아버지. 자는 공염(公琰).제갈량의 뒤를 이어 약 12년간 촉한의 실질적 2인자 역할을 하였으며 사후에는 비의가 그 역할을 이어받게 된다. 이 세 사람(제갈량, 장완, 비의)에 동윤을 더해서 촉한의 사상(四相), 사영(四英)이라고 불렸다.
+[생애(정사)] 형주 영릉군 상향현 사람으로 약관의 나이에 천릉현에 사는 외종제 유민(劉敏)과 함께 이름이 알려졌으며 장완은 주서과의 신분으로 유비를 따라 촉 땅으로 들어가 광도현의 장이 되었는데 정확한 시기는 알 수 없다. 다만 유비가 일찍이 유람하다가 갑자기 광도현을 방문한 적이 있었는데 이 때 장완이 하라는 일은 안 하고 술에 취해 있는 것을 보고 매우 노여워하며 처형하려고 했다. 그러자 군사장군 제갈량이 유비에게 간청하며 말했다.장완은 국가의 그릇이지, 백리를 다스릴 인재가 아닙니다. 그의 정무 처리는 백성들을 안정시키는 것을 근본으로 하고 있으며 겉모습을 장식하는 것을 우선시하지 않습니다. 원컨대 주공께서는 다시 살펴 주십시오.유비는 제갈량을 아꼈으므로 제갈량의 말을 들어 장완을 벌하지 않는 대신 관직을 박탈했다. 장완은 면직된 후 한밤중에 소 한 마리가 문앞에서 머리에 피를 철철 흘리는 꿈을 꾸자, 매우 언짢아하여 해몽가인 조직(趙直)을 불러 물어보았다. 조직은 다음과 같이 말했다.대체로 피를 보는 것은 일이 분명해졌음을 의미합니다. 소의 뿔과 귀는 '공(公)' 자의 형상을 하고 있으니 당신의 지위는 반드시 공(公)에 이를 것입니다. 아주 길한 징조입니다.오래지 
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 87–89
+
+## 정사 영역본 (Kongming SGZ)
+Jiang Wan (Gongyan)
+蔣琬 (公琰)
+Lived AD ?–246
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 44 (Shu 14)
+byChen Qiang
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744913971' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744913941' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744913941' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Jiang Wan, styledGongyanhails from prefecture LingLing, Xiang Xiang county. Together with his cousin, Liu Min from Quan Ling county, Jiang Wan was already q
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통74 무39 지85 정93 매81
+rotk11: 통78 무34 지84 정93 매81
+rotk12: 통78 무34 지84 정93 매?
+
+## 커뮤니티 평가
+(없음)

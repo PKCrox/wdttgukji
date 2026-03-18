@@ -17,6 +17,28 @@
     "birth": 178,
     "death": 232
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 80,
+      "war": 64,
+      "intelligence": 94,
+      "politics": 80,
+      "charisma": 81
+    },
+    "rotk11": {
+      "leadership": 84,
+      "war": 64,
+      "intelligence": 93,
+      "politics": 80,
+      "charisma": 81
+    },
+    "rotk12": {
+      "leadership": 87,
+      "war": 64,
+      "intelligence": 93,
+      "politics": 80
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       35,
@@ -48,7 +70,66 @@
         "Introduction": "徐庶（活跃期2世纪—3世纪），字元直，原名福，小說《三國演義》將徐庶的化名誤植為單福，豫州颍川长社（今河南长葛）人。東漢末至三国时人。",
         "评价": "- 诸葛亮：“夫参署者，集众思，广忠益也。若远小嫌，难相违覆，旷阙损矣。违覆而得中，犹弃敝趫而获珠玉。然人心苦不能尽，惟徐元直处兹不惑。又，董幼宰参署七年，事有不至，至于十反，来相启告。苟能慕元直之十一，幼宰之勤渠，有忠于国，则亮可以少过矣。”“昔初交州平，屡闻得失，后交元直，勤见启诲。”（《三国志·蜀书九·董刘马陈董吕传第九》）\n- 尹义尚：“徐元直西蜀之谋士，关云长刘氏之骁将，须归即遣，知叛弗追，今之与古，何其异趣？”（《全北齐文·卷八》）\n- 习凿齿：“西望隆中，想卧龙之吟；东眺白沙，思凤雏之声；北临樊墟，存邓老之高；南眷城邑，怀羊公之风；纵目檀溪，念崔徐之友；肆睇鱼梁，追二德之远，未尝不徘徊移日，惆怅极多，抚乘踌躇，慨尔而泣。曰若乃魏武之所置酒，孙坚之所陨毙，裴杜之故居，繁王之旧宅，遗事犹存，星列满目。琐琐常流，碌碌凡士，焉足以感其方寸哉！”（《晋书·列传第五十二》）\n- 罗贯中：“痛恨高贤不再逢，临歧泣别两情浓。片言却似春雷震，能使南阳起卧龙。”（《三國演義》）\n- 冯梦龙：“徐庶之不终于昭烈也，其母存也，陵母不伏剑，陵亦庶也。”\n- 李蟠：“陵归楚则徐庶不得为完臣，陵不归楚则赵苞不得为孝子矣。”"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -157,11 +238,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.224Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:09.928Z"
 }

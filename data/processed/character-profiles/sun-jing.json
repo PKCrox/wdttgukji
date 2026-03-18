@@ -1,0 +1,76 @@
+{
+  "name_kr": "손정",
+  "name_en": "Sun Jing",
+  "name_cn": "孫静",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 66,
+      "war": 51,
+      "intelligence": 75,
+      "politics": 74,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 66,
+      "war": 53,
+      "intelligence": 73,
+      "politics": 71
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4849,
+      "first_translation": {
+        "translator": "JonathanWu",
+        "excerpt": "Sun Jing (Youtai)\n孫靜 (幼台)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 51 (Wu 6)\nbyJonathan Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745644240' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745644162' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745644162' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Jing styled Youtai, was the younger brother of Sun Jian. When [Sun] Jian started his career, [Sun] Jing, together with Xiang Qu and Zong Shi and between 500 to 600 men to serve as guards, and they were all very close.\n[Sun] Ce then routed Liu Yao’s forces and went on to pacify many Prefectures. [Sun] Ce then advanced to take Kuai Ji Commandery, and sent a messenger to ask Sun Jing to join him. [Sun] Jing was a relative of [Sun] Ce, and thus went out to meet him at Qian Tang.\nAt this time, Wang Lang protected [Kuai Ji] as Grand Administrator, and he resisted [Sun] Ce’s attack at Guling. [Sun] Ce frequently crossed the river to attach, but was not able to subdue him.\n[Sun] Jing then told [Sun] Ce: “[Wang] Lang obstructs our path by fortifying his force on the city walls, it will be difficult to take the city quickly. Zha Du is only tenlisouth of our position, and the road is important to him.AWe should follow the road and try to go behind them, we should then attack them when they are not prepared, and move out when they least expect it. I myself will go out with some troops and distract his main force, the army should then be split up ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.068Z"
+}

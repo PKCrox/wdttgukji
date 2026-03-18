@@ -65,3 +65,37 @@ Cao Cao: 군신 (강도79, 최측근 참모)
 
 ## EN Wikipedia
 Guo Jia, courtesy name Fengxiao, was a military adviser to the warlord Cao Cao during the late Eastern Han dynasty of China. Throughout his 11 years of service, Guo Jia aided Cao Cao greatly with his brilliance and foresight, and his strategies were instrumental to Cao Cao's triumphs over rival warlords such as Lü Bu and Yuan Shao. For example, four years before Cao Cao's decisive victory over Yua
+
+## 정사삼국지
+[개요] 후한 말의 인물이자 조조 휘하의 책사로 자는 봉효(奉孝). 예주 영천군 양책현 사람.군략 쪽에서 재능을 발휘하여 예측의 적중률이 상당히 높았다고 한다.
+[초기 생애] 《부자》에 따르면 곽가는 어려서부터 원대한 기량이 있었다. 한나라 말 장차 천하가 어지러워지려 하자 약관의 나이 때부터 이름과 행적을 숨기고 은밀히 영걸들과 교제하며 속세와 접하지 않으니 이 때문에 당시 사람들 중 많은 이가 그를 알지 못하고 오직 식견이 높고 사물의 이치에 밝은 이들만이 그를 높게 여겼다. 나이 27세에 사도부(司徒府)에 벽소(관부에서 자체적으로 일할 관원을 충원하는 제도)되었다. 당초 북쪽으로 가서 원소를 만나보고는 원소의 모신인 신평과 곽도에게 말했다.원공(원소)은 사람을 씀의 중요한 점을 알지 못하오. 두서는 많으나 요령은 부족하며 모책을 좋아하나 결단력은 없으니 그와 더불어서 함께 천하의 대난을 구제하고 패왕의 업(業)을 정하는 것은 어려울 것이오!” 그리하여 마침내 그를 떠났다.
+[평가] 긍정적으로 평하는 사람이나 부정적으로 평하는 사람이나 공통적으로 인정하는 부분이라면 주군 조조와의 궁합. 옳은 판단으로 이끌어가는 과정에서 주군과의 궁합이 좋다면 시시콜콜한 부분에서 분쟁 상황이 일어날 가능성이 적어지기에, 결국 유능함만큼이나 주군과의 궁합도 중요하다 할 수 있다. 당장 삼국지 내에서만 해도 모사와 주군의 궁합이 중요하다는 사례는 많이 나온다. 원소의 경우 특출난 모사인 전풍, 저수를 끝내 제대로 활용하지 못하고 패망했다. 진궁도 조조를 떠나 여포를 따랐는데, 자기 뜻대로 조종할 수 있다고 여긴 것 같지만 결국 여포가 워낙 막나가며 진궁의 말을 듣지 않아 일을 그르쳤다. 이렇게 모든 판단은 전적으로 군주에게 있고 그 군주의 판단력이 정확할수록 승리에 가까워지는데 온갖 잡다하고 별의별 난입 상황이 벌어지는 난세에서 그것도 중원 한가운데 사방의 적들이 언제 치고 빠질지 모르는 조조 인생에서 가장 중요하고도 어려웠던 시기에 오로지 판단력 하나만으로 조조에게 인정받은 곽가는
+
+
+## Kongming 영문 백과사전
+생몰: AD 170–207
+
+## 정사 영역본 (Kongming SGZ)
+Guo Jia (Fengxiao)
+郭嘉 (奉孝)
+Lived AD 170–207
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 14 (Wei 14)
+byWang Qing Fei
+in2003
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745023853' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745023825' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745023825' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Guo Jia, a native of Yingchuan, was a famous strategist under Cao Cao.
+Guo Jia first went to Yuan Shao and Shao respected him greatly. A while later Guo
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통52 무12 지97 정82 매80
+rotk11: 통51 무15 지98 정84 매78
+rotk12: 통88 무15 지96 정84 매?
+
+## 커뮤니티 평가
+감정점수: 33, 언급: undefined회
+키워드: 

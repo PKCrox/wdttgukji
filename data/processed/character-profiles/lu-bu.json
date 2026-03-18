@@ -17,6 +17,28 @@
     "birth": 156,
     "death": 198
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 95,
+      "war": 100,
+      "intelligence": 26,
+      "politics": 13,
+      "charisma": 32
+    },
+    "rotk11": {
+      "leadership": 87,
+      "war": 100,
+      "intelligence": 26,
+      "politics": 13,
+      "charisma": 40
+    },
+    "rotk12": {
+      "leadership": 97,
+      "war": 100,
+      "intelligence": 26,
+      "politics": 13
+    }
+  },
   "novel_presence": {
     "first_chapter": 3,
     "last_chapter": 93,
@@ -44,7 +66,139 @@
       "sections": {
         "Introduction": "吕布（不晚于161年—199年2月7日），字奉先，并州五原郡九原（今内蒙古自治区包头市九原区）人，东汉末年武将与军阀，被封為溫侯。先后为丁原、董卓的部将，也曾为袁绍效力，后趁劉備與袁術交戰時而佔据徐州，自成一方势力。建安三年十二月（199年2月7日），在下邳被曹操击败处死。"
       }
+    },
+    "history": {
+      "summary": "후한서(後漢書) [ 본기(本紀) ]1권 「광무제기(光武帝紀)」2권 「명제기(明帝紀)」 3권 「장제기(章帝紀)」 유수유장유달4권 「화제상제기(和帝殤帝紀)」 5권 「안제기(安帝紀)」 6권 「순제충제질제기(順帝沖帝質帝紀)」 유조 · 유륭유호유보 · 유병 · 유찬7권 「환제기(桓帝紀)」 8권 「영제기(霊帝紀)」 9권 「헌제기(獻帝紀)」 유지유굉유협10권 「황후기(皇后紀)」 곽성통 · 음여화 · 명덕황후 · 장덕황후 · 효화황후 · 등수 · 염희 · 양납 · 양여영 · 등맹녀 · 두묘 · 효인황후 · 효령황후 · 영사황후 · 복수 · 조절 · 무양장공주 · 열양공주 · 관도공주 · 육양공주 · 역읍공주 · 획가장공주 · 평양공주 · 융려공주 · 평지공주 · 심수공주 · 평고공주 · 준의공주 · 무안공주 · 노양공주 · 낙평공주 · 성안공주 · 무덕장공주 · 평읍공주 · 음안공주 · 수무장공주 · 공읍공주 · 임영공주 · 문희공주 · 무양장공주 · 관군장공주 · 여양장공주 · 양안장공주 · 영... (truncated)",
+      "sections": {
+        "개요": "인중여포 마중적토 (人中呂布 馬中赤兎) - 사람(장수) 중에서는 여포가 으뜸이고, 말 중에서는 적토마가 으뜸이다.후한 말의 무장.",
+        "가족": "부인: 《삼국지연의》에서는 엄씨라는 이름으로 나온다.《삼국지집해》의 저자 하작은 위속이 여포의 내외 친척인 기록을 근거로 부인의 성씨를 위씨로 추정하기도 했다.딸: 여씨친척: 위속여포의 친부모에 대한 기록은 없으나, 여포가 동탁 밑으로 들어갔을 때 그를 아버지로 섬긴 걸 보면 여포의 친아버지는 189년 이전에는 사망했을 가능성이 높다.《삼국지연의》에서 정원도 양아버지로 묘사하며, 여포의 두번째 부인과 첩으로 조씨, 초선이 나오지만 연의의 창작이다. 정원은 여포의 상관이었을 뿐이며 조씨, 초선은 연의의 가공 인물이다.",
+        "평가": "여포는 효호(虓虎, 포효하는 범)의 용맹을 지녔다. 그러나 특출한 지략은 없었고 경박하고 교활하게 반복(反覆, 언행을 이리저리 바꿈)하여 그의 안중에는 오직 이익 밖에 없었으니, 예로부터 오늘에 이르기까지 이런 자가 이멸(夷滅, 멸망)되지 않은 적이 없다. 정사 삼국지의 저자 진수의 평가원술은 탐욕스러웠고 여포 또한 반복무상(反覆無常, 언행이 이랬다 저랬다 하며 일정하지 않거나 일정한 주장이 없음을 이르는 말) 하였도다.후한서의 저자 범엽의 평가洪水滔滔淹下邳 (홍수도도엄하비) 홍수가 도도히 하비성을 덮치니當年呂布受擒時 (당년여포수금시) 그해 여포가 사로 잡힐 때다空餘赤免馬千里 (공여적면마천리) 천리를 달리는 적토마 주인을 잃고漫有方天戟一枝 (만유방천극일지) 방천화극 한 자루 버려졌네縛虎望寬今太懦 (박호망관금태나) 묶인 범이 겁먹어 관용을 비니養鷹休飽昔無疑 (양응휴포석무의) 매를 기를 때 굶기란 옛말 틀림없구나戀妻不納陳宮諫 (연처불납진궁간) 아내를 사랑하다 진궁 간언 안 듣더니枉罵無恩大耳兒 (왕매무은대이아) 부질없이 귀 큰 녀석 은혜 모른다 욕하네모종강본 삼국지연의에서 여포의 최후를 노래한 시삼국지의 군벌들은 사서들마다 평가가 갈리는 경우가 잦아 특정 사료만으로 사실여부를 파악하긴 힘든 편이나, 여포는 유독 정사, 야사 가리지 않고 뛰어난 무력과 그에 정반대되는 최악의 인성을 지닌 인물이라는 내용 외의 평가가 없을 정도로 서술이 매우 일관적이다.사실 연의에서 굉장히 수혜를 입은 인물 중 하나로, 정사 기준 여포는 힘만 센 삼류 악당 그 자체이다. 우선 본인의 무력이 뛰어나단 것은 의심의 여지가 없으나, 연의와 창작물 등에서 생긴 호전적이고 호승심 강한 무인과 한참 거리가 먼 겁쟁이에 자기 보신적인 성격이었다. 그냥 본인이 지레 겁 먹고 거짓 보고를 해서 동탁 진영 데뷔를 최악으로 시작했으며, 이후로도 동탁 휘하에선 별 활약이 없다. 반동탁 연합군을 괴롭히며 동탁 진영의 에이스 역할을 톡톡히 한 것은 실제 역사상에선 서영의 행적이었다. 초선은 동탁이 아끼던 시녀와 놀아나다 동탁과 사이가 벌어진 것과, 후일 조조에게 사로잡혀 처형당하기 전 '내가 부하들에게 잘 해주었는데 그들이 날 배신했으니 억울하다'라며 되도 않는 말을 하는 여포에게 조조가 '부하들의 아내를 사랑하셨으면서 어찌 부하들을 아꼈다고 하시나?' 라고 쏘아붙일 정도로 음탕하였던 그의 성정을 참고해 만든 가상인물이다.이렇듯 분명 잘 싸우긴 한다만 그렇다고 아예 상대가 없을 정도로 잘 싸우는 것도 아니고, 심지어 겁은 많고 보신적인 성격에 음탕하기까지 하니 정사 기준으론 그냥 초반부에 등장하는 인간군상 악당으로, 현재 삼국지 관련 각종 창작물에서 대중적으로 나타나는 이미지와 비교해보자면 싸움을 잘하고 머리가 나쁘단 것 외엔 거의 다른 인물이다.연의에서는 초반부의 최주요 반동인물 격으로 존재감이 급부상해 전투력 면에서 엄청난 버프를 받았으며, 삼영전여포, 적토마, 장비와의 라이벌리 등 여러 창작 일화를 배정받아 악당 겸 반동인물로서는 상당히 매력적인 캐릭터로 재탄생해서 현재 창작물에서 ... (truncated)"
+      }
+    },
+    "kongming": {
+      "life_span": "AD 160–199",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 07/2004\n\tReplies: 22"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Adoptive Father"
+        },
+        {
+          "relation": "member",
+          "name": "Ding Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Yan"
+        },
+        {
+          "relation": "member",
+          "name": "Concubine"
+        },
+        {
+          "relation": "member",
+          "name": "Diaochan f"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Lü Lingqi"
+        },
+        {
+          "relation": "member",
+          "name": "Horse"
+        },
+        {
+          "relation": "member",
+          "name": "Red Hare [Chituma]"
+        }
+      ],
+      "ranks": [
+        "Chief Commander of the Cavalry",
+        "Master of Records",
+        "Flying General (Nickname)",
+        "General of the Interior, Marquis of Duting",
+        "Fen Wu Jiang Jun, Marquis of Wen"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas not Ding Yuan’s adopted son historically.\n\tDid not duel with Liu Bei, Zhang Fei and Guan Yu, all at once, historically.\n\tLü Bu did not betray Dong Zhuo because of Diaochan. Dong Zhuo did throw a halberd at Lü Bu, however, and did often get angry at Bu. Lü Bu was also anxious because he had an affair with one of Dong Zhuo’s maids. Wang Yun incited Lü Bu against Zhuo.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 22112,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Lü Bu (Fengxian)\n呂布 (奉先)\nLived ADca.160–199\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 7 (Wei 7)\nbyLady Wu,Battleroyale,Sonken\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745020330' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744925238' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744919053' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLü Bu, styled Fengxian, was a man from Jiuyuan in Wuyuan Commandery. Known for his prowess, he was recommended for service in Bing Province. When the provincial Inspector, Ding Yuan, was promoted to be Chief Commander of the Cavalry and was stationed at Henei, he employed Lü Bu as his Master of Records, and entrusted much to him.\nWhen Emperor Ling died, Ding Yuan led his troops to pay his respects at Luoyang.AHe plotted with He Jin to exterminate the eunuchs, and was made Commander of the Imperial Guard. However, He Jin failed, and Dong Zhuo entered the capital city. Dong Zhuo planned to create chaos, and his first intention was to kill Ding Yuan and annex his military command. Knowing that Lü Bu was greatly trusted by Ding Yuan, he lured Lü Bu into killing him. Lü Bu followed through and brought Ding Yuan’s head back to Dong Zhuo. Dong Zhuo bestowed the title of Chief Commander of the Cavalry upon Lü Bu; and, being so fond of him, he and Dong Zhuo swore to be as father and son.\nYingxiong Ji: Ding Yuan was styled Jianyang. Born of a humble family, he was a rough man, fierce in battle and skilled in horsemanship and archery... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms concept",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II"
+    ]
+  },
+  "community": {
+    "sentiment_score": 67,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -182,11 +336,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.193Z"
+  "source_count": 13,
+  "generated_at": "2026-03-18T10:20:09.887Z"
 }

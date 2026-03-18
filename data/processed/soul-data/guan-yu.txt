@@ -85,3 +85,51 @@ Guan Xing: 부자 (강도88, 관우의 아들)
 
 ## EN Wikipedia
 Guan Yu, courtesy name Yunchang, was a Chinese military general serving under the warlord Liu Bei during the late Eastern Han dynasty of China. Along with Zhang Fei, he shared a brotherly relationship with Liu Bei and accompanied him on most of his early exploits. Guan Yu played a significant role in the events leading up to the end of the Han dynasty and the establishment of Liu Bei's state of Sh
+
+## 정사삼국지
+[생애(정사)] ### 개요
+관우관련 문서 [ 펼치기 · 접기 ]생애생애 · 연의평가평가 · 신격화가족관우 가문기타기타 창작물 · 미염공 · 관성대제 · 관왕묘 · 관림 · 관릉 · 관장지용 · 오관참장 · 청룡언월도 · 쿨가이 관우 · 하이저우 관제묘 · 도원결의 · 삼영전여포 · 한수정후
+
+1. 개요2. 초기 생애3. 서주에서3.1. 만인지적의 유래와 내용4. 관도대전5. 삼고초려부터 남군 공방전까지6. 청니 대치부터 유비 입촉까지7. 익양 대치부터 한중 공방전까지8. 번성 공방전8.1. 번성 공방전 초기의 승리8.2. 위나라의 반격8.3. 최후9. 사후
+
+### 개요
+
+
+### 초기 생애
+정사에 서술된 관우의 초창기 행적은 매우 부실한 편이다. 일설에는 출사를 하기 이전에 서당에서 아이들을 가르치는 훈장을 했었다고 한다.정사 <관우전>에 따르면 망명하여 청군으로 달아났다고 한다.산시성의 민간 전승에 따르면 관우는 본래 고우였으며 폭리를 탐한 소금 상인을 죽여 관리에 의해 쫓겨나 북쪽의 유주로 
+
+
+## Kongming 영문 백과사전
+생몰: AD 160–219
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	The Peach Tree Garden oath did not actually take place but Sanguozhi states that Liu, Guan and Zhang ‘slept in the same bed and were as close as brothers.’
+	Did not kill Hua Xiong. Hua Xiong was killed in battle with Sun Jian by Jian’s troops.
+	Did not give specific terms of surrender to Cao Cao at Xiapi.
+	Never killed Wen Chou, who actually died in battle with Cao Cao after falling for a plot.
+	Guan Yu did not ‘traverse five passes’ and ‘slay fi
+
+## 정사 영역본 (Kongming SGZ)
+Guan Yu (Yunchang)
+關羽 (雲長)
+Lived AD 162–219
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 36 (Shu 6)
+byJack Yuan
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742430956' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742430156' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742430091' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Guan Yu 關羽, styled Yunchang 雲長, originally had the style Changsheng 長生and was fromJie解 in Hedong 河東. He fled for his life to Zhuojun commandery 涿郡. The Forme
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통96 무97 지76 정64 매93
+rotk11: 통95 무97 지75 정62 매93
+rotk12: 통97 무97 지79 정62 매?
+
+## 커뮤니티 평가
+감정점수: 78, 언급: undefined회
+키워드: 

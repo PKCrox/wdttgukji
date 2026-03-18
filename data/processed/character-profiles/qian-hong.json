@@ -1,0 +1,81 @@
+{
+  "name_kr": "견홍",
+  "name_en": "Qian Hong",
+  "name_cn": "牽弘",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": {
+    "leadership": 70,
+    "war": 74,
+    "intelligence": 66,
+    "politics": 65,
+    "charisma": 57,
+    "total": 332,
+    "birth": 224,
+    "death": 272
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 76,
+      "war": 72,
+      "intelligence": 66,
+      "politics": 64,
+      "charisma": 58
+    },
+    "rotk11": {
+      "leadership": 70,
+      "war": 74,
+      "intelligence": 66,
+      "politics": 65,
+      "charisma": 57
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "牽弘?~271년1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 삼국전투기"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.052Z"
+}

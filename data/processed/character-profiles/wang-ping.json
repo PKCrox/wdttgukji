@@ -1,0 +1,101 @@
+{
+  "name_kr": "왕평",
+  "name_en": "Wang Ping",
+  "name_cn": "王平",
+  "courtesy_kr": "자균",
+  "courtesy_cn": "子均",
+  "faction": "shu",
+  "tier": 2,
+  "role": "가정 구원, 한중 수비",
+  "stats": {
+    "leadership": 83,
+    "war": 79,
+    "intelligence": 76,
+    "politics": 58,
+    "charisma": 51,
+    "total": 347,
+    "birth": 192,
+    "death": 248
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 83,
+      "war": 76,
+      "intelligence": 76,
+      "politics": 56,
+      "charisma": 50
+    },
+    "rotk11": {
+      "leadership": 83,
+      "war": 79,
+      "intelligence": 76,
+      "politics": 58,
+      "charisma": 51
+    },
+    "rotk12": {
+      "leadership": 83,
+      "war": 79,
+      "intelligence": 76,
+      "politics": 58
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "삼국시대 촉한의 무장이자 익주 파서군 탕거현 사람.유비 사후 조운, 오의, 오반, 위연, 장억, 강유, 구부 등과 더불어 촉한의 용장으로 꼽히는 인물에 마충, 등지, 진도등과 더불어 촉한의 국경을 책임진 핵심 무장이다. 북벌에 나서서는 조위의 명장 장합을 두 번이나 막아내고 흥세 전투에서는 위급한 상황에 지연전을 펼치는 냉철한 판단력을 보이는 등의 활약을 보면 촉한 제일의 방패로 평가받을 만하다. 항장 신분에 문맹임에도 불구하고 한중을 진수하는 군부의 최중심 인물로 우뚝섰고, 독한중, 진북대장군을 맡아 조위에 맞서 최일선에서 싸우며 명장으로 거듭난다.",
+      "초기 생애, 촉한으로의 투항.": "어릴 적 고아가 되어 외가인 하(何)씨 집안에 양육되어 한 때는 '하평(何平)'이라고 불렸다가 성인이 되어 다시 왕평으로 개명했다. 이 영향으로『정사 삼국지』에서도 간혹 하평으로 불린다.\"두호(杜濩)와 부호(朴胡)를 따라 낙양에 이르러 가교위(假校尉)가 되었고 조공(曹公)을 따라 종군하여 한중(漢中)을 정벌하였다가 선주(先主)에게 항복하니 아문장(牙門將), 비장군(裨將軍)에 제배(除拜)하였다.\"-『촉서』「왕평전」\"9월 파군(巴郡)의 7성(七姓)의 이왕(夷王) 부호(朴胡), 종읍후(賨邑侯) 두호(杜濩)가 파군의 이(夷)족, 종민(賨民- 이민족의 일종)을 들어 내부해왔다.\"-『위서』「무제기」본래 위나라의 무장으로「왕평전」에 의하면 파서의 이민족 왕 두호(杜濩)와 부호(朴胡)를 따라 낙양에 이르러 가교위(假校尉)가 되었다고 한다.「왕평전」에서는 두호와 부호에 대해 간략하게 서술되어 있지만 그 둘의 항복에 대해「무제기」에서는 더욱 자세히 밝히며 이 둘이 파서의 이민족 왕으로 기록한다. 유독 이민족과의 인연이 많은 왕평에 대한 첫 번째 기록이 이민족을 따라서 위에 항복된 것으로 시작하는데 이 때문에 왕평이 이민족이 아니더라도 최소한 이민족과 어울려 성장한게 아닌가 하는 추측도 존재한다.왕평은 조조를 따라서 한중 공방전에 참전했다가 촉한에 투항했다. 정확히 어떤 연유로 항복했는지 기록되어 있지 않다. 유비는 왕평을 본 후 그를 아문장(牙門將), 비장군(裨將軍)으로 임명했다.위연, 등지와 마찬가지로 유비가 굉장히 파격적으로 중용한 사람인데 그 둘보다 더욱 기이하다. 역시 한미한 출신이지만 유비 휘하의 사병이어서 유비가 곁에서 자질과 성품을 관찰할 수 있었던 위연, 방희의 빈객으로 익주에서 유세하고 돌아다닐 기반은 있었던 등지와 달리 왕평은 진짜 아무것도 없었다. 파서 이민족들과 섞여 살던 출신 불분명한 고아에, 학맥은 고사하고 글도 몰랐고, 과거에 무슨 공적을 세운 것도 아니고, 이민족왕이 조조에게 투항할때 함께한 대가로 겨우 교위벼슬 받은 하급군관에 지나지 않았다. 그런 사람을 보자마자 떡하니 장군에 임명하며 키우려 했고 정확히 또 들어맞았으니 유비의 사람 보는 눈은 비범했다.이후 제갈량의 북벌에 참전하기까지 기록이 끊긴다.",
+      "평가": "\"왕평은 충성스럽고 엄정했으며 장억은 식견이 뛰어나고 과단성이 있었다. 이들이 모두 자신의 장점에 의지하여 명성을 날리고 자취를 나타낼수 있었던 그들을 필요로 하는 때를 만났기 때문이다.\"-『삼국지』「장억전」\"이때 등지(鄧芝)가 동쪽에 있었고 마충(馬忠)이 남쪽에 있었으며 왕평은 북쪽 경계에 있었는데 모두 명성과 치적을 드러냈다.\"-『삼국지』「왕평전」왕평은 뛰어난 명장으로 제갈량의 북벌 여러차례 종군해 중요한 임무를 맡으며 제갈량을 보좌했으며 제갈량 사후에도 자칫 잘못했으면 더 큰 피해를 초래할 수 있던 흥세 전투도 수월하게 막아내는 등 뛰어난 활약을 보였다.사실 왕평은 뛰어난 전술적 능력과 별개로 특출난 전략안을 보인 적이 없다. 제갈량의 북벌에서도 맡긴 임무를 충실히 수행하는 모습을 보였지 어떻게 전쟁을 수행해야 할지 간언한 적이 없으며 최대 활약인 흥세 전투도 이전에 확립되었던 방어체계에 의거해서 수행했었다. 이는 왕평이 문맹이라는 점과 밀접하게 관련될지도 모른다.그러나 왕평은 군대에서 잔뼈 굵은 인물답게 적재적소로 병력을 운용하는 법을 알았고, 특유의 뚝심으로 임무를 실패한 적이 없다. 가정 전투에서도 대패해서 전군이 패주했음에도 기만전으로 장합을 속여서 군사를 수습해서 돌아오고, 4차 북벌에서도 장합의 공격을 성공적으로 막아내기도 했다. 흥세 전투에서의 활약은 평가란에 서술할 필요가 없을 정도로 큰 활약을 보였다.안타까운 점은 왕평은 강유의 북벌이 제대로 시작된 247-248년 무렵에 죽었다는 점이다. 뚝심있는 전술가로서 마찬가지로 뛰어난 강유를 보좌할만한 인물이었음을 고려하면 왕평의 죽음은 큰 악재였을 것이다. 실제로 강유는 249년에 하후패가 투항하기 전까지 요화를 야전사령관으로 기용했으나 요화는 능력이 있긴 했지만 왕평 급의 능력을 가진 지휘관은 아니었다. 256년에 왕평을 승계한 호제가 기약을 어겨서 단곡 전투의 대패를 초래했다는 점은 왕평의 부재를 더욱 안타깝게 만든다. 한편 강유의 한중 방어전략 변경 문제에 있어서도, 기존 방어선을 지킨 결과 흥세 전투라는 큰 전공을 세울 수 있었던 산 증인인 비의와 왕평이 둘 다 없어 아무도 강유를 제지하지 못했다는 점은 큰 아쉬움으로 남는다. 어떻게 포장하더라도 강유의 변경안은 촉한의 멸망에 큰 악영향을 끼쳤으며 군부에서 오의, 왕평, 장억같은 인물이 죽은 이후 강유를 제지할 수 있는 인물이 부재하여 아무도 강유를 제지하지 못했다.능력과는 별개로 성격은 그다지 좋지 않았던 모양인지, 진수는 \"속이 좁고 의심이 많으며 스스로를 가볍게 여겼다\"는 평가를 내리기도 하였다. 위연처럼 대놓고 적을 만드는 성격은 아니지만, 그렇다고 친구를 사귀기에 좋은 성격도 아닌 것으로 보이는데 이는 왕평이 자신의 미천한 출신에 콤플렉스를 가졌던 게 아닌가 추측되기도 한다.",
+      "기타": "\"왕평은 융려[戎旅]에서 자라 손으로 글씨를 쓰지 못하였고 아는 글자도 10자를 넘지 못하니 입으로 말한 것을 다른 사람이 적게 하여 글을 지었는데 모두 조리 있었다. 사람을 시켜 사기(史記)와 한서(漢書)의 여러 본기(本紀)와 열전(列傳)을 읽게 하고 이를 들었는데 그 대의(大義)를 모두 알았고 종종 논하여 말할 때는 그 요지를 잃지 아니하였다.\"-『촉서』「왕평전」특이하게도 지장(智將)으로의 면모를 여러 차례 보인 데다가 열전까지 있는 촉한의 고위무장 왕평은 문맹이었다. 그러나 문맹이라고 일자무식한 인물은 아니었고, 아는 글이 10자를 넘지 못했지만 다른 사람을 통해 조리 있게 쓸 줄 알았다는 점이나『사기』와『한서』를 비롯한 역사서의 본기와 열전들을 듣고 요지와 대외를 알았다고 한다. 왕평은 어린 나이에 배우지 못하였으나, 나이가 들었음을 이유로 배움을 기피하지 않았고, 실제 주어진 상황에 맞는 합리적인 판단을 할 능력과 그러한 판단을 설명하고 능동적으로 행동하는 재능을 가진 것으로 생각된다. 마속의 경우에는 배수의 진 같은 고대의 일화를 재현하려다가 가정 전투를 그르친 게 아니냐는 의혹이 있는 것과 반대의 케이스라고 할 수 있다. 즉, 배울 시기를 놓쳐서 글을 배우지 못했다는 건데, 그런 것치고는 나이를 먹어서도 무언가를 배우는 데 거리낌이 없었고 지적인 능력도 입증해 냈다. 그런데도 불구하고 끝까지 글자를 10글자도 채 익히지 못했다는 걸 보면 아예 난독증이나 그와 비슷한 무슨 희귀한 장애가 있었던 것이 아니냐는 설도 나오고 있다. 간절히 작가의 삼국지 패러디 작품인 <삼국지 팽월전>, <아! 내가 마속이다> 등에서는 이 설을 차용하여 지능과 군략은 뛰어나지만 난독증 증세로 글자를 읽고 쓰는 능력이 떨어지는 것으로 설정했다.\"행동은 법도를 지키고 말은 망녕된 것을 이르지 아니하였으며 아침부터 저녁까지 바르게 앉아 하루를 보내니 무장(武將)의 모습이 아니었다. 그러나 성격이 자못 성급하고 좁아 이 때문에 명예가 깎이게 되었다.\"-『촉서』「왕평전」행동 또한 법도를 지키고 농담거리를 삼가며 아침부터 저녁까지 바르게 앉는 등 정숙한 모습을 보였다고 한다. 문맹이지만 지장으로의 면모와 함께 일자무식의 인물이 아니라는 점을 증명하는 일화다. 그러나 말이 거침없어 상대방을 가리지 않았기에 사람들이 깔본다 여겨 명예가 깎였다고 한다. 244년의 흥세 전투에서 왕평이 주장한 치밀한 작전에 대해 의심한 것도 이러한 왕평의 거침없는 발언에 대한 반감으로 인한 것일 가능성이 있다.신기하게도 이민족과도 연관이 많다. 위나라군 소속이 된 경위는 판순만의 왕 부호를 따라갔다고 되어 있고, 촉한에서는 이민족으로 구성된 정예부대 오부의 통솔을 맡는다. 부호 이외에도 같이 활동하는 두호, 원약 등도 파족 계열 인물들로 보인다. 이로써 왕평이 아예 이민족 출신이 아니냐는 설도 존재하지만 아버지 대부터 강족 혼혈이라는 이민족의 정체성이 수차례 언급되는 마초와 달리 상세한 기록이 없다. 만약에 이민족 부대에서 어렸을 때부터 성장해서 친밀하게 지냈다면 왜 문맹인지 어느 정도 설명이 되는 편이지만 기록이 미비하여 한족인지 이민족인지 불분명하다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6447,
+      "first_translation": {
+        "translator": "Battleroyale",
+        "excerpt": "Wang Ping (Zijun)\n王平 (子均)\nLived AD ?–248\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 43 (Shu 13)\nbyBattleroyale\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744913244' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744913228' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744913228' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nWang Ping styled Zijun, hailed from Dang Qu in Ba Xi. Wang Ping was raised by a He family (his external relatives) but later he reused the surname Wang. Wang Ping followed Du Huo and Du Hu to Luo Yang and was appointed as deputy Colonel. He served Cao Cao and joined the Han Zhong expedition where he subsequently surrendered to Liu Bei. Then, Wang Ping was conferred the appointment of Ya Men Jiang (General in charge of the Camp’s Gate, Ya Men referred to the gate of the army’s camp where the flag of the army was positioned) and given the rank of Pi Jiang Jun (or Assistant General). In Jian Xing 6th year, Wang Ping was part of the vanguard led by Ma Su. Ma Su abandoned the water sources and encamped up on the mountains. In addition, Ma Su’s actions seemed to be disturbed as well as agitated. Wang Ping repeatedly advised Ma Su against such a move but his advice was not heeded. Ma Su was badly defeated at Jie Ting. The army dispersed and only the thousand soldiers led by Wang Ping stayed on and struck the drums. The Wei General, Zhang He, thought that there might be some ambushes and hence he did not urge his troops to advance further. Seeing... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.043Z"
+}

@@ -1,0 +1,117 @@
+{
+  "name_kr": "원상",
+  "name_en": "Yuan Shang",
+  "name_cn": "袁尚",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 66,
+      "war": 70,
+      "intelligence": 50,
+      "politics": 44,
+      "charisma": 79
+    },
+    "rotk12": {
+      "leadership": 63,
+      "war": 75,
+      "intelligence": 42,
+      "politics": 38
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 177–207",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Liu"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Tan"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Xi"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Mai"
+        }
+      ],
+      "ranks": [
+        "Governor of Ji"
+      ],
+      "historical_notes": "Yuan Shang was the youngest son of Yuan Shao. After Yuan Shao died, Yuan Shang managed to gain control, but gave a scant amount of troops to Yuan Tan. When Cao Cao besieged Yuan Tan later on, Yuan Shang arrived to assist. In AD 202, Yuan Shang dispatched Guo Yuan to seize the cities of Hedong commandery. He also attempted to ally with Ma Teng and others, but to no avail. Although Guo Yuan was initially successful, he ended up being defeated by Cao Cao’s general Zhong Yao at the Battle of Pingyang. In addition, Yuan Shang’s Xiongnu allies surrendered to Cao Cao. In the early months of the following year, Yuan Shang and Yuan Tan jointly were defeated at Liyang. This defeat came after nearly half a year of bitter fighting between the Yuan brothers and Cao Cao.\n\nCao Cao temporarily withdrew from the area. The Yuan brothers became embroiled in open conflict. Yuan Tan attacked Yuan Shang at Ye, but was defeated. Numerous former vassals revolted against Yuan Tan. Yuan Shang further assaulted Tan and crushed him in battle. Desperate, Yuan Tan went so far as to ally with Cao Cao. Yuan Shang sallied forth to Pingyuan to finish Tan off, but ordered Ju Gu to hold Handan and Shen Pei hold Ye. Cao Cao easily seized Handan. Cao Cao then laid siege to Ye. Yuan Shang pulled away from Pingyuan to reinforce Ye. Feeling hopeful at the notion of reinforcements, Shen Pei led a sortie out of the city, but lost. Yuan Shang also attacked, but likewise found failure. Several officers defected from Yuan Shang, which left his army in tatters. Yuan Shang grew fearful and fled for his life.\n\nAs he passed through the Northeast, the remnants of his army were harassed by Yuan Tan. Thus, Yuan Shang discarded everything and rushed to join his brother Yuan Xi in Youzhou. However, Yuan Xi’s generals Jiao Chu and Zhang Nan mutinied. Yuan Shang and Yuan Xi hastily fled to the protection of their Wuhuan allies. Cao Cao pressed on still, decimating the Wuhuan chieftains at the Battle of White Wolf Mountain... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.085Z"
+}

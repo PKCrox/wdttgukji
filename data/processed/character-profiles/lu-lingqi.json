@@ -8,6 +8,7 @@
   "tier": 1,
   "role": "여포의 딸 (창작)",
   "stats": null,
+  "stats_multi": null,
   "novel_presence": {
     "chapters_from_cooccurrence": [],
     "chapter_count": 0
@@ -26,7 +27,58 @@
       "sections": {
         "Introduction": "吕布（不晚于161年—199年2月7日），字奉先，并州五原郡九原（今内蒙古自治区包头市九原区）人，东汉末年武将与军阀，被封為溫侯。先后为丁原、董卓的部将，也曾为袁绍效力，后趁劉備與袁術交戰時而佔据徐州，自成一方势力。建安三年十二月（199年2月7日），在下邳被曹操击败处死。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 182–198",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Lü Bu f"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms 13",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "rotkxi",
+      "ROTK12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 67,
+    "top_keywords": []
   },
   "dialogues": [],
   "relationships": [],
@@ -34,11 +86,18 @@
     "namu": false,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": false,
+    "multi_stats": false,
     "novel_appearances": false,
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 2,
-  "generated_at": "2026-03-16T10:52:17.299Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.023Z"
 }

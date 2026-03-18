@@ -1,0 +1,57 @@
+=== 이전 (李典, Li Dian) ===
+자: 불명 (불명)
+진영: wei | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+5~68회, 총 15개 회차
+회차: 5-6,11-12,14,16,18,22-24,27,30-33,35-36,39-40,42,48,50,53,67-68
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 181–217
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Li Dian did not capture Huang Shao. [ZZTJ: 62]
+
+## 정사 영역본 (Kongming SGZ)
+Li Dian (Mancheng)
+李典 (曼成)
+Lifespan Unknown
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 18 (Wei 18)
+byStephen So (Shu-Han Zhao Lie Di)
+in2000
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745627601' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745626494' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745626494' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Li Dian, styled Mancheng, was a man of Juye, Shanyang. He and his father, Li Qian, had heroic qualities and being host to about a thou
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통77 무77 지80 정72 매61
+rotk12: 통78 무77 지79 정74 매?
+
+## 커뮤니티 평가
+(없음)

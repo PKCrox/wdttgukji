@@ -17,6 +17,21 @@
     "birth": 176,
     "death": 198
   },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 10,
+      "war": 26,
+      "intelligence": 81,
+      "politics": 65,
+      "charisma": 94
+    },
+    "rotk12": {
+      "leadership": 20,
+      "war": 26,
+      "intelligence": 81,
+      "politics": 65
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       8,
@@ -43,7 +58,88 @@
       "sections": {
         "Introduction": "貂蟬為歷史小說《三國演義》中的人物。\n\n元代雜劇《錦雲堂暗定連環計》中說她是任昂之女，小字紅昌，為山西一村姑，早年其事跡大多出現在說書話本當中，最後由《三國演義》作者羅貫中整理創作出一個完整的形象，乃中國古代四大美女之一。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Adoptive Father"
+        },
+        {
+          "relation": "member",
+          "name": "Wang Yun f"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDiaochan, as portrayed in the novel, is fictional. History only mentions a maid over which Dong Zhuo and Lü Bu quarreled. Wang Yun took advantage of this to play Lü Bu against Dong Zhuo, but he did not plan it.\n\tThe stories in which Lü Bu kills Diaochan for betraying him, Guan Yu beheads her to preserve unity with his brothers (or marries her), and the one in which Cao Cao marries her are all based on Chinese opera.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms 13",
+      "Romance of the Three Kingdoms 14",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms portrait",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotkxi",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 50,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -160,11 +256,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.197Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:09.893Z"
 }

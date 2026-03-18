@@ -1,0 +1,133 @@
+{
+  "name_kr": "유요",
+  "name_en": "Liu Yao",
+  "name_cn": "劉繇",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 64,
+      "war": 65,
+      "intelligence": 37,
+      "politics": 73,
+      "charisma": 64
+    },
+    "rotk12": {
+      "leadership": 62,
+      "war": 67,
+      "intelligence": 46,
+      "politics": 70
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 157–198",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Wei"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Dai"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Chong"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Ji"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Shang"
+        }
+      ],
+      "ranks": [
+        "County Magistrate in Liang",
+        "Assistant Officer",
+        "Marquis of Mouping",
+        "Gentleman of the Palace",
+        "Imperial Inspector of Yang Province",
+        "Grand Administrator of Danyang"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 15736,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Liu Yao (Zhengli)\n劉繇 (正禮)\nLived AD 157–198\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 49 (Wu 4)\nbyZL181\nonMarch 24th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1742824080' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758249360' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742838512' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740500798' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLiu Yao, styledZhengli, was fromMouping[牟平],Donglai[東萊].\nThe young son of theFilialPrinceofQi[齊孝王]1was enfeoffed as theMarquisofMouping[牟平侯], and his descendants would reside there. The elder uncle of[Liu] Yaowas[Liu] Chong, who served as theGrand CommandantunderHan.AThe older brother of[Liu] Yaowas[Liu] Dai, styledGongshan, who would eventually becomePalace AttendantandInspectorofYan province[兗州刺史].B•••\nTheFilialPrinceofQi[齊孝王] here is Liu Jianglü [劉將閭], grandson ofEmperor Liu Bangthrough his son Liu Fei [劉肥].↩\nTheBook of Continued Hanstates: The grandfather of[Liu] Yaowas [Liu] Ben [劉本], who received teachings on the classics and commentaries, and had extensive knowledge of various books, being regarded as a comprehending Ruist. He was nominated asWise and GoodandFoursquare and Forthright, then served asChiefofBan[般長]. He died in office.\n[Liu] Chongwas styledZurong. He received the undertaking of his father. As he was knowledgeable in the classics and conducted himself well, he was nominated asFilial and Incorrupt. TheMinister of the Householdrecommended him as having the Four Qualities2and he was promoted toPrefectofDongpingling[東... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.085Z"
+}

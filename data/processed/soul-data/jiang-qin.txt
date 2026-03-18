@@ -1,0 +1,54 @@
+=== 장흠 (蔣欽, Jiang Qin) ===
+자: 불명 (불명)
+진영: wu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Jiang Qin (Gongyi)
+蔣欽 (公奕)
+Lived AD ?–219
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 55 (Wu 10)
+byZL181
+onMarch 1st, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740793380' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756851379' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740811425' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709762325' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Jiang Qin, styledGongyi, was fromShouchun[壽春],Jiujiang[九江].
+WhenSun Cewas reliant onYuan Shu,[Jiang] Qinfollowed and tendered his service, and when[Sun]
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통78 무87 지53 정42 매78
+rotk12: 통78 무84 지54 정42 매?
+
+## 커뮤니티 평가
+(없음)

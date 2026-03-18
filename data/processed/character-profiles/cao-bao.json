@@ -1,0 +1,89 @@
+{
+  "name_kr": "조표",
+  "name_en": "Cao Bao",
+  "name_cn": "曹豹",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 55,
+      "war": 70,
+      "intelligence": 34,
+      "politics": 23,
+      "charisma": 26
+    },
+    "rotk12": {
+      "leadership": 54,
+      "war": 69,
+      "intelligence": 32,
+      "politics": 21
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Lü Bu"
+        }
+      ],
+      "ranks": [
+        "Chancellor of Xiapi"
+      ],
+      "historical_notes": "Cao Bao, formerly an officer of Tao Qian, served Liu Bei as Chancellor of Xiapi. In February of AD 196 he had a falling out with Zhang Fei and consequently Zhang Fei killed him (1), causing riots in the city. Xu Dan wrote to Lü Bu inviting him to attack Xiapi while also offering his support from within (2). Yuan Shu is also said to have written Lü Bu offering supplies (3).\n\n(1): Accounts of this event differ. Zizhi tongjian describes the event as a ‘falling out’. Sanguozhi’s original text explains that Cao Bao rebelled and called for Lü Bu’s support. Hanmo yingxiong ji, quoted by Pei Songzhi in SGZ 7 explains that Zhang Fei intended to kill Cao Bao, but that Cao Bao took refuge in the encampment and called for Lü Bu. (It should be pointed out that Lü Bu and Cao Bao had no documented relationship prior to these events.)\n\n(2): SGZ 7, Hanmo yingxiong ji quoted by Pei Songzhi. Rafe de Crespigny, in To Establish Peace I 62, writes, “Hanmo yingxiong ji in PC [Pei’s Commentary] to SGZ 7, however, quotes a letter written to Lü Bu by Xu Dan, offering to act as his agent within, and saying that Zhang Fei had already killed Cao Bao. It was through Xu Dan that Lü Bu defeated Zhang Fei and captured Xiapi city.”\n\n(3): Again quoting Rafe de Crespigny, To Establish Peace I 62, “[Hou Han shu] 75/65 and another extract from Hanmo yingxiong ji quoted in [Pei’s commentary] to SGZ 7 contain the text of a letter written by Yuan Shu to Lü Bu about this time. It is certainly friendly, promising supplies and listing the achievements of Lü Bu on behalf of Yuan Shu, but it appears to refer to Lü Bu’s attack on Liu Bei as having taken place, and so cannot have been an encouragement to that action.”\n\nLü Bu, who joined Liu Bei two years prior and was probably stationed in the northwest of Xiapi commandery, traveled down the Si River by water and land. Upon arrival Xu Dan kept his word and opened the gates, allowing Lü Bu to enter the city. Zhang Fei was consequently defeated and Lü Bu captured L... (truncated)",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tCao Bao was not killed by Zhang Fei for drinking. They had a ‘falling out’. Cao Bao was not special to Lü Bu, but his death caused riots in the city. It was Xu Dan that corresponded with Lü Bu and opened the gates. [ZZTJ: 62]\n\tCao Bao was most likely dead before he had a chance to meet (or join) Lü Bu, as explained in Xu Dan’s letter to Lü Bu. [SGZ: 7]",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.087Z"
+}

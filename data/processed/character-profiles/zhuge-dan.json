@@ -1,0 +1,198 @@
+{
+  "name_kr": "제갈탄",
+  "name_en": "Zhuge Dan",
+  "name_cn": "諸葛誕",
+  "courtesy_kr": "공휴",
+  "courtesy_cn": "公休",
+  "faction": "wei",
+  "tier": 2,
+  "role": "제갈량 일족, 회남 거병",
+  "stats": {
+    "leadership": 81,
+    "war": 72,
+    "intelligence": 71,
+    "politics": 75,
+    "charisma": 82,
+    "total": 381,
+    "birth": 206,
+    "death": 258
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 81,
+      "war": 71,
+      "intelligence": 75,
+      "politics": 66,
+      "charisma": 82
+    },
+    "rotk11": {
+      "leadership": 81,
+      "war": 72,
+      "intelligence": 71,
+      "politics": 75,
+      "charisma": 82
+    },
+    "rotk12": {
+      "leadership": 72,
+      "war": 72,
+      "intelligence": 76,
+      "politics": 75
+    }
+  },
+  "novel_presence": {
+    "first_chapter": 110,
+    "last_chapter": 112,
+    "chapters": "110-112",
+    "chapter_count": 1
+  },
+  "biography": {
+    "namu": {
+      "개요": "삼국시대 위나라의 정치가 겸 장군으로 자는 공휴(公休). 서주 낭야국 양도현 사람으로 제갈량의 친척이다.",
+      "평가": "위진 교체기를 서술할 때 복잡한 존재 중 하나. 왕위 찬탈의사를 내비치며 떠보는 가충에게 발끈한 기록이 있다. 그런가하면 위말전에는 황제 조모를 협박한(...) 기록도 있다. 양주자사 악침은 오로지 속일 뿐이며, 신과 오나라가 내통한다 유세하여, 또 이르기를 조서를 받아 마땅히 신의 자리(臣位)를 대신해야 한다 하였는데, 날이 지나갈수록 버릇없습니다. 신은 나라의 명령을 받들어, 자립하여 죽더라도, 이단으로 끝마치지 아니할 것입니다. 악침의 불충에 분하여, 오로지 보병과 기병 7백명을 거느려서 이달의 6일에 악침을 토벌하니, 바로 그 날에 그의 머리를 베어, 머리를 담은 상자를 역마를 통해 전송하옵니다. 이와 같이 성조(聖朝)의 명신(明臣)으로써, 신은 곧 위(魏)의 신하입니다. 명신이 아니라면, 신은 곧 오의 신하입니다. 배송지는 위말전의 제갈탄이 악침을 죽인 후 그의 수급을 조정에 보낸 표를 보고 위말전이 전하는 모든 것이 비루하다 생각하며 제갈탄이 표(表)에서 말하는 바가 곡해되었으리라 의심되며, 이런 지경에 이르지 아니하였을 것이라고 했다. 어쨌거나 하후현, 등양과 친했지만 사마의 사돈에 관구검, 문흠의 난 때까진 사마씨 정권에 협력하는 등, 사마씨에 붙어 영화를 누릴 수도 있었다. 그럼에도 반란을 일으킨 모습은 충신같기도 하나 오를 끌어들였다는 점에서 진의가 의심스럽다.일단 제갈탄은 그 본인이 사마의의 사돈이지만 세설신어에 따르면 왕릉의 사돈이기도 하고, 게다가 하후현, 등양 등과도 절친한 친구였다고 한다. 사마씨/반 사마씨 모두에게 라인이 열린 친목왕이었다는 것. 따라서 고평릉 사변 이후 양 세력간의 대립이 수면으로 떠오르던 시점에서 분명히 그에게는 선택의 여지가 있었을 터이다.헌데 이후 그의 행동은 분명히 사마씨 라인을 선택했다고 밖에 볼 수 없다. 왕릉의 난 당시에도 사마의는 스스로 출병하는 한편 그에게 진동장군 직을 내리며 경계를 강화했고, 관구검-문흠의 난 당시에는 협조를 요청하는 그들의 사자를 베고 스스로 난의 진압에 앞장서 수춘을 함락시킨 인물이 바로 제갈탄 본인이었다. 어쩌면 양 쪽 모두에 선이 닿아 있었던 탓에,이런 식으로라도 자신의 입장을 분명히 하지 않으면 안되었는지도 모른다.(다만, 관구검/문흠과는 애초에 사이가 안좋았다고도 한다)그런데 기껏 지금까지 사마씨의 사냥개(狗) 노릇 잘해서 살아남아 놓고 왜 막판에 와서 그랬는지가 미스터리. 평가가 매우 갈리고 동흥전투 관련 기록은 한진춘추라는 한 사서 내에서 기록이 상충되기도 한다. 그러나 이렇게 해석하면 의외로 앞뒤가 맞는다. 사마의 사돈과 사마씨 정권에 일시적으로도 협력했다는 것, 오나라의 힘을 빌리려 했다는 것을 종합해보면 제갈탄은 근본적인 조위의 근왕파였고 사마씨에 원한은 있지만 힘이 없었기에 참아야만 할 수밖에 없어서 사마씨 정권에 일시적으로나마 협력했고, 오나라를 끌어들인 것은 자기 힘으로 근본적인 원한을 해결할 능력이 없어서 오나라의 도움을 빌리려는 시도를 했다고 해석하면 희한하게 앞뒤가 제대로 맞는다. 요약하자면 박살은 내고 싶은데 힘이 없어서 고분고분하는 흉내를 내야 했던 것. 자치통감도 이런 관점에서 제갈탄의 행동동기를 설명한다.세설신어는 제갈량, 제갈근, 제갈탄 셋을 일컬어 '촉은 용을 얻고, 오는 범을 얻었으며 위는 개를 얻었다'라고 평한다. 셋 중에서는 역량이 가장 못한 인물로 받아들어진다. 그럼에도 당대 위나 오에서 명망이 드높은 인물이었다고 한다. '개'라는 표현은 멸칭이 아니라 '공이 있는 자'로 해석될 수 있다는 기록도 있다. 때문에 세설신어의 평은 부당하며 제갈탄의 공이 제갈근보다도 높다고 여기는 사람들도 후대에는 있다. 제갈각, 제갈첨과 가까운 세대인데 굳이 제갈량, 제갈근과 비교했다는 사실도, 제갈탄의 명성에 대한 증거로 볼 수도 있다.제갈탄 수하에 있던 수백 명은 투항하지 않은 죄를 지었으므로 참수당하게 되었는데, 모두 이렇게 말했다.“제갈공(諸葛公)을 위해 죽으니 여한이 없다.”제갈탄이 인심을 얻은 것은 이와 같았다. - 삼국지 <위서> 제갈탄전반란이 진압된 후에도 그를 따르던 군사 수백이 항복을 택... (truncated)"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 110–111",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Ancestor"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Grandsons"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Hui"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Gan"
+        },
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Zhuge Liang"
+        },
+        {
+          "relation": "member",
+          "name": "In-law"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhou"
+        }
+      ],
+      "ranks": [
+        "Imperial Secretariat Cadet",
+        "Palace Attendant Assistant",
+        "General Who Guards the East",
+        "Chief Commandant of Yangzhou",
+        "Marquis of Shanyang Pavilion",
+        "General Who Guards the South",
+        "General-in-Chief Who Guards the East",
+        "Chief Controller of Yangzhou",
+        "Marquis of Gaoping",
+        "General-in-Chief Who Guards the South",
+        "Minister of Works",
+        "Left Protector of the Capitol",
+        "Grand Minister over the Masses",
+        "Governor of Qingzhou",
+        "General of the Flying Cavalry",
+        "Marquis of Shouchun"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 8",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": true,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-18T10:20:10.039Z"
+}

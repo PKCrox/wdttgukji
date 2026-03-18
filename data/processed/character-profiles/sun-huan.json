@@ -1,0 +1,76 @@
+{
+  "name_kr": "손환",
+  "name_en": "Sun Huan",
+  "name_cn": "孫桓",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 73,
+      "intelligence": 77,
+      "politics": 68,
+      "charisma": 78
+    },
+    "rotk12": {
+      "leadership": 82,
+      "war": 73,
+      "intelligence": 76,
+      "politics": 68
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5257,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Sun Huan (Shuwu)\n孫桓 (叔武)\nLived AD 197 or 198–after 222\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 51 (Wu 6)\nbyZL181\nonMay 12th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1683899881' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757966991' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740669211' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740615968' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Huan, styledShuwu, was the son of[Sun] He.A\nTheBook of Wustates:[Sun] Hehad four sons. The eldest was[Sun] Zhu,ChiefofQu’e[曲阿長]. The next was[Sun] Yi,ChiefofHaiyan[海鹽長]. They both died young. The next was[Sun] Huan. His appearance was upstanding and upright, and his mind was clever and clear. He had extensive knowledge, had a strong memory, and was capable of giving answers in debates.[Sun] Quanoften praised him to be theYan Yuanof his relatives,1and nominated him to beCommandant of the Martial Guards. He followed in the suppression ofGuan YuatHuarongand enticed the remaining fellows of[Guan] Yu[to surrender], gaining five thousand people as well as numerous oxen, horses, andweapons.•••\nForSun Quanto have seenSun Huanas theYan Huiof the Sun clan is noteworthy because the father ofSun Huan,Sun He, was not born into the Sun clan, but rather adopted into it, although this would not be controversial back then: adoptions were not an uncommon custom.↩\nWhen he was twenty-five, he was conferred asHousehold General who Secures the East, and he andLu XunopposedLiu Beitogether.2The army of[Liu] Beiwas massive, and they filled the ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.068Z"
+}

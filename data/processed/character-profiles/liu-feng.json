@@ -1,0 +1,142 @@
+{
+  "name_kr": "유봉",
+  "name_en": "Liu Feng",
+  "name_cn": "劉封",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 75,
+    "war": 79,
+    "intelligence": 44,
+    "politics": 50,
+    "charisma": 76,
+    "total": 324,
+    "birth": 188,
+    "death": 220
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 79,
+      "intelligence": 48,
+      "politics": 58,
+      "charisma": 77
+    },
+    "rotk11": {
+      "leadership": 75,
+      "war": 79,
+      "intelligence": 44,
+      "politics": 50,
+      "charisma": 76
+    },
+    "rotk12": {
+      "leadership": 75,
+      "war": 79,
+      "intelligence": 44,
+      "politics": 50
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "서편제의 등장인물에 대한 내용은 유봉(서편제) 문서를, 도구에 대한 내용은 절구 문서의 1.1번 문단을 참고하십시오.\n\n촉서(蜀書) [ 펼치기 · 접기 ]1권 「유이목전(劉二牧傳)」2권 「선주전(先主傳)」3권 「후주전(後主傳)」유언 · 유장유비유선4권 「이주비자전(二主妃子傳)」5권 「제갈량전(諸葛亮傳)」6권 「관장마황조전(關張馬黃趙傳)」감부인 · 목황후 · 경애황후 · 장황후 · 유영 · 유리 · 유선(璿)제갈량 제갈교 제갈첨 동궐 번건관우 관흥 · 장비 장포 · 마초 마대 · 황충 · 조운 조통 조광7권 「방통법정전(龐統法正傳)」8권 「허미손간이진전(許糜孫簡伊秦傳)」9권 「동류마진동여전(董劉馬陳董呂傳)」방통 방굉 방림 · 법정허정 · 미축 · 손건 · 간옹 · 이적 · 진밀동화 · 유파 · 마량 마속 · 진진 · 동윤 진지 · 여예10권 「유팽요이유위양전(劉彭廖李劉魏楊傳)」11권 「곽왕상장양비전(霍王向張楊費傳)」12권 「두주두허맹래윤이초극전(杜周杜許孟來尹李譙郤傳)」유봉 맹달 · 팽양 · 요립 · 이엄 · 유염 · 위연 · 양의곽준 곽익 나헌 · 왕련 · 상랑 상총 · 장예 · 양홍 하지 · 비시두미 · 주군 장유 · 두경 · 허자 · 맹광 · 내민 · 윤묵 · 이선 · 초주 초수 · 극정13권 「황이여마왕장전(黃李呂馬王張傳)」14권 「장완비의강유전(蔣琬費禕姜維傳)」15권 「등장종양전(鄧張宗楊傳)」황권 · 이회 · 여개 · 마충 · 왕평 구부 · 장억장완 장빈 장현 유민 · 비의 · 강유등지 · 장익 · 종예 요화 · 양희관련 틀: 위서 오서※ 흠정 24사 관련 틀 둘러보기",
+      "평가": "최후를 보건대 유봉으로서는 유비의 양자로 들어온 것이 결과적으로 불행이 되었다. 물론 상용을 잃고 관우를 지원하지 않아 전사하게 만든 책임은 있었지만 유봉을 죽음까지 이르게 한 건 후계자 문제와 전혀 무관할 수가 없었다.진수의 평가는 매우 짜다. 팽양, 위연, 양의, 이엄 등과 한 권으로 묶어놓고, 자신들이 화를 초래했다는 공통된 평을 내린다.연의에서는 양자 시점이 유선이 태어나는 장면보다 늦게 기술되어서 순수한 의리와 인연으로 맺어지는 형태이지만 실제로는 유선 탄생보다 이른 시기이다. 정황상 유비가 후계자로 삼기 위해 입양했으나 유선이 태어나면서 미묘해진 케이스라고 볼 수 있다. 이 때문에 이후 유봉의 입지는 굉장히 애매해진다. 정식 후계자가 태어나기 이전에 입적한 양자. 유선이 후계로 서기 위해서는 꼬투리를 잡아서라도 정리를 해야 하는 위치였다.다만 이것이 전적으로 유비의 잘못이나 실수라고 보기는 어렵다. 유봉을 양자로 들인 207년 무렵 당시 유비는 이미 40대 중반으로 나이가 많아 아들을 다시 얻는다는 보장이 없었고, 설사 얻는다해도 당시 유비의 세력이 유표의 지원으로 근근이 꾸려나가는 소규모 군벌 수준이라 성년까지 무사히 성장한다는 보장이 없었다. 여러모로 어려웠던 사정을 생각하면 유봉을 양자로 들인 것은 보험으로 나쁘지 않은 선택일 수도 있었다. 문제는, 이후 유비의 새로 태어난 유선이 후계자로 낙점되고 유비의 세력이 커져 왕을 자칭할 정도가 되니 유봉의 입지가 사실상 제거 존재가 되어버린 것이다.만약 유선에게 약점이 전혀 없었다면, 즉 유봉이 있더라도 유선이 왕위를 계승하는데 딱히 걸릴 것이 없었다면 양자라는 약점이 뚜렷한 유봉의 처지가 좀 나아졌을 수도 있었을 것이다. 그러나 유선 역시 친아들이라곤 해도 적자(嫡子)가 아닌 서자(庶子)이며 나이가 어리다는 약점이 있었기 때문에 더 문제가 되었다. 양자라고는 해도 이미 장성했고 개국 과정에서 공적이 있는 유봉은 유선의 제위 계승에 방해물이 될 뿐이었다.하지만 유비 본인은 유봉을 충성심 있는 부하로 여겼고 그렇기에 상용을 맡기며 중용하였다. 상용은 땅 크기는 작지만 익주와 형주를 잇는 요충지이며, 독립하기는 어려워도 어느 정도 독자적인 세력을 구축할 만한 곳이기 때문에 유봉에게 별다른 문제가 없었다면 죽음은 면할 수 있었을지도 모른다. 그러나 유봉과 맹달의 마찰, 그리고 관우의 죽음과 상용의 상실이 연쇄적으로 일어나는 등의 책임이 매우 컸고 제갈량의 정치적 공격에 덧붙여 유비의 아들이라는 특수한 신분 때문에 결국엔 죽음에 이르게 되어버렸다.유능한 지휘관이지만 유연하지 못한 처신술 때문에 목숨을 잃은 케이스라고도 볼 수 있을 것이다. 번성에서의 패배, 형주의 상실과 관우의 전사는 물론이요, 자기 임지인 상용을 잃었다는 건 참작 받기 힘들다. 상용을 잃은 건 엄연히 자신이 상용의 다른 거물급 인사들인 맹달과 신탐, 신의 등과 사이가 나빴기 때문이며 이로 인해 관우에게 지원군을 보내지도 않았으니 번성 전투의 패배와 관우의 패사의 책임도 분명히 있다. 여기에 후사 문제까지 꼬이면서 반드시 죽여야 하는 인물 1위에 올라버렸다. 이 부분은 전적으로 유봉 본인이 자초한 비극이 맞다. 애초에 자기가 형주에 지원을 가지 못한 이유는 맹달과 사이가 나빠 군악대를 몰수하는 드잡이질을 벌였으며, 신탐 형제를 잘 아우르지 못했기 때문에 그들을 방치하고 갈 순 없기 때문이다. 거기다가 잘못한 것을 처벌하는 데 있어 공정성을 중시하던 유비-제갈량 정권에서 군주의 가까운 혈족이라고 하여 처벌하지 않는다는 것은 법치를 어기는 일이었다. 당장 제갈량이 멀지 않은 미래에 크나큰 삽질을 저지른 본인 절친이자 촉한 개국공신의 아우를 처형하거나, 본인 다음의 입지를 지닌 탁고대신을 서인으로 강등한 것만 봐도 그렇다. 거기다 유봉이 상용에서 저지른 삽질은 (1)관우를 살릴 마지막 찬스를 날리고, (2)형주를 상실함으로써 유비와 제갈량의 대전략을 좌초시켰을 뿐더러, (3)형주 방면의 자원을 날려 촉의 전력을 크게 약화시켰으며, (4)위나라를 향한 북벌 루트를 날려버린 데다, (5)결과적으로 상용마... (truncated)",
+      "기타": "유봉의 이름인 봉(封)과 유비의 친자 유선의 선(禪)을 합치면 봉선(封禪)이 된다. 봉선은 천자(황제)의 제사였는데, 이 때문에 두 아들의 이름을 이렇게 지은 유비의 야심을 알 수 있다는 이야기가 있다. 유비가 정말 봉선에서 이름을 지었다는 정사의 언급이나 확실한 근거는 없다. 그냥 정황상 그렇게 보인다는 이야기. 사실 유봉은 양자 출신이므로 애초에 봉은 유비가 지어준 이름이 아닐 가능성이 높으며, 그냥 우연찮게 유봉의 이름이 봉이어서 둘째 아들은 선으로 짝을 맞췄을 가능성이 있다. 정사에서는 유봉이 먼저 양자로 들어온 뒤 유선이 출생하였으나, 연의에서는 순서가 바뀐 것도 미묘한 일이라며 유비가 개인적인 야심으로 아들의 이름을 지어줬다는 사실을 숨기기 위해 연의에서 순서를 바꾸었다고 주장하는 자도 있으나 역시 근거는 없다. 애초에 유비는 이미 어린 시절에 황제가 되고 싶다는 포부를 내비친 적이 있으므로 새삼스럽게 이걸로 깔 필요가 있을까 싶다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 39–41",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Lord Kou"
+        },
+        {
+          "relation": "member",
+          "name": "Adoptive Father"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Bei"
+        },
+        {
+          "relation": "member",
+          "name": "Brother-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Shan"
+        },
+        {
+          "relation": "member",
+          "name": "Son of"
+        },
+        {
+          "relation": "member",
+          "name": "Kou Clan of Luohou"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew to"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Clan of Chansha"
+        }
+      ],
+      "ranks": [
+        "General of the Gentlemen of the Household Who Assists the Army, Magistrate of Central Langjiang",
+        "General Who Assists the Army"
+      ],
+      "historical_notes": "Liu Feng was the son of the Kou clan of Luohou and nephew to the Liu clan of Changsha (1), and thus possessed ties to the imperial clan. Liu Bei adopted him while in Jingzhou because he did not presently have a heir. Liu Feng served as a general in his army and was known for his martial ability and outstanding strength.\n\n(1): In the novel Liu Feng is listed as nephew to Liu Mi. It is presently unclear if Liu Bei’s nephew was indeed named Liu Mi, or if this is a name Luo Guanzhong assigned him.\n\nWhen Liu Bei marched on Liu Zhang, Liu Feng commanded with Zhuge Liang and Zhang Fei and was victorious in battle. Afterward he was promoted to General of the Gentlemen of the Household Who Assists the Army and Magistrate of Central Langjiang. Later Meng Da was prepared to attack Shangyong, but Liu Bei doubted his ability to handle the battle on his own. In AD 219 he sent Feng to aid him, but Shen Dan of Shangyong surrendered without a conflict. Feng’s appointment was changed to General Who Assists the Army.\n\nWhen Guan Yu had encircled Fancheng and Xiangyang he repeatedly called out to Feng and Da, commanding them to themselves send soldiers to provide aid. Together they declined under reason that the mountains of their commandery had been hemmed in, and they could not break free. Guan Yu was accordingly defeated and executed, and for this Liu Bei was hateful. Feng and Da disputed heavily and Feng advised Liu Bei to send troops to suppress Da. Meng Da grew very resentful and defected to Cao Cao with Shen Dan, Shen Yi, and several territories. Received warmly, Meng Da was given command, and in turn attacked Liu Feng. Liu Feng returned to Chengdu.\n\nIn Chengdu, at the advice of Zhuge Liang, Liu Bei ordered Liu Feng to commit suicide. An action which was likely influenced in part by his failures not only to Guan Yu, but also in losing his territory, but also very likely due to the threat he posed to Liu Shan, Liu Bei’s biological son and heir as announced in AD 219 (2). Liu Feng ... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.063Z"
+}

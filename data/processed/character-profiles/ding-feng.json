@@ -1,0 +1,163 @@
+{
+  "name_kr": "정봉",
+  "name_en": "Ding Feng",
+  "name_cn": "丁奉",
+  "courtesy_kr": "승연",
+  "courtesy_cn": "承淵",
+  "faction": "wu",
+  "tier": 2,
+  "role": "설중기습, 오 후기 명장",
+  "stats": {
+    "leadership": 81,
+    "war": 80,
+    "intelligence": 71,
+    "politics": 55,
+    "charisma": 56,
+    "total": 343,
+    "birth": 190,
+    "death": 271
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 67,
+      "war": 68,
+      "intelligence": 52,
+      "politics": 41,
+      "charisma": 59
+    },
+    "rotk11": {
+      "leadership": 81,
+      "war": 80,
+      "intelligence": 71,
+      "politics": 55,
+      "charisma": 56
+    },
+    "rotk12": {
+      "leadership": 81,
+      "war": 80,
+      "intelligence": 75,
+      "politics": 55
+    }
+  },
+  "novel_presence": {
+    "first_chapter": 38,
+    "last_chapter": 120,
+    "chapters": "38,44,49,51,55-56,75-76,83-84,86,108,117,119-120",
+    "chapter_count": 11
+  },
+  "biography": {
+    "namu": {
+      "개요": "삼국시대 오나라의 용장으로 양주 여강군 안풍현 사람.사실 정사에서는 제갈량 사후 삼국시대 중후기에 두각을 나타내는 인물이다. 정사에서 정봉이 215년/219년에 사망한 감녕 소속 장수였음을 생각하면 어리게 잡아도 200년 이전 생이며, 정봉의 커리어가 252년 동흥 전투부터 몰년인 271년까지에 집중되어 있음을 감안하면 50대에 처음 두각을 나타내고 70대까지 활약한 대기만성형 노장이라고 할 수 있다. 정사의《정황한장주진동감능서반정전》에서 마지막에 있다는 점에서도 역시 그가 후시대 인물이라는데 증거를 보탠다.",
+      "기타": "정봉의 가족묘는 2019년 난징시 구러우구 무푸산(幕府山) 남쪽 기슭에서 발굴되었다. 해당 묘는 벽돌묘로 추가적으로 합장한 흔적이 있다고 하며 도굴당해 출토 유물이 흐트러졌으나, 기마용, 유약토기, 청사기, 금은기, 유기, 동전, 철기, 지권벽돌, 칠기 등 다양한 유형이 출토되었다고 한다. 중국 CCTV 동영상 중국어 설명무덤이 발굴되면서 정봉의 부인은 251년에 사망했다는 사실과 해당 유적에서 출토된 기마용 유물에서 등자가 사용된 사실이 드러났다. 이는 등자 관련 유물로는 중국에서 가장 오래된 유물이며, 해당 유물이 발견되면서 최소한 중국의 삼국시대 말에는 강남에서도 원시적인 등자가 사용되었을 가능성이 높아졌다. #"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 55–56",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Ding Feng"
+        }
+      ],
+      "ranks": [
+        "Pian Jiangjun",
+        "General of the Frontal Force (Guanjun Jiangjun)",
+        "Marquis of the Capital District",
+        "General Who Destroys the Criminals",
+        "Marquis of the Greater Capital District",
+        "General of Tiger Prestige",
+        "Marquis of Anfeng",
+        "General of the Left",
+        "Great General, Left-Right Protectorate",
+        "Grand Administrator of Xuzhou (AD 260)",
+        "Da Sima of the Right and Military Consult of the Left"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tBefore the 220s, he was only a minor officer under Gan Ning, and so most of his achievements before then (including the slaying of Zhang Liao) are fictional",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6299,
+      "first_translation": {
+        "translator": "HanXin",
+        "excerpt": "Ding Feng (Chengyuan)\n丁奉 (承淵)\nLived AD ?–271\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyHan Xin\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745197514' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744993666' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744932255' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nDing Feng, styled Chengyuan, was originally from Anfeng County in Lujiang prefecture. Early in his career, because Ding Feng had shown that he was strong and brave, he was given the rank of a minor unit commander working under Gan Ning, Lu Xun, and Pan Zhang. On many occurrences, Ding Feng, with others to attack and punish the enemies, often went in with the frontal force. Ding Feng often killed the enemy’s flag bearing generals and was usually wounded in battle. Ding Feng was later promoted toPian Jiangjun. By the time Sun Liang succeed the throne, Ding Feng was promoted to General of the Frontal Force (Guanjun Jiangjun), and bestowed the title of Marquis of the Capital District (Douting Hou).\nWhen Wei ordered Zhuge Dan and Hu Zun to attack Dongxing, Zhuge Ke mobilized his troops to defend against them. All the generals suggested, “If the enemy heard of Taifu’s [[em]Zhuge Ke] arrival, then they would surely abandon their camp on the upper shore and flee.” Ding Feng replied, “Not really. The enemies over the river are mobilizing the great forces of Xu Chang and Luo Yang to come here, and they’re determined to succeed. Would such army retrea... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "rotk12",
+      "ROTK13",
+      "ROTKL",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": true,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.047Z"
+}

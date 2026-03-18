@@ -17,6 +17,28 @@
     "birth": 169,
     "death": 226
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 67,
+      "war": 96,
+      "intelligence": 36,
+      "politics": 21,
+      "charisma": 58
+    },
+    "rotk11": {
+      "leadership": 65,
+      "war": 96,
+      "intelligence": 36,
+      "politics": 20,
+      "charisma": 59
+    },
+    "rotk12": {
+      "leadership": 74,
+      "war": 96,
+      "intelligence": 36,
+      "politics": 20
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       12,
@@ -74,7 +96,62 @@
         "Introduction": "许褚（？—230年？），字仲康，谯国谯（今中国安徽省亳州市）人，漢末三国时曹魏名將，自典韋戰死之後，主要负责曹操的護衛工作。许褚力大寡言，被称为“虎痴”。",
         "历史评价": "- 陈寿《三国志·魏书十八》评述许褚：“性谨慎奉法，质重少言。”“许褚、典韦折冲左右，抑亦汉之樊哙也。”\n- 曹操：“此吾樊哙也。”\n- 马超乃问太祖曰：“公有虎侯者安在？”太祖顾指褚，褚嗔目盼之。自此始也。军中以褚力如虎而痴，故号曰虎痴；是以超问虎侯，至今天下称焉，皆谓其姓名也。\n- 李俨：“许仲康之忠勇，乃齐其位。”\n- 张说：“思齐忠壮而异材，求之古人，张飞、许褚等也。”\n- 马端临：“徐他谋逆而许褚心动，忠诚之至远同於日，且潼关之危，非褚不济，褚之功烈有过典韦。”\n- 朱邦衡：“破张绣之役，斩首万计，皆褚等先登陷阵之功也。”\n- 罗贯中：“天下瓜分汉欲亡，四方豪杰尽鹰扬。葛陂许褚投降后，自此何忧吕布强！”“凛凛威风镇九州，当年许褚果如虎。只因孟起军前见，天下从兹播虎侯。”“臂挽鞍鞒护主身，手持篙楫在波津。 若非许褚倾心救，孟德应为泉下人。”"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 16–17",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Older Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Ding"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Xu Yi"
+        }
+      ],
+      "ranks": [
+        "Chief Commandant, Commandant of the Palace",
+        "Colonel",
+        "Marquis of Guan Nei",
+        "General of the Gentleman of the Household of the Martial Commandant",
+        "‘Tiger Marquis’ (Nickname)",
+        "General of Central Firmness",
+        "Marquis of Wan Sui Ting, General of Martial Commandant, Chief Controller of the Central Army",
+        "Marquis of Mou Xiang",
+        "Marquis of Zhuang (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tXu Chu probably never captured of He Yi. He Yi, defeated in battle, surrendered to Cao Cao in AD 196.\n\tXu Chu did not strip down and duel with Ma Chao.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 7902,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Xu Zhu (Zhongkang)\n許褚 (仲康)\nLived AD 170–2?\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 18 (Wei 18)\nbyjiuwan (Giao Chau)\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742699745' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699732' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742584685' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXu Chu style Zhongkang was a man from Qiao of the Qiao state. He was over eight chi’s in height, his waist was round. His appearance was firm and manly. His courage and strength was above ordinary men. During the end of the Han, at a young age [Xu Chu] and his family clan numbering a thousand held strong and defended against bandits. At the time the Ru Nan thieves numbered over ten thousands that attack Xu Chu’s walls. The crowd with Xu Chu didn’t have enough to resist, the battle was extremely exhausting. When the defenders ran out of arrows, [Xu Chu] gave out orders to the men and women to place rocks on the four walls. Xu Chu hurled the rocks injuring those down below. The thieves dared not to advance. Provisions were lacking, so a truce was called with the thieves. Oxens were exchanged for food from the thieves. When the thieves came to collect the oxen, the oxen fled. Xu Chu came out and with one hand grabbed onto the oxen’s tail, dragging it over one hundred steps. The thieves were frightened and didn’t dare to get the oxen back, so they left. His name was then feared throughout Huai, Ru, Chen and Liang.\nWhen Tai Zu [Cao Cao... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -191,11 +268,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.216Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:09.912Z"
 }

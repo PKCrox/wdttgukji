@@ -17,6 +17,28 @@
     "birth": 172,
     "death": 234
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 84,
+      "war": 83,
+      "intelligence": 80,
+      "politics": 81,
+      "charisma": 52
+    },
+    "rotk11": {
+      "leadership": 83,
+      "war": 84,
+      "intelligence": 75,
+      "politics": 74,
+      "charisma": 52
+    },
+    "rotk12": {
+      "leadership": 83,
+      "war": 84,
+      "intelligence": 76,
+      "politics": 74
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       64,
@@ -47,7 +69,35 @@
       "sections": {
         "Introduction": "李严可以指：\n\n- 李严 (蜀汉)，三国时期蜀汉的将领\n- 李严 (后唐)，五代时期后唐的人物"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 7345,
+      "first_translation": {
+        "translator": "DarkAnthem",
+        "excerpt": "Li Yan (Zhengfang)\n李嚴 (正方)\nLived AD 166–206\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 40 (Shu 10)\nbyDarkAnthem\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744927538' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744927446' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744927446' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLi Yan, style Zhengfang, was a native of Nan Yang. He was a prefect Zhi Li when he was young, and he displayed great talent and capability. Liu Biao sent him to various different prefectures to perform his duty. When Cao Cao entered Jing Zhou, Li Yan governed Zigui. He was forced out of Zigui and went to Shu. Li Yan was made commandant in Cheng Du by Liu Zhang, and retained a high reputation for his ability. In the eighteenth year of Jian An, Li Yan was appointed as Hu Jun and defended against the Former Lord (Liu Bei) at Mian Zhu. Li Yan led his men and surrendered to the Former Lord, who then appointed Li Yan as Pi JiangJun. After Former Lord took Cheng Du, Li Yan was appointed as governor of Jian Wei and promoted to Xing Yie JiangJun.\nIn the 23rd year of Jian An (AD 221), bandits led by Ma Qin and Gao Sheng rebelled at Zi Zhong county; the bandit forces numbered to a few tenth thousands. The Former Lord was at Han Zhong at the time, and could not appoint any troops to Li Yan. Li Yan led 5000 men to quell the bandits. He killed Ma Qin and Gao Shang. With their leaders killed, the bandit units scattered one by one, and most the bandits ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 0,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -76,11 +126,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.261Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:09.977Z"
 }

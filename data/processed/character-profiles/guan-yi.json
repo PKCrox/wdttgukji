@@ -1,0 +1,125 @@
+{
+  "name_kr": "관이",
+  "name_en": "Guan Yi",
+  "name_cn": "関彝",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 50,
+    "war": 62,
+    "intelligence": 44,
+    "politics": 52,
+    "charisma": 59,
+    "total": 267,
+    "birth": 219,
+    "death": 263
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 43,
+      "war": 65,
+      "intelligence": 49,
+      "politics": 48,
+      "charisma": 53
+    },
+    "rotk11": {
+      "leadership": 50,
+      "war": 62,
+      "intelligence": 44,
+      "politics": 52,
+      "charisma": 59
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "촉한 제4대 한수정후 관이 | 關彛성씨관(關)휘이(彛, 彝)부왕현충왕(顯忠王)모친불명생몰? ~ 264년재위촉한 4대 한수정후? ~ 264년"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Xing"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Ping"
+        },
+        {
+          "relation": "member",
+          "name": "Half-Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Tong"
+        }
+      ],
+      "ranks": [
+        "Marquis Zhuangmou"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.058Z"
+}

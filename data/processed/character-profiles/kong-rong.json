@@ -1,0 +1,87 @@
+{
+  "name_kr": "공융",
+  "name_en": "Kong Rong",
+  "name_cn": "孔融",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 30,
+    "war": 5,
+    "intelligence": 72,
+    "politics": 75,
+    "charisma": 65,
+    "total": 247,
+    "birth": 153,
+    "death": 208
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 30,
+      "war": 11,
+      "intelligence": 74,
+      "politics": 78,
+      "charisma": 60
+    },
+    "rotk11": {
+      "leadership": 30,
+      "war": 5,
+      "intelligence": 72,
+      "politics": 75,
+      "charisma": 65
+    },
+    "rotk12": {
+      "leadership": 30,
+      "war": 5,
+      "intelligence": 73,
+      "politics": 75
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 관원이자 삼국시대 초기의 인물로 자는 문거(文擧). 예주 노국 노현 사람이자 공자의 20세손으로 성헌의 의제다. 공자의 후손으로 명망이 높았다. 더불어, 그의 작품은 전해지진 않지만 몹시 뛰어난 문재를 지녔다고 알려져 있으며 건안문학을 빛낸 건안칠자 중의 한 명이었다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.076Z"
+}

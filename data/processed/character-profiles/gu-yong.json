@@ -1,0 +1,94 @@
+{
+  "name_kr": "고옹",
+  "name_en": "Gu Yong",
+  "name_cn": "顧雍",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": {
+    "leadership": 43,
+    "war": 18,
+    "intelligence": 80,
+    "politics": 90,
+    "charisma": 76,
+    "total": 307,
+    "birth": 168,
+    "death": 243
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 43,
+      "war": 18,
+      "intelligence": 81,
+      "politics": 94,
+      "charisma": 78
+    },
+    "rotk11": {
+      "leadership": 43,
+      "war": 18,
+      "intelligence": 80,
+      "politics": 90,
+      "charisma": 76
+    },
+    "rotk12": {
+      "leadership": 43,
+      "war": 18,
+      "intelligence": 80,
+      "politics": 90
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "손오 승상(丞相) [ 펼치기 · 접기 ]초대제2대제3대제4대대리손소고옹육손보즐주거제5대대리제6대제7대좌승상손준손은손침복양흥육개우승상제9대제10대만욱연장제한 대장군 · 후한 태위 · 후한 대사공 · 후한 대사농 조위 태위 · 조위 사도 · 조위 사공 · 촉한 재상 · 손오 승상\n\n손오의 승상고옹 顧雍시호숙후(肅侯) 작위양수향후(陽遂鄕侯) → 예릉후(醴陵侯) 최종직위승상(丞相) 성씨고(顧) 휘옹(雍) 자원탄(元歎) 증조부고봉(顧奉) 생몰연도168년 ~ 243년 11월 고향양주(揚州) 오군(吳郡) 오현(吳縣) 승상 재임기간225년 ~ 243년 11월\n\n1. 개요2. 정사 삼국지3. 삼국지연의4. 기타5. 미디어 믹스5.1. 코에이 삼국지 시리즈5.2. 영걸전 시리즈5.3. 진삼국무쌍 시리즈5.4. 삼국전투기6. 둘러보기"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5977,
+      "first_translation": {
+        "translator": "ChenQiang",
+        "excerpt": "Gu Yong (Yuantan)\n顧雍 (元嘆)\nLived AD 168–243\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 52 (Wu 7)\nbyChen Qiang\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744913890' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744913855' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744913855' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nGu Yong, styledYuantan, hails fromWucounty inWuprefecture. He learnt the fine arts of music and calligraphy from Cai Yong when the latter, also known as Cai Boshe, came to Wu to hide from his enemies. His fellow prefecture and countymen all petitioned to recommend him for political office.\nWhen he matured, he had always been an efficient administrator in the region, e.g. HeFei, Qu-Ah, Shang Yu etc. When Sun Quan was the Governor of Kuai Ji, he did not set up an office but rather appointed Gu Yong asJun Chengand delegated the responsibilities of the governor to him. Gu Yong succeeded in capturing the rebels around the lands of his jurisdiction, and brought peace and stability, making the people content with his rule.\nA few years later, he was promoted asZuo SiMa and when Sun Quan became the Prince of Wu, Gu Yong was promoted toDa Li Feng Changand managing a dual position as the Head of the Imperial Secretariat. He was also conferred the title ofYang Sui Xiang Hou. His family knew nothing of it and was surprised when they eventually found out.\nIn the Fourth year ofHuang Wu, when Gu Yong went to fetch his mother in Wu, Sun Quan welcomed her ar... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.067Z"
+}

@@ -17,6 +17,28 @@
     "birth": 187,
     "death": 222
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 46,
+      "war": 25,
+      "intelligence": 84,
+      "politics": 91,
+      "charisma": 86
+    },
+    "rotk11": {
+      "leadership": 46,
+      "war": 23,
+      "intelligence": 85,
+      "politics": 90,
+      "charisma": 86
+    },
+    "rotk12": {
+      "leadership": 53,
+      "war": 23,
+      "intelligence": 88,
+      "politics": 90
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       7,
@@ -56,7 +78,56 @@
       "sections": {
         "Introduction": "馬良（187年—222年），字季常，荊州襄陽宜城（今湖北宜城）人，三國蜀漢時期是劉備的侍中；因在馬氏兄弟五人中，眉中带白毛，能力也是最出色，所以有馬氏五常，白眉最良的贊譽。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 186–222",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Su"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Bing"
+        }
+      ],
+      "ranks": [
+        "Congshi",
+        "Office of General of the Left",
+        "Shizhong"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 13390,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Ma Liang (Jichang)\n馬良 (季常)\nLived AD 186–222\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyZL181\nonDecember 14th, 2022\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1671060060' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760388527' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741408914' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740857627' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nMa Liang, styledJichang, was fromYicheng[宜城],Xiangyang[襄陽].\nHe had five brothers, all of whom had talented reputations. Their hometown would say of them, “The Ma clan has fivechangs, butWhite Browsis the greatest.” There were white tufts on the eyebrows of[Ma] Liang, hence he was praised as such.\nWhen theFormer Lordwas governingJing province[荊州], he was recruited as aClerk. Eventually, when theFormer Lordentered Shu,Zhuge Liangfollowed him, while[Ma] Liangremained inJing province[荊州]. He wrote this message to[Zhuge] Liang.\n“I heardLuocheng[雒城] has already been captured, which must be the blessings of Heaven. Esteemed elder brother, you have responded to your destiny and aided this generation, and your participation in the undertaking has brought glory to the nation. Auspicious portents have thus manifested themselves.AIn changing usefulness through consideration and discerning value through wisdom, then in selecting talents, one should follow such beauty.1In this manner, you have moderated brightness2and pleased the remote, spreading our virtue afar to Heaven and Earth, and thereby caused the times to be inclined to heeding and ... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -165,11 +236,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.244Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:09.957Z"
 }

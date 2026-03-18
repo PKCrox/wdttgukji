@@ -1,0 +1,53 @@
+=== 반장 (潘璋, Pan Zhang) ===
+자: 불명 (불명)
+진영: wu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Pan Zhang (Wengui)
+潘璋 (文珪)
+Lived AD ?–234
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 55 (Wu 10)
+byLady Wu
+in2004
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744995784' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744995781' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744995781' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Pan Zhang, styled Wengui, was from Fagan in Dongjun. He became a follower of Sun Quan when Sun Quan became Chief of Yanxian. Pan Zhang delighted in gambling and 
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통77 무78 지69 정34 매7
+rotk12: 통76 무80 지74 정28 매?
+
+## 커뮤니티 평가
+(없음)

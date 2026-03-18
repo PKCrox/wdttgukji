@@ -1,0 +1,81 @@
+{
+  "name_kr": "교모",
+  "name_en": "Qiao Mao",
+  "name_cn": "橋瑁",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 54,
+    "war": 45,
+    "intelligence": 69,
+    "politics": 72,
+    "charisma": 73,
+    "total": 313,
+    "birth": 150,
+    "death": 190
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 56,
+      "war": 52,
+      "intelligence": 68,
+      "politics": 66,
+      "charisma": 69
+    },
+    "rotk11": {
+      "leadership": 54,
+      "war": 45,
+      "intelligence": 69,
+      "politics": 72,
+      "charisma": 73
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "듄 시리즈의 집단 '교모'(Reverend Mother)에 대한 내용은 교모단 문서를 참고하십시오.\n\n18로 제후 [ 펼치기 · 접기 ]남양태수기주목예주자사연주자사하내태수진류태수원술한복공주유대왕광장막동군태수산양태수제북상북해상광릉태수서주자사교모원유포신공융장초도겸서량태수북평태수상당태수장사태수발해태수전군교위마등공손찬장양손견원소조조\n\n橋瑁(?~190년)1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 토탈 워: 삼국4.3. 삼국군영전 시리즈4.4. 삼국전투기4.5. 영웅조조"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.078Z"
+}

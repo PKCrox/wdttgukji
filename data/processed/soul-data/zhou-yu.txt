@@ -69,3 +69,43 @@ Xiao Qiao: 부부 (강도81, 교교자매)
 
 ## EN Wikipedia
 Zhou Yu (175–210), courtesy name Gongjin, was a Chinese military general. He served under the warlords Sun Ce and later Sun Quan in the late Eastern Han dynasty. Zhou Yu played a leading role in defeating the numerically superior forces of the northern warlord Cao Cao at the Battle of Red Cliffs in late 208, and again at the Battle of Jiangling in 209. Zhou Yu's victories served as the bedrock of 
+
+## 정사삼국지
+[개요] 후한 말의 인물이며 자는 공근(公瑾)으로 양주 여강군 서현 사람.손책과 손권 휘하의 인물로, 뛰어난 능력으로 강동의 손씨 정권을 잘 보좌하여 기반을 닦는데 크게 기여했다. 세간에는 적벽대전을 지휘하여 승리로 이끈 장군으로 널리 알려져 있는 인물이다.중국에서는 제갈량과 더불어 유량(瑜亮)이라 하여 뛰어난 인물의 대명사로 통용될 정도로 오랫동안 사랑받는 인물이기도 하다.
+[초기 생애] 주유의 집안은 고조부 주영(周榮)이 한장제, 한화제 때 상서령을 지냈고 증조부 주흥(周興)은 한안제 때 상서랑을, 종조부 주경(周景)과 주충은 양대에 걸쳐 삼공 중 하나인 태위직을 지냈으며, 또다른 당숙 주상(周尙)은 단양태수를 지냈고, 아버지 주이(周異)도 낙양령을 지낸 명문가였다.《정사 삼국지》〈주유전〉에서 주유의 조상 내력을 소개한 뒤 첫머리부터 나오는 말이 주유는 건장하고 기상이 굳세며(瑜長壯) 자태와 용모가 빼어났다(有姿貌)는 것인데, 열전 첫머리에서부터 잘생긴 외모가 언급되는 것에서 보이듯 상당한 미남이었음을 알 수 있다.동탁 토벌전 당시 손견이 의병을 일으킬 때, 손견은 집과 가족을 구강군 수춘현으로 이주시킨다.〈손책전〉에 따르면 17세였던 주유는 마찬가지로 17세인 손견의 아들 손책의 명성을 듣고 정중하게 찾아가 손책과 만난다. 주유가 손책에게 구강군 서현으로 이주해 살 것을 권하자 손책이 이 말을 따라 모친 무열황후를 데리고 서현으로 옮겨가서 살면서, 주유 등 여러 
+[가족 관계] 의형제 손책의 존재감이 강해 묻히지만 주유의 조카 주준이 주유의 공적 덕분에 편장군에 임명된 기록이 있는 걸로 보아 친형제도 있었다.아내는 미색으로 찬양받던 교공의 두 딸 강동 이교 중 동생인 소교. 하지만 손책의 아내가 된 언니 대교와 마찬가지로 정실이 아닌 첩이었을 가능성이 높다. 손책은 대교와 결혼하기 전부터 자식이 있었고, 두 명 다 죽은 후 남편과 합장되지 못했다. 주유의 자식들이 소교의 자식인지는 기록이 없어서 알 수 없다.자식들도 아버지처럼 박복한 면이 있는데, 장남 주순은 주유의 풍모가 있었고 손권의 딸인 손노반과 결혼했으나 수명까지 아버지를 닮아 요절. 차남 주윤은 죄를 지어 평민으로 떨어질 뻔까지 했으나 아버지의 공덕으로 겨우 유배형에 그쳤다. 딸 주씨는 225년에 손권의 장남 손등에게 시집 갔으나 손등이 요절하면서 과부가 된다.원말명초대의 후손으로 주서란 사람이 있는데 나관중의 먼 친척이자 고향 친구였고 같이 과거를 봤는데 주서만 붙고 나관중은 떨어졌다. 그래서 
+
+
+## Kongming 영문 백과사전
+생몰: AD 175–210
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Zhou Yu did not attempt to have Zhuge Liang assassinated. The rivalry between Zhou Yu and Zhuge Liang was added to add to the allure of Zhuge Liang.
+	Was not visited by Jiang Gan during the battle of Chibi.
+	Zhuge Liang did not attend Zhou Yu’s funeral, though his death was mourned by Pang Tong.
+	Zhou Yu’s death in the novel comes a little bit after his historical death.
+
+## 정사 영역본 (Kongming SGZ)
+Zhou Yu (Gongjin)
+周瑜 (公瑾)
+Lived AD 175–210
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 54 (Wu 9)
+byZL181
+onMarch 18th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1742313720' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757910150' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742313732' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741363879' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhou Yu, styledGongjin, was fromShu[舒],Lujiang[廬江]. The cousin of his grandfather was[Zhou] Jing, and the son of[Zhou] Jingwas[Zhou] Zhong. They both s
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통98 무72 지96 정81 매93
+rotk11: 통97 무71 지96 정86 매93
+rotk12: 통95 무71 지96 정86 매?
+
+## 커뮤니티 평가
+감정점수: 74, 언급: undefined회
+키워드: 

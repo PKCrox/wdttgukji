@@ -1,0 +1,54 @@
+=== 유요 (劉繇, Liu Yao) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 157–198
+
+## 정사 영역본 (Kongming SGZ)
+Liu Yao (Zhengli)
+劉繇 (正禮)
+Lived AD 157–198
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 49 (Wu 4)
+byZL181
+onMarch 24th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1742824080' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758249360' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742838512' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740500798' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Liu Yao, styledZhengli, was fromMouping[牟平],Donglai[東萊].
+The young son of theFilialPrinceofQi[齊孝王]1was enfeoffed as theMarquisofMouping[牟平侯], and his d
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통64 무65 지37 정73 매64
+rotk12: 통62 무67 지46 정70 매?
+
+## 커뮤니티 평가
+(없음)

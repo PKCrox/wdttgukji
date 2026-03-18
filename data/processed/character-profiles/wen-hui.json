@@ -1,0 +1,76 @@
+{
+  "name_kr": "온회",
+  "name_en": "Wen Hui",
+  "name_cn": "温恢",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 42,
+      "war": 40,
+      "intelligence": 78,
+      "politics": 85,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 62,
+      "war": 36,
+      "intelligence": 74,
+      "politics": 86
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6023,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Wen Hui (Manji)\n溫恢 (曼基)\nLived ADca.181–ca.225\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 15 (Wei 15)\nbyZL181\nonJanuary 12th, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1705096380' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757791790' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741630480' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709604474' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nWen Hui, styledManji, was fromQi[祁],Taiyuan[太原].\nWhen his father, [Wen] Shu, who was theGrand AdministratorofZhuo commandery[涿郡太守], died,[Wen] Huiwas fifteen. He took part in the funeral procession that returned to his homevillage.1•••\nWen Huiescorted the corpse of his father back to their hometown for it to be buried.↩\nHis household had sufficient wealth.[Wen] Huisaid, “The world is about to be embroiled in chaos. What do I need wealth for?” In one day, he had distributed it all, generously giving it to his clansmen. His hometown thought of him highly and compared him to Xun Yue [郇越].2•••\nXun Yue, styled Chenzhong, was a man who lived during the late WesternHan dynasty. He gave millions of his wealth that he inherited from his ancestors to his clansmen, up to the ninth degree.↩\nHe was nominated asFilial and Incorrupt. He served asChiefofLinqiu[廩丘長],PrefectofYanling[鄢陵令],PrefectofGuangchuan[廣川令],ChancellorofPengcheng[彭城相], andChancellorofLu[魯相]. Wherever he was, he was praised. He entered to serve asMaster of Recordsunder theAssisting Chancellor, then left to beInspectorofYang province[揚州刺史]. TheGrand Progenitorsaid, “I very m... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.053Z"
+}

@@ -1,0 +1,111 @@
+{
+  "name_kr": "한당",
+  "name_en": "Han Dang",
+  "name_cn": "韓当",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 59,
+      "politics": 53,
+      "charisma": 67
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 85,
+      "intelligence": 61,
+      "politics": 51
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 10633,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Han Dang (Yigong)\n韓當 (義公)\nLived ADca.156–227\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyZL181\nonMay 14th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1684072740' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756846165' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741577211' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741573502' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nHan Dang, styledYigong, was fromLingzhi[令支],Liaoxi[遼西].A\nHe was good at shooting while riding a horse, and he had physicalstrength.B\nLing [令] has the fanqie of Lang [郎] and Ding [定]; Zhi [支] has the fanqie of Ju [巨] and Er [兒].\nTheBook of Wustates: Through bitter labor,[Han] Dangrendered merits, but because he was a military servant, it was given to the heroic and mighty, and he thus was not given peerage or title. Only during the end of the time of[Sun] Jianwas he madeMajor of a Separate Unit.\nHe was favored bySun Jian, and he followed in conquests and military campaigns. He found himself in perilous situations several times, charging into the enemies and capturing prisoners. He was madeMajor of a Separate Unit. WhenSun Ceferried across to the east, he followed in the suppression of three commanderies.1He was promoted toColonel who Ascends First, given two thousand troops, and five hundred cavalry. He followed in the conquest ofLiu Xun, the defeat ofHuang Zu, and returned to suppressPoyang[鄱陽], becomingChiefofLe’an[樂安長]. The Shanyue submitted out of awe. Later, he, asHousehold General, resisted and defeatedExcellency Caoalong withZ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK9",
+      "ROTK11",
+      "rotk12",
+      "ROTKL",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.069Z"
+}

@@ -17,6 +17,28 @@
     "birth": 190,
     "death": 228
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 64,
+      "war": 65,
+      "intelligence": 87,
+      "politics": 76,
+      "charisma": 67
+    },
+    "rotk11": {
+      "leadership": 61,
+      "war": 67,
+      "intelligence": 87,
+      "politics": 68,
+      "charisma": 67
+    },
+    "rotk12": {
+      "leadership": 61,
+      "war": 67,
+      "intelligence": 87,
+      "politics": 68
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       52,
@@ -53,7 +75,49 @@
         "Introduction": "馬謖（）（190年—228年），字幼常，荊州襄陽宜城（今湖北宜城）人。蜀漢參軍，也是侍中马良之弟。初以荆州从事跟随刘备取蜀入川，曾任绵竹、成都令、越嶲太守。",
         "评价": "- 刘备：“马谡言过其实，不可大用。”（《三国志·卷三十九·蜀书九·董刘马陈董吕传第九》）\n- 陈寿：“兄弟五人，并有才名。”；“才器过人，好论军计，丞相诸葛亮深加器异。”（《三国志·卷三十九·蜀书九·董刘马陈董吕传第九》）\n- 刘禅：“街亭之役，咎由马谡。”（《三国志·蜀书五》）\n- 曹叡：“马谡、高翔，望旗奔败。”（《三国志·郭淮传》）\n- 蔣琬：「天下未定而戮智計之士，豈不惜乎！」（《三国志·卷三十九·蜀书九·董刘马陈董吕传第九·襄陽記注》）\n- 习凿齿：“诸葛亮之不能兼上国也，岂不宜哉！夫晋人规林父之后济，故废法而收功；楚成闇得臣之益己，故杀之以重败。今蜀僻陋一方，才少上国，而杀其俊杰，退收驽下之用，明法胜才，不师三败之道，将以成业，不亦难乎！且先主诫谡之不可大用，岂不谓其非才也？亮受诫而不获奉承，明谡之难废也。为天下宰匠，欲大收物之力，而不量才节任，随器付业；知之大过，则违明主之诫，裁之失中，即杀有益之人，难乎其可与言智者也。”（《三国志·卷三十九·蜀书九·董刘马陈董吕传第九》）\n- 司马光：“越巂太守马谡才器过人，好论军计。”（《资治通鉴·卷七十一》）\n- 胡寅：“街亭之败，罪由马谡；箕谷之败，咎自邓芝。兵多于贼反为贼所败，而诸葛公以为病在一人。”（《致堂读史管见》）\n- 李贽：“马谡妄自尊大，一味糊涂，一味自是，及到魏兵围定，莫展一筹，待救兵而已。极以今时说大话秀才，平时议论凿凿可听，孙、吴莫及也，及至临事，惟有缩颈吐舌而已。真可发一大噱也。”（汇评三国志演义）"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 190–228",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Ma Liang"
+        }
+      ],
+      "ranks": [
+        "Director of Mian Zhu",
+        "Director of Cheng Du",
+        "Governor of Yue Xi",
+        "Advisor"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 2155,
+      "first_translation": {
+        "translator": "DarkAnthem",
+        "excerpt": "Ma Su (Youchang)\n馬謖 (幼常)\nLived AD 190–228\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyDarkAnthem\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744927862' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744927860' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744927806' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nMa Liang’s younger brother Ma Su, style You Chang, joined Liu Bei in Jing Zhou, and later entered Shu with the Former Lord (Liu Bei). He removed to Directors (Ling) of Mian Zhu and Cheng Du, and the governor of Yue Xi. Ma Su was talented and fond of military strategem; Zhuge Liang held high regards of him. The Former Lord said to Zhuge Liang before dying: “Ma Su is not as talented as he seems, do not over use him, give him more observation” Zhuge Liang was hesitant; he appointed Ma Su as his Can Jun (advisor). When he talked to Ma Su about various affairs, they talked from day to night.\nIn the sixth year of Jian Xing (AD 228), Zhuge Liang led his troops to Qi Shan. At the time, Zhuge Liang had command of renowned generals such as Wei Yan, Wu Yi, etc, many suggested that these generals were more suitable for the task of vanguard, but Zhuge Liang dismissed the objections and sent Ma Su to lead the army as vanguard. Ma Su battled Zhang He of Wei at Jieting, and was defeated by Zhang He, his troops scattered. With the loss at Jieting, Zhuge Liang could not advance his troops further, therefore he retreated to Han Zhong. Ma Su was imprisoned for... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -162,11 +226,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.248Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:09.960Z"
 }

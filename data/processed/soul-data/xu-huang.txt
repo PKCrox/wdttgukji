@@ -66,3 +66,39 @@
 
 ## EN Wikipedia
 Xu Huang, courtesy name Gongming, was a Chinese military general serving under the warlord Cao Cao in the late Eastern Han dynasty of China. He later served in the state of Cao Wei during the Three Kingdoms period under the first two rulers, Cao Pi and Cao Rui, before his death at the start of Cao Rui's reign. Xu Huang is best noted for breaking the siege at the Battle of Fancheng in 219 by routin
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 169–227
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Never battled with or killed Wang Zhao.
+	Was not killed by Meng Da.
+
+## 정사 영역본 (Kongming SGZ)
+Xu Huang (Gongming)
+徐晃 (公明)
+Lived ADca.169–227
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 17 (Wei 17)
+byZL181
+onMarch 11th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1741658880' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760884678' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741673320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741535320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Xu Huang, styledGongming, was fromYang[楊],Hedong[河東].
+He served as an official for his commandery. He followed theGeneral of Chariots and Cavalry
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통89 무89 지74 정52 매73
+rotk11: 통88 무90 지74 정48 매71
+rotk12: 통91 무90 지78 정48 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

@@ -54,3 +54,32 @@ Zhang Xiu may refer to:Zhang Xiu (warlord), minor warlord of the late Han Dynast
 Zhang Xiu (張休), Eastern Wu official in the Three Kingdoms period, son of Zhang Zhao
 Li Yan (Wu), né Zhang Xiu (張休), Tang Dynasty official
 
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Zhang Xiu
+張繡
+Lived AD ?–207
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 8 (Wei 8)
+byLady Wu
+in2004
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744999109' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744998999' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744998999' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhang Xiu, who hailed from Zuli in Wuwei, was a junior relative to Zhang Ji, General of the Agile Calvary. When Bian Zhang and Han Shui revolted in Liang Province, one Qu Sheng
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통84 무72 지62 정41 매60
+rotk11: 통80 무73 지60 정45 매59
+rotk12: 통80 무73 지64 정45 매?
+
+## 커뮤니티 평가
+(없음)

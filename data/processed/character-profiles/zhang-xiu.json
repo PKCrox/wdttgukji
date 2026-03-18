@@ -17,6 +17,28 @@
     "birth": 154,
     "death": 207
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 84,
+      "war": 72,
+      "intelligence": 62,
+      "politics": 41,
+      "charisma": 60
+    },
+    "rotk11": {
+      "leadership": 80,
+      "war": 73,
+      "intelligence": 60,
+      "politics": 45,
+      "charisma": 59
+    },
+    "rotk12": {
+      "leadership": 80,
+      "war": 73,
+      "intelligence": 64,
+      "politics": 45
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       16,
@@ -46,8 +68,35 @@
         "Introduction": "張繡（159—207年），武威郡袓厲縣（今甘肅省白銀市會寧縣西北）人，東漢末年的武將和軍閥，董卓手下將領張濟的侄子。",
         "评价": "- 陈寿：“燕、绣、鲁舍群盗，列功臣，去危亡，保宗祀，则于彼为愈焉。”（《三国志·魏书·二公孙陶四张传第八》）\n- 贾诩：“将军（指张绣）虽善用兵，非曹公敌也。军虽新退，曹公必自断后；追兵虽精，将既不敌，彼士亦锐，故知必败。曹公攻将军无失策，力未尽而退，必国内有故；已破将军，必轻军速进，纵留诸将断后，诸将虽勇，亦非将军敌，故虽用败兵而战必胜也。”（《三国志·贾诩传》）"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Major"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4740,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Zhang Xiu\n張繡\nLived AD ?–207\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 8 (Wei 8)\nbyLady Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744999109' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744998999' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744998999' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Xiu, who hailed from Zuli in Wuwei, was a junior relative to Zhang Ji, General of the Agile Calvary. When Bian Zhang and Han Shui revolted in Liang Province, one Qu Sheng of Jincheng attacked Liu Jin, prefect of Zuli, and killed him. Zhang Xiu was a minor officer in the prefecture office at that time, and he tracked Qu Sheng down and killed him. All within the commandery praised him for that. Thus Zhang Xiu gathered many young people to himself and became a formidable force in the neighbourhood.\nAfter Dong Zhuo’s defeat, Zhang Ji and Li Jue among others attacked Lü Bu to avenge Dong Zhuo—this has been recorded in Dong Zhuo’s biography. Zhang Xiu followed Zhang Ji’s banner, and for his military merits he was eventually promoted to General who Establishes Loyalty, and made Marquis of Xuanwei. Zhang Ji [returned to garrison] at Hongnong. Because his soldiers were famished, he led a raid on Rang in the south. However, he was hit by a stray arrow and died. Zhang Xiu took over his troops, stationed himself at Wan, and allied with Liu Biao.\nCao Cao marched south and as he arrived at the Yu River, Zhang Xiu and some others led their men to surrender. Cao Cao t... (truncated)"
+      }
     }
   },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
   "dialogues": [
     {
       "chapter": 23,
@@ -120,11 +169,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.289Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.011Z"
 }

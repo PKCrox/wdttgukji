@@ -17,6 +17,28 @@
     "birth": 193,
     "death": 246
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 61,
+      "war": 85,
+      "intelligence": 28,
+      "politics": 22,
+      "charisma": 74
+    },
+    "rotk11": {
+      "leadership": 74,
+      "war": 85,
+      "intelligence": 29,
+      "politics": 24,
+      "charisma": 74
+    },
+    "rotk12": {
+      "leadership": 74,
+      "war": 85,
+      "intelligence": 29,
+      "politics": 24
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       11,
@@ -45,7 +67,59 @@
       "sections": {
         "Introduction": "祝融，中国上古神话人物，号赤帝，乃创世祖神之火神、南方之神、南海之神。《山海经》記載祝融的形象為腳踏雙龍，故後世受佛教龍王信仰影響，逐漸演變為「南海龍王」信仰。\n\n据《山海经》记载，祝融的居所是南方的尽头，是他传下火种，教人类使用火的方法。\n\n祝融氏是神农氏时代，或者早在伏羲氏时代一个以善于用火而闻名的部落，对中华先民用火技术的发展作出了突出贡献。到五帝时代，“祝融”被用作官职名称。\n\n「祝融」是火的代名詞，原先所司的火是有利于原始初民生产活动的火，火灾則往往被归结为如畢方等的特定的怪鸟和怪兽。後期方代指火災。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 86,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -144,11 +218,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.300Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.024Z"
 }

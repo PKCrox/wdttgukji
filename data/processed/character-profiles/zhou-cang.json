@@ -1,0 +1,112 @@
+{
+  "name_kr": "주창",
+  "name_en": "Zhou Cang",
+  "name_cn": "周倉",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 61,
+      "war": 84,
+      "intelligence": 49,
+      "politics": 31,
+      "charisma": 58
+    },
+    "rotk12": {
+      "leadership": 68,
+      "war": 84,
+      "intelligence": 42,
+      "politics": 33
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 65–66",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "Zhou Cang, a fictional character, was described as a strong warrior with a dark face and a wiry beard. He originally took part in the Yellow Turban Rebellion, during which he met Guan Yu who impressed him due to his courage and honor. Though he wished to follow Guan Yu, Yu declined as he was transporting Liu Bei’s family. Zhou Chang became an independent renegade and moved on to Mt. Wo Niu with another former yellow turban rebel, Pei Yuanshao, where he earned a reputation for his strength and skill.\n\nWhen he again encountered Guan Yu, this time on a mountain road, he abandoned his past and swore his allegiance. Zhou Cang became a staple character at Guan Yu’s side and was even appointed the responsibility of carrying his Green Sabre. His skill as a boatman would later be vital to Guan Yu in the flooding of Fan Castle and he even managed to capture the fearsome warrior Pang De during the attack. After Guan Yu died Wu marched upon his location and displayed his head. Upon seeing it Wang Fu cast himself from the castle walls and Zhou Cang took his life with his own hands.\n\nAs a character Zhou Cang pre-dates Luo Guanzhong’s Sanguo yanyi. He first appeared in the Sanguozhi Pinghua (三國志平話), produced during the early Yuan dynasty, where he played a very different role: he was a subordinate officer of Zhuge Liang assigned to protect and support the troops who transported his wooden oxen.",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tZhou Cang, as a fictional character, first appeared in the novel Sanguozhi Pinghua (三國志平話) written during the early Yuan Dynasty as one of the officers that helped Zhuge Liang to transport supplies using ‘wooden oxen’.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK9",
+      "ROTK11",
+      "rotk12",
+      "ROTK14",
+      "ROTKL",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 8",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.065Z"
+}

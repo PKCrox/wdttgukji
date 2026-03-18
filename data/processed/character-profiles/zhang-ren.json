@@ -1,0 +1,99 @@
+{
+  "name_kr": "장임",
+  "name_en": "Zhang Ren",
+  "name_cn": "張任",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 2,
+  "role": "유장 충신, 낙성 전투",
+  "stats": {
+    "leadership": 88,
+    "war": 84,
+    "intelligence": 78,
+    "politics": 59,
+    "charisma": 76,
+    "total": 385,
+    "birth": 169,
+    "death": 214
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 87,
+      "war": 86,
+      "intelligence": 74,
+      "politics": 57,
+      "charisma": 78
+    },
+    "rotk11": {
+      "leadership": 88,
+      "war": 84,
+      "intelligence": 78,
+      "politics": 59,
+      "charisma": 76
+    },
+    "rotk12": {
+      "leadership": 84,
+      "war": 84,
+      "intelligence": 78,
+      "politics": 59
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "기타": "《자치통감》에 따르면 정사에서는 방통보다 장임이 먼저 죽었다. 낙봉파 자체가 연의의 창작이므로 방통을 죽인 적도 없고 장비가 촉에 도착하기 전에 이미 유비에게 처형되었다. 제갈량, 장비, 조운은 낙성 전투에 참가하지 않았고 유비가 자력으로 낙성을 함락시키고 성도를 포위할 무렵에나 유비군과 합류했다. 그러므로 장비와 벌인 단기전 역시 거짓이다.정사에서 유비가 자기 편으로 회유하려 했으나 지조가 굳었기에 애석해하며 죽여야 했다. 인재 보는 눈에는 도가 튼 유비가 눈독을 들인 것을 보면 활약이 제대로 알려지지 않았을 뿐 숨겨진 인재였을 거라는 추측이 우세하다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 60–63",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Assistant Officer"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDid not arrange the ambush in which Pang Tong died.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.050Z"
+}

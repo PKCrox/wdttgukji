@@ -1,0 +1,54 @@
+=== 동윤 (董允, Dong Yun) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Dong Yun (Xiuzhao)
+董允 (休昭)
+Lived AD ?–246
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 39 (Shu 9)
+byZL181
+onMarch 1st, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740835920' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760279669' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740853933' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1714018204' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Dong Yun, styledXiuzhao, was the son ofHousehold General who Controls the Army,[Dong] He.
+When theFormer Lordinstalled theHeir Apparent,[Dong] Yunwas ch
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통38 무22 지78 정91 매72
+rotk12: 통47 무28 지79 정91 매?
+
+## 커뮤니티 평가
+(없음)

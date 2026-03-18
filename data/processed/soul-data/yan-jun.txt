@@ -1,0 +1,53 @@
+=== 엄준 (厳畯, Yan Jun) ===
+자: 불명 (불명)
+진영: wu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Yan Jun (Mancai)
+嚴畯 (曼才)
+Lived ADca.165–ca.242
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+byZL181
+onOctober 10th, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1760114100' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760279556' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1760128530' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1760123837' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Yan Jun, styledMancai, was fromPengcheng[彭城].
+From youth, he was engrossed in studies. He was adept at theBook of Odes,Book of Documents, and the Three Rites, and
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통16 무1 지70 정84 매76
+rotk12: 통28 무2 지71 정84 매?
+
+## 커뮤니티 평가
+(없음)

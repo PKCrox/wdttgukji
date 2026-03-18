@@ -17,6 +17,28 @@
     "birth": 161,
     "death": 223
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 78,
+      "war": 72,
+      "intelligence": 73,
+      "politics": 78,
+      "charisma": 99
+    },
+    "rotk11": {
+      "leadership": 75,
+      "war": 73,
+      "intelligence": 74,
+      "politics": 78,
+      "charisma": 99
+    },
+    "rotk12": {
+      "leadership": 81,
+      "war": 77,
+      "intelligence": 78,
+      "politics": 80
+    }
+  },
   "novel_presence": {
     "first_chapter": 1,
     "last_chapter": 120,
@@ -49,7 +71,192 @@
         "文学塑造与历史真实的割裂": "《三国演义》强化“仁君”标签却导致形象扁平化，[谁？]鲁迅批评“欲显长厚而似伪”。",
         "时人评价": "- 陳壽评曰：“先主之弘毅宽厚，知人待士，盖有高祖之风，英雄之器焉。及其举国托孤于诸葛亮，而心神无贰，诚君臣之至公，古今之盛轨也。机权干略，不逮魏武，是以基宇亦狭。然折而不挠，终不为下者，抑揆彼之量必不容己，非唯竞利，且以避害云尔。”（《三國志·蜀書·先主傳第二》）、「劉備天下稱雄，一世所憚」（《三國志·吳書·陸遜傳第十三》）。尽管刘备并非西晋认为的正统政权，陈寿在三国志内仍然坚持使用同帝王本纪接近的用词，例如在刘备本传称刘备先主，称讳且不直呼其名，去世用和崩相等的殂字。这与三国时代另一位君主孙权的处理手法是不同的。这可以体现陈寿对刘备的尊重，抑或是故国情怀。\n- 曹操：“方今收英雄时也，杀一人而失天下之心，不可。”、“夫刘备，人杰也，今不击，必为后患，将生忧寡人。”、“刘备，吾俦也。但得计少晚。”（《三國志·魏書·武帝紀第一》）“今天下英雄，唯使君与操耳。本初之徒，不足数也。”（《三國志·蜀書·先主傳第二》）\n- 孫策：“英雄忌人。”（《裴子語林》）\n- 孙权：“非刘豫州莫可以当曹操者。”（《三國志·蜀書·諸葛亮傳第五》）「猾虜乃敢挾詐！」（《三國志·吳書·周瑜魯肅吕蒙傳第九》）\n- 诸葛亮：上言於刘禅曰：“伏惟大行皇帝迈仁树德，覆焘无疆，昊天不吊，寝疾弥留，今月二十四日奄忽升遐，臣妾号咷，若丧考妣。乃顾遗诏，事惟大宗，动容损益；百寮发哀，满三日除服，到葬期復如礼；其郡国太守、相、都尉、县令长，三日便除服。臣亮亲受敕戒，震畏神灵，不敢有违。臣请宣下奉行。”（《三國志·蜀書·先主傳第二》）“刘豫州王室之胄，英才盖世，众士仰慕，若水之归海，若事之不济，此乃天也，安能復为之下乎！”（《三國志·蜀書·諸葛亮傳第五》）“刘公雄才盖世，据有荆土，莫不归德，天人去就，已可知矣。”（《三國志·蜀書·董劉馬陳董呂傳第九》）\n- 关羽：“吾受劉將軍厚恩，誓以共死，不可背之。”（《三國志·蜀書·關張馬黃趙傳第六》）\n- 袁绍：“刘玄德弘雅有信义，今徐州乐戴之，诚副所望也。”（《三國志·蜀書·先主傳第二》）\n- 袁術：“術生年以來，不聞天下有劉備。”（《三國志·魏書·呂布張邈臧洪傳第七）\n- 曹丕：「備不曉兵，豈有七百里營可以拒敵者乎！『苞原隰險阻而為軍者為敵所禽』，此兵忌也。孫權上事今至矣。」（《三國志·魏書·文帝紀第二》）「劉備既孤老智窮，勢極正使欲與死爭，則諸將軍便當就穴中，持取之爾。」（《與諸將書》）「非賢兄之貢，則執事之貽也。」（《答劉備書》）\n- 孫盛：“刘备雄才，處必亡之地，告急於吳，而獲奔助，無緣復顧望江渚而懷後計。”（《三國志·蜀書·先主傳第二》）\n- 趙戩：“刘备其不济乎？拙于用兵，每战则败，奔亡不暇，何以图人？”（《三國志·蜀書·先主傳第二》）\n- 傅幹：“刘备宽仁有度，能得人死力。諸葛亮達治知變，正而有謀，而為之相；張飛、關羽勇而有義，皆萬人之敵，而為之將；此三人者，皆人傑也。以備之略，三傑佐之，何為不濟也？”（《三國志·蜀書·先主傳第二》）\n- 刘元起：“吾宗中有此儿，非常人也。”（《三國志·蜀書·先主傳第二》）\n- 劉子平：“備有武勇。”（《三國志·蜀書·先主傳第二》）\n- 程昱：“观刘备有雄才而甚得众心，终不为人下，不如早图之。” 、“劉備有英名，關羽、張飛皆萬人敵也”（《三國志·魏書·程郭董劉蔣劉傳第十四》）\n- 郭嘉：「备有雄才而甚得众心。张飞、关羽者，皆万人之敌也，为之死用。（郭）嘉觀之，（劉）備終不為人下，其謀未可測也。古人有言：『一日縱敵，數世之患。』宜早為之所。」（《三國志·魏書·程郭董劉蔣劉傳第十四》）\n- 刘晔：「明公（曹... (truncated)"
       }
+    },
+    "history": {
+      "summary": "삼국시대 황제 [ 펼치기 · 접기 ]조위촉한손오초대초대초대문제소열제대제제2대제2대제2대명제회제폐제제3대제3대폐제경제제4대제4대고귀향공귀명후제5대원제황후 · 황태자 · 추존 군주삼황오제 · 하 · 상 · 주 · 춘추시대 · 전국시대 · 진(秦) · 한 삼국시대 · 사마진 · 오호십육국 · 남북조 · 수 · 당오대 · 십국 · 송 · 서하 · 요 · 금 · 원 · 명 · 청중화민국 국가원수 · 중화민국 총통 · 중화인민공화국\n\n촉한 초대 황제유비 | 劉備출생161년 7월 16일후한 유주 탁군 탁현 누상리(現 허베이성 바오딩시 줘저우시 임가둔진 대수루상촌)즉위221년 5월 15일 (59세)촉한 익주 촉군 성도 무담산 남쪽(現 쓰촨성 청두시)사망223년 6월 10일 (향년 61세)촉한 익주 파동군 영안현 백제성(現 충칭시 펑제현 바이디진)능묘혜릉(惠陵)재위기간후한의 의성정후(宜城亭侯)196년 ~ 219년 7월후한의 한중왕(漢中王)219년 7월 ~ 221년 5월 15일촉한의 황제221년 5월... (truncated)",
+      "sections": {
+        "개요": "삼국시대 황제 [ 펼치기 · 접기 ]조위촉한손오초대초대초대문제소열제대제제2대제2대제2대명제회제폐제제3대제3대폐제경제제4대제4대고귀향공귀명후제5대원제황후 · 황태자 · 추존 군주삼황오제 · 하 · 상 · 주 · 춘추시대 · 전국시대 · 진(秦) · 한 삼국시대 · 사마진 · 오호십육국 · 남북조 · 수 · 당오대 · 십국 · 송 · 서하 · 요 · 금 · 원 · 명 · 청중화민국 국가원수 · 중화민국 총통 · 중화인민공화국\n\n촉한 초대 황제유비 | 劉備출생161년 7월 16일후한 유주 탁군 탁현 누상리(現 허베이성 바오딩시 줘저우시 임가둔진 대수루상촌)즉위221년 5월 15일 (59세)촉한 익주 촉군 성도 무담산 남쪽(現 쓰촨성 청두시)사망223년 6월 10일 (향년 61세)촉한 익주 파동군 영안현 백제성(現 충칭시 펑제현 바이디진)능묘혜릉(惠陵)재위기간후한의 의성정후(宜城亭侯)196년 ~ 219년 7월후한의 한중왕(漢中王)219년 7월 ~ 221년 5월 15일촉한의 황제221년 5월 15일 ~ 223년 6월 10일 [ 펼치기 · 접기 ]성씨유(劉)휘비(備)부모부친 유홍(劉弘, 140 ~ ?)모친 미상배우자소열황후, 미부인, 손부인, 목황후자녀3남 2녀 (+ 양자 1남) [ 펼치기 · 접기 ]양자 유봉(劉封, ? ~ 220)장남 유선(劉禪, 207 ~ 271)차남 유영(劉永, ? ~ ?)삼남 유리(劉理, ? ~ 244)딸 2명자현덕(玄德)신장178cm작호의성정후(宜城亭侯) → 한중왕(漢中王)묘호열조(烈祖)시호소열황제(昭烈皇帝)제호선주(先主)연호장무(章武, 221년 ~ 223년)\n\n1. 개요2. 이름과 칭호3. 생애4. 평가4.1. vs 조조5. 혈통6. 가족 관계7. 무덤8. 기타9. 대중매체에서10. 둘러보기",
+        "생애": "### 개요\n劉備유비관련 문서 [ 펼치기 · 접기 ]생애생애평가평가가족할아버지 유웅 · 아버지 유홍 · 아들 회제고사논영회ㆍ도원결의ㆍ비육지탄ㆍ삼고초려ㆍ수어지교기타혈통 · 청두 유비혜릉 · 기타 창작물 · vs 조조ㆍ쌍고검ㆍ삼영전여포\n\n1. 초기1.1. 출생1.2. 성장1.3. 도원결의1.4. 황건적의 난1.5. 독우 매질 사건1.6. 사면2. 전기 군벌 시절2.1. 조조와 만나다2.2. 동탁 토벌전2.3. 공손찬 휘하2.4. 서주 군벌 시절2.5. 조조 휘하3. 방랑기3.1. 2차 서주 점거3.2. 서주 상실과 원소에게 의탁3.3. 유표에게 귀순3.4. 적벽대전4. 후기 군벌 시기4.1. 형주를 빌리다4.2. 입촉4.3. 익주를 차지하다4.4. 유비의 수염 콤플렉스4.5. 익양대치4.6. 장로의 문제4.7. 한중 공방전5. 전성기와 말년5.1. 한중왕이 되다5.2. 관우와 장비의 사망5.3. 조조 사망5.4. 촉한 건국5.5. 이릉대전5.6. 도원종언5.7. 무덤\n\n### 초기\n\n\n### 출생\n유비의 혈통은 유비/혈통 참고.유비는 161년 음력 6월 7일 동한(후한) 유주(幽州) 탁군(涿郡) 탁현(涿縣)에서 유홍(劉弘)의 아들로 태어났다. 탁현은 《삼국지연의》에서 누상촌이라는 이름으로 나오는데 누에치기에 사용하는 뽕나무로 유명했기 때문이다. 이곳은 현재의 허베이성 바오딩시의 현급시 줘저우시로 현 베이징 남서쪽에 인접해 있다. 21세기엔 이곳이 중국의 수도권이지만, 이 시대에 요서(遼西) 일대는 그저 변방 외곽이었다.유주는 삼국시대에 공손찬이 유우에게 빼앗았고 원소가 공손찬을 무너뜨린 뒤 차지하고 원희를 유주목으로 임명한 하북(河北) 4주 중 하나였다. 원소 사후 원씨가 조조에게 멸망한 뒤에는 위나라의 영역이 된다.\n\n### 성장\n유비는 어린 시절에 아버지를 잃었으며, 형제 자매에 대한 기록이 일체 없는 것으로 보아 외동이거나 형제들을 모두 일찍 잃은 것으로 추정된다. 유비는 홀어머니와 함께 돗자리를 짜고 신발을 팔면서 생계를 이었다. 《자치통감》에서는 대놓고 '少孤貧'이라고 해서 '어려서 아버지를 잃고 가난했다'라고 명시하고 있다.유비의 집앞에 있는 뽕나무는 매우 커서 황실의 수레 덮개처럼 보였다. 그곳을 지나가는 사람들은 모두 이 나무를 괴이하고 범상찮게 여겼다. 탁군(涿郡) 사람 이정은 유비의 집앞을 지나가며 이 집에서 필시 귀인이 나올 것이라고 했다.유비는 어린 시절 아이들과 함께 나무 아래에서 놀면서 \"나는 꼭 이렇게 깃털로 장식된 덮개가 있는 수레에 탈 거야.\"라고 말했는데, 어머니와 숙부 유자경이 \"너는 허튼 소리를 하지 말거라. 네가 우리 가문을 멸문시킬 셈이냐!\"라고 혼을 냈다. 왜냐하면 유비의 말은 황제가 되겠다는 소리였기 때문에 평범한 시대 같았으면 집안이 멸문될 정도로 위험한 발언이었기 때문이다. 탁군(涿郡) 사람이었던 간옹은 어려서부터 유비와 친했다는 것으로 보아 같은 탁현(涿縣) 출신으로 추정된다.유비는 열다섯 살이 되어 친척 유원기의 후원으로 노식의 문하에서 학문을 배웠다. 이때 공손찬과 유덕연과 동문이었다고 한... (truncated)",
+        "평가": "### 개요\n劉備유비관련 문서 [ 펼치기 · 접기 ]생애생애평가평가가족할아버지 유웅 · 아버지 유홍 · 아들 회제고사논영회ㆍ도원결의ㆍ비육지탄ㆍ삼고초려ㆍ수어지교기타혈통 · 청두 유비혜릉 · 기타 창작물 · vs 조조ㆍ쌍고검ㆍ삼영전여포\n\n1. 개요2. 군사3. 용인술4. 음흉한 인물이라는 의혹5. 정략6. 성격7. 무력8. 조조의 숙적9. 인덕과 매력10. 당대와 후대의 평가10.1. 당대10.2. 후대\n\n### 개요\n선주는 홍의(弘毅-포부가 크고 굳셈), 관후(寬厚-너그럽고 후함)하고 지인(知人-사람을 알아 봄), 대사(待士-선비를 잘 대우함)하니 한 고조의 풍도와 영웅의 그릇을 갖추었던 것 같다. 나라를 들어 제갈량에게 탁고했으나 심신(心神-마음)에 두 갈래가 없었으니 실로 군신(君臣-임금과 신하의 관계)의 지공(至公-지극히 공정함)함은 고금의 성궤(盛軌-아름다운 본보기)다. 기권(機權-기지와 임기응변), 간략(幹略-재능과 모략)은 위무제에는 미치지 못해 이 때문에 그 영토는 협소했다. 그러나 꺾일지언정 굽히지 않고 끝내 남의 아래에 있지 않았으니, 저들의 기량으로 필시 자신을 용납하지 못하리라 헤아리고, 오로지 이익만을 다투지 않고 해로움을 피하려 했다 말할 수 있겠다.진수진수가 \"임기응변과 재략이 조조에 미치지 못하였다\"고 평한 것을 보면 전략적인 측면에서는 조조보다 아래라 보는 듯하나, 그의 입장에서 유비는 아들 때 나라가 멸망해 2대 만에 사라졌다는 사실을 고려해야 한다. 전근대의 역사서는 그 사료가 만들어진 국가 왕실의 정통성을 위해 정통성이 이어져있는 군주들은 미화하고, 그렇지 않은 군주들은 반역자로 폄하하는 게 일반적이다. 삼국지는 진나라에서 저술되었고 당시 진나라의 공식 입장은 \"후한의 헌제가 조조의 공을 인정해 그 아들인 조비에게 국체를 선양했고, 그 조위가 진나라 사마씨에게 선양했다\"는 것이다. 그렇기에 유비는 진나라의 그 정통성 계보와는 무관하게 제멋대로 칭제한 반역자에 불과하다. 정치적 입장을 고려하면 유비를 훨씬 더 폄하하는 게 진수의 신변에 안전한 서술일 터인데, 그러지 않고 유비가 나름대로 정통성과 인덕도 있고, 조조에 비견될 만한 능력까지 있었던 영웅이었다고 서술한 것은 정치적 부담을 감내하고 매우 소신 있게 고평가한 것이다.또한 군사적 재능이라는 측면에서 조조와 비견할만 한 인물은 당대에 없었기에 조조보다 군사적 능력이 못했다는 것은 딱히 비하하는 것도 아니다. 후에 유송을 건국한 인간흉기, 항우의 재림 급인 유유가 역사에 등장하기까지 약 2백여 년의 세월 동안 조조의 군사적 재능을 확실하게 능가한다는 평을 받은 인물은 없었다. 반동탁연합이 끝난 직후에는 변변한 영지조차 없었던 떠돌이 신세에서 20년 만에 천하통일 직전까지 일궈낸 조조의 군사 역량이 매우 뛰어났다는 것은 이론의 여지가 없다. 즉 초세지걸이라 불리며 당대에 최고로 칭송받던 조조의 카운터이자 아치에너미, 숙적으로 서술된 것만으로도 유비도 매우 대단한 인물이라는 뜻이다.한고조가 당시 사람들에게 어떤 존재였을지를 고려해 보면 답이 나온다. 사실상 ... (truncated)",
+        "가족 관계": "조부는 유웅이며 부친은 유홍이다.유비의 적실로는 미부인, 손부인, 목황후 오씨 등이 있다.유비의 측실로는 소열황후 감씨, 유영의 어머니, 유리의 어머니 등이 있다.유비의 자식들 가운데 행적이 알려진 이는 양자 유봉, 장남 유선, 차남 유영, 삼남 유리 이렇게 4명이다.유영과 유리는 유선과는 어머니가 다른 이복동생으로 유선의 후손은 영가의 난 때 몰살당했으나 유선의 동생인 유영(劉永)의 손자 유현(劉玄)은 살아남아 성한(成漢)으로 도망가 황제 이수(李壽)로부터 안락공의 칭호를 받았다. 따라서 지금까지 내려오는 유비의 후손은 모두 유영의 후손이다. 또 제갈량의 아들 제갈첨이 유선의 사위였기에 제갈씨에 유비의 피가 섞여있는 것도 맞다.유리의 후손에 대해서는 알려진 바 없다. 현존하는 유비의 후손은 유창이라는 60대손으로 아래 단락에 나온 청두 유비혜릉 앞에서 조상님이 거병하기 전에 했던 같은 일, 즉 짚신과 돗자리를 팔아 생계를 유지하고 있다. 유비의 초상화와 상당히 닮았으며 특히 눈썹은 판박이다.#이외에는 딸이 둘 있었다는 기록이 있는데《위서》<조순전>의 '장판파에서 유비의 두 딸과 군수품을 획득했다'는 대목이다. 그 이전에도 이후에도 관련 기록이 없고 저 기록이 전부다. 고대에 여성들은 금수저가 아닌 이상 전리품 취급을 받는 경우가 대부분이고, 다른 이도 아닌 조조의 숙적 유비의 딸이었으니 조조 본인이 분풀이로 취했거나 조순에게 내렸을 가능성이 있다.양자 유봉에 대해서는 유비가 시종일관 친자식으로 여기고 아끼며 좋아했었다. 유봉이 죽은 이유는 겉으로는 관우를 구원하지 않았다는 것인데, 유봉이 주둔 중이던 상용은 원래 위나라의 땅을 점령한 것이었기 때문에 군대를 움직이면 반란을 걱정해야 한다는 합당한 이유가 있었고, 제갈량에게 상소를 올리기도 했었다. 중국의 역사학자 심백준의 유비에 대한 비판에서도 나오지만, 유봉의 죽음에 대해서는 제갈량의 독단이 아니라, 유비의 합의가 있었다.그러나 이는 지나치게 유봉에게 좋게 언급한 것인데, 번성의 포위가 풀리기까지는 두 달이 걸렸다. 두 달이면 지원을 가기에 충분한 기간적 여유가 있었으며, 형주자사와 상용 동쪽 남향군 태수가 위군을 지원했다가 관우에게 토벌당해서 상용 동쪽은 공백지라 지원이 가로막힐 가능성도 없었다. 오히려 상용에서 지원을 오지 않아 보급 문제도 있던 관우는 어쩔 수 없이 장기전에 돌입하고 만다. 내부의 반란이 우려됐으면 유봉이나 맹달 중 한 명은 반란에 대비할 병력만 남기고 남은 한 명이 갔어도 됐다. 애초에 유비가 유봉과 맹달을 파견한 이유가 상용에서 관우를 언제라도 지원할 것을 염두에 뒀으며, 실제로도 신속히 지원이 가능하다고 판단한 배치인데 반란 우려를 핑계로 서로 주도권 싸움이나 해대며 결국 관우와 남군, 강하, 유강구, 번성, 양양, 맥성들을 잃었으며, 후에는 유봉, 맹달이 지키던 상용도 결국 빼앗겼으니 후계자 문제 이전에 큰일을 그르친 것만으로 처형당할 이유는 충분했다."
+      }
+    },
+    "kongming": {
+      "life_span": "AD 161–223",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 06/2004\n\tReplies: 122"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Hong"
+        },
+        {
+          "relation": "member",
+          "name": "Wives"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Mi"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Sun"
+        },
+        {
+          "relation": "member",
+          "name": "Empress Mu"
+        },
+        {
+          "relation": "member",
+          "name": "Concubine"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Gan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Shan"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Yong"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Li"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted Son"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Sworn Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Yu f"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Fei f"
+        },
+        {
+          "relation": "member",
+          "name": "Horse"
+        },
+        {
+          "relation": "member",
+          "name": "Diluma [Dilu Horse] f"
+        }
+      ],
+      "ranks": [
+        "Magistrate of Anxi",
+        "Governor of Xia Mi",
+        "Gao Tangwei",
+        "Magistrate",
+        "Bie Bu Sima",
+        "Magistrate of Pingyuan",
+        "Governor of Pingyuan",
+        "Inspector of Yuzhou",
+        "General Who Conquers the East",
+        "Marquis of Yicheng",
+        "Imperial Protector of Yuzhou",
+        "General of the Left",
+        "Imperial Protector of Jingzhou",
+        "Commander-in-Chief",
+        "Colonel Director of Retainers",
+        "Imperial Protector of Yizhou",
+        "Prince of Hanzhong",
+        "Emperor"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tThe Peach Tree Garden oath did not actually take place but Sanguozhi states that Liu, Guan and Zhang ‘slept in the same bed and were as close as brothers.’\n\tPlayed a minor role during the Yellow Scarves revolt. Did not fight the Scarves at Wan or save Dong Zhuo. Furthermore, he was 23 years old at this point, not 28.\n\tZhang Fei did not whip the imperial inspector. Liu Bei did.\n\tWas not offered Xuzhou by Tao Qian directly, but was invited to govern by Chen Deng and Kong Rong. He also never offered Xuzhou to Lü Bu.\n\tWas not acknowledged by Emperor Xian as Imperial Uncle.\n\tDid not rely on Xu Shu to defend Xinye from Cao Ren and Li Dian. He arranged and carried out the defense himself.\n\tDefeated Xiahou Dun at Xin Ye, not Zhuge Liang.\n\tThough involved in Chibi, Wu’s role was greater in history. View ≈5 Additional Facts?\n\tAlthough Sun Quan was advised by Zhou Yu and Han Ze to keep Liu Bei hostage during his visit to Wu, no such attempt was made, and Liu Bei left without incident.\n\tHuang Zhong was not chief commander of Shu’s Hanzhong campaign. Liu Bei was.\n\tCommanded between 40–80,000 troops at Yiling; far fewer than the 700,000 or so mentioned in the novel.\n\tHad more than three sons and some daughters (which were, unfortunately, captured by Cao Chun at Changban Slope).\n\tHistorically Liu Bei was a much more talented commander than the novel makes him out to be.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 74555,
+      "first_translation": {
+        "translator": "StephenSo",
+        "excerpt": "Liu Bei (Xuande)\n劉備 (玄德)\nLived AD 161–223\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 32 (Shu 2)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745628057' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745627627' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745627627' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nThe First Sovereign’s1family name wasLiu, given nameBei, stylenameXuande. He was a man from the Zhuo county of the Zhuo prefecture.2The First Sovereign was a descendent of Liu Zhen who was the son of Prince Jing of Zhongshan, Liu Sheng, the son of Emperor Jing (Han Jing Di) of Western Han. In the sixth year of Yuanshou [117 BC],3Liu Zhen was sent to the Zhuo prefecture and given the title of Marquis (Ting Hou) of Lucheng. Because no annual tribute was offered due to lack of money in the family, their title was stripped.AThe First Sovereign’s grandfather was Liu Xiong, father was Liu Hong, and both worked as magistrates in Zhuo. Liu Xiong was chosen as Filial and Incorrupt (Xian Lian) and worked in Dongjun, Fanling.•••\nThroughout the Chronicles of Shu in SGZ, Liu Bei is referred to as the First Sovereign. This shows that Shu was considered only a kingdom rather than a legitimate dynasty at the time of writing. Later on, Liu Bei was also known by various names such as Liu Zhu, Shu Zhu, Han Zhu, and Han Zhao Lie.↩\nZhuo was a prefecture of the Youzhou region in Northern China↩\nAccording toChronicle of Han(Han Shu),Yuanshou... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms artwork",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 73,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -236,11 +443,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.143Z"
+  "source_count": 13,
+  "generated_at": "2026-03-18T10:20:09.838Z"
 }

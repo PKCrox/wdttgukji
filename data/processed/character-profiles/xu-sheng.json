@@ -1,0 +1,134 @@
+{
+  "name_kr": "서성",
+  "name_en": "Xu Sheng",
+  "name_cn": "徐盛",
+  "courtesy_kr": "문향",
+  "courtesy_cn": "文嚮",
+  "faction": "wu",
+  "tier": 2,
+  "role": "오 장수, 가성 전술",
+  "stats": {
+    "leadership": 87,
+    "war": 81,
+    "intelligence": 78,
+    "politics": 65,
+    "charisma": 73,
+    "total": 384,
+    "birth": 177,
+    "death": 234
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 87,
+      "war": 81,
+      "intelligence": 77,
+      "politics": 62,
+      "charisma": 70
+    },
+    "rotk11": {
+      "leadership": 87,
+      "war": 81,
+      "intelligence": 78,
+      "politics": 65,
+      "charisma": 73
+    },
+    "rotk12": {
+      "leadership": 86,
+      "war": 81,
+      "intelligence": 78,
+      "politics": 65
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "오서(吳書) [ 펼치기 · 접기 ]1권 「손파로토역전(孫破虜討逆傳)」2권 「오주전(吳主傳)」손견 주준 · 손책손권 호주 정천 풍희3권 「삼사주전(三嗣主傳)」4권 「유요태사자사섭전(劉繇太史慈士燮傳)」손량 · 손휴 이형 · 손호 장제유요 착융 유기 · 태사자 · 사섭5권 「비빈전(妃嬪傳)」6권 「종실전(宗實傳)」}무열황후 · 사부인 · 서부인 · 보연사 · 대의황후 · 경회황후 반부인 · 전혜해 · 주부인 · 하희 · 등방란손정 · 손유 · 손교 · 손환(奐) · 손분(賁) 손보 · 손익 · 손광 · 손소 · 손환(桓)7권 「장고제갈보전(張顧諸葛步傳)」8권 「장엄정감설전(張嚴程闞薛傳)」장소 장분 장승 장휴· 고옹 고소 고담 고승 · 제갈근 제갈융 · 보즐 주소장굉 · 엄준 배현 · 정병 징숭 · 감택 당고 · 설종 설영9권 「주유노숙여몽전(周瑜魯肅呂蒙傳)」10권 「정황한장주진동감릉서반정전(程黃韓蔣周陳董甘凌徐潘丁傳)」주유 · 노숙 · 여몽정보 · 황개 · 한당 · 장흠 · 주태 ·진무 진표 동습 · 감녕 · 능통 · 서성 ·반장 · 정봉11권 「주치주연여범주환전(朱治朱然呂範朱桓傳)」12권 「우육장낙육오주전(虞陸張駱陸吾朱傳)」13권 「육손전(陸遜傳)」주치 · 주연 주적 · 여범 여거 · 주환 주이우번 우사 주육 · 육적 · 장온 · 낙통 육모 · 오찬 ·주거육손 육항14권 「오주오자전(吳主五子傳)」손등 · 손려 · 손화 · 손패 · 손분(奮)15권 「하전여주종리전(賀全呂周鍾離傳)」16권 「반준육개전(潘濬陸凱傳)」17권 「시의호종전(是儀胡綜傳)」하제 · 전종 · 여대 · 주방 · 종리목반준 · 육개 육윤시의 · 호종 서상18권 「오범유돈조달전(吳範劉惇趙達傳)」19권 「제갈등이손복양전(諸葛滕二孫濮陽傳)」20권 「왕누하위화전(王樓賀韋華傳)」오범 위등 · 유돈 · 조달제갈각 섭우 · 등윤 · 손준 유찬 · 손침 · 복양흥왕번 · 누현 · 하소 · 위소 · 화핵관련 틀: 위서 촉서※ 흠정 24사 관련 틀 둘러보기\n\n강동십이호신(江東十二虎臣)徐盛서성조비가 손권을 오왕에 봉하자 분개하는 장면이다.작위무호후(蕪湖侯)최종직위안동장군(安東將軍)성씨서(徐)휘성(盛)자문향(文嚮)생몰기간?년~?년고향서주(徐州) 낭야국(临沂國) 거현(莒縣)"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4917,
+      "first_translation": {
+        "translator": "HanXin",
+        "excerpt": "Xu Sheng (Wenxiang)\n徐盛 (文嚮)\nLived AD ?–ca.225\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyHan Xin\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745200008' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744993663' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744932563' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXu Sheng, styled Wenxiang, was originally from Langxie in the old state of Ju and was well known for his prowess. Seeing chaos in his homeland, he sought refuge and moved to Wu. When Sun Quan became the ruler of Wu, Xu Sheng was promoted to Major with a Separate Command (Bei Bu Sima), was given control of 500 soldiers, and was appointed Chief of Zhaisang to guard against Huang Zu.\nHuang Zu often sent his son, Huang She, with about 1000 men down to attack Xu Sheng. During then, Xu Sheng’s troops numbered not more than 200 and he engaged the enemies, wounding more than a thousand of the enemies’ troops. Following which, he opened the castle’s gate for an open battle and served a major defeat to Huang She. The defeat forced Huang She into hiding and he did not return to Huang Zu but instead turned to banditry. Sun Quan promoted Xu Sheng to the rank of Colonel (Xiaowei) and magistrate of Wuhu county (Wuhu Ling). After Xu Sheng had taken back Lin city and had many merits dealing with the mountain bandits, Xu Sheng was made General of the Gentlemen of the Household (Zhonglang Jiang) with the main task of training soldiers.\nWhen Cao Cao attacked ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK9",
+      "rotkxi",
+      "rotk12",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 8",
+      "Warriors Orochi 2"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 6,
+  "generated_at": "2026-03-18T10:20:10.047Z"
+}

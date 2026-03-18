@@ -1,0 +1,76 @@
+{
+  "name_kr": "주거",
+  "name_en": "Zhu Ju",
+  "name_cn": "朱據",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 74,
+      "war": 59,
+      "intelligence": 73,
+      "politics": 68,
+      "charisma": 72
+    },
+    "rotk12": {
+      "leadership": 77,
+      "war": 57,
+      "intelligence": 72,
+      "politics": 70
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6226,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Zhu Ju (Zifan)\n朱據 (子範)\nLived AD 194–250\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 57 (Wu 12)\nbyZL181\nonJanuary 22nd, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1705963800' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757906468' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740766370' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1708024614' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhu Ju, styledZifan, was fromWu[吳],Wu commandery[吳郡].\nHe was handsome and strong, and also adept in debating difficult topics.\nIn the beginning of theera, he was summoned to bePalace Gentleman for All Purposesand then filled the post ofImperial Clerk. At the time, theSecretariat Minister of the Nomination Bureau,Ji Yan, detested the corruption and filth in offices, and wanted to purify and cleanse them.[Zhu] Jubelieved that, “The realm is not yet stable. You ought to let them render achievements for them to vanquish their faults, and to abandon their shortcomings and appoint them instead. Nominating the pure and censuring the corrupt would be enough to stop [wicked deeds] and promote [virtuous deeds]. If you were to demote or expel them at a single moment, I fear there would be future grievances.”[Ji] Yan, who did not listen, ultimately failed.\n[Sun] Quanwould sigh loudly over his [deceased] generals, venting sadness and sighing, and rememberingLü MengandZhang Wen. He believed that[Zhu] Ju, who had talent in both civil and military affairs, could succeed them. Hence, he conferred him asColonel who Establishes Righteousnessand had him... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.069Z"
+}

@@ -1,0 +1,49 @@
+=== 조표 (曹豹, Cao Bao) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+[역사] Cao Bao, formerly an officer of Tao Qian, served Liu Bei as Chancellor of Xiapi. In February of AD 196 he had a falling out with Zhang Fei and consequently Zhang Fei killed him (1), causing riots in the city. Xu Dan wrote to Lü Bu inviting him to attack Xiapi while also offering his support from within (2). Yuan Shu is also said to have written Lü Bu offering supplies (3).
+
+(1): Accounts of this event differ. Zizhi tongjian describes the event as a ‘falling out’. Sanguozhi’s original text explains that Cao Bao rebelled and called for Lü Bu’s support. Hanmo yingxiong ji, quoted by Pei Songzhi in SGZ 7 explains that Zhang Fei intended to kill Cao Bao, but that Cao Bao took refuge in the encampment and called for Lü Bu. (It should be pointed out that Lü Bu and Cao Bao had no documented relati
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Cao Bao was not killed by Zhang Fei for drinking. They had a ‘falling out’. Cao Bao was not special to Lü Bu, but his death caused riots in the city. It was Xu Dan that corresponded with Lü Bu and opened the gates. [ZZTJ: 62]
+	Cao Bao was most likely dead before he had a chance to meet (or join) Lü Bu, as explained in Xu Dan’s letter to Lü Bu. [SGZ: 7]
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통55 무70 지34 정23 매26
+rotk12: 통54 무69 지32 정21 매?
+
+## 커뮤니티 평가
+(없음)

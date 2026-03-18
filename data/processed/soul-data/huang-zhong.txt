@@ -78,3 +78,40 @@ Liu Bei: 군신 (강도78, 53회 귀순)
 
 ## EN Wikipedia
 Huang Zhong, courtesy name Hansheng, was a Chinese military general serving under the warlord Liu Bei during the late Eastern Han dynasty of China. He is best known for his victory at the Battle of Mount Dingjun in 219, in which his force routed that of an enemy general, Xiahou Yuan, who was killed in action during the raid.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 55–56
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Was not ‘fought with and released’ by Guan Yu. With Han Xian, he surrendered to Liu Bei’s army by choice.
+	Huang Zhong was not the chief commander of Shu’s Hanzhong campaign. Liu Bei was.
+	Died before the battle of Yi Ling, thus did not participate.
+	No record of him being “old”
+
+## 정사 영역본 (Kongming SGZ)
+Huang Zhong (Hansheng)
+黃忠 (漢升)
+Lived AD ?–219
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 36 (Shu 6)
+byJack Yuan
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742885839' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742429871' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742429761' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Huang Zhong was styled Hansheng and a man from Nanyang. Governor of Jingzhou Liu Biao made him a General of the Gentlemen of the Household and had him garr
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통86 무94 지66 정58 매74
+rotk11: 통86 무93 지60 정52 매75
+rotk12: 통90 무93 지65 정52 매?
+
+## 커뮤니티 평가
+감정점수: 57, 언급: undefined회
+키워드: 

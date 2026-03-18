@@ -17,6 +17,21 @@
     "birth": 177,
     "death": 210
   },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 17,
+      "war": 11,
+      "intelligence": 72,
+      "politics": 78,
+      "charisma": 92
+    },
+    "rotk12": {
+      "leadership": 57,
+      "war": 11,
+      "intelligence": 73,
+      "politics": 78
+    }
+  },
   "novel_presence": {
     "first_chapter": 29,
     "last_chapter": 54,
@@ -39,7 +54,93 @@
       "sections": {
         "Introduction": "大橋，《三國演義》作大喬，廬江橋公之女，小橋之姊，孫策納為妾。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Qiao Xuan f"
+        },
+        {
+          "relation": "member",
+          "name": "Husband"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ce"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Xiao Qiao"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Shao"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, was not the daughter of Qiao Xuan. [SGZ]",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen III"
+    ]
+  },
+  "community": {
+    "sentiment_score": 80,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -156,11 +257,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.276Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.996Z"
 }

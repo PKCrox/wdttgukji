@@ -17,6 +17,28 @@
     "birth": 154,
     "death": 198
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 74,
+      "war": 55,
+      "intelligence": 89,
+      "politics": 83,
+      "charisma": 69
+    },
+    "rotk11": {
+      "leadership": 78,
+      "war": 55,
+      "intelligence": 89,
+      "politics": 83,
+      "charisma": 68
+    },
+    "rotk12": {
+      "leadership": 84,
+      "war": 55,
+      "intelligence": 89,
+      "politics": 83
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       4,
@@ -51,7 +73,95 @@
       "sections": {
         "Introduction": "陳宮（2世纪—199年2月7日），字公臺，兗州東郡武陽縣（位於山東省與河南省之間）人，剛直烈壯，年少與海內知名之士皆連結。東漢末年天下大亂，為曹操的麾下，後叛投到呂布帳下。為呂布出謀獻策。呂布死亡後，拒絕向曹操投降，而被曹操揮淚絞刑。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Countryman"
+        },
+        {
+          "relation": "member",
+          "name": "Li Tong"
+        },
+        {
+          "relation": "member",
+          "name": "Brother-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Chen He"
+        }
+      ],
+      "ranks": [
+        "None"
+      ],
+      "historical_notes": "Chen Gong (1) hailed from Pingchun in Jiangxia. With his fellow villager Li Tong he raised troops in Langling and many joined them. At some time during the mid to late AD 180s they held a feud with Zhou Zhi, who had some 2000 families under his command. Both Li Tong and Chen Gong wished to kill him but Chen Gong found this too difficult to accomplish. Li Tong, knowing Chen Gong would not interfere, invited Zhou Zhi to a meeting and killed him killed him while he was drunk. To resolve the commotion caused by this Li Tong led Chen Gong and killed Zhou Zhi’s faction, combining his troops with their own.\n\nLater Chen Gong was killed by his wife’s brother, Chen He, who also took possession of his troops. Li Tong defeated Chen He and cut off his head, placing it as a sacrifice on Chen Gong’s grave. (2)\n\n(1): Chen Gong (陈恭). Not the strategist who served Lü Bu.\n\n(2): SGZ Wei 18, Li Tong’s biography. Translation by Zhai Rong.",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 38,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -160,11 +270,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.283Z"
+  "source_count": 9,
+  "generated_at": "2026-03-18T10:20:10.004Z"
 }

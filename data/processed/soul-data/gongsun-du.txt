@@ -1,0 +1,48 @@
+=== 공손도 (公孫度, Gongsun Du) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+통솔:67 무력:71 지력:63 정치:51 매력:35 총합:287
+생:154 몰:204
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+[개요] 후한 말 세력을 이룬 동연의 제1대 수장이며 자는 승제(升濟) 또는 숙제(叔濟)로 유주 요동군 양평현 출신. 본명은 공손표(公孫豹), 개명(改名)이 공손도다.
+[생애] 그의 부친 공손연(公孫延)은 관리의 추적을 피해 현도군으로 이주했기 때문에 그곳에서 거주했다.공손도는 아버지가 일찍 사망하고 현도군 태수 공손역(公孫琙) 아래에서 일했는데, 공교롭게도 공손역의 18세에 요절한 아들 이름이 공손도의 원래 이름이었던 공손표였고, 공손도는 공손표와 태어난 해가 같았다. 이 때문에 공손역은 공손도를 자기 아들처럼 사랑하였고 좋은 혼처를 얻어 장가를 가도록 도와주기까지 하였으며, 특히 스승을 붙여주며 생업에 매진할 필요 없이 공부에만 전념할 수 있게 하는 등 물심양면으로 그를 지원해주었다. 이후 169년에는 사필이 공손도를 유도(有道)로 천거해서 공손도는 중앙 정계에 진출하기도 했다.그렇게 점차 관직이 올라가 기주 자사까지 승진했지만 뜬소문이 돌아 면직되었다. 이후 189년에 동탁의 수하 장수였던 서영이 공손도와 동향 출신이었기 때문에 공손도는 그의 추천으로 요동 태수가 되었지만, 중원 지역이 혼란해지자 왕을 자칭하였다.191년에 위명을 떨쳐 중원의 난리를 피해서 온 관녕, 병원, 왕렬과 같은 인물들이 공손도에게 의탁했다고 하며, 공손도는 객사를 비워 관녕, 병원 등을 맞이했다. 관녕의 충고로 병원이 고향으로 도망갔을 때 굳이 쫓지 
+
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 150–204
+[역사] Gongsun Du, called ‘Gongsun Du the Warlike’ in the novel SGYY, was the governor of Liaodong during the Late-Han era. He was born in the middle of the second century AD (Gardiner 60; also see Gardiner 92) in either Xiangping, the capital of Liaodong, or in Xuantu (another commandery entirely) (Gardiner 60). Both Liaodong and Xuantu bordered numerous hostile factions such as Puyo (in Chinese: Fuyu), Koguryo (in Chinese: Gaogouli) and the Xianbei. All of these foreign groups assaulted the region in Gongsun Du’s early lifetime (Gardiner 61).
+
+Around AD 167, when Gongsun Du was aged 18 by Chinese reckoning, Du began his career as a public official in the staff of Liaodong’s governor Gongsun Yu (Gardiner 62). Gongsun Yu became attached to his new subordinate and eventually arranged for Du’s form
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통69 무67 지71 정67 매19
+rotk11: 통67 무71 지63 정51 매35
+rotk12: 통67 무71 지66 정51 매?
+
+## 커뮤니티 평가
+(없음)

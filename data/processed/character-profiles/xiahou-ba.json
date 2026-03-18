@@ -1,0 +1,186 @@
+{
+  "name_kr": "하후패",
+  "name_en": "Xiahou Ba",
+  "name_cn": "夏侯霸",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 2,
+  "role": "위→촉 투항, 하후연 아들",
+  "stats": {
+    "leadership": 79,
+    "war": 84,
+    "intelligence": 77,
+    "politics": 55,
+    "charisma": 71,
+    "total": 366,
+    "birth": 202,
+    "death": 262
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 80,
+      "war": 85,
+      "intelligence": 77,
+      "politics": 54,
+      "charisma": 61
+    },
+    "rotk11": {
+      "leadership": 79,
+      "war": 84,
+      "intelligence": 77,
+      "politics": 55,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 79,
+      "war": 84,
+      "intelligence": 77,
+      "politics": 55
+    }
+  },
+  "novel_presence": {
+    "first_chapter": 102,
+    "last_chapter": 115,
+    "chapters": "102-104,106-107,109-111,113-115",
+    "chapter_count": 4
+  },
+  "biography": {
+    "namu": {
+      "개요": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n촉한의 거기장군하후패夏侯霸시호실전작위박창정후(博昌亭侯)최종직위거기장군(車騎將軍)성씨하후(夏侯)휘패(覇)자중권(仲權)아버지하후연(夏侯淵)생몰기간188년 이전?~259년 이전고향예주(豫州) 패국(沛國) 초현(譙縣)사망지정군산(定軍山)\n\n1. 개요2. 정사 삼국지2.1. 초기 생애2.2. 위나라 시절과 촉한의 북벌 저지2.3. 촉한의 중진2.3.1. 거기장군으로의 승진2.3.2. 장억과의 인연2.3.3. 종회에 대한 경고2.3.4. 강유의 북벌에 종군하다2.4. 불확실한 최후3. 삼국지연의4. 평가5. 기타6. 미디어 믹스",
+      "초기 생애": "조조군의 맹장으로 유명한 하후연의 차남이며 예주 패국 초현 사람이다. 아버지 하후연과 동생 하후영이 한중 공방전에서 전사했기 때문에 언제나 그 원수를 갚을 마음을 품고 있었다고 했다. 그래서인지 위나라에서의 하후패의 군사 커리어는 대촉전선에서 두각을 낸다.황초 연간(220년~226년)에 편장군이 되었다고 한다. 편장군이 상당수 유망주들이 맡는 직책임을 고려하면 위에서도 나름대로 유망주로 꼽혔었던 듯하다.워낙 하후패에 대한 기록이 없어서 상당 부분 다른 인물의 열전이나 어환의 『위략』에 의존해야 하는데 초기 생애에 대해서는 일족을 죽인 촉한에 원한을 품고 있었다는 부분과 편장군에 봉해졌다는 부분 외에는 유추할 만한 내용조차 없다.",
+      "평가": "아버지 하후연과 비슷한 스타일의 맹장으로 자오 전투 당시 위협에 빠지자 녹각에서 몸소 싸우며 증원군이 도착할 때까지 버티는 용맹한 모습을 보였다. 다만 하후연이 한중 공방전에서 어떻게 죽었는지 고려하면 아버지의 죽음을 반면교사로 받아들이지 않고 거의 똑같은 행동을 보이다가 스스로를 죽을 위기에 빠뜨리는 어리석은 모습을 보였다는 점은 비판할 수 있다.촉한에 투항한 이후에 장억과 강유와 친목을 도모하는 등 원수의 국가에서 놀라울 정도로 우호적인 모습을 보인다. 255년의 북벌에 참전해서 정확한 역할을 알 수 없지만 촉한 역사상 최대의 승리에 공헌하는 등의 모습을 보인다. 하지만 그 무렵 인재풀이 굉장히 부족했던 촉한에게 255년의 북벌 이외의 전쟁에 참전한 기록이 보이지 않는 점은 아쉽다고 할 수 있다.정리하자면 하후패는 244년 흥세 전투 참전으로부터 시작해서 247년 ~ 248년에 이르는 강유의 북벌을 저지하는 데 비록 미끼였지만 일조하고, 그 후 255년의 북벌에 참여하는 등 파란만장한 경력을 자랑하는 장수다. 기록이 워낙 부족해서 뛰어난 무력을 제외하면 정확히 어떤 능력을 가졌는지 알 수 없다.",
+      "기타": "개인적인 면에서 촉한에 엄청난 증오심을 가졌던 인물이 여의치 않은 정치 투쟁으로 아버지를 죽인 나라에 투항해 중진 행세를 해야 했다는 점은 굉장히 불우하다고 할 수 있다. 위나라에서 오랫동안 종군했으나 기록이 부족한 것은 투항의 영향일지도 모른다.동생으로 하후칭, 하후영, 하후위, 하후혜, 하후화가 있고 자녀로는 양호와 결혼한 딸 만세향군이 있다. 위나라의 대표적인 명문 성씨인 하후씨에 황충에게 죽은 하후연의 아들로 반평생 촉나라에 원한을 갖고 살았으나 사마씨의 발호로 인해 조씨와 하후씨가 권력을 잃고 사마씨가 득세하면서 권력 투쟁에 밀려 촉한으로 투항해 중신이 된 기구한 삶을 살다갔다. 기록마저 적어서 흩어진 〈배송지주〉와 여러 열전들의 기록을 참고해야만 인생을 파악할 수 있다. 그런데 그런 것치고는 커리어가 나쁘지 않은 편."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 185–258",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Wei"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Hui"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou He"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Heng"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Rong"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Cheng"
+        }
+      ],
+      "ranks": [
+        "General of Chariots (in AD 255)"
+      ],
+      "historical_notes": "Xiahou Ba was the second son of Xiahou Yuan (de Crespigny, 883). Xiahou Yuan was a famous general of Cao Cao’s, but was killed in battle against Liu Bei’s forces when Liu Bei took Hanzhong (de Crespigny 884–885). As a result, Xiahou Ba grew up despising Shu-Han (the kingdom Liu Bei founded) and hoping to avenge his father’s death (1). The Weilue states that he was known for taking good care of his troops. He was also on good terms with the “barbarian” peoples of the Northwest. (2)\n\nWhen the Emperor Cao Rui of Wei died, the government fell into the hands of Cao Shuang and Sima Yi. (3) Initially, Cao Shuang (a relative of Xiahou Ba’s) dominated the government. (4) Furthermore, Xiahou Xuan (a nephew of Xiahou Ba) served as Xiahou Ba’s superior. (5) This nepotistic arrangement sat perfectly fine with Xiahou Ba. In the year AD 244, Cao Shuang launched an invasion of Shu-Han, in which Xiahou Ba participated in a battle at Xingshi. (6) Here, he set up spiked barricades and stoutly defended his position. The Shu-Han army recognized him as Xiahou Ba and assaulted his camp. However, reinforcements arrived swiftly and helped Xiahou Ba drive Shu-Han back. (7) At length, the campaign turned against Cao Shuang, though, and Wei was forced to retreat. (8)\n\nXiahou Ba continued to serve on the frontier with Shu-Han. In AD 247, several Qiang barbarian tribes in the far Northwest rebelled against Wei and planned to submit to Shu-Han. Jiang Wei, a Shu-Han general, marched out to receive them. Guo Huai and Xiahou Ba fought a battle with Jiang Wei at Tao River. It is not explicitly clear who won this battle, but in the aftermath Jiang Wei was able to resettle several Qiang barbarian kings, along with their tribes, within Shu-Han territory. The kings he was unable to resettle, apparently, were reduced to submission again by Guo Huai. (9)\n\nAD 249 saw a drastic change in Xiahou Ba’s fortunes. Cao Shuang was put to death along with his entire clique. Xiahou Xuan was recalled from the Northwes... (truncated)",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tXiahou Ba, after joining Shu, did not play as significant a role in history as he did in the novel. In Sanguozhi, he appears only in AD 255 under Jiang Wei against Didao where he achieves success in battle.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 3628,
+      "first_translation": {
+        "translator": "StephenSo",
+        "excerpt": "Xiahou Ba (Zhongquan)\n夏侯霸 (仲權)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2000\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745628320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745628230' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745628195' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTranslator’s Note: This is a sub-biography of Xiahou Ba, from the bookWei Lue, included in Xiahou Yuan’sSanguozhibiography.\nXiahou Ba, styled Zhongquan. [His father Xiahou] Yuan was killed by Shu, thus Ba was always grinding his teeth in rage and desired to take his revenge on Shu. In the middle of Huangchu [AD 220–226], he was the Lieutenant-General (Pian Jiang Jun). Serving in Ziwu, Xiahou Ba was called to lead the Van, where he advanced Xing Shi Wei. He settled his camp within the Qu valley. The Shu people knew that the general was Xiahou Ba so they pointed troops to attack him. Xiahou Ba personally got into battle in between Lu Jiao. Lai Jiu arrived and the siege was broken. Later he was made General of the Right (you jiang jun) stationed in West Long. He raised his troops well and thus won their hearts. Until the middle of [the reign of] Zheng Shi [AD 240–249], he replaced Xiahou Ru as Protector of the Army That Subdues Shu (zheng shu hu jun). At the time, the General Who Suppresses the West (zheng xi jiang jun), Xiahou Xuan, was a younger cousin of Xiahou Ba and Xuan was a cousin of Cao Shuang. When Sima Xuan... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK12",
+      "ROTK13",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 78,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": true,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.039Z"
+}

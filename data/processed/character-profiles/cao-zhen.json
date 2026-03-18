@@ -1,0 +1,99 @@
+{
+  "name_kr": "조진",
+  "name_en": "Cao Zhen",
+  "name_cn": "曹真",
+  "courtesy_kr": "자단",
+  "courtesy_cn": "子丹",
+  "faction": "wei",
+  "tier": 2,
+  "role": "대장군, 제갈량 방어",
+  "stats": {
+    "leadership": 87,
+    "war": 74,
+    "intelligence": 68,
+    "politics": 72,
+    "charisma": 88,
+    "total": 389,
+    "birth": 185,
+    "death": 231
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 88,
+      "war": 72,
+      "intelligence": 67,
+      "politics": 71,
+      "charisma": 87
+    },
+    "rotk11": {
+      "leadership": 87,
+      "war": 74,
+      "intelligence": 68,
+      "politics": 72,
+      "charisma": 88
+    },
+    "rotk12": {
+      "leadership": 81,
+      "war": 74,
+      "intelligence": 70,
+      "politics": 72
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말과 삼국시대 위나라의 장수. 자는 자단(子丹). 조조의 조카뻘. 형제자매로 조빈과 덕양향주 조씨가 있다.",
+      "평가": "삼국지연의 후반부에 제갈량이 주인공 보정을 받고, 아울러 사마의가 최종 보스 보정을 받게 되면서 희생된 인물로 볼 수 있다.물론 그 빌드업 과정 중에 나름의 역할을 부여받았기에 연의에서도 조진은 일정 분량의 비중과 역할을 부여 받아 존재감을 보이기는 하니, 일각에서 언급하는 연의의 가장 큰 피해자까지는 아니다. 조진과 비슷한 급이지만 아예 활약을 통편집당한 주연보다는 확실히 사정이 낫다.그러나 정사 삼국지에서 묘사되는 조진은 독보적인 군재는 없어도 전장을 넓게 보고 정석적으로 움직이며 학소를 비롯한 장수들을 적재적소에 중용하여 제갈량의 초기 북벌을 모두 막아낸 훌륭한 대촉전선 총사령관이었는데, 이러한 업적들이 연의의 소설적 장치인 제갈량과 사마의의 라이벌 구도에 의해 대폭 축약된 것은 분명한 사실이기에 연의의 피해자 중 한 명인 것은 분명하다. 거기에다 연의에서 가장 치욕적인 죽음으로 각색당한 것은 덤이라고 할 수 있다.또한 조씨 혈족 2세대 측근 정치인으로서 조진의 역할은 위나라의 왕권 강화 및 안정에서의 측면도 매우 컸다. 실제로 조진 사후 위나라 조씨 왕권은 급속도로 약화되며, 결국 사마의 세력이 위나라를 찬탈하여 멸망시키고 서진을 건국하기에 이르른다. 이러한 조진의 역할적 부분, 즉 “일찍이 조조를 따라 종군하면서 군사적 경험을 쌓았으며 2세대 조씨 혈족으로 왕권 강화에 일조”했다는 점은 친족인 조휴와도 상당부분 공통점이 있다. 다만 조진은 조휴에 비해 좀 더 나은 평가를 받는 부분들이 있다.1. 조휴가 석정 전투에서 대패한 것에 비해, 조진의 경우에는 전선에 영향을 줄 만한 큰 패배는 없었고, 오히려 제갈량의 식량 부족을 이용해 침략을 막아내었다는 점.2. 조휴가 가규를 모함한 행동을 하였던 것에 반해, 조진의 경우엔 그러한 소인배적인 모습을 보이지 않았으며, 사령관의 위품을 보였다는 점.조진이 중요한 인물로 평가받는 또 하나의 이유는 정치적인 부분이다. 조조란 군벌이 중원 각지의 호족들을 포섭해가며 후한의 정권을 장악하여 기반을 마련하고 220년 조비가 헌제에게 선양을 받아 황제로 즉위하면서 후한을 멸망시키고 건국한 조위 정권 특성상 군부 요직은 믿을 수 있는 황실 가문인 조씨/하후씨가 철저히 장악하는 게 매우 중요했다. 후한의 정권을 장악한 조씨 정권 조조 시절에는 헌제의 조정과 조조의 승상부ㆍ군부가 암암리에 견제와 대립을 거듭했고 조비가 선양으로 후한을 멸망시키고 조위를 건국한 이후에도 탁류에 속하는 환관, 외척을 정권에서 배제해야했던 조위 정권은 군권을 놓칠 경우 사실상 무방비 상태가 되어 버릴 가능성이 높았기 때문이다.후한의 조씨 정권 조조 시기에는 하후돈이 그 역할을 맡았다. 하후돈의 경우 전장에서의 성과는 미미하나, 전선 후방에서의 치안 안전과 내부 반란의 진압에 유능한 친족 장수였고 조조는 그에게 후방을 맡김과 동시에 혈족 위주의 중앙집권 체계를 공고히 하는 데 성공하였다. 조비가 후한을 멸망시키고 위나라를 건국한 이후에 초대 황제 조비 시기에는 태위 가후는 명예직에 머무르고 대사마 조인이 실질적 군부 1인자로 그 역할을 이어받았다. 2대 황제 조예 시절엔 이 역할이 조휴와 조진에게 넘어간 것이다. 다시 말해 군재 자체보다는 정권 보위의 핵심인 정치군인으로서의 중요성이 높았던 인물이었다. 조인처럼 군재도 빼어나면 금상첨화지만 하후돈이 그랬듯 어차피 이 자리는 군재가 최우선되는 자리가 아니었다. 일선에서 구르는 건 사마의, 장합, 문빙, 만총 같은 사람들이 하고 그 사람들 잘 부릴 수 있을 정도의 능력과 신망만 있으면 되었다. 하후상, 조휴, 조진이 차례로 사망하자 군권은 거대 호족인 사마씨에 기울었고 조정 내 조씨-하후씨의 파워가 떨어진 그 결과는 조예 무덤의 흙이 마르기도 전에 터진 사마씨의 쿠데타였다.결론적으로 조진은 군재를 지나치게 과대평가할 인물은 아니지만, 적어도 적재적소의 용병을 하여 제갈량의 북벌을 막아낼 수준의 능력은 있었기에 연의에서 그려진 3류 도독 수준은 절대 아니었다. 또한 정치적인 면에서 조진의 가치 및 역할이 조위 입장에서의 혈족 위주 중앙집권을 공고히 하는 데에 더... (truncated)"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 8747,
+      "first_translation": {
+        "translator": "StephenSo",
+        "excerpt": "Cao Zhen (Zidan)\n曹真 (子丹)\nLived AD ?–231\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2000\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745032613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745032608' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745032608' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nCao Zhen, styled Zidan, was nephew of The Great Ancestor’s clan. When the Grand Ancestor raised his troops, Zhen’s father, Shao, was recruiting people but was killed in the region.AThe Grand Ancestor grieved that Zhen was orphaned so young, adopted him raising him with his own sons, hence was together with Wendi (Cao Pi). Once out hunting, he was chased by a tiger, single handedly shot at the tiger, killing it. The Grand Ancestor was strengthen by his courage and made him head of the tiger and leopard riders. Took punitive actions against the bandits of Ling Qiu, and was conferred the title of Marquis of Lingshou Ting upon eradicating them. As Assistant General he led his troops to attacked Liu Bei’s general at Bian, defeated him and was hence made General of Zhong Jian (Zhong Jian Jiang Jun). He was then sent to Chang’an to lead the Central Leading Army. At the time, Xiahou Yuan had perished at Yangping, which was worrying the Grand Ancestor. [The Grand Ancestor] sent Cao Zhen in the capacity as Army Protector of the Punitive Force against Shu to supervise Xu Huang and the others, beating Liu Bei’s general Gao Xiang at Ya... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.031Z"
+}

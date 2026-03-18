@@ -17,6 +17,28 @@
     "birth": 155,
     "death": 199
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 52,
+      "war": 66,
+      "intelligence": 72,
+      "politics": 17,
+      "charisma": 44
+    },
+    "rotk11": {
+      "leadership": 44,
+      "war": 65,
+      "intelligence": 61,
+      "politics": 16,
+      "charisma": 39
+    },
+    "rotk12": {
+      "leadership": 44,
+      "war": 65,
+      "intelligence": 65,
+      "politics": 16
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       3,
@@ -64,7 +86,146 @@
       "sections": {
         "Introduction": "袁术（？—199年），字公路，汝南郡汝陽縣（今河南商水）人，出身于官宦門閥，袁逢之子，袁基、袁绍之弟。东汉末年的军阀，官至左將軍。最初以南陽作為領地，之後立足淮南僭號稱帝，自立為仲氏政權，却得不到支持，反遭各方勢力圍攻及孤立，在位兩年半屡次兵败，最终因悲憤吐血而死。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 11–12",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Tang"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Feng"
+        },
+        {
+          "relation": "member",
+          "name": "Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Cheng"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Yao"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Nephew"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Yin"
+        },
+        {
+          "relation": "member",
+          "name": "Relative"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        }
+      ],
+      "ranks": [
+        "General of the Gentlemen of the Rapid Tiger Household",
+        "Marquis of Yangdi and General of the Left",
+        "Emperor (Self-Proclaimed",
+        "AD 197)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tYuan Shu did stop sending supplies to Sun Jian during the battles against Dong Zhuo. Later, he reversed this decision and so Sun Jian was never truly damaged by Shu’s with-holding of supplies.\n\tYuan Shu did write Lü Bu offering supplies for his attack on Liu Bei in Xiapi, but this occurred after the attack itself, which was prompted by Xu Dan. [SGZ: 7]\n\tWhile there is some limited room for debate, it seems the proper name of Yuan Shu’s Imperial State was Zhong 仲, not Cheng 成.\n\tYuan Shu’s relation to Yuan Shao is unclear due to a lack of information on Shao’s parentage. What is clear is that Yuan Shao and Yuan Shu are both grandsons of Yuan Tang and thus were either brothers or cousins, depending on the source.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 17891,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Yuan Shu (Gonglu)\n袁術 (公路)\nLived AD ?–199\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 6 (Wei 6)\nbyZL181\nonFebruary 28th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740707820' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758247618' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740725976' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1709669272' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYuan Shuwas styledGonglu. He was the son of theExcellency of Works,[Yuan] Feng, and the younger cousin of[Yuan] Shao.\nHe was famed for his gallant spirit. He was nominated asFilial and Incorruptand becamePalace Gentleman, shifting in multiple posts in and out [of the central government]. Later, he served asGeneral who Breaks and ChargesandHousehold General of the Rapid Tigers. WhenDong Zhuowas deposing theEmperor, he wanted to appoint[Yuan] Shuas theGeneral of the Rear, but[Yuan] Shufeared the danger of[Dong] Zhuo, so he fled toNanyang. It happened theGrand AdministratorofChangsha,Sun Jian, killed theGrand AdministratorofNanyang,Zhang Zi, so[Yuan] Shugained and occupied the commandery.Nanyanghad millions of households and people. But[Yuan] Shuwas extravagant, obscene, lavish, and wanting. He levied [heavy] taxes without limit. The common people suffered from him.\nHe and[Yuan] Shaowere acrimonious with each other and he was also unfriendly withLiu Biao, so he formed an alliance to the north withGongsun Zan.[Yuan] Shao, who had no peace with[Gongsun] Zan, formed an alliance to the south withLiu Biao. These brothers were estranged, and... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 5",
+      "Warriors Orochi 2"
+    ]
+  },
+  "community": {
+    "sentiment_score": 76,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -148,11 +309,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.282Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:10.002Z"
 }

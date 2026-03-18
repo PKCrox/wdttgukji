@@ -17,6 +17,28 @@
     "birth": 179,
     "death": 251
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 97,
+      "war": 63,
+      "intelligence": 96,
+      "politics": 93,
+      "charisma": 89
+    },
+    "rotk11": {
+      "leadership": 98,
+      "war": 63,
+      "intelligence": 96,
+      "politics": 93,
+      "charisma": 87
+    },
+    "rotk12": {
+      "leadership": 98,
+      "war": 63,
+      "intelligence": 98,
+      "politics": 93
+    }
+  },
   "novel_presence": {
     "first_chapter": 39,
     "last_chapter": 119,
@@ -46,7 +68,152 @@
       "sections": {
         "Introduction": "司馬懿（179年—251年9月7日），字仲達，河內郡溫縣（今河南省焦作市溫縣）人，三國時期曹魏太傅、政治家、軍事家，亦是日後西晉的奠基人。曾抵禦蜀漢丞相諸葛亮的北伐軍，堅守疆土。歷經曹操、曹丕、曹叡、曹芳四代君主，晚年發動高平陵之變，奪取曹魏的政權。為曹魏後期兩位權臣司馬師和司馬昭父親，晉朝開國皇帝晉武帝司馬炎祖父。\n\n嘉平三年（251年），魏朝諡舞陽宣文侯；次子司馬昭稱晉王後，追尊諡為晉宣王；孫司馬炎稱帝後，追尊為高祖宣皇帝，故也稱晉高祖、晉宣帝。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 179–251",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Jun"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Fang"
+        },
+        {
+          "relation": "member",
+          "name": "Older Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Lang"
+        },
+        {
+          "relation": "member",
+          "name": "Younger Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Fu"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Kui"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Xun"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Jin"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Tong"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Min"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Shi"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhao"
+        },
+        {
+          "relation": "member",
+          "name": "Sima Zhou"
+        }
+      ],
+      "ranks": [
+        "Senior Clerk for Literary Scholarship, Master of Records to the Office of the Chancellor, Major to the Army of the Chancellor, Master of Writing, Grand General Who Comforts the Army, General of the Agile Cavalry, Grand General of the Agile Cavalry, Marshal of Jing and Yu, Grand General, Grand Commandant, Palace Attendant, Director of Military Affairs, Intendant of the Affairs of the Masters of Writing, Grand Tutor"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tWas not nearly burned to death in Shangfang Gorge.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen 2",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 81,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -170,11 +337,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.122Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.815Z"
 }

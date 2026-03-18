@@ -1,0 +1,106 @@
+{
+  "name_kr": "공손속",
+  "name_en": "Gongsun Xu",
+  "name_cn": "公孫続",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 63,
+    "war": 68,
+    "intelligence": 54,
+    "politics": 63,
+    "charisma": 66,
+    "total": 314,
+    "birth": 176,
+    "death": 199
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 60,
+      "war": 69,
+      "intelligence": 53,
+      "politics": 61,
+      "charisma": 62
+    },
+    "rotk11": {
+      "leadership": 63,
+      "war": 68,
+      "intelligence": 54,
+      "politics": 63,
+      "charisma": 66
+    },
+    "rotk12": {
+      "leadership": 63,
+      "war": 68,
+      "intelligence": 57,
+      "politics": 63
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "公孫續(?~199)1. 개요2. 생애3. 미디어 믹스",
+      "생애": "198년에 원소의 공격으로 역경루까지 몰린 공손찬은 아들 공손속을 장연에게 보내 원군을 요청해 장연이 공격하는 것에 맞춰 공격을 시도하려고 했지만 관정의 만류로 포기한다.199년에 공손속은 장연과 함께 원소군을 치기 위해 10만을 이끌고 오는데, 공손찬은 이에 성 밖의 공손속, 장연군과 합게 원소군을 협격하기 위해 행동방침을 주는 편지를 공손속에게 전해줬지만 이 편지가 원소군 손에 들어간다. 원소군이 약속된 신호를 보내자 공손찬군은 우군의 도움도 없이 밖으로 나왔다가 패하자 다시 들어가 농성하다가 결국 공손찬이 스스로 목숨을 끊었으며, 공손속은 뒤늦게 도우러 왔지만 저각(屠各)의 공격을 받고 죽는다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Zan"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.074Z"
+}

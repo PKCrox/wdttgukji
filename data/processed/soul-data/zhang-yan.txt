@@ -1,0 +1,53 @@
+=== 장연 (張燕, Zhang Yan) ===
+자: 불명 (불명)
+진영: other | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+185년: 흑산적 출현
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Zhang Yan
+張燕
+Lifespan Unknown
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 8 (Wei 8)
+byZhai Rong
+in2011
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1293883200' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745032550' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745032239' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745032239' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Zhang Yan, originally surnamed Chu, came from Zhending in Changshan. When the Yellow Turbans rose up in rebellion, Zhang Yan gathered some youths to form a band of brigands
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통82 무80 지54 정55 매61
+rotk12: 통76 무81 지57 정48 매?
+
+## 커뮤니티 평가
+(없음)

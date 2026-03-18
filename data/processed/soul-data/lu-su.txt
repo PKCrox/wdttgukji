@@ -65,3 +65,21 @@ Sun Quan: 군신 (강도80, 외교 참모)
 
 ## EN Wikipedia
 Lu Su (172–217), courtesy name Zijing, was a Chinese military general and politician serving under the warlord Sun Quan during the late Eastern Han dynasty. In the year 200, when Sun Quan had just taken over the reins of power, his adviser Zhou Yu recommended Lu Su as a talent to Sun Quan. As one of Sun Quan's most important advisers in the warlord's early career, Lu Su is best known for making so
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 172–217
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통70 무55 지76 정77 매73
+rotk11: 통80 무56 지92 정90 매89
+rotk12: 통84 무56 지92 정90 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

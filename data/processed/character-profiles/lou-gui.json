@@ -1,0 +1,81 @@
+{
+  "name_kr": "누규",
+  "name_en": "Lou Gui",
+  "name_cn": "婁圭",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 52,
+    "war": 13,
+    "intelligence": 87,
+    "politics": 67,
+    "charisma": 15,
+    "total": 234,
+    "birth": 143,
+    "death": 212
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 54,
+      "war": 19,
+      "intelligence": 88,
+      "politics": 89,
+      "charisma": 8
+    },
+    "rotk11": {
+      "leadership": 52,
+      "war": 13,
+      "intelligence": 87,
+      "politics": 67,
+      "charisma": 15
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "중국 후한 말의 군웅이자 삼국시대 위나라의 장수로 자는 자백(子伯). 형주 남양군 사람이다. 볼때마다 뉴규? 가 생각나서 황당한 이름"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.081Z"
+}

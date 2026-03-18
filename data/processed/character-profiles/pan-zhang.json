@@ -1,0 +1,76 @@
+{
+  "name_kr": "반장",
+  "name_en": "Pan Zhang",
+  "name_cn": "潘璋",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 78,
+      "intelligence": 69,
+      "politics": 34,
+      "charisma": 7
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 80,
+      "intelligence": 74,
+      "politics": 28
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5683,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Pan Zhang (Wengui)\n潘璋 (文珪)\nLived AD ?–234\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyLady Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744995784' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744995781' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744995781' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nPan Zhang, styled Wengui, was from Fagan in Dongjun. He became a follower of Sun Quan when Sun Quan became Chief of Yanxian. Pan Zhang delighted in gambling and drinking; however, he was poor, and frequently he had to buy wine on credit. Whenever his creditors came to his door, he would always say that he would pay his debts when he became prosperous. Sun Quan considered the man quite extraordinary and took a liking to him; and so, having had him recruit a hundred-odd men, he made him a captain. When Pan Zhang obtained merit from fighting bandits, he was stationed as a Major of a Separate Command. Afterwards, he became the police chief of the great market of Wu, and all banditry ceased upon that. For that, Pan Zhang gained a name for himself, and was promoted to be prefect of Xi’an prefecture in Yuzhang. At that time Liu Biao was in Jingzhou and the people [living near the border] were frequently attacked [by him]; but once Pan Zhang took command of the region, the enemy did not cross the border again. The neighbouring prefect Jianchang was troubled by rebels. Thus Pan Zhang was transferred to Jianchang and the title of Colonel of Military Val... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.068Z"
+}

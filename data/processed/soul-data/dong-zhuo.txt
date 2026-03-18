@@ -82,3 +82,26 @@ Lu Bu: 군신 (강도78, 의부자 관계)
 
 ## EN Wikipedia
 Dong Zhuo, courtesy name Zhongying, was a Chinese military general, politician, and warlord who lived in the late Eastern Han dynasty. At the end of the reign of the Eastern Han, Dong Zhuo was a general and powerful minister of the imperial government. Originally from Liang Province, Dong Zhuo seized control of the imperial capital Luoyang in 189 when it entered a state of turmoil following the de
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 10–11
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Dong Zhuo was not historically saved by Liu Bei, Zhang Fei and Guan Yu while fighting the Yellow Turbans.
+	Dong Zhuo was never presented with the “Seven-Star Sword” by Cao Cao after a failed assassination attempt.
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통81 무83 지68 정22 매36
+rotk11: 통74 무87 지69 정19 매37
+rotk12: 통85 무87 지73 정59 매?
+
+## 커뮤니티 평가
+감정점수: 72, 언급: undefined회
+키워드: 

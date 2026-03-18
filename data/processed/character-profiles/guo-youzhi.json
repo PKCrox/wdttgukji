@@ -1,0 +1,96 @@
+{
+  "name_kr": "곽유지",
+  "name_en": "Guo Youzhi",
+  "name_cn": "郭攸之",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 13,
+    "war": 9,
+    "intelligence": 68,
+    "politics": 79,
+    "charisma": 60,
+    "total": 229,
+    "birth": 190,
+    "death": 259
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 15,
+      "war": 10,
+      "intelligence": 60,
+      "politics": 74,
+      "charisma": 60
+    },
+    "rotk11": {
+      "leadership": 13,
+      "war": 9,
+      "intelligence": 68,
+      "politics": 79,
+      "charisma": 60
+    },
+    "rotk12": {
+      "leadership": 28,
+      "war": 9,
+      "intelligence": 69,
+      "politics": 79
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "郭攸之생몰년도 미상삼국시대 촉한의 정치가이자 형주 남양군 사람으로,《삼국지집해》에 따르면 자는 연장(演長)."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.057Z"
+}

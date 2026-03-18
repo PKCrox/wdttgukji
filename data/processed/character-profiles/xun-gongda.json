@@ -8,6 +8,7 @@
   "tier": 1,
   "role": "순욱 조카, 모사",
   "stats": null,
+  "stats_multi": null,
   "novel_presence": {
     "chapters_from_cooccurrence": [
       2,
@@ -52,8 +53,48 @@
       "sections": {
         "Introduction": "荀攸（157年—214年），字公达，漢末豫州颍川颍阴（今河南许昌）人，三國時代曹魏著名政治家、軍事家。尚書令荀彧的堂侄，荀攸祖父荀昙，官至廣陵太守。荀攸被曹操徵为汝南太守，入为尚书，以功封陵树亭侯。建安十二年，转为中军师。魏國初建，又被封为尚书令；建安十九年（214年），荀攸跟從曹操征孫權，在路上去世，追諡曰敬。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 157–214",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Great Uncle"
+        },
+        {
+          "relation": "member",
+          "name": "Xun Shang"
+        }
+      ],
+      "ranks": [
+        "Gentleman in Attendance of the Yellow Gates",
+        "Grand Administrator of Shu Commandery",
+        "Master of the Army",
+        "Prefect of the Masters of Writing"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
   },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
   "dialogues": [
     {
       "chapter": 32,
@@ -161,11 +202,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
     "stats": false,
+    "multi_stats": false,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.231Z"
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:09.938Z"
 }

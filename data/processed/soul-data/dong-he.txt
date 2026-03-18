@@ -1,0 +1,54 @@
+=== 동화 (董和, Dong He) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 64–65
+
+## 정사 영역본 (Kongming SGZ)
+Dong He (Youzai)
+董和 (幼宰)
+Lifespan Unknown
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 39 (Shu 9)
+byZL181
+onMarch 1st, 2025
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740868200' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756749282' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740886262' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740857402' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Dong He, styledYouzai, was fromZhijiang,Nan commandery. His ancestors were originally fromJiangzhou,Ba commandery.
+During the last stages ofHan,[Dong] H
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통59 무35 지73 정84 매71
+rotk12: 통57 무34 지75 정87 매?
+
+## 커뮤니티 평가
+(없음)

@@ -1,0 +1,89 @@
+{
+  "name_kr": "정욱",
+  "name_en": "Cheng Yu",
+  "name_cn": "程昱",
+  "courtesy_kr": "중덕",
+  "courtesy_cn": "仲德",
+  "faction": "wei",
+  "tier": 2,
+  "role": "조조 초기 참모",
+  "stats": {
+    "leadership": 70,
+    "war": 49,
+    "intelligence": 90,
+    "politics": 79,
+    "charisma": 58,
+    "total": 346,
+    "birth": 141,
+    "death": 220
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 56,
+      "intelligence": 92,
+      "politics": 85,
+      "charisma": 50
+    },
+    "rotk11": {
+      "leadership": 70,
+      "war": 49,
+      "intelligence": 90,
+      "politics": 79,
+      "charisma": 58
+    },
+    "rotk12": {
+      "leadership": 70,
+      "war": 49,
+      "intelligence": 90,
+      "politics": 79
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "程昱141년 ~ 220년후한 말과 삼국시대 위나라의 인물. 자는 중덕(仲德), 본명은 정립(程立).",
+      "평가": "정욱이 연주에서 대대로 살았다는 점을 미루어 볼 때 삼국지에 등장하는 대부분의 인물들이 그렇듯 연주 동아현의 호족이었을 가능성이 높다. 정사를 보면 동아현의 현령과도 스스럼없이 대화를 나누며 사병까지도 동원하는 모습을 보여준다. 또한 연주자사 유대가 그를 여러 차례 불렀고 조조도 연주를 얻자마자 그를 부른다. 그리고 이로 말미암아 정욱은 연주에서 인망이 높은 지역 유지였다고 추정해 볼 수 있다.정욱은 일평생 자신의 다재다능함을 보여주었다. 일이 돌아가는 상황을 정확하게 파악하고 항상 가장 적절한 대응책을 제시한 지략가였으며 군사를 지휘하여 적을 막거나 혹은 공격하는 데 실력을 발휘한 장수이기도 했다. 조조가 원정을 떠날 때면 근거지를 지켰던 걸로 보아 보급에도 능했으며, 동시에 무척 신임을 받은 인물이며 관도대전 이후 견성을 지킬때를 보면 담력도 대단했다. 욕심이 없는 것은 정욱의 큰 미덕이었다. 특히나 조조가 중원을 평정했을 때는 '족함을 알면 치욕을 당하지 않는다.'라고 말하며 스스로 병권을 반납하고 칩거에 들어간 적도 있다. 물론 조조는 그런 그를 계속해서 아끼고 더욱 무겁게 여겼다.정욱은 대기만성형 인물이기도 하다. 그가 직접 군사를 이끌고 원상과 원담을 공격했을 때는 이미 환갑을 한참이나 넘긴 나이였다. 그럼에도 불구하고 워낙 여러 방면에서 뛰어난 활약을 했기에 정욱이야말로 노익장의 상징이라 할 수 있다. 정욱은 자신이 원하는 주군을 찾으며 차분히 때를 기다렸고 마침내 조조를 만났다. 당시 기준으로 출사할때 나이 오십, 그러나 정욱은 거의 삼십 년 동안이나 자신의 다재다능함을 유감없이 떨쳐 보임으로써 사서에 이름을 남겼다.관도대전 전후의 행적으로 보아 정욱은 다른 모사들과는 달리 병사를 직접 지휘하는 사령관의 역할을 하기도 하였음을 알 수 있다. 당시 관직체계 자체에 약간 그런 면이 있기도 하지만, 정욱은 문-무관의 구별이 명확한 인물이 아니라 어느 정도 경계선상에 있는 인물이었다. 사후 장군직인 거기장군으로 추증되기도 했고, 생전의 마지막 직책인 위위 역시 장군직은 아니지만 황실의 경비를 담당하는 군사적인 성격이 있는 직책이었다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.034Z"
+}

@@ -1,0 +1,114 @@
+{
+  "name_kr": "요화",
+  "name_en": "Liao Hua",
+  "name_cn": "廖化",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 73,
+    "war": 76,
+    "intelligence": 64,
+    "politics": 49,
+    "charisma": 66,
+    "total": 328,
+    "birth": 170,
+    "death": 264
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 70,
+      "war": 71,
+      "intelligence": 64,
+      "politics": 49,
+      "charisma": 65
+    },
+    "rotk11": {
+      "leadership": 73,
+      "war": 76,
+      "intelligence": 64,
+      "politics": 49,
+      "charisma": 66
+    },
+    "rotk12": {
+      "leadership": 73,
+      "war": 76,
+      "intelligence": 69,
+      "politics": 49
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말과 삼국시대 촉한의 장수다. 본래 이름은 요순(廖淳)이며, 자는 원검(元儉)이다. 형주 양양군 중로현 사람.",
+      "평가": "현대에서 요화의 평가는 흔히 말해 계륵에 가까운데, 이는 전적으로 삼국지연의를 필두로 한 2차 창작물에 의해 만들어진 이미지이다. 사실 삼국지연의만 놓고 보면 요화는 계륵이라고 평가받기에 딱 좋다. 등장 자체는 무려 관우의 오관육참 시기, 그러니까 얼추 200년 즈음부터 빠르게 등장하는데 관직은 정사를 따라가서 249년에도 태수직이나 맡고 있었고 260년이 다 돼서야 거기장군까지 올라간다. 삼국지연의만 놓고 보면 등장해서 50년 가까이 태수 직에 연연하다가 60년이 지나서야 알아주는 직책이 된 것이다. 오호대장군으로 대표되는 1세대에 비해 크게 떨어진 당시 촉한 말기의 네임밸류를 생각하면 '아, 요화는 크게 뛰어나진 않아도 충성심이 높고 오래 살아서 저기까지 올라갔구나.' 라고 평가받기 딱 좋은 상황인 것이다.그러나 실제로는 오호대장군이나 위연, 오의, 왕평, 강유, 장억, 마충 등의 촉한이 자랑하는 화려한 라인업의 장군들까진 아니어도 충분히 자신의 능력을 증명한 충성심 깊은 장수였다고 봐야 한다. 우선 임관 자체가 한중공방전 직후라고 하니 얼추 219년 즈음, 그리고 형주를 빼앗길 당시 탈출하여 오를 공격하려던 유비에게 합류해 의도태수 직을 맡았다 하니 이때가 얼추 220~221년 즈음일 것이다. 즉 촉한에 임관해 1~2년만에 태수직을 맡았으니 그 사람 보는 눈이 예리했던 유비가 요화에게 거는 기대는 꽤 컸다고 보아야 한다.이후 249년까진 음평태수로 전전하는 것은 같지만, 촉한이 멸망할 263년 당시에는 우거기장군이었다. 비록 장익과 관직을 양분했다고는 하나, 삼국지 시대에 무관 서열 3위인 직위이다. 그냥 단순히 음평에서 세금 잘 걷고 백성들 잘 다스렸다고 줄 일은 절대 없을 관직이니, 애초에 요화가 음평태수 겸 장군의 직을 동시에 맡고 있었고 크고 작은 활약들이 반복되었다고 보아야 한다. 강유를 몇 번이고 엿먹인 그 곽회의 예상을 깨부수고 곽회의 계획에 찬물을 끼얹은 전적도 있는 만큼, 능력은 확실히 어느 정도 있던 것으로 보인다. 다만 대중에게 알려진 여러 촉한의 장수들에 비하면 굵직한 활약이 없었으니 그 점이 아쉬울 따름이다. 충성심 또한 상당히 깊었는데, 관우가 패주하고 형주를 빼앗길 당시 낮은 직위였음에도 불구하고 오에 투항하지 않고 죽을 각오를 한 채 촉한에 돌아와 촉한이 멸망할 때까지 촉한과 운명을 함께 한 것도 좋게 평가받을 만하다고 볼 수 있다.",
+      "기타": "정사만 따지면 나이 관련해서 그렇게 심하게 논란이 생길 인물은 아니었다. 그런데 삼국지연의에서 도적단의 우두머리로 나오고 하필 노란 두건을 한 데다 관우가 요화를 황건적의 잔당으로 지레짐작하면서 나이 논란이 시작되었다. 황건적의 난이 184년에 있었고, 적어도 그 때 20세 쯤이라고 가정해도 100살 가까이 살았단 얘기가 되기 때문이다. 연의에서 관우와 엮다 보니 산적이 되었고 하필 복색 때문에 황건적 잔당으로 오인당하면서 본의 아니게 장수하게 된 것이다. 연의 본문에서 요화가 황건적이라는 말은 전혀 없다. 요화는 그저 자체적으로 무리를 모아 일어난 독자적인 도적이었을 뿐이며 단지 노란 두건 차림이었을 뿐이었다. 그런데 관우가 요화를 황건적의 잔당으로 지레짐작하고 나중에 진짜 장각 휘하의 무장이었던 배원소, 주창이 등장하면서 이들과 혼동을 한 이들이 요화를 배원소, 주창처럼 장각 시절부터 활동한 황건적으로 오인해 오해를 키운 것이다. 물론 정사만 따져도 요화가 당대 기준으로 충분히 장수한 것은 사실이다. 촉서 종예전을 보면 258년 종예가 요화에게 \"우리들의 나이가 이미 70을 넘었는데…(후략)…\" 고 말했는데, 적게 잡아 189년생이라고 쳐도 76살은 산 셈이고 잘하면 제갈량보다 연상일지도 모른다. 90을 훌쩍 넘기며 장수한 사섭이나 여대, 사마부, 내민만큼은 아니라고는 해도 그 시대에 80세 가까이(혹은 그 이상) 살았다면 꽤나 오래 산 셈이다. 삼국지 내에서 촉한의 건국부터 멸망까지 지켜본 인물이다.주창과 초반 행적이 거의 같으며 관우 아래에서 성장했다는 점, 그리고 주창이 연의 한정의 가공인물이라는 점 때문에 요화가 주창의 모델이라는 나그네의 가설도 있다. 하지만 이는 근거가 없는 주장이며, 실제 기록을 참조하면 충분히 반박할 수 있다. 요화는 정사 삼국지에서는 형주의 호족 집안 출신의 자제로 기록되어 있으며, 나름대로 지방 명문가 출신으로 무난하게 관리 생활을 하다가 관우의 죽음과 오나라의 형주 점령 이후 노모를 모시고 유비군에 귀순하면서 유비를 감동시켜 두각을 드러낸 인물이다. 이는 삼국지연의에서 '황건적으로 나왔다가 관우에게 감회되어 동료가 되는 줄거리'와 전혀 다르다. 그러므로 요화의 기록이 '황건적에서 관우의 부하가 되는' 주창 이야기의 원형이 되었다고 볼 수 없다. 요화는 실존인물이지만 연의 속 행적의 대부분, 특히 초반의 행적은 삼국지연의의 창작이다. 주창의 경우도 '원형'이 요화와는 무관하다. 주창의 창작 시기는 상당히 오래되어서, 삼국지연의 이전의 작품에도 등장하는 인물이다. 하지만 다른 작품의 주창은 삼국지연의와는 전혀 다른 모습을 보여주는 경우가 많다. 예를 들어 화관색전의 주창은 서천의 장수로 등장한다. 즉, 주창의 모습 역시 대부분 연의 저자의 창작에 기반한 것이다. 오히려 본래 주창은 '신장 관우'의 보좌역으로 설정되었기 때문에 그 역시 '신장'에 가까운 풍모를 보이지만, 삼국지연의에서는 도적&일반장수 수준으로 격하되었다. 따라서 요화가 주창의 모델이라는 설은 앞뒤가 맞지 않는다. 나그네는 요화가 실존인물이라는 것을 알고, 실제 정사 삼국지는 참조하지 않고 황건적에서 귀순했다는 부분까지 정사에 있다고 착각해서 이런 주장을 펼친 것으로 보인다. 결과적으로 요화와 주창의 이야기가 삼국지연의에서 비슷한 것은 그저 우연일 뿐이다. 그저 연의에서 작가가 그렇게 썼기 때문에 만나는 장면이 비슷하게 보이는 것뿐이다. 또한 당시 기록을 보면 도적으로 살다가 일약 등용되어 출세한 인물이 적지 않으므로 이게 별로 특별한 묘사도 아니다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 185–264",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [
+        "Chief Secretary",
+        "Grand Administrator of Yidu",
+        "Advisor to the Prime Minister",
+        "Controller of the Guangwu Region",
+        "General of the Chariots",
+        "Cavalry of the Right",
+        "Inspector of Bing Province",
+        "Marquis of Zhongxiang"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tThere is no historical mention of him being in the Yellow Scarves\n\tFaked his own death to get back to Shu—he wasn’t sent as an envoy to Meng Da to request help",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 2569,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Liao Hua (Yuanjian)\n廖化 (元儉)\nLived AD ?–263\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 45 (Shu 15)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744994652' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744994615' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744994615' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLiao Hua, styled Yuanjian, and who was formally named Chun, was a native of Xiangyang. He was the chief secretary for Guan Yu, General of the Front. When Guan Yu was defeated, Liao Hua was taken into Wu. However, he desired to return to the Former Ruler (Liu Bei). He thus feigned death and tricked those around him into believing that he was dead. Upon that, he took his mother and escaped westward, traveling night and day. Right then, the Former Ruler was marching eastward, and the two met up at Zigui. The Former Ruler was greatly pleased, and instated Liao Hua as grand administrator of Yidu.\nAfter the passing away of the Former Ruler, Liao Hua became advisor to the Prime Minister, and then onto becoming the controller of the Guangwu region. Later on, he was promoted to the position of General of the Chariots and Cavalry of the Right, given thejieprivileges, and made designated inspector of Bing Province. He was also granted the title of Marquis of Zhongxiang. He was famous for his determination and prowess. His position was equal to that of Zhang Yi’s and second only to Zong Yu.A\nHan Jin Chunqiu: In the 5th year of Jingyao (AD 262), Jiang We... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 5,
+  "generated_at": "2026-03-18T10:20:10.061Z"
+}

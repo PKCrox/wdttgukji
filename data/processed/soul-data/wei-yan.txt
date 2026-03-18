@@ -69,3 +69,21 @@ Liu Bei: 군신 (강도79, 53회 귀순)
 
 ## EN Wikipedia
 Wei Yan, courtesy name Wenchang, was a Chinese military general and politician of the state of Shu Han during the Three Kingdoms period of China. Originally a subordinate of the warlord Liu Bei during the late Eastern Han dynasty, Wei Yan rose through the ranks and became a general after Liu Bei seized control of Yi Province in 214. His performance in battle helped him to become a prominent figure
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통85 무92 지69 정43 매34
+rotk11: 통81 무92 지69 정49 매45
+rotk12: 통85 무92 지72 정49 매?
+
+## 커뮤니티 평가
+감정점수: 92, 언급: undefined회
+키워드: 

@@ -68,3 +68,34 @@
 
 ## EN Wikipedia
 Ma Liang may refer to:
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 186–222
+
+## 정사 영역본 (Kongming SGZ)
+Ma Liang (Jichang)
+馬良 (季常)
+Lived AD 186–222
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 39 (Shu 9)
+byZL181
+onDecember 14th, 2022
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1671060060' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760388527' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741408914' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740857627' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Ma Liang, styledJichang, was fromYicheng[宜城],Xiangyang[襄陽].
+He had five brothers, all of whom had talented reputations. Their hometown would say o
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통46 무25 지84 정91 매86
+rotk11: 통46 무23 지85 정90 매86
+rotk12: 통53 무23 지88 정90 매?
+
+## 커뮤니티 평가
+감정점수: 100, 언급: undefined회
+키워드: 

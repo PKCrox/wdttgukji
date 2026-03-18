@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "군율의 화신, 번성 항복",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 85,
+      "war": 77,
+      "intelligence": 72,
+      "politics": 63,
+      "charisma": 47
+    },
+    "rotk12": {
+      "leadership": 72,
+      "war": 79,
+      "intelligence": 38,
+      "politics": 40
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       10,
@@ -64,7 +79,62 @@
       "sections": {
         "Introduction": "于禁（—221年），字文則，泰山鉅平县（今中国山東省泰安市宁阳县磁窑镇）人，东汉末曹魏左将军，五子良將之一。以堅毅穩重著稱，但對待部下嚴厲，杀舊友昌豨以奉公。早年攻呂布、征黄巾、禦張繡、破袁術、拒袁紹，戰功赫赫。淯水之難，唯有于禁能安定局面，讓曹軍重整旗鼓，曹操称赞「將軍在亂討暴，整兵堅壘，有不可動之節，雖古之名將，何以加之！」\n\n在樊城之戰中因遭水災所困，率領七軍向關羽投降。后關羽兵敗麥城，于禁又以俘虜的身份落入東吳手中。歸魏後遭到魏文帝曹丕以壁畫嘲諷投降之事，羞慚怨恨，病發而亡，諡曰厲侯。北宋孔平仲作《于將軍》詩，叹「淯水之師勇冠世，英雄成敗皆偶然。」"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 25161,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Yu Jin (Wenze)\n于禁 (文則)\nLived AD ?–221\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 17 (Wei 17)\nbyZL181\nonMarch 14th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1741911600' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760056896' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741926015' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741535342' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYu Jin, styledWenze, was fromJuping[鉅平],Taishan[泰山].\nWhen theYellow Scarvesrebelled,Bao Xinrecruited and gathered soldiers.[Yu] Jinwas among the followers.\nWhen theGrand ProgenitorledYan province[兗州],[Yu] Jinand his comrades all went to him, and they served as lieutenants of one hundred soldiers, being subordinate to GeneralWang Lang.[Wang] Langsaw him as extraordinary and recommended[Yu] Jinwas befitting a Grand General in talent. When theGrand Progenitorsummoned, met, and talked with him, he conferred him to be ArmyMajorand had him led troops toXu province[徐州], attackingGuangqi[廣威] and capturing it. He was conferred asCommandant who Breaks Formations. He followed to suppressLü BuatPuyang[濮陽], detaching and defeating two camps of[Lü] Busouth of the county, then separated again to defeatGao YaatXuchang[須昌]. He also followed to attackShouzhang[壽張],Dingtao[定陶], andLihu[離狐], and he besiegedZhang ChaoatYongqiu[雍丘], and all was captured. He followed to conquer theYellow ScarvesLiu PiandHuang Shao, among others, garrisoning at Banliang.1[Huang] Shaoand the others struck the camp of theGrand Progenitorover the night, but[Yu] Jinled his subordi... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 7",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 75,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -173,11 +243,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.213Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:09.909Z"
 }

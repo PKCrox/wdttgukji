@@ -1,0 +1,85 @@
+{
+  "name_kr": "양의",
+  "name_en": "Yang Yi",
+  "name_cn": "楊儀",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 68,
+      "war": 44,
+      "intelligence": 82,
+      "politics": 79,
+      "charisma": 17
+    },
+    "rotk12": {
+      "leadership": 68,
+      "war": 40,
+      "intelligence": 82,
+      "politics": 79
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 6044,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Yang Yi (Weigong)\n楊儀 (威公)\nLived AD ?–235\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 40 (Shu 10)\nbyjiuwan (Giao Chau)\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742706704' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742706698' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742706698' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYang Yi styled Wei Gong was a man from Xiang Yang. In the middle of Jian An1he was the Secretariat (zhu bu) under the Inspector of Jing Zhou, Fu Qun. He then betrayed Fu Qun to serve under the Grand Administrator of Xiang Yang, Guan Yu. Guan Yu who was ordered to attack [Cao] Cao, dispatched a messenger westward to the First Sovereign [Liu Bei]. [Liu Bei] 與語論軍國計策, 政治得失, 大悅之, 因辟為左將軍兵曹掾.•••\nThe reign years for the style Jian An was from AD 196 to AD 220.↩\nWhen Liu Bei became the King of Han Zhong, Yang Yi was made Imperial Secretariat, Master of Writing (shang shu). Liu Bei later led an invasion against Wu. Yang Yi and the Prefect Imperial Secretariat, Liu Ba did not get along. Subsequently he was transferred to the remote region to be the Grand Administrator (tai shou) of Hong Nong.\nIn the third year of Jian Xing [AD 225], Prime Minister [Zhuge] Liang made him Advisor to the Army (can jun). After the affairs settled, [Zhuge Liang] went southward. In the fifth year [AD 227], he followed Zhuge Liang into Han Zhong. In the eighth year [AD 230], he was transferred to become Chief Clerk (chang shi) and appointed General who Soothes the Ar... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.060Z"
+}

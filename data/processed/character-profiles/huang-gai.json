@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "고육지계, 적벽 화공",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 79,
+      "war": 83,
+      "intelligence": 69,
+      "politics": 68,
+      "charisma": 81
+    },
+    "rotk12": {
+      "leadership": 80,
+      "war": 83,
+      "intelligence": 70,
+      "politics": 65
+    }
+  },
   "novel_presence": {
     "first_chapter": 5,
     "last_chapter": 67,
@@ -36,7 +51,92 @@
       "sections": {
         "Introduction": "黃蓋（2世紀—215年前），字公覆，荊州零陵泉陵（今湖南零陵北）人。東漢末年將領，官至偏將軍、武陵太守，東吳孫氏三代元勳之一；是江東十二虎臣之一。赤壁之戰中率先提出火攻計策，親自詐降從而大敗曹操。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 145–208",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Huang Bing"
+        }
+      ],
+      "ranks": [
+        "Major With a Separate Command",
+        "Chief of Chunju",
+        "Prefect of Xunyang",
+        "Colonel of Danyang",
+        "General of the Interior",
+        "Grand Administrator",
+        "Lieutenant-General"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHuang Gai did surrender to Cao Cao with intention of betraying him during the Battle of Red Cliffs, but he was not beaten or punished to make it more believable.\n\tThe ‘Magnificent Five of Wu’ is a fan creation with no historical basis. Huang Gai was not a part of any such group.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 13655,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Huang Gai (Gongfu)\n黃蓋 (公覆)\nLived ADca.145–ca.208\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyZL181\nonMarch 10th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1741584120' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756850932' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741651280' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741363879' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nHuang Gai, styledGongfu, was fromQuanling[泉陵],Lingling[零陵].A\nTheBook of Wustates: He was a descendant of the formerGrand AdministratorofNanyang, Huang Zilian [黃子廉]. His branch split off and his ancestor moved toLingling[零陵], where the family settled.[Huang] Gaiwas orphaned when he was young, suffered from the deaths of his relatives, and experienced hardships in their fullest. Yet, he had great aspirations, and though he was poor, he was not the same as ordinary people, for he often learned how to write letters and studied about matters of warfare when he had free time from carrying firewood on hisback.1•••\nHere, “carrying firewood on his back” [負薪] is a metaphor for a very humble life.↩\nHe first served as an official for his commandery, then was nominated asFilial and Incorruptand recruited into the bureau of theExcellencies. WhenSun Jianwas mustering righteous troops,[Huang] Gaifollowed him.[Sun] Jiandefeated the hill bandits in the south and he chased offDong Zhuoin the north.[Huang] Gaiwas conferred asMajor of a Separate Unit. When[Sun] Jiandied,[Huang] Gaifollowed[Sun] Ceand[Sun] Quan, putting on armor, marching about, tr... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 79,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -145,11 +245,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.274Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:09.994Z"
 }

@@ -17,6 +17,28 @@
     "birth": 162,
     "death": 219
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 92,
+      "war": 91,
+      "intelligence": 56,
+      "politics": 61,
+      "charisma": 78
+    },
+    "rotk11": {
+      "leadership": 87,
+      "war": 91,
+      "intelligence": 54,
+      "politics": 61,
+      "charisma": 80
+    },
+    "rotk12": {
+      "leadership": 90,
+      "war": 91,
+      "intelligence": 68,
+      "politics": 61
+    }
+  },
   "novel_presence": {
     "first_chapter": 5,
     "last_chapter": 116,
@@ -45,7 +67,128 @@
       "sections": {
         "Introduction": "夏侯渊（2世紀—219年），字妙才，夏侯惇族弟，沛国谯县（今安徽省亳州市）人。东汉末年名将。随曹操起兵，从征袁绍、韩遂等。建安十七年（212）後，督軍屯於長安，平定河西諸羌，其勇名號稱“虎步關右，所向無前。”，封博昌亭侯。建安二十年（215）拜征西將軍，守漢中，後為劉備部將黃忠所擊殺，死後追諡為愍侯。用兵擅長輕兵急襲、出敵不意，亦常恃勇無謀親率輕銳出戰，也因此常受曹操勸誡，軍中稱之為“白地将军”。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 163–219",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Dun"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Ba"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Wei"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Hui"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou He"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Heng"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Rong"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Cheng"
+        },
+        {
+          "relation": "member",
+          "name": "Niece"
+        },
+        {
+          "relation": "member",
+          "name": "Xiahou Shi"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "rotkxi",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 70,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -84,11 +227,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.206Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:09.901Z"
 }

@@ -17,6 +17,28 @@
     "birth": 160,
     "death": 200
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 83,
+      "war": 94,
+      "intelligence": 41,
+      "politics": 34,
+      "charisma": 52
+    },
+    "rotk11": {
+      "leadership": 79,
+      "war": 93,
+      "intelligence": 42,
+      "politics": 32,
+      "charisma": 53
+    },
+    "rotk12": {
+      "leadership": 88,
+      "war": 94,
+      "intelligence": 21,
+      "politics": 23
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       5,
@@ -58,7 +80,28 @@
         "艺术形象及後世記載": "基本上，顏良除了在以史書《三國志》為藍本的《三國演義》這本小說出現過以外，還曾在紀曉嵐所寫的志怪小說《閱微草堂筆記》中，提到其作祟的事情。",
         "评价": "- 孔融：“颜良、文丑，勇冠三军。”（《三国志·卷十·魏书十·荀彧荀攸贾诩传第十》）\n- 荀彧：“颜良、文丑，一夫之勇耳，可一战而禽也。”（《三国志·卷十·魏书十·荀彧荀攸贾诩传第十》）\n- 沮授：“良性促狭，虽骁勇不可独任。”（《三国志·卷六·魏书六·董二袁刘传第六》）\n- 颜之推：“齐有颜涿聚，赵有颜最，汉末有颜良，宋有颜延之，并处将军之任，竟以颠覆。”（《颜氏家训·诫兵篇》）\n- 陆游：“颜良文丑知何益，关羽张飞死可伤。等是人间号骁将，太山宁比一毫芒。”（读史）"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 25–28",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": {
+    "sentiment_score": 75,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -92,11 +135,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 5,
-  "generated_at": "2026-03-16T10:52:17.301Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.025Z"
 }

@@ -17,6 +17,28 @@
     "birth": 156,
     "death": 192
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 98,
+      "war": 89,
+      "intelligence": 77,
+      "politics": 72,
+      "charisma": 91
+    },
+    "rotk11": {
+      "leadership": 93,
+      "war": 90,
+      "intelligence": 74,
+      "politics": 73,
+      "charisma": 91
+    },
+    "rotk12": {
+      "leadership": 94,
+      "war": 90,
+      "intelligence": 79,
+      "politics": 73
+    }
+  },
   "novel_presence": {
     "first_chapter": 2,
     "last_chapter": 120,
@@ -50,7 +72,292 @@
       "sections": {
         "Introduction": "孙坚（155年—191年），字文臺，吴郡富春县（今浙江省杭州市富陽区）人，东汉末年軍閥諸侯将领，是孙吴勢力的首創者，奠基者孫策和建國者孫權的父親，漢破虏將軍、封乌程侯、领豫州刺史、長沙太守。在討伐董卓期間擔任先鋒建立許多戰功，諸如斬殺華雄、擊敗呂布、率先進入洛陽、迫使董卓求和等事蹟。史载其“容貌不凡，性阔达，好奇节”。后在军阀混战中阵亡。其次子孫權稱帝後，追尊為武烈皇帝，庙号始祖。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 155–192",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Wives"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Wu Guotai [Lady Wu] f"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ce"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Kuang"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Lang"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Sun"
+        },
+        {
+          "relation": "member",
+          "name": "one married to Pan Yi"
+        },
+        {
+          "relation": "member",
+          "name": "one married to Hong Zi"
+        },
+        {
+          "relation": "member",
+          "name": "Twin Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Qiang"
+        },
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jing"
+        },
+        {
+          "relation": "member",
+          "name": "Younger Sister"
+        },
+        {
+          "relation": "member",
+          "name": "one married to Xu Zhen"
+        },
+        {
+          "relation": "member",
+          "name": "Grandchildren"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Deng"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Lü"
+        },
+        {
+          "relation": "member",
+          "name": "Sun He"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ba"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Fen"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Xiu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Liang"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Luban"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Luyu"
+        },
+        {
+          "relation": "member",
+          "name": "Great Grandchildren"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Hao"
+        },
+        {
+          "relation": "member",
+          "name": "Nephews"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Ben"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Fu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Hao"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jiao"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Huan"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Qian"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter-in-laws"
+        },
+        {
+          "relation": "member",
+          "name": "Da Qiao"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Wang"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Xu"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Xie"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Pan"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Bu"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Yuan"
+        },
+        {
+          "relation": "member",
+          "name": "Relative in-laws"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Shu"
+        }
+      ],
+      "ranks": [
+        "Major of the Commandery",
+        "Assistant Prefect of Yandu (AD 172)",
+        "Assistant Prefect of Xuyi",
+        "Assistant Prefect of Xiapi",
+        "Major With a Separate Command. (AD 184)",
+        "Gentleman-Consultant",
+        "Grand Administrator of Changsha",
+        "Marquis of Wucheng",
+        "General Who Routs the Caitiffs, Inspector of Yu Province",
+        "Emperor Wulie (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tSun Jian gave the Imperial Seal to Yuan Shu after finding it in a well. He did not hold the Seal for himself.\n\tDuring the coalition against Dong Zhuo, Sun Jian served as a subordinate of Yuan Shu, not as himself.\n\tSun Jian did not withdraw from the anti-Dong Zhuo alliance, but rather was the only general to achieve success in the operations.\n\tSun Jian attacked Liu Biao on Yuan Shu’s orders, not because Liu Biao attacked first. In addition, during this time, Sun Jian was based in Henan, not Changsha as the novel states.\n\tSun Jian never killed the fictional Chen Sheng.\n\tThe ‘Magnificent Five of Wu’ is a fan creation with no historical basis. Sun Jian was not a part of any such group.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 14372,
+      "first_translation": {
+        "translator": "JackYuan",
+        "excerpt": "Sun Jian (Wentai)\n孫堅 (文台)\nLived AD 155–192\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 46 (Wu 1)\nbyJack Yuan\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742521556' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742521540' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742521361' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Jian had the style Wentai and was a man from Fuchun in Wujun. It was very likely that he was a descendant of Sun Wu.\nIn his youth, he was a civil officer at prefecture level. At the age of seventeen, he travelled with his father by boat to Qiantang. At the time the pirate Hu Yu and his band had robbed merchants of their goods from their base near Baoli, and were dividing up the spoils on the bank. All travellers halted in fear and boats dared not approach. Sun Jian said to his father: “These bandits can be attacked, I request to subdue them.” His father said: “This is not something you can undertake.” Sun Jian went ahead with his blade in hand onto the bank and waved his hands east and west as if he was signalling to detachments of soldiers that were moving to surround the bandits. The pirates sighted this and thinking government troops had come to arrest them, abandoned their loot, scattered and fled. Sun Jian pursued, and only after taking the head of a pirate did he return. His father was greatly startled. From this he became known and the local government office summoned him, appointing him to a temporary military post. The heretic r... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 79,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -174,11 +481,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.186Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.880Z"
 }

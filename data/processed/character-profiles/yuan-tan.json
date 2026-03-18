@@ -1,0 +1,106 @@
+{
+  "name_kr": "원담",
+  "name_en": "Yuan Tan",
+  "name_cn": "袁譚",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 62,
+      "war": 68,
+      "intelligence": 30,
+      "politics": 40,
+      "charisma": 57
+    },
+    "rotk12": {
+      "leadership": 60,
+      "war": 69,
+      "intelligence": 30,
+      "politics": 35
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 30–32",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted father"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Cheng"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "One daughter"
+        }
+      ],
+      "ranks": [
+        "Inspector of Qing",
+        "General of Chariots and Cavalry"
+      ],
+      "historical_notes": "Yuan Tan was the eldest son of Yuan Shao. In AD 193, he was named Inspector of Qing Province. During this time, he struggled with Gongsun Zan’s officer Tian Kai. Following a truce, he continued to serve in the area, seizing Beihai from Kong Rong in AD 196. He also served at Guandu. Yuan Shao wished to gauge the skills of his sons by having them each govern. Thus, he sent Yuan Tan back to Qing. Yuan Tan was said to have done a weak job ruling over the province. When Yuan Shao died, Guo Tu and Xin Ping supported Yuan Tan as successor. Yuan Shang nevertheless ended up becoming head of the clan, with support from Shen Pei and Pang Ji. However, Yuan Tan received scant troops from Shang.\n\nYuan Tan hated the treatment he received from Shang. He slew Shang’s partisan Pang Ji. When Yuan Tan came under attack though, Yuan Shang dispatched troops to aid his brother. Both Shang and Tan fought with Cao Cao for nearly half a year, eventually losing. After Cao Cao withdrew from the area, Yuan Tan wished to press on and attack Cao Cao from the rear. Yuan Shang was suspicious; he refused to grant his brother any further troops. Furious, Yuan Tan pounced on Yuan Shang’s forces in Ye, but was beaten back to Nanpi. Although Yuan Tan received reinforcements from Qing, many of his officers revolted. Soon after, Yuan Shang marched against Tan, and once more put him to flight. Out of desperation, Yuan Tan allied with Cao Cao.\n\nYuan Shang attempted to besiege Yuan Tan at Pingyuan, but soon retreated to deal with the threat of Cao Cao. During this time, Yuan Tan seized back various areas and consolidated his forces. Yuan Shang was defeated by Cao Cao and fled from Ye. Yuan Tan took the opportunity to harass Yuan Shang’s forces and absorb them into his own. This forced Yuan Shang to escape to Youzhou. Unfortunately, Cao Cao broke off the alliance with Yuan Tan at this point. In AD 205, Yuan Tan and Cao Cao clashed in Nanpi. There were heavy casualties on both sides. Cao Cao wished to break aw... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.085Z"
+}

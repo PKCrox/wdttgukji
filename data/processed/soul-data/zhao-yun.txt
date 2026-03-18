@@ -71,3 +71,49 @@ Liu Bei: 군신 (강도85, 장판파에서 유선 구출)
 
 ## EN Wikipedia
 Zhao Yun, courtesy name Zilong (子龍), was a military general who lived during the late Eastern Han dynasty and early Three Kingdoms period of China. Originally a subordinate of the northern warlord Gongsun Zan, Zhao Yun later came to serve another warlord, Liu Bei, and had since accompanied him on most of his military exploits, from the Battle of Changban (208) to the Hanzhong Campaign (217–219). H
+
+## 정사삼국지
+[생애 (정사)] ### 개요
+1. 개요2. 초반 행적3. 공손찬 휘하에서4. 유비에게 임관5. 장판파 전투6. 형주에서7. 유비의 입촉8. 한중 공방전9. 이릉대전10. 남만 정벌11. 제갈량의 1차 북벌11.1. 전투 과정과 퇴각, 전후 처리12. 죽음12.1. 생몰년과 나이
+
+### 개요
+조운의 생애를 서술한 문서.기존에 진수가 쓴 《촉서》〈조운전〉은 〈황충전〉에 버금갈 정도로 허전했으나, 이후 배송지가 《조운별전》의 내용들을 인용해 주석으로 보충하여 기록으로 남겼다. 훗날 송의 역사가 사마광이 저술한 《자치통감》에서도 조운별전의 내용들을 차용하여 조운의 행적을 기록하였다.조운(趙雲)은 자(字)가 자룡(子龍)이고 기주 상산(常山) 진정(眞定) 사람이다. 본래 공손찬의 세력에 속했는데 공손찬이 유비에게 전해를 도와 원소를 막게 하니 조운이 함께 따라나서며 유비를 위해 기병을 지휘했다.조운은 신장이 8척에 용모가 웅장하며 위엄이 있었다. 본래 속한 군에서 천거되었는데 의종을 거느리고 공손찬에게 임관
+
+
+## Kongming 영문 백과사전
+생몰: AD 168–229
+[역사] Zhao Yun (Zilong) was said to be about 6’ 2’’ in height. Zhao Yun held office in his hometown county of Changshan until in AD 191 at the age of 23 he decided to serve as an officer under Gongsun Zan in preference to Yuan Shao who was also a powerful warlord near his home region (he decided to serve Gongsun Zan because he believed him to be more righteous). He met Liu Bei while under Gongsun Zan’s command. Liu Bei respected Zhao Yun. Yun led Liu Bei’s cavalry unit when Liu Bei was sent by Zan to aid Tian Kai against Yuan Shao. Zhao Yun later left Gongsun Zan’s forces, as he was unimpressed by his attitude, to attend his elder brother’s funeral.
+
+After about 6 years of absence during which time his activities were unknown, Zhao Yun reappeared in AD 200 where, in the city of Ye, he met Liu Be
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Zhao Yun never served Yuan Shao.
+	Zhao Yun left Gongsun Zan along with Liu Bei, and from that point, remained in his service.
+	Zhao Yun did not slay Zhu Ran at Yiling.
+	Zhao Yun did not battle with or slay Zhu Zan.
+	The story in which Zhao Yun’s wife pricks him with a pin, causing in his death, is based on Chinese opera.
+
+## 정사 영역본 (Kongming SGZ)
+Zhao Yun (Zilong)
+趙雲 (子龍)
+Lived ADca.168–229
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 36 (Shu 6)
+bySonken
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742431523' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742431459' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740600591' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Author’s Note: Currently this biography contains a few known translation errors. While pending re-translation please cross-reference material withthis alternat
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통91 무96 지75 정65 매81
+rotk11: 통91 무96 지76 정65 매81
+rotk12: 통96 무96 지77 정65 매?
+
+## 커뮤니티 평가
+감정점수: 85, 언급: undefined회
+키워드: 

@@ -1,0 +1,96 @@
+{
+  "name_kr": "고승",
+  "name_en": "Gao Sheng",
+  "name_cn": "高昇",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 67,
+    "war": 73,
+    "intelligence": 41,
+    "politics": 21,
+    "charisma": 27,
+    "total": 229,
+    "birth": 145,
+    "death": 184
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 63,
+      "war": 73,
+      "intelligence": 40,
+      "politics": 21,
+      "charisma": 22
+    },
+    "rotk11": {
+      "leadership": 67,
+      "war": 73,
+      "intelligence": 41,
+      "politics": 21,
+      "charisma": 27
+    },
+    "rotk12": {
+      "leadership": 67,
+      "war": 73,
+      "intelligence": 41,
+      "politics": 21
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 단어2. 인물2.1. 고구려의 인물 高勝2.2. 후한 말의 인물 高勝2.3. 삼국시대 오나라의 인물 顧承2.4. 삼국지연의의 가공인물 高昇"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.072Z"
+}

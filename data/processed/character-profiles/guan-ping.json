@@ -1,0 +1,176 @@
+{
+  "name_kr": "관평",
+  "name_en": "Guan Ping",
+  "name_cn": "關平",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 2,
+  "role": "관우의 양아들",
+  "stats": {
+    "leadership": 77,
+    "war": 82,
+    "intelligence": 68,
+    "politics": 60,
+    "charisma": 76,
+    "total": 363,
+    "birth": 186,
+    "death": 219
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 77,
+      "war": 81,
+      "intelligence": 69,
+      "politics": 55,
+      "charisma": 75
+    },
+    "rotk11": {
+      "leadership": 77,
+      "war": 82,
+      "intelligence": 68,
+      "politics": 60,
+      "charisma": 76
+    },
+    "rotk12": {
+      "leadership": 80,
+      "war": 82,
+      "intelligence": 72,
+      "politics": 60
+    }
+  },
+  "novel_presence": {
+    "first_chapter": 28,
+    "last_chapter": 78,
+    "chapters": "28,31,39,49,57,60,62-63,65-66,73-78",
+    "chapter_count": 9
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 인물이자 관우의 아들. 민간 전승에서 설정된 자는 탄지(坦之). 정사에는 자가 기록되어 있지 않다.",
+      "기타": "정사에서는 잠깐 나오는 인물이지만 연의와 아버지 관우 덕에 제대로 출세했다. 아버지가 신격화되자 덩달아 갈충왕(謁忠王)이라는 이름으로 신격화가 되었으며 이후에는 영후태자(靈侯太子), 관평제군(關平帝君)으로 불리며 군신의 황태자가 되었다. 관제묘에서 주창과 함께 관우의 좌우를 시위한다.현대 중국에 남아있는 관우의 후손들은 모두 관평의 후손들이다. 나머지 관우의 아들들의 후손들이 종회의 촉한 정벌 때 방덕의 아들 방회에게 전원 삼족이 멸해지게 무차별 학살을 당했는데 이 와중에 관평의 후손들이 천신만고 끝에 촉을 도망나와 각지로 흩어졌고 이들의 후손들이 대대로 이어져서 지금에 이르는 상황.<삼국지> 정사에서 관평의 양자 여부가 언급되지 않지만 그냥 아들이라고 서술되었기 때문에 당연히 친아들이라고 보는게 합리적이다. 관우의 가족에 대한 기록 자체가 거의 없는데, 관평의 모친이자 관우의 아내에 대해서는 정사에서는 전혀 언급이 없고 진나라 시기에 편찬된 <화양국지>에서 관우와 두씨의 일화에 대해 언급하며 ‘관우의 처에게 자식이 아직 없다’고 언급한 것 뿐이다. 이 부분은 배송지가 주석을 정리할 때 누락했는데 <화양국지>의 신빙성 역시 여포가 포위된 것이나 구원을 요청한 인물에 대해 잘못 적을 정도로 그리 높지 않은 편이다. 일단 여포가 포위되었을 당시는 199년으로 만약 이 때까지 장자 관평이 태어나지 않았다면 번성 공방전 당시 아버지를 따라 종군하던 관평의 나이는 많아봐야 19세라는 얘기가 되니 아주 불가능한 얘기는 아니다. 어쨌거나 관평의 모친에 대해서는 존재 자체만 언급될 뿐, 청나라 대에 발굴된 관후조묘비에 호씨란 게 언급된 게 전부다. 다만 훨씬 후대에 발굴된 것이라 역시 출처가 불분명하다. 관우의 부인 영황후 역시 제대로 된 기록이 사실상 전무함에도 아들과 마찬가지로 남편 덕에 죽은 뒤 황후로 추존되었는데 명나라의 만력제가 그녀를 ‘구령의덕무숙영황후(九靈懿德武肅英皇后)’로 추존했다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 178–219",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Xing"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Suo f"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Guan [Yinping] f"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tGuan Ping was Guan Yu’s biological child, and not an adopted son.\n\tHistorically executed by Lü Meng.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 4",
+      "Warriors Orochi 4",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 67,
+    "top_keywords": []
+  },
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": true,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 7,
+  "generated_at": "2026-03-18T10:20:10.045Z"
+}

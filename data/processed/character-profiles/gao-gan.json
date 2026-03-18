@@ -1,0 +1,131 @@
+{
+  "name_kr": "고간",
+  "name_en": "Gao Gan",
+  "name_cn": "高幹",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 74,
+    "war": 56,
+    "intelligence": 48,
+    "politics": 59,
+    "charisma": 66,
+    "total": 303,
+    "birth": 168,
+    "death": 206
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 74,
+      "war": 59,
+      "intelligence": 60,
+      "politics": 62,
+      "charisma": 66
+    },
+    "rotk11": {
+      "leadership": 74,
+      "war": 56,
+      "intelligence": 48,
+      "politics": 59,
+      "charisma": 66
+    },
+    "rotk12": {
+      "leadership": 74,
+      "war": 56,
+      "intelligence": 48,
+      "politics": 59
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 두 다리의 사이1.1. 관련 문서2. 인물2.1. 후한 말의 인물2.2. 당나라의 인물"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 31–32",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Grandfather"
+        },
+        {
+          "relation": "member",
+          "name": "Gao Ci"
+        },
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Gao Gong"
+        },
+        {
+          "relation": "member",
+          "name": "Father-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Yuan Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Younger Cousin"
+        },
+        {
+          "relation": "member",
+          "name": "Gao Rou"
+        }
+      ],
+      "ranks": [
+        "Inspector of Bing Province"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.071Z"
+}

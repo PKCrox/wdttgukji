@@ -17,6 +17,28 @@
     "birth": 172,
     "death": 217
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 70,
+      "war": 55,
+      "intelligence": 76,
+      "politics": 77,
+      "charisma": 73
+    },
+    "rotk11": {
+      "leadership": 80,
+      "war": 56,
+      "intelligence": 92,
+      "politics": 90,
+      "charisma": 89
+    },
+    "rotk12": {
+      "leadership": 84,
+      "war": 56,
+      "intelligence": 92,
+      "politics": 90
+    }
+  },
   "novel_presence": {
     "first_chapter": 29,
     "last_chapter": 69,
@@ -42,7 +64,99 @@
         "Introduction": "鲁肃（172年—217年），字子敬，徐州临淮郡东城县（今安徽省定远县）人，東漢末年东吴將領、軍事家、戰略家、外交家、政治家，为孫權策劃未來戰略藍圖榻上策，在周瑜去世后接替其職務。十分積極提倡聯劉抗曹，與諸葛亮十分友好結成孫劉聯盟。現代人受三國演義影響，將周瑜、魯肅、呂蒙、陆逊合稱為四大都督，但事實上魯肅並沒有擔任過都督一職。",
         "评价": "- 孙权：“此诸人持议，甚失孤望；今卿廓开大计，正与孤同，此天以卿赐我也。”“昔鲁子敬尝道此，可谓明於事势矣。”“孤亦子敬英爽有殊略，孤始与一语，便及大计，与禹相似，故比之。”“孤与宴语，便及大略帝王之业，此一快也。后孟德因获刘琮之势，张言方率数十万众水步俱下。孤普请诸将，咨问所宜，无适先对，至子布、文表，俱言宜遣使修檄迎之，子敬即驳言不可，劝孤急呼公瑾，付任以众，逆而击之，此二快也。且其决计策，意出张苏远矣；后虽劝吾借玄德地，是其一短，不足以损失二长也。周公不求備於一人，故孤忘其短而貴其長，常以比方鄧禹也。子敬答孤书云：‘帝王之起，皆有驱除，羽不足忌。’此子敬内不能办，外为大言耳，恕之，不苟责也。然其作军，屯营不失，令行禁止，部界无废负，路无拾遗，其法亦美也。”\n- 張昭：“年少粗疏，未可用。”\n- 陈寿：“少有壮节，好为奇计。家富于财，性好施与。”“曹公乘汉相之资，挟天子而扫群桀，新荡荆城，仗威东夏，于时议者莫不疑贰。周瑜、鲁肃建独断之明，出众人之表，实奇才也”。\n- 周瑜：「魯肅智略足任，乞以代瑜。」「魯肅忠烈，臨事不苟，可以代瑜。」\n- 《吴书》：“又善谈论，能属文辞，思度弘远。周瑜之后，肃为之冠。”\n- 陆机：「周瑜、陆公、鲁肃、吕蒙之畴入为腹心，出作股肱。」\n- 袁宏：「昂昂子敬，拔迹草莱。荷檐吐奇，乃构云台。」\n- 严从：「周瑜、鲁肃，咸起诸生，鹗视乌林，鹰扬赤壁。然肃为布衣，当襄汉之际，标卖田宅，分财结士，以求人杰：此其志不小也。公瑾推第於孙策，子敬辍粟於周郎：咸有异於人者也。」\n- 孙元晏：「斫案兴言断众疑，鼎分从此定雄雌。若无子敬心相似，争得乌林破魏师。」\n- 周昙：「轻财重义见英奇，圣主贤臣是所依。公瑾窘饥求子敬，一言才起数船归。」\n- 章如愚：「至于三国，各自据其土而成鼎峙之势，亦诸人之力也。故在魏，则荀攸、贾诩之算无遗策，郭嘉、刘晔之才策谋畧，管宁之渊雅高尚，毛玠之典选清正；在吴，则周瑜、鲁肃之俦入为腹心，出为股肱，甘宁、凌统之徒奋其威，黄盖、蒋钦之属宣其力；在蜀，则诸葛孔明之长于治国，费祎、董允之志虑忠纯，向宠之性行均淑，皆一时之人杰也。」\n- 洪迈：「孙吴奄有江左，亢衡中州，固本于策、权之雄略，然一时英杰，如周瑜、鲁肃、吕蒙、陆逊四人者，真所谓社稷心膂，与国为存亡之臣也。」\n- 陈亮：「又二百余年，遂为三国交据之地，诸葛亮由此起辅先主，荆楚之士从之如云，而汉氏赖以复存于蜀；周瑜、鲁肃、吕蒙、陆逊、陆抗、邓艾、羊祜皆以其地显名。」\n- 林光朝：「当时称之为长才无或异辞者，吴有周瑜、鲁肃、吕蒙、陆逊，蜀有诸葛孔明，是皆一方隽才也。」\n- 程公许：「蜀将如关、张、庞统，吴将如周瑜、鲁肃，志长命短，天下重惜之。而马超、黄忠、赵云、费祎、吕蒙、程普、步骘、甘宁辈皆智勇绝伦，足以当一面。」\n- 刘祁：“已而诸豪割据，士大夫各欲择主立功名，如荀攸、贾诩、程昱、郭嘉、诸葛亮、庞统、鲁肃、周瑜之徒，争以智能自效。”\n- 王义山：「某仰惟某官学通六艺，忠贯三精，其谋略则荀攸、贾诩之密，其经济则周瑜、鲁肃之英，其吟啸则谢安、庾亮之雅，其牧御则羊祜、陆逊之仁。」\n- 江用世：「夫肃在当时，其智计上不参公瑾，次似不敌子布，而何其有成画于胸中至与孔明隆中之筹相印合也？」\n- 王夫之：「身任天下之重，舍敦信而趋事会，君子之所贱，抑英雄之所耻也，功隳名辱而身以死亡，必矣。欲合孙氏于昭烈以共图中原者，鲁肃也；欲合昭烈于孙氏以共拒曹操者，诸葛孔明也；二子者守之终身而不易。子敬以借荆资先主，被仲谋之责而不辞；诸葛欲谏先主之东伐，难于尽谏，而叹法正之死。盖... (truncated)"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 172–217",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Shu"
+        },
+        {
+          "relation": "member",
+          "name": "Grandson"
+        },
+        {
+          "relation": "member",
+          "name": "Lu Mu"
+        }
+      ],
+      "ranks": [
+        "Chief of Dongcheng",
+        "Colonel Who Assists the Army",
+        "Colonel Who Displays Firmness",
+        "Governor of Hanchang",
+        "Pian Jiang Jun",
+        "General Who Stretches Across the Jiang"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -159,11 +273,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.262Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.981Z"
 }

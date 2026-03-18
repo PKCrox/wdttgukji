@@ -1,0 +1,76 @@
+{
+  "name_kr": "미축",
+  "name_en": "Mi Zhu",
+  "name_cn": "糜竺",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 24,
+      "war": 30,
+      "intelligence": 72,
+      "politics": 83,
+      "charisma": 82
+    },
+    "rotk12": {
+      "leadership": 33,
+      "war": 29,
+      "intelligence": 78,
+      "politics": 83
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 2,
+      "total_char_count": 8862,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Mi Zhu (Zizhong)\n麋竺 (子仲)\nLived AD ?–221\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 38 (Shu 8)\nbyZL181\nonDecember 19th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1703026680' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758048319' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1758048304' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741927613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nMi Zhu, styledZizhong, was fromQu[朐],Donghai[東海].\nHis ancestors had been merchants for generations. They had servants and retainers in the tens of thousands, and their wealth and estate was in the hundreds ofthousands.A\nTheRecords of the Search for Spiritsstates:[Mi] Zhuwas once returning fromLuo[洛] and had not even arrived within tens of miles from his home when he saw a woman on the side of the road. She requested to be picked up by[Mi] Zhu. They travelled several miles when the woman thanked her and left. She told[Mi] Zhu, “I am a messenger from Heaven. I am going to burn the house ofMi ZhuofDonghai[東海], but I am so touched that you, sir, picked me up that I am telling you this.”[Mi] Zhutherefore privately beseeched her. The woman said, “I cannot leave it unburnt. This being the case, you should hurry there and I will move slowly. In the middle of the day, a fire will break out.”[Mi] Zhureturned to his home and hurriedly took out his wealth and objects. In the middle of the day, a fire fiercely broke out.\nLater, theGovernorofXu province[徐州牧],Tao Qian, recruited him to serve asAssistant OfficialClerk. When[Tao] Qiandied,[Mi] Zhure... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.060Z"
+}

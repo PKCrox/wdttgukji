@@ -1,0 +1,55 @@
+=== 한당 (韓当, Han Dang) ===
+자: 불명 (불명)
+진영: wu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+(없음)
+
+## 정사 영역본 (Kongming SGZ)
+Han Dang (Yigong)
+韓當 (義公)
+Lived ADca.156–227
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 55 (Wu 10)
+byZL181
+onMay 14th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1684072740' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756846165' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741577211' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741573502' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Han Dang, styledYigong, was fromLingzhi[令支],Liaoxi[遼西].A
+He was good at shooting while riding a horse, and he had physicalstrength.B
+Ling [令] has the 
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통76 무86 지59 정53 매67
+rotk12: 통76 무85 지61 정51 매?
+
+## 커뮤니티 평가
+(없음)

@@ -1,0 +1,83 @@
+{
+  "name_kr": "낙통",
+  "name_en": "Luo Tong",
+  "name_cn": "駱統",
+  "courtesy_kr": "공서",
+  "courtesy_cn": "公緒",
+  "faction": "wu",
+  "tier": 2,
+  "role": "오 행정관",
+  "stats": {
+    "leadership": 76,
+    "war": 58,
+    "intelligence": 75,
+    "politics": 77,
+    "charisma": 77,
+    "total": 363,
+    "birth": 193,
+    "death": 228
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 75,
+      "war": 57,
+      "intelligence": 70,
+      "politics": 75,
+      "charisma": 68
+    },
+    "rotk11": {
+      "leadership": 76,
+      "war": 58,
+      "intelligence": 75,
+      "politics": 77,
+      "charisma": 77
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "삼국시대 오나라의 문관으로 자는 공서(公緒). 삼국지 오서에 자신의 열전이 따로 있는 인물이다. 양주 회계군 오상현 사람.",
+      "평가": "낙통에 대한 평가로는 '대의가 분명하고 언사가 간절하며 이치는 지극했지만 손권이 듣는 것을 닫아 재능을 꽃피우지 못했다'고 전했다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.047Z"
+}

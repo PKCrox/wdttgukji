@@ -17,6 +17,28 @@
     "birth": 169,
     "death": 222
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 94,
+      "war": 92,
+      "intelligence": 77,
+      "politics": 64,
+      "charisma": 79
+    },
+    "rotk11": {
+      "leadership": 93,
+      "war": 92,
+      "intelligence": 78,
+      "politics": 58,
+      "charisma": 78
+    },
+    "rotk12": {
+      "leadership": 95,
+      "war": 92,
+      "intelligence": 78,
+      "politics": 58
+    }
+  },
   "novel_presence": {
     "first_chapter": 11,
     "last_chapter": 98,
@@ -46,7 +68,115 @@
         "家族": "- 聶壹，后因避怨而改姓\n\n- 張汎，因張遼功績被封侯\n\n- 張虎，偏將軍，嗣爵晉陽侯\n\n- 張統，張虎之子，嗣爵",
         "艺术創作": "三國時繁欽作品《征天山賦》，主要描寫張遼征討陳蘭、梅成時的狀況。賦題寫明：「丞相武平侯曹公東征，臨川未濟，群舒蠢動，割有灊、六，乃俾上將盪寇將軍張遼治兵南岳之陽。」清末民初時期學者古直《曹子建詩箋》指出，陳思王曹植的作品《白馬篇》中的主角，是以張遼於207年征討烏桓時的形象為創作原型的。南北朝時的文學作品中，庾信《哀江南賦》有「張遼臨於赤壁，王濬下於巴丘。乍風驚而射火，或箭重而回舟。未辨聲於黃蓋，已先沈於杜侯。落帆黃鶴之浦，藏船鸚鵡之洲」之句。元代雜劇中，張遼主要有兩個身份：一是呂布手下「八健將」之一，二是曹操的親隨軍師，更有「百計張遼」之稱。托名關漢卿所作的雜劇《關雲長千里獨行》中，張遼的開場白就已道出其出身：「筆頭掃出千條計，腹內包藏七字書。小官姓張名遼，字文遠。幼習儒業，頗看韜略之書。先曾在呂布之下為健將，後在於曹丞相手下為參謀。」而在不少雜劇劇目，張遼與許褚分別擔任曹操軍中重要的文武代表，二人經常作為曹操的心腹愛將而並列。如《劉玄德醉走黃鶴樓》中有「曹操以雄兵百萬，虎將千員。左有百計張遼，右有九牛許褚，獨霸許，虎視中原」句，《諸葛亮博望燒屯》中則有「憑著這諸葛亮關羽張飛，怕甚麼曹孟德張遼的這許褚，更和那孫仲謀魯肅和那周瑜。」句。《三國志平話》中，張遼仍然擔任曹軍軍師，有「智囊先生」的稱號。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 165–222",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Fan"
+        },
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Hu"
+        }
+      ],
+      "ranks": [
+        "Commander of the Moving Riders (Qianqi Duwei)",
+        "General of the Gentleman of the Household",
+        "Marquis (Guan Nie Hou)",
+        "Assistant Moving General",
+        "Zhong Jian Jiang Jun",
+        "General Who Vanquishes Bandits",
+        "Marquis of a Chief Commune",
+        "General Who Conquers the East",
+        "General of the Van",
+        "Marquis of Jinyang"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tDied of illness, not a shot to the groin.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 16018,
+      "first_translation": {
+        "translator": "JonathanWu",
+        "excerpt": "Zhang Liao (Wenyuan)\n張遼 (文遠)\nLived AD 169–222\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 17 (Wei 17)\nbyJonathan Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745644681' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745644423' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745644423' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Liao, styled Wenyuan, hailed from Mayi county in Yanmen Commandery. He was a descendant of Shen Nie [of the Western Han], but his family changed their surname to avoid enemies.1In his youth he served as a minor official in the commandery. In the later days of the Han [Dynasty], the Inspector of Bing Province, Ding Yuan, noticed that Zhang Liao was a skilled warrior and persuaded him to enter his service. Ding Yuan had Zhang Liao lead an army to go to the Imperial Capital. He Jin then sent him to Hebei to recruit soldiers, and Zhang Liao recruited more than a thousand men. Upon Zhang Liao’s return, He Jin was killed and Zhang Liao and his men were now under the control of Dong Zhuo. When Dong Zhuo was overthrown, Zhang Liao and his troops were then controlled by Lu Bu, and he was promoted to Chief Commandant of the Cavalry. Lu Bu was subsequently defeated by Li Jue. He followed Lu Bu and fled eastward to Xu Province, and was appointed Chancellor of Lu State, at this time, Zhang Liao was twenty-eight years old.2When the Grand Progenitor [Cao Cao] routed Lu Bu’s forces at Xiapi, Zhang Liao led his men and surrendered. The rank of G... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -163,11 +293,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.133Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.828Z"
 }

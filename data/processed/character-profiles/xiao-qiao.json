@@ -17,6 +17,21 @@
     "birth": 178,
     "death": 210
   },
+  "stats_multi": {
+    "rotk11": {
+      "leadership": 16,
+      "war": 12,
+      "intelligence": 73,
+      "politics": 77,
+      "charisma": 92
+    },
+    "rotk12": {
+      "leadership": 40,
+      "war": 12,
+      "intelligence": 74,
+      "politics": 77
+    }
+  },
   "novel_presence": {
     "first_chapter": 44,
     "last_chapter": 57,
@@ -40,7 +55,106 @@
       "sections": {
         "Introduction": "小橋，《三國演義》作小喬，廬江橋公次女，大喬之妹，周瑜之妻妾。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 56–57",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Qiao Xuan f"
+        },
+        {
+          "relation": "member",
+          "name": "Husband"
+        },
+        {
+          "relation": "member",
+          "name": "Zhou Yu"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Da Qiao"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Zhou Xun"
+        },
+        {
+          "relation": "member",
+          "name": "Zhou Yin"
+        },
+        {
+          "relation": "member",
+          "name": "Son-in-law"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Deng"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically, was not the daughter of Qiao Xuan. [SGZ]",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 80,
+    "top_keywords": []
   },
   "dialogues": [],
   "relationships": [
@@ -56,11 +170,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": false,
     "relationships": true
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.277Z"
+  "source_count": 10,
+  "generated_at": "2026-03-18T10:20:09.997Z"
 }

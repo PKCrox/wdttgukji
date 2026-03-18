@@ -1,0 +1,81 @@
+{
+  "name_kr": "고담",
+  "name_en": "Gu Tan",
+  "name_cn": "顧譚",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wu",
+  "tier": 3,
+  "stats": {
+    "leadership": 33,
+    "war": 23,
+    "intelligence": 70,
+    "politics": 79,
+    "charisma": 75,
+    "total": 280,
+    "birth": 203,
+    "death": 244
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 33,
+      "war": 21,
+      "intelligence": 69,
+      "politics": 79,
+      "charisma": 75
+    },
+    "rotk11": {
+      "leadership": 33,
+      "war": 23,
+      "intelligence": 70,
+      "politics": 79,
+      "charisma": 75
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "1. 한자어1.1. 삼국시대 오나라의 인물1.2. 중국 남북조시대 북제의 4대 황제 무성제(武成帝)1.3. 경기도 이천시에 있는 법정동1.4. 고창담양고속도로의 줄임말2. Gotham2.1. 영국 노팅엄 소재에 있는 동네 지명2.2. 미국 소재의 도시 뉴욕의 별명2.3. 대구광역시의 별명이자 지역드립2.4. 라틴 문자 글꼴2.5. 워너 제작, FOX TV에서 방송한 드라마2.6. 대중매체2.6.1. DC 코믹스에 나오는 배트맨이 활약하는 가공의 도시2.6.2. 미스터 부에 나오는 면(面)2.6.3. 고왓파 5 고담의 주역 메카3. 인플루언서"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.067Z"
+}

@@ -1,0 +1,94 @@
+{
+  "name_kr": "공지",
+  "name_en": "Gong Zhi",
+  "name_cn": "鞏志",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 43,
+    "war": 53,
+    "intelligence": 61,
+    "politics": 65,
+    "charisma": 48,
+    "total": 270,
+    "birth": 178,
+    "death": 242
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 45,
+      "war": 59,
+      "intelligence": 61,
+      "politics": 63,
+      "charisma": 52
+    },
+    "rotk11": {
+      "leadership": 43,
+      "war": 53,
+      "intelligence": 61,
+      "politics": 65,
+      "charisma": 48
+    },
+    "rotk12": {
+      "leadership": 43,
+      "war": 53,
+      "intelligence": 62,
+      "politics": 65
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 52–53",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.077Z"
+}

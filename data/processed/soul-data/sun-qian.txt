@@ -1,0 +1,59 @@
+=== 손건 (孫乾, Sun Qian) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 18–19
+[역사] Sun Qian, styled Gongyou, hailed from Beihai. When Liu Bei took command of Xuzhou Sun Qian was recommended to him by Zheng Xuan, and was appointed an aide, and followed Liu Bei across the land. When Liu Bei left Cao Cao he sent Sun Qian to establish relations with Yuan Shao, and before entering Jingzhou Sun Qian was dispatched with Mi Zhu to meet Liu Biao—and both missions went smoothly.
+
+While in Jingzhou Liu Biao wrote Yuan Shang to express how troubled he became over his separation with Yuan Tan while discussing with Liu Bei and Sun Qian. This shows how highly he regarded Sun Qian’s view. When Liu Bei took authority in Yizhou Sun Qian was promoted from Gentleman Attendant to General Who Upholds Loyalty, the same rank as Jian Yong. Some time later he passed away. (1)
+
+(1): Primary source
+
+## 정사 영역본 (Kongming SGZ)
+Sun Qian (Gongyou)
+孫乾 (公祐)
+Lifespan Unlisted
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 38 (Shu 8)
+byZL181
+onOctober 16th, 2023
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697487840' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758048526' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741928303' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741927613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Sun Qian, styledGongyou, was fromBeihai[北海].
+When theFormer LordledXu province[徐州], he appointed him to serve asClerk.ALater, he followed in trave
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통30 무35 지72 정87 매88
+rotk12: 통34 무33 지79 정84 매?
+
+## 커뮤니티 평가
+(없음)

@@ -8,6 +8,21 @@
   "tier": 1,
   "role": "유비 입촉 내응",
   "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 15,
+      "war": 12,
+      "intelligence": 88,
+      "politics": 82,
+      "charisma": 19
+    },
+    "rotk12": {
+      "leadership": 25,
+      "war": 6,
+      "intelligence": 88,
+      "politics": 82
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       60,
@@ -32,8 +47,26 @@
       "sections": {
         "Introduction": "张松可以指：\n\n- 张松 (东汉)，东汉政治人物\n- 张松 (嘉靖进士)，明朝政治人物\n- 张松 (足球运动员)，中华人民共和国足球运动员\n- 张松 (画家)，中华人民共和国画家"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
   },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
   "dialogues": [
     {
       "chapter": 60,
@@ -141,11 +174,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
     "stats": false,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.294Z"
+  "source_count": 6,
+  "generated_at": "2026-03-18T10:20:10.017Z"
 }

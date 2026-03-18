@@ -65,3 +65,33 @@
 
 ## EN Wikipedia
 Taishi Ci (166–206), courtesy name Ziyi, was a Chinese military general who lived during the late Eastern Han dynasty of China. He had served as a minor Han official, before eventually coming to serve warlords Liu Yao, Sun Ce, and Sun Ce's successor Sun Quan.
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 166–206
+
+## 정사 영역본 (Kongming SGZ)
+Taishi Ci (Ziyi)
+太史慈 (子義)
+Lived AD 166–206
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 49 (Wu 4)
+byLady Wu
+in2002
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744996832' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744996363' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744996363' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Taishi Ci, styled Ziyi, was a man from Huang in Donglai. He was fond of learning when he was a youth, and had served as a clerk in the reporting department in hi
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통81 무90 지67 정59 매79
+rotk11: 통82 무93 지66 정58 매79
+rotk12: 통90 무93 지69 정58 매?
+
+## 커뮤니티 평가
+감정점수: 29, 언급: undefined회
+키워드: 

@@ -67,3 +67,25 @@ Lu Bu: 부부 (강도82, 미인계)
 
 ## EN Wikipedia
 Diaochan was one of the Four Beauties of ancient China. Largely a fictional character, she is best known for her role in the 14th-century historical novel Romance of the Three Kingdoms, in which she becomes a key instrument in a scheme devised by Wang Yun, seducing Lü Bu and thereby provoking the formidable warrior to betray and kill his adoptive father, the tyrannical warlord Dong Zhuo. Diaochan 
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+[연의] Differences Between Fact and Common Fiction
+	
+		
+	Diaochan, as portrayed in the novel, is fictional. History only mentions a maid over which Dong Zhuo and Lü Bu quarreled. Wang Yun took advantage of this to play Lü Bu against Dong Zhuo, but he did not plan it.
+	The stories in which Lü Bu kills Diaochan for betraying him, Guan Yu beheads her to preserve unity with his brothers (or marries her), and the one in which Cao Cao marries her are all based on Chinese opera.
+
+## 정사 영역본 (Kongming SGZ)
+(없음)
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk11: 통10 무26 지81 정65 매94
+rotk12: 통20 무26 지81 정65 매?
+
+## 커뮤니티 평가
+감정점수: 50, 언급: undefined회
+키워드: 

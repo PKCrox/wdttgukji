@@ -17,6 +17,28 @@
     "birth": 140,
     "death": 184
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 90,
+      "war": 27,
+      "intelligence": 86,
+      "politics": 80,
+      "charisma": 98
+    },
+    "rotk11": {
+      "leadership": 86,
+      "war": 25,
+      "intelligence": 86,
+      "politics": 80,
+      "charisma": 98
+    },
+    "rotk12": {
+      "leadership": 87,
+      "war": 25,
+      "intelligence": 86,
+      "politics": 80
+    }
+  },
   "novel_presence": {
     "chapters_from_cooccurrence": [
       1,
@@ -43,7 +65,74 @@
       "sections": {
         "Introduction": "張角（？—184年），鉅鹿人。東漢末年太平道首領、黃巾之亂領導人。張角死後所領導的叛亂很快被平定，但也成為造成漢朝衰亡的原因之一。"
       }
-    }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 140–184",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Bao"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Liang"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tZhang Jue died in AD 184, not AD 188 as portrayed in the novel. [SGZ, ZZTJ]",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms portrait",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "rotk12",
+      "ROTK13",
+      "ROTK14",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 35,
+    "top_keywords": []
   },
   "dialogues": [],
   "relationships": [],
@@ -51,11 +140,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": false,
     "dialogues": false,
     "relationships": false
   },
-  "source_count": 4,
-  "generated_at": "2026-03-16T10:52:17.284Z"
+  "source_count": 8,
+  "generated_at": "2026-03-18T10:20:10.005Z"
 }

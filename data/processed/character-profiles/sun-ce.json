@@ -17,6 +17,28 @@
     "birth": 175,
     "death": 200
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 95,
+      "war": 90,
+      "intelligence": 69,
+      "politics": 66,
+      "charisma": 92
+    },
+    "rotk11": {
+      "leadership": 92,
+      "war": 92,
+      "intelligence": 69,
+      "politics": 70,
+      "charisma": 92
+    },
+    "rotk12": {
+      "leadership": 96,
+      "war": 92,
+      "intelligence": 74,
+      "politics": 70
+    }
+  },
   "novel_presence": {
     "first_chapter": 7,
     "last_chapter": 120,
@@ -46,7 +68,147 @@
       "sections": {
         "Introduction": "孫策（175年7月—200年5月5日），字伯符，吳郡富春縣（今浙江杭州富陽區）人，孫策是長沙太守破虜將軍孫堅的長子、吳大帝孫權、偏將軍孫翊、烏程侯孫匡、孫夫人之長兄、南郡太守周瑜連襟義兄、丞相陸遜岳父，是孫吳勢力的奠定基礎者。\n\n在群雄割據時期，曾待過袁術旗下，但不得其志。在江都向徐州名士張紘討教自己的志向，張紘為孫策規劃出戰略版圖與方向江都對後，而前往壽春向袁術討回父親孫堅舊部一千餘人程普、黃蓋、韓當、朱治，又在當地招收蔣欽、周泰、陳武、凌操等將領。先後掃蕩江東軍閥諸侯勢力薛禮、笮融、劉繇、太史慈、嚴白虎、王朗，短短三四年間平定吳越、江東一帶，佔領江東六郡丹楊、會稽、吳郡、廬江、豫章、廬陵。禮賢下士親自拜訪名士禮聘招攬大量賢臣，例如周瑜、張昭、張紘、呂範、虞翻等賢才，為日後孫吳勢力政權發展奠定了良好的基礎。其後因討伐僭號稱帝逆賊袁術有功，建安三年（198年）由司空曹操表奏朝廷命其官位予孫策為討逆將軍，并加封爵位為吳侯。建安五年（200年），孫策遇刺身亡，死前不選擇與自己性格極其相似的三弟孫翊，反而選擇與自己性格大不相同的二弟孫權繼承基業與權力，並授予兵符配以印綬，執掌江東提領孫氏。黃龍元年（229年），孫權登基稱帝後，追諡為長沙桓王。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 175–200",
+      "courtesy_name": null,
+      "affiliations": [
+        "Date: 02/2005\n\tReplies: 30"
+      ],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Jian"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Wu"
+        },
+        {
+          "relation": "member",
+          "name": "Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Quan"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Yi"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Kuang"
+        },
+        {
+          "relation": "member",
+          "name": "Sun Lang"
+        },
+        {
+          "relation": "member",
+          "name": "Sister"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Sun"
+        },
+        {
+          "relation": "member",
+          "name": "Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Sun"
+        }
+      ],
+      "ranks": [
+        "Colonel Who Cherishes Righteousness (AD 194)",
+        "Colonel Who Breaks the Enemy Lines, General Who Destroys the Criminals",
+        "Grand Administrator of Huiqi (Self-Proclaimed)",
+        "General Who Exterminates the Rebels, Marquis of Wu",
+        "‘Accomplished Talent’",
+        "King Huan of Changsha (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tSun Ce did not give the Imperial Seal to Yuan Shu, nor did he ever have the Seal in his possession.\n\tSun Ce never allied with Yuan Shao to attack Cao Cao.\n\tIt’s highly debatable whether or not Sun Ce killed the mystic Gan Ji.\n\tSun Ce was not harassed to death by the mystic Gan Ji.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 9865,
+      "first_translation": {
+        "translator": "JackYuan",
+        "excerpt": "Sun Ce (Bofu)\n孫策 (伯符)\nLived AD 174–200\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 46 (Wu 1)\nbyJack Yuan\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742521327' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742521305' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742521163' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Ce had the style Bofu. When Sun Jian had initially raised righteous troops, Sun Ce escorted his mother to reside in Shu. He became friends with Zhou Yu, and associated with the leading men of the area. The people in the land between the Huai River and the Jiang looked to him. After Sun Jian’s death his body was brought back to Qu’a for burial. After this Sun Ce subsequently crossed the Jiang to live in Jiangdu.\nThe Governor of Xuzhou Tao Qian possessed a deep enmity against Sun Ce. Sun Ce’s uncle Wu Jing was at the time the Grand Administrator of Danyang. So Sun Ce escorted his mother to Qu’a whilst he himself went to join Wu Jing with Lü Fan and Sun He. He took the opportunity to recruit several hundred men. In the first year of Xingping [194] he joined Yuan Shu. Yuan Shu admired Sun Ce’s bearing and talents and returned Sun Jian’s former division to his son. Following the command of the Imperial Court, the Grand Tutor Ma Ridi safeguarded the land east of the passes. He showed courtesy to Sun Ce at Shouchun and on his recommendation, Sun Ce was appointed Colonel Who Cherishes Righteousness. Yuan Shu’s great generals Qiao Rui and Zhang Xun b... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms 13",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 88,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -170,11 +332,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.188Z"
+  "source_count": 12,
+  "generated_at": "2026-03-18T10:20:09.883Z"
 }

@@ -17,6 +17,28 @@
     "birth": 167,
     "death": 231
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 92,
+      "war": 88,
+      "intelligence": 72,
+      "politics": 54,
+      "charisma": 72
+    },
+    "rotk11": {
+      "leadership": 90,
+      "war": 89,
+      "intelligence": 69,
+      "politics": 57,
+      "charisma": 71
+    },
+    "rotk12": {
+      "leadership": 89,
+      "war": 89,
+      "intelligence": 73,
+      "politics": 57
+    }
+  },
   "novel_presence": {
     "first_chapter": 22,
     "last_chapter": 101,
@@ -43,7 +65,104 @@
       "sections": {
         "Introduction": "張郃（）（2世紀？—231年），字（）乂（），河間國鄚縣（今河北省任丘市）人，三國時期曹魏名將，官至征西車騎將軍，封鄚侯；死後，追封諡曰壯侯。以“臨場巧變”見稱，先隨韓馥，後隨袁绍。在官渡之戰時遭到謀士郭圖的誣陷，所以轉投曹操。在曹魏帳下常立功勛。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 30–31",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Son"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Xiong"
+        }
+      ],
+      "ranks": [
+        "Major",
+        "Colonel",
+        "General of the Gentleman of the Household",
+        "Lieutenant General, Marquis of a Chief Commune",
+        "General Who Pacifies Tribes",
+        "General Who Agitates Bandits",
+        "General of the Left, Marquis of a Chief District",
+        "Marquis of Feng Mo",
+        "General of the Cavalry and Chariots Who Conquers the West",
+        "Marquis Zhuang (Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tAfter his defeat by Zhang Fei in the novel, Cao Hong’s reaction suggests that Zhang He was humiliated. Historically, because he captured two commanderies in the same campaign, Zhang He was promoted after his defeat at the hands of Zhang Fei. Cao Hong was not involved.\n\tIn the novel, Sima Yi comes up with the plan to surround Ma Su. In history, it was Zhang He’s idea.\n\tIn the novel, Zhang He suggests that he pursue Wei Yan, which Sima Yi argues against. Historically, Sima Yi suggested that Zhang He pursue Zhuge Liang’s army, and Zhang He argued against it. Wei Yan was not involved.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 13155,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Zhang He (Junyi)\n張郃 (儁乂)\nLived AD 167–231\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 17 (Wei 17)\nbyjiuwan (Giao Chau)\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742707238' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742706840' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742706840' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang He styled Junyi was a man from He Jian Mo. During the end of the Han, help was needed to quell the Yellow Turbans. Zhang He was a Major1(si ma) in the employ of Han Fu. When Han Fu was defeated, the soldiers returned to Yuan Shao. Yuan Shao promoted Zhang He to the rank of Colonel2(xiao wei) and ordered him to defend against Gongsun Zan. Defeating Gongsun Zan, Zhang He’s achievements were numerous. He was then transferred to become the General of the Gentleman of the Household (zhong lang jiang) in Ning Guo.•••\nA major’s (si ma) rank carried a salary of one thousandshi.↩\nA colonel’s (xiao wei) rank was just above the major’s rank. A regiment was commanded by the colonel who had command of about 700 men with between 60–120 junior officers. Below the colonel, was the second in command–a major (si ma). The colonel earned a salary of Equivalent to two thousandshiof grain (bi er qian shi).↩\n[Cao Cao] and Yuan Shao faced off with each other at Guan Du.AYuan Shao dispatched Chunyu Qiong and others to station at Wu Chao. [Cao Cao] personally led the attack [on Wu Chao]. Zhang He said to Yuan Shao: “Duke Cao’s armies are elite, they w... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms introduces",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 3",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -152,11 +271,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.208Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.903Z"
 }

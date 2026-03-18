@@ -1,0 +1,105 @@
+{
+  "name_kr": "극정",
+  "name_en": "Xi Zheng",
+  "name_cn": "郤正",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": {
+    "leadership": 10,
+    "war": 4,
+    "intelligence": 63,
+    "politics": 75,
+    "charisma": 61,
+    "total": 213,
+    "birth": 208,
+    "death": 278
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 7,
+      "war": 6,
+      "intelligence": 63,
+      "politics": 73,
+      "charisma": 61
+    },
+    "rotk11": {
+      "leadership": 10,
+      "war": 4,
+      "intelligence": 63,
+      "politics": 75,
+      "charisma": 61
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "삼국시대 촉한, 위나라, 서진의 정치가이며 자는 영선(令先)으로 본명은 극찬(郤纂). 사례 하남군 언사현 사람."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 210–278",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Xi Yi"
+        }
+      ],
+      "ranks": [
+        "Office of Imperial Library Clerk",
+        "Chief Clerk",
+        "Gentleman",
+        "Prefect",
+        "Grand Administrator of Baxi"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.059Z"
+}

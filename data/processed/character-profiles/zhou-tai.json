@@ -17,6 +17,28 @@
     "birth": 171,
     "death": 225
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 71,
+      "war": 63,
+      "intelligence": 73,
+      "politics": 62,
+      "charisma": 80
+    },
+    "rotk11": {
+      "leadership": 76,
+      "war": 91,
+      "intelligence": 48,
+      "politics": 38,
+      "charisma": 60
+    },
+    "rotk12": {
+      "leadership": 84,
+      "war": 91,
+      "intelligence": 48,
+      "politics": 38
+    }
+  },
   "novel_presence": {
     "first_chapter": 15,
     "last_chapter": 84,
@@ -39,7 +61,92 @@
       "sections": {
         "Introduction": "周泰（？—222年），字幼平，揚州九江下蔡（今安徽鳳臺）人。漢末三國時期孫策麾下的孫吳名將；是江東十二虎臣之一。與蔣欽是同鄉九江人，因護主有功，孫權賞賜予御幘青縑蓋，官至漢中太守、奮威將軍，封陵陽侯。"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 163–225",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Zhou Ping"
+        }
+      ],
+      "ranks": [
+        "Major With a Separate Command",
+        "Chief of Chunju Prefecture",
+        "Chief of Yichun Prefecture",
+        "Controller of Ruxu, General Who Pacifies the Caitiffs",
+        "Grand Administrator of Hanzhong, General of Roused Valour, Marquis of Lingyang"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 4986,
+      "first_translation": {
+        "translator": "LadyWu",
+        "excerpt": "Zhou Tai (Youping)\n周泰 (幼平)\nLived AD ?–225\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745016402' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745016336' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745016336' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhou Tai, styled Youping, was from Xiacai in Jiujiang commandery. Together with Jiang Qin, he served as Sun Ce’s bodyguard, and both men were known for their respectful performance of their duties and their deeds in battle. When Ce entered Kuaiji, Zhou Tai was made Major with a Separate Command, and given troops to command. Sun Quan took a liking to Zhou Tai’s character, and requested for Tai to be transferred to himself.\nOnce, while Sun Ce was out fighting Shanyue rebels from the six prefectures, Sun Quan was left in Xuan city with less than a thousand guards. Out of negligence, he did not set up defence posts. Several thousand of Shanyue rebels attacked. By the time Sun Quan mounted his horse, the bandits managed to surround him already. Their weapons, hitting here and there, slashed Sun Quan’s saddle, causing great panic all around. Only Zhou Tai, with spirits roused, defended Sun Quan with his body, emboldening those near him and making them able to fight again. When the bandits were finally dispersed, Zhou Tai was found with twelve deep wounds, which took a long time to heal. Had Zhou Tai not be there on that day, Sun Quan would have peri... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms model",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4"
+    ]
+  },
+  "community": {
+    "sentiment_score": 100,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -148,11 +255,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": false
   },
-  "source_count": 6,
-  "generated_at": "2026-03-16T10:52:17.271Z"
+  "source_count": 11,
+  "generated_at": "2026-03-18T10:20:09.991Z"
 }

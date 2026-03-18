@@ -1,0 +1,135 @@
+{
+  "name_kr": "조충",
+  "name_en": "Cao Chong",
+  "name_cn": "曹沖",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "wei",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 14,
+      "war": 7,
+      "intelligence": 80,
+      "politics": 74,
+      "charisma": 77
+    },
+    "rotk12": {
+      "leadership": 31,
+      "war": 21,
+      "intelligence": 85,
+      "politics": 79
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 195–208",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Cao"
+        },
+        {
+          "relation": "member",
+          "name": "Mother"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Huan"
+        },
+        {
+          "relation": "member",
+          "name": "Posthumous wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Zhen"
+        },
+        {
+          "relation": "member",
+          "name": "Adopted son"
+        },
+        {
+          "relation": "member",
+          "name": "Cao Cong"
+        }
+      ],
+      "ranks": [
+        "Chief Commandant of the Cavalry (Posthumous)",
+        "Marquis Mingwan (Posthumous)",
+        "Marquis of Deng (AD 217",
+        "Posthumous)",
+        "Marquis of Deng’ai, Duke of Deng’ai (AD 221",
+        "Posthumous)",
+        "Duke Guan Jun (AD 222",
+        "Posthumous)",
+        "Duke Jishi (AD 223",
+        "Posthumous)",
+        "Prince of Deng’ai (AD 231",
+        "Posthumous)",
+        "Marquis of Duxiang (AD 237",
+        "Posthumous)",
+        "Duke of Pingyang (AD 246",
+        "Posthumous)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 8667,
+      "first_translation": {
+        "translator": "jiuwan",
+        "excerpt": "Cao Chong (Cangshu)\n曹沖 (倉舒)\nLived AD 195–208\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyjiuwan (Giao Chau)\nin2004\nNo History Reference defined for Officer ID '21' Cao Chong (Cangshu). Biography cannot be tied to a scroll in the Sanguozhi.\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742776554' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699109' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742439918' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nThe Prince of Deng Ai was Cao Chong style Cangshu1. At the young age of five to six years old, he was clever and quick-witted. His wisdom and thoughts were extensive, it was like that of anadult.•••\nCao Chong’s mother was Lady Huan. She gave birth to Cao Chong, Prince of Peng Cheng—Cao Ju, and Prince of Yan—Cao Yu.↩\nOnce, Sun Quan paid tribute [to Cao Cao] by presenting a huge elephant. The High Ancestor [Cao Cao] wanted to know how much the elephant weighed, so he inquired into the crowd [around him]. The present crowd of people could not produce a viable solution. Cao Chong spoke thus: “Place the elephant onto the ship. Carefully mark the water’s level. Weighing a substance’s weight can then easily then be deduced.” [Cao Cao] was greatly pleased by this, and quickly departed afterwards.\nThere were many matters in a militaristic kingdom, the punishments were strict and severe. [Cao Cao’s] horse saddle was in the stable where rats had gnawed away at it. The stable manager [upon viewing the saddle] feared that he would surely... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.056Z"
+}

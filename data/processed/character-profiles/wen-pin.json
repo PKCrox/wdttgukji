@@ -1,0 +1,95 @@
+{
+  "name_kr": "문빙",
+  "name_en": "Wen Pin",
+  "name_cn": "文聘",
+  "courtesy_kr": "중업",
+  "courtesy_cn": "仲業",
+  "faction": "wei",
+  "tier": 2,
+  "role": "형주→위, 장강 수비",
+  "stats": {
+    "leadership": 86,
+    "war": 82,
+    "intelligence": 66,
+    "politics": 69,
+    "charisma": 72,
+    "total": 375,
+    "birth": 178,
+    "death": 237
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 82,
+      "war": 84,
+      "intelligence": 62,
+      "politics": 66,
+      "charisma": 70
+    },
+    "rotk11": {
+      "leadership": 86,
+      "war": 82,
+      "intelligence": 66,
+      "politics": 69,
+      "charisma": 72
+    },
+    "rotk12": {
+      "leadership": 80,
+      "war": 82,
+      "intelligence": 69,
+      "politics": 69
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "위서(魏書) [본기(本紀)]1권 「무제기(武帝紀)」2권 「문제기(文帝紀)」조조 (조등 · 왕준)조비3권 「명제기(明帝紀)」4권 「삼소제기(三少帝紀)」조예 (학소 · 진랑 · 맹타)조방 (장특) · 조모 · 조환 [열전(列傳)]5권 「후비전(后妃傳)」무선황후 · 문소황후 · 문덕황후 · 명도황후 · 명원황후6권 「동·이원·유전(董二袁劉傳)」7권 「여포·장홍전(呂布臧洪傳)」8권 「이공손·도·사장전(二公孫陶四張傳)」동탁 (이각 · 곽사 · 마등 · 한수)원소 (저수 · 전풍 · 원담 · 원희 · 원상) · 원술유표 (유종 · 부손 · 괴월 · 한숭 · 채모)여포 (장막 · 진궁 · 진등) · 장홍공손찬 (유우) · 도겸 · 장양 공손도 (공손연) 장연 · 장수 · 장로9권 「제하후·조전(諸夏侯曹傳)」10권 「순욱·순유·가후전(荀彧荀攸賈詡傳)」하후돈 하후무 한호 사환 · 하후연 하후패 · 조인 조순 · 조홍 · 조휴 조조(肇) 조진 조상 이승 환범 하안 · 하후상 하후현 이풍 허윤순욱 순의 예형 · 순유 · 가후11권 「원장양국전왕병관전(袁張凉國田王邴管傳)」12권 「최모서하형포사마전(崔毛徐何邢鮑司馬傳)」13권 「종요·화흠·왕랑전(鍾繇華歆王朗傳)」원환 · 장범 장승 · 양무 · 국연 전주 · 왕수 · 병원 · 관녕 왕렬 장천 호소최염 공융 허유 누규 · 모개 · 서혁 하기 · 형옹 · 포훈 · 사마지종요 종육 · 화흠 · 왕랑 왕숙14권 「정곽동류장류전(程郭董劉蔣劉傳)」15권 「유사마량장온가전(劉司馬梁張溫賈傳)」16권 「임소두정창전(任蘇杜鄭倉傳)」정욱 정효 · 곽가 · 동소 유엽 유도 · 장제 · 유방 손자유복 유정 · 사마랑 · 양습 왕사 장기 유초 장집 · 온회 맹건 · 가규 가충임준 · 소칙 · 두기(畿) 두서 악상 정혼 정태 · 창자 안비 영호소17권 「장악우장서전(張樂于張徐傳)」18권 「이이장문여허전이방염전(二李藏文呂許典二龐閻傳)」장료 · 악진 · 우금 · 장합 · 서황 주령이전 · 이통 · 장패 손관 · 문빙 · 여건 왕상 허저 · 전위 · 방덕 ·방육 조아 · 염온19권 「임성진소왕전(任城陳蕭王傳)」20권 「무문세왕공전(武文世王公傳)」조창 · 조식 양수 정의 정이 · 조웅조앙 · 조삭 · 조충 ·조거 · 조우 ·조림(林) · 조곤 · 조현 ·조간 ·조표 ·조정 ·조림(霖)21권 「왕위이유부전(王衛二劉傳)」22권 「환이진서위노전(桓二陳徐衛盧傳)」23권 「화상양두조배전(和常楊杜趙裴傳)」왕찬 진림 완우 유정 · 위기 · 유이 · 유소 · 부하환계 · 진군 진태 · 진교 · 서선 · 위진 · 노육화흡 · 상림 시묘 · 양준 ·두습 · 조엄 · 배잠 배수24권 「한최고손왕전(韓崔高孫王傳)」25권 「신비양부고당륭전(辛毗楊阜高堂隆傳)」26권 「만전견곽전(滿田牽郭傳)」한기 · 최림 · 고유 · 손례 · 왕관신비 신헌영 · 양부 왕이 · 고당륭 잔잠만총 · 전예 · 견초 · 곽회27권 「서호이왕전(徐胡二王傳)」28권 「왕관구제갈등종전(王毌丘諸葛鄧鍾傳)」서막 · 호질 호위 · 왕창 · 왕기왕릉 선고 영호우 · 관구검 문흠 · 제갈탄 당자 · 등애 주태 · 종회 장창포 왕필29권 「방기전(方技傳)」화타 · 두기(夔) 마균 · 주건평 · 주선 · 관로30권 「오환선비동이전(烏丸鮮卑東夷傳)」오환 · 선비 가비능 · 부여 ·고구려 · 왜 · 읍루 · 예맥 · 동옥저 · 마한 · 진한 · 변한관련 틀: 촉서 오서※ 흠정 24사 관련 틀 둘러보기\n\n조위의 토역장군문빙文聘 시호 장후(壯侯) 작위 관내후(關內侯) → 연수정후(延壽亭侯) → 장안향후(長安鄕侯) → 신야후(新野侯) 최종직위 강하태수(江夏太守), 후장군(後將軍) 성씨 문(文) 휘 빙(聘) 자 중업(仲業) 생몰 기간 ?년 ~ ?년 고향 형주(荊州) 남양군(南陽郡) 완현(宛縣) 역임한 관직 강하태수(江夏太守)→겸 토역장군(討逆將軍)→강하태수(江夏太守), 후장군(後將軍)\n\n1. 개요2. 정사 삼국지3. 삼국지연의4. 미디어 믹스4.1. 코에이 삼국지 시리즈4.2. 영걸전 시리즈4.3. 진삼국무쌍 시리즈4.4. 요코야마 미츠테루 삼국지4.5. 삼국전투기4.6. 삼국지톡4.7. 용랑전4.8... (truncated)"
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 5185,
+      "first_translation": {
+        "translator": "StephenSo",
+        "excerpt": "Wen Ping (Zhongye)\n文聘 (仲業)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 18 (Wei 18)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2000\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745628094' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745628088' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745628088' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nWen Pin, styled Zhongye, was from Wan in Nanyang. He was a prominent general under Liu Biao and was tasked with defending the north. Liu Biao then died and his son, Liu Cong, succeeded. The Grand Ancestor (Cao Cao) led an punitive expedition against Jingzhou and Liu Cong offered the region in surrender, calling upon Wen Pin to submit with him, but Wen Pin replied, “Pin was unable to safeguard the region and so I wait for punishment.” It was when the Grand Ancestor crossed the Han river that Wen Pin went to see him. The Grand Ancestor asked, “Why have you come this late?” Wen Pin replied, “Formerly, I was unable to assist Liu Jingzhou (Liu Biao) to serve the state. Even though [Liu] Jingzhou had died, I still intended to guard the Han River (chuan), safeguarding the land and its borders; if I live, I would not let down the weak and lonely; if I die, I would not feel ashamed buried beneath the ground. But now I have no alternative, so thus I have come here. The truth is I feel very sad and ashamed and had no face to come here earlier.” Wen Pin then sobbed and wept. The Grand Ancestor felt sorry for him, saying to him, ... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.034Z"
+}

@@ -17,6 +17,28 @@
     "birth": 167,
     "death": 221
   },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 86,
+      "war": 98,
+      "intelligence": 33,
+      "politics": 22,
+      "charisma": 44
+    },
+    "rotk11": {
+      "leadership": 85,
+      "war": 98,
+      "intelligence": 30,
+      "politics": 22,
+      "charisma": 45
+    },
+    "rotk12": {
+      "leadership": 94,
+      "war": 98,
+      "intelligence": 30,
+      "politics": 22
+    }
+  },
   "novel_presence": {
     "first_chapter": 1,
     "last_chapter": 120,
@@ -47,7 +69,153 @@
         "时人评价": "- 陈寿：“关羽、张飞皆称万人之敌，为世虎臣。羽报效曹公，飞义释严颜，並有国士之风。然羽刚而自矜，飞暴而无恩，以短取败，理数之常也。”、“初，飞雄壮威猛，亚於关羽，魏谋臣程昱等咸称羽、飞万人之敌也。羽善待卒伍而骄於士大夫，飞爱敬君子而不恤小人。”（《三國志·蜀書·關張馬黃趙傳第六》）\n- 劉備：「卿刑殺既過差，又日鞭撾健兒，而令在左右，此取禍之道也。」、「以君忠毅，侔踪召虎，名宣遐迩，故特显命，高墉进爵，兼司于京。其诞将天威，柔服以德，伐叛以刑，称朕意焉。」（《三國志·蜀書·關張馬黃趙傳第六》）\n- 傅幹：“刘备宽仁有度，能得人死力。诸葛亮达治知变，正而有谋，而为之相；张飞、关羽勇而有义，皆万人之敌，而为之将；此三人者，皆人傑也。”（《三國志·蜀書·先主傳第二》）\n- 杨戏：“关、张纠纠，出身匡世，扶翼攜上，雄壮虎烈。藩屏左右，翻飞电發，济於艰难，赞主洪业，侔跡韩、耿，齐声双德。交待无礼，並致姦慝，悼惟轻虑，陨身匡国。”（《三國志·蜀書·鄧張宗楊傳第十五》）\n- 刘巴：“大丈夫处世，当交四海英雄，如何与兵子共语乎？”（《三國志·蜀書·董劉馬陳董呂傳第九》）\n- 诸葛亮谓巴曰：“张飞虽实武人，敬慕足下。主公今方收合文武，以定大事；足下虽天素高亮，宜少降意也。”（《三國志·蜀書·董劉馬陳董呂傳第九》）\n- 郭嘉：“劉备有雄才而甚得众心。张飞、关羽者，皆万人之敌也，为之死用。”（《三國志·魏書·程郭董劉蔣劉傳第十四》）\n- 程昱：“刘备有英名，关羽、张飞皆万人敌也。”（《三國志·魏書·程郭董劉蔣劉傳第十四》）\n- 董昭：“劉备勇而志大，关羽、张飞为之羽翼，恐备之心未可得论也！”（《三國志·魏書·程郭董劉蔣劉傳第十四》）\n- 刘晔：“今破汉中，蜀人震恐，其势自倾。以公之神明，因其倾而压之，无不克也。若小缓之，诸葛亮明於治而为相，关羽、张飞勇冠三军而为将，蜀民既定，据险守要，则不可犯矣。今不取，必为後忧。”（《三國志·魏書·程郭董劉蔣劉傳第十四》）\n- 周瑜：“刘备以枭雄之姿，而有关羽、张飞熊虎之将，必非久屈为人用者。”（《三國志·吳書·周瑜魯肅呂蒙傳第九》）\n- 袁准：“张飞、关羽与刘备俱起，爪牙腹心之臣，而武人也。”",
         "后人评价": "- “值天下大乱，（劉）遐为坞主，每击贼，率壮士陷坚摧锋，冀方比之张飞、关羽。”（《晋书·劉遐傳》）\n- “（阎）负、（梁）殊曰：‘骁勇多权略，攻必取，战必胜，关、张之流，万人之敌者，则前将军新兴王飞，建切将军邓羌，立忠将军彭越，安远将军范俱难，建武将军徐盛。’”（《晋书·苻生载记》）\n- “李庠，字玄序，特第三弟也。少以烈气闻。赵廞深器之，与论兵法，无不称善，每谓所亲曰：‘李玄序盖亦一时之关、张也。’”（《晋书·李特载记》）\n- “傉檀曰：‘吾今新牧贵州，怀远安迩之略，为之若何？’（宗）敞曰：‘凉土虽弊，形胜之地，道由人弘，实在殿下。段懿、孟祎，武威之宿望；辛晁、彭敏，秦、陇之冠冕；斐敏、马辅，中州之令族；张昶，凉国之旧胤；赵昌、张穆、边宪、文齐、杨班、梁崧、赵昌，武同飞、羽。’”（《晋书·禿髮傉檀载记》）\n- 李暠：“咏群豪之高轨，嘉关张之飘杰，誓报曹而归刘，何义勇之超出！据断桥而横矛，亦雄姿之壮发。”（《晋书·列传第五十七》）\n- “史臣曰：‘长孙肥结发内侍，雄烈知名，军锋所指，罔不奔散，关、张万人之敌，未足多也。’”（《魏书·长孙肥传》）\n- “当世推其骁果，皆以为关、张弗之过也。”（《魏书·杨大眼传》）\n- “贼以延伯众少，开营竞追，众过十倍，临水逼蹙。（萧）宝夤亲观之，惧有亏损。延伯不与其战，身自殿后，抽众东渡，转运如神，须臾济尽，徐乃自渡。贼徒夺气，相率还营。宝夤大悦，谓官属曰：‘崔公，古之关、张也。今年何患不制贼！’”（《魏书·崔延伯传》）\n- “薛彤、（高）进之并道济腹心，有勇力，时以比关羽、张飞。’”（《宋书·檀道济传》）\n- “朱异之徒，积受金贝，遂使咸称胡、赵，比昔关、张，诬掩天听，谓为真实。”（《梁书·列传第五十》）\n- “又有西域胡，妙于弓矢，弦无虚发，众军尤惮之。及将战，（吴）明彻谓摩诃曰：‘若殪此胡，则彼军夺气，君有关、张之名，可斩颜良矣。’摩诃曰：‘愿示其形状，当为公取之。’明彻乃召降人有识胡者，云胡著绛衣，桦皮装弓，两端骨弭。明彻遣人觇伺，知胡在阵，乃自酌酒以饮摩诃。摩诃饮讫，驰马冲齐军，胡挺身出阵前十馀步，彀弓未发，摩诃遥掷铣鋧，正中其额，应手而仆。”（《陈书·萧摩诃传》）\n- “武人略阳垣历生、襄阳蔡道贵，拳勇秀出，当时以比关羽、张飞。”（《南史·文惠太子传》）\n- “（从弟京杲）后从李光弼出井陉，督趫荡先驱，战嘉山尤力，（唐）肃宗异之，召见曰：‘黥、彭、关、张之流乎！’”（《新唐书·辛云京传》）\n- “金将时全、合连、孛术鲁答哥率细军及众军三道渡淮，涉以合连善战，乃命张惠当之。惠，金骁将，所谓‘赛张飞’者，既归宋，金人杀其妻，所部花帽军，有纪律，它军不及也。惠率诸军出战，自辰至酉，金人大败，答哥溺死，陷失太半，细军丧者几二千。”（《宋史·贾涉传》）\n- “齐孙膑晏婴、晋程婴公孙杵臼、燕乐毅、汉曹参陈平韩信周亚夫卫青霍去病霍光、蜀昭烈帝关羽张飞诸葛亮、唐房玄龄长孙无忌魏征李靖李绩尉迟恭浑瑊段秀实等，皆勋德高迈，为当时之冠。”（《宋史·志第五十八·礼八》）\n- “关羽则为仇国所禽，张飞则遭帐下所害。凡此名将，悉皆人雄。”（《宋史·列传第一百九十八·文苑一》）\n- “关张比疆治，将相俱和同。”（《梁父吟》）\n- “将作大匠、屯骑校尉朝那侯青，武邑人也。机巧有算略，骁勇善骑射，所在先登陷陈。慕容俊拟之张飞。”（《十六国春秋·前燕录》）\n- “楚、汉未分，绛、灌所以宣力；曹、刘竞逐，关、张所以立名。然则名立资草昧之初，力宣候经轮之会，攀附鳞翼，世有之矣。”（《隋书·列传第二十九》）\n- “公结发戎旅，妙善孙吴 。如... (truncated)"
       }
+    },
+    "history": {
+      "summary": "",
+      "sections": {
+        "생애(정사)": "### 개요\n장비관련 문서 [ 펼치기 · 접기 ]생애생애평가평가가족배우자 하후씨 · 자녀 2남 2녀 · 손자 장준 · 사돈 유비 · 사위 유선기타기타 창작물 · 관장지용 · 도원결의 · 장팔사모 · 삼영전여포 · 장판파 전투 · 장판파 · 장판교 · 한중 공방전 · 낭중취물\n\n1. 개요2. 초기 생애3. 서주에서4. 형주에서4.1. 수어지교4.2. 장판파 전투4.3. 적벽대전4.4. 남군 공방전5. 익주에서5.1. 유비의 입촉5.2. 한중 공방전6. 죽음\n\n### 개요\n\n\n### 초기 생애\n탁주의 민간 전승에 따르면 장비는 사대부 집안 출신으로 문•무를 겸비하고 서화도 뛰어났다. 청나라 시대의《역대화기록》에 따르면 장비는 줘저우인(탁주 사람)으로 미인도를 잘 그렸다는 기록이 있다. 단, 이는 확증되지 않은 썰임을 명심해야 한다.유비가 처음 거병할 때부터 관우와 함께 그를 따르기 시작했는데 기록이 매우 부실하다. 장비의 출신 성분을 두고도 말이 많은데 전부 추측일 뿐 검증된 바가 없다. 확인된 바는 장비가 유비와 같은 동네 출신이라는 정도다. 참고로《삼국지연의》와 다르게 정사에서는 유비, 관우, 장비가 의형제였다는 기록은 없으나〈장비전〉에 따르면 장비는 젊어서부터 관우와 함께 유비를 섬겼는데, 관우가 몇 년 연장이어서 장비는 그를 형으로 섬겼고,〈관우전〉에서는 관우가 자신은 유비와 함께 죽기로 맹세한 사이라고 언급했으니 이들이 매우 굳건한 유대관계로 묶여있는 사이임을 알 수 있다. 유비는 젊었을 때 고향에서 패거리를 이루고 협객 생활을 했다고 하니 장비는 관우, 그리고 또 다른 고향 친구인 간옹과 함께 유비의 패거리에 포함되어 활동했을 것이다.〈관우전〉에 따르면 유비가 향리에서 사람의 무리를 모으니 관우는 장비와 함께 그를 위해 적을 막아냈다. 유비가 평원상이 되자 관우와 장비를 별부사마로 삼고 부곡(部曲)을 나누어 통솔하게 했다. 유비는 두 사람과 함께 잠을 자며 같은 침상을 썼고 은혜가 형제와 같았다. 그러나 여러 사람이 함께 있는 자리에서는 종일토록 시립했고, 유비를 따라 떠돌아다니며 고난과 위험을 피하지 않았다.\n\n### 서주에서\n〈선주전〉에 따르면 유비가 서주를 다스리게 되었다. 원술이 와서 유비를 공격하자 유비는 우이현 및 회음현에서 이를 막았다.〈선주전〉 주석《영웅기》에 따르면 유비는 장비를 남겨 하비를 지키게 하고, 군을 이끌고 회음 석정에서 원술과 싸웠으나 이기고 짐을 되풀이했다. 도겸의 옛 장수인 조표가 하비에 있었는데, 장비가 그를 죽이려 했다. 조표의 무리는 둔영을 견고히 하고 수비하면서 사람을 보내 여포를 불렀다. 여포는 하비를 차지하고 장비는 패주했다.〈여포전〉 주석《영웅기》에 따르면 여포가 물과 뭍으로 동쪽으로 내려와 하비 서쪽 40리 되는 곳에 도착했다. 유비의 중랑장 단양 사람 허탐은 밤을 틈타 사마 장광을 여포에게로 보냈다. 그가 말했다.\"장익덕(장비)이 하비상 조표와 서로 다투어 익덕이 조표를 죽이니 성중에 대란이 일어 서로 믿지 못합니다. 단양병 1,000명이 서쪽 백문성 안에 주둔하고 있는데, 장군께서... (truncated)"
+      }
+    },
+    "kongming": {
+      "life_span": "AD 164–221",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Wife"
+        },
+        {
+          "relation": "member",
+          "name": "Lady Xiahou"
+        },
+        {
+          "relation": "member",
+          "name": "Eldest Son"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Bao"
+        },
+        {
+          "relation": "member",
+          "name": "Second Son"
+        },
+        {
+          "relation": "member",
+          "name": "Zhang Shao"
+        },
+        {
+          "relation": "member",
+          "name": "Eldest Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Empress Zhang [Xingcai]"
+        },
+        {
+          "relation": "member",
+          "name": "Younger Daughter"
+        },
+        {
+          "relation": "member",
+          "name": "Empress Zhang"
+        },
+        {
+          "relation": "member",
+          "name": "Sworn Brothers"
+        },
+        {
+          "relation": "member",
+          "name": "Liu Bei f"
+        },
+        {
+          "relation": "member",
+          "name": "Guan Yu f"
+        }
+      ],
+      "ranks": [
+        "Household General (199 CE, by Cao Cao)",
+        "Grand Administrator of Yidu (209 CE)",
+        "General Who Conquers Caitiffs (209 CE)",
+        "District Marquis of Xin (209 CE)",
+        "Grand Administrator of Nan",
+        "Grand Administrator of Baxi (214 CE)",
+        "General of the Right (219 CE), With Acting Tally",
+        "General of Chariots and Cavalry (221 CE)",
+        "Colonel Who Directs Retainers (221 CE)",
+        "Township Marquis of Xi (221 CE)"
+      ],
+      "historical_notes": "",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tThe Peach Tree Garden oath did not actually take place but Sanguozhi states that Liu, Guan and Zhang ‘slept in the same bed and were as close as brothers.’\n\tZhang Fei did not whip the court official when drunk in Anxi. It was Liu Bei, and he was not drunk. [SGZ: Liu Bei]\n\tZhang Fei did not kill Cao Bao for drinking, they had a ‘falling out’. Cao Bao was not special to Lü Bu, but his death caused riots in the city. Yuan Shu corresponded with Lü Bu and it was Xu Dan that opened the gates. [ZZTJ: 62]\n\tNever shouted at Xiahou Jie, causing his death.\n\tHistorically, Zhang Fei was a skilled military leader and more intelligent than the novel portrays.",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 3,
+      "total_char_count": 23106,
+      "first_translation": {
+        "translator": "JackYuan",
+        "excerpt": "Zhang Fei (Yide)\n張飛 (益德)\nLived AD 167–221\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 36 (Shu 6)\nbyJack Yuan\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742431217' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742431108' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742431075' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nZhang Fei had the style Yide and was from Zhuojun. In his youth he served the Former Lord with Guan Yu. Guan Yu was a few years his senior and Zhang Fei treated him as an elder brother. The Former Lord followed Duke Cao and defeated Lü Bu, returning with the former to Xu. Duke Cao assigned Zhang Fei as a General of the Gentlemen of the Household. The Former Lord turned against Duke Cao and went over to Yuan Shao and then Liu Biao. Liu Biao died and Duke Cao entered Jingzhou. The Former Lord fled to Jiangnan. Duke Cao pursued and in one day and one night, caught up to him at Changban, Dangyang. The Former heard that Duke Cao’s great army was upon him, abandoned his family and sent Zhang Fei to cover the rear with twenty horsemen. Zhang Fei defended the riverbank and broke the bridge. He aligned his lance, his eyes bulging, and said: “This is Zhang Yide, come and duel to the death!” None of the enemy dared approach and disaster was thus averted. After the Former Lord secured Jiangnan, Zhang Fei was made Grand Administrator of Yidu and General who Campaigns against the Caitiffs, and enfeoffed as Marquis of Xinting. He was later transferred to N... (truncated)"
+      }
     }
+  },
+  "koei_official": null,
+  "fandom": {
+    "infobox": null,
+    "game_stats": {},
+    "game_appearances": [
+      "Romance of the Three Kingdoms XIV",
+      "Romance of the Three Kingdoms drama",
+      "Romance of the Three Kingdoms portrait",
+      "Romance of the Three Kingdoms II",
+      "Romance of the Three Kingdoms III",
+      "Romance of the Three Kingdoms IV",
+      "Romance of the Three Kingdoms V",
+      "Romance of the Three Kingdoms VI",
+      "Romance of the Three Kingdoms VII",
+      "Romance of the Three Kingdoms VIII",
+      "Romance of the Three Kingdoms IX",
+      "Romance of the Three Kingdoms X",
+      "Romance of the Three Kingdoms XI",
+      "Romance of the Three Kingdoms XII",
+      "Romance of the Three Kingdoms XIII",
+      "ROTK2",
+      "ROTK3",
+      "ROTK4",
+      "ROTK5",
+      "ROTK6",
+      "ROTK7",
+      "ROTK8",
+      "ROTK9",
+      "ROTK10",
+      "ROTK11",
+      "rotk12",
+      "ROTK12",
+      "ROTK13",
+      "ROTK14",
+      "ROTKL",
+      "ROTK2017",
+      "ROTKI",
+      "ROTKLCC",
+      "Dynasty Warriors 9",
+      "Dynasty Warriors 7",
+      "Dynasty Warriors 8",
+      "Dynasty Warriors 4",
+      "Dynasty Warriors 5",
+      "Dynasty Warriors 6",
+      "Dynasty Warriors 2",
+      "Dynasty Warriors 3",
+      "Warriors Orochi 2",
+      "Warriors Orochi 3",
+      "Warriors Orochi 4",
+      "Warriors Orochi 1",
+      "Kessen II",
+      "Kessen Characters"
+    ]
+  },
+  "community": {
+    "sentiment_score": 79,
+    "top_keywords": []
   },
   "dialogues": [
     {
@@ -178,11 +346,18 @@
     "namu": true,
     "wiki_en": true,
     "wiki_zh": true,
+    "history": true,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": true,
+    "community": true,
     "stats": true,
+    "multi_stats": true,
     "novel_appearances": true,
     "dialogues": true,
     "relationships": true
   },
-  "source_count": 7,
-  "generated_at": "2026-03-16T10:52:17.154Z"
+  "source_count": 13,
+  "generated_at": "2026-03-18T10:20:09.849Z"
 }

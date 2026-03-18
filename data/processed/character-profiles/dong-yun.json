@@ -1,0 +1,94 @@
+{
+  "name_kr": "동윤",
+  "name_en": "Dong Yun",
+  "name_cn": "董允",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "shu",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 38,
+      "war": 22,
+      "intelligence": 78,
+      "politics": 91,
+      "charisma": 72
+    },
+    "rotk12": {
+      "leadership": 47,
+      "war": 28,
+      "intelligence": 79,
+      "politics": 91
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Dong He"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": {
+      "translation_count": 1,
+      "total_char_count": 13782,
+      "first_translation": {
+        "translator": "ZL181",
+        "excerpt": "Dong Yun (Xiuzhao)\n董允 (休昭)\nLived AD ?–246\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyZL181\nonMarch 1st, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1740835920' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760279669' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740853933' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1714018204' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nDong Yun, styledXiuzhao, was the son ofHousehold General who Controls the Army,[Dong] He.\nWhen theFormer Lordinstalled theHeir Apparent,[Dong] Yunwas chosen to be aStaff Member, then shifted toHorse Washer. After theLatter Lordsucceeded the throne, he was promoted toAttending Gentleman at the Yellow Gates. WhenAssisting Chancellor[Zhuge] Liangwas going on an expedition to the north, he stationed atHanzhong[漢中]. He worried that as theLatter Lordwas callow in age, he would find it troublesome to distinguish the virtuous and the evil. Because[Dong] Yunhad a heart that was just and loyal, he wanted to have him handle palace affairs. Thus, he petitioned:\n“Palace AttendantsGuo YouzhiandFei YiandAttending GentlemanDong Yun,1among others, have been picked by theformer emperorto entrust them withYour Majesty. Giving deep consideration over gains and losses, and wholeheartedly proposing loyal words is their responsibility. I believe that regarding the affairs within the palace, consult them about everything, regardless of how major or minor the affairs are; they would always be able to fix any oversights and make enhancements. If they do not ha... (truncated)"
+      }
+    }
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": true,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.060Z"
+}

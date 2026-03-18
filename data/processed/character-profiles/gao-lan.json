@@ -1,0 +1,87 @@
+{
+  "name_kr": "고람",
+  "name_en": "Gao Lan",
+  "name_cn": "高覧",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 76,
+    "war": 82,
+    "intelligence": 66,
+    "politics": 55,
+    "charisma": 62,
+    "total": 341,
+    "birth": 159,
+    "death": 201
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 75,
+      "war": 82,
+      "intelligence": 67,
+      "politics": 55,
+      "charisma": 61
+    },
+    "rotk11": {
+      "leadership": 76,
+      "war": 82,
+      "intelligence": 66,
+      "politics": 55,
+      "charisma": 62
+    },
+    "rotk12": {
+      "leadership": 76,
+      "war": 82,
+      "intelligence": 68,
+      "politics": 55
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말의 인물이자 원소 휘하의 장수로 200년 관도대전 때 장합과 함께 조조에게 항복했다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": null,
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": false,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 3,
+  "generated_at": "2026-03-18T10:20:10.071Z"
+}

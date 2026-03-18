@@ -1,0 +1,87 @@
+{
+  "name_kr": "엄여",
+  "name_en": "Yan Yu",
+  "name_cn": "厳輿",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": null,
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 60,
+      "war": 78,
+      "intelligence": 49,
+      "politics": 18,
+      "charisma": 12
+    },
+    "rotk12": {
+      "leadership": 61,
+      "war": 78,
+      "intelligence": 44,
+      "politics": 20
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {},
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 001–202",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Brother"
+        },
+        {
+          "relation": "member",
+          "name": "Yan Baihu"
+        }
+      ],
+      "ranks": [],
+      "historical_notes": "Yan Yu was younger brother to White Tiger Yan. In AD 197 Sun Ce attacked and Yan Yu was sent to parlay. They met face-to-face but when Sun Ce drew his blade Yan Yu jumped in fright, and was promptly cut down. Yan Yu had a reputation for bravery so, seeing this, his men became frightened and were quickly defeated. (1)\n\n1) Sanguozhi: Wu 1",
+      "novel_notes": "Differences Between Fact and Common Fiction\n\t\n\t\t\n\tHistorically had a reputation for bravery.",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": false,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": false,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 2,
+  "generated_at": "2026-03-18T10:20:10.084Z"
+}

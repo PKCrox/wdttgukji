@@ -1,0 +1,53 @@
+=== 양의 (楊儀, Yang Yi) ===
+자: 불명 (불명)
+진영: shu | 티어: 3 | 역할: undefined
+
+## 능력치
+(없음)
+
+## 연의 등장
+?~?회, 총 0개 회차
+회차: 
+
+## 실제 연의 대사 (P1 추출, 중국어 원문)
+(없음)
+
+## 관계 (P3)
+(없음)
+
+## 연표 이벤트
+(없음)
+
+## 나무위키
+(없음)
+
+## EN Wikipedia
+(없음)
+
+## 정사삼국지
+(없음)
+
+## Kongming 영문 백과사전
+생몰: AD 001–202
+
+## 정사 영역본 (Kongming SGZ)
+Yang Yi (Weigong)
+楊儀 (威公)
+Lived AD ?–235
+aSanguozhiBiographyRecords of the Three Kingdoms [三國志]
+Scroll 40 (Shu 10)
+byjiuwan (Giao Chau)
+in2003
+AbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'
+AbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742706704' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742706698' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+AbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742706698' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'
+Yang Yi styled Wei Gong was a man from Xiang Yang. In the middle of Jian An1he was the Secretariat (zhu bu) under the Inspector of Jing Zhou, Fu Qun. 
+
+## 멀티버전 능력치 (ROTK 10/11/12)
+rotk10: 통68 무44 지82 정79 매17
+rotk12: 통68 무40 지82 정79 매?
+
+## 커뮤니티 평가
+(없음)

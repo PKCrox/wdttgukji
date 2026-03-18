@@ -1,0 +1,127 @@
+{
+  "name_kr": "공손도",
+  "name_en": "Gongsun Du",
+  "name_cn": "公孫度",
+  "courtesy_kr": null,
+  "courtesy_cn": null,
+  "faction": "other",
+  "tier": 3,
+  "stats": {
+    "leadership": 67,
+    "war": 71,
+    "intelligence": 63,
+    "politics": 51,
+    "charisma": 35,
+    "total": 287,
+    "birth": 154,
+    "death": 204
+  },
+  "stats_multi": {
+    "rotk10": {
+      "leadership": 69,
+      "war": 67,
+      "intelligence": 71,
+      "politics": 67,
+      "charisma": 19
+    },
+    "rotk11": {
+      "leadership": 67,
+      "war": 71,
+      "intelligence": 63,
+      "politics": 51,
+      "charisma": 35
+    },
+    "rotk12": {
+      "leadership": 67,
+      "war": 71,
+      "intelligence": 66,
+      "politics": 51
+    }
+  },
+  "novel_presence": {
+    "chapters_from_cooccurrence": [],
+    "chapter_count": 0
+  },
+  "biography": {
+    "namu": {
+      "개요": "후한 말 세력을 이룬 동연의 제1대 수장이며 자는 승제(升濟) 또는 숙제(叔濟)로 유주 요동군 양평현 출신. 본명은 공손표(公孫豹), 개명(改名)이 공손도다.",
+      "생애": "그의 부친 공손연(公孫延)은 관리의 추적을 피해 현도군으로 이주했기 때문에 그곳에서 거주했다.공손도는 아버지가 일찍 사망하고 현도군 태수 공손역(公孫琙) 아래에서 일했는데, 공교롭게도 공손역의 18세에 요절한 아들 이름이 공손도의 원래 이름이었던 공손표였고, 공손도는 공손표와 태어난 해가 같았다. 이 때문에 공손역은 공손도를 자기 아들처럼 사랑하였고 좋은 혼처를 얻어 장가를 가도록 도와주기까지 하였으며, 특히 스승을 붙여주며 생업에 매진할 필요 없이 공부에만 전념할 수 있게 하는 등 물심양면으로 그를 지원해주었다. 이후 169년에는 사필이 공손도를 유도(有道)로 천거해서 공손도는 중앙 정계에 진출하기도 했다.그렇게 점차 관직이 올라가 기주 자사까지 승진했지만 뜬소문이 돌아 면직되었다. 이후 189년에 동탁의 수하 장수였던 서영이 공손도와 동향 출신이었기 때문에 공손도는 그의 추천으로 요동 태수가 되었지만, 중원 지역이 혼란해지자 왕을 자칭하였다.191년에 위명을 떨쳐 중원의 난리를 피해서 온 관녕, 병원, 왕렬과 같은 인물들이 공손도에게 의탁했다고 하며, 공손도는 객사를 비워 관녕, 병원 등을 맞이했다. 관녕의 충고로 병원이 고향으로 도망갔을 때 굳이 쫓지 않았으며, 왕렬을 장사로 임명하려고 했지만 왕렬이 거부했다고 한다.공손도는 산동 반도의 동부 지역 및 주변 지방을 공략하는 등 제법 세력을 확장했다. 또한 국내에서도 강성한 호족들을 붙잡아 모조리 죽이는 등 철저한 공포 정치로 철혈 지배권을 확립하는 데 힘썼다. 한편 그와 적대하던 고구려와 선비족의 적국인 부여왕에게 종친의 딸을 시집보내는 형태로 동맹을 맺는 등 외교 관계 수립에도 힘을 기울였다.197년, 고구려에서 왕위 계승전 끝에 산상왕이 즉위하고 형인 고발기가 이에 반발했다가 패배한 후 망명해와 군사를 요청하자 선뜻 30,000명의 군대를 지원해줄 정도로 꽤 유망한 강자였다. 아무래도 동연의 적대국이었던 고구려의 내정에 영향력을 행사하려 했던 듯 하다. 다만 이 시도는 고발기와 산상왕의 동생이었던 고계수가 막아내면서 무위로 돌아갔다.헌제를 옹립한 조조에 대해서는 상당히 같잖게 본 듯하다. 조조가 직접 헌제에게 상주해 공손도에게 무위장군, 영녕향후의 작위를 내렸지만, 공손도는“나는 요동의 왕이다. 뭐가 영녕향후냐!”며 화를 내고 인수를 창고에 처박아 버렸다고 한다. 204년 8월, 조조가 원상을 격파하고 업을 함락시켰다는 소식을 듣자 이 기회에 군사를 일으켜 조조를 밀어버리고 자기가 업을 차지하겠다는 패기 넘치는 발언도 하였다. 이로 보아 원소 사후 하북의 혼란을 틈타 중원 지역으로 세력을 확장할 생각도 있었던 듯하나, 마침 그 해에 사망했고, 사후 아들 공손강이 권좌를 이어받았다."
+    },
+    "wiki_en": {
+      "summary": "",
+      "sections": {}
+    },
+    "wiki_zh": {
+      "summary": "",
+      "sections": {}
+    },
+    "history": {
+      "summary": "",
+      "sections": {}
+    },
+    "kongming": {
+      "life_span": "AD 150–204",
+      "courtesy_name": null,
+      "affiliations": [],
+      "family": [
+        {
+          "relation": "member",
+          "name": "Father"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Yan"
+        },
+        {
+          "relation": "member",
+          "name": "Sons"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Kang"
+        },
+        {
+          "relation": "member",
+          "name": "Gongsun Gong"
+        }
+      ],
+      "ranks": [
+        "Gentlemen Cadet",
+        "Officer of Imperial Secretariat",
+        "Inspector of Ji",
+        "Administrator of Liaodong",
+        "Marquis of Liaodong",
+        "Governor of Ping",
+        "General Who is Firm and Majestic",
+        "Marquis of Yongning District"
+      ],
+      "historical_notes": "Gongsun Du, called ‘Gongsun Du the Warlike’ in the novel SGYY, was the governor of Liaodong during the Late-Han era. He was born in the middle of the second century AD (Gardiner 60; also see Gardiner 92) in either Xiangping, the capital of Liaodong, or in Xuantu (another commandery entirely) (Gardiner 60). Both Liaodong and Xuantu bordered numerous hostile factions such as Puyo (in Chinese: Fuyu), Koguryo (in Chinese: Gaogouli) and the Xianbei. All of these foreign groups assaulted the region in Gongsun Du’s early lifetime (Gardiner 61).\n\nAround AD 167, when Gongsun Du was aged 18 by Chinese reckoning, Du began his career as a public official in the staff of Liaodong’s governor Gongsun Yu (Gardiner 62). Gongsun Yu became attached to his new subordinate and eventually arranged for Du’s formal education and marriage. Gongsun Du was eventually recommended for service at the Han capital and left for there in AD 169 (Gardiner 62). He was appointed to a post in the Palace Secretariat and then later received rank as the Inspector of Qizhou (Gardiner 62–63). By this time, the Late-Han dynasty was beginning to unravel as it faced numerous rebellions, bankruptcy and local warlords usurping power. In AD 189, the warlord Dong Zhou took control of the Han capital. Although several provincial lords raised troops to oppose Dong Zhou, others benefited from his rise to power. One such man was Gongsun Du. Dong Zhou’s officer Xu Rong (who happened to be a man from Liaodong commandery himself) recommended Gongsun Du for higher office. As a result, Gongsun Du was made Governor of Liaodong in AD 189 (Gardiner 64; see also Gardiner 92).\n\nOfficial Chinese sources seem to indicate that Gongsun Du’s first step as governor was to carry out a systematic purge of all his personal enemies. Gardiner, however, offers the explanation that Gongsun Du was probably attempting to secure his authority by eliminating potential adversaries with armed retainers [adversaries that might in the future attempt... (truncated)",
+      "novel_notes": "",
+      "quotes": []
+    },
+    "sgz_english": null
+  },
+  "koei_official": null,
+  "fandom": null,
+  "community": null,
+  "dialogues": [],
+  "relationships": [],
+  "source_coverage": {
+    "namu": true,
+    "wiki_en": false,
+    "wiki_zh": false,
+    "history": false,
+    "kongming": true,
+    "sgz_en": false,
+    "koei_official": false,
+    "fandom": false,
+    "community": false,
+    "stats": true,
+    "multi_stats": true,
+    "novel_appearances": false,
+    "dialogues": false,
+    "relationships": false
+  },
+  "source_count": 4,
+  "generated_at": "2026-03-18T10:20:10.074Z"
+}
