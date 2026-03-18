@@ -691,11 +691,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 72,
-        "war": 78,
-        "intellect": 43,
-        "politics": 41,
-        "charisma": 50
+        "command": 71,
+        "war": 79,
+        "intellect": 35,
+        "politics": 30,
+        "charisma": 31
       },
       "loyalty": 93,
       "skills": [
@@ -708,11 +708,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 82,
-        "war": 88,
-        "intellect": 53,
-        "politics": 51,
-        "charisma": 60
+        "command": 81,
+        "war": 89,
+        "intellect": 45,
+        "politics": 40,
+        "charisma": 41
       },
       "experience": 0,
       "level": 1
@@ -886,11 +886,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 55,
-        "war": 15,
-        "intellect": 96,
-        "politics": 95,
-        "charisma": 85
+        "command": 47,
+        "war": 14,
+        "intellect": 95,
+        "politics": 98,
+        "charisma": 80
       },
       "loyalty": 78,
       "skills": [
@@ -904,11 +904,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 65,
-        "war": 30,
+        "command": 57,
+        "war": 24,
         "intellect": 100,
         "politics": 100,
-        "charisma": 95
+        "charisma": 90
       },
       "experience": 0,
       "level": 1
@@ -952,11 +952,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 82,
-        "war": 79,
-        "intellect": 68,
-        "politics": 60,
-        "charisma": 55
+        "command": 84,
+        "war": 72,
+        "intellect": 65,
+        "politics": 58,
+        "charisma": 54
       },
       "loyalty": 85,
       "skills": [
@@ -969,11 +969,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 92,
-        "war": 89,
-        "intellect": 78,
-        "politics": 70,
-        "charisma": 65
+        "command": 94,
+        "war": 82,
+        "intellect": 75,
+        "politics": 68,
+        "charisma": 64
       },
       "experience": 0,
       "level": 1
@@ -1017,11 +1017,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 80,
-        "war": 84,
-        "intellect": 55,
-        "politics": 48,
-        "charisma": 60
+        "command": 76,
+        "war": 86,
+        "intellect": 53,
+        "politics": 42,
+        "charisma": 65
       },
       "loyalty": 90,
       "skills": [
@@ -1034,11 +1034,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 90,
-        "war": 94,
-        "intellect": 65,
-        "politics": 58,
-        "charisma": 70
+        "command": 86,
+        "war": 96,
+        "intellect": 63,
+        "politics": 52,
+        "charisma": 75
       },
       "experience": 0,
       "level": 1
@@ -1149,11 +1149,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 83,
+        "command": 85,
         "war": 98,
-        "intellect": 42,
-        "politics": 28,
-        "charisma": 72
+        "intellect": 30,
+        "politics": 22,
+        "charisma": 55
       },
       "loyalty": 100,
       "skills": [
@@ -1167,11 +1167,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 93,
+        "command": 95,
         "war": 100,
-        "intellect": 52,
-        "politics": 43,
-        "charisma": 82
+        "intellect": 40,
+        "politics": 32,
+        "charisma": 65
       },
       "experience": 0,
       "level": 1
@@ -1281,11 +1281,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 85,
-        "war": 90,
-        "intellect": 56,
-        "politics": 35,
-        "charisma": 48
+        "command": 81,
+        "war": 92,
+        "intellect": 69,
+        "politics": 49,
+        "charisma": 55
       },
       "loyalty": 70,
       "skills": [
@@ -1299,11 +1299,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 95,
-        "war": 95,
-        "intellect": 66,
-        "politics": 50,
-        "charisma": 58
+        "command": 91,
+        "war": 100,
+        "intellect": 79,
+        "politics": 59,
+        "charisma": 65
       },
       "experience": 0,
       "level": 1
@@ -1444,10 +1444,10 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 68,
-        "war": 42,
-        "intellect": 90,
-        "politics": 88,
+        "command": 80,
+        "war": 56,
+        "intellect": 92,
+        "politics": 90,
         "charisma": 85
       },
       "loyalty": 92,
@@ -1462,10 +1462,10 @@
         "accessory": null
       },
       "potential": {
-        "command": 78,
-        "war": 52,
-        "intellect": 95,
-        "politics": 98,
+        "command": 90,
+        "war": 66,
+        "intellect": 100,
+        "politics": 100,
         "charisma": 95
       },
       "experience": 0,
@@ -1481,7 +1481,7 @@
         "war": 94,
         "intellect": 76,
         "politics": 18,
-        "charisma": 58
+        "charisma": 68
       },
       "loyalty": 88,
       "skills": [
@@ -1496,10 +1496,10 @@
       },
       "potential": {
         "command": 96,
-        "war": 99,
+        "war": 100,
         "intellect": 86,
-        "politics": 33,
-        "charisma": 68
+        "politics": 28,
+        "charisma": 78
       },
       "experience": 0,
       "level": 1
@@ -1511,10 +1511,10 @@
       "status": "active",
       "stats": {
         "command": 78,
-        "war": 80,
-        "intellect": 72,
-        "politics": 55,
-        "charisma": 70
+        "war": 85,
+        "intellect": 63,
+        "politics": 54,
+        "charisma": 71
       },
       "loyalty": 95,
       "skills": [
@@ -1529,10 +1529,10 @@
       },
       "potential": {
         "command": 88,
-        "war": 90,
-        "intellect": 82,
-        "politics": 65,
-        "charisma": 80
+        "war": 95,
+        "intellect": 73,
+        "politics": 64,
+        "charisma": 81
       },
       "experience": 0,
       "level": 1
@@ -1544,10 +1544,10 @@
       "status": "active",
       "stats": {
         "command": 82,
-        "war": 92,
-        "intellect": 60,
-        "politics": 48,
-        "charisma": 78
+        "war": 93,
+        "intellect": 66,
+        "politics": 58,
+        "charisma": 69
       },
       "loyalty": 90,
       "skills": [
@@ -1562,10 +1562,10 @@
       },
       "potential": {
         "command": 92,
-        "war": 97,
-        "intellect": 70,
-        "politics": 58,
-        "charisma": 88
+        "war": 100,
+        "intellect": 76,
+        "politics": 68,
+        "charisma": 79
       },
       "experience": 0,
       "level": 1
@@ -1576,9 +1576,9 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 80,
-        "war": 90,
-        "intellect": 55,
+        "command": 76,
+        "war": 87,
+        "intellect": 52,
         "politics": 42,
         "charisma": 65
       },
@@ -1594,9 +1594,9 @@
         "accessory": null
       },
       "potential": {
-        "command": 90,
-        "war": 95,
-        "intellect": 65,
+        "command": 86,
+        "war": 97,
+        "intellect": 62,
         "politics": 52,
         "charisma": 75
       },
@@ -1641,11 +1641,11 @@
       "alive": false,
       "status": "dead",
       "stats": {
-        "command": 45,
-        "war": 20,
-        "intellect": 68,
-        "politics": 82,
-        "charisma": 75
+        "command": 65,
+        "war": 45,
+        "intellect": 65,
+        "politics": 74,
+        "charisma": 60
       },
       "loyalty": 0,
       "skills": [],
@@ -1656,11 +1656,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 55,
-        "war": 35,
-        "intellect": 78,
-        "politics": 92,
-        "charisma": 85
+        "command": 75,
+        "war": 55,
+        "intellect": 75,
+        "politics": 84,
+        "charisma": 70
       },
       "experience": 0,
       "level": 1
@@ -1701,11 +1701,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 62,
-        "war": 48,
-        "intellect": 92,
-        "politics": 82,
-        "charisma": 60
+        "command": 82,
+        "war": 47,
+        "intellect": 94,
+        "politics": 78,
+        "charisma": 65
       },
       "loyalty": 50,
       "skills": [
@@ -1719,11 +1719,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 72,
-        "war": 58,
-        "intellect": 97,
-        "politics": 92,
-        "charisma": 70
+        "command": 92,
+        "war": 57,
+        "intellect": 100,
+        "politics": 88,
+        "charisma": 75
       },
       "experience": 0,
       "level": 1
@@ -1734,11 +1734,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 30,
-        "war": 15,
-        "intellect": 88,
-        "politics": 80,
-        "charisma": 35
+        "command": 45,
+        "war": 20,
+        "intellect": 85,
+        "politics": 75,
+        "charisma": 40
       },
       "loyalty": 30,
       "skills": [
@@ -1751,10 +1751,10 @@
         "accessory": null
       },
       "potential": {
-        "command": 45,
+        "command": 55,
         "war": 30,
-        "intellect": 98,
-        "politics": 90,
+        "intellect": 95,
+        "politics": 85,
         "charisma": 50
       },
       "experience": 0,
@@ -2917,7 +2917,7 @@
         "war": 80,
         "intellect": 71,
         "politics": 55,
-        "charisma": 56
+        "charisma": 66
       },
       "loyalty": 85,
       "skills": [],
@@ -2932,7 +2932,7 @@
         "war": 90,
         "intellect": 81,
         "politics": 65,
-        "charisma": 66
+        "charisma": 76
       },
       "experience": 0,
       "level": 1
@@ -2975,11 +2975,11 @@
       "alive": true,
       "status": "active",
       "stats": {
-        "command": 33,
-        "war": 3,
-        "intellect": 84,
-        "politics": 97,
-        "charisma": 80
+        "command": 29,
+        "war": 8,
+        "intellect": 76,
+        "politics": 92,
+        "charisma": 72
       },
       "loyalty": 90,
       "skills": [
@@ -2993,11 +2993,11 @@
         "accessory": null
       },
       "potential": {
-        "command": 43,
-        "war": 13,
-        "intellect": 94,
+        "command": 39,
+        "war": 18,
+        "intellect": 86,
         "politics": 100,
-        "charisma": 90
+        "charisma": 82
       },
       "experience": 0,
       "level": 1
