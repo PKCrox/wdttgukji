@@ -1,0 +1,39 @@
+{
+  "character": "Sun Qian",
+  "slug": "sun-qian",
+  "translation_count": 2,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 38 (Shu 8)",
+      "chinese_name": "孫乾",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Sun Qian (Gongyou)\n孫乾 (公祐)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 38 (Shu 8)\nbyZL181\nonOctober 16th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697487840' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758048526' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741928303' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741927613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Qian, styledGongyou, was fromBeihai[北海].\nWhen theFormer LordledXu province[徐州], he appointed him to serve asClerk.ALater, he followed in travels and movements. When theFormer LordbetrayedExcellency Cao[荊州], he sent[Sun] Qianto ally withYuan Shao, and when he was about to go toJing province, he sent[Sun] Qianagain along withMi Zhuto both be envoys toLiu Biao, and they did all according to what was intended. Later,[Liu] Biaowrote toYuan Shang, talking about the disturbance of brothers fighting, stating:\nTheBiography ofZheng Xuanstates:[Zheng] Xuanrecommended[Sun] Qianto the province.[Sun] Qianreceiving his office was thus by the recommendation of[Zheng] Xuan.\n“Each time I,General of the LeftLiu, andSunGongyouhave discussed this matter together, never was there an instance where we were not pained to the bone and felt extremely sad and distressed.”\nHe was valued in such a manner.\nWhen theFormer LordstabilizedYi province[益州],[Sun] Qianwent from beingGentleman Attendantto be appointed asGeneral who Maintains Loyalty. His received respects were second to that ofMi Zhu,Jian Yong, and others of the same sort. Shortly after, he died.",
+      "sections": {
+        "sun-qian-gongyou": "孫乾 (公祐)\nLifespan Unlisted"
+      },
+      "page_title": "Sun Qian (Gongyou) 孫乾 (公祐) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 2000,
+      "url": "https://kongming.net/biographies/sanguozhi/Sun-Qian/ZL181"
+    },
+    {
+      "translator": "LadyWu",
+      "url_translator": "LadyWu",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 38 (Shu 8)",
+      "chinese_name": "孫乾",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Sun Qian (Gongyou)\n孫乾 (公祐)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 38 (Shu 8)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744996022' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744996003' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744996003' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Qian, styled Gongyou, was a man from Beihai. When the First Ruler [Liu Bei] took command of Xuzhou, he was raised from a commoner’s status to be his aide.AAfter that, Sun Qian followed Liu Bei to all the lands.\nZheng Xuan Zhuan: Zheng Xuan had recommended Sun Qian to the province. It was due to Zheng Xuan’s recommendation that Sun Qian was given a official position.\nWhen the First Ruler defected from Lord Cao, he sent Qian to build connections with Yuan Shao; and right before they went to Jingzhou, Qian and Mi Zhu were sent as emissaries to Liu Biao—and everything went smoothly. At some later time, Liu Biao wrote to Yuan Shang regarding the division among the Yuan brothers, saying, “Everytime I discuss this issue with General of the Left, Liu [Bei], and Sun Gongyou, we become greatly troubled and distressed about it.” This shows how highly Liu Biao considered Sun Qian.\nWhen the First Ruler took over Yizhou, Sun Qian’s rank went from Gentleman Attendant to “General Who Upholds Loyalty”, the same rank as Jian Yong. After some time, he died.",
+      "sections": {
+        "sun-qian-gongyou": "孫乾 (公祐)\nLifespan Unlisted"
+      },
+      "page_title": "Sun Qian (Gongyou) 孫乾 (公祐) Sanguozhi Biography by Lady Wu - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1900,
+      "url": "https://kongming.net/biographies/sanguozhi/Sun-Qian/LadyWu"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:35:46.655Z",
+  "total_char_count": 3900
+}

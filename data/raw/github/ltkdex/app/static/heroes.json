@@ -1,0 +1,342 @@
+{
+    "QUN001": {
+        "allegiance": 0,
+        "description": "",
+        "gender": 1,
+        "hp": 3,
+        "id": "QUN001",
+        "prefix": "",
+        "skills": {
+            "Triage": "Outside of your turn, you may use any of your red color suit cards as 'Peach'.",
+            "First Aid": "During your play phase, you may discard one hand card and heal any Hero 1 unit of life (only once per phase)."
+        },
+        "title": "Miracle Physician",
+        "name": "Hua Tuo"
+    },
+    "QUN002": {
+        "allegiance": 0,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "QUN002",
+        "prefix": "",
+        "skills": {
+            "Unrivaled": "Passive Ability: When you use \"Strike\", your target must use two \"Dodge\" to dodge your \"Strike\", when you use \"Duel\" your target must play two \"Strike\" to counter one of your \"Strike\"."
+        },
+        "title": "Ultimate Combat Skills - Personified",
+        "name": "Lu Bu"
+    },
+    "QUN003": {
+        "allegiance": 0,
+        "description": "",
+        "gender": 0,
+        "hp": 3,
+        "id": "QUN003",
+        "prefix": "",
+        "skills": {
+            "Mischief": "During your play phase, you may discard one card and select two Male Heroes and have them \"Duel\" each other. You must pick which Hero to play \"Strike\" first (This \"Duel\" cannot be \"Warded\" and can only use once per phase). ",
+            "Eclipse": "Immediately draw one card at the start of End phase."
+        },
+        "title": "The Dancer with Unrivaled Beauty",
+        "name": "Diao Chan"
+    },
+    "SHU001": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "SHU001",
+        "prefix": "",
+        "skills": {
+            "Kindness": "During play phase, you may give any amount of hand cards to another Hero. You regain 1 life if the total amount of cards given is more than or equal to two.",
+            "Goad": "Monarch Ability: Heroes from \"SHU\" can supply a \"Strike\" for you when needed. You become the source of that \"Strike\"."
+        },
+        "title": "The ambitious leader in tumultuous times",
+        "name": "Liu Bei"
+    },
+    "SHU002": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "SHU002",
+        "prefix": "",
+        "skills": {
+            "Master of Warfare": "You may use or play your red color suit card(s) as \"Strike\"."
+        },
+        "title": "Bearded Gentleman",
+        "name": "Guan Yu"
+    },
+    "SHU003": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "SHU003",
+        "prefix": "",
+        "skills": {
+            "Battlecry": "During your play phase, you may use any amount of \"Strike\" cards."
+        },
+        "title": "Unstoppable",
+        "name": "Zhang Fei"
+    },
+    "SHU004": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 1,
+        "hp": 3,
+        "id": "SHU004",
+        "prefix": "",
+        "skills": {
+            "Astrology": "During the Start phase of your turn, you may look at \"X\" amount of cards from the top of the deck (where X is the number of Heroes alive, up to a max of five). You may then put any amount of cards back to the top of the deck in any order, and the rest to the bottom of the deck.",
+            "Empty Fortress": "You cannot be the target of \"Strike\" or \"Duel\" when you have no hand cards."
+        },
+        "title": "Prime minister who has passed his prime",
+        "name": "Zhuge Liang"
+    },
+    "SHU005": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "SHU005",
+        "prefix": "",
+        "skills": {
+            "Courage": "You may treat your \"Strike\" as a \"Dodge\" or your \"Dodge\" as a \"Strike\"."
+        },
+        "title": "The young general",
+        "name": "Zhao Yun"
+    },
+    "SHU006": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "SHU006",
+        "prefix": "",
+        "skills": {
+            "Horsemanship": "When calculating your distance to other Heroes, subtract 1.",
+            "Cavalry": "When you target a Hero with \"Strike\", you may reveal a judgment. If the result is a red color suit, then your \"Strike\" cannot be \"Dodged\"."
+        },
+        "title": "The unstoppable knight",
+        "name": "Ma Chao"
+    },
+    "SHU007": {
+        "allegiance": 1,
+        "description": "",
+        "gender": 0,
+        "hp": 3,
+        "id": "SHU007",
+        "prefix": "",
+        "skills": {
+            "Intuition": "Anytime you use a \"Scroll\" card you immediately draw a card from the deck before calculating the effect of the \"Scroll\" card. ",
+            "Wizardry": "Your \"Scroll\" cards have infinite range."
+        },
+        "title": "Veiled heroine",
+        "name": "Huang Yueying"
+    },
+    "WEI001": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WEI001",
+        "prefix": "",
+        "skills": {
+            "Treachery": "After damage taken, you may acquire the card(s) that inflicted damage on you.",
+            "Escort": "Monarch Ability: Heroes from \"WEI\" can play a \"Dodge\" for you when you needed."
+        },
+        "title": "Warrior Emperor of the Kingdom of Wei",
+        "name": "Cao Cao"
+    },
+    "WEI002": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 1,
+        "hp": 3,
+        "id": "WEI002",
+        "prefix": "",
+        "skills": {
+            "Feedback": "After damage taken, you may acquire a card belonging to your damage source. ",
+            "Sorcery": "You may replace any Hero's judgment draw with a card from your hand before calculating the judgment result."
+        },
+        "title": "The Devil with eyes behind his head",
+        "name": "Sima Yi"
+    },
+    "WEI003": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WEI003",
+        "prefix": "",
+        "skills": {
+            "Unyielding": "After damage taken, you may reveal a judgment draw. If the result is not a ♥, then the damage source must discard two hand cards or take 1 point of damage from you."
+        },
+        "title": "One-eyed Demon",
+        "name": "Xiahou Dun"
+    },
+    "WEI004": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WEI004",
+        "prefix": "",
+        "skills": {
+            "Assault": "During the draw phase, instead of drawing from the deck, you may draw up to two hand cards, each must be from a different Hero with card(s)."
+        },
+        "title": "General of the Frontline",
+        "name": "Zhang Liao"
+    },
+    "WEI005": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WEI005",
+        "prefix": "",
+        "skills": {
+            "Armorless": "During draw phase, you may draw one card instead of two. If you do so, all of your \"Strike\" and \"Duel\" inflict +1 damage for that phase (only when you are the damage source of a Duel)."
+        },
+        "title": "Insane Tiger",
+        "name": "Xu Chu"
+    },
+    "WEI006": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 1,
+        "hp": 3,
+        "id": "WEI006",
+        "prefix": "",
+        "skills": {
+            "Talented": "Keep your judgment card after the effect is activated. ",
+            "Legacy": "You may look at the top two cards from the deck after every 1 \"damage taken\", then you must give any amount of those cards to any Hero(es) including yourself."
+        },
+        "title": "The oracle who died young",
+        "name": "Guo Jia"
+    },
+    "WEI007": {
+        "allegiance": 2,
+        "description": "",
+        "gender": 0,
+        "hp": 3,
+        "id": "WEI007",
+        "prefix": "",
+        "skills": {
+            "Siren": "During your Start phase, you may use this ability to reveal a judgment and acquire the card if the result is a black color suit. You may use this ability again until a red color suit is revealed. Discard that judgment card afterwards and end the phase.",
+            "Gorgeous": "All your black color suit hand cards may be treated as \"Dodge\"."
+        },
+        "title": "The ill-fated Beauty",
+        "name": "Zhen Ji"
+    },
+    "WU001": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WU001",
+        "prefix": "",
+        "skills": {
+            "Balance": "During play phase, you may discard any amount of cards and redraw an equal amount from the deck (may only be used once per phase).",
+            "Support": "Monarch Passive Ability: You gain an extra 1 unit of life points from a \"Peach\" used on you by a \"WU\" Hero during your Near Death state."
+        },
+        "title": "Young and Virtuous Ruler",
+        "name": "Sun Quan"
+    },
+    "WU002": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WU002",
+        "prefix": "",
+        "skills": {
+            "Ambush": "During play phase, you may treat any of your black color suit cards as \"Dismantle\"."
+        },
+        "title": "The wild warlord",
+        "name": "Gan Ning"
+    },
+    "WU003": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WU003",
+        "prefix": "",
+        "skills": {
+            "Discipline": "If you did not use or play any \"Strike\" during your play phase, then you may skip your discard phase for that turn."
+        },
+        "title": "Crossing the river in White Robes",
+        "name": "Lu Meng"
+    },
+    "WU004": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 1,
+        "hp": 4,
+        "id": "WU004",
+        "prefix": "",
+        "skills": {
+            "Desperation": "During your play phase, you may choose to lose one unit of life to draw two cards from the deck."
+        },
+        "title": "Sacrificing the Flesh for the Country",
+        "name": "Huang Gai"
+    },
+    "WU005": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 1,
+        "hp": 3,
+        "id": "WU005",
+        "prefix": "",
+        "skills": {
+            "Heroic": "During your draw phase, you may draw one extra card from the deck. ",
+            "Counter Spy": "During your play phase, you may select another Hero, and ask that Hero to pick a suit. That Hero takes a hand card from you and shows it to you. If the resulting suit is not the same as his/her pick, then you cause 1 damage to your target (The target keeps that card regardless of the result, once per phase)."
+        },
+        "title": "Supreme Commander-in-Chief",
+        "name": "Zhou Yu"
+    },
+    "WU006": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 0,
+        "hp": 3,
+        "id": "WU006",
+        "prefix": "",
+        "skills": {
+            "Beauty": "During your play phase, you may use any of your ♦ cards as \"Contentment\".",
+            "Outcast": "You may discard one of your cards to transfer a \"Strike\" targeting you to another Hero within your weapon range, except for the attacker."
+        },
+        "title": "The Flower of restrained",
+        "name": "Da Qiao"
+    },
+    "WU007": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 1,
+        "hp": 3,
+        "id": "WU007",
+        "prefix": "",
+        "skills": {
+            "Humble": "Passive Ability: You cannot be the target of \"Snatch\" and/or \"Contentment\".",
+            "Alliance": "Draw a card if you have no hand cards."
+        },
+        "title": "The meek scholar with Valiant talents",
+        "name": "Lu Xun"
+    },
+    "WU008": {
+        "allegiance": 3,
+        "description": "",
+        "gender": 0,
+        "hp": 3,
+        "id": "WU008",
+        "prefix": "",
+        "skills": {
+            "Engagement": "During your play phase, you may discard two hand cards, then choose a male Hero and heal 1 unit of life for both of you (only if the male Hero is not at full life).",
+            "Heroine": "Immediately draw two cards from the deck upon losing a card from the equipment field."
+        },
+        "title": "The lady with bow and arrows",
+        "name": "Sun Shangxiang"
+    }
+}

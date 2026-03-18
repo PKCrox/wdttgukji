@@ -1,0 +1,24 @@
+{
+  "character": "Lady Pan",
+  "slug": "lady-pan",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "LadyWu",
+      "url_translator": "LadyWu",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 50 (Wu 5)",
+      "chinese_name": "潘夫人",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Lady Pan\n潘夫人\nLived AD ?–253\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 50 (Wu 5)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745018605' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745018486' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745018066' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nUpdates of this biography have been discontinued by the translator in favor of an alternate translation found inRobert Joe Cutter and William G. Crowell’sEmpresses and Consorts, a marvelous hardcover book detailing the role of women during the Three Kingdoms era. It includes the biographies of women included in Chen Shou’sSanguozhi.\nThis translation remains online for archival purposes only.\nLady Pan, wife of Quan, the Lord of Wu, was a native of Juzhang in Kuaiji. Her father was a junior officer who was sentenced to death under the law, and the Lady and her elder sister were sent to work in the weaving workshops. Quan came across the Lady and thought her to be extraordinary, and so he ordered her to enter the back palace. She found favor with him and conceived. She dreamt that she was given the head of a dragon, which she placed upon her lap. Then she gave birth to [Sun] Liang. In the 13th year of Chiwu, Liang was made crown prince, and beseeched to have the Lady’s elder sister married off. Quan approved of it. In the next year, the Lady was made Empress.\nShe was wily and jealous of character, while her appearances were bewitching. From the beginning to the end, she brought harm to many, including the Lady Yuan.AWhen Quan was ill, she sent someone to ask the Prefect of the Central Documents about the regencies of Sun Hong and the Empress Lü. She became exhausted taking care of the ailing [Sun Quan], and came down ill herself. Various court ladies, taking advantage of her slumber one day, strangled her to death together and claimed that she had died of evil spirits. Later, the truth of the matter came out, and six or seven of them were sentenced to death. When Quan passed away, they were buried together at the Jiang Tombs. When Sun Liang ascended the throne, he made the Lady’s brother-in-law, Tan Shao, Colonel of the Cavalry and gave him troops to command. When Liang was made to abdicate, Shao and his family were sent back to the home commandery, Luling.\nFromWu Lu: Lady Yuan is the daughter of Yuan Shu. She had great virtues but was childless. Quan had on several occasions put sons of the other consorts under her care, but she remained barren. When Lady Bu died, Quan wanted to make [Lady Yuan] empress. But the Lady declined firmly on the grounds that she had no sons.",
+      "sections": {
+        "lady-pan": "潘夫人\nLived AD ?–253"
+      },
+      "page_title": "Lady Pan 潘夫人 Sanguozhi Biography by Lady Wu - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 3131,
+      "url": "https://kongming.net/biographies/sanguozhi/Lady-Pan/LadyWu"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:34:02.102Z",
+  "total_char_count": 3131
+}

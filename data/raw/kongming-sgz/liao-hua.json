@@ -1,0 +1,24 @@
+{
+  "character": "Liao Hua",
+  "slug": "liao-hua",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "LadyWu",
+      "url_translator": "LadyWu",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 45 (Shu 15)",
+      "chinese_name": "廖化",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Liao Hua (Yuanjian)\n廖化 (元儉)\nLived AD ?–263\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 45 (Shu 15)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744994652' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744994615' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744994615' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLiao Hua, styled Yuanjian, and who was formally named Chun, was a native of Xiangyang. He was the chief secretary for Guan Yu, General of the Front. When Guan Yu was defeated, Liao Hua was taken into Wu. However, he desired to return to the Former Ruler (Liu Bei). He thus feigned death and tricked those around him into believing that he was dead. Upon that, he took his mother and escaped westward, traveling night and day. Right then, the Former Ruler was marching eastward, and the two met up at Zigui. The Former Ruler was greatly pleased, and instated Liao Hua as grand administrator of Yidu.\nAfter the passing away of the Former Ruler, Liao Hua became advisor to the Prime Minister, and then onto becoming the controller of the Guangwu region. Later on, he was promoted to the position of General of the Chariots and Cavalry of the Right, given thejieprivileges, and made designated inspector of Bing Province. He was also granted the title of Marquis of Zhongxiang. He was famous for his determination and prowess. His position was equal to that of Zhang Yi’s and second only to Zong Yu.A\nHan Jin Chunqiu: In the 5th year of Jingyao (AD 262), Jiang Wei led his troops from Didao. Liao Hua said, “How the saying ‘One who does not put arms away will surely end up having himself burnt’ applies to Boyue [Jiang Wei]! His intelligence does not surpass that of the foe, and his forces number less than that of the enemy. Yet he employs the troops without ceasing—how? It is said in the Book of Odes, ‘it doesn’t come before me, and it doesn’t come behind me’—this indeed is what’s happening today.”\nIn the spring of the first year of Xianxi (AD 263), Liao Hua and Zong Yu were both relocated to Luoyang. They died on the way.",
+      "sections": {
+        "liao-hua-yuanjian": "廖化 (元儉)\nLived AD ?–263"
+      },
+      "page_title": "Liao Hua (Yuanjian) 廖化 (元儉) Sanguozhi Biography by Lady Wu - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 2569,
+      "url": "https://kongming.net/biographies/sanguozhi/Liao-Hua/LadyWu"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:34:27.058Z",
+  "total_char_count": 2569
+}

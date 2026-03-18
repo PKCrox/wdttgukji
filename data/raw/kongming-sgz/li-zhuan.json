@@ -1,0 +1,24 @@
+{
+  "character": "Li Zhuan",
+  "slug": "li-zhuan",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]",
+      "chinese_name": "李譔",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Li Zhuan (Qinzhong)\n李譔 (欽仲)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonSeptember 18th, 2025\nNo History Reference defined for Officer ID '323' Li Zhuan (Qinzhong). Biography cannot be tied to a scroll in the Sanguozhi.\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1758194820' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760028206' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1758209279' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1758207331' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLi Zhuan, styledQinzhong, was fromFu[涪],Zitong[梓潼].\nHis father,[Li] Ren, was styledDexian. He andYin Moof the same county both travelled toJing province[荊州] to receive education from the likes ofSima HuiandSong Zhong.\n[Li] Zhuanwould inherit his legacy.[Yin] Mowould also have debates with him over meanings, principles, the Five Classics, and various masters; there were none that they did not extensively study. In addition, he was good at a variety of skills and arts. As for mathematics, divination, medicine, crossbows, and mechanics, he had knowledge on them all.\nHe first served as a provincialDocument Scribe, thenScribe Directorfor the Secretariat.\nIn the first year of theera [238], theLatter Lordinstalled theHeir Apparent. He appointed[Li] Zhuanto serve asEntourage Member. He was later promoted toDeputy, transferred toPalace Attendant Grandee, thenLeft Household General, still in service to theHeir Apparent. TheHeir Apparentvalued him for having much knowledge and was very delighted with him. However, he was frivolous and unconstrained in demeanor, and he was fond of joking and teasing around. Therefore, his generation was unable to respect him.\nWhen he wrote about the general themes of theBook of Changes, theBook of Documents, theMaoBook of Odes, the Three Rites, theCommentary of Zuo, andGreat Mystery, he would always follow the example of Jia [Kui] [賈逵] andMa [Rong], and he would differ fromZheng Xuan. He was removed and remote fromMister Wang, but even though he did not see his works before, many of their ideas were the same.\nDuring theera, he died.\nAt the time, there wasChen Shu, styledShenbo, ofHanzhong[漢中]. He was also rich in knowledge and possessed extensive information. He authored seven chapters ofExplanations, theBiographies of the Elders in Yi Province, and theAnnals [of the Elders in Yi Province]. He served asGrand Administratorof three commanderies throughout his service.",
+      "sections": {
+        "li-zhuan-qinzhong": "李譔 (欽仲)\nLifespan Unlisted"
+      },
+      "page_title": "Li Zhuan (Qinzhong) 李譔 (欽仲) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 2885,
+      "url": "https://kongming.net/biographies/sanguozhi/Li-Zhuan/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:34:25.226Z",
+  "total_char_count": 2885
+}

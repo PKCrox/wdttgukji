@@ -1,0 +1,56 @@
+{
+  "source": "koeitecmoamerica.com - RTK14",
+  "urls": {
+    "characters": "https://www.koeitecmoamerica.com/rtk14/characters.html",
+    "creator": "https://www.koeitecmoamerica.com/rtk14/creator.html"
+  },
+  "crawled_at": "2026-03-18T09:38:00.266Z",
+  "total_characters": 3,
+  "factions": {
+    "Wei": 18,
+    "Wu": 18,
+    "Shu": 11,
+    "Other": 15
+  },
+  "detail_stats": {
+    "with_description": 3,
+    "js_rendered_only": 0,
+    "failed": 0
+  },
+  "characters": [
+    {
+      "id": "kyocho",
+      "name_cn": "許褚",
+      "name_en": "Xu Chu",
+      "faction": "Wei",
+      "portrait_url": "https://www.koeitecmoamerica.com/rtk14/images/characters/list_kyocho.jpg",
+      "full_portrait_url": "https://www.koeitecmoamerica.com/rtk14/images/characters/image_kyocho.png",
+      "description": "Xu Chu\n    \n      Officer of Wei. Was hired as a bodyguard by Cao Cao, who was impressed by his ability in a fight with Dian Wei and Hu Jiao. Though careless in everyday life, was a courageous warrior in battle, thus earning the nickname \"Foolish Tiger.\""
+    },
+    {
+      "id": "gichoukou",
+      "name_cn": "張郃",
+      "name_en": "Zhang He",
+      "faction": "Wei",
+      "portrait_url": "https://www.koeitecmoamerica.com/rtk14/images/characters/list_gichoukou.jpg",
+      "full_portrait_url": "https://www.koeitecmoamerica.com/rtk14/images/characters/image_gichoukou.png",
+      "description": "Zhang He\n    \n      Officer of Wei. Served under Yuan Shao, but a plot of Guo Tuo's forced him and Gao Lan to submit to Cao Cao. Acted mostly in the campaign against Shu, and surrounded and eliminated Ma Su at the battle of Jieting."
+    },
+    {
+      "id": "soukyu",
+      "name_cn": "曹休",
+      "name_en": "Cao Xiu",
+      "faction": "Wei",
+      "portrait_url": "https://www.koeitecmoamerica.com/rtk14/images/characters/list_soukyu.jpg",
+      "full_portrait_url": "https://www.koeitecmoamerica.com/rtk14/images/characters/image_soukyu.png",
+      "description": "Cao Xiu\n    \n      Officer of Wei and relative of Cao Cao. Acted as guardian of the south and conqueror of the east under the reign of Cao Pi. Suffered a great loss in the campaign against Wu due to a strategy of Zhou Fang's and died from shame."
+    }
+  ],
+  "creator": {
+    "url": "https://www.koeitecmoamerica.com/rtk14/creator.html",
+    "volumes": [],
+    "qa_pairs": [],
+    "text_length": 14186,
+    "has_content": true
+  }
+}

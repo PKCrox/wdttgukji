@@ -1,0 +1,24 @@
+{
+  "character": "Yan Jun",
+  "slug": "yan-jun",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]",
+      "chinese_name": "嚴畯",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Yan Jun (Mancai)\n嚴畯 (曼才)\nLived ADca.165–ca.242\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonOctober 10th, 2025\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1760114100' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1760279556' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1760128530' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1760123837' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYan Jun, styledMancai, was fromPengcheng[彭城].\nFrom youth, he was engrossed in studies. He was adept at theBook of Odes,Book of Documents, and the Three Rites, and he was good at theExplanation of Characters.\nHe evaded chaos to theJiangdong region[江東]. He,Zhuge Jin, andBu Zhiwere of equal fame and amicable with each other. By nature, he was simple, honest, pure, and generous. With this being in relation to people, he spoke loyally and advised well. He had the aspiration of offering assistance and being beneficial.\nZhang Zhaorecommended him toSun Quan.[Sun] Quanappointed him to serve asCavalry CommandantandGentleman Attendant. When theGeneral who Stretches Across the River,Lu Su, died,[Sun] Quanhad[Yan] Junreplace[Lu] Su, supervise ten thousand soldiers, and garrison atLukou. The masses all believed that[Yan] Junwas good.[Yan] Junwould make several firm resignations, saying, “I have always been a bookish scholar, lacking experience in military matters. With me holding this in spite of my lack of talent, this is sure to culminate in regrettable misfortune.” He spoke his words with conviction to the point of shedding tears.A[Sun] Quanwould heed him. The world admired his capability for making truthful refusals.\nTheForest of Recordsstates:[Sun] Quanalso tested[Yan] Junin equestrianism. When he mounted a horse, he fell off the saddle.\n[Sun] Quanwas King ofWuand then claimed the imperial title.[Yan] Junonce served asMinister of the Guardsand was sent as an envoy toShu. The Chancellor ofShu,Zhuge Liang, was deeply fond of him.\nHe did not grow his salaries and gifts, for he distributed them all to his kinsmen and acquaintances. Thus, his household was often lacking.\nLiu YingofGuangling[廣陵] was longstanding friends with[Yan] Jun.[Liu] Yingconcentrated on his studies in his home village.[Sun] Quanknew about him and summoned him, but he did not go due to illness. His younger brother,[Liu] Lüe, served asGrand AdministratorofLingling[零陵太守]. When he died in office,[Liu] Yingwent to his funeral. Thus,[Sun] Quanknew that he was feigning illness and hastened to send for his arrest through posthorses.[Yan] Junalso raced to inform[Liu] Yingand sent him back to apologize to[Sun] Quan.[Sun] Quanwas mad and he dismissed[Yan] Jun, but[Liu] Yingwas able to escape punishment.\nLong after this,[Yan] Junwas appointed to serve asDirector of the Secretariat. He would die afterthis.B\nTheBook of Wustates:[Yan] Junwas seventy-eight years old at the time. His two sons were[Yan] Kaiand[Yan] Shuang.[Yan] Kaiwould attain the rank ofMinister Stewardunder thePalace of Ascending Peace.\n[Yan] Junauthored theCommentary on the Classic of Filial Pietyand theEssay on Tides. He,Pei Xuan, andZhang Chengwrote essays onGuanZhongand Jilu [季路]. All of this has been passed down to this world.\n***\n[Pei] Xuan, styledYanhuang, was fromXiapi[下邳]. He too had studious conduct. He reached the rank ofPalace Grandee.\nHe asked his son,[Pei] Qin, about the good and bad qualities of theConquering[Duke] of Qi, theCivil[Duke] of Jin,[Senior] Yi, and theTenderOne [Zhan Huo; 展獲].[Pei] Qinreplied with his view. Though he and[Pei] Xuanwent back and forth, they each had elegant coherence.\n[Pei] Qinwould travel and stay with theHeir Apparent,[Sun] Deng.[Sun] Dengpraised him for his writing expertise.",
+      "sections": {
+        "yan-jun-mancai": "嚴畯 (曼才)\nLived AD ca. 165–ca. 242"
+      },
+      "page_title": "Yan Jun (Mancai) 嚴畯 (曼才) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 4126,
+      "url": "https://kongming.net/biographies/sanguozhi/Yan-Jun/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:30.482Z",
+  "total_char_count": 4126
+}

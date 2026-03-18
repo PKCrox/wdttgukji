@@ -1,0 +1,4746 @@
+{
+  "source": "zetawiki.com - 삼국지 12 능력치 목록",
+  "url": "https://zetawiki.com/wiki/%EC%82%BC%EA%B5%AD%EC%A7%80_12_%EB%8A%A5%EB%A0%A5%EC%B9%98_%EB%AA%A9%EB%A1%9D",
+  "crawled_at": "2026-03-18",
+  "game": "Romance of the Three Kingdoms XII",
+  "total_characters": 473,
+  "stat_categories": [
+    "통솔(Leadership)",
+    "무력(War)",
+    "지력(Intelligence)",
+    "정치(Politics)"
+  ],
+  "format": "name|leadership|war|intelligence|politics|total_stats|troop_type|battle_tactic",
+  "data": [
+    {
+      "name_kr": "가규",
+      "leadership": 78,
+      "war": 61,
+      "intelligence": 84,
+      "politics": 85,
+      "total_stats": 308,
+      "troop_type": "창병",
+      "battle_tactic": "맹사봉인"
+    },
+    {
+      "name_kr": "가충",
+      "leadership": 54,
+      "war": 31,
+      "intelligence": 89,
+      "politics": 85,
+      "total_stats": 259,
+      "troop_type": "궁병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "가화",
+      "leadership": 49,
+      "war": 65,
+      "intelligence": 41,
+      "politics": 29,
+      "total_stats": 184,
+      "troop_type": "창병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "가후",
+      "leadership": 88,
+      "war": 48,
+      "intelligence": 97,
+      "politics": 85,
+      "total_stats": 318,
+      "troop_type": "기병",
+      "battle_tactic": "허유엄살"
+    },
+    {
+      "name_kr": "간옹",
+      "leadership": 20,
+      "war": 32,
+      "intelligence": 75,
+      "politics": 71,
+      "total_stats": 198,
+      "troop_type": "창병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "감녕",
+      "leadership": 93,
+      "war": 94,
+      "intelligence": 76,
+      "politics": 18,
+      "total_stats": 281,
+      "troop_type": "창병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "감씨",
+      "leadership": 47,
+      "war": 3,
+      "intelligence": 48,
+      "politics": 60,
+      "total_stats": 158,
+      "troop_type": "궁병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "감택",
+      "leadership": 43,
+      "war": 49,
+      "intelligence": 83,
+      "politics": 86,
+      "total_stats": 261,
+      "troop_type": "창병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "강유",
+      "leadership": 92,
+      "war": 89,
+      "intelligence": 90,
+      "politics": 67,
+      "total_stats": 338,
+      "troop_type": "창병",
+      "battle_tactic": "공방일체"
+    },
+    {
+      "name_kr": "견씨",
+      "leadership": 35,
+      "war": 4,
+      "intelligence": 72,
+      "politics": 66,
+      "total_stats": 177,
+      "troop_type": "기병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "고간",
+      "leadership": 74,
+      "war": 56,
+      "intelligence": 48,
+      "politics": 59,
+      "total_stats": 237,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "고람",
+      "leadership": 76,
+      "war": 82,
+      "intelligence": 68,
+      "politics": 55,
+      "total_stats": 281,
+      "troop_type": "창병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "고상",
+      "leadership": 68,
+      "war": 68,
+      "intelligence": 53,
+      "politics": 44,
+      "total_stats": 233,
+      "troop_type": "기병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "고순",
+      "leadership": 85,
+      "war": 86,
+      "intelligence": 60,
+      "politics": 46,
+      "total_stats": 277,
+      "troop_type": "기병",
+      "battle_tactic": "돌파"
+    },
+    {
+      "name_kr": "고승",
+      "leadership": 67,
+      "war": 73,
+      "intelligence": 41,
+      "politics": 21,
+      "total_stats": 202,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "고옹",
+      "leadership": 43,
+      "war": 18,
+      "intelligence": 80,
+      "politics": 90,
+      "total_stats": 231,
+      "troop_type": "창병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "고유",
+      "leadership": 57,
+      "war": 43,
+      "intelligence": 72,
+      "politics": 79,
+      "total_stats": 251,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "고유",
+      "leadership": 64,
+      "war": 69,
+      "intelligence": 38,
+      "politics": 41,
+      "total_stats": 212,
+      "troop_type": "창병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "고정",
+      "leadership": 55,
+      "war": 63,
+      "intelligence": 43,
+      "politics": 42,
+      "total_stats": 203,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "고패",
+      "leadership": 66,
+      "war": 61,
+      "intelligence": 69,
+      "politics": 57,
+      "total_stats": 253,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "공도",
+      "leadership": 59,
+      "war": 70,
+      "intelligence": 23,
+      "politics": 22,
+      "total_stats": 174,
+      "troop_type": "기병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "공손강",
+      "leadership": 72,
+      "war": 66,
+      "intelligence": 65,
+      "politics": 58,
+      "total_stats": 261,
+      "troop_type": "기병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "공손공",
+      "leadership": 39,
+      "war": 17,
+      "intelligence": 69,
+      "politics": 61,
+      "total_stats": 186,
+      "troop_type": "궁병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "공손도",
+      "leadership": 67,
+      "war": 71,
+      "intelligence": 66,
+      "politics": 51,
+      "total_stats": 255,
+      "troop_type": "기병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "공손범",
+      "leadership": 73,
+      "war": 69,
+      "intelligence": 66,
+      "politics": 62,
+      "total_stats": 270,
+      "troop_type": "궁병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "공손속",
+      "leadership": 63,
+      "war": 68,
+      "intelligence": 57,
+      "politics": 63,
+      "total_stats": 251,
+      "troop_type": "기병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "공손연",
+      "leadership": 65,
+      "war": 70,
+      "intelligence": 60,
+      "politics": 35,
+      "total_stats": 230,
+      "troop_type": "기병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "공손월",
+      "leadership": 74,
+      "war": 72,
+      "intelligence": 47,
+      "politics": 54,
+      "total_stats": 247,
+      "troop_type": "기병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "공손찬",
+      "leadership": 84,
+      "war": 83,
+      "intelligence": 75,
+      "politics": 46,
+      "total_stats": 288,
+      "troop_type": "기병",
+      "battle_tactic": "기군신속"
+    },
+    {
+      "name_kr": "공융",
+      "leadership": 30,
+      "war": 5,
+      "intelligence": 73,
+      "politics": 75,
+      "total_stats": 183,
+      "troop_type": "궁병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "공지",
+      "leadership": 43,
+      "war": 53,
+      "intelligence": 62,
+      "politics": 65,
+      "total_stats": 223,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "곽가",
+      "leadership": 88,
+      "war": 15,
+      "intelligence": 96,
+      "politics": 84,
+      "total_stats": 283,
+      "troop_type": "기병",
+      "battle_tactic": "전군맹공"
+    },
+    {
+      "name_kr": "곽도",
+      "leadership": 52,
+      "war": 50,
+      "intelligence": 82,
+      "politics": 68,
+      "total_stats": 252,
+      "troop_type": "궁병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "곽사",
+      "leadership": 64,
+      "war": 76,
+      "intelligence": 13,
+      "politics": 14,
+      "total_stats": 167,
+      "troop_type": "궁병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "곽씨",
+      "leadership": 42,
+      "war": 4,
+      "intelligence": 69,
+      "politics": 64,
+      "total_stats": 179,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "곽유지",
+      "leadership": 28,
+      "war": 9,
+      "intelligence": 69,
+      "politics": 79,
+      "total_stats": 185,
+      "troop_type": "궁병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "곽익",
+      "leadership": 73,
+      "war": 69,
+      "intelligence": 69,
+      "politics": 74,
+      "total_stats": 285,
+      "troop_type": "궁병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "곽준",
+      "leadership": 73,
+      "war": 66,
+      "intelligence": 73,
+      "politics": 62,
+      "total_stats": 274,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "곽회",
+      "leadership": 87,
+      "war": 78,
+      "intelligence": 81,
+      "politics": 75,
+      "total_stats": 321,
+      "troop_type": "궁병",
+      "battle_tactic": "궁군강사"
+    },
+    {
+      "name_kr": "관구검",
+      "leadership": 78,
+      "war": 74,
+      "intelligence": 55,
+      "politics": 56,
+      "total_stats": 263,
+      "troop_type": "기병",
+      "battle_tactic": "기군신속"
+    },
+    {
+      "name_kr": "관색",
+      "leadership": 74,
+      "war": 88,
+      "intelligence": 56,
+      "politics": 47,
+      "total_stats": 265,
+      "troop_type": "창병",
+      "battle_tactic": "복병신속"
+    },
+    {
+      "name_kr": "관우",
+      "leadership": 97,
+      "war": 97,
+      "intelligence": 79,
+      "politics": 62,
+      "total_stats": 335,
+      "troop_type": "기병",
+      "battle_tactic": "천리행"
+    },
+    {
+      "name_kr": "관은병",
+      "leadership": 73,
+      "war": 78,
+      "intelligence": 42,
+      "politics": 24,
+      "total_stats": 217,
+      "troop_type": "기병",
+      "battle_tactic": "돌파"
+    },
+    {
+      "name_kr": "관평",
+      "leadership": 80,
+      "war": 82,
+      "intelligence": 72,
+      "politics": 60,
+      "total_stats": 294,
+      "troop_type": "창병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "관해",
+      "leadership": 70,
+      "war": 82,
+      "intelligence": 10,
+      "politics": 5,
+      "total_stats": 167,
+      "troop_type": "기병",
+      "battle_tactic": "마공격강화"
+    },
+    {
+      "name_kr": "관흥",
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 67,
+      "politics": 58,
+      "total_stats": 287,
+      "troop_type": "기병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "괴량",
+      "leadership": 68,
+      "war": 33,
+      "intelligence": 88,
+      "politics": 82,
+      "total_stats": 271,
+      "troop_type": "궁병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "괴월",
+      "leadership": 47,
+      "war": 27,
+      "intelligence": 82,
+      "politics": 88,
+      "total_stats": 244,
+      "troop_type": "창병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "국의",
+      "leadership": 82,
+      "war": 78,
+      "intelligence": 51,
+      "politics": 18,
+      "total_stats": 229,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "금선",
+      "leadership": 52,
+      "war": 68,
+      "intelligence": 13,
+      "politics": 29,
+      "total_stats": 162,
+      "troop_type": "기병",
+      "battle_tactic": "마공격강화"
+    },
+    {
+      "name_kr": "금의",
+      "leadership": 32,
+      "war": 38,
+      "intelligence": 65,
+      "politics": 68,
+      "total_stats": 203,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "금환삼결",
+      "leadership": 64,
+      "war": 76,
+      "intelligence": 19,
+      "politics": 19,
+      "total_stats": 178,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "기령",
+      "leadership": 78,
+      "war": 83,
+      "intelligence": 51,
+      "politics": 48,
+      "total_stats": 260,
+      "troop_type": "창병",
+      "battle_tactic": "돌파"
+    },
+    {
+      "name_kr": "냉포",
+      "leadership": 71,
+      "war": 82,
+      "intelligence": 61,
+      "politics": 37,
+      "total_stats": 251,
+      "troop_type": "창병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "노숙",
+      "leadership": 84,
+      "war": 56,
+      "intelligence": 92,
+      "politics": 90,
+      "total_stats": 322,
+      "troop_type": "기병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "노식",
+      "leadership": 86,
+      "war": 63,
+      "intelligence": 82,
+      "politics": 85,
+      "total_stats": 316,
+      "troop_type": "궁병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "뇌동",
+      "leadership": 69,
+      "war": 78,
+      "intelligence": 51,
+      "politics": 37,
+      "total_stats": 235,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "뇌박",
+      "leadership": 62,
+      "war": 70,
+      "intelligence": 36,
+      "politics": 11,
+      "total_stats": 179,
+      "troop_type": "창병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "능조",
+      "leadership": 75,
+      "war": 81,
+      "intelligence": 42,
+      "politics": 36,
+      "total_stats": 234,
+      "troop_type": "기병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "능통",
+      "leadership": 77,
+      "war": 89,
+      "intelligence": 60,
+      "politics": 40,
+      "total_stats": 266,
+      "troop_type": "기병",
+      "battle_tactic": "돌파"
+    },
+    {
+      "name_kr": "단경",
+      "leadership": 71,
+      "war": 68,
+      "intelligence": 43,
+      "politics": 49,
+      "total_stats": 231,
+      "troop_type": "기병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "담웅",
+      "leadership": 58,
+      "war": 73,
+      "intelligence": 14,
+      "politics": 20,
+      "total_stats": 165,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "대교",
+      "leadership": 57,
+      "war": 11,
+      "intelligence": 73,
+      "politics": 78,
+      "total_stats": 219,
+      "troop_type": "궁병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "대래동주",
+      "leadership": 51,
+      "war": 53,
+      "intelligence": 54,
+      "politics": 43,
+      "total_stats": 201,
+      "troop_type": "궁병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "대릉",
+      "leadership": 70,
+      "war": 75,
+      "intelligence": 39,
+      "politics": 48,
+      "total_stats": 232,
+      "troop_type": "기병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "도겸",
+      "leadership": 51,
+      "war": 27,
+      "intelligence": 64,
+      "politics": 63,
+      "total_stats": 205,
+      "troop_type": "궁병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "동도나",
+      "leadership": 68,
+      "war": 73,
+      "intelligence": 31,
+      "politics": 37,
+      "total_stats": 209,
+      "troop_type": "창병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "동민",
+      "leadership": 49,
+      "war": 60,
+      "intelligence": 25,
+      "politics": 12,
+      "total_stats": 146,
+      "troop_type": "기병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "동소",
+      "leadership": 34,
+      "war": 25,
+      "intelligence": 80,
+      "politics": 82,
+      "total_stats": 221,
+      "troop_type": "창병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "동습",
+      "leadership": 72,
+      "war": 85,
+      "intelligence": 50,
+      "politics": 48,
+      "total_stats": 255,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "동승",
+      "leadership": 56,
+      "war": 53,
+      "intelligence": 65,
+      "politics": 63,
+      "total_stats": 237,
+      "troop_type": "기병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "동윤",
+      "leadership": 47,
+      "war": 28,
+      "intelligence": 79,
+      "politics": 91,
+      "total_stats": 245,
+      "troop_type": "궁병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "동탁",
+      "leadership": 85,
+      "war": 87,
+      "intelligence": 73,
+      "politics": 59,
+      "total_stats": 304,
+      "troop_type": "기병",
+      "battle_tactic": "전군맹공"
+    },
+    {
+      "name_kr": "동화",
+      "leadership": 57,
+      "war": 34,
+      "intelligence": 75,
+      "politics": 87,
+      "total_stats": 253,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "두기",
+      "leadership": 66,
+      "war": 32,
+      "intelligence": 75,
+      "politics": 87,
+      "total_stats": 260,
+      "troop_type": "궁병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "두예",
+      "leadership": 84,
+      "war": 30,
+      "intelligence": 85,
+      "politics": 80,
+      "total_stats": 279,
+      "troop_type": "창병",
+      "battle_tactic": "전군맹공"
+    },
+    {
+      "name_kr": "등무",
+      "leadership": 61,
+      "war": 75,
+      "intelligence": 29,
+      "politics": 17,
+      "total_stats": 182,
+      "troop_type": "창병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "등애",
+      "leadership": 93,
+      "war": 87,
+      "intelligence": 89,
+      "politics": 81,
+      "total_stats": 350,
+      "troop_type": "창병",
+      "battle_tactic": "복병신속"
+    },
+    {
+      "name_kr": "등지",
+      "leadership": 73,
+      "war": 52,
+      "intelligence": 81,
+      "politics": 85,
+      "total_stats": 291,
+      "troop_type": "궁병",
+      "battle_tactic": "도발"
+    },
+    {
+      "name_kr": "등현",
+      "leadership": 61,
+      "war": 73,
+      "intelligence": 45,
+      "politics": 36,
+      "total_stats": 215,
+      "troop_type": "궁병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "마대",
+      "leadership": 79,
+      "war": 85,
+      "intelligence": 62,
+      "politics": 54,
+      "total_stats": 280,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "마등",
+      "leadership": 82,
+      "war": 80,
+      "intelligence": 52,
+      "politics": 59,
+      "total_stats": 273,
+      "troop_type": "기병",
+      "battle_tactic": "기군신속"
+    },
+    {
+      "name_kr": "마량",
+      "leadership": 53,
+      "war": 23,
+      "intelligence": 88,
+      "politics": 90,
+      "total_stats": 254,
+      "troop_type": "궁병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "마속",
+      "leadership": 61,
+      "war": 67,
+      "intelligence": 87,
+      "politics": 68,
+      "total_stats": 283,
+      "troop_type": "창병",
+      "battle_tactic": "도발"
+    },
+    {
+      "name_kr": "마완",
+      "leadership": 71,
+      "war": 74,
+      "intelligence": 16,
+      "politics": 23,
+      "total_stats": 184,
+      "troop_type": "기병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "마준",
+      "leadership": 38,
+      "war": 52,
+      "intelligence": 31,
+      "politics": 51,
+      "total_stats": 172,
+      "troop_type": "기병",
+      "battle_tactic": "마공격강화"
+    },
+    {
+      "name_kr": "마철",
+      "leadership": 70,
+      "war": 62,
+      "intelligence": 58,
+      "politics": 52,
+      "total_stats": 242,
+      "troop_type": "기병",
+      "battle_tactic": "마방어강화"
+    },
+    {
+      "name_kr": "마초",
+      "leadership": 93,
+      "war": 97,
+      "intelligence": 44,
+      "politics": 26,
+      "total_stats": 260,
+      "troop_type": "기병",
+      "battle_tactic": "강습"
+    },
+    {
+      "name_kr": "마충",
+      "leadership": 78,
+      "war": 72,
+      "intelligence": 68,
+      "politics": 78,
+      "total_stats": 296,
+      "troop_type": "궁병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "마휴",
+      "leadership": 68,
+      "war": 73,
+      "intelligence": 48,
+      "politics": 45,
+      "total_stats": 234,
+      "troop_type": "기병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "만총",
+      "leadership": 84,
+      "war": 64,
+      "intelligence": 82,
+      "politics": 84,
+      "total_stats": 314,
+      "troop_type": "기병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "망아장",
+      "leadership": 45,
+      "war": 79,
+      "intelligence": 3,
+      "politics": 2,
+      "total_stats": 129,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "맹달",
+      "leadership": 75,
+      "war": 73,
+      "intelligence": 75,
+      "politics": 66,
+      "total_stats": 289,
+      "troop_type": "궁병",
+      "battle_tactic": "매복지독"
+    },
+    {
+      "name_kr": "맹우",
+      "leadership": 50,
+      "war": 68,
+      "intelligence": 22,
+      "politics": 18,
+      "total_stats": 158,
+      "troop_type": "창병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "맹획",
+      "leadership": 87,
+      "war": 87,
+      "intelligence": 42,
+      "politics": 45,
+      "total_stats": 261,
+      "troop_type": "기병",
+      "battle_tactic": "강습"
+    },
+    {
+      "name_kr": "모개",
+      "leadership": 63,
+      "war": 39,
+      "intelligence": 60,
+      "politics": 78,
+      "total_stats": 240,
+      "troop_type": "궁병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "목록대왕",
+      "leadership": 65,
+      "war": 71,
+      "intelligence": 39,
+      "politics": 6,
+      "total_stats": 181,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "목순",
+      "leadership": 52,
+      "war": 77,
+      "intelligence": 11,
+      "politics": 21,
+      "total_stats": 161,
+      "troop_type": "기병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "무안국",
+      "leadership": 70,
+      "war": 83,
+      "intelligence": 34,
+      "politics": 33,
+      "total_stats": 220,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "문빙",
+      "leadership": 80,
+      "war": 82,
+      "intelligence": 69,
+      "politics": 69,
+      "total_stats": 300,
+      "troop_type": "궁병",
+      "battle_tactic": "궁군강사"
+    },
+    {
+      "name_kr": "문앙",
+      "leadership": 76,
+      "war": 91,
+      "intelligence": 65,
+      "politics": 32,
+      "total_stats": 264,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "문추",
+      "leadership": 89,
+      "war": 93,
+      "intelligence": 47,
+      "politics": 34,
+      "total_stats": 263,
+      "troop_type": "기병",
+      "battle_tactic": "돌파"
+    },
+    {
+      "name_kr": "문흠",
+      "leadership": 74,
+      "war": 83,
+      "intelligence": 43,
+      "politics": 34,
+      "total_stats": 234,
+      "troop_type": "궁병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "미방",
+      "leadership": 54,
+      "war": 61,
+      "intelligence": 32,
+      "politics": 23,
+      "total_stats": 170,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "미씨",
+      "leadership": 22,
+      "war": 6,
+      "intelligence": 67,
+      "politics": 70,
+      "total_stats": 165,
+      "troop_type": "창병",
+      "battle_tactic": "창방어강화"
+    },
+    {
+      "name_kr": "미축",
+      "leadership": 33,
+      "war": 29,
+      "intelligence": 78,
+      "politics": 83,
+      "total_stats": 223,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "반봉",
+      "leadership": 56,
+      "war": 77,
+      "intelligence": 4,
+      "politics": 14,
+      "total_stats": 151,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "반장",
+      "leadership": 76,
+      "war": 80,
+      "intelligence": 74,
+      "politics": 28,
+      "total_stats": 258,
+      "troop_type": "창병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "반준",
+      "leadership": 61,
+      "war": 18,
+      "intelligence": 68,
+      "politics": 82,
+      "total_stats": 229,
+      "troop_type": "기병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "방덕",
+      "leadership": 89,
+      "war": 94,
+      "intelligence": 75,
+      "politics": 44,
+      "total_stats": 302,
+      "troop_type": "기병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "방통",
+      "leadership": 85,
+      "war": 34,
+      "intelligence": 97,
+      "politics": 85,
+      "total_stats": 301,
+      "troop_type": "창병",
+      "battle_tactic": "연환계"
+    },
+    {
+      "name_kr": "방희",
+      "leadership": 60,
+      "war": 38,
+      "intelligence": 69,
+      "politics": 74,
+      "total_stats": 241,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "배원소",
+      "leadership": 49,
+      "war": 65,
+      "intelligence": 25,
+      "politics": 27,
+      "total_stats": 166,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "번능",
+      "leadership": 69,
+      "war": 61,
+      "intelligence": 36,
+      "politics": 31,
+      "total_stats": 197,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "번씨",
+      "leadership": 23,
+      "war": 22,
+      "intelligence": 73,
+      "politics": 69,
+      "total_stats": 187,
+      "troop_type": "창병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "번조",
+      "leadership": 66,
+      "war": 73,
+      "intelligence": 31,
+      "politics": 24,
+      "total_stats": 194,
+      "troop_type": "기병",
+      "battle_tactic": "마방어강화"
+    },
+    {
+      "name_kr": "법정",
+      "leadership": 82,
+      "war": 47,
+      "intelligence": 94,
+      "politics": 78,
+      "total_stats": 301,
+      "troop_type": "창병",
+      "battle_tactic": "도발"
+    },
+    {
+      "name_kr": "변씨",
+      "leadership": 36,
+      "war": 24,
+      "intelligence": 75,
+      "politics": 76,
+      "total_stats": 211,
+      "troop_type": "기병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "변희",
+      "leadership": 56,
+      "war": 70,
+      "intelligence": 62,
+      "politics": 37,
+      "total_stats": 225,
+      "troop_type": "기병",
+      "battle_tactic": "마공격강화"
+    },
+    {
+      "name_kr": "보연사",
+      "leadership": 47,
+      "war": 10,
+      "intelligence": 64,
+      "politics": 72,
+      "total_stats": 193,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "보즐",
+      "leadership": 72,
+      "war": 51,
+      "intelligence": 84,
+      "politics": 86,
+      "total_stats": 293,
+      "troop_type": "궁병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "봉기",
+      "leadership": 43,
+      "war": 21,
+      "intelligence": 84,
+      "politics": 70,
+      "total_stats": 218,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "부사인",
+      "leadership": 46,
+      "war": 63,
+      "intelligence": 37,
+      "politics": 24,
+      "total_stats": 170,
+      "troop_type": "궁병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "부손",
+      "leadership": 29,
+      "war": 13,
+      "intelligence": 70,
+      "politics": 72,
+      "total_stats": 184,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "부첨",
+      "leadership": 73,
+      "war": 85,
+      "intelligence": 76,
+      "politics": 46,
+      "total_stats": 280,
+      "troop_type": "기병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "비시",
+      "leadership": 18,
+      "war": 28,
+      "intelligence": 65,
+      "politics": 74,
+      "total_stats": 185,
+      "troop_type": "궁병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "비연",
+      "leadership": 60,
+      "war": 66,
+      "intelligence": 21,
+      "politics": 30,
+      "total_stats": 177,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "비요",
+      "leadership": 70,
+      "war": 66,
+      "intelligence": 73,
+      "politics": 62,
+      "total_stats": 271,
+      "troop_type": "궁병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "비의",
+      "leadership": 77,
+      "war": 30,
+      "intelligence": 83,
+      "politics": 92,
+      "total_stats": 282,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "사마가",
+      "leadership": 66,
+      "war": 84,
+      "intelligence": 25,
+      "politics": 14,
+      "total_stats": 189,
+      "troop_type": "궁병",
+      "battle_tactic": "원맹사"
+    },
+    {
+      "name_kr": "사마랑",
+      "leadership": 20,
+      "war": 21,
+      "intelligence": 72,
+      "politics": 82,
+      "total_stats": 195,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "사마부",
+      "leadership": 70,
+      "war": 37,
+      "intelligence": 77,
+      "politics": 79,
+      "total_stats": 263,
+      "troop_type": "창병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "사마사",
+      "leadership": 79,
+      "war": 64,
+      "intelligence": 88,
+      "politics": 82,
+      "total_stats": 313,
+      "troop_type": "창병",
+      "battle_tactic": "매복지독"
+    },
+    {
+      "name_kr": "사마소",
+      "leadership": 76,
+      "war": 57,
+      "intelligence": 87,
+      "politics": 88,
+      "total_stats": 308,
+      "troop_type": "궁병",
+      "battle_tactic": "허유엄살"
+    },
+    {
+      "name_kr": "사마염",
+      "leadership": 69,
+      "war": 59,
+      "intelligence": 77,
+      "politics": 79,
+      "total_stats": 284,
+      "troop_type": "기병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "사마의",
+      "leadership": 98,
+      "war": 63,
+      "intelligence": 98,
+      "politics": 93,
+      "total_stats": 352,
+      "troop_type": "기병",
+      "battle_tactic": "속전고수"
+    },
+    {
+      "name_kr": "서막",
+      "leadership": 55,
+      "war": 32,
+      "intelligence": 68,
+      "politics": 82,
+      "total_stats": 237,
+      "troop_type": "궁병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "서서",
+      "leadership": 87,
+      "war": 64,
+      "intelligence": 93,
+      "politics": 80,
+      "total_stats": 324,
+      "troop_type": "기병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "서성",
+      "leadership": 86,
+      "war": 81,
+      "intelligence": 78,
+      "politics": 65,
+      "total_stats": 310,
+      "troop_type": "궁병",
+      "battle_tactic": "강습"
+    },
+    {
+      "name_kr": "서씨",
+      "leadership": 48,
+      "war": 16,
+      "intelligence": 80,
+      "politics": 70,
+      "total_stats": 214,
+      "troop_type": "창병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "서영",
+      "leadership": 80,
+      "war": 76,
+      "intelligence": 62,
+      "politics": 43,
+      "total_stats": 261,
+      "troop_type": "기병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "서황",
+      "leadership": 91,
+      "war": 90,
+      "intelligence": 78,
+      "politics": 48,
+      "total_stats": 307,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "설종",
+      "leadership": 34,
+      "war": 16,
+      "intelligence": 73,
+      "politics": 80,
+      "total_stats": 203,
+      "troop_type": "궁병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "성공영",
+      "leadership": 73,
+      "war": 71,
+      "intelligence": 80,
+      "politics": 62,
+      "total_stats": 286,
+      "troop_type": "기병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "성의",
+      "leadership": 74,
+      "war": 72,
+      "intelligence": 41,
+      "politics": 48,
+      "total_stats": 235,
+      "troop_type": "기병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "소교",
+      "leadership": 40,
+      "war": 12,
+      "intelligence": 74,
+      "politics": 77,
+      "total_stats": 203,
+      "troop_type": "궁병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "소비",
+      "leadership": 69,
+      "war": 63,
+      "intelligence": 66,
+      "politics": 62,
+      "total_stats": 260,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "손건",
+      "leadership": 34,
+      "war": 33,
+      "intelligence": 79,
+      "politics": 84,
+      "total_stats": 230,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "손견",
+      "leadership": 94,
+      "war": 90,
+      "intelligence": 79,
+      "politics": 73,
+      "total_stats": 336,
+      "troop_type": "창병",
+      "battle_tactic": "전군맹공"
+    },
+    {
+      "name_kr": "손교",
+      "leadership": 77,
+      "war": 72,
+      "intelligence": 67,
+      "politics": 71,
+      "total_stats": 287,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "손권",
+      "leadership": 79,
+      "war": 67,
+      "intelligence": 80,
+      "politics": 89,
+      "total_stats": 315,
+      "troop_type": "궁병",
+      "battle_tactic": "전군방호"
+    },
+    {
+      "name_kr": "손노육",
+      "leadership": 29,
+      "war": 8,
+      "intelligence": 58,
+      "politics": 54,
+      "total_stats": 149,
+      "troop_type": "창병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "손등",
+      "leadership": 62,
+      "war": 37,
+      "intelligence": 79,
+      "politics": 80,
+      "total_stats": 258,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "손례",
+      "leadership": 78,
+      "war": 81,
+      "intelligence": 67,
+      "politics": 73,
+      "total_stats": 299,
+      "troop_type": "창병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "손로반",
+      "leadership": 56,
+      "war": 58,
+      "intelligence": 73,
+      "politics": 64,
+      "total_stats": 251,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "손상향",
+      "leadership": 76,
+      "war": 86,
+      "intelligence": 70,
+      "politics": 63,
+      "total_stats": 295,
+      "troop_type": "궁병",
+      "battle_tactic": "원맹사"
+    },
+    {
+      "name_kr": "손소",
+      "leadership": 80,
+      "war": 79,
+      "intelligence": 76,
+      "politics": 69,
+      "total_stats": 304,
+      "troop_type": "기병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "손씨",
+      "leadership": 23,
+      "war": 22,
+      "intelligence": 63,
+      "politics": 72,
+      "total_stats": 180,
+      "troop_type": "궁병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "손유",
+      "leadership": 77,
+      "war": 70,
+      "intelligence": 68,
+      "politics": 69,
+      "total_stats": 284,
+      "troop_type": "창병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "손익",
+      "leadership": 67,
+      "war": 78,
+      "intelligence": 27,
+      "politics": 16,
+      "total_stats": 188,
+      "troop_type": "창병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "손정",
+      "leadership": 66,
+      "war": 53,
+      "intelligence": 73,
+      "politics": 71,
+      "total_stats": 263,
+      "troop_type": "궁병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "손중",
+      "leadership": 62,
+      "war": 71,
+      "intelligence": 36,
+      "politics": 8,
+      "total_stats": 177,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "손책",
+      "leadership": 96,
+      "war": 92,
+      "intelligence": 74,
+      "politics": 70,
+      "total_stats": 332,
+      "troop_type": "창병",
+      "battle_tactic": "강습"
+    },
+    {
+      "name_kr": "손환",
+      "leadership": 82,
+      "war": 73,
+      "intelligence": 76,
+      "politics": 68,
+      "total_stats": 299,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "송헌",
+      "leadership": 68,
+      "war": 77,
+      "intelligence": 38,
+      "politics": 27,
+      "total_stats": 210,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "순심",
+      "leadership": 34,
+      "war": 25,
+      "intelligence": 78,
+      "politics": 78,
+      "total_stats": 215,
+      "troop_type": "창병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "순우경",
+      "leadership": 72,
+      "war": 66,
+      "intelligence": 29,
+      "politics": 29,
+      "total_stats": 196,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "순욱",
+      "leadership": 62,
+      "war": 14,
+      "intelligence": 95,
+      "politics": 98,
+      "total_stats": 269,
+      "troop_type": "창병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "순유",
+      "leadership": 73,
+      "war": 26,
+      "intelligence": 94,
+      "politics": 88,
+      "total_stats": 281,
+      "troop_type": "궁병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "신비",
+      "leadership": 39,
+      "war": 24,
+      "intelligence": 79,
+      "politics": 79,
+      "total_stats": 221,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "신의",
+      "leadership": 55,
+      "war": 59,
+      "intelligence": 60,
+      "politics": 56,
+      "total_stats": 230,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "신탐",
+      "leadership": 56,
+      "war": 62,
+      "intelligence": 54,
+      "politics": 41,
+      "total_stats": 213,
+      "troop_type": "기병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "신평",
+      "leadership": 69,
+      "war": 43,
+      "intelligence": 77,
+      "politics": 75,
+      "total_stats": 264,
+      "troop_type": "창병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "신헌영",
+      "leadership": 42,
+      "war": 28,
+      "intelligence": 84,
+      "politics": 76,
+      "total_stats": 230,
+      "troop_type": "기병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "심배",
+      "leadership": 80,
+      "war": 60,
+      "intelligence": 83,
+      "politics": 73,
+      "total_stats": 296,
+      "troop_type": "궁병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "아회남",
+      "leadership": 65,
+      "war": 74,
+      "intelligence": 26,
+      "politics": 33,
+      "total_stats": 198,
+      "troop_type": "기병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "악진",
+      "leadership": 80,
+      "war": 84,
+      "intelligence": 56,
+      "politics": 51,
+      "total_stats": 271,
+      "troop_type": "창병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "악취",
+      "leadership": 53,
+      "war": 66,
+      "intelligence": 61,
+      "politics": 42,
+      "total_stats": 222,
+      "troop_type": "창병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "악환",
+      "leadership": 65,
+      "war": 82,
+      "intelligence": 42,
+      "politics": 21,
+      "total_stats": 210,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "안량",
+      "leadership": 88,
+      "war": 94,
+      "intelligence": 21,
+      "politics": 23,
+      "total_stats": 226,
+      "troop_type": "창병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "양백",
+      "leadership": 44,
+      "war": 45,
+      "intelligence": 19,
+      "politics": 26,
+      "total_stats": 134,
+      "troop_type": "창병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "양봉",
+      "leadership": 54,
+      "war": 62,
+      "intelligence": 53,
+      "politics": 40,
+      "total_stats": 209,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "양봉",
+      "leadership": 66,
+      "war": 65,
+      "intelligence": 31,
+      "politics": 14,
+      "total_stats": 176,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "양부",
+      "leadership": 67,
+      "war": 50,
+      "intelligence": 83,
+      "politics": 78,
+      "total_stats": 278,
+      "troop_type": "기병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "양서",
+      "leadership": 56,
+      "war": 62,
+      "intelligence": 66,
+      "politics": 68,
+      "total_stats": 252,
+      "troop_type": "기병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "양송",
+      "leadership": 17,
+      "war": 5,
+      "intelligence": 28,
+      "politics": 34,
+      "total_stats": 84,
+      "troop_type": "창병",
+      "battle_tactic": "분신봉인"
+    },
+    {
+      "name_kr": "양수",
+      "leadership": 25,
+      "war": 4,
+      "intelligence": 83,
+      "politics": 79,
+      "total_stats": 191,
+      "troop_type": "창병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "양습",
+      "leadership": 73,
+      "war": 40,
+      "intelligence": 74,
+      "politics": 87,
+      "total_stats": 274,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "양앙",
+      "leadership": 68,
+      "war": 72,
+      "intelligence": 38,
+      "politics": 35,
+      "total_stats": 213,
+      "troop_type": "기병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "양의",
+      "leadership": 68,
+      "war": 40,
+      "intelligence": 82,
+      "politics": 79,
+      "total_stats": 269,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "양임",
+      "leadership": 70,
+      "war": 78,
+      "intelligence": 56,
+      "politics": 40,
+      "total_stats": 244,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "양조",
+      "leadership": 53,
+      "war": 61,
+      "intelligence": 36,
+      "politics": 32,
+      "total_stats": 182,
+      "troop_type": "창병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "양추",
+      "leadership": 67,
+      "war": 64,
+      "intelligence": 60,
+      "politics": 63,
+      "total_stats": 254,
+      "troop_type": "기병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "양추",
+      "leadership": 52,
+      "war": 65,
+      "intelligence": 40,
+      "politics": 22,
+      "total_stats": 179,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "양호",
+      "leadership": 90,
+      "war": 64,
+      "intelligence": 84,
+      "politics": 87,
+      "total_stats": 325,
+      "troop_type": "궁병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "양홍",
+      "leadership": 33,
+      "war": 15,
+      "intelligence": 77,
+      "politics": 60,
+      "total_stats": 185,
+      "troop_type": "기병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "양회",
+      "leadership": 62,
+      "war": 68,
+      "intelligence": 68,
+      "politics": 62,
+      "total_stats": 260,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "양흥",
+      "leadership": 61,
+      "war": 65,
+      "intelligence": 19,
+      "politics": 22,
+      "total_stats": 167,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "엄강",
+      "leadership": 68,
+      "war": 71,
+      "intelligence": 40,
+      "politics": 51,
+      "total_stats": 230,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "엄백호",
+      "leadership": 67,
+      "war": 70,
+      "intelligence": 23,
+      "politics": 21,
+      "total_stats": 181,
+      "troop_type": "창병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "엄안",
+      "leadership": 82,
+      "war": 83,
+      "intelligence": 72,
+      "politics": 67,
+      "total_stats": 304,
+      "troop_type": "궁병",
+      "battle_tactic": "노당익장"
+    },
+    {
+      "name_kr": "엄여",
+      "leadership": 61,
+      "war": 78,
+      "intelligence": 44,
+      "politics": 20,
+      "total_stats": 203,
+      "troop_type": "창병",
+      "battle_tactic": "창방어강화"
+    },
+    {
+      "name_kr": "엄정",
+      "leadership": 50,
+      "war": 55,
+      "intelligence": 39,
+      "politics": 36,
+      "total_stats": 180,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "엄준",
+      "leadership": 28,
+      "war": 2,
+      "intelligence": 71,
+      "politics": 84,
+      "total_stats": 185,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "여개",
+      "leadership": 53,
+      "war": 30,
+      "intelligence": 67,
+      "politics": 77,
+      "total_stats": 227,
+      "troop_type": "궁병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "여건",
+      "leadership": 57,
+      "war": 70,
+      "intelligence": 62,
+      "politics": 72,
+      "total_stats": 261,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "여광",
+      "leadership": 56,
+      "war": 70,
+      "intelligence": 13,
+      "politics": 22,
+      "total_stats": 161,
+      "troop_type": "기병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "여대",
+      "leadership": 75,
+      "war": 71,
+      "intelligence": 70,
+      "politics": 75,
+      "total_stats": 291,
+      "troop_type": "창병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "여몽",
+      "leadership": 91,
+      "war": 81,
+      "intelligence": 89,
+      "politics": 78,
+      "total_stats": 339,
+      "troop_type": "궁병",
+      "battle_tactic": "공방일체"
+    },
+    {
+      "name_kr": "여범",
+      "leadership": 73,
+      "war": 63,
+      "intelligence": 75,
+      "politics": 75,
+      "total_stats": 286,
+      "troop_type": "궁병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "여상",
+      "leadership": 54,
+      "war": 71,
+      "intelligence": 12,
+      "politics": 19,
+      "total_stats": 156,
+      "troop_type": "기병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "여위황",
+      "leadership": 58,
+      "war": 63,
+      "intelligence": 29,
+      "politics": 39,
+      "total_stats": 189,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "여포",
+      "leadership": 97,
+      "war": 100,
+      "intelligence": 26,
+      "politics": 13,
+      "total_stats": 236,
+      "troop_type": "기병",
+      "battle_tactic": "인중여포"
+    },
+    {
+      "name_kr": "염상",
+      "leadership": 30,
+      "war": 27,
+      "intelligence": 71,
+      "politics": 74,
+      "total_stats": 202,
+      "troop_type": "창병",
+      "battle_tactic": "맹사봉인"
+    },
+    {
+      "name_kr": "염유",
+      "leadership": 71,
+      "war": 57,
+      "intelligence": 71,
+      "politics": 73,
+      "total_stats": 272,
+      "troop_type": "기병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "염포",
+      "leadership": 29,
+      "war": 25,
+      "intelligence": 82,
+      "politics": 79,
+      "total_stats": 215,
+      "troop_type": "창병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "염행",
+      "leadership": 76,
+      "war": 84,
+      "intelligence": 66,
+      "politics": 58,
+      "total_stats": 284,
+      "troop_type": "기병",
+      "battle_tactic": "강용"
+    },
+    {
+      "name_kr": "오경",
+      "leadership": 69,
+      "war": 66,
+      "intelligence": 52,
+      "politics": 65,
+      "total_stats": 252,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "오란",
+      "leadership": 68,
+      "war": 80,
+      "intelligence": 35,
+      "politics": 36,
+      "total_stats": 219,
+      "troop_type": "창병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "오반",
+      "leadership": 74,
+      "war": 71,
+      "intelligence": 59,
+      "politics": 45,
+      "total_stats": 249,
+      "troop_type": "창병",
+      "battle_tactic": "창방어강화"
+    },
+    {
+      "name_kr": "오의",
+      "leadership": 79,
+      "war": 73,
+      "intelligence": 70,
+      "politics": 70,
+      "total_stats": 292,
+      "troop_type": "궁병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "온회",
+      "leadership": 62,
+      "war": 36,
+      "intelligence": 74,
+      "politics": 86,
+      "total_stats": 258,
+      "troop_type": "창병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "올돌골",
+      "leadership": 79,
+      "war": 86,
+      "intelligence": 1,
+      "politics": 3,
+      "total_stats": 169,
+      "troop_type": "창병",
+      "battle_tactic": "철벽"
+    },
+    {
+      "name_kr": "옹개",
+      "leadership": 73,
+      "war": 75,
+      "intelligence": 57,
+      "politics": 56,
+      "total_stats": 261,
+      "troop_type": "창병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "왕랑",
+      "leadership": 47,
+      "war": 35,
+      "intelligence": 79,
+      "politics": 81,
+      "total_stats": 242,
+      "troop_type": "창병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "왕루",
+      "leadership": 28,
+      "war": 30,
+      "intelligence": 79,
+      "politics": 80,
+      "total_stats": 217,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "왕릉",
+      "leadership": 74,
+      "war": 64,
+      "intelligence": 71,
+      "politics": 82,
+      "total_stats": 291,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "왕문",
+      "leadership": 65,
+      "war": 64,
+      "intelligence": 31,
+      "politics": 41,
+      "total_stats": 201,
+      "troop_type": "기병",
+      "battle_tactic": "마방어강화"
+    },
+    {
+      "name_kr": "왕보",
+      "leadership": 62,
+      "war": 41,
+      "intelligence": 79,
+      "politics": 78,
+      "total_stats": 260,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "왕수",
+      "leadership": 54,
+      "war": 27,
+      "intelligence": 77,
+      "politics": 78,
+      "total_stats": 236,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "왕숙",
+      "leadership": 36,
+      "war": 22,
+      "intelligence": 76,
+      "politics": 78,
+      "total_stats": 212,
+      "troop_type": "창병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "왕쌍",
+      "leadership": 67,
+      "war": 88,
+      "intelligence": 19,
+      "politics": 22,
+      "total_stats": 196,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "왕원희",
+      "leadership": 53,
+      "war": 37,
+      "intelligence": 73,
+      "politics": 75,
+      "total_stats": 238,
+      "troop_type": "기병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "왕위",
+      "leadership": 60,
+      "war": 70,
+      "intelligence": 62,
+      "politics": 52,
+      "total_stats": 244,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "왕윤",
+      "leadership": 26,
+      "war": 6,
+      "intelligence": 68,
+      "politics": 80,
+      "total_stats": 180,
+      "troop_type": "창병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "왕이",
+      "leadership": 73,
+      "war": 51,
+      "intelligence": 82,
+      "politics": 68,
+      "total_stats": 274,
+      "troop_type": "궁병",
+      "battle_tactic": "허유엄살"
+    },
+    {
+      "name_kr": "왕준",
+      "leadership": 81,
+      "war": 73,
+      "intelligence": 77,
+      "politics": 71,
+      "total_stats": 302,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "왕찬",
+      "leadership": 15,
+      "war": 3,
+      "intelligence": 79,
+      "politics": 80,
+      "total_stats": 177,
+      "troop_type": "궁병",
+      "battle_tactic": "돌격봉인"
+    },
+    {
+      "name_kr": "왕창",
+      "leadership": 74,
+      "war": 64,
+      "intelligence": 79,
+      "politics": 79,
+      "total_stats": 296,
+      "troop_type": "궁병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "왕평",
+      "leadership": 83,
+      "war": 79,
+      "intelligence": 76,
+      "politics": 58,
+      "total_stats": 296,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "왕항",
+      "leadership": 76,
+      "war": 60,
+      "intelligence": 61,
+      "politics": 62,
+      "total_stats": 259,
+      "troop_type": "창병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "요화",
+      "leadership": 73,
+      "war": 76,
+      "intelligence": 69,
+      "politics": 49,
+      "total_stats": 267,
+      "troop_type": "기병",
+      "battle_tactic": "분신봉인"
+    },
+    {
+      "name_kr": "우금",
+      "leadership": 83,
+      "war": 78,
+      "intelligence": 74,
+      "politics": 57,
+      "total_stats": 292,
+      "troop_type": "궁병",
+      "battle_tactic": "궁군강사"
+    },
+    {
+      "name_kr": "우금",
+      "leadership": 72,
+      "war": 79,
+      "intelligence": 38,
+      "politics": 40,
+      "total_stats": 229,
+      "troop_type": "기병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "우번",
+      "leadership": 43,
+      "war": 46,
+      "intelligence": 86,
+      "politics": 81,
+      "total_stats": 256,
+      "troop_type": "궁병",
+      "battle_tactic": "맹사봉인"
+    },
+    {
+      "name_kr": "우보",
+      "leadership": 38,
+      "war": 60,
+      "intelligence": 21,
+      "politics": 26,
+      "total_stats": 145,
+      "troop_type": "창병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "원담",
+      "leadership": 60,
+      "war": 69,
+      "intelligence": 30,
+      "politics": 35,
+      "total_stats": 194,
+      "troop_type": "창병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "원상",
+      "leadership": 63,
+      "war": 75,
+      "intelligence": 42,
+      "politics": 38,
+      "total_stats": 218,
+      "troop_type": "궁병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "원소",
+      "leadership": 81,
+      "war": 69,
+      "intelligence": 70,
+      "politics": 73,
+      "total_stats": 293,
+      "troop_type": "창병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "원술",
+      "leadership": 44,
+      "war": 65,
+      "intelligence": 65,
+      "politics": 16,
+      "total_stats": 190,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "원윤",
+      "leadership": 32,
+      "war": 14,
+      "intelligence": 39,
+      "politics": 41,
+      "total_stats": 126,
+      "troop_type": "창병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "원희",
+      "leadership": 66,
+      "war": 51,
+      "intelligence": 63,
+      "politics": 65,
+      "total_stats": 245,
+      "troop_type": "궁병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "위관",
+      "leadership": 69,
+      "war": 46,
+      "intelligence": 79,
+      "politics": 78,
+      "total_stats": 272,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "위속",
+      "leadership": 67,
+      "war": 78,
+      "intelligence": 31,
+      "politics": 32,
+      "total_stats": 208,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "위연",
+      "leadership": 85,
+      "war": 92,
+      "intelligence": 72,
+      "politics": 49,
+      "total_stats": 298,
+      "troop_type": "창병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "위유",
+      "leadership": 46,
+      "war": 29,
+      "intelligence": 74,
+      "politics": 74,
+      "total_stats": 223,
+      "troop_type": "궁병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "유괴",
+      "leadership": 71,
+      "war": 73,
+      "intelligence": 67,
+      "politics": 44,
+      "total_stats": 255,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "유기",
+      "leadership": 52,
+      "war": 12,
+      "intelligence": 63,
+      "politics": 71,
+      "total_stats": 198,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "유도",
+      "leadership": 25,
+      "war": 23,
+      "intelligence": 26,
+      "politics": 49,
+      "total_stats": 123,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "유반",
+      "leadership": 69,
+      "war": 76,
+      "intelligence": 47,
+      "politics": 43,
+      "total_stats": 235,
+      "troop_type": "창병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "유벽",
+      "leadership": 70,
+      "war": 72,
+      "intelligence": 47,
+      "politics": 34,
+      "total_stats": 223,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "유복",
+      "leadership": 64,
+      "war": 49,
+      "intelligence": 74,
+      "politics": 87,
+      "total_stats": 274,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "유봉",
+      "leadership": 75,
+      "war": 79,
+      "intelligence": 44,
+      "politics": 50,
+      "total_stats": 248,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "유비",
+      "leadership": 81,
+      "war": 77,
+      "intelligence": 78,
+      "politics": 80,
+      "total_stats": 316,
+      "troop_type": "창병",
+      "battle_tactic": "의용병"
+    },
+    {
+      "name_kr": "유선",
+      "leadership": 3,
+      "war": 5,
+      "intelligence": 9,
+      "politics": 4,
+      "total_stats": 21,
+      "troop_type": "창병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "유섭",
+      "leadership": 62,
+      "war": 79,
+      "intelligence": 24,
+      "politics": 23,
+      "total_stats": 188,
+      "troop_type": "기병",
+      "battle_tactic": "마방어강화"
+    },
+    {
+      "name_kr": "유순",
+      "leadership": 63,
+      "war": 46,
+      "intelligence": 41,
+      "politics": 50,
+      "total_stats": 200,
+      "troop_type": "궁병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "유심",
+      "leadership": 60,
+      "war": 62,
+      "intelligence": 70,
+      "politics": 73,
+      "total_stats": 265,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "유씨",
+      "leadership": 23,
+      "war": 8,
+      "intelligence": 67,
+      "politics": 59,
+      "total_stats": 157,
+      "troop_type": "창병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "유언",
+      "leadership": 53,
+      "war": 38,
+      "intelligence": 80,
+      "politics": 81,
+      "total_stats": 252,
+      "troop_type": "궁병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "유엽",
+      "leadership": 56,
+      "war": 32,
+      "intelligence": 92,
+      "politics": 73,
+      "total_stats": 253,
+      "troop_type": "기병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "유요",
+      "leadership": 62,
+      "war": 67,
+      "intelligence": 46,
+      "politics": 70,
+      "total_stats": 245,
+      "troop_type": "기병",
+      "battle_tactic": "마방어강화"
+    },
+    {
+      "name_kr": "유우",
+      "leadership": 55,
+      "war": 33,
+      "intelligence": 70,
+      "politics": 78,
+      "total_stats": 236,
+      "troop_type": "기병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "유장",
+      "leadership": 31,
+      "war": 5,
+      "intelligence": 34,
+      "politics": 38,
+      "total_stats": 108,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "유종",
+      "leadership": 24,
+      "war": 22,
+      "intelligence": 65,
+      "politics": 65,
+      "total_stats": 176,
+      "troop_type": "기병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "유파",
+      "leadership": 29,
+      "war": 22,
+      "intelligence": 75,
+      "politics": 81,
+      "total_stats": 207,
+      "troop_type": "궁병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "유표",
+      "leadership": 48,
+      "war": 31,
+      "intelligence": 72,
+      "politics": 81,
+      "total_stats": 232,
+      "troop_type": "궁병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "유현",
+      "leadership": 54,
+      "war": 66,
+      "intelligence": 51,
+      "politics": 40,
+      "total_stats": 211,
+      "troop_type": "기병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "유훈",
+      "leadership": 47,
+      "war": 63,
+      "intelligence": 35,
+      "politics": 16,
+      "total_stats": 161,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "육손",
+      "leadership": 94,
+      "war": 69,
+      "intelligence": 95,
+      "politics": 87,
+      "total_stats": 345,
+      "troop_type": "궁병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "육적",
+      "leadership": 20,
+      "war": 7,
+      "intelligence": 72,
+      "politics": 72,
+      "total_stats": 171,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "육항",
+      "leadership": 91,
+      "war": 63,
+      "intelligence": 87,
+      "politics": 85,
+      "total_stats": 326,
+      "troop_type": "궁병",
+      "battle_tactic": "궁군강사"
+    },
+    {
+      "name_kr": "윤묵",
+      "leadership": 26,
+      "war": 15,
+      "intelligence": 66,
+      "politics": 77,
+      "total_stats": 184,
+      "troop_type": "창병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "윤상",
+      "leadership": 51,
+      "war": 44,
+      "intelligence": 62,
+      "politics": 66,
+      "total_stats": 223,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "윤직",
+      "leadership": 46,
+      "war": 42,
+      "intelligence": 73,
+      "politics": 64,
+      "total_stats": 225,
+      "troop_type": "기병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "이각",
+      "leadership": 69,
+      "war": 72,
+      "intelligence": 24,
+      "politics": 1,
+      "total_stats": 166,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "이숙",
+      "leadership": 46,
+      "war": 69,
+      "intelligence": 61,
+      "politics": 45,
+      "total_stats": 221,
+      "troop_type": "창병",
+      "battle_tactic": "창방어강화"
+    },
+    {
+      "name_kr": "이엄",
+      "leadership": 83,
+      "war": 84,
+      "intelligence": 76,
+      "politics": 74,
+      "total_stats": 317,
+      "troop_type": "궁병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "이유",
+      "leadership": 61,
+      "war": 26,
+      "intelligence": 93,
+      "politics": 75,
+      "total_stats": 255,
+      "troop_type": "궁병",
+      "battle_tactic": "매복지독"
+    },
+    {
+      "name_kr": "이이",
+      "leadership": 63,
+      "war": 77,
+      "intelligence": 19,
+      "politics": 18,
+      "total_stats": 177,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "이적",
+      "leadership": 29,
+      "war": 24,
+      "intelligence": 80,
+      "politics": 86,
+      "total_stats": 219,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "이전",
+      "leadership": 78,
+      "war": 77,
+      "intelligence": 79,
+      "politics": 74,
+      "total_stats": 308,
+      "troop_type": "궁병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "이통",
+      "leadership": 73,
+      "war": 81,
+      "intelligence": 62,
+      "politics": 63,
+      "total_stats": 279,
+      "troop_type": "기병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "이풍",
+      "leadership": 69,
+      "war": 74,
+      "intelligence": 50,
+      "politics": 22,
+      "total_stats": 215,
+      "troop_type": "기병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "이회",
+      "leadership": 79,
+      "war": 65,
+      "intelligence": 79,
+      "politics": 77,
+      "total_stats": 300,
+      "troop_type": "궁병",
+      "battle_tactic": "도발"
+    },
+    {
+      "name_kr": "자영",
+      "leadership": 75,
+      "war": 74,
+      "intelligence": 41,
+      "politics": 34,
+      "total_stats": 224,
+      "troop_type": "궁병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "장각",
+      "leadership": 87,
+      "war": 25,
+      "intelligence": 86,
+      "politics": 80,
+      "total_stats": 278,
+      "troop_type": "궁병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "장간",
+      "leadership": 19,
+      "war": 6,
+      "intelligence": 66,
+      "politics": 64,
+      "total_stats": 155,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "장개",
+      "leadership": 34,
+      "war": 66,
+      "intelligence": 8,
+      "politics": 1,
+      "total_stats": 109,
+      "troop_type": "창병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "장굉",
+      "leadership": 24,
+      "war": 22,
+      "intelligence": 86,
+      "politics": 95,
+      "total_stats": 227,
+      "troop_type": "궁병",
+      "battle_tactic": "돌격봉인"
+    },
+    {
+      "name_kr": "장기",
+      "leadership": 74,
+      "war": 35,
+      "intelligence": 76,
+      "politics": 88,
+      "total_stats": 273,
+      "troop_type": "기병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "장량",
+      "leadership": 78,
+      "war": 80,
+      "intelligence": 74,
+      "politics": 56,
+      "total_stats": 288,
+      "troop_type": "기병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "장로",
+      "leadership": 51,
+      "war": 26,
+      "intelligence": 74,
+      "politics": 78,
+      "total_stats": 229,
+      "troop_type": "창병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "장료",
+      "leadership": 95,
+      "war": 92,
+      "intelligence": 78,
+      "politics": 58,
+      "total_stats": 323,
+      "troop_type": "기병",
+      "battle_tactic": "강습"
+    },
+    {
+      "name_kr": "장막",
+      "leadership": 52,
+      "war": 53,
+      "intelligence": 71,
+      "politics": 74,
+      "total_stats": 250,
+      "troop_type": "궁병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "장만성",
+      "leadership": 75,
+      "war": 81,
+      "intelligence": 45,
+      "politics": 47,
+      "total_stats": 248,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "장보",
+      "leadership": 83,
+      "war": 71,
+      "intelligence": 81,
+      "politics": 76,
+      "total_stats": 311,
+      "troop_type": "창병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "장비",
+      "leadership": 94,
+      "war": 98,
+      "intelligence": 30,
+      "politics": 22,
+      "total_stats": 244,
+      "troop_type": "창병",
+      "battle_tactic": "만인적"
+    },
+    {
+      "name_kr": "장소",
+      "leadership": 33,
+      "war": 3,
+      "intelligence": 84,
+      "politics": 97,
+      "total_stats": 217,
+      "troop_type": "궁병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "장송",
+      "leadership": 25,
+      "war": 6,
+      "intelligence": 88,
+      "politics": 82,
+      "total_stats": 201,
+      "troop_type": "기병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "장수",
+      "leadership": 80,
+      "war": 73,
+      "intelligence": 64,
+      "politics": 45,
+      "total_stats": 262,
+      "troop_type": "기병",
+      "battle_tactic": "기군신속"
+    },
+    {
+      "name_kr": "장씨",
+      "leadership": 20,
+      "war": 61,
+      "intelligence": 37,
+      "politics": 50,
+      "total_stats": 168,
+      "troop_type": "기병",
+      "battle_tactic": "분신봉인"
+    },
+    {
+      "name_kr": "장양",
+      "leadership": 72,
+      "war": 70,
+      "intelligence": 66,
+      "politics": 58,
+      "total_stats": 266,
+      "troop_type": "기병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "장억",
+      "leadership": 79,
+      "war": 72,
+      "intelligence": 75,
+      "politics": 77,
+      "total_stats": 303,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "장연",
+      "leadership": 76,
+      "war": 81,
+      "intelligence": 57,
+      "politics": 48,
+      "total_stats": 262,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "장온",
+      "leadership": 32,
+      "war": 10,
+      "intelligence": 72,
+      "politics": 78,
+      "total_stats": 192,
+      "troop_type": "창병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "장완",
+      "leadership": 78,
+      "war": 34,
+      "intelligence": 84,
+      "politics": 93,
+      "total_stats": 289,
+      "troop_type": "궁병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "장위",
+      "leadership": 74,
+      "war": 66,
+      "intelligence": 45,
+      "politics": 44,
+      "total_stats": 229,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "장윤",
+      "leadership": 72,
+      "war": 67,
+      "intelligence": 42,
+      "politics": 56,
+      "total_stats": 237,
+      "troop_type": "궁병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "장의거",
+      "leadership": 71,
+      "war": 58,
+      "intelligence": 59,
+      "politics": 51,
+      "total_stats": 239,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "장익",
+      "leadership": 75,
+      "war": 74,
+      "intelligence": 76,
+      "politics": 72,
+      "total_stats": 297,
+      "troop_type": "궁병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "장임",
+      "leadership": 84,
+      "war": 84,
+      "intelligence": 78,
+      "politics": 59,
+      "total_stats": 305,
+      "troop_type": "궁병",
+      "battle_tactic": "원맹사"
+    },
+    {
+      "name_kr": "장제",
+      "leadership": 67,
+      "war": 43,
+      "intelligence": 80,
+      "politics": 78,
+      "total_stats": 268,
+      "troop_type": "창병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "장제",
+      "leadership": 48,
+      "war": 43,
+      "intelligence": 85,
+      "politics": 77,
+      "total_stats": 253,
+      "troop_type": "창병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "장제",
+      "leadership": 70,
+      "war": 66,
+      "intelligence": 55,
+      "politics": 53,
+      "total_stats": 244,
+      "troop_type": "기병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "장춘화",
+      "leadership": 60,
+      "war": 49,
+      "intelligence": 79,
+      "politics": 72,
+      "total_stats": 260,
+      "troop_type": "기병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "장패",
+      "leadership": 78,
+      "war": 75,
+      "intelligence": 53,
+      "politics": 56,
+      "total_stats": 262,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "장포",
+      "leadership": 78,
+      "war": 87,
+      "intelligence": 48,
+      "politics": 46,
+      "total_stats": 259,
+      "troop_type": "창병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "장합",
+      "leadership": 89,
+      "war": 89,
+      "intelligence": 73,
+      "politics": 57,
+      "total_stats": 308,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "장횡",
+      "leadership": 59,
+      "war": 70,
+      "intelligence": 23,
+      "politics": 24,
+      "total_stats": 176,
+      "troop_type": "기병",
+      "battle_tactic": "방어약화"
+    },
+    {
+      "name_kr": "장훈",
+      "leadership": 72,
+      "war": 68,
+      "intelligence": 41,
+      "politics": 39,
+      "total_stats": 220,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "장흠",
+      "leadership": 78,
+      "war": 84,
+      "intelligence": 54,
+      "politics": 42,
+      "total_stats": 258,
+      "troop_type": "궁병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "저수",
+      "leadership": 78,
+      "war": 35,
+      "intelligence": 90,
+      "politics": 89,
+      "total_stats": 292,
+      "troop_type": "창병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "전예",
+      "leadership": 80,
+      "war": 72,
+      "intelligence": 80,
+      "politics": 78,
+      "total_stats": 310,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "전위",
+      "leadership": 72,
+      "war": 95,
+      "intelligence": 35,
+      "politics": 29,
+      "total_stats": 231,
+      "troop_type": "창병",
+      "battle_tactic": "철벽"
+    },
+    {
+      "name_kr": "전종",
+      "leadership": 78,
+      "war": 72,
+      "intelligence": 75,
+      "politics": 61,
+      "total_stats": 286,
+      "troop_type": "기병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "전주",
+      "leadership": 66,
+      "war": 66,
+      "intelligence": 73,
+      "politics": 76,
+      "total_stats": 281,
+      "troop_type": "궁병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "전풍",
+      "leadership": 72,
+      "war": 29,
+      "intelligence": 93,
+      "politics": 87,
+      "total_stats": 281,
+      "troop_type": "창병",
+      "battle_tactic": "허유엄살"
+    },
+    {
+      "name_kr": "전해",
+      "leadership": 68,
+      "war": 65,
+      "intelligence": 58,
+      "politics": 61,
+      "total_stats": 252,
+      "troop_type": "기병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "정보",
+      "leadership": 84,
+      "war": 79,
+      "intelligence": 79,
+      "politics": 74,
+      "total_stats": 316,
+      "troop_type": "창병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "정봉",
+      "leadership": 81,
+      "war": 80,
+      "intelligence": 75,
+      "politics": 55,
+      "total_stats": 291,
+      "troop_type": "궁병",
+      "battle_tactic": "맹공"
+    },
+    {
+      "name_kr": "정욱",
+      "leadership": 70,
+      "war": 49,
+      "intelligence": 90,
+      "politics": 79,
+      "total_stats": 288,
+      "troop_type": "창병",
+      "battle_tactic": "복병신속"
+    },
+    {
+      "name_kr": "정원지",
+      "leadership": 70,
+      "war": 76,
+      "intelligence": 35,
+      "politics": 40,
+      "total_stats": 221,
+      "troop_type": "기병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "정원지",
+      "leadership": 69,
+      "war": 74,
+      "intelligence": 17,
+      "politics": 24,
+      "total_stats": 184,
+      "troop_type": "기병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "정은",
+      "leadership": 69,
+      "war": 73,
+      "intelligence": 40,
+      "politics": 36,
+      "total_stats": 218,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "제갈각",
+      "leadership": 72,
+      "war": 47,
+      "intelligence": 90,
+      "politics": 80,
+      "total_stats": 289,
+      "troop_type": "기병",
+      "battle_tactic": "도발"
+    },
+    {
+      "name_kr": "제갈균",
+      "leadership": 29,
+      "war": 25,
+      "intelligence": 52,
+      "politics": 66,
+      "total_stats": 172,
+      "troop_type": "창병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "제갈근",
+      "leadership": 75,
+      "war": 34,
+      "intelligence": 81,
+      "politics": 89,
+      "total_stats": 279,
+      "troop_type": "창병",
+      "battle_tactic": "진정"
+    },
+    {
+      "name_kr": "제갈량",
+      "leadership": 98,
+      "war": 38,
+      "intelligence": 100,
+      "politics": 95,
+      "total_stats": 331,
+      "troop_type": "궁병",
+      "battle_tactic": "팔진도"
+    },
+    {
+      "name_kr": "제갈탄",
+      "leadership": 72,
+      "war": 72,
+      "intelligence": 76,
+      "politics": 75,
+      "total_stats": 295,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "조루",
+      "leadership": 70,
+      "war": 43,
+      "intelligence": 68,
+      "politics": 74,
+      "total_stats": 255,
+      "troop_type": "궁병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "조무",
+      "leadership": 70,
+      "war": 71,
+      "intelligence": 66,
+      "politics": 53,
+      "total_stats": 260,
+      "troop_type": "기병",
+      "battle_tactic": "도발"
+    },
+    {
+      "name_kr": "조범",
+      "leadership": 28,
+      "war": 21,
+      "intelligence": 32,
+      "politics": 58,
+      "total_stats": 139,
+      "troop_type": "기병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "조비",
+      "leadership": 70,
+      "war": 71,
+      "intelligence": 83,
+      "politics": 86,
+      "total_stats": 310,
+      "troop_type": "궁병",
+      "battle_tactic": "궁군강사"
+    },
+    {
+      "name_kr": "조성",
+      "leadership": 54,
+      "war": 74,
+      "intelligence": 38,
+      "politics": 27,
+      "total_stats": 193,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "조순",
+      "leadership": 75,
+      "war": 71,
+      "intelligence": 63,
+      "politics": 35,
+      "total_stats": 244,
+      "troop_type": "기병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "조식",
+      "leadership": 33,
+      "war": 22,
+      "intelligence": 81,
+      "politics": 70,
+      "total_stats": 206,
+      "troop_type": "궁병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "조앙",
+      "leadership": 74,
+      "war": 67,
+      "intelligence": 69,
+      "politics": 68,
+      "total_stats": 278,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "조예",
+      "leadership": 72,
+      "war": 52,
+      "intelligence": 82,
+      "politics": 82,
+      "total_stats": 288,
+      "troop_type": "궁병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "조운",
+      "leadership": 96,
+      "war": 96,
+      "intelligence": 77,
+      "politics": 65,
+      "total_stats": 334,
+      "troop_type": "기병",
+      "battle_tactic": "단기구"
+    },
+    {
+      "name_kr": "조인",
+      "leadership": 89,
+      "war": 86,
+      "intelligence": 62,
+      "politics": 46,
+      "total_stats": 283,
+      "troop_type": "기병",
+      "battle_tactic": "철벽"
+    },
+    {
+      "name_kr": "조절",
+      "leadership": 36,
+      "war": 2,
+      "intelligence": 75,
+      "politics": 77,
+      "total_stats": 190,
+      "troop_type": "궁병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "조조",
+      "leadership": 99,
+      "war": 72,
+      "intelligence": 91,
+      "politics": 94,
+      "total_stats": 356,
+      "troop_type": "기병",
+      "battle_tactic": "위무지강"
+    },
+    {
+      "name_kr": "조진",
+      "leadership": 81,
+      "war": 74,
+      "intelligence": 70,
+      "politics": 72,
+      "total_stats": 297,
+      "troop_type": "기병",
+      "battle_tactic": "기군신속"
+    },
+    {
+      "name_kr": "조창",
+      "leadership": 82,
+      "war": 90,
+      "intelligence": 40,
+      "politics": 35,
+      "total_stats": 247,
+      "troop_type": "기병",
+      "battle_tactic": "강용"
+    },
+    {
+      "name_kr": "조충",
+      "leadership": 31,
+      "war": 21,
+      "intelligence": 85,
+      "politics": 79,
+      "total_stats": 216,
+      "troop_type": "궁병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "조표",
+      "leadership": 54,
+      "war": 69,
+      "intelligence": 32,
+      "politics": 21,
+      "total_stats": 176,
+      "troop_type": "기병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "조홍",
+      "leadership": 79,
+      "war": 81,
+      "intelligence": 44,
+      "politics": 35,
+      "total_stats": 239,
+      "troop_type": "궁병",
+      "battle_tactic": "돌파"
+    },
+    {
+      "name_kr": "조홍",
+      "leadership": 66,
+      "war": 72,
+      "intelligence": 28,
+      "politics": 22,
+      "total_stats": 188,
+      "troop_type": "기병",
+      "battle_tactic": "마공격강화"
+    },
+    {
+      "name_kr": "조휴",
+      "leadership": 74,
+      "war": 75,
+      "intelligence": 62,
+      "politics": 56,
+      "total_stats": 267,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "종요",
+      "leadership": 70,
+      "war": 24,
+      "intelligence": 77,
+      "politics": 91,
+      "total_stats": 262,
+      "troop_type": "궁병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "종회",
+      "leadership": 82,
+      "war": 51,
+      "intelligence": 91,
+      "politics": 79,
+      "total_stats": 303,
+      "troop_type": "궁병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "주거",
+      "leadership": 77,
+      "war": 57,
+      "intelligence": 72,
+      "politics": 70,
+      "total_stats": 276,
+      "troop_type": "궁병",
+      "battle_tactic": "문무저하"
+    },
+    {
+      "name_kr": "주령",
+      "leadership": 71,
+      "war": 73,
+      "intelligence": 67,
+      "politics": 53,
+      "total_stats": 264,
+      "troop_type": "기병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "주방",
+      "leadership": 52,
+      "war": 41,
+      "intelligence": 80,
+      "politics": 75,
+      "total_stats": 248,
+      "troop_type": "궁병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "주앙",
+      "leadership": 74,
+      "war": 65,
+      "intelligence": 65,
+      "politics": 49,
+      "total_stats": 253,
+      "troop_type": "궁병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "주연",
+      "leadership": 79,
+      "war": 69,
+      "intelligence": 71,
+      "politics": 60,
+      "total_stats": 279,
+      "troop_type": "기병",
+      "battle_tactic": "기군신속"
+    },
+    {
+      "name_kr": "주유",
+      "leadership": 95,
+      "war": 71,
+      "intelligence": 96,
+      "politics": 86,
+      "total_stats": 348,
+      "troop_type": "궁병",
+      "battle_tactic": "신화계"
+    },
+    {
+      "name_kr": "주준",
+      "leadership": 89,
+      "war": 65,
+      "intelligence": 70,
+      "politics": 71,
+      "total_stats": 295,
+      "troop_type": "궁병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "주지",
+      "leadership": 65,
+      "war": 85,
+      "intelligence": 41,
+      "politics": 29,
+      "total_stats": 220,
+      "troop_type": "기병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "주창",
+      "leadership": 68,
+      "war": 84,
+      "intelligence": 42,
+      "politics": 33,
+      "total_stats": 227,
+      "troop_type": "창병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "주치",
+      "leadership": 71,
+      "war": 56,
+      "intelligence": 72,
+      "politics": 73,
+      "total_stats": 272,
+      "troop_type": "기병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "주태",
+      "leadership": 84,
+      "war": 91,
+      "intelligence": 48,
+      "politics": 38,
+      "total_stats": 261,
+      "troop_type": "창병",
+      "battle_tactic": "철벽"
+    },
+    {
+      "name_kr": "주포",
+      "leadership": 68,
+      "war": 73,
+      "intelligence": 34,
+      "politics": 32,
+      "total_stats": 207,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "주환",
+      "leadership": 84,
+      "war": 82,
+      "intelligence": 77,
+      "politics": 56,
+      "total_stats": 299,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "주흔",
+      "leadership": 65,
+      "war": 62,
+      "intelligence": 73,
+      "politics": 65,
+      "total_stats": 265,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "진교",
+      "leadership": 61,
+      "war": 27,
+      "intelligence": 77,
+      "politics": 83,
+      "total_stats": 248,
+      "troop_type": "궁병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "진군",
+      "leadership": 32,
+      "war": 14,
+      "intelligence": 75,
+      "politics": 96,
+      "total_stats": 217,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "진궁",
+      "leadership": 84,
+      "war": 55,
+      "intelligence": 89,
+      "politics": 83,
+      "total_stats": 311,
+      "troop_type": "궁병",
+      "battle_tactic": "전군병격"
+    },
+    {
+      "name_kr": "진규",
+      "leadership": 30,
+      "war": 4,
+      "intelligence": 82,
+      "politics": 77,
+      "total_stats": 193,
+      "troop_type": "창병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "진기",
+      "leadership": 58,
+      "war": 65,
+      "intelligence": 43,
+      "politics": 48,
+      "total_stats": 214,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "진도",
+      "leadership": 76,
+      "war": 71,
+      "intelligence": 67,
+      "politics": 53,
+      "total_stats": 267,
+      "troop_type": "기병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "진등",
+      "leadership": 79,
+      "war": 64,
+      "intelligence": 81,
+      "politics": 80,
+      "total_stats": 304,
+      "troop_type": "기병",
+      "battle_tactic": "매복지독"
+    },
+    {
+      "name_kr": "진란",
+      "leadership": 66,
+      "war": 69,
+      "intelligence": 40,
+      "politics": 24,
+      "total_stats": 199,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "진랑",
+      "leadership": 58,
+      "war": 70,
+      "intelligence": 35,
+      "politics": 15,
+      "total_stats": 178,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "진림",
+      "leadership": 25,
+      "war": 9,
+      "intelligence": 75,
+      "politics": 78,
+      "total_stats": 187,
+      "troop_type": "궁병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "진무",
+      "leadership": 76,
+      "war": 87,
+      "intelligence": 43,
+      "politics": 40,
+      "total_stats": 246,
+      "troop_type": "창병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "진복",
+      "leadership": 31,
+      "war": 7,
+      "intelligence": 73,
+      "politics": 78,
+      "total_stats": 189,
+      "troop_type": "창병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "진식",
+      "leadership": 70,
+      "war": 71,
+      "intelligence": 26,
+      "politics": 23,
+      "total_stats": 190,
+      "troop_type": "기병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "진응",
+      "leadership": 62,
+      "war": 72,
+      "intelligence": 45,
+      "politics": 27,
+      "total_stats": 206,
+      "troop_type": "창병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "진진",
+      "leadership": 46,
+      "war": 46,
+      "intelligence": 69,
+      "politics": 76,
+      "total_stats": 237,
+      "troop_type": "궁병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "진태",
+      "leadership": 84,
+      "war": 77,
+      "intelligence": 86,
+      "politics": 78,
+      "total_stats": 325,
+      "troop_type": "궁병",
+      "battle_tactic": "궁군강사"
+    },
+    {
+      "name_kr": "진횡",
+      "leadership": 64,
+      "war": 63,
+      "intelligence": 26,
+      "politics": 35,
+      "total_stats": 188,
+      "troop_type": "궁병",
+      "battle_tactic": "궁공격강화"
+    },
+    {
+      "name_kr": "착융",
+      "leadership": 60,
+      "war": 69,
+      "intelligence": 38,
+      "politics": 21,
+      "total_stats": 188,
+      "troop_type": "창병",
+      "battle_tactic": "창공격강화"
+    },
+    {
+      "name_kr": "채모",
+      "leadership": 70,
+      "war": 70,
+      "intelligence": 77,
+      "politics": 72,
+      "total_stats": 289,
+      "troop_type": "궁병",
+      "battle_tactic": "돌격봉인"
+    },
+    {
+      "name_kr": "채씨",
+      "leadership": 38,
+      "war": 7,
+      "intelligence": 70,
+      "politics": 58,
+      "total_stats": 173,
+      "troop_type": "궁병",
+      "battle_tactic": "공격약화"
+    },
+    {
+      "name_kr": "채염",
+      "leadership": 61,
+      "war": 11,
+      "intelligence": 77,
+      "politics": 80,
+      "total_stats": 229,
+      "troop_type": "기병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "채중",
+      "leadership": 40,
+      "war": 54,
+      "intelligence": 2,
+      "politics": 22,
+      "total_stats": 118,
+      "troop_type": "궁병",
+      "battle_tactic": "궁방어강화"
+    },
+    {
+      "name_kr": "채화",
+      "leadership": 39,
+      "war": 50,
+      "intelligence": 1,
+      "politics": 26,
+      "total_stats": 116,
+      "troop_type": "궁병",
+      "battle_tactic": "사정강화"
+    },
+    {
+      "name_kr": "초선",
+      "leadership": 20,
+      "war": 26,
+      "intelligence": 81,
+      "politics": 65,
+      "total_stats": 192,
+      "troop_type": "창병",
+      "battle_tactic": "미녀연환"
+    },
+    {
+      "name_kr": "초주",
+      "leadership": 16,
+      "war": 3,
+      "intelligence": 67,
+      "politics": 71,
+      "total_stats": 157,
+      "troop_type": "창병",
+      "battle_tactic": "맹사봉인"
+    },
+    {
+      "name_kr": "초촉",
+      "leadership": 65,
+      "war": 76,
+      "intelligence": 33,
+      "politics": 32,
+      "total_stats": 206,
+      "troop_type": "궁병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "추단",
+      "leadership": 61,
+      "war": 64,
+      "intelligence": 34,
+      "politics": 37,
+      "total_stats": 196,
+      "troop_type": "창병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "추씨",
+      "leadership": 24,
+      "war": 6,
+      "intelligence": 77,
+      "politics": 62,
+      "total_stats": 169,
+      "troop_type": "궁병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "축융",
+      "leadership": 74,
+      "war": 85,
+      "intelligence": 29,
+      "politics": 24,
+      "total_stats": 212,
+      "troop_type": "궁병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "타사대왕",
+      "leadership": 62,
+      "war": 59,
+      "intelligence": 70,
+      "politics": 54,
+      "total_stats": 245,
+      "troop_type": "궁병",
+      "battle_tactic": "돌격봉인"
+    },
+    {
+      "name_kr": "태사자",
+      "leadership": 90,
+      "war": 93,
+      "intelligence": 69,
+      "politics": 58,
+      "total_stats": 310,
+      "troop_type": "궁병",
+      "battle_tactic": "강용"
+    },
+    {
+      "name_kr": "투규",
+      "leadership": 52,
+      "war": 13,
+      "intelligence": 87,
+      "politics": 67,
+      "total_stats": 219,
+      "troop_type": "궁병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "파재",
+      "leadership": 74,
+      "war": 74,
+      "intelligence": 55,
+      "politics": 25,
+      "total_stats": 228,
+      "troop_type": "창병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "포융",
+      "leadership": 58,
+      "war": 76,
+      "intelligence": 49,
+      "politics": 23,
+      "total_stats": 206,
+      "troop_type": "궁병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "풍습",
+      "leadership": 72,
+      "war": 71,
+      "intelligence": 39,
+      "politics": 41,
+      "total_stats": 223,
+      "troop_type": "창병",
+      "battle_tactic": "전공격강화"
+    },
+    {
+      "name_kr": "하씨",
+      "leadership": 51,
+      "war": 34,
+      "intelligence": 67,
+      "politics": 73,
+      "total_stats": 225,
+      "troop_type": "창병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "하안",
+      "leadership": 15,
+      "war": 30,
+      "intelligence": 72,
+      "politics": 70,
+      "total_stats": 187,
+      "troop_type": "기병",
+      "battle_tactic": "지력저하"
+    },
+    {
+      "name_kr": "하의",
+      "leadership": 56,
+      "war": 69,
+      "intelligence": 36,
+      "politics": 10,
+      "total_stats": 171,
+      "troop_type": "기병",
+      "battle_tactic": "사정약화"
+    },
+    {
+      "name_kr": "하진",
+      "leadership": 39,
+      "war": 40,
+      "intelligence": 6,
+      "politics": 41,
+      "total_stats": 126,
+      "troop_type": "창병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "하후덕",
+      "leadership": 69,
+      "war": 73,
+      "intelligence": 32,
+      "politics": 40,
+      "total_stats": 214,
+      "troop_type": "기병",
+      "battle_tactic": "마공격강화"
+    },
+    {
+      "name_kr": "하후돈",
+      "leadership": 92,
+      "war": 90,
+      "intelligence": 63,
+      "politics": 70,
+      "total_stats": 315,
+      "troop_type": "기병",
+      "battle_tactic": "공방일체"
+    },
+    {
+      "name_kr": "하후령녀",
+      "leadership": 46,
+      "war": 53,
+      "intelligence": 74,
+      "politics": 71,
+      "total_stats": 244,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "하후상",
+      "leadership": 79,
+      "war": 72,
+      "intelligence": 75,
+      "politics": 65,
+      "total_stats": 291,
+      "troop_type": "궁병",
+      "battle_tactic": "대타격"
+    },
+    {
+      "name_kr": "하후씨",
+      "leadership": 34,
+      "war": 13,
+      "intelligence": 42,
+      "politics": 68,
+      "total_stats": 157,
+      "troop_type": "궁병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "하후연",
+      "leadership": 90,
+      "war": 91,
+      "intelligence": 68,
+      "politics": 61,
+      "total_stats": 310,
+      "troop_type": "궁병",
+      "battle_tactic": "원맹사"
+    },
+    {
+      "name_kr": "하후위",
+      "leadership": 71,
+      "war": 73,
+      "intelligence": 49,
+      "politics": 57,
+      "total_stats": 250,
+      "troop_type": "기병",
+      "battle_tactic": "전방어강화"
+    },
+    {
+      "name_kr": "하후은",
+      "leadership": 63,
+      "war": 72,
+      "intelligence": 53,
+      "politics": 45,
+      "total_stats": 233,
+      "troop_type": "기병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "하후패",
+      "leadership": 79,
+      "war": 84,
+      "intelligence": 77,
+      "politics": 55,
+      "total_stats": 295,
+      "troop_type": "기병",
+      "battle_tactic": "복병신속"
+    },
+    {
+      "name_kr": "하후현",
+      "leadership": 54,
+      "war": 39,
+      "intelligence": 76,
+      "politics": 92,
+      "total_stats": 261,
+      "troop_type": "궁병",
+      "battle_tactic": "총맹사"
+    },
+    {
+      "name_kr": "하후혜",
+      "leadership": 50,
+      "war": 44,
+      "intelligence": 76,
+      "politics": 73,
+      "total_stats": 243,
+      "troop_type": "창병",
+      "battle_tactic": "파괴력약화"
+    },
+    {
+      "name_kr": "하후화",
+      "leadership": 48,
+      "war": 51,
+      "intelligence": 71,
+      "politics": 76,
+      "total_stats": 246,
+      "troop_type": "기병",
+      "battle_tactic": "마방어강화"
+    },
+    {
+      "name_kr": "학맹",
+      "leadership": 62,
+      "war": 67,
+      "intelligence": 42,
+      "politics": 34,
+      "total_stats": 205,
+      "troop_type": "기병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "학소",
+      "leadership": 86,
+      "war": 79,
+      "intelligence": 78,
+      "politics": 62,
+      "total_stats": 305,
+      "troop_type": "궁병",
+      "battle_tactic": "철벽"
+    },
+    {
+      "name_kr": "한당",
+      "leadership": 76,
+      "war": 85,
+      "intelligence": 61,
+      "politics": 51,
+      "total_stats": 273,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "한덕",
+      "leadership": 63,
+      "war": 76,
+      "intelligence": 25,
+      "politics": 16,
+      "total_stats": 180,
+      "troop_type": "기병",
+      "battle_tactic": "무력상승"
+    },
+    {
+      "name_kr": "한복",
+      "leadership": 28,
+      "war": 3,
+      "intelligence": 27,
+      "politics": 62,
+      "total_stats": 120,
+      "troop_type": "창병",
+      "battle_tactic": "창방어강화"
+    },
+    {
+      "name_kr": "한섬",
+      "leadership": 69,
+      "war": 66,
+      "intelligence": 36,
+      "politics": 18,
+      "total_stats": 189,
+      "troop_type": "창병",
+      "battle_tactic": "무력저하"
+    },
+    {
+      "name_kr": "한수",
+      "leadership": 81,
+      "war": 75,
+      "intelligence": 82,
+      "politics": 61,
+      "total_stats": 299,
+      "troop_type": "궁병",
+      "battle_tactic": "전공성강화"
+    },
+    {
+      "name_kr": "한숭",
+      "leadership": 25,
+      "war": 15,
+      "intelligence": 71,
+      "politics": 77,
+      "total_stats": 188,
+      "troop_type": "창병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "한윤",
+      "leadership": 26,
+      "war": 29,
+      "intelligence": 65,
+      "politics": 54,
+      "total_stats": 174,
+      "troop_type": "기병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "한충",
+      "leadership": 64,
+      "war": 67,
+      "intelligence": 18,
+      "politics": 12,
+      "total_stats": 161,
+      "troop_type": "창병",
+      "battle_tactic": "공격강화"
+    },
+    {
+      "name_kr": "한현",
+      "leadership": 22,
+      "war": 33,
+      "intelligence": 7,
+      "politics": 4,
+      "total_stats": 66,
+      "troop_type": "창병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "한호",
+      "leadership": 69,
+      "war": 72,
+      "intelligence": 68,
+      "politics": 87,
+      "total_stats": 296,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "향랑",
+      "leadership": 28,
+      "war": 18,
+      "intelligence": 74,
+      "politics": 74,
+      "total_stats": 194,
+      "troop_type": "궁병",
+      "battle_tactic": "지력상승"
+    },
+    {
+      "name_kr": "향총",
+      "leadership": 76,
+      "war": 61,
+      "intelligence": 77,
+      "politics": 67,
+      "total_stats": 281,
+      "troop_type": "기병",
+      "battle_tactic": "돌격봉인"
+    },
+    {
+      "name_kr": "허공",
+      "leadership": 44,
+      "war": 66,
+      "intelligence": 64,
+      "politics": 64,
+      "total_stats": 238,
+      "troop_type": "궁병",
+      "battle_tactic": "색적"
+    },
+    {
+      "name_kr": "허유",
+      "leadership": 36,
+      "war": 21,
+      "intelligence": 80,
+      "politics": 56,
+      "total_stats": 193,
+      "troop_type": "기병",
+      "battle_tactic": "분신봉인"
+    },
+    {
+      "name_kr": "허저",
+      "leadership": 74,
+      "war": 96,
+      "intelligence": 36,
+      "politics": 20,
+      "total_stats": 226,
+      "troop_type": "창병",
+      "battle_tactic": "강용"
+    },
+    {
+      "name_kr": "허정",
+      "leadership": 23,
+      "war": 5,
+      "intelligence": 68,
+      "politics": 79,
+      "total_stats": 175,
+      "troop_type": "창병",
+      "battle_tactic": "기동력약화"
+    },
+    {
+      "name_kr": "형도영",
+      "leadership": 69,
+      "war": 80,
+      "intelligence": 41,
+      "politics": 16,
+      "total_stats": 206,
+      "troop_type": "기병",
+      "battle_tactic": "속공"
+    },
+    {
+      "name_kr": "호거아",
+      "leadership": 70,
+      "war": 82,
+      "intelligence": 41,
+      "politics": 2,
+      "total_stats": 195,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "호반",
+      "leadership": 55,
+      "war": 55,
+      "intelligence": 59,
+      "politics": 50,
+      "total_stats": 219,
+      "troop_type": "창병",
+      "battle_tactic": "창방어강화"
+    },
+    {
+      "name_kr": "호진",
+      "leadership": 65,
+      "war": 74,
+      "intelligence": 12,
+      "politics": 15,
+      "total_stats": 166,
+      "troop_type": "기병",
+      "battle_tactic": "총돌격"
+    },
+    {
+      "name_kr": "화웅",
+      "leadership": 88,
+      "war": 92,
+      "intelligence": 61,
+      "politics": 40,
+      "total_stats": 281,
+      "troop_type": "창병",
+      "battle_tactic": "강용"
+    },
+    {
+      "name_kr": "화흠",
+      "leadership": 33,
+      "war": 33,
+      "intelligence": 82,
+      "politics": 83,
+      "total_stats": 231,
+      "troop_type": "창병",
+      "battle_tactic": "전군색적"
+    },
+    {
+      "name_kr": "환계",
+      "leadership": 25,
+      "war": 26,
+      "intelligence": 68,
+      "politics": 78,
+      "total_stats": 197,
+      "troop_type": "창병",
+      "battle_tactic": "전군원사"
+    },
+    {
+      "name_kr": "황개",
+      "leadership": 80,
+      "war": 83,
+      "intelligence": 70,
+      "politics": 65,
+      "total_stats": 298,
+      "troop_type": "궁병",
+      "battle_tactic": "노당익장"
+    },
+    {
+      "name_kr": "황권",
+      "leadership": 75,
+      "war": 59,
+      "intelligence": 82,
+      "politics": 79,
+      "total_stats": 295,
+      "troop_type": "창병",
+      "battle_tactic": "화계"
+    },
+    {
+      "name_kr": "황보숭",
+      "leadership": 92,
+      "war": 61,
+      "intelligence": 73,
+      "politics": 51,
+      "total_stats": 277,
+      "troop_type": "창병",
+      "battle_tactic": "창군견수"
+    },
+    {
+      "name_kr": "황월영",
+      "leadership": 58,
+      "war": 31,
+      "intelligence": 88,
+      "politics": 87,
+      "total_stats": 264,
+      "troop_type": "창병",
+      "battle_tactic": "복병신속"
+    },
+    {
+      "name_kr": "황조",
+      "leadership": 74,
+      "war": 66,
+      "intelligence": 55,
+      "politics": 38,
+      "total_stats": 233,
+      "troop_type": "궁병",
+      "battle_tactic": "복병"
+    },
+    {
+      "name_kr": "황충",
+      "leadership": 90,
+      "war": 93,
+      "intelligence": 65,
+      "politics": 52,
+      "total_stats": 300,
+      "troop_type": "궁병",
+      "battle_tactic": "노당익장"
+    },
+    {
+      "name_kr": "후선",
+      "leadership": 63,
+      "war": 66,
+      "intelligence": 34,
+      "politics": 55,
+      "total_stats": 218,
+      "troop_type": "기병",
+      "battle_tactic": "방어강화"
+    },
+    {
+      "name_kr": "후성",
+      "leadership": 74,
+      "war": 75,
+      "intelligence": 68,
+      "politics": 56,
+      "total_stats": 273,
+      "troop_type": "기병",
+      "battle_tactic": "전군속공"
+    },
+    {
+      "name_kr": "하후무",
+      "leadership": 20,
+      "war": 7,
+      "intelligence": 4,
+      "politics": 21,
+      "total_stats": 52,
+      "troop_type": "창병",
+      "battle_tactic": "공성강화"
+    },
+    {
+      "name_kr": "휴고",
+      "leadership": 63,
+      "war": 71,
+      "intelligence": 38,
+      "politics": 7,
+      "total_stats": 179,
+      "troop_type": "창병",
+      "battle_tactic": "총분신"
+    },
+    {
+      "name_kr": "희지재",
+      "leadership": 63,
+      "war": 7,
+      "intelligence": 88,
+      "politics": 73,
+      "total_stats": 231,
+      "troop_type": "기병",
+      "battle_tactic": "복병"
+    }
+  ]
+}

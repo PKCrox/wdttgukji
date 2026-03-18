@@ -1,0 +1,24 @@
+{
+  "character": "Xu Ci",
+  "slug": "xu-ci",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]",
+      "chinese_name": "許慈",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Xu Ci (Rendu)\n許慈 (仁篤)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonOctober 8th, 2025\nNo History Reference defined for Officer ID '617' Xu Ci (Rendu). Biography cannot be tied to a scroll in the Sanguozhi.\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1759884306' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1759955655' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1759898707' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1759700256' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXu Ci, styledRendu, was fromNanyang[南陽].\nHe treatedLiu Xias his teacher and was adept at the teachings of theZheng sect. He studied theBook of Changes, theBook of Documents, the Three Rites, theMaoBook of Odes, and theAnalects. During theera, he andXu Jing, among others, went into Shu [蜀] fromJiao province[交州].\nAt the time, there was alsoHu Qian, styledGongxing, fromWei commandery[魏郡]. His reasons for being in the lands ofYi[益] are not known. Although[Hu] Qianwas not extensive in knowledge, he was outstanding and distinguished for his strong memory. With regards to the ceremonies of the ancestral system and the calculations for the funeral affair of the five types of mourning attire, he could draw them on the ground with his fingers and palms, as if grasping them with a raise of his hands.\nWhen theFormer Lordstabilized Shu [蜀], he inherited cumulative periods of loss and chaos, with education and studies dilapidated and forsaken. Thus, he collected canons and tomes, and dispelled the various sects.[Xu] Ciand[Hu] Qianboth served asAcademicians,1and they, along with the likes ofMeng GuangandLai Min, curated ancient texts. At the time, numerous things were being drafted, but there were controversies and debates whenever they would act.[Xu] Ciand[Hu] Qianwould engage in mutual arguments and attacks. They would defame and slander with rage and anger, evident in their tone and expression. For books and tomes that they had or lacked, they would not borrow from each other. From time to time, they would use flogging canes in order to intimidate and subdue each other.ATheir arrogance in themselves and envy of others had culminated in such. TheFormer Lordfelt sorry that this was how they were. When he held a major meeting of the officials, he ordered performers to wear the countenances of the two men and mimic their fierce quarrels. With drinking into inebriation and entertainment being conducted, it was amusing. In the beginning, they challenged each other over phrases and meanings, and in the conclusion, they compelled each other through blades and staffs. This was meant to stir and rebukethem.•••\nSome versions of this text seem to write “Academicians” as “Learned Men”, which is unlikely given the last sentence of this biography.↩\nXian [攇; subdue] has the fanqie of Xu [虛] and Wan [晚].\n[Hu] Qiandied first.[Xu] Ciwas promoted toGrand Chamberlainduring the time ofLatter Lord. When he died,Bhis son,[Xu] Xun, inherited his legacy, and served asAcademicianas well.\nSun Shengstates: Shu [蜀] had few scholarly people. Hence, the likes of[Xu] Ciand[Hu] Qianwere all recorded.",
+      "sections": {
+        "xu-ci-rendu": "許慈 (仁篤)\nLifespan Unlisted"
+      },
+      "page_title": "Xu Ci (Rendu) 許慈 (仁篤) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 3551,
+      "url": "https://kongming.net/biographies/sanguozhi/Xu-Ci/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:18.290Z",
+  "total_char_count": 3551
+}

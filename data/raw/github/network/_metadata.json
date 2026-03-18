@@ -1,0 +1,44 @@
+{
+  "repo": "dmanolidis/three-kingdoms",
+  "branch": "master",
+  "description": "Three Kingdoms social network/graph data",
+  "crawled_at": "2026-03-18T09:49:36.156Z",
+  "total_files_in_repo": 9,
+  "data_files_found": 6,
+  "downloaded": 6,
+  "skipped": 0,
+  "failed": 0,
+  "total_bytes": 6430630,
+  "files": [
+    {
+      "path": "Text Files/chap1-30.txt",
+      "size": 857759,
+      "sha": "8d73319a7d5892ddf4d8d7cc4d6f8d6b84701533"
+    },
+    {
+      "path": "Text Files/chap31-60.txt",
+      "size": 800715,
+      "sha": "40b8ebb494e6c7a8a526ac7c3c0b78fbf90e7542"
+    },
+    {
+      "path": "Text Files/chap61-90.txt",
+      "size": 830752,
+      "sha": "b08bbca61c341e439e53c96ff67c9b393e79c93a"
+    },
+    {
+      "path": "Text Files/chap91-120.txt",
+      "size": 793183,
+      "sha": "1946e3c9a5726db9be11de4dc66d5d58e89a54a5"
+    },
+    {
+      "path": "Text Files/fulltext.txt",
+      "size": 3286005,
+      "sha": "102b9ba49d4cec225b660a5cd37cbde4ed20236f"
+    },
+    {
+      "path": "characters.txt",
+      "size": 643,
+      "sha": "1cd5ce2533b1d2cd31f65a35a46fc2ab840607ca"
+    }
+  ]
+}

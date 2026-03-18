@@ -1,0 +1,24 @@
+{
+  "character": "Cheng Pu",
+  "slug": "cheng-pu",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "LadyWu",
+      "url_translator": "LadyWu",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 55 (Wu 10)",
+      "chinese_name": "程普",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cheng Pu (Demou)\n程普 (德謀)\nLived AD ?–ca.210\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 55 (Wu 10)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745197339' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744993660' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744984694' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nCheng Pu, styled Demou, was originally from Tuyin in Youbeiping. He started off as a officer under the governor, and was a handsome man, good at strategems and possessing quick wits. When he followed the banner of Sun Jian, he fought the Yellow Turbans at Wan and Deng, and defeated Dong Zhuo at Yangren. He besieged cities and did battle in the fields, and his body was covered with battle scars.\nWhen Sun Jian died, Cheng Pu went to Huainan and followed Sun Ce; and after conquering Lüjiang, he sailed back to the east with him. When Sun Ce defeated Zhang Ying and Yu Mi at Hengjiang and Dangli, and went south into Moling, Hushu, Jurong, and Qu’e, Cheng Pu earned merits at every battle, and thus his military command was increased by two thousand foot soldiers and 50 cavalry. And as they progressed to conquer Wucheng, Shimu, Bomen, Lingzhuan, and Yuhang, Cheng Pu’s merits numbered the most. When Sun Ce entered Kuaiji, he promoted Cheng Pu to the Chief Commandant of the Wu Commandery, and put him in command of Qiantang district. Afterwards, Cheng Pu was relocated to be the Chief Commandant of Danyang, with his headquarters at Shicheng. He vanquished the bandits at Xuncheng, Jing, Anwu, Lingyang, and Chun’gu.\nOnce, Sun Ce attacked Zu Lang, but was surrounded instead by the enemy. Cheng Pu took one mount with him to defend Sun Ce; he galloped on his horse and yelled loudly, striking the bandits with his spear. The bandits fell back and thus Sun Ce was rescued. Later on, he received the title of General of the Inner Guard Who Destroys the Bandits, with the additional assignment as the Grand Administrator of Lingling. He then followed his lord to fight Liu Xun at Xunyang, and then on to attack Huang Zu at Shaxian, after which he returned to guard Shicheng.\nWhen Sun Ce died, Cheng Pu assisted Sun Quan along with Zhang Zhao and others, going around in the three commanderies quelling rebellions. He then followed Sun Quan in fighting for Jiangxia; and, passing by Yuzhang, he went off to conquer Le’an. When Le’an was pacified, he took Taishi Ci’s place at Haihun, and with Zhou Yu became the Left and Right Chief Commanders. After triumphing over Cao Cao at Wulin, he went on to conquer Nanjun, and caused Cao Ren to flee. For that he was promoted to Major-General and Grand Administrator fo Jiangxia. He was also in command of Shaxian, and given salary from four prefectures.\nAmongst the generals who were first employed [by Sun Jian], Cheng Pu was the eldest, and people of his time revered him as “Lord Cheng”. He was generous by nature, and delighted in befriending the gentry. When Zhou Yu died, Cheng Pu took his place as the Grand Administrator of Nanjun. When Sun Quan divided up Jingzhou for Liu Bei, Cheng Pu returned to rule Jiangxia, and was promoted to the rank of General who Terrifies Criminals. He died soon after.1When Sun Quan declared himself emperor, he publicised Cheng Pu’s past merits, and made Cheng’s son, Zi, the marquis of acommune.•••\nInHistory of Wu: Cheng Pu killed several hundreds of rebels, and had the bodies burnt. On that day, his illness turned for the worse, and after a little more than a hundred days he died.↩",
+      "sections": {
+        "cheng-pu-demou": "程普 (德謀)\nLived AD ?–ca. 210"
+      },
+      "page_title": "Cheng Pu (Demou) 程普 (德謀) Sanguozhi Biography by Lady Wu - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 4010,
+      "url": "https://kongming.net/biographies/sanguozhi/Cheng-Pu/LadyWu"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:56.308Z",
+  "total_char_count": 4010
+}

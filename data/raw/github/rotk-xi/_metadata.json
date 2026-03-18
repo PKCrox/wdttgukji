@@ -1,0 +1,21 @@
+{
+  "repo": "PythWare/ROTK-XI-Tools",
+  "branch": "main",
+  "crawled_at": "2026-03-18T09:49:23.255Z",
+  "total_files": 3,
+  "all_files": [
+    {
+      "path": "LICENSE",
+      "size": 1242
+    },
+    {
+      "path": "README.md",
+      "size": 4653
+    },
+    {
+      "path": "ROTK11_tool.pyw",
+      "size": 25799
+    }
+  ],
+  "note": "No data files matched filter criteria. Full file listing saved for manual review."
+}

@@ -1,0 +1,5010 @@
+{
+  "source": "gamecity.ne.jp",
+  "source_url": "https://www.gamecity.ne.jp/sangokushi14/officers-list.html",
+  "game": "三國志14 (RTK14)",
+  "description": "Official Koei Tecmo RTK14 officer list — names and katakana readings only (no stats on this page)",
+  "total_officers": 1000,
+  "officers": [
+    {
+      "index": 1,
+      "name_ja": "阿会喃",
+      "reading_katakana": "アカイナン"
+    },
+    {
+      "index": 2,
+      "name_ja": "阿貴",
+      "reading_katakana": "アキ"
+    },
+    {
+      "index": 3,
+      "name_ja": "韋康",
+      "reading_katakana": "イコウ"
+    },
+    {
+      "index": 4,
+      "name_ja": "韋昭",
+      "reading_katakana": "イショウ"
+    },
+    {
+      "index": 5,
+      "name_ja": "伊籍",
+      "reading_katakana": "イセキ"
+    },
+    {
+      "index": 6,
+      "name_ja": "尹楷",
+      "reading_katakana": "インカイ"
+    },
+    {
+      "index": 7,
+      "name_ja": "殷観",
+      "reading_katakana": "インカン"
+    },
+    {
+      "index": 8,
+      "name_ja": "陰キ",
+      "reading_katakana": "インキ"
+    },
+    {
+      "index": 9,
+      "name_ja": "殷署",
+      "reading_katakana": "インショ"
+    },
+    {
+      "index": 10,
+      "name_ja": "尹賞",
+      "reading_katakana": "インショウ"
+    },
+    {
+      "index": 11,
+      "name_ja": "尹大目",
+      "reading_katakana": "インダイモク"
+    },
+    {
+      "index": 12,
+      "name_ja": "隠蕃",
+      "reading_katakana": "インバン"
+    },
+    {
+      "index": 13,
+      "name_ja": "尹黙",
+      "reading_katakana": "インモク"
+    },
+    {
+      "index": 14,
+      "name_ja": "尹礼",
+      "reading_katakana": "インレイ"
+    },
+    {
+      "index": 15,
+      "name_ja": "殷礼",
+      "reading_katakana": "インレイ"
+    },
+    {
+      "index": 16,
+      "name_ja": "于禁",
+      "reading_katakana": "ウキン"
+    },
+    {
+      "index": 17,
+      "name_ja": "于詮",
+      "reading_katakana": "ウセン"
+    },
+    {
+      "index": 18,
+      "name_ja": "于毒",
+      "reading_katakana": "ウドク"
+    },
+    {
+      "index": 19,
+      "name_ja": "于糜",
+      "reading_katakana": "ウビ"
+    },
+    {
+      "index": 20,
+      "name_ja": "衛カン",
+      "reading_katakana": "エイカン"
+    },
+    {
+      "index": 21,
+      "name_ja": "衛茲",
+      "reading_katakana": "エイジ"
+    },
+    {
+      "index": 22,
+      "name_ja": "衛臻",
+      "reading_katakana": "エイシン"
+    },
+    {
+      "index": 23,
+      "name_ja": "越吉",
+      "reading_katakana": "エツキツ"
+    },
+    {
+      "index": 24,
+      "name_ja": "袁遺",
+      "reading_katakana": "エンイ"
+    },
+    {
+      "index": 25,
+      "name_ja": "袁胤",
+      "reading_katakana": "エンイン"
+    },
+    {
+      "index": 26,
+      "name_ja": "閻宇",
+      "reading_katakana": "エンウ"
+    },
+    {
+      "index": 27,
+      "name_ja": "閻温",
+      "reading_katakana": "エンオン"
+    },
+    {
+      "index": 28,
+      "name_ja": "袁渙",
+      "reading_katakana": "エンカン"
+    },
+    {
+      "index": 29,
+      "name_ja": "袁煕",
+      "reading_katakana": "エンキ"
+    },
+    {
+      "index": 30,
+      "name_ja": "閻行",
+      "reading_katakana": "エンコウ"
+    },
+    {
+      "index": 31,
+      "name_ja": "閻柔",
+      "reading_katakana": "エンジュウ"
+    },
+    {
+      "index": 32,
+      "name_ja": "袁術",
+      "reading_katakana": "エンジュツ"
+    },
+    {
+      "index": 33,
+      "name_ja": "袁春卿",
+      "reading_katakana": "エンシュンケイ"
+    },
+    {
+      "index": 34,
+      "name_ja": "袁尚",
+      "reading_katakana": "エンショウ"
+    },
+    {
+      "index": 35,
+      "name_ja": "袁紹",
+      "reading_katakana": "エンショウ"
+    },
+    {
+      "index": 36,
+      "name_ja": "閻象",
+      "reading_katakana": "エンショウ"
+    },
+    {
+      "index": 37,
+      "name_ja": "袁譚",
+      "reading_katakana": "エンタン"
+    },
+    {
+      "index": 38,
+      "name_ja": "閻圃",
+      "reading_katakana": "エンホ"
+    },
+    {
+      "index": 39,
+      "name_ja": "袁燿",
+      "reading_katakana": "エンヨウ"
+    },
+    {
+      "index": 40,
+      "name_ja": "王威",
+      "reading_katakana": "オウイ"
+    },
+    {
+      "index": 41,
+      "name_ja": "王異",
+      "reading_katakana": "オウイ"
+    },
+    {
+      "index": 42,
+      "name_ja": "王允",
+      "reading_katakana": "オウイン"
+    },
+    {
+      "index": 43,
+      "name_ja": "王楷",
+      "reading_katakana": "オウカイ"
+    },
+    {
+      "index": 44,
+      "name_ja": "王観",
+      "reading_katakana": "オウカン"
+    },
+    {
+      "index": 45,
+      "name_ja": "王基",
+      "reading_katakana": "オウキ"
+    },
+    {
+      "index": 46,
+      "name_ja": "王キ",
+      "reading_katakana": "オウキ"
+    },
+    {
+      "index": 47,
+      "name_ja": "王匡",
+      "reading_katakana": "オウキョウ"
+    },
+    {
+      "index": 48,
+      "name_ja": "王業",
+      "reading_katakana": "オウギョウ"
+    },
+    {
+      "index": 49,
+      "name_ja": "王経",
+      "reading_katakana": "オウケイ"
+    },
+    {
+      "index": 50,
+      "name_ja": "王元姫",
+      "reading_katakana": "オウゲンキ"
+    },
+    {
+      "index": 51,
+      "name_ja": "王伉",
+      "reading_katakana": "オウコウ"
+    },
+    {
+      "index": 52,
+      "name_ja": "王渾",
+      "reading_katakana": "オウコン"
+    },
+    {
+      "index": 53,
+      "name_ja": "王粲",
+      "reading_katakana": "オウサン"
+    },
+    {
+      "index": 54,
+      "name_ja": "王嗣",
+      "reading_katakana": "オウシ"
+    },
+    {
+      "index": 55,
+      "name_ja": "王思",
+      "reading_katakana": "オウシ"
+    },
+    {
+      "index": 56,
+      "name_ja": "王子服",
+      "reading_katakana": "オウシフク"
+    },
+    {
+      "index": 57,
+      "name_ja": "王脩",
+      "reading_katakana": "オウシュウ"
+    },
+    {
+      "index": 58,
+      "name_ja": "王戎",
+      "reading_katakana": "オウジュウ"
+    },
+    {
+      "index": 59,
+      "name_ja": "王粛",
+      "reading_katakana": "オウシュク"
+    },
+    {
+      "index": 60,
+      "name_ja": "王濬",
+      "reading_katakana": "オウシュン"
+    },
+    {
+      "index": 61,
+      "name_ja": "王祥",
+      "reading_katakana": "オウショウ"
+    },
+    {
+      "index": 62,
+      "name_ja": "応劭",
+      "reading_katakana": "オウショウ"
+    },
+    {
+      "index": 63,
+      "name_ja": "王商",
+      "reading_katakana": "オウショウ"
+    },
+    {
+      "index": 64,
+      "name_ja": "王沈",
+      "reading_katakana": "オウシン"
+    },
+    {
+      "index": 65,
+      "name_ja": "区星",
+      "reading_katakana": "オウセイ"
+    },
+    {
+      "index": 66,
+      "name_ja": "王双",
+      "reading_katakana": "オウソウ"
+    },
+    {
+      "index": 67,
+      "name_ja": "王忠",
+      "reading_katakana": "オウチュウ"
+    },
+    {
+      "index": 68,
+      "name_ja": "王昶",
+      "reading_katakana": "オウチョウ"
+    },
+    {
+      "index": 69,
+      "name_ja": "王韜",
+      "reading_katakana": "オウトウ"
+    },
+    {
+      "index": 70,
+      "name_ja": "王惇",
+      "reading_katakana": "オウトン"
+    },
+    {
+      "index": 71,
+      "name_ja": "王必",
+      "reading_katakana": "オウヒツ"
+    },
+    {
+      "index": 72,
+      "name_ja": "王平",
+      "reading_katakana": "オウヘイ"
+    },
+    {
+      "index": 73,
+      "name_ja": "王甫",
+      "reading_katakana": "オウホ"
+    },
+    {
+      "index": 74,
+      "name_ja": "王方",
+      "reading_katakana": "オウホウ"
+    },
+    {
+      "index": 75,
+      "name_ja": "王謀",
+      "reading_katakana": "オウボウ"
+    },
+    {
+      "index": 76,
+      "name_ja": "王門",
+      "reading_katakana": "オウモン"
+    },
+    {
+      "index": 77,
+      "name_ja": "王リョウ",
+      "reading_katakana": "オウリョウ"
+    },
+    {
+      "index": 78,
+      "name_ja": "王累",
+      "reading_katakana": "オウルイ"
+    },
+    {
+      "index": 79,
+      "name_ja": "王連",
+      "reading_katakana": "オウレン"
+    },
+    {
+      "index": 80,
+      "name_ja": "王朗",
+      "reading_katakana": "オウロウ"
+    },
+    {
+      "index": 81,
+      "name_ja": "於夫羅",
+      "reading_katakana": "オフラ"
+    },
+    {
+      "index": 82,
+      "name_ja": "温恢",
+      "reading_katakana": "オンカイ"
+    },
+    {
+      "index": 83,
+      "name_ja": "何晏",
+      "reading_katakana": "カアン"
+    },
+    {
+      "index": 84,
+      "name_ja": "カイ越",
+      "reading_katakana": "カイエツ"
+    },
+    {
+      "index": 85,
+      "name_ja": "カイ良",
+      "reading_katakana": "カイリョウ"
+    },
+    {
+      "index": 86,
+      "name_ja": "賈華",
+      "reading_katakana": "カカ"
+    },
+    {
+      "index": 87,
+      "name_ja": "華覈",
+      "reading_katakana": "カカク"
+    },
+    {
+      "index": 88,
+      "name_ja": "俄何焼戈",
+      "reading_katakana": "ガカショウカ"
+    },
+    {
+      "index": 89,
+      "name_ja": "賈逵",
+      "reading_katakana": "カキ"
+    },
+    {
+      "index": 90,
+      "name_ja": "何儀",
+      "reading_katakana": "カギ"
+    },
+    {
+      "index": 91,
+      "name_ja": "華キン",
+      "reading_katakana": "カキン"
+    },
+    {
+      "index": 92,
+      "name_ja": "賈ク",
+      "reading_katakana": "カク"
+    },
+    {
+      "index": 93,
+      "name_ja": "郭奕",
+      "reading_katakana": "カクエキ"
+    },
+    {
+      "index": 94,
+      "name_ja": "郭援",
+      "reading_katakana": "カクエン"
+    },
+    {
+      "index": 95,
+      "name_ja": "郭嘉",
+      "reading_katakana": "カクカ"
+    },
+    {
+      "index": 96,
+      "name_ja": "鄂煥",
+      "reading_katakana": "ガクカン"
+    },
+    {
+      "index": 97,
+      "name_ja": "郭汜",
+      "reading_katakana": "カクシ"
+    },
+    {
+      "index": 98,
+      "name_ja": "楽就",
+      "reading_katakana": "ガクシュウ"
+    },
+    {
+      "index": 99,
+      "name_ja": "霍峻",
+      "reading_katakana": "カクシュン"
+    },
+    {
+      "index": 100,
+      "name_ja": "カク昭",
+      "reading_katakana": "カクショウ"
+    },
+    {
+      "index": 101,
+      "name_ja": "郭女王",
+      "reading_katakana": "カクジョウオウ"
+    },
+    {
+      "index": 102,
+      "name_ja": "楽進",
+      "reading_katakana": "ガクシン"
+    },
+    {
+      "index": 103,
+      "name_ja": "郭石",
+      "reading_katakana": "カクセキ"
+    },
+    {
+      "index": 104,
+      "name_ja": "楽チン",
+      "reading_katakana": "ガクチン"
+    },
+    {
+      "index": 105,
+      "name_ja": "郭図",
+      "reading_katakana": "カクト"
+    },
+    {
+      "index": 106,
+      "name_ja": "郭馬",
+      "reading_katakana": "カクバ"
+    },
+    {
+      "index": 107,
+      "name_ja": "カク普",
+      "reading_katakana": "カクフ"
+    },
+    {
+      "index": 108,
+      "name_ja": "カク萌",
+      "reading_katakana": "カクボウ"
+    },
+    {
+      "index": 109,
+      "name_ja": "郭攸之",
+      "reading_katakana": "カクユウシ"
+    },
+    {
+      "index": 110,
+      "name_ja": "霍弋",
+      "reading_katakana": "カクヨク"
+    },
+    {
+      "index": 111,
+      "name_ja": "郭淮",
+      "reading_katakana": "カクワイ"
+    },
+    {
+      "index": 112,
+      "name_ja": "夏侯威",
+      "reading_katakana": "カコウイ"
+    },
+    {
+      "index": 113,
+      "name_ja": "夏侯栄",
+      "reading_katakana": "カコウエイ"
+    },
+    {
+      "index": 114,
+      "name_ja": "夏侯淵",
+      "reading_katakana": "カコウエン"
+    },
+    {
+      "index": 115,
+      "name_ja": "夏侯恩",
+      "reading_katakana": "カコウオン"
+    },
+    {
+      "index": 116,
+      "name_ja": "夏侯和",
+      "reading_katakana": "カコウカ"
+    },
+    {
+      "index": 117,
+      "name_ja": "夏侯恵",
+      "reading_katakana": "カコウケイ"
+    },
+    {
+      "index": 118,
+      "name_ja": "夏侯献",
+      "reading_katakana": "カコウケン"
+    },
+    {
+      "index": 119,
+      "name_ja": "夏侯玄",
+      "reading_katakana": "カコウゲン"
+    },
+    {
+      "index": 120,
+      "name_ja": "夏侯氏",
+      "reading_katakana": "カコウシ"
+    },
+    {
+      "index": 121,
+      "name_ja": "夏侯儒",
+      "reading_katakana": "カコウジュ"
+    },
+    {
+      "index": 122,
+      "name_ja": "夏侯尚",
+      "reading_katakana": "カコウショウ"
+    },
+    {
+      "index": 123,
+      "name_ja": "夏侯徳",
+      "reading_katakana": "カコウトク"
+    },
+    {
+      "index": 124,
+      "name_ja": "夏侯惇",
+      "reading_katakana": "カコウトン"
+    },
+    {
+      "index": 125,
+      "name_ja": "夏侯覇",
+      "reading_katakana": "カコウハ"
+    },
+    {
+      "index": 126,
+      "name_ja": "夏侯楙",
+      "reading_katakana": "カコウボウ"
+    },
+    {
+      "index": 127,
+      "name_ja": "夏侯蘭",
+      "reading_katakana": "カコウラン"
+    },
+    {
+      "index": 128,
+      "name_ja": "夏侯令女",
+      "reading_katakana": "カコウレイジョ"
+    },
+    {
+      "index": 129,
+      "name_ja": "何氏",
+      "reading_katakana": "カシ"
+    },
+    {
+      "index": 130,
+      "name_ja": "賈充",
+      "reading_katakana": "カジュウ"
+    },
+    {
+      "index": 131,
+      "name_ja": "何植",
+      "reading_katakana": "カショク"
+    },
+    {
+      "index": 132,
+      "name_ja": "何進",
+      "reading_katakana": "カシン"
+    },
+    {
+      "index": 133,
+      "name_ja": "賈信",
+      "reading_katakana": "カシン"
+    },
+    {
+      "index": 134,
+      "name_ja": "賀斉",
+      "reading_katakana": "ガセイ"
+    },
+    {
+      "index": 135,
+      "name_ja": "何曾",
+      "reading_katakana": "カソウ"
+    },
+    {
+      "index": 136,
+      "name_ja": "何宗",
+      "reading_katakana": "カソウ"
+    },
+    {
+      "index": 137,
+      "name_ja": "賀達",
+      "reading_katakana": "ガタツ"
+    },
+    {
+      "index": 138,
+      "name_ja": "雅丹",
+      "reading_katakana": "ガタン"
+    },
+    {
+      "index": 139,
+      "name_ja": "何楨",
+      "reading_katakana": "カテイ"
+    },
+    {
+      "index": 140,
+      "name_ja": "賈範",
+      "reading_katakana": "カハン"
+    },
+    {
+      "index": 141,
+      "name_ja": "軻比能",
+      "reading_katakana": "カヒノウ"
+    },
+    {
+      "index": 142,
+      "name_ja": "何苗",
+      "reading_katakana": "カビョウ"
+    },
+    {
+      "index": 143,
+      "name_ja": "花鬘",
+      "reading_katakana": "カマン"
+    },
+    {
+      "index": 144,
+      "name_ja": "華雄",
+      "reading_katakana": "カユウ"
+    },
+    {
+      "index": 145,
+      "name_ja": "関彝",
+      "reading_katakana": "カンイ"
+    },
+    {
+      "index": 146,
+      "name_ja": "韓胤",
+      "reading_katakana": "カンイン"
+    },
+    {
+      "index": 147,
+      "name_ja": "関羽",
+      "reading_katakana": "カンウ"
+    },
+    {
+      "index": 148,
+      "name_ja": "桓階",
+      "reading_katakana": "カンカイ"
+    },
+    {
+      "index": 149,
+      "name_ja": "管亥",
+      "reading_katakana": "カンガイ"
+    },
+    {
+      "index": 150,
+      "name_ja": "韓曁",
+      "reading_katakana": "カンキ"
+    },
+    {
+      "index": 151,
+      "name_ja": "韓起",
+      "reading_katakana": "カンキ"
+    },
+    {
+      "index": 152,
+      "name_ja": "カン丘倹",
+      "reading_katakana": "カンキュウケン"
+    },
+    {
+      "index": 153,
+      "name_ja": "カン丘興",
+      "reading_katakana": "カンキュウコウ"
+    },
+    {
+      "index": 154,
+      "name_ja": "カン丘秀",
+      "reading_katakana": "カンキュウシュウ"
+    },
+    {
+      "index": 155,
+      "name_ja": "カン丘甸",
+      "reading_katakana": "カンキュウデン"
+    },
+    {
+      "index": 156,
+      "name_ja": "韓キョ子",
+      "reading_katakana": "カンキョシ"
+    },
+    {
+      "index": 157,
+      "name_ja": "関銀屏",
+      "reading_katakana": "カンギンペイ"
+    },
+    {
+      "index": 158,
+      "name_ja": "韓玄",
+      "reading_katakana": "カンゲン"
+    },
+    {
+      "index": 159,
+      "name_ja": "韓浩",
+      "reading_katakana": "カンコウ"
+    },
+    {
+      "index": 160,
+      "name_ja": "韓コウ",
+      "reading_katakana": "カンコウ"
+    },
+    {
+      "index": 161,
+      "name_ja": "関興",
+      "reading_katakana": "カンコウ"
+    },
+    {
+      "index": 162,
+      "name_ja": "関索",
+      "reading_katakana": "カンサク"
+    },
+    {
+      "index": 163,
+      "name_ja": "甘氏",
+      "reading_katakana": "カンシ"
+    },
+    {
+      "index": 164,
+      "name_ja": "環氏",
+      "reading_katakana": "カンシ"
+    },
+    {
+      "index": 165,
+      "name_ja": "管承",
+      "reading_katakana": "カンショウ"
+    },
+    {
+      "index": 166,
+      "name_ja": "韓遂",
+      "reading_katakana": "カンスイ"
+    },
+    {
+      "index": 167,
+      "name_ja": "韓嵩",
+      "reading_katakana": "カンスウ"
+    },
+    {
+      "index": 168,
+      "name_ja": "関靖",
+      "reading_katakana": "カンセイ"
+    },
+    {
+      "index": 169,
+      "name_ja": "韓暹",
+      "reading_katakana": "カンセン"
+    },
+    {
+      "index": 170,
+      "name_ja": "韓綜",
+      "reading_katakana": "カンソウ"
+    },
+    {
+      "index": 171,
+      "name_ja": "カン沢",
+      "reading_katakana": "カンタク"
+    },
+    {
+      "index": 172,
+      "name_ja": "邯鄲淳",
+      "reading_katakana": "カンタンジュン"
+    },
+    {
+      "index": 173,
+      "name_ja": "韓忠",
+      "reading_katakana": "カンチュウ"
+    },
+    {
+      "index": 174,
+      "name_ja": "韓忠",
+      "reading_katakana": "カンチュウ"
+    },
+    {
+      "index": 175,
+      "name_ja": "関統",
+      "reading_katakana": "カントウ"
+    },
+    {
+      "index": 176,
+      "name_ja": "韓当",
+      "reading_katakana": "カントウ"
+    },
+    {
+      "index": 177,
+      "name_ja": "管統",
+      "reading_katakana": "カントウ"
+    },
+    {
+      "index": 178,
+      "name_ja": "韓徳",
+      "reading_katakana": "カントク"
+    },
+    {
+      "index": 179,
+      "name_ja": "甘寧",
+      "reading_katakana": "カンネイ"
+    },
+    {
+      "index": 180,
+      "name_ja": "桓範",
+      "reading_katakana": "カンハン"
+    },
+    {
+      "index": 181,
+      "name_ja": "韓範",
+      "reading_katakana": "カンハン"
+    },
+    {
+      "index": 182,
+      "name_ja": "韓馥",
+      "reading_katakana": "カンフク"
+    },
+    {
+      "index": 183,
+      "name_ja": "関平",
+      "reading_katakana": "カンペイ"
+    },
+    {
+      "index": 184,
+      "name_ja": "韓猛",
+      "reading_katakana": "カンモウ"
+    },
+    {
+      "index": 185,
+      "name_ja": "簡雍",
+      "reading_katakana": "カンヨウ"
+    },
+    {
+      "index": 186,
+      "name_ja": "顔良",
+      "reading_katakana": "ガンリョウ"
+    },
+    {
+      "index": 187,
+      "name_ja": "桓鄰",
+      "reading_katakana": "カンリン"
+    },
+    {
+      "index": 188,
+      "name_ja": "魏越",
+      "reading_katakana": "ギエツ"
+    },
+    {
+      "index": 189,
+      "name_ja": "魏延",
+      "reading_katakana": "ギエン"
+    },
+    {
+      "index": 190,
+      "name_ja": "麹演",
+      "reading_katakana": "キクエン"
+    },
+    {
+      "index": 191,
+      "name_ja": "麹義",
+      "reading_katakana": "キクギ"
+    },
+    {
+      "index": 192,
+      "name_ja": "戯志才",
+      "reading_katakana": "ギシサイ"
+    },
+    {
+      "index": 193,
+      "name_ja": "魏続",
+      "reading_katakana": "ギショク"
+    },
+    {
+      "index": 194,
+      "name_ja": "魏バク",
+      "reading_katakana": "ギバク"
+    },
+    {
+      "index": 195,
+      "name_ja": "魏諷",
+      "reading_katakana": "ギフウ"
+    },
+    {
+      "index": 196,
+      "name_ja": "魏攸",
+      "reading_katakana": "ギユウ"
+    },
+    {
+      "index": 197,
+      "name_ja": "牛金",
+      "reading_katakana": "ギュウキン"
+    },
+    {
+      "index": 198,
+      "name_ja": "丘建",
+      "reading_katakana": "キュウケン"
+    },
+    {
+      "index": 199,
+      "name_ja": "牛輔",
+      "reading_katakana": "ギュウホ"
+    },
+    {
+      "index": 200,
+      "name_ja": "丘本",
+      "reading_katakana": "キュウホン"
+    },
+    {
+      "index": 201,
+      "name_ja": "丘力居",
+      "reading_katakana": "キュウリキキョ"
+    },
+    {
+      "index": 202,
+      "name_ja": "季雍",
+      "reading_katakana": "キヨウ"
+    },
+    {
+      "index": 203,
+      "name_ja": "姜維",
+      "reading_katakana": "キョウイ"
+    },
+    {
+      "index": 204,
+      "name_ja": "鞏志",
+      "reading_katakana": "キョウシ"
+    },
+    {
+      "index": 205,
+      "name_ja": "姜叙",
+      "reading_katakana": "キョウジョ"
+    },
+    {
+      "index": 206,
+      "name_ja": "橋ズイ",
+      "reading_katakana": "キョウズイ"
+    },
+    {
+      "index": 207,
+      "name_ja": "強端",
+      "reading_katakana": "キョウタン"
+    },
+    {
+      "index": 208,
+      "name_ja": "キョウ都",
+      "reading_katakana": "キョウト"
+    },
+    {
+      "index": 209,
+      "name_ja": "橋瑁",
+      "reading_katakana": "キョウボウ"
+    },
+    {
+      "index": 210,
+      "name_ja": "許儀",
+      "reading_katakana": "キョギ"
+    },
+    {
+      "index": 211,
+      "name_ja": "許貢",
+      "reading_katakana": "キョコウ"
+    },
+    {
+      "index": 212,
+      "name_ja": "許汜",
+      "reading_katakana": "キョシ"
+    },
+    {
+      "index": 213,
+      "name_ja": "許慈",
+      "reading_katakana": "キョジ"
+    },
+    {
+      "index": 214,
+      "name_ja": "許靖",
+      "reading_katakana": "キョセイ"
+    },
+    {
+      "index": 215,
+      "name_ja": "許チョ",
+      "reading_katakana": "キョチョ"
+    },
+    {
+      "index": 216,
+      "name_ja": "許定",
+      "reading_katakana": "キョテイ"
+    },
+    {
+      "index": 217,
+      "name_ja": "許攸",
+      "reading_katakana": "キョユウ"
+    },
+    {
+      "index": 218,
+      "name_ja": "キ覽",
+      "reading_katakana": "キラン"
+    },
+    {
+      "index": 219,
+      "name_ja": "紀霊",
+      "reading_katakana": "キレイ"
+    },
+    {
+      "index": 220,
+      "name_ja": "金イ",
+      "reading_katakana": "キンイ"
+    },
+    {
+      "index": 221,
+      "name_ja": "金環三結",
+      "reading_katakana": "キンカンサンケツ"
+    },
+    {
+      "index": 222,
+      "name_ja": "金尚",
+      "reading_katakana": "キンショウ"
+    },
+    {
+      "index": 223,
+      "name_ja": "金旋",
+      "reading_katakana": "キンセン"
+    },
+    {
+      "index": 224,
+      "name_ja": "虞汜",
+      "reading_katakana": "グシ"
+    },
+    {
+      "index": 225,
+      "name_ja": "虞翻",
+      "reading_katakana": "グホン"
+    },
+    {
+      "index": 226,
+      "name_ja": "恵衢",
+      "reading_katakana": "ケイク"
+    },
+    {
+      "index": 227,
+      "name_ja": "ケイ康",
+      "reading_katakana": "ケイコウ"
+    },
+    {
+      "index": 228,
+      "name_ja": "ケイ道栄",
+      "reading_katakana": "ケイドウエイ"
+    },
+    {
+      "index": 229,
+      "name_ja": "奚泥",
+      "reading_katakana": "ケイデイ"
+    },
+    {
+      "index": 230,
+      "name_ja": "郤正",
+      "reading_katakana": "ゲキセイ"
+    },
+    {
+      "index": 231,
+      "name_ja": "厳顔",
+      "reading_katakana": "ゲンガン"
+    },
+    {
+      "index": 232,
+      "name_ja": "牽弘",
+      "reading_katakana": "ケンコウ"
+    },
+    {
+      "index": 233,
+      "name_ja": "厳綱",
+      "reading_katakana": "ゲンコウ"
+    },
+    {
+      "index": 234,
+      "name_ja": "厳氏",
+      "reading_katakana": "ゲンシ"
+    },
+    {
+      "index": 235,
+      "name_ja": "厳畯",
+      "reading_katakana": "ゲンシュン"
+    },
+    {
+      "index": 236,
+      "name_ja": "牽招",
+      "reading_katakana": "ケンショウ"
+    },
+    {
+      "index": 237,
+      "name_ja": "厳政",
+      "reading_katakana": "ゲンセイ"
+    },
+    {
+      "index": 238,
+      "name_ja": "阮籍",
+      "reading_katakana": "ゲンセキ"
+    },
+    {
+      "index": 239,
+      "name_ja": "厳白虎",
+      "reading_katakana": "ゲンハクコ"
+    },
+    {
+      "index": 240,
+      "name_ja": "厳輿",
+      "reading_katakana": "ゲンヨ"
+    },
+    {
+      "index": 241,
+      "name_ja": "呉懿",
+      "reading_katakana": "ゴイ"
+    },
+    {
+      "index": 242,
+      "name_ja": "句安",
+      "reading_katakana": "コウアン"
+    },
+    {
+      "index": 243,
+      "name_ja": "黄エン",
+      "reading_katakana": "コウエン"
+    },
+    {
+      "index": 244,
+      "name_ja": "黄射",
+      "reading_katakana": "コウエキ"
+    },
+    {
+      "index": 245,
+      "name_ja": "耿紀",
+      "reading_katakana": "コウキ"
+    },
+    {
+      "index": 246,
+      "name_ja": "侯音",
+      "reading_katakana": "コウオン"
+    },
+    {
+      "index": 247,
+      "name_ja": "黄蓋",
+      "reading_katakana": "コウガイ"
+    },
+    {
+      "index": 248,
+      "name_ja": "高幹",
+      "reading_katakana": "コウカン"
+    },
+    {
+      "index": 249,
+      "name_ja": "黄月英",
+      "reading_katakana": "コウゲツエイ"
+    },
+    {
+      "index": 250,
+      "name_ja": "黄権",
+      "reading_katakana": "コウケン"
+    },
+    {
+      "index": 251,
+      "name_ja": "黄皓",
+      "reading_katakana": "コウコウ"
+    },
+    {
+      "index": 252,
+      "name_ja": "侯氏",
+      "reading_katakana": "コウシ"
+    },
+    {
+      "index": 253,
+      "name_ja": "高柔",
+      "reading_katakana": "コウジュウ"
+    },
+    {
+      "index": 254,
+      "name_ja": "高順",
+      "reading_katakana": "コウジュン"
+    },
+    {
+      "index": 255,
+      "name_ja": "高翔",
+      "reading_katakana": "コウショウ"
+    },
+    {
+      "index": 256,
+      "name_ja": "高昇",
+      "reading_katakana": "コウショウ"
+    },
+    {
+      "index": 257,
+      "name_ja": "黄崇",
+      "reading_katakana": "コウスウ"
+    },
+    {
+      "index": 258,
+      "name_ja": "侯成",
+      "reading_katakana": "コウセイ"
+    },
+    {
+      "index": 259,
+      "name_ja": "侯選",
+      "reading_katakana": "コウセン"
+    },
+    {
+      "index": 260,
+      "name_ja": "黄祖",
+      "reading_katakana": "コウソ"
+    },
+    {
+      "index": 261,
+      "name_ja": "公孫越",
+      "reading_katakana": "コウソンエツ"
+    },
+    {
+      "index": 262,
+      "name_ja": "公孫淵",
+      "reading_katakana": "コウソンエン"
+    },
+    {
+      "index": 263,
+      "name_ja": "公孫恭",
+      "reading_katakana": "コウソンキョウ"
+    },
+    {
+      "index": 264,
+      "name_ja": "公孫康",
+      "reading_katakana": "コウソンコウ"
+    },
+    {
+      "index": 265,
+      "name_ja": "公孫晃",
+      "reading_katakana": "コウソンコウ"
+    },
+    {
+      "index": 266,
+      "name_ja": "公孫サン",
+      "reading_katakana": "コウソンサン"
+    },
+    {
+      "index": 267,
+      "name_ja": "公孫続",
+      "reading_katakana": "コウソンショク"
+    },
+    {
+      "index": 268,
+      "name_ja": "公孫度",
+      "reading_katakana": "コウソンド"
+    },
+    {
+      "index": 269,
+      "name_ja": "公孫範",
+      "reading_katakana": "コウソンハン"
+    },
+    {
+      "index": 270,
+      "name_ja": "孔チュウ",
+      "reading_katakana": "コウチュウ"
+    },
+    {
+      "index": 271,
+      "name_ja": "黄忠",
+      "reading_katakana": "コウチュウ"
+    },
+    {
+      "index": 272,
+      "name_ja": "高定",
+      "reading_katakana": "コウテイ"
+    },
+    {
+      "index": 273,
+      "name_ja": "高堂隆",
+      "reading_katakana": "コウドウリュウ"
+    },
+    {
+      "index": 274,
+      "name_ja": "高沛",
+      "reading_katakana": "コウハイ"
+    },
+    {
+      "index": 275,
+      "name_ja": "高蕃",
+      "reading_katakana": "コウバン"
+    },
+    {
+      "index": 276,
+      "name_ja": "句扶",
+      "reading_katakana": "コウフ"
+    },
+    {
+      "index": 277,
+      "name_ja": "耿武",
+      "reading_katakana": "コウブ"
+    },
+    {
+      "index": 278,
+      "name_ja": "皇甫ガイ",
+      "reading_katakana": "コウホガイ"
+    },
+    {
+      "index": 279,
+      "name_ja": "皇甫嵩",
+      "reading_katakana": "コウホスウ"
+    },
+    {
+      "index": 280,
+      "name_ja": "孔融",
+      "reading_katakana": "コウユウ"
+    },
+    {
+      "index": 281,
+      "name_ja": "高覧",
+      "reading_katakana": "コウラン"
+    },
+    {
+      "index": 282,
+      "name_ja": "黄乱",
+      "reading_katakana": "コウラン"
+    },
+    {
+      "index": 283,
+      "name_ja": "胡淵",
+      "reading_katakana": "コエン"
+    },
+    {
+      "index": 284,
+      "name_ja": "伍延",
+      "reading_katakana": "ゴエン"
+    },
+    {
+      "index": 285,
+      "name_ja": "呉巨",
+      "reading_katakana": "ゴキョ"
+    },
+    {
+      "index": 286,
+      "name_ja": "呉匡",
+      "reading_katakana": "ゴキョウ"
+    },
+    {
+      "index": 287,
+      "name_ja": "国淵",
+      "reading_katakana": "コクエン"
+    },
+    {
+      "index": 288,
+      "name_ja": "谷利",
+      "reading_katakana": "コクリ"
+    },
+    {
+      "index": 289,
+      "name_ja": "呉景",
+      "reading_katakana": "ゴケイ"
+    },
+    {
+      "index": 290,
+      "name_ja": "吾彦",
+      "reading_katakana": "ゴゲン"
+    },
+    {
+      "index": 291,
+      "name_ja": "呉綱",
+      "reading_katakana": "ゴコウ"
+    },
+    {
+      "index": 292,
+      "name_ja": "呉国太",
+      "reading_katakana": "ゴコクタイ"
+    },
+    {
+      "index": 293,
+      "name_ja": "吾粲",
+      "reading_katakana": "ゴサン"
+    },
+    {
+      "index": 294,
+      "name_ja": "胡質",
+      "reading_katakana": "コシツ"
+    },
+    {
+      "index": 295,
+      "name_ja": "呉質",
+      "reading_katakana": "ゴシツ"
+    },
+    {
+      "index": 296,
+      "name_ja": "胡車児",
+      "reading_katakana": "コシャジ"
+    },
+    {
+      "index": 297,
+      "name_ja": "伍習",
+      "reading_katakana": "ゴシュウ"
+    },
+    {
+      "index": 298,
+      "name_ja": "胡遵",
+      "reading_katakana": "コジュン"
+    },
+    {
+      "index": 299,
+      "name_ja": "顧承",
+      "reading_katakana": "コショウ"
+    },
+    {
+      "index": 300,
+      "name_ja": "顧邵",
+      "reading_katakana": "コショウ"
+    },
+    {
+      "index": 301,
+      "name_ja": "胡軫",
+      "reading_katakana": "コシン"
+    },
+    {
+      "index": 302,
+      "name_ja": "胡済",
+      "reading_katakana": "コセイ"
+    },
+    {
+      "index": 303,
+      "name_ja": "胡綜",
+      "reading_katakana": "コソウ"
+    },
+    {
+      "index": 304,
+      "name_ja": "顧譚",
+      "reading_katakana": "コタン"
+    },
+    {
+      "index": 305,
+      "name_ja": "胡沖",
+      "reading_katakana": "コチュウ"
+    },
+    {
+      "index": 306,
+      "name_ja": "呼廚泉",
+      "reading_katakana": "コチュウセン"
+    },
+    {
+      "index": 307,
+      "name_ja": "兀突骨",
+      "reading_katakana": "ゴツトツコツ"
+    },
+    {
+      "index": 308,
+      "name_ja": "呉敦",
+      "reading_katakana": "ゴトン"
+    },
+    {
+      "index": 309,
+      "name_ja": "胡班",
+      "reading_katakana": "コハン"
+    },
+    {
+      "index": 310,
+      "name_ja": "呉班",
+      "reading_katakana": "ゴハン"
+    },
+    {
+      "index": 311,
+      "name_ja": "呉範",
+      "reading_katakana": "ゴハン"
+    },
+    {
+      "index": 312,
+      "name_ja": "伍孚",
+      "reading_katakana": "ゴフ"
+    },
+    {
+      "index": 313,
+      "name_ja": "胡奮",
+      "reading_katakana": "コフン"
+    },
+    {
+      "index": 314,
+      "name_ja": "顧雍",
+      "reading_katakana": "コヨウ"
+    },
+    {
+      "index": 315,
+      "name_ja": "呉蘭",
+      "reading_katakana": "ゴラン"
+    },
+    {
+      "index": 316,
+      "name_ja": "胡烈",
+      "reading_katakana": "コレツ"
+    },
+    {
+      "index": 317,
+      "name_ja": "崔エン",
+      "reading_katakana": "サイエン"
+    },
+    {
+      "index": 318,
+      "name_ja": "蔡エン",
+      "reading_katakana": "サイエン"
+    },
+    {
+      "index": 319,
+      "name_ja": "蔡和",
+      "reading_katakana": "サイカ"
+    },
+    {
+      "index": 320,
+      "name_ja": "蔡勳",
+      "reading_katakana": "サイクン"
+    },
+    {
+      "index": 321,
+      "name_ja": "蔡氏",
+      "reading_katakana": "サイシ"
+    },
+    {
+      "index": 322,
+      "name_ja": "崔氏",
+      "reading_katakana": "サイシ"
+    },
+    {
+      "index": 323,
+      "name_ja": "崔州平",
+      "reading_katakana": "サイシュウヘイ"
+    },
+    {
+      "index": 324,
+      "name_ja": "蔡中",
+      "reading_katakana": "サイチュウ"
+    },
+    {
+      "index": 325,
+      "name_ja": "蔡瑁",
+      "reading_katakana": "サイボウ"
+    },
+    {
+      "index": 326,
+      "name_ja": "崔勇",
+      "reading_katakana": "サイユウ"
+    },
+    {
+      "index": 327,
+      "name_ja": "蔡ヨウ",
+      "reading_katakana": "サイヨウ"
+    },
+    {
+      "index": 328,
+      "name_ja": "崔林",
+      "reading_katakana": "サイリン"
+    },
+    {
+      "index": 329,
+      "name_ja": "左奕",
+      "reading_katakana": "サエキ"
+    },
+    {
+      "index": 330,
+      "name_ja": "サク融",
+      "reading_katakana": "サクユウ"
+    },
+    {
+      "index": 331,
+      "name_ja": "左霊",
+      "reading_katakana": "サレイ"
+    },
+    {
+      "index": 332,
+      "name_ja": "士壱",
+      "reading_katakana": "シイツ"
+    },
+    {
+      "index": 333,
+      "name_ja": "史渙",
+      "reading_katakana": "シカン"
+    },
+    {
+      "index": 334,
+      "name_ja": "士徽",
+      "reading_katakana": "シキ"
+    },
+    {
+      "index": 335,
+      "name_ja": "是儀",
+      "reading_katakana": "シギ"
+    },
+    {
+      "index": 336,
+      "name_ja": "士匡",
+      "reading_katakana": "シキョウ"
+    },
+    {
+      "index": 337,
+      "name_ja": "士キン",
+      "reading_katakana": "シキン"
+    },
+    {
+      "index": 338,
+      "name_ja": "施朔",
+      "reading_katakana": "シサク"
+    },
+    {
+      "index": 339,
+      "name_ja": "師纂",
+      "reading_katakana": "シサン"
+    },
+    {
+      "index": 340,
+      "name_ja": "士祗",
+      "reading_katakana": "シシ"
+    },
+    {
+      "index": 341,
+      "name_ja": "士燮",
+      "reading_katakana": "シショウ"
+    },
+    {
+      "index": 342,
+      "name_ja": "史蹟",
+      "reading_katakana": "シセキ"
+    },
+    {
+      "index": 343,
+      "name_ja": "士孫瑞",
+      "reading_katakana": "シソンズイ"
+    },
+    {
+      "index": 344,
+      "name_ja": "司馬懿",
+      "reading_katakana": "シバイ"
+    },
+    {
+      "index": 345,
+      "name_ja": "司馬炎",
+      "reading_katakana": "シバエン"
+    },
+    {
+      "index": 346,
+      "name_ja": "司馬師",
+      "reading_katakana": "シバシ"
+    },
+    {
+      "index": 347,
+      "name_ja": "司馬芝",
+      "reading_katakana": "シバシ"
+    },
+    {
+      "index": 348,
+      "name_ja": "司馬昭",
+      "reading_katakana": "シバショウ"
+    },
+    {
+      "index": 349,
+      "name_ja": "司馬チュウ",
+      "reading_katakana": "シバチュウ"
+    },
+    {
+      "index": 350,
+      "name_ja": "司馬孚",
+      "reading_katakana": "シバフ"
+    },
+    {
+      "index": 351,
+      "name_ja": "司馬望",
+      "reading_katakana": "シバボウ"
+    },
+    {
+      "index": 352,
+      "name_ja": "司馬攸",
+      "reading_katakana": "シバユウ"
+    },
+    {
+      "index": 353,
+      "name_ja": "司馬朗",
+      "reading_katakana": "シバロウ"
+    },
+    {
+      "index": 354,
+      "name_ja": "士武",
+      "reading_katakana": "シブ"
+    },
+    {
+      "index": 355,
+      "name_ja": "射援",
+      "reading_katakana": "シャエン"
+    },
+    {
+      "index": 356,
+      "name_ja": "謝景",
+      "reading_katakana": "シャケイ"
+    },
+    {
+      "index": 357,
+      "name_ja": "射堅",
+      "reading_katakana": "シャケン"
+    },
+    {
+      "index": 358,
+      "name_ja": "謝旌",
+      "reading_katakana": "シャセイ"
+    },
+    {
+      "index": 359,
+      "name_ja": "車冑",
+      "reading_katakana": "シャチュウ"
+    },
+    {
+      "index": 360,
+      "name_ja": "沙摩柯",
+      "reading_katakana": "シャマカ"
+    },
+    {
+      "index": 361,
+      "name_ja": "朱異",
+      "reading_katakana": "シュイ"
+    },
+    {
+      "index": 362,
+      "name_ja": "脩允",
+      "reading_katakana": "シュウイン"
+    },
+    {
+      "index": 363,
+      "name_ja": "周胤",
+      "reading_katakana": "シュウイン"
+    },
+    {
+      "index": 364,
+      "name_ja": "周昕",
+      "reading_katakana": "シュウキン"
+    },
+    {
+      "index": 365,
+      "name_ja": "周グ",
+      "reading_katakana": "シュウグ"
+    },
+    {
+      "index": 366,
+      "name_ja": "周羣",
+      "reading_katakana": "シュウグン"
+    },
+    {
+      "index": 367,
+      "name_ja": "周昂",
+      "reading_katakana": "シュウコウ"
+    },
+    {
+      "index": 368,
+      "name_ja": "周旨",
+      "reading_katakana": "シュウシ"
+    },
+    {
+      "index": 369,
+      "name_ja": "周邵",
+      "reading_katakana": "シュウショウ"
+    },
+    {
+      "index": 370,
+      "name_ja": "周善",
+      "reading_katakana": "シュウゼン"
+    },
+    {
+      "index": 371,
+      "name_ja": "周倉",
+      "reading_katakana": "シュウソウ"
+    },
+    {
+      "index": 372,
+      "name_ja": "脩則",
+      "reading_katakana": "シュウソク"
+    },
+    {
+      "index": 373,
+      "name_ja": "周泰",
+      "reading_katakana": "シュウタイ"
+    },
+    {
+      "index": 374,
+      "name_ja": "州泰",
+      "reading_katakana": "シュウタイ"
+    },
+    {
+      "index": 375,
+      "name_ja": "周朝",
+      "reading_katakana": "シュウチョウ"
+    },
+    {
+      "index": 376,
+      "name_ja": "習珍",
+      "reading_katakana": "シュウチン"
+    },
+    {
+      "index": 377,
+      "name_ja": "習禎",
+      "reading_katakana": "シュウテイ"
+    },
+    {
+      "index": 378,
+      "name_ja": "周魴",
+      "reading_katakana": "シュウホウ"
+    },
+    {
+      "index": 379,
+      "name_ja": "周瑜",
+      "reading_katakana": "シュウユ"
+    },
+    {
+      "index": 380,
+      "name_ja": "朱蓋",
+      "reading_katakana": "シュガイ"
+    },
+    {
+      "index": 381,
+      "name_ja": "朱桓",
+      "reading_katakana": "シュカン"
+    },
+    {
+      "index": 382,
+      "name_ja": "朱拠",
+      "reading_katakana": "シュキョ"
+    },
+    {
+      "index": 383,
+      "name_ja": "祝融",
+      "reading_katakana": "シュクユウ"
+    },
+    {
+      "index": 384,
+      "name_ja": "朱光",
+      "reading_katakana": "シュコウ"
+    },
+    {
+      "index": 385,
+      "name_ja": "朱讃",
+      "reading_katakana": "シュサン"
+    },
+    {
+      "index": 386,
+      "name_ja": "朱鑠",
+      "reading_katakana": "シュシャク"
+    },
+    {
+      "index": 387,
+      "name_ja": "朱儁",
+      "reading_katakana": "シュシュン"
+    },
+    {
+      "index": 388,
+      "name_ja": "朱績",
+      "reading_katakana": "シュセキ"
+    },
+    {
+      "index": 389,
+      "name_ja": "朱然",
+      "reading_katakana": "シュゼン"
+    },
+    {
+      "index": 390,
+      "name_ja": "朱治",
+      "reading_katakana": "シュチ"
+    },
+    {
+      "index": 391,
+      "name_ja": "朱褒",
+      "reading_katakana": "シュホウ"
+    },
+    {
+      "index": 392,
+      "name_ja": "朱霊",
+      "reading_katakana": "シュレイ"
+    },
+    {
+      "index": 393,
+      "name_ja": "荀彧",
+      "reading_katakana": "ジュンイク"
+    },
+    {
+      "index": 394,
+      "name_ja": "荀ウン",
+      "reading_katakana": "ジュンウン"
+    },
+    {
+      "index": 395,
+      "name_ja": "淳于瓊",
+      "reading_katakana": "ジュンウケイ"
+    },
+    {
+      "index": 396,
+      "name_ja": "荀顗",
+      "reading_katakana": "ジュンギ"
+    },
+    {
+      "index": 397,
+      "name_ja": "荀勗",
+      "reading_katakana": "ジュンキョク"
+    },
+    {
+      "index": 398,
+      "name_ja": "荀粲",
+      "reading_katakana": "ジュンサン"
+    },
+    {
+      "index": 399,
+      "name_ja": "荀諶",
+      "reading_katakana": "ジュンシン"
+    },
+    {
+      "index": 400,
+      "name_ja": "荀正",
+      "reading_katakana": "ジュンセイ"
+    },
+    {
+      "index": 401,
+      "name_ja": "荀爽",
+      "reading_katakana": "ジュンソウ"
+    },
+    {
+      "index": 402,
+      "name_ja": "荀攸",
+      "reading_katakana": "ジュンユウ"
+    },
+    {
+      "index": 403,
+      "name_ja": "焦彝",
+      "reading_katakana": "ショウイ"
+    },
+    {
+      "index": 404,
+      "name_ja": "鍾毓",
+      "reading_katakana": "ショウイク"
+    },
+    {
+      "index": 405,
+      "name_ja": "蒋エン",
+      "reading_katakana": "ショウエン"
+    },
+    {
+      "index": 406,
+      "name_ja": "鍾会",
+      "reading_katakana": "ショウカイ"
+    },
+    {
+      "index": 407,
+      "name_ja": "蒋幹",
+      "reading_katakana": "ショウカン"
+    },
+    {
+      "index": 408,
+      "name_ja": "上官子脩",
+      "reading_katakana": "ジョウカンシシュウ"
+    },
+    {
+      "index": 409,
+      "name_ja": "昌キ",
+      "reading_katakana": "ショウキ"
+    },
+    {
+      "index": 410,
+      "name_ja": "蒋義渠",
+      "reading_katakana": "ショウギキョ"
+    },
+    {
+      "index": 411,
+      "name_ja": "小喬",
+      "reading_katakana": "ショウキョウ"
+    },
+    {
+      "index": 412,
+      "name_ja": "蒋欽",
+      "reading_katakana": "ショウキン"
+    },
+    {
+      "index": 413,
+      "name_ja": "蒋顕",
+      "reading_katakana": "ショウケン"
+    },
+    {
+      "index": 414,
+      "name_ja": "ショウ周",
+      "reading_katakana": "ショウシュウ"
+    },
+    {
+      "index": 415,
+      "name_ja": "蒋舒",
+      "reading_katakana": "ショウジョ"
+    },
+    {
+      "index": 416,
+      "name_ja": "焦触",
+      "reading_katakana": "ショウショク"
+    },
+    {
+      "index": 417,
+      "name_ja": "鍾進",
+      "reading_katakana": "ショウシン"
+    },
+    {
+      "index": 418,
+      "name_ja": "蒋済",
+      "reading_katakana": "ショウセイ"
+    },
+    {
+      "index": 419,
+      "name_ja": "向寵",
+      "reading_katakana": "ショウチョウ"
+    },
+    {
+      "index": 420,
+      "name_ja": "邵悌",
+      "reading_katakana": "ショウテイ"
+    },
+    {
+      "index": 421,
+      "name_ja": "蒋班",
+      "reading_katakana": "ショウハン"
+    },
+    {
+      "index": 422,
+      "name_ja": "蒋斌",
+      "reading_katakana": "ショウヒン"
+    },
+    {
+      "index": 423,
+      "name_ja": "聶友",
+      "reading_katakana": "ジョウユウ"
+    },
+    {
+      "index": 424,
+      "name_ja": "鍾ヨウ",
+      "reading_katakana": "ショウヨウ"
+    },
+    {
+      "index": 425,
+      "name_ja": "鍾離牧",
+      "reading_katakana": "ショウリボク"
+    },
+    {
+      "index": 426,
+      "name_ja": "常林",
+      "reading_katakana": "ジョウリン"
+    },
+    {
+      "index": 427,
+      "name_ja": "向朗",
+      "reading_katakana": "ショウロウ"
+    },
+    {
+      "index": 428,
+      "name_ja": "徐栄",
+      "reading_katakana": "ジョエイ"
+    },
+    {
+      "index": 429,
+      "name_ja": "徐奕",
+      "reading_katakana": "ジョエキ"
+    },
+    {
+      "index": 430,
+      "name_ja": "諸葛恪",
+      "reading_katakana": "ショカツカク"
+    },
+    {
+      "index": 431,
+      "name_ja": "諸葛喬",
+      "reading_katakana": "ショカツキョウ"
+    },
+    {
+      "index": 432,
+      "name_ja": "諸葛瑾",
+      "reading_katakana": "ショカツキン"
+    },
+    {
+      "index": 433,
+      "name_ja": "諸葛均",
+      "reading_katakana": "ショカツキン"
+    },
+    {
+      "index": 434,
+      "name_ja": "諸葛緒",
+      "reading_katakana": "ショカツショ"
+    },
+    {
+      "index": 435,
+      "name_ja": "諸葛尚",
+      "reading_katakana": "ショカツショウ"
+    },
+    {
+      "index": 436,
+      "name_ja": "諸葛セイ",
+      "reading_katakana": "ショカツセイ"
+    },
+    {
+      "index": 437,
+      "name_ja": "諸葛瞻",
+      "reading_katakana": "ショカツセン"
+    },
+    {
+      "index": 438,
+      "name_ja": "諸葛誕",
+      "reading_katakana": "ショカツタン"
+    },
+    {
+      "index": 439,
+      "name_ja": "諸葛融",
+      "reading_katakana": "ショカツユウ"
+    },
+    {
+      "index": 440,
+      "name_ja": "諸葛亮",
+      "reading_katakana": "ショカツリョウ"
+    },
+    {
+      "index": 441,
+      "name_ja": "徐キョウ",
+      "reading_katakana": "ジョキュウ"
+    },
+    {
+      "index": 442,
+      "name_ja": "徐晃",
+      "reading_katakana": "ジョコウ"
+    },
+    {
+      "index": 443,
+      "name_ja": "徐コン",
+      "reading_katakana": "ジョコン"
+    },
+    {
+      "index": 444,
+      "name_ja": "徐氏",
+      "reading_katakana": "ジョシ"
+    },
+    {
+      "index": 445,
+      "name_ja": "徐質",
+      "reading_katakana": "ジョシツ"
+    },
+    {
+      "index": 446,
+      "name_ja": "徐庶",
+      "reading_katakana": "ジョショ"
+    },
+    {
+      "index": 447,
+      "name_ja": "徐商",
+      "reading_katakana": "ジョショウ"
+    },
+    {
+      "index": 448,
+      "name_ja": "徐詳",
+      "reading_katakana": "ジョショウ"
+    },
+    {
+      "index": 449,
+      "name_ja": "徐盛",
+      "reading_katakana": "ジョセイ"
+    },
+    {
+      "index": 450,
+      "name_ja": "徐宣",
+      "reading_katakana": "ジョセン"
+    },
+    {
+      "index": 451,
+      "name_ja": "徐バク",
+      "reading_katakana": "ジョバク"
+    },
+    {
+      "index": 452,
+      "name_ja": "岑威",
+      "reading_katakana": "シンイ"
+    },
+    {
+      "index": 453,
+      "name_ja": "沈瑩",
+      "reading_katakana": "シンエイ"
+    },
+    {
+      "index": 454,
+      "name_ja": "審栄",
+      "reading_katakana": "シンエイ"
+    },
+    {
+      "index": 455,
+      "name_ja": "申儀",
+      "reading_katakana": "シンギ"
+    },
+    {
+      "index": 456,
+      "name_ja": "秦宜禄",
+      "reading_katakana": "シンギロク"
+    },
+    {
+      "index": 457,
+      "name_ja": "辛憲英",
+      "reading_katakana": "シンケンエイ"
+    },
+    {
+      "index": 458,
+      "name_ja": "岑昏",
+      "reading_katakana": "シンコン"
+    },
+    {
+      "index": 459,
+      "name_ja": "甄氏",
+      "reading_katakana": "シンシ"
+    },
+    {
+      "index": 460,
+      "name_ja": "任峻",
+      "reading_katakana": "ジンシュン"
+    },
+    {
+      "index": 461,
+      "name_ja": "辛敞",
+      "reading_katakana": "シンショウ"
+    },
+    {
+      "index": 462,
+      "name_ja": "秦松",
+      "reading_katakana": "シンショウ"
+    },
+    {
+      "index": 463,
+      "name_ja": "申耽",
+      "reading_katakana": "シンタン"
+    },
+    {
+      "index": 464,
+      "name_ja": "審配",
+      "reading_katakana": "シンパイ"
+    },
+    {
+      "index": 465,
+      "name_ja": "辛毘",
+      "reading_katakana": "シンピ"
+    },
+    {
+      "index": 466,
+      "name_ja": "辛評",
+      "reading_katakana": "シンピョウ"
+    },
+    {
+      "index": 467,
+      "name_ja": "秦ミツ",
+      "reading_katakana": "シンミツ"
+    },
+    {
+      "index": 468,
+      "name_ja": "秦朗",
+      "reading_katakana": "シンロウ"
+    },
+    {
+      "index": 469,
+      "name_ja": "スイ元進",
+      "reading_katakana": "スイゲンシン"
+    },
+    {
+      "index": 470,
+      "name_ja": "スイ固",
+      "reading_katakana": "スイコ"
+    },
+    {
+      "index": 471,
+      "name_ja": "鄒氏",
+      "reading_katakana": "スウシ"
+    },
+    {
+      "index": 472,
+      "name_ja": "鄒靖",
+      "reading_katakana": "スウセイ"
+    },
+    {
+      "index": 473,
+      "name_ja": "鄒丹",
+      "reading_katakana": "スウタン"
+    },
+    {
+      "index": 474,
+      "name_ja": "成宜",
+      "reading_katakana": "セイギ"
+    },
+    {
+      "index": 475,
+      "name_ja": "成公英",
+      "reading_katakana": "セイコウエイ"
+    },
+    {
+      "index": 476,
+      "name_ja": "盛曼",
+      "reading_katakana": "セイマン"
+    },
+    {
+      "index": 477,
+      "name_ja": "成廉",
+      "reading_katakana": "セイレン"
+    },
+    {
+      "index": 478,
+      "name_ja": "石鑒",
+      "reading_katakana": "セキカン"
+    },
+    {
+      "index": 479,
+      "name_ja": "石韜",
+      "reading_katakana": "セキトウ"
+    },
+    {
+      "index": 480,
+      "name_ja": "石苞",
+      "reading_katakana": "セキホウ"
+    },
+    {
+      "index": 481,
+      "name_ja": "薛瑩",
+      "reading_katakana": "セツエイ"
+    },
+    {
+      "index": 482,
+      "name_ja": "泄帰泥",
+      "reading_katakana": "セツキデイ"
+    },
+    {
+      "index": 483,
+      "name_ja": "薛ツク",
+      "reading_katakana": "セツク"
+    },
+    {
+      "index": 484,
+      "name_ja": "薛綜",
+      "reading_katakana": "セツソウ"
+    },
+    {
+      "index": 485,
+      "name_ja": "薛悌",
+      "reading_katakana": "セツテイ"
+    },
+    {
+      "index": 486,
+      "name_ja": "薛蘭",
+      "reading_katakana": "セツラン"
+    },
+    {
+      "index": 487,
+      "name_ja": "薛礼",
+      "reading_katakana": "セツレイ"
+    },
+    {
+      "index": 488,
+      "name_ja": "全イ",
+      "reading_katakana": "ゼンイ"
+    },
+    {
+      "index": 489,
+      "name_ja": "鮮于丹",
+      "reading_katakana": "センウタン"
+    },
+    {
+      "index": 490,
+      "name_ja": "鮮于輔",
+      "reading_katakana": "センウホ"
+    },
+    {
+      "index": 491,
+      "name_ja": "全懌",
+      "reading_katakana": "ゼンエキ"
+    },
+    {
+      "index": 492,
+      "name_ja": "全紀",
+      "reading_katakana": "ゼンキ"
+    },
+    {
+      "index": 493,
+      "name_ja": "単経",
+      "reading_katakana": "ゼンケイ"
+    },
+    {
+      "index": 494,
+      "name_ja": "全柔",
+      "reading_katakana": "ゼンジュウ"
+    },
+    {
+      "index": 495,
+      "name_ja": "全尚",
+      "reading_katakana": "ゼンショウ"
+    },
+    {
+      "index": 496,
+      "name_ja": "全琮",
+      "reading_katakana": "ゼンソウ"
+    },
+    {
+      "index": 497,
+      "name_ja": "全端",
+      "reading_katakana": "ゼンタン"
+    },
+    {
+      "index": 498,
+      "name_ja": "千万",
+      "reading_katakana": "センバン"
+    },
+    {
+      "index": 499,
+      "name_ja": "曹安民",
+      "reading_katakana": "ソウアンミン"
+    },
+    {
+      "index": 500,
+      "name_ja": "曹宇",
+      "reading_katakana": "ソウウ"
+    },
+    {
+      "index": 501,
+      "name_ja": "曹叡",
+      "reading_katakana": "ソウエイ"
+    },
+    {
+      "index": 502,
+      "name_ja": "曹華",
+      "reading_katakana": "ソウカ"
+    },
+    {
+      "index": 503,
+      "name_ja": "曹奐",
+      "reading_katakana": "ソウカン"
+    },
+    {
+      "index": 504,
+      "name_ja": "曹羲",
+      "reading_katakana": "ソウギ"
+    },
+    {
+      "index": 505,
+      "name_ja": "曹休",
+      "reading_katakana": "ソウキュウ"
+    },
+    {
+      "index": 506,
+      "name_ja": "曹訓",
+      "reading_katakana": "ソウクン"
+    },
+    {
+      "index": 507,
+      "name_ja": "宋憲",
+      "reading_katakana": "ソウケン"
+    },
+    {
+      "index": 508,
+      "name_ja": "宋謙",
+      "reading_katakana": "ソウケン"
+    },
+    {
+      "index": 509,
+      "name_ja": "曹憲",
+      "reading_katakana": "ソウケン"
+    },
+    {
+      "index": 510,
+      "name_ja": "曹昂",
+      "reading_katakana": "ソウコウ"
+    },
+    {
+      "index": 511,
+      "name_ja": "曹洪",
+      "reading_katakana": "ソウコウ"
+    },
+    {
+      "index": 512,
+      "name_ja": "臧洪",
+      "reading_katakana": "ゾウコウ"
+    },
+    {
+      "index": 513,
+      "name_ja": "倉慈",
+      "reading_katakana": "ソウジ"
+    },
+    {
+      "index": 514,
+      "name_ja": "曹純",
+      "reading_katakana": "ソウジュン"
+    },
+    {
+      "index": 515,
+      "name_ja": "曹彰",
+      "reading_katakana": "ソウショウ"
+    },
+    {
+      "index": 516,
+      "name_ja": "曹植",
+      "reading_katakana": "ソウショク"
+    },
+    {
+      "index": 517,
+      "name_ja": "曹真",
+      "reading_katakana": "ソウシン"
+    },
+    {
+      "index": 518,
+      "name_ja": "曹仁",
+      "reading_katakana": "ソウジン"
+    },
+    {
+      "index": 519,
+      "name_ja": "曹性",
+      "reading_katakana": "ソウセイ"
+    },
+    {
+      "index": 520,
+      "name_ja": "曹節",
+      "reading_katakana": "ソウセツ"
+    },
+    {
+      "index": 521,
+      "name_ja": "曹操",
+      "reading_katakana": "ソウソウ"
+    },
+    {
+      "index": 522,
+      "name_ja": "曹爽",
+      "reading_katakana": "ソウソウ"
+    },
+    {
+      "index": 523,
+      "name_ja": "曹沖",
+      "reading_katakana": "ソウチュウ"
+    },
+    {
+      "index": 524,
+      "name_ja": "宋忠",
+      "reading_katakana": "ソウチュウ"
+    },
+    {
+      "index": 525,
+      "name_ja": "臧覇",
+      "reading_katakana": "ゾウハ"
+    },
+    {
+      "index": 526,
+      "name_ja": "曹丕",
+      "reading_katakana": "ソウヒ"
+    },
+    {
+      "index": 527,
+      "name_ja": "曹豹",
+      "reading_katakana": "ソウヒョウ"
+    },
+    {
+      "index": 528,
+      "name_ja": "曹彪",
+      "reading_katakana": "ソウヒョウ"
+    },
+    {
+      "index": 529,
+      "name_ja": "曹芳",
+      "reading_katakana": "ソウホウ"
+    },
+    {
+      "index": 530,
+      "name_ja": "曹髦",
+      "reading_katakana": "ソウボウ"
+    },
+    {
+      "index": 531,
+      "name_ja": "曹熊",
+      "reading_katakana": "ソウユウ"
+    },
+    {
+      "index": 532,
+      "name_ja": "宗預",
+      "reading_katakana": "ソウヨ"
+    },
+    {
+      "index": 533,
+      "name_ja": "曹霖",
+      "reading_katakana": "ソウリン"
+    },
+    {
+      "index": 534,
+      "name_ja": "沮鵠",
+      "reading_katakana": "ソコク"
+    },
+    {
+      "index": 535,
+      "name_ja": "沮授",
+      "reading_katakana": "ソジュ"
+    },
+    {
+      "index": 536,
+      "name_ja": "蘇則",
+      "reading_katakana": "ソソク"
+    },
+    {
+      "index": 537,
+      "name_ja": "蘇飛",
+      "reading_katakana": "ソヒ"
+    },
+    {
+      "index": 538,
+      "name_ja": "祖茂",
+      "reading_katakana": "ソモ"
+    },
+    {
+      "index": 539,
+      "name_ja": "蘇由",
+      "reading_katakana": "ソユウ"
+    },
+    {
+      "index": 540,
+      "name_ja": "孫異",
+      "reading_katakana": "ソンイ"
+    },
+    {
+      "index": 541,
+      "name_ja": "孫壱",
+      "reading_katakana": "ソンイツ"
+    },
+    {
+      "index": 542,
+      "name_ja": "孫和",
+      "reading_katakana": "ソンカ"
+    },
+    {
+      "index": 543,
+      "name_ja": "孫河",
+      "reading_katakana": "ソンカ"
+    },
+    {
+      "index": 544,
+      "name_ja": "孫桓",
+      "reading_katakana": "ソンカン"
+    },
+    {
+      "index": 545,
+      "name_ja": "孫観",
+      "reading_katakana": "ソンカン"
+    },
+    {
+      "index": 546,
+      "name_ja": "孫奐",
+      "reading_katakana": "ソンカン"
+    },
+    {
+      "index": 547,
+      "name_ja": "孫冀",
+      "reading_katakana": "ソンキ"
+    },
+    {
+      "index": 548,
+      "name_ja": "孫休",
+      "reading_katakana": "ソンキュウ"
+    },
+    {
+      "index": 549,
+      "name_ja": "孫匡",
+      "reading_katakana": "ソンキョウ"
+    },
+    {
+      "index": 550,
+      "name_ja": "孫キン",
+      "reading_katakana": "ソンキン"
+    },
+    {
+      "index": 551,
+      "name_ja": "孫堅",
+      "reading_katakana": "ソンケン"
+    },
+    {
+      "index": 552,
+      "name_ja": "孫乾",
+      "reading_katakana": "ソンケン"
+    },
+    {
+      "index": 553,
+      "name_ja": "孫権",
+      "reading_katakana": "ソンケン"
+    },
+    {
+      "index": 554,
+      "name_ja": "孫晧",
+      "reading_katakana": "ソンコウ"
+    },
+    {
+      "index": 555,
+      "name_ja": "孫皎",
+      "reading_katakana": "ソンコウ"
+    },
+    {
+      "index": 556,
+      "name_ja": "孫弘",
+      "reading_katakana": "ソンコウ"
+    },
+    {
+      "index": 557,
+      "name_ja": "孫策",
+      "reading_katakana": "ソンサク"
+    },
+    {
+      "index": 558,
+      "name_ja": "孫氏",
+      "reading_katakana": "ソンシ"
+    },
+    {
+      "index": 559,
+      "name_ja": "孫資",
+      "reading_katakana": "ソンシ"
+    },
+    {
+      "index": 560,
+      "name_ja": "孫秀",
+      "reading_katakana": "ソンシュウ"
+    },
+    {
+      "index": 561,
+      "name_ja": "孫峻",
+      "reading_katakana": "ソンシュン"
+    },
+    {
+      "index": 562,
+      "name_ja": "孫韶",
+      "reading_katakana": "ソンショウ"
+    },
+    {
+      "index": 563,
+      "name_ja": "孫邵",
+      "reading_katakana": "ソンショウ"
+    },
+    {
+      "index": 564,
+      "name_ja": "孫松",
+      "reading_katakana": "ソンショウ"
+    },
+    {
+      "index": 565,
+      "name_ja": "孫尚香",
+      "reading_katakana": "ソンショウコウ"
+    },
+    {
+      "index": 566,
+      "name_ja": "孫震",
+      "reading_katakana": "ソンシン"
+    },
+    {
+      "index": 567,
+      "name_ja": "孫静",
+      "reading_katakana": "ソンセイ"
+    },
+    {
+      "index": 568,
+      "name_ja": "孫仲",
+      "reading_katakana": "ソンチュウ"
+    },
+    {
+      "index": 569,
+      "name_ja": "孫チン",
+      "reading_katakana": "ソンチン"
+    },
+    {
+      "index": 570,
+      "name_ja": "孫登",
+      "reading_katakana": "ソントウ"
+    },
+    {
+      "index": 571,
+      "name_ja": "孫覇",
+      "reading_katakana": "ソンハ"
+    },
+    {
+      "index": 572,
+      "name_ja": "孫賁",
+      "reading_katakana": "ソンフン"
+    },
+    {
+      "index": 573,
+      "name_ja": "孫奮",
+      "reading_katakana": "ソンフン"
+    },
+    {
+      "index": 574,
+      "name_ja": "孫輔",
+      "reading_katakana": "ソンホ"
+    },
+    {
+      "index": 575,
+      "name_ja": "孫瑜",
+      "reading_katakana": "ソンユ"
+    },
+    {
+      "index": 576,
+      "name_ja": "孫翊",
+      "reading_katakana": "ソンヨク"
+    },
+    {
+      "index": 577,
+      "name_ja": "孫慮",
+      "reading_katakana": "ソンリョ"
+    },
+    {
+      "index": 578,
+      "name_ja": "孫亮",
+      "reading_katakana": "ソンリョウ"
+    },
+    {
+      "index": 579,
+      "name_ja": "孫礼",
+      "reading_katakana": "ソンレイ"
+    },
+    {
+      "index": 580,
+      "name_ja": "孫魯育",
+      "reading_katakana": "ソンロイク"
+    },
+    {
+      "index": 581,
+      "name_ja": "孫朗",
+      "reading_katakana": "ソンロウ"
+    },
+    {
+      "index": 582,
+      "name_ja": "孫魯班",
+      "reading_katakana": "ソンロハン"
+    },
+    {
+      "index": 583,
+      "name_ja": "戴員",
+      "reading_katakana": "タイウン"
+    },
+    {
+      "index": 584,
+      "name_ja": "大喬",
+      "reading_katakana": "ダイキョウ"
+    },
+    {
+      "index": 585,
+      "name_ja": "太史享",
+      "reading_katakana": "タイシキョウ"
+    },
+    {
+      "index": 586,
+      "name_ja": "太史慈",
+      "reading_katakana": "タイシジ"
+    },
+    {
+      "index": 587,
+      "name_ja": "帯来洞主",
+      "reading_katakana": "タイライドウシュ"
+    },
+    {
+      "index": 588,
+      "name_ja": "戴陵",
+      "reading_katakana": "タイリョウ"
+    },
+    {
+      "index": 589,
+      "name_ja": "卓膺",
+      "reading_katakana": "タクヨウ"
+    },
+    {
+      "index": 590,
+      "name_ja": "朶思大王",
+      "reading_katakana": "ダシダイオウ"
+    },
+    {
+      "index": 591,
+      "name_ja": "譚雄",
+      "reading_katakana": "タンユウ"
+    },
+    {
+      "index": 592,
+      "name_ja": "段ワイ",
+      "reading_katakana": "ダンワイ"
+    },
+    {
+      "index": 593,
+      "name_ja": "仲長統",
+      "reading_katakana": "チュウチョウトウ"
+    },
+    {
+      "index": 594,
+      "name_ja": "趙昱",
+      "reading_katakana": "チョウイク"
+    },
+    {
+      "index": 595,
+      "name_ja": "張允",
+      "reading_katakana": "チョウイン"
+    },
+    {
+      "index": 596,
+      "name_ja": "趙雲",
+      "reading_katakana": "チョウウン"
+    },
+    {
+      "index": 597,
+      "name_ja": "張衛",
+      "reading_katakana": "チョウエイ"
+    },
+    {
+      "index": 598,
+      "name_ja": "張英",
+      "reading_katakana": "チョウエイ"
+    },
+    {
+      "index": 599,
+      "name_ja": "趙叡",
+      "reading_katakana": "チョウエイ"
+    },
+    {
+      "index": 600,
+      "name_ja": "張裔",
+      "reading_katakana": "チョウエイ"
+    },
+    {
+      "index": 601,
+      "name_ja": "張燕",
+      "reading_katakana": "チョウエン"
+    },
+    {
+      "index": 602,
+      "name_ja": "張エン",
+      "reading_katakana": "チョウエン"
+    },
+    {
+      "index": 603,
+      "name_ja": "張横",
+      "reading_katakana": "チョウオウ"
+    },
+    {
+      "index": 604,
+      "name_ja": "張温",
+      "reading_katakana": "チョウオン"
+    },
+    {
+      "index": 605,
+      "name_ja": "張華",
+      "reading_katakana": "チョウカ"
+    },
+    {
+      "index": 606,
+      "name_ja": "張ガイ",
+      "reading_katakana": "チョウガイ"
+    },
+    {
+      "index": 607,
+      "name_ja": "張角",
+      "reading_katakana": "チョウカク"
+    },
+    {
+      "index": 608,
+      "name_ja": "張既",
+      "reading_katakana": "チョウキ"
+    },
+    {
+      "index": 609,
+      "name_ja": "張顗",
+      "reading_katakana": "チョウギ"
+    },
+    {
+      "index": 610,
+      "name_ja": "張休",
+      "reading_katakana": "チョウキュウ"
+    },
+    {
+      "index": 611,
+      "name_ja": "張球",
+      "reading_katakana": "チョウキュウ"
+    },
+    {
+      "index": 612,
+      "name_ja": "張挙",
+      "reading_katakana": "チョウキョ"
+    },
+    {
+      "index": 613,
+      "name_ja": "張嶷",
+      "reading_katakana": "チョウギョク"
+    },
+    {
+      "index": 614,
+      "name_ja": "張勳",
+      "reading_katakana": "チョウクン"
+    },
+    {
+      "index": 615,
+      "name_ja": "趙儼",
+      "reading_katakana": "チョウゲン"
+    },
+    {
+      "index": 616,
+      "name_ja": "張虎",
+      "reading_katakana": "チョウコ"
+    },
+    {
+      "index": 617,
+      "name_ja": "張紘",
+      "reading_katakana": "チョウコウ"
+    },
+    {
+      "index": 618,
+      "name_ja": "張コウ",
+      "reading_katakana": "チョウコウ"
+    },
+    {
+      "index": 619,
+      "name_ja": "趙広",
+      "reading_katakana": "チョウコウ"
+    },
+    {
+      "index": 620,
+      "name_ja": "趙弘",
+      "reading_katakana": "チョウコウ"
+    },
+    {
+      "index": 621,
+      "name_ja": "趙昂",
+      "reading_katakana": "チョウコウ"
+    },
+    {
+      "index": 622,
+      "name_ja": "張氏",
+      "reading_katakana": "チョウシ"
+    },
+    {
+      "index": 623,
+      "name_ja": "趙咨",
+      "reading_katakana": "チョウシ"
+    },
+    {
+      "index": 624,
+      "name_ja": "趙氏貞",
+      "reading_katakana": "チョウシテイ"
+    },
+    {
+      "index": 625,
+      "name_ja": "張繍",
+      "reading_katakana": "チョウシュウ"
+    },
+    {
+      "index": 626,
+      "name_ja": "張緝",
+      "reading_katakana": "チョウシュウ"
+    },
+    {
+      "index": 627,
+      "name_ja": "張粛",
+      "reading_katakana": "チョウシュク"
+    },
+    {
+      "index": 628,
+      "name_ja": "張純",
+      "reading_katakana": "チョウジュン"
+    },
+    {
+      "index": 629,
+      "name_ja": "張遵",
+      "reading_katakana": "チョウジュン"
+    },
+    {
+      "index": 630,
+      "name_ja": "張春華",
+      "reading_katakana": "チョウシュンカ"
+    },
+    {
+      "index": 631,
+      "name_ja": "張昭",
+      "reading_katakana": "チョウショウ"
+    },
+    {
+      "index": 632,
+      "name_ja": "張松",
+      "reading_katakana": "チョウショウ"
+    },
+    {
+      "index": 633,
+      "name_ja": "張紹",
+      "reading_katakana": "チョウショウ"
+    },
+    {
+      "index": 634,
+      "name_ja": "張承",
+      "reading_katakana": "チョウショウ"
+    },
+    {
+      "index": 635,
+      "name_ja": "張承",
+      "reading_katakana": "チョウショウ"
+    },
+    {
+      "index": 636,
+      "name_ja": "張昌蒲",
+      "reading_katakana": "チョウショウホ"
+    },
+    {
+      "index": 637,
+      "name_ja": "張任",
+      "reading_katakana": "チョウジン"
+    },
+    {
+      "index": 638,
+      "name_ja": "張済",
+      "reading_katakana": "チョウセイ"
+    },
+    {
+      "index": 639,
+      "name_ja": "趙正",
+      "reading_katakana": "チョウセイ"
+    },
+    {
+      "index": 640,
+      "name_ja": "貂蝉",
+      "reading_katakana": "チョウセン"
+    },
+    {
+      "index": 641,
+      "name_ja": "張先",
+      "reading_katakana": "チョウセン"
+    },
+    {
+      "index": 642,
+      "name_ja": "張羨",
+      "reading_katakana": "チョウセン"
+    },
+    {
+      "index": 643,
+      "name_ja": "張泉",
+      "reading_katakana": "チョウセン"
+    },
+    {
+      "index": 644,
+      "name_ja": "張達",
+      "reading_katakana": "チョウタツ"
+    },
+    {
+      "index": 645,
+      "name_ja": "趙達",
+      "reading_katakana": "チョウタツ"
+    },
+    {
+      "index": 646,
+      "name_ja": "張著",
+      "reading_katakana": "チョウチョ"
+    },
+    {
+      "index": 647,
+      "name_ja": "張超",
+      "reading_katakana": "チョウチョウ"
+    },
+    {
+      "index": 648,
+      "name_ja": "張悌",
+      "reading_katakana": "チョウテイ"
+    },
+    {
+      "index": 649,
+      "name_ja": "趙統",
+      "reading_katakana": "チョウトウ"
+    },
+    {
+      "index": 650,
+      "name_ja": "張特",
+      "reading_katakana": "チョウトク"
+    },
+    {
+      "index": 651,
+      "name_ja": "張南",
+      "reading_katakana": "チョウナン"
+    },
+    {
+      "index": 652,
+      "name_ja": "張南",
+      "reading_katakana": "チョウナン"
+    },
+    {
+      "index": 653,
+      "name_ja": "張バク",
+      "reading_katakana": "チョウバク"
+    },
+    {
+      "index": 654,
+      "name_ja": "趙範",
+      "reading_katakana": "チョウハン"
+    },
+    {
+      "index": 655,
+      "name_ja": "張範",
+      "reading_katakana": "チョウハン"
+    },
+    {
+      "index": 656,
+      "name_ja": "張飛",
+      "reading_katakana": "チョウヒ"
+    },
+    {
+      "index": 657,
+      "name_ja": "張布",
+      "reading_katakana": "チョウフ"
+    },
+    {
+      "index": 658,
+      "name_ja": "張苞",
+      "reading_katakana": "チョウホウ"
+    },
+    {
+      "index": 659,
+      "name_ja": "張宝",
+      "reading_katakana": "チョウホウ"
+    },
+    {
+      "index": 660,
+      "name_ja": "張曼成",
+      "reading_katakana": "チョウマンセイ"
+    },
+    {
+      "index": 661,
+      "name_ja": "張楊",
+      "reading_katakana": "チョウヨウ"
+    },
+    {
+      "index": 662,
+      "name_ja": "張翼",
+      "reading_katakana": "チョウヨク"
+    },
+    {
+      "index": 663,
+      "name_ja": "張遼",
+      "reading_katakana": "チョウリョウ"
+    },
+    {
+      "index": 664,
+      "name_ja": "張梁",
+      "reading_katakana": "チョウリョウ"
+    },
+    {
+      "index": 665,
+      "name_ja": "趙累",
+      "reading_katakana": "チョウルイ"
+    },
+    {
+      "index": 666,
+      "name_ja": "張魯",
+      "reading_katakana": "チョウロ"
+    },
+    {
+      "index": 667,
+      "name_ja": "陳横",
+      "reading_katakana": "チンオウ"
+    },
+    {
+      "index": 668,
+      "name_ja": "陳応",
+      "reading_katakana": "チンオウ"
+    },
+    {
+      "index": 669,
+      "name_ja": "陳化",
+      "reading_katakana": "チンカ"
+    },
+    {
+      "index": 670,
+      "name_ja": "陳紀",
+      "reading_katakana": "チンキ"
+    },
+    {
+      "index": 671,
+      "name_ja": "陳宮",
+      "reading_katakana": "チンキュウ"
+    },
+    {
+      "index": 672,
+      "name_ja": "陳矯",
+      "reading_katakana": "チンキョウ"
+    },
+    {
+      "index": 673,
+      "name_ja": "陳羣",
+      "reading_katakana": "チングン"
+    },
+    {
+      "index": 674,
+      "name_ja": "陳珪",
+      "reading_katakana": "チンケイ"
+    },
+    {
+      "index": 675,
+      "name_ja": "陳騫",
+      "reading_katakana": "チンケン"
+    },
+    {
+      "index": 676,
+      "name_ja": "陳祗",
+      "reading_katakana": "チンシ"
+    },
+    {
+      "index": 677,
+      "name_ja": "陳寿",
+      "reading_katakana": "チンジュ"
+    },
+    {
+      "index": 678,
+      "name_ja": "陳就",
+      "reading_katakana": "チンシュウ"
+    },
+    {
+      "index": 679,
+      "name_ja": "陳脩",
+      "reading_katakana": "チンシュウ"
+    },
+    {
+      "index": 680,
+      "name_ja": "陳式",
+      "reading_katakana": "チンショク"
+    },
+    {
+      "index": 681,
+      "name_ja": "陳震",
+      "reading_katakana": "チンシン"
+    },
+    {
+      "index": 682,
+      "name_ja": "陳泰",
+      "reading_katakana": "チンタイ"
+    },
+    {
+      "index": 683,
+      "name_ja": "陳登",
+      "reading_katakana": "チントウ"
+    },
+    {
+      "index": 684,
+      "name_ja": "陳到",
+      "reading_katakana": "チントウ"
+    },
+    {
+      "index": 685,
+      "name_ja": "陳表",
+      "reading_katakana": "チンヒョウ"
+    },
+    {
+      "index": 686,
+      "name_ja": "陳武",
+      "reading_katakana": "チンブ"
+    },
+    {
+      "index": 687,
+      "name_ja": "陳蘭",
+      "reading_katakana": "チンラン"
+    },
+    {
+      "index": 688,
+      "name_ja": "陳琳",
+      "reading_katakana": "チンリン"
+    },
+    {
+      "index": 689,
+      "name_ja": "程昱",
+      "reading_katakana": "テイイク"
+    },
+    {
+      "index": 690,
+      "name_ja": "程遠志",
+      "reading_katakana": "テイエンシ"
+    },
+    {
+      "index": 691,
+      "name_ja": "程畿",
+      "reading_katakana": "テイキ"
+    },
+    {
+      "index": 692,
+      "name_ja": "丁儀",
+      "reading_katakana": "テイギ"
+    },
+    {
+      "index": 693,
+      "name_ja": "程銀",
+      "reading_katakana": "テイギン"
+    },
+    {
+      "index": 694,
+      "name_ja": "丁原",
+      "reading_katakana": "テイゲン"
+    },
+    {
+      "index": 695,
+      "name_ja": "丁固",
+      "reading_katakana": "テイコ"
+    },
+    {
+      "index": 696,
+      "name_ja": "鄭渾",
+      "reading_katakana": "テイコン"
+    },
+    {
+      "index": 697,
+      "name_ja": "程咨",
+      "reading_katakana": "テイシ"
+    },
+    {
+      "index": 698,
+      "name_ja": "鄭泉",
+      "reading_katakana": "テイセン"
+    },
+    {
+      "index": 699,
+      "name_ja": "鄭泰",
+      "reading_katakana": "テイタイ"
+    },
+    {
+      "index": 700,
+      "name_ja": "鄭冑",
+      "reading_katakana": "テイチュウ"
+    },
+    {
+      "index": 701,
+      "name_ja": "鄭度",
+      "reading_katakana": "テイド"
+    },
+    {
+      "index": 702,
+      "name_ja": "丁斐",
+      "reading_katakana": "テイヒ"
+    },
+    {
+      "index": 703,
+      "name_ja": "程普",
+      "reading_katakana": "テイフ"
+    },
+    {
+      "index": 704,
+      "name_ja": "程武",
+      "reading_katakana": "テイブ"
+    },
+    {
+      "index": 705,
+      "name_ja": "程秉",
+      "reading_katakana": "テイヘイ"
+    },
+    {
+      "index": 706,
+      "name_ja": "丁奉",
+      "reading_katakana": "テイホウ"
+    },
+    {
+      "index": 707,
+      "name_ja": "丁封",
+      "reading_katakana": "テイホウ"
+    },
+    {
+      "index": 708,
+      "name_ja": "徹里吉",
+      "reading_katakana": "テツリキツ"
+    },
+    {
+      "index": 709,
+      "name_ja": "典韋",
+      "reading_katakana": "テンイ"
+    },
+    {
+      "index": 710,
+      "name_ja": "田楷",
+      "reading_katakana": "デンカイ"
+    },
+    {
+      "index": 711,
+      "name_ja": "田続",
+      "reading_katakana": "デンショク"
+    },
+    {
+      "index": 712,
+      "name_ja": "田疇",
+      "reading_katakana": "デンチュウ"
+    },
+    {
+      "index": 713,
+      "name_ja": "田豊",
+      "reading_katakana": "デンポウ"
+    },
+    {
+      "index": 714,
+      "name_ja": "典満",
+      "reading_katakana": "テンマン"
+    },
+    {
+      "index": 715,
+      "name_ja": "田豫",
+      "reading_katakana": "デンヨ"
+    },
+    {
+      "index": 716,
+      "name_ja": "土安",
+      "reading_katakana": "ドアン"
+    },
+    {
+      "index": 717,
+      "name_ja": "滕胤",
+      "reading_katakana": "トウイン"
+    },
+    {
+      "index": 718,
+      "name_ja": "董允",
+      "reading_katakana": "トウイン"
+    },
+    {
+      "index": 719,
+      "name_ja": "董和",
+      "reading_katakana": "トウカ"
+    },
+    {
+      "index": 720,
+      "name_ja": "鄧艾",
+      "reading_katakana": "トウガイ"
+    },
+    {
+      "index": 721,
+      "name_ja": "鄧義",
+      "reading_katakana": "トウギ"
+    },
+    {
+      "index": 722,
+      "name_ja": "党均",
+      "reading_katakana": "トウキン"
+    },
+    {
+      "index": 723,
+      "name_ja": "董厥",
+      "reading_katakana": "トウケツ"
+    },
+    {
+      "index": 724,
+      "name_ja": "陶謙",
+      "reading_katakana": "トウケン"
+    },
+    {
+      "index": 725,
+      "name_ja": "鄧賢",
+      "reading_katakana": "トウケン"
+    },
+    {
+      "index": 726,
+      "name_ja": "陶コウ",
+      "reading_katakana": "トウコウ"
+    },
+    {
+      "index": 727,
+      "name_ja": "董コウ",
+      "reading_katakana": "トウコウ"
+    },
+    {
+      "index": 728,
+      "name_ja": "董衡",
+      "reading_katakana": "トウコウ"
+    },
+    {
+      "index": 729,
+      "name_ja": "鄧芝",
+      "reading_katakana": "トウシ"
+    },
+    {
+      "index": 730,
+      "name_ja": "唐咨",
+      "reading_katakana": "トウシ"
+    },
+    {
+      "index": 731,
+      "name_ja": "董襲",
+      "reading_katakana": "トウシュウ"
+    },
+    {
+      "index": 732,
+      "name_ja": "滕脩",
+      "reading_katakana": "トウシュウ"
+    },
+    {
+      "index": 733,
+      "name_ja": "陶濬",
+      "reading_katakana": "トウシュン"
+    },
+    {
+      "index": 734,
+      "name_ja": "董承",
+      "reading_katakana": "トウショウ"
+    },
+    {
+      "index": 735,
+      "name_ja": "董昭",
+      "reading_katakana": "トウショウ"
+    },
+    {
+      "index": 736,
+      "name_ja": "董卓",
+      "reading_katakana": "トウタク"
+    },
+    {
+      "index": 737,
+      "name_ja": "鄧忠",
+      "reading_katakana": "トウチュウ"
+    },
+    {
+      "index": 738,
+      "name_ja": "董朝",
+      "reading_katakana": "トウチョウ"
+    },
+    {
+      "index": 739,
+      "name_ja": "董荼那",
+      "reading_katakana": "トウトナ"
+    },
+    {
+      "index": 740,
+      "name_ja": "トウ頓",
+      "reading_katakana": "トウトン"
+    },
+    {
+      "index": 741,
+      "name_ja": "董白",
+      "reading_katakana": "トウハク"
+    },
+    {
+      "index": 742,
+      "name_ja": "唐彬",
+      "reading_katakana": "トウヒン"
+    },
+    {
+      "index": 743,
+      "name_ja": "董旻",
+      "reading_katakana": "トウビン"
+    },
+    {
+      "index": 744,
+      "name_ja": "董扶",
+      "reading_katakana": "トウフ"
+    },
+    {
+      "index": 745,
+      "name_ja": "鄧方",
+      "reading_katakana": "トウホウ"
+    },
+    {
+      "index": 746,
+      "name_ja": "鄧茂",
+      "reading_katakana": "トウモ"
+    },
+    {
+      "index": 747,
+      "name_ja": "鄧龍",
+      "reading_katakana": "トウリュウ"
+    },
+    {
+      "index": 748,
+      "name_ja": "杜畿",
+      "reading_katakana": "トキ"
+    },
+    {
+      "index": 749,
+      "name_ja": "杜瓊",
+      "reading_katakana": "トケイ"
+    },
+    {
+      "index": 750,
+      "name_ja": "杜氏",
+      "reading_katakana": "トシ"
+    },
+    {
+      "index": 751,
+      "name_ja": "杜襲",
+      "reading_katakana": "トシュウ"
+    },
+    {
+      "index": 752,
+      "name_ja": "杜預",
+      "reading_katakana": "ドヨ"
+    },
+    {
+      "index": 753,
+      "name_ja": "甯随",
+      "reading_katakana": "ネイズイ"
+    },
+    {
+      "index": 754,
+      "name_ja": "裴元紹",
+      "reading_katakana": "ハイゲンショウ"
+    },
+    {
+      "index": 755,
+      "name_ja": "裴秀",
+      "reading_katakana": "ハイシュウ"
+    },
+    {
+      "index": 756,
+      "name_ja": "裴潜",
+      "reading_katakana": "ハイセン"
+    },
+    {
+      "index": 757,
+      "name_ja": "馬雲リョク",
+      "reading_katakana": "バウンリョク"
+    },
+    {
+      "index": 758,
+      "name_ja": "馬延",
+      "reading_katakana": "バエン"
+    },
+    {
+      "index": 759,
+      "name_ja": "馬玩",
+      "reading_katakana": "バガン"
+    },
+    {
+      "index": 760,
+      "name_ja": "馬休",
+      "reading_katakana": "バキュウ"
+    },
+    {
+      "index": 761,
+      "name_ja": "馬鈞",
+      "reading_katakana": "バキン"
+    },
+    {
+      "index": 762,
+      "name_ja": "波才",
+      "reading_katakana": "ハサイ"
+    },
+    {
+      "index": 763,
+      "name_ja": "馬日テイ",
+      "reading_katakana": "バジツテイ"
+    },
+    {
+      "index": 764,
+      "name_ja": "馬遵",
+      "reading_katakana": "バジュン"
+    },
+    {
+      "index": 765,
+      "name_ja": "馬謖",
+      "reading_katakana": "バショク"
+    },
+    {
+      "index": 766,
+      "name_ja": "馬岱",
+      "reading_katakana": "バタイ"
+    },
+    {
+      "index": 767,
+      "name_ja": "馬忠",
+      "reading_katakana": "バチュウ"
+    },
+    {
+      "index": 768,
+      "name_ja": "馬忠",
+      "reading_katakana": "バチュウ"
+    },
+    {
+      "index": 769,
+      "name_ja": "馬超",
+      "reading_katakana": "バチョウ"
+    },
+    {
+      "index": 770,
+      "name_ja": "馬鉄",
+      "reading_katakana": "バテツ"
+    },
+    {
+      "index": 771,
+      "name_ja": "馬騰",
+      "reading_katakana": "バトウ"
+    },
+    {
+      "index": 772,
+      "name_ja": "馬バク",
+      "reading_katakana": "ババク"
+    },
+    {
+      "index": 773,
+      "name_ja": "馬隆",
+      "reading_katakana": "バリュウ"
+    },
+    {
+      "index": 774,
+      "name_ja": "馬良",
+      "reading_katakana": "バリョウ"
+    },
+    {
+      "index": 775,
+      "name_ja": "万彧",
+      "reading_katakana": "バンイク"
+    },
+    {
+      "index": 776,
+      "name_ja": "范彊",
+      "reading_katakana": "ハンキョウ"
+    },
+    {
+      "index": 777,
+      "name_ja": "樊建",
+      "reading_katakana": "ハンケン"
+    },
+    {
+      "index": 778,
+      "name_ja": "樊氏",
+      "reading_katakana": "ハンシ"
+    },
+    {
+      "index": 779,
+      "name_ja": "潘氏",
+      "reading_katakana": "ハンシ"
+    },
+    {
+      "index": 780,
+      "name_ja": "潘濬",
+      "reading_katakana": "ハンシュン"
+    },
+    {
+      "index": 781,
+      "name_ja": "潘璋",
+      "reading_katakana": "ハンショウ"
+    },
+    {
+      "index": 782,
+      "name_ja": "樊稠",
+      "reading_katakana": "ハンチュウ"
+    },
+    {
+      "index": 783,
+      "name_ja": "樊能",
+      "reading_katakana": "ハンノウ"
+    },
+    {
+      "index": 784,
+      "name_ja": "范方",
+      "reading_katakana": "ハンホウ"
+    },
+    {
+      "index": 785,
+      "name_ja": "潘鳳",
+      "reading_katakana": "ハンポウ"
+    },
+    {
+      "index": 786,
+      "name_ja": "潘臨",
+      "reading_katakana": "ハンリン"
+    },
+    {
+      "index": 787,
+      "name_ja": "費イ",
+      "reading_katakana": "ヒイ"
+    },
+    {
+      "index": 788,
+      "name_ja": "卑衍",
+      "reading_katakana": "ヒエン"
+    },
+    {
+      "index": 789,
+      "name_ja": "費観",
+      "reading_katakana": "ヒカン"
+    },
+    {
+      "index": 790,
+      "name_ja": "費桟",
+      "reading_katakana": "ヒサン"
+    },
+    {
+      "index": 791,
+      "name_ja": "費詩",
+      "reading_katakana": "ヒシ"
+    },
+    {
+      "index": 792,
+      "name_ja": "糜氏",
+      "reading_katakana": "ビシ"
+    },
+    {
+      "index": 793,
+      "name_ja": "糜竺",
+      "reading_katakana": "ビジク"
+    },
+    {
+      "index": 794,
+      "name_ja": "畢軌",
+      "reading_katakana": "ヒツキ"
+    },
+    {
+      "index": 795,
+      "name_ja": "糜芳",
+      "reading_katakana": "ビホウ"
+    },
+    {
+      "index": 796,
+      "name_ja": "費耀",
+      "reading_katakana": "ヒヨウ"
+    },
+    {
+      "index": 797,
+      "name_ja": "関純",
+      "reading_katakana": "カンジュン"
+    },
+    {
+      "index": 798,
+      "name_ja": "武安国",
+      "reading_katakana": "ブアンコク"
+    },
+    {
+      "index": 799,
+      "name_ja": "馮楷",
+      "reading_katakana": "フウカイ"
+    },
+    {
+      "index": 800,
+      "name_ja": "馮氏",
+      "reading_katakana": "フウシ"
+    },
+    {
+      "index": 801,
+      "name_ja": "馮習",
+      "reading_katakana": "フウシュウ"
+    },
+    {
+      "index": 802,
+      "name_ja": "傅嬰",
+      "reading_katakana": "フエイ"
+    },
+    {
+      "index": 803,
+      "name_ja": "傅カ",
+      "reading_katakana": "フカ"
+    },
+    {
+      "index": 804,
+      "name_ja": "傅幹",
+      "reading_katakana": "フカン"
+    },
+    {
+      "index": 805,
+      "name_ja": "傅士仁",
+      "reading_katakana": "フシジン"
+    },
+    {
+      "index": 806,
+      "name_ja": "傅僉",
+      "reading_katakana": "フセン"
+    },
+    {
+      "index": 807,
+      "name_ja": "傅巽",
+      "reading_katakana": "フソン"
+    },
+    {
+      "index": 808,
+      "name_ja": "傅トウ",
+      "reading_katakana": "フトウ"
+    },
+    {
+      "index": 809,
+      "name_ja": "文鴦",
+      "reading_katakana": "ブンオウ"
+    },
+    {
+      "index": 810,
+      "name_ja": "文欽",
+      "reading_katakana": "ブンキン"
+    },
+    {
+      "index": 811,
+      "name_ja": "文虎",
+      "reading_katakana": "ブンコ"
+    },
+    {
+      "index": 812,
+      "name_ja": "文醜",
+      "reading_katakana": "ブンシュウ"
+    },
+    {
+      "index": 813,
+      "name_ja": "文則",
+      "reading_katakana": "ブンソク"
+    },
+    {
+      "index": 814,
+      "name_ja": "文聘",
+      "reading_katakana": "ブンペイ"
+    },
+    {
+      "index": 815,
+      "name_ja": "卞喜",
+      "reading_katakana": "ベンキ"
+    },
+    {
+      "index": 816,
+      "name_ja": "卞氏",
+      "reading_katakana": "ベンシ"
+    },
+    {
+      "index": 817,
+      "name_ja": "ホウイク",
+      "reading_katakana": "ホウイク"
+    },
+    {
+      "index": 818,
+      "name_ja": "方悦",
+      "reading_katakana": "ホウエツ"
+    },
+    {
+      "index": 819,
+      "name_ja": "趙娥",
+      "reading_katakana": "チョウガ"
+    },
+    {
+      "index": 820,
+      "name_ja": "ホウ会",
+      "reading_katakana": "ホウカイ"
+    },
+    {
+      "index": 821,
+      "name_ja": "忙牙長",
+      "reading_katakana": "ボウガチョウ"
+    },
+    {
+      "index": 822,
+      "name_ja": "逢紀",
+      "reading_katakana": "ホウキ"
+    },
+    {
+      "index": 823,
+      "name_ja": "ホウ羲",
+      "reading_katakana": "ホウギ"
+    },
+    {
+      "index": 824,
+      "name_ja": "鮑勛",
+      "reading_katakana": "ホウクン"
+    },
+    {
+      "index": 825,
+      "name_ja": "鮑三娘",
+      "reading_katakana": "ホウサンジョウ"
+    },
+    {
+      "index": 826,
+      "name_ja": "鮑信",
+      "reading_katakana": "ホウシン"
+    },
+    {
+      "index": 827,
+      "name_ja": "法正",
+      "reading_katakana": "ホウセイ"
+    },
+    {
+      "index": 828,
+      "name_ja": "ホウ統",
+      "reading_katakana": "ホウトウ"
+    },
+    {
+      "index": 829,
+      "name_ja": "鮑韜",
+      "reading_katakana": "ホウトウ"
+    },
+    {
+      "index": 830,
+      "name_ja": "ホウ徳",
+      "reading_katakana": "ホウトク"
+    },
+    {
+      "index": 831,
+      "name_ja": "鮑隆",
+      "reading_katakana": "ホウリュウ"
+    },
+    {
+      "index": 832,
+      "name_ja": "ホウ林",
+      "reading_katakana": "ホウリン"
+    },
+    {
+      "index": 833,
+      "name_ja": "歩協",
+      "reading_katakana": "ホキョウ"
+    },
+    {
+      "index": 834,
+      "name_ja": "輔匡",
+      "reading_katakana": "ホキョウ"
+    },
+    {
+      "index": 835,
+      "name_ja": "穆順",
+      "reading_katakana": "ボクジュン"
+    },
+    {
+      "index": 836,
+      "name_ja": "濮陽興",
+      "reading_katakana": "ボクヨウコウ"
+    },
+    {
+      "index": 837,
+      "name_ja": "木鹿大王",
+      "reading_katakana": "ボクロクダイオウ"
+    },
+    {
+      "index": 838,
+      "name_ja": "歩シツ",
+      "reading_katakana": "ホシツ"
+    },
+    {
+      "index": 839,
+      "name_ja": "歩闡",
+      "reading_katakana": "ホセン"
+    },
+    {
+      "index": 840,
+      "name_ja": "歩度根",
+      "reading_katakana": "ホドコン"
+    },
+    {
+      "index": 841,
+      "name_ja": "歩練師",
+      "reading_katakana": "ホレンシ"
+    },
+    {
+      "index": 842,
+      "name_ja": "満寵",
+      "reading_katakana": "マンチョウ"
+    },
+    {
+      "index": 843,
+      "name_ja": "迷当大王",
+      "reading_katakana": "メイトウダイオウ"
+    },
+    {
+      "index": 844,
+      "name_ja": "毛カイ",
+      "reading_katakana": "モウカイ"
+    },
+    {
+      "index": 845,
+      "name_ja": "孟獲",
+      "reading_katakana": "モウカク"
+    },
+    {
+      "index": 846,
+      "name_ja": "孟建",
+      "reading_katakana": "モウケン"
+    },
+    {
+      "index": 847,
+      "name_ja": "孟光",
+      "reading_katakana": "モウコウ"
+    },
+    {
+      "index": 848,
+      "name_ja": "孟宗",
+      "reading_katakana": "モウソウ"
+    },
+    {
+      "index": 849,
+      "name_ja": "孟達",
+      "reading_katakana": "モウタツ"
+    },
+    {
+      "index": 850,
+      "name_ja": "孟優",
+      "reading_katakana": "モウユウ"
+    },
+    {
+      "index": 851,
+      "name_ja": "游楚",
+      "reading_katakana": "ユウソ"
+    },
+    {
+      "index": 852,
+      "name_ja": "尤突",
+      "reading_katakana": "ユウトツ"
+    },
+    {
+      "index": 853,
+      "name_ja": "兪渉",
+      "reading_katakana": "ユショウ"
+    },
+    {
+      "index": 854,
+      "name_ja": "楊懐",
+      "reading_katakana": "ヨウカイ"
+    },
+    {
+      "index": 855,
+      "name_ja": "雍ガイ",
+      "reading_katakana": "ヨウガイ"
+    },
+    {
+      "index": 856,
+      "name_ja": "楊儀",
+      "reading_katakana": "ヨウギ"
+    },
+    {
+      "index": 857,
+      "name_ja": "楊戯",
+      "reading_katakana": "ヨウギ"
+    },
+    {
+      "index": 858,
+      "name_ja": "羊徽瑜",
+      "reading_katakana": "ヨウキユ"
+    },
+    {
+      "index": 859,
+      "name_ja": "楊欣",
+      "reading_katakana": "ヨウキン"
+    },
+    {
+      "index": 860,
+      "name_ja": "羊コ",
+      "reading_katakana": "ヨウコ"
+    },
+    {
+      "index": 861,
+      "name_ja": "楊弘",
+      "reading_katakana": "ヨウコウ"
+    },
+    {
+      "index": 862,
+      "name_ja": "楊昂",
+      "reading_katakana": "ヨウコウ"
+    },
+    {
+      "index": 863,
+      "name_ja": "楊洪",
+      "reading_katakana": "ヨウコウ"
+    },
+    {
+      "index": 864,
+      "name_ja": "楊氏",
+      "reading_katakana": "ヨウシ"
+    },
+    {
+      "index": 865,
+      "name_ja": "楊醜",
+      "reading_katakana": "ヨウシュウ"
+    },
+    {
+      "index": 866,
+      "name_ja": "楊脩",
+      "reading_katakana": "ヨウシュウ"
+    },
+    {
+      "index": 867,
+      "name_ja": "楊秋",
+      "reading_katakana": "ヨウシュウ"
+    },
+    {
+      "index": 868,
+      "name_ja": "楊松",
+      "reading_katakana": "ヨウショウ"
+    },
+    {
+      "index": 869,
+      "name_ja": "楊任",
+      "reading_katakana": "ヨウジン"
+    },
+    {
+      "index": 870,
+      "name_ja": "楊済",
+      "reading_katakana": "ヨウセイ"
+    },
+    {
+      "index": 871,
+      "name_ja": "楊祚",
+      "reading_katakana": "ヨウソ"
+    },
+    {
+      "index": 872,
+      "name_ja": "姚チュウ",
+      "reading_katakana": "ヨウチュウ"
+    },
+    {
+      "index": 873,
+      "name_ja": "楊肇",
+      "reading_katakana": "ヨウチョウ"
+    },
+    {
+      "index": 874,
+      "name_ja": "楊定",
+      "reading_katakana": "ヨウテイ"
+    },
+    {
+      "index": 875,
+      "name_ja": "羊ドウ",
+      "reading_katakana": "ヨウドウ"
+    },
+    {
+      "index": 876,
+      "name_ja": "楊柏",
+      "reading_katakana": "ヨウハク"
+    },
+    {
+      "index": 877,
+      "name_ja": "楊彪",
+      "reading_katakana": "ヨウヒョウ"
+    },
+    {
+      "index": 878,
+      "name_ja": "楊敏",
+      "reading_katakana": "ヨウビン"
+    },
+    {
+      "index": 879,
+      "name_ja": "楊阜",
+      "reading_katakana": "ヨウフ"
+    },
+    {
+      "index": 880,
+      "name_ja": "楊奉",
+      "reading_katakana": "ヨウホウ"
+    },
+    {
+      "index": 881,
+      "name_ja": "楊鋒",
+      "reading_katakana": "ヨウホウ"
+    },
+    {
+      "index": 882,
+      "name_ja": "楊密",
+      "reading_katakana": "ヨウミツ"
+    },
+    {
+      "index": 883,
+      "name_ja": "頼恭",
+      "reading_katakana": "ライキョウ"
+    },
+    {
+      "index": 884,
+      "name_ja": "雷緒",
+      "reading_katakana": "ライショ"
+    },
+    {
+      "index": 885,
+      "name_ja": "雷叙",
+      "reading_katakana": "ライジョ"
+    },
+    {
+      "index": 886,
+      "name_ja": "雷銅",
+      "reading_katakana": "ライドウ"
+    },
+    {
+      "index": 887,
+      "name_ja": "雷薄",
+      "reading_katakana": "ライハク"
+    },
+    {
+      "index": 888,
+      "name_ja": "来敏",
+      "reading_katakana": "ライビン"
+    },
+    {
+      "index": 889,
+      "name_ja": "駱統",
+      "reading_katakana": "ラクトウ"
+    },
+    {
+      "index": 890,
+      "name_ja": "羅憲",
+      "reading_katakana": "ラケン"
+    },
+    {
+      "index": 891,
+      "name_ja": "李異",
+      "reading_katakana": "リイ"
+    },
+    {
+      "index": 892,
+      "name_ja": "李恢",
+      "reading_katakana": "リカイ"
+    },
+    {
+      "index": 893,
+      "name_ja": "李カク",
+      "reading_katakana": "リカク"
+    },
+    {
+      "index": 894,
+      "name_ja": "李楽",
+      "reading_katakana": "リガク"
+    },
+    {
+      "index": 895,
+      "name_ja": "李堪",
+      "reading_katakana": "リカン"
+    },
+    {
+      "index": 896,
+      "name_ja": "李キン",
+      "reading_katakana": "リキン"
+    },
+    {
+      "index": 897,
+      "name_ja": "陸胤",
+      "reading_katakana": "リクイン"
+    },
+    {
+      "index": 898,
+      "name_ja": "陸鬱生",
+      "reading_katakana": "リクウツセイ"
+    },
+    {
+      "index": 899,
+      "name_ja": "陸凱",
+      "reading_katakana": "リクガイ"
+    },
+    {
+      "index": 900,
+      "name_ja": "陸抗",
+      "reading_katakana": "リクコウ"
+    },
+    {
+      "index": 901,
+      "name_ja": "陸績",
+      "reading_katakana": "リクセキ"
+    },
+    {
+      "index": 902,
+      "name_ja": "陸遜",
+      "reading_katakana": "リクソン"
+    },
+    {
+      "index": 903,
+      "name_ja": "陸瑁",
+      "reading_katakana": "リクボウ"
+    },
+    {
+      "index": 904,
+      "name_ja": "李厳",
+      "reading_katakana": "リゲン"
+    },
+    {
+      "index": 905,
+      "name_ja": "李衡",
+      "reading_katakana": "リコウ"
+    },
+    {
+      "index": 906,
+      "name_ja": "李氏",
+      "reading_katakana": "リシ"
+    },
+    {
+      "index": 907,
+      "name_ja": "李儒",
+      "reading_katakana": "リジュ"
+    },
+    {
+      "index": 908,
+      "name_ja": "李粛",
+      "reading_katakana": "リシュク"
+    },
+    {
+      "index": 909,
+      "name_ja": "李勝",
+      "reading_katakana": "リショウ"
+    },
+    {
+      "index": 910,
+      "name_ja": "李邵",
+      "reading_katakana": "リショウ"
+    },
+    {
+      "index": 911,
+      "name_ja": "李通",
+      "reading_katakana": "リツウ"
+    },
+    {
+      "index": 912,
+      "name_ja": "李朝",
+      "reading_katakana": "リチョウ"
+    },
+    {
+      "index": 913,
+      "name_ja": "李典",
+      "reading_katakana": "リテン"
+    },
+    {
+      "index": 914,
+      "name_ja": "李孚",
+      "reading_katakana": "リフ"
+    },
+    {
+      "index": 915,
+      "name_ja": "李福",
+      "reading_katakana": "リフク"
+    },
+    {
+      "index": 916,
+      "name_ja": "李輔",
+      "reading_katakana": "リホ"
+    },
+    {
+      "index": 917,
+      "name_ja": "李豊",
+      "reading_katakana": "リホウ"
+    },
+    {
+      "index": 918,
+      "name_ja": "李豊",
+      "reading_katakana": "リホウ"
+    },
+    {
+      "index": 919,
+      "name_ja": "李豊",
+      "reading_katakana": "リホウ"
+    },
+    {
+      "index": 920,
+      "name_ja": "李封",
+      "reading_katakana": "リホウ"
+    },
+    {
+      "index": 921,
+      "name_ja": "李密",
+      "reading_katakana": "リミツ"
+    },
+    {
+      "index": 922,
+      "name_ja": "李蒙",
+      "reading_katakana": "リモウ"
+    },
+    {
+      "index": 923,
+      "name_ja": "柳隠",
+      "reading_katakana": "リュウイン"
+    },
+    {
+      "index": 924,
+      "name_ja": "劉永",
+      "reading_katakana": "リュウエイ"
+    },
+    {
+      "index": 925,
+      "name_ja": "劉焉",
+      "reading_katakana": "リュウエン"
+    },
+    {
+      "index": 926,
+      "name_ja": "劉延",
+      "reading_katakana": "リュウエン"
+    },
+    {
+      "index": 927,
+      "name_ja": "劉和",
+      "reading_katakana": "リュウカ"
+    },
+    {
+      "index": 928,
+      "name_ja": "劉カイ",
+      "reading_katakana": "リュウカイ"
+    },
+    {
+      "index": 929,
+      "name_ja": "劉琦",
+      "reading_katakana": "リュウキ"
+    },
+    {
+      "index": 930,
+      "name_ja": "劉基",
+      "reading_katakana": "リュウキ"
+    },
+    {
+      "index": 931,
+      "name_ja": "柳毅",
+      "reading_katakana": "リュウキ"
+    },
+    {
+      "index": 932,
+      "name_ja": "劉虞",
+      "reading_katakana": "リュウグ"
+    },
+    {
+      "index": 933,
+      "name_ja": "劉勳",
+      "reading_katakana": "リュウクン"
+    },
+    {
+      "index": 934,
+      "name_ja": "劉賢",
+      "reading_katakana": "リュウケン"
+    },
+    {
+      "index": 935,
+      "name_ja": "留賛",
+      "reading_katakana": "リュウサン"
+    },
+    {
+      "index": 936,
+      "name_ja": "劉氏",
+      "reading_katakana": "リュウシ"
+    },
+    {
+      "index": 937,
+      "name_ja": "劉循",
+      "reading_katakana": "リュウジュン"
+    },
+    {
+      "index": 938,
+      "name_ja": "劉璋",
+      "reading_katakana": "リュウショウ"
+    },
+    {
+      "index": 939,
+      "name_ja": "劉劭",
+      "reading_katakana": "リュウショウ"
+    },
+    {
+      "index": 940,
+      "name_ja": "劉丞",
+      "reading_katakana": "リュウジョウ"
+    },
+    {
+      "index": 941,
+      "name_ja": "劉諶",
+      "reading_katakana": "リュウシン"
+    },
+    {
+      "index": 942,
+      "name_ja": "劉靖",
+      "reading_katakana": "リュウセイ"
+    },
+    {
+      "index": 943,
+      "name_ja": "劉セン",
+      "reading_katakana": "リュウセン"
+    },
+    {
+      "index": 944,
+      "name_ja": "劉先",
+      "reading_katakana": "リュウセン"
+    },
+    {
+      "index": 945,
+      "name_ja": "劉禅",
+      "reading_katakana": "リュウゼン"
+    },
+    {
+      "index": 946,
+      "name_ja": "劉琮",
+      "reading_katakana": "リュウソウ"
+    },
+    {
+      "index": 947,
+      "name_ja": "劉岱",
+      "reading_katakana": "リュウタイ"
+    },
+    {
+      "index": 948,
+      "name_ja": "劉冑",
+      "reading_katakana": "リュウチュウ"
+    },
+    {
+      "index": 949,
+      "name_ja": "劉度",
+      "reading_katakana": "リュウド"
+    },
+    {
+      "index": 950,
+      "name_ja": "劉巴",
+      "reading_katakana": "リュウハ"
+    },
+    {
+      "index": 951,
+      "name_ja": "劉磐",
+      "reading_katakana": "リュウバン"
+    },
+    {
+      "index": 952,
+      "name_ja": "劉備",
+      "reading_katakana": "リュウビ"
+    },
+    {
+      "index": 953,
+      "name_ja": "劉表",
+      "reading_katakana": "リュウヒョウ"
+    },
+    {
+      "index": 954,
+      "name_ja": "劉豹",
+      "reading_katakana": "リュウヒョウ"
+    },
+    {
+      "index": 955,
+      "name_ja": "劉敏",
+      "reading_katakana": "リュウビン"
+    },
+    {
+      "index": 956,
+      "name_ja": "劉馥",
+      "reading_katakana": "リュウフク"
+    },
+    {
+      "index": 957,
+      "name_ja": "留平",
+      "reading_katakana": "リュウヘイ"
+    },
+    {
+      "index": 958,
+      "name_ja": "劉辟",
+      "reading_katakana": "リュウヘキ"
+    },
+    {
+      "index": 959,
+      "name_ja": "劉封",
+      "reading_katakana": "リュウホウ"
+    },
+    {
+      "index": 960,
+      "name_ja": "劉放",
+      "reading_katakana": "リュウホウ"
+    },
+    {
+      "index": 961,
+      "name_ja": "劉瑁",
+      "reading_katakana": "リュウボウ"
+    },
+    {
+      "index": 962,
+      "name_ja": "劉曄",
+      "reading_katakana": "リュウヨウ"
+    },
+    {
+      "index": 963,
+      "name_ja": "劉ヨウ",
+      "reading_katakana": "リュウヨウ"
+    },
+    {
+      "index": 964,
+      "name_ja": "劉理",
+      "reading_katakana": "リュウリ"
+    },
+    {
+      "index": 965,
+      "name_ja": "留略",
+      "reading_katakana": "リュウリャク"
+    },
+    {
+      "index": 966,
+      "name_ja": "呂威コウ",
+      "reading_katakana": "リョイコウ"
+    },
+    {
+      "index": 967,
+      "name_ja": "呂壱",
+      "reading_katakana": "リョイツ"
+    },
+    {
+      "index": 968,
+      "name_ja": "廖化",
+      "reading_katakana": "リョウカ"
+    },
+    {
+      "index": 969,
+      "name_ja": "梁興",
+      "reading_katakana": "リョウコウ"
+    },
+    {
+      "index": 970,
+      "name_ja": "梁綱",
+      "reading_katakana": "リョウコウ"
+    },
+    {
+      "index": 971,
+      "name_ja": "梁習",
+      "reading_katakana": "リョウシュウ"
+    },
+    {
+      "index": 972,
+      "name_ja": "梁緒",
+      "reading_katakana": "リョウショ"
+    },
+    {
+      "index": 973,
+      "name_ja": "凌操",
+      "reading_katakana": "リョウソウ"
+    },
+    {
+      "index": 974,
+      "name_ja": "凌統",
+      "reading_katakana": "リョウトウ"
+    },
+    {
+      "index": 975,
+      "name_ja": "涼茂",
+      "reading_katakana": "リョウモ"
+    },
+    {
+      "index": 976,
+      "name_ja": "廖立",
+      "reading_katakana": "リョウリツ"
+    },
+    {
+      "index": 977,
+      "name_ja": "呂凱",
+      "reading_katakana": "リョガイ"
+    },
+    {
+      "index": 978,
+      "name_ja": "呂乂",
+      "reading_katakana": "リョガイ"
+    },
+    {
+      "index": 979,
+      "name_ja": "呂拠",
+      "reading_katakana": "リョキョ"
+    },
+    {
+      "index": 980,
+      "name_ja": "呂虔",
+      "reading_katakana": "リョケン"
+    },
+    {
+      "index": 981,
+      "name_ja": "呂建",
+      "reading_katakana": "リョケン"
+    },
+    {
+      "index": 982,
+      "name_ja": "呂公",
+      "reading_katakana": "リョコウ"
+    },
+    {
+      "index": 983,
+      "name_ja": "呂曠",
+      "reading_katakana": "リョコウ"
+    },
+    {
+      "index": 984,
+      "name_ja": "呂翔",
+      "reading_katakana": "リョショウ"
+    },
+    {
+      "index": 985,
+      "name_ja": "呂岱",
+      "reading_katakana": "リョタイ"
+    },
+    {
+      "index": 986,
+      "name_ja": "呂範",
+      "reading_katakana": "リョハン"
+    },
+    {
+      "index": 987,
+      "name_ja": "呂布",
+      "reading_katakana": "リョフ"
+    },
+    {
+      "index": 988,
+      "name_ja": "呂蒙",
+      "reading_katakana": "リョモウ"
+    },
+    {
+      "index": 989,
+      "name_ja": "呂玲綺",
+      "reading_katakana": "リョレイキ"
+    },
+    {
+      "index": 990,
+      "name_ja": "倫直",
+      "reading_katakana": "リンチョク"
+    },
+    {
+      "index": 991,
+      "name_ja": "令狐愚",
+      "reading_katakana": "レイコグ"
+    },
+    {
+      "index": 992,
+      "name_ja": "冷苞",
+      "reading_katakana": "レイホウ"
+    },
+    {
+      "index": 993,
+      "name_ja": "盧毓",
+      "reading_katakana": "ロイク"
+    },
+    {
+      "index": 994,
+      "name_ja": "婁圭",
+      "reading_katakana": "ロウケイ"
+    },
+    {
+      "index": 995,
+      "name_ja": "楼玄",
+      "reading_katakana": "ロウゲン"
+    },
+    {
+      "index": 996,
+      "name_ja": "楼班",
+      "reading_katakana": "ロウハン"
+    },
+    {
+      "index": 997,
+      "name_ja": "魯粛",
+      "reading_katakana": "ロシュク"
+    },
+    {
+      "index": 998,
+      "name_ja": "魯淑",
+      "reading_katakana": "ロシュク"
+    },
+    {
+      "index": 999,
+      "name_ja": "路招",
+      "reading_katakana": "ロショウ"
+    },
+    {
+      "index": 1000,
+      "name_ja": "盧植",
+      "reading_katakana": "ロショク"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:36.429Z"
+}

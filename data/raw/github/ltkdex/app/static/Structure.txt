@@ -1,0 +1,29 @@
+Hero Cards
+  -Name
+  -Allegiance
+  -Title
+  -Gender
+  -Health Point
+  -Skills
+  -ID
+  -Description
+Deck Cards
+  -Basic
+    -Strike
+    -Dodge
+    -Peach
+    -Wine
+  -Item
+  -Scorll
+Rules
+  -Role-playing
+  -Kingdoms War
+  -1v1
+  -3v3
+Misc.
+  -Glossary
+    -Range
+    -Attack Range
+    -Hand card
+    -Judgement
+    -etc...

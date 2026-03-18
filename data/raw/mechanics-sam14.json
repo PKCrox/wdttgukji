@@ -1,0 +1,101 @@
+{
+  "source": "나무위키 삼국지 14/게임 관련 정보",
+  "url": "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%2014/%EA%B2%8C%EC%9E%84%20%EA%B4%80%EB%A0%A8%20%EC%A0%95%EB%B3%B4",
+  "crawled_at": "2026-03-12",
+  "game": "삼국지 14 (Romance of the Three Kingdoms XIV)",
+  "system": "lord_system",
+  "base_system": "삼국지 9 기반 + 삼국지 11 요소",
+  "stats": {
+    "categories": ["統率(Command/통솔)", "武力(War/무력)", "知力(Intelligence/지력)", "政治(Politics/정치)", "魅力(Charisma/매력)"],
+    "note": "매력 stat restored after being absent in versions 12-13"
+  },
+  "map": {
+    "cities": 46,
+    "strategic_points": 340,
+    "territory_system": "Land coloring system - higher occupancy increases village income",
+    "supply_system": "Armies need connected territory for supply. Severed supply causes morale loss and status effects"
+  },
+  "combat": {
+    "phase": "진행 페이즈 (pre-planned, not real-time)",
+    "commands": ["중계(Waypoint)", "진군(Advance)", "공격(Attack)", "점령(Patrol/Occupy)", "건설(Construct)"],
+    "action_directives": {
+      "enemy_approach": "Attack or Ignore",
+      "retreat": "Allow or Prohibit",
+      "pursuit": "Allow or Prohibit",
+      "post_victory": "Retreat or Hold"
+    },
+    "manual_skills": {
+      "description": "Higher ranks unlock command officer slots (up to 5) for manual skill activation",
+      "max_command_officers": 5
+    },
+    "formations": {
+      "total": 10,
+      "list": [
+        {"name": "어린(魚鱗)", "type": "balanced"},
+        {"name": "봉시(鋒矢)", "type": "offensive"},
+        {"name": "안행(雁行)", "type": "ranged"},
+        {"name": "방원(方圓)", "type": "defensive"},
+        {"name": "학익(鶴翼)", "type": "wide coverage"},
+        {"name": "장사(長蛇)", "type": "mobile"},
+        {"name": "추행(錐行)", "type": "swift/charge"},
+        {"name": "정란(井闌)", "type": "siege weapon"},
+        {"name": "충차(衝車)", "type": "siege weapon"},
+        {"name": "투석(投石)", "type": "siege weapon"}
+      ],
+      "note": "Troop type distinctions (cavalry, spear, archers) removed; replaced by formations. Siege formations required for capturing cities but weak in field combat."
+    },
+    "fortifications": {
+      "defensive": ["토성(Earth Wall)", "석벽(Stone Wall)", "망루(Watchtower)", "투석대(Catapult)"],
+      "traps": ["불함정(Fire Trap)", "화선(Fire Ship)", "구덩이(Pitfall)"],
+      "notes": "Traps have expiration timers. Only buildable on flat terrain."
+    }
+  },
+  "internal_affairs": {
+    "system": "시정(Policy) system - assign officers to 5 departments",
+    "ideology_types": [
+      {"name": "왕도(Balanced)", "emphasis": "All departments equal"},
+      {"name": "아도(Authoritarian)", "emphasis": "Combat/Personnel focused"},
+      {"name": "패도(Hegemonic)", "emphasis": "Support/Combat focused"},
+      {"name": "명리(Legalist)", "emphasis": "Plots/Support priority"},
+      {"name": "예교(Ritualist)", "emphasis": "Internal affairs/Plots"},
+      {"name": "할거(Regional)", "emphasis": "Personnel/Internal affairs"}
+    ],
+    "regional_development": {
+      "types": ["상업(Gold/Commerce)", "농업(Food/Agriculture)", "병영(Soldiers/Barracks)", "치안(Security/Order)"],
+      "notes": "Requires manager assignment. Neglected regions deteriorate."
+    },
+    "city_sizes": {
+      "small": {"gold_cap": 50000, "food_cap": 100000, "soldier_cap": 50000},
+      "large": {"gold_cap": 150000, "food_cap": 300000, "soldier_cap": 100000},
+      "massive": {"gold_cap": 200000, "food_cap": 400000, "soldier_cap": 150000}
+    }
+  },
+  "diplomacy": {
+    "actions": [
+      {"name": "친선(Improve Relations)", "requirement": null},
+      {"name": "동맹(Alliance)", "requirement": "평상(Neutral) or better"},
+      {"name": "파기(Break Alliance)", "requirement": null},
+      {"name": "포로반환(Prisoner Exchange)", "requirement": null},
+      {"name": "공격요청(Request Attack)", "requirement": "우호(Friendly) or better"},
+      {"name": "항복권고(Demand Surrender)", "requirement": "험악(Hostile) or worse"}
+    ]
+  },
+  "schemes": [
+    {"name": "매복지독(Espionage)", "effect": "Spy placement damages enemy development/security; may spawn bandits", "requirement": "책사(Strategist) trait"},
+    {"name": "이간(Sow Discord)", "effect": "Reduces target officer loyalty"},
+    {"name": "지역회유(Regional Recruitment)", "effect": "Convert enemy/unclaimed territories"},
+    {"name": "구호탄랑(Instigation)", "effect": "Turn enemy admins into independents"},
+    {"name": "이호경식(Rumor)", "effect": "Damage enemy faction relations"}
+  ],
+  "ranks": {
+    "progression": ["주자사", "주목", "중랑장", "대장군", "대사마", "공", "왕", "황제"],
+    "benefits": "Higher ranks unlock command officer slots, diplomatic options, military abilities"
+  },
+  "seasonal_events": [
+    {"name": "메뚜기떼(Locust Swarms)", "effect": "Reduce food, lower security"},
+    {"name": "역병(Epidemics)", "effect": "Reduce population, damage troops/health"},
+    {"name": "풍작(Bumper Crops)", "effect": "Increase food income", "season": "Autumn only"}
+  ],
+  "difficulty_levels": 5,
+  "roster_size": 1000
+}

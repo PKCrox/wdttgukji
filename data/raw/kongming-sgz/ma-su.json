@@ -1,0 +1,24 @@
+{
+  "character": "Ma Su",
+  "slug": "ma-su",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "DarkAnthem",
+      "url_translator": "DarkAnthem",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 39 (Shu 9)",
+      "chinese_name": "馬謖",
+      "life_span": "AD 190–228",
+      "source_text": "",
+      "translation": "Ma Su (Youchang)\n馬謖 (幼常)\nLived AD 190–228\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 39 (Shu 9)\nbyDarkAnthem\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744927862' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744927860' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744927806' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nMa Liang’s younger brother Ma Su, style You Chang, joined Liu Bei in Jing Zhou, and later entered Shu with the Former Lord (Liu Bei). He removed to Directors (Ling) of Mian Zhu and Cheng Du, and the governor of Yue Xi. Ma Su was talented and fond of military strategem; Zhuge Liang held high regards of him. The Former Lord said to Zhuge Liang before dying: “Ma Su is not as talented as he seems, do not over use him, give him more observation” Zhuge Liang was hesitant; he appointed Ma Su as his Can Jun (advisor). When he talked to Ma Su about various affairs, they talked from day to night.\nIn the sixth year of Jian Xing (AD 228), Zhuge Liang led his troops to Qi Shan. At the time, Zhuge Liang had command of renowned generals such as Wei Yan, Wu Yi, etc, many suggested that these generals were more suitable for the task of vanguard, but Zhuge Liang dismissed the objections and sent Ma Su to lead the army as vanguard. Ma Su battled Zhang He of Wei at Jieting, and was defeated by Zhang He, his troops scattered. With the loss at Jieting, Zhuge Liang could not advance his troops further, therefore he retreated to Han Zhong. Ma Su was imprisoned for his mistake; Zhuge Liang shed tears for Ma Su. Ma Su’s older brother, Ma Liang, died at the age of thirty six, while Ma Su died at the age of thirty nine.",
+      "sections": {
+        "ma-su-youchang": "馬謖 (幼常)\nLived AD 190–228"
+      },
+      "page_title": "Ma Su (Youchang) 馬謖 (幼常) Sanguozhi Biography by DarkAnthem - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 2155,
+      "url": "https://kongming.net/biographies/sanguozhi/Ma-Su/DarkAnthem"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:35:14.651Z",
+  "total_char_count": 2155
+}

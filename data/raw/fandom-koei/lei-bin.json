@@ -1,0 +1,64 @@
+{
+  "name": "Lei Bin",
+  "pageid": 51483,
+  "faction": "Shu",
+  "biographical_info": {
+    "name": "Lei Bin",
+    "image": "Lei Bin 15th Anniversary Artwork (DWEKD).jpg",
+    "caption": "Shin Sangoku Musou 15th Anniversary artwork",
+    "force": "Shu (Story), Other (Category)",
+    "height": "177.8 cm (5' 11\")",
+    "weapon": "Bowgun",
+    "appeared": "Dynasty Warriors: Godseekers",
+    "footnotes": "Original character."
+  },
+  "game_stats": {},
+  "game_appearances": [
+    "Dynasty Warriors 8"
+  ],
+  "sections": [
+    {
+      "heading": "Lead",
+      "level": 1,
+      "content": "Lei Bin (雷斌; onyomi: Rai Hin) is an original character in Dynasty Warriors: Godseekers. His style name is Shībó (onyomi: Shihaku)."
+    },
+    {
+      "heading": "Role in Game",
+      "level": 2,
+      "content": "Lei Bin is Zhao Yun's childhood friend who helps break the seal binding Lixia. He is a fan of heroic exploits and ancient legends, enthusiastically explaining the hotshots of the era to his friend. He travels with Zhao Yun and Lixia to find the latter's mystic gems scattered during her release."
+    },
+    {
+      "heading": "Development",
+      "level": 3,
+      "content": "Lei Bin is included in the game to provide another perspective to the story and prevent romantic interactions between Zhao Yun and Lixia."
+    },
+    {
+      "heading": "Personality",
+      "level": 3,
+      "content": "Armed with a curious and rational mind, Lei Bin is an observant lad."
+    },
+    {
+      "heading": "Voice Actors",
+      "level": 3,
+      "content": "- Makoto Furukawa - Japanese voice"
+    },
+    {
+      "heading": "Gameplay",
+      "level": 2,
+      "content": "Despite wielding a unique weapon, Lei Bin's attacks are mostly derived from the crossbow moveset.\n\nMovement Flexibility: Allows for more mobility by ignoring an enemy unit's zone of control.\n\nApproaching Star (近星; lit. \"Nearing Star\"): Hits a single foe in range. Based on the crossbow moveset's second charge string from Dynasty Warriors 8.\n\nHeartful Star (心星; lit. \"Heart Star\"): Hits a single foe in range. Lowers enemy's mobility by 1. Based on the crossbow moveset's fourth charge string from Dynasty Warriors 8.\n\nSolar Fan (九星扇; lit. \"Flying Star Fan\"): Hits multiple foes in range. Based on the crossbow moveset's fifth charge string from Dynasty Warriors 8.\n\nCosmic Cannon (迸星砲; lit. \"Bursting Star Shot\"): Hits multiple foes in range. Based on the crossbow moveset's sixth charge string from Dynasty Warriors 8.\n\nApproaching Star EX (近星Ex; lit. \"Nearing Star EX\"): Hits a single foe in range. Lowers enemy's defense by 10%. Based on the crossbow moveset's fifth charge string and Lianshi's second EX attack from Dynasty Warriors 8, though the water ripple effects have been omitted.\n\nSolar Fan EX (九星扇Ex; lit. \"Flying Star Fan EX\"): Hits multiple foes in range. Has a chance of paralyzing enemies. Based on the crossbow moveset's fifth charge string and Lianshi's first EX attack from Dynasty Warriors 8, though the latter fires electric arrows on the ground instead.\n\nChaotic Dreams (開物成夢; lit. \"Discovery Realization Dream\"): Hits multiple foes in range. In terms of animation, Lei Bin pulls out a second bowgun and rapidly fires an array of arrows towards his targets.\n\nCreation Blast (志創堅固; lit. \"Spirit Creation Materialization\"): Hits multiple foes in range. Has a chance of fainting enemies. In terms of animation, Lei Bin uses two bowguns to fire several golden projectiles in a semi-radial pattern, then turns around while shooting to make the barrage more circular.\n\nHeavenly Knowledge (天長地究; lit. \"Heaven-Long Earth Studies\"): Hits surrounding foes. Has a chance of paralyzing enemies. Based on Lianshi's Storm Wave Musou attack from Dynasty Warriors 8, though the arrows fired are not water-based.\n\nSynchro Finisher: After finishing a synchronized attack with the whole party, Lei Bin turns around once before firing one last shot at the enemy.\n\nFirst Strike: Increases strength by 50% and mobility by 2 for one turn only.\n\nClose Quarters: Increases defense against close-range attacks, but weakens it against long-range attacks.\n\nRemoteness: Increases defense against long-range attacks, but weakens it against close-range attacks.\n\nSwift Foot: Increases mobility by 1.\n\nFearless Leader: Increases critical hit rate when allied morale is low.\n\nMusou Master: Increases attack strength of Musou attacks.\n\nRelentless: Increases the effect of state reductions when the character attacks the enemy by 5%.\n\nRelentless Duo: Increases the effect of state reductions when the character attacks the enemy by 10%.\n\nRelentless Ultra: Increases the effect of state reductions when the character attacks the enemy by 20%.\n\nStun Effect: Occasionally induces enemies into a stunned state with attacks.\n\nFrighten Effect: Occasionally induces enemies into a frightened state with attacks.\n\nBurn Effect: Occasionally induces enemies into a burnt state with attacks.\n\nFreeze Effect: Occasionally induces enemies into a frozen state with attacks.\n\nShock Effect: Occasionally induces enemies into a shocked state with attacks.\n\nPoison Effect: Occasionally induces enemies into a poisoned state with attacks.\n\nEnfeeble: Reduces the enemy's Musou gauge by 50%.\n\nRecovery: Restores the health of the unit and any allied units within 1 adjacent square by 5% at the start of each turn.\n\nRecovery Duo: Restores the health of the unit and any allied units within 1 adjacent square by 10% at the start of each turn.\n\nRecovery Ultra: Restores the health of the unit and any allied units within 1 adjacent square by 15% at the start of each turn.\n\nPurification: Removes influences from the unit and any allied units within 1 adjacent square with a success rate of 50% at the start of each turn.\n\nStrength Vessel: Increases the strength of the unit and any allied units within 1 adjacent square by 5%.\n\nDefense Vessel: Increases the defense of the unit and any allied units within 1 adjacent square by 5%.\n\nDexterity Vessel: Increases the dexterity of the unit and any allied units within 1 adjacent square by 5%.\n\nAgility Vessel: Increases the agility of the unit and any allied units within 1 adjacent square by 5%.\n\nSpirit Vessel: Increases the spirit of the unit and any allied units within 1 adjacent square by 5%.\n\nFuror: Increases the energy of units in Synchro Mode.\n\nBolt: Increases the mobility of units in Synchro Mode.\n\nHealth Springs: Increases the amount of health restored by 20%.\n\nMusou Springs: Increases the amount of Musou restored by 20%.\n\nLearner: Increases experience earned by 30%.\n\nLearner Duo: Increases experience earned by 50%.\n\nLearner Ultra: Increases experience earned by 100%.\n\nFlurry: Increases the charge during attacks by 10%.\n\nFlurry Duo: Increases the charge during attacks by 30%.\n\nFlurry Ultra: Increases the charge during attacks by 50%.\n\nMerciless: Enables character to occasionally defeat an enemy unit in a single attack."
+    },
+    {
+      "heading": "Fighting Style",
+      "level": 2,
+      "content": "Lei Bin starts as a rifle user, and he can't attack enemies in any square immediately adjacent to him. Some of his attacks are taken from the crossbow moveset. He can provide cover fire from three squares away from him."
+    }
+  ],
+  "categories": [
+    "Dynasty Warriors stubs",
+    "Dynasty Warriors Characters",
+    "Other Characters",
+    "Shu Characters"
+  ],
+  "source_url": "https://koei.fandom.com/wiki/Lei_Bin",
+  "crawled_at": "2026-03-18T09:51:00.111Z"
+}

@@ -1,0 +1,57 @@
+{
+  "source": "나무위키 삼국지 11",
+  "url": "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%2011",
+  "crawled_at": "2026-03-12",
+  "game": "삼국지 11 (Romance of the Three Kingdoms XI)",
+  "total_officers": 694,
+  "system": "lord_system",
+  "considered": "Series best by many fans",
+  "stats": {
+    "categories": ["통솔(Leadership)", "무력(War)", "지력(Intelligence)", "정치(Politics)", "매력(Charisma)"],
+    "growth": "Officers have age-dependent ability changes. Peak timing varies: some at 25, others at 40-50",
+    "max_action_points": 255,
+    "action_point_regen": "Based on number of directly controlled cities"
+  },
+  "combat": {
+    "special_abilities_count": 105,
+    "special_ability_categories": ["행군계(Movement)", "공격계(Offensive)", "방어계(Defensive)", "계략계(Scheme)", "보조계(Support)", "내정계(Administration)", "재정계(Finance)", "재해계(Disaster Prevention)", "관계계(Relationship)"],
+    "duel_system": {
+      "name": "일기토",
+      "description": "Officers can engage in one-on-one combat. Victory conditions include troop capture.",
+      "mechanics": "Based on 무력(War) stat primarily"
+    },
+    "support_attacks": {
+      "probability_range": "20-50% depending on relationship type",
+      "trigger": "Adjacent allied units with trust/compatibility bonuses"
+    },
+    "relationship_system": {
+      "description": "Fixed affinity/hatred relationships affect recruitment, support attacks, morale",
+      "types": ["상생(Compatible)", "상극(Incompatible)"]
+    }
+  },
+  "internal_affairs": {
+    "activities": [
+      {"name": "징병(Troop Recruitment)", "stat": "통솔"},
+      {"name": "순찰(Patrol)", "stat": "정치"},
+      {"name": "훈련(Training)", "stat": "통솔"},
+      {"name": "농업(Agriculture)", "stat": "정치"},
+      {"name": "상업(Commerce)", "stat": "정치"},
+      {"name": "군사 생산(Military Production)", "stat": "지력"}
+    ],
+    "ai_weakness": "AI struggles with economic optimization"
+  },
+  "special_abilities_highlight": {
+    "overpowered": [
+      {"name": "신산(Divine Potency)", "owner": "제갈량", "effect": "All schemes critical hit + guaranteed success vs lower INT"},
+      {"name": "심모(Intensify)", "owner": "사마의", "effect": "All schemes critical hit"},
+      {"name": "비장(Flying General)", "owner": "여포", "effect": "Ignores ZOC, guaranteed crit vs lower WAR"},
+      {"name": "신장(God's Command)", "owner": "관우", "effect": "All normal/tactic attacks crit vs lower WAR"},
+      {"name": "투신(Divine Right)", "owner": "장비", "effect": "Spear/Pike tactics guaranteed critical"},
+      {"name": "허실(Agile Mind)", "owner": "조조", "effect": "All schemes guaranteed success vs lower INT"},
+      {"name": "화신(Divine Fire)", "owner": "주유", "effect": "Fire immunity + double fire damage"},
+      {"name": "통찰(Insight)", "owner": "조운", "effect": "Complete scheme defense (blocks ALL schemes)"}
+    ],
+    "total_count": 105,
+    "balance": "Highly unbalanced - ranging from game-breaking OP to seemingly useless"
+  }
+}

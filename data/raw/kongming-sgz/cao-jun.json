@@ -1,0 +1,24 @@
+{
+  "character": "Cao Jun",
+  "slug": "cao-jun",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]",
+      "chinese_name": "曹均",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Jun\n曹均\nLived AD ?–219\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonOctober 14th, 2023\nNo History Reference defined for Officer ID '1633' Cao Jun. Biography cannot be tied to a scroll in the Sanguozhi.\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697310720' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1759964611' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1743462742' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1743383438' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTheSecureDukeofFan[樊安公] was[Cao] Jun. He received the succession of his junior uncle,[Cao] Bin, theRespectfulDukeofJi[薊恭公]. In the twenty-second year of theera [217], he was enfeoffed asMarquisofFan[樊侯]. In the twenty-fourth year [219], he died. His son,[Cao] Kang, succeeded him. In the second year of theera [221], he [Cao Jun] was posthumously promoted to the peerage of a duke and given the posthumous title of theDukeofFan[樊公]. In the third year [222],[Cao] Kangshifted fief toDukeofJi[薊公]. In the fourth year [223], he shifted fief toDukeofTunliu[屯留公]. In the first year of theera [237], he died, and was given the posthumous title of theSettledDuke[定公]. His son,[Cao] Chen, succeeded him. During the,, anderas, the fief gradually increased, joining with the previous for a total of one thousand and nine hundred households.",
+      "sections": {
+        "cao-jun": "曹均\nLived AD ?–219"
+      },
+      "page_title": "Cao Jun 曹均 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1762,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Jun/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:15.554Z",
+  "total_char_count": 1762
+}

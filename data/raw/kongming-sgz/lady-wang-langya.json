@@ -1,0 +1,24 @@
+{
+  "character": "Lady Wang",
+  "slug": "lady-wang-langya",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 50 (Wu 5)",
+      "chinese_name": "王夫人",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Lady Wang\n王夫人\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 50 (Wu 5)\nbyZL181\nonMay 16th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1684221360' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756852645' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740985391' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740984930' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nLady Wangof[Sun] Quan, the Lord ofWu, was fromLangye[琅邪].A\nTheBook of Wustates: The father of theLadywas named[Wang] Lujiu.\nTheLadywas selected to enter the harem. She became pregnant during theera and beget[Sun] He. Her favor was second toLady Bu. AfterLady Budied,[Sun] Hewas installed asHeir Apparentand[Sun] Quanwas going to install theLadyasEmpress, butPrincess Quan, who always resented theLady, slowly slandered and ruined her, and when[Sun] Quanfell bedridden, she said that the [Lady] had a joyful expression. Therefore,[Sun] Quanblamed her and was angry at her. She died from the stress.\nWhen the son of[Sun] He,[Sun] Hao, was enthroned, he posthumously honored theLadyas theGreatand VirtuousAugust Empress[大懿皇后]. He enfeoffed her three younger brothers all as marquises.",
+      "sections": {
+        "lady-wang": "王夫人\nLifespan Unlisted"
+      },
+      "page_title": "Lady Wang 王夫人 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1617,
+      "url": "https://kongming.net/biographies/sanguozhi/Lady-Wang-Langya/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:34:03.986Z",
+  "total_char_count": 1617
+}

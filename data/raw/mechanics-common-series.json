@@ -1,0 +1,116 @@
+{
+  "source": "Multiple sources - cross-series common mechanics analysis",
+  "urls": [
+    "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%20%EC%8B%9C%EB%A6%AC%EC%A6%88/%EB%8A%A5%EB%A0%A5%EC%B9%98",
+    "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%2011",
+    "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%2014",
+    "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%208%20%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC"
+  ],
+  "crawled_at": "2026-03-12",
+  "description": "Common mechanics across the Romance of the Three Kingdoms game series",
+  "core_stats": {
+    "description": "Five main stats used since ROTK3 (1-2 had only 3 stats)",
+    "stats": [
+      {"name_kr": "통솔", "name_cn": "統率", "name_en": "Leadership/Command", "governs": "Troop morale, formations, siege, defense", "first_appeared": "ROTK3"},
+      {"name_kr": "무력", "name_cn": "武力", "name_en": "War/Military Strength", "governs": "Attack power, duels, combat", "first_appeared": "ROTK1"},
+      {"name_kr": "지력", "name_cn": "知力", "name_en": "Intelligence", "governs": "Schemes, tactics, technology, diplomacy", "first_appeared": "ROTK1"},
+      {"name_kr": "정치", "name_cn": "政治", "name_en": "Politics/Administration", "governs": "Internal affairs, revenue, development", "first_appeared": "ROTK1"},
+      {"name_kr": "매력", "name_cn": "魅力", "name_en": "Charisma/Charm", "governs": "Recruitment, loyalty, diplomacy", "first_appeared": "ROTK1", "note": "Removed in ROTK12-13, restored in ROTK14"}
+    ],
+    "scale": "1-100 in most versions",
+    "notable_records": {
+      "war_100": "여포(Lu Bu) - consistently 100 in all versions except ROTK7 (98)",
+      "intelligence_100": "제갈량(Zhuge Liang) - consistently 100 in all versions",
+      "charisma_99": "유비(Liu Bei) - consistently 99 in most versions",
+      "total_1st": "조조(Cao Cao) - usually highest total stats",
+      "politics_max": "No character has ever achieved 100 in politics alone"
+    }
+  },
+  "game_systems_by_version": {
+    "lord_system": {
+      "description": "Player controls a faction lord, managing all officers and cities",
+      "versions": ["ROTK1-7", "ROTK9", "ROTK11-12", "ROTK14"]
+    },
+    "officer_system": {
+      "description": "Player plays as individual officer, can serve under a lord or be independent",
+      "versions": ["ROTK7-8", "ROTK10", "ROTK13"]
+    }
+  },
+  "common_mechanics": {
+    "recruitment": {
+      "description": "Recruiting officers from rival factions or finding unattached wanderers",
+      "factors": ["Recruiter charisma", "Target loyalty", "Faction reputation", "Personal relationships"]
+    },
+    "internal_affairs": {
+      "description": "Managing cities for economic and military strength",
+      "categories": ["Agriculture (food)", "Commerce (gold)", "Military recruitment", "Technology/Development", "Public order/Security"]
+    },
+    "diplomacy": {
+      "description": "Inter-faction relations management",
+      "common_actions": ["Alliance", "Trade", "Threaten", "Request aid", "Marriage alliance"]
+    },
+    "combat": {
+      "description": "Military engagements between forces",
+      "common_elements": ["Siege warfare", "Field battles", "Naval combat", "Dueling system", "Ambush mechanics", "Weather effects", "Terrain modifiers"]
+    },
+    "special_abilities": {
+      "description": "Unique skills per officer that provide combat/management bonuses",
+      "growth_over_series": "ROTK1: none → ROTK11: 105 abilities → ROTK14: 150+ traits + formations"
+    },
+    "scenarios": {
+      "description": "Historical starting points for campaigns",
+      "common_scenarios": [
+        {"year": 184, "name": "황건적의 난 (Yellow Turban Rebellion)"},
+        {"year": 190, "name": "반동탁 연합 (Anti-Dong Zhuo Coalition)"},
+        {"year": 194, "name": "군웅할거 (Warlords' Rivalry)"},
+        {"year": 200, "name": "관도대전 (Battle of Guandu)"},
+        {"year": 207, "name": "삼고초려 (Three Visits)"},
+        {"year": 208, "name": "적벽대전 (Battle of Red Cliffs)"},
+        {"year": 211, "name": "유비 입촉 (Liu Bei enters Shu)"},
+        {"year": 217, "name": "한중 공방 (Hanzhong Campaign)"},
+        {"year": 221, "name": "이릉대전 (Battle of Yiling)"},
+        {"year": 227, "name": "출사표 (Northern Expedition)"},
+        {"year": 234, "name": "오장원 (Wuzhang Plains)"},
+        {"year": 249, "name": "고평릉 사변 (Gaoping Ling Incident)"},
+        {"year": 263, "name": "촉한 멸망 (Fall of Shu)"}
+      ]
+    }
+  },
+  "top_characters_across_series": {
+    "war_top5": [
+      {"name_kr": "여포", "name_en": "Lu Bu", "typical_stat": 100, "note": "Always #1"},
+      {"name_kr": "관우", "name_en": "Guan Yu", "typical_stat": "95-97"},
+      {"name_kr": "장비", "name_en": "Zhang Fei", "typical_stat": "95-98"},
+      {"name_kr": "조운", "name_en": "Zhao Yun", "typical_stat": "94-96"},
+      {"name_kr": "마초", "name_en": "Ma Chao", "typical_stat": "95-97"}
+    ],
+    "intelligence_top5": [
+      {"name_kr": "제갈량", "name_en": "Zhuge Liang", "typical_stat": 100, "note": "Always #1"},
+      {"name_kr": "사마의", "name_en": "Sima Yi", "typical_stat": "95-98"},
+      {"name_kr": "곽가", "name_en": "Guo Jia", "typical_stat": "95-98"},
+      {"name_kr": "방통", "name_en": "Pang Tong", "typical_stat": "95-97"},
+      {"name_kr": "주유", "name_en": "Zhou Yu", "typical_stat": "93-96"}
+    ],
+    "leadership_top5": [
+      {"name_kr": "조조", "name_en": "Cao Cao", "typical_stat": "96-99"},
+      {"name_kr": "사마의", "name_en": "Sima Yi", "typical_stat": "95-98"},
+      {"name_kr": "주유", "name_en": "Zhou Yu", "typical_stat": "95-97"},
+      {"name_kr": "육손", "name_en": "Lu Xun", "typical_stat": "94-96"},
+      {"name_kr": "관우", "name_en": "Guan Yu", "typical_stat": "93-96"}
+    ],
+    "politics_top5": [
+      {"name_kr": "순욱", "name_en": "Xun Yu", "typical_stat": "95-98"},
+      {"name_kr": "장소", "name_en": "Zhang Zhao", "typical_stat": "95-97"},
+      {"name_kr": "조조", "name_en": "Cao Cao", "typical_stat": "94-97"},
+      {"name_kr": "제갈량", "name_en": "Zhuge Liang", "typical_stat": "93-95"},
+      {"name_kr": "장완", "name_en": "Jiang Wan", "typical_stat": "91-93"}
+    ],
+    "charisma_top5": [
+      {"name_kr": "유비", "name_en": "Liu Bei", "typical_stat": "98-99"},
+      {"name_kr": "장각", "name_en": "Zhang Jiao", "typical_stat": "95-98"},
+      {"name_kr": "조조", "name_en": "Cao Cao", "typical_stat": "93-96"},
+      {"name_kr": "손권", "name_en": "Sun Quan", "typical_stat": "93-95"},
+      {"name_kr": "주유", "name_en": "Zhou Yu", "typical_stat": "92-95"}
+    ]
+  }
+}

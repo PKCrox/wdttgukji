@@ -1,0 +1,191 @@
+{
+  "source": "나무위키 삼국지 8 리메이크",
+  "urls": [
+    "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%208%20%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC/%EA%B2%8C%EC%9E%84%20%EC%8B%9C%EC%8A%A4%ED%85%9C",
+    "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%208%20%EB%A6%AC%EB%A9%94%EC%9D%B4%ED%81%AC/%EC%A0%84%ED%88%AC"
+  ],
+  "crawled_at": "2026-03-12",
+  "game": "삼국지 8 리메이크 (Romance of the Three Kingdoms VIII Remake)",
+  "turn_system": "1 turn = 1 month, seasonal changes every 3 months",
+  "play_styles": ["independent_warlord", "general_under_lord", "wandering_mercenary"],
+  "phases": {
+    "peacetime": {
+      "name": "평정 (Administrative Phase)",
+      "systems": {
+        "personnel": {
+          "name": "인사",
+          "actions": ["Transfer/Assignment (1 strategy point)", "Recruitment", "Rewards/Punishments", "Execution/Dismissal", "Succession (양위)"]
+        },
+        "military": {
+          "name": "군사",
+          "actions": ["Sortie (attack adjacent cities)", "Transport (gold, provisions, soldiers)", "Trade (buy/sell provisions - seasonal pricing)", "Conscription (costs gold, -30 order)", "Technology development", "Rebellion (independence, massive rep loss)"]
+        },
+        "schemes": {
+          "name": "계략",
+          "cost": "200 gold + 1 strategy point",
+          "types": [
+            {"name": "이간(Sow Discord)", "effect": "Reduce target officer loyalty"},
+            {"name": "파괴(Sabotage)", "effect": "Damage city defenses"},
+            {"name": "선동(Agitation)", "effect": "Lower order, trigger unrest"},
+            {"name": "내응(Insider)", "effect": "Secure officer betrayal (1 year)", "duration": "12 months"},
+            {"name": "매복(Ambush)", "effect": "Plant spies for battle panic"}
+          ]
+        },
+        "diplomacy": {
+          "name": "외교",
+          "restriction": "Warlord/Chancellor only",
+          "actions": [
+            {"name": "친선(Goodwill)", "effect": "Gift resources/items"},
+            {"name": "동맹(Alliance)", "effect": "Non-aggression pact (12-60 months)", "mercenary_hire": "1000 gold"},
+            {"name": "파기(Annulment)", "effect": "Break alliances, damages loyalties"},
+            {"name": "요구(Demand)", "effect": "Extort resources"},
+            {"name": "항복(Surrender)", "effect": "Persuade cities/factions to yield"},
+            {"name": "연합(Coalition)", "effect": "Multi-faction alliance vs target"},
+            {"name": "연합참가(Coalition Join)", "effect": "Join existing coalition"}
+          ]
+        },
+        "doctrine": {
+          "name": "방침",
+          "types": ["Army behavior delegation", "City focus priorities", "Corps formation/edit/disband"]
+        },
+        "intelligence": {
+          "name": "첩보",
+          "cost": "200 gold",
+          "duration": "12 months",
+          "effect": "Reveals target city intel"
+        }
+      }
+    },
+    "city_actions": {
+      "name": "도시행동 (City Action Phase)",
+      "action_points": {
+        "dialogue": {"cost": 20, "effect": "Increase familiarity"},
+        "gift": {"cost": 20, "effect": "Boost familiarity via items"},
+        "recruitment": {"cost": 20, "effect": "Invite officers"},
+        "sparring": {"cost": 20, "effect": "Combat training, +familiarity/exp"},
+        "debate": {"cost": 20, "effect": "Philosophical debate, +familiarity/exp"},
+        "banquet": {"cost": -50, "effect": "Invite up to 10 officers, boost relationships", "limit": "Once monthly"},
+        "training": {"cost": -60, "effect": "Raise stats in specific areas"},
+        "skill_learning": {"cost": "Free", "effect": "Spend cultivation points on abilities"}
+      }
+    }
+  },
+  "combat": {
+    "deployment": {
+      "max_regular_units": 10,
+      "reinforcement_units": "Up to 5 per adjacent city (20 total)",
+      "max_officers_per_unit": 3,
+      "theoretical_max_units": 40,
+      "theoretical_max_officers": 120
+    },
+    "unit_types": {
+      "infantry": ["경보병(Light)", "중보병(Heavy)", "정예보병(Elite)", "만병(Barbarian)"],
+      "cavalry": ["경기병(Light)", "중기병(Heavy)", "정예기병(Elite)", "유목기병(Mounted Archer)"],
+      "archers": ["궁병(Bow)", "노병(Crossbow)", "정예궁병(Elite Bow)", "연노병(Repeating Crossbow)"],
+      "siege": ["충차(Battering Ram)", "정란(Siege Tower)", "운제(Cloud Ladder)", "투석기(Catapult)", "전상(War Elephant - 南中 exclusive)", "Warship variants"],
+      "type_advantage": "None - no rock-paper-scissors between types"
+    },
+    "combat_power_formula": "(TroopCount/5000 x CommanderTactics) + TacticalBonus + TroopTypeModifier + MoraleBonus(20 at max)",
+    "morale": {
+      "name": "전의(Morale)",
+      "description": "Most critical combat system",
+      "starting_value": 50,
+      "per_turn_increase": 5,
+      "cpu_bonus": {"starting": 60, "per_turn": 10},
+      "desertion_threshold": 20,
+      "tactic_threshold": 70,
+      "ultimate_threshold": 100
+    },
+    "tactics": [
+      {"name": "의기저상", "effect": "Reduce adjacent enemy morale by 40"},
+      {"name": "신산화계", "effect": "Fire attack on nearby enemies"},
+      {"name": "초목개병", "effect": "Panic enemies for 1 turn"},
+      {"name": "사모위계", "effect": "Confuse enemies for 3 turns"}
+    ],
+    "terrain": "Forest/rocky terrain grants ambush advantage",
+    "turn_order": "Cavalry (+20 initiative) > Infantry (baseline) > Archers (-20)",
+    "cavalry_advantage": "매우 유리 due to priority and mobility",
+    "naval": "Troops auto-convert to ships on water. Ship types: 주가, 몽충, 누선, 투함",
+    "siege": {
+      "victory_conditions": ["Eliminate regular units", "Capture castle", "Defend 30+ days"],
+      "note": "30-day siege is extremely rare"
+    },
+    "duel": {
+      "name": "단기접전",
+      "trigger": "Random based on commander personality",
+      "defeat_consequence": "Unit annihilation; commander captured",
+      "escape": "Superior horses or counter-compatibility",
+      "vulnerability": "Low WAR characters like Zhuge Liang (WAR 30) very vulnerable"
+    },
+    "combination_attacks": {
+      "trigger": "Adjacent units with trust/compatibility",
+      "requirement": "50+ morale",
+      "effect": "Attack multiplier percentage"
+    }
+  },
+  "technology_system": {
+    "unit_trees": {
+      "infantry": "Basic → Heavy → Elite → Barbarian Elite",
+      "cavalry": "Light → Heavy → Elite → Mounted Archers",
+      "archery": "Basic → Heavy Crossbow → Elite → Explosive Crossbow",
+      "siege": "Various (Ram, Tower, Ladder, Catapult, War Elephant, Warships)"
+    },
+    "regional_unlocks": {
+      "barbarian_infantry": "Requires 南中 control",
+      "mounted_archery": "Requires 遼州 or 涼州 control",
+      "war_elephant": "南中 exclusive"
+    }
+  },
+  "internal_affairs": {
+    "max_assignees": 10,
+    "stat_scaling": {
+      "farming": "정치(Politics) - increases July grain income",
+      "commerce": "정치(Politics) - raises per-turn gold income",
+      "technology": "지력(Intelligence) - generates tech books at 1000/2000 threshold",
+      "fortification": "통솔(Leadership) - boosts city structure durability",
+      "order": "무력(War) - raises city stability (max 100)"
+    }
+  },
+  "city_types": [
+    {"type": "농경(Agricultural)", "farming": "3000-6000", "commerce": "1500-4500", "defense": "1500-4500"},
+    {"type": "상업(Commercial)", "farming": "1500-4500", "commerce": "3000-6000", "defense": "1500-4500"},
+    {"type": "성채(Fortress)", "farming": "1500-4500", "commerce": "1500-4500", "defense": "3000-6000"},
+    {"type": "방목(Pastoral)", "farming": "2000-5000", "commerce": "2000-5000", "defense": "1500-4500"}
+  ],
+  "rank_system": {
+    "progression": ["10+ cities: Duke", "25+ cities: King", "35+ cities: Emperor"],
+    "regional_titles": ["Wei", "Wu", "Shu", "Yan", "Zhao", "Qi", "Song", "Chu", "Han", "Zhen", "Yue", "Liang", "Nanman"]
+  },
+  "momentum_system": {
+    "name": "轉機(Momentum)",
+    "threshold_minor": 50,
+    "threshold_major": 100,
+    "events": [
+      "Decisive Battle (all-out warfare with reinforcement summoning)",
+      "Barbarian Invasion (new independent armies appear)",
+      "Succession Crisis (major faction splits)",
+      "Border Skirmishes (constant auto-battles)",
+      "Alliance Collapse (diplomatic freeze)",
+      "Bandit Surge (supply restrictions)",
+      "Court Suspicion (loyalty drops for recruits)",
+      "Civil Disorder (stability collapse)",
+      "Fortification Weakness (defense damage multiplier)",
+      "Momentum Advantage (auto-replenishment)",
+      "Military Attrition (troop limit reduction)",
+      "Merger (smaller factions absorbed)",
+      "Great General Defection (elite officers break away)",
+      "Fortitude Awakening (special ability bonuses)",
+      "Campaign Doctrine (multiple tactic uses)",
+      "Victory Momentum (loyalty/reputation/familiarity bonuses)",
+      "Prestige & Influence (stat bonuses via reputation)"
+    ]
+  },
+  "victory_conditions": [
+    {"type": "Unification", "requirement": "Control all 48 cities"},
+    {"type": "Scenario Events", "requirement": "Complete final chapter narratives"},
+    {"type": "Regional Conquest", "requirement": "Control all cities in one zone (+10000 resources)"},
+    {"type": "Partial Victory", "requirement": "Control 6 major cities (Luoyang, Chang'an, Xu, Chengdu, Jianye, Ye)"},
+    {"type": "Personal Ending", "requirement": "5000+ fame or collect 5 horses + 10 weapons + 10 books"}
+  ],
+  "game_over": ["Officer dies with no heir/successor", "Calendar reaches year 350"]
+}

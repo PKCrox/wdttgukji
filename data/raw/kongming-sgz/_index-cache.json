@@ -1,0 +1,1764 @@
+{
+  "characters": [
+    {
+      "name": "Bu Zhi",
+      "slug": "bu-zhi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Bu-Zhi/LadyWu",
+          "translator": "LadyWu",
+          "label": "Bu Zhi (Zishan)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Ang",
+      "slug": "cao-ang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Ang/jiuwan",
+          "translator": "jiuwan",
+          "label": "Cao Ang (Zixiu)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Ang/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Ang (Zixiu)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Cao",
+      "slug": "cao-cao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Cao/JackYuan",
+          "translator": "JackYuan",
+          "label": "Cao Cao (Mengde)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Cao/AdrianLoder",
+          "translator": "AdrianLoder",
+          "label": "Cao Cao (Mengde)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Cheng",
+      "slug": "cao-cheng",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Cheng/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Cheng"
+        }
+      ]
+    },
+    {
+      "name": "Cao Chong",
+      "slug": "cao-chong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Chong/jiuwan",
+          "translator": "jiuwan",
+          "label": "Cao Chong (Cangshu)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Gong",
+      "slug": "cao-gong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Gong/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Gong"
+        }
+      ]
+    },
+    {
+      "name": "Cao Hong",
+      "slug": "cao-hong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Hong/LadyWu",
+          "translator": "LadyWu",
+          "label": "Cao Hong (Zilian)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Huan",
+      "slug": "cao-huan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Huan/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Huan (Jingming)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Ji",
+      "slug": "cao-ji",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Ji/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Ji"
+        }
+      ]
+    },
+    {
+      "name": "Cao Jian",
+      "slug": "cao-jian",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Jian/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Jian"
+        }
+      ]
+    },
+    {
+      "name": "Cao Jing",
+      "slug": "cao-jing",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Jing/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Jing"
+        }
+      ]
+    },
+    {
+      "name": "Cao Jun",
+      "slug": "cao-jun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Jun/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Jun"
+        }
+      ]
+    },
+    {
+      "name": "Cao Li",
+      "slug": "cao-li",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Li/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Li"
+        }
+      ]
+    },
+    {
+      "name": "Cao Lin",
+      "slug": "cao-lin",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Lin/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Lin"
+        }
+      ]
+    },
+    {
+      "name": "Cao Qin",
+      "slug": "cao-qin",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Qin/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Qin"
+        }
+      ]
+    },
+    {
+      "name": "Cao Ren",
+      "slug": "cao-ren",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Ren/LadyWu",
+          "translator": "LadyWu",
+          "label": "Cao Ren (Zixiao)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Rui",
+      "slug": "cao-rui-2",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Rui-2/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Rui"
+        }
+      ]
+    },
+    {
+      "name": "Cao Shang",
+      "slug": "cao-shang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Shang/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Shang"
+        }
+      ]
+    },
+    {
+      "name": "Cao Shuo",
+      "slug": "cao-shuo",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Shuo/jiuwan",
+          "translator": "jiuwan",
+          "label": "Cao Shuo"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Shuo/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Shuo"
+        }
+      ]
+    },
+    {
+      "name": "Cao Xie",
+      "slug": "cao-xie",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Xie/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Xie"
+        }
+      ]
+    },
+    {
+      "name": "Cao Xiong",
+      "slug": "cao-xiong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Xiong/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Xiong"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Xiong/jiuwan",
+          "translator": "jiuwan",
+          "label": "Cao Xiong"
+        }
+      ]
+    },
+    {
+      "name": "Cao Xiu",
+      "slug": "cao-xiu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Xiu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Cao Xiu (Wenlie)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Yan",
+      "slug": "cao-yan-3",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Yan-3/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Yan"
+        }
+      ]
+    },
+    {
+      "name": "Cao Yong",
+      "slug": "cao-yong-2",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Yong-2/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Yong"
+        }
+      ]
+    },
+    {
+      "name": "Cao Yu",
+      "slug": "cao-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Yu/ZL181",
+          "translator": "ZL181",
+          "label": "Cao Yu (Pengzu)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Zhen",
+      "slug": "cao-zhen",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Zhen/StephenSo",
+          "translator": "StephenSo",
+          "label": "Cao Zhen (Zidan)"
+        }
+      ]
+    },
+    {
+      "name": "Cao Zhi",
+      "slug": "cao-zhi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cao-Zhi/LadyWu",
+          "translator": "LadyWu",
+          "label": "Cao Zhi (Zijian)"
+        }
+      ]
+    },
+    {
+      "name": "Chen Tai",
+      "slug": "chen-tai",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Chen-Tai/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Chen Tai (Xuanbo)"
+        }
+      ]
+    },
+    {
+      "name": "Chen Zhen",
+      "slug": "chen-zhen",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Chen-Zhen/ZL181",
+          "translator": "ZL181",
+          "label": "Chen Zhen (Xiaoqi)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Chen-Zhen/LadyWu",
+          "translator": "LadyWu",
+          "label": "Chen Zhen (Xiaoqi)"
+        }
+      ]
+    },
+    {
+      "name": "Cheng Pu",
+      "slug": "cheng-pu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Cheng-Pu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Cheng Pu (Demou)"
+        }
+      ]
+    },
+    {
+      "name": "Deng Ai",
+      "slug": "deng-ai",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Deng-Ai/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Deng Ai (Shizai)"
+        }
+      ]
+    },
+    {
+      "name": "Deng Zhi",
+      "slug": "deng-zhi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Deng-Zhi/LadyWu",
+          "translator": "LadyWu",
+          "label": "Deng Zhi (Bomiao)"
+        }
+      ]
+    },
+    {
+      "name": "Dian Wei",
+      "slug": "dian-wei",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Dian-Wei/jiuwan",
+          "translator": "jiuwan",
+          "label": "Dian Wei"
+        }
+      ]
+    },
+    {
+      "name": "Ding Feng",
+      "slug": "ding-feng",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ding-Feng/HanXin",
+          "translator": "HanXin",
+          "label": "Ding Feng (Chengyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Dong He",
+      "slug": "dong-he",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Dong-He/ZL181",
+          "translator": "ZL181",
+          "label": "Dong He (Youzai)"
+        }
+      ]
+    },
+    {
+      "name": "Dong Xi",
+      "slug": "dong-xi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Dong-Xi/ZL181",
+          "translator": "ZL181",
+          "label": "Dong Xi (Yuandai)"
+        }
+      ]
+    },
+    {
+      "name": "Dong Yun",
+      "slug": "dong-yun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Dong-Yun/ZL181",
+          "translator": "ZL181",
+          "label": "Dong Yun (Xiuzhao)"
+        }
+      ]
+    },
+    {
+      "name": "Fei Yi",
+      "slug": "fei-yi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Fei-Yi/ZL181",
+          "translator": "ZL181",
+          "label": "Fei Yi (Wenwei)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Fei-Yi/LadyWu",
+          "translator": "LadyWu",
+          "label": "Fei Yi (Wenwei)"
+        }
+      ]
+    },
+    {
+      "name": "Gan Ning",
+      "slug": "gan-ning",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Gan-Ning/LadyWu",
+          "translator": "LadyWu",
+          "label": "Gan Ning (Xingba)"
+        }
+      ]
+    },
+    {
+      "name": "Gu Yong",
+      "slug": "gu-yong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Gu-Yong/ChenQiang",
+          "translator": "ChenQiang",
+          "label": "Gu Yong (Yuantan)"
+        }
+      ]
+    },
+    {
+      "name": "Guan Yu",
+      "slug": "guan-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Guan-Yu/JackYuan",
+          "translator": "JackYuan",
+          "label": "Guan Yu (Yunchang)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Guan-Yu/Sonken",
+          "translator": "Sonken",
+          "label": "Guan Yu (Yunchang)"
+        }
+      ]
+    },
+    {
+      "name": "Guo Jia",
+      "slug": "guo-jia",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Guo-Jia/WangQingFei",
+          "translator": "WangQingFei",
+          "label": "Guo Jia (Fengxiao)"
+        }
+      ]
+    },
+    {
+      "name": "Guo Yuan",
+      "slug": "guo-yuan-2",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Guo-Yuan-2/ZL181",
+          "translator": "ZL181",
+          "label": "Guo Yuan (Zini)"
+        }
+      ]
+    },
+    {
+      "name": "Han Dang",
+      "slug": "han-dang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Han-Dang/ZL181",
+          "translator": "ZL181",
+          "label": "Han Dang (Yigong)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Han-Dang/LadyWu",
+          "translator": "LadyWu",
+          "label": "Han Dang (Yigong)"
+        }
+      ]
+    },
+    {
+      "name": "Hao Zhao",
+      "slug": "hao-zhao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Hao-Zhao/StephenSo",
+          "translator": "StephenSo",
+          "label": "Hao Zhao (Bodao)"
+        }
+      ]
+    },
+    {
+      "name": "He Shao",
+      "slug": "he-shao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/He-Shao/ZL181",
+          "translator": "ZL181",
+          "label": "He Shao (Xingbo)"
+        }
+      ]
+    },
+    {
+      "name": "Hua He",
+      "slug": "hua-he",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Hua-He/ZL181",
+          "translator": "ZL181",
+          "label": "Hua He (Yongxian)"
+        }
+      ]
+    },
+    {
+      "name": "Hua Tuo",
+      "slug": "hua-tuo",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Hua-Tuo/jiuwan",
+          "translator": "jiuwan",
+          "label": "Hua Tuo (Yuanhua)"
+        }
+      ]
+    },
+    {
+      "name": "Huang Gai",
+      "slug": "huang-gai",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Huang-Gai/ZL181",
+          "translator": "ZL181",
+          "label": "Huang Gai (Gongfu)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Huang-Gai/LadyWu",
+          "translator": "LadyWu",
+          "label": "Huang Gai (Gongfu)"
+        }
+      ]
+    },
+    {
+      "name": "Huang Zhong",
+      "slug": "huang-zhong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Huang-Zhong/JackYuan",
+          "translator": "JackYuan",
+          "label": "Huang Zhong (Hansheng)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Huang-Zhong/Sonken",
+          "translator": "Sonken",
+          "label": "Huang Zhong (Hansheng)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Huang-Zhong/ZL181",
+          "translator": "ZL181",
+          "label": "Huang Zhong (Hansheng)"
+        }
+      ]
+    },
+    {
+      "name": "Jia Xu",
+      "slug": "jia-xu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Jia-Xu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Jia Xu (Wenhe)"
+        }
+      ]
+    },
+    {
+      "name": "Jian Yong",
+      "slug": "jian-yong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Jian-Yong/LadyWu",
+          "translator": "LadyWu",
+          "label": "Jian Yong (Xianhe)"
+        }
+      ]
+    },
+    {
+      "name": "Jiang Qin",
+      "slug": "jiang-qin",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Jiang-Qin/ZL181",
+          "translator": "ZL181",
+          "label": "Jiang Qin (Gongyi)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Jiang-Qin/LadyWu",
+          "translator": "LadyWu",
+          "label": "Jiang Qin (Gongyi)"
+        }
+      ]
+    },
+    {
+      "name": "Jiang Wan",
+      "slug": "jiang-wan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Jiang-Wan/ChenQiang",
+          "translator": "ChenQiang",
+          "label": "Jiang Wan (Gongyan)"
+        }
+      ]
+    },
+    {
+      "name": "Jiang Wei",
+      "slug": "jiang-wei",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Jiang-Wei/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Jiang Wei (Boyue)"
+        }
+      ]
+    },
+    {
+      "name": "Lady Pan",
+      "slug": "lady-pan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Pan/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lady Pan"
+        }
+      ]
+    },
+    {
+      "name": "Lady Wang",
+      "slug": "lady-wang-langya",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Wang-Langya/ZL181",
+          "translator": "ZL181",
+          "label": "Lady Wang"
+        }
+      ]
+    },
+    {
+      "name": "Lady Wang",
+      "slug": "lady-wang-nanyang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Wang-Nanyang/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lady Wang"
+        }
+      ]
+    },
+    {
+      "name": "Lady Wu",
+      "slug": "lady-wu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Wu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lady Wu"
+        }
+      ]
+    },
+    {
+      "name": "Lady Xie",
+      "slug": "lady-xie",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Xie/ZL181",
+          "translator": "ZL181",
+          "label": "Lady Xie"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Xie/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lady Xie"
+        }
+      ]
+    },
+    {
+      "name": "Lady Xu",
+      "slug": "lady-xu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lady-Xu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lady Xu"
+        }
+      ]
+    },
+    {
+      "name": "Lai Min",
+      "slug": "lai-min",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lai-Min/ZL181",
+          "translator": "ZL181",
+          "label": "Lai Min (Jingda)"
+        }
+      ]
+    },
+    {
+      "name": "Li Dian",
+      "slug": "li-dian",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Li-Dian/StephenSo",
+          "translator": "StephenSo",
+          "label": "Li Dian (Mancheng)"
+        }
+      ]
+    },
+    {
+      "name": "Li Hui",
+      "slug": "li-hui",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Li-Hui/ZL181",
+          "translator": "ZL181",
+          "label": "Li Hui (De’ang)"
+        }
+      ]
+    },
+    {
+      "name": "Li Tong",
+      "slug": "li-tong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Li-Tong/ZhaiRong",
+          "translator": "ZhaiRong",
+          "label": "Li Tong (Wenda)"
+        }
+      ]
+    },
+    {
+      "name": "Li Yan",
+      "slug": "li-yan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Li-Yan/DarkAnthem",
+          "translator": "DarkAnthem",
+          "label": "Li Yan (Zhengfang)"
+        }
+      ]
+    },
+    {
+      "name": "Li Zhuan",
+      "slug": "li-zhuan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Li-Zhuan/ZL181",
+          "translator": "ZL181",
+          "label": "Li Zhuan (Qinzhong)"
+        }
+      ]
+    },
+    {
+      "name": "Liao Hua",
+      "slug": "liao-hua",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liao-Hua/LadyWu",
+          "translator": "LadyWu",
+          "label": "Liao Hua (Yuanjian)"
+        }
+      ]
+    },
+    {
+      "name": "Liao Li",
+      "slug": "liao-li",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liao-Li/ZL181",
+          "translator": "ZL181",
+          "label": "Liao Li (Gongyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Ling Tong",
+      "slug": "ling-tong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ling-Tong/LadyWu",
+          "translator": "LadyWu",
+          "label": "Ling Tong (Gongji)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Ba",
+      "slug": "liu-ba",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Ba/ZL181",
+          "translator": "ZL181",
+          "label": "Liu Ba (Zichu)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Bei",
+      "slug": "liu-bei",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Bei/StephenSo",
+          "translator": "StephenSo",
+          "label": "Liu Bei (Xuande)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Biao",
+      "slug": "liu-biao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Biao/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Liu Biao (Jingsheng)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Fang",
+      "slug": "liu-fang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Fang/ZL181",
+          "translator": "ZL181",
+          "label": "Liu Fang (Ziqi)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Yan",
+      "slug": "liu-yan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Yan/ZL181",
+          "translator": "ZL181",
+          "label": "Liu Yan (Junlang)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Yan",
+      "slug": "liu-yan-2",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Yan-2/ZL181",
+          "translator": "ZL181",
+          "label": "Liu Yan (Weishuo)"
+        }
+      ]
+    },
+    {
+      "name": "Liu Yao",
+      "slug": "liu-yao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Liu-Yao/ZL181",
+          "translator": "ZL181",
+          "label": "Liu Yao (Zhengli)"
+        }
+      ]
+    },
+    {
+      "name": "Lou Xuan",
+      "slug": "lou-xuan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lou-Xuan/ZL181",
+          "translator": "ZL181",
+          "label": "Lou Xuan (Chengxian)"
+        }
+      ]
+    },
+    {
+      "name": "Lü Bu",
+      "slug": "lu-bu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lu-Bu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lü Bu (Fengxian)"
+        }
+      ]
+    },
+    {
+      "name": "Lu Mao",
+      "slug": "lu-mao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lu-Mao/ZL181",
+          "translator": "ZL181",
+          "label": "Lu Mao (Zizhang)"
+        }
+      ]
+    },
+    {
+      "name": "Lü Meng",
+      "slug": "lu-meng",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lu-Meng/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lü Meng (Ziming)"
+        }
+      ]
+    },
+    {
+      "name": "Lü Qian",
+      "slug": "lu-qian",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lu-Qian/ZL181",
+          "translator": "ZL181",
+          "label": "Lü Qian (Zike)"
+        }
+      ]
+    },
+    {
+      "name": "Lu Xun",
+      "slug": "lu-xun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lu-Xun/LadyWu",
+          "translator": "LadyWu",
+          "label": "Lu Xun (Boyan)"
+        }
+      ]
+    },
+    {
+      "name": "Lü Yi",
+      "slug": "lu-yi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Lu-Yi/ZL181",
+          "translator": "ZL181",
+          "label": "Lü Yi (Jiyang)"
+        }
+      ]
+    },
+    {
+      "name": "Ma Chao",
+      "slug": "ma-chao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ma-Chao/ZL181",
+          "translator": "ZL181",
+          "label": "Ma Chao (Mengqi)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ma-Chao/JackYuan",
+          "translator": "JackYuan",
+          "label": "Ma Chao (Mengqi)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ma-Chao/Sonken",
+          "translator": "Sonken",
+          "label": "Ma Chao (Mengqi)"
+        }
+      ]
+    },
+    {
+      "name": "Ma Liang",
+      "slug": "ma-liang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ma-Liang/ZL181",
+          "translator": "ZL181",
+          "label": "Ma Liang (Jichang)"
+        }
+      ]
+    },
+    {
+      "name": "Ma Su",
+      "slug": "ma-su",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Ma-Su/DarkAnthem",
+          "translator": "DarkAnthem",
+          "label": "Ma Su (Youchang)"
+        }
+      ]
+    },
+    {
+      "name": "Meng Guang",
+      "slug": "meng-guang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Meng-Guang/ZL181",
+          "translator": "ZL181",
+          "label": "Meng Guang (Xiaoyu)"
+        }
+      ]
+    },
+    {
+      "name": "Mi Fang",
+      "slug": "mi-fang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Mi-Fang/LadyWu",
+          "translator": "LadyWu",
+          "label": "Mi Fang (Zifang)"
+        }
+      ]
+    },
+    {
+      "name": "Mi Zhu",
+      "slug": "mi-zhu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Mi-Zhu/ZL181",
+          "translator": "ZL181",
+          "label": "Mi Zhu (Zizhong)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Mi-Zhu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Mi Zhu (Zizhong)"
+        }
+      ]
+    },
+    {
+      "name": "Pan Zhang",
+      "slug": "pan-zhang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Pan-Zhang/LadyWu",
+          "translator": "LadyWu",
+          "label": "Pan Zhang (Wengui)"
+        }
+      ]
+    },
+    {
+      "name": "Pang De",
+      "slug": "pang-de",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Pang-De/jiuwan",
+          "translator": "jiuwan",
+          "label": "Pang De (Lingming)"
+        }
+      ]
+    },
+    {
+      "name": "Pang Tong",
+      "slug": "pang-tong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Pang-Tong/SuMingde",
+          "translator": "SuMingde",
+          "label": "Pang Tong (Shiyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Pang Yu",
+      "slug": "pang-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Pang-Yu/ZL181",
+          "translator": "ZL181",
+          "label": "Pang Yu (Ziyi)"
+        }
+      ]
+    },
+    {
+      "name": "Puyang Xing",
+      "slug": "puyang-xing",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Puyang-Xing/ZL181",
+          "translator": "ZL181",
+          "label": "Puyang Xing (Ziyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Shi Xie",
+      "slug": "shi-xie",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Shi-Xie/jiuwan",
+          "translator": "jiuwan",
+          "label": "Shi Xie (Weiyan)"
+        }
+      ]
+    },
+    {
+      "name": "Sun Ce",
+      "slug": "sun-ce",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Ce/JackYuan",
+          "translator": "JackYuan",
+          "label": "Sun Ce (Bofu)"
+        }
+      ]
+    },
+    {
+      "name": "Sun Huan",
+      "slug": "sun-huan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Huan/ZL181",
+          "translator": "ZL181",
+          "label": "Sun Huan (Shuwu)"
+        }
+      ]
+    },
+    {
+      "name": "Sun Jian",
+      "slug": "sun-jian",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Jian/JackYuan",
+          "translator": "JackYuan",
+          "label": "Sun Jian (Wentai)"
+        }
+      ]
+    },
+    {
+      "name": "Sun Jing",
+      "slug": "sun-jing",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Jing/JonathanWu",
+          "translator": "JonathanWu",
+          "label": "Sun Jing (Youtai)"
+        }
+      ]
+    },
+    {
+      "name": "Sun Qian",
+      "slug": "sun-qian",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Qian/ZL181",
+          "translator": "ZL181",
+          "label": "Sun Qian (Gongyou)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Qian/LadyWu",
+          "translator": "LadyWu",
+          "label": "Sun Qian (Gongyou)"
+        }
+      ]
+    },
+    {
+      "name": "Sun Yu",
+      "slug": "sun-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Sun-Yu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Sun Yu (Zhongyi)"
+        }
+      ]
+    },
+    {
+      "name": "Taishi Ci",
+      "slug": "taishi-ci",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Taishi-Ci/LadyWu",
+          "translator": "LadyWu",
+          "label": "Taishi Ci (Ziyi)"
+        }
+      ]
+    },
+    {
+      "name": "Wang Fan",
+      "slug": "wang-fan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Wang-Fan/ZL181",
+          "translator": "ZL181",
+          "label": "Wang Fan (Yongyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Wang Ping",
+      "slug": "wang-ping",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Wang-Ping/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Wang Ping (Zijun)"
+        }
+      ]
+    },
+    {
+      "name": "Wen Hui",
+      "slug": "wen-hui",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Wen-Hui/ZL181",
+          "translator": "ZL181",
+          "label": "Wen Hui (Manji)"
+        }
+      ]
+    },
+    {
+      "name": "Wen Ping",
+      "slug": "wen-pin",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Wen-Pin/StephenSo",
+          "translator": "StephenSo",
+          "label": "Wen Ping (Zhongye)"
+        }
+      ]
+    },
+    {
+      "name": "Wu Can",
+      "slug": "wu-can",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Wu-Can/ZL181",
+          "translator": "ZL181",
+          "label": "Wu Can (Kongxiu)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Wu-Can/LadyWu",
+          "translator": "LadyWu",
+          "label": "Wu Can (Kongxiu)"
+        }
+      ]
+    },
+    {
+      "name": "Xiahou Ba",
+      "slug": "xiahou-ba",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xiahou-Ba/StephenSo",
+          "translator": "StephenSo",
+          "label": "Xiahou Ba (Zhongquan)"
+        }
+      ]
+    },
+    {
+      "name": "Xiahou Dun",
+      "slug": "xiahou-dun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xiahou-Dun/ZL181",
+          "translator": "ZL181",
+          "label": "Xiahou Dun (Yuanrang)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xiahou-Dun/HolyMan",
+          "translator": "HolyMan",
+          "label": "Xiahou Dun (Yuanrang)"
+        }
+      ]
+    },
+    {
+      "name": "Xiahou Shang",
+      "slug": "xiahou-shang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xiahou-Shang/ZL181",
+          "translator": "ZL181",
+          "label": "Xiahou Shang (Boren)"
+        }
+      ]
+    },
+    {
+      "name": "Xiang Chong",
+      "slug": "xiang-chong",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xiang-Chong/LadyWu",
+          "translator": "LadyWu",
+          "label": "Xiang Chong"
+        }
+      ]
+    },
+    {
+      "name": "Xiang Lang",
+      "slug": "xiang-lang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xiang-Lang/LadyWu",
+          "translator": "LadyWu",
+          "label": "Xiang Lang (Juda)"
+        }
+      ]
+    },
+    {
+      "name": "Xu Ci",
+      "slug": "xu-ci",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xu-Ci/ZL181",
+          "translator": "ZL181",
+          "label": "Xu Ci (Rendu)"
+        }
+      ]
+    },
+    {
+      "name": "Xu Huang",
+      "slug": "xu-huang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xu-Huang/ZL181",
+          "translator": "ZL181",
+          "label": "Xu Huang (Gongming)"
+        }
+      ]
+    },
+    {
+      "name": "Xu Sheng",
+      "slug": "xu-sheng",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xu-Sheng/HanXin",
+          "translator": "HanXin",
+          "label": "Xu Sheng (Wenxiang)"
+        }
+      ]
+    },
+    {
+      "name": "Xu Yi",
+      "slug": "xu-yi-jicai",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xu-Yi-Jicai/ZL181",
+          "translator": "ZL181",
+          "label": "Xu Yi (Jicai)"
+        }
+      ]
+    },
+    {
+      "name": "Xu Zhu",
+      "slug": "xu-chu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xu-Chu/jiuwan",
+          "translator": "jiuwan",
+          "label": "Xu Zhu (Zhongkang)"
+        }
+      ]
+    },
+    {
+      "name": "Xun Yu",
+      "slug": "xun-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Xun-Yu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Xun Yu (Wenruo)"
+        }
+      ]
+    },
+    {
+      "name": "Yan Jun",
+      "slug": "yan-jun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yan-Jun/ZL181",
+          "translator": "ZL181",
+          "label": "Yan Jun (Mancai)"
+        }
+      ]
+    },
+    {
+      "name": "Yang Jun",
+      "slug": "yang-jun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yang-Jun/ZL181",
+          "translator": "ZL181",
+          "label": "Yang Jun (Jicai)"
+        }
+      ]
+    },
+    {
+      "name": "Yang Yi",
+      "slug": "yang-yi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yang-Yi/jiuwan",
+          "translator": "jiuwan",
+          "label": "Yang Yi (Weigong)"
+        }
+      ]
+    },
+    {
+      "name": "Yi Ji",
+      "slug": "yi-ji",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yi-Ji/ZL181",
+          "translator": "ZL181",
+          "label": "Yi Ji (Jibo)"
+        }
+      ]
+    },
+    {
+      "name": "Yin Mo",
+      "slug": "yin-mo",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yin-Mo/ZL181",
+          "translator": "ZL181",
+          "label": "Yin Mo (Siqian)"
+        }
+      ]
+    },
+    {
+      "name": "Yu Jin",
+      "slug": "yu-jin",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yu-Jin/ZL181",
+          "translator": "ZL181",
+          "label": "Yu Jin (Wenze)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yu-Jin/SunZhongmou",
+          "translator": "SunZhongmou",
+          "label": "Yu Jin (Wenze)"
+        }
+      ]
+    },
+    {
+      "name": "Yuan Shao",
+      "slug": "yuan-shao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yuan-Shao/JackYuan",
+          "translator": "JackYuan",
+          "label": "Yuan Shao (Benchu)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yuan-Shao/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Yuan Shao (Benchu)"
+        }
+      ]
+    },
+    {
+      "name": "Yuan Shu",
+      "slug": "yuan-shu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yuan-Shu/ZL181",
+          "translator": "ZL181",
+          "label": "Yuan Shu (Gonglu)"
+        }
+      ]
+    },
+    {
+      "name": "Yue Jin",
+      "slug": "yue-jin",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yue-Jin/ZL181",
+          "translator": "ZL181",
+          "label": "Yue Jin (Wenqian)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Yue-Jin/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Yue Jin (Wenqian)"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Fei",
+      "slug": "zhang-fei",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Fei/JackYuan",
+          "translator": "JackYuan",
+          "label": "Zhang Fei (Yide)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Fei/Sonken",
+          "translator": "Sonken",
+          "label": "Zhang Fei (Yide)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Fei/ZL181",
+          "translator": "ZL181",
+          "label": "Zhang Fei (Yide)"
+        }
+      ]
+    },
+    {
+      "name": "Zhang He",
+      "slug": "zhang-he",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-He/jiuwan",
+          "translator": "jiuwan",
+          "label": "Zhang He (Junyi)"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Liao",
+      "slug": "zhang-liao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Liao/JonathanWu",
+          "translator": "JonathanWu",
+          "label": "Zhang Liao (Wenyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Xiu",
+      "slug": "zhang-xiu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Xiu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Zhang Xiu"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Yan",
+      "slug": "zhang-yan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Yan/ZhaiRong",
+          "translator": "ZhaiRong",
+          "label": "Zhang Yan"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Yang",
+      "slug": "zhang-yang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Yang/ZL181",
+          "translator": "ZL181",
+          "label": "Zhang Yang (Zhishu)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Yang/ZhaiRong",
+          "translator": "ZhaiRong",
+          "label": "Zhang Yang (Zhishu)"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Yi",
+      "slug": "zhang-yi",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Yi/LadyWu",
+          "translator": "LadyWu",
+          "label": "Zhang Yi (Bogong)"
+        }
+      ]
+    },
+    {
+      "name": "Zhang Zhao",
+      "slug": "zhang-zhao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhang-Zhao/LadyWu",
+          "translator": "LadyWu",
+          "label": "Zhang Zhao (Zibu)"
+        }
+      ]
+    },
+    {
+      "name": "Zhao Yun",
+      "slug": "zhao-yun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhao-Yun/Sonken",
+          "translator": "Sonken",
+          "label": "Zhao Yun (Zilong)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhao-Yun/JackYuan",
+          "translator": "JackYuan",
+          "label": "Zhao Yun (Zilong)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhao-Yun/ZL181",
+          "translator": "ZL181",
+          "label": "Zhao Yun (Zilong)"
+        }
+      ]
+    },
+    {
+      "name": "Zheng Hun",
+      "slug": "zheng-hun",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zheng-Hun/ZL181",
+          "translator": "ZL181",
+          "label": "Zheng Hun (Wengong)"
+        }
+      ]
+    },
+    {
+      "name": "Zhou Tai",
+      "slug": "zhou-tai",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhou-Tai/LadyWu",
+          "translator": "LadyWu",
+          "label": "Zhou Tai (Youping)"
+        }
+      ]
+    },
+    {
+      "name": "Zhou Xuan",
+      "slug": "zhou-xuan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhou-Xuan/ZL181",
+          "translator": "ZL181",
+          "label": "Zhou Xuan (Konghe)"
+        }
+      ]
+    },
+    {
+      "name": "Zhou Yu",
+      "slug": "zhou-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhou-Yu/ZL181",
+          "translator": "ZL181",
+          "label": "Zhou Yu (Gongjin)"
+        },
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhou-Yu/Battleroyale",
+          "translator": "Battleroyale",
+          "label": "Zhou Yu (Gongjin)"
+        }
+      ]
+    },
+    {
+      "name": "Zhu Ju",
+      "slug": "zhu-ju",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhu-Ju/ZL181",
+          "translator": "ZL181",
+          "label": "Zhu Ju (Zifan)"
+        }
+      ]
+    },
+    {
+      "name": "Zhu Ran",
+      "slug": "zhu-ran",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhu-Ran/DukeOfGoats",
+          "translator": "DukeOfGoats",
+          "label": "Zhu Ran (Yifeng)"
+        }
+      ]
+    },
+    {
+      "name": "Zhuge Liang",
+      "slug": "zhuge-liang",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhuge-Liang/JackYuan",
+          "translator": "JackYuan",
+          "label": "Zhuge Liang (Kongming)"
+        }
+      ]
+    },
+    {
+      "name": "Zhuge Qiao",
+      "slug": "zhuge-qiao",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhuge-Qiao/JackYuan",
+          "translator": "JackYuan",
+          "label": "Zhuge Qiao (Bosong)"
+        }
+      ]
+    },
+    {
+      "name": "Zhuge Zhan",
+      "slug": "zhuge-zhan",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zhuge-Zhan/JackYuan",
+          "translator": "JackYuan",
+          "label": "Zhuge Zhan (Siyuan)"
+        }
+      ]
+    },
+    {
+      "name": "Zong Yu",
+      "slug": "zong-yu",
+      "entries": [
+        {
+          "url": "https://kongming.net/biographies/sanguozhi/Zong-Yu/LadyWu",
+          "translator": "LadyWu",
+          "label": "Zong Yu (Deyan)"
+        }
+      ]
+    }
+  ],
+  "cached_at": "2026-03-18T09:31:42.876Z",
+  "count": 147,
+  "total_entries": 175
+}

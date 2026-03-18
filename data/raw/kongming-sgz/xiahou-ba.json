@@ -1,0 +1,24 @@
+{
+  "character": "Xiahou Ba",
+  "slug": "xiahou-ba",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "StephenSo",
+      "url_translator": "StephenSo",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 9 (Wei 9)",
+      "chinese_name": "夏侯霸",
+      "life_span": "AD 220–226",
+      "source_text": "",
+      "translation": "Xiahou Ba (Zhongquan)\n夏侯霸 (仲權)\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 9 (Wei 9)\nbyStephen So (Shu-Han Zhao Lie Di)\nin2000\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '946728000' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1745628320' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1745628230' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1745628195' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTranslator’s Note: This is a sub-biography of Xiahou Ba, from the bookWei Lue, included in Xiahou Yuan’sSanguozhibiography.\nXiahou Ba, styled Zhongquan. [His father Xiahou] Yuan was killed by Shu, thus Ba was always grinding his teeth in rage and desired to take his revenge on Shu. In the middle of Huangchu [AD 220–226], he was the Lieutenant-General (Pian Jiang Jun). Serving in Ziwu, Xiahou Ba was called to lead the Van, where he advanced Xing Shi Wei. He settled his camp within the Qu valley. The Shu people knew that the general was Xiahou Ba so they pointed troops to attack him. Xiahou Ba personally got into battle in between Lu Jiao. Lai Jiu arrived and the siege was broken. Later he was made General of the Right (you jiang jun) stationed in West Long. He raised his troops well and thus won their hearts. Until the middle of [the reign of] Zheng Shi [AD 240–249], he replaced Xiahou Ru as Protector of the Army That Subdues Shu (zheng shu hu jun). At the time, the General Who Suppresses the West (zheng xi jiang jun), Xiahou Xuan, was a younger cousin of Xiahou Ba and Xuan was a cousin of Cao Shuang. When Sima Xuanwang (Sima Yi) executed Cao Shuang, he forthwith summoned Xiahou Xuan. Xiahou Xuan came to the east. Xiahou Ba heared that Cao Shuang was executed while Xiahou Xuan was summoned back, so he believed that disaster was certain to come his way and in his heart, he felt frightened. Also, initially, Xiahou Ba was not on good terms with Inspector (Ci Shi) of Yongzhou, Guo Huai. Since Guo Hua was sent to replace Xiahou Xuan as [General Who] Suppresses the West, Xiahou Ba felt uneasy so he hurriedly went into Shu. He hastened south into Yinping but became lost, entering into the Qiong valley. With provisions exhausted, he killed his horse and later went on foot. He then broke his leg and laid under a rock. He sent someone out to ask for directions but he had no idea what to do. Shu had heard about this and sent a messenger to welcome Xiahou Ba. Initially, in the fifth year of Jian’an [AD 200], at the time Xiahou Ba had a younger cousin who was only thirteen or fourteen years of age and lived in the same prefecture. After going out to gather firewood, she was taken by Zhang Fei. Zhang Fei knew she was from a good family and so he married her, and she bore a daughter who was later Liu Shan’s Empress (Empress Zhang). When Xiahou Yuan died, Zhang Fei’s wife asked to be able to bury [her uncle]. When Xiahou Ba entered Shu, Liu Shan met with him personally, where he explained saying, “Sir, your father met his end in the processes of war and not under the blade of my ancestors.” He pointed his finger to his own son and said, “Here is a [grand]-nephew of the Xiahou family.” He was generously rewarded with noble rank.",
+      "sections": {
+        "xiahou-ba-zhongquan": "夏侯霸 (仲權)\nLifespan Unknown"
+      },
+      "page_title": "Xiahou Ba (Zhongquan) 夏侯霸 (仲權) Sanguozhi Biography by Stephen So (Shu-Han Zhao Lie Di) - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 3628,
+      "url": "https://kongming.net/biographies/sanguozhi/Xiahou-Ba/StephenSo"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:05.182Z",
+  "total_char_count": 3628
+}

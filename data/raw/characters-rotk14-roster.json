@@ -1,0 +1,47 @@
+{
+  "source": "Koei Tecmo Official + 나무위키 삼국지 14",
+  "url": "https://www.koeitecmoamerica.com/rtk14/characters.html",
+  "crawled_at": "2026-03-12",
+  "game": "Romance of the Three Kingdoms XIV",
+  "total_officers": 1000,
+  "stat_categories": ["統率(Command)", "武力(War)", "知力(Intelligence)", "政治(Politics)", "魅力(Charisma)"],
+  "note": "ROTK14 has the largest roster in series history with exactly 1000 officers including DLC",
+  "factions": {
+    "wei": {
+      "name": "위(魏)",
+      "officers": ["Xu Chu (許褚)", "Zhang He (張郃)", "Cao Xiu (曹休)", "Cao Zhen (曹真)", "Cao Chong (曹沖)", "Cao Cao (曹操)", "Xiahou Dun (夏侯惇)", "Xiahou Yuan (夏侯淵)", "Yue Jin (樂進)", "Xu Huang (徐晃)", "Zhang Liao (張遼)", "Xun Yu (荀彧)", "Guo Jia (郭嘉)", "Jia Xu (賈詡)", "Pang De (龐德)", "Sima Yi (司馬懿)", "Wang Yuanji (王元姬)", "Wen Yang (文鴦)"]
+    },
+    "wu": {
+      "name": "오(吳)",
+      "officers": ["Sun Jian (孫堅)", "Sun Ce (孫策)", "Sun Quan (孫權)", "Zhou Yu (周瑜)", "Lu Su (魯肅)", "Lu Meng (呂蒙)", "Lu Xun (陸遜)", "Zhang Zhao (張昭)", "Zhang Hong (張紘)", "Kan Ze (闞澤)", "Zhou Tai (周泰)", "Gan Ning (甘寧)", "Zhuge Ke (諸葛恪)", "Da Qiao (大喬)", "Xiao Qiao (小喬)", "Sun Shangxiang (孫尚香)", "Bu Lianshi (步練師)"]
+    },
+    "shu": {
+      "name": "촉(蜀)",
+      "officers": ["Liu Bei (劉備)", "Guan Yu (關羽)", "Zhang Fei (張飛)", "Zhao Yun (趙雲)", "Zhuge Liang (諸葛亮)", "Xu Shu (徐庶)", "Fa Zheng (法正)", "Huang Zhong (黃忠)", "Wei Yan (魏延)", "Zhou Cang (周倉)", "Liu Shan (劉禪)", "Jiang Wei (姜維)"]
+    },
+    "other": {
+      "name": "기타",
+      "officers": ["Zhang Jiao (張角)", "Zhang Bao (張寶)", "Dong Zhuo (董卓)", "Li Ru (李儒)", "Lu Bu (呂布)", "Diao Chan (貂蟬)", "Chen Gong (陳宮)", "Yuan Shao (袁紹)", "Yan Liang (顏良)", "Wen Chou (文醜)", "Shen Pei (審配)", "Yuan Shu (袁術)", "Zhu Rong (祝融)"]
+    }
+  },
+  "top_stats_total": [
+    {"rank": 1, "name_kr": "조조", "name_cn": "曹操", "total": 451},
+    {"rank": 2, "name_kr": "주유", "name_cn": "周瑜", "total": 444},
+    {"rank": 3, "name_kr": "사마의", "name_cn": "司馬懿", "total": 440}
+  ],
+  "personality_types": [
+    {"name": "Swift", "effect": "Mobility increased when retreating, not affected by ZOC", "example": "Liu Bei"},
+    {"name": "Divine General", "effect": "Assault and defense of allied troops in range increased", "example": "Guan Yu"},
+    {"name": "Brave General", "effect": "Unit not affected when surrounded", "example": "Zhang Fei"},
+    {"name": "Wicked", "effect": "Boosts unit stats within range"},
+    {"name": "Soaring General", "effect": "Ignores ZOC on most terrain; maintains morale"},
+    {"name": "Brave Leader", "effect": "Increases siege ability"},
+    {"name": "Disciplined", "effect": "Prevents disorder status"},
+    {"name": "Overseer", "effect": "Stat boost when controlling prefectures"},
+    {"name": "Water Warlord", "effect": "Stat boost on large rivers"},
+    {"name": "Famous", "effect": "Increases conquest rewards and ransom values"},
+    {"name": "Reckless", "effect": "Restricts command options"},
+    {"name": "Greedy", "effect": "Increases stipend income"},
+    {"name": "Notorious", "effect": "Requires more troops for expansion"}
+  ]
+}

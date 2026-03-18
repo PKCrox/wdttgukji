@@ -1,0 +1,24 @@
+{
+  "character": "Cao Jian",
+  "slug": "cao-jian",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 20 (Wei 20)",
+      "chinese_name": "曹鑒",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Jian\n曹鑒\nLived AD ?–226\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 20 (Wei 20)\nbyZL181\nonOctober 13th, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1728861240' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757778017' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740545494' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740544291' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTheCherishedPrinceofDongwuyang[東武陽懷王] was[Cao] Jian. He was installed in the seventh year of theera [226]. That year, he died. In the third year of theera [235], he was awarded his posthumous title. He had no sons, and the fiefdom was abolished.",
+      "sections": {
+        "cao-jian": "曹鑒\nLived AD ?–226"
+      },
+      "page_title": "Cao Jian 曹鑒 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1082,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Jian/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:11.774Z",
+  "total_char_count": 1082
+}

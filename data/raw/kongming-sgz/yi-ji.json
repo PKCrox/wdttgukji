@@ -1,0 +1,24 @@
+{
+  "character": "Yi Ji",
+  "slug": "yi-ji",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 38 (Shu 8)",
+      "chinese_name": "伊籍",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Yi Ji (Jibo)\n伊籍 (機伯)\nLifespan Unlisted\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 38 (Shu 8)\nbyZL181\nonOctober 16th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697488020' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1757938830' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742011860' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741927613' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYi Ji, styledJibo, was fromShanyang[山陽].\nWhen he was young, he was dependent on his townsman, theGeneral who Guards the South,Liu Biao. When theFormer Lordwas inJing province[荊州],[Yi] Jioften visited and he became trusted. When[Liu] Biaodied, he then followed theFormer Lordsouth to ferry across theYangzi River[江], enteringYi province[益州]. WhenYi province[益州] was stabilized,[Yi] JibecameGentleman Attendantunder theGeneral of the Left. His treatment was second to that ofJian YongandSun Qian, among others.\nHe was sent east as envoy toWu.Sun Quanheard of his talent in debating and wanted to oppose and defeat him through speech. When[Yi] Jientered to pay respects,[Sun] Quansaid, “Must you work hard for an immoral lord?”[Yi] Jiimmediately replied, “One kneel and one rise does not constitute work.” The quick wit of[Yi] Jiwas all of this sort.[Sun] Quansaw him as extraordinary.\nLater, he shifted asGeneral who Illuminates Culture. He,Zhuge Liang,Fa Zheng,Liu Ba, andLi Yanjointly created theLaw of Shu, thus the institution of theLaw of Shucame from these five men.",
+      "sections": {
+        "yi-ji-jibo": "伊籍 (機伯)\nLifespan Unlisted"
+      },
+      "page_title": "Yi Ji (Jibo) 伊籍 (機伯) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1918,
+      "url": "https://kongming.net/biographies/sanguozhi/Yi-Ji/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:36.466Z",
+  "total_char_count": 1918
+}

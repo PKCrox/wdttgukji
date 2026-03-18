@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-xs-4 col-md-3 vcenter" ng-repeat="hero in main.heroes | orderBy:id | toArray:false | filter:searchQuery" ng-if="hero.name">
+    <a href="#/heroes/{{hero.id}}" class="thumbnail">
+      <img ng-src="images/{{hero.id}}.png">
+      <span ng-class="main.getLabel(hero.allegiance)">{{hero.name}}</span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+{
+  "repo": "junqdu/LTKDEX",
+  "branch": "master",
+  "description": "Legends of Three Kingdoms (三国杀) card database",
+  "crawled_at": "2026-03-18T09:49:29.464Z",
+  "total_files_in_repo": 243,
+  "data_files_found": 11,
+  "downloaded": 11,
+  "skipped": 0,
+  "failed": 0,
+  "total_bytes": 22734,
+  "files": [
+    {
+      "path": ".yo-rc.json",
+      "size": 3,
+      "sha": "0967ef424bce6791893e9a57bb952f80fd536e93"
+    },
+    {
+      "path": "README.md",
+      "size": 275,
+      "sha": "b06f853cd0fefce7bf8d3fe65f819b9876b5b201"
+    },
+    {
+      "path": "app/404.html",
+      "size": 3411,
+      "sha": "899828a3c27aee4d57c463792ee2d13bd7caf974"
+    },
+    {
+      "path": "app/index.html",
+      "size": 3819,
+      "sha": "4cd53e5e065104fc2d15d1e2787a66640c091112"
+    },
+    {
+      "path": "app/robots.txt",
+      "size": 41,
+      "sha": "4d521f952625bfae6d3e769c30e45275d351df11"
+    },
+    {
+      "path": "app/static/Structure.txt",
+      "size": 321,
+      "sha": "36795fb7150b870209d0cf2791ae4915e7350551"
+    },
+    {
+      "path": "app/static/heroes.json",
+      "size": 12460,
+      "sha": "c62fb707ad7c1ff2e10934a966b2be2e1af3cb6e"
+    },
+    {
+      "path": "app/views/hero.html",
+      "size": 450,
+      "sha": "e8d76f9d5ef66a4668785a65379947954b35f824"
+    },
+    {
+      "path": "app/views/main.html",
+      "size": 357,
+      "sha": "772399a4d11b9fc6cb6449479e4357a720f54885"
+    },
+    {
+      "path": "bower.json",
+      "size": 570,
+      "sha": "cccabc42f7d6cbb4ce6352a11ac40beb90759f79"
+    },
+    {
+      "path": "package.json",
+      "size": 1031,
+      "sha": "926d3cb6b4cf8177963cf2aa4ddf5dd5d62320be"
+    }
+  ]
+}

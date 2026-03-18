@@ -1,0 +1,24 @@
+{
+  "character": "Sun Yu",
+  "slug": "sun-yu",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "LadyWu",
+      "url_translator": "LadyWu",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 51 (Wu 6)",
+      "chinese_name": "孫瑜",
+      "life_span": "AD 176–215",
+      "source_text": "",
+      "translation": "Sun Yu (Zhongyi)\n孫瑜 (仲異)\nLived AD 176–215\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 51 (Wu 6)\nbyLady Wu\nin2004\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1072958400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744996241' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744996237' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744996237' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nSun Yu, styled Zhongyi, began his military career as a Colonel of Respect and Uprightness. At that time, most of his followers and subordinates were from west of the River, so Sun Yu befriended them humbly and was thus able to gain their support. In the 9th year of Jian’an [AD 204], he was designated Grand Administrator of Danyang, and over ten thousand people came to follow him. He was then promoted to General who Calms the Distant. In the 11th year [AD 206], he went with Zhou Yu to attack the forts at Ma and Bao, and they were victorious. Later on, he followed Sun Quan to repel Lord Cao at Ruxu. Sun Quan was eager to do battle, but Sun Yu advised him to stay put instead. Sun Quan would not listen to him, and indeed his military action was a failure. After that, Sun Yu was promoted to be General who Manifests Might, with the commandery [Danyang] was under his jurisdiction as before. He left Liyang to be stationed at Niuzhu.\nThere, Sun Yu made Rao Zhu, a native of Yong’an, to be Chief of Xiang’an, and made Yan Lian, a man from Wuxi, to be Chief of Juchao. He had them invite the people from the two commanderies at Lujiang to defect, and many from each commandery came over to his side. There was one Ma Pu of Jiang who was fond of learning and admired the ancients, and so Sun Yu sent him lavish gifts, and had hundreds of the junior members of the families of his officers study under him. Eventually he even built a school for him, and had him give lectures at ritual ceremonies. At that time, all the other generals busied themselves solely with military affairs, but Sun Yu alone immersed himself in studying ancient texts. Even when he was in the army camps, one could always hear him reading aloud. He died in the 20th year of Jian’an [AD 215] at the age of 39. He had five sons: Sun Mi, Sun Xi, Sun Yao, Sun Man, and Sun Hong. Sun Man attained the rank of General and was made a marquis.",
+      "sections": {
+        "sun-yu-zhongyi": "孫瑜 (仲異)\nLived AD 176–215"
+      },
+      "page_title": "Sun Yu (Zhongyi) 孫瑜 (仲異) Sanguozhi Biography by Lady Wu - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 2749,
+      "url": "https://kongming.net/biographies/sanguozhi/Sun-Yu/LadyWu"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:35:48.576Z",
+  "total_char_count": 2749
+}

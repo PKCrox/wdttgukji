@@ -1,0 +1,24 @@
+{
+  "character": "Puyang Xing",
+  "slug": "puyang-xing",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]",
+      "chinese_name": "濮陽興",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Puyang Xing (Ziyuan)\n濮陽興 (子元)\nLived AD ?–265\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonJuly 17th, 2023\nNo History Reference defined for Officer ID '441' Puyang Xing (Ziyuan). Biography cannot be tied to a scroll in the Sanguozhi.\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1689552660' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758167420' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742789725' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742776990' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nPuyang Xing, styledZiyuan, was fromChenliu[陳留].\nHis father was[Puyang] Yi, who escaped the chaos during the end ofHanto theJiangdong region[江東]. He attained the rank ofGrand AdministratorofChangsha[長沙太守].A\nThe matters pertaining to[Puyang] Yican be seen in theBiography of Lu Mao.\nWhen[Puyang] Xingwas young, he had a scholarly reputation. He was promoted toPrefectofShangyu[上虞令] during the reign ofSun Quan, then promoted to Secretariat Minister of the Right Office. He was sent as an envoy toShuby being asHousehold General for All Purposes, and when he returned, he served asGrand AdministratorofKuaiji[會稽太守]. At the time, thePrinceofLangye[琅邪王],[Sun] Xiu, resided inKuaiji[會稽], and[Puyang] Xingformed a deep friendship with him. When[Sun] Xiuascended the throne, he summoned[Puyang] Xingto serve asMinister of CeremoniesandGeneral of the Guards, had him deliberate over military and national matters, and enfeoffed him asMarquisofWaihuang[外黃侯].\nIn the third year of theera [260],Chief CommandantYan Miproposed to make fields through lakes1inDanyang[丹楊] by constructing embankments at Puli [浦里]. An edict had the officials congregate for a discussion. Everyone believed the labor would be too much and the fields were not guaranteed to be complete. Only[Puyang] Xingbelieved this could be completed. Thus, he assembled soldiers and people to construct it. The expenditures of the laborious project could not be fully calculated. Many soldiers fled and some even harmed and killed themselves. The common people greatly resented him for this.[Puyang] Xingwas promoted toAssisting Chancellor. He and another favored official of[Sun] Xiu, theGeneral of the Left,Zhang Bu, complemented each other, and the country losthope.•••\nThey would enclose the lake to reclaim the land.↩\nIn the seventh month of the seventh year [264],[Sun] Xiupassed away.Left Army OrganizerWan Yuhad long been friendly withMarquisofWucheng[烏程侯],Sun Hao, and hence made encouragements to[Puyang] Xingand[Zhang] Bu.[Puyang] Xingand[Zhang] Budeposed theprincipal son2of[Sun] Xiuto receive and enthrone[Sun] Hao. When[Sun] Haotreaded the throne steps, he gave[Puyang] Xingthe titles ofPalace AttendantandGovernorofQing province[青州牧]. Soon,[Wan] Yuslandered[Puyang] Xingand[Zhang] Buas having regrets over the past. On the new moon day of the eleventh month [6 December 264], they attended court.[Sun] Haotook the opportunity to arrest[Puyang] Xingand[Zhang] Bu, exiling them toGuang province[廣州], then pursued and killed them when they were on the road. Their clans were exterminated to the thirddegree.•••\nA “principal son” [適子] is a son born by the lawful wife.↩",
+      "sections": {
+        "puyang-xing-ziyuan": "濮陽興 (子元)\nLived AD ?–265"
+      },
+      "page_title": "Puyang Xing (Ziyuan) 濮陽興 (子元) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 3592,
+      "url": "https://kongming.net/biographies/sanguozhi/Puyang-Xing/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:35:32.566Z",
+  "total_char_count": 3592
+}

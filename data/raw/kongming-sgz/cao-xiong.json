@@ -1,0 +1,39 @@
+{
+  "character": "Cao Xiong",
+  "slug": "cao-xiong",
+  "translation_count": 2,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 19 (Wei 19)",
+      "chinese_name": "曹熊",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Xiong\n曹熊\nLived AD after 192–before 220\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 19 (Wei 19)\nbyZL181\nonDecember 5th, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1733430480' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1759968641' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740597422' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1733430533' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTheCherishedPrinceofXiao[蕭懷王] was[Cao] Xiong.1He died early.2In the second year of theera [221], he was posthumously enfeoffed as theCherishedDukeofXiao[蕭懷公]. In the third year of theera [229], he was again posthumously enfeoffed in peerage asPrince. In the second year of theera [234], his son, theLamentedDuke[哀王],[Cao] Bing, succeeded him with a taxable fief of two thousand and five hundred households. In thesixth year,3he died, and had no sons. The fiefdom wasabolished.•••\nHis style name is not recorded in his biography, implying he died before he received his style name. A style name is typically given when someone comes of age. This, in conjunction with the later usage of the phrase “died early” [早薨], may have indicated he died in his late teens. If he did have a style name, it would have likely began with “Zi” [子] as with his older full brothers. Alternatively, he may have been so insignificant that Chen Shou did not bother recording a style name.↩\nIn the romance novel, he hangs himself after he skipped the funeral of Cao Cao and feared the retribution of Cao Pi. The novel likely intended to paint Cao Pi in a highly negative light as someone ruthless and immoral. This most definitely did not happen in history.↩\nThere is no “sixth year” in theera at all. The era after theera is theera, perhaps this “sixth year” belonged to theera, and that Chen Shou forgot to explicitly write down theera earlier. This places the year as the year 245. This is the most likely theory. However, had theera been extended to a “sixth year”, thereby moving theera ahead by one year, that year would have been the year 238.↩",
+      "sections": {
+        "cao-xiong": "曹熊\nLived AD after 192–before 220"
+      },
+      "page_title": "Cao Xiong 曹熊 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 2481,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Xiong/ZL181"
+    },
+    {
+      "translator": "jiuwan",
+      "url_translator": "jiuwan",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 19 (Wei 19)",
+      "chinese_name": "曹熊",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Xiong\n曹熊\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 19 (Wei 19)\nbyjiuwan (Giao Chau)\nin2003\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1041422400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1742770463' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1742699114' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1742439918' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nThe Prince of Xiao Huai, Cao Xiong died early. In the second year of Huang Chu [AD 221], he was added the title Duke of Xiao Huai. In the third year of Tai He [AD 229] his title was further added to that of a prince [Prince of Xiao Huai]. In the second year of Qing Long [AD 234], his son Cao Ai inherited his titles. With the fiefdom increased by two thousand five hundred households. In the sixth year he died without any sons. The line terminated there.",
+      "sections": {
+        "cao-xiong": "曹熊\nLifespan Unknown"
+      },
+      "page_title": "Cao Xiong 曹熊 Sanguozhi Biography by jiuwan (Giao Chau) - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1295,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Xiong/jiuwan"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:36.176Z",
+  "total_char_count": 3776
+}

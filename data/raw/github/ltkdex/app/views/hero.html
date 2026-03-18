@@ -1,0 +1,16 @@
+<div class="thumbnail">
+  <img ng-src="images/{{hero.id}}.png" alt="">
+  <div class="caption">
+    <h3>{{hero.name}}</h3>
+    <p>Title: {{hero.title}}</p>
+    <p>Allegiance: {{allegianceMap[hero.allegiance]}}</p>
+    <p>Gender: {{genderMap[hero.gender]}}</p>
+    <p>Health Point: {{hero.hp}}<p>
+    <p>Skills:</p>
+    <ul>
+      <li ng-repeat="(key,val) in hero.skills">
+        <strong>{{key}}</strong>: {{val}}
+      </li>
+    </ul>
+  </div>
+</div>

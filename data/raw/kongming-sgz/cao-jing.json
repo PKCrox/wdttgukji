@@ -1,0 +1,24 @@
+{
+  "character": "Cao Jing",
+  "slug": "cao-jing",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 20 (Wei 20)",
+      "chinese_name": "曹京",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Jing\n曹京\nLifespan Unknown\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 20 (Wei 20)\nbyZL181\nonOctober 14th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1697289540' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1756672488' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1741875337' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1741875225' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nThePrematureScion of Ling [靈殤公子] was[Cao] Jing. He died early. In the fifth year of theera [231], he was posthumously enfeoffed his posthumous title. He had no descendants.",
+      "sections": {
+        "cao-jing": "曹京\nLifespan Unknown"
+      },
+      "page_title": "Cao Jing 曹京 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1011,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Jing/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:13.660Z",
+  "total_char_count": 1011
+}

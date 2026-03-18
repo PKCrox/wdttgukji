@@ -1,0 +1,24 @@
+{
+  "character": "Cao Rui",
+  "slug": "cao-rui-2",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 20 (Wei 20)",
+      "chinese_name": "曹蕤",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Rui\n曹蕤\nLived AD ?–233\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 20 (Wei 20)\nbyZL181\nonOctober 13th, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1728861240' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1772752216' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740557946' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740544291' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTheGrievedPrinceofBeihai[北海悼王] was[Cao] Rui[曹蕤]. In the seventh year of theera [226], after theBrightEmperorascended the throne, he was installed asCounty PrinceofYangping[陽平縣王]. In the sixth year of theera [232], he changed fief toBeihai. In the first year of theera [233], he died. In the second year,[Cao] Zan, the son of thePrinceofLangye[琅邪王], received the succession of[Cao] Rui[曹蕤] and was enfeoffed asTownship Dukeof Chang [昌鄉公]. In the second year of theera [238], he was installed as Prince ofRao’an[饒安王]. In the seventh year of theera [246], he moved fief toWen’an[文安]. During theanderas, the fief gradually increased, joining with the previous for a total of three thousand and five hundred households.",
+      "sections": {
+        "cao-rui": "曹蕤\nLived AD ?–233"
+      },
+      "page_title": "Cao Rui 曹蕤 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1550,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Rui-2/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:24.898Z",
+  "total_char_count": 1550
+}

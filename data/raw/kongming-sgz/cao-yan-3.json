@@ -1,0 +1,24 @@
+{
+  "character": "Cao Yan",
+  "slug": "cao-yan-3",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 20 (Wei 20)",
+      "chinese_name": "曹儼",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Cao Yan\n曹儼\nLived AD ?–223\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 20 (Wei 20)\nbyZL181\nonOctober 13th, 2024\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1728861240' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1741663934' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1740589796' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1740586988' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nTheLamentedPrinceofGuangping[廣平哀王] was[Cao] Yan. He was enfeoffed in the third year of theera [222]. In the fourth year [223], he died. He had no sons, and the fiefdom was abolished.",
+      "sections": {
+        "cao-yan": "曹儼\nLived AD ?–223"
+      },
+      "page_title": "Cao Yan 曹儼 Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 1018,
+      "url": "https://kongming.net/biographies/sanguozhi/Cao-Yan-3/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:32:40.098Z",
+  "total_char_count": 1018
+}

@@ -1,0 +1,24 @@
+{
+  "character": "Xiang Chong",
+  "slug": "xiang-chong",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "LadyWu",
+      "url_translator": "LadyWu",
+      "source": "Records of the Three Kingdoms [三國志]Scroll 41 (Shu 11)",
+      "chinese_name": "向寵",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Xiang Chong\n向寵\nLived AD ?–240\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nScroll 41 (Shu 11)\nbyLady Wu\nin2002\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1009886400' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1744997447' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1744997159' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1744997159' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nXiang Chong, the son of Xiang Lang’s elder brother, was a General of the Standard in Liu Bei’s time. During the great defeat at Zigui, Xiang Chong’s camp was noted for having suffered far fewer losses than everybody else’s. In the first year of Jianxing (AD 223) he was made Marquis of Duting, and afterwards, Chief Inspector of the Center, commanding the Imperial Guard. Right before Zhuge Liang’s departure to the north, he memorialized to the Latter Ruler [see below]. He [Xiang Chong] was then promoted to Commandant of the Center Army.\n“General Xiang Chong is a man of well-balanced temperament, versed in military matters, to whom, after testing him, the late Emperor applied the epithet ‘capable’. The consensus of opinion is that Xiang Chong should be Grand Commander. My advice is to consult him in all military matters, great or small, whereby your military forces will yield their maximum, each one being employed to the bestadvantage.”1•••\nTranslation of this passage is from Brewitt-Taylor’s translation ofRomance of the Three Kingdoms.↩\nHe was then promoted to Commandant of the Center Army.\nIn the 3rd year of Yanxi (AD 240), he was killed during a campaign against the barbarians of the Hanjia area. His younger brother, Xiang Chong2rose to be Colonel who Shoots at Sounds, and Imperial Secretariat.A•••\nThis isChongin first tone, while the Xiang Chong, Commandant of the Center Army, has the nameChongin third tone.↩\nXiangyang Ji: In the sixth month of the first year of Xianxi of Wei (AD 264), Wei Guan arrived in Chengdu, and obtained two imperial seals, of different kinds of jade, and with engravings on them resembling the characters “Cheng Xin”. Wei Guan showed them to all officers, and kept it in storage at the Chancellor’s residence. When Xiang Chong (the younger brother) heard about it, he said, “I have heard Qiao Zhou say that the Former Emperor’s name wasBei, signifies ‘to prepare’, and the Latter Emperor’s nameShan, means ‘to give’. Now that the Liu has prepared the land, it has to be given away. Now, the Commissioner of the Central Army (Sima Yan) is called Yan, and the peak of the Han rule was during the Yan-xing (xing means ‘to rise’) years. The auspicious object, having left Chengdu, is now kept at the Chancellor’s residence. This must be the will of Heaven!” That same year, Xiang Chong was made Grand Administrator of Zitong. In the 12th month of the following year, the Martial Emperor of Jin (Jin Wudi, Sima Yan) assumed the throne. And thus the saying about Yan-xing was fulfilled.\nSun Sheng comments thus: In the past, Gongsun Shu rose to power in Chengdu, and was titled “the Cheng man”. Perhaps the engravings on the seals were the works of him!",
+      "sections": {
+        "xiang-chong": "向寵\nLived AD ?–240"
+      },
+      "page_title": "Xiang Chong 向寵 Sanguozhi Biography by Lady Wu - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 3526,
+      "url": "https://kongming.net/biographies/sanguozhi/Xiang-Chong/LadyWu"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:14.370Z",
+  "total_char_count": 3526
+}

@@ -1,0 +1,63 @@
+{
+  "source": "나무위키 삼국지/연표",
+  "url": "https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80/%EC%97%B0%ED%91%9C",
+  "crawled_at": "2026-03-12",
+  "period": "127 CE - 280 CE",
+  "data": [
+    {"year": 127, "event": "정현 출생", "event_en": "Birth of Zheng Xuan", "participants": ["정현", "노식"], "significance": "Notable scholars born"},
+    {"year": 155, "event": "주요 군벌 출생", "event_en": "Births of major warlords", "participants": ["조조", "원술", "원소", "손책"], "significance": "Future Three Kingdoms founders emerge"},
+    {"year": 175, "event": "손책, 주유 출생", "event_en": "Sun Ce and Zhou Yu born", "participants": ["손책", "주유"], "significance": "Eastern Wu founders"},
+    {"year": 181, "event": "제갈량 출생", "event_en": "Zhuge Liang born", "participants": ["제갈량"], "significance": "Future Shu strategist"},
+    {"year": 182, "event": "손권 출생", "event_en": "Sun Quan born", "participants": ["손권"], "significance": "Future Eastern Wu emperor"},
+    {"year": 184, "event": "황건적의 난", "event_en": "Yellow Turban Rebellion", "participants": ["장각", "황보숭", "노식", "손견"], "location": "전국", "significance": "삼국지 시대의 시작. 태평도 교주 장각이 주도한 대규모 농민 반란"},
+    {"year": 185, "event": "양주 반란, 유언 익주자사 부임", "event_en": "Yang Zhou uprisings; Liu Yan appointed", "participants": ["유언"], "significance": "서남 지역 세력 기반 형성"},
+    {"year": 187, "event": "한수 한나라에 귀순", "event_en": "Han Sui submits to Han court", "participants": ["한수"], "significance": "북방 안정"},
+    {"year": 189, "event": "십상시의 난, 동탁 권력 장악", "event_en": "Ten Eunuchs Coup; Dong Zhuo seizes power", "participants": ["동탁", "여포", "원소", "하진"], "location": "낙양", "significance": "조정 붕괴, 동탁이 권력 장악"},
+    {"year": 190, "event": "반동탁 연합군 결성, 호뢰관 전투", "event_en": "Anti-Dong Zhuo coalition; Battle of Hulao Gate", "participants": ["원소", "조조", "손견", "여포", "동탁"], "location": "낙양 일대", "significance": "연합군의 일시적 성공"},
+    {"year": 191, "event": "반동탁 연합 와해", "event_en": "Coalition collapse", "participants": ["원술"], "significance": "지역 할거 시작"},
+    {"year": 192, "event": "동탁 암살, 여포와 왕윤의 미인계", "event_en": "Dong Zhuo assassinated by Lu Bu", "participants": ["여포", "왕윤", "동탁", "초선"], "location": "장안", "significance": "동탁 사망, 혼란 지속"},
+    {"year": 193, "event": "서주 대학살 (1차)", "event_en": "First Xuzhou Massacre", "participants": ["조조", "유비", "도겸"], "location": "서주", "significance": "조조의 서주 침공"},
+    {"year": 194, "event": "서주 대학살 (2차), 손책 강동 획득", "event_en": "Second Xuzhou massacre; Sun Ce gains Jiangdong", "participants": ["조조", "손책"], "significance": "손책의 강동 기반 확립"},
+    {"year": 196, "event": "여포 서주 탈취, 조조 헌제 옹립", "event_en": "Lu Bu captures Xuzhou; Cao Cao installs Emperor Xian", "participants": ["여포", "조조", "헌제"], "location": "서주, 허도", "significance": "조조의 정치적 기반 확립"},
+    {"year": 198, "event": "하비 전투 - 여포 패망", "event_en": "Battle of Xiapi - Lu Bu defeated", "participants": ["조조", "여포", "진궁"], "location": "하비", "significance": "여포 처형, 조조 세력 확대"},
+    {"year": 200, "event": "관도대전", "event_en": "Battle of Guandu", "participants": ["조조", "원소", "장합", "고람"], "location": "관도", "significance": "조조가 원소를 결정적으로 격파. 화북 패권 확립의 전환점"},
+    {"year": 202, "event": "원소 사망, 후계자 분쟁", "event_en": "Yuan Shao's death; succession crisis", "participants": ["원소", "원담", "원상"], "significance": "북방 세력 전환"},
+    {"year": 204, "event": "조조 업성 함락 (원소의 수도)", "event_en": "Cao Cao captures Ye", "participants": ["조조"], "location": "업성", "significance": "북방 통일 진행"},
+    {"year": 205, "event": "원담 패배 및 처형", "event_en": "Yuan Tan defeated and executed", "participants": ["원담", "조조"], "significance": "원씨 세력 사실상 소멸"},
+    {"year": 207, "event": "삼고초려 - 유비, 제갈량 영입", "event_en": "Three Visits to the Thatched Cottage", "participants": ["유비", "제갈량"], "location": "융중", "significance": "천하삼분지계 제시. 촉한의 전략적 청사진"},
+    {"year": 208, "event": "적벽대전", "event_en": "Battle of Red Cliffs", "participants": ["조조", "유비", "손권", "주유", "제갈량", "황개"], "location": "적벽", "significance": "조조의 남방 확장 저지. 삼국 정립의 결정적 전투"},
+    {"year": 209, "event": "유비 형주 남부 영토 획득", "event_en": "Liu Bei gains southern Jing Province", "participants": ["유비"], "location": "형주", "significance": "촉한 확장의 시작"},
+    {"year": 211, "event": "유비 입촉", "event_en": "Liu Bei enters Shu/Yizhou", "participants": ["유비", "유장"], "location": "익주", "significance": "유비의 촉 정복 시작"},
+    {"year": 214, "event": "유비 성도 함락, 마초 귀순", "event_en": "Liu Bei conquers Chengdu; Ma Chao submits", "participants": ["유비", "마초", "유장"], "location": "성도", "significance": "촉한 건국의 기반 확립"},
+    {"year": 215, "event": "합비 전투, 장로 조조에 귀순", "event_en": "Battle of Hefei; Zhang Lu submits", "participants": ["손권", "장료", "장로", "조조"], "location": "합비, 한중", "significance": "위나라 영토 통합"},
+    {"year": 219, "event_group": [
+      {"event": "정군산 전투 - 하후연 전사", "event_en": "Battle of Mount Dingjun", "participants": ["유비", "하후연", "황충"], "location": "정군산", "significance": "유비의 한중 확보"},
+      {"event": "유비 한중왕 등극", "event_en": "Liu Bei becomes King of Hanzhong", "participants": ["유비"], "location": "한중"},
+      {"event": "번성 공방전, 관우 사망", "event_en": "Battle of Fancheng; Guan Yu's death", "participants": ["관우", "우금", "방덕", "여몽", "손권"], "location": "번성, 형주", "significance": "관우 포로 후 처형. 촉한의 결정적 타격"}
+    ]},
+    {"year": 220, "event": "조조 사망, 조비 위나라 건국", "event_en": "Cao Cao dies; Cao Pi establishes Wei", "participants": ["조조", "조비", "헌제"], "location": "낙양", "significance": "후한 멸망, 위나라 건국"},
+    {"year": 221, "event_group": [
+      {"event": "유비 촉한 건국", "event_en": "Liu Bei founds Shu Han", "participants": ["유비"], "location": "성도", "significance": "촉한 제국 수립"},
+      {"event": "장비 암살", "event_en": "Zhang Fei assassinated", "participants": ["장비"], "significance": "촉한의 핵심 무장 상실"}
+    ]},
+    {"year": 222, "event": "이릉대전 - 육손의 화공", "event_en": "Battle of Yiling", "participants": ["유비", "육손"], "location": "이릉", "significance": "유비의 동정 실패. 촉한 국력 크게 약화"},
+    {"year": 223, "event": "유비 사망, 유선 즉위", "event_en": "Liu Bei dies; Liu Shan succeeds", "participants": ["유비", "유선", "제갈량"], "location": "백제성", "significance": "세대교체. 제갈량에게 탁고"},
+    {"year": 225, "event": "칠종칠금 - 남만 정벌", "event_en": "Seven Captures of Meng Huo", "participants": ["제갈량", "맹획"], "location": "남중", "significance": "남방 안정화"},
+    {"year": 227, "event": "제갈량 제1차 북벌, 출사표", "event_en": "First Northern Expedition; Chu Shi Biao", "participants": ["제갈량"], "location": "한중→위", "significance": "출사표 제출. 북벌 시작"},
+    {"year": 228, "event_group": [
+      {"event": "가정 전투 - 마속 패배", "event_en": "Battle of Jieting - Ma Su defeated", "participants": ["제갈량", "마속", "장합"], "location": "가정", "significance": "마속의 전략적 실패, 제갈량의 읍참마속"},
+      {"event": "제2차 북벌", "event_en": "Second Northern Expedition", "participants": ["제갈량"], "significance": "위나라의 저항"}
+    ]},
+    {"year": 229, "event": "손권 오나라 건국, 삼국정립 완성", "event_en": "Sun Quan founds Eastern Wu", "participants": ["손권"], "location": "건업", "significance": "삼국 체제 완성"},
+    {"year": 231, "event": "제4차 북벌, 장합 전사", "event_en": "Fourth Northern Expedition; Zhang He dies", "participants": ["제갈량", "사마의", "장합"], "significance": "전략적 교착 상태"},
+    {"year": 234, "event": "오장원 전투 - 제갈량 사망", "event_en": "Battle of Wuzhang Plains - Zhuge Liang dies", "participants": ["제갈량", "사마의"], "location": "오장원", "significance": "제갈량의 최후. 촉한 북벌의 사실상 종료"},
+    {"year": 238, "event": "공손연 반란 진압", "event_en": "Gongsun Yuan's rebellion suppressed", "participants": ["사마의", "공손연"], "significance": "위나라 동방 국경 안정"},
+    {"year": 239, "event": "조예(위 명제) 사망", "event_en": "Cao Rui dies", "participants": ["조예", "조방"], "significance": "어린 황제 조방에게 양위"},
+    {"year": 249, "event": "고평릉 사변 - 사마의 쿠데타", "event_en": "Gaoping Ling Incident - Sima Yi seizes power", "participants": ["사마의", "조상"], "significance": "사마씨가 위나라 실권 장악"},
+    {"year": 252, "event": "손권 사망", "event_en": "Sun Quan dies", "participants": ["손권"], "significance": "오나라 후계 위기"},
+    {"year": 260, "event": "사마소, 조모 시해", "event_en": "Sima Zhao assassinates Emperor Cao Mao", "participants": ["사마소", "조모"], "significance": "위나라 황실 권위 완전 몰락"},
+    {"year": 263, "event": "촉한 멸망", "event_en": "Wei conquers Shu Han", "participants": ["등애", "종회", "강유", "유선"], "location": "성도", "significance": "촉한 멸망. 유선 항복"},
+    {"year": 265, "event": "서진 건국", "event_en": "Western Jin founded", "participants": ["사마염"], "significance": "사마염이 위나라에서 선양받아 진나라 건국"},
+    {"year": 280, "event": "오나라 멸망, 삼국 통일", "event_en": "Eastern Wu falls; China unified", "participants": ["사마염", "손호"], "significance": "삼국시대 종결. 서진에 의한 통일"}
+  ]
+}

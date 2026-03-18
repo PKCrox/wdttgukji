@@ -1,0 +1,24 @@
+{
+  "character": "Yin Mo",
+  "slug": "yin-mo",
+  "translation_count": 1,
+  "translations": [
+    {
+      "translator": "ZL181",
+      "url_translator": "ZL181",
+      "source": "Records of the Three Kingdoms [三國志]",
+      "chinese_name": "尹默",
+      "life_span": "",
+      "source_text": "",
+      "translation": "Yin Mo (Siqian)\n尹默 (思潛)\nLived AD ?–ca.240\naSanguozhiBiographyRecords of the Three Kingdoms [三國志]\nbyZL181\nonMay 20th, 2023\nAbstractEntity::setUpdateForRefresh: 'update_for_refresh' value 'NULL' changed to 'true' via 'loadFlags::$this->update_for_refresh'\nAbstractEntity::updateTimestamp: Timestamp 'published_at' changed to '1684607040' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'rendered_at' changed to '1758209370' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'updated_at' changed to '1758002482' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nAbstractEntity::updateTimestamp: Timestamp 'created_at' changed to '1757998606' from 'NULL' via 'AbstractEntity::loadEntityCache::data[db][*]'\nYin Mo, styledSiqian, was fromFu[涪],Zitong[梓潼].\nMost of Yi province [益部] valued the New Text [studies]1and did not respect paragraphs and sentences.2[Yin] Moknew that this was shallow, so he travelled afar toJing province[荊州] and received teachings about the Ancient [Text] studies fromSimaDecaoandSongZhongzi. He comprehended all the various classics and histories, and he was especially specialized with theCommentary of Zuoon theChronicles. From the listings and examples of Liu Xin [劉歆] to the annotations and sayings of Zheng Zhong [鄭眾], Jia Kui [賈逵] and his son,ChenYuanfang, andFu Qian, he could generally recite them all without referencing the original [text]again.•••\nThe New Text studies sect was focused on Ruist texts that were written in the official script during theHan dynasty. A rival sect was the Ancient Text studies sect, which focused on rediscovered Ruist texts written in pre-Han scripts that had differences with the texts that the New Text studies sect endorsed.↩\n“Paragraphs and sentences” were often scrutinized by scholars of the Ancient Text studies sect, wanting its adherents to have an accurate understanding of each sentence and paragraph.↩\nAfter theFormer LordstabilizedYi province[益州] and becameGovernor, he served asClerkwho Encourages Education. When theHeir Apparentwas established,[Yin] Mowas appointedDeputy. He had theCommentary of Zuotaught to theLatter Lord.\nWhen theLatter Lordascended the steps, he [Yin Mo] was conferred to serve asGrandee Remonstrant; whenAssisting Chancellor[Zhuge] Liangwent toHanzhong[漢中], he was invited to serve as ArmyLibationer; and when[Zhuge] Liangdied, he returned toChengdu[成都] and was conferred to serve asPalace Grandee.\nWhen he died, his son,[Yin] Zong, inherited his legacy, and served asAcademician.A\nSongZhongziwas later inWei.\nTheSummary of Weistates: His son andWei Fengplotted to rebel, so they were executed. TheHeir ApparentofWeiwrote a message toWang Lang, stating:\n“In the past, when Shi Hou [石厚] was traveling with [Ji] Zhouxu [姬州籲], his father, [Shi] Que [石碏], knew that he would participate in rebellion.3When theViscountof Han [韓子] was close with Tian Su [田蘇], theSolemnViscount[穆子] knew that he would be excellent at benevolence.4Therefore, when men of noble character travel, they must have direction, and when they reside, they must be with [worthy] scholars. Truly this is the case. Alas!Song Zhonglacked the intelligent foresight of Master Shi, and now he will suffer from his error in his elderly years. Even if he wanted to be pardoned by fulfilling the punishment of exterminating kin and establishing the moral integrity of a pure subject, how can that still bedone?”•••\nJi Zhouxu plotted to murder his older brother, the Duke of Wei [衛公], in order to become Duke, and succeeded. Master Shi Que, a minister of Wei, was so horrified at this association he arranged for both of them to be killed.↩\nThis man, Han Qi [韓起], was the younger brother of theSolemnViscount[穆子], Han Wuji [韓無忌], who relinquished his clan position to him. He was a close friend of Tian Su, a wise man. Han Qi increased the prosperity of the Han clan.↩",
+      "sections": {
+        "yin-mo-siqian": "尹默 (思潛)\nLived AD ?–ca. 240"
+      },
+      "page_title": "Yin Mo (Siqian) 尹默 (思潛) Sanguozhi Biography by ZL181 - Records of the Three Kingdoms (三國志) by Chen Shou – Kongming’s Archives",
+      "char_count": 3954,
+      "url": "https://kongming.net/biographies/sanguozhi/Yin-Mo/ZL181"
+    }
+  ],
+  "crawled_at": "2026-03-18T09:36:38.417Z",
+  "total_char_count": 3954
+}
