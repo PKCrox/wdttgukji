@@ -9957,7 +9957,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "liuyan_support",
+          "text": "유언의 익주 부임을 지지",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "liuyan_ignore",
+          "text": "관여하지 않는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 양주 반란, 유언 익주자사 부임",
       "tags": [
         "timeline",
@@ -10028,7 +10047,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hansui_accept",
+          "text": "한수의 귀순을 환영",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "hansui_distrust",
+          "text": "한수를 의심한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 한수 한나라에 귀순",
       "tags": [
         "timeline",
@@ -10136,7 +10183,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "eunuch_resist",
+          "text": "십상시에 맞서 궁을 탈환",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "eunuch_flee",
+          "text": "혼란을 틈타 도주",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 십상시의 난, 동탁 권력 장악",
       "tags": [
         "timeline",
@@ -10253,7 +10334,55 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hulao_vanguard",
+          "text": "선봉으로 호뢰관 공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "charisma",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "hulao_support",
+          "text": "후방에서 지원",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hulao_passive",
+          "text": "관망한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 반동탁 연합군 결성, 호뢰관 전투",
       "tags": [
         "timeline",
@@ -10329,7 +10458,49 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "collapse_unite",
+          "text": "연합 유지를 위해 중재",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "politics",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "collapse_leave",
+          "text": "연합을 이탈하고 독자 세력화",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 반동탁 연합 와해",
       "tags": [
         "timeline",
@@ -10441,7 +10612,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dz_celebrate",
+          "text": "동탁 처단을 환영한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "dz_wary",
+          "text": "여포/왕윤의 권력 장악을 경계",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 동탁 암살, 여포와 왕윤의 미인계",
       "tags": [
         "timeline",
@@ -10548,7 +10747,49 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xuzhou_rescue",
+          "text": "서주 백성을 구호한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 15
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "xuzhou_condemn",
+          "text": "조조의 학살을 규탄한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 서주 대학살 (1차)",
       "tags": [
         "timeline",
@@ -10661,7 +10902,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xuzhou2_defend",
+          "text": "서주 방어에 나선다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "xuzhou2_retreat",
+          "text": "서주를 포기하고 남하",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 서주 대학살 (2차), 손책 강동 획득",
       "tags": [
         "timeline",
@@ -10781,7 +11056,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "lubu_fight",
+          "text": "여포에 맞서 서주를 지킨다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "lubu_flee",
+          "text": "서주를 버리고 조조에게 의탁",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": 10
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 여포 서주 탈취, 조조 헌제 옹립",
       "tags": [
         "timeline",
@@ -10900,7 +11210,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xiapi_flood",
+          "text": "수공으로 하비성을 수몰",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "xiapi_starve",
+          "text": "장기 포위로 여포를 굶긴다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -2000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 하비 전투 - 여포 패망",
       "tags": [
         "timeline",
@@ -11122,7 +11466,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "ye_storm",
+          "text": "업성 총공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 15000
+              }
+            }
+          ]
+        },
+        {
+          "id": "ye_siege",
+          "text": "장기 포위",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 10000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 조조 업성 함락 (원소의 수도)",
       "tags": [
         "timeline",
@@ -11208,7 +11593,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuantan_execute",
+          "text": "원담을 처형한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuantan_spare",
+          "text": "원담을 등용한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 원담 패배 및 처형",
       "tags": [
         "timeline",
@@ -14437,7 +14849,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "gongsun_quick",
+          "text": "속전속결로 진압",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "gongsun_negotiate",
+          "text": "협상으로 귀순시킨다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 공손연 반란 진압",
       "tags": [
         "timeline",
@@ -14902,7 +15348,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "caomao_support",
+          "text": "황제를 지지하여 저항",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "caomao_sima",
+          "text": "사마소 편에 선다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 사마소, 조모 시해",
       "tags": [
         "timeline",
@@ -14968,7 +15448,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jin_accept",
+          "text": "서진 건국을 인정한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": "jin_resist",
+          "text": "끝까지 저항한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 서진 건국",
       "tags": [
         "timeline",
@@ -15049,7 +15556,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wu_fall_fight",
+          "text": "오나라가 끝까지 저항",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -30000
+              }
+            }
+          ]
+        },
+        {
+          "id": "wu_fall_surrender",
+          "text": "오나라가 항복한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wu",
+              "value": {
+                "delta": -20000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (namuwiki): 오나라 멸망, 삼국 통일",
       "tags": [
         "timeline",
@@ -15123,7 +15657,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hejin_support",
+          "text": "하진의 대장군 임명을 지지",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "hejin_oppose",
+          "text": "환관 세력과 결탁",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 하진 대장군 임명",
       "tags": [
         "timeline",
@@ -15233,7 +15801,50 @@
           "value": "liu_bei"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "oath_sworn",
+          "text": "도원에서 의형제를 맺는다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "guan_yu",
+                "delta": 20
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "zhang_fei",
+                "delta": 20
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "oath_skip",
+          "text": "맹세를 거절한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 도원결의",
       "tags": [
         "timeline",
@@ -15307,7 +15918,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zl_resist",
+          "text": "장로의 거병에 대응",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "zl_ignore",
+          "text": "무시한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연표 (yellow): 장로 거병",
       "tags": [
         "timeline",
@@ -15377,7 +16007,27 @@
           "value": 5000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "sunce_help",
+          "text": "손책의 남방 정복을 돕는다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "sun_quan",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "sunce_watch",
+          "text": "관망한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연표 (yellow): 손책 남방 정복 시작",
       "tags": [
         "timeline",
@@ -15542,7 +16192,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "eunuch_purge",
+          "text": "환관 세력을 숙청한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "eunuch_compromise",
+          "text": "환관과 타협하여 안정시킨다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 십상시의 난",
       "tags": [
         "timeline",
@@ -15635,7 +16319,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dz_resist",
+          "text": "동탁에 맞서 저항한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "dz_submit",
+          "text": "동탁의 권위를 인정한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -15
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 동탁 권력 장악",
       "tags": [
         "timeline",
@@ -15745,7 +16470,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "coalition_lead",
+          "text": "적극적으로 연합군을 이끈다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "coalition_follow",
+          "text": "참여하되 주도하지 않는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 반동탁 연합군 결성",
       "tags": [
         "timeline",
@@ -15827,7 +16586,49 @@
           "value": -5000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "punitive_attack",
+          "text": "동탁 본진을 직접 공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "punitive_flank",
+          "text": "측면에서 기습한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -3000
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": {
+                "stat": "command",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 동탁 토벌전",
       "tags": [
         "timeline",
@@ -15938,7 +16739,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "luoyang_rescue",
+          "text": "낙양 백성을 구출한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "luoyang_pursue",
+          "text": "동탁을 추격한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 동탁 낙양 불태우고 천도",
       "tags": [
         "timeline",
@@ -16039,7 +16874,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yangcheng_fight",
+          "text": "양성에서 전면전",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "yangcheng_ambush",
+          "text": "매복전을 펼친다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 양성 전투",
       "tags": [
         "timeline",
@@ -16132,7 +17008,34 @@
           "value": -3000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "gz_support_gongsun",
+          "text": "공손찬을 지원한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "gz_neutral",
+          "text": "중립을 유지한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 공손찬 vs 원소 충돌",
       "tags": [
         "timeline",
@@ -16343,7 +17246,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jizhou_oppose",
+          "text": "원소의 기주 탈취에 반대",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "jizhou_ignore",
+          "text": "무시한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "정사 위서·원소전. 원소가 한복을 위협하여 기주를 빼앗음 (191년)",
       "tags": [
         "politics",
@@ -16430,7 +17352,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jieqiao_charge",
+          "text": "기병 돌격으로 적 진영을 돌파",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "jieqiao_defend",
+          "text": "방어진을 치고 소모전",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 위서·원소전. 계교 전투에서 원소가 공손찬의 백마의종을 격파 (191년)",
       "tags": [
         "battle",
@@ -16529,7 +17478,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "assassin_support",
+          "text": "암살 세력을 지원한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "assassin_distance",
+          "text": "거리를 둔다",
+          "effects": []
+        }
+      ],
       "historical_basis": "정사 위서·동탁전, 여포전. 왕윤과 여포의 협모로 동탁 피살 (192년 4월 23일)",
       "tags": [
         "assassination",
@@ -16642,7 +17610,33 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "changan_intervene",
+          "text": "장안 전투에 개입",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "changan_stay",
+          "text": "관여하지 않는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "정사 위서·동탁전. 이각·곽사의 장안 공격, 왕윤 피살, 여포 도주 (192년)",
       "tags": [
         "battle",
@@ -16882,7 +17876,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "puyang_fire",
+          "text": "화공으로 적을 몰아낸다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "puyang_siege",
+          "text": "포위전으로 고립시킨다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 위서·무제기, 여포전. 복양 전투에서 조조가 화공에 당해 고전 (194년)",
       "tags": [
         "battle",
@@ -16960,7 +17988,27 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "sunce_ally",
+          "text": "손책과 동맹",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "sun_quan",
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "sunce_ignore",
+          "text": "관여하지 않는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "정사 오서·손책전. 손책의 강동 정벌 (194~196년)",
       "tags": [
         "conquest",
@@ -17031,7 +18079,33 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "rescue_emperor",
+          "text": "헌제를 구출한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 15
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "ignore_emperor",
+          "text": "개입하지 않는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "정사 후한서·헌제기. 헌제의 장안 탈출과 낙양 귀환 (195년)",
       "tags": [
         "politics",
@@ -17116,7 +18190,36 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "emperor_support",
+          "text": "조조의 헌제 보호를 지지",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "emperor_suspect",
+          "text": "조조의 의도를 의심한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 위서·무제기. 조조의 헌제 봉영과 허창 천도 (196년)",
       "tags": [
         "politics",
@@ -17214,7 +18317,33 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuanshu_attack",
+          "text": "원술 토벌에 참전",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuanshu_avoid",
+          "text": "전투를 회피한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "정사 위서·원술전. 원술의 참칭과 토벌, 몰락 (197~199년)",
       "tags": [
         "politics",
@@ -17450,7 +18579,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuanshao_ally",
+          "text": "원소와 동맹하여 조조에 대항",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "yuan_shao",
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuanshao_independent",
+          "text": "독자 노선을 걷는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 위서·원소전. 공손찬 멸망 후 원소의 하북 4주 통합 (199년)",
       "tags": [
         "conquest",
@@ -17537,7 +18694,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "liubei_fight",
+          "text": "조조군에 맞서 싸운다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "war",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "liubei_flee",
+          "text": "원소에게로 도주한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 촉서·선주전. 유비의 서주 거병 실패, 관우 항복 (200년)",
       "tags": [
         "battle",
@@ -17624,7 +18816,43 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "baima_guanyu",
+          "text": "관우에게 출격을 명한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "war",
+                "delta": 3
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "baima_combined",
+          "text": "합동 작전으로 공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 촉서·관우전. 백마 전투에서 관우가 안량을 참수 (200년)",
       "tags": [
         "battle",
@@ -17985,7 +19213,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "north_fast",
+          "text": "속전속결로 북방 통일",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -15000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 20000
+              }
+            }
+          ]
+        },
+        {
+          "id": "north_slow",
+          "text": "단계적으로 하나씩 평정",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 15000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 위서·무제기. 조조의 하북 평정 (203~207년)",
       "tags": [
         "conquest",
@@ -18920,7 +20189,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hefei_attack",
+          "text": "합비를 공격한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hefei_retreat",
+          "text": "합비 공격을 포기",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 오서·손권전. 적벽 이후 손권의 합비 공략 실패 (208~209년)",
       "tags": [
         "battle",
@@ -19015,7 +20318,49 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nanjun_take",
+          "text": "남군을 점령한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nanjun_share",
+          "text": "오나라와 남군을 분할",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "sun_quan",
+                "delta": 5
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 4000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 오서·주유전, 촉서·선주전. 남군 전투와 형주 분할 (209년)",
       "tags": [
         "battle",
@@ -19094,7 +20439,38 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhuge_trust",
+          "text": "제갈량에게 전권을 맡긴다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": 10
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "politics",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhuge_limit",
+          "text": "제갈량의 권한을 제한한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": -5
+            }
+          ]
+        }
+      ],
       "historical_basis": "정사 촉서·제갈량전. 형주 경영기의 제갈량 (210년경)",
       "tags": [
         "administration",
@@ -19849,7 +21225,49 @@
           "value": 10
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "weiking_accept",
+          "text": "조조가 위왕을 수락한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "weiking_refuse",
+          "text": "위왕을 사양한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 15
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": {
+                "stat": "charisma",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 조조 위왕 책봉",
       "tags": [
         "timeline",
@@ -20171,7 +21589,48 @@
           "value": 15
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hanzhong_hold",
+          "text": "한중을 확고히 지킨다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hanzhong_expand",
+          "text": "한중에서 북진한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 유비 한중 탈환",
       "tags": [
         "timeline",
@@ -20620,7 +22079,43 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wei_founding_condemn",
+          "text": "위나라 건국을 규탄한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_pi",
+                "delta": -20
+              }
+            }
+          ]
+        },
+        {
+          "id": "wei_founding_accept",
+          "text": "현실을 인정한다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_pi",
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 조비 위나라 건국",
       "tags": [
         "timeline",
@@ -20690,7 +22185,41 @@
           "value": 20
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "shu_founding",
+          "text": "촉한을 건국하고 정통성을 주장",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 15
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "shu_delay",
+          "text": "건국을 미루고 실력을 키운다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 유비 촉한 건국",
       "tags": [
         "timeline",
@@ -20919,7 +22448,55 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "chushibiao_full",
+          "text": "출사표를 올리고 전력 북벌",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 15
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 15000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -15000
+              }
+            }
+          ]
+        },
+        {
+          "id": "chushibiao_partial",
+          "text": "소규모 원정만 한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 8000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 제갈량 출사표 상주",
       "tags": [
         "timeline",
@@ -21203,7 +22780,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jieting_masu2",
+          "text": "마속을 가정에 배치한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -15000
+              }
+            }
+          ]
+        },
+        {
+          "id": "jieting_weiyan2",
+          "text": "위연을 가정에 배치한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "wei_yan",
+              "value": {
+                "stat": "command",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 가정 전투",
       "tags": [
         "timeline",
@@ -21321,7 +22933,40 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jiangwei_recruit",
+          "text": "강유를 영입한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "jiang_wei",
+              "value": 15
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "jiangwei_test",
+          "text": "강유를 시험한 후 등용",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "jiang_wei",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 강유 제갈량 합류",
       "tags": [
         "timeline",
@@ -21426,7 +23071,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb2_aggressive",
+          "text": "적극적으로 위나라 영토 공략",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb2_cautious",
+          "text": "방어 거점 확보에 집중",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 제2차 북벌",
       "tags": [
         "timeline",
@@ -21532,7 +23218,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb3_push",
+          "text": "위나라 깊숙이 진격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -12000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb3_defend",
+          "text": "기존 영토를 공고히 한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 제3차 북벌",
       "tags": [
         "timeline",
@@ -22038,7 +23758,43 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wu_founding_ally",
+          "text": "오나라 건국을 축하하고 동맹 강화",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "sun_quan",
+                "delta": 10
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "wu_founding_cold",
+          "text": "냉담하게 대한다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "sun_quan",
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 손권 오나라 건국",
       "tags": [
         "timeline",
@@ -22252,7 +24008,34 @@
           "value": -25
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "caomao2_resist",
+          "text": "시해에 반대한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "caomao2_accept",
+          "text": "현실을 수용한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 사마소 조모 시해",
       "tags": [
         "timeline",
@@ -22591,7 +24374,34 @@
           "value": 20
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jin_founding",
+          "text": "사마염이 진나라를 선포한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": "jin_delay",
+          "text": "선양을 지연시킨다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 사마염 진나라 건국",
       "tags": [
         "timeline",
@@ -22670,7 +24480,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "conquest_swift",
+          "text": "전격전으로 오나라 정복",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -20000
+              }
+            }
+          ]
+        },
+        {
+          "id": "conquest_gradual",
+          "text": "단계적으로 정복",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -15000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연표 (yellow): 진나라의 오나라 정복",
       "tags": [
         "timeline",
@@ -22773,7 +24624,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yellow_join",
+          "text": "의용군을 조직하여 토벌에 참전",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "yellow_watch",
+          "text": "관망하며 세력을 키운다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 1회: 도원결의, 황건적의 난",
       "tags": [
         "novel_chapter",
@@ -22894,7 +24779,52 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "oath_sworn2",
+          "text": "하늘에 맹세한다 — 같은 날 죽자",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "guan_yu",
+                "delta": 20
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "zhang_fei",
+                "delta": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "oath_casual",
+          "text": "형식 없이 뜻만 모은다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "guan_yu",
+                "delta": 10
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "zhang_fei",
+                "delta": 10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 1회: 도원결의, 황건적의 난",
       "tags": [
         "novel_chapter",
@@ -23201,7 +25131,33 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "eunuch_fight",
+          "text": "환관에 맞서 싸운다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "eunuch_hide",
+          "text": "몸을 숨긴다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 2회: 장비의 독우 폭행, 영제 사망",
       "tags": [
         "novel_chapter",
@@ -23311,7 +25267,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dz_oppose",
+          "text": "동탁에 반대한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "dz_comply",
+          "text": "동탁의 권력을 인정",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 3회: 동탁 권력 장악",
       "tags": [
         "novel_chapter",
@@ -23424,7 +25414,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dingyuan_save",
+          "text": "정원을 구하려 시도",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        },
+        {
+          "id": "dingyuan_watch",
+          "text": "관망한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 3회: 동탁 권력 장악",
       "tags": [
         "novel_chapter",
@@ -23527,7 +25536,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "shaodi_protest",
+          "text": "소제 폐위에 항의",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "shaodi_silent",
+          "text": "침묵한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 4회: 태자 폐위, 헌제 옹립",
       "tags": [
         "novel_chapter",
@@ -23622,7 +25650,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xiandi_recognize",
+          "text": "헌제를 인정한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "xiandi_doubt",
+          "text": "정통성을 의심한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 4회: 태자 폐위, 헌제 옹립",
       "tags": [
         "novel_chapter",
@@ -23728,7 +25775,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "coalition_join",
+          "text": "연합군에 참여한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "coalition_refuse",
+          "text": "거절한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 5회: 반동탁 연합군 결성",
       "tags": [
         "novel_chapter",
@@ -23841,7 +25922,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hulao_3bros",
+          "text": "삼형제가 여포에 도전",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "charisma",
+                "delta": 3
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hulao_assist",
+          "text": "후방 지원만 한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -1000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 5회: 반동탁 연합군 결성",
       "tags": [
         "novel_chapter",
@@ -23936,7 +26052,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "luoyang_chase",
+          "text": "동탁을 추격한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "luoyang_save",
+          "text": "낙양 백성 구호에 집중",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 6회: 동탁 낙양 방화 및 천도",
       "tags": [
         "novel_chapter",
@@ -24026,7 +26176,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "changan_oppose",
+          "text": "천도에 반대한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "changan_accept",
+          "text": "천도를 수용한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 6회: 동탁 낙양 방화 및 천도",
       "tags": [
         "novel_chapter",
@@ -24258,7 +26427,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "diaochan_support",
+          "text": "왕윤의 계책을 돕는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "diaochan_ignore",
+          "text": "관여하지 않는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 8회: 왕윤의 미인계 (초선)",
       "tags": [
         "novel_chapter",
@@ -24374,7 +26562,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dongzhuo_celebrate",
+          "text": "동탁의 죽음을 환영",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "dongzhuo_cautious",
+          "text": "후속 혼란을 경계",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 9회: 동탁 암살",
       "tags": [
         "novel_chapter",
@@ -24481,7 +26697,33 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "liguo_fight",
+          "text": "이각·곽사에 맞선다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "liguo_avoid",
+          "text": "개입을 피한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 10회: 이각/곽사 장안 장악, 조조 서주 공격",
       "tags": [
         "novel_chapter",
@@ -24873,7 +27115,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "lubu_resist",
+          "text": "서주를 사수한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "lubu_yield",
+          "text": "서주를 양보한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 12회: 여포 서주 공격",
       "tags": [
         "novel_chapter",
@@ -24974,7 +27250,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "liguo_mediate",
+          "text": "중재를 시도",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "politics",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "liguo_exploit",
+          "text": "혼란을 이용한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 13회: 조정 내분",
       "tags": [
         "novel_chapter",
@@ -25066,7 +27377,43 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xuchang_oppose",
+          "text": "조조의 실권 장악에 반대",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": -10
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "xuchang_cooperate",
+          "text": "조조와 협력한다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": 10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 14회: 조조 헌제를 꼭두각시로",
       "tags": [
         "novel_chapter",
@@ -25293,7 +27640,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuanshu_counter",
+          "text": "원술의 계략에 맞대응",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuanshu_endure",
+          "text": "참고 기회를 노린다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 16회: 원술과 유비/여포의 갈등",
       "tags": [
         "novel_chapter",
@@ -25368,7 +27743,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuanshu_condemn",
+          "text": "원술의 참칭을 규탄",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuanshu_ignore",
+          "text": "무시한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 17회: 원술 칭제",
       "tags": [
         "novel_chapter",
@@ -25464,7 +27858,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wancheng_aid",
+          "text": "장수를 돕는다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "wancheng_neutral",
+          "text": "중립을 유지한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 18회: 조조 vs 장수",
       "tags": [
         "novel_chapter",
@@ -25875,7 +28296,44 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hero_honest",
+          "text": "솔직하게 포부를 밝힌다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "charisma",
+                "delta": 3
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": "hero_humble",
+          "text": "천둥 소리에 젓가락을 떨어뜨린다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 21회: 조조와 유비의 영웅론",
       "tags": [
         "novel_chapter",
@@ -26076,7 +28534,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "miheng_laugh",
+          "text": "예형의 기행에 박장대소",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "miheng_scold",
+          "text": "예형을 꾸짖는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 23회: 예형의 나출 격고",
       "tags": [
         "novel_chapter",
@@ -26162,7 +28647,42 @@
           "value": "executed"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dongcheng_join",
+          "text": "밀조에 참여한다",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "cao_cao",
+                "delta": -20
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "dongcheng_flee",
+          "text": "서주로 도주한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 24회: 동승 암살 음모 발각",
       "tags": [
         "novel_chapter",
@@ -26425,7 +28945,52 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "anliang_slay",
+          "text": "관우가 안량을 참수한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "war",
+                "delta": 3
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "anliang_team",
+          "text": "관우와 장료가 합공한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "war",
+                "delta": 2
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhang_liao",
+              "value": {
+                "stat": "war",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 26회: 관우 안량/문추 베다",
       "tags": [
         "novel_chapter",
@@ -26517,7 +29082,44 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "five_passes",
+          "text": "관우가 다섯 관문을 돌파",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "war",
+                "delta": 5
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "five_negotiate",
+          "text": "협상으로 통과를 시도",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "politics",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 27회: 관우 오관참장",
       "tags": [
         "novel_chapter",
@@ -26642,7 +29244,44 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "reunion_feast",
+          "text": "재회를 축하하며 연회",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "guan_yu",
+                "delta": 10
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "zhang_fei",
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "reunion_plan",
+          "text": "즉시 전략 회의에 돌입",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "command",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 28회: 관우/유비/장비 재회",
       "tags": [
         "novel_chapter",
@@ -26950,7 +29589,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "guandu_exploit",
+          "text": "관도 승리를 틈타 확장",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "guandu_consolidate",
+          "text": "내정에 집중한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 30회: 관도대전",
       "tags": [
         "novel_chapter",
@@ -27065,7 +29731,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuan_exploit",
+          "text": "원씨 내분을 이용한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 5000
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuan_wait",
+          "text": "자멸을 기다린다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 31회: 원소 세력 분열",
       "tags": [
         "novel_chapter",
@@ -27175,7 +29868,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yuan_total",
+          "text": "원씨를 완전히 토벌",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 15000
+              }
+            }
+          ]
+        },
+        {
+          "id": "yuan_partial",
+          "text": "일부만 토벌하고 귀순 수용",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 8000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 32회: 조조 원씨 정벌",
       "tags": [
         "novel_chapter",
@@ -27259,7 +29993,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhenji_take",
+          "text": "조비가 견씨를 취한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhenji_refuse",
+          "text": "조비가 견씨를 거절",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 33회: 조비 견씨 취함",
       "tags": [
         "novel_chapter",
@@ -27467,7 +30228,27 @@
           "value": "novel_ch37_유비_제갈량_세_번_방문_시작"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "shuijing_listen",
+          "text": "수경 선생의 추천을 믿는다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "shuijing_doubt",
+          "text": "산중 은사를 의심한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 35회: 수경선생 사마휘 만남",
       "tags": [
         "novel_chapter",
@@ -27572,7 +30353,33 @@
           "value": "novel_ch37_유비_제갈량_세_번_방문_시작"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xushu_trust",
+          "text": "서서에게 전권을 맡긴다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "xu_shu",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "xushu_test",
+          "text": "서서를 시험한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "xu_shu",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 36회: 서서 등장",
       "tags": [
         "novel_chapter",
@@ -27802,7 +30609,43 @@
           "value": "longzhong_plan_active"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "longzhong_accept",
+          "text": "천하삼분지계를 채택",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "longzhong_modify",
+          "text": "수정안을 제시한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 38회: 삼고초려 완성, 천하삼분지계",
       "tags": [
         "novel_chapter",
@@ -27917,7 +30760,37 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhuge_welcome",
+          "text": "제갈량을 군사로 맞이한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": 15
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhuge_advisor",
+          "text": "자문관으로 기용한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": 5
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 38회: 삼고초려 완성, 천하삼분지계",
       "tags": [
         "novel_chapter",
@@ -28044,7 +30917,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "first_win",
+          "text": "제갈량의 첫 승리를 축하",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "command",
+                "delta": 3
+              }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "id": "first_cautious",
+          "text": "과신을 경계한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 39회: 유비 조인 격파",
       "tags": [
         "novel_chapter",
@@ -28377,7 +31284,38 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhaoyun_rescue",
+          "text": "조운의 유선 구출을 칭송",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhao_yun",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "zhao_yun",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "zhaoyun_scold",
+          "text": "위험한 행동을 꾸짖는다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhao_yun",
+              "value": -5
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 41회: 장판 전투 - 조운의 활약",
       "tags": [
         "novel_chapter",
@@ -28483,7 +31421,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "changban_bridge",
+          "text": "장비의 일기당천에 감탄",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhang_fei",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "changban_reinforce",
+          "text": "장비에게 지원군을 보낸다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 42회: 장비 장판교에서 조조군 저지",
       "tags": [
         "novel_chapter",
@@ -28582,7 +31548,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "debate_win",
+          "text": "제갈량이 강동 유생들을 논파",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "debate_fail",
+          "text": "설전에 실패한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 43회: 제갈량 설전, 손권 설득",
       "tags": [
         "novel_chapter",
@@ -28844,7 +31845,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhouyu_war",
+          "text": "주유가 결전을 선언",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhou_yu",
+              "value": {
+                "stat": "command",
+                "delta": 3
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhouyu_hesitate",
+          "text": "주유가 망설인다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 44회: 주유 항전 결심",
       "tags": [
         "novel_chapter",
@@ -28948,7 +31984,27 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jianggan_trap",
+          "text": "장간이 역으로 속는다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhou_yu",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "jianggan_escape",
+          "text": "장간이 탈출한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 45회: 장간의 첩보 실패",
       "tags": [
         "novel_chapter",
@@ -29062,7 +32118,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "caimao_kill",
+          "text": "채모/장윤이 처형된다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "caimao_survive",
+          "text": "채모/장윤이 살아남는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 45회: 장간의 첩보 실패",
       "tags": [
         "novel_chapter",
@@ -29447,7 +32522,27 @@
           "value": true
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "chain_ships",
+          "text": "연환계 — 조조 함대가 쇠사슬로 연결",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "pang_tong",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "chain_refused",
+          "text": "조조가 의심하여 거절",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 48회: 연환계, 방통의 쇄선 전략",
       "tags": [
         "novel_chapter",
@@ -29542,7 +32637,42 @@
           "value": -15
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wind_success",
+          "text": "동남풍이 분다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "intellect",
+                "delta": 5
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "wind_fail",
+          "text": "바람이 오지 않는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 49회: 적벽대전 - 화공",
       "tags": [
         "novel_chapter",
@@ -29657,7 +32787,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "fire_total",
+          "text": "조조 함대 전소",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -50000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "fire_partial",
+          "text": "일부만 소실",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -20000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 49회: 적벽대전 - 화공",
       "tags": [
         "novel_chapter",
@@ -29871,7 +33042,42 @@
           "value": -20
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nanjun_zhouyu",
+          "text": "주유가 남군을 공략",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nanjun_zhuge",
+          "text": "제갈량이 먼저 남군을 차지",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            },
+            {
+              "type": "relationship_change",
+              "target": "zhou_yu",
+              "value": {
+                "with": "zhuge_liang",
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 51회: 주유 남군 공격",
       "tags": [
         "novel_chapter",
@@ -30105,7 +33311,38 @@
           "value": 10000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hz_wy_join",
+          "text": "황충과 위연을 환영한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "huang_zhong",
+              "value": 10
+            },
+            {
+              "type": "loyalty_change",
+              "target": "wei_yan",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "id": "hz_wy_test",
+          "text": "충성을 시험한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "liu_bei",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 53회: 황충/위연 유비 합류",
       "tags": [
         "novel_chapter",
@@ -30346,7 +33583,34 @@
           "value": -25
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhouyu_fail",
+          "text": "주유의 전략이 실패한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhouyu_succeed",
+          "text": "주유의 전략이 성공한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 55회: 주유와 제갈량 대결 지속",
       "tags": [
         "novel_chapter",
@@ -30441,7 +33705,36 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhuge_taunt",
+          "text": "제갈량이 주유를 도발",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "zhou_yu",
+              "value": {
+                "with": "zhuge_liang",
+                "delta": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhuge_calm",
+          "text": "제갈량이 화해를 시도",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "zhou_yu",
+              "value": {
+                "with": "zhuge_liang",
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 56회: 주유 삼기주유 (1차)",
       "tags": [
         "novel_chapter",
@@ -30671,7 +33964,37 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "pangtong_join",
+          "text": "방통을 부군사에 임명",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "pang_tong",
+              "value": 10
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "pangtong_lowpost",
+          "text": "방통에게 말단직을 준다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "pang_tong",
+              "value": -10
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 57회: 주유 사망, 방통 유비 합류",
       "tags": [
         "novel_chapter",
@@ -30777,7 +34100,26 @@
           "value": true
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "mateng_mourn",
+          "text": "마등의 처형을 애도한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "mateng_silent",
+          "text": "침묵한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 58회: 마등 사망, 마초 거병",
       "tags": [
         "novel_chapter",
@@ -31020,7 +34362,49 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "machao_fierce",
+          "text": "마초가 맹공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -15000
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "ma_chao",
+              "value": {
+                "stat": "war",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "machao_strategic",
+          "text": "전략적으로 공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 59회: 마초 vs 조조 동관 전투",
       "tags": [
         "novel_chapter",
@@ -31402,7 +34786,36 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "sunren_stop",
+          "text": "조운이 유선을 지킨다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhao_yun",
+              "value": {
+                "stat": "charisma",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "sunren_allow",
+          "text": "손상향의 행동을 허락",
+          "effects": [
+            {
+              "type": "relationship_change",
+              "target": "liu_bei",
+              "value": {
+                "with": "sun_quan",
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 61회: 손상향 오로 돌아감",
       "tags": [
         "novel_chapter",
@@ -31759,7 +35172,37 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "machao_welcome",
+          "text": "마초를 선봉장에 임명",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "ma_chao",
+              "value": 10
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "machao_caution",
+          "text": "마초의 충성을 시험",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "ma_chao",
+              "value": 5
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 64회: 마초 유비에 합류",
       "tags": [
         "novel_chapter",
@@ -31863,7 +35306,48 @@
           "value": true
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "liuzhang_accept",
+          "text": "유장의 항복을 수락",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 20000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "liuzhang_exile",
+          "text": "유장을 유배한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 15000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 65회: 유장 항복, 성도 함락",
       "tags": [
         "novel_chapter",
@@ -31965,7 +35449,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yizhou_develop",
+          "text": "익주를 즉시 개발",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "yizhou_military",
+          "text": "군사력 증강에 집중",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 10000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 65회: 유장 항복, 성도 함락",
       "tags": [
         "novel_chapter",
@@ -32210,7 +35735,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hefei2_persist",
+          "text": "합비 공격 지속",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hefei2_withdraw",
+          "text": "철수한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 67회: 합비 전투 계속",
       "tags": [
         "novel_chapter",
@@ -32273,7 +35832,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zuoci_listen",
+          "text": "좌자의 말을 경청한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "zuoci_chase",
+          "text": "좌자를 잡으려 한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 68회: 좌자 조조를 놀리다",
       "tags": [
         "novel_chapter",
@@ -32348,7 +35935,27 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "guanlu_believe",
+          "text": "관로의 예언을 믿는다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "cao_cao",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "guanlu_dismiss",
+          "text": "미신으로 일축한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 69회: 관로의 점술",
       "tags": [
         "novel_chapter",
@@ -32452,7 +36059,48 @@
           "duration_turns": 0
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hanzhong_full",
+          "text": "전력 투입",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hanzhong_probe",
+          "text": "소규모 선발대 투입",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 70회: 한중 공방전 시작",
       "tags": [
         "novel_chapter",
@@ -32537,7 +36185,50 @@
           "value": -8000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhangfei_charge",
+          "text": "장비가 장합을 격파",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhang_fei",
+              "value": {
+                "stat": "war",
+                "delta": 3
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhangfei_ambush",
+          "text": "매복전으로 격파",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhang_fei",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 70회: 한중 공방전 시작",
       "tags": [
         "novel_chapter",
@@ -32752,7 +36443,34 @@
           "value": -5000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "caocao_retreat",
+          "text": "조조가 한중에서 철수",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "caocao_delay",
+          "text": "조조가 지연전을 벌인다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 72회: 유비 한중 차지",
       "tags": [
         "novel_chapter",
@@ -32833,7 +36551,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hanzhong_fortify",
+          "text": "한중을 요새화한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hanzhong_expand",
+          "text": "한중에서 북진 시도",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 72회: 유비 한중 차지",
       "tags": [
         "novel_chapter",
@@ -32936,7 +36688,41 @@
           "value": 10
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "king_ceremony",
+          "text": "성대한 즉위식",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 15
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "king_humble",
+          "text": "검소하게 즉위",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 73회: 유비 한중왕 등극",
       "tags": [
         "novel_chapter",
@@ -33020,7 +36806,41 @@
           "value": -10000
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "xiangyang_attack",
+          "text": "관우가 양양을 공격",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "xiangyang_defend",
+          "text": "형주 방어에 집중",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -2000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 73회: 유비 한중왕 등극",
       "tags": [
         "novel_chapter",
@@ -33122,7 +36942,27 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "pangde_duel",
+          "text": "방덕과 관우의 일기토",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "war",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "pangde_avoid",
+          "text": "일기토를 회피",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 74회: 방덕 vs 관우",
       "tags": [
         "novel_chapter",
@@ -33237,7 +37077,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yujin_accept",
+          "text": "우금의 투항을 받아들인다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "yujin_reject",
+          "text": "우금을 포로로 가둔다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 74회: 방덕 vs 관우",
       "tags": [
         "novel_chapter",
@@ -33336,7 +37203,36 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "huatuo_treat",
+          "text": "관우가 바둑을 두며 수술 받는다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "huatuo_refuse",
+          "text": "수술을 거절한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "guan_yu",
+              "value": {
+                "stat": "war",
+                "delta": -3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 75회: 관우 독화살 치료 (화타)",
       "tags": [
         "novel_chapter",
@@ -33716,7 +37612,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "ghost_honor",
+          "text": "관우의 영혼에 제를 올린다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "ghost_ignore",
+          "text": "미신으로 치부한다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 77회: 관우 포획 및 처형",
       "tags": [
         "novel_chapter",
@@ -33800,7 +37715,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "huatuo_execute",
+          "text": "화타를 처형한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": "huatuo_free",
+          "text": "화타를 석방한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 78회: 화타 처형, 조조 사망",
       "tags": [
         "novel_chapter",
@@ -34107,7 +38049,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "qibushi_pass",
+          "text": "조식이 칠보시를 읊어 살아남는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "qibushi_fail",
+          "text": "조식이 시를 짓지 못한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 79회: 조비 형제간 다툼",
       "tags": [
         "novel_chapter",
@@ -34185,7 +38154,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wei_found",
+          "text": "선양을 받아 위나라 건국",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "wei_resist",
+          "text": "충신들이 저항",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 80회: 조비 선양 받음, 유비 칭제",
       "tags": [
         "novel_chapter",
@@ -34268,7 +38264,34 @@
           "value": 15
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "shu_found",
+          "text": "촉한 건국을 선포",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "shu_postpone",
+          "text": "건국을 미룬다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 80회: 조비 선양 받음, 유비 칭제",
       "tags": [
         "novel_chapter",
@@ -34376,7 +38399,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "fei_killed",
+          "text": "장비가 부하에게 살해된다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -10
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "fei_survives",
+          "text": "장비가 암살을 피한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhang_fei",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 81회: 장비 암살",
       "tags": [
         "novel_chapter",
@@ -34890,7 +38948,36 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "bazhetu_trap",
+          "text": "육손이 팔진도에 갇힌다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "bazhetu_escape",
+          "text": "육손이 탈출한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "lu_xun",
+              "value": {
+                "stat": "intellect",
+                "delta": 3
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 84회: 육손 팔진도에 빠지다",
       "tags": [
         "novel_chapter",
@@ -34965,7 +39052,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "retreat_baidicheng",
+          "text": "백제성으로 퇴각",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "retreat_chengdu",
+          "text": "성도로 직접 퇴각",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 84회: 육손 팔진도에 빠지다",
       "tags": [
         "novel_chapter",
@@ -35052,7 +39173,30 @@
           "value": true
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "takgo_full",
+          "text": "제갈량에게 전권 위임",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": 20
+            }
+          ]
+        },
+        {
+          "id": "takgo_shared",
+          "text": "여러 대신에게 분산",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": 5
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 85회: 유비 백제성 탁고",
       "tags": [
         "novel_chapter",
@@ -35304,7 +39448,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "caopi_fail",
+          "text": "조비의 원정이 실패",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -15000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "caopi_partial",
+          "text": "일부 전과를 올린다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 86회: 조비 오나라 공격 실패",
       "tags": [
         "novel_chapter",
@@ -35657,7 +39835,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "menghuo_release23",
+          "text": "맹획을 또 풀어준다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "charisma",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "menghuo_hold23",
+          "text": "이번에는 가둔다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 88회: 칠종칠금 (2-3차)",
       "tags": [
         "novel_chapter",
@@ -35755,7 +39968,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "menghuo_release45",
+          "text": "맹획을 계속 풀어준다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "menghuo_hold45",
+          "text": "다섯 번째에 가둔다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 89회: 칠종칠금 (4-5차)",
       "tags": [
         "novel_chapter",
@@ -36002,7 +40242,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhurong_fight",
+          "text": "축융부인과 교전",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhurong_capture",
+          "text": "축융부인을 사로잡는다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "command",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 90회: 칠종칠금 완성, 축융부인",
       "tags": [
         "novel_chapter",
@@ -36105,7 +40373,32 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "csb_accept",
+          "text": "출사표를 받아들인다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "csb_reluctant",
+          "text": "마지못해 허락",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "zhuge_liang",
+              "value": -5
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 91회: 출사표, 제1차 북벌",
       "tags": [
         "novel_chapter",
@@ -36203,7 +40496,48 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb1_full",
+          "text": "전력 투입",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 20000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -15000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb1_limited",
+          "text": "소규모 원정",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 10000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 91회: 출사표, 제1차 북벌",
       "tags": [
         "novel_chapter",
@@ -36310,7 +40644,30 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jw_welcome",
+          "text": "강유를 환영한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "jiang_wei",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "id": "jw_cautious",
+          "text": "강유를 경계한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "jiang_wei",
+              "value": 5
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 92회: 강유 등장",
       "tags": [
         "novel_chapter",
@@ -36405,7 +40762,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wanglang_die",
+          "text": "왕랑이 분사한다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "wanglang_survive",
+          "text": "왕랑이 살아남는다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 93회: 왕랑과의 설전",
       "tags": [
         "novel_chapter",
@@ -36958,7 +41342,47 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "masu_execute",
+          "text": "마속을 군법으로 처형 — 읍참마속",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 5
+              }
+            },
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "command",
+                "delta": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "masu_spare",
+          "text": "마속을 살려준다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            },
+            {
+              "type": "loyalty_change",
+              "target": "ma_su",
+              "value": 10
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 96회: 마속 처형, 조운 사망",
       "tags": [
         "novel_chapter",
@@ -37149,7 +41573,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb2_start",
+          "text": "제2차 북벌 개시",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": 15000
+              }
+            },
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb2_delay",
+          "text": "준비가 더 필요하다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 97회: 제2차 북벌",
       "tags": [
         "novel_chapter",
@@ -37250,7 +41708,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb3_push2",
+          "text": "공격적으로 밀어붙인다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb3_hold2",
+          "text": "방어적으로 대응",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 98회: 3차 북벌",
       "tags": [
         "novel_chapter",
@@ -37349,7 +41841,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb4_continue",
+          "text": "북벌을 계속한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb4_rest",
+          "text": "병사들을 쉬게 한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 99회: 4차 북벌",
       "tags": [
         "novel_chapter",
@@ -37448,7 +41974,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "brain_attack",
+          "text": "공격적으로 교전",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "brain_outsmart",
+          "text": "심리전으로 압박",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "intellect",
+                "delta": 2
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 100회: 사마의와의 대결",
       "tags": [
         "novel_chapter",
@@ -37653,7 +42214,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "woodox_deploy",
+          "text": "목우유마를 보급에 투입",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "woodox_trap",
+          "text": "목우유마로 위군을 함정에 빠트린다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 102회: 5차 북벌, 목우유마",
       "tags": [
         "novel_chapter",
@@ -37753,7 +42341,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "nb5_offense",
+          "text": "제5차 북벌 공세",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "nb5_defense",
+          "text": "방어전에 집중",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 102회: 5차 북벌, 목우유마",
       "tags": [
         "novel_chapter",
@@ -38102,7 +42724,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wuzhang_die",
+          "text": "제갈량이 오장원에서 별세",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": "wuzhang_miracle",
+          "text": "제갈량이 기적적으로 회복",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "zhuge_liang",
+              "value": {
+                "stat": "intellect",
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
       "tags": [
         "novel_chapter",
@@ -38184,7 +42834,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "dead_chase",
+          "text": "죽은 공명의 위엄으로 사마의 퇴각",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "dead_nochase",
+          "text": "사마의가 추격한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 104회: 오장원 - 제갈량 사망",
       "tags": [
         "novel_chapter",
@@ -38390,7 +43067,32 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "weiyan_execute",
+          "text": "위연을 처단한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -5
+              }
+            }
+          ]
+        },
+        {
+          "id": "weiyan_spare2",
+          "text": "위연을 사면한다",
+          "effects": [
+            {
+              "type": "loyalty_change",
+              "target": "wei_yan",
+              "value": 10
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 105회: 위연 반란, 양의와의 대립",
       "tags": [
         "novel_chapter",
@@ -38496,7 +43198,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "gongsun2_crush",
+          "text": "반란을 무력 진압",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "gongsun2_negotiate",
+          "text": "협상으로 해결",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 106회: 사마의 권력 장악",
       "tags": [
         "novel_chapter",
@@ -38589,7 +43318,35 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "sima_power",
+          "text": "사마의가 실권을 장악",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "sima_yi",
+              "value": {
+                "stat": "politics",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "sima_resist",
+          "text": "조위 신하들이 저항",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 106회: 사마의 권력 장악",
       "tags": [
         "novel_chapter",
@@ -38695,7 +43452,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "coup_total",
+          "text": "사마의가 완전히 권력 장악",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": "coup_partial",
+          "text": "일부 저항 세력 잔존",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 107회: 사마사/사마소 권력 계승",
       "tags": [
         "novel_chapter",
@@ -38977,7 +43761,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "simashi_depose",
+          "text": "사마사가 조방을 폐위",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        },
+        {
+          "id": "simashi_fail",
+          "text": "폐위 시도 실패",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 109회: 사마사 폐제",
       "tags": [
         "novel_chapter",
@@ -39033,7 +43844,41 @@
           "value": "killed_in_battle"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "guanqiu_crush",
+          "text": "반란을 진압",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        },
+        {
+          "id": "guanqiu_join",
+          "text": "반란에 가담",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            },
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 110회: 관구검/문흠 반란",
       "tags": [
         "novel_chapter",
@@ -39222,7 +44067,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "zhugedan_fight",
+          "text": "제갈탄의 반란에 대응",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "zhugedan_support",
+          "text": "제갈탄을 지원한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 112회: 제갈탄 반란",
       "tags": [
         "novel_chapter",
@@ -39308,7 +44180,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jw_continue",
+          "text": "강유의 북벌을 지지",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "jw_stop",
+          "text": "북벌 중단을 명한다",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "shu",
+              "value": {
+                "delta": 5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 113회: 강유 북벌 지속",
       "tags": [
         "novel_chapter",
@@ -39410,7 +44309,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "caomao_kill",
+          "text": "사마소가 조모를 시해",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": "caomao_save",
+          "text": "조모가 살아남는다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 5
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 114회: 조모 시해",
       "tags": [
         "novel_chapter",
@@ -39487,7 +44413,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jw_persist",
+          "text": "전쟁을 계속한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "jw_retreat",
+          "text": "철수한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -3000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 114회: 조모 시해",
       "tags": [
         "novel_chapter",
@@ -39670,7 +44623,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "huanghao_purge",
+          "text": "황호를 축출한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "huanghao_tolerate",
+          "text": "황호를 방치한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 115회: 강유 퇴각, 황호의 방해",
       "tags": [
         "novel_chapter",
@@ -39908,7 +44888,41 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "hanzhong_defend",
+          "text": "한중을 사수한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -8000
+              }
+            }
+          ]
+        },
+        {
+          "id": "hanzhong_retreat",
+          "text": "한중을 포기한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 116회: 등애/종회 촉 침공",
       "tags": [
         "novel_chapter",
@@ -40279,7 +45293,34 @@
           "value": "executed"
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jw_rebellion",
+          "text": "강유가 반란을 시도",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "shu",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        },
+        {
+          "id": "jw_surrender",
+          "text": "순순히 항복한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "shu",
+              "value": {
+                "delta": -10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 118회: 강유의 마지막 반란",
       "tags": [
         "novel_chapter",
@@ -40444,7 +45485,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jin_accept2",
+          "text": "선양을 수용",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": "jin_refuse2",
+          "text": "선양을 거부",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -10000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 119회: 사마염 진나라 건국",
       "tags": [
         "novel_chapter",
@@ -40530,7 +45598,26 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "jin_found",
+          "text": "진나라를 건국한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": -15
+              }
+            }
+          ]
+        },
+        {
+          "id": "jin_delay2",
+          "text": "건국을 미룬다",
+          "effects": []
+        }
+      ],
       "historical_basis": "연의 119회: 사마염 진나라 건국",
       "tags": [
         "novel_chapter",
@@ -40589,7 +45676,42 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "yanghu_respect",
+          "text": "적장에게 예를 갖춘다",
+          "effects": [
+            {
+              "type": "stat_change",
+              "target": "yang_hu",
+              "value": {
+                "stat": "charisma",
+                "delta": 5
+              }
+            }
+          ]
+        },
+        {
+          "id": "yanghu_war",
+          "text": "전면전을 벌인다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -5000
+              }
+            },
+            {
+              "type": "army_change",
+              "target": "wei",
+              "value": {
+                "delta": -5000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
       "tags": [
         "novel_chapter",
@@ -40678,7 +45800,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "wu_conquer",
+          "text": "오나라를 정복한다",
+          "effects": [
+            {
+              "type": "army_change",
+              "target": "wu",
+              "value": {
+                "delta": -30000
+              }
+            }
+          ]
+        },
+        {
+          "id": "wu_negotiate",
+          "text": "오나라와 협상",
+          "effects": [
+            {
+              "type": "gold_change",
+              "target": "wei",
+              "value": {
+                "delta": 10000
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
       "tags": [
         "novel_chapter",
@@ -40771,7 +45920,34 @@
           }
         }
       ],
-      "choices": [],
+      "choices": [
+        {
+          "id": "unity_celebrate",
+          "text": "천하통일을 축하한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 20
+              }
+            }
+          ]
+        },
+        {
+          "id": "unity_mourn",
+          "text": "전란의 희생을 추모한다",
+          "effects": [
+            {
+              "type": "reputation_change",
+              "target": "wei",
+              "value": {
+                "delta": 10
+              }
+            }
+          ]
+        }
+      ],
       "historical_basis": "연의 120회: 양호/육항 대결, 오 멸망, 통일",
       "tags": [
         "novel_chapter",
