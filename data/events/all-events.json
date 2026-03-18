@@ -411,7 +411,36 @@
         "novel_ch79_조비와_조식의_갈등",
         "novel_ch96_조운_병사",
         "novel_ch106_사마의_조위_실권_장악"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "长坂坡之战",
+        "name_kr": "장판파 전투",
+        "date": "建安十三年九月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "曹军精锐骑兵五千（包括虎豹骑若干），刘军遣关羽数百艘船走水路，在场兵力数目不明",
+        "casualties": "刘备军失去人众辎重，仅数十骑走",
+        "result": "曹军大胜，获其人众辎重",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 24
+      }
     },
     {
       "id": "hist_228_chencang",
@@ -810,7 +839,116 @@
         "novel_ch81_유비_동정_결심",
         "novel_ch85_유비_사망",
         "novel_ch110_관구검과_문흠의_반란"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "襄樊之战",
+        "name_kr": "양번 전투",
+        "date": "219年七月—219年十二月",
+        "belligerents": [
+          "曹操",
+          "孙权",
+          "刘备",
+          "梁郏",
+          "陆浑群盗"
+        ],
+        "forces": "曹魏五万以上东吴数万",
+        "casualties": "曹魏损失三万以上，关羽全军覆没",
+        "result": "关羽失荆州被杀，孙刘联盟破裂",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "围城",
+            "context": "中期"
+          },
+          {
+            "type": "断粮",
+            "context": "中期"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹仁",
+              "slug": "cao_ren"
+            },
+            {
+              "name": "吕常",
+              "slug": null
+            },
+            {
+              "name": "于禁",
+              "slug": "yu_jin"
+            },
+            {
+              "name": "庞德",
+              "slug": "pang_de"
+            },
+            {
+              "name": "徐晃（曹魏）",
+              "slug": null
+            },
+            {
+              "name": "关羽",
+              "slug": "guan_yu"
+            },
+            {
+              "name": "糜芳",
+              "slug": null
+            },
+            {
+              "name": "士仁",
+              "slug": null
+            },
+            {
+              "name": "傅方",
+              "slug": null
+            },
+            {
+              "name": "胡修（蜀汉）",
+              "slug": null
+            },
+            {
+              "name": "吕蒙",
+              "slug": "lv_meng"
+            },
+            {
+              "name": "蒋钦",
+              "slug": null
+            },
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋（东吴）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 8,
+        "strategies_applied": [
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "断粮",
+            "effect": {
+              "type": "food_change",
+              "desc": "보급로 차단",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_200_guandu",
@@ -1016,7 +1154,84 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_217_hanzhong",
@@ -1209,7 +1424,59 @@
         "novel_ch71_황충이_하후연_참수",
         "novel_ch72_조조_한중_철수",
         "novel_ch73_유비_한중왕_선언"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "定军山之战",
+        "name_kr": "정군산 전투",
+        "date": "建安二十四年（219年）正月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "夏侯渊部四百人",
+        "casualties": "夏侯渊部全军覆没，被黄忠刀劈身亡",
+        "result": "刘备军胜利",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "水攻",
+            "context": "战役结果"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "夏侯渊",
+              "slug": "xiahou_yuan"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄忠",
+              "slug": "huang_zhong"
+            }
+          ]
+        ],
+        "match_score": 11,
+        "strategies_applied": [
+          {
+            "type": "水攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "수공으로 적 진영 수몰",
+              "delta": -10000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_215_hefei",
@@ -1376,7 +1643,50 @@
       "pair_ids": [
         "novel_ch66_장료_합비에서_손권군_대파",
         "novel_ch67_합비_공방전_지속"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "合肥之战",
+        "name_kr": "합비 전투",
+        "date": "208年-253年",
+        "belligerents": [
+          "曹魏（曹军）",
+          "东吴（孙军）"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "曹魏获胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "史料总结"
+          },
+          {
+            "type": "围城",
+            "context": "史料记载"
+          }
+        ],
+        "commanders": [],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          },
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_228_jieting",
@@ -1555,7 +1865,51 @@
         "novel_ch81_유비_동정_결심",
         "novel_ch85_유비_사망",
         "novel_ch110_관구검과_문흠의_반란"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 24,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_219_maicheng",
@@ -1936,7 +2290,59 @@
         "novel_ch71_황충이_하후연_참수",
         "novel_ch72_조조_한중_철수",
         "novel_ch73_유비_한중왕_선언"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "定军山之战",
+        "name_kr": "정군산 전투",
+        "date": "建安二十四年（219年）正月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "夏侯渊部四百人",
+        "casualties": "夏侯渊部全军覆没，被黄忠刀劈身亡",
+        "result": "刘备军胜利",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "水攻",
+            "context": "战役结果"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "夏侯渊",
+              "slug": "xiahou_yuan"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄忠",
+              "slug": "huang_zhong"
+            }
+          ]
+        ],
+        "match_score": 26,
+        "strategies_applied": [
+          {
+            "type": "水攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "수공으로 적 진영 수몰",
+              "delta": -10000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_228_qishan",
@@ -2332,7 +2738,102 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 16,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_228_shiting",
@@ -2490,7 +2991,120 @@
         "novel_ch82_유비_대군으로_오나라_침공",
         "novel_ch84_육손이_제갈량의_팔진도에_갇힘",
         "novel_ch84_유비_퇴각"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_211_tong-pass",
@@ -2890,7 +3504,53 @@
         "novel_ch79_조비와_조식의_갈등",
         "novel_ch96_조운_병사",
         "novel_ch106_사마의_조위_실권_장악"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "宛城之战",
+        "name_kr": "완성 전투",
+        "date": "197年",
+        "belligerents": [
+          "曹操",
+          "张绣"
+        ],
+        "forces": null,
+        "casualties": "曹操长子曹昂战死曹操侄子曹安民战死曹操的大将典韦战死",
+        "result": "张绣胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "奇袭",
+            "context": "典韦死战"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "典韦",
+              "slug": "dian_wei"
+            },
+            {
+              "name": "张绣",
+              "slug": "zhang_xiu"
+            }
+          ]
+        ],
+        "match_score": 26,
+        "strategies_applied": [
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_234_wuzhang-plains",
@@ -3073,7 +3733,36 @@
         "hist_234/03__",
         "hist_229/05/23__",
         "hist_263/12/17__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "五丈原之战",
+        "name_kr": "오장원 전투",
+        "date": "234年2月 至 234年8月 [16-17]",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军不详、蜀军十万",
+        "casualties": null,
+        "result": "因诸葛亮病逝而撤退，蜀汉第六次北伐失败",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "诸葛亮（蜀汉）",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "司马懿（曹魏）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 20
+      }
     },
     {
       "id": "hist_198_xiapi",
@@ -3269,7 +3958,34 @@
         "novel_ch34_유비_암살_시도_극복",
         "novel_ch58_마등_처형",
         "novel_ch81_장비_부하에_의해_살해됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "下邳之战",
+        "name_kr": "하비 전투",
+        "date": "汉献帝建安三年",
+        "belligerents": [
+          "曹操",
+          "吕布"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "吕布集团覆灭，吕布被杀",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "吕布",
+              "slug": "lv_bu"
+            }
+          ]
+        ],
+        "match_score": 12
+      }
     },
     {
       "id": "hist_244_xingshi",
@@ -3593,7 +4309,120 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_263_yinping",
@@ -3917,7 +4746,46 @@
         "novel_ch34_유비_암살_시도_극복",
         "novel_ch58_마등_처형",
         "novel_ch81_장비_부하에_의해_살해됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "董卓讨伐战",
+        "name_kr": "董卓讨伐战",
+        "date": "189年（中平六年）",
+        "belligerents": [
+          "关东联军",
+          "凉州军"
+        ],
+        "forces": "关东联军十余万；董卓军不详",
+        "casualties": null,
+        "result": "关东联军胜，董卓弃洛阳迁往长安",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            },
+            {
+              "name": "袁术",
+              "slug": "yuan_shu"
+            },
+            {
+              "name": "孙坚",
+              "slug": "sun_jian"
+            },
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "王匡",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 8
+      }
     },
     {
       "id": "hist_280_-of-eastern-wu",
@@ -5228,7 +6096,51 @@
         "northern_expedition"
       ],
       "mode": "both",
-      "pair_topic": "제갈량_사망"
+      "pair_topic": "제갈량_사망",
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 22,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_selfinjury_scheme",
@@ -5531,7 +6443,51 @@
         "bluff"
       ],
       "mode": "both",
-      "pair_topic": "제갈량_사망"
+      "pair_topic": "제갈량_사망",
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_battle_of_guandu",
@@ -5700,7 +6656,84 @@
         "supply_raid"
       ],
       "mode": "both",
-      "pair_topic": "관도대전"
+      "pair_topic": "관도대전",
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_short_song_style_duan_ge_xing",
@@ -5834,7 +6867,102 @@
         "poetry"
       ],
       "mode": "both",
-      "pair_topic": "적벽대전"
+      "pair_topic": "적벽대전",
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 7,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_oath_of_the_peach_garden",
@@ -6176,7 +7304,102 @@
         "diplomacy"
       ],
       "mode": "both",
-      "pair_topic": "적벽대전"
+      "pair_topic": "적벽대전",
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_beauty_trap",
@@ -7322,7 +8545,36 @@
         "decisive"
       ],
       "mode": "both",
-      "pair_topic": "제갈량_사망"
+      "pair_topic": "제갈량_사망",
+      "battle_data": {
+        "name_cn": "五丈原之战",
+        "name_kr": "오장원 전투",
+        "date": "234年2月 至 234年8月 [16-17]",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军不详、蜀军十万",
+        "casualties": null,
+        "result": "因诸葛亮病逝而撤退，蜀汉第六次北伐失败",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "诸葛亮（蜀汉）",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "司马懿（曹魏）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 10
+      }
     },
     {
       "id": "rel_longzhong_plan",
@@ -7670,7 +8922,51 @@
         "tragedy"
       ],
       "mode": "both",
-      "pair_topic": "제갈량_사망"
+      "pair_topic": "제갈량_사망",
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_battle_of_yiling",
@@ -7850,7 +9146,120 @@
         "fire_attack"
       ],
       "mode": "both",
-      "pair_topic": "적벽대전"
+      "pair_topic": "적벽대전",
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_battle_of_changban",
@@ -8034,7 +9443,36 @@
         "retreat"
       ],
       "mode": "both",
-      "pair_topic": "조조_사망"
+      "pair_topic": "조조_사망",
+      "battle_data": {
+        "name_cn": "长坂坡之战",
+        "name_kr": "장판파 전투",
+        "date": "建安十三年九月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "曹军精锐骑兵五千（包括虎豹骑若干），刘军遣关羽数百艘船走水路，在场兵力数目不明",
+        "casualties": "刘备军失去人众辎重，仅数十骑走",
+        "result": "曹军大胜，获其人众辎重",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 20
+      }
     },
     {
       "id": "rel_battle_of_red_cliffs",
@@ -8231,7 +9669,102 @@
         "naval"
       ],
       "mode": "both",
-      "pair_topic": "적벽대전"
+      "pair_topic": "적벽대전",
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_red_hare",
@@ -9264,7 +10797,50 @@
         "defense"
       ],
       "mode": "both",
-      "pair_topic": "합비_전투"
+      "pair_topic": "합비_전투",
+      "battle_data": {
+        "name_cn": "合肥之战",
+        "name_kr": "합비 전투",
+        "date": "208年-253年",
+        "belligerents": [
+          "曹魏（曹军）",
+          "东吴（孙军）"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "曹魏获胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "史料总结"
+          },
+          {
+            "type": "围城",
+            "context": "史料记载"
+          }
+        ],
+        "commanders": [],
+        "match_score": 20,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          },
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "rel_later_memorial_on_dispatching_the_troops",
@@ -9637,7 +11213,46 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "董卓讨伐战",
+        "name_kr": "董卓讨伐战",
+        "date": "189年（中平六年）",
+        "belligerents": [
+          "关东联军",
+          "凉州军"
+        ],
+        "forces": "关东联军十余万；董卓军不详",
+        "casualties": null,
+        "result": "关东联军胜，董卓弃洛阳迁往长安",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            },
+            {
+              "name": "袁术",
+              "slug": "yuan_shu"
+            },
+            {
+              "name": "孙坚",
+              "slug": "sun_jian"
+            },
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "王匡",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 6
+      }
     },
     {
       "id": "hist_175_sun_ce_and_zhou_yu_born",
@@ -10408,7 +12023,41 @@
         "novel_ch34_유비_암살_시도_극복",
         "novel_ch58_마등_처형",
         "novel_ch81_장비_부하에_의해_살해됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "虎牢关之战",
+        "name_kr": "호뢰관 전투",
+        "date": "公元620年七月至621年五月",
+        "belligerents": [
+          "唐军",
+          "郑军",
+          "夏军"
+        ],
+        "forces": "唐军八万；郑军不详、夏军十万",
+        "casualties": null,
+        "result": "唐军获胜，一战灭两王",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "李世民",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "王世充",
+              "slug": null
+            },
+            {
+              "name": "窦建德",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 20
+      }
     },
     {
       "id": "hist_191_coalition_collapse",
@@ -11282,7 +12931,34 @@
         "novel_ch79_조비와_조식의_갈등",
         "novel_ch96_조운_병사",
         "novel_ch106_사마의_조위_실권_장악"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "下邳之战",
+        "name_kr": "하비 전투",
+        "date": "汉献帝建安三年",
+        "belligerents": [
+          "曹操",
+          "吕布"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "吕布集团覆灭，吕布被杀",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "吕布",
+              "slug": "lv_bu"
+            }
+          ]
+        ],
+        "match_score": 22
+      }
     },
     {
       "id": "hist_202_yuan_shao_s_death_succession_crisis",
@@ -11408,7 +13084,84 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_204_cao_cao_captures_ye",
@@ -11524,7 +13277,53 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "宛城之战",
+        "name_kr": "완성 전투",
+        "date": "197年",
+        "belligerents": [
+          "曹操",
+          "张绣"
+        ],
+        "forces": null,
+        "casualties": "曹操长子曹昂战死曹操侄子曹安民战死曹操的大将典韦战死",
+        "result": "张绣胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "奇袭",
+            "context": "典韦死战"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "典韦",
+              "slug": "dian_wei"
+            },
+            {
+              "name": "张绣",
+              "slug": "zhang_xiu"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_205_yuan_tan_defeated_and_executed",
@@ -11931,7 +13730,102 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_211_liu_bei_enters_shu_yizhou",
@@ -12411,7 +14305,50 @@
       "pair_ids": [
         "novel_ch66_장료_합비에서_손권군_대파",
         "novel_ch67_합비_공방전_지속"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "合肥之战",
+        "name_kr": "합비 전투",
+        "date": "208年-253年",
+        "belligerents": [
+          "曹魏（曹军）",
+          "东吴（孙军）"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "曹魏获胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "史料总结"
+          },
+          {
+            "type": "围城",
+            "context": "史料记载"
+          }
+        ],
+        "commanders": [],
+        "match_score": 20,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          },
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_219_battle_of_mount_dingjun",
@@ -12586,7 +14523,59 @@
         "novel_ch71_황충이_하후연_참수",
         "novel_ch72_조조_한중_철수",
         "novel_ch73_유비_한중왕_선언"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "定军山之战",
+        "name_kr": "정군산 전투",
+        "date": "建安二十四年（219年）正月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "夏侯渊部四百人",
+        "casualties": "夏侯渊部全军覆没，被黄忠刀劈身亡",
+        "result": "刘备军胜利",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "水攻",
+            "context": "战役结果"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "夏侯渊",
+              "slug": "xiahou_yuan"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄忠",
+              "slug": "huang_zhong"
+            }
+          ]
+        ],
+        "match_score": 26,
+        "strategies_applied": [
+          {
+            "type": "水攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "수공으로 적 진영 수몰",
+              "delta": -10000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_219_liu_bei_becomes_king_of_hanzhong",
@@ -12920,7 +14909,116 @@
         "novel_ch81_유비_동정_결심",
         "novel_ch85_유비_사망",
         "novel_ch110_관구검과_문흠의_반란"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "襄樊之战",
+        "name_kr": "양번 전투",
+        "date": "219年七月—219年十二月",
+        "belligerents": [
+          "曹操",
+          "孙权",
+          "刘备",
+          "梁郏",
+          "陆浑群盗"
+        ],
+        "forces": "曹魏五万以上东吴数万",
+        "casualties": "曹魏损失三万以上，关羽全军覆没",
+        "result": "关羽失荆州被杀，孙刘联盟破裂",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "围城",
+            "context": "中期"
+          },
+          {
+            "type": "断粮",
+            "context": "中期"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹仁",
+              "slug": "cao_ren"
+            },
+            {
+              "name": "吕常",
+              "slug": null
+            },
+            {
+              "name": "于禁",
+              "slug": "yu_jin"
+            },
+            {
+              "name": "庞德",
+              "slug": "pang_de"
+            },
+            {
+              "name": "徐晃（曹魏）",
+              "slug": null
+            },
+            {
+              "name": "关羽",
+              "slug": "guan_yu"
+            },
+            {
+              "name": "糜芳",
+              "slug": null
+            },
+            {
+              "name": "士仁",
+              "slug": null
+            },
+            {
+              "name": "傅方",
+              "slug": null
+            },
+            {
+              "name": "胡修（蜀汉）",
+              "slug": null
+            },
+            {
+              "name": "吕蒙",
+              "slug": "lv_meng"
+            },
+            {
+              "name": "蒋钦",
+              "slug": null
+            },
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋（东吴）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 6,
+        "strategies_applied": [
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "断粮",
+            "effect": {
+              "type": "food_change",
+              "desc": "보급로 차단",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_220_cao_cao_dies_cao_pi_establishes_wei",
@@ -13528,7 +15626,120 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_223_liu_bei_dies_liu_shan_succeeds",
@@ -13695,7 +15906,120 @@
         "novel_ch81_유비_동정_결심",
         "novel_ch85_유비_사망",
         "novel_ch110_관구검과_문흠의_반란"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_225_seven_captures_of_meng_huo",
@@ -14223,7 +16547,51 @@
         "novel_ch104_사마의_퇴각_죽은_공명이_산_중달을_쫓다_",
         "novel_ch105_위연_제갈량_사후_반란",
         "novel_ch105_마대에게_참수됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 24,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_228_second_northern_expedition",
@@ -14464,7 +16832,43 @@
       "pair_ids": [
         "novel_ch29_손권이_강동_계승",
         "novel_ch61_손상향이_유선을_데려가려_시도"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "宛城之战",
+        "name_kr": "완성 전투",
+        "date": "197年",
+        "belligerents": [
+          "曹操",
+          "张绣"
+        ],
+        "forces": null,
+        "casualties": "曹操长子曹昂战死曹操侄子曹安民战死曹操的大将典韦战死",
+        "result": "张绣胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "奇袭",
+            "context": "典韦死战"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "典韦",
+              "slug": "dian_wei"
+            },
+            {
+              "name": "张绣",
+              "slug": "zhang_xiu"
+            }
+          ]
+        ],
+        "match_score": 10
+      }
     },
     {
       "id": "hist_231_fourth_northern_expedition_zhang_he_dies",
@@ -14775,7 +17179,36 @@
         "novel_ch81_유비_동정_결심",
         "novel_ch85_유비_사망",
         "novel_ch110_관구검과_문흠의_반란"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "五丈原之战",
+        "name_kr": "오장원 전투",
+        "date": "234年2月 至 234年8月 [16-17]",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军不详、蜀军十万",
+        "casualties": null,
+        "result": "因诸葛亮病逝而撤退，蜀汉第六次北伐失败",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "诸葛亮（蜀汉）",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "司马懿（曹魏）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 20
+      }
     },
     {
       "id": "hist_238_gongsun_yuan_s_rebellion_suppressed",
@@ -16530,7 +18963,46 @@
         "novel_ch34_유비_암살_시도_극복",
         "novel_ch58_마등_처형",
         "novel_ch81_장비_부하에_의해_살해됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "董卓讨伐战",
+        "name_kr": "董卓讨伐战",
+        "date": "189年（中平六年）",
+        "belligerents": [
+          "关东联军",
+          "凉州军"
+        ],
+        "forces": "关东联军十余万；董卓军不详",
+        "casualties": null,
+        "result": "关东联军胜，董卓弃洛阳迁往长安",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            },
+            {
+              "name": "袁术",
+              "slug": "yuan_shu"
+            },
+            {
+              "name": "孙坚",
+              "slug": "sun_jian"
+            },
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "王匡",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 6
+      }
     },
     {
       "id": "hist_190_dong_zhuo_punitive_campaign",
@@ -18520,7 +20992,34 @@
         "novel_ch81_유비_동정_결심",
         "novel_ch85_유비_사망",
         "novel_ch110_관구검과_문흠의_반란"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "下邳之战",
+        "name_kr": "하비 전투",
+        "date": "汉献帝建安三年",
+        "belligerents": [
+          "曹操",
+          "吕布"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "吕布集团覆灭，吕布被杀",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "吕布",
+              "slug": "lv_bu"
+            }
+          ]
+        ],
+        "match_score": 22
+      }
     },
     {
       "id": "hist_199_yuan_shao_northern_hegemony",
@@ -18747,7 +21246,84 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_200_baima_battle",
@@ -19052,7 +21628,84 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_202_yuan_shao_death",
@@ -19133,7 +21786,58 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 5
+      }
     },
     {
       "id": "hist_203_207_cao_cao_northern_unification",
@@ -19271,7 +21975,53 @@
         "novel_ch30_조조가_원소를_관도에서_격파",
         "novel_ch31_원소_가문_내분",
         "novel_ch32_조조의_원씨_세력_토벌"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "宛城之战",
+        "name_kr": "완성 전투",
+        "date": "197年",
+        "belligerents": [
+          "曹操",
+          "张绣"
+        ],
+        "forces": null,
+        "casualties": "曹操长子曹昂战死曹操侄子曹安民战死曹操的大将典韦战死",
+        "result": "张绣胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "奇袭",
+            "context": "典韦死战"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "典韦",
+              "slug": "dian_wei"
+            },
+            {
+              "name": "张绣",
+              "slug": "zhang_xiu"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_207_bailang_battle",
@@ -20138,7 +22888,102 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 16,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_208_hefei_battle",
@@ -20243,7 +23088,50 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "合肥之战",
+        "name_kr": "합비 전투",
+        "date": "208年-253年",
+        "belligerents": [
+          "曹魏（曹军）",
+          "东吴（孙军）"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "曹魏获胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "史料总结"
+          },
+          {
+            "type": "围城",
+            "context": "史料记载"
+          }
+        ],
+        "commanders": [],
+        "match_score": 20,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          },
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_209_nanjun_battle",
@@ -20381,7 +23269,102 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 7,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_210_zhuge_liang_rises",
@@ -21525,7 +24508,49 @@
         "novel_ch71_황충이_하후연_참수",
         "novel_ch72_조조_한중_철수",
         "novel_ch73_유비_한중왕_선언"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "定军山之战",
+        "name_kr": "정군산 전투",
+        "date": "建安二十四年（219年）正月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "夏侯渊部四百人",
+        "casualties": "夏侯渊部全军覆没，被黄忠刀劈身亡",
+        "result": "刘备军胜利",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "水攻",
+            "context": "战役结果"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "夏侯渊",
+              "slug": "xiahou_yuan"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄忠",
+              "slug": "huang_zhong"
+            }
+          ]
+        ],
+        "match_score": 9
+      }
     },
     {
       "id": "hist_219/06__",
@@ -22393,7 +25418,120 @@
         "novel_ch83_육손의_화공으로_유비_대패",
         "novel_ch103_제갈량_상방곡에서_사마의_화공_시도_비로_실패",
         "novel_ch108_손권_사망"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_227__",
@@ -22864,7 +26002,51 @@
         "novel_ch104_사마의_퇴각_죽은_공명이_산_중달을_쫓다_",
         "novel_ch105_위연_제갈량_사후_반란",
         "novel_ch105_마대에게_참수됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 24,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "hist_228/05__",
@@ -23595,7 +26777,36 @@
         "novel_ch104_사마의_퇴각_죽은_공명이_산_중달을_쫓다_",
         "novel_ch105_위연_제갈량_사후_반란",
         "novel_ch105_마대에게_참수됨"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "五丈原之战",
+        "name_kr": "오장원 전투",
+        "date": "234年2月 至 234年8月 [16-17]",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军不详、蜀军十万",
+        "casualties": null,
+        "result": "因诸葛亮病逝而撤退，蜀汉第六次北伐失败",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "诸葛亮（蜀汉）",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "司马懿（曹魏）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 20
+      }
     },
     {
       "id": "hist_234/10/08__",
@@ -25836,7 +29047,46 @@
         "hist_191_sun_jian_enters_luoyang",
         "hist_192_dong_zhuo_assassination",
         "hist_192_changan_battle"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "董卓讨伐战",
+        "name_kr": "董卓讨伐战",
+        "date": "189年（中平六年）",
+        "belligerents": [
+          "关东联军",
+          "凉州军"
+        ],
+        "forces": "关东联军十余万；董卓军不详",
+        "casualties": null,
+        "result": "关东联军胜，董卓弃洛阳迁往长安",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            },
+            {
+              "name": "袁术",
+              "slug": "yuan_shu"
+            },
+            {
+              "name": "孙坚",
+              "slug": "sun_jian"
+            },
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "王匡",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 6
+      }
     },
     {
       "id": "novel_ch5_호뢰관_전투",
@@ -25986,7 +29236,41 @@
         "hist_234/10/08__",
         "hist_252/05/21__",
         "hist_265/09/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "虎牢关之战",
+        "name_kr": "호뢰관 전투",
+        "date": "公元620年七月至621年五月",
+        "belligerents": [
+          "唐军",
+          "郑军",
+          "夏军"
+        ],
+        "forces": "唐军八万；郑军不详、夏军十万",
+        "casualties": null,
+        "result": "唐军获胜，一战灭两王",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "李世民",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "王世充",
+              "slug": null
+            },
+            {
+              "name": "窦建德",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 20
+      }
     },
     {
       "id": "novel_ch6_동탁이_낙양_불태움",
@@ -27916,7 +31200,53 @@
         "hist_215_yangping_pass_battle",
         "hist_216/05/29__",
         "hist_219/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "宛城之战",
+        "name_kr": "완성 전투",
+        "date": "197年",
+        "belligerents": [
+          "曹操",
+          "张绣"
+        ],
+        "forces": null,
+        "casualties": "曹操长子曹昂战死曹操侄子曹安民战死曹操的大将典韦战死",
+        "result": "张绣胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "奇袭",
+            "context": "典韦死战"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "典韦",
+              "slug": "dian_wei"
+            },
+            {
+              "name": "张绣",
+              "slug": "zhang_xiu"
+            }
+          ]
+        ],
+        "match_score": 9,
+        "strategies_applied": [
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch19_여포_하비에서_패배_후_처형",
@@ -28074,7 +31404,34 @@
         "hist_234/10/08__",
         "hist_252/05/21__",
         "hist_265/09/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "下邳之战",
+        "name_kr": "하비 전투",
+        "date": "汉献帝建安三年",
+        "belligerents": [
+          "曹操",
+          "吕布"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "吕布集团覆灭，吕布被杀",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "吕布",
+              "slug": "lv_bu"
+            }
+          ]
+        ],
+        "match_score": 12
+      }
     },
     {
       "id": "novel_ch20_동승이_조조_암살을_위한_밀서_받음",
@@ -28857,7 +32214,34 @@
         "hist_234/10/08__",
         "hist_252/05/21__",
         "hist_265/09/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "下邳之战",
+        "name_kr": "하비 전투",
+        "date": "汉献帝建安三年",
+        "belligerents": [
+          "曹操",
+          "吕布"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "吕布集团覆灭，吕布被杀",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "吕布",
+              "slug": "lv_bu"
+            }
+          ]
+        ],
+        "match_score": 5
+      }
     },
     {
       "id": "novel_ch26_관우가_원소의_장수_안량_격파",
@@ -29644,7 +33028,84 @@
         "hist_202_yuan_shao_death",
         "hist_203_207_cao_cao_northern_unification",
         "hist_207_bailang_battle"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch31_원소_가문_내분",
@@ -29786,7 +33247,84 @@
         "hist_202_yuan_shao_death",
         "hist_203_207_cao_cao_northern_unification",
         "hist_207_bailang_battle"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "官渡之战",
+        "name_kr": "관도 대전",
+        "date": "公元199年（建安四年）六月—公元200年（建安五年）十月",
+        "belligerents": [
+          "袁军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "袁绍军",
+            "count": "110000"
+          },
+          {
+            "side": "曹操军",
+            "count": "20000"
+          }
+        ],
+        "casualties": "袁军约十万，曹军约八千",
+        "result": "曹操获胜",
+        "significance": "曹操奠定统一北方的基础",
+        "strategies": [
+          {
+            "type": "声东击西",
+            "context": "前期"
+          },
+          {
+            "type": "奇袭",
+            "context": "奇袭"
+          },
+          {
+            "type": "火攻",
+            "context": "历代评价"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "袁绍",
+              "slug": "yuan_shao"
+            }
+          ],
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "声东击西",
+            "effect": {
+              "type": "morale_change",
+              "desc": "성동격서로 허를 찔림",
+              "delta": -20
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch32_조조의_원씨_세력_토벌",
@@ -31347,7 +34885,36 @@
         "hist_215_yangping_pass_battle",
         "hist_216/05/29__",
         "hist_219/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "长坂坡之战",
+        "name_kr": "장판파 전투",
+        "date": "建安十三年九月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "曹军精锐骑兵五千（包括虎豹骑若干），刘军遣关羽数百艘船走水路，在场兵力数目不明",
+        "casualties": "刘备军失去人众辎重，仅数十骑走",
+        "result": "曹军大胜，获其人众辎重",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 7
+      }
     },
     {
       "id": "novel_ch42_장비_혼자_다리_위에서_조조군_저지",
@@ -32562,7 +36129,102 @@
         "hist_208_hefei_battle",
         "hist_209_nanjun_battle",
         "hist_221/08__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch49_제갈량_동남풍_기원",
@@ -32849,7 +36511,102 @@
         "hist_208_hefei_battle",
         "hist_209_nanjun_battle",
         "hist_221/08__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 7,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch50_관우가_의리로_조조를_놓아줌",
@@ -32974,7 +36731,102 @@
         "hist_208_hefei_battle",
         "hist_209_nanjun_battle",
         "hist_221/08__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch51_주유_남군_공략_시도",
@@ -33096,7 +36948,102 @@
         "hist_208_hefei_battle",
         "hist_209_nanjun_battle",
         "hist_221/08__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch52_유비_형주_남부_4군_점령",
@@ -33234,7 +37181,102 @@
         "hist_208_hefei_battle",
         "hist_209_nanjun_battle",
         "hist_221/08__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "赤壁之战",
+        "name_kr": "적벽 대전",
+        "date": "208年（建安十三年）",
+        "belligerents": [
+          "孙刘联军",
+          "曹军"
+        ],
+        "forces": [
+          {
+            "side": "联军",
+            "count": "5万"
+          },
+          {
+            "side": "，曹军",
+            "count": "20余万"
+          },
+          {
+            "side": "（号称",
+            "count": "80万"
+          }
+        ],
+        "casualties": "曹军战死数万，病死十余万 [1]",
+        "result": "孙刘联军胜利",
+        "significance": "奠定了三国鼎立的基础",
+        "strategies": [
+          {
+            "type": "诈降",
+            "context": "火烧赤壁"
+          },
+          {
+            "type": "火攻",
+            "context": "原因分析"
+          },
+          {
+            "type": "奇袭",
+            "context": "原因分析"
+          },
+          {
+            "type": "连环",
+            "context": "后世纪念"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "周瑜",
+              "slug": "zhou_yu"
+            },
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "诈降",
+            "effect": {
+              "type": "morale_change",
+              "desc": "거짓 항복으로 적 방심 유도",
+              "delta": -25
+            }
+          },
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "奇袭",
+            "effect": {
+              "type": "army_change",
+              "desc": "기습 성공, 적 혼란",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "连环",
+            "effect": {
+              "type": "army_change",
+              "desc": "연환계로 적 기동력 마비",
+              "delta": -6000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch53_황충과_위연이_유비에게_귀순",
@@ -35656,7 +39698,50 @@
       "pair_ids": [
         "hist_215_hefei",
         "hist_215_battle_of_hefei_zhang_lu_submits"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "合肥之战",
+        "name_kr": "합비 전투",
+        "date": "208年-253年",
+        "belligerents": [
+          "曹魏（曹军）",
+          "东吴（孙军）"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "曹魏获胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "史料总结"
+          },
+          {
+            "type": "围城",
+            "context": "史料记载"
+          }
+        ],
+        "commanders": [],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          },
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch67_합비_공방전_지속",
@@ -35783,7 +39868,50 @@
       "pair_ids": [
         "hist_215_hefei",
         "hist_215_battle_of_hefei_zhang_lu_submits"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "合肥之战",
+        "name_kr": "합비 전투",
+        "date": "208年-253年",
+        "belligerents": [
+          "曹魏（曹军）",
+          "东吴（孙军）"
+        ],
+        "forces": null,
+        "casualties": null,
+        "result": "曹魏获胜",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "史料总结"
+          },
+          {
+            "type": "围城",
+            "context": "史料记载"
+          }
+        ],
+        "commanders": [],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          },
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch68_도사_좌자의_기행",
@@ -36377,7 +40505,59 @@
         "hist_219_liu_bei_becomes_king_of_hanzhong",
         "hist_217-219__",
         "hist_219/03__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "定军山之战",
+        "name_kr": "정군산 전투",
+        "date": "建安二十四年（219年）正月",
+        "belligerents": [
+          "曹操军",
+          "刘备军"
+        ],
+        "forces": "夏侯渊部四百人",
+        "casualties": "夏侯渊部全军覆没，被黄忠刀劈身亡",
+        "result": "刘备军胜利",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "水攻",
+            "context": "战役结果"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹操",
+              "slug": "cao_cao"
+            },
+            {
+              "name": "夏侯渊",
+              "slug": "xiahou_yuan"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄忠",
+              "slug": "huang_zhong"
+            }
+          ]
+        ],
+        "match_score": 10,
+        "strategies_applied": [
+          {
+            "type": "水攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "수공으로 적 진영 수몰",
+              "delta": -10000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch72_조조_한중_철수",
@@ -36990,7 +41170,116 @@
         "hist_234/10/08__",
         "hist_252/05/21__",
         "hist_265/09/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "襄樊之战",
+        "name_kr": "양번 전투",
+        "date": "219年七月—219年十二月",
+        "belligerents": [
+          "曹操",
+          "孙权",
+          "刘备",
+          "梁郏",
+          "陆浑群盗"
+        ],
+        "forces": "曹魏五万以上东吴数万",
+        "casualties": "曹魏损失三万以上，关羽全军覆没",
+        "result": "关羽失荆州被杀，孙刘联盟破裂",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "围城",
+            "context": "中期"
+          },
+          {
+            "type": "断粮",
+            "context": "中期"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹仁",
+              "slug": "cao_ren"
+            },
+            {
+              "name": "吕常",
+              "slug": null
+            },
+            {
+              "name": "于禁",
+              "slug": "yu_jin"
+            },
+            {
+              "name": "庞德",
+              "slug": "pang_de"
+            },
+            {
+              "name": "徐晃（曹魏）",
+              "slug": null
+            },
+            {
+              "name": "关羽",
+              "slug": "guan_yu"
+            },
+            {
+              "name": "糜芳",
+              "slug": null
+            },
+            {
+              "name": "士仁",
+              "slug": null
+            },
+            {
+              "name": "傅方",
+              "slug": null
+            },
+            {
+              "name": "胡修（蜀汉）",
+              "slug": null
+            },
+            {
+              "name": "吕蒙",
+              "slug": "lv_meng"
+            },
+            {
+              "name": "蒋钦",
+              "slug": null
+            },
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋（东吴）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 6,
+        "strategies_applied": [
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "断粮",
+            "effect": {
+              "type": "food_change",
+              "desc": "보급로 차단",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch74_우금_투항",
@@ -37134,7 +41423,116 @@
         "hist_234/10/08__",
         "hist_252/05/21__",
         "hist_265/09/06__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "襄樊之战",
+        "name_kr": "양번 전투",
+        "date": "219年七月—219年十二月",
+        "belligerents": [
+          "曹操",
+          "孙权",
+          "刘备",
+          "梁郏",
+          "陆浑群盗"
+        ],
+        "forces": "曹魏五万以上东吴数万",
+        "casualties": "曹魏损失三万以上，关羽全军覆没",
+        "result": "关羽失荆州被杀，孙刘联盟破裂",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "围城",
+            "context": "中期"
+          },
+          {
+            "type": "断粮",
+            "context": "中期"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "曹仁",
+              "slug": "cao_ren"
+            },
+            {
+              "name": "吕常",
+              "slug": null
+            },
+            {
+              "name": "于禁",
+              "slug": "yu_jin"
+            },
+            {
+              "name": "庞德",
+              "slug": "pang_de"
+            },
+            {
+              "name": "徐晃（曹魏）",
+              "slug": null
+            },
+            {
+              "name": "关羽",
+              "slug": "guan_yu"
+            },
+            {
+              "name": "糜芳",
+              "slug": null
+            },
+            {
+              "name": "士仁",
+              "slug": null
+            },
+            {
+              "name": "傅方",
+              "slug": null
+            },
+            {
+              "name": "胡修（蜀汉）",
+              "slug": null
+            },
+            {
+              "name": "吕蒙",
+              "slug": "lv_meng"
+            },
+            {
+              "name": "蒋钦",
+              "slug": null
+            },
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋（东吴）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 6,
+        "strategies_applied": [
+          {
+            "type": "围城",
+            "effect": {
+              "type": "food_change",
+              "desc": "포위전으로 적 식량 고갈",
+              "delta": -5000
+            }
+          },
+          {
+            "type": "断粮",
+            "effect": {
+              "type": "food_change",
+              "desc": "보급로 차단",
+              "delta": -8000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch75_화타가_관우의_팔뼈를_긁어_독_제거",
@@ -38743,7 +43141,120 @@
       "pair_topic": "이릉대전",
       "pair_ids": [
         "hist_228_shiting"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch83_육손의_화공으로_유비_대패",
@@ -38887,7 +43398,120 @@
         "hist_208_hefei_battle",
         "hist_209_nanjun_battle",
         "hist_221/08__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 7,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch84_육손이_제갈량의_팔진도에_갇힘",
@@ -39097,7 +43721,120 @@
       "pair_topic": "이릉대전",
       "pair_ids": [
         "hist_228_shiting"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "夷陵之战",
+        "name_kr": "이릉 대전",
+        "date": "221年7月 至 222年8月",
+        "belligerents": [
+          "蜀汉",
+          "五溪蛮夷",
+          "东吴"
+        ],
+        "forces": "蜀汉约四万多、五溪蛮夷约一万东吴约五万多",
+        "casualties": "蜀汉战死投降数万人 [16]",
+        "result": "吴军得胜，蜀汉元气大伤",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "火攻",
+            "context": "胜败原因"
+          },
+          {
+            "type": "诱敌",
+            "context": "胜败原因"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "陆逊",
+              "slug": "lu_xun"
+            },
+            {
+              "name": "孙桓",
+              "slug": "sun_huan"
+            },
+            {
+              "name": "朱然",
+              "slug": "zhu_ran"
+            },
+            {
+              "name": "潘璋",
+              "slug": "pan_zhang"
+            },
+            {
+              "name": "徐盛",
+              "slug": "xu_sheng"
+            }
+          ],
+          [
+            {
+              "name": "刘备",
+              "slug": "liu_bei"
+            },
+            {
+              "name": "黄权",
+              "slug": "huang_quan"
+            },
+            {
+              "name": "张南",
+              "slug": "zhang_nan"
+            },
+            {
+              "name": "冯习",
+              "slug": "feng_xi"
+            },
+            {
+              "name": "辅匡",
+              "slug": null
+            },
+            {
+              "name": "赵融",
+              "slug": null
+            },
+            {
+              "name": "廖淳",
+              "slug": null
+            },
+            {
+              "name": "傅肜",
+              "slug": null
+            },
+            {
+              "name": "吴班",
+              "slug": null
+            },
+            {
+              "name": "陈式",
+              "slug": null
+            },
+            {
+              "name": "向宠",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 5,
+        "strategies_applied": [
+          {
+            "type": "火攻",
+            "effect": {
+              "type": "army_change",
+              "desc": "화공으로 적 병력 대량 소실",
+              "delta": -8000
+            }
+          },
+          {
+            "type": "诱敌",
+            "effect": {
+              "type": "army_change",
+              "desc": "유인 성공, 적 포위",
+              "delta": -5000
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch85_제갈량에게_후사_부탁",
@@ -41134,7 +45871,51 @@
         "hist_234/03__",
         "hist_229/05/23__",
         "hist_263/12/17__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "街亭之战",
+        "name_kr": "가정 전투",
+        "date": "228年春天",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军五万，蜀军不详",
+        "casualties": null,
+        "result": "曹魏获胜，马谡被击破，诸葛亮撤军",
+        "significance": null,
+        "strategies": [
+          {
+            "type": "伏兵",
+            "context": "马谡战败"
+          }
+        ],
+        "commanders": [
+          [
+            {
+              "name": "张郃",
+              "slug": "zhang_he"
+            }
+          ],
+          [
+            {
+              "name": "马谡",
+              "slug": "ma_su"
+            }
+          ]
+        ],
+        "match_score": 14,
+        "strategies_applied": [
+          {
+            "type": "伏兵",
+            "effect": {
+              "type": "morale_change",
+              "desc": "매복 성공, 적 사기 급락",
+              "delta": -30
+            }
+          }
+        ]
+      }
     },
     {
       "id": "novel_ch95_제갈량_읍참마속",
@@ -42784,7 +47565,36 @@
         "hist_234/03__",
         "hist_229/05/23__",
         "hist_263/12/17__"
-      ]
+      ],
+      "battle_data": {
+        "name_cn": "五丈原之战",
+        "name_kr": "오장원 전투",
+        "date": "234年2月 至 234年8月 [16-17]",
+        "belligerents": [
+          "曹魏",
+          "蜀汉"
+        ],
+        "forces": "魏军不详、蜀军十万",
+        "casualties": null,
+        "result": "因诸葛亮病逝而撤退，蜀汉第六次北伐失败",
+        "significance": null,
+        "strategies": [],
+        "commanders": [
+          [
+            {
+              "name": "诸葛亮（蜀汉）",
+              "slug": null
+            }
+          ],
+          [
+            {
+              "name": "司马懿（曹魏）",
+              "slug": null
+            }
+          ]
+        ],
+        "match_score": 10
+      }
     },
     {
       "id": "novel_ch104_사마의_퇴각_죽은_공명이_산_중달을_쫓다_",
@@ -46035,5 +50845,10 @@
       "romance": "연의 기반 — 소설적 드라마, 초자연 요소 포함",
       "both": "혼합 — 모든 이벤트 활성화 (기본값)"
     }
+  },
+  "battle_enrichment": {
+    "matched": 75,
+    "strategy_enriched": 53,
+    "enriched_at": "2026-03-18T23:34:14.960Z"
   }
 }

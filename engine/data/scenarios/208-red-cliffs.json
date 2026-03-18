@@ -122,17 +122,19 @@
       "name": "허창",
       "owner": "wei",
       "governor": "xun_yu",
-      "population": 55000,
+      "population": 62500,
       "defense": 75,
       "food": 18000,
       "army": 30000,
       "morale": 80,
-      "agriculture": 70,
-      "commerce": 85,
+      "agriculture": 76,
+      "commerce": 83,
       "technology": 70,
       "publicOrder": 85,
       "naturalBonus": {
-        "technology": 1.15
+        "technology": 1.15,
+        "agriculture": 1.1,
+        "commerce": 1.05
       },
       "buildings": {
         "market": {
@@ -140,41 +142,62 @@
           "building": false,
           "turnsLeft": 0
         }
-      }
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 9,
+      "name_cn": "許昌",
+      "name_en": "Xuchang"
     },
     "luoyang": {
       "name": "낙양",
       "owner": "wei",
       "governor": null,
-      "population": 30000,
+      "population": 48000,
       "defense": 70,
       "food": 8000,
       "army": 10000,
       "morale": 65,
-      "agriculture": 45,
-      "commerce": 50,
+      "agriculture": 57,
+      "commerce": 62,
       "technology": 60,
       "publicOrder": 55,
       "naturalBonus": {
-        "technology": 1.1
+        "technology": 1.1,
+        "agriculture": 1.1,
+        "commerce": 1.05
       },
-      "buildings": {}
+      "buildings": {},
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 10,
+      "name_cn": "洛陽",
+      "name_en": "Luoyang",
+      "historical_battles": [
+        "낙양 함락",
+        "동탁 토벌"
+      ]
     },
     "ye": {
       "name": "업성",
       "owner": "wei",
       "governor": "cao_pi",
-      "population": 50000,
+      "population": 59000,
       "defense": 80,
       "food": 20000,
       "army": 35000,
       "morale": 78,
-      "agriculture": 75,
-      "commerce": 80,
+      "agriculture": 78,
+      "commerce": 78,
       "technology": 65,
       "publicOrder": 80,
       "naturalBonus": {
-        "commerce": 1.15
+        "commerce": 1.05,
+        "agriculture": 1.1
       },
       "buildings": {
         "barracks": {
@@ -182,23 +205,35 @@
           "building": false,
           "turnsLeft": 0
         }
-      }
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 8,
+      "name_cn": "鄴",
+      "name_en": "Ye",
+      "historical_battles": [
+        "업성 공방전"
+      ]
     },
     "jianye": {
       "name": "건업",
       "owner": "wu",
       "governor": "sun_quan",
-      "population": 50000,
-      "defense": 70,
+      "population": 59000,
+      "defense": 72,
       "food": 16000,
       "army": 30000,
       "morale": 82,
-      "agriculture": 65,
-      "commerce": 85,
+      "agriculture": 67,
+      "commerce": 87,
       "technology": 60,
       "publicOrder": 80,
       "naturalBonus": {
-        "commerce": 1.2
+        "commerce": 1.1,
+        "agriculture": 1.05,
+        "defense_bonus": 5
       },
       "buildings": {
         "market": {
@@ -206,23 +241,31 @@
           "building": false,
           "turnsLeft": 0
         }
-      }
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 9,
+      "name_cn": "建業",
+      "name_en": "Jianye"
     },
     "chengdu": {
       "name": "성도",
       "owner": "liu_zhang",
       "governor": "liu_zhang_char",
-      "population": 55000,
+      "population": 62500,
       "defense": 65,
       "food": 18000,
       "army": 25000,
       "morale": 70,
-      "agriculture": 80,
-      "commerce": 70,
+      "agriculture": 85,
+      "commerce": 72,
       "technology": 55,
       "publicOrder": 70,
       "naturalBonus": {
-        "agriculture": 1.2
+        "agriculture": 1.1,
+        "commerce": 1.05
       },
       "buildings": {
         "granary": {
@@ -230,75 +273,139 @@
           "building": false,
           "turnsLeft": 0
         }
-      }
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 9,
+      "name_cn": "成都",
+      "name_en": "Chengdu"
     },
     "hanzhong": {
       "name": "한중",
       "owner": "zhang_lu",
       "governor": "zhang_lu_char",
-      "population": 22000,
-      "defense": 55,
+      "population": 33400,
+      "defense": 61,
       "food": 8000,
       "army": 12000,
       "morale": 65,
-      "agriculture": 50,
-      "commerce": 40,
+      "agriculture": 53,
+      "commerce": 42,
       "technology": 35,
       "publicOrder": 65,
       "naturalBonus": {
-        "publicOrder": 1.15
+        "publicOrder": 1.15,
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
       },
-      "buildings": {}
+      "buildings": {},
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 9,
+      "name_cn": "漢中",
+      "name_en": "Hanzhong",
+      "historical_battles": [
+        "한중 쟁탈전",
+        "정군산 전투"
+      ]
     },
     "changan": {
       "name": "장안",
       "owner": "wei",
       "governor": null,
-      "population": 28000,
+      "population": 43600,
       "defense": 60,
       "food": 7000,
       "army": 8000,
       "morale": 55,
-      "agriculture": 40,
-      "commerce": 45,
+      "agriculture": 51,
+      "commerce": 55,
       "technology": 50,
       "publicOrder": 50,
       "naturalBonus": {
-        "technology": 1.1
+        "technology": 1.1,
+        "agriculture": 1.1,
+        "commerce": 1.05
       },
-      "buildings": {}
+      "buildings": {},
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 9,
+      "name_cn": "長安",
+      "name_en": "Chang'an",
+      "historical_battles": [
+        "장안 함락",
+        "이각곽사의 난"
+      ]
     },
     "xiangyang": {
       "name": "양양",
       "owner": "shu",
       "governor": null,
-      "population": 35000,
-      "defense": 65,
+      "population": 48500,
+      "defense": 67,
       "food": 12000,
       "army": 12000,
       "morale": 72,
-      "agriculture": 60,
-      "commerce": 55,
+      "agriculture": 65,
+      "commerce": 64,
       "technology": 50,
       "publicOrder": 65,
-      "naturalBonus": {},
-      "buildings": {}
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "buildings": {},
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 9,
+      "name_cn": "襄陽",
+      "name_en": "Xiangyang",
+      "historical_battles": [
+        "형주 공방전",
+        "양양 포위전"
+      ]
     },
     "changsha": {
       "name": "장사",
       "owner": "shu",
       "governor": null,
-      "population": 28000,
-      "defense": 40,
+      "population": 37600,
+      "defense": 42,
       "food": 9000,
       "army": 6000,
       "morale": 60,
-      "agriculture": 55,
-      "commerce": 45,
+      "agriculture": 60,
+      "commerce": 53,
       "technology": 35,
       "publicOrder": 55,
-      "naturalBonus": {},
-      "buildings": {}
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "buildings": {},
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 5,
+      "name_cn": "長沙",
+      "name_en": "Changsha",
+      "historical_battles": [
+        "장사 공략",
+        "황충 귀순"
+      ]
     },
     "wuling": {
       "name": "무릉",
@@ -320,319 +427,797 @@
       "name": "회계",
       "owner": "wu",
       "governor": null,
-      "population": 30000,
+      "population": 36000,
       "defense": 45,
       "food": 10000,
       "army": 8000,
       "morale": 70,
-      "agriculture": 55,
-      "commerce": 50,
+      "agriculture": 58,
+      "commerce": 57,
       "technology": 40,
       "publicOrder": 60,
-      "naturalBonus": {},
-      "buildings": {}
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.15
+      },
+      "buildings": {},
+      "terrain": {
+        "type": "coastal",
+        "desc": "해안 — 교역 활발, 해적 위험"
+      },
+      "strategic_importance": 4,
+      "name_cn": "會稽",
+      "name_en": "Kuaiji"
     },
     "lujiang": {
       "name": "여강",
       "owner": "wu",
       "governor": null,
-      "population": 32000,
-      "defense": 50,
+      "population": 37400,
+      "defense": 52,
       "food": 10000,
       "army": 10000,
       "morale": 72,
-      "agriculture": 50,
-      "commerce": 55,
+      "agriculture": 55,
+      "commerce": 58,
       "technology": 45,
       "publicOrder": 60,
-      "naturalBonus": {},
-      "buildings": {}
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "buildings": {},
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 5,
+      "name_cn": "廬江",
+      "name_en": "Lujiang"
     },
     "tianshui": {
       "name": "천수",
       "owner": "wei",
       "governor": null,
-      "population": 18000,
-      "defense": 45,
+      "population": 27600,
+      "defense": 51,
       "food": 6000,
       "army": 6000,
       "morale": 55,
-      "agriculture": 35,
-      "commerce": 35,
+      "agriculture": 39,
+      "commerce": 37,
       "technology": 30,
       "publicOrder": 45,
-      "naturalBonus": {},
-      "buildings": {}
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "buildings": {},
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 7,
+      "name_cn": "天水",
+      "name_en": "Tianshui",
+      "historical_battles": [
+        "천수 전투",
+        "제갈량 1차 북벌"
+      ]
     },
     "chenliu": {
       "name": "진류",
       "owner": "wei",
-      "population": 29250,
+      "population": 38475,
       "army": 17500,
       "morale": 75,
       "food": 7800,
-      "commerce": 46
+      "commerce": 52,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 6,
+      "name_cn": "陳留",
+      "name_en": "Chenliu",
+      "agriculture": null
     },
     "puyang": {
       "name": "복양",
       "owner": "wei",
-      "population": 15750,
+      "population": 26025,
       "army": 7500,
       "morale": 70,
       "food": 4200,
-      "commerce": 25
+      "commerce": 36,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 5,
+      "name_cn": "濮陽",
+      "name_en": "Puyang",
+      "historical_battles": [
+        "복양 전투",
+        "조조vs여포"
+      ],
+      "agriculture": null
     },
     "runan": {
       "name": "여남",
       "owner": "wei",
-      "population": 40000,
+      "population": 46000,
       "army": 80000,
       "morale": 85,
       "food": 18000,
-      "commerce": 60
+      "commerce": 60,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 5,
+      "name_cn": "汝南",
+      "name_en": "Runan",
+      "agriculture": null
     },
     "xiapi": {
       "name": "하비",
       "owner": "wei",
-      "population": 17500,
+      "population": 30250,
       "army": 10800,
       "morale": 72,
       "food": 4500,
-      "commerce": 28
+      "commerce": 41,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "name_cn": "下邳",
+      "name_en": "Xiapi",
+      "historical_battles": [
+        "하비 전투",
+        "여포 포위전"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "guangling": {
       "name": "광릉",
       "owner": "wei",
-      "population": 10500,
+      "population": 22350,
       "army": 4500,
       "morale": 67,
       "food": 2700,
-      "commerce": 17
+      "commerce": 34,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 5,
+      "name_cn": "廣陵",
+      "name_en": "Guangling",
+      "agriculture": null,
+      "defense": null
     },
     "xiaopei": {
       "name": "소패",
       "owner": "wei",
-      "population": 7000,
+      "population": 16900,
       "army": 2700,
       "morale": 67,
       "food": 1800,
-      "commerce": 11
+      "commerce": 24,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "name_cn": "小沛",
+      "name_en": "Xiaopei",
+      "agriculture": null
     },
     "nanpi": {
       "name": "남피",
       "owner": "wei",
-      "population": 38000,
+      "population": 41600,
       "army": 15000,
       "morale": 68,
       "food": 11000,
-      "commerce": 55
+      "commerce": 55,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "name_cn": "南皮",
+      "name_en": "Nanpi",
+      "agriculture": null
     },
     "ji": {
       "name": "계",
       "owner": "wei",
-      "population": 16250,
+      "population": 29375,
       "army": 7200,
       "morale": 60,
       "food": 4550,
-      "commerce": 26
+      "commerce": 38,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 7,
+      "name_cn": "薊",
+      "name_en": "Ji",
+      "historical_battles": [
+        "공손찬vs원소"
+      ],
+      "agriculture": null
     },
     "liaodong": {
       "name": "요동",
       "owner": "wei",
-      "population": 8750,
+      "population": 18125,
       "army": 4800,
       "morale": 55,
       "food": 2450,
-      "commerce": 14
+      "commerce": 22,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 0.95,
+        "defense_bonus": 10
+      },
+      "terrain": {
+        "type": "forest",
+        "desc": "삼림 — 매복 유리, 교역 불편"
+      },
+      "strategic_importance": 5,
+      "name_cn": "遼東",
+      "name_en": "Liaodong",
+      "agriculture": null,
+      "defense": null
     },
     "jinyang": {
       "name": "진양",
       "owner": "wei",
-      "population": 20000,
+      "population": 29000,
       "army": 10000,
       "morale": 58,
       "food": 6000,
-      "commerce": 30
+      "commerce": 34,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "name_cn": "晉陽",
+      "name_en": "Jinyang",
+      "agriculture": null,
+      "defense": null
     },
     "jiangling": {
       "name": "강릉",
       "owner": "shu",
-      "population": 35750,
+      "population": 46025,
       "army": 30000,
       "morale": 75,
       "food": 13000,
-      "commerce": 42
+      "commerce": 53,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 8,
+      "name_cn": "江陵",
+      "name_en": "Jiangling",
+      "historical_battles": [
+        "적벽대전 후 강릉 쟁탈"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "jiangxia": {
       "name": "강하",
       "owner": "wu",
-      "population": 13750,
+      "population": 27625,
       "army": 8000,
       "morale": 70,
       "food": 5000,
-      "commerce": 16
+      "commerce": 35,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "name_cn": "江夏",
+      "name_en": "Jiangxia",
+      "agriculture": null,
+      "defense": null
     },
     "xinye": {
       "name": "신야",
       "owner": "shu",
-      "population": 5500,
+      "population": 15850,
       "army": 2000,
       "morale": 70,
       "food": 2000,
-      "commerce": 7
+      "commerce": 21,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "name_cn": "新野",
+      "name_en": "Xinye",
+      "agriculture": null
     },
     "shouchun": {
       "name": "수춘",
       "owner": "wu",
-      "population": 27300,
+      "population": 37110,
       "army": 17500,
       "morale": 78,
       "food": 9100,
-      "commerce": 52
+      "commerce": 58,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "name_cn": "壽春",
+      "name_en": "Shouchun",
+      "historical_battles": [
+        "수춘 전투",
+        "제갈탄의 난"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "wuchang": {
       "name": "무창",
       "owner": "wu",
-      "population": 14700,
+      "population": 28290,
       "army": 7500,
       "morale": 73,
       "food": 4900,
-      "commerce": 28
+      "commerce": 43,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.1,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "river",
+        "desc": "수변 — 수운 + 식량, 수군 필요"
+      },
+      "strategic_importance": 7,
+      "name_cn": "武昌",
+      "name_en": "Wuchang",
+      "historical_battles": [
+        "무창 천도"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "jiameng": {
       "name": "검맹관",
       "owner": "liu_zhang",
-      "population": 21000,
+      "population": 23700,
       "army": 10500,
       "morale": 65,
       "food": 6000,
-      "commerce": 30
+      "commerce": 32,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "name_cn": "葭萌關",
+      "name_en": "Jiamengguan",
+      "historical_battles": [
+        "유비 입촉",
+        "검맹관 대치"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "jianning": {
       "name": "건녕",
       "owner": "liu_zhang",
-      "population": 8750,
+      "population": 18125,
       "army": 3000,
       "morale": 60,
       "food": 2500,
-      "commerce": 13
+      "commerce": 20,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 0.95,
+        "defense_bonus": 10
+      },
+      "terrain": {
+        "type": "forest",
+        "desc": "삼림 — 매복 유리, 교역 불편"
+      },
+      "strategic_importance": 5,
+      "name_cn": "建寧",
+      "name_en": "Jianning",
+      "agriculture": null,
+      "defense": null
     },
     "yongchang": {
       "name": "영창",
       "owner": "liu_zhang",
-      "population": 5250,
+      "population": 12675,
       "army": 1500,
       "morale": 60,
       "food": 1500,
-      "commerce": 8
+      "commerce": 16,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 0.95,
+        "defense_bonus": 10
+      },
+      "terrain": {
+        "type": "forest",
+        "desc": "삼림 — 매복 유리, 교역 불편"
+      },
+      "strategic_importance": 3,
+      "name_cn": "永昌",
+      "name_en": "Yongchang",
+      "agriculture": null,
+      "defense": null
     },
     "longxi": {
       "name": "농서",
       "owner": "wei",
-      "population": 9000,
+      "population": 18300,
       "army": 3500,
       "morale": 50,
       "food": 3000,
-      "commerce": 15
+      "commerce": 21,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "name_cn": "隴西",
+      "name_en": "Longxi",
+      "agriculture": null,
+      "defense": null
     },
     "wuwei": {
       "name": "무위",
       "owner": "wei",
-      "population": 6000,
+      "population": 16200,
       "army": 1500,
       "morale": 50,
       "food": 2000,
-      "commerce": 10
+      "commerce": 27,
+      "naturalBonus": {
+        "agriculture": 0.9,
+        "commerce": 1.05,
+        "defense_bonus": 5
+      },
+      "terrain": {
+        "type": "desert",
+        "desc": "사막 — 식량 부족, 실크로드"
+      },
+      "strategic_importance": 6,
+      "name_cn": "武威",
+      "name_en": "Wuwei",
+      "agriculture": null,
+      "defense": null
     },
     "panyu": {
       "name": "번우",
       "owner": "shu",
-      "population": 15000,
+      "population": 22500,
       "army": 8000,
       "morale": 60,
       "food": 8000,
-      "commerce": 30
+      "commerce": 43,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.15
+      },
+      "terrain": {
+        "type": "coastal",
+        "desc": "해안 — 교역 활발, 해적 위험"
+      },
+      "strategic_importance": 3,
+      "name_cn": "番禺",
+      "name_en": "Panyu",
+      "agriculture": null
     },
     "pingyuan": {
       "name": "평원",
       "owner": "wei",
-      "population": 15000,
+      "population": 25500,
       "army": 6500,
       "morale": 62,
       "food": 4800,
-      "commerce": 27
+      "commerce": 35,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 4,
+      "name_cn": "平原",
+      "name_en": "Pingyuan",
+      "agriculture": null
     },
     "beihai": {
       "name": "북해",
       "owner": "wei",
-      "population": 10000,
+      "population": 22000,
       "army": 3500,
       "morale": 57,
       "food": 3200,
-      "commerce": 18
+      "commerce": 34,
+      "naturalBonus": {
+        "agriculture": 1.05,
+        "commerce": 1.15
+      },
+      "terrain": {
+        "type": "coastal",
+        "desc": "해안 — 교역 활발, 해적 위험"
+      },
+      "strategic_importance": 4,
+      "name_cn": "北海",
+      "name_en": "Beihai",
+      "agriculture": null
     },
     "wan": {
       "name": "완",
       "owner": "wei",
-      "population": 38000,
+      "population": 44600,
       "army": 15000,
       "morale": 68,
       "food": 10000,
-      "commerce": 60
+      "commerce": 62,
+      "naturalBonus": {
+        "agriculture": 1.1,
+        "commerce": 1.05
+      },
+      "terrain": {
+        "type": "plains",
+        "desc": "평야 — 식량 풍부, 방어 취약"
+      },
+      "strategic_importance": 6,
+      "name_cn": "宛",
+      "name_en": "Wan",
+      "historical_battles": [
+        "완성 전투",
+        "장수vs조조"
+      ],
+      "agriculture": null
     },
     "hulao": {
       "name": "호뢰관",
       "owner": "wei",
-      "population": 3000,
+      "population": 8100,
       "army": 5000,
       "morale": 80,
       "food": 1000,
-      "commerce": 500
+      "commerce": 359,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 7,
+      "name_cn": "虎牢關",
+      "name_en": "Hulao Pass",
+      "historical_battles": [
+        "호뢰관 전투",
+        "삼영전여포"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "tongguan": {
       "name": "동관",
       "owner": "wei",
-      "population": 2000,
+      "population": 7400,
       "army": 8000,
       "morale": 85,
       "food": 800,
-      "commerce": 300
+      "commerce": 219,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 8,
+      "name_cn": "潼關",
+      "name_en": "Tong Pass",
+      "historical_battles": [
+        "동관 전투",
+        "마초vs조조"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "jiange": {
       "name": "검각",
       "owner": "liu_zhang",
-      "population": 2000,
+      "population": 7400,
       "army": 6000,
       "morale": 75,
       "food": 600,
-      "commerce": 200
+      "commerce": 149,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 8,
+      "name_cn": "劍閣",
+      "name_en": "Jiange",
+      "historical_battles": [
+        "검각 방어전",
+        "강유vs종회"
+      ],
+      "agriculture": null,
+      "defense": null
     },
     "yangpingguan": {
       "name": "양평관",
       "owner": "zhang_lu",
-      "population": 1500,
+      "population": 7050,
       "army": 4000,
       "morale": 70,
       "food": 500,
-      "commerce": 200
+      "commerce": 149,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 7,
+      "name_cn": "陽平關",
+      "name_en": "Yangping Pass",
+      "agriculture": null,
+      "defense": null
     },
     "shangyong": {
       "name": "상용",
       "owner": "liu_zhang",
-      "population": 8000,
+      "population": 14600,
       "army": 3000,
       "morale": 60,
       "food": 2000,
-      "commerce": 1000
+      "commerce": 711,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 5,
+      "name_cn": "上庸",
+      "name_en": "Shangyong",
+      "agriculture": null,
+      "defense": null
     },
     "baidi": {
       "name": "백제성",
       "owner": "liu_zhang",
-      "population": 5000,
+      "population": 12500,
       "army": 2000,
       "morale": 65,
       "food": 1500,
-      "commerce": 800
+      "commerce": 571,
+      "naturalBonus": {
+        "agriculture": 0.95,
+        "commerce": 0.95,
+        "defense_bonus": 15
+      },
+      "terrain": {
+        "type": "mountain",
+        "desc": "산지 — 방어 유리, 경제 약세"
+      },
+      "strategic_importance": 6,
+      "name_cn": "白帝城",
+      "name_en": "Baidi",
+      "historical_battles": [
+        "이릉 전투 후 유비 퇴각"
+      ],
+      "agriculture": null,
+      "defense": null
     }
   },
   "characters": {
@@ -4531,7 +5116,119 @@
     "qingzhou:xuzhou": "plains",
     "qingzhou:jizhou": "plains",
     "tianshui:changan": "mountain",
-    "tianshui:yongzhou": "plains"
+    "tianshui:yongzhou": "plains",
+    "luoyang_xuchang": "road",
+    "xuchang_luoyang": "road",
+    "luoyang_chenliu": "road",
+    "chenliu_luoyang": "road",
+    "luoyang_hulao": "mountain_pass",
+    "hulao_luoyang": "mountain_pass",
+    "hulao_chenliu": "road",
+    "chenliu_hulao": "road",
+    "xuchang_chenliu": "road",
+    "chenliu_xuchang": "road",
+    "xuchang_runan": "road",
+    "runan_xuchang": "road",
+    "chenliu_puyang": "road",
+    "puyang_chenliu": "road",
+    "puyang_ye": "road",
+    "ye_puyang": "road",
+    "luoyang_tongguan": "mountain_pass",
+    "tongguan_luoyang": "mountain_pass",
+    "tongguan_changan": "road",
+    "changan_tongguan": "road",
+    "changan_tianshui": "road",
+    "tianshui_changan": "road",
+    "tianshui_longxi": "road",
+    "longxi_tianshui": "road",
+    "longxi_wuwei": "desert_road",
+    "wuwei_longxi": "desert_road",
+    "ye_nanpi": "road",
+    "nanpi_ye": "road",
+    "nanpi_ji": "road",
+    "ji_nanpi": "road",
+    "ji_liaodong": "road",
+    "liaodong_ji": "road",
+    "ye_jinyang": "mountain_pass",
+    "jinyang_ye": "mountain_pass",
+    "nanpi_pingyuan": "road",
+    "pingyuan_nanpi": "road",
+    "pingyuan_beihai": "road",
+    "beihai_pingyuan": "road",
+    "puyang_pingyuan": "road",
+    "pingyuan_puyang": "road",
+    "chenliu_xiapi": "road",
+    "xiapi_chenliu": "road",
+    "xiapi_guangling": "road",
+    "guangling_xiapi": "road",
+    "xiapi_xiaopei": "road",
+    "xiaopei_xiapi": "road",
+    "guangling_shouchun": "road",
+    "shouchun_guangling": "road",
+    "runan_xiapi": "road",
+    "xiapi_runan": "road",
+    "xiaopei_pingyuan": "road",
+    "pingyuan_xiaopei": "road",
+    "xuchang_wan": "road",
+    "wan_xuchang": "road",
+    "wan_xiangyang": "road",
+    "xiangyang_wan": "road",
+    "wan_xinye": "road",
+    "xinye_wan": "road",
+    "xinye_xiangyang": "road",
+    "xiangyang_xinye": "road",
+    "xiangyang_jiangling": "river",
+    "jiangling_xiangyang": "river",
+    "jiangling_changsha": "river",
+    "changsha_jiangling": "river",
+    "jiangxia_xiangyang": "river",
+    "xiangyang_jiangxia": "river",
+    "jiangxia_jiangling": "river",
+    "jiangling_jiangxia": "river",
+    "shangyong_xiangyang": "mountain_pass",
+    "xiangyang_shangyong": "mountain_pass",
+    "changsha_panyu": "road",
+    "panyu_changsha": "road",
+    "shouchun_lujiang": "road",
+    "lujiang_shouchun": "road",
+    "lujiang_wuchang": "river",
+    "wuchang_lujiang": "river",
+    "shouchun_runan": "road",
+    "runan_shouchun": "road",
+    "lujiang_jianye": "river",
+    "jianye_lujiang": "river",
+    "wuchang_jiangxia": "river",
+    "jiangxia_wuchang": "river",
+    "jianye_kuaiji": "road",
+    "kuaiji_jianye": "road",
+    "guangling_jianye": "river",
+    "jianye_guangling": "river",
+    "hanzhong_yangpingguan": "mountain_pass",
+    "yangpingguan_hanzhong": "mountain_pass",
+    "yangpingguan_changan": "mountain_pass",
+    "changan_yangpingguan": "mountain_pass",
+    "hanzhong_jiameng": "mountain_pass",
+    "jiameng_hanzhong": "mountain_pass",
+    "jiameng_chengdu": "road",
+    "chengdu_jiameng": "road",
+    "chengdu_baidi": "river",
+    "baidi_chengdu": "river",
+    "baidi_jiangling": "river",
+    "jiangling_baidi": "river",
+    "chengdu_jianning": "road",
+    "jianning_chengdu": "road",
+    "jianning_yongchang": "road",
+    "yongchang_jianning": "road",
+    "shangyong_hanzhong": "mountain_pass",
+    "hanzhong_shangyong": "mountain_pass",
+    "chengdu_jiange": "mountain_pass",
+    "jiange_chengdu": "mountain_pass",
+    "jiange_hanzhong": "mountain_pass",
+    "hanzhong_jiange": "mountain_pass",
+    "tianshui_hanzhong": "mountain_pass",
+    "hanzhong_tianshui": "mountain_pass",
+    "panyu_jianning": "road",
+    "jianning_panyu": "road"
   },
   "mapLayout": {
     "baseAsset": "/assets/maps/red-cliffs-base.svg",
@@ -5049,6 +5746,440 @@
         "x": 318,
         "y": 486
       }
+    ],
+    "waterPolygons": [
+      {
+        "kind": "river",
+        "points": [
+          [
+            592,
+            226
+          ],
+          [
+            714,
+            210
+          ],
+          [
+            876,
+            216
+          ],
+          [
+            1018,
+            206
+          ],
+          [
+            1172,
+            212
+          ],
+          [
+            1294,
+            234
+          ],
+          [
+            1284,
+            258
+          ],
+          [
+            1128,
+            248
+          ],
+          [
+            978,
+            244
+          ],
+          [
+            842,
+            254
+          ],
+          [
+            700,
+            250
+          ],
+          [
+            584,
+            248
+          ]
+        ]
+      },
+      {
+        "kind": "river",
+        "points": [
+          [
+            408,
+            592
+          ],
+          [
+            572,
+            566
+          ],
+          [
+            746,
+            546
+          ],
+          [
+            924,
+            548
+          ],
+          [
+            1114,
+            560
+          ],
+          [
+            1280,
+            578
+          ],
+          [
+            1438,
+            590
+          ],
+          [
+            1430,
+            626
+          ],
+          [
+            1246,
+            620
+          ],
+          [
+            1072,
+            608
+          ],
+          [
+            888,
+            602
+          ],
+          [
+            692,
+            610
+          ],
+          [
+            500,
+            626
+          ],
+          [
+            394,
+            632
+          ]
+        ]
+      },
+      {
+        "kind": "bay",
+        "points": [
+          [
+            1384,
+            118
+          ],
+          [
+            1504,
+            160
+          ],
+          [
+            1542,
+            320
+          ],
+          [
+            1500,
+            474
+          ],
+          [
+            1510,
+            846
+          ],
+          [
+            1600,
+            846
+          ],
+          [
+            1600,
+            100
+          ],
+          [
+            1428,
+            98
+          ]
+        ]
+      }
+    ],
+    "ridgePaths": [
+      {
+        "name": "태행산",
+        "thickness": 24,
+        "points": [
+          [
+            706,
+            150
+          ],
+          [
+            760,
+            194
+          ],
+          [
+            812,
+            236
+          ],
+          [
+            846,
+            286
+          ],
+          [
+            886,
+            344
+          ]
+        ]
+      },
+      {
+        "name": "진령",
+        "thickness": 28,
+        "points": [
+          [
+            294,
+            418
+          ],
+          [
+            392,
+            396
+          ],
+          [
+            504,
+            392
+          ],
+          [
+            628,
+            416
+          ],
+          [
+            730,
+            444
+          ]
+        ]
+      },
+      {
+        "name": "촉도",
+        "thickness": 22,
+        "points": [
+          [
+            234,
+            506
+          ],
+          [
+            286,
+            540
+          ],
+          [
+            324,
+            594
+          ],
+          [
+            360,
+            656
+          ],
+          [
+            408,
+            732
+          ]
+        ]
+      }
+    ],
+    "frontlineAnchors": [
+      {
+        "pair": [
+          "xiangyang",
+          "jingzhou"
+        ],
+        "points": [
+          [
+            776,
+            494
+          ],
+          [
+            824,
+            526
+          ],
+          [
+            860,
+            544
+          ],
+          [
+            840,
+            554
+          ]
+        ]
+      },
+      {
+        "pair": [
+          "jingzhou",
+          "lujiang"
+        ],
+        "points": [
+          [
+            840,
+            554
+          ],
+          [
+            916,
+            532
+          ],
+          [
+            1002,
+            532
+          ],
+          [
+            1106,
+            540
+          ]
+        ]
+      },
+      {
+        "pair": [
+          "hanzhong",
+          "changan"
+        ],
+        "points": [
+          [
+            406,
+            428
+          ],
+          [
+            468,
+            386
+          ],
+          [
+            540,
+            334
+          ],
+          [
+            404,
+            296
+          ]
+        ]
+      },
+      {
+        "pair": [
+          "nanyang",
+          "yuzhou"
+        ],
+        "points": [
+          [
+            694,
+            414
+          ],
+          [
+            724,
+            438
+          ],
+          [
+            756,
+            450
+          ],
+          [
+            804,
+            456
+          ]
+        ]
+      },
+      {
+        "pair": [
+          "lujiang",
+          "yangzhou"
+        ],
+        "points": [
+          [
+            1106,
+            540
+          ],
+          [
+            1172,
+            546
+          ],
+          [
+            1210,
+            548
+          ],
+          [
+            1240,
+            552
+          ]
+        ]
+      }
+    ],
+    "cityBadgeOffsets": {
+      "jingzhou": {
+        "badge": [
+          18,
+          2
+        ],
+        "label": [
+          14,
+          10
+        ],
+        "command": [
+          18,
+          -4
+        ]
+      },
+      "xiangyang": {
+        "badge": [
+          -16,
+          4
+        ],
+        "label": [
+          -12,
+          10
+        ]
+      },
+      "lujiang": {
+        "badge": [
+          18,
+          0
+        ],
+        "label": [
+          16,
+          8
+        ]
+      },
+      "yangzhou": {
+        "badge": [
+          -18,
+          0
+        ],
+        "label": [
+          -18,
+          10
+        ]
+      },
+      "yuzhou": {
+        "badge": [
+          16,
+          0
+        ],
+        "label": [
+          12,
+          8
+        ]
+      }
+    },
+    "focusZones": [
+      {
+        "factionId": "wei",
+        "x": 984,
+        "y": 256,
+        "radius": 320,
+        "alpha": 0.16
+      },
+      {
+        "factionId": "shu",
+        "x": 792,
+        "y": 622,
+        "radius": 250,
+        "alpha": 0.14
+      },
+      {
+        "factionId": "wu",
+        "x": 1244,
+        "y": 622,
+        "radius": 260,
+        "alpha": 0.16
+      }
     ]
   },
   "cityPositions": {
@@ -5065,8 +6196,8 @@
       "y": 130
     },
     "ye": {
-      "x": 600,
-      "y": 200
+      "x": 510,
+      "y": 290
     },
     "yanzhou": {
       "x": 620,
@@ -5077,20 +6208,20 @@
       "y": 300
     },
     "xuchang": {
-      "x": 570,
-      "y": 340
+      "x": 520,
+      "y": 420
     },
     "yuzhou": {
       "x": 520,
       "y": 380
     },
     "luoyang": {
-      "x": 470,
-      "y": 300
+      "x": 480,
+      "y": 380
     },
     "changan": {
-      "x": 360,
-      "y": 310
+      "x": 330,
+      "y": 370
     },
     "yongzhou": {
       "x": 280,
@@ -5105,8 +6236,8 @@
       "y": 420
     },
     "jianye": {
-      "x": 740,
-      "y": 460
+      "x": 590,
+      "y": 480
     },
     "yizhou": {
       "x": 330,
@@ -5114,11 +6245,11 @@
     },
     "chengdu": {
       "x": 260,
-      "y": 520
+      "y": 500
     },
     "hanzhong": {
-      "x": 340,
-      "y": 400
+      "x": 320,
+      "y": 420
     },
     "jiaozhou": {
       "x": 480,
@@ -5129,35 +6260,379 @@
       "y": 360
     },
     "xiangyang": {
-      "x": 500,
-      "y": 420
+      "x": 440,
+      "y": 460
     },
     "changsha": {
-      "x": 560,
-      "y": 530
+      "x": 440,
+      "y": 580
     },
     "wuling": {
       "x": 440,
       "y": 540
     },
     "kuaiji": {
-      "x": 800,
-      "y": 520
+      "x": 640,
+      "y": 510
     },
     "lujiang": {
-      "x": 650,
-      "y": 460
+      "x": 560,
+      "y": 490
     },
     "qingzhou": {
       "x": 760,
       "y": 220
     },
     "tianshui": {
-      "x": 250,
+      "x": 240,
+      "y": 350
+    },
+    "chenliu": {
+      "x": 530,
+      "y": 370
+    },
+    "puyang": {
+      "x": 540,
+      "y": 330
+    },
+    "runan": {
+      "x": 540,
+      "y": 450
+    },
+    "longxi": {
+      "x": 200,
+      "y": 330
+    },
+    "wuwei": {
+      "x": 150,
+      "y": 280
+    },
+    "nanpi": {
+      "x": 560,
       "y": 270
+    },
+    "ji": {
+      "x": 560,
+      "y": 200
+    },
+    "liaodong": {
+      "x": 680,
+      "y": 150
+    },
+    "jinyang": {
+      "x": 430,
+      "y": 260
+    },
+    "pingyuan": {
+      "x": 570,
+      "y": 310
+    },
+    "beihai": {
+      "x": 620,
+      "y": 320
+    },
+    "xiapi": {
+      "x": 590,
+      "y": 400
+    },
+    "guangling": {
+      "x": 610,
+      "y": 430
+    },
+    "xiaopei": {
+      "x": 570,
+      "y": 390
+    },
+    "jiangling": {
+      "x": 420,
+      "y": 510
+    },
+    "wan": {
+      "x": 470,
+      "y": 440
+    },
+    "jiangxia": {
+      "x": 490,
+      "y": 490
+    },
+    "xinye": {
+      "x": 460,
+      "y": 450
+    },
+    "shangyong": {
+      "x": 380,
+      "y": 430
+    },
+    "shouchun": {
+      "x": 560,
+      "y": 460
+    },
+    "wuchang": {
+      "x": 510,
+      "y": 510
+    },
+    "jiameng": {
+      "x": 290,
+      "y": 450
+    },
+    "jianning": {
+      "x": 260,
+      "y": 600
+    },
+    "yongchang": {
+      "x": 200,
+      "y": 620
+    },
+    "baidi": {
+      "x": 330,
+      "y": 490
+    },
+    "panyu": {
+      "x": 420,
+      "y": 680
+    },
+    "hulao": {
+      "x": 490,
+      "y": 370
+    },
+    "tongguan": {
+      "x": 400,
+      "y": 370
+    },
+    "jiange": {
+      "x": 280,
+      "y": 460
+    },
+    "yangpingguan": {
+      "x": 300,
+      "y": 430
     }
   },
   "connections": [
+    [
+      "luoyang",
+      "xuchang"
+    ],
+    [
+      "luoyang",
+      "chenliu"
+    ],
+    [
+      "luoyang",
+      "hulao"
+    ],
+    [
+      "hulao",
+      "chenliu"
+    ],
+    [
+      "xuchang",
+      "chenliu"
+    ],
+    [
+      "xuchang",
+      "runan"
+    ],
+    [
+      "chenliu",
+      "puyang"
+    ],
+    [
+      "puyang",
+      "ye"
+    ],
+    [
+      "luoyang",
+      "tongguan"
+    ],
+    [
+      "tongguan",
+      "changan"
+    ],
+    [
+      "changan",
+      "tianshui"
+    ],
+    [
+      "tianshui",
+      "longxi"
+    ],
+    [
+      "longxi",
+      "wuwei"
+    ],
+    [
+      "ye",
+      "nanpi"
+    ],
+    [
+      "nanpi",
+      "ji"
+    ],
+    [
+      "ji",
+      "liaodong"
+    ],
+    [
+      "ye",
+      "jinyang"
+    ],
+    [
+      "nanpi",
+      "pingyuan"
+    ],
+    [
+      "pingyuan",
+      "beihai"
+    ],
+    [
+      "puyang",
+      "pingyuan"
+    ],
+    [
+      "chenliu",
+      "xiapi"
+    ],
+    [
+      "xiapi",
+      "guangling"
+    ],
+    [
+      "xiapi",
+      "xiaopei"
+    ],
+    [
+      "guangling",
+      "shouchun"
+    ],
+    [
+      "runan",
+      "xiapi"
+    ],
+    [
+      "xiaopei",
+      "pingyuan"
+    ],
+    [
+      "xuchang",
+      "wan"
+    ],
+    [
+      "wan",
+      "xiangyang"
+    ],
+    [
+      "wan",
+      "xinye"
+    ],
+    [
+      "xinye",
+      "xiangyang"
+    ],
+    [
+      "xiangyang",
+      "jiangling"
+    ],
+    [
+      "jiangling",
+      "changsha"
+    ],
+    [
+      "jiangxia",
+      "xiangyang"
+    ],
+    [
+      "jiangxia",
+      "jiangling"
+    ],
+    [
+      "shangyong",
+      "xiangyang"
+    ],
+    [
+      "changsha",
+      "panyu"
+    ],
+    [
+      "shouchun",
+      "lujiang"
+    ],
+    [
+      "lujiang",
+      "wuchang"
+    ],
+    [
+      "shouchun",
+      "runan"
+    ],
+    [
+      "lujiang",
+      "jianye"
+    ],
+    [
+      "wuchang",
+      "jiangxia"
+    ],
+    [
+      "jianye",
+      "kuaiji"
+    ],
+    [
+      "guangling",
+      "jianye"
+    ],
+    [
+      "hanzhong",
+      "yangpingguan"
+    ],
+    [
+      "yangpingguan",
+      "changan"
+    ],
+    [
+      "hanzhong",
+      "jiameng"
+    ],
+    [
+      "jiameng",
+      "chengdu"
+    ],
+    [
+      "chengdu",
+      "baidi"
+    ],
+    [
+      "baidi",
+      "jiangling"
+    ],
+    [
+      "chengdu",
+      "jianning"
+    ],
+    [
+      "jianning",
+      "yongchang"
+    ],
+    [
+      "shangyong",
+      "hanzhong"
+    ],
+    [
+      "chengdu",
+      "jiange"
+    ],
+    [
+      "jiange",
+      "hanzhong"
+    ],
+    [
+      "tianshui",
+      "hanzhong"
+    ],
+    [
+      "panyu",
+      "jianning"
+    ],
     [
       "youzhou",
       "jizhou"
@@ -5193,10 +6668,6 @@
     [
       "xuchang",
       "yuzhou"
-    ],
-    [
-      "xuchang",
-      "luoyang"
     ],
     [
       "luoyang",
@@ -5283,16 +6754,8 @@
       "yizhou"
     ],
     [
-      "kuaiji",
-      "jianye"
-    ],
-    [
       "lujiang",
       "yangzhou"
-    ],
-    [
-      "lujiang",
-      "jianye"
     ],
     [
       "lujiang",
@@ -5305,10 +6768,6 @@
     [
       "qingzhou",
       "jizhou"
-    ],
-    [
-      "tianshui",
-      "changan"
     ],
     [
       "tianshui",
