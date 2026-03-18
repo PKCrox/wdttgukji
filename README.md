@@ -489,6 +489,21 @@ Territory:
 
 ## 로드맵
 
+### 현재 상태
+
+- 현재 플레이 가능한 대상은 **208 적벽대전** 단일 시나리오다.
+- 웹 데모 **우당탕탕삼국지**는 내부 실험용 **수직 슬라이스(vertical slice)** 단계까지 진입했다.
+- 이미 확보한 강점:
+  - 전쟁 루프가 실제로 열리고 끝나는 수준까지 정비되었다.
+  - 내정/연구/건설이 턴 결산과 UI에 연결되었다.
+  - stage 기반 화면 구조와 authored map 기반 전환이 시작되었다.
+  - 헤드리스 평가 경로(`prepare.js`)로 교착률/턴 길이/이벤트 도달률을 추적할 수 있다.
+- 현재 병목:
+  - 몰입감 있는 화면별 command scene 부재
+  - UI grammar 일관성 부족
+  - 10분 수동 플레이 기준 체감/권력감 부족
+  - 위 과강세와 낮은 역전성
+
 ### Phase 0: 데이터 수집 + 스키마 검증 ✅
 - [x] 장수 능력치 크롤링 (삼국지 10/11/12, 멀티버전 1305명)
 - [x] 연의 등장 이력 크롤링 (68명, 챕터별)
@@ -529,7 +544,7 @@ Territory:
 - [x] AI 이벤트 생성 파이프라인 (337개 시드 → 337개 완성 이벤트)
 - [ ] 하드코딩/AI 경계선 확정 (기획 리드 결정)
 
-### Phase 2: 게임 코어 프로토타입 ✅
+### Phase 2: 게임 코어 프로토타입 + 웹 세로 슬라이스 기반 ✅
 - [x] 턴 엔진 (행동력 3/턴, 월 단위 자원 결산, 턴 로그)
 - [x] 맵 렌더링 (Canvas 2D, 18도시 + 24연결, DPI 대응, 세력 색상, 이벤트 펄스)
 - [x] 이벤트 트리거 엔진 (13종 조건 평가 + 16종 효과 적용, 337개 이벤트)
@@ -539,27 +554,46 @@ Territory:
 - [x] 캐릭터 관리 (active/captive/wandering/dead, 탐색/등용/포로/배신/탈출)
 - [x] 세력 AI (7단계 우선순위, soul.md 성향 테이블 기반)
 - [x] Save/Load (localStorage JSON 직렬화, 역호환)
-- [x] UI (탭형 행동패널, 4트랙 바, 캐릭터 모달, 턴 로그, 시작 화면)
-- [x] 208 적벽대전 시나리오 (5세력, 44명 캐릭터, 18도시)
-- [ ] Tauri 패키징 (exe/app) — 웹 프로토타입 완성 후 진행 예정
+- [x] UI/HUD 프로토타입 + stage 기반 화면 재구성 착수
+- [x] 208 적벽대전 시나리오 웹 플레이 가능
+- [x] 헤드리스 밸런스 평가 경로 확보
 
-### Phase 3: 밸런스 오토리서치 ← **다음**
+### Phase 3: 208 수직 슬라이스 완성도 ← **현재 최우선**
+- [ ] 화면별 authored scene 재설계
+- [ ] 시정/군사/외교/인사 command scene 분리
+- [ ] 도시 레일/연대기/턴 결산의 장면형 재구성
+- [ ] 지도 심화: 경계/전선/도시 인장/지형 가독성
+- [ ] 10분 플레이 체감 검증
+- [ ] 수동 플레이 기준 UX polish
+- [ ] 208 위/촉/오 체험 차별화
+
+### Phase 4: 밸런스 오토리서치 운영화
 - [x] Karpathy autoresearch 3-파일 구조 (`prepare.js` / `train.js` / `program.md`)
 - [x] 밸런스 상수 레지스트리 (`train.js` — 7섹션 ~120개 파라미터)
 - [x] balance_score 메트릭 (winKL + pacingDev + dramaPenalty + anomaly)
-- [ ] 첫 autoresearch 루프 실행 (에이전트가 train.js 수정 → prepare.js 평가 → keep/discard)
-- [ ] 추가 시나리오 (190 반동탁, 200 관도, 220 삼국정립)
+- [ ] 첫 autoresearch 루프 운영화 (에이전트가 train.js 수정 → prepare.js 평가 → keep/discard)
+- [ ] `winDistribution` / `stalemateRate` / `avgTurns` / `avgEventReach` / `avgReversals` 기준 운영
+- [ ] wei 과강세 완화
+- [ ] 190/200/220 시나리오 확장 전 헤드리스 지표 안정화
 
-### Phase 4: AI 파이프라인 통합
-- [ ] soul.md 기반 NPC 대화 엔진 (실시간 LLM 호출)
-- [ ] 이벤트 대량 생성 (50,000개)
-- [ ] AI 플레이어 페르소나 구축 (다중 스타일)
-- [ ] 피드백 → 기획팀 루프
+### Phase 5: 에이전트 파이프라인 통합
+- [ ] `ai/` 와 `AGENTS.md` 기준 역할 분리 운영화
+- [ ] `world-data-researcher` / `koei-systems-designer` / `content-planner` / `engine-integrator` / `balance-researcher` / `qa-persona-simulator` 루프 정착
+- [ ] 문서상 워크플로우를 실제 반복 운영 파이프라인으로 연결
+- [ ] soul 소비 + 이벤트 생성 + QA persona + factory loop 운영화
 
-### Phase 5: 테마 일반화
+### Phase 6: 테마 일반화 + 패키징
 - [ ] 삼국지 종속 코드 분리 (엔진 vs 테마 데이터)
 - [ ] 테마 교체 인터페이스 설계
 - [ ] 두 번째 세계관 적용 테스트
+- [ ] Tauri/배포 패키징 정리
+
+### Next Up
+1. command scene 재설계
+2. 도시/연대기 UI 정리
+3. authored map 2차 심화
+4. 208 수동 플레이 QA
+5. balance autoresearch 재가동
 
 ---
 
