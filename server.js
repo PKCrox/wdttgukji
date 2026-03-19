@@ -1,4 +1,4 @@
-// wdttgukji dev server — localhost:3001
+// 우당탕탕삼국지 dev server — localhost:3001
 
 import { createServer } from 'http';
 import { readFile, stat } from 'fs/promises';
@@ -24,7 +24,7 @@ const server = createServer(async (req, res) => {
   let url = req.url.split('?')[0];
   if (url === '/') url = '/public/index.html';
   else if (!url.includes('.')) url = '/public' + url + '.html';
-  else if (url.startsWith('/js/') || url.startsWith('/css/')) url = '/public' + url;
+  else if (url.startsWith('/js/') || url.startsWith('/css/') || url.startsWith('/assets/')) url = '/public' + url;
 
   // 그대로 매핑: /engine/*, /data/*, /public/* → 루트에서 서빙
   const filePath = join(__dirname, url);
@@ -44,5 +44,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\n  왜 다 턴 가지구 — http://localhost:${PORT}\n`);
+  console.log(`\n  우당탕탕삼국지 — http://localhost:${PORT}\n`);
 });

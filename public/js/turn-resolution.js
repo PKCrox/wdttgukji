@@ -1,24 +1,20 @@
-// TurnResolution — 턴 결산 UI
-// 상단 알림 피드 + 프로그레스 바. 자동 진행 (클릭 불필요).
-
 const LOG_ICONS = {
   event: '📜', ai_choice: '🤖', player_choice: '⚡',
   war: '⚔️', ai: '🏴', alliance: '🤝', territory: '🏰',
   diplomacy: '📋', warning: '⚠️', defection: '💔',
   rebellion: '🔥', captive: '⛓', death: '💀',
   recruit: '📢', construction: '🔨', research: '📚',
-  income: '💰', food: '🌾', gameover: '👑',
-  player: '🎯', info: '•',
+  income: '💰', food: '🌾', movement: '➡️', gameover: '👑',
+  player: '🎯', espionage: '🕵', reward: '🎁', logistics: '🚚', info: '•',
 };
 
-// 타입별 표시 속도 (ms) — 중요한 건 길게, 루틴은 짧게
 const TYPE_DELAY = {
   event: 1200, war: 1400, territory: 1400, alliance: 1200,
   death: 1500, rebellion: 1400, gameover: 2000,
   ai: 600, ai_choice: 600, info: 500,
   income: 400, food: 400, construction: 500, research: 500,
-  diplomacy: 800, recruit: 700, captive: 800,
-  player: 800, defection: 1000, warning: 900,
+  diplomacy: 800, recruit: 700, captive: 800, espionage: 700,
+  player: 800, reward: 800, logistics: 700, defection: 1000, warning: 900,
 };
 const DEFAULT_DELAY = 700;
 
@@ -34,15 +30,16 @@ export class TurnResolution {
     this.phaseLabel = document.getElementById('tr-phase-label');
     this.itemsContainer = document.getElementById('tr-items');
     this.counter = document.getElementById('tr-counter');
+    this.logContent = document.getElementById('turn-log-content');
 
     this.items = [];
     this.currentIndex = 0;
     this.currentPhase = null;
     this.resolveComplete = null;
     this._autoTimer = null;
-    this._speed = 1; // 1x 기본, 2x 빠르게
+    this._speed = 1;
+    this._streamBlock = null;
 
-    // 클릭하면 즉시 다음 항목 + 타이머 리셋
     this.panel.addEventListener('click', (e) => {
       if (e.target.id === 'tr-skip') return;
       this._clearAutoTimer();
@@ -50,12 +47,7 @@ export class TurnResolution {
       this._scheduleNext();
     });
 
-    // 건너뛰기
-    document.getElementById('tr-skip').addEventListener('click', () => {
-      this.skipAll();
-    });
-
-    // 키보드: Space = 즉시 다음, Escape = 전부 건너뛰기
+    document.getElementById('tr-skip').addEventListener('click', () => this.skipAll());
     this._keyHandler = (e) => {
       if (this.panel.classList.contains('hidden')) return;
       if (e.key === ' ' || e.key === 'Enter') {
@@ -70,30 +62,24 @@ export class TurnResolution {
     document.addEventListener('keydown', this._keyHandler);
   }
 
-  /**
-   * 결산 UI 표시 — 자동 진행
-   * @param {Array<{phase, icon, text, type}>} items
-   * @returns {Promise<void>} 닫힐 때 resolve
-   */
   show(items) {
     this.items = items;
     this.currentIndex = 0;
     this.currentPhase = null;
     this._speed = 1;
-
     this.itemsContainer.innerHTML = '';
     this.progressFill.style.width = '0%';
     this.phaseLabel.textContent = '';
     this.counter.textContent = `0 / ${items.length}`;
+    this._prepareStreamBlock();
 
     this.panel.classList.remove('hidden');
     this.progressBar.classList.remove('hidden');
 
-    // 첫 항목 즉시 표시 + 자동 진행 시작
     this.advance();
     this._scheduleNext();
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       this.resolveComplete = resolve;
     });
   }
@@ -101,57 +87,34 @@ export class TurnResolution {
   advance() {
     if (this.currentIndex >= this.items.length) {
       this._clearAutoTimer();
-      // 마지막 항목 잠시 보여준 뒤 닫기
-      setTimeout(() => this.close(), 600);
+      setTimeout(() => this.close(), 450);
       return;
     }
 
     const item = this.items[this.currentIndex];
-
-    // 페이즈 변경 시 구분선
     if (item.phase !== this.currentPhase) {
       this.currentPhase = item.phase;
       this.phaseLabel.textContent = item.phase;
-
-      const divider = document.createElement('div');
-      divider.className = 'tr-phase-divider';
-      divider.textContent = `— ${item.phase} —`;
-      this.itemsContainer.appendChild(divider);
+      this._appendPhaseDivider(item.phase);
+      this._appendPanelDivider(item.phase);
     }
 
-    // 항목 생성
-    const el = document.createElement('div');
-    el.className = `tr-item ${item.type || ''}`;
-    el.innerHTML = `<span class="tr-icon">${item.icon || '•'}</span><span class="tr-text">${item.text}</span>`;
-    this.itemsContainer.appendChild(el);
+    this._appendPanelItem(item);
+    this._appendLedgerItem(item);
 
-    // 오래된 항목 제거 (최대 12개 유지)
-    while (this.itemsContainer.children.length > 15) {
-      const old = this.itemsContainer.firstChild;
-      old.classList.add('tr-fade-out');
-      setTimeout(() => old.remove(), 200);
-    }
-
-    this.currentIndex++;
-
-    // 프로그레스 바
+    this.currentIndex += 1;
     const pct = (this.currentIndex / this.items.length) * 100;
     this.progressFill.style.width = `${pct}%`;
     this.counter.textContent = `${this.currentIndex} / ${this.items.length}`;
-
-    // 자동 스크롤
     this.itemsContainer.scrollTop = this.itemsContainer.scrollHeight;
+    if (this.logContent) this.logContent.scrollTop = 0;
   }
 
-  /** 다음 항목 자동 타이머 예약 */
   _scheduleNext() {
     this._clearAutoTimer();
     if (this.currentIndex >= this.items.length) return;
-
     const nextItem = this.items[this.currentIndex];
-    const baseDelay = TYPE_DELAY[nextItem?.type] || DEFAULT_DELAY;
-    const delay = Math.max(200, baseDelay / this._speed);
-
+    const delay = Math.max(200, (TYPE_DELAY[nextItem?.type] || DEFAULT_DELAY) / this._speed);
     this._autoTimer = setTimeout(() => {
       this.advance();
       this._scheduleNext();
@@ -168,16 +131,8 @@ export class TurnResolution {
   skipAll() {
     this._clearAutoTimer();
     while (this.currentIndex < this.items.length) {
-      const item = this.items[this.currentIndex];
-      if (item.phase !== this.currentPhase) {
-        this.currentPhase = item.phase;
-        this.phaseLabel.textContent = item.phase;
-      }
-      this.currentIndex++;
+      this.advance();
     }
-    // 마지막 상태만 프로그레스에 반영
-    this.progressFill.style.width = '100%';
-    this.counter.textContent = `${this.items.length} / ${this.items.length}`;
     this.close();
   }
 
@@ -185,9 +140,64 @@ export class TurnResolution {
     this._clearAutoTimer();
     this.panel.classList.add('hidden');
     this.progressBar.classList.add('hidden');
+    this._streamBlock = null;
     if (this.resolveComplete) {
       this.resolveComplete();
       this.resolveComplete = null;
+    }
+  }
+
+  _prepareStreamBlock() {
+    if (!this.logContent) return;
+    this._streamBlock?.remove();
+    const block = document.createElement('section');
+    block.className = 'chronicle-live-turn';
+    block.innerHTML = `
+      <div class="chronicle-live-head">
+        <span class="chronicle-live-kicker">실시간 결산</span>
+        <span class="chronicle-live-state">이번 달 판세 정리 중</span>
+      </div>
+    `;
+    this.logContent.prepend(block);
+    this._streamBlock = block;
+  }
+
+  _appendPhaseDivider(phase) {
+    if (!this._streamBlock) return;
+    const divider = document.createElement('div');
+    divider.className = 'chronicle-live-phase';
+    divider.textContent = phase;
+    this._streamBlock.appendChild(divider);
+  }
+
+  _appendLedgerItem(item) {
+    if (!this._streamBlock) return;
+    const entry = document.createElement('div');
+    entry.className = `chronicle-live-entry ${item.type || 'info'}`;
+    entry.innerHTML = `
+      <span class="chronicle-live-icon">${item.icon || '•'}</span>
+      <span class="chronicle-live-text">${item.text}</span>
+    `;
+    this._streamBlock.appendChild(entry);
+  }
+
+  _appendPanelDivider(phase) {
+    const divider = document.createElement('div');
+    divider.className = 'tr-phase-divider';
+    divider.textContent = `— ${phase} —`;
+    this.itemsContainer.appendChild(divider);
+  }
+
+  _appendPanelItem(item) {
+    const el = document.createElement('div');
+    el.className = `tr-item ${item.type || 'info'}`;
+    el.innerHTML = `<span class="tr-icon">${item.icon || '•'}</span><span class="tr-text">${item.text}</span>`;
+    this.itemsContainer.appendChild(el);
+
+    while (this.itemsContainer.children.length > 14) {
+      const old = this.itemsContainer.firstChild;
+      old.classList.add('tr-fade-out');
+      setTimeout(() => old.remove(), 180);
     }
   }
 }

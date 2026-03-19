@@ -7,6 +7,8 @@
 
 // ─── 건물 정의 ───
 
+import { addExperienceFromSource } from './growth.js';
+
 const MAX_BUILDING_SLOTS = 5;
 
 export const BUILDINGS = {
@@ -210,6 +212,19 @@ export function advanceConstruction(state) {
         if (state.log) {
           state.log(`${city.name}: ${name} Lv.${building.level} 완공!`, 'construction');
         }
+
+        const governorId = city.governor || state.getFaction(city.owner)?.leader;
+        if (governorId) {
+          addExperienceFromSource(state, governorId, 'construction_completion');
+        }
+        state.recordSummary('buildingsCompleted', {
+          cityId,
+          cityName: city.name,
+          buildingId,
+          buildingName: name,
+          level: building.level,
+          owner: city.owner,
+        });
 
         completed.push({ cityId, buildingId, level: building.level });
       }

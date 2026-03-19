@@ -6,6 +6,8 @@
 
 // ─── 기술 정의 ───
 
+import { addExperience } from './growth.js';
+
 export const TECHS = {
   // ── 군사 ──
   improved_weapons: {
@@ -276,6 +278,18 @@ export function advanceResearch(state) {
       if (state.log) {
         state.log(`${faction.name}: ${name} 연구 완료!`, 'research');
       }
+
+      const leaderId = faction.leader;
+      if (leaderId) {
+        addExperience(state, leaderId, 35, 'research_completion');
+      }
+
+      state.recordSummary('techCompleted', {
+        factionId,
+        factionName: faction.name,
+        techId,
+        techName: name,
+      });
 
       completed.push({ factionId, techId, name });
     }

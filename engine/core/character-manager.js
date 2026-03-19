@@ -5,6 +5,8 @@
 //   active → wandering (배신 후 떠남 / 세력 멸망)
 
 import { getCharName } from '../data/names.js';
+import { getItemName } from '../data/names.js';
+import { equipItem, ITEMS, unequipItem } from './items.js';
 //   captive → active (등용 수락)
 //   captive → wandering (석방)
 //   captive → dead (처형)
@@ -48,9 +50,8 @@ export function searchForTalent(cityId, searcherId, state) {
   const wanderers = state.getWanderingInCity(cityId);
   if (wanderers.length === 0) return { found: false, character: null };
 
-  // 발견 확률 = 기본 + 매력 보너스
-  const chance = SEARCH_BASE_CHANCE + searcher.stats.charisma * SEARCH_CHARISMA_SCALE;
-  if (Math.random() >= chance) return { found: false, character: null };
+  const { chance, factors } = calculateSearchChance(cityId, searcherId, state);
+  if (Math.random() >= chance) return { found: false, character: null, chance, factors };
 
   // 가장 능력치 합이 높은 인재를 우선 발견
   const target = wanderers.sort((a, b) => {
@@ -59,7 +60,7 @@ export function searchForTalent(cityId, searcherId, state) {
     return totalB - totalA;
   })[0];
 
-  return { found: true, character: target };
+  return { found: true, character: target, chance, factors };
 }
 
 /**
@@ -72,15 +73,76 @@ export function offerRecruitment(charId, recruiterId, factionId, state) {
   if (!target || target.status !== 'wandering') return { accepted: false, reason: 'invalid_target' };
   if (!recruiter) return { accepted: false, reason: 'invalid_recruiter' };
 
-  // 기본 확률 + 매력 보너스
+  const { chance, factors } = calculateRecruitChance(charId, recruiterId, factionId, state);
+
+  if (Math.random() < chance) {
+    state.recruitWandering(charId, factionId, state.getCharacter(recruiterId).city);
+    return { accepted: true, reason: 'success', chance, factors };
+  }
+
+  return { accepted: false, reason: 'refused', chance, factors };
+}
+
+export function calculateSearchChance(cityId, searcherId, state) {
+  const searcher = state.getCharacter(searcherId);
+  const wanderers = state.getWanderingInCity(cityId);
+  if (!searcher || searcher.status !== 'active' || wanderers.length === 0) {
+    return { chance: 0, factors: { error: 'invalid_searcher_or_targets' } };
+  }
+
+  let chance = SEARCH_BASE_CHANCE + searcher.stats.charisma * SEARCH_CHARISMA_SCALE;
+  const factors = {
+    base: SEARCH_BASE_CHANCE,
+    charisma: searcher.stats.charisma * SEARCH_CHARISMA_SCALE,
+  };
+
+  const tactician = state.getTactician ? state.getTactician(searcher.faction) : null;
+  if (tactician) {
+    const tacticianBonus = Math.min(0.08, Math.max(0, (tactician.stats.intellect - 70) * 0.0014));
+    chance += tacticianBonus;
+    factors.tactician = tacticianBonus;
+  }
+
+  chance = Math.max(0.08, Math.min(0.9, chance));
+  factors.final = chance;
+  return { chance, factors };
+}
+
+export function calculateRecruitChance(charId, recruiterId, factionId, state) {
+  const target = state.getCharacter(charId);
+  const recruiter = state.getCharacter(recruiterId);
+  if (!target || target.status !== 'wandering' || !recruiter) {
+    return { chance: 0, factors: { error: 'invalid_recruit_target' } };
+  }
+
   let chance = RECRUIT_BASE_CHANCE + recruiter.stats.charisma * RECRUIT_CHARISMA_SCALE;
+  const factors = {
+    base: RECRUIT_BASE_CHANCE,
+    charisma: recruiter.stats.charisma * RECRUIT_CHARISMA_SCALE,
+  };
+
+  const tactician = state.getTactician ? state.getTactician(factionId) : null;
+  if (tactician) {
+    const tacticianBonus = Math.min(0.08, Math.max(0, (tactician.stats.intellect - 70) * 0.0014));
+    chance += tacticianBonus;
+    factors.tactician = tacticianBonus;
+  }
 
   // 관계 보정
   const rel = state.getRelationship(charId, recruiterId);
   if (rel) {
-    if (rel.type === 'friendship' || rel.type === 'respect') chance += 0.2;
-    if (rel.type === 'enmity') chance -= 0.3;
-    if (rel.type === 'sworn_brothers') chance += 0.4;
+    if (rel.type === 'friendship' || rel.type === 'respect') {
+      chance += 0.2;
+      factors.personalRelation = 0.2;
+    }
+    if (rel.type === 'enmity') {
+      chance -= 0.3;
+      factors.personalRelation = -0.3;
+    }
+    if (rel.type === 'sworn_brothers') {
+      chance += 0.4;
+      factors.personalRelation = 0.4;
+    }
   }
 
   // 리더와의 관계
@@ -88,23 +150,26 @@ export function offerRecruitment(charId, recruiterId, factionId, state) {
   if (faction) {
     const leaderRel = state.getRelationship(charId, faction.leader);
     if (leaderRel) {
-      if (leaderRel.type === 'respect' || leaderRel.type === 'friendship') chance += 0.15;
-      if (leaderRel.type === 'enmity') chance -= 0.25;
+      if (leaderRel.type === 'respect' || leaderRel.type === 'friendship') {
+        chance += 0.15;
+        factors.leaderRelation = 0.15;
+      }
+      if (leaderRel.type === 'enmity') {
+        chance -= 0.25;
+        factors.leaderRelation = -0.25;
+      }
     }
   }
 
   // 세력 평판 보정
   const reputation = state.factions[factionId]?.reputation || 100;
-  chance += (reputation - 100) * 0.002; // 평판 150이면 +10%
+  const reputationBonus = (reputation - 100) * 0.002;
+  chance += reputationBonus; // 평판 150이면 +10%
+  factors.reputation = reputationBonus;
 
   chance = Math.max(0.05, Math.min(0.95, chance));
-
-  if (Math.random() < chance) {
-    state.recruitWandering(charId, factionId, state.getCharacter(recruiterId).city);
-    return { accepted: true, reason: 'success' };
-  }
-
-  return { accepted: false, reason: 'refused' };
+  factors.final = chance;
+  return { chance, factors };
 }
 
 // ─── 포로 관리 ───
@@ -311,6 +376,187 @@ export function updateLoyalty(state) {
 
     char.loyalty = Math.max(0, Math.min(100, char.loyalty + delta));
   }
+}
+
+/**
+ * 금 포상으로 충성도를 올린다.
+ */
+export function rewardOfficer(state, charId, goldCost = 1000) {
+  const char = state.getCharacter(charId);
+  if (!char || !char.alive || char.status !== 'active' || !char.faction) {
+    return { success: false, loyaltyGain: 0, reason: 'invalid_character' };
+  }
+
+  const faction = state.getFaction(char.faction);
+  if (!faction || faction.gold < goldCost) {
+    return { success: false, loyaltyGain: 0, reason: 'insufficient_gold' };
+  }
+
+  const before = char.loyalty ?? 50;
+  const baseGain = goldCost >= 1500 ? 14 : 10;
+  const charismaBonus = Math.max(0, Math.floor((state.getCharacter(faction.leader)?.stats.charisma || 50) / 30));
+  const loyaltyGain = Math.max(4, Math.min(20, baseGain + charismaBonus));
+
+  faction.gold -= goldCost;
+  char.loyalty = Math.min(100, before + loyaltyGain);
+
+  return {
+    success: true,
+    loyaltyGain: char.loyalty - before,
+    reason: 'rewarded',
+  };
+}
+
+/**
+ * 세력 인벤토리의 보물을 장수에게 하사하고 충성도를 올린다.
+ */
+export function bestowItem(state, charId, itemId) {
+  const char = state.getCharacter(charId);
+  if (!char || !char.alive || char.status !== 'active' || !char.faction) {
+    return { success: false, loyaltyGain: 0, reason: 'invalid_character' };
+  }
+
+  const item = ITEMS[itemId];
+  if (!item) {
+    return { success: false, loyaltyGain: 0, reason: 'invalid_item' };
+  }
+
+  const result = equipItem(state, charId, itemId);
+  if (!result.success) {
+    return { success: false, loyaltyGain: 0, reason: result.reason };
+  }
+
+  const before = char.loyalty ?? 50;
+  const loyaltyGain = item.rarity === 'legendary' ? 18 : 12;
+  char.loyalty = Math.min(100, before + loyaltyGain);
+
+  return {
+    success: true,
+    loyaltyGain: char.loyalty - before,
+    itemName: getItemName(itemId),
+    unequipped: result.unequipped,
+    reason: 'bestowed',
+  };
+}
+
+export function confiscateEquippedItem(state, charId, slot = null) {
+  const char = state.getCharacter(charId);
+  if (!char || !char.alive || char.status !== 'active' || !char.faction) {
+    return { success: false, itemId: null, loyaltyLoss: 0, reason: 'invalid_character' };
+  }
+
+  const resolvedSlot = slot || ['accessory', 'weapon', 'horse', 'armor'].find((candidate) => char.equipment?.[candidate]);
+  if (!resolvedSlot) {
+    return { success: false, itemId: null, loyaltyLoss: 0, reason: 'slot_empty' };
+  }
+
+  const itemId = char.equipment?.[resolvedSlot];
+  const item = itemId ? ITEMS[itemId] : null;
+  if (!item) {
+    return { success: false, itemId: null, loyaltyLoss: 0, reason: 'invalid_item' };
+  }
+
+  const result = unequipItem(state, charId, resolvedSlot);
+  if (!result.success) {
+    return { success: false, itemId: null, loyaltyLoss: 0, reason: result.reason };
+  }
+
+  const before = char.loyalty ?? 50;
+  const baseLoss = item.rarity === 'legendary' ? 14 : 10;
+  const loyaltyLoss = Math.max(6, baseLoss);
+  char.loyalty = Math.max(0, before - loyaltyLoss);
+
+  return {
+    success: true,
+    itemId,
+    itemName: getItemName(itemId),
+    slot: resolvedSlot,
+    loyaltyLoss: before - char.loyalty,
+    reason: 'confiscated',
+  };
+}
+
+export function transferOfficer(state, charId, toCityId) {
+  const char = state.getCharacter(charId);
+  const toCity = state.getCity(toCityId);
+  const fromCity = char ? state.getCity(char.city) : null;
+  const fromCityId = char?.city || null;
+  if (!char || !toCity || !fromCity) {
+    return { success: false, reason: 'invalid_target' };
+  }
+  if (!char.alive || char.status !== 'active') {
+    return { success: false, reason: 'invalid_status' };
+  }
+  if (char.faction !== toCity.owner || fromCity.owner !== toCity.owner) {
+    return { success: false, reason: 'different_faction' };
+  }
+  const faction = state.getFaction(char.faction);
+  if (faction?.leader === charId) {
+    return { success: false, reason: 'leader_fixed' };
+  }
+  if (char.city === toCityId) {
+    return { success: false, reason: 'same_city' };
+  }
+
+  const clearedGovernor = fromCity.governor === charId;
+  if (clearedGovernor) fromCity.governor = null;
+  char.city = toCityId;
+
+  return {
+    success: true,
+    fromCityId,
+    toCityId,
+    clearedGovernor,
+    reason: 'transferred',
+  };
+}
+
+export function dismissOfficer(state, charId) {
+  const char = state.getCharacter(charId);
+  if (!char || !char.alive || char.status !== 'active') {
+    return { success: false, reason: 'invalid_status' };
+  }
+
+  const faction = state.getFaction(char.faction);
+  if (!faction) {
+    return { success: false, reason: 'invalid_faction' };
+  }
+  if (faction.leader === charId) {
+    return { success: false, reason: 'leader_fixed' };
+  }
+
+  const city = state.getCity(char.city);
+  if (!city) {
+    return { success: false, reason: 'invalid_city' };
+  }
+
+  const cityOfficers = state.getCharactersInCity(city.id)
+    .filter((candidate) => candidate.faction === char.faction && candidate.status === 'active' && candidate.alive);
+  if (cityOfficers.length <= 1) {
+    return { success: false, reason: 'no_replacement' };
+  }
+
+  const clearedGovernor = city.governor === charId;
+  if (clearedGovernor) city.governor = null;
+
+  const clearedTactician = faction.tactician === charId;
+  if (clearedTactician) faction.tactician = null;
+
+  const reputationBefore = faction.reputation || 100;
+  faction.reputation = Math.max(0, reputationBefore - 8);
+
+  char.status = 'wandering';
+  char.faction = null;
+  char.loyalty = 0;
+
+  return {
+    success: true,
+    cityId: city.id,
+    clearedGovernor,
+    clearedTactician,
+    reputationLoss: reputationBefore - faction.reputation,
+    reason: 'dismissed',
+  };
 }
 
 // ─── 세력 멸망 시 장수 처리 ───

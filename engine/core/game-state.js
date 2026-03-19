@@ -42,6 +42,10 @@ export class GameState {
 
     for (const factionId of Object.keys(this.factions)) {
       this.ensureAIState(factionId);
+      this.getTactician(factionId);
+    }
+    for (const [, city] of Object.entries(this.cities)) {
+      city.policy = mergeCityPolicy(city.policy);
     }
   }
 
@@ -73,6 +77,22 @@ export class GameState {
     return Object.entries(this.characters)
       .filter(([, c]) => c.faction === factionId && c.alive && c.status === 'active')
       .map(([id, c]) => ({ id, ...c }));
+  }
+
+  getTactician(factionId) {
+    const faction = this.getFaction(factionId);
+    if (!faction) return null;
+
+    const current = faction.tactician ? this.getCharacter(faction.tactician) : null;
+    if (current && current.alive && current.status === 'active' && current.faction === factionId) {
+      return { id: faction.tactician, ...current };
+    }
+
+    const fallback = this.getCharactersOfFaction(factionId)
+      .sort((a, b) => b.stats.intellect - a.stats.intellect || b.stats.politics - a.stats.politics)[0];
+    if (!fallback) return null;
+    faction.tactician = fallback.id;
+    return fallback;
   }
 
   /** 특정 도시 근처의 방랑 인재 */
@@ -300,7 +320,11 @@ export class GameState {
 
   moveCharacter(charId, cityId) {
     const c = this.characters[charId];
-    if (c) c.city = cityId;
+    if (!c) return false;
+    const fromCity = c.city ? this.cities[c.city] : null;
+    if (fromCity?.governor === charId) fromCity.governor = null;
+    c.city = cityId;
+    return true;
   }
 
   /** 포로로 잡기 */
@@ -365,6 +389,30 @@ export class GameState {
     if (char.faction !== city.owner || char.status !== 'active') return false;
     city.governor = charId;
     char.city = cityId;
+    return true;
+  }
+
+  appointTactician(charId, factionId = null) {
+    const char = this.characters[charId];
+    if (!char || !char.alive || char.status !== 'active') return false;
+
+    const resolvedFactionId = factionId || char.faction;
+    const faction = this.factions[resolvedFactionId];
+    if (!faction || char.faction !== resolvedFactionId) return false;
+
+    faction.tactician = charId;
+    return true;
+  }
+
+  getCityPolicy(cityId) {
+    const city = this.cities[cityId];
+    return city ? mergeCityPolicy(city.policy) : createDefaultCityPolicy();
+  }
+
+  setCityPolicy(cityId, updates = {}) {
+    const city = this.cities[cityId];
+    if (!city) return false;
+    city.policy = mergeCityPolicy({ ...city.policy, ...updates });
     return true;
   }
 
@@ -457,9 +505,11 @@ export class GameState {
     for (const [, f] of Object.entries(state.factions)) {
       if (f.reputation == null) f.reputation = 100;
       if (!f.truces) f.truces = {};
+      if (!f.inventory) f.inventory = [];
     }
     for (const factionId of Object.keys(state.factions)) {
       state.ensureAIState(factionId);
+      state.getTactician(factionId);
     }
     for (const [, c] of Object.entries(state.characters)) {
       if (!c.status) c.status = c.alive ? 'active' : 'dead';
@@ -476,6 +526,7 @@ export class GameState {
       }
       // 건물 시스템 호환
       if (!city.buildings) city.buildings = {};
+      city.policy = mergeCityPolicy(city.policy);
     }
     // 캐릭터 신규 필드 호환 (스킬/장비/성장/잠재력)
     for (const [, c] of Object.entries(state.characters)) {
@@ -492,6 +543,27 @@ export class GameState {
     }
     return state;
   }
+}
+
+function createDefaultCityPolicy() {
+  return {
+    domesticFocus: 'balanced',
+    militaryPosture: 'balanced',
+  };
+}
+
+function mergeCityPolicy(policy = {}) {
+  const domesticFocus = ['balanced', 'agriculture', 'commerce', 'technology', 'public_order'].includes(policy?.domesticFocus)
+    ? policy.domesticFocus
+    : 'balanced';
+  const militaryPosture = ['balanced', 'fortify', 'mobilize', 'aggressive'].includes(policy?.militaryPosture)
+    ? policy.militaryPosture
+    : 'balanced';
+  return {
+    ...createDefaultCityPolicy(),
+    domesticFocus,
+    militaryPosture,
+  };
 }
 
 function createEmptyTurnSummary(turn = 1) {

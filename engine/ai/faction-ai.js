@@ -4,12 +4,13 @@ import { getTendency } from './tendency-tables.js';
 import { resolveEnhancedCombat, chooseFormation } from '../core/enhanced-combat.js';
 import { attemptCapture } from '../core/character-manager.js';
 import { investTrack } from '../core/domestic.js';
-import { aiDiplomacy } from '../core/diplomacy.js';
+import { aiDiplomacy, declareWar as declareWarAction } from '../core/diplomacy.js';
 import { getCharName } from '../data/names.js';
 import { canBuild, startConstruction, BUILDINGS } from '../core/buildings.js';
 import { getAvailableTechs, startResearch } from '../core/tech-tree.js';
 import { executeEspionage, ESPIONAGE_ACTIONS } from '../core/espionage.js';
 import { moveArmy } from '../core/troop-movement.js';
+import { addExperienceFromSource } from '../core/growth.js';
 
 export function decideAndExecute(factionId, state, connections) {
   const faction = state.getFaction(factionId);
@@ -17,6 +18,7 @@ export function decideAndExecute(factionId, state, connections) {
 
   const tendency = getTendency(faction.leader);
   const myCities = state.getCitiesOfFaction(factionId);
+  const aiState = state.ensureAIState(factionId);
   if (myCities.length === 0) {
     faction.active = false;
     return;
@@ -24,37 +26,38 @@ export function decideAndExecute(factionId, state, connections) {
 
   const actions = [];
 
-  // ── 1. 외교 (매 턴 독립 실행) ──
-  const dipActions = aiDiplomacy(factionId, state, tendency);
-  for (const a of dipActions) {
-    actions.push(a.message);
+  syncWarState(factionId, state, connections);
+
+  // ── 1. 전쟁 계획/집결/침공 ──
+  const warAction = executeWarPlan(factionId, state, connections, tendency, aiState);
+  if (warAction) actions.push(warAction);
+
+  // ── 2. 외교 (전쟁 준비 중이 아닐 때만 독립 실행) ──
+  if (!warAction && aiState.posture === 'build') {
+    const dipActions = aiDiplomacy(factionId, state, tendency);
+    for (const a of dipActions) actions.push(a.message);
   }
 
-  // ── 2. 위기 대응: 위협받는 도시 방어 ──
+  // ── 3. 위기 대응: 위협받는 도시 방어 ──
   const threatenedCities = findThreatenedCities(factionId, state, connections);
-  if (threatenedCities.length > 0 && Math.random() < 0.6 * tendency.defend) {
+  if (!warAction && threatenedCities.length > 0 && Math.random() < 0.7 * tendency.defend) {
     const city = threatenedCities[0];
     reinforceCity(city.id, state, factionId);
     actions.push(`${faction.name}: ${state.cities[city.id].name} 방어 강화`);
   }
 
-  // ── 3. 기회 공격 ──
-  else if (Math.random() < 0.3 * tendency.attack * tendency.risk) {
-    const target = findWeakNeighbor(factionId, state, connections);
-    if (target) {
-      const targetCity = state.cities[target.to];
-      const isPlayerCity = targetCity && targetCity.owner === state.player.factionId;
-      if (isPlayerCity && state.turn <= 4) {
-        actions.push(`${faction.name}: 정세를 관망 중`);
-      } else {
-        const result = executeAttack(factionId, target.from, target.to, state, connections);
-        if (result) actions.push(result);
-      }
-    }
+  // ── 4. 연구/건설/내정 ──
+  else if (!faction.research?.current && faction.gold > 2500 && (state.turn <= 6 || Math.random() < 0.45 * tendency.economy)) {
+    const researchAction = aiResearch(factionId, state);
+    if (researchAction) actions.push(researchAction);
   }
 
-  // ── 4. 내정: 4트랙 투자 ──
-  else if (Math.random() < 0.5 * tendency.economy) {
+  else if (faction.gold > 3500 && (state.turn <= 8 || Math.random() < 0.35 * tendency.economy)) {
+    const buildAction = aiBuild(factionId, state);
+    if (buildAction) actions.push(buildAction);
+  }
+
+  else if (Math.random() < 0.6 * tendency.economy) {
     const investment = aiInvest(factionId, state, tendency);
     if (investment) actions.push(investment);
   }
@@ -82,20 +85,8 @@ export function decideAndExecute(factionId, state, connections) {
     }
   }
 
-  // ── 8. 건설 (자금 여유 + 건물 슬롯 여유) ──
-  if (faction.gold > 5000 && Math.random() < 0.3) {
-    const buildAction = aiBuild(factionId, state);
-    if (buildAction) actions.push(buildAction);
-  }
-
-  // ── 9. 기술 연구 ──
-  if (!faction.research?.current && faction.gold > 3000 && Math.random() < 0.25) {
-    const researchAction = aiResearch(factionId, state);
-    if (researchAction) actions.push(researchAction);
-  }
-
-  // ── 10. 병력 재배치 ──
-  if (myCities.length > 1 && Math.random() < 0.2) {
+  // ── 8. 병력 재배치 ──
+  if (!warAction && myCities.length > 1 && Math.random() < 0.25) {
     const moveAction = aiTroopMovement(factionId, state, connections);
     if (moveAction) actions.push(moveAction);
   }
@@ -103,6 +94,234 @@ export function decideAndExecute(factionId, state, connections) {
   for (const action of actions) {
     state.log(`[AI] ${action}`, 'ai');
   }
+}
+
+function syncWarState(factionId, state, connections) {
+  const aiState = state.ensureAIState(factionId);
+
+  if (aiState.targetFactionId && !state.getFaction(aiState.targetFactionId)?.active) {
+    resetWarState(aiState);
+    return;
+  }
+
+  if (aiState.targetCityId && state.cities[aiState.targetCityId]?.owner === factionId) {
+    resetWarState(aiState);
+  }
+
+  if (aiState.posture === 'war') {
+    aiState.turnsSinceWar = (aiState.turnsSinceWar || 0) + 1;
+  } else {
+    aiState.turnsSinceWar = 0;
+  }
+}
+
+function executeWarPlan(factionId, state, connections, tendency, aiState) {
+  const faction = state.getFaction(factionId);
+  const targetPlan = planWarTarget(factionId, state, connections);
+
+  if (targetPlan && targetPlan.score > aiState.pressureScore) {
+    aiState.targetFactionId = targetPlan.targetFactionId;
+    aiState.targetCityId = targetPlan.targetCityId;
+    aiState.stagingCityId = targetPlan.stagingCityId;
+    aiState.pressureScore = targetPlan.score;
+    if (aiState.posture === 'build') {
+      aiState.posture = targetPlan.score >= 1.35 ? 'prepare_war' : 'build';
+    }
+  }
+
+  if (!aiState.targetFactionId || !aiState.targetCityId || !aiState.stagingCityId) {
+    aiState.posture = 'build';
+    aiState.pressureScore = 0;
+    return null;
+  }
+
+  const targetCity = state.cities[aiState.targetCityId];
+  const stagingCity = state.cities[aiState.stagingCityId];
+  if (!targetCity || !stagingCity) {
+    resetWarState(aiState);
+    return null;
+  }
+
+  if (targetCity.owner === factionId) {
+    resetWarState(aiState);
+    return `${faction.name}: 전선 재정비`;
+  }
+
+  const targetFactionId = aiState.targetFactionId;
+  const playerProtected = targetFactionId === state.player.factionId && state.turn <= 4;
+  const stagingRatio = stagingCity.army / Math.max(1, targetCity.army);
+
+  if (aiState.posture === 'build' && targetPlan?.score >= 1.35 && !playerProtected) {
+    aiState.posture = 'prepare_war';
+  }
+
+  if (aiState.posture === 'prepare_war') {
+    if (!state.isAtWar(factionId, targetFactionId) && !playerProtected) {
+      declareWarAction(factionId, targetFactionId, state);
+      aiState.posture = 'war';
+      return `${faction.name}: ${state.factions[targetFactionId].name} 정벌을 선언`;
+    }
+
+    const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections);
+    if (moved) return `${faction.name}: ${moved}`;
+
+    if (stagingRatio >= 1.15 || stagingCity.army >= 12000) {
+      aiState.posture = 'war';
+    }
+    return `${faction.name}: ${stagingCity.name}에 병력 집결`;
+  }
+
+  if (aiState.posture === 'war') {
+    if (!state.isAtWar(factionId, targetFactionId)) {
+      aiState.posture = 'recover';
+      return `${faction.name}: 전쟁 계획 보류`;
+    }
+
+    if (stagingRatio < 0.9 && aiState.turnsSinceWar < 2) {
+      const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections);
+      if (moved) return `${faction.name}: ${moved}`;
+    }
+
+    if (stagingCity.army >= 6000 && stagingRatio >= 1.05) {
+      const result = executeAttack(factionId, aiState.stagingCityId, aiState.targetCityId, state, connections);
+      if (result) {
+        if (state.cities[aiState.targetCityId]?.owner === factionId) resetWarState(aiState);
+        return result;
+      }
+    }
+
+    const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections);
+    if (moved) return `${faction.name}: ${moved}`;
+
+    if (stagingRatio < 0.7) {
+      aiState.posture = 'recover';
+      return `${faction.name}: 전선 재정비`;
+    }
+  }
+
+  if (aiState.posture === 'recover') {
+    if (state.getTotalArmy(factionId) > state.getTotalArmy(targetFactionId) * 0.85) {
+      aiState.posture = 'build';
+      aiState.pressureScore *= 0.7;
+    }
+    return `${faction.name}: 병력 재편 중`;
+  }
+
+  return null;
+}
+
+export function planWarTarget(factionId, state, connections) {
+  const myCities = state.getCitiesOfFaction(factionId);
+  const faction = state.getFaction(factionId);
+  const tendency = getTendency(faction.leader);
+  const hegemon = getHegemonState(state);
+  let best = null;
+
+  for (const city of myCities) {
+    const neighbors = getNeighbors(city.id, connections);
+    for (const nId of neighbors) {
+      const neighbor = state.cities[nId];
+      if (!neighbor || !neighbor.owner || neighbor.owner === factionId) continue;
+
+      const targetFactionId = neighbor.owner;
+      const playerProtected = targetFactionId === state.player.factionId && state.turn <= 4;
+      if (playerProtected) continue;
+      if (state.hasTruce(factionId, targetFactionId)) continue;
+
+      const localRatio = city.army / Math.max(1, neighbor.army);
+      const totalRatio = state.getTotalArmy(factionId) / Math.max(1, state.getTotalArmy(targetFactionId));
+      let score = (localRatio * 0.8) + (totalRatio * 0.4) + tendency.attack + tendency.risk;
+
+      if (state.isAtWar(factionId, targetFactionId)) score += 0.4;
+      if (state.isAllied(factionId, targetFactionId)) score -= 0.8;
+      if (neighbor.defense > 70) score -= 0.2;
+      score += getOpeningBias(factionId, targetFactionId, state);
+      score += getContainmentBias(factionId, targetFactionId, hegemon, state);
+
+      if (!best || score > best.score) {
+        best = {
+          targetFactionId,
+          targetCityId: nId,
+          stagingCityId: city.id,
+          score,
+        };
+      }
+    }
+  }
+
+  return best;
+}
+
+function getOpeningBias(factionId, targetFactionId, state) {
+  if (state.year !== 208 || state.turn > 12) return 0;
+  if (factionId === 'wei') {
+    if (targetFactionId === 'shu') return 0.55;
+    if (targetFactionId === 'wu') return 0.35;
+  }
+  if (factionId === 'shu') {
+    if (targetFactionId === 'wei') return 0.45;
+    if (targetFactionId === 'wu') return -1.8;
+  }
+  if (factionId === 'wu' && targetFactionId === 'wei') {
+    return state.turn <= 6 ? 0.1 : 0.45;
+  }
+  if (factionId === 'wu' && targetFactionId === 'shu') return -1.9;
+  return 0;
+}
+
+function getContainmentBias(factionId, targetFactionId, hegemon, state) {
+  if (!hegemon || hegemon.id === factionId) return 0;
+
+  const myCities = state.getCitiesOfFaction(factionId).length;
+  const myArmy = state.getTotalArmy(factionId);
+  const targetCities = state.getCitiesOfFaction(targetFactionId).length;
+  const targetArmy = state.getTotalArmy(targetFactionId);
+  const hegemonThreat = hegemon.cities >= Math.max(7, myCities + 3) || hegemon.army >= Math.max(1, myArmy * 1.45);
+
+  if (!hegemonThreat) return 0;
+  if (targetFactionId === hegemon.id) return 1.1;
+  if (targetCities < hegemon.cities && targetArmy < hegemon.army) return -0.8;
+  return 0;
+}
+
+function getHegemonState(state) {
+  const ranked = Object.entries(state.factions)
+    .filter(([id, faction]) => faction.active && state.getCitiesOfFaction(id).length > 0)
+    .map(([id, faction]) => ({
+      id,
+      faction,
+      cities: state.getCitiesOfFaction(id).length,
+      army: state.getTotalArmy(id),
+    }))
+    .sort((a, b) => b.cities - a.cities || b.army - a.army);
+
+  return ranked[0] || null;
+}
+
+function gatherForWar(factionId, stagingCityId, state, connections) {
+  const myCities = state.getCitiesOfFaction(factionId)
+    .filter(c => c.id !== stagingCityId)
+    .sort((a, b) => b.army - a.army);
+
+  for (const city of myCities) {
+    if (city.army < 5000) continue;
+    const transfer = Math.floor(city.army * 0.3);
+    if (transfer < 1500) continue;
+    const result = moveArmy(state, city.id, stagingCityId, transfer, [], connections);
+    if (result.success) {
+      return `${state.cities[city.id].name} → ${state.cities[stagingCityId].name} 병력 ${transfer}명 집결`;
+    }
+  }
+  return null;
+}
+
+function resetWarState(aiState) {
+  aiState.posture = 'build';
+  aiState.targetFactionId = null;
+  aiState.targetCityId = null;
+  aiState.stagingCityId = null;
+  aiState.turnsSinceWar = 0;
+  aiState.pressureScore = 0;
 }
 
 // ─── AI 내정 투자 ───
@@ -327,6 +546,7 @@ function executeAttack(factionId, fromCityId, toCityId, state, connections) {
   const from = state.cities[fromCityId];
   const to = state.cities[toCityId];
   if (!from || !to) return null;
+  const defenderFactionId = to.owner;
 
   const attackArmy = Math.floor(from.army * 0.6);
   from.army -= attackArmy;
@@ -350,11 +570,11 @@ function executeAttack(factionId, fromCityId, toCityId, state, connections) {
   const result = resolveEnhancedCombat(
     {
       army: attackArmy, morale: from.morale,
-      generals: attackerGenerals, formation: atkFormation
+      generals: attackerGenerals, formation: atkFormation, factionId
     },
     {
       army: to.army, morale: to.morale, defense: to.defense,
-      generals: defenderGenerals, formation: defFormation
+      generals: defenderGenerals, formation: defFormation, factionId: defenderFactionId
     },
     { terrain },
     state
@@ -363,6 +583,13 @@ function executeAttack(factionId, fromCityId, toCityId, state, connections) {
   to.army = result.defenderRemaining;
   const survivors = result.attackerRemaining;
   const faction = state.factions[factionId];
+
+  for (const general of attackerGenerals) {
+    addExperienceFromSource(state, general.id, 'battle_participation');
+  }
+  for (const general of defenderGenerals) {
+    addExperienceFromSource(state, general.id, 'battle_participation');
+  }
 
   if (result.winner === 'attacker') {
     const oldOwner = to.owner;
@@ -377,6 +604,15 @@ function executeAttack(factionId, fromCityId, toCityId, state, connections) {
     to.owner = factionId;
     to.army = survivors;
     to.morale = Math.max(20, result.attackerMorale);
+    state.recordSummary('citiesCaptured', {
+      cityId: toCityId,
+      cityName: to.name,
+      fromFaction: oldOwner,
+      toFaction: factionId,
+    });
+    for (const general of attackerGenerals) {
+      addExperienceFromSource(state, general.id, 'battle_victory');
+    }
 
     let msg = `${faction.name}이(가) ${to.name}을(를) ${state.factions[oldOwner]?.name || '무주'}로부터 점령!`;
     if (result.stratagemUsed?.success) msg += ` (${result.stratagemUsed.name} 성공)`;

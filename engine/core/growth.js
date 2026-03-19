@@ -12,6 +12,8 @@ export const EXP_SOURCES = {
   battle_victory:       50,
   duel_victory:         30,
   domestic_work:        10,
+  construction_completion: 18,
+  research_completion: 35,
   diplomatic_success:   15,
   espionage_success:    20,
   stratagem_success:    25

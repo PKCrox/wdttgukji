@@ -34,11 +34,7 @@ export function canMoveArmy(state, fromCityId, toCityId, connections) {
   // 연결 확인
   if (!connections) return { canMove: false, reason: 'no_connection_data' };
 
-  const fromConnections = connections[fromCityId];
-  if (!fromConnections || !Array.isArray(fromConnections)) {
-    return { canMove: false, reason: 'city_not_in_map' };
-  }
-
+  const fromConnections = getConnectionsForCity(fromCityId, connections);
   if (!fromConnections.includes(toCityId)) {
     return { canMove: false, reason: 'not_connected' };
   }
@@ -167,3 +163,20 @@ export function previewMovement(state, fromCityId, amount) {
 }
 
 export { FOOD_COST_PER_SOLDIER };
+
+function getConnectionsForCity(cityId, connections) {
+  if (!connections) return [];
+  if (Array.isArray(connections)) {
+    const result = [];
+    for (const edge of connections) {
+      if (!Array.isArray(edge) || edge.length < 2) continue;
+      const [a, b] = edge;
+      if (a === cityId) result.push(b);
+      else if (b === cityId) result.push(a);
+    }
+    return result;
+  }
+
+  const result = connections[cityId];
+  return Array.isArray(result) ? result : [];
+}

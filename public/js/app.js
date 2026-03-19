@@ -4,7 +4,7 @@ import { GameState } from '../../engine/core/game-state.js';
 import { loadScenario, loadEvents, filterEventsForScenario } from '../../engine/data/loader.js';
 import { executeTurnEvents, processPlayerChoice, endTurn, buildTurnSummary } from '../../engine/core/turn-loop.js';
 import { decideAndExecute } from '../../engine/ai/faction-ai.js';
-import { MapRenderer } from './map-renderer.js';
+import { MAP_FACTION_PALETTE, MapRenderer, measureMapViewport, resolveMapLayout } from './map-renderer.js';
 import { EventUI } from './event-ui.js';
 import { Sidebar, getCharName, FACTION_COLORS, showCharacterModal } from './sidebar.js';
 import { ActionPanel, executePlayerAction } from './action-panel.js';
@@ -209,6 +209,8 @@ async function showFactionSelect() {
     return;
   }
 
+  applyScenarioMapArt(scenario);
+
   selectedFaction = null;
   const confirmBtn = document.getElementById('btn-confirm-faction');
   confirmBtn.disabled = true;
@@ -300,171 +302,297 @@ async function showFactionSelect() {
 }
 
 // --- 세력 선택 프리뷰 맵 ---
-const PREVIEW_FC = {
-  wei:       [130,180,255],
-  shu:       [39,201,106],
-  wu:        [231,85,60],
-  liu_zhang: [245,166,35],
-  zhang_lu:  [166,107,190],
-};
-const PREVIEW_RIVERS = {
-  yellow: [[150,240],[200,260],[260,290],[320,280],[380,270],[430,265],[480,270],[530,255],[580,250],[630,248],[680,240],[740,230],[800,225],[860,220]],
-  yangtze: [[150,510],[200,500],[260,495],[310,480],[370,465],[430,455],[490,445],[540,438],[590,425],[640,415],[690,408],[740,430],[790,440],[850,445]],
-};
-const PREVIEW_COAST = [[800,60],[810,130],[805,180],[790,230],[780,280],[790,320],[800,370],[810,420],[800,460],[790,500],[780,550],[770,600],[760,680]];
+function applyScenarioMapArt(sc) {
+  const asset = sc?.mapLayout?.baseAsset || '/assets/maps/red-cliffs-base.svg';
+  document.documentElement.style.setProperty('--scenario-map-art', `url("${asset}")`);
+  for (const id of ['faction-map-base', 'game-map-base']) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.backgroundImage = `url("${asset}")`;
+    }
+  }
+}
 
 function renderFactionPreviewMap(sc, highlightFaction) {
   const canvas = document.getElementById('faction-map');
   if (!canvas) return;
   const ctr = canvas.parentElement;
   const dpr = window.devicePixelRatio || 1;
-  const w = ctr.clientWidth, h = ctr.clientHeight;
+  const w = ctr.clientWidth;
+  const h = ctr.clientHeight;
   canvas.width = w * dpr;
   canvas.height = h * dpr;
   canvas.style.width = w + 'px';
   canvas.style.height = h + 'px';
   const ctx = canvas.getContext('2d');
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const layout = resolveMapLayout(sc);
+  const viewport = measureMapViewport(layout, w, h);
 
-  const scale = Math.min(w / 920, h / 700) * 0.95;
-  const ox = (w - 920 * scale) / 2;
-  const oy = (h - 700 * scale) / 2;
-  const s = (x, y) => ({ x: x * scale + ox, y: y * scale + oy });
+  ctx.clearRect(0, 0, w, h);
+  renderPreviewTerritories(ctx, sc, layout, viewport, highlightFaction);
+  renderPreviewRoads(ctx, sc, layout, viewport, highlightFaction);
+  renderPreviewCities(ctx, sc, layout, viewport, highlightFaction);
+  renderPreviewOverlay(ctx, w, h);
+}
 
-  // 배경
-  ctx.fillStyle = 'rgb(20,18,15)';
-  ctx.fillRect(0, 0, w, h);
+function renderPreviewTerritories(ctx, sc, layout, viewport, highlightFaction) {
+  const order = ['liu_zhang', 'zhang_lu', 'shu', 'wu', 'wei'];
+  for (const factionId of order) {
+    const points = layout.territoryPolygons?.[factionId];
+    if (!points?.length) continue;
+    const palette = MAP_FACTION_PALETTE[factionId] || MAP_FACTION_PALETTE.neutral;
+    const active = !highlightFaction || factionId === highlightFaction;
+    const center = getPreviewCentroid(points);
+    const screenCenter = projectPreview(center.x, center.y, viewport);
+    const extent = getPreviewExtent(points);
+    const radius = Math.max(extent.width, extent.height) * viewport.scale * 0.7;
 
-  // 바다
-  ctx.save();
-  ctx.beginPath();
-  let cp = s(PREVIEW_COAST[0][0], PREVIEW_COAST[0][1]);
-  ctx.moveTo(cp.x, cp.y);
-  for (let i = 1; i < PREVIEW_COAST.length; i++) {
-    cp = s(PREVIEW_COAST[i][0], PREVIEW_COAST[i][1]);
-    ctx.lineTo(cp.x, cp.y);
-  }
-  ctx.lineTo(w, h); ctx.lineTo(w, 0); ctx.closePath();
-  ctx.fillStyle = 'rgba(10,22,40,0.4)';
-  ctx.fill();
-  ctx.restore();
-
-  // 보로노이 영토
-  const positions = sc.cityPositions;
-  const seeds = [];
-  for (const [id, pos] of Object.entries(positions)) {
-    const city = sc.cities[id];
-    const sp = s(pos.x, pos.y);
-    seeds.push({ x: sp.x, y: sp.y, owner: city?.owner || null, id });
-  }
-
-  const step = Math.max(4, Math.round(8 * scale));
-  const cols = Math.ceil(w / step);
-  const rows = Math.ceil(h / step);
-
-  for (let gy = 0; gy < rows; gy++) {
-    for (let gx = 0; gx < cols; gx++) {
-      const px = gx * step + step / 2;
-      const py = gy * step + step / 2;
-      let minDist = Infinity, nearest = null;
-      for (const sd of seeds) {
-        const d = (px - sd.x) ** 2 + (py - sd.y) ** 2;
-        if (d < minDist) { minDist = d; nearest = sd; }
-      }
-      if (nearest?.owner) {
-        const fc = PREVIEW_FC[nearest.owner];
-        if (fc) {
-          const isHighlight = nearest.owner === highlightFaction;
-          const base = isHighlight ? 0.55 : (highlightFaction ? 0.12 : 0.35);
-          const dist = Math.sqrt(minDist);
-          const boost = dist < 80 * scale ? 0.15 * (1 - dist / (80 * scale)) : 0;
-          const alpha = base + boost;
-          ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},${alpha.toFixed(3)})`;
-          ctx.fillRect(gx * step, gy * step, step, step);
-        }
-      }
-    }
-  }
-
-  // 강
-  ctx.save();
-  ctx.lineCap = 'round';
-  for (const [name, pts] of Object.entries(PREVIEW_RIVERS)) {
-    const rgb = name === 'yellow' ? [190,170,80] : [70,150,220];
-    ctx.beginPath();
-    const p0 = s(pts[0][0], pts[0][1]);
-    ctx.moveTo(p0.x, p0.y);
-    for (let i = 1; i < pts.length - 1; i++) {
-      const c = s(pts[i][0], pts[i][1]);
-      const n = s(pts[i+1][0], pts[i+1][1]);
-      ctx.quadraticCurveTo(c.x, c.y, (c.x + n.x) / 2, (c.y + n.y) / 2);
-    }
-    const last = s(pts[pts.length-1][0], pts[pts.length-1][1]);
-    ctx.lineTo(last.x, last.y);
-    ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.30)`;
-    ctx.lineWidth = 5 * scale;
-    ctx.stroke();
-  }
-  ctx.restore();
-
-  // 도시 점 + 이름
-  ctx.textAlign = 'center';
-  for (const [id, pos] of Object.entries(positions)) {
-    const city = sc.cities[id];
-    const sp = s(pos.x, pos.y);
-    const fc = PREVIEW_FC[city?.owner];
-    const isHighlight = city?.owner === highlightFaction;
-    const dimmed = highlightFaction && !isHighlight;
-
-    // 도시 원
-    const r = (city?.capital ? 8 : 5) * scale;
-    ctx.beginPath();
-    ctx.arc(sp.x, sp.y, r, 0, Math.PI * 2);
-    if (fc) {
-      const a = dimmed ? 0.3 : 0.9;
-      ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},${a})`;
-    } else {
-      ctx.fillStyle = 'rgba(100,100,100,0.4)';
-    }
+    ctx.save();
+    previewPolygon(ctx, points, viewport);
+    const gradient = ctx.createRadialGradient(screenCenter.x, screenCenter.y, radius * 0.12, screenCenter.x, screenCenter.y, radius);
+    gradient.addColorStop(0, previewAddAlpha(palette.glow, active ? 0.34 : 0.14));
+    gradient.addColorStop(0.6, previewAddAlpha(palette.fill, active ? 0.34 : 0.15));
+    gradient.addColorStop(1, previewAddAlpha(palette.fill, 0.08));
+    ctx.fillStyle = gradient;
     ctx.fill();
+    ctx.strokeStyle = previewAddAlpha(active ? palette.edge : '#A58F69', active ? 0.62 : 0.2);
+    ctx.lineWidth = (active ? 2.4 : 1.3) * viewport.scale;
+    ctx.stroke();
+    ctx.restore();
+  }
+}
 
-    // 선택된 세력 도시: 글로우
-    if (isHighlight) {
+function renderPreviewRoads(ctx, sc, layout, viewport, highlightFaction) {
+  const roads = [...(layout.roads || [])];
+
+  for (const road of roads) {
+    const from = layout.cityAnchors[road.from];
+    const to = layout.cityAnchors[road.to];
+    if (!from || !to) continue;
+    const ownerA = sc.cities[road.from]?.owner;
+    const ownerB = sc.cities[road.to]?.owner;
+    const active = !highlightFaction || ownerA === highlightFaction || ownerB === highlightFaction;
+    if (!active && road.grade === 'normal' && road.kind === 'road') continue;
+    const start = projectPreview(from.x, from.y, viewport);
+    const end = projectPreview(to.x, to.y, viewport);
+    const control = projectPreviewRoadControl(from, to, road.grade, viewport);
+    const style = getPreviewRoadStyle(road, active);
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(start.x, start.y);
+    ctx.quadraticCurveTo(control.x, control.y, end.x, end.y);
+    ctx.setLineDash(style.dash || []);
+    ctx.strokeStyle = style.stroke;
+    ctx.lineWidth = style.width * viewport.scale;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+function renderPreviewCities(ctx, sc, layout, viewport, highlightFaction) {
+  const anchors = Object.entries(layout.cityAnchors || {}).sort(([, a], [, b]) => a.y - b.y);
+
+  for (const [cityId, anchor] of anchors) {
+    const city = sc.cities[cityId];
+    if (!city) continue;
+
+    const owner = city.owner || 'neutral';
+    const palette = MAP_FACTION_PALETTE[owner] || MAP_FACTION_PALETTE.neutral;
+    const active = !highlightFaction || owner === highlightFaction;
+    const point = projectPreview(anchor.x, anchor.y, viewport);
+    const importance = city.strategic_importance || 0;
+    const size = ((owner === highlightFaction ? 12.8 : 10.2) + Math.min(3, importance * 0.22)) * viewport.scale;
+
+    ctx.save();
+    ctx.translate(point.x, point.y);
+    ctx.beginPath();
+    ctx.moveTo(0, -size);
+    ctx.lineTo(size * 0.82, -size * 0.28);
+    ctx.lineTo(size * 0.82, size * 0.58);
+    ctx.lineTo(0, size);
+    ctx.lineTo(-size * 0.82, size * 0.58);
+    ctx.lineTo(-size * 0.82, -size * 0.28);
+    ctx.closePath();
+    ctx.fillStyle = active ? '#20150E' : 'rgba(20, 15, 11, 0.48)';
+    ctx.fill();
+    ctx.strokeStyle = previewAddAlpha(active ? palette.edge : '#A08863', active ? 0.9 : 0.28);
+    ctx.lineWidth = 1.5 * viewport.scale;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(0, -size * 0.7);
+    ctx.lineTo(size * 0.56, -size * 0.16);
+    ctx.lineTo(size * 0.56, size * 0.42);
+    ctx.lineTo(0, size * 0.7);
+    ctx.lineTo(-size * 0.56, size * 0.42);
+    ctx.lineTo(-size * 0.56, -size * 0.16);
+    ctx.closePath();
+    ctx.fillStyle = previewAddAlpha(palette.badge, active ? 0.95 : 0.4);
+    ctx.fill();
+    ctx.restore();
+
+    if (importance >= 8) {
+      ctx.save();
       ctx.beginPath();
-      ctx.arc(sp.x, sp.y, r + 4 * scale, 0, Math.PI * 2);
-      ctx.strokeStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},0.5)`;
-      ctx.lineWidth = 2 * scale;
+      ctx.arc(point.x, point.y, size + 5 * viewport.scale, 0, Math.PI * 2);
+      ctx.strokeStyle = active ? 'rgba(241, 221, 176, 0.42)' : 'rgba(202, 182, 147, 0.18)';
+      ctx.lineWidth = 1.2 * viewport.scale;
       ctx.stroke();
+      ctx.restore();
     }
 
-    // 도시 이름
-    const fontSize = (city?.capital ? 11 : 9) * scale;
-    ctx.font = `${isHighlight ? '700' : '400'} ${fontSize}px "Noto Sans KR", sans-serif`;
-    ctx.fillStyle = dimmed ? 'rgba(200,200,200,0.3)' : 'rgba(240,230,210,0.85)';
-    ctx.fillText(city?.name || id, sp.x, sp.y - r - 4 * scale);
+    ctx.save();
+    ctx.font = `${Math.max(10, 11 * viewport.scale)}px "Noto Serif KR", serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+    ctx.fillStyle = active ? '#F6EED8' : 'rgba(220, 206, 180, 0.42)';
+    ctx.fillText(city.name, point.x, point.y + size + 8 * viewport.scale);
+    ctx.restore();
   }
 
-  // 세력 이름 라벨 (중심 좌표)
-  if (highlightFaction) {
-    const hlCities = Object.entries(positions).filter(([id]) => sc.cities[id]?.owner === highlightFaction);
-    if (hlCities.length > 0) {
-      const cx = hlCities.reduce((a, [, p]) => a + p.x, 0) / hlCities.length;
-      const cy = hlCities.reduce((a, [, p]) => a + p.y, 0) / hlCities.length;
-      const center = s(cx, cy + 30);
-      const fc = PREVIEW_FC[highlightFaction];
-      ctx.font = `900 ${18 * scale}px "Noto Serif KR", serif`;
-      ctx.fillStyle = `rgba(${fc[0]},${fc[1]},${fc[2]},0.6)`;
-      ctx.textAlign = 'center';
-      ctx.fillText(sc.factions[highlightFaction]?.name || '', center.x, center.y);
-    }
+  for (const label of layout.labels || []) {
+    const point = projectPreview(label.x, label.y, viewport);
+    ctx.save();
+    ctx.font = `${Math.max(18, label.size * viewport.scale * 0.54)}px "Noto Serif KR", serif`;
+    ctx.textAlign = 'center';
+    ctx.fillStyle = 'rgba(238, 225, 193, 0.2)';
+    ctx.fillText(label.text, point.x, point.y);
+    ctx.restore();
+  }
+}
+
+function renderPreviewOverlay(ctx, width, height) {
+  const vignette = ctx.createRadialGradient(width * 0.56, height * 0.42, width * 0.12, width * 0.56, height * 0.42, width * 0.72);
+  vignette.addColorStop(0, 'rgba(0, 0, 0, 0)');
+  vignette.addColorStop(1, 'rgba(8, 6, 4, 0.44)');
+  ctx.fillStyle = vignette;
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.strokeStyle = 'rgba(227, 196, 138, 0.12)';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(12, 12, width - 24, height - 24);
+}
+
+function previewPolygon(ctx, points, viewport) {
+  const first = projectPreview(points[0][0], points[0][1], viewport);
+  ctx.beginPath();
+  ctx.moveTo(first.x, first.y);
+  for (let i = 1; i < points.length; i += 1) {
+    const point = projectPreview(points[i][0], points[i][1], viewport);
+    ctx.lineTo(point.x, point.y);
+  }
+  ctx.closePath();
+}
+
+function projectPreview(x, y, viewport) {
+  return {
+    x: x * viewport.scale + viewport.offsetX,
+    y: y * viewport.scale + viewport.offsetY,
+  };
+}
+
+function projectPreviewRoadControl(from, to, grade, viewport) {
+  const dx = to.x - from.x;
+  const dy = to.y - from.y;
+  const length = Math.hypot(dx, dy) || 1;
+  const curve = grade === 'major' ? 0.09 : 0.05;
+  const midX = (from.x + to.x) / 2;
+  const midY = (from.y + to.y) / 2;
+  const nx = -dy / length;
+  const ny = dx / length;
+  const bias = Math.sin((from.x + to.y) * 0.01) >= 0 ? 1 : -1;
+  return projectPreview(midX + nx * length * curve * bias, midY + ny * length * curve * bias, viewport);
+}
+
+function getPreviewExtent(points) {
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  for (const [x, y] of points) {
+    minX = Math.min(minX, x);
+    maxX = Math.max(maxX, x);
+    minY = Math.min(minY, y);
+    maxY = Math.max(maxY, y);
+  }
+  return { width: maxX - minX, height: maxY - minY };
+}
+
+function getPreviewCentroid(points) {
+  let area = 0;
+  let x = 0;
+  let y = 0;
+
+  for (let i = 0; i < points.length; i += 1) {
+    const [x0, y0] = points[i];
+    const [x1, y1] = points[(i + 1) % points.length];
+    const cross = x0 * y1 - x1 * y0;
+    area += cross;
+    x += (x0 + x1) * cross;
+    y += (y0 + y1) * cross;
   }
 
-  // 비네팅
-  const vg = ctx.createRadialGradient(w/2, h/2, Math.min(w,h)*0.3, w/2, h/2, Math.max(w,h)*0.7);
-  vg.addColorStop(0, 'rgba(0,0,0,0)');
-  vg.addColorStop(1, 'rgba(0,0,0,0.5)');
-  ctx.fillStyle = vg;
-  ctx.fillRect(0, 0, w, h);
+  if (!area) return { x: points[0][0], y: points[0][1] };
+  area *= 0.5;
+  return {
+    x: x / (6 * area),
+    y: y / (6 * area),
+  };
+}
+
+function previewAddAlpha(color, alpha) {
+  if (color.startsWith('rgba')) {
+    const parts = color.slice(5, -1).split(',').map(part => part.trim());
+    return `rgba(${parts.slice(0, 3).join(', ')}, ${alpha})`;
+  }
+  if (color.startsWith('#')) {
+    const normalized = color.length === 4
+      ? `#${color[1]}${color[1]}${color[2]}${color[2]}${color[3]}${color[3]}`
+      : color;
+    const r = parseInt(normalized.slice(1, 3), 16);
+    const g = parseInt(normalized.slice(3, 5), 16);
+    const b = parseInt(normalized.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+  return color;
+}
+
+function sameRoad(road, from, to) {
+  return (road.from === from && road.to === to) || (road.from === to && road.to === from);
+}
+
+function getPreviewRoadStyle(road, active) {
+  if (road.kind === 'river') {
+    return {
+      stroke: active ? 'rgba(160, 200, 221, 0.4)' : 'rgba(121, 151, 166, 0.18)',
+      width: road.grade === 'major' ? 4 : 3,
+      dash: [8, 6],
+    };
+  }
+  if (road.kind === 'mountain_pass') {
+    return {
+      stroke: active ? 'rgba(205, 186, 146, 0.32)' : 'rgba(116, 101, 80, 0.18)',
+      width: 2.8,
+      dash: [6, 5],
+    };
+  }
+  if (road.kind === 'desert_road') {
+    return {
+      stroke: active ? 'rgba(225, 193, 132, 0.32)' : 'rgba(130, 110, 77, 0.18)',
+      width: 2.6,
+      dash: [10, 7],
+    };
+  }
+  return {
+    stroke: active
+      ? (road.grade === 'major' ? 'rgba(222, 198, 139, 0.38)' : 'rgba(170, 150, 117, 0.2)')
+      : 'rgba(105, 92, 75, 0.14)',
+    width: road.grade === 'major' ? 4.2 : 2.4,
+    dash: [],
+  };
 }
 
 function renderFactionPreviewPanel(sc, factionId) {
@@ -491,7 +619,7 @@ function renderFactionPreviewPanel(sc, factionId) {
         <div class="faction-preview-stat"><span class="label">핵심 축</span><span class="value">조조 · 유비 · 손권</span></div>
         <div class="faction-preview-stat"><span class="label">시작 압박</span><span class="value">남하 / 연합 / 생존</span></div>
         <div class="faction-preview-stat"><span class="label">판세 성격</span><span class="value">외교와 전쟁 동시 개막</span></div>
-        <div class="faction-preview-stat"><span class="label">추천 흐름</span><span class="value">맵을 눌러 세력을 고르십시오</span></div>
+        <div class="faction-preview-stat"><span class="label">추천 흐름</span><span class="value">좌측에서 세력을 고르십시오</span></div>
       </div>
       <div class="faction-preview-footer">좌측에서 세력을 선택하면 시작 목표와 전력, 전장 위치가 즉시 갱신됩니다.</div>
     `;
@@ -694,6 +822,7 @@ function initGameScreen() {
   gameScreen.classList.remove('city-rail-open');
   document.getElementById('btn-toggle-log').classList.add('active');
   logVisible = true;
+  applyScenarioMapArt(scenario);
 
   // 맵 초기화
   const canvas = document.getElementById('game-map');
@@ -757,6 +886,7 @@ function initGameScreen() {
         actionPanel.setContext(map.selectedCity, state);
       }
     }
+    return success;
   };
 
   updateUI();
@@ -1064,13 +1194,13 @@ function updateTurnLogContent() {
 
     const header = document.createElement('div');
     header.className = 'log-turn-header';
-    header.textContent = `${first.year}년 ${first.month}월 (턴 ${turn})`;
+    header.innerHTML = `<span class="log-turn-date">${first.year}년 ${first.month}월</span><span class="log-turn-meta">턴 ${turn}</span>`;
     logContent.appendChild(header);
 
     for (const entry of entries) {
       const div = document.createElement('div');
       div.className = `log-entry ${entry.type}`;
-      div.textContent = entry.message;
+      div.innerHTML = `<span class="log-entry-icon">${getLogIcon(entry.type)}</span><span class="log-entry-text">${entry.message}</span>`;
       logContent.appendChild(div);
     }
   }
@@ -1183,5 +1313,56 @@ function showToast(message) {
   }, 1500);
 }
 
+// --- Playwright / 디버그 테스트 훅 ---
+function exposeTestHooks() {
+  if (typeof window === 'undefined') return;
+  window.__wdttgukji = {
+    getState: () => state,
+    getScenario: () => scenario,
+    getSelectedFaction: () => selectedFaction,
+    getSelectedCity: () => map?.selectedCity || null,
+    selectFaction: (factionId) => {
+      const card = document.querySelector(`.faction-card[data-faction="${factionId}"]`);
+      if (!card) return false;
+      card.click();
+      return true;
+    },
+    showIntro: () => {
+      showIntro();
+      return true;
+    },
+    advanceDialogue: () => {
+      advanceDialogue();
+      return true;
+    },
+    startGame: async () => {
+      await startNewGame();
+      return true;
+    },
+    selectCity: (cityId) => {
+      if (!state || !map || !state.cities?.[cityId]) return false;
+      map.selectedCity = cityId;
+      sidebar.showCityDetail(cityId, state);
+      actionPanel.setContext(cityId, state);
+      document.getElementById('game-screen').classList.add('city-rail-open');
+      updateMapSelectionPanel();
+      map.render(state);
+      return true;
+    },
+    openCommand: (cityId = null, sceneKey = null) => {
+      const targetCity = cityId || map?.selectedCity;
+      if (!targetCity || !state) return false;
+      actionPanel.open(targetCity, state, sceneKey || undefined);
+      return true;
+    },
+    setCommandScene: (sceneKey) => {
+      if (!actionPanel?.isOpen?.()) return false;
+      actionPanel.switchScene(sceneKey);
+      return true;
+    },
+  };
+}
+
 // --- 부트 ---
 init();
+exposeTestHooks();

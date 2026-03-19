@@ -1,136 +1,218 @@
-// MapRenderer — 전략 맵: 보로노이 영토 + 경계선 + 병력 이동 + 지형
-//
-// 렌더 순서:
-//   1. 배경 + 지형 (강/산/해)
-//   2. 영토 채색 (보로노이) + 경계선
-//   3. 도로
-//   4. 이벤트 펄스
-//   5. 병력 이동 애니메이션
-//   6. 성채 (도시)
-//   7. 비네팅
+const DEFAULT_W = 1600;
+const DEFAULT_H = 900;
+const LEGACY_W = 920;
+const LEGACY_H = 700;
 
-const CITY_R = 14;
-const CITY_R_CAP = 18;
-const VORONOI_STEP = 6; // 보로노이 그리드 해상도 (논리좌표 px) — 작을수록 부드러움
-
-// 지형 기저 색 (어두운 고지도 톤)
-const TERRAIN_BASE = [28, 25, 20];     // 기본 땅 (어두운 황토)
-const TERRAIN_NORTH = [32, 30, 22];    // 북부 평원 (밝은 황토)
-const TERRAIN_SOUTH = [22, 28, 20];    // 남부 (약간 초록)
-const TERRAIN_MOUNT = [20, 18, 16];    // 산지 (어두움)
-
-const FC = {
-  wei:       { b: '#4A90D9', l: '#7AB8FF', d: '#2A5A8A', t: [130,180,255] },
-  shu:       { b: '#27C96A', l: '#50F090', d: '#168A42', t: [39,201,106] },
-  wu:        { b: '#E7553C', l: '#FF7A60', d: '#A02020', t: [231,85,60] },
-  liu_zhang: { b: '#F5A623', l: '#FFc850', d: '#B07008', t: [245,166,35] },
-  zhang_lu:  { b: '#A66BBE', l: '#C88AE0', d: '#6A3080', t: [166,107,190] },
+export const MAP_FACTION_PALETTE = {
+  wei: {
+    fill: 'rgba(98, 129, 167, 0.28)',
+    edge: '#8ca8c8',
+    glow: 'rgba(162, 190, 223, 0.32)',
+    badge: '#6d8db0',
+    badgeDark: '#304357',
+  },
+  shu: {
+    fill: 'rgba(90, 132, 90, 0.3)',
+    edge: '#9eb78e',
+    glow: 'rgba(173, 201, 149, 0.3)',
+    badge: '#658d63',
+    badgeDark: '#314731',
+  },
+  wu: {
+    fill: 'rgba(162, 96, 79, 0.28)',
+    edge: '#d29b84',
+    glow: 'rgba(222, 160, 141, 0.26)',
+    badge: '#ae6857',
+    badgeDark: '#513128',
+  },
+  liu_zhang: {
+    fill: 'rgba(171, 137, 75, 0.26)',
+    edge: '#d4ba7d',
+    glow: 'rgba(216, 192, 130, 0.24)',
+    badge: '#a98349',
+    badgeDark: '#4e3d1f',
+  },
+  zhang_lu: {
+    fill: 'rgba(132, 101, 152, 0.25)',
+    edge: '#c4a8d4',
+    glow: 'rgba(197, 167, 218, 0.22)',
+    badge: '#8a6a9d',
+    badgeDark: '#43314b',
+  },
+  neutral: {
+    fill: 'rgba(118, 110, 93, 0.22)',
+    edge: '#b8a98d',
+    glow: 'rgba(207, 192, 163, 0.18)',
+    badge: '#7b705d',
+    badgeDark: '#3b3429',
+  },
 };
 
-// ─── 지리 ───
+const ROAD_STYLE = {
+  major: {
+    base: 'rgba(38, 28, 19, 0.64)',
+    line: 'rgba(213, 183, 122, 0.5)',
+    width: 10,
+    glow: 'rgba(233, 214, 177, 0.16)',
+  },
+  normal: {
+    base: 'rgba(30, 24, 18, 0.46)',
+    line: 'rgba(189, 165, 117, 0.24)',
+    width: 6,
+    glow: 'rgba(224, 204, 168, 0.08)',
+  },
+};
 
-const YELLOW_RIVER = [
-  [150,240],[200,260],[260,290],[320,280],[380,270],
-  [430,265],[480,270],[530,255],[580,250],[630,248],
-  [680,240],[740,230],[800,225],[860,220]
-];
-const YANGTZE = [
-  [150,510],[200,500],[260,495],[310,480],[370,465],
-  [430,455],[490,445],[540,438],[590,425],[640,415],
-  [690,408],[740,430],[790,440],[850,445]
-];
-const MOUNTAINS = [
-  { pts:[[510,160],[530,190],[550,170],[520,210],[540,230],[560,210]], name:'太行' },
-  { pts:[[300,350],[320,370],[340,355],[360,375],[380,360],[350,340]], name:'秦嶺' },
-  { pts:[[310,430],[330,450],[350,435],[320,460],[340,470]], name:'' },
-];
-const COAST = [
-  [800,60],[810,130],[805,180],[790,230],
-  [780,280],[790,320],[800,370],[810,420],
-  [800,460],[790,500],[780,550],[770,600],[760,680]
-];
+export function resolveMapLayout(scenario) {
+  const base = scenario?.mapLayout || {};
+  const safeBounds = {
+    left: 80,
+    top: 60,
+    right: 1520,
+    bottom: 840,
+    ...(base.safeBounds || {}),
+  };
+  const generatedAnchors = projectLegacyAnchors(scenario.cityPositions || {}, safeBounds);
+  const cityAnchors = {
+    ...generatedAnchors,
+    ...(base.cityAnchors || {}),
+  };
+
+  const layout = {
+    baseAsset: base.baseAsset || '/assets/maps/red-cliffs-base.svg',
+    designWidth: base.designWidth || DEFAULT_W,
+    designHeight: base.designHeight || DEFAULT_H,
+    safeBounds,
+    cityAnchors,
+    roads: base.roads || [],
+    territoryPolygons: base.territoryPolygons || {},
+    labels: base.labels || [],
+    landmarks: base.landmarks || [],
+    waterPolygons: base.waterPolygons || [],
+    ridgePaths: base.ridgePaths || [],
+    frontlineAnchors: base.frontlineAnchors || [],
+    cityBadgeOffsets: {
+      ...generateAutoBadgeOffsets(cityAnchors, safeBounds),
+      ...(base.cityBadgeOffsets || {}),
+    },
+    focusZones: base.focusZones || [],
+  };
+
+  layout.roads = buildRoads(scenario, layout);
+  return layout;
+}
+
+export function measureMapViewport(layout, width, height) {
+  const designWidth = layout.designWidth || DEFAULT_W;
+  const designHeight = layout.designHeight || DEFAULT_H;
+  const scale = Math.min(width / designWidth, height / designHeight);
+  const offsetX = (width - designWidth * scale) / 2;
+  const offsetY = (height - designHeight * scale) / 2;
+
+  return {
+    width,
+    height,
+    scale,
+    offsetX,
+    offsetY,
+    designWidth,
+    designHeight,
+  };
+}
 
 export class MapRenderer {
   constructor(canvas, scenario) {
     this.canvas = canvas;
     this.ctx = canvas.getContext('2d');
-    this.positions = scenario.cityPositions;
-    this.connections = scenario.connections;
+    this.scenario = scenario;
+    this.layout = resolveMapLayout(scenario);
+    this.positions = Object.fromEntries(
+      Object.entries(this.layout.cityAnchors).filter(([cityId]) => scenario.cities?.[cityId])
+    );
+    this.connections = scenario.connections || [];
+    this.roads = this.layout.roads || buildRoads(scenario, this.layout);
     this.selectedCity = null;
     this.hoveredCity = null;
-    this.scale = 1;
-    this.offsetX = 0;
-    this.offsetY = 0;
-
-    // 이벤트 펄스
     this.eventCities = new Map();
-
-    // 병력 이동 애니메이션
-    this.movements = [];    // [{from,to,color,progress,type}]
-    this._animating = false;
+    this.movements = [];
+    this.viewport = null;
+    this._lastState = null;
     this._animFrame = null;
-
-    // 영토 캐시
-    this._territoryHash = '';
-    this._territoryImg = null;
+    this._animating = false;
+    this._boundResize = () => {
+      this._resize();
+      if (this._lastState) this.render(this._lastState);
+    };
 
     this._resize();
-    this._bindEvents();
+    window.addEventListener('resize', this._boundResize);
   }
 
   _resize() {
-    const ctr = this.canvas.parentElement;
+    const container = this.canvas.parentElement;
     const dpr = window.devicePixelRatio || 1;
-    const w = ctr.clientWidth, h = ctr.clientHeight;
-    this.canvas.width = w * dpr;
-    this.canvas.height = h * dpr;
-    this.canvas.style.width = w + 'px';
-    this.canvas.style.height = h + 'px';
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    this.canvas.width = Math.max(1, Math.floor(width * dpr));
+    this.canvas.height = Math.max(1, Math.floor(height * dpr));
+    this.canvas.style.width = `${width}px`;
+    this.canvas.style.height = `${height}px`;
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    this.scale = Math.min(w / 920, h / 700) * 0.95;
-    this.offsetX = (w - 920 * this.scale) / 2;
-    this.offsetY = (h - 700 * this.scale) / 2;
-    this._territoryImg = null; // 캐시 무효화
+    this.viewport = measureMapViewport(this.layout, width, height);
   }
 
-  _bindEvents() {
-    window.addEventListener('resize', () => {
-      this._resize();
-      if (this._lastState) this.render(this._lastState);
-    });
+  _toWorld(screenX, screenY) {
+    const { offsetX, offsetY, scale } = this.viewport;
+    return {
+      x: (screenX - offsetX) / scale,
+      y: (screenY - offsetY) / scale,
+    };
   }
 
-  _s(x, y) { return { x: x * this.scale + this.offsetX, y: y * this.scale + this.offsetY }; }
-  _fromScreen(sx, sy) { return { x: (sx - this.offsetX) / this.scale, y: (sy - this.offsetY) / this.scale }; }
+  _toScreen(worldX, worldY) {
+    const { offsetX, offsetY, scale } = this.viewport;
+    return {
+      x: worldX * scale + offsetX,
+      y: worldY * scale + offsetY,
+    };
+  }
 
-  hitTest(sx, sy) {
-    const { x, y } = this._fromScreen(sx, sy);
-    const hr = CITY_R * 1.8;
-    for (const [id, p] of Object.entries(this.positions)) {
-      if ((x - p.x) ** 2 + (y - p.y) ** 2 < hr * hr) return id;
+  hitTest(screenX, screenY) {
+    const world = this._toWorld(screenX, screenY);
+    let closest = null;
+    let bestDistance = Infinity;
+
+    for (const [cityId, anchor] of Object.entries(this.positions)) {
+      const distance = Math.hypot(world.x - anchor.x, world.y - anchor.y);
+      const threshold = 34;
+      if (distance < threshold && distance < bestDistance) {
+        bestDistance = distance;
+        closest = cityId;
+      }
     }
-    return null;
+
+    return closest;
   }
 
-  // ── 이벤트 펄스 ──
-  addEventPulse(cityId, color) {
-    this.eventCities.set(cityId, { time: Date.now(), color: color || '#c9a84c' });
+  addEventPulse(cityId, color = '#D4B36C') {
+    this.eventCities.set(cityId, {
+      color,
+      startedAt: Date.now(),
+    });
     this._startAnim();
   }
-  clearEventPulses() { this.eventCities.clear(); }
 
-  // ── 병력 이동 애니메이션 ──
-  // movements: [{ from: cityId, to: cityId, type: 'attack'|'reinforce'|'move', factionId }]
-  animateMovements(mvs) {
-    if (!mvs || mvs.length === 0) return;
-    for (const m of mvs) {
-      const fc = FC[m.factionId];
+  clearEventPulses() {
+    this.eventCities.clear();
+  }
+
+  animateMovements(movements) {
+    if (!movements?.length) return;
+    for (const move of movements) {
       this.movements.push({
-        from: m.from, to: m.to,
-        color: fc ? fc.b : '#888',
-        type: m.type || 'move',
-        startTime: Date.now(),
-        duration: m.type === 'attack' ? 1200 : 800,
+        ...move,
+        startedAt: Date.now(),
+        duration: move.type === 'attack' ? 1300 : 900,
       });
     }
     this._startAnim();
@@ -139,586 +221,944 @@ export class MapRenderer {
   _startAnim() {
     if (this._animating) return;
     this._animating = true;
+
     const tick = () => {
       const now = Date.now();
-      // 만료 이벤트 펄스 제거
-      for (const [id, p] of this.eventCities) {
-        if (now - p.time > 4000) this.eventCities.delete(id);
+      for (const [cityId, pulse] of this.eventCities.entries()) {
+        if (now - pulse.startedAt > 3200) {
+          this.eventCities.delete(cityId);
+        }
       }
-      // 만료 이동 제거
-      this.movements = this.movements.filter(m => now - m.startTime < m.duration);
+      this.movements = this.movements.filter(move => now - move.startedAt < move.duration);
 
-      if (this.eventCities.size === 0 && this.movements.length === 0) {
+      if (!this.eventCities.size && !this.movements.length) {
         this._animating = false;
         if (this._lastState) this.render(this._lastState);
         return;
       }
+
       if (this._lastState) this.render(this._lastState);
       this._animFrame = requestAnimationFrame(tick);
     };
+
     this._animFrame = requestAnimationFrame(tick);
   }
-
-  // ═══════════════════════════════════
-  //  메인 렌더
-  // ═══════════════════════════════════
 
   render(state) {
     this._lastState = state;
     const ctx = this.ctx;
-    const w = this.canvas.clientWidth, h = this.canvas.clientHeight;
-    ctx.clearRect(0, 0, w, h);
+    const width = this.canvas.clientWidth;
+    const height = this.canvas.clientHeight;
+    ctx.clearRect(0, 0, width, height);
 
-    this._drawBackground(ctx, w, h);
-    this._drawTerritory(ctx, state, w, h);
+    this._drawFocusZones(ctx);
+    this._drawWaterPolygons(ctx);
+    this._drawTerritories(ctx, state);
+    this._drawRidgePaths(ctx);
     this._drawRoads(ctx, state);
-    this._drawEventPulses(ctx);
+    this._drawFrontlines(ctx, state);
     this._drawMovements(ctx);
+    this._drawEventPulses(ctx);
     this._drawCities(ctx, state);
-    this._drawVignette(ctx, w, h);
+    this._drawEdgeShade(ctx, width, height);
   }
 
-  // ─── 배경 + 지형 ───
-
-  _drawBackground(ctx, w, h) {
-    // 기저: 어두운 땅 색 (코에이풍 고지도)
-    ctx.fillStyle = `rgb(${TERRAIN_BASE[0]},${TERRAIN_BASE[1]},${TERRAIN_BASE[2]})`;
-    ctx.fillRect(0, 0, w, h);
-
-    // 지형 존: 북부(밝은 황토) / 남부(약간 초록) 그라데이션
-    const midY = this._s(0, 380).y;  // 황하-장강 중간
-    // 북부 (위쪽)
-    const northGrad = ctx.createLinearGradient(0, 0, 0, midY);
-    northGrad.addColorStop(0, `rgba(${TERRAIN_NORTH[0]},${TERRAIN_NORTH[1]},${TERRAIN_NORTH[2]},0.6)`);
-    northGrad.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = northGrad;
-    ctx.fillRect(0, 0, w, midY);
-    // 남부 (아래쪽)
-    const southGrad = ctx.createLinearGradient(0, midY, 0, h);
-    southGrad.addColorStop(0, 'rgba(0,0,0,0)');
-    southGrad.addColorStop(1, `rgba(${TERRAIN_SOUTH[0]},${TERRAIN_SOUTH[1]},${TERRAIN_SOUTH[2]},0.5)`);
-    ctx.fillStyle = southGrad;
-    ctx.fillRect(0, midY, w, h - midY);
-
-    // 미세 질감 (종이 느낌)
-    ctx.strokeStyle = 'rgba(255,240,200,0.018)';
-    ctx.lineWidth = 0.5;
-    const gs = 25 * this.scale;
-    for (let x = this.offsetX % gs; x < w; x += gs) {
-      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+  _drawFocusZones(ctx) {
+    for (const zone of this.layout.focusZones || []) {
+      const center = this._toScreen(zone.x, zone.y);
+      const radius = (zone.radius || 180) * this.viewport.scale;
+      const palette = MAP_FACTION_PALETTE[zone.factionId] || MAP_FACTION_PALETTE.neutral;
+      const gradient = ctx.createRadialGradient(center.x, center.y, radius * 0.1, center.x, center.y, radius);
+      gradient.addColorStop(0, addAlpha(palette.glow, zone.alpha || 0.18));
+      gradient.addColorStop(1, addAlpha(palette.glow, 0));
+      ctx.save();
+      ctx.fillStyle = gradient;
+      ctx.fillRect(center.x - radius, center.y - radius, radius * 2, radius * 2);
+      ctx.restore();
     }
-    for (let y = this.offsetY % gs; y < h; y += gs) {
-      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
-    }
-
-    this._drawSea(ctx, w, h);
-    this._drawRiver(ctx, YELLOW_RIVER, [190, 170, 80], 6);
-    this._drawRiver(ctx, YANGTZE, [70, 150, 220], 7);
-    this._drawMountains(ctx);
   }
 
-  _drawSea(ctx, w, h) {
-    ctx.save();
-    ctx.beginPath();
-    const f = this._s(COAST[0][0], COAST[0][1]);
-    ctx.moveTo(f.x, f.y);
-    for (let i = 1; i < COAST.length; i++) {
-      const p = this._s(COAST[i][0], COAST[i][1]);
-      ctx.lineTo(p.x, p.y);
+  _drawWaterPolygons(ctx) {
+    for (const polygon of this.layout.waterPolygons || []) {
+      const points = polygon.points || [];
+      if (!points.length) continue;
+      ctx.save();
+      drawPolygon(ctx, points, this.viewport);
+      const extent = getExtent(points);
+      const center = this._toScreen(extent.minX + extent.width / 2, extent.minY + extent.height / 2);
+      const radius = Math.max(extent.width, extent.height) * this.viewport.scale * 0.8;
+      const gradient = ctx.createRadialGradient(center.x, center.y, radius * 0.1, center.x, center.y, radius);
+      gradient.addColorStop(0, 'rgba(105, 151, 182, 0.22)');
+      gradient.addColorStop(1, 'rgba(55, 93, 118, 0.04)');
+      ctx.fillStyle = gradient;
+      ctx.fill();
+      ctx.strokeStyle = polygon.kind === 'river' ? 'rgba(177, 211, 226, 0.22)' : 'rgba(147, 181, 198, 0.16)';
+      ctx.lineWidth = (polygon.kind === 'river' ? 2.2 : 1.4) * this.viewport.scale;
+      ctx.stroke();
+      ctx.restore();
     }
-    ctx.lineTo(w, h); ctx.lineTo(w, 0); ctx.closePath();
-    const sg = ctx.createLinearGradient(this._s(780, 0).x, 0, w, 0);
-    sg.addColorStop(0, 'rgba(15,30,55,0.3)');
-    sg.addColorStop(1, 'rgba(10,22,40,0.55)');
-    ctx.fillStyle = sg;
-    ctx.fill();
-
-    // 해안선 점선
-    ctx.beginPath();
-    ctx.moveTo(f.x, f.y);
-    for (let i = 1; i < COAST.length; i++) {
-      const p = this._s(COAST[i][0], COAST[i][1]);
-      ctx.lineTo(p.x, p.y);
-    }
-    ctx.strokeStyle = 'rgba(50,90,130,0.3)';
-    ctx.lineWidth = 1.5 * this.scale;
-    ctx.setLineDash([5 * this.scale, 4 * this.scale]);
-    ctx.stroke();
-    ctx.setLineDash([]);
-    ctx.restore();
   }
 
-  _drawRiver(ctx, pts, rgb, w) {
-    if (pts.length < 2) return;
-    ctx.save();
-    // 넓은 글로우
-    this._smoothCurve(ctx, pts);
-    ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.12)`;
-    ctx.lineWidth = (w + 14) * this.scale;
-    ctx.lineCap = 'round';
-    ctx.stroke();
-    // 중간 글로우
-    this._smoothCurve(ctx, pts);
-    ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.22)`;
-    ctx.lineWidth = (w + 6) * this.scale;
-    ctx.stroke();
-    // 본체
-    this._smoothCurve(ctx, pts);
-    ctx.strokeStyle = `rgba(${rgb[0]},${rgb[1]},${rgb[2]},0.40)`;
-    ctx.lineWidth = w * this.scale;
-    ctx.stroke();
-    ctx.restore();
+  _drawTerritories(ctx, state) {
+    const drawOrder = ['liu_zhang', 'zhang_lu', 'shu', 'wu', 'wei'];
+    const selectedOwner = this.selectedCity ? state.cities[this.selectedCity]?.owner : null;
+
+    for (const factionId of drawOrder) {
+      const points = this.layout.territoryPolygons?.[factionId];
+      if (!points?.length) continue;
+
+      const style = MAP_FACTION_PALETTE[factionId] || MAP_FACTION_PALETTE.neutral;
+      const centroid = getCentroid(points);
+      const center = this._toScreen(centroid.x, centroid.y);
+      const extent = getExtent(points);
+      const radius = Math.max(extent.width, extent.height) * this.viewport.scale * 0.7;
+      const highlight = selectedOwner === factionId || state.player.factionId === factionId;
+      const alpha = highlight ? 0.38 : 0.28;
+
+      ctx.save();
+      drawPolygon(ctx, points, this.viewport);
+      const gradient = ctx.createRadialGradient(center.x, center.y, radius * 0.12, center.x, center.y, radius);
+      gradient.addColorStop(0, addAlpha(style.glow, highlight ? 0.42 : 0.24));
+      gradient.addColorStop(0.55, addAlpha(style.fill, alpha));
+      gradient.addColorStop(1, addAlpha(style.fill, 0.14));
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      ctx.clip();
+      drawHatching(ctx, points, this.viewport, style.edge, highlight ? 0.11 : 0.06);
+      ctx.restore();
+
+      ctx.save();
+      drawPolygon(ctx, points, this.viewport);
+      ctx.strokeStyle = 'rgba(24, 18, 12, 0.72)';
+      ctx.lineWidth = 8 * this.viewport.scale;
+      ctx.lineJoin = 'round';
+      ctx.stroke();
+      ctx.strokeStyle = highlight ? style.edge : addAlpha(style.edge, 0.66);
+      ctx.lineWidth = 2.2 * this.viewport.scale;
+      ctx.stroke();
+      ctx.restore();
+    }
   }
 
-  _smoothCurve(ctx, pts) {
-    ctx.beginPath();
-    const p0 = this._s(pts[0][0], pts[0][1]);
-    ctx.moveTo(p0.x, p0.y);
-    for (let i = 1; i < pts.length - 1; i++) {
-      const c = this._s(pts[i][0], pts[i][1]);
-      const n = this._s(pts[i + 1][0], pts[i + 1][1]);
-      ctx.quadraticCurveTo(c.x, c.y, (c.x + n.x) / 2, (c.y + n.y) / 2);
+  _drawRidgePaths(ctx) {
+    for (const ridge of this.layout.ridgePaths || []) {
+      const points = ridge.points || [];
+      if (points.length < 2) continue;
+      const width = (ridge.thickness || 18) * this.viewport.scale;
+      ctx.save();
+      ctx.beginPath();
+      drawPolyline(ctx, points, this.viewport);
+      ctx.strokeStyle = 'rgba(26, 18, 13, 0.42)';
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.lineWidth = width;
+      ctx.stroke();
+
+      ctx.beginPath();
+      drawPolyline(ctx, points, this.viewport);
+      ctx.strokeStyle = 'rgba(194, 178, 144, 0.18)';
+      ctx.lineWidth = width * 0.46;
+      ctx.stroke();
+      ctx.restore();
     }
-    const last = this._s(pts[pts.length - 1][0], pts[pts.length - 1][1]);
-    ctx.lineTo(last.x, last.y);
   }
-
-  _drawMountains(ctx) {
-    ctx.save();
-    for (const mt of MOUNTAINS) {
-      for (const [mx, my] of mt.pts) {
-        const s = this._s(mx, my);
-        const sz = (8 + Math.random() * 5) * this.scale;
-        // 삼각 봉우리
-        ctx.beginPath();
-        ctx.moveTo(s.x, s.y - sz);
-        ctx.lineTo(s.x - sz * .65, s.y + sz * .25);
-        ctx.lineTo(s.x + sz * .65, s.y + sz * .25);
-        ctx.closePath();
-        const g = ctx.createLinearGradient(s.x, s.y - sz, s.x, s.y + sz * .25);
-        g.addColorStop(0, 'rgba(110,100,75,0.20)');
-        g.addColorStop(1, 'rgba(60,55,45,0.05)');
-        ctx.fillStyle = g;
-        ctx.fill();
-        ctx.strokeStyle = 'rgba(130,120,85,0.12)';
-        ctx.lineWidth = .7 * this.scale;
-        ctx.stroke();
-      }
-      if (mt.name) {
-        const cx = mt.pts.reduce((a, p) => a + p[0], 0) / mt.pts.length;
-        const cy = mt.pts.reduce((a, p) => a + p[1], 0) / mt.pts.length;
-        const sc = this._s(cx, cy - 18);
-        ctx.font = `${8 * this.scale}px "Noto Serif KR", serif`;
-        ctx.fillStyle = 'rgba(180,160,120,0.30)';
-        ctx.textAlign = 'center';
-        ctx.fillText(mt.name, sc.x, sc.y);
-      }
-    }
-    ctx.restore();
-  }
-
-  // ─── 보로노이 영토 + 경계선 ───
-
-  _drawTerritory(ctx, state, w, h) {
-    // 소유권 해시 → 캐시
-    const hash = Object.entries(state.cities).map(([id, c]) => id + ':' + (c.owner || '')).join(',');
-    if (hash !== this._territoryHash || !this._territoryImg) {
-      this._territoryHash = hash;
-      this._territoryImg = this._buildTerritoryImage(state, w, h);
-    }
-    ctx.drawImage(this._territoryImg, 0, 0, w, h);
-  }
-
-  _buildTerritoryImage(state, w, h) {
-    const oc = document.createElement('canvas');
-    oc.width = w; oc.height = h;
-    const ox = oc.getContext('2d');
-
-    // 도시 배열 (보로노이 시드)
-    const seeds = [];
-    for (const [id, pos] of Object.entries(this.positions)) {
-      const city = state.cities[id];
-      const s = this._s(pos.x, pos.y);
-      seeds.push({ x: s.x, y: s.y, owner: city?.owner || null, id });
-    }
-
-    // 그리드 기반 보로노이 — 코에이풍: 모든 땅이 누군가에게 속함
-    const step = Math.max(3, Math.round(VORONOI_STEP * this.scale));
-    const cols = Math.ceil(w / step);
-    const rows = Math.ceil(h / step);
-    const grid = new Array(cols * rows); // owner per cell
-
-    const BASE_ALPHA = 0.38;        // 전체 균일 영토 알파 (코에이풍 — 진하게)
-    const CITY_BOOST = 0.18;        // 도시 근처 추가 밝기
-    const BOOST_RANGE = 100;        // 부스트 범위 (논리좌표)
-
-    for (let gy = 0; gy < rows; gy++) {
-      for (let gx = 0; gx < cols; gx++) {
-        const px = gx * step + step / 2;
-        const py = gy * step + step / 2;
-        let minDist = Infinity, nearest = null;
-        for (const s of seeds) {
-          const d = (px - s.x) ** 2 + (py - s.y) ** 2;
-          if (d < minDist) { minDist = d; nearest = s; }
-        }
-        const idx = gy * cols + gx;
-        grid[idx] = nearest?.owner || null;
-
-        // 영토 채색 — 모든 셀 균일 채색 + 도시 근처 부스트
-        if (nearest?.owner) {
-          const fc = FC[nearest.owner];
-          if (fc) {
-            const dist = Math.sqrt(minDist);
-            const boostDist = BOOST_RANGE * this.scale;
-            const boost = dist < boostDist ? CITY_BOOST * (1 - dist / boostDist) : 0;
-            const alpha = BASE_ALPHA + boost;
-            ox.fillStyle = `rgba(${fc.t[0]},${fc.t[1]},${fc.t[2]},${alpha.toFixed(3)})`;
-            ox.fillRect(gx * step, gy * step, step, step);
-          }
-        }
-      }
-    }
-
-    // 영토 색을 블러 처리 (계단 현상 완화)
-    const blur = document.createElement('canvas');
-    blur.width = w; blur.height = h;
-    const bx2 = blur.getContext('2d');
-    bx2.filter = 'blur(4px)';
-    bx2.drawImage(oc, 0, 0);
-    // 블러된 영토를 원본 위에 덮어쓰기
-    ox.clearRect(0, 0, w, h);
-    ox.drawImage(blur, 0, 0);
-
-    // 경계선 — 세력 국경 (그림자 + 밝은 선)
-    const borderSegs = []; // {x1,y1,x2,y2,owner}
-    for (let gy = 0; gy < rows; gy++) {
-      for (let gx = 0; gx < cols; gx++) {
-        const idx = gy * cols + gx;
-        const owner = grid[idx];
-        if (!owner) continue;
-        // 오른쪽
-        if (gx < cols - 1 && grid[idx + 1] && grid[idx + 1] !== owner) {
-          borderSegs.push({ x1: (gx+1)*step, y1: gy*step, x2: (gx+1)*step, y2: (gy+1)*step, owner });
-        }
-        // 아래
-        if (gy < rows - 1 && grid[(gy+1)*cols+gx] && grid[(gy+1)*cols+gx] !== owner) {
-          borderSegs.push({ x1: gx*step, y1: (gy+1)*step, x2: (gx+1)*step, y2: (gy+1)*step, owner });
-        }
-      }
-    }
-
-    // 그림자 레이어 (한 번에)
-    ox.lineCap = 'round';
-    ox.strokeStyle = 'rgba(0,0,0,0.55)';
-    ox.lineWidth = Math.max(3.5, 4.5 * this.scale);
-    ox.beginPath();
-    for (const seg of borderSegs) {
-      ox.moveTo(seg.x1, seg.y1);
-      ox.lineTo(seg.x2, seg.y2);
-    }
-    ox.stroke();
-
-    // 세력색 레이어 (세력별로 그룹핑)
-    const byOwner = {};
-    for (const seg of borderSegs) {
-      if (!byOwner[seg.owner]) byOwner[seg.owner] = [];
-      byOwner[seg.owner].push(seg);
-    }
-    for (const [own, segs] of Object.entries(byOwner)) {
-      const fc = FC[own];
-      ox.strokeStyle = fc ? `rgba(${fc.t[0]},${fc.t[1]},${fc.t[2]},0.65)` : 'rgba(255,255,255,0.30)';
-      ox.lineWidth = Math.max(1.5, 2.2 * this.scale);
-      ox.beginPath();
-      for (const seg of segs) {
-        ox.moveTo(seg.x1, seg.y1);
-        ox.lineTo(seg.x2, seg.y2);
-      }
-      ox.stroke();
-    }
-
-    return oc;
-  }
-
-  // ─── 도로 ───
 
   _drawRoads(ctx, state) {
-    ctx.save();
-    for (const [from, to] of this.connections) {
-      const pa = this.positions[from], pb = this.positions[to];
-      if (!pa || !pb) continue;
-      const a = this._s(pa.x, pa.y), b = this._s(pb.x, pb.y);
-      const cA = state.cities[from], cB = state.cities[to];
-      const same = cA && cB && cA.owner && cA.owner === cB.owner;
+    const selected = this.selectedCity;
 
-      // 도로 그림자
-      ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
-      ctx.strokeStyle = 'rgba(255,255,255,0.02)';
-      ctx.lineWidth = 6 * this.scale; ctx.lineCap = 'round';
+    for (const road of this.roads) {
+      const from = this.positions[road.from];
+      const to = this.positions[road.to];
+      if (!from || !to) continue;
+
+      const selectedBoost = selected && (road.from === selected || road.to === selected);
+      const localContext = selected && (isConnected(this.connections, selected, road.from) || isConnected(this.connections, selected, road.to));
+      const front = selected && isConnected(this.connections, selected, road.from) && isConnected(this.connections, selected, road.to);
+      if (!selected && road.grade === 'normal' && road.kind === 'road') continue;
+      if (selected && !selectedBoost && !localContext && road.grade === 'normal' && road.kind === 'road') continue;
+      const emphasis = selectedBoost ? 'focused' : localContext || front ? 'context' : 'ambient';
+      const style = getRoadDescriptor(road, emphasis);
+      const control = getRoadControl(from, to, road.grade, road.curve);
+      const fromScreen = this._toScreen(from.x, from.y);
+      const toScreen = this._toScreen(to.x, to.y);
+      const controlScreen = this._toScreen(control.x, control.y);
+
+      ctx.save();
+      ctx.lineCap = 'round';
+      ctx.setLineDash(style.baseDash || []);
+      ctx.beginPath();
+      ctx.moveTo(fromScreen.x, fromScreen.y);
+      ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, toScreen.x, toScreen.y);
+      ctx.strokeStyle = style.base;
+      ctx.lineWidth = style.width * this.viewport.scale;
       ctx.stroke();
 
-      // 도로 본체
-      ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
-      if (same) {
-        const fc = FC[cA.owner];
-        ctx.strokeStyle = fc ? `rgba(${fc.t[0]},${fc.t[1]},${fc.t[2]},0.35)` : 'rgba(255,255,255,0.10)';
-        ctx.lineWidth = 2.2 * this.scale;
+      ctx.setLineDash(style.lineDash || []);
+      ctx.beginPath();
+      ctx.moveTo(fromScreen.x, fromScreen.y);
+      ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, toScreen.x, toScreen.y);
+      ctx.strokeStyle = style.line;
+      ctx.lineWidth = (style.width * style.lineWidthRatio + (selectedBoost ? 0.8 : 0)) * this.viewport.scale;
+      ctx.stroke();
+
+      if (selectedBoost || front) {
         ctx.setLineDash([]);
-      } else {
-        ctx.strokeStyle = 'rgba(255,255,255,0.06)';
-        ctx.lineWidth = 1 * this.scale;
-        ctx.setLineDash([4 * this.scale, 5 * this.scale]);
-      }
-      ctx.stroke();
-      ctx.setLineDash([]);
-    }
-    ctx.restore();
-  }
-
-  // ─── 이벤트 펄스 ───
-
-  _drawEventPulses(ctx) {
-    const now = Date.now();
-    ctx.save();
-    for (const [id, pulse] of this.eventCities) {
-      const pos = this.positions[id];
-      if (!pos) continue;
-      const s = this._s(pos.x, pos.y);
-      const progress = (now - pulse.time) / 4000;
-
-      for (let i = 0; i < 3; i++) {
-        const p = (progress + i * .25) % 1;
-        const r = (CITY_R + 12 + p * 40) * this.scale;
-        const a = Math.max(0, .5 * (1 - p));
-        ctx.beginPath(); ctx.arc(s.x, s.y, r, 0, Math.PI * 2);
-        ctx.strokeStyle = pulse.color + hex(a);
-        ctx.lineWidth = (2.5 - p * 1.5) * this.scale;
+        ctx.beginPath();
+        ctx.moveTo(fromScreen.x, fromScreen.y);
+        ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, toScreen.x, toScreen.y);
+        ctx.strokeStyle = style.glow;
+        ctx.lineWidth = (style.width + 10) * this.viewport.scale;
+        ctx.filter = 'blur(6px)';
         ctx.stroke();
       }
-
-      // 글로우
-      const ga = .15 * (1 - progress);
-      const gr = (CITY_R + 35) * this.scale;
-      const gg = ctx.createRadialGradient(s.x, s.y, 0, s.x, s.y, gr);
-      gg.addColorStop(0, pulse.color + hex(ga));
-      gg.addColorStop(1, pulse.color + '00');
-      ctx.fillStyle = gg;
-      ctx.beginPath(); ctx.arc(s.x, s.y, gr, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
     }
-    ctx.restore();
   }
 
-  // ─── 병력 이동 애니메이션 ───
+  _drawFrontlines(ctx, state) {
+    for (const [cityAId, cityBId] of this.connections) {
+      const cityA = state.cities[cityAId];
+      const cityB = state.cities[cityBId];
+      if (!cityA || !cityB || !cityA.owner || !cityB.owner) continue;
+      if (cityA.owner === cityB.owner) continue;
+
+      const atWar = state.isAtWar(cityA.owner, cityB.owner);
+      const playerEdge = cityA.owner === state.player.factionId || cityB.owner === state.player.factionId;
+      if (!atWar && !playerEdge) continue;
+
+      const from = this.positions[cityAId];
+      const to = this.positions[cityBId];
+      if (!from || !to) continue;
+      const customPath = getFrontlinePath(this.layout.frontlineAnchors, cityAId, cityBId);
+
+      ctx.save();
+      ctx.beginPath();
+      if (customPath) {
+        drawPolyline(ctx, customPath, this.viewport);
+      } else {
+        const control = getRoadControl(from, to, 'major', 0.16);
+        const fromScreen = this._toScreen(from.x, from.y);
+        const toScreen = this._toScreen(to.x, to.y);
+        const controlScreen = this._toScreen(control.x, control.y);
+        ctx.moveTo(fromScreen.x, fromScreen.y);
+        ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, toScreen.x, toScreen.y);
+      }
+      ctx.setLineDash([10 * this.viewport.scale, 8 * this.viewport.scale]);
+      ctx.lineCap = 'round';
+      ctx.lineWidth = (atWar ? 4 : 3) * this.viewport.scale;
+      ctx.strokeStyle = atWar ? 'rgba(214, 92, 71, 0.82)' : 'rgba(221, 190, 118, 0.6)';
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
 
   _drawMovements(ctx) {
     const now = Date.now();
-    ctx.save();
+    for (const move of this.movements) {
+      const from = this.positions[move.from];
+      const to = this.positions[move.to];
+      if (!from || !to) continue;
 
-    for (const m of this.movements) {
-      const pf = this.positions[m.from], pt = this.positions[m.to];
-      if (!pf || !pt) continue;
-
-      const a = this._s(pf.x, pf.y), b = this._s(pt.x, pt.y);
-      const t = Math.min(1, (now - m.startTime) / m.duration);
-      const ease = t < .5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2; // easeInOutQuad
-
-      const cx = a.x + (b.x - a.x) * ease;
-      const cy = a.y + (b.y - a.y) * ease;
-
-      // 궤적선 (지나온 경로)
-      ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(cx, cy);
-      ctx.strokeStyle = m.color + '60';
-      ctx.lineWidth = 2.5 * this.scale;
-      ctx.lineCap = 'round';
-      ctx.stroke();
-
-      // 이동 도트 (삼각 화살)
-      const angle = Math.atan2(b.y - a.y, b.x - a.x);
-      const sz = (m.type === 'attack' ? 8 : 6) * this.scale;
+      const progress = Math.min(1, (now - move.startedAt) / move.duration);
+      const control = getRoadControl(from, to, 'major', 0.12);
+      const point = evaluateQuadratic(from, control, to, progress);
+      const head = evaluateQuadratic(from, control, to, Math.min(1, progress + 0.02));
+      const screen = this._toScreen(point.x, point.y);
+      const headScreen = this._toScreen(head.x, head.y);
+      const angle = Math.atan2(headScreen.y - screen.y, headScreen.x - screen.x);
+      const color = MAP_FACTION_PALETTE[move.factionId]?.edge || '#D7B270';
 
       ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(angle);
       ctx.beginPath();
-      ctx.moveTo(sz, 0);
-      ctx.lineTo(-sz * .6, -sz * .5);
-      ctx.lineTo(-sz * .6, sz * .5);
+      const fromScreen = this._toScreen(from.x, from.y);
+      const controlScreen = this._toScreen(control.x, control.y);
+      ctx.moveTo(fromScreen.x, fromScreen.y);
+      ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, screen.x, screen.y);
+      ctx.strokeStyle = addAlpha(color, 0.5);
+      ctx.lineWidth = 3 * this.viewport.scale;
+      ctx.stroke();
+
+      ctx.translate(screen.x, screen.y);
+      ctx.rotate(angle);
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(-16 * this.viewport.scale, -8 * this.viewport.scale);
+      ctx.lineTo(-12 * this.viewport.scale, 0);
+      ctx.lineTo(-16 * this.viewport.scale, 8 * this.viewport.scale);
       ctx.closePath();
-      ctx.fillStyle = m.type === 'attack' ? '#FF4040' : m.color;
-      ctx.shadowColor = m.type === 'attack' ? '#FF4040' : m.color;
-      ctx.shadowBlur = 8 * this.scale;
       ctx.fill();
-      ctx.shadowBlur = 0;
       ctx.restore();
-
-      // 잔상 도트들
-      for (let i = 1; i <= 3; i++) {
-        const tt = Math.max(0, ease - i * 0.08);
-        const tx = a.x + (b.x - a.x) * tt;
-        const ty = a.y + (b.y - a.y) * tt;
-        const ta = .3 - i * .08;
-        ctx.beginPath(); ctx.arc(tx, ty, (3 - i * .5) * this.scale, 0, Math.PI * 2);
-        ctx.fillStyle = m.color + hex(ta);
-        ctx.fill();
-      }
     }
-
-    ctx.restore();
   }
 
-  // ─── 도시 렌더링 ───
+  _drawEventPulses(ctx) {
+    const now = Date.now();
+    for (const [cityId, pulse] of this.eventCities.entries()) {
+      const anchor = this.positions[cityId];
+      if (!anchor) continue;
+      const age = (now - pulse.startedAt) / 3200;
+      const screen = this._toScreen(anchor.x, anchor.y);
+      const radius = (26 + age * 70) * this.viewport.scale;
+      const opacity = Math.max(0, 0.52 - age * 0.5);
+
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(screen.x, screen.y, radius, 0, Math.PI * 2);
+      ctx.strokeStyle = addAlpha(pulse.color, opacity);
+      ctx.lineWidth = 4 * this.viewport.scale;
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(screen.x, screen.y, radius * 0.55, 0, Math.PI * 2);
+      ctx.strokeStyle = addAlpha(pulse.color, opacity * 0.7);
+      ctx.lineWidth = 2 * this.viewport.scale;
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
 
   _drawCities(ctx, state) {
-    const entries = Object.entries(this.positions).sort(([a], [b]) => {
-      if (a === this.selectedCity) return 1;
-      if (b === this.selectedCity) return -1;
-      return 0;
-    });
+    const ordered = Object.entries(this.positions).sort(([, a], [, b]) => a.y - b.y);
 
-    for (const [id, pos] of entries) {
-      const city = state.cities[id];
+    for (const [cityId, anchor] of ordered) {
+      const city = state.cities[cityId];
       if (!city) continue;
+      const owner = city.owner || 'neutral';
+      const palette = MAP_FACTION_PALETTE[owner] || MAP_FACTION_PALETTE.neutral;
+      const capital = city.owner && city.governor && state.factions[city.owner]?.leader === city.governor;
+      const selected = cityId === this.selectedCity;
+      const hovered = cityId === this.hoveredCity;
+      const adjacent = this.selectedCity && isConnected(this.connections, cityId, this.selectedCity);
+      const position = this._toScreen(anchor.x, anchor.y);
+      const badgeOffset = this.layout.cityBadgeOffsets?.[cityId] || {};
+      const importance = city.strategic_importance || 0;
+      const baseSize = capital ? 20 : importance >= 8 ? 18 : importance >= 6 ? 16 : 14;
+      const markerSize = (baseSize + (selected ? 4 : hovered ? 2 : 0)) * this.viewport.scale;
 
-      const s = this._s(pos.x, pos.y);
-      const fac = state.factions[city.owner];
-      const isCap = fac && fac.leader && city.governor === fac.leader;
-      const r = (isCap ? CITY_R_CAP : CITY_R) * this.scale;
-      const fc = FC[city.owner] || { b: '#555', l: '#777', d: '#333', t: [85,85,85] };
-      const sel = id === this.selectedCity;
-      const hov = id === this.hoveredCity && !sel;
+      drawTerrainHalo(ctx, position.x, position.y, markerSize, city.terrain?.type, selected, hovered, importance);
 
-      // 선택 글로우
-      if (sel) {
-        const gr = r + 20 * this.scale;
-        const gg = ctx.createRadialGradient(s.x, s.y, r * .5, s.x, s.y, gr);
-        gg.addColorStop(0, `rgba(${fc.t[0]},${fc.t[1]},${fc.t[2]},0.35)`);
-        gg.addColorStop(1, `rgba(${fc.t[0]},${fc.t[1]},${fc.t[2]},0)`);
-        ctx.fillStyle = gg;
-        ctx.beginPath(); ctx.arc(s.x, s.y, gr, 0, Math.PI * 2); ctx.fill();
-
-        // 선택 링
-        ctx.beginPath(); ctx.arc(s.x, s.y, r + 5 * this.scale, 0, Math.PI * 2);
-        ctx.strokeStyle = fc.b; ctx.lineWidth = 2 * this.scale; ctx.stroke();
+      if (selected || hovered) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(position.x, position.y, markerSize + 16 * this.viewport.scale, 0, Math.PI * 2);
+        ctx.fillStyle = selected ? addAlpha(palette.edge, 0.18) : 'rgba(243, 223, 184, 0.08)';
+        ctx.fill();
+        ctx.restore();
       }
 
-      // 호버
-      if (hov) {
-        ctx.beginPath(); ctx.arc(s.x, s.y, r + 4 * this.scale, 0, Math.PI * 2);
-        ctx.strokeStyle = 'rgba(255,255,255,0.30)'; ctx.lineWidth = 1 * this.scale; ctx.stroke();
+      drawSealMarker(ctx, position.x, position.y, markerSize, palette, capital, selected || hovered);
+
+      if (capital) {
+        drawStar(ctx, position.x, position.y - markerSize - 10 * this.viewport.scale, 6 * this.viewport.scale, '#E4C87E');
       }
 
-      // 성채 (다각형)
-      const sides = isCap ? 8 : 6;
-      const a0 = -Math.PI / 2;
-
-      ctx.beginPath();
-      for (let i = 0; i < sides; i++) {
-        const a = a0 + (Math.PI * 2 * i) / sides;
-        const px = s.x + r * Math.cos(a), py = s.y + r * Math.sin(a);
-        if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
-      }
-      ctx.closePath();
-
-      // 채우기
-      const cg = ctx.createRadialGradient(s.x - r * .2, s.y - r * .2, 0, s.x, s.y, r * 1.1);
-      cg.addColorStop(0, fc.l + 'ee');
-      cg.addColorStop(0.5, fc.b + 'cc');
-      cg.addColorStop(1, fc.d + 'bb');
-      ctx.fillStyle = cg;
-      ctx.fill();
-
-      // 외벽
-      ctx.strokeStyle = fc.l;
-      ctx.lineWidth = (isCap ? 2.5 : 1.5) * this.scale;
-      ctx.stroke();
-
-      // 내벽
-      const ir = r * .55;
-      ctx.beginPath();
-      for (let i = 0; i < sides; i++) {
-        const a = a0 + (Math.PI * 2 * i) / sides;
-        const px = s.x + ir * Math.cos(a), py = s.y + ir * Math.sin(a);
-        if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
-      }
-      ctx.closePath();
-      ctx.strokeStyle = 'rgba(255,255,255,0.20)';
-      ctx.lineWidth = .5 * this.scale;
-      ctx.stroke();
-
-      // 수도 탑
-      if (isCap) {
-        for (let i = 0; i < 4; i++) {
-          const a = a0 + (Math.PI * 2 * i) / 4;
-          const tx = s.x + (r + 3 * this.scale) * Math.cos(a);
-          const ty = s.y + (r + 3 * this.scale) * Math.sin(a);
-          ctx.beginPath(); ctx.arc(tx, ty, 2.5 * this.scale, 0, Math.PI * 2);
-          ctx.fillStyle = fc.b; ctx.fill();
-          ctx.strokeStyle = fc.l; ctx.lineWidth = .7 * this.scale; ctx.stroke();
-        }
+      if (adjacent && !selected) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(position.x, position.y, markerSize + 7 * this.viewport.scale, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(228, 200, 126, 0.4)';
+        ctx.lineWidth = 1.6 * this.viewport.scale;
+        ctx.stroke();
+        ctx.restore();
       }
 
-      // 병력 텍스트
-      ctx.font = `bold ${(isCap ? 9 : 8) * this.scale}px sans-serif`;
-      ctx.fillStyle = '#fff';
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      const at = city.army >= 10000 ? Math.floor(city.army / 10000) + '만' :
-                 city.army >= 1000 ? Math.floor(city.army / 1000) + '천' : String(city.army);
-      ctx.fillText(at, s.x, s.y);
-
-      // 사기 바
-      if (city.morale !== undefined) {
-        const bw = r * 1.6, bh = 2.5 * this.scale;
-        const by = s.y + r + 2 * this.scale, bx = s.x - bw / 2;
-        ctx.fillStyle = 'rgba(0,0,0,0.5)';
-        ctx.fillRect(bx, by, bw, bh);
-        const mr = Math.max(0, Math.min(1, city.morale / 100));
-        ctx.fillStyle = mr > .6 ? fc.b : mr > .3 ? '#F5A623' : '#E74C3C';
-        ctx.fillRect(bx, by, bw * mr, bh);
+      const armyText = formatArmyBadge(city.army);
+      const badgeX = position.x + ((badgeOffset.badge?.[0] || 0) * this.viewport.scale);
+      const badgeY = position.y + markerSize + 12 * this.viewport.scale + ((badgeOffset.badge?.[1] || 0) * this.viewport.scale);
+      const labelX = position.x + ((badgeOffset.label?.[0] || 0) * this.viewport.scale);
+      const labelY = position.y + markerSize + 33 * this.viewport.scale + ((badgeOffset.label?.[1] || 0) * this.viewport.scale);
+      drawBadge(ctx, badgeX, badgeY, armyText, palette.badge, palette.badgeDark, this.viewport.scale);
+      drawLabelPlaque(ctx, labelX, labelY, city.name, selected, this.viewport.scale);
+      if (selected || hovered) {
+        drawCityTerrainStrip(
+          ctx,
+          labelX + ((badgeOffset.terrain?.[0] || 0) * this.viewport.scale),
+          labelY + 20 * this.viewport.scale + ((badgeOffset.terrain?.[1] || 0) * this.viewport.scale),
+          city,
+          selected ? palette.edge : '#D4C099',
+          this.viewport.scale
+        );
       }
 
-      // 도시 이름
-      const name = city.name;
-      ctx.font = `600 ${10 * this.scale}px "Noto Sans KR", sans-serif`;
-      const nw = ctx.measureText(name).width;
-      const ny = s.y + r + 13 * this.scale;
-      // 배경 플레이트
-      const pd = 3 * this.scale;
-      ctx.fillStyle = 'rgba(10,10,16,0.80)';
-      ctx.beginPath();
-      rr(ctx, s.x - nw / 2 - pd, ny - 6 * this.scale, nw + pd * 2, 13 * this.scale, 2 * this.scale);
-      ctx.fill();
-      // 텍스트
-      ctx.fillStyle = sel ? '#fff' : '#bbb';
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText(name, s.x, ny);
-
-      // 수도 별
-      if (isCap) {
-        ctx.font = `${8 * this.scale}px sans-serif`;
-        ctx.fillStyle = '#c9a84c';
-        ctx.fillText('★', s.x, s.y - r - 5 * this.scale);
+      if (selected) {
+        drawCommandRibbon(
+          ctx,
+          position.x + ((badgeOffset.command?.[0] || 0) * this.viewport.scale),
+          position.y - markerSize - 24 * this.viewport.scale + ((badgeOffset.command?.[1] || 0) * this.viewport.scale),
+          this.viewport.scale
+        );
+      } else if (hovered) {
+        drawHintTag(ctx, position.x, position.y - markerSize - 18 * this.viewport.scale, state.factions[owner]?.name || '무주지', this.viewport.scale);
       }
     }
   }
 
-  // ─── 비네팅 ───
+  _drawEdgeShade(ctx, width, height) {
+    const vignette = ctx.createRadialGradient(width * 0.52, height * 0.46, width * 0.12, width * 0.52, height * 0.46, width * 0.78);
+    vignette.addColorStop(0, 'rgba(0, 0, 0, 0)');
+    vignette.addColorStop(1, 'rgba(6, 4, 3, 0.46)');
+    ctx.fillStyle = vignette;
+    ctx.fillRect(0, 0, width, height);
 
-  _drawVignette(ctx, w, h) {
-    const g = ctx.createRadialGradient(w * .45, h * .45, w * .18, w * .5, h * .5, w * .78);
-    g.addColorStop(0, 'rgba(0,0,0,0)');
-    g.addColorStop(1, 'rgba(0,0,0,0.25)');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, w, h);
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.16)';
+    ctx.fillRect(0, 0, width, 18);
+    ctx.fillRect(0, height - 18, width, 18);
   }
 }
 
-// ── 유틸 ──
-function hex(a) {
-  return Math.round(Math.max(0, Math.min(1, a)) * 255).toString(16).padStart(2, '0');
+function buildRoads(scenario, layout) {
+  const lookup = new Map();
+  const cityIds = new Set(Object.keys(scenario.cities || {}));
+
+  for (const road of layout.roads || []) {
+    if (!cityIds.has(road.from) || !cityIds.has(road.to)) continue;
+    const key = pairKey(road.from, road.to);
+    lookup.set(key, normalizeRoad(road, scenario, road.from, road.to));
+  }
+
+  for (const [from, to] of scenario.connections || []) {
+    const key = pairKey(from, to);
+    if (!lookup.has(key)) {
+      lookup.set(key, inferRoad(from, to, scenario, layout));
+    }
+  }
+
+  return [...lookup.values()];
 }
-function rr(ctx, x, y, w, h, r) {
-  ctx.moveTo(x + r, y);
-  ctx.lineTo(x + w - r, y); ctx.quadraticCurveTo(x + w, y, x + w, y + r);
-  ctx.lineTo(x + w, y + h - r); ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
-  ctx.lineTo(x + r, y + h); ctx.quadraticCurveTo(x, y + h, x, y + h - r);
-  ctx.lineTo(x, y + r); ctx.quadraticCurveTo(x, y, x + r, y);
+
+function projectLegacyAnchors(cityPositions, safeBounds) {
+  const anchors = {};
+  const usableWidth = safeBounds.right - safeBounds.left;
+  const usableHeight = safeBounds.bottom - safeBounds.top;
+
+  for (const [cityId, pos] of Object.entries(cityPositions || {})) {
+    anchors[cityId] = {
+      x: Math.round(safeBounds.left + (pos.x / LEGACY_W) * usableWidth),
+      y: Math.round(safeBounds.top + (pos.y / LEGACY_H) * usableHeight),
+    };
+  }
+
+  return anchors;
+}
+
+function generateAutoBadgeOffsets(anchors, safeBounds) {
+  const patterns = [
+    { badge: [0, 0], label: [0, 0], command: [0, 0], terrain: [0, 0] },
+    { badge: [24, -4], label: [30, -44], command: [34, -14], terrain: [34, -20] },
+    { badge: [-24, -4], label: [-30, -44], command: [-34, -14], terrain: [-34, -20] },
+    { badge: [28, 6], label: [32, -14], command: [34, -28], terrain: [32, 6] },
+    { badge: [-28, 6], label: [-32, -14], command: [-34, -28], terrain: [-32, 6] },
+    { badge: [0, 8], label: [0, 14], command: [0, -30], terrain: [0, 24] },
+  ];
+  const entries = Object.entries(anchors);
+  const offsets = {};
+
+  for (const [cityId, anchor] of entries) {
+    let bestPattern = patterns[0];
+    let bestScore = -Infinity;
+
+    for (const pattern of patterns) {
+      const labelPoint = {
+        x: anchor.x + pattern.label[0],
+        y: anchor.y + 30 + pattern.label[1],
+      };
+      const badgePoint = {
+        x: anchor.x + pattern.badge[0],
+        y: anchor.y + 14 + pattern.badge[1],
+      };
+
+      let score = 0;
+      for (const [otherId, otherAnchor] of entries) {
+        if (otherId === cityId) continue;
+        const labelDistance = Math.hypot(labelPoint.x - otherAnchor.x, labelPoint.y - otherAnchor.y);
+        const badgeDistance = Math.hypot(badgePoint.x - otherAnchor.x, badgePoint.y - otherAnchor.y);
+        score += Math.min(labelDistance, 120) * 0.7 + Math.min(badgeDistance, 100) * 0.3;
+        if (labelDistance < 68) score -= 140;
+        if (badgeDistance < 44) score -= 90;
+      }
+
+      if (labelPoint.x < safeBounds.left + 40 || labelPoint.x > safeBounds.right - 40) score -= 120;
+      if (labelPoint.y < safeBounds.top + 18 || labelPoint.y > safeBounds.bottom - 20) score -= 120;
+      if (badgePoint.x < safeBounds.left + 24 || badgePoint.x > safeBounds.right - 24) score -= 80;
+      if (badgePoint.y < safeBounds.top + 18 || badgePoint.y > safeBounds.bottom - 18) score -= 80;
+
+      if (score > bestScore) {
+        bestScore = score;
+        bestPattern = pattern;
+      }
+    }
+
+    offsets[cityId] = bestPattern;
+  }
+
+  return offsets;
+}
+
+function drawPolygon(ctx, points, viewport) {
+  const first = projectPoint(points[0], viewport);
+  ctx.beginPath();
+  ctx.moveTo(first.x, first.y);
+  for (let i = 1; i < points.length; i += 1) {
+    const point = projectPoint(points[i], viewport);
+    ctx.lineTo(point.x, point.y);
+  }
+  ctx.closePath();
+}
+
+function drawPolyline(ctx, points, viewport) {
+  const first = projectPoint(points[0], viewport);
+  ctx.moveTo(first.x, first.y);
+  for (let i = 1; i < points.length; i += 1) {
+    const point = projectPoint(points[i], viewport);
+    ctx.lineTo(point.x, point.y);
+  }
+}
+
+function drawHatching(ctx, points, viewport, color, opacity) {
+  const extent = getExtent(points);
+  const padding = 40;
+  ctx.save();
+  ctx.strokeStyle = addAlpha(color, opacity);
+  ctx.lineWidth = 1 * viewport.scale;
+  const spacing = 28 * viewport.scale;
+  const left = (extent.minX - padding) * viewport.scale + viewport.offsetX;
+  const right = (extent.maxX + padding) * viewport.scale + viewport.offsetX;
+  const top = (extent.minY - padding) * viewport.scale + viewport.offsetY;
+  const bottom = (extent.maxY + padding) * viewport.scale + viewport.offsetY;
+
+  for (let x = left - (bottom - top); x < right + (bottom - top); x += spacing) {
+    ctx.beginPath();
+    ctx.moveTo(x, bottom);
+    ctx.lineTo(x + (bottom - top), top);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function getExtent(points) {
+  let minX = Infinity;
+  let maxX = -Infinity;
+  let minY = Infinity;
+  let maxY = -Infinity;
+  for (const [x, y] of points) {
+    minX = Math.min(minX, x);
+    maxX = Math.max(maxX, x);
+    minY = Math.min(minY, y);
+    maxY = Math.max(maxY, y);
+  }
+  return {
+    minX,
+    maxX,
+    minY,
+    maxY,
+    width: maxX - minX,
+    height: maxY - minY,
+  };
+}
+
+function getCentroid(points) {
+  let area = 0;
+  let x = 0;
+  let y = 0;
+
+  for (let i = 0; i < points.length; i += 1) {
+    const [x0, y0] = points[i];
+    const [x1, y1] = points[(i + 1) % points.length];
+    const cross = x0 * y1 - x1 * y0;
+    area += cross;
+    x += (x0 + x1) * cross;
+    y += (y0 + y1) * cross;
+  }
+
+  if (!area) return { x: points[0][0], y: points[0][1] };
+  area *= 0.5;
+  return {
+    x: x / (6 * area),
+    y: y / (6 * area),
+  };
+}
+
+function getRoadControl(from, to, grade = 'normal', explicitCurve) {
+  const midX = (from.x + to.x) / 2;
+  const midY = (from.y + to.y) / 2;
+  const dx = to.x - from.x;
+  const dy = to.y - from.y;
+  const length = Math.hypot(dx, dy) || 1;
+  const nx = -dy / length;
+  const ny = dx / length;
+  const curve = explicitCurve ?? (grade === 'major' ? 0.09 : 0.05);
+  const bias = Math.sin((from.x + to.y) * 0.01) >= 0 ? 1 : -1;
+
+  return {
+    x: midX + nx * length * curve * bias,
+    y: midY + ny * length * curve * bias,
+  };
+}
+
+function inferRoad(from, to, scenario, layout) {
+  const kind = getConnectionKind(scenario, from, to);
+  const cityA = scenario.cities?.[from];
+  const cityB = scenario.cities?.[to];
+  const strategicScore = (cityA?.strategic_importance || 0) + (cityB?.strategic_importance || 0);
+  let grade = kind === 'river' ? 'major' : strategicScore >= 14 ? 'major' : 'normal';
+  if (kind === 'mountain_pass' || kind === 'desert_road') grade = 'normal';
+
+  const anchorA = layout.cityAnchors?.[from];
+  const anchorB = layout.cityAnchors?.[to];
+  const length = anchorA && anchorB ? Math.hypot(anchorA.x - anchorB.x, anchorA.y - anchorB.y) : 120;
+  const curve = kind === 'river'
+    ? 0.14
+    : kind === 'mountain_pass'
+      ? 0.18
+      : length > 250
+        ? 0.1
+        : 0.06;
+
+  return normalizeRoad({ from, to, grade, kind, curve }, scenario, from, to);
+}
+
+function normalizeRoad(road, scenario, from, to) {
+  const kind = road.kind || getConnectionKind(scenario, from, to);
+  return {
+    ...road,
+    kind,
+    grade: road.grade || (kind === 'river' ? 'major' : 'normal'),
+  };
+}
+
+function getConnectionKind(scenario, from, to) {
+  return scenario.connectionTerrains?.[`${from}_${to}`]
+    || scenario.connectionTerrains?.[`${to}_${from}`]
+    || 'road';
+}
+
+function projectPoint(point, viewport) {
+  return {
+    x: point[0] * viewport.scale + viewport.offsetX,
+    y: point[1] * viewport.scale + viewport.offsetY,
+  };
+}
+
+function evaluateQuadratic(p0, p1, p2, t) {
+  const inv = 1 - t;
+  return {
+    x: inv * inv * p0.x + 2 * inv * t * p1.x + t * t * p2.x,
+    y: inv * inv * p0.y + 2 * inv * t * p1.y + t * t * p2.y,
+  };
+}
+
+function drawTerrainHalo(ctx, x, y, markerSize, terrainType, selected, hovered, importance) {
+  const accent = getTerrainAccent(terrainType);
+  const radius = markerSize + (importance >= 8 ? 10 : 6);
+  const alpha = selected ? 0.28 : hovered ? 0.2 : importance >= 8 ? 0.12 : 0.08;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(x, y, radius, 0, Math.PI * 2);
+  ctx.fillStyle = addAlpha(accent, alpha);
+  ctx.fill();
+  ctx.strokeStyle = addAlpha(accent, selected ? 0.42 : 0.18);
+  ctx.lineWidth = (importance >= 8 ? 1.8 : 1.2) * 1;
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawSealMarker(ctx, x, y, size, palette, capital, focused) {
+  const outer = size;
+  const inner = size * 0.78;
+
+  ctx.save();
+  ctx.translate(x, y);
+
+  ctx.beginPath();
+  hexPath(ctx, outer);
+  ctx.fillStyle = '#21160F';
+  ctx.fill();
+
+  ctx.beginPath();
+  hexPath(ctx, outer);
+  ctx.strokeStyle = focused ? '#F0D8A0' : addAlpha(palette.edge, 0.82);
+  ctx.lineWidth = focused ? 2.4 : 1.8;
+  ctx.stroke();
+
+  ctx.beginPath();
+  hexPath(ctx, inner);
+  ctx.fillStyle = palette.badge;
+  ctx.fill();
+
+  ctx.beginPath();
+  hexPath(ctx, inner * 0.58);
+  ctx.fillStyle = 'rgba(255, 248, 236, 0.16)';
+  ctx.fill();
+
+  if (capital) {
+    ctx.beginPath();
+    ctx.arc(0, 0, inner * 0.26, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255, 244, 214, 0.75)';
+    ctx.fill();
+  }
+
+  ctx.restore();
+}
+
+function hexPath(ctx, radius) {
+  const angle = Math.PI / 3;
+  ctx.moveTo(Math.cos(-Math.PI / 2) * radius, Math.sin(-Math.PI / 2) * radius);
+  for (let i = 1; i <= 6; i += 1) {
+    ctx.lineTo(
+      Math.cos(-Math.PI / 2 + angle * i) * radius,
+      Math.sin(-Math.PI / 2 + angle * i) * radius,
+    );
+  }
+  ctx.closePath();
+}
+
+function drawStar(ctx, x, y, radius, color) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.beginPath();
+  for (let i = 0; i < 10; i += 1) {
+    const step = i % 2 === 0 ? radius : radius * 0.42;
+    const angle = -Math.PI / 2 + (Math.PI / 5) * i;
+    const px = Math.cos(angle) * step;
+    const py = Math.sin(angle) * step;
+    if (i === 0) ctx.moveTo(px, py);
+    else ctx.lineTo(px, py);
+  }
+  ctx.closePath();
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.restore();
+}
+
+function drawBadge(ctx, x, y, text, fill, border, scale) {
+  ctx.save();
+  ctx.font = `${Math.max(10, 11 * scale)}px "Noto Sans KR", sans-serif`;
+  const width = Math.max(34 * scale, ctx.measureText(text).width + 16 * scale);
+  const height = 16 * scale;
+  drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 7 * scale);
+  ctx.fillStyle = '#1B140F';
+  ctx.fill();
+  ctx.strokeStyle = addAlpha(border, 0.72);
+  ctx.lineWidth = 1.2 * scale;
+  ctx.stroke();
+  drawRoundedRect(ctx, x - width / 2 + 2 * scale, y - height / 2 + 2 * scale, width - 4 * scale, height - 4 * scale, 6 * scale);
+  ctx.fillStyle = addAlpha(fill, 0.9);
+  ctx.fill();
+  ctx.fillStyle = '#FFF8EA';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y + 0.5 * scale);
+  ctx.restore();
+}
+
+function drawLabelPlaque(ctx, x, y, text, selected, scale) {
+  ctx.save();
+  ctx.font = `${Math.max(11, 13 * scale)}px "Noto Serif KR", serif`;
+  const width = Math.max(48 * scale, ctx.measureText(text).width + 18 * scale);
+  const height = 20 * scale;
+  drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 6 * scale);
+  ctx.fillStyle = selected ? 'rgba(33, 23, 16, 0.92)' : 'rgba(23, 16, 11, 0.84)';
+  ctx.fill();
+  ctx.strokeStyle = selected ? 'rgba(231, 210, 166, 0.54)' : 'rgba(192, 161, 104, 0.22)';
+  ctx.lineWidth = 1 * scale;
+  ctx.stroke();
+  ctx.fillStyle = selected ? '#FFF3D3' : '#F0E4CB';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y + 0.5 * scale);
+  ctx.restore();
+}
+
+function drawCommandRibbon(ctx, x, y, scale) {
+  ctx.save();
+  ctx.font = `${Math.max(10, 11 * scale)}px "Noto Sans KR", sans-serif`;
+  const text = '명령';
+  const width = ctx.measureText(text).width + 18 * scale;
+  const height = 18 * scale;
+  drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 8 * scale);
+  ctx.fillStyle = 'rgba(212, 179, 108, 0.95)';
+  ctx.fill();
+  ctx.fillStyle = '#2B190D';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y + 0.5 * scale);
+  ctx.restore();
+}
+
+function drawHintTag(ctx, x, y, text, scale) {
+  ctx.save();
+  ctx.font = `${Math.max(10, 11 * scale)}px "Noto Sans KR", sans-serif`;
+  const width = ctx.measureText(text).width + 16 * scale;
+  const height = 18 * scale;
+  drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 8 * scale);
+  ctx.fillStyle = 'rgba(24, 18, 12, 0.84)';
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(214, 195, 157, 0.28)';
+  ctx.lineWidth = 1 * scale;
+  ctx.stroke();
+  ctx.fillStyle = '#F3E8CD';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y + 0.5 * scale);
+  ctx.restore();
+}
+
+function drawCityTerrainStrip(ctx, x, y, city, borderColor, scale) {
+  const terrainLabel = TERRAIN_SHORT_LABEL[city.terrain?.type] || '지형';
+  const agri = formatCityStat(city.agriculture);
+  const comm = formatCityStat(city.commerce);
+  const defense = formatCityStat(city.defense);
+  const importance = city.strategic_importance ? `요충 ${city.strategic_importance}` : null;
+  const text = [terrainLabel, `농 ${agri}`, `상 ${comm}`, `방 ${defense}`, importance].filter(Boolean).join(' · ');
+
+  ctx.save();
+  ctx.font = `${Math.max(9, 10 * scale)}px "Noto Sans KR", sans-serif`;
+  const width = Math.max(96 * scale, ctx.measureText(text).width + 18 * scale);
+  const height = 16 * scale;
+  drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 7 * scale);
+  ctx.fillStyle = 'rgba(20, 14, 10, 0.84)';
+  ctx.fill();
+  ctx.strokeStyle = addAlpha(borderColor, 0.46);
+  ctx.lineWidth = 1 * scale;
+  ctx.stroke();
+  ctx.fillStyle = '#EEDDB9';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x, y + 0.5 * scale);
+  ctx.restore();
+}
+
+function drawRoundedRect(ctx, x, y, width, height, radius) {
+  ctx.beginPath();
+  ctx.moveTo(x + radius, y);
+  ctx.arcTo(x + width, y, x + width, y + height, radius);
+  ctx.arcTo(x + width, y + height, x, y + height, radius);
+  ctx.arcTo(x, y + height, x, y, radius);
+  ctx.arcTo(x, y, x + width, y, radius);
+  ctx.closePath();
+}
+
+function formatArmyBadge(value) {
+  if (value >= 10000) return `${(value / 10000).toFixed(1)}만`;
+  if (value >= 1000) return `${Math.round(value / 1000)}천`;
+  return String(value);
+}
+
+function pairKey(a, b) {
+  return [a, b].sort().join(':');
+}
+
+function getRoadDescriptor(road, emphasis = 'ambient') {
+  const basePreset = ROAD_STYLE[road.grade] || ROAD_STYLE.normal;
+  const emphasisAlpha = emphasis === 'focused' ? 1 : emphasis === 'context' ? 0.78 : 0.46;
+
+  if (road.kind === 'river') {
+    return {
+      base: `rgba(34, 58, 76, ${0.38 * emphasisAlpha})`,
+      line: emphasis === 'focused' ? 'rgba(196, 226, 241, 0.92)' : `rgba(150, 194, 215, ${0.52 * emphasisAlpha})`,
+      glow: `rgba(135, 187, 211, ${0.22 * emphasisAlpha})`,
+      width: Math.max(5, basePreset.width - 1),
+      lineWidthRatio: 0.34,
+      baseDash: [],
+      lineDash: [10, 7],
+    };
+  }
+
+  if (road.kind === 'mountain_pass') {
+    return {
+      base: `rgba(25, 20, 15, ${0.52 * emphasisAlpha})`,
+      line: emphasis === 'focused' ? 'rgba(234, 214, 168, 0.84)' : `rgba(182, 164, 124, ${0.4 * emphasisAlpha})`,
+      glow: `rgba(214, 188, 137, ${0.14 * emphasisAlpha})`,
+      width: Math.max(4, basePreset.width - 1.6),
+      lineWidthRatio: 0.3,
+      baseDash: [],
+      lineDash: [7, 6],
+    };
+  }
+
+  if (road.kind === 'desert_road') {
+    return {
+      base: `rgba(52, 37, 19, ${0.44 * emphasisAlpha})`,
+      line: emphasis === 'focused' ? 'rgba(240, 205, 140, 0.9)' : `rgba(208, 176, 117, ${0.42 * emphasisAlpha})`,
+      glow: `rgba(225, 182, 102, ${0.14 * emphasisAlpha})`,
+      width: Math.max(4, basePreset.width - 1),
+      lineWidthRatio: 0.34,
+      baseDash: [],
+      lineDash: [11, 8],
+    };
+  }
+
+  return {
+    base: basePreset.base.replace(/0\.\d+\)$/, `${0.55 * emphasisAlpha})`),
+    line: emphasis === 'focused' ? 'rgba(246, 227, 176, 0.82)' : addAlpha(basePreset.line, 0.82 * emphasisAlpha),
+    glow: addAlpha(basePreset.glow, 0.92 * emphasisAlpha),
+    width: basePreset.width,
+    lineWidthRatio: 0.42,
+    baseDash: [],
+    lineDash: [],
+  };
+}
+
+function getFrontlinePath(frontlineAnchors, cityA, cityB) {
+  return (frontlineAnchors || []).find((entry) => {
+    const pair = entry.pair || [];
+    return (pair[0] === cityA && pair[1] === cityB) || (pair[0] === cityB && pair[1] === cityA);
+  })?.points || null;
+}
+
+function isConnected(connections, cityA, cityB) {
+  return connections.some(([a, b]) =>
+    (a === cityA && b === cityB) || (a === cityB && b === cityA)
+  );
+}
+
+function addAlpha(color, alpha) {
+  if (color.startsWith('rgba') || color.startsWith('rgb')) {
+    const body = color.slice(color.indexOf('(') + 1, color.lastIndexOf(')'));
+    const parts = body.split(',').map(part => part.trim());
+    return `rgba(${parts.slice(0, 3).join(', ')}, ${alpha})`;
+  }
+  if (color.startsWith('#')) {
+    const normalized = color.length === 4
+      ? `#${color[1]}${color[1]}${color[2]}${color[2]}${color[3]}${color[3]}`
+      : color;
+    const r = parseInt(normalized.slice(1, 3), 16);
+    const g = parseInt(normalized.slice(3, 5), 16);
+    const b = parseInt(normalized.slice(5, 7), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+  return color;
+}
+
+const TERRAIN_SHORT_LABEL = {
+  plains: '평야',
+  mountain: '산지',
+  forest: '산림',
+  river: '수변',
+  coastal: '해안',
+  desert: '사막',
+};
+
+function getTerrainAccent(terrainType) {
+  switch (terrainType) {
+    case 'mountain':
+      return '#98836B';
+    case 'forest':
+      return '#7D9D65';
+    case 'river':
+      return '#76A8C2';
+    case 'coastal':
+      return '#89B8C6';
+    case 'desert':
+      return '#C6A266';
+    default:
+      return '#B79E74';
+  }
+}
+
+function formatCityStat(value) {
+  return Number.isFinite(value) ? Math.round(value) : '—';
 }

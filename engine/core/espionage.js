@@ -6,6 +6,8 @@
 
 import { hasSkill } from './skills.js';
 import { getBuildingEffects } from './buildings.js';
+import { getTechEffects } from './tech-tree.js';
+import { addExperienceFromSource } from './growth.js';
 
 // ─── 첩보 행동 정의 ───
 
@@ -76,6 +78,7 @@ export function calculateEspionageChance(state, spyId, targetCityId, actionType)
   }
 
   const factors = {};
+  const techEffects = getTechEffects(state, spy.faction);
 
   // 기본 성공률
   let chance = action.successBase;
@@ -90,6 +93,18 @@ export function calculateEspionageChance(state, spyId, targetCityId, actionType)
   if (hasSkill(spy, 'spy_master')) {
     chance += 0.20;
     factors.spyMasterSkill = 0.20;
+  }
+
+  if (techEffects.espionageBonus) {
+    chance += techEffects.espionageBonus;
+    factors.tech = techEffects.espionageBonus;
+  }
+
+  const tactician = state.getTactician ? state.getTactician(spy.faction) : null;
+  if (tactician) {
+    const tacticianBonus = Math.min(0.06, Math.max(0, (tactician.stats.intellect - 70) * 0.0012));
+    chance += tacticianBonus;
+    factors.tactician = tacticianBonus;
   }
 
   // 대상 도시 태수(governor) 지력 방어 (-0.3% per intellect)
@@ -171,6 +186,7 @@ export function executeEspionage(state, spyId, targetCityId, actionType) {
 // ─── 성공 처리 ───
 
 function _applySuccess(state, spy, spyId, city, targetCityId, actionType, action, chance, factors) {
+  addExperienceFromSource(state, spyId, 'espionage_success');
   const result = {
     success: true,
     action: actionType,

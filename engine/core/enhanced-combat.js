@@ -1,4 +1,5 @@
 import { getSkillEffects, hasSkill } from './skills.js';
+import { getTechEffects } from './tech-tree.js';
 
 // EnhancedCombat — 다중 라운드 전술 전투
 //
@@ -148,6 +149,8 @@ export function resolveEnhancedCombat(attacker, defender, options = {}, state = 
 
   const atkLead = attacker.generals?.[0] || { stats: { command: 50, war: 50, intellect: 50, charisma: 50 } };
   const defLead = defender.generals?.[0] || { stats: { command: 50, war: 50, intellect: 50, charisma: 50 } };
+  const atkTech = state && attacker.factionId ? getTechEffects(state, attacker.factionId) : {};
+  const defTech = state && defender.factionId ? getTechEffects(state, defender.factionId) : {};
 
   const rounds = [];
   let duelOccurred = false;
@@ -197,6 +200,15 @@ export function resolveEnhancedCombat(attacker, defender, options = {}, state = 
     if (hasSkill(defLead, 'naval')) {
       defFormBonus *= (1 + getSkillEffects(defLead.skills, 'river_combat'));
     }
+  }
+
+  if (terrain === 'plains') {
+    atkFormBonus *= 1 + (atkTech.plainsBonus || 0);
+    defFormBonus *= 1 + (defTech.plainsBonus || 0);
+  }
+  if (terrain === 'river') {
+    atkFormBonus *= 1 + (atkTech.navalBonus || 0);
+    defFormBonus *= 1 + (defTech.navalBonus || 0);
   }
 
   for (let round = 1; round <= maxRounds; round++) {
@@ -285,11 +297,13 @@ export function resolveEnhancedCombat(attacker, defender, options = {}, state = 
       * (atkMorale / 100)
       * (1 + atkLead.stats.command / 200)
       * (1 + atkLead.stats.war / 300)
+      * (1 + (atkTech.combatAttack || 0) + (atkTech.rangedAttack || 0) + (atkTech.cavalryBonus || 0))
       * terrainMod.attack
       * atkFormation.attackMod
       * atkFormBonus;
 
-    const defBonus = 1 + (defender.defense || 50) / 200;
+    const siegeOffset = Math.max(0, (atkTech.siegeBonus || 0) - (defTech.siegeBonus || 0) * 0.5);
+    const defBonus = Math.max(1, 1 + (defender.defense || 50) / 200 - siegeOffset);
     const defPower = defArmy
       * (defMorale / 100)
       * (1 + defLead.stats.command / 200)

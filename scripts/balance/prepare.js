@@ -19,9 +19,10 @@ const ROOT = join(__dirname, '../..');
 
 // ── 게임 엔진 임포트 (DOM 의존성 없는 것만) ──
 import { GameState } from '../../engine/core/game-state.js';
-import { executeTurnEvents, endTurn } from '../../engine/core/turn-loop.js';
+import { executeTurnEvents, processPlayerChoice, endTurn } from '../../engine/core/turn-loop.js';
 import { decideAndExecute } from '../../engine/ai/faction-ai.js';
 import { loadConfig } from '../../engine/core/balance-config.js';
+import { filterEventsForScenario } from '../../engine/data/loader.js';
 
 // ── train.js에서 밸런스 상수 임포트 ──
 import { BALANCE } from './train.js';
@@ -58,8 +59,9 @@ async function main() {
   const scenario = JSON.parse(scenarioRaw);
   const eventsRaw = await readFile(join(ROOT, 'data/events/all-events.json'), 'utf-8');
   const allEventsData = JSON.parse(eventsRaw);
-  const events = Array.isArray(allEventsData) ? allEventsData :
+  const rawEvents = Array.isArray(allEventsData) ? allEventsData :
     allEventsData.events || Object.values(allEventsData);
+  const events = filterEventsForScenario(rawEvents, scenario.year, scenario.year + 17);
 
   if (VERBOSE) console.error(`[prepare] ${SIMS} sims × max ${MAX_TURNS} turns`);
   const startTime = Date.now();
@@ -113,7 +115,9 @@ function simulate(scenario, events, maxTurns) {
     const playerEvents = executeTurnEvents(state, events);
     for (const event of playerEvents) {
       if (event.choices && event.choices.length > 0) {
-        // headless: 첫 번째 선택지 자동 선택
+        processPlayerChoice(state, event, event.choices[0]?.id || null);
+      } else {
+        processPlayerChoice(state, event, null);
       }
       firedSet.add(event.id);
     }
