@@ -6,57 +6,6 @@
 
 ---
 
-## 퀵스타트
-
-### 필수 조건
-- **Node.js 18+** (ESM 사용). 확인: `node -v`
-- **Git**
-
-### 설치 & 실행
-
-```bash
-# 1. 클론 (100MB+ raw 데이터 포함, 1~2분 걸릴 수 있음)
-git clone https://github.com/PKCrox/wdttgukji.git
-cd wdttgukji
-
-# 2. 의존성 설치
-npm install
-
-# 3. 로컬 게임 서버 실행
-npm run dev
-# → http://localhost:3001 에서 게임 플레이
-```
-
-프로덕션 배포판: [wdttgukji.vercel.app](https://wdttgukji.vercel.app)
-
-### 장군이 (기획 리드) 워크플로우
-
-```bash
-# djg 브랜치에서 작업
-git checkout djg
-git merge main              # main 최신 반영 (현재 11커밋 뒤처짐)
-
-# 작업 후 커밋 & 푸시
-git add -A
-git commit -m "뭘 했는지 한줄"
-git push origin djg
-
-# GitHub에서 djg → main PR 생성
-```
-
-**주요 작업 파일**:
-| 작업 | 경로 | 설명 |
-|---|---|---|
-| 게임 플레이 | `http://localhost:3001` | 로컬 서버 or Vercel |
-| soul.md 검수 | `data/characters/*.soul.md` | 426명 캐릭터 성격/가치관 |
-| soul-data 확인 | `data/processed/soul-data/*.txt` | 427명 14소스 퓨전 원본 |
-| 밸런스 조정 | `scripts/balance/train.js` | 밸런스 상수 (~120개 파라미터) |
-| 밸런스 목표 | `scripts/balance/program.md` | 에이전트 지시문 |
-| 이벤트 | `data/events/all-events.json` | 337개 게임 이벤트 |
-| 게임 엔진 | `engine/` | 코어 로직 (건드리기 전 상의) |
-
----
-
 ## 프로젝트 배경
 
 코에이 테크모는 삼국지 시리즈를 1985년부터 40년간 개발해왔다. 14편의 넘버링 타이틀과 수십 개의 파워업키트를 거치며 검증된 게임 메카닉(내정, 전투, 외교, 관계, 이벤트 시스템)은 역사 전략 게임의 사실상 표준이 되었다.
@@ -856,3 +805,55 @@ wdttgukji/
 │   └── three-kingdoms/     # 삼국지 테마 데이터
 └── public/                 # 프론트엔드 (wdttgukji.vercel.app)
 ```
+
+---
+
+## 퀵스타트
+
+### 필수 조건
+- **Node.js 18+** (ESM 사용). 확인: `node -v`
+- **Git**
+
+### 설치 & 실행
+
+```bash
+# 1. 클론 (100MB+ raw 데이터 포함, 1~2분 걸릴 수 있음)
+git clone https://github.com/PKCrox/wdttgukji.git
+cd wdttgukji
+
+# 2. 의존성 설치
+npm install
+
+# 3. 로컬 게임 서버 실행
+npm run dev
+# → http://localhost:3001 에서 게임 플레이
+```
+
+프로덕션 배포판: [wdttgukji.vercel.app](https://wdttgukji.vercel.app)
+
+### 장군이 (기획 리드) 워크플로우
+
+장군이는 `djg` 브랜치에서 작업하고, 준비되면 `main`에 PR을 만든다.
+
+```bash
+# 매 세션 시작 시
+git checkout djg
+git pull origin main          # main의 최신 변경 받기
+
+# 작업 후 커밋
+git add -A
+git commit -m "작업 내용"
+git push origin djg
+
+# GitHub에서 djg → main PR 생성
+```
+
+#### 주요 작업 파일
+
+| 작업 | 파일 | 설명 |
+|---|---|---|
+| soul.md 검수/수정 | `data/characters/*.soul.md` | 캐릭터 성격, 가치관, 행동 패턴 |
+| 이벤트 기획 | `data/events/all-events.json` | 337개 이벤트, 선택지, 트리거 |
+| 밸런스 상수 | `scripts/balance/train.js` | 전투/경제/외교/AI 파라미터 |
+| 밸런스 목표 | `scripts/balance/program.md` | "뭘 원하는지" 지시문 |
+| 시나리오 | `engine/data/scenarios/*.json` | 208 적벽대전 등 |
