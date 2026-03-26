@@ -15,7 +15,7 @@ git pull origin main
 
 ```bash
 git rev-parse --short HEAD
-# 기대값: bad53c8
+# 기대값: b0213da 이상
 ```
 
 ## 2. 런타임 준비
@@ -86,10 +86,11 @@ npm run passes:runtime:health
 - 런타임 개요: [`agentic-runtime-2.0.md`](/Users/pkc/wdttgukji/docs/agentic-runtime-2.0.md)
 - 에이전트 레지스트리: [`agent-registry-summary.md`](/Users/pkc/wdttgukji/docs/agent-registry-summary.md)
 - 앱 표면 변경 계약: [`app-surface-mutation-contract.md`](/Users/pkc/wdttgukji/docs/app-surface-mutation-contract.md)
-- 최근 장기 런: [`long-run-20260324-235741`](/Users/pkc/wdttgukji/runs/long-runs/long-run-20260324-235741)
+- 장기 런 요약: [`long-run-verification.md`](/Users/pkc/wdttgukji/docs/long-run-verification.md)
 
 ## 8. 주의
 
 - `public/`와 orchestration 변경이 큰 커밋으로 이미 들어가 있으니, 새 작업은 작은 브랜치로 나누는 편이 안전하다.
-- `runs/` 아래 산출물은 로컬 상태에 따라 달라질 수 있다.
+- `runs/` 아래 산출물은 로컬 상태에 따라 달라지고, 일반 clone에는 없을 수 있다.
+- 따라서 “146 batch long-run 완료” 같은 주장 검증은 `runs/`가 아니라 [`long-run-verification.md`](/Users/pkc/wdttgukji/docs/long-run-verification.md)를 기준으로 본다.
 - preview 배포는 필요할 때만 하고, 파일 수가 많으면 `--archive=tgz`를 사용한다.

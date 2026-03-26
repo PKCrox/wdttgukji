@@ -459,8 +459,9 @@ Territory:
 - 현재 플레이 가능한 대상은 **208 적벽대전** 단일 시나리오다.
 - 웹 데모 **우당탕탕삼국지**는 내부 실험용 **수직 슬라이스(vertical slice)** 단계까지 진입했다.
 - 공장 계층은 이제 단순 스크립트 묶음이 아니라 **adaptive runner + durable runtime skeleton + agent registry evolution** 구조로 올라왔다.
-- 장기 운영은 **factory 4시간 → game 4시간** split long-run으로 검증되었다.
-- 가장 최근 장기 런 [`long-run-20260324-235741`](runs/long-runs/long-run-20260324-235741)는 **146 batch**를 끝까지 완료했고, `factory 102 / game 44` 배치가 모두 정상 종료됐다.
+- 장기 운영은 **factory 4시간 → game 4시간** split long-run으로 검증했다.
+- 가장 최근 장기 런 요약은 [`long-run-verification.md`](docs/long-run-verification.md)에 남겨뒀다.
+- 주의: `runs/`는 로컬 산출물이라 일반 clone에는 포함되지 않을 수 있다. 따라서 clone만으로는 long-run 완료를 직접 재현하지 못할 수 있다.
 - 이미 확보한 강점:
   - 전쟁 루프가 실제로 열리고 끝나는 수준까지 정비되었다.
   - 내정/연구/건설이 턴 결산과 UI에 연결되었다.
@@ -866,7 +867,8 @@ npm run passes:long-run -- --duration-hours 8 --split-factory-game --batch-itera
 
 참고:
 - 장기 런 결과는 `runs/long-runs/` 아래에 저장된다.
-- 가장 최근 검증된 split 장기 런은 [`runs/long-runs/long-run-20260324-235741`](runs/long-runs/long-run-20260324-235741)이다.
+- 가장 최근 검증된 split 장기 런의 요약은 [`docs/long-run-verification.md`](docs/long-run-verification.md)에 남긴다.
+- `runs/long-runs/*`는 로컬 산출물이라 일반 clone에는 비어 있을 수 있다.
 - durable runtime 실런은 별도 env가 필요하다: `WDTT_RUNTIME_DATABASE_URL`, `WDTT_RUNTIME_REDIS_URL`
 
 프로덕션 배포판: [wdttgukji.vercel.app](https://wdttgukji.vercel.app)
