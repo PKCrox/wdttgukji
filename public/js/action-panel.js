@@ -24,6 +24,7 @@ import { previewFoodTransport, transportFood, previewFoodTrade, tradeFood, getTr
 import { addExperienceFromSource } from '../../engine/core/growth.js';
 import { ITEMS } from '../../engine/core/items.js';
 import { COMMAND_SCENES, getFactionSealLabel } from './presentation-meta.js';
+import { getOpeningActBeat } from './campaign-config.js';
 
 const SCENE_ORDER = ['government', 'military', 'diplomacy', 'personnel'];
 
@@ -32,6 +33,7 @@ export class ActionPanel {
     this.modal = document.getElementById('command-modal');
     this.panel = document.getElementById('action-panel');
     this.contentArea = document.getElementById('action-panel-content');
+    this.stageStrip = document.getElementById('command-stage-strip');
     this.buttons = document.getElementById('action-buttons');
     this.tabBar = document.getElementById('action-tab-bar');
     this.titleEl = document.getElementById('action-panel-title');
@@ -48,6 +50,9 @@ export class ActionPanel {
     this._state = null;
     this._pendingAction = null;
     this._entries = [];
+    this._openingContext = { active: false, turn: 1, factionId: null };
+    this._previewTransitionTimer = null;
+    this._sceneTransitionTimer = null;
 
     document.getElementById('action-panel-close').addEventListener('click', () => this.hide());
     document.getElementById('command-modal-backdrop').addEventListener('click', () => this.hide());
@@ -85,11 +90,22 @@ export class ActionPanel {
     this._render(cityId, state);
   }
 
+  setOpeningContext(context = {}) {
+    this._openingContext = {
+      active: !!context.active,
+      turn: context.turn || 1,
+      factionId: context.factionId || null,
+    };
+  }
+
   open(cityId = this._cityId, state = this._state, sceneKey = this._activeScene) {
     if (!cityId || !state?.cities?.[cityId]) return false;
     this._cityId = cityId;
     this._state = state;
-    this._activeScene = sceneKey || this._activeScene;
+    const openingScene = this._openingContext.active && this._openingContext.factionId
+      ? getOpeningActBeat(this._openingContext.factionId, this._openingContext.turn)?.preferredScene
+      : null;
+    this._activeScene = sceneKey || openingScene || this._activeScene;
     this._pendingAction = null;
     this._render(cityId, state);
     this.modal.classList.remove('hidden');
@@ -100,6 +116,13 @@ export class ActionPanel {
     this.modal.classList.add('hidden');
     this._pendingAction = null;
     this._entries = [];
+    clearTimeout(this._previewTransitionTimer);
+    clearTimeout(this._sceneTransitionTimer);
+    this.previewEl?.classList.remove('preview-transition');
+    this.contentArea?.classList.remove('scene-switching');
+    this.buttons?.classList.remove('scene-switching');
+    this.tabBar?.classList.remove('scene-switching');
+    this.stageStrip?.classList.remove('decision-mode');
   }
 
   isOpen() {
@@ -136,6 +159,7 @@ export class ActionPanel {
       ? SCENE_ORDER
       : SCENE_ORDER.filter(scene => scene !== 'government' && scene !== 'personnel');
     const activeScene = scenes.includes(this._activeScene) ? this._activeScene : scenes[0];
+    const sceneChanged = activeScene !== this.panel.dataset.scene;
     const sceneMeta = COMMAND_SCENES[activeScene];
     const ownerName = city.owner ? state.factions[city.owner]?.name || '' : '무주지';
     const forecast = getCityForecast(cityId, state);
@@ -191,6 +215,21 @@ export class ActionPanel {
         break;
     }
     this.buttons.appendChild(scene);
+    if (sceneChanged) {
+      clearTimeout(this._sceneTransitionTimer);
+      this.contentArea.classList.remove('scene-switching');
+      this.buttons.classList.remove('scene-switching');
+      this.tabBar.classList.remove('scene-switching');
+      void this.buttons.offsetWidth;
+      this.contentArea.classList.add('scene-switching');
+      this.buttons.classList.add('scene-switching');
+      this.tabBar.classList.add('scene-switching');
+      this._sceneTransitionTimer = setTimeout(() => {
+        this.contentArea?.classList.remove('scene-switching');
+        this.buttons?.classList.remove('scene-switching');
+        this.tabBar?.classList.remove('scene-switching');
+      }, 320);
+    }
     this._refreshSelectionUI();
   }
 
@@ -201,25 +240,49 @@ export class ActionPanel {
     });
 
     const sceneMeta = COMMAND_SCENES[this._activeScene];
+    const city = this._cityId && this._state?.cities?.[this._cityId]
+      ? this._state.cities[this._cityId]
+      : null;
+    this.stageStrip?.classList.toggle('decision-mode', !!this._pendingAction);
     if (this._pendingAction) {
+      const tone = getCommandPreviewTone(this._pendingAction);
       this.previewEl.innerHTML = renderPendingPreview(this._pendingAction);
       this.selectionStatusEl.innerHTML = `
-        <span class="selection-status-kicker">${sceneMeta.name}</span>
+        <span class="selection-status-kicker">결정 장면 · ${sceneMeta.name}</span>
         <strong>${this._pendingAction.title}</strong>
         <span>${this._pendingAction.confirmText || '결정하면 행동력이 1 소모됩니다.'}</span>
+        <div class="selection-status-rail tone-${tone}">
+          <span class="selection-status-chip"><em>장면</em><strong>${sceneMeta.name}</strong></span>
+          <span class="selection-status-chip"><em>비용</em><strong>${this._pendingAction.cost || '행동력 1'}</strong></span>
+          <span class="selection-status-chip"><em>효과</em><strong>${this._pendingAction.effect || this._pendingAction.subtitle || '이번 턴 판세에 반영'}</strong></span>
+        </div>
       `;
       this.confirmButton.disabled = !!this._pendingAction.disabled;
-      this.cancelButton.textContent = '선택 취소';
+      this.confirmButton.textContent = `${sceneMeta.name} 확정`;
+      this.cancelButton.textContent = '작전으로 돌아가기';
     } else {
       this.previewEl.innerHTML = renderScenePlaceholder(sceneMeta, this._activeScene, this._cityId, this._state, this._connections);
       this.selectionStatusEl.innerHTML = `
-        <span class="selection-status-kicker">${sceneMeta.name}</span>
-        <strong>명령을 선택하십시오</strong>
+        <span class="selection-status-kicker">작전 장면 · ${sceneMeta.name}</span>
+        <strong>이번 턴의 명령을 고르십시오</strong>
         <span>${sceneMeta.placeholderCopy}</span>
+        <div class="selection-status-rail tone-brief">
+          <span class="selection-status-chip"><em>거점</em><strong>${city?.name || '도시 미선택'}</strong></span>
+          <span class="selection-status-chip"><em>장면</em><strong>${sceneMeta.name}</strong></span>
+          <span class="selection-status-chip"><em>행동력</em><strong>${this._state?.actionsRemaining ?? 0} 남음</strong></span>
+        </div>
       `;
       this.confirmButton.disabled = true;
+      this.confirmButton.textContent = '명령 확정';
       this.cancelButton.textContent = '닫기';
     }
+    clearTimeout(this._previewTransitionTimer);
+    this.previewEl.classList.remove('preview-transition');
+    void this.previewEl.offsetWidth;
+    this.previewEl.classList.add('preview-transition');
+    this._previewTransitionTimer = setTimeout(() => {
+      this.previewEl?.classList.remove('preview-transition');
+    }, 260);
   }
 
   _createSceneHero(sceneId, config) {
@@ -231,12 +294,21 @@ export class ActionPanel {
       asideTitle = '판단 메모',
       asideLines = [],
     } = config;
+    const sceneEmblems = {
+      government: '政',
+      military: '戰',
+      diplomacy: '盟',
+      personnel: '將',
+    };
 
     const hero = document.createElement('section');
     hero.className = `scene-hero scene-hero-${sceneId}`;
     hero.innerHTML = `
       <div class="scene-hero-main">
-        <div class="scene-hero-kicker">${kicker}</div>
+        <div class="scene-hero-topline">
+          <div class="scene-hero-emblem">${sceneEmblems[sceneId] || '策'}</div>
+          <div class="scene-hero-kicker">${kicker}</div>
+        </div>
         <h3>${title}</h3>
         <p>${summary}</p>
         <div class="scene-hero-pills">
@@ -320,6 +392,7 @@ export class ActionPanel {
             `태수 ${governor ? getCharName(governor) : '없음'} 기준 집행`,
           ],
         },
+        decisionNote: forecast.recommendations[0] || `${track.name} 축을 먼저 올리면 다음 턴 선택지가 더 넓어집니다.`,
         disabled: noActions || faction.gold < INVEST_BASE_COST || current >= 100,
       });
       return entry;
@@ -342,6 +415,7 @@ export class ActionPanel {
           cityDefense < 60 ? '현재 우선순위가 높은 편입니다.' : '여유가 있을 때 누적 투자하면 좋습니다.',
         ],
       },
+      decisionNote: cityDefense < 60 ? '지금 당장 체감되는 생존 카드입니다.' : '전선 유지력을 천천히 끌어올리는 누적 카드입니다.',
       disabled: noActions || faction.gold < 500 || cityDefense >= 100,
     });
 
@@ -473,7 +547,7 @@ export class ActionPanel {
     const board = document.createElement('div');
     board.className = 'command-scene-grid government-grid';
     board.appendChild(this._createSceneSection('도시 정책', '시정 노선', policyEntries, 'compact', 'government-policy'));
-    board.appendChild(this._createSceneSection('시정 장부', '도시 성장·교역', [ ...growthEntries, defenseEntry, ...tradeEntries ], '', 'government-ledger'));
+    board.appendChild(this._createSceneSection('시정 장부', '도시 성장·교역', [ ...growthEntries, defenseEntry, ...tradeEntries ], '', 'government-ledger', true));
     board.appendChild(this._createSceneSection('건설 공방', '도시 특화', buildingEntries, 'compact', 'government-build'));
     board.appendChild(this._createSceneSection('연구 서고', researchStatus.researching ? `진행 중: ${researchStatus.name}` : '세력 단위 보너스', researchEntries, 'compact', 'government-research'));
     container.appendChild(board);
@@ -513,6 +587,7 @@ export class ActionPanel {
             title: `${target.name} 침공`,
             lines: buildBattleLines(state, cityId, targetId),
           },
+          decisionNote: `${target.name} 전선을 흔드는 직접 카드입니다. 첫 3턴에 가장 드라마가 큰 선택지입니다.`,
           disabled: noActions || city.army < 3000,
         }));
       }
@@ -595,6 +670,7 @@ export class ActionPanel {
                 : '조건을 갖추면 전선 보강에 즉시 쓰이는 병력을 얻습니다.',
             ],
           },
+          decisionNote: enemyNeighbors.length > 0 ? '접경 도시라면 가장 즉각적으로 체감되는 전력 보강입니다.' : '다음 턴 군사 명령의 폭을 미리 넓히는 준비 행동입니다.',
           disabled: noActions || !conscriptPreview.allowed,
         }));
       }
@@ -636,12 +712,13 @@ export class ActionPanel {
             cost: '행동력 1',
             effect: `${fromCity.name} 전선 돌파 시도`,
             confirmText: `${city.name} 공격을 명령합니다.`,
-            preview: {
-              title: `${city.name} 공격`,
-              lines: buildBattleLines(state, fromCityId, cityId),
-            },
-            disabled: noActions || fromCity.army < 3000,
-          }));
+          preview: {
+            title: `${city.name} 공격`,
+            lines: buildBattleLines(state, fromCityId, cityId),
+          },
+          decisionNote: `지금 전선을 실제로 움직이는 직접 행동입니다. ${city.name}의 병력과 지형을 먼저 읽으십시오.`,
+          disabled: noActions || fromCity.army < 3000,
+        }));
         }
       }
 
@@ -721,7 +798,7 @@ export class ActionPanel {
     const board = document.createElement('div');
     board.className = 'command-scene-grid military-grid';
     board.appendChild(this._createSceneSection('전선 방침', '군령 정책', postureEntries, 'compact', 'military-posture'));
-    board.appendChild(this._createSceneSection('전선 작전', '침공·요충지 판단', attackEntries, '', 'military-offense'));
+    board.appendChild(this._createSceneSection('전선 작전', '침공·요충지 판단', attackEntries, '', 'military-offense', true));
     board.appendChild(this._createSceneSection('병력 재배치', '집결·보강', movementEntries, 'compact', 'military-movement'));
     board.appendChild(this._createSceneSection('징병과 병참', '동원·식량·보급선', supplyEntries, 'compact', 'military-logistics'));
     board.appendChild(this._createSceneSection('전쟁 상태', '개전·압박', warEntries, 'compact', 'military-war'));
@@ -764,6 +841,7 @@ export class ActionPanel {
               '성공 시 접경 압박이 즉시 줄어듭니다.',
             ],
           },
+          decisionNote: '전쟁이 길어질수록 첫 플레이 감각이 둔해집니다. 강화는 템포를 다시 잡는 선택입니다.',
           disabled: noActions,
         }));
       }
@@ -788,6 +866,7 @@ export class ActionPanel {
               '전선을 줄이는 대신 성장 속도를 확보합니다.',
             ],
           },
+          decisionNote: '초반 전선을 하나라도 줄이면 시정과 병참 선택이 훨씬 선명해집니다.',
           disabled: noActions,
         }));
         diplomacyEntries.push(this._makeEntry({
@@ -914,7 +993,7 @@ export class ActionPanel {
 
     const board = document.createElement('div');
     board.className = 'command-scene-grid diplomacy-grid';
-    board.appendChild(this._createSceneSection('외교 교섭', '관계·강화·동맹', diplomacyEntries, '', 'diplomacy-negotiation'));
+    board.appendChild(this._createSceneSection('외교 교섭', '관계·강화·동맹', diplomacyEntries, '', 'diplomacy-negotiation', true));
     board.appendChild(this._createSceneSection('첩보 작전', espionageEntries.length ? '적 도시 대상 은밀 작전' : '적 도시 선택 시 활성화', espionageEntries, 'compact', 'diplomacy-espionage'));
     container.appendChild(board);
   }
@@ -1271,7 +1350,7 @@ export class ActionPanel {
     board.appendChild(this._createSceneSection('인재 탐색', '새 장수 발견', searchEntries, 'compact', 'personnel-search'));
     board.appendChild(this._createSceneSection('포로 처리', captives.length ? `${captives.length}명 보유` : '보유 포로 없음', captivesEntries, 'compact', 'personnel-captive'));
     board.appendChild(this._createSceneSection('포상과 징계', '충성·하사·해임', rewardEntries, 'compact', 'personnel-reward'));
-    board.appendChild(this._createSceneSection('배치와 임명', '장수 이동·태수 교체', assignmentEntries, '', 'personnel-assign'));
+    board.appendChild(this._createSceneSection('배치와 임명', '장수 이동·태수 교체', assignmentEntries, '', 'personnel-assign', true));
     container.appendChild(board);
   }
 
@@ -1391,7 +1470,7 @@ export class ActionPanel {
     return section;
   }
 
-  _createSceneSection(title, kicker, entries, compact = '', variant = '') {
+  _createSceneSection(title, kicker, entries, compact = '', variant = '', showOpeningRail = false) {
     const section = document.createElement('section');
     section.className = `command-scene-section${compact ? ` ${compact}` : ''}${variant ? ` variant-${variant}` : ''}`;
     section.innerHTML = `
@@ -1403,34 +1482,120 @@ export class ActionPanel {
 
     const list = document.createElement('div');
     list.className = 'command-entry-list';
+    const normalizedEntries = entries.map((entry) => ({ ...entry }));
+    const explicitPriority = normalizedEntries.some((entry) => entry.priorityLabel);
+    if (!explicitPriority) {
+      const enabledIndices = normalizedEntries
+        .map((entry, index) => ({ entry, index }))
+        .filter(({ entry }) => !entry.disabled);
+      if (enabledIndices[0]) {
+        normalizedEntries[enabledIndices[0].index].priorityLabel = '추천';
+        normalizedEntries[enabledIndices[0].index].priorityTone = 'recommended';
+      }
+      if (enabledIndices[1]) {
+        normalizedEntries[enabledIndices[1].index].priorityLabel = '대안';
+        normalizedEntries[enabledIndices[1].index].priorityTone = 'alternate';
+      }
+    }
+    const openingRecommendations = this._openingContext.active && showOpeningRail
+      ? normalizedEntries.filter((entry) => !entry.disabled).slice(0, 2)
+      : [];
+    if (openingRecommendations.length > 0) {
+      const rail = document.createElement('div');
+      rail.className = 'opening-command-rail';
+      const beat = getOpeningActBeat(this._openingContext.factionId, this._openingContext.turn);
+      const sceneNames = {
+        government: '시정 장면',
+        military: '군사 장면',
+        diplomacy: '외교 장면',
+        personnel: '인사 장면',
+      };
+      rail.innerHTML = `
+        <div class="opening-command-rail-head">
+          <span class="opening-command-rail-kicker">오프닝 액트 ${this._openingContext.turn}</span>
+          <strong>${beat?.title || '지금 눌러야 하는 명령'}</strong>
+          ${beat?.preferredScene ? `<span class="opening-command-scene-hint">우선 장면: ${sceneNames[beat.preferredScene] || beat.preferredScene}</span>` : ''}
+        </div>
+      `;
+      const chipWrap = document.createElement('div');
+      chipWrap.className = 'opening-command-chip-wrap';
+      for (const entry of openingRecommendations) {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = `opening-command-chip${entry.priorityTone ? ` tone-${entry.priorityTone}` : ''}`;
+        chip.innerHTML = `
+          <span class="opening-command-chip-label">${entry.priorityLabel || '추천'}</span>
+          <span class="opening-command-chip-title">${entry.title}</span>
+          <span class="opening-command-chip-copy">${entry.decisionNote || entry.effect || entry.subtitle || ''}</span>
+        `;
+        chip.addEventListener('click', () => {
+          if (entry.disabled) return;
+          this._pendingAction = entry;
+          this._refreshSelectionUI();
+        });
+        chipWrap.appendChild(chip);
+      }
+      rail.appendChild(chipWrap);
+      section.appendChild(rail);
+    }
     if (!entries.length) {
       const empty = document.createElement('div');
       empty.className = 'command-scene-empty';
       empty.textContent = '현재 선택 가능한 명령이 없습니다.';
       list.appendChild(empty);
     } else {
-      entries.forEach((entry) => {
+      const foldable = normalizedEntries.length > 3;
+      const visibleEntries = foldable ? normalizedEntries.slice(0, 2) : normalizedEntries;
+      const foldedEntries = foldable ? normalizedEntries.slice(2) : [];
+
+      const featureWrap = document.createElement('div');
+      featureWrap.className = 'command-entry-featured';
+      visibleEntries.forEach((entry) => {
         this._entries.push(entry);
-        list.appendChild(this._createEntryCard(entry));
+        featureWrap.appendChild(this._createEntryCard(entry, true));
       });
+      list.appendChild(featureWrap);
+
+      if (foldedEntries.length > 0) {
+        const fold = document.createElement('details');
+        fold.className = 'command-entry-fold';
+        fold.innerHTML = `
+          <summary>
+            <span class="command-entry-fold-label">나머지 ${foldedEntries.length}개 명령</span>
+            <span class="command-entry-fold-copy">지금은 핵심 카드만 먼저 보여줍니다</span>
+          </summary>
+        `;
+        const foldList = document.createElement('div');
+        foldList.className = 'command-entry-fold-list';
+        foldedEntries.forEach((entry) => {
+          this._entries.push(entry);
+          foldList.appendChild(this._createEntryCard(entry));
+        });
+        fold.appendChild(foldList);
+        list.appendChild(fold);
+      }
     }
     section.appendChild(list);
     return section;
   }
 
-  _createEntryCard(entry) {
+  _createEntryCard(entry, featured = false) {
     const card = document.createElement('button');
-    card.className = `command-entry-card${entry.disabled ? ' disabled' : ''}`;
+    card.className = `command-entry-card${featured ? ' featured' : ''}${entry.disabled ? ' disabled' : ''}${entry.priorityTone ? ` tone-${entry.priorityTone}` : ''}`;
     card.dataset.commandKey = entry.key;
     card.disabled = !!entry.disabled;
     card.innerHTML = `
       <div class="command-entry-top">
-        <div class="command-entry-title">${entry.title}</div>
+        <div class="command-entry-title-wrap">
+          <div class="command-entry-title">${entry.title}</div>
+          ${entry.priorityLabel ? `<span class="command-entry-priority tone-${entry.priorityTone || 'recommended'}">${entry.priorityLabel}</span>` : ''}
+        </div>
         <div class="command-entry-cost">${entry.cost || '행동력 1'}</div>
       </div>
       <div class="command-entry-subtitle">${entry.subtitle || ''}</div>
       <div class="command-entry-detail">${entry.detail || ''}</div>
       <div class="command-entry-effect">${entry.effect || ''}</div>
+      ${entry.decisionNote ? `<div class="command-entry-note">${entry.decisionNote}</div>` : ''}
     `;
     card.addEventListener('click', () => {
       if (entry.disabled) return;
@@ -1518,7 +1683,7 @@ function renderCommandSummary(city, ownerName, forecast, state) {
 function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state = null, connections = []) {
   if (!sceneId || !cityId || !state?.cities?.[cityId]) {
     return `
-      <div class="command-preview-empty">
+      <div class="command-preview-empty scene-${sceneId || 'neutral'}">
         <div class="command-preview-kicker">${sceneMeta.kicker}</div>
         <h3>${sceneMeta.placeholderTitle}</h3>
         <p>${sceneMeta.placeholderCopy}</p>
@@ -1530,9 +1695,15 @@ function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state 
   const faction = state.getFaction(state.player.factionId);
   const forecast = getCityForecast(cityId, state);
   const digest = buildSceneDigest(sceneId, city, state, faction, forecast, connections);
+  const sceneBadges = {
+    government: '장부 브리프',
+    military: '전황판',
+    diplomacy: '교섭 기록',
+    personnel: '인사 명부',
+  };
   return `
-    <div class="command-preview-empty command-preview-digest">
-      <div class="command-preview-kicker">${sceneMeta.kicker}</div>
+    <div class="command-preview-empty command-preview-digest scene-${sceneId}">
+      <div class="command-preview-kicker">${sceneBadges[sceneId] || sceneMeta.kicker}</div>
       <h3>${digest.title || sceneMeta.placeholderTitle}</h3>
       <p>${digest.copy || sceneMeta.placeholderCopy}</p>
       <div class="preview-digest-grid">
@@ -1551,17 +1722,35 @@ function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state 
 }
 
 function renderPendingPreview(entry) {
+  const tone = getCommandPreviewTone(entry);
+  const kicker = {
+    government: '시정 결재안',
+    military: '군령 발령안',
+    diplomacy: '교섭 제안서',
+    personnel: '인사 조치안',
+    neutral: entry.priorityLabel ? `${entry.priorityLabel} 명령` : '선택된 명령',
+  }[tone] || (entry.priorityLabel ? `${entry.priorityLabel} 명령` : '선택된 명령');
   return `
-    <div class="command-preview-card">
-      <div class="command-preview-kicker">선택된 명령</div>
+    <div class="command-preview-card tone-${tone}">
+      <div class="command-preview-kicker">${kicker}</div>
       <h3>${entry.preview.title || entry.title}</h3>
       <ul class="command-preview-lines">
         ${(entry.preview.lines || []).map((line) => `<li>${line}</li>`).join('')}
       </ul>
+      ${entry.decisionNote ? `<div class="command-preview-effect">판단 포인트: ${entry.decisionNote}</div>` : ''}
       ${entry.effect ? `<div class="command-preview-effect">효과: ${entry.effect}</div>` : ''}
       ${entry.cost ? `<div class="command-preview-cost">${entry.cost}</div>` : ''}
     </div>
   `;
+}
+
+function getCommandPreviewTone(entry) {
+  const actionType = entry?.actionType || '';
+  if (actionType.startsWith('invest_') || ['build', 'start_research', 'trade_food', 'transport_food'].includes(actionType)) return 'government';
+  if (['attack', 'declare_war', 'move_troops', 'conscript', 'recruit'].includes(actionType)) return 'military';
+  if (['propose_peace', 'propose_alliance', 'propose_marriage', 'send_tribute', 'threaten', 'espionage'].includes(actionType)) return 'diplomacy';
+  if (['search_talent', 'persuade_captive', 'release_captive', 'reward_officer', 'bestow_item', 'confiscate_item', 'dismiss_officer', 'appoint_tactician', 'move_general', 'appoint_governor'].includes(actionType)) return 'personnel';
+  return 'neutral';
 }
 
 function createCommandKey(entry) {
@@ -1847,6 +2036,13 @@ function totalEquippedRarityScore(char) {
 export function executePlayerAction(actionType, params, state, connections = null) {
   const faction = state.getFaction(state.player.factionId);
   if (!faction || state.actionsRemaining <= 0) return false;
+  state.lastPlayerActionResult = null;
+  const defaultFocusCityId = params?.toCity || params?.cityId || params?.targetCityId || params?.fromCity || null;
+
+  const recordResult = ({ title, body, tone = 'neutral', kicker, focusCityId = defaultFocusCityId }) => {
+    state.lastPlayerActionResult = { title, body, tone, kicker, focusCityId, actionType };
+    return true;
+  };
 
   switch (actionType) {
     case 'invest_agriculture':
@@ -1859,7 +2055,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       const names = { agriculture: '농업', commerce: '상업', technology: '기술', publicOrder: '치안' };
       state.actionsRemaining--;
       state.log(`${state.cities[params.cityId].name}에 ${names[track]} 투자 (+${result.gain})`, 'player');
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${names[track]} 투자를 집행했습니다`,
+        body: `${state.cities[params.cityId].name}의 ${names[track]} 수치가 +${result.gain} 상승했습니다.`,
+      });
     }
 
     case 'invest_defense': {
@@ -1869,7 +2069,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       city.defense = Math.min(100, asNumber(city.defense) + 5);
       state.actionsRemaining--;
       state.log(`${city.name}에 방어 강화 (방어 +5)`, 'player');
-      return true;
+      return recordResult({
+        tone: 'fortify',
+        title: `${city.name} 성방을 보강했습니다`,
+        body: `방어 수치가 ${city.defense}까지 올라 전선 유지력이 조금 더 단단해졌습니다.`,
+      });
     }
 
     case 'recruit':
@@ -1881,7 +2085,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
         `${state.cities[params.cityId].name}에서 ${result.recruits.toLocaleString()}명 징병 (치안 -${result.orderLoss}, 군량 -${result.foodCost.toLocaleString()})`,
         'player'
       );
-      return true;
+      return recordResult({
+        tone: 'military',
+        title: `${result.recruits.toLocaleString()}명을 징병했습니다`,
+        body: `${state.cities[params.cityId].name} 전선에 즉시 투입할 병력이 늘었습니다.`,
+      });
     }
 
     case 'attack': {
@@ -1936,22 +2144,35 @@ export function executePlayerAction(actionType, params, state, connections = nul
         if (result.stratagemUsed?.success) message += ` [${result.stratagemUsed.name}]`;
         if (captured.length > 0) message += ` (포로 ${captured.length}명)`;
         state.log(message, 'territory');
+        state.actionsRemaining--;
+      return recordResult({
+        tone: 'victory',
+        title: `${to.name}을(를) 점령했습니다`,
+        body: `${result.rounds}라운드 끝에 ${to.name}의 깃발이 꺾였습니다.${captured.length > 0 ? ` 포로 ${captured.length}명도 확보해 전후 정리까지 앞섰습니다.` : ' 지금이 바로 다음 전선을 물어뜯을 타이밍입니다.'}`,
+      });
       } else {
         from.army += survivors;
         let message = `${to.name} 공격 실패 (아군 -${result.attackerLoss}, 적 -${result.defenderLoss})`;
         if (result.stratagemUsed) message += ` [${result.stratagemUsed.name} ${result.stratagemUsed.success ? '성공' : '실패'}]`;
         state.log(message, 'war');
+        state.actionsRemaining--;
+        return recordResult({
+          tone: 'warning',
+          title: `${to.name} 공세가 막혔습니다`,
+          body: `아군 ${result.attackerLoss.toLocaleString()} 손실, 적 ${result.defenderLoss.toLocaleString()} 손실로 피만 흘린 채 물러났습니다. 병참과 재집결이 먼저입니다.`,
+        });
       }
-
-      state.actionsRemaining--;
-      return true;
     }
 
     case 'declare_war': {
       diplomacy.declareWar(state.player.factionId, params.targetFaction, state);
       state.actionsRemaining--;
       state.log(`${state.factions[params.targetFaction].name}에 선전포고!`, 'war');
-      return true;
+      return recordResult({
+        tone: 'warning',
+        title: `${state.factions[params.targetFaction].name}에 선전포고했습니다`,
+        body: '이제 말로 버티는 구간은 끝났습니다. 접경 도시가 즉시 불붙었고, 다음 선택은 방어선 정비 아니면 침공 준비여야 합니다.',
+      });
     }
 
     case 'propose_peace': {
@@ -1961,7 +2182,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
         result.success ? `${state.factions[params.targetFaction].name}와 강화 성립!` : `${state.factions[params.targetFaction].name}이(가) 강화를 거절`,
         result.success ? 'diplomacy' : 'info'
       );
-      return true;
+      return recordResult({
+        tone: result.success ? 'diplomacy' : 'warning',
+        title: result.success ? `${state.factions[params.targetFaction].name}와 강화를 맺었습니다` : `${state.factions[params.targetFaction].name}이 강화를 거절했습니다`,
+        body: result.success ? '피로한 전선 하나가 잠시 멎었습니다. 지금이 숨을 고르고 내정이나 재배치로 넘어갈 창입니다.' : '상대는 물러설 생각이 없습니다. 전선 압박은 그대로 남았고, 외교 카드 한 장만 허공에 사라졌습니다.',
+      });
     }
 
     case 'propose_alliance': {
@@ -1971,7 +2196,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
         result.success ? `${state.factions[params.targetFaction].name}와 동맹 체결!` : `${state.factions[params.targetFaction].name}이(가) 동맹을 거절`,
         result.success ? 'alliance' : 'info'
       );
-      return true;
+      return recordResult({
+        tone: result.success ? 'diplomacy' : 'warning',
+        title: result.success ? `${state.factions[params.targetFaction].name}와 손을 잡았습니다` : `${state.factions[params.targetFaction].name}이 제안을 거절했습니다`,
+        body: result.success ? '적어도 한 방향의 칼끝은 무뎌졌습니다. 이제 남는 행동력은 전선보다 성장에 더 세게 실을 수 있습니다.' : '상대는 아직 당신 편에 설 이유를 느끼지 못합니다. 병력 과시나 조공, 혹은 다른 전선 정리가 더 필요합니다.',
+      });
     }
 
     case 'propose_marriage': {
@@ -1981,14 +2210,22 @@ export function executePlayerAction(actionType, params, state, connections = nul
         result.success ? `${state.factions[params.targetFaction].name}와 혼인동맹!` : `${state.factions[params.targetFaction].name}이(가) 혼인을 거절`,
         result.success ? 'alliance' : 'info'
       );
-      return true;
+      return recordResult({
+        tone: result.success ? 'diplomacy' : 'warning',
+        title: result.success ? `${state.factions[params.targetFaction].name}와 혼인동맹이 성사됐습니다` : `${state.factions[params.targetFaction].name}이 혼인을 거절했습니다`,
+        body: result.success ? '이건 단순한 휴전이 아니라 장기 우호의 씨앗입니다. 다음 몇 턴 외교 기류가 한층 부드러워질 수 있습니다.' : '정치적 승부수를 던졌지만 받아들여지지 않았습니다. 지금은 외교보다 병력과 판세를 보여줄 때일 수 있습니다.',
+      });
     }
 
     case 'send_tribute': {
       const result = diplomacy.sendTribute(state.player.factionId, params.targetFaction, params.amount, state);
       state.actionsRemaining--;
       if (result.success) state.log(`${state.factions[params.targetFaction].name}에 조공 (금 ${result.amount}, 평판 +${result.repGain})`, 'diplomacy');
-      return true;
+      return recordResult({
+        tone: result.success ? 'diplomacy' : 'warning',
+        title: result.success ? `${state.factions[params.targetFaction].name}에 조공을 보냈습니다` : '조공 교섭이 뜻대로 풀리지 않았습니다',
+        body: result.success ? `금으로 시간을 샀습니다. 평판이 조금 회복됐고 외교 숨통도 약간은 트였습니다.` : '자금만 나가고 분위기는 크게 바뀌지 않았습니다. 더 큰 정치 카드나 병력 우세가 필요합니다.',
+      });
     }
 
     case 'threaten': {
@@ -1998,7 +2235,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
         result.success ? `${state.factions[params.targetFaction].name}를 위협! (금 ${result.tribute} 획득)` : `${state.factions[params.targetFaction].name}이(가) 위협에 불응`,
         result.success ? 'diplomacy' : 'info'
       );
-      return true;
+      return recordResult({
+        tone: result.success ? 'military' : 'warning',
+        title: result.success ? `${state.factions[params.targetFaction].name}을 굴복시켰습니다` : `${state.factions[params.targetFaction].name}이 위협에 버텼습니다`,
+        body: result.success ? `금 ${result.tribute.toLocaleString()}을 받아냈습니다. 지금 천하는 당신이 먼저 칼을 쥐고 있다는 사실을 분명히 봤습니다.` : '상대는 당신의 압박을 허세로 받아들였습니다. 전장에서 우세를 보이기 전까지는 말이 잘 먹히지 않습니다.',
+      });
     }
 
     case 'search_talent': {
@@ -2007,7 +2248,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!searcher) {
         state.log('탐색할 장수가 없습니다', 'info');
         state.actionsRemaining--;
-        return true;
+        return recordResult({
+          tone: 'warning',
+          title: '탐색 장수가 없습니다',
+          body: '현재 도시에 탐색을 맡길 장수가 없어 인재 수색이 흐지부지됐습니다.',
+        });
       }
 
       const result = charMgr.searchForTalent(params.cityId, searcher.id, state);
@@ -2021,7 +2266,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       } else {
         state.log(`${state.cities[params.cityId].name}에서 인재를 찾지 못함`, 'info');
       }
-      return true;
+      return recordResult({
+        tone: result.found && result.character ? 'growth' : 'neutral',
+        title: result.found && result.character ? `${getCharName(result.character.id)}의 흔적을 발견했습니다` : `${state.cities[params.cityId].name}에서는 소득이 없었습니다`,
+        body: result.found && result.character ? '탐색이 실제 인재 카드로 이어졌습니다.' : '이번 턴 탐색은 헛걸음이었습니다. 다른 도시나 다른 장수가 더 낫습니다.',
+      });
     }
 
     case 'persuade_captive': {
@@ -2035,14 +2284,22 @@ export function executePlayerAction(actionType, params, state, connections = nul
         result.success ? `포로 ${getCharName(params.captiveId)} 등용 성공!` : `포로 ${getCharName(params.captiveId)}이(가) 설득을 거부 (${result.reason})`,
         result.success ? 'recruit' : 'info'
       );
-      return true;
+      return recordResult({
+        tone: result.success ? 'growth' : 'warning',
+        title: result.success ? `${getCharName(params.captiveId)}를 끌어들였습니다` : `${getCharName(params.captiveId)}가 끝내 버텼습니다`,
+        body: result.success ? '포로가 아군 인재로 전환됐습니다.' : `설득 실패 사유: ${result.reason}`,
+      });
     }
 
     case 'release_captive': {
       state.releaseCaptive(params.captiveId);
       state.actionsRemaining--;
       state.log(`포로 ${getCharName(params.captiveId)} 석방`, 'info');
-      return true;
+      return recordResult({
+        tone: 'neutral',
+        title: `${getCharName(params.captiveId)}를 석방했습니다`,
+        body: '직접 전력은 잃었지만 강경 일변도의 흐름은 피했습니다.',
+      });
     }
 
     case 'reward_officer': {
@@ -2050,7 +2307,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!result.success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}에게 포상 (충성 +${result.loyaltyGain})`, 'reward');
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${getCharName(params.charId)}의 충성을 다졌습니다`,
+        body: `포상으로 충성도가 +${result.loyaltyGain} 상승했습니다.`,
+      });
     }
 
     case 'bestow_item': {
@@ -2058,7 +2319,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!result.success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}에게 ${getItemName(params.itemId)} 하사 (충성 +${result.loyaltyGain})`, 'reward');
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${getItemName(params.itemId)}을(를) 하사했습니다`,
+        body: `${getCharName(params.charId)}의 충성도가 +${result.loyaltyGain} 상승했습니다.`,
+      });
     }
 
     case 'confiscate_item': {
@@ -2066,7 +2331,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!result.success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}에게서 ${result.itemName} 회수 (충성 -${result.loyaltyLoss})`, 'warning');
-      return true;
+      return recordResult({
+        tone: 'warning',
+        title: `${result.itemName}을(를) 회수했습니다`,
+        body: `${getCharName(params.charId)}의 충성도가 ${result.loyaltyLoss} 하락했습니다.`,
+      });
     }
 
     case 'dismiss_officer': {
@@ -2074,7 +2343,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!result.success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}를 해임해 방랑 인재로 전환 (평판 -${result.reputationLoss})`, 'warning');
-      return true;
+      return recordResult({
+        tone: 'warning',
+        title: `${getCharName(params.charId)}를 해임했습니다`,
+        body: `세력 평판이 ${result.reputationLoss} 하락했고 해당 장수는 방랑 인재가 됐습니다.`,
+      });
     }
 
     case 'appoint_tactician': {
@@ -2082,7 +2355,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}를 세력 책사로 임명`, 'player');
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${getCharName(params.charId)}를 책사로 세웠습니다`,
+        body: '이제 도시 브리프와 조언 문구가 더 선명하게 전개됩니다.',
+      });
     }
 
     case 'set_city_policy': {
@@ -2093,7 +2370,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       const policy = getCityPolicy(city);
       const policyName = params.policyType === 'militaryPosture' ? policy.military.name : policy.domestic.name;
       state.log(`${city.name} 정책을 ${policyName}로 전환`, 'player');
-      return true;
+      return recordResult({
+        tone: params.policyType === 'militaryPosture' ? 'military' : 'growth',
+        title: `${city.name} 정책을 ${policyName}로 바꿨습니다`,
+        body: '다음 몇 턴의 도시 성장과 전선 대응 방향이 달라집니다.',
+      });
     }
 
     case 'move_general': {
@@ -2101,7 +2382,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!result.success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}를 ${state.cities[params.toCity].name}으로 이동`, 'player');
-      return true;
+      return recordResult({
+        tone: 'neutral',
+        title: `${getCharName(params.charId)}를 이동시켰습니다`,
+        body: `${state.cities[params.toCity].name} 쪽 인재 배치를 다시 짰습니다.`,
+      });
     }
 
     case 'appoint_governor': {
@@ -2109,14 +2394,22 @@ export function executePlayerAction(actionType, params, state, connections = nul
       if (!success) return false;
       state.actionsRemaining--;
       state.log(`${getCharName(params.charId)}를 ${state.cities[params.cityId].name} 태수로 임명`, 'player');
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${getCharName(params.charId)}를 태수로 임명했습니다`,
+        body: `${state.cities[params.cityId].name}의 월간 성장 판단이 달라집니다.`,
+      });
     }
 
     case 'build': {
       const result = startConstruction(state, params.cityId, params.buildingId);
       if (!result.success) return false;
       state.actionsRemaining--;
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${BUILDINGS[params.buildingId]?.name || params.buildingId} 공사를 시작했습니다`,
+        body: `${state.cities[params.cityId].name}의 장기 효율을 끌어올리는 투자입니다.`,
+      });
     }
 
     case 'start_research': {
@@ -2125,7 +2418,11 @@ export function executePlayerAction(actionType, params, state, connections = nul
       state.actionsRemaining--;
       const tech = TECHS[params.techId];
       state.log(`${tech?.name || params.techId} 연구 시작 (${result.turns}턴)`, 'research');
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${tech?.name || params.techId} 연구를 시작했습니다`,
+        body: `${result.turns}턴 뒤 세력 전체 보너스로 이어집니다.`,
+      });
     }
 
     case 'espionage': {
@@ -2138,21 +2435,33 @@ export function executePlayerAction(actionType, params, state, connections = nul
         if (result.captured) message += ' (첩자 포로!)';
         state.log(message, 'espionage');
       }
-      return true;
+      return recordResult({
+        tone: result.success ? 'diplomacy' : 'warning',
+        title: result.success ? `${result.actionName}이 성공했습니다` : `${result.actionName}이 실패했습니다`,
+        body: result.success ? '은밀한 선택이 다음 턴 판세를 흔들 여지를 만들었습니다.' : (result.captured ? '첩자가 포로로 잡혀 역풍이 불 수 있습니다.' : '위험만 감수하고 실익은 얻지 못했습니다.'),
+      });
     }
 
     case 'move_troops': {
       const result = moveArmy(state, params.fromCity, params.toCity, params.amount, params.generals || [], params.connections || connections);
       if (!result.success) return false;
       state.actionsRemaining--;
-      return true;
+      return recordResult({
+        tone: 'military',
+        title: `${state.cities[params.toCity].name}로 병력을 이동했습니다`,
+        body: `${params.amount.toLocaleString()}명이 재배치되어 전선 두께가 달라졌습니다.`,
+      });
     }
 
     case 'transport_food': {
       const result = transportFood(state, params.fromCity, params.toCity, params.amount, params.connections || connections);
       if (!result.success) return false;
       state.actionsRemaining--;
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: `${state.cities[params.toCity].name}로 군량을 보냈습니다`,
+        body: `${params.amount.toLocaleString()}의 식량이 이동해 병참선이 한결 안정됐습니다.`,
+      });
     }
 
     case 'trade_food': {
@@ -2165,7 +2474,13 @@ export function executePlayerAction(actionType, params, state, connections = nul
           : `${state.cities[params.cityId].name} 시장에서 군량 ${result.amount.toLocaleString()} 매각 (금 +${result.gold.toLocaleString()})`,
         'player'
       );
-      return true;
+      return recordResult({
+        tone: 'growth',
+        title: params.mode === 'buy' ? '군량을 매입했습니다' : '군량을 매각했습니다',
+        body: params.mode === 'buy'
+          ? `${state.cities[params.cityId].name}의 비축량을 늘렸습니다.`
+          : `${state.cities[params.cityId].name}에서 금을 회수했습니다.`,
+      });
     }
 
     default:

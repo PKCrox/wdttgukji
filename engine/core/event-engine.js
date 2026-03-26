@@ -163,6 +163,22 @@ const effectAppliers = {
     }
   },
 
+  gold_change(effect, state) {
+    const delta = typeof effect.value === 'number' ? effect.value : (effect.value?.delta || 0);
+    const faction = state.getFaction(effect.target);
+    if (!faction) return;
+    faction.gold = Math.max(0, faction.gold + delta);
+    state.log(`${getFactionName(effect.target)}의 금 ${delta > 0 ? '+' : ''}${delta}`, 'effect');
+  },
+
+  reputation_change(effect, state) {
+    const delta = typeof effect.value === 'number' ? effect.value : (effect.value?.delta || 0);
+    const faction = state.getFaction(effect.target);
+    if (!faction) return;
+    state._adjustReputation(effect.target, delta);
+    state.log(`${getFactionName(effect.target)}의 평판 ${delta > 0 ? '+' : ''}${delta}`, 'effect');
+  },
+
   territory_change(effect, state) {
     const val = effect.value;
     const city = state.cities[val.city];

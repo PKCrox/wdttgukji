@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>우당탕탕삼국지</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318191f'/%3E%3Cpath d='M16 46L28 18l8 18 6-12 6 22' fill='none' stroke='%23d8b36a' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=20260324j">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
@@ -21,76 +22,66 @@
             <h1 class="game-title">우당탕탕삼국지</h1>
             <p class="game-subtitle">난세를 굴리는 군주제 전략극</p>
             <p class="start-lead">
-              적벽의 불길, 익주의 셈법, 한중의 관문, 장강의 파도까지.
-              각 세력의 운명을 직접 굴리며 삼국의 판도를 다시 쓰는 전략 샌드박스.
+              첫 3턴 안에 살아남을지, 밀어붙일지, 결전을 준비할지가 갈린다.
+              도시 하나를 열고 명령 하나를 고르는 순간부터 판세가 바뀌는 적벽 전략극.
             </p>
-            <div class="start-hero-meta">
+            <div class="start-hero-meta start-hero-questions">
               <div class="hero-meta-card">
-                <span class="hero-meta-label">현재 중점</span>
-                <strong>208 적벽 수직 슬라이스</strong>
+                <span class="hero-meta-label">질문 1</span>
+                <strong>지금 버틸 도시가 어디인가</strong>
               </div>
               <div class="hero-meta-card">
-                <span class="hero-meta-label">목표</span>
-                <strong>10분 안에 판세 체감</strong>
+                <span class="hero-meta-label">질문 2</span>
+                <strong>이번 턴에 병력인가 외교인가</strong>
               </div>
               <div class="hero-meta-card">
-                <span class="hero-meta-label">방향</span>
-                <strong>코에이풍 전략 전장</strong>
+                <span class="hero-meta-label">질문 3</span>
+                <strong>다음 전선을 어디로 밀 것인가</strong>
               </div>
             </div>
             <div class="start-actions">
               <button id="btn-new-game" class="btn-primary">적벽으로 들어간다</button>
               <button id="btn-load-game" class="btn-secondary">이어하기</button>
             </div>
+            <div id="save-slot-card" class="save-slot-card hidden"></div>
           </section>
 
           <aside class="start-dossier">
             <div class="dossier-header">
-              <div class="screen-kicker">시나리오 보고서</div>
+              <div class="screen-kicker">플레이 개요</div>
               <h2 class="panel-title">208년 적벽대전</h2>
               <p class="panel-copy">
-                조조의 남하, 손유 연합, 익주와 한중의 관망이 한 장의 전장 안에서 동시에 움직이는 시점.
+                조조의 남하와 손유 연합, 익주와 한중의 관망이 한 판 위에서 동시에 흔들리는 순간.
               </p>
             </div>
-            <div class="start-scenario-summary">
+            <div class="start-reboot-grid">
               <div class="summary-tile"><span class="label">세력</span><span class="value">5</span></div>
               <div class="summary-tile"><span class="label">도시</span><span class="value">26</span></div>
               <div class="summary-tile"><span class="label">장수</span><span class="value">38+</span></div>
               <div class="summary-tile"><span class="label">이벤트</span><span class="value">337</span></div>
             </div>
-            <div class="scenario-list">
-              <button class="scenario-btn active" data-scenario="208">
-                <span class="scenario-year">208</span>
-                <span class="scenario-main">
-                  <span class="scenario-name">적벽대전</span>
-                  <span class="scenario-desc">조조 80만 남하, 손유 연합의 운명적 결전</span>
-                </span>
-              </button>
-              <button class="scenario-btn disabled" disabled>
-                <span class="scenario-year">190</span>
-                <span class="scenario-main">
-                  <span class="scenario-name">반동탁 연합</span>
-                  <span class="scenario-desc">준비 중</span>
-                </span>
-              </button>
-              <button class="scenario-btn disabled" disabled>
-                <span class="scenario-year">200</span>
-                <span class="scenario-main">
-                  <span class="scenario-name">관도대전</span>
-                  <span class="scenario-desc">준비 중</span>
-                </span>
-              </button>
-              <button class="scenario-btn disabled" disabled>
-                <span class="scenario-year">220</span>
-                <span class="scenario-main">
-                  <span class="scenario-name">삼국 정립</span>
-                  <span class="scenario-desc">준비 중</span>
-                </span>
-              </button>
+            <div class="start-focus-card">
+              <div class="screen-kicker">이번 판의 감각</div>
+              <h3 class="start-focus-title">도시를 읽고 한 턴을 버티는 삼국지</h3>
+              <p class="start-focus-copy">로그를 읽기보다 도시를 열고 바로 명령을 누르게 만드는 방향으로 다시 짰다.</p>
             </div>
-            <div class="quote-panel">
-              <div class="screen-kicker">개발 원칙</div>
-              <p class="quote-copy">게임 하나를 만드는 것이 아니라, 게임을 계속 찍어내는 삼국지 공장을 만든다.</p>
+            <div class="start-loop-board">
+              <div class="screen-kicker">첫 10분 루프</div>
+              <div class="start-loop-step">
+                <span>1</span>
+                <strong>세력 선택</strong>
+                <p>위는 압박, 촉은 생존, 오는 결전 준비로 바로 갈린다.</p>
+              </div>
+              <div class="start-loop-step">
+                <span>2</span>
+                <strong>거점 선택</strong>
+                <p>도시 하나를 찍으면 전황과 권장 장면이 즉시 뜬다.</p>
+              </div>
+              <div class="start-loop-step">
+                <span>3</span>
+                <strong>명령 확정</strong>
+                <p>내정, 군사, 외교 중 하나를 고르고 다음 턴의 판세를 만든다.</p>
+              </div>
             </div>
           </aside>
         </div>
@@ -148,6 +139,7 @@
               <h2 id="intro-title" class="intro-title"></h2>
               <div id="intro-brief" class="intro-brief"></div>
             </div>
+            <div id="intro-guidance" class="intro-guidance"></div>
             <div id="intro-narrative" class="intro-narrative"></div>
             <div id="intro-dialogue" class="intro-dialogue hidden">
               <div class="dialogue-box">
@@ -185,6 +177,10 @@
               <span id="army-display">총 병력: 0</span>
               <span id="actions-display">행동: 3/3</span>
               <span id="rep-display">평판: 100</span>
+            </div>
+            <div id="opening-hud-brief" class="opening-hud-brief hidden">
+              <span id="opening-hud-kicker">오프닝 액트 1</span>
+              <strong id="opening-hud-title">첫 목표를 정리 중입니다</strong>
             </div>
             <div class="top-actions">
               <button id="btn-next-turn" class="btn-turn">다음 턴</button>
@@ -225,6 +221,25 @@
 
             <main id="main-stage">
               <section id="map-stage">
+                <div id="war-room-brief" class="war-room-brief">
+                  <div class="war-room-kicker" id="war-room-kicker">작전 브리프</div>
+                  <h3 id="war-room-title">첫 10분 목표를 정리 중입니다.</h3>
+                  <p id="war-room-objective">선택한 세력의 시작 압박과 첫 권장 행동이 여기에 표시됩니다.</p>
+                  <div class="war-room-grid">
+                    <div class="war-room-card">
+                      <span class="war-room-label">즉시 행동</span>
+                      <strong id="war-room-action">도시를 선택하세요</strong>
+                    </div>
+                    <div class="war-room-card">
+                      <span class="war-room-label">핵심 거점</span>
+                      <strong id="war-room-focus">-</strong>
+                    </div>
+                    <div class="war-room-card">
+                      <span class="war-room-label">전황 리스크</span>
+                      <strong id="war-room-risk">-</strong>
+                    </div>
+                  </div>
+                </div>
                 <div id="map-container">
                   <div class="map-base-layer" id="game-map-base" aria-hidden="true"></div>
                   <canvas id="game-map" width="1600" height="900"></canvas>
@@ -233,8 +248,23 @@
                   <div class="map-selection-text">
                     <div id="map-selection-city">도시 선택 없음</div>
                     <div id="map-selection-owner">도시를 클릭해 전황과 명령을 확인하세요</div>
+                    <div class="map-selection-brief-grid">
+                      <div class="map-selection-brief-card">
+                        <span class="map-selection-brief-label">즉시 행동</span>
+                        <strong id="map-selection-action">도시를 선택하세요</strong>
+                      </div>
+                      <div class="map-selection-brief-card">
+                        <span class="map-selection-brief-label">권장 장면</span>
+                        <strong id="map-selection-scene">-</strong>
+                      </div>
+                    </div>
                   </div>
                   <button id="btn-open-command" class="btn-small" disabled>명령 열기</button>
+                </div>
+                <div id="field-reaction-banner" class="hidden" aria-live="polite">
+                  <div class="field-reaction-kicker" id="field-reaction-kicker">현장 반응</div>
+                  <div class="field-reaction-title" id="field-reaction-title">전장을 정리 중입니다.</div>
+                  <div class="field-reaction-body hidden" id="field-reaction-body"></div>
                 </div>
               </section>
             </main>
@@ -256,6 +286,17 @@
       <div class="modal-backdrop" id="command-modal-backdrop"></div>
       <div id="action-panel">
         <div id="action-panel-content">
+          <div id="command-stage-strip">
+            <div class="command-stage-step active" data-stage="brief">
+              <span>1</span>
+              <strong>작전 장면</strong>
+            </div>
+            <div class="command-stage-divider"></div>
+            <div class="command-stage-step" data-stage="decision">
+              <span>2</span>
+              <strong>명령 확정</strong>
+            </div>
+          </div>
           <div id="action-panel-header">
             <div class="command-heading">
               <span id="action-panel-title">도시 명령</span>
@@ -309,6 +350,58 @@
       <div class="gameover-stats" id="gameover-stats"></div>
       <button id="btn-restart" class="btn-primary">처음으로</button>
     </div>
+  </div>
+
+  <div id="turn-cinematic" class="hidden" aria-live="polite">
+    <div class="turn-sequence-strip">
+      <span class="turn-sequence-step active">결산</span>
+      <span class="turn-sequence-step">재배치</span>
+      <span class="turn-sequence-step">개시</span>
+    </div>
+    <div class="turn-cinematic-kicker" id="turn-cinematic-kicker">전황 결산</div>
+    <div class="turn-cinematic-title" id="turn-cinematic-title">턴 결과를 정리 중입니다.</div>
+    <div class="turn-cinematic-body" id="turn-cinematic-body"></div>
+  </div>
+
+  <div id="turn-bridge-card" class="hidden" aria-live="polite">
+    <div class="turn-sequence-strip">
+      <span class="turn-sequence-step">결산</span>
+      <span class="turn-sequence-step active">재배치</span>
+      <span class="turn-sequence-step">개시</span>
+    </div>
+    <div class="turn-bridge-kicker" id="turn-bridge-kicker">전선 재배치</div>
+    <div class="turn-bridge-title" id="turn-bridge-title">다음 달 전황으로 넘어갑니다.</div>
+    <div class="turn-bridge-body" id="turn-bridge-body"></div>
+  </div>
+
+  <div id="turn-start-card" class="hidden" aria-live="polite">
+    <div class="turn-sequence-strip">
+      <span class="turn-sequence-step">결산</span>
+      <span class="turn-sequence-step">재배치</span>
+      <span class="turn-sequence-step active">개시</span>
+    </div>
+    <div class="turn-start-kicker" id="turn-start-kicker">턴 개시</div>
+    <div class="turn-start-title" id="turn-start-title">다음 턴 목표를 정리 중입니다.</div>
+    <div class="turn-start-body" id="turn-start-body"></div>
+  </div>
+
+  <div id="screen-transition" class="hidden" aria-hidden="true">
+    <div class="screen-transition-panel">
+      <div class="screen-transition-kicker" id="screen-transition-kicker">전환</div>
+      <div class="screen-transition-title" id="screen-transition-title">장면 이동</div>
+      <div class="screen-transition-body" id="screen-transition-body"></div>
+    </div>
+  </div>
+
+  <div id="action-result-banner" class="hidden" aria-live="polite">
+    <div class="action-result-kicker" id="action-result-kicker">명령 결과</div>
+    <div class="action-result-title" id="action-result-title">작전 결과를 정리 중입니다.</div>
+    <div class="action-result-body" id="action-result-body"></div>
+  </div>
+
+  <div id="command-seal-flash" class="hidden" aria-hidden="true">
+    <div class="command-seal-mark" id="command-seal-mark">令</div>
+    <div class="command-seal-copy" id="command-seal-copy">군령 인준</div>
   </div>
 
   <script type="module" src="js/app.js"></script>

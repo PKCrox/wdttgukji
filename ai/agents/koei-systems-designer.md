@@ -34,3 +34,17 @@
 - 플레이어가 이 시스템을 왜 신경 써야 하는가
 - 다른 시스템과 어떤 자원을 주고받는가
 - 코에이에서 검증된 패턴을 굳이 버릴 이유가 있는가
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: koei-systems-designer
+- mutation_scope: workflow
+- auto_upgrade: true
+- lanes: engine-slice, design-surface, app-surface
+- fit_signals: app-surface_coverage, app-surface_handoff_quality, design-surface_coverage, design-surface_handoff_quality, engine-slice_coverage, engine-slice_handoff_quality, mechanic_coherence, reference_alignment
+- upgrade_lanes: app-surface, design-surface, engine-slice
+- review_prompts:
+  - When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When design-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When engine-slice stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->

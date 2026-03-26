@@ -458,11 +458,16 @@ Territory:
 
 - 현재 플레이 가능한 대상은 **208 적벽대전** 단일 시나리오다.
 - 웹 데모 **우당탕탕삼국지**는 내부 실험용 **수직 슬라이스(vertical slice)** 단계까지 진입했다.
+- 공장 계층은 이제 단순 스크립트 묶음이 아니라 **adaptive runner + durable runtime skeleton + agent registry evolution** 구조로 올라왔다.
+- 장기 운영은 **factory 4시간 → game 4시간** split long-run으로 검증되었다.
+- 가장 최근 장기 런 [`long-run-20260324-235741`](runs/long-runs/long-run-20260324-235741)는 **146 batch**를 끝까지 완료했고, `factory 102 / game 44` 배치가 모두 정상 종료됐다.
 - 이미 확보한 강점:
   - 전쟁 루프가 실제로 열리고 끝나는 수준까지 정비되었다.
   - 내정/연구/건설이 턴 결산과 UI에 연결되었다.
   - stage 기반 화면 구조와 authored map 기반 전환이 시작되었다.
   - 헤드리스 평가 경로(`prepare.js`)로 교착률/턴 길이/이벤트 도달률을 추적할 수 있다.
+  - 메타 런 종료 시 `agent-fitness → gaps → proposals → pending docs → promotion → registry sync`가 자동으로 닫힌다.
+  - specialist가 실제로 승격되어 registry에 반영된다 (`theme-independence-specialist`, `autotest-specialist`, `content-pipeline-specialist`).
 - 현재 병목:
   - 몰입감 있는 화면별 command scene 부재
   - UI grammar 일관성 부족
@@ -552,11 +557,23 @@ Territory:
 - [ ] wei 과강세 완화
 - [ ] 190/200/220 시나리오 확장 전 헤드리스 지표 안정화
 
-### Phase 5: 에이전트 파이프라인 통합
-- [ ] `ai/` 와 `AGENTS.md` 기준 역할 분리 운영화
-- [ ] `world-data-researcher` / `koei-systems-designer` / `content-planner` / `engine-integrator` / `balance-researcher` / `qa-persona-simulator` 루프 정착
-- [ ] 문서상 워크플로우를 실제 반복 운영 파이프라인으로 연결
-- [ ] soul 소비 + 이벤트 생성 + QA persona + factory loop 운영화
+### Phase 5: 에이전트 파이프라인 통합 ◐
+- [x] `ai/` 와 `AGENTS.md` 기준 역할 분리 운영화
+- [x] `world-data-researcher` / `koei-systems-designer` / `content-planner` / `engine-integrator` / `balance-researcher` / `qa-persona-simulator` 루프 정착
+- [x] adaptive pass runner + meta run + intermediate review 운영화
+- [x] agent registry / fitness / gap / proposal / promotion 루프 연결
+- [x] `factory 4h -> game 4h` split long-run 운영 검증
+- [ ] durable runtime(Postgres + Redis) 실서비스 환경변수 연결 후 실런 검증
+- [ ] app-surface controlled mutation lane의 실제 게임 산출물 품질 게이트 강화
+
+### Phase 5.5: Agentic Runtime 2.0 ◐
+- [x] adaptive runner에 lane urgency, intermediate review, version snapshot 반영
+- [x] durable runtime skeleton (`runs / passes / tasks / reviews / policy snapshots`) 구현
+- [x] app-surface mutation contract 분리
+- [x] pending specialist draft 생성 + active promotion 자동화
+- [x] registry history / summary / routing state materialization
+- [ ] durable worker lease / retry / recovery의 실DB 검증
+- [ ] 장기 런 결과를 다음 day의 정책 스냅샷에 더 강하게 재주입
 
 ### Phase 6: 테마 일반화 + 패키징
 - [ ] 삼국지 종속 코드 분리 (엔진 vs 테마 데이터)
@@ -569,7 +586,7 @@ Territory:
 2. 도시/연대기 UI 정리
 3. authored map 2차 심화
 4. 208 수동 플레이 QA
-5. balance autoresearch 재가동
+5. durable runtime 실런 + game phase mutation quality gate
 
 ---
 
@@ -784,7 +801,9 @@ wdttgukji/
 │   ├── crawl/              # 23개 크롤러 (character-list.js = 455명 마스터 DB)
 │   ├── process/            # 가공 파이프라인 (P1~P7 + build-name-xref.js)
 │   ├── generate/           # LLM 생성 헬퍼 (extract-soul-data.js 등)
-│   └── balance/            # 밸런스 오토리서치 (headless-sim, optimizer, configs/)
+│   ├── balance/            # 밸런스 오토리서치 (headless-sim, optimizer, configs/)
+│   ├── orchestrate/        # adaptive runner, long-runner, durable runtime, hooks
+│   └── qa/                 # viewport/flow/content/runtime 검증
 ├── data/
 │   ├── raw/                # 크롤링 원본 (~91MB, 16소스)
 │   ├── characters/         # soul.md v2 (426명)
@@ -798,11 +817,14 @@ wdttgukji/
 │       └── name-xref.json       # 이름 교차참조 (440/455 매칭)
 ├── docs/
 │   ├── koei-analysis.md    # 코에이 게임 시스템 분석
-│   └── schemas/            # 데이터 스키마 (event-schema.json 등)
+│   ├── schemas/            # 데이터 스키마 (event-schema.json 등)
+│   ├── agent-registry.json # canonical agent registry
+│   └── agentic-runtime-2.0.md # 장기 런/오케스트레이션 설계
 ├── engine/                 # 게임 코어 엔진 (balance-config.js = 중앙 파라미터 레지스트리)
-├── ai/                     # AI 파이프라인 (생성/테스트)
+├── ai/                     # AI 파이프라인 (agents + workflows)
 ├── themes/
 │   └── three-kingdoms/     # 삼국지 테마 데이터
+├── runs/                   # 장기 런 / 메타 런 / trace / 버전 스냅샷
 └── public/                 # 프론트엔드 (wdttgukji.vercel.app)
 ```
 
@@ -828,6 +850,24 @@ npm install
 npm run dev
 # → http://localhost:3001 에서 게임 플레이
 ```
+
+### Agentic Factory 실행
+
+```bash
+# adaptive 10-pass 실행
+npm run passes:run -- --profile wdttgukji-product-core --passes 10
+
+# 메타 런 (3 iteration x 10 passes)
+npm run passes:iterate -- --profile wdttgukji-product-core --iterations 3 --passes 10
+
+# factory 4h -> game 4h split 장기 런
+npm run passes:long-run -- --duration-hours 8 --split-factory-game --batch-iterations 3 --passes 10
+```
+
+참고:
+- 장기 런 결과는 `runs/long-runs/` 아래에 저장된다.
+- 가장 최근 검증된 split 장기 런은 [`runs/long-runs/long-run-20260324-235741`](runs/long-runs/long-run-20260324-235741)이다.
+- durable runtime 실런은 별도 env가 필요하다: `WDTT_RUNTIME_DATABASE_URL`, `WDTT_RUNTIME_REDIS_URL`
 
 프로덕션 배포판: [wdttgukji.vercel.app](https://wdttgukji.vercel.app)
 

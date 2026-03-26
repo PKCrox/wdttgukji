@@ -11,10 +11,40 @@
     "generate:soul": "node scripts/generate/generate-soul.js",
     "generate:soul:tier0": "node scripts/generate/generate-soul.js --tier 0",
     "generate:soul:dry": "node scripts/generate/generate-soul.js --dry-run",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "content:gate": "node scripts/check-event-quality.js",
+    "balance:report": "node scripts/balance/prepare.js --sims 200 --report",
+    "qa:slice": "node scripts/qa/run-slice-check.js",
+    "qa:macbook14": "node scripts/qa/run-slice-check.js",
+    "qa:triage": "node scripts/qa/analyze-balance-run.js",
+    "qa:factory-assets": "node scripts/qa/check-factory-assets.js",
+    "qa:theme-boundaries": "node scripts/qa/check-theme-boundaries.js",
+    "qa:full": "npm run content:gate && npm run qa:slice && npm run qa:triage",
+    "passes:run": "node scripts/orchestrate/adaptive-pass-runner.js",
+    "passes:dry": "node scripts/orchestrate/adaptive-pass-runner.js --dry-run",
+    "passes:analyze": "node scripts/orchestrate/analyze-pass-run.js",
+    "passes:agent-gaps": "node scripts/orchestrate/analyze-agent-gaps.js",
+    "passes:agent-fitness": "node scripts/orchestrate/analyze-agent-fitness.js",
+    "passes:agent-upgrades": "node scripts/orchestrate/propose-agent-upgrades.js",
+    "passes:agent-apply": "node scripts/orchestrate/apply-agent-upgrades.js",
+    "passes:agent-summary": "node scripts/orchestrate/materialize-agent-registry-summary.js",
+    "passes:agent-routing-state": "node scripts/orchestrate/materialize-agent-routing-state.js",
+    "passes:pending-agents": "node scripts/orchestrate/materialize-pending-agents.js",
+    "passes:pending-agent-docs": "node scripts/orchestrate/materialize-pending-agent-docs.js",
+    "passes:promote-pending-agents": "node scripts/orchestrate/promote-pending-agents.js",
+    "passes:agent-sync-docs": "node scripts/orchestrate/sync-agent-docs-from-registry.js",
+    "passes:iterate": "node scripts/orchestrate/iterate-pass-runs.js",
+    "passes:long-run": "node scripts/orchestrate/long-runner.js",
+    "passes:clean": "node scripts/orchestrate/clean-runtime-artifacts.js",
+    "passes:runtime:migrate": "node scripts/orchestrate/runtime/migrate.js",
+    "passes:runtime:health": "node scripts/orchestrate/runtime/health.js",
+    "passes:runtime:worker": "node scripts/orchestrate/runtime/worker.js",
+    "passes:runtime:run": "node scripts/orchestrate/runtime/durable-runner.js"
   },
   "dependencies": {
-    "cheerio": "^1.2.0"
+    "cheerio": "^1.2.0",
+    "pg": "^8.16.3",
+    "redis": "^5.8.2"
   },
   "devDependencies": {
     "playwright": "^1.58.2"

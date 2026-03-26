@@ -44,3 +44,15 @@
 3. 사람 검수 포인트와 자동 검증 포인트를 구분한다.
 4. 반복 실행 가능한지 확인한다.
 5. 새 파일/폴더가 README 방향성과 맞는지 확인한다.
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: pipeline-architect
+- mutation_scope: workflow
+- auto_upgrade: true
+- lanes: workflow, theme-independence, meta-review
+- fit_signals: contract_clarity, cross_lane_reuse, handoff_quality, theme-independence_coverage, theme-independence_handoff_quality
+- upgrade_lanes: theme-independence
+- review_prompts:
+  - When theme-independence stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->

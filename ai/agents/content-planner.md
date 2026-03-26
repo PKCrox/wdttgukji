@@ -37,3 +37,15 @@
 - 인물 차별성이 행동 규칙으로 드러나는가
 - 이벤트 선택지가 게임 효과와 연결되는가
 - 텍스트가 엔진이 쓰지 못하는 자유서술로만 끝나지 않는가
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: content-planner
+- mutation_scope: workflow
+- auto_upgrade: true
+- lanes: content-pipeline
+- fit_signals: content-pipeline_coverage, content-pipeline_handoff_quality, event_quality, schema_completeness, soul_coverage
+- upgrade_lanes: content-pipeline
+- review_prompts:
+  - When content-pipeline stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->

@@ -4,3 +4,8 @@ node_modules/
 *.log
 .DS_Store
 .vercel
+runs/
+docs/automation-status/
+scripts/orchestrate/generated/*.json
+/screenshot-*.png
+/tmp-*.png

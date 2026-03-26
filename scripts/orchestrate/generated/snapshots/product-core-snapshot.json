@@ -1,0 +1,81 @@
+{
+  "updated_at": "2026-03-26T09:13:47.171Z",
+  "source_axis": "engine-slice",
+  "source_candidate": "playable-engine-slice",
+  "run_id": "adaptive-run-20260326-181346",
+  "pass_index": 1,
+  "product_anchors": [
+    "character-modeling-soul-pipeline",
+    "event-generation-at-scale",
+    "ai-persona-autotest-loop",
+    "theme-independent-mechanics",
+    "playable-koei-grade-engine-slice",
+    "design-plus-development-plus-test-team-loop",
+    "app-surface-evolution-lane"
+  ],
+  "review_hints": {
+    "boostAxes": [
+      "autotest",
+      "content-pipeline",
+      "design-surface",
+      "app-surface",
+      "engine-slice",
+      "theme-independence"
+    ],
+    "lastReviewAfterPass": 1
+  },
+  "runtime_state": {
+    "last_run_id": "adaptive-run-20260326-181346",
+    "persistentBoostAxes": [
+      "autotest",
+      "content-pipeline",
+      "design-surface",
+      "app-surface",
+      "engine-slice",
+      "theme-independence"
+    ]
+  },
+  "factory_summary": {
+    "lastRunId": "adaptive-run-20260326-181346",
+    "persistentBoostAxes": [
+      "autotest",
+      "content-pipeline",
+      "design-surface",
+      "app-surface",
+      "engine-slice",
+      "theme-independence"
+    ]
+  },
+  "axes": {
+    "engine-slice": {
+      "axis": "engine-slice",
+      "status": "ready",
+      "summary": "scenario 208_red_cliffs / factions 5 / cities 43"
+    },
+    "design-surface": {
+      "axis": "design-surface",
+      "status": "ready",
+      "summary": "tracked files 4"
+    },
+    "content-pipeline": {
+      "axis": "content-pipeline",
+      "status": "ready",
+      "summary": "souls 426 / events 337"
+    },
+    "autotest": {
+      "axis": "autotest",
+      "status": "ready",
+      "summary": "balance 0.5723 / anomaly 21.5"
+    },
+    "theme-independence": {
+      "axis": "theme-independence",
+      "status": "ready",
+      "summary": "ui leaks 0 / browser globals 0"
+    },
+    "app-surface": {
+      "axis": "app-surface",
+      "status": "ready",
+      "summary": "stages 4 / transition cards 2"
+    }
+  }
+}

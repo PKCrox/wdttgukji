@@ -1,0 +1,21 @@
+{
+  "agent_id": "content-pipeline-specialist",
+  "lane": "content-pipeline",
+  "title": "Create an additional content-pipeline specialist",
+  "rationale": "content-pipeline ownership exists, but coverage is weak and lane fitness is too low for the current owners.",
+  "suggested_contract": {
+    "lanes": [
+      "content-pipeline"
+    ],
+    "mutation_scope": "workflow",
+    "fit_signals": [
+      "content-pipeline_coverage",
+      "content-pipeline_handoff_quality",
+      "lane_coverage",
+      "handoff_quality"
+    ]
+  },
+  "status": "pending",
+  "proposed_at": "2026-03-24T14:31:45.991Z",
+  "target_doc_path": "ai/agents/pending/content-pipeline-specialist.md"
+}

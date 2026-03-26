@@ -44,3 +44,15 @@ Karpathy식 autoresearch를 게임 밸런스에 적용하는 실험 에이전트
 - `pacingDev`: 게임 길이와 분산이 목표에서 얼마나 벗어났는가
 - `dramaPenalty`: 역전이 부족한가
 - `anomaly`: 조기 멸망/교착이 많은가
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: balance-researcher
+- mutation_scope: workflow
+- auto_upgrade: true
+- lanes: autotest
+- fit_signals: anomaly_rate, autotest_coverage, autotest_handoff_quality, balance_score, drama_rate
+- upgrade_lanes: autotest
+- review_prompts:
+  - When autotest stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->

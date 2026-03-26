@@ -1,0 +1,627 @@
+[
+  {
+    "updated_at": "2026-03-24T22:13:59.148Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071335",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:15:49.482Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071525",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:17:38.231Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071714",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:19:25.347Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071901",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:21:14.267Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072050",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:23:03.545Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072239",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:24:49.680Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072426",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:26:39.513Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072615",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:28:25.281Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072801",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:30:14.597Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072951",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:32:04.014Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073140",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:33:51.815Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073328",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:35:38.895Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073515",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:37:24.667Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:39:13.696Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:41:02.389Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:42:47.866Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:44:36.629Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:46:26.851Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:48:15.571Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:50:03.530Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:51:50.652Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:53:39.245Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:55:28.820Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:57:17.678Z",
+    "axis": "app-surface",
+    "candidate": "app-surface-evolution",
+    "pass_index": 3,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "payload": {
+      "lane": "app-surface",
+      "screenIds": [
+        "start-screen",
+        "faction-screen",
+        "intro-screen",
+        "game-screen"
+      ],
+      "stageCount": 4,
+      "transitionCards": 2,
+      "spotlightCards": 5,
+      "keyArtifacts": {
+        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
+        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+      }
+    }
+  }
+]

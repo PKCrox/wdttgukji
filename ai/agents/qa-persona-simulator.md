@@ -37,3 +37,18 @@
 - "AI가 못한다"와 "게임이 못하게 만든다"를 구분한다.
 - 수치 메트릭과 플레이 로그를 함께 본다.
 - 초반 무력감, 중반 확장감 부재, 후반 무의미한 소거전을 따로 기록한다.
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: qa-persona-simulator
+- mutation_scope: workflow
+- auto_upgrade: true
+- lanes: autotest, engine-slice, design-surface, app-surface
+- fit_signals: app-surface_coverage, app-surface_handoff_quality, autotest_coverage, autotest_handoff_quality, bug_repro_clarity, design-surface_coverage, design-surface_handoff_quality, engine-slice_coverage, engine-slice_handoff_quality, gate_signal_quality, persona_coverage
+- upgrade_lanes: app-surface, autotest, design-surface, engine-slice
+- review_prompts:
+  - When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When autotest stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When design-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When engine-slice stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->

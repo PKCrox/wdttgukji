@@ -86,6 +86,12 @@ export class Sidebar {
     const forecast = getCityForecast(cityId, state);
     const policy = getCityPolicy(city);
     const seal = getFactionSealLabel(city.owner);
+    const recommendations = getCityRecommendations(city, state, forecast);
+    const ownCity = city.owner === state.player.factionId;
+    const immediateAction = recommendations[0]?.title || (ownCity ? '시정 장면 열기' : '군사 장면으로 전황 읽기');
+    const immediateDetail = recommendations[0]?.detail || (ownCity ? '이 도시의 첫 행동부터 정해야 합니다.' : '외부 도시이므로 압박과 대응 수단을 먼저 봐야 합니다.');
+    const commandScene = ownCity ? '시정 또는 군사 장면' : '군사 또는 외교 장면';
+    const cityRisk = forecast.risks[0] || (ownCity ? '지금은 즉시 붕괴 위험은 낮습니다.' : '적 전력과 지형을 읽은 뒤 움직여야 합니다.');
 
     let html = `<div class="city-dossier">
       <section class="city-dossier-hero">
@@ -96,6 +102,24 @@ export class Sidebar {
           <div class="city-governor-line">${faction ? faction.name : '무주지'} · 태수 ${governorName}</div>
           <div class="city-dossier-note">${forecast.recommendations[0] || '이번 달 전황과 월간 예측을 함께 보십시오.'}</div>
           <div class="city-dossier-note">시정 ${policy.domestic.name} · 군령 ${policy.military.name}</div>
+        </div>
+      </section>
+
+      <section class="city-action-brief">
+        <div class="city-action-card">
+          <span class="city-action-label">즉시 행동</span>
+          <strong>${immediateAction}</strong>
+          <p>${immediateDetail}</p>
+        </div>
+        <div class="city-action-card">
+          <span class="city-action-label">지금 열 장면</span>
+          <strong>${commandScene}</strong>
+          <p>${ownCity ? '이 도시는 직접 운용할 수 있으니 내부 카드부터 보십시오.' : '외부 도시는 점령보다 압박 순서를 먼저 판단해야 합니다.'}</p>
+        </div>
+        <div class="city-action-card">
+          <span class="city-action-label">전황 리스크</span>
+          <strong>${ownCity ? '도시 운영 리스크' : '접경 리스크'}</strong>
+          <p>${cityRisk}</p>
         </div>
       </section>
 
@@ -152,7 +176,7 @@ export class Sidebar {
       </section>
     `;
 
-    html += renderRecommendationCard(getCityRecommendations(city, state, forecast));
+    html += renderRecommendationCard(recommendations);
 
     if (characters.length > 0) {
       html += `<section class="garrison-board">

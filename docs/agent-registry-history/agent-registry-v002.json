@@ -1,0 +1,326 @@
+{
+  "upgraded_at": "2026-03-24T10:38:32.211Z",
+  "source_run": "/Users/pkc/wdttgukji/runs/pass-runs/meta-run-20260324-193814",
+  "applied": [
+    {
+      "type": "agent-upgrade",
+      "agent": "koei-systems-designer",
+      "lane": "app-surface"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "map-art-director",
+      "lane": "app-surface"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "ux-stage-director",
+      "lane": "app-surface"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "engine-integrator",
+      "lane": "app-surface"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "qa-persona-simulator",
+      "lane": "app-surface"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "balance-researcher",
+      "lane": "autotest"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "qa-persona-simulator",
+      "lane": "autotest"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "pipeline-architect",
+      "lane": "theme-independence"
+    },
+    {
+      "type": "agent-upgrade",
+      "agent": "engine-integrator",
+      "lane": "theme-independence"
+    }
+  ],
+  "previous_version": 1,
+  "next_version": 2,
+  "registry": {
+    "version": 2,
+    "updated_at": "2026-03-24T10:38:32.211Z",
+    "agents": [
+      {
+        "id": "pipeline-architect",
+        "path": "ai/agents/pipeline-architect.md",
+        "role": "architecture",
+        "lanes": [
+          "workflow",
+          "theme-independence",
+          "meta-review"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "contract_clarity",
+          "cross_lane_reuse",
+          "handoff_quality",
+          "theme-independence_coverage",
+          "theme-independence_handoff_quality"
+        ],
+        "review_prompts": [
+          "When theme-independence stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "theme-independence"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "world-data-researcher",
+        "path": "ai/agents/world-data-researcher.md",
+        "role": "data",
+        "lanes": [
+          "content-pipeline"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "source_coverage",
+          "raw_processed_integrity"
+        ]
+      },
+      {
+        "id": "content-planner",
+        "path": "ai/agents/content-planner.md",
+        "role": "content",
+        "lanes": [
+          "content-pipeline"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "event_quality",
+          "soul_coverage",
+          "schema_completeness"
+        ]
+      },
+      {
+        "id": "koei-systems-designer",
+        "path": "ai/agents/koei-systems-designer.md",
+        "role": "systems-design",
+        "lanes": [
+          "engine-slice",
+          "design-surface",
+          "app-surface"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "app-surface_coverage",
+          "app-surface_handoff_quality",
+          "mechanic_coherence",
+          "reference_alignment"
+        ],
+        "review_prompts": [
+          "When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "app-surface"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "map-art-director",
+        "path": "ai/agents/map-art-director.md",
+        "role": "map-art",
+        "lanes": [
+          "design-surface",
+          "app-surface"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "app-surface_coverage",
+          "app-surface_handoff_quality",
+          "base_map_quality",
+          "map_legibility"
+        ],
+        "review_prompts": [
+          "When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "app-surface"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "ux-stage-director",
+        "path": "ai/agents/ux-stage-director.md",
+        "role": "ux",
+        "lanes": [
+          "design-surface",
+          "app-surface"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "action_guidance",
+          "app-surface_coverage",
+          "app-surface_handoff_quality",
+          "first_frame_fit",
+          "scene_clarity"
+        ],
+        "review_prompts": [
+          "When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "app-surface"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "engine-integrator",
+        "path": "ai/agents/engine-integrator.md",
+        "role": "integration",
+        "lanes": [
+          "engine-slice",
+          "design-surface",
+          "app-surface",
+          "theme-independence"
+        ],
+        "mutation_scope": "product-core",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "app-surface_coverage",
+          "app-surface_handoff_quality",
+          "boundary_cleanliness",
+          "playable_loop_integrity",
+          "theme-independence_coverage",
+          "theme-independence_handoff_quality"
+        ],
+        "review_prompts": [
+          "When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.",
+          "When theme-independence stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "app-surface",
+          "theme-independence"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "balance-researcher",
+        "path": "ai/agents/balance-researcher.md",
+        "role": "balance",
+        "lanes": [
+          "autotest"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "anomaly_rate",
+          "autotest_coverage",
+          "autotest_handoff_quality",
+          "balance_score",
+          "drama_rate"
+        ],
+        "review_prompts": [
+          "When autotest stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "autotest"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "qa-persona-simulator",
+        "path": "ai/agents/qa-persona-simulator.md",
+        "role": "qa",
+        "lanes": [
+          "autotest",
+          "engine-slice",
+          "design-surface",
+          "app-surface"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "app-surface_coverage",
+          "app-surface_handoff_quality",
+          "autotest_coverage",
+          "autotest_handoff_quality",
+          "bug_repro_clarity",
+          "gate_signal_quality",
+          "persona_coverage"
+        ],
+        "review_prompts": [
+          "When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.",
+          "When autotest stays under target, explain whether the issue is routing, missing capability, or contract shape."
+        ],
+        "upgrade_lanes": [
+          "app-surface",
+          "autotest"
+        ],
+        "last_upgrade_at": "2026-03-24T10:38:32.211Z"
+      },
+      {
+        "id": "release-orchestrator",
+        "path": "ai/agents/release-orchestrator.md",
+        "role": "delivery",
+        "lanes": [
+          "workflow",
+          "meta-review",
+          "all"
+        ],
+        "mutation_scope": "workflow",
+        "auto_upgrade": true,
+        "fit_signals": [
+          "closeout_quality",
+          "gate_visibility",
+          "handoff_quality"
+        ]
+      }
+    ],
+    "lane_defaults": {
+      "engine-slice": [
+        "engine-integrator",
+        "qa-persona-simulator",
+        "release-orchestrator"
+      ],
+      "design-surface": [
+        "ux-stage-director",
+        "map-art-director",
+        "engine-integrator",
+        "qa-persona-simulator"
+      ],
+      "content-pipeline": [
+        "world-data-researcher",
+        "content-planner",
+        "release-orchestrator"
+      ],
+      "autotest": [
+        "balance-researcher",
+        "qa-persona-simulator",
+        "release-orchestrator"
+      ],
+      "theme-independence": [
+        "pipeline-architect",
+        "engine-integrator",
+        "release-orchestrator"
+      ],
+      "app-surface": [
+        "ux-stage-director",
+        "map-art-director",
+        "engine-integrator",
+        "qa-persona-simulator",
+        "release-orchestrator"
+      ]
+    },
+    "last_upgrade_run": "/Users/pkc/wdttgukji/runs/pass-runs/meta-run-20260324-193814"
+  }
+}

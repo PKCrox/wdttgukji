@@ -94,14 +94,14 @@ export const BALANCE = {
     attackAdvantage: 1.5,         // 공격에 필요한 병력 배수
     attackArmyMin: 5000,          // 공격 최소 병력
     attackArmySend: 0.6,          // 출진 시 파견 비율
-    defendProb: 0.60,             // 위협 시 방어 확률
+    defendProb: 0.45,             // 위협 시 방어 확률
     investProb: 0.50,             // 내정 투자 확률
     recruitProb: 0.25,            // 인재 탐색 확률
     captiveHandleProb: 0.30,
     recruitCostPerSoldier: 5,
     recruitMax: 2000,
-    reinforceThreshold: 8000,
-    reinforceRate: 0.30,
+    reinforceThreshold: 6500,
+    reinforceRate: 0.42,
     earlyProtectionTurns: 4,      // 플레이어 초반 보호 턴
     captiveReleaseTurns: 8,
   },

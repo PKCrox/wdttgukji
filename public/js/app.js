@@ -9,6 +9,19 @@ import { EventUI } from './event-ui.js';
 import { Sidebar, getCharName, FACTION_COLORS, showCharacterModal } from './sidebar.js';
 import { ActionPanel, executePlayerAction } from './action-panel.js';
 import { TurnResolution, getLogIcon } from './turn-resolution.js';
+import {
+  SAVE_KEY,
+  SAVE_META_KEY,
+  FACTION_META,
+  OPENING_OBJECTIVES,
+  FACTION_LEADERS,
+  FACTION_DIALOGUES,
+  OPENING_ACT,
+  buildSaveMeta,
+  getFactionSnapshot,
+  getNarrativeModeLabel,
+  getOpeningActBeat,
+} from './campaign-config.js';
 
 // --- 글로벌 상태 ---
 let state = null;
@@ -20,31 +33,106 @@ let sidebar = null;
 let actionPanel = null;
 let selectedNarrativeMode = 'both'; // 'history' | 'romance' | 'both'
 let processing = false;
-let logVisible = true;
+let logVisible = false;
 let turnResolution = null;
 let selectedFaction = null;
+const SCREEN_IDS = ['start-screen', 'faction-screen', 'intro-screen', 'game-screen'];
+const uiState = {
+  openingCityId: null,
+  commandSpotlightShown: false,
+  turnSpotlightTimer: null,
+  turnBridgeTimer: null,
+  turnStartTimer: null,
+  actionResultTimer: null,
+  fieldReactionTimer: null,
+  transitionTimer: null,
+  openingActActive: false,
+};
+let viewportLayoutRaf = 0;
+
+function getViewportLayoutMetrics() {
+  const width = window.innerWidth || document.documentElement.clientWidth || 1512;
+  const height = window.innerHeight || document.documentElement.clientHeight || 982;
+  const desktop = width >= 1181;
+  const shortDesktop = desktop && height <= 1030;
+  const compactDesktop = desktop && (width < 1360 || height < 930);
+  const wideDesktop = desktop && width >= 1900;
+  const desktopPadding = desktop ? (shortDesktop ? 2 : 14) : 6;
+  const frameWidthGap = desktop ? (shortDesktop ? 24 : 40) : 12;
+  const frameHeightGap = desktop ? (shortDesktop ? 112 : 44) : 12;
+  const frameCap = wideDesktop ? 1560 : compactDesktop ? 1420 : 1496;
+  const frameWidth = desktop
+    ? Math.max(1120, Math.min(width - frameWidthGap, ((height - frameHeightGap) * 16) / 9, frameCap))
+    : Math.max(320, Math.min(width - frameWidthGap, ((height - frameHeightGap) * 16) / 9));
+  const frameHeight = desktop ? Math.max(680, height - frameHeightGap) : Math.max(560, height - frameHeightGap);
+
+  return {
+    width,
+    height,
+    desktop,
+    shortDesktop,
+    compactDesktop,
+    frameWidth,
+    frameHeight,
+    startCols: compactDesktop ? 'minmax(0,1fr) 332px' : 'minmax(0,1.08fr) 372px',
+    factionCols: compactDesktop ? '206px minmax(0,1fr) 260px' : '224px minmax(0,1fr) 292px',
+    introCols: compactDesktop ? '220px minmax(0,1fr)' : '244px minmax(0,1fr)',
+    battlefieldCols: compactDesktop ? '180px minmax(0,1fr) 236px' : '192px minmax(0,1fr) 248px',
+    battlefieldCollapsedCols: compactDesktop ? '0 minmax(0,1fr) 236px' : '0 minmax(0,1fr) 248px',
+    actionBoardCols: compactDesktop ? 'minmax(0,1fr) 300px' : 'minmax(0,1fr) 320px',
+    actionBodyCols: compactDesktop ? '208px minmax(0,1fr)' : '220px minmax(0,1fr)',
+    screenPadding: desktopPadding,
+  };
+}
+
+function applyViewportLayoutLock() {
+  const root = document.documentElement;
+  const metrics = getViewportLayoutMetrics();
+  root.dataset.viewportTier = metrics.desktop ? 'desktop' : 'compact';
+  root.dataset.viewportHeightTier = metrics.shortDesktop ? 'short' : 'regular';
+  root.style.setProperty('--runtime-stage-width', `${Math.round(metrics.frameWidth)}px`);
+  root.style.setProperty('--runtime-stage-height', `${Math.round(metrics.frameHeight)}px`);
+  root.style.setProperty('--runtime-start-cols', metrics.startCols);
+  root.style.setProperty('--runtime-faction-cols', metrics.factionCols);
+  root.style.setProperty('--runtime-intro-cols', metrics.introCols);
+  root.style.setProperty('--runtime-battlefield-cols', metrics.battlefieldCols);
+  root.style.setProperty('--runtime-battlefield-collapsed-cols', metrics.battlefieldCollapsedCols);
+  root.style.setProperty('--runtime-action-board-cols', metrics.actionBoardCols);
+  root.style.setProperty('--runtime-action-body-cols', metrics.actionBodyCols);
+  root.style.setProperty('--runtime-screen-padding', `${metrics.screenPadding}px`);
+}
+
+function scheduleViewportLayoutLock() {
+  if (viewportLayoutRaf) cancelAnimationFrame(viewportLayoutRaf);
+  viewportLayoutRaf = requestAnimationFrame(() => {
+    applyViewportLayoutLock();
+    viewportLayoutRaf = 0;
+  });
+}
 
 // --- 초기화 ---
 async function init() {
+  applyViewportLayoutLock();
   eventUI = new EventUI();
   sidebar = new Sidebar();
   actionPanel = new ActionPanel();
   turnResolution = new TurnResolution();
 
   // 버튼 바인딩
-  document.getElementById('btn-new-game').addEventListener('click', showFactionSelect);
+  document.getElementById('btn-new-game').addEventListener('click', () => { void showFactionSelect(); });
   document.getElementById('btn-load-game').addEventListener('click', loadGame);
   document.getElementById('btn-next-turn').addEventListener('click', nextTurn);
   document.getElementById('btn-save').addEventListener('click', saveGame);
   document.getElementById('btn-menu').addEventListener('click', returnToMenu);
   document.getElementById('btn-restart').addEventListener('click', returnToMenu);
-  document.getElementById('btn-confirm-faction').addEventListener('click', showIntro);
-  document.getElementById('btn-back-to-start').addEventListener('click', backToStart);
+  document.getElementById('btn-confirm-faction').addEventListener('click', () => { void showIntro(); });
+  document.getElementById('btn-back-to-start').addEventListener('click', () => { void backToStart(); });
   document.getElementById('btn-start-game').addEventListener('click', startNewGame);
   document.getElementById('intro-dialogue').addEventListener('click', advanceDialogue);
   document.getElementById('btn-open-command').addEventListener('click', openSelectedCityCommand);
 
   document.getElementById('btn-toggle-log').addEventListener('click', toggleLog);
+  window.addEventListener('resize', scheduleViewportLayoutLock);
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter') return;
     if (document.getElementById('game-screen').classList.contains('hidden')) return;
@@ -58,144 +146,732 @@ async function init() {
   });
 
   // 이어하기 버튼 상태
-  const saved = localStorage.getItem('wdttgukji_save');
-  if (!saved) {
-    document.getElementById('btn-load-game').disabled = true;
-    document.getElementById('btn-load-game').style.opacity = '0.4';
+  refreshSaveSlot();
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function switchScreen(targetId, {
+  kicker = '장면 전환',
+  title = '',
+  body = '',
+} = {}) {
+  const overlay = document.getElementById('screen-transition');
+  if (!overlay) {
+    for (const screenId of SCREEN_IDS) {
+      document.getElementById(screenId)?.classList.toggle('hidden', screenId !== targetId);
+    }
+    return;
+  }
+
+  document.getElementById('screen-transition-kicker').textContent = kicker;
+  document.getElementById('screen-transition-title').textContent = title || '장면 이동';
+  document.getElementById('screen-transition-body').textContent = body;
+  overlay.classList.remove('hidden');
+  requestAnimationFrame(() => overlay.classList.add('visible'));
+  await sleep(180);
+
+  for (const screenId of SCREEN_IDS) {
+    document.getElementById(screenId)?.classList.toggle('hidden', screenId !== targetId);
+  }
+
+  await sleep(280);
+  overlay.classList.remove('visible');
+  clearTimeout(uiState.transitionTimer);
+  uiState.transitionTimer = setTimeout(() => overlay.classList.add('hidden'), 280);
+}
+
+async function showSceneTransitionCard({
+  kicker = '장면 전환',
+  title = '장면 이동',
+  body = '',
+  duration = 520,
+  variant = 'default',
+} = {}) {
+  const overlay = document.getElementById('screen-transition');
+  if (!overlay) return;
+  clearTimeout(uiState.transitionTimer);
+  overlay.dataset.variant = variant;
+  document.getElementById('screen-transition-kicker').textContent = kicker;
+  document.getElementById('screen-transition-title').textContent = title;
+  document.getElementById('screen-transition-body').textContent = body;
+  overlay.classList.remove('hidden');
+  requestAnimationFrame(() => overlay.classList.add('visible'));
+  await sleep(duration);
+  overlay.classList.remove('visible');
+  uiState.transitionTimer = setTimeout(() => overlay.classList.add('hidden'), 240);
+  await sleep(180);
+}
+
+function getActionSealMeta(result = {}) {
+  const actionType = result.actionType || '';
+  if (['attack', 'declare_war', 'move_troops', 'conscript'].includes(actionType) || result.tone === 'military') {
+    return { glyph: '戰', copy: '군령 인준', tone: 'military' };
+  }
+  if (['propose_peace', 'propose_alliance', 'propose_marriage', 'send_tribute', 'threaten', 'espionage'].includes(actionType) || result.tone === 'diplomacy') {
+    return { glyph: '盟', copy: '교섭 재가', tone: 'diplomacy' };
+  }
+  if (['appoint_governor', 'appoint_tactician', 'move_general', 'search_talent', 'reward_officer', 'bestow_item', 'dismiss_officer'].includes(actionType)) {
+    return { glyph: '將', copy: '인사 재가', tone: 'personnel' };
+  }
+  if (result.tone === 'fortify') {
+    return { glyph: '城', copy: '성방 재가', tone: 'fortify' };
+  }
+  return { glyph: '政', copy: '시정 재가', tone: result.tone === 'growth' ? 'government' : 'government' };
+}
+
+function showCommandSealFlash(result = {}) {
+  if (!result?.title) return;
+  const panel = document.getElementById('command-seal-flash');
+  if (!panel) return;
+  const seal = getActionSealMeta(result);
+  panel.dataset.tone = seal.tone;
+  document.getElementById('command-seal-mark').textContent = seal.glyph;
+  document.getElementById('command-seal-copy').textContent = seal.copy;
+  panel.classList.remove('hidden');
+  requestAnimationFrame(() => panel.classList.add('visible'));
+  setTimeout(() => {
+    panel.classList.remove('visible');
+    setTimeout(() => panel.classList.add('hidden'), 220);
+  }, 680);
+}
+
+let dialogueState = { lines: [], index: 0 };
+
+function getStoredSaveMeta() {
+  try {
+    const raw = localStorage.getItem(SAVE_META_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
   }
 }
 
-// --- 세력 선택 데이터 ---
-const FACTION_META = {
-  wei: {
-    leader: '조조 (曹操)',
-    diff: 'easy', diffLabel: '쉬움',
-    desc: '천하의 절반을 이미 손에 넣은 난세의 간웅. 압도적 병력과 인재로 남하를 노린다.',
-    intro: [
-      '건안 13년. 천하의 절반이 이미 당신의 손 안에 있다.',
-      '형주의 유종이 항복하며 수군까지 얻었다. 80만 대군을 이끌고 장강을 건너면 강동의 손권과 떠돌이 유비 따위는 단숨에 쓸어버릴 수 있다.',
-      '그러나 전쟁은 언제나 변수가 있는 법. 남방의 풍토, 수전에 익숙지 않은 북방 병사들, 그리고 아직 항복하지 않은 자들의 절박함 —',
-      '천하통일의 마지막 퍼즐을 맞춰라.',
-    ],
-  },
-  shu: {
-    leader: '유비 (劉備)',
-    diff: 'hard', diffLabel: '어려움',
-    desc: '형주에서 겨우 버티는 한실의 후예. 제갈량의 천하삼분지계가 유일한 희망.',
-    intro: [
-      '건안 13년. 당신에게 남은 것은 형주 한 귀퉁이와 4만의 병사, 그리고 사람들.',
-      '조조의 80만 대군이 남하하고 있다. 혼자서는 버틸 수 없다. 제갈량이 말했다 — 강동의 손권과 손잡으면 살 길이 있다고.',
-      '한실 부흥의 대의를 내걸었지만, 지금은 살아남는 것이 먼저다. 적벽에서 기적을 만들 수 있다면, 삼분천하의 한 축이 될 수 있다.',
-      '바닥에서 시작하는 역전의 서사. 당신의 선택이 역사를 바꾼다.',
-    ],
-  },
-  wu: {
-    leader: '손권 (孫權)',
-    diff: 'normal', diffLabel: '보통',
-    desc: '강동의 젊은 군주. 아버지와 형이 남긴 기반 위에서 난세를 헤쳐나간다.',
-    intro: [
-      '건안 13년. 아버지 손견, 형 손책이 피로 일군 강동 땅이 위기에 처했다.',
-      '조조가 80만을 이끌고 남하한다. 조정의 대신들은 항복을 외치고, 무장들은 결전을 부르짖는다. 결정은 당신의 몫이다.',
-      '주유와 노숙이 있고, 장강의 천험이 있다. 유비와 손을 잡으면 승산이 생긴다 — 하지만 동맹은 영원하지 않다.',
-      '지금은 함께 싸우되, 전쟁이 끝난 뒤의 판도까지 내다봐라.',
-    ],
-  },
-  liu_zhang: {
-    leader: '유장 (劉璋)',
-    diff: 'hard', diffLabel: '어려움',
-    desc: '익주의 안일한 군주. 비옥한 땅이 있지만 야심도, 인재도 부족하다.',
-    intro: [
-      '건안 13년. 익주와 성도는 천혜의 요새다. 촉도(蜀道)의 험준함이 외적을 막아주고, 비옥한 분지가 백성을 먹여살린다.',
-      '그러나 편안함은 독이 되었다. 조조가 한중을 넘보고, 유비가 형주에서 서쪽을 바라본다. 장로가 북쪽에서 호시탐탐 노린다.',
-      '아버지 유언이 남긴 땅을 지키는 것만으로도 벅차다. 인재는 떠나고, 신하들은 각자의 속셈이 있다.',
-      '난세에서 안일함은 죽음이다. 살아남으려면 변해야 한다.',
-    ],
-  },
-  zhang_lu: {
-    leader: '장로 (張魯)',
-    diff: 'vhard', diffLabel: '매우 어려움',
-    desc: '한중의 오두미도 교주. 작은 땅, 적은 병력. 생존 자체가 도전.',
-    intro: [
-      '건안 13년. 한중 땅 하나, 병사 만 명. 이것이 당신의 전부다.',
-      '북쪽의 조조는 관중을 평정한 뒤 언제든 남하할 수 있고, 남쪽의 유장과는 오랜 원한이 있다. 사방이 적이다.',
-      '오두미도의 신도들이 당신을 따르지만, 전쟁은 신앙만으로 이길 수 없다.',
-      '최소한의 자원으로 최대한의 외교를 펼쳐라. 한중의 지형을 이용하고, 강자들 사이에서 살아남는 길을 찾아라.',
-    ],
-  },
-};
+function recoverSaveMeta() {
+  const saved = localStorage.getItem(SAVE_KEY);
+  if (!saved) return null;
+  try {
+    const recoveredState = GameState.deserialize(saved);
+    const meta = buildSaveMeta(recoveredState);
+    if (meta) localStorage.setItem(SAVE_META_KEY, JSON.stringify(meta));
+    return meta;
+  } catch {
+    return null;
+  }
+}
 
-const OPENING_OBJECTIVES = {
-  wei: [
-    '남하 전선을 정리하고 형주 병력을 한 축으로 몰아붙인다.',
-    '초반 몇 턴은 연구나 병참보다 전선 집결과 압박이 우선이다.',
-  ],
-  shu: [
-    '생존이 최우선이다. 외교와 내정으로 첫 파도를 버틴다.',
-    '형주의 약한 도시를 보강하고 연구/건설 한 축을 빠르게 연다.',
-  ],
-  wu: [
-    '강동 수비와 전선 정비가 먼저다. 무리한 선공보다 방어 준비를 우선한다.',
-    '외교와 연구를 통해 반격 타이밍을 만든다.',
-  ],
-  liu_zhang: [
-    '익주의 안전지대를 활용해 내정과 방어 시설을 정비한다.',
-    '전선이 열리기 전에 병력과 치안을 같이 쌓는다.',
-  ],
-  zhang_lu: [
-    '한중 관문 방어와 치안 유지가 핵심이다.',
-    '병력 손실 없이 시간을 벌며 연구와 방비를 축적한다.',
-  ],
-};
+function clearStoredSave() {
+  localStorage.removeItem(SAVE_KEY);
+  localStorage.removeItem(SAVE_META_KEY);
+}
 
-const FACTION_LEADERS = {
-  wei: 'cao_cao', shu: 'liu_bei', wu: 'sun_quan',
-  liu_zhang: 'liu_zhang_char', zhang_lu: 'zhang_lu_char',
-};
+function persistSave({ silent = false, source = 'manual' } = {}) {
+  if (!state) return false;
+  try {
+    const meta = buildSaveMeta(state);
+    localStorage.setItem(SAVE_KEY, state.serialize());
+    if (meta) localStorage.setItem(SAVE_META_KEY, JSON.stringify(meta));
+    refreshSaveSlot(meta);
+    if (!silent) {
+      showToast(source === 'auto' ? '자동 저장 완료' : '저장 완료');
+    }
+    return true;
+  } catch (err) {
+    console.error('Failed to persist save:', err);
+    if (!silent) alert('저장에 실패했습니다.');
+    return false;
+  }
+}
 
-// --- 세력별 도입 대화 ---
-const FACTION_DIALOGUES = {
-  wei: [
-    { speaker: '순욱', text: '승상, 형주의 유종이 항복하며 수군까지 얻었습니다. 장강을 건너는 것은 시간 문제입니다.' },
-    { speaker: '조조', text: '하하, 주유와 제갈량이 손을 잡는다 한들 80만 앞에서는 무력하지.' },
-    { speaker: '가후', text: '승상, 한 가지 우려가 있습니다. 북방 병사들은 수전에 익숙하지 않고, 남방의 풍토병도...' },
-    { speaker: '조조', text: '걱정 마라. 연환계로 배를 잇대면 육지나 다름없다. 병사들의 멀미도 해결될 것이야.' },
-    { speaker: '순유', text: '손권에게 항복을 권하는 서신을 보내는 것도 일책입니다. 전의를 꺾으면 피를 흘리지 않아도 됩니다.' },
-    { speaker: '조조', text: '좋다. 전쟁은 시작 전에 이기는 것이 상책. — 그러나 거부한다면, 남김없이 쓸어버릴 것이다.' },
-  ],
-  shu: [
-    { speaker: '제갈량', text: '주공, 조조의 80만 대군이 남하합니다. 우리 힘만으로는 막을 수 없습니다.' },
-    { speaker: '유비', text: '군사의 뜻은 알겠소. 하나 손권이 우리와 손잡을 이유가 있겠소?' },
-    { speaker: '제갈량', text: '손권 역시 조조를 두려워합니다. 제가 강동으로 건너가 설득하겠습니다. 함께라면 승산이 있습니다.' },
-    { speaker: '관우', text: '형님, 군사를 믿으십시오. 우리에게는 아직 대의가 있고, 따르는 백성이 있습니다.' },
-    { speaker: '장비', text: '형님! 이 장익덕이 살아있는 한, 형님 뒤는 제가 지킵니다!' },
-    { speaker: '유비', text: '...좋다. 군사, 강동으로 가시오. 한실 부흥의 마지막 불씨를 — 우리가 지켜야 하오.' },
-  ],
-  wu: [
-    { speaker: '노숙', text: '주공, 유비 쪽에서 제갈량이라는 자가 사신으로 왔습니다. 연합을 제안하고 있습니다.' },
-    { speaker: '손권', text: '조조가 80만을 이끌고 온다... 조정의 대신들은 뭐라 하던가?' },
-    { speaker: '노숙', text: '장소, 진군 등은 항복을 주장합니다. 조조의 세가 너무 크다고...' },
-    { speaker: '주유', text: '항복이라니! 손가 3대가 피로 일군 강동을 고스란히 바치자는 겁니까!' },
-    { speaker: '손권', text: '...도독의 뜻은?' },
-    { speaker: '주유', text: '제게 정예 5만을 주십시오. 장강의 바람과 불로 — 조조의 목을 가져오겠습니다.' },
-  ],
-  liu_zhang: [
-    { speaker: '장송', text: '주공, 조조가 관중을 평정하고 한중을 넘봅니다. 우리도 대비가 필요합니다.' },
-    { speaker: '유장', text: '촉도가 험하니 쉽게 들어오지는 못할 것이다...' },
-    { speaker: '법정', text: '주공, 촉도만 믿어서는 안 됩니다. 병사를 훈련시키고 관문을 보강해야 합니다.' },
-    { speaker: '장송', text: '(천하의 영웅들이 움직이는데, 이 분은 언제까지 성도에 앉아만 계시려나...)' },
-    { speaker: '유장', text: '...아버지가 남기신 이 땅만은 지켜야지. 그래, 우선 관문부터 점검하자.' },
-  ],
-  zhang_lu: [
-    { speaker: '양송', text: '교주, 남쪽 유장과의 갈등이 심해지고 있습니다. 유장이 장수를 파견했다는 소식도...' },
-    { speaker: '장로', text: '도의 힘으로 백성을 다스리면 만사가 평안한 법이다.' },
-    { speaker: '방덕', text: '교주, 도로 나라를 지킬 수는 없습니다. 조조가 관중을 평정하면 한중이 다음 목표입니다.' },
-    { speaker: '장로', text: '......' },
-    { speaker: '방덕', text: '한중의 지형은 천혜의 요새입니다. 양평관만 굳건히 지키면 10만 대군도 막아낼 수 있습니다.' },
-    { speaker: '장로', text: '그래... 우선은 방어를 굳히자. 신도들의 힘을 모아, 한중만은 지켜내야 한다.' },
-  ],
-};
+function refreshSaveSlot(meta = getStoredSaveMeta()) {
+  const btn = document.getElementById('btn-load-game');
+  const card = document.getElementById('save-slot-card');
+  if (!btn || !card) return;
 
-let dialogueState = { lines: [], index: 0 };
+  const rawSave = localStorage.getItem(SAVE_KEY);
+  const effectiveMeta = meta || recoverSaveMeta();
+  const hasSave = !!rawSave && !!effectiveMeta;
+  btn.disabled = !hasSave;
+  btn.style.opacity = hasSave ? '1' : '0.4';
+  btn.textContent = hasSave ? '이어하기' : '저장 없음';
+
+  if (!hasSave) {
+    card.classList.add('hidden');
+    card.innerHTML = '';
+    return;
+  }
+
+  const savedAt = effectiveMeta.savedAt
+    ? new Date(effectiveMeta.savedAt).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+    : '방금 전';
+
+  card.classList.remove('hidden');
+  card.innerHTML = `
+    <div class="save-slot-kicker">최근 저장</div>
+    <div class="save-slot-main">
+      <div class="save-slot-title">${effectiveMeta.factionName}</div>
+      <div class="save-slot-turn">턴 ${effectiveMeta.turn}</div>
+    </div>
+    <div class="save-slot-meta">${effectiveMeta.year}년 ${effectiveMeta.month}월 · ${effectiveMeta.leader} · 도시 ${effectiveMeta.cityCount}개</div>
+    <div class="save-slot-foot">${getNarrativeModeLabel(effectiveMeta.narrativeMode)} 기준 · ${savedAt} 저장</div>
+  `;
+}
+
+function getOpeningFocusCity(factionId, sourceState = state, sourceScenario = scenario) {
+  const scriptedCityId = OPENING_ACT[factionId]?.focusCityId;
+  const scriptedCity = (sourceState?.cities?.[scriptedCityId] || sourceScenario?.cities?.[scriptedCityId])
+    ? {
+        id: scriptedCityId,
+        ...(sourceState?.cities?.[scriptedCityId] || sourceScenario?.cities?.[scriptedCityId]),
+      }
+    : null;
+  if (scriptedCity) return scriptedCity;
+
+  const citySource = sourceState?.cities || sourceScenario?.cities || {};
+  const connectionSource = sourceScenario?.connections || [];
+  const cities = Object.entries(citySource)
+    .filter(([, city]) => city.owner === factionId)
+    .map(([id, city]) => ({ id, ...city }));
+
+  if (!cities.length) return null;
+
+  return cities
+    .map((city) => {
+      const neighbors = connectionSource.reduce((list, [a, b]) => {
+        if (a === city.id) list.push(b);
+        else if (b === city.id) list.push(a);
+        return list;
+      }, []);
+      const enemyFronts = neighbors.filter((neighborId) => citySource[neighborId]?.owner && citySource[neighborId]?.owner !== factionId).length;
+      const friendlyLinks = neighbors.filter((neighborId) => citySource[neighborId]?.owner === factionId).length;
+      return { ...city, enemyFronts, friendlyLinks };
+    })
+    .sort((a, b) => (
+      b.enemyFronts - a.enemyFronts
+      || (b.strategic_importance || 0) - (a.strategic_importance || 0)
+      || b.army - a.army
+      || a.friendlyLinks - b.friendlyLinks
+    ))[0];
+}
+
+function isOpeningActActive(turn = state?.turn || 1) {
+  return !!(state?.player?.factionId && turn <= 3);
+}
+
+function getOpeningActPayload(turn = state?.turn || 1, factionId = state?.player?.factionId || selectedFaction) {
+  if (!factionId) return null;
+  return getOpeningActBeat(factionId, turn);
+}
+
+function isShortViewport() {
+  return document.documentElement.dataset.viewportHeightTier === 'short';
+}
+
+function getRiskLabel(factionId) {
+  switch (factionId) {
+    case 'wei':
+      return '남하 전선이 넓어 병참과 수전 적응이 동시에 흔들릴 수 있음';
+    case 'shu':
+      return '조조의 첫 파도와 약한 형주 전선이 동시에 압박함';
+    case 'wu':
+      return '항복론과 결전론 사이에서 방어 준비가 늦어질 수 있음';
+    case 'liu_zhang':
+      return '익주의 안전지대에 안주하면 외부 침투에 늦게 반응함';
+    case 'zhang_lu':
+      return '병력 손실 한 번이 바로 멸망 압박으로 이어짐';
+    default:
+      return '주도권보다 생존과 병참을 먼저 점검해야 함';
+  }
+}
+
+function getRecommendedActionText(factionId, focusedCity, owned = true) {
+  const beat = getOpeningActPayload(state?.turn || 1, factionId);
+  if (beat?.action && owned) return beat.action;
+  if (!owned && focusedCity) return `${focusedCity.name}의 전황을 읽고 외교·군사 탭으로 압박을 확인하세요.`;
+  const cityName = focusedCity?.name || '핵심 거점';
+  switch (factionId) {
+    case 'wei':
+      return `${cityName}에서 군사 장면을 열고 적 인접 도시 압박부터 시작하세요.`;
+    case 'shu':
+      return `${cityName}에서 시정 장면을 열어 방비나 치안을 먼저 올리세요.`;
+    case 'wu':
+      return `${cityName}에서 군사 장면으로 방어선과 보급 여력을 먼저 확인하세요.`;
+    case 'liu_zhang':
+      return `${cityName}에서 시정 장면을 열고 건설·방비를 먼저 누적하세요.`;
+    case 'zhang_lu':
+      return `${cityName}에서 방어 준비와 병력 보존 중심으로 첫 행동을 결정하세요.`;
+    default:
+      return `${cityName}에서 첫 명령을 열어 상황을 정리하세요.`;
+  }
+}
+
+function getBriefingPayload({ factionId, selectedCityId = null } = {}) {
+  const effectiveFactionId = factionId || state?.player?.factionId || selectedFaction;
+  if (!effectiveFactionId) return null;
+  const openingBeat = getOpeningActPayload(state?.turn || 1, effectiveFactionId);
+
+  const focusedCity = selectedCityId && state?.cities?.[selectedCityId]
+    ? { id: selectedCityId, ...state.cities[selectedCityId] }
+    : getOpeningFocusCity(effectiveFactionId);
+  const faction = state?.factions?.[effectiveFactionId] || scenario?.factions?.[effectiveFactionId];
+  const city = selectedCityId ? state?.cities?.[selectedCityId] : null;
+  const isOwnedSelection = !city || city.owner === effectiveFactionId;
+  const objective = openingBeat?.objective || (OPENING_OBJECTIVES[effectiveFactionId] || [])[0] || '첫 거점의 전황을 읽고 명령을 시작하세요.';
+
+  return {
+    factionName: faction?.name || effectiveFactionId,
+    objective,
+    action: openingBeat?.action || getRecommendedActionText(effectiveFactionId, focusedCity, isOwnedSelection),
+    focus: focusedCity?.name || '전장 전체',
+    risk: openingBeat?.risk || getRiskLabel(effectiveFactionId),
+    selectedCity: city,
+    openingBeat,
+  };
+}
+
+function updateWarRoomBrief() {
+  const payload = getBriefingPayload({ selectedCityId: map?.selectedCity || null });
+  if (!payload) return;
+  const compact = isShortViewport();
+  const panel = document.getElementById('war-room-brief');
+
+  const title = compact && payload.selectedCity
+    ? `${payload.selectedCity.name} · ${payload.openingBeat?.title || '첫 명령'}`
+    : payload.selectedCity
+    ? `${payload.selectedCity.name}에 시선을 고정하십시오`
+    : payload.openingBeat?.title || `${payload.factionName}의 첫 10분 동선을 제시합니다`;
+  const objective = payload.selectedCity
+    ? payload.selectedCity.owner === state.player.factionId
+      ? `${payload.selectedCity.name}은(는) 현재 당신의 거점입니다. ${payload.action}`
+      : `${payload.selectedCity.name}은(는) 외부 전선입니다. ${payload.action}`
+    : payload.objective;
+  const compactObjective = payload.selectedCity
+    ? payload.action
+    : `${payload.focus} · ${payload.action}`;
+
+  document.getElementById('war-room-title').textContent = title;
+  document.getElementById('war-room-objective').textContent = compact ? compactObjective : objective;
+  document.getElementById('war-room-action').textContent = payload.action;
+  document.getElementById('war-room-focus').textContent = payload.focus;
+  document.getElementById('war-room-risk').textContent = payload.risk;
+  document.getElementById('war-room-kicker').textContent =
+    uiState.openingActActive && payload.openingBeat
+      ? `오프닝 액트 ${Math.min(state.turn, 3)}`
+      : payload.selectedCity ? '현장 브리프' : '작전 브리프';
+  if (panel) panel.dataset.layout = compact ? 'compact' : 'full';
+}
+
+function updateOpeningHudBrief() {
+  const container = document.getElementById('opening-hud-brief');
+  if (!container) return;
+  if (!uiState.openingActActive || !state?.player?.factionId) {
+    container.classList.add('hidden');
+    return;
+  }
+  const beat = getOpeningActPayload(state.turn, state.player.factionId);
+  document.getElementById('opening-hud-kicker').textContent = `오프닝 액트 ${Math.min(state.turn, 3)}`;
+  document.getElementById('opening-hud-title').textContent = beat?.action || beat?.title || '첫 목표를 진행하십시오';
+  container.classList.remove('hidden');
+}
+
+function updateIntroGuidance(factionId) {
+  const box = document.getElementById('intro-guidance');
+  if (!box || !scenario) return;
+  const focusCity = getOpeningFocusCity(factionId, null, scenario);
+  const beat1 = getOpeningActBeat(factionId, 1);
+  const beat2 = getOpeningActBeat(factionId, 2);
+  const beat3 = getOpeningActBeat(factionId, 3);
+
+  box.innerHTML = `
+    <div class="intro-guidance-card">
+      <span class="intro-guidance-label">1턴</span>
+      <strong>${beat1?.title || (OPENING_OBJECTIVES[factionId] || [])[0] || '첫 목표를 설정하십시오.'}<br>${beat1?.action || getRecommendedActionText(factionId, focusCity, true)}</strong>
+    </div>
+    <div class="intro-guidance-card">
+      <span class="intro-guidance-label">2턴</span>
+      <strong>${beat2?.title || (OPENING_OBJECTIVES[factionId] || [])[1] || '두 번째 목표를 설정하십시오.'}<br>${beat2?.objective || '다음 파도를 버틸 선택을 준비하십시오.'}</strong>
+    </div>
+    <div class="intro-guidance-card">
+      <span class="intro-guidance-label">3턴</span>
+      <strong>${focusCity?.name || '전장 전체'} · ${beat3?.risk || '세 번째 턴에는 판세 리스크를 확인하십시오.'}</strong>
+    </div>
+  `;
+}
+
+async function showTurnSpotlight({ kicker, title, body, tone = 'neutral', eventKind = 'summary', duration = 1800 }) {
+  const panel = document.getElementById('turn-cinematic');
+  if (!panel) return;
+  panel.dataset.tone = tone;
+  panel.dataset.eventKind = eventKind;
+  document.getElementById('turn-cinematic-kicker').textContent = kicker;
+  document.getElementById('turn-cinematic-title').textContent = title;
+  document.getElementById('turn-cinematic-body').textContent = body;
+  panel.classList.remove('hidden');
+  requestAnimationFrame(() => panel.classList.add('visible'));
+  clearTimeout(uiState.turnSpotlightTimer);
+  await sleep(duration);
+  panel.classList.remove('visible');
+  await sleep(260);
+  panel.classList.add('hidden');
+}
+
+function hideTurnBridgeCard({ immediate = false } = {}) {
+  const panel = document.getElementById('turn-bridge-card');
+  if (!panel) return;
+  clearTimeout(uiState.turnBridgeTimer);
+  panel.classList.remove('visible');
+  if (immediate) {
+    panel.classList.add('hidden');
+    return;
+  }
+  setTimeout(() => panel.classList.add('hidden'), 220);
+}
+
+async function showTurnBridgeCard({ kicker, title, body, tone = 'neutral' } = {}) {
+  const panel = document.getElementById('turn-bridge-card');
+  if (!panel || !title) return;
+  panel.dataset.tone = tone;
+  document.getElementById('turn-bridge-kicker').textContent = kicker || '전선 재배치';
+  document.getElementById('turn-bridge-title').textContent = title;
+  document.getElementById('turn-bridge-body').textContent = body || '';
+  panel.classList.remove('hidden');
+  requestAnimationFrame(() => panel.classList.add('visible'));
+  clearTimeout(uiState.turnBridgeTimer);
+  await sleep(1100);
+  panel.classList.remove('visible');
+  await sleep(220);
+  panel.classList.add('hidden');
+}
+
+function shortenReactionBody(text = '') {
+  const compact = text.replace(/\s+/g, ' ').trim();
+  if (!compact) return '';
+  const sentence = compact.split(/(?<=[.!?])\s+/)[0];
+  return sentence.length > 96 ? `${sentence.slice(0, 93).trim()}...` : sentence;
+}
+
+function hideTurnStartCard({ immediate = false } = {}) {
+  const panel = document.getElementById('turn-start-card');
+  if (!panel) return;
+  clearTimeout(uiState.turnStartTimer);
+  panel.classList.remove('visible');
+  if (immediate) {
+    panel.classList.add('hidden');
+    return;
+  }
+  setTimeout(() => panel.classList.add('hidden'), 220);
+}
+
+function showTurnStartCard(turn = state?.turn || 1) {
+  if (!uiState.openingActActive || !state?.player?.factionId || turn <= 1) {
+    hideTurnStartCard({ immediate: true });
+    return;
+  }
+
+  const beat = getOpeningActPayload(turn, state.player.factionId);
+  if (!beat) {
+    hideTurnStartCard({ immediate: true });
+    return;
+  }
+
+  const panel = document.getElementById('turn-start-card');
+  if (!panel) return;
+  panel.dataset.tone = beat.preferredScene || 'opening';
+
+  document.getElementById('turn-start-kicker').textContent = `턴 ${turn} 개시`;
+  document.getElementById('turn-start-title').textContent = beat.title || '다음 판단을 정리하십시오';
+  document.getElementById('turn-start-body').textContent = `${beat.objective || beat.action || '핵심 거점을 먼저 확인하십시오.'} ${beat.action || ''}`.trim();
+  panel.classList.remove('hidden');
+  requestAnimationFrame(() => panel.classList.add('visible'));
+  clearTimeout(uiState.turnStartTimer);
+  uiState.turnStartTimer = setTimeout(() => {
+    panel.classList.remove('visible');
+    setTimeout(() => panel.classList.add('hidden'), 220);
+  }, 2400);
+}
+
+function hideActionResultBanner({ immediate = false } = {}) {
+  const panel = document.getElementById('action-result-banner');
+  if (!panel) return;
+  clearTimeout(uiState.actionResultTimer);
+  panel.classList.remove('visible');
+  if (immediate) {
+    panel.classList.add('hidden');
+    return;
+  }
+  setTimeout(() => panel.classList.add('hidden'), 220);
+}
+
+function showActionResultBanner(result) {
+  if (!result?.title) {
+    hideActionResultBanner({ immediate: true });
+    return;
+  }
+  const toneKickers = {
+    victory: '전과 보고',
+    warning: '전황 경고',
+    diplomacy: '외교 속보',
+    growth: '내정 결산',
+    military: '군령 보고',
+    fortify: '성방 보고',
+    neutral: '명령 결과',
+  };
+  const panel = document.getElementById('action-result-banner');
+  if (!panel) return;
+  panel.dataset.tone = result.tone || 'neutral';
+  document.getElementById('action-result-kicker').textContent = result.kicker || toneKickers[result.tone] || '명령 결과';
+  document.getElementById('action-result-title').textContent = result.title;
+  document.getElementById('action-result-body').textContent = result.body || '';
+  panel.classList.remove('hidden');
+  requestAnimationFrame(() => panel.classList.add('visible'));
+  clearTimeout(uiState.actionResultTimer);
+  uiState.actionResultTimer = setTimeout(() => {
+    panel.classList.remove('visible');
+    setTimeout(() => panel.classList.add('hidden'), 220);
+  }, 2200);
+}
+
+function getCitySelectionProfile(cityId) {
+  const city = state?.cities?.[cityId];
+  if (!city) {
+    return {
+      tone: 'selection',
+      panelTone: 'own',
+      kicker: '현장 포착',
+      title: '전황을 펼칩니다',
+      ownerLine: '도시를 클릭해 전황과 명령을 확인하세요',
+      action: '도시를 선택하세요',
+      scene: '-',
+      buttonLabel: '명령 열기',
+      fieldBody: '',
+    };
+  }
+
+  const faction = city.owner ? state.factions?.[city.owner] : null;
+  if (city.owner === state?.player?.factionId) {
+    return {
+      tone: 'selection',
+      panelTone: 'own',
+      kicker: '거점 보고',
+      title: `${city.name} 거점 장부를 엽니다`,
+      ownerLine: `${faction?.name || '아군'} · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`,
+      action: getRecommendedActionText(state.player.factionId, city, true),
+      scene: '시정 또는 군사 장면',
+      buttonLabel: `${city.name} 명령`,
+      fieldBody: '내정, 병참, 장수 배치를 바로 손댈 수 있는 아군 거점입니다.',
+    };
+  }
+
+  if (!city.owner) {
+    return {
+      tone: 'opportunity',
+      panelTone: 'neutral',
+      kicker: '점령 관측',
+      title: `${city.name} 점령 각을 살핍니다`,
+      ownerLine: `무주지 · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`,
+      action: `${city.name}는 아직 주인이 없습니다. 병력 두께와 인접 거점을 확인한 뒤 바로 점령 압박이나 선점 수비를 고려하십시오.`,
+      scene: '군사 장면',
+      buttonLabel: `${city.name} 점령 구상`,
+      fieldBody: '비어 있는 깃발입니다. 선점만 성공하면 다음 전선의 발판이 됩니다.',
+    };
+  }
+
+  return {
+    tone: 'hostile',
+    panelTone: 'hostile',
+    kicker: '적정 관측',
+    title: `${city.name} 적 전선을 관측합니다`,
+    ownerLine: `${faction?.name || '적 세력'} · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`,
+    action: `${city.name}의 병력과 배후 연결을 먼저 읽으십시오. 외교로 칼끝을 무디게 하거나 군사 장면에서 공세 각을 비교하는 편이 안전합니다.`,
+    scene: '군사 또는 외교 장면',
+    buttonLabel: `${city.name} 정세 보기`,
+    fieldBody: '적의 병력 두께와 지원선을 먼저 읽고 외교 혹은 공세 각을 비교해야 합니다.',
+  };
+}
+
+function getSelectionPulseColor(tone = 'selection') {
+  return {
+    selection: '#e4c87e',
+    hostile: '#cf7b61',
+    opportunity: '#87b36f',
+    victory: '#d4b85c',
+    warning: '#c26e56',
+    diplomacy: '#8e7ad4',
+    growth: '#68a76f',
+    military: '#ae765e',
+    fortify: '#6f92b6',
+    neutral: '#d8c29b',
+  }[tone] || '#d8c29b';
+}
+
+function hideFieldReaction({ immediate = false } = {}) {
+  const panel = document.getElementById('field-reaction-banner');
+  if (!panel) return;
+  clearTimeout(uiState.fieldReactionTimer);
+  panel.classList.remove('visible');
+  if (immediate) {
+    panel.classList.add('hidden');
+    return;
+  }
+  setTimeout(() => panel.classList.add('hidden'), 180);
+}
+
+function showFieldReaction({ kicker = '현장 반응', title, body = '', tone = 'neutral' } = {}) {
+  if (!title) {
+    hideFieldReaction({ immediate: true });
+    return;
+  }
+  const panel = document.getElementById('field-reaction-banner');
+  const bodyEl = document.getElementById('field-reaction-body');
+  if (!panel) return;
+  panel.dataset.tone = tone;
+  document.getElementById('field-reaction-kicker').textContent = kicker;
+  document.getElementById('field-reaction-title').textContent = title;
+  if (bodyEl) {
+    const reactionBody = shortenReactionBody(body);
+    bodyEl.textContent = reactionBody;
+    bodyEl.classList.toggle('hidden', !reactionBody);
+  }
+  panel.classList.remove('hidden');
+  requestAnimationFrame(() => panel.classList.add('visible'));
+  clearTimeout(uiState.fieldReactionTimer);
+  uiState.fieldReactionTimer = setTimeout(() => {
+    panel.classList.remove('visible');
+    setTimeout(() => panel.classList.add('hidden'), 180);
+  }, 1600);
+}
+
+function buildTurnSpotlightSummary() {
+  const summary = state?.turnSummary;
+  const playerFactionId = state?.player?.factionId;
+  if (!summary || !playerFactionId) return null;
+
+  const captures = summary.citiesCaptured || [];
+  const playerCapture = captures.find((item) => item.toFaction === playerFactionId);
+  const lostCity = captures.find((item) => item.fromFaction === playerFactionId);
+  const tech = (summary.techCompleted || [])[0];
+  const build = (summary.buildingsCompleted || [])[0];
+  const drama = (summary.relationshipChanges || [])[0];
+  const brief = getBriefingPayload();
+  const beat = getOpeningActPayload(Math.max(1, (state?.turn || 1) - 1), playerFactionId);
+  const nextBeat = getOpeningActPayload(state?.turn || 1, playerFactionId);
+  const nextCue = nextBeat?.action ? `다음 턴 지시: ${nextBeat.action}` : null;
+
+  if (playerCapture) {
+    return {
+      kicker: uiState.openingActActive && beat ? `오프닝 액트 ${Math.max(1, state.turn - 1)} 성과` : `${state.year}년 ${state.month}월 전황`,
+      title: `${playerCapture.cityName}을(를) 움켜쥐었습니다`,
+      body: `${beat?.victoryCue || brief?.action || '다음 거점을 정하고 압박을 이어가세요.'}${nextCue ? ` ${nextCue}` : ''}`,
+      tone: 'victory',
+      eventKind: 'capture',
+    };
+  }
+  if (lostCity) {
+    return {
+      kicker: uiState.openingActActive && beat ? `오프닝 액트 ${Math.max(1, state.turn - 1)} 경고` : `${state.year}년 ${state.month}월 전황`,
+      title: `${lostCity.cityName} 전선이 무너지고 있습니다`,
+      body: `${beat?.risk || `${brief?.focus || '핵심 거점'}을 중심으로 방어선과 병참을 재정비해야 합니다.`}${nextCue ? ` ${nextCue}` : ''}`,
+      tone: 'warning',
+      eventKind: 'loss',
+    };
+  }
+  if (tech) {
+    return {
+      kicker: '기술 결산',
+      title: `${tech.techName || '연구'}가 완료되었습니다`,
+      body: '이제 장면 전환 없이 다음 명령에서 연구 효과를 바로 체감할 수 있습니다.',
+      tone: 'growth',
+      eventKind: 'tech',
+    };
+  }
+  if (build) {
+    return {
+      kicker: '건설 결산',
+      title: `${build.cityName || '도시'}의 공사가 완료되었습니다`,
+      body: `${brief?.focus || '핵심 거점'}의 다음 행동 우선순위를 다시 조정하십시오.`,
+      tone: 'fortify',
+      eventKind: 'build',
+    };
+  }
+  if (drama) {
+    return {
+      kicker: '정세 변동',
+      title: '세력 관계가 흔들리고 있습니다',
+      body: '연대기를 열어 외교 변화와 다음 전선 압박을 확인하십시오.',
+      tone: 'diplomacy',
+      eventKind: 'diplomacy',
+    };
+  }
+
+  return {
+    kicker: uiState.openingActActive && beat ? `오프닝 액트 ${Math.max(1, state.turn - 1)} 종료` : `${state.year}년 ${state.month}월 결산`,
+    title: beat?.title ? `${beat.title} — 판단을 남겼습니다` : '한 달의 움직임이 정리되었습니다',
+    body: `${beat?.victoryCue || brief?.action || '핵심 거점을 선택해 다음 명령으로 주도권을 이어가세요.'}${nextCue ? ` ${nextCue}` : ''}`,
+    tone: uiState.openingActActive ? 'opening' : 'neutral',
+    eventKind: uiState.openingActActive ? 'opening' : 'summary',
+  };
+}
+
+function buildTurnBridgeSummary() {
+  const playerFactionId = state?.player?.factionId;
+  if (!playerFactionId) return null;
+
+  const brief = getBriefingPayload();
+  const summary = state?.turnSummary;
+  const beat = getOpeningActPayload(state?.turn || 1, playerFactionId);
+  const focusCity = brief?.focus || getOpeningFocusCity(playerFactionId)?.name || '전선';
+  const monthLabel = `${state?.year || 208}년 ${state?.month || 1}월`;
+  let tone = beat ? 'opening' : 'neutral';
+  if ((summary?.relationshipChanges || []).length > 0) tone = 'diplomacy';
+  if ((summary?.buildingsCompleted || []).length > 0) tone = 'fortify';
+  if ((summary?.techCompleted || []).length > 0) tone = 'growth';
+  return {
+    kicker: `${monthLabel} 전장 재정렬`,
+    title: beat?.title || `${focusCity} 쪽 전선이 다시 움직입니다`,
+    body: beat?.action || beat?.objective || `${focusCity}부터 열고 이번 달 첫 판단을 내리십시오.`,
+    tone,
+  };
+}
+
+function getFactionComparisonLines(factionId, snapshot) {
+  const styleMap = {
+    wei: ['압박형', '전선 확장', '군사 우선'],
+    shu: ['생존형', '방비/외교', '약자 역전'],
+    wu: ['균형형', '결전 준비', '방어 후 반격'],
+    liu_zhang: ['내정형', '요새 운영', '장기전'],
+    zhang_lu: ['극한 생존형', '관문 방어', '외교 의존'],
+  };
+  const row = styleMap[factionId] || ['균형형', '상황 대응', '혼합'];
+  return [
+    { label: '플레이 스타일', value: row[0] },
+    { label: '첫 판단', value: row[1] },
+    { label: '체감 난점', value: row[2] },
+    { label: '병력 규모', value: `${(snapshot.army / 10000).toFixed(1)}만` },
+  ];
+}
+
+function getFactionCardTags(factionId) {
+  const tags = {
+    wei: ['압박', '확장', '쉬운 시작'],
+    shu: ['생존', '외교', '역전'],
+    wu: ['결전', '균형', '준비형'],
+    liu_zhang: ['내정', '요새', '장기전'],
+    zhang_lu: ['관문', '생존', '극한'],
+  };
+  return tags[factionId] || ['균형', '표준', '혼합'];
+}
+
+function getFactionPlayCue(factionId) {
+  return {
+    wei: '큰 병력으로 남하를 밀어붙이는 정면 돌파형',
+    shu: '약한 전선을 외교와 방비로 버티는 역전형',
+    wu: '장강 방어와 결전 타이밍을 재는 준비형',
+    liu_zhang: '안정된 후방을 오래 굴리는 내정형',
+    zhang_lu: '좁은 관문에서 살아남아야 하는 극한형',
+  }[factionId] || '상황 적응형';
+}
 
 // --- 세력 선택 화면 ---
 async function showFactionSelect() {
@@ -223,11 +899,8 @@ async function showFactionSelect() {
   const ORDER = ['wei', 'shu', 'wu', 'liu_zhang', 'zhang_lu'];
 
   for (const fid of ORDER) {
-    const f = scenario.factions[fid];
-    const meta = FACTION_META[fid];
-    const cities = Object.values(scenario.cities).filter(c => c.owner === fid);
-    const army = cities.reduce((a, c) => a + c.army, 0);
-    const chars = Object.values(scenario.characters).filter(c => c.faction === fid);
+    const snapshot = getFactionSnapshot(scenario, fid);
+    const { faction: f, meta, cities, army, characters } = snapshot;
 
     const card = document.createElement('div');
     card.className = 'faction-card';
@@ -239,11 +912,12 @@ async function showFactionSelect() {
         ${f.name}
       </div>
       <div class="faction-card-leader">${meta.leader}</div>
+      <div class="faction-card-tags">${getFactionCardTags(fid).map((tag) => `<span>${tag}</span>`).join('')}</div>
       <div class="faction-card-stats">
         <span>도시 <span class="val">${cities.length}성</span></span>
         <span>병력 <span class="val">${(army/10000).toFixed(1)}만</span></span>
         <span>자금 <span class="val">${f.gold.toLocaleString()}</span></span>
-        <span>장수 <span class="val">${chars.length}명</span></span>
+        <span>장수 <span class="val">${characters.length}명</span></span>
       </div>
       <div class="faction-card-desc">${meta.desc}</div>
     `;
@@ -294,8 +968,11 @@ async function showFactionSelect() {
     document.getElementById('faction-cards').before(modeContainer);
   }
 
-  document.getElementById('start-screen').classList.add('hidden');
-  document.getElementById('faction-screen').classList.remove('hidden');
+  await switchScreen('faction-screen', {
+    kicker: '전장 개시',
+    title: '누구의 깃발 아래 설 것인가',
+    body: '세력을 고르면 즉시 전장 위치와 첫 행동 추천이 갱신됩니다.',
+  });
 
   renderFactionPreviewMap(scenario, null);
   renderFactionPreviewPanel(scenario, null);
@@ -621,53 +1298,89 @@ function renderFactionPreviewPanel(sc, factionId) {
         <div class="faction-preview-stat"><span class="label">판세 성격</span><span class="value">외교와 전쟁 동시 개막</span></div>
         <div class="faction-preview-stat"><span class="label">추천 흐름</span><span class="value">좌측에서 세력을 고르십시오</span></div>
       </div>
+      <div class="faction-preview-cue-board">
+        <div class="faction-preview-cue">
+          <span class="label">쉬운 시작</span>
+          <strong>위</strong>
+          <p>병력과 도시 수가 많아 첫 10분이 가장 읽기 쉽습니다.</p>
+        </div>
+        <div class="faction-preview-cue">
+          <span class="label">드라마형</span>
+          <strong>촉</strong>
+          <p>생존과 외교를 섞어야 해서 첫 세 턴 감정 곡선이 큽니다.</p>
+        </div>
+        <div class="faction-preview-cue">
+          <span class="label">균형형</span>
+          <strong>오</strong>
+          <p>방어와 결전 준비를 모두 맛볼 수 있는 중간 선택지입니다.</p>
+        </div>
+      </div>
       <div class="faction-preview-footer">좌측에서 세력을 선택하면 시작 목표와 전력, 전장 위치가 즉시 갱신됩니다.</div>
     `;
     return;
   }
 
-  const faction = sc.factions[factionId];
-  const meta = FACTION_META[factionId];
-  const cities = Object.values(sc.cities).filter(city => city.owner === factionId);
-  const army = cities.reduce((sum, city) => sum + city.army, 0);
-  const chars = Object.values(sc.characters).filter(char => char.faction === factionId);
-  const allies = (faction.allies || []).map(id => sc.factions[id]?.name).filter(Boolean).join(' · ') || '없음';
-  const enemies = (faction.enemies || []).map(id => sc.factions[id]?.name).filter(Boolean).join(' · ') || '없음';
+  const snapshot = getFactionSnapshot(sc, factionId);
+  const { faction, meta, cities, army, characters, allies, enemies } = snapshot;
   const objectives = OPENING_OBJECTIVES[factionId] || [];
+  const compareRows = getFactionComparisonLines(factionId, snapshot);
   const color = COLORS[factionId] || '#c19a55';
+  const beats = [1, 2, 3].map((turn) => getOpeningActBeat(factionId, turn)).filter(Boolean);
+  const tags = getFactionCardTags(factionId);
 
   panel.innerHTML = `
     <div class="faction-preview-kicker" style="color:${color}">${meta.diffLabel} 난도</div>
     <div class="faction-preview-title">${faction.name}</div>
     <div class="faction-preview-meta">${meta.leader}</div>
     <div class="faction-preview-copy">${meta.desc}</div>
+    <div class="faction-preview-tag-row">
+      ${tags.map((tag) => `<span>${tag}</span>`).join('')}
+    </div>
+    <div class="faction-preview-playcue">${getFactionPlayCue(factionId)}</div>
     <div class="faction-preview-grid">
       <div class="faction-preview-stat"><span class="label">보유 도시</span><span class="value">${cities.length}성</span></div>
       <div class="faction-preview-stat"><span class="label">총병력</span><span class="value">${(army / 10000).toFixed(1)}만</span></div>
-      <div class="faction-preview-stat"><span class="label">장수</span><span class="value">${chars.length}명</span></div>
+      <div class="faction-preview-stat"><span class="label">장수</span><span class="value">${characters.length}명</span></div>
       <div class="faction-preview-stat"><span class="label">자금</span><span class="value">${faction.gold.toLocaleString()}</span></div>
+    </div>
+    <div class="faction-preview-compare">
+      ${compareRows.map((row) => `
+        <div class="faction-compare-row">
+          <span class="label">${row.label}</span>
+          <strong class="value">${row.value}</strong>
+        </div>
+      `).join('')}
+    </div>
+    <div class="faction-opening-ladder">
+      ${beats.map((beat, index) => `
+        <div class="faction-opening-step">
+          <span class="step-turn">턴 ${index + 1}</span>
+          <strong>${beat.title}</strong>
+          <p>${beat.action}</p>
+        </div>
+      `).join('')}
     </div>
     <div class="faction-preview-objectives">
       <h3>오프닝 목표</h3>
       <ul>${objectives.map(line => `<li>${line}</li>`).join('')}</ul>
     </div>
-    <div class="faction-preview-footer">우호: ${allies}<br>적대: ${enemies}</div>
+    <div class="faction-preview-footer">우호: ${allies.join(' · ') || '없음'}<br>적대: ${enemies.join(' · ') || '없음'}</div>
   `;
 }
 
-function backToStart() {
-  document.getElementById('faction-screen').classList.add('hidden');
-  document.getElementById('start-screen').classList.remove('hidden');
+async function backToStart() {
+  await switchScreen('start-screen', {
+    kicker: '장면 복귀',
+    title: '로비로 돌아갑니다',
+    body: '시나리오와 세력을 다시 고를 수 있습니다.',
+  });
 }
 
 // --- 도입 스토리 ---
-function showIntro() {
+async function showIntro() {
   if (!selectedFaction) return;
-  const meta = FACTION_META[selectedFaction];
-  const f = scenario.factions[selectedFaction];
-  const cities = Object.values(scenario.cities).filter(c => c.owner === selectedFaction);
-  const army = cities.reduce((a, c) => a + c.army, 0);
-  const chars = Object.values(scenario.characters).filter(c => c.faction === selectedFaction);
+  const snapshot = getFactionSnapshot(scenario, selectedFaction);
+  const { meta, faction: f, cities, army, characters, allies, enemies } = snapshot;
 
   document.getElementById('intro-title').textContent = `${f.name} — ${meta.leader}`;
   document.getElementById('intro-brief').textContent = meta.desc;
@@ -675,15 +1388,16 @@ function showIntro() {
   document.getElementById('intro-stats').innerHTML = `
     <div class="intro-stat"><div class="label">영토</div><div class="value">${cities.length}성</div></div>
     <div class="intro-stat"><div class="label">병력</div><div class="value">${(army/10000).toFixed(1)}만</div></div>
-    <div class="intro-stat"><div class="label">장수</div><div class="value">${chars.length}명</div></div>
+    <div class="intro-stat"><div class="label">장수</div><div class="value">${characters.length}명</div></div>
     <div class="intro-stat"><div class="label">자금</div><div class="value">${f.gold.toLocaleString()}</div></div>
-    <div class="intro-stat"><div class="label">우호</div><div class="value">${(f.allies || []).map(id => scenario.factions[id]?.name).filter(Boolean).join(' · ') || '없음'}</div></div>
-    <div class="intro-stat"><div class="label">적대</div><div class="value">${(f.enemies || []).map(id => scenario.factions[id]?.name).filter(Boolean).join(' · ') || '없음'}</div></div>
+    <div class="intro-stat"><div class="label">우호</div><div class="value">${allies.join(' · ') || '없음'}</div></div>
+    <div class="intro-stat"><div class="label">적대</div><div class="value">${enemies.join(' · ') || '없음'}</div></div>
   `;
   document.getElementById('intro-objectives').innerHTML = `
     <h3>출정 목표</h3>
     <ul>${(OPENING_OBJECTIVES[selectedFaction] || []).map(line => `<li>${line}</li>`).join('')}</ul>
   `;
+  updateIntroGuidance(selectedFaction);
 
   // 대화 시퀀스 초기화
   const lines = FACTION_DIALOGUES[selectedFaction] || [];
@@ -701,8 +1415,11 @@ function showIntro() {
   }
   startBtn.textContent = `${f.name}의 운명을 맡는다`;
 
-  document.getElementById('faction-screen').classList.add('hidden');
-  document.getElementById('intro-screen').classList.remove('hidden');
+  await switchScreen('intro-screen', {
+    kicker: '출정 문서',
+    title: `${f.name}의 운명을 맡습니다`,
+    body: '짧은 장면 뒤에 바로 첫 명령과 핵심 거점이 안내됩니다.',
+  });
 }
 
 function showDialogueLine() {
@@ -764,53 +1481,152 @@ async function startNewGame() {
   // 정사/연의 모드 적용
   scenario.narrativeMode = selectedNarrativeMode;
   state = new GameState(scenario);
+  uiState.openingCityId = getOpeningFocusCity(state.player.factionId)?.id || null;
+  uiState.commandSpotlightShown = false;
+  uiState.openingActActive = isOpeningActActive(1);
+  hideTurnBridgeCard({ immediate: true });
+  hideTurnStartCard({ immediate: true });
 
-  document.getElementById('intro-screen').classList.add('hidden');
+  await switchScreen('game-screen', {
+    kicker: '전장 진입',
+    title: `${state.factions[state.player.factionId].name}의 첫 달이 시작됩니다`,
+    body: '핵심 거점을 먼저 열고 첫 명령을 결정하십시오.',
+  });
   initGameScreen();
+  const brief = getBriefingPayload();
+  const openingBeat = getOpeningActPayload(1, state.player.factionId);
+  showTurnSpotlight({
+    kicker: '오프닝 액트 1',
+    title: openingBeat?.title || (brief?.focus ? `${brief.focus}부터 확인하십시오` : '첫 거점을 선택하십시오'),
+    body: openingBeat?.action || brief?.action || '도시를 선택해 첫 명령을 시작하세요.',
+  });
+  persistSave({ silent: true, source: 'auto' });
 }
 
-function loadGame() {
-  const saved = localStorage.getItem('wdttgukji_save');
+async function loadGame() {
+  const saved = localStorage.getItem(SAVE_KEY);
   if (!saved) return;
 
   try {
     state = GameState.deserialize(saved);
-    // 시나리오 데이터는 별도 로드 필요
-    loadScenario('/engine/data/scenarios/208-red-cliffs.json').then(s => {
-      scenario = s;
-      loadEvents('/data/events/all-events.json').then(rawEvents => {
-        allEvents = filterEventsForScenario(rawEvents, 208, 225);
-        initGameScreen();
-      });
+    selectedNarrativeMode = state.narrativeMode || 'both';
+    scenario = await loadScenario('/engine/data/scenarios/208-red-cliffs.json');
+    const rawEvents = await loadEvents('/data/events/all-events.json');
+    allEvents = filterEventsForScenario(rawEvents, 208, 225);
+    uiState.openingCityId = getOpeningFocusCity(state.player.factionId)?.id || null;
+    uiState.openingActActive = isOpeningActActive(state.turn);
+    hideTurnBridgeCard({ immediate: true });
+    hideTurnStartCard({ immediate: true });
+    initGameScreen();
+    const loadBeat = getOpeningActPayload(state.turn, state.player.factionId);
+    await switchScreen('game-screen', {
+      kicker: '전장 복귀',
+      title: `${state.factions[state.player.factionId].name}의 기록을 이어갑니다`,
+      body: `턴 ${state.turn}부터 다시 시작합니다.`,
     });
+    if (uiState.openingActActive && loadBeat) {
+      showTurnSpotlight({
+        kicker: `오프닝 액트 ${state.turn}`,
+        title: loadBeat.title,
+        body: loadBeat.action,
+      });
+      showTurnStartCard(state.turn);
+    }
+    refreshSaveSlot();
   } catch (err) {
     console.error('Failed to load save:', err);
-    alert('저장 데이터가 손상되었습니다.');
+    clearStoredSave();
+    refreshSaveSlot();
+    alert('저장 데이터를 불러오지 못했습니다. 손상된 저장은 정리했습니다.');
   }
 }
 
 function saveGame() {
-  if (!state) return;
-  localStorage.setItem('wdttgukji_save', state.serialize());
-  showToast('저장 완료');
+  persistSave({ source: 'manual' });
 }
 
 function returnToMenu() {
   if (dialogueState._timer) clearInterval(dialogueState._timer);
   actionPanel?.hide();
-  document.getElementById('game-screen').classList.add('hidden');
   document.getElementById('gameover-modal').classList.add('hidden');
-  document.getElementById('faction-screen').classList.add('hidden');
-  document.getElementById('intro-screen').classList.add('hidden');
-  document.getElementById('start-screen').classList.remove('hidden');
-
-  const saved = localStorage.getItem('wdttgukji_save');
-  const btn = document.getElementById('btn-load-game');
-  btn.disabled = !saved;
-  btn.style.opacity = saved ? '1' : '0.4';
+  hideTurnBridgeCard({ immediate: true });
+  hideTurnStartCard({ immediate: true });
+  hideActionResultBanner({ immediate: true });
+  hideFieldReaction({ immediate: true });
 
   selectedFaction = null;
-  logVisible = true;
+  logVisible = false;
+  uiState.openingActActive = false;
+  refreshSaveSlot();
+  void switchScreen('start-screen', {
+    kicker: '막간',
+    title: '메인 로비로 돌아갑니다',
+    body: '저장은 유지되고, 다른 세력이나 시나리오 흐름을 다시 고를 수 있습니다.',
+  });
+}
+
+function getCanvasPoint(canvas, event) {
+  const rect = canvas.getBoundingClientRect();
+  return {
+    x: event.clientX - rect.left,
+    y: event.clientY - rect.top,
+  };
+}
+
+function selectCityFromCanvasPoint(x, y) {
+  const cityId = map.hitTest(x, y);
+
+  if (cityId) {
+    const selection = getCitySelectionProfile(cityId);
+    map.selectedCity = cityId;
+    map.focusOnCity(cityId);
+    map.signalSelection(cityId, selection.tone);
+    map.addEventPulse(cityId, getSelectionPulseColor(selection.tone));
+    sidebar.showCityDetail(cityId, state);
+    actionPanel.setContext(cityId, state);
+    document.getElementById('game-screen').classList.add('city-rail-open');
+    showFieldReaction({
+      kicker: selection.kicker,
+      title: selection.title,
+      body: selection.fieldBody,
+      tone: selection.tone,
+    });
+  } else {
+    map.selectedCity = null;
+    sidebar.clearCityDetail(state);
+    actionPanel.setContext(null, state);
+    actionPanel.hide();
+    document.getElementById('game-screen').classList.remove('city-rail-open');
+  }
+
+  updateMapSelectionPanel();
+  updateWarRoomBrief();
+  map.render(state);
+}
+
+function updateMapHoverFromCanvasPoint(canvas, x, y, force = false) {
+  const cityId = map.hitTest(x, y);
+  if (!force && cityId === map.hoveredCity) return;
+  map.hoveredCity = cityId;
+  canvas.style.cursor = cityId ? 'pointer' : 'grab';
+  map.render(state);
+}
+
+function primeOpeningFocus() {
+  const focusCityId = uiState.openingCityId || getOpeningFocusCity(state?.player?.factionId)?.id || null;
+  if (!focusCityId || !state?.cities?.[focusCityId] || !map) return;
+  const selection = getCitySelectionProfile(focusCityId);
+  uiState.openingCityId = focusCityId;
+  map.selectedCity = focusCityId;
+  map.focusOnCity(focusCityId, { immediate: true });
+  map.signalSelection(focusCityId, selection.tone);
+  sidebar.showCityDetail(focusCityId, state);
+  actionPanel.setContext(focusCityId, state);
+  document.getElementById('game-screen').classList.add('city-rail-open');
+  updateMapSelectionPanel();
+  updateWarRoomBrief();
+  updateOpeningHudBrief();
+  map.render(state);
 }
 
 // --- 게임 화면 초기화 ---
@@ -818,16 +1634,24 @@ function initGameScreen() {
   const gameScreen = document.getElementById('game-screen');
   document.getElementById('start-screen').classList.add('hidden');
   gameScreen.classList.remove('hidden');
-  gameScreen.classList.remove('chronicle-collapsed');
+  gameScreen.classList.add('chronicle-collapsed');
   gameScreen.classList.remove('city-rail-open');
-  document.getElementById('btn-toggle-log').classList.add('active');
-  logVisible = true;
+  document.getElementById('btn-toggle-log').classList.remove('active');
+  document.getElementById('btn-toggle-log').textContent = '전황 열기';
+  logVisible = false;
   applyScenarioMapArt(scenario);
 
   // 맵 초기화
   const canvas = document.getElementById('game-map');
   map = new MapRenderer(canvas, scenario);
   actionPanel.setConnections(scenario.connections);
+  actionPanel.setOpeningContext({
+    active: uiState.openingActActive,
+    turn: state.turn,
+    factionId: state.player.factionId,
+  });
+  canvas.style.cursor = 'grab';
+  canvas.style.touchAction = 'none';
 
   // 캐릭터 클릭 콜백
   sidebar.onCharacterClick = (charId) => {
@@ -838,41 +1662,63 @@ function initGameScreen() {
   };
   sidebar.setOpeningBrief(OPENING_OBJECTIVES[state.player.factionId] || []);
 
-  // 맵 클릭 이벤트
-  canvas.onclick = (e) => {
-    if (processing) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const cityId = map.hitTest(x, y);
+  let dragState = null;
 
-    if (cityId) {
-      map.selectedCity = cityId;
-      sidebar.showCityDetail(cityId, state);
-      actionPanel.setContext(cityId, state);
-      document.getElementById('game-screen').classList.add('city-rail-open');
-    } else {
-      map.selectedCity = null;
-      sidebar.clearCityDetail(state);
-      actionPanel.setContext(null, state);
-      actionPanel.hide();
-      document.getElementById('game-screen').classList.remove('city-rail-open');
-    }
-    updateMapSelectionPanel();
-    map.render(state);
+  canvas.onpointerdown = (event) => {
+    if (processing) return;
+    const point = getCanvasPoint(canvas, event);
+    dragState = {
+      pointerId: event.pointerId,
+      startX: point.x,
+      startY: point.y,
+      lastX: point.x,
+      lastY: point.y,
+      dragged: false,
+    };
+    canvas.setPointerCapture?.(event.pointerId);
+    canvas.style.cursor = 'grabbing';
   };
 
-  // 맵 호버
-  canvas.onmousemove = (e) => {
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const cityId = map.hitTest(x, y);
-    if (cityId !== map.hoveredCity) {
-      map.hoveredCity = cityId;
-      canvas.style.cursor = cityId ? 'pointer' : 'crosshair';
-      map.render(state);
+  canvas.onpointermove = (event) => {
+    const point = getCanvasPoint(canvas, event);
+
+    if (!dragState || dragState.pointerId !== event.pointerId) {
+      updateMapHoverFromCanvasPoint(canvas, point.x, point.y);
+      return;
     }
+
+    const deltaX = point.x - dragState.lastX;
+    const deltaY = point.y - dragState.lastY;
+    const moved = Math.hypot(point.x - dragState.startX, point.y - dragState.startY);
+    if (moved > 6) dragState.dragged = true;
+    if (dragState.dragged) {
+      map.panBy(deltaX, deltaY);
+    }
+    dragState.lastX = point.x;
+    dragState.lastY = point.y;
+  };
+
+  const releasePointer = (event) => {
+    if (!dragState || dragState.pointerId !== event.pointerId) return;
+    const point = getCanvasPoint(canvas, event);
+    const wasDragged = dragState.dragged;
+    dragState = null;
+    canvas.releasePointerCapture?.(event.pointerId);
+    if (!wasDragged && !processing) {
+      selectCityFromCanvasPoint(point.x, point.y);
+      updateMapHoverFromCanvasPoint(canvas, point.x, point.y, true);
+      return;
+    }
+    updateMapHoverFromCanvasPoint(canvas, point.x, point.y, true);
+  };
+
+  canvas.onpointerup = releasePointer;
+  canvas.onpointercancel = releasePointer;
+  canvas.onpointerleave = () => {
+    if (dragState) return;
+    map.hoveredCity = null;
+    canvas.style.cursor = 'grab';
+    map.render(state);
   };
 
   // 행동 콜백
@@ -880,15 +1726,32 @@ function initGameScreen() {
     if (processing) return;
     const success = executePlayerAction(actionType, params, state, scenario.connections);
     if (success) {
+      showCommandSealFlash(state.lastPlayerActionResult);
+      showActionResultBanner(state.lastPlayerActionResult);
+      const focusCityId = state.lastPlayerActionResult?.focusCityId || map.selectedCity;
+      if (focusCityId && state.cities[focusCityId]) {
+        const tone = state.lastPlayerActionResult?.tone || 'neutral';
+        map.selectedCity = focusCityId;
+        map.focusOnCity(focusCityId);
+        map.signalSelection(focusCityId, tone);
+        map.addEventPulse(focusCityId, getSelectionPulseColor(tone));
+        showFieldReaction({
+          kicker: state.lastPlayerActionResult?.kicker || '현장 반응',
+          title: state.lastPlayerActionResult?.title,
+          body: state.lastPlayerActionResult?.body,
+          tone,
+        });
+      }
       updateUI();
-      if (map.selectedCity) {
-        sidebar.showCityDetail(map.selectedCity, state);
-        actionPanel.setContext(map.selectedCity, state);
+      if (focusCityId && state.cities[focusCityId]) {
+        sidebar.showCityDetail(focusCityId, state);
+        actionPanel.setContext(focusCityId, state);
       }
     }
     return success;
   };
 
+  primeOpeningFocus();
   updateUI();
 }
 
@@ -1030,6 +1893,13 @@ async function nextTurn() {
     detectAndAnimateMovements(armyBefore, ownerBefore, state);
     updateUI();
     updateTurnLog();
+    uiState.openingActActive = isOpeningActActive(state.turn);
+    const spotlight = buildTurnSpotlightSummary();
+    if (spotlight) await showTurnSpotlight(spotlight);
+    const bridge = buildTurnBridgeSummary();
+    if (bridge) await showTurnBridgeCard(bridge);
+    if (uiState.openingActActive) showTurnStartCard(state.turn);
+    persistSave({ silent: true, source: 'auto' });
 
     if (state.gameOver) {
       showGameOver();
@@ -1143,6 +2013,13 @@ function updateUI() {
 
   updateChronicleSummary();
   updateMapSelectionPanel();
+  updateWarRoomBrief();
+  updateOpeningHudBrief();
+  actionPanel.setOpeningContext({
+    active: uiState.openingActActive,
+    turn: state.turn,
+    factionId: state.player.factionId,
+  });
   map.render(state);
   if (map.selectedCity) {
     sidebar.showCityDetail(map.selectedCity, state);
@@ -1163,6 +2040,7 @@ function toggleLog() {
   logVisible = !logVisible;
   gameScreen.classList.toggle('chronicle-collapsed', !logVisible);
   btn.classList.toggle('active', logVisible);
+  btn.textContent = logVisible ? '전황 닫기' : '전황 열기';
 }
 
 function updateTurnLog() {
@@ -1242,10 +2120,15 @@ function updateMapSelectionPanel() {
   const panel = document.getElementById('map-selection-panel');
   const cityEl = document.getElementById('map-selection-city');
   const ownerEl = document.getElementById('map-selection-owner');
+  const actionEl = document.getElementById('map-selection-action');
+  const sceneEl = document.getElementById('map-selection-scene');
   const button = document.getElementById('btn-open-command');
-  if (!panel || !cityEl || !ownerEl || !button) return;
+  if (!panel || !cityEl || !ownerEl || !actionEl || !sceneEl || !button) return;
 
   if (!map?.selectedCity || !state?.cities?.[map.selectedCity]) {
+    panel.dataset.tone = 'own';
+    panel.dataset.state = 'empty';
+    panel.classList.remove('visible');
     panel.classList.add('hidden');
     button.textContent = '명령 열기';
     button.disabled = true;
@@ -1253,19 +2136,44 @@ function updateMapSelectionPanel() {
   }
 
   const city = state.cities[map.selectedCity];
-  const faction = city.owner ? state.factions[city.owner] : null;
+  const selection = getCitySelectionProfile(map.selectedCity);
+  panel.dataset.tone = selection.panelTone;
+  panel.dataset.state = 'active';
   panel.classList.remove('hidden');
+  panel.classList.remove('visible');
+  requestAnimationFrame(() => panel.classList.add('visible'));
   cityEl.textContent = city.name;
-  ownerEl.textContent = faction
-    ? `${faction.name} · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`
-    : `무주지 · 병력 ${city.army.toLocaleString()} · 사기 ${city.morale}`;
-  button.textContent = `${city.name} 명령`;
+  ownerEl.textContent = selection.ownerLine;
+  actionEl.textContent = selection.action;
+  sceneEl.textContent = selection.scene;
+  button.textContent = selection.buttonLabel;
   button.disabled = false;
 }
 
-function openSelectedCityCommand() {
+async function openSelectedCityCommand() {
   if (!map?.selectedCity || !state || processing) return;
+  const city = state.cities[map.selectedCity];
+  const ownCity = city?.owner === state.player.factionId;
+  await showSceneTransitionCard({
+    kicker: ownCity ? '작전 장면' : '정세 장면',
+    title: ownCity ? `${city.name} 군의실로 들어갑니다` : `${city.name} 전황 분석으로 들어갑니다`,
+    body: ownCity
+      ? '시정, 군사, 외교 중 이번 턴 하나를 정하고 바로 확정 단계로 넘어갑니다.'
+      : '적 도시의 병력, 외교, 침공 가능성을 읽고 이번 턴의 대응을 고릅니다.',
+    duration: 620,
+    variant: 'command',
+  });
   actionPanel.open(map.selectedCity, state);
+  if (!uiState.commandSpotlightShown) {
+    showTurnSpotlight({
+      kicker: ownCity ? '군의실 입장' : '전장 관측',
+      title: ownCity ? `${city.name} 명령 장면이 열렸습니다` : `${city.name}의 정세를 펼쳤습니다`,
+      body: ownCity
+        ? '상단 장면 탭을 넘기며 시정, 군사, 외교 중 지금 필요한 행동 하나만 먼저 결정하십시오.'
+        : '외부 도시에서는 군사와 외교 장면으로 압박과 대응 수단을 먼저 읽는 편이 좋습니다.',
+    });
+    uiState.commandSpotlightShown = true;
+  }
 }
 
 function formatArmy(value) {
@@ -1319,6 +2227,7 @@ function exposeTestHooks() {
   window.__wdttgukji = {
     getState: () => state,
     getScenario: () => scenario,
+    getMapCamera: () => map ? { ...map.camera } : null,
     getSelectedFaction: () => selectedFaction,
     getSelectedCity: () => map?.selectedCity || null,
     selectFaction: (factionId) => {
@@ -1327,8 +2236,8 @@ function exposeTestHooks() {
       card.click();
       return true;
     },
-    showIntro: () => {
-      showIntro();
+    showIntro: async () => {
+      await showIntro();
       return true;
     },
     advanceDialogue: () => {
@@ -1339,12 +2248,36 @@ function exposeTestHooks() {
       await startNewGame();
       return true;
     },
+    runTurnForTest: async () => {
+      if (!state || processing) return false;
+      const originalEventShow = eventUI.show.bind(eventUI);
+      const originalResolutionShow = turnResolution.show.bind(turnResolution);
+      eventUI.show = async (event) => event.choices?.[0]?.id || null;
+      turnResolution.show = async () => {};
+      try {
+        await nextTurn();
+        return true;
+      } finally {
+        eventUI.show = originalEventShow;
+        turnResolution.show = originalResolutionShow;
+      }
+    },
     selectCity: (cityId) => {
       if (!state || !map || !state.cities?.[cityId]) return false;
+      const selection = getCitySelectionProfile(cityId);
       map.selectedCity = cityId;
+      map.focusOnCity(cityId, { immediate: true });
+      map.signalSelection(cityId, selection.tone);
+      map.addEventPulse(cityId, getSelectionPulseColor(selection.tone));
       sidebar.showCityDetail(cityId, state);
       actionPanel.setContext(cityId, state);
       document.getElementById('game-screen').classList.add('city-rail-open');
+      showFieldReaction({
+        kicker: selection.kicker,
+        title: selection.title,
+        body: selection.fieldBody,
+        tone: selection.tone,
+      });
       updateMapSelectionPanel();
       map.render(state);
       return true;
@@ -1354,6 +2287,10 @@ function exposeTestHooks() {
       if (!targetCity || !state) return false;
       actionPanel.open(targetCity, state, sceneKey || undefined);
       return true;
+    },
+    executeAction: (actionType, params = {}) => {
+      if (!actionPanel?.onAction) return false;
+      return actionPanel.onAction(actionType, params);
     },
     setCommandScene: (sceneKey) => {
       if (!actionPanel?.isOpen?.()) return false;

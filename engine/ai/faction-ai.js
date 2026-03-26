@@ -11,11 +11,13 @@ import { getAvailableTechs, startResearch } from '../core/tech-tree.js';
 import { executeEspionage, ESPIONAGE_ACTIONS } from '../core/espionage.js';
 import { moveArmy } from '../core/troop-movement.js';
 import { addExperienceFromSource } from '../core/growth.js';
+import { getSection } from '../core/balance-config.js';
 
 export function decideAndExecute(factionId, state, connections) {
   const faction = state.getFaction(factionId);
   if (!faction || !faction.active) return;
 
+  const aiConfig = getSection('ai');
   const tendency = getTendency(faction.leader);
   const myCities = state.getCitiesOfFaction(factionId);
   const aiState = state.ensureAIState(factionId);
@@ -29,7 +31,7 @@ export function decideAndExecute(factionId, state, connections) {
   syncWarState(factionId, state, connections);
 
   // ── 1. 전쟁 계획/집결/침공 ──
-  const warAction = executeWarPlan(factionId, state, connections, tendency, aiState);
+  const warAction = executeWarPlan(factionId, state, connections, tendency, aiState, aiConfig);
   if (warAction) actions.push(warAction);
 
   // ── 2. 외교 (전쟁 준비 중이 아닐 때만 독립 실행) ──
@@ -40,9 +42,9 @@ export function decideAndExecute(factionId, state, connections) {
 
   // ── 3. 위기 대응: 위협받는 도시 방어 ──
   const threatenedCities = findThreatenedCities(factionId, state, connections);
-  if (!warAction && threatenedCities.length > 0 && Math.random() < 0.7 * tendency.defend) {
+  if (!warAction && threatenedCities.length > 0 && Math.random() < aiConfig.defendProb * tendency.defend) {
     const city = threatenedCities[0];
-    reinforceCity(city.id, state, factionId);
+    reinforceCity(city.id, state, factionId, aiConfig);
     actions.push(`${faction.name}: ${state.cities[city.id].name} 방어 강화`);
   }
 
@@ -115,9 +117,10 @@ function syncWarState(factionId, state, connections) {
   }
 }
 
-function executeWarPlan(factionId, state, connections, tendency, aiState) {
+function executeWarPlan(factionId, state, connections, tendency, aiState, aiConfig) {
   const faction = state.getFaction(factionId);
   const targetPlan = planWarTarget(factionId, state, connections);
+  const declareChance = Math.min(0.95, aiConfig.attackProb * tendency.attack);
 
   if (targetPlan && targetPlan.score > aiState.pressureScore) {
     aiState.targetFactionId = targetPlan.targetFactionId;
@@ -156,16 +159,16 @@ function executeWarPlan(factionId, state, connections, tendency, aiState) {
   }
 
   if (aiState.posture === 'prepare_war') {
-    if (!state.isAtWar(factionId, targetFactionId) && !playerProtected) {
+    if (!state.isAtWar(factionId, targetFactionId) && !playerProtected && Math.random() < declareChance) {
       declareWarAction(factionId, targetFactionId, state);
       aiState.posture = 'war';
       return `${faction.name}: ${state.factions[targetFactionId].name} 정벌을 선언`;
     }
 
-    const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections);
+    const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections, aiConfig);
     if (moved) return `${faction.name}: ${moved}`;
 
-    if (stagingRatio >= 1.15 || stagingCity.army >= 12000) {
+    if (stagingRatio >= Math.max(1.0, aiConfig.attackAdvantage - 0.2) || stagingCity.army >= Math.floor(aiConfig.attackArmyMin * 2)) {
       aiState.posture = 'war';
     }
     return `${faction.name}: ${stagingCity.name}에 병력 집결`;
@@ -178,19 +181,19 @@ function executeWarPlan(factionId, state, connections, tendency, aiState) {
     }
 
     if (stagingRatio < 0.9 && aiState.turnsSinceWar < 2) {
-      const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections);
+      const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections, aiConfig);
       if (moved) return `${faction.name}: ${moved}`;
     }
 
-    if (stagingCity.army >= 6000 && stagingRatio >= 1.05) {
-      const result = executeAttack(factionId, aiState.stagingCityId, aiState.targetCityId, state, connections);
+    if (stagingCity.army >= aiConfig.attackArmyMin && stagingRatio >= aiConfig.attackAdvantage) {
+      const result = executeAttack(factionId, aiState.stagingCityId, aiState.targetCityId, state, connections, aiConfig);
       if (result) {
         if (state.cities[aiState.targetCityId]?.owner === factionId) resetWarState(aiState);
         return result;
       }
     }
 
-    const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections);
+    const moved = gatherForWar(factionId, aiState.stagingCityId, state, connections, aiConfig);
     if (moved) return `${faction.name}: ${moved}`;
 
     if (stagingRatio < 0.7) {
@@ -298,14 +301,14 @@ function getHegemonState(state) {
   return ranked[0] || null;
 }
 
-function gatherForWar(factionId, stagingCityId, state, connections) {
+function gatherForWar(factionId, stagingCityId, state, connections, aiConfig) {
   const myCities = state.getCitiesOfFaction(factionId)
     .filter(c => c.id !== stagingCityId)
     .sort((a, b) => b.army - a.army);
 
   for (const city of myCities) {
-    if (city.army < 5000) continue;
-    const transfer = Math.floor(city.army * 0.3);
+    if (city.army < aiConfig.reinforceThreshold) continue;
+    const transfer = Math.floor(city.army * aiConfig.reinforceRate);
     if (transfer < 1500) continue;
     const result = moveArmy(state, city.id, stagingCityId, transfer, [], connections);
     if (result.success) {
@@ -526,15 +529,15 @@ function findWeakNeighbor(factionId, state, connections) {
   return null;
 }
 
-function reinforceCity(cityId, state, factionId) {
+function reinforceCity(cityId, state, factionId, aiConfig) {
   const myCities = state.getCitiesOfFaction(factionId);
   const target = state.cities[cityId];
 
   for (const c of myCities) {
     if (c.id === cityId) continue;
     const source = state.cities[c.id];
-    if (source.army > 8000) {
-      const transfer = Math.floor(source.army * 0.3);
+    if (source.army > aiConfig.reinforceThreshold) {
+      const transfer = Math.floor(source.army * aiConfig.reinforceRate);
       source.army -= transfer;
       target.army += transfer;
       break;
@@ -542,13 +545,13 @@ function reinforceCity(cityId, state, factionId) {
   }
 }
 
-function executeAttack(factionId, fromCityId, toCityId, state, connections) {
+function executeAttack(factionId, fromCityId, toCityId, state, connections, aiConfig) {
   const from = state.cities[fromCityId];
   const to = state.cities[toCityId];
   if (!from || !to) return null;
   const defenderFactionId = to.owner;
 
-  const attackArmy = Math.floor(from.army * 0.6);
+  const attackArmy = Math.floor(from.army * aiConfig.attackArmySend);
   from.army -= attackArmy;
 
   const attackerGenerals = state.getCharactersInCity(fromCityId)

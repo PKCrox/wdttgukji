@@ -44,3 +44,15 @@
 - 크롤러를 추가할 때는 재시도, resume, rate limit을 먼저 설계한다.
 - 한 번 수집한 데이터가 다음 단계에서 어떤 필드를 소비하는지 확인한다.
 - 가능한 경우 새 데이터 포맷보다 기존 `processed` 구조와 합쳐지는 쪽을 우선한다.
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: world-data-researcher
+- mutation_scope: workflow
+- auto_upgrade: true
+- lanes: content-pipeline
+- fit_signals: content-pipeline_coverage, content-pipeline_handoff_quality, raw_processed_integrity, source_coverage
+- upgrade_lanes: content-pipeline
+- review_prompts:
+  - When content-pipeline stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->

@@ -1,0 +1,1052 @@
+[
+  {
+    "updated_at": "2026-03-24T22:37:08.738Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:38:08.257Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:38:57.760Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:39:53.973Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:40:46.594Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:41:43.282Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:42:32.226Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:43:30.048Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:44:20.869Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:45:19.620Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:46:11.014Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:47:06.983Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:47:59.847Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:48:59.652Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:49:47.546Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:50:46.155Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:51:34.767Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:52:32.563Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:53:23.313Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:54:21.710Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:55:12.799Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:56:10.668Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:57:02.040Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:58:00.942Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 7,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-26T09:13:46.945Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260326-181346",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
+        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      }
+    }
+  }
+]

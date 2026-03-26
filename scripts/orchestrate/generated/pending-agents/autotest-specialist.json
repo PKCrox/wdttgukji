@@ -1,0 +1,21 @@
+{
+  "agent_id": "autotest-specialist",
+  "lane": "autotest",
+  "title": "Create an additional autotest specialist",
+  "rationale": "autotest ownership exists, but coverage is weak and lane fitness is too low for the current owners.",
+  "suggested_contract": {
+    "lanes": [
+      "autotest"
+    ],
+    "mutation_scope": "workflow",
+    "fit_signals": [
+      "autotest_coverage",
+      "autotest_handoff_quality",
+      "lane_coverage",
+      "handoff_quality"
+    ]
+  },
+  "status": "pending",
+  "proposed_at": "2026-03-24T14:31:45.991Z",
+  "target_doc_path": "ai/agents/pending/autotest-specialist.md"
+}

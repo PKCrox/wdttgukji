@@ -5,46 +5,91 @@ const LEGACY_H = 700;
 
 export const MAP_FACTION_PALETTE = {
   wei: {
-    fill: 'rgba(98, 129, 167, 0.28)',
+    fill: 'rgba(98, 129, 167, 0.18)',
     edge: '#8ca8c8',
-    glow: 'rgba(162, 190, 223, 0.32)',
+    glow: 'rgba(162, 190, 223, 0.22)',
     badge: '#6d8db0',
     badgeDark: '#304357',
   },
   shu: {
-    fill: 'rgba(90, 132, 90, 0.3)',
+    fill: 'rgba(90, 132, 90, 0.19)',
     edge: '#9eb78e',
-    glow: 'rgba(173, 201, 149, 0.3)',
+    glow: 'rgba(173, 201, 149, 0.2)',
     badge: '#658d63',
     badgeDark: '#314731',
   },
   wu: {
-    fill: 'rgba(162, 96, 79, 0.28)',
+    fill: 'rgba(162, 96, 79, 0.18)',
     edge: '#d29b84',
-    glow: 'rgba(222, 160, 141, 0.26)',
+    glow: 'rgba(222, 160, 141, 0.18)',
     badge: '#ae6857',
     badgeDark: '#513128',
   },
   liu_zhang: {
-    fill: 'rgba(171, 137, 75, 0.26)',
+    fill: 'rgba(171, 137, 75, 0.17)',
     edge: '#d4ba7d',
-    glow: 'rgba(216, 192, 130, 0.24)',
+    glow: 'rgba(216, 192, 130, 0.17)',
     badge: '#a98349',
     badgeDark: '#4e3d1f',
   },
   zhang_lu: {
-    fill: 'rgba(132, 101, 152, 0.25)',
+    fill: 'rgba(132, 101, 152, 0.16)',
     edge: '#c4a8d4',
-    glow: 'rgba(197, 167, 218, 0.22)',
+    glow: 'rgba(197, 167, 218, 0.16)',
     badge: '#8a6a9d',
     badgeDark: '#43314b',
   },
   neutral: {
-    fill: 'rgba(118, 110, 93, 0.22)',
+    fill: 'rgba(118, 110, 93, 0.14)',
     edge: '#b8a98d',
-    glow: 'rgba(207, 192, 163, 0.18)',
+    glow: 'rgba(207, 192, 163, 0.12)',
     badge: '#7b705d',
     badgeDark: '#3b3429',
+  },
+};
+
+const SELECTION_TONE_STYLE = {
+  selection: {
+    roadGlow: 'rgba(228, 200, 126, 0.28)',
+    frontGlow: 'rgba(240, 208, 132, 0.22)',
+    cityRing: '#d7bf7f',
+    cityFill: 'rgba(215, 191, 127, 0.18)',
+  },
+  hostile: {
+    roadGlow: 'rgba(214, 108, 86, 0.28)',
+    frontGlow: 'rgba(228, 118, 92, 0.24)',
+    cityRing: '#d8846f',
+    cityFill: 'rgba(216, 132, 111, 0.2)',
+  },
+  opportunity: {
+    roadGlow: 'rgba(122, 170, 116, 0.26)',
+    frontGlow: 'rgba(144, 195, 127, 0.22)',
+    cityRing: '#8eb679',
+    cityFill: 'rgba(142, 182, 121, 0.18)',
+  },
+  fortify: {
+    roadGlow: 'rgba(111, 146, 182, 0.28)',
+    frontGlow: 'rgba(128, 163, 201, 0.24)',
+    cityRing: '#7f9fc4',
+    cityFill: 'rgba(127, 159, 196, 0.2)',
+  },
+  military: {
+    roadGlow: 'rgba(174, 118, 94, 0.28)',
+    frontGlow: 'rgba(190, 128, 102, 0.24)',
+    cityRing: '#c38d72',
+    cityFill: 'rgba(195, 141, 114, 0.2)',
+  },
+  diplomacy: {
+    roadGlow: 'rgba(150, 108, 178, 0.28)',
+    frontGlow: 'rgba(165, 122, 194, 0.24)',
+    cityRing: '#ab87cb',
+    cityFill: 'rgba(171, 135, 203, 0.2)',
+  },
+  victory: {
+    roadGlow: 'rgba(212, 184, 92, 0.3)',
+    frontGlow: 'rgba(229, 202, 110, 0.26)',
+    cityRing: '#e0c46a',
+    cityFill: 'rgba(224, 196, 106, 0.2)',
   },
 };
 
@@ -52,16 +97,20 @@ const ROAD_STYLE = {
   major: {
     base: 'rgba(38, 28, 19, 0.64)',
     line: 'rgba(213, 183, 122, 0.5)',
-    width: 10,
-    glow: 'rgba(233, 214, 177, 0.16)',
+    width: 8,
+    glow: 'rgba(233, 214, 177, 0.12)',
   },
   normal: {
     base: 'rgba(30, 24, 18, 0.46)',
     line: 'rgba(189, 165, 117, 0.24)',
-    width: 6,
-    glow: 'rgba(224, 204, 168, 0.08)',
+    width: 4.5,
+    glow: 'rgba(224, 204, 168, 0.06)',
   },
 };
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
 
 export function resolveMapLayout(scenario) {
   const base = scenario?.mapLayout || {};
@@ -139,6 +188,11 @@ export class MapRenderer {
     this._lastState = null;
     this._animFrame = null;
     this._animating = false;
+    this._cameraAnimFrame = null;
+    this.selectionPulse = { cityId: null, startedAt: 0, tone: 'selection' };
+    this.camera = { zoom: 1.05, panX: 0, panY: 0 };
+    this.minZoom = 1;
+    this.maxZoom = 1.28;
     this._boundResize = () => {
       this._resize();
       if (this._lastState) this.render(this._lastState);
@@ -159,10 +213,90 @@ export class MapRenderer {
     this.canvas.style.height = `${height}px`;
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     this.viewport = measureMapViewport(this.layout, width, height);
+    this._clampCamera();
+  }
+
+  _getViewTransform() {
+    const { width, height, designWidth, designHeight } = this.viewport;
+    const scale = this.viewport.scale * this.camera.zoom;
+    const offsetX = (width - designWidth * scale) / 2 + this.camera.panX;
+    const offsetY = (height - designHeight * scale) / 2 + this.camera.panY;
+    return { scale, offsetX, offsetY };
+  }
+
+  _clampCamera() {
+    if (!this.viewport) return;
+    const { width, height, designWidth, designHeight } = this.viewport;
+    const scale = this.viewport.scale * this.camera.zoom;
+    const maxPanX = Math.max(0, (designWidth * scale - width) / 2);
+    const maxPanY = Math.max(0, (designHeight * scale - height) / 2);
+    this.camera.panX = clamp(this.camera.panX, -maxPanX, maxPanX);
+    this.camera.panY = clamp(this.camera.panY, -maxPanY, maxPanY);
+  }
+
+  panBy(deltaX, deltaY) {
+    this.camera.panX += deltaX;
+    this.camera.panY += deltaY;
+    this._clampCamera();
+    if (this._lastState) this.render(this._lastState);
+  }
+
+  resetCamera() {
+    if (this._cameraAnimFrame) cancelAnimationFrame(this._cameraAnimFrame);
+    this.camera.zoom = 1.05;
+    this.camera.panX = 0;
+    this.camera.panY = 0;
+    if (this._lastState) this.render(this._lastState);
+  }
+
+  focusOnCity(cityId, { immediate = false, targetXRatio = 0.5, targetYRatio = 0.58 } = {}) {
+    const anchor = this.positions?.[cityId];
+    if (!anchor || !this.viewport) return false;
+    if (this._cameraAnimFrame) {
+      cancelAnimationFrame(this._cameraAnimFrame);
+      this._cameraAnimFrame = null;
+    }
+
+    const scale = this.viewport.scale * this.camera.zoom;
+    const baseOffsetX = (this.viewport.width - this.viewport.designWidth * scale) / 2;
+    const baseOffsetY = (this.viewport.height - this.viewport.designHeight * scale) / 2;
+    const nextPanX = (this.viewport.width * targetXRatio) - (anchor.x * scale) - baseOffsetX;
+    const nextPanY = (this.viewport.height * targetYRatio) - (anchor.y * scale) - baseOffsetY;
+    const target = { panX: nextPanX, panY: nextPanY };
+
+    if (immediate) {
+      this.camera.panX = target.panX;
+      this.camera.panY = target.panY;
+      this._clampCamera();
+      if (this._lastState) this.render(this._lastState);
+      return true;
+    }
+
+    const start = { panX: this.camera.panX, panY: this.camera.panY };
+    const startedAt = performance.now();
+    const duration = 280;
+    const easeOut = (t) => 1 - ((1 - t) * (1 - t) * (1 - t));
+
+    const tick = (now) => {
+      const progress = Math.min(1, (now - startedAt) / duration);
+      const eased = easeOut(progress);
+      this.camera.panX = start.panX + ((target.panX - start.panX) * eased);
+      this.camera.panY = start.panY + ((target.panY - start.panY) * eased);
+      this._clampCamera();
+      if (this._lastState) this.render(this._lastState);
+      if (progress < 1) {
+        this._cameraAnimFrame = requestAnimationFrame(tick);
+      } else {
+        this._cameraAnimFrame = null;
+      }
+    };
+
+    this._cameraAnimFrame = requestAnimationFrame(tick);
+    return true;
   }
 
   _toWorld(screenX, screenY) {
-    const { offsetX, offsetY, scale } = this.viewport;
+    const { offsetX, offsetY, scale } = this._getViewTransform();
     return {
       x: (screenX - offsetX) / scale,
       y: (screenY - offsetY) / scale,
@@ -170,7 +304,7 @@ export class MapRenderer {
   }
 
   _toScreen(worldX, worldY) {
-    const { offsetX, offsetY, scale } = this.viewport;
+    const { offsetX, offsetY, scale } = this._getViewTransform();
     return {
       x: worldX * scale + offsetX,
       y: worldY * scale + offsetY,
@@ -202,6 +336,15 @@ export class MapRenderer {
     this._startAnim();
   }
 
+  signalSelection(cityId, tone = 'selection') {
+    this.selectionPulse = {
+      cityId,
+      startedAt: Date.now(),
+      tone,
+    };
+    this._startAnim();
+  }
+
   clearEventPulses() {
     this.eventCities.clear();
   }
@@ -229,9 +372,12 @@ export class MapRenderer {
           this.eventCities.delete(cityId);
         }
       }
+      if (this.selectionPulse.cityId && now - this.selectionPulse.startedAt > 1100) {
+        this.selectionPulse = { cityId: null, startedAt: 0, tone: 'selection' };
+      }
       this.movements = this.movements.filter(move => now - move.startedAt < move.duration);
 
-      if (!this.eventCities.size && !this.movements.length) {
+      if (!this.eventCities.size && !this.movements.length && !this.selectionPulse.cityId) {
         this._animating = false;
         if (this._lastState) this.render(this._lastState);
         return;
@@ -313,29 +459,29 @@ export class MapRenderer {
       const extent = getExtent(points);
       const radius = Math.max(extent.width, extent.height) * this.viewport.scale * 0.7;
       const highlight = selectedOwner === factionId || state.player.factionId === factionId;
-      const alpha = highlight ? 0.38 : 0.28;
+      const alpha = highlight ? 0.26 : 0.17;
 
       ctx.save();
       drawPolygon(ctx, points, this.viewport);
       const gradient = ctx.createRadialGradient(center.x, center.y, radius * 0.12, center.x, center.y, radius);
-      gradient.addColorStop(0, addAlpha(style.glow, highlight ? 0.42 : 0.24));
+      gradient.addColorStop(0, addAlpha(style.glow, highlight ? 0.32 : 0.16));
       gradient.addColorStop(0.55, addAlpha(style.fill, alpha));
-      gradient.addColorStop(1, addAlpha(style.fill, 0.14));
+      gradient.addColorStop(1, addAlpha(style.fill, 0.09));
       ctx.fillStyle = gradient;
       ctx.fill();
 
       ctx.clip();
-      drawHatching(ctx, points, this.viewport, style.edge, highlight ? 0.11 : 0.06);
+      drawHatching(ctx, points, this.viewport, style.edge, highlight ? 0.08 : 0.04);
       ctx.restore();
 
       ctx.save();
       drawPolygon(ctx, points, this.viewport);
-      ctx.strokeStyle = 'rgba(24, 18, 12, 0.72)';
-      ctx.lineWidth = 8 * this.viewport.scale;
+      ctx.strokeStyle = 'rgba(24, 18, 12, 0.58)';
+      ctx.lineWidth = 6 * this.viewport.scale;
       ctx.lineJoin = 'round';
       ctx.stroke();
       ctx.strokeStyle = highlight ? style.edge : addAlpha(style.edge, 0.66);
-      ctx.lineWidth = 2.2 * this.viewport.scale;
+      ctx.lineWidth = 1.8 * this.viewport.scale;
       ctx.stroke();
       ctx.restore();
     }
@@ -345,7 +491,7 @@ export class MapRenderer {
     for (const ridge of this.layout.ridgePaths || []) {
       const points = ridge.points || [];
       if (points.length < 2) continue;
-      const width = (ridge.thickness || 18) * this.viewport.scale;
+      const width = (ridge.thickness || 18) * this.viewport.scale * 0.82;
       ctx.save();
       ctx.beginPath();
       drawPolyline(ctx, points, this.viewport);
@@ -366,6 +512,8 @@ export class MapRenderer {
 
   _drawRoads(ctx, state) {
     const selected = this.selectedCity;
+    const selectedPulseActive = this.selectionPulse.cityId === selected && (Date.now() - this.selectionPulse.startedAt < 1100);
+    const selectionTone = SELECTION_TONE_STYLE[this.selectionPulse.tone] || SELECTION_TONE_STYLE.selection;
 
     for (const road of this.roads) {
       const from = this.positions[road.from];
@@ -407,8 +555,8 @@ export class MapRenderer {
         ctx.beginPath();
         ctx.moveTo(fromScreen.x, fromScreen.y);
         ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, toScreen.x, toScreen.y);
-        ctx.strokeStyle = style.glow;
-        ctx.lineWidth = (style.width + 10) * this.viewport.scale;
+        ctx.strokeStyle = selectedPulseActive ? selectionTone.roadGlow : style.glow;
+        ctx.lineWidth = (style.width + 10 + (selectedBoost && selectedPulseActive ? 5 : 0)) * this.viewport.scale;
         ctx.filter = 'blur(6px)';
         ctx.stroke();
       }
@@ -417,6 +565,9 @@ export class MapRenderer {
   }
 
   _drawFrontlines(ctx, state) {
+    const selected = this.selectedCity;
+    const selectedPulseActive = this.selectionPulse.cityId === selected && (Date.now() - this.selectionPulse.startedAt < 1100);
+    const selectionTone = SELECTION_TONE_STYLE[this.selectionPulse.tone] || SELECTION_TONE_STYLE.selection;
     for (const [cityAId, cityBId] of this.connections) {
       const cityA = state.cities[cityAId];
       const cityB = state.cities[cityBId];
@@ -426,6 +577,9 @@ export class MapRenderer {
       const atWar = state.isAtWar(cityA.owner, cityB.owner);
       const playerEdge = cityA.owner === state.player.factionId || cityB.owner === state.player.factionId;
       if (!atWar && !playerEdge) continue;
+      const selectedEdge = selected && (cityAId === selected || cityBId === selected);
+      const contextEdge = selected && !selectedEdge && (isConnected(this.connections, selected, cityAId) || isConnected(this.connections, selected, cityBId));
+      if (selected && !selectedEdge && !contextEdge && !atWar) continue;
 
       const from = this.positions[cityAId];
       const to = this.positions[cityBId];
@@ -446,9 +600,19 @@ export class MapRenderer {
       }
       ctx.setLineDash([10 * this.viewport.scale, 8 * this.viewport.scale]);
       ctx.lineCap = 'round';
-      ctx.lineWidth = (atWar ? 4 : 3) * this.viewport.scale;
-      ctx.strokeStyle = atWar ? 'rgba(214, 92, 71, 0.82)' : 'rgba(221, 190, 118, 0.6)';
+      ctx.lineWidth = (atWar ? 4 : 3 + (selectedEdge ? 1.4 : 0)) * this.viewport.scale;
+      ctx.strokeStyle = atWar
+        ? (selectedEdge ? 'rgba(229, 114, 90, 0.96)' : contextEdge ? 'rgba(222, 105, 79, 0.88)' : 'rgba(214, 92, 71, 0.82)')
+        : (selectedEdge ? 'rgba(240, 208, 132, 0.86)' : 'rgba(221, 190, 118, 0.6)');
       ctx.stroke();
+
+      if (selectedEdge || (contextEdge && selectedPulseActive)) {
+        ctx.setLineDash([]);
+        ctx.strokeStyle = selectedPulseActive ? selectionTone.frontGlow : (atWar ? 'rgba(229, 114, 90, 0.22)' : 'rgba(240, 208, 132, 0.2)');
+        ctx.lineWidth = (12 + (selectedPulseActive ? 4 : 0)) * this.viewport.scale;
+        ctx.filter = 'blur(8px)';
+        ctx.stroke();
+      }
       ctx.restore();
     }
   }
@@ -521,6 +685,7 @@ export class MapRenderer {
 
   _drawCities(ctx, state) {
     const ordered = Object.entries(this.positions).sort(([, a], [, b]) => a.y - b.y);
+    const selectionTone = SELECTION_TONE_STYLE[this.selectionPulse.tone] || SELECTION_TONE_STYLE.selection;
 
     for (const [cityId, anchor] of ordered) {
       const city = state.cities[cityId];
@@ -531,6 +696,9 @@ export class MapRenderer {
       const selected = cityId === this.selectedCity;
       const hovered = cityId === this.hoveredCity;
       const adjacent = this.selectedCity && isConnected(this.connections, cityId, this.selectedCity);
+      const selectionPulse = selected && this.selectionPulse.cityId === cityId
+        ? Math.max(0, 1 - ((Date.now() - this.selectionPulse.startedAt) / 1100))
+        : 0;
       const position = this._toScreen(anchor.x, anchor.y);
       const badgeOffset = this.layout.cityBadgeOffsets?.[cityId] || {};
       const importance = city.strategic_importance || 0;
@@ -542,9 +710,50 @@ export class MapRenderer {
       if (selected || hovered) {
         ctx.save();
         ctx.beginPath();
-        ctx.arc(position.x, position.y, markerSize + 16 * this.viewport.scale, 0, Math.PI * 2);
-        ctx.fillStyle = selected ? addAlpha(palette.edge, 0.18) : 'rgba(243, 223, 184, 0.08)';
+        ctx.arc(position.x, position.y, markerSize + (16 + (selectionPulse * 16)) * this.viewport.scale, 0, Math.PI * 2);
+        ctx.fillStyle = selected
+          ? (selectionPulse > 0 ? addAlpha(selectionTone.cityFill, 0.88) : addAlpha(palette.edge, 0.18 + (selectionPulse * 0.12)))
+          : 'rgba(243, 223, 184, 0.08)';
         ctx.fill();
+        ctx.restore();
+      }
+
+      if (selectionPulse > 0) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(position.x, position.y, markerSize + (22 + ((1 - selectionPulse) * 22)) * this.viewport.scale, 0, Math.PI * 2);
+        ctx.strokeStyle = addAlpha(selectionTone.cityRing, 0.34 * selectionPulse);
+        ctx.lineWidth = 3 * this.viewport.scale;
+        ctx.stroke();
+
+        if (this.selectionPulse.tone === 'hostile') {
+          const reach = markerSize + 26 * this.viewport.scale;
+          ctx.strokeStyle = addAlpha(selectionTone.cityRing, 0.42 * selectionPulse);
+          ctx.lineWidth = 2 * this.viewport.scale;
+          ctx.beginPath();
+          ctx.moveTo(position.x - reach, position.y);
+          ctx.lineTo(position.x - (markerSize + 8 * this.viewport.scale), position.y);
+          ctx.moveTo(position.x + (markerSize + 8 * this.viewport.scale), position.y);
+          ctx.lineTo(position.x + reach, position.y);
+          ctx.moveTo(position.x, position.y - reach);
+          ctx.lineTo(position.x, position.y - (markerSize + 8 * this.viewport.scale));
+          ctx.moveTo(position.x, position.y + (markerSize + 8 * this.viewport.scale));
+          ctx.lineTo(position.x, position.y + reach);
+          ctx.stroke();
+        } else if (this.selectionPulse.tone === 'opportunity') {
+          ctx.setLineDash([6 * this.viewport.scale, 5 * this.viewport.scale]);
+          ctx.beginPath();
+          ctx.arc(position.x, position.y, markerSize + 30 * this.viewport.scale, 0, Math.PI * 2);
+          ctx.strokeStyle = addAlpha(selectionTone.cityRing, 0.38 * selectionPulse);
+          ctx.lineWidth = 2 * this.viewport.scale;
+          ctx.stroke();
+          ctx.setLineDash([]);
+        } else if (this.selectionPulse.tone === 'fortify') {
+          const frame = markerSize + 24 * this.viewport.scale;
+          ctx.strokeStyle = addAlpha(selectionTone.cityRing, 0.34 * selectionPulse);
+          ctx.lineWidth = 2 * this.viewport.scale;
+          ctx.strokeRect(position.x - frame, position.y - frame, frame * 2, frame * 2);
+        }
         ctx.restore();
       }
 
@@ -564,13 +773,27 @@ export class MapRenderer {
         ctx.restore();
       }
 
+      const showBadge = selected || hovered || adjacent || capital || owner === state.player.factionId || importance >= 8;
+      const showLabel = showBadge || importance >= 6;
       const armyText = formatArmyBadge(city.army);
       const badgeX = position.x + ((badgeOffset.badge?.[0] || 0) * this.viewport.scale);
       const badgeY = position.y + markerSize + 12 * this.viewport.scale + ((badgeOffset.badge?.[1] || 0) * this.viewport.scale);
       const labelX = position.x + ((badgeOffset.label?.[0] || 0) * this.viewport.scale);
       const labelY = position.y + markerSize + 33 * this.viewport.scale + ((badgeOffset.label?.[1] || 0) * this.viewport.scale);
-      drawBadge(ctx, badgeX, badgeY, armyText, palette.badge, palette.badgeDark, this.viewport.scale);
-      drawLabelPlaque(ctx, labelX, labelY, city.name, selected, this.viewport.scale);
+      if (showBadge) {
+        const badgeAlpha = selected || hovered ? 1 : adjacent || capital ? 0.92 : owner === state.player.factionId ? 0.82 : 0.7;
+        ctx.save();
+        ctx.globalAlpha = badgeAlpha;
+        drawBadge(ctx, badgeX, badgeY, armyText, palette.badge, palette.badgeDark, this.viewport.scale);
+        ctx.restore();
+      }
+      if (showLabel) {
+        const labelAlpha = selected || hovered ? 1 : adjacent || capital ? 0.92 : owner === state.player.factionId ? 0.84 : importance >= 8 ? 0.78 : 0.62;
+        ctx.save();
+        ctx.globalAlpha = labelAlpha;
+        drawLabelPlaque(ctx, labelX, labelY, city.name, selected, this.viewport.scale);
+        ctx.restore();
+      }
       if (selected || hovered) {
         drawCityTerrainStrip(
           ctx,
@@ -935,17 +1158,17 @@ function drawStar(ctx, x, y, radius, color) {
 
 function drawBadge(ctx, x, y, text, fill, border, scale) {
   ctx.save();
-  ctx.font = `${Math.max(10, 11 * scale)}px "Noto Sans KR", sans-serif`;
-  const width = Math.max(34 * scale, ctx.measureText(text).width + 16 * scale);
-  const height = 16 * scale;
+  ctx.font = `${Math.max(9, 10 * scale)}px "Noto Sans KR", sans-serif`;
+  const width = Math.max(32 * scale, ctx.measureText(text).width + 14 * scale);
+  const height = 15 * scale;
   drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 7 * scale);
-  ctx.fillStyle = '#1B140F';
+  ctx.fillStyle = 'rgba(23, 16, 11, 0.92)';
   ctx.fill();
-  ctx.strokeStyle = addAlpha(border, 0.72);
-  ctx.lineWidth = 1.2 * scale;
+  ctx.strokeStyle = addAlpha(border, 0.58);
+  ctx.lineWidth = 1 * scale;
   ctx.stroke();
   drawRoundedRect(ctx, x - width / 2 + 2 * scale, y - height / 2 + 2 * scale, width - 4 * scale, height - 4 * scale, 6 * scale);
-  ctx.fillStyle = addAlpha(fill, 0.9);
+  ctx.fillStyle = addAlpha(fill, 0.84);
   ctx.fill();
   ctx.fillStyle = '#FFF8EA';
   ctx.textAlign = 'center';
@@ -956,16 +1179,16 @@ function drawBadge(ctx, x, y, text, fill, border, scale) {
 
 function drawLabelPlaque(ctx, x, y, text, selected, scale) {
   ctx.save();
-  ctx.font = `${Math.max(11, 13 * scale)}px "Noto Serif KR", serif`;
-  const width = Math.max(48 * scale, ctx.measureText(text).width + 18 * scale);
-  const height = 20 * scale;
+  ctx.font = `${Math.max(10, 12 * scale)}px "Noto Serif KR", serif`;
+  const width = Math.max(44 * scale, ctx.measureText(text).width + 16 * scale);
+  const height = 18 * scale;
   drawRoundedRect(ctx, x - width / 2, y - height / 2, width, height, 6 * scale);
-  ctx.fillStyle = selected ? 'rgba(33, 23, 16, 0.92)' : 'rgba(23, 16, 11, 0.84)';
+  ctx.fillStyle = selected ? 'rgba(33, 23, 16, 0.9)' : 'rgba(18, 13, 10, 0.72)';
   ctx.fill();
-  ctx.strokeStyle = selected ? 'rgba(231, 210, 166, 0.54)' : 'rgba(192, 161, 104, 0.22)';
-  ctx.lineWidth = 1 * scale;
+  ctx.strokeStyle = selected ? 'rgba(231, 210, 166, 0.48)' : 'rgba(192, 161, 104, 0.18)';
+  ctx.lineWidth = 0.9 * scale;
   ctx.stroke();
-  ctx.fillStyle = selected ? '#FFF3D3' : '#F0E4CB';
+  ctx.fillStyle = selected ? '#FFF3D3' : 'rgba(240, 228, 203, 0.92)';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
   ctx.fillText(text, x, y + 0.5 * scale);
@@ -1053,7 +1276,7 @@ function pairKey(a, b) {
 
 function getRoadDescriptor(road, emphasis = 'ambient') {
   const basePreset = ROAD_STYLE[road.grade] || ROAD_STYLE.normal;
-  const emphasisAlpha = emphasis === 'focused' ? 1 : emphasis === 'context' ? 0.78 : 0.46;
+  const emphasisAlpha = emphasis === 'focused' ? 1 : emphasis === 'context' ? 0.72 : 0.3;
 
   if (road.kind === 'river') {
     return {
@@ -1096,7 +1319,7 @@ function getRoadDescriptor(road, emphasis = 'ambient') {
     line: emphasis === 'focused' ? 'rgba(246, 227, 176, 0.82)' : addAlpha(basePreset.line, 0.82 * emphasisAlpha),
     glow: addAlpha(basePreset.glow, 0.92 * emphasisAlpha),
     width: basePreset.width,
-    lineWidthRatio: 0.42,
+    lineWidthRatio: 0.36,
     baseDash: [],
     lineDash: [],
   };

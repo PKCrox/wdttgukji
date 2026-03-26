@@ -1,0 +1,427 @@
+[
+  {
+    "updated_at": "2026-03-24T22:14:36.200Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071335",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:16:23.667Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071525",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:18:12.644Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071714",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:19:58.492Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071901",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:21:50.335Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072050",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:23:38.155Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072239",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:25:24.613Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072426",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:27:13.098Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072615",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:29:00.980Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072801",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:30:49.346Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072951",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:32:38.914Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073140",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:34:27.653Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073328",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:36:11.527Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073515",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:38:00.436Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:39:46.089Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:41:35.267Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:43:22.219Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:45:11.729Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:46:58.962Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:48:51.549Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:50:38.165Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:52:24.608Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:54:13.747Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:56:02.719Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:57:53.044Z",
+    "axis": "theme-independence",
+    "candidate": "theme-independent-mechanics",
+    "pass_index": 6,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "payload": {
+      "lane": "theme-independence",
+      "checkedFiles": 21,
+      "uiImportViolations": 0,
+      "browserGlobalViolations": 0,
+      "keyArtifacts": {
+        "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
+        "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      }
+    }
+  }
+]

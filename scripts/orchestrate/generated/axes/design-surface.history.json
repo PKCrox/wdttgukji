@@ -1,0 +1,927 @@
+[
+  {
+    "updated_at": "2026-03-24T22:36:27.449Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073515",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:37:16.644Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:38:16.313Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:39:05.722Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:40:02.033Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:40:54.542Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:41:51.133Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:42:39.925Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:43:38.012Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:44:28.732Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:45:27.713Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:46:18.953Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:47:14.964Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:48:07.756Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:49:07.662Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:49:55.575Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:50:54.022Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:51:42.714Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:52:40.405Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:53:31.333Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:54:29.633Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:55:20.697Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:56:18.565Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:57:09.915Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 2,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  },
+  {
+    "updated_at": "2026-03-24T22:58:08.849Z",
+    "axis": "design-surface",
+    "candidate": "design-surface-quality",
+    "pass_index": 8,
+    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "payload": {
+      "lane": "design-surface",
+      "trackedFiles": [
+        {
+          "path": "public/index.html",
+          "bytes": 19280,
+          "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        },
+        {
+          "path": "public/css/style.css",
+          "bytes": 207799,
+          "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        },
+        {
+          "path": "public/js/app.js",
+          "bytes": 89939,
+          "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        },
+        {
+          "path": "public/assets/maps/red-cliffs-base.svg",
+          "bytes": 15064,
+          "sha1": "f7b467a8c3da4a69c581b569e48c73bf92d48d79"
+        }
+      ],
+      "contracts": [
+        "docs/macbook14-ux-contract.md",
+        "docs/map-art-direction.md",
+        "docs/ux-first-frame-priority.md"
+      ]
+    }
+  }
+]

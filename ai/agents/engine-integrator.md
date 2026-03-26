@@ -37,3 +37,18 @@
 - `fetch('/...')` 전제 코드는 CLI 재사용성을 약하게 만든다.
 - `prepare.js`가 재사용할 수 있는 순수 로직은 `engine/`에 유지한다.
 - 프런트 편의용 상수와 밸런스 상수는 혼합하지 않는다.
+
+<!-- AUTO_AGENT_REGISTRY_START -->
+## Registry Sync
+- id: engine-integrator
+- mutation_scope: product-core
+- auto_upgrade: true
+- lanes: engine-slice, design-surface, app-surface, theme-independence
+- fit_signals: app-surface_coverage, app-surface_handoff_quality, boundary_cleanliness, design-surface_coverage, design-surface_handoff_quality, engine-slice_coverage, engine-slice_handoff_quality, playable_loop_integrity, theme-independence_coverage, theme-independence_handoff_quality
+- upgrade_lanes: app-surface, design-surface, engine-slice, theme-independence
+- review_prompts:
+  - When app-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When design-surface stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When engine-slice stays under target, explain whether the issue is routing, missing capability, or contract shape.
+  - When theme-independence stays under target, explain whether the issue is routing, missing capability, or contract shape.
+<!-- AUTO_AGENT_REGISTRY_END -->
