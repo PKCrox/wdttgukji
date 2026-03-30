@@ -5078,45 +5078,45 @@
     }
   ],
   "connectionTerrains": {
-    "youzhou:jizhou": "plains",
-    "jizhou:bingzhou": "plains",
-    "jizhou:yanzhou": "plains",
-    "jizhou:ye": "plains",
-    "ye:yanzhou": "plains",
-    "yanzhou:xuzhou": "plains",
-    "yanzhou:yuzhou": "plains",
-    "yanzhou:xuchang": "plains",
-    "xuchang:yuzhou": "plains",
+    "ji:nanpi": "plains",
+    "nanpi:jinyang": "plains",
+    "nanpi:chenliu": "plains",
+    "nanpi:ye": "plains",
+    "ye:chenliu": "plains",
+    "chenliu:xiapi": "plains",
+    "chenliu:runan": "plains",
+    "chenliu:xuchang": "plains",
+    "xuchang:runan": "plains",
     "xuchang:luoyang": "plains",
     "luoyang:changan": "mountain",
-    "luoyang:yanzhou": "plains",
-    "changan:yongzhou": "plains",
-    "yuzhou:nanyang": "plains",
-    "jingzhou:yizhou": "mountain",
-    "jingzhou:jiaozhou": "forest",
-    "xuzhou:yangzhou": "river",
-    "yangzhou:jianye": "river",
-    "yizhou:chengdu": "mountain",
-    "yizhou:hanzhong": "mountain",
+    "luoyang:chenliu": "plains",
+    "changan:longxi": "plains",
+    "runan:wan": "plains",
+    "jiangling:jiameng": "mountain",
+    "jiangling:panyu": "forest",
+    "xiapi:shouchun": "river",
+    "shouchun:jianye": "river",
+    "jiameng:chengdu": "mountain",
+    "jiameng:hanzhong": "mountain",
     "hanzhong:changan": "mountain",
-    "hanzhong:yongzhou": "mountain",
-    "nanyang:luoyang": "plains",
-    "nanyang:xuchang": "plains",
-    "nanyang:xiangyang": "river",
-    "xiangyang:jingzhou": "river",
+    "hanzhong:longxi": "mountain",
+    "wan:luoyang": "plains",
+    "wan:xuchang": "plains",
+    "wan:xiangyang": "river",
+    "xiangyang:jiangling": "river",
     "xiangyang:changsha": "river",
-    "changsha:jingzhou": "river",
+    "changsha:jiangling": "river",
     "changsha:wuling": "forest",
-    "changsha:jiaozhou": "forest",
-    "wuling:yizhou": "mountain",
+    "changsha:panyu": "forest",
+    "wuling:jiameng": "mountain",
     "kuaiji:jianye": "river",
-    "lujiang:yangzhou": "river",
+    "lujiang:shouchun": "river",
     "lujiang:jianye": "river",
-    "lujiang:jingzhou": "river",
-    "qingzhou:xuzhou": "plains",
-    "qingzhou:jizhou": "plains",
+    "lujiang:jiangling": "river",
+    "pingyuan:xiapi": "plains",
+    "pingyuan:nanpi": "plains",
     "tianshui:changan": "mountain",
-    "tianshui:yongzhou": "plains",
+    "tianshui:longxi": "plains",
     "luoyang_xuchang": "road",
     "xuchang_luoyang": "road",
     "luoyang_chenliu": "road",
@@ -5241,15 +5241,15 @@
       "bottom": 840
     },
     "cityAnchors": {
-      "youzhou": {
+      "ji": {
         "x": 1230,
         "y": 118
       },
-      "jizhou": {
+      "nanpi": {
         "x": 920,
         "y": 180
       },
-      "bingzhou": {
+      "jinyang": {
         "x": 600,
         "y": 170
       },
@@ -5257,11 +5257,11 @@
         "x": 930,
         "y": 278
       },
-      "yanzhou": {
+      "chenliu": {
         "x": 990,
         "y": 388
       },
-      "xuzhou": {
+      "xiapi": {
         "x": 1230,
         "y": 392
       },
@@ -5269,7 +5269,7 @@
         "x": 812,
         "y": 360
       },
-      "yuzhou": {
+      "runan": {
         "x": 804,
         "y": 456
       },
@@ -5281,15 +5281,15 @@
         "x": 404,
         "y": 296
       },
-      "yongzhou": {
+      "longxi": {
         "x": 288,
         "y": 364
       },
-      "jingzhou": {
+      "jiangling": {
         "x": 840,
         "y": 554
       },
-      "yangzhou": {
+      "shouchun": {
         "x": 1240,
         "y": 552
       },
@@ -5297,7 +5297,7 @@
         "x": 1382,
         "y": 560
       },
-      "yizhou": {
+      "jiameng": {
         "x": 354,
         "y": 554
       },
@@ -5309,11 +5309,11 @@
         "x": 406,
         "y": 428
       },
-      "jiaozhou": {
+      "panyu": {
         "x": 960,
         "y": 816
       },
-      "nanyang": {
+      "wan": {
         "x": 694,
         "y": 414
       },
@@ -5337,7 +5337,7 @@
         "x": 1106,
         "y": 540
       },
-      "qingzhou": {
+      "pingyuan": {
         "x": 1222,
         "y": 250
       },
@@ -6103,7 +6103,7 @@
       }
     ],
     "cityBadgeOffsets": {
-      "jingzhou": {
+      "jiangling": {
         "badge": [
           18,
           2
@@ -6137,7 +6137,7 @@
           8
         ]
       },
-      "yangzhou": {
+      "shouchun": {
         "badge": [
           -18,
           0
@@ -6147,7 +6147,7 @@
           10
         ]
       },
-      "yuzhou": {
+      "runan": {
         "badge": [
           16,
           0
@@ -6183,37 +6183,37 @@
     ]
   },
   "cityPositions": {
-    "youzhou": {
-      "x": 720,
-      "y": 80
+    "ji": {
+      "x": 560,
+      "y": 200
     },
-    "jizhou": {
-      "x": 640,
-      "y": 150
+    "nanpi": {
+      "x": 560,
+      "y": 270
     },
-    "bingzhou": {
-      "x": 480,
-      "y": 130
+    "jinyang": {
+      "x": 430,
+      "y": 260
     },
     "ye": {
       "x": 510,
       "y": 290
     },
-    "yanzhou": {
-      "x": 620,
-      "y": 280
+    "chenliu": {
+      "x": 530,
+      "y": 370
     },
-    "xuzhou": {
-      "x": 720,
-      "y": 300
+    "xiapi": {
+      "x": 590,
+      "y": 400
     },
     "xuchang": {
       "x": 520,
       "y": 420
     },
-    "yuzhou": {
-      "x": 520,
-      "y": 380
+    "runan": {
+      "x": 540,
+      "y": 450
     },
     "luoyang": {
       "x": 480,
@@ -6223,25 +6223,25 @@
       "x": 330,
       "y": 370
     },
-    "yongzhou": {
-      "x": 280,
-      "y": 350
+    "longxi": {
+      "x": 200,
+      "y": 330
     },
-    "jingzhou": {
-      "x": 520,
+    "jiangling": {
+      "x": 420,
+      "y": 510
+    },
+    "shouchun": {
+      "x": 560,
       "y": 460
-    },
-    "yangzhou": {
-      "x": 680,
-      "y": 420
     },
     "jianye": {
       "x": 590,
       "y": 480
     },
-    "yizhou": {
-      "x": 330,
-      "y": 490
+    "jiameng": {
+      "x": 290,
+      "y": 450
     },
     "chengdu": {
       "x": 260,
@@ -6251,13 +6251,13 @@
       "x": 320,
       "y": 420
     },
-    "jiaozhou": {
-      "x": 480,
-      "y": 600
+    "panyu": {
+      "x": 420,
+      "y": 680
     },
-    "nanyang": {
+    "wan": {
       "x": 470,
-      "y": 360
+      "y": 440
     },
     "xiangyang": {
       "x": 440,
@@ -6279,61 +6279,29 @@
       "x": 560,
       "y": 490
     },
-    "qingzhou": {
-      "x": 760,
-      "y": 220
+    "pingyuan": {
+      "x": 570,
+      "y": 310
     },
     "tianshui": {
       "x": 240,
       "y": 350
     },
-    "chenliu": {
-      "x": 530,
-      "y": 370
-    },
     "puyang": {
       "x": 540,
-      "y": 330
-    },
-    "runan": {
-      "x": 540,
-      "y": 450
-    },
-    "longxi": {
-      "x": 200,
       "y": 330
     },
     "wuwei": {
       "x": 150,
       "y": 280
     },
-    "nanpi": {
-      "x": 560,
-      "y": 270
-    },
-    "ji": {
-      "x": 560,
-      "y": 200
-    },
     "liaodong": {
       "x": 680,
       "y": 150
     },
-    "jinyang": {
-      "x": 430,
-      "y": 260
-    },
-    "pingyuan": {
-      "x": 570,
-      "y": 310
-    },
     "beihai": {
       "x": 620,
       "y": 320
-    },
-    "xiapi": {
-      "x": 590,
-      "y": 400
     },
     "guangling": {
       "x": 610,
@@ -6342,14 +6310,6 @@
     "xiaopei": {
       "x": 570,
       "y": 390
-    },
-    "jiangling": {
-      "x": 420,
-      "y": 510
-    },
-    "wan": {
-      "x": 470,
-      "y": 440
     },
     "jiangxia": {
       "x": 490,
@@ -6363,17 +6323,9 @@
       "x": 380,
       "y": 430
     },
-    "shouchun": {
-      "x": 560,
-      "y": 460
-    },
     "wuchang": {
       "x": 510,
       "y": 510
-    },
-    "jiameng": {
-      "x": 290,
-      "y": 450
     },
     "jianning": {
       "x": 260,
@@ -6386,10 +6338,6 @@
     "baidi": {
       "x": 330,
       "y": 490
-    },
-    "panyu": {
-      "x": 420,
-      "y": 680
     },
     "hulao": {
       "x": 490,
@@ -6634,40 +6582,40 @@
       "jianning"
     ],
     [
-      "youzhou",
-      "jizhou"
+      "ji",
+      "nanpi"
     ],
     [
-      "jizhou",
-      "bingzhou"
+      "nanpi",
+      "jinyang"
     ],
     [
-      "jizhou",
-      "yanzhou"
+      "nanpi",
+      "chenliu"
     ],
     [
-      "jizhou",
+      "nanpi",
       "ye"
     ],
     [
       "ye",
-      "yanzhou"
+      "chenliu"
     ],
     [
-      "yanzhou",
-      "xuzhou"
+      "chenliu",
+      "xiapi"
     ],
     [
-      "yanzhou",
-      "yuzhou"
+      "chenliu",
+      "runan"
     ],
     [
-      "yanzhou",
+      "chenliu",
       "xuchang"
     ],
     [
       "xuchang",
-      "yuzhou"
+      "runan"
     ],
     [
       "luoyang",
@@ -6675,38 +6623,38 @@
     ],
     [
       "luoyang",
-      "yanzhou"
+      "chenliu"
     ],
     [
       "changan",
-      "yongzhou"
+      "longxi"
     ],
     [
-      "yuzhou",
-      "nanyang"
+      "runan",
+      "wan"
     ],
     [
-      "jingzhou",
-      "yizhou"
+      "jiangling",
+      "jiameng"
     ],
     [
-      "jingzhou",
-      "jiaozhou"
+      "jiangling",
+      "panyu"
     ],
     [
-      "xuzhou",
-      "yangzhou"
+      "xiapi",
+      "shouchun"
     ],
     [
-      "yangzhou",
+      "shouchun",
       "jianye"
     ],
     [
-      "yizhou",
+      "jiameng",
       "chengdu"
     ],
     [
-      "yizhou",
+      "jiameng",
       "hanzhong"
     ],
     [
@@ -6715,23 +6663,23 @@
     ],
     [
       "hanzhong",
-      "yongzhou"
+      "longxi"
     ],
     [
-      "nanyang",
+      "wan",
       "luoyang"
     ],
     [
-      "nanyang",
+      "wan",
       "xuchang"
     ],
     [
-      "nanyang",
+      "wan",
       "xiangyang"
     ],
     [
       "xiangyang",
-      "jingzhou"
+      "jiangling"
     ],
     [
       "xiangyang",
@@ -6739,7 +6687,7 @@
     ],
     [
       "changsha",
-      "jingzhou"
+      "jiangling"
     ],
     [
       "changsha",
@@ -6747,31 +6695,31 @@
     ],
     [
       "changsha",
-      "jiaozhou"
+      "panyu"
     ],
     [
       "wuling",
-      "yizhou"
+      "jiameng"
     ],
     [
       "lujiang",
-      "yangzhou"
+      "shouchun"
     ],
     [
       "lujiang",
-      "jingzhou"
+      "jiangling"
     ],
     [
-      "qingzhou",
-      "xuzhou"
+      "pingyuan",
+      "xiapi"
     ],
     [
-      "qingzhou",
-      "jizhou"
+      "pingyuan",
+      "nanpi"
     ],
     [
       "tianshui",
-      "yongzhou"
+      "longxi"
     ]
   ],
   "wanderers": [

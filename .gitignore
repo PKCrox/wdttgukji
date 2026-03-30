@@ -14,3 +14,6 @@ scripts/orchestrate/generated/*.json
 dist/
 src-tauri/target/
 screenshots/
+
+# Codex agent memory (versioned snapshots, bloat)
+docs/agent-registry-history/
