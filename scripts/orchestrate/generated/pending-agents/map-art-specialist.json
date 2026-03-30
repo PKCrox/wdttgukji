@@ -1,0 +1,20 @@
+{
+  "agent_id": "map-art-specialist",
+  "lane": "map-art",
+  "title": "Create a dedicated map-art specialist",
+  "rationale": "map-art has no explicit ownership in the registry.",
+  "suggested_contract": {
+    "lanes": [
+      "map-art"
+    ],
+    "mutation_scope": "workflow",
+    "fit_signals": [
+      "lane_coverage",
+      "gate_quality",
+      "handoff_quality"
+    ]
+  },
+  "status": "pending",
+  "proposed_at": "2026-03-26T19:02:40.179Z",
+  "target_doc_path": "ai/agents/pending/map-art-specialist.md"
+}

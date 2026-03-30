@@ -67,12 +67,43 @@ async function main() {
     };
   }
 
+  const sortedLanes = Object.entries(laneUrgency)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko'))
+    .map(([lane, urgency]) => ({ lane, urgency }));
+  const topUrgencyValue = sortedLanes[0]?.urgency ?? null;
+  const topUrgencyTie = topUrgencyValue == null
+    ? []
+    : sortedLanes.filter((entry) => entry.urgency === topUrgencyValue).map((entry) => entry.lane);
+  const routeConfidence = topUrgencyTie.length > 1
+    ? 'tied'
+    : (sortedLanes[0]?.lane ? 'aligned' : 'unknown');
+  const routeConfidenceText = routeConfidence === 'tied'
+    ? `tied (${topUrgencyTie.length}-way tie)`
+    : routeConfidence;
+  const topUrgencyTieText = topUrgencyTie.length > 1
+    ? `${topUrgencyTie.join(', ')} (${topUrgencyValue ?? 'n/a'})`
+    : 'none';
+
   const payload = {
     updated_at: new Date().toISOString(),
     source_run: runDir,
     registry_version: registry.version || 0,
+    routeSource: 'agent-routing-state',
+    routeContextOrigin: 'agent-routing-state',
     laneUrgency,
     laneDiagnostics,
+    sortedLanes,
+    primaryFocusAxis: sortedLanes[0]?.lane || null,
+    topUrgencyLane: sortedLanes[0]?.lane || null,
+    topUrgencyValue,
+    topUrgencyTie,
+    topUrgencyTieText,
+    topUrgencyTieCount: topUrgencyTie.length,
+    routeConfidence,
+    routeConfidenceRaw: routeConfidence,
+    routeConfidenceText,
+    routeSummary: `top urgency lane: ${sortedLanes[0]?.lane || 'n/a'} (${topUrgencyValue ?? 'n/a'})${topUrgencyTie.length > 1 ? ` · tie ${topUrgencyTieText}` : ''} · ${routeConfidenceText} · agent-routing-state · origin agent-routing-state`,
+    urgencySnapshot: sortedLanes.slice(0, 3).map((entry) => `${entry.lane}:${entry.urgency}`).join(', '),
     pendingAgents: registry.pending_agents || [],
   };
 
@@ -82,7 +113,23 @@ async function main() {
   const runCopy = path.join(runDir, 'agent-routing-state.json');
   await fs.writeFile(runCopy, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
 
-  console.log(JSON.stringify({ output: outPath, run_copy: runCopy }, null, 2));
+  console.log(JSON.stringify({
+    output: outPath,
+    run_copy: runCopy,
+    routeSource: payload.routeSource,
+    routeContextOrigin: payload.routeContextOrigin,
+    routeSummary: payload.routeSummary,
+    routeConfidence: payload.routeConfidence,
+    routeConfidenceRaw: payload.routeConfidenceRaw,
+    routeConfidenceText: payload.routeConfidenceText,
+    primaryFocusAxis: payload.primaryFocusAxis,
+    topUrgencyLane: payload.topUrgencyLane,
+    topUrgencyValue: payload.topUrgencyValue,
+    topUrgencyTie: payload.topUrgencyTie,
+    topUrgencyTieCount: payload.topUrgencyTieCount,
+    topUrgencyTieText: payload.topUrgencyTieText,
+    urgencySnapshot: payload.urgencySnapshot,
+  }, null, 2));
 }
 
 main().catch((error) => {

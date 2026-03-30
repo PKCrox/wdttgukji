@@ -1,0 +1,97 @@
+{
+  "id": "app-surface-redesign-campaign",
+  "version": 1,
+  "name": "App Surface Redesign Campaign",
+  "defaultFocusId": "battlefield-hub-reset",
+  "maxIncrementalPassesPerFocus": 2,
+  "variantSlots": ["A", "B", "C"],
+  "candidateFocusMap": {
+    "app-surface-battlefield-reset": "battlefield-hub-reset",
+    "app-surface-command-reset": "command-sheet-reset",
+    "app-surface-start-reset": "start-screen-reset"
+  },
+  "focuses": [
+    {
+      "id": "battlefield-hub-reset",
+      "label": "Battlefield Hub Structural Replacement",
+      "screen": "battlefield",
+      "objective": "지도 화면에서 선택 도시와 다음 행동이 주연이 되도록 HUD 구조를 다시 짠다.",
+      "ownedPaths": [
+        "public/js/app.js",
+        "public/js/map-renderer.js",
+        "public/js/sidebar.js",
+        "public/index.html",
+        "public/css/style.css"
+      ],
+      "successSignals": [
+        "도시 선택 후 10초 안에 다음 행동 버튼을 찾을 수 있다",
+        "선택 도시 카드가 맵보다 약하지 않다",
+        "오프닝/반응/브리프 오버레이가 동시에 경쟁하지 않는다"
+      ],
+      "hardRules": [
+        "맵 위 설명 레이어는 최대 두 겹까지만 허용한다",
+        "선택 도시, 행동 버튼, 행동력 잔량은 같은 시선 덩어리 안에 묶는다",
+        "기존 레이아웃을 보존하려고 억지로 맞추지 말고 교체해도 된다"
+      ],
+      "variantBriefs": {
+        "A": "bottom-decision-dock: 하단 결정 도크를 메인 허브로 만들고 상단 브리프는 얇은 상태 바로 축소한다.",
+        "B": "left-command-rail: 좌측에 선택 도시와 행동을 세우고 우측 rail은 상세 정보만 남긴다.",
+        "C": "single-focus-map-mode: 지도 상단 정보는 최소화하고 선택 도시 패널 하나로 행동 흐름을 밀어 넣는다."
+      }
+    },
+    {
+      "id": "command-sheet-reset",
+      "label": "Command Sheet Structural Replacement",
+      "screen": "command",
+      "objective": "명령 모달을 검토용 대시보드가 아니라 한 턴의 결정을 빠르게 내리는 command sheet로 재구성한다.",
+      "ownedPaths": [
+        "public/js/app.js",
+        "public/js/action-panel.js",
+        "public/index.html",
+        "public/css/style.css"
+      ],
+      "successSignals": [
+        "명령 장면 진입 후 첫 클릭 후보가 즉시 보인다",
+        "상단 단계, 본문, 확정 영역의 우선순위가 섞이지 않는다",
+        "시정/군사/외교 장면 전환이 카드 탐색보다 우선한다"
+      ],
+      "hardRules": [
+        "상단 stat strip은 판단 보조만 하고 주연이 되면 안 된다",
+        "한 패스에서 장면 구조와 버튼 구조를 같이 맞춘다",
+        "기존 모달 셸을 유지하려고 빈 공간을 남기지 않는다"
+      ],
+      "variantBriefs": {
+        "A": "decision-sheet: 좌측 장면 선택, 중앙 결정 카드, 하단 확정 바의 3단 구조로 밀어 붙인다.",
+        "B": "briefing-first: 상단 브리핑을 한 장으로 묶고 아래에서 장면별 선택 카드만 빠르게 넘기게 한다.",
+        "C": "single-command-focus: 선택 카드 하나와 비교 카드 한 묶음만 남기고 나머지 탐색 정보는 접는다."
+      }
+    },
+    {
+      "id": "start-screen-reset",
+      "label": "Start Surface Structural Replacement",
+      "screen": "start",
+      "objective": "시작 화면과 세력 선택, 오프닝 진입이 바로 플레이를 약속하는 제품 표면으로 읽히게 다시 만든다.",
+      "ownedPaths": [
+        "public/js/app.js",
+        "public/js/presentation-meta.js",
+        "public/index.html",
+        "public/css/style.css"
+      ],
+      "successSignals": [
+        "첫 화면에서 generated 운영 메타가 보이지 않는다",
+        "시나리오 선택에서 전장 기대가 바로 전달된다",
+        "세력 선택 후 첫 도시와 첫 행동 약속이 선명하다"
+      ],
+      "hardRules": [
+        "설명 텍스트보다 선택 행동이 먼저 보여야 한다",
+        "장식보다 세력 선택과 시작 버튼이 주연이어야 한다",
+        "오프닝 카피와 실제 첫 턴 흐름이 어긋나면 안 된다"
+      ],
+      "variantBriefs": {
+        "A": "hero-briefing: 시나리오와 세력 선택을 한 화면 hero 브리핑으로 통합한다.",
+        "B": "war-table-intro: 전장 지도 프리뷰를 먼저 보여주고 선택 패널을 옆에 붙인다.",
+        "C": "decision-first-onboarding: 텍스트를 줄이고 첫 턴 목표 카드와 세력 선택만 남긴다."
+      }
+    }
+  ]
+}

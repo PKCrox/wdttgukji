@@ -507,12 +507,12 @@ export class GameState {
       if (!f.truces) f.truces = {};
       if (!f.inventory) f.inventory = [];
     }
+    for (const [, c] of Object.entries(state.characters)) {
+      if (!c.status) c.status = c.alive ? 'active' : 'dead';
+    }
     for (const factionId of Object.keys(state.factions)) {
       state.ensureAIState(factionId);
       state.getTactician(factionId);
-    }
-    for (const [, c] of Object.entries(state.characters)) {
-      if (!c.status) c.status = c.alive ? 'active' : 'dead';
     }
     for (const [, city] of Object.entries(state.cities)) {
       // 이전 economy → 4트랙 변환

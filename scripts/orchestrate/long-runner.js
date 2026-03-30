@@ -23,6 +23,12 @@ function parseArgs(argv) {
     gameBatchIterations: 3,
     factoryPasses: 10,
     gamePasses: 10,
+    runtimeMode: 'durable',
+    factoryRuntimeMode: null,
+    gameRuntimeMode: null,
+    inlineWorkers: 4,
+    factoryInlineWorkers: null,
+    gameInlineWorkers: null,
   };
 
   for (let i = 0; i < argv.length; i += 1) {
@@ -44,6 +50,12 @@ function parseArgs(argv) {
     else if (token === '--game-batch-iterations') args.gameBatchIterations = Number(argv[++i] || 3);
     else if (token === '--factory-passes') args.factoryPasses = Number(argv[++i] || 10);
     else if (token === '--game-passes') args.gamePasses = Number(argv[++i] || 10);
+    else if (token === '--runtime-mode') args.runtimeMode = argv[++i] || args.runtimeMode;
+    else if (token === '--factory-runtime-mode') args.factoryRuntimeMode = argv[++i] || null;
+    else if (token === '--game-runtime-mode') args.gameRuntimeMode = argv[++i] || null;
+    else if (token === '--inline-workers') args.inlineWorkers = Number(argv[++i] || 4);
+    else if (token === '--factory-inline-workers') args.factoryInlineWorkers = Number(argv[++i] || 4);
+    else if (token === '--game-inline-workers') args.gameInlineWorkers = Number(argv[++i] || 4);
   }
 
   if (!Number.isFinite(args.durationHours) || args.durationHours <= 0) {
@@ -57,6 +69,15 @@ function parseArgs(argv) {
   }
   if (!Number.isFinite(args.reviewInterval) || args.reviewInterval < 1) {
     throw new Error(`Invalid --review-interval value: ${args.reviewInterval}`);
+  }
+  if (!['adaptive', 'durable'].includes(args.runtimeMode)) {
+    throw new Error(`Invalid --runtime-mode value: ${args.runtimeMode}`);
+  }
+  if (args.factoryRuntimeMode && !['adaptive', 'durable'].includes(args.factoryRuntimeMode)) {
+    throw new Error(`Invalid --factory-runtime-mode value: ${args.factoryRuntimeMode}`);
+  }
+  if (args.gameRuntimeMode && !['adaptive', 'durable'].includes(args.gameRuntimeMode)) {
+    throw new Error(`Invalid --game-runtime-mode value: ${args.gameRuntimeMode}`);
   }
 
   return args;
@@ -73,10 +94,12 @@ function buildPhases(args) {
       passes: args.passes,
       goal: args.goal,
       env: {},
+      runtimeMode: args.runtimeMode,
+      inlineWorkers: args.inlineWorkers,
     }];
   }
 
-  return [
+    return [
     {
       id: 'factory',
       label: 'factory',
@@ -88,7 +111,13 @@ function buildPhases(args) {
       env: {
         WDTT_RUNTIME_MUTATION_MODE: 'product-core',
         WDTT_RUNTIME_ALLOW_APP_SURFACE: 'false',
+        WDTT_CODEX_AGENT_ENABLED: 'false',
+        WDTT_CODEX_FACTORY_ENABLED: 'true',
+        WDTT_CODEX_MODEL: process.env.WDTT_CODEX_MODEL || 'gpt-5.4',
       },
+      includeHybrid: false,
+      runtimeMode: args.factoryRuntimeMode || args.runtimeMode,
+      inlineWorkers: args.factoryInlineWorkers ?? args.inlineWorkers,
     },
     {
       id: 'game',
@@ -101,9 +130,43 @@ function buildPhases(args) {
       env: {
         WDTT_RUNTIME_MUTATION_MODE: 'full',
         WDTT_RUNTIME_ALLOW_APP_SURFACE: 'true',
+        WDTT_CODEX_AGENT_ENABLED: 'true',
+        WDTT_CODEX_FACTORY_ENABLED: 'false',
+        WDTT_CODEX_MODEL: process.env.WDTT_CODEX_MODEL || 'gpt-5.4',
       },
+      includeHybrid: true,
+      runtimeMode: args.gameRuntimeMode || args.runtimeMode,
+      inlineWorkers: args.gameInlineWorkers ?? args.inlineWorkers,
     },
   ];
+}
+
+function buildBatchCommand(args, phase, batchIndex) {
+  if (phase.runtimeMode === 'durable') {
+    const command = [
+      'node scripts/orchestrate/runtime/durable-runner.js',
+      `--passes ${phase.passes}`,
+      `--profile ${phase.profile}`,
+      `--review-interval ${args.reviewInterval}`,
+      `--goal "${phase.goal} :: batch ${batchIndex}"`,
+      `--inline-workers ${phase.inlineWorkers ?? args.inlineWorkers}`,
+    ];
+    if (args.continueOnFailure) command.push('--continue-on-failure');
+    if (args.includeHybrid || phase.includeHybrid) command.push('--include-hybrid');
+    return command;
+  }
+
+  const command = [
+    'node scripts/orchestrate/iterate-pass-runs.js',
+    `--iterations ${phase.batchIterations}`,
+    `--passes ${phase.passes}`,
+    `--profile ${phase.profile}`,
+    `--review-interval ${args.reviewInterval}`,
+    `--goal "${phase.goal} :: batch ${batchIndex}"`,
+  ];
+  if (args.continueOnFailure) command.push('--continue-on-failure');
+  if (args.includeHybrid || phase.includeHybrid) command.push('--include-hybrid');
+  return command;
 }
 
 function timestamp() {
@@ -182,6 +245,7 @@ async function main() {
     continue_on_failure: args.continueOnFailure,
     include_hybrid: args.includeHybrid,
     split_factory_game: args.splitFactoryGame,
+    runtime_mode: args.runtimeMode,
     phases,
     started_at: startedAt.toISOString(),
     deadline_at: deadlineAt.toISOString(),
@@ -203,16 +267,7 @@ async function main() {
       batchIndex += 1;
       const remainingMs = phaseDeadline - Date.now();
       const remainingMinutes = Math.max(0, Math.round(remainingMs / 60000));
-      const batchCommand = [
-        'node scripts/orchestrate/iterate-pass-runs.js',
-        `--iterations ${phase.batchIterations}`,
-        `--passes ${phase.passes}`,
-        `--profile ${phase.profile}`,
-        `--review-interval ${args.reviewInterval}`,
-        `--goal "${phase.goal} :: batch ${batchIndex}"`,
-      ];
-      if (args.continueOnFailure) batchCommand.push('--continue-on-failure');
-      if (args.includeHybrid) batchCommand.push('--include-hybrid');
+      const batchCommand = buildBatchCommand(args, phase, batchIndex);
 
       await appendLog(logPath, `batch ${batchIndex} [${phase.label}] starting with ~${remainingMinutes} minutes remaining in phase`);
       const prefix = path.join(commandsDir, `batch-${String(batchIndex).padStart(3, '0')}`);

@@ -149,11 +149,24 @@ export function summarizePass(passRecord, ranked) {
     axis: candidate.axis,
     score,
   }));
+  const winnerScore = nextPassCandidates[0]?.score ?? null;
+  const runnerUpScore = nextPassCandidates[1]?.score ?? null;
+  const scoreGap = winnerScore != null && runnerUpScore != null ? Number((winnerScore - runnerUpScore).toFixed(2)) : null;
 
   return {
     dominant_bottleneck: passRecord.candidate.axis,
     next_pass_candidates: nextPassCandidates,
     chosen_next_pass: nextPassCandidates[0]?.label || null,
+    winner_score: winnerScore,
+    runner_up_score: runnerUpScore,
+    score_gap: scoreGap,
+    selection_confidence: scoreGap == null
+      ? 'insufficient-data'
+      : scoreGap >= 3
+        ? 'clear'
+        : scoreGap >= 1
+          ? 'moderate'
+          : 'tight',
     why_not_others: nextPassCandidates.slice(1).map((entry) =>
       `${entry.label} scored lower than ${nextPassCandidates[0]?.label || 'the chosen pass'}`
     ),

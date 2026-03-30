@@ -66,7 +66,7 @@ export function compilePassGraph(candidate) {
         sequenceIndex++,
         candidate,
         phase === 'edit' ? (entry.mutationScope || candidate.hookMutationScope || 'workflow') : 'none',
-        phase === 'edit' ? !!(entry.touchesAppSurface || candidate.touchesAppSurface) : false
+        phase === 'edit' ? !!entry.touchesAppSurface : false
       ));
 
       const dependsOn = previousChunkIds.length ? [...previousChunkIds] : (() => {

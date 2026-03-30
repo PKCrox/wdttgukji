@@ -9,9 +9,9 @@ import { getCharName } from '../data/names.js';
 
 const MAX_EVENTS_PER_TURN = 3;
 
-export function executeTurnEvents(state, allEvents) {
+export function executeTurnEvents(state, allEvents, options = {}) {
   state.resetTurnSummary();
-  const triggered = checkEvents(allEvents, state);
+  const triggered = checkEvents(allEvents, state, options);
   const playerEvents = [];
   const aiEvents = [];
   let eventCount = 0;

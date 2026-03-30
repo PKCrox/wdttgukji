@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "defaultPreset": "overnight",
+  "presets": {
+    "overnight": {
+      "label": "Overnight Strike Marathon",
+      "goal": "overnight session-style app-surface redesign marathon",
+      "segments": [
+        {
+          "focus": "battlefield",
+          "duration_minutes": 150,
+          "checkpoint_minutes": 25
+        },
+        {
+          "focus": "command",
+          "duration_minutes": 120,
+          "checkpoint_minutes": 20
+        },
+        {
+          "focus": "start",
+          "duration_minutes": 90,
+          "checkpoint_minutes": 18
+        },
+        {
+          "focus": "battlefield",
+          "duration_minutes": 90,
+          "checkpoint_minutes": 18
+        }
+      ]
+    },
+    "deep-ui": {
+      "label": "Deep UI Push",
+      "goal": "deep session-style ui strike marathon",
+      "segments": [
+        {
+          "focus": "battlefield",
+          "duration_minutes": 120,
+          "checkpoint_minutes": 20
+        },
+        {
+          "focus": "command",
+          "duration_minutes": 90,
+          "checkpoint_minutes": 18
+        },
+        {
+          "focus": "start",
+          "duration_minutes": 60,
+          "checkpoint_minutes": 15
+        }
+      ]
+    }
+  }
+}

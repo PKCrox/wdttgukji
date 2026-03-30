@@ -1,6 +1,6 @@
 {
-  "version": 320,
-  "updated_at": "2026-03-24T22:58:43.110Z",
+  "version": 655,
+  "updated_at": "2026-03-27T18:20:33.849Z",
   "agents": [
     {
       "id": "pipeline-architect",
@@ -391,8 +391,69 @@
       "release-orchestrator"
     ]
   },
-  "last_upgrade_run": "/Users/pkc/wdttgukji/runs/pass-runs/meta-run-20260325-075315",
-  "pending_agents": [],
+  "last_upgrade_run": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031501-3518506e",
+  "pending_agents": [
+    {
+      "lane": "ux-first-frame",
+      "title": "Create a dedicated ux-first-frame specialist",
+      "rationale": "ux-first-frame has no explicit ownership in the registry.",
+      "suggested_contract": {
+        "lanes": [
+          "ux-first-frame"
+        ],
+        "mutation_scope": "workflow",
+        "fit_signals": [
+          "lane_coverage",
+          "gate_quality",
+          "handoff_quality"
+        ]
+      },
+      "proposed_at": "2026-03-26T18:40:57.328Z",
+      "status": "pending",
+      "review_count": 1,
+      "last_reviewed_at": "2026-03-27T18:20:33.849Z"
+    },
+    {
+      "lane": "map-art",
+      "title": "Create a dedicated map-art specialist",
+      "rationale": "map-art has no explicit ownership in the registry.",
+      "suggested_contract": {
+        "lanes": [
+          "map-art"
+        ],
+        "mutation_scope": "workflow",
+        "fit_signals": [
+          "lane_coverage",
+          "gate_quality",
+          "handoff_quality"
+        ]
+      },
+      "proposed_at": "2026-03-26T19:02:40.179Z",
+      "status": "pending",
+      "review_count": 0,
+      "last_reviewed_at": "2026-03-27T18:20:33.849Z"
+    },
+    {
+      "lane": "qa-debt",
+      "title": "Create a dedicated qa-debt specialist",
+      "rationale": "qa-debt has no explicit ownership in the registry.",
+      "suggested_contract": {
+        "lanes": [
+          "qa-debt"
+        ],
+        "mutation_scope": "workflow",
+        "fit_signals": [
+          "lane_coverage",
+          "gate_quality",
+          "handoff_quality"
+        ]
+      },
+      "proposed_at": "2026-03-26T19:02:40.180Z",
+      "status": "pending",
+      "review_count": 0,
+      "last_reviewed_at": "2026-03-27T18:20:33.849Z"
+    }
+  ],
   "recent_proposals": [
     {
       "type": "new-agent",
@@ -414,6 +475,27 @@
       "agent": null,
       "applied_at": "2026-03-24T14:31:45.991Z",
       "source_run": "/Users/pkc/wdttgukji/runs/pass-runs/meta-run-20260324-233038"
+    },
+    {
+      "type": "new-agent",
+      "lane": "ux-first-frame",
+      "agent": null,
+      "applied_at": "2026-03-26T18:40:57.329Z",
+      "source_run": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260327-033951-6e69794c"
+    },
+    {
+      "type": "new-agent",
+      "lane": "map-art",
+      "agent": null,
+      "applied_at": "2026-03-26T19:02:40.180Z",
+      "source_run": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260327-035703-8b665451"
+    },
+    {
+      "type": "new-agent",
+      "lane": "qa-debt",
+      "agent": null,
+      "applied_at": "2026-03-26T19:02:40.180Z",
+      "source_run": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260327-035703-8b665451"
     }
   ],
   "upgrade_policy": {

@@ -8,6 +8,7 @@ import { getRuntimeConfig, assertRuntimeConfig } from './config.js';
 import { RuntimeStore } from './db.js';
 import { RuntimeQueue } from './queue.js';
 import { resolveMutationPolicy, isTaskAllowedByPolicy } from './policy.js';
+import { exportRunArtifacts } from './exporter.js';
 
 function parseArgs(argv) {
   const args = {
@@ -52,6 +53,18 @@ function runCommand(command, cwd) {
   });
 }
 
+function buildTaskCommand(task) {
+  if (task.phase !== 'edit') return task.command;
+  const hasRunDir = task.command.includes('--run-dir');
+  const hasPassJson = task.command.includes('--pass-json');
+  if (hasRunDir && hasPassJson) return task.command;
+  const passJson = path.join(task.run_dir, `pass-${String(task.pass_index).padStart(3, '0')}.json`);
+  let command = task.command;
+  if (!hasRunDir) command += ` --run-dir ${task.run_dir}`;
+  if (!hasPassJson) command += ` --pass-json ${passJson}`;
+  return command;
+}
+
 async function writeTaskLog(baseDir, content) {
   await ensureDir(path.dirname(baseDir));
   await fs.writeFile(baseDir, content, 'utf8');
@@ -86,7 +99,12 @@ async function executeClaimedTask({ task, store, queue, config, workerId, policy
     return;
   }
 
-  const result = await runCommand(task.command, process.cwd());
+  if (task.phase === 'edit') {
+    await exportRunArtifacts(store, task.run_id);
+  }
+
+  const command = buildTaskCommand(task);
+  const result = await runCommand(command, process.cwd());
   await writeTaskLog(stdoutPath, result.stdout);
   await writeTaskLog(stderrPath, result.stderr);
 
@@ -97,7 +115,7 @@ async function executeClaimedTask({ task, store, queue, config, workerId, policy
     exitCode: result.code,
     stdoutPath,
     stderrPath,
-    error: result.ok ? null : `Command exited with code ${result.code}`,
+      error: result.ok ? null : `Command exited with code ${result.code}`,
   });
   const finalized = await store.finalizeTask({
     taskId: task.id,

@@ -38,6 +38,14 @@ const REP_LOSS_TRUCE_BREAK = -25;
 const REP_LOSS_ALLIANCE_BREAK = -30;
 const REP_LOSS_THREATEN = -5;
 
+function defaultRandom() {
+  return Math.random();
+}
+
+function resolveRandom(options = {}) {
+  return typeof options.random === 'function' ? options.random : defaultRandom;
+}
+
 // ─── 확률 계산 ───
 
 /**
@@ -138,14 +146,15 @@ export function calculateDiplomacyChance(fromFaction, toFaction, actionType, sta
 /**
  * 강화 제안
  */
-export function proposePeace(fromFaction, toFaction, state) {
+export function proposePeace(fromFaction, toFaction, state, options = {}) {
+  const random = resolveRandom(options);
   if (!state.isAtWar(fromFaction, toFaction)) {
     return { success: false, reason: 'not_at_war' };
   }
 
   const { chance, factors } = calculateDiplomacyChance(fromFaction, toFaction, 'peace', state);
 
-  if (Math.random() < chance) {
+  if (random() < chance) {
     state.makePeace(fromFaction, toFaction, TRUCE_DURATION);
     const techEffects = getTechEffects(state, fromFaction);
     const repGain = REP_GAIN_PEACE + Math.round((techEffects.reputationGain || 0) * 10);
@@ -166,7 +175,8 @@ export function proposePeace(fromFaction, toFaction, state) {
 /**
  * 동맹 제안
  */
-export function proposeAlliance(fromFaction, toFaction, state) {
+export function proposeAlliance(fromFaction, toFaction, state, options = {}) {
+  const random = resolveRandom(options);
   if (state.isAtWar(fromFaction, toFaction)) {
     return { success: false, reason: 'at_war' };
   }
@@ -176,7 +186,7 @@ export function proposeAlliance(fromFaction, toFaction, state) {
 
   const { chance, factors } = calculateDiplomacyChance(fromFaction, toFaction, 'alliance', state);
 
-  if (Math.random() < chance) {
+  if (random() < chance) {
     state.makeAlliance(fromFaction, toFaction);
     const techEffects = getTechEffects(state, fromFaction);
     const repGain = REP_GAIN_ALLIANCE + Math.round((techEffects.reputationGain || 0) * 10);
@@ -247,14 +257,15 @@ export function sendTribute(fromFaction, toFaction, amount, state) {
 /**
  * 혼인동맹 제안
  */
-export function proposeMarriage(fromFaction, toFaction, state) {
+export function proposeMarriage(fromFaction, toFaction, state, options = {}) {
+  const random = resolveRandom(options);
   if (state.isAtWar(fromFaction, toFaction)) {
     return { success: false, reason: 'at_war' };
   }
 
   const { chance, factors } = calculateDiplomacyChance(fromFaction, toFaction, 'marriage', state);
 
-  if (Math.random() < chance) {
+  if (random() < chance) {
     state.makeAlliance(fromFaction, toFaction);
     // 혼인동맹은 더 긴 휴전
     const from = state.factions[fromFaction];
@@ -280,12 +291,13 @@ export function proposeMarriage(fromFaction, toFaction, state) {
 /**
  * 위협 (항복/조공 요구)
  */
-export function threaten(fromFaction, toFaction, state) {
+export function threaten(fromFaction, toFaction, state, options = {}) {
+  const random = resolveRandom(options);
   const { chance, factors } = calculateDiplomacyChance(fromFaction, toFaction, 'threaten', state);
 
   state._adjustReputation(fromFaction, REP_LOSS_THREATEN);
 
-  if (Math.random() < chance) {
+  if (random() < chance) {
     // 위협 성공: 조공 수취
     const to = state.getFaction(toFaction);
     const tribute = Math.floor((to.gold || 0) * 0.2);
@@ -311,7 +323,8 @@ export function threaten(fromFaction, toFaction, state) {
  * AI 세력의 외교 행동 결정
  * @returns {Array<{action, target, result}>}
  */
-export function aiDiplomacy(factionId, state, tendency) {
+export function aiDiplomacy(factionId, state, tendency, options = {}) {
+  const random = resolveRandom(options);
   const faction = state.getFaction(factionId);
   if (!faction || !faction.active) return [];
 
@@ -325,8 +338,8 @@ export function aiDiplomacy(factionId, state, tendency) {
     const enemyArmy = state.getTotalArmy(enemyId);
 
     // 병력 열세이거나 도시가 적으면 강화 시도
-    if (myArmy < enemyArmy * 0.6 && Math.random() < 0.4 * dipWeight) {
-      const result = proposePeace(factionId, enemyId, state);
+    if (myArmy < enemyArmy * 0.6 && random() < 0.4 * dipWeight) {
+      const result = proposePeace(factionId, enemyId, state, options);
       if (result.success) {
         actions.push({
           action: 'peace', target: enemyId,
@@ -338,7 +351,7 @@ export function aiDiplomacy(factionId, state, tendency) {
   }
 
   // 2. 패권 견제 동맹
-  if (actions.length === 0 && hegemon && hegemon.id !== factionId && Math.random() < 0.45 * dipWeight) {
+  if (actions.length === 0 && hegemon && hegemon.id !== factionId && random() < 0.45 * dipWeight) {
     for (const [otherId, other] of Object.entries(state.factions)) {
       if (otherId === factionId || otherId === hegemon.id || !other.active) continue;
       if (state.isAllied(factionId, otherId) || state.isAtWar(factionId, otherId)) continue;
@@ -348,7 +361,7 @@ export function aiDiplomacy(factionId, state, tendency) {
         || hegemon.army >= Math.max(1, state.getTotalArmy(factionId) * 1.4);
       if (!hegemonThreat) continue;
 
-      const result = proposeAlliance(factionId, otherId, state);
+      const result = proposeAlliance(factionId, otherId, state, options);
       if (result.success) {
         actions.push({
           action: 'alliance', target: otherId,
@@ -360,14 +373,14 @@ export function aiDiplomacy(factionId, state, tendency) {
   }
 
   // 3. 공통 적이 있는 세력에 동맹 제안
-  if (actions.length === 0 && Math.random() < 0.3 * dipWeight) {
+  if (actions.length === 0 && random() < 0.3 * dipWeight) {
     for (const [otherId, other] of Object.entries(state.factions)) {
       if (otherId === factionId || !other.active) continue;
       if (state.isAllied(factionId, otherId) || state.isAtWar(factionId, otherId)) continue;
 
       const commonEnemy = faction.enemies.some(e => other.enemies.includes(e));
       if (commonEnemy) {
-        const result = proposeAlliance(factionId, otherId, state);
+        const result = proposeAlliance(factionId, otherId, state, options);
         if (result.success) {
           actions.push({
             action: 'alliance', target: otherId,
@@ -380,7 +393,7 @@ export function aiDiplomacy(factionId, state, tendency) {
   }
 
   // 4. 약한 이웃에 위협 (공격적 성향)
-  if (actions.length === 0 && (tendency.attack || 1) > 1.2 && Math.random() < 0.15) {
+  if (actions.length === 0 && (tendency.attack || 1) > 1.2 && random() < 0.15) {
     for (const [otherId, other] of Object.entries(state.factions)) {
       if (otherId === factionId || !other.active) continue;
       if (state.isAllied(factionId, otherId) || state.isAtWar(factionId, otherId)) continue;
@@ -388,7 +401,7 @@ export function aiDiplomacy(factionId, state, tendency) {
       const myArmy = state.getTotalArmy(factionId);
       const otherArmy = state.getTotalArmy(otherId);
       if (myArmy > otherArmy * 2.5) {
-        const result = threaten(factionId, otherId, state);
+        const result = threaten(factionId, otherId, state, options);
         if (result.success) {
           actions.push({
             action: 'threaten', target: otherId,

@@ -1,10 +1,10 @@
 [
   {
-    "updated_at": "2026-03-24T22:14:36.200Z",
+    "updated_at": "2026-03-27T16:44:23.440Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071335",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014220-97bffee3",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -13,15 +13,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:16:23.667Z",
+    "updated_at": "2026-03-27T16:51:09.540Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071525",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014721-fe1797c4",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -30,15 +48,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:18:12.644Z",
+    "updated_at": "2026-03-27T16:51:30.664Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071714",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014721-fe1797c4",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -47,15 +83,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:19:58.492Z",
+    "updated_at": "2026-03-27T16:57:43.056Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071901",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-015229-a6374664",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -64,15 +118,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:21:50.335Z",
+    "updated_at": "2026-03-27T17:05:06.870Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072050",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020228-5408331f",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -81,15 +153,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:23:38.155Z",
+    "updated_at": "2026-03-27T17:05:29.087Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072239",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020228-5408331f",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -98,15 +188,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:25:24.613Z",
+    "updated_at": "2026-03-27T17:08:41.882Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072426",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -115,15 +223,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:27:13.098Z",
+    "updated_at": "2026-03-27T17:14:41.512Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072615",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -132,15 +258,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:29:00.980Z",
+    "updated_at": "2026-03-27T17:15:03.908Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072801",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -149,15 +293,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:30:49.346Z",
+    "updated_at": "2026-03-27T17:19:38.036Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072951",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -166,15 +328,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:32:38.914Z",
+    "updated_at": "2026-03-27T17:27:14.000Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073140",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -183,15 +363,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:34:27.653Z",
+    "updated_at": "2026-03-27T17:27:38.264Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073328",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -200,15 +398,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:36:11.527Z",
+    "updated_at": "2026-03-27T17:31:33.057Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073515",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -217,15 +433,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:38:00.436Z",
+    "updated_at": "2026-03-27T17:39:53.696Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-023724-790da56f",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -234,15 +468,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:39:46.089Z",
+    "updated_at": "2026-03-27T17:41:04.074Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-023724-790da56f",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -251,15 +503,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:41:35.267Z",
+    "updated_at": "2026-03-27T17:44:55.828Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024225-e0b4d7a6",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -268,15 +538,38 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:43:22.219Z",
+    "updated_at": "2026-03-27T17:50:50.459Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024814-c9d034bc",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -285,15 +578,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:45:11.729Z",
+    "updated_at": "2026-03-27T17:52:00.704Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024814-c9d034bc",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -302,15 +613,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:46:58.962Z",
+    "updated_at": "2026-03-27T17:56:01.726Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025325-d2003120",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -319,15 +648,38 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:48:51.549Z",
+    "updated_at": "2026-03-27T18:01:49.262Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025917-ebb2f199",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -336,15 +688,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:50:38.165Z",
+    "updated_at": "2026-03-27T18:02:59.550Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025917-ebb2f199",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -353,15 +723,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:52:24.608Z",
+    "updated_at": "2026-03-27T18:06:55.385Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-030420-eb4a8bf8",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -370,15 +758,38 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:54:13.747Z",
+    "updated_at": "2026-03-27T18:12:27.708Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031000-1f1e9010",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -387,15 +798,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:56:02.719Z",
+    "updated_at": "2026-03-27T18:13:37.967Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
-    "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031000-1f1e9010",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -404,15 +833,33 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:57:53.044Z",
+    "updated_at": "2026-03-27T18:17:29.864Z",
     "axis": "theme-independence",
     "candidate": "theme-independent-mechanics",
     "pass_index": 6,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031501-3518506e",
     "payload": {
       "lane": "theme-independence",
       "checkedFiles": 21,
@@ -421,6 +868,29 @@
       "keyArtifacts": {
         "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
         "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   }

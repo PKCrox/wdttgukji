@@ -6,6 +6,7 @@
   <title>우당탕탕삼국지</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318191f'/%3E%3Cpath d='M16 46L28 18l8 18 6-12 6 22' fill='none' stroke='%23d8b36a' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css?v=20260324j">
+  <link rel="stylesheet" href="css/generated/app-surface.css?v=20260327a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&family=Noto+Serif+KR:wght@700;900&display=swap" rel="stylesheet">
@@ -18,69 +19,139 @@
         <div class="stage-overlay stage-overlay-glow"></div>
         <div class="stage-content start-shell">
           <section class="start-hero">
-            <div class="screen-kicker">Grand Strategy Chronicle</div>
-            <h1 class="game-title">우당탕탕삼국지</h1>
-            <p class="game-subtitle">난세를 굴리는 군주제 전략극</p>
+            <div class="start-hero-topline">
+              <div class="start-hero-heading">
+                <div class="screen-kicker">시작 전장</div>
+                <h1 class="game-title">우당탕탕삼국지</h1>
+                <p class="game-subtitle">깃발을 고르면 첫 거점과 첫 명령이 열린다</p>
+              </div>
+              <div class="start-hero-sigil">
+                <span>208</span>
+                <small>RED CLIFFS</small>
+              </div>
+            </div>
             <p class="start-lead">
-              첫 3턴 안에 살아남을지, 밀어붙일지, 결전을 준비할지가 갈린다.
-              도시 하나를 열고 명령 하나를 고르는 순간부터 판세가 바뀌는 적벽 전략극.
+              적벽은 세력 하나를 고르고 곧바로 첫 거점과 첫 명령으로 들어가는 전장이다.
+              여기서는 누구의 깃발을 들지, 그 판단만 빠르게 끝내면 된다.
             </p>
-            <div class="start-hero-meta start-hero-questions">
-              <div class="hero-meta-card">
-                <span class="hero-meta-label">질문 1</span>
-                <strong>지금 버틸 도시가 어디인가</strong>
+            <div class="start-commitment-board">
+              <article class="start-commitment-card start-commitment-card-primary">
+                <div class="screen-kicker">전장 약속</div>
+                <h2 id="start-overview-headline" class="start-commitment-title">세력 선택으로 첫 3턴 약속이 열립니다</h2>
+                <p id="start-overview-body" class="start-commitment-copy">
+                  세력을 고르면 전장 약속, 시작 브리프, 거점 우선순위가 즉시 바뀝니다.
+                </p>
+                <div id="start-overview-tags" class="start-commitment-tags">
+                  <span>세력 선택</span>
+                  <span>전장 약속</span>
+                  <span>첫 3턴</span>
+                </div>
+              </article>
+              <article class="start-commitment-card start-commitment-card-secondary">
+                <div class="screen-kicker">브리핑 단계</div>
+                <div class="start-commitment-sequence-copy">
+                  <strong id="start-overview-sequence-title">세력 선택 뒤 곧바로 브리핑으로 들어갑니다</strong>
+                  <p id="start-overview-sequence-body">
+                    빠른 보기에서 눈에 든 세력을 고르면 시작 브리프와 지도가 곧바로 그 세력 기준으로 맞춰집니다.
+                  </p>
+                </div>
+                <div id="start-overview-route" class="briefing-stage-strip briefing-stage-strip-start">
+                  <div class="briefing-stage" data-state="active">
+                    <span class="briefing-stage-index">1</span>
+                    <div class="briefing-stage-copy">
+                      <span class="briefing-stage-label">세력 비교</span>
+                      <strong>빠른 보기에서 첫 약속을 훑습니다</strong>
+                      <p>우측 카드에서 세력별 집중 거점과 첫 장면을 즉시 비교합니다.</p>
+                    </div>
+                  </div>
+                  <div class="briefing-stage" data-state="pending">
+                    <span class="briefing-stage-index">2</span>
+                    <div class="briefing-stage-copy">
+                      <span class="briefing-stage-label">전장 약속</span>
+                      <strong>선택한 세력의 첫 세 턴 방향을 정합니다</strong>
+                      <p>스포트라이트와 브리프가 같은 세력 기준으로 맞춰집니다.</p>
+                    </div>
+                  </div>
+                  <div class="briefing-stage" data-state="pending">
+                    <span class="briefing-stage-index">3</span>
+                    <div class="briefing-stage-copy">
+                      <span class="briefing-stage-label">브리핑 진입</span>
+                      <strong>세력 선택 화면으로 바로 넘어갑니다</strong>
+                      <p>전장 브리핑 열기를 누르면 같은 흐름이 지도 위로 이어집니다.</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="start-hero-command-row">
+              <div class="start-selection-dock">
+                <div class="start-selection-dock-head">
+                  <div class="screen-kicker">깃발 선택</div>
+                  <p>세력 하나만 고르면 중앙 전장판과 출정 문구가 그 깃발 기준으로 잠깁니다.</p>
+                </div>
+                <div id="start-faction-strip" class="start-faction-strip">
+                  <div class="start-faction-empty">전장 브리프를 정리 중입니다.</div>
+                </div>
               </div>
-              <div class="hero-meta-card">
-                <span class="hero-meta-label">질문 2</span>
-                <strong>이번 턴에 병력인가 외교인가</strong>
+              <div class="start-spotlight-board">
+                <div class="start-spotlight-head">
+                  <div class="start-spotlight-heading">
+                    <div id="start-spotlight-kicker" class="screen-kicker">전장 스포트라이트</div>
+                    <h3 id="start-spotlight-title" class="start-spotlight-title">깃발을 고르면 첫 거점과 첫 장면이 여기 고정됩니다</h3>
+                  </div>
+                  <div id="start-spotlight-seal" class="start-spotlight-seal" aria-hidden="true">戰</div>
+                </div>
+                <p id="start-spotlight-copy" class="start-spotlight-copy">
+                  선택한 세력의 집중 거점, 지금 리스크, 첫 3턴 압박을 여기서 한 번에 읽습니다.
+                </p>
+                <div id="start-session-bridge" class="start-session-bridge">
+                  <div class="start-spotlight-empty">세력을 고르면 첫 거점과 첫 3턴 압박이 여기에 잠깁니다.</div>
+                </div>
               </div>
-              <div class="hero-meta-card">
-                <span class="hero-meta-label">질문 3</span>
-                <strong>다음 전선을 어디로 밀 것인가</strong>
+              <div class="start-hero-cta-stack">
+                <div class="start-launch-panel">
+                  <div class="screen-kicker">바로 출정</div>
+                  <strong id="start-launch-title" class="start-launch-title">선택한 깃발로 바로 브리핑에 들어갑니다</strong>
+                  <p id="start-launch-note" class="start-launch-note">
+                    다음 화면에서는 첫 거점 확인과 출정만 남습니다.
+                  </p>
+                  <div class="start-actions">
+                    <button id="btn-new-game" class="btn-primary" aria-label="적벽으로 들어간다">전장 브리핑 열기</button>
+                    <button id="btn-load-game" class="btn-secondary">이어하기</button>
+                  </div>
+                </div>
+                <div id="save-slot-card" class="save-slot-card hidden"></div>
               </div>
             </div>
-            <div class="start-actions">
-              <button id="btn-new-game" class="btn-primary">적벽으로 들어간다</button>
-              <button id="btn-load-game" class="btn-secondary">이어하기</button>
-            </div>
-            <div id="save-slot-card" class="save-slot-card hidden"></div>
           </section>
 
           <aside class="start-dossier">
             <div class="dossier-header">
-              <div class="screen-kicker">플레이 개요</div>
-              <h2 class="panel-title">208년 적벽대전</h2>
+              <div class="screen-kicker">적벽 전장</div>
+              <h2 class="panel-title">누구의 시작 약속을 맡을 것인가</h2>
               <p class="panel-copy">
-                조조의 남하와 손유 연합, 익주와 한중의 관망이 한 판 위에서 동시에 흔들리는 순간.
+                각 세력은 첫 도시와 첫 판단이 다르다.
+                아래 카드에서 바로 읽고 세력 선택으로 들어가면 그 흐름이 곧바로 지도 위로 이어진다.
               </p>
             </div>
-            <div class="start-reboot-grid">
-              <div class="summary-tile"><span class="label">세력</span><span class="value">5</span></div>
-              <div class="summary-tile"><span class="label">도시</span><span class="value">26</span></div>
-              <div class="summary-tile"><span class="label">장수</span><span class="value">38+</span></div>
-              <div class="summary-tile"><span class="label">이벤트</span><span class="value">337</span></div>
-            </div>
-            <div class="start-focus-card">
-              <div class="screen-kicker">이번 판의 감각</div>
-              <h3 class="start-focus-title">도시를 읽고 한 턴을 버티는 삼국지</h3>
-              <p class="start-focus-copy">로그를 읽기보다 도시를 열고 바로 명령을 누르게 만드는 방향으로 다시 짰다.</p>
-            </div>
-            <div class="start-loop-board">
-              <div class="screen-kicker">첫 10분 루프</div>
-              <div class="start-loop-step">
-                <span>1</span>
-                <strong>세력 선택</strong>
-                <p>위는 압박, 촉은 생존, 오는 결전 준비로 바로 갈린다.</p>
+            <div class="start-dossier-stack">
+              <div class="start-reboot-grid">
+                <div class="summary-tile"><span class="label">세력</span><span id="start-summary-factions" class="value">5</span></div>
+                <div class="summary-tile"><span class="label">도시</span><span id="start-summary-cities" class="value">26</span></div>
+                <div class="summary-tile"><span class="label">장수</span><span id="start-summary-characters" class="value">38+</span></div>
+                <div class="summary-tile"><span class="label">연결</span><span id="start-summary-connections" class="value">0</span></div>
               </div>
-              <div class="start-loop-step">
-                <span>2</span>
-                <strong>거점 선택</strong>
-                <p>도시 하나를 찍으면 전황과 권장 장면이 즉시 뜬다.</p>
-              </div>
-              <div class="start-loop-step">
-                <span>3</span>
-                <strong>명령 확정</strong>
-                <p>내정, 군사, 외교 중 하나를 고르고 다음 턴의 판세를 만든다.</p>
+              <div class="start-dossier-notes">
+                <article class="start-dossier-note start-dossier-note-primary">
+                  <div class="screen-kicker">결정 순서</div>
+                  <strong>깃발을 고르고, 첫 거점을 확인한 뒤, 바로 브리핑으로 들어갑니다</strong>
+                  <p>시작 화면에서 세력 선택 기준만 끝내 두면 다음 화면은 확인과 출정만 남습니다.</p>
+                </article>
+                <article class="start-dossier-note">
+                  <div class="screen-kicker">이번 판의 성격</div>
+                  <strong>적벽은 외교와 결전 준비가 동시에 열리는 전장입니다</strong>
+                  <p>세력마다 집중 거점과 첫 판단이 다르므로 빠른 선택에서 먼저 읽고 들어가는 편이 유리합니다.</p>
+                </article>
               </div>
             </div>
           </aside>
@@ -98,22 +169,62 @@
           <aside class="faction-sidebar">
             <div class="faction-sidebar-head">
               <div class="screen-kicker">전장 브리핑</div>
-              <h2 class="faction-select-title">세력 선택</h2>
-              <p class="faction-select-sub">208년 적벽대전에서 맡을 군주를 고르십시오.</p>
+              <h2 class="faction-select-title">누구의 첫 3턴을 맡을 것인가</h2>
+              <p class="faction-select-sub">세력을 고르면 중앙 지도와 우측 브리프가 같은 전장 흐름으로 즉시 맞춰집니다.</p>
             </div>
-            <div class="faction-cards" id="faction-cards"></div>
-            <div class="faction-select-actions">
-              <button id="btn-confirm-faction" class="btn-primary" disabled>세력을 선택하십시오</button>
-              <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
+            <div class="faction-sidebar-intro">
+              <span>선택 즉시</span>
+              <strong>집중 거점, 첫 장면, 첫 리스크가 지도 위에 고정됩니다.</strong>
+            </div>
+            <div class="faction-sidebar-body">
+              <div class="faction-cards" id="faction-cards"></div>
             </div>
           </aside>
 
           <section class="faction-map-area">
             <div class="map-base-layer" id="faction-map-base" aria-hidden="true"></div>
+            <div class="faction-map-overlay">
+              <div class="faction-map-brief">
+                <div id="faction-map-kicker" class="screen-kicker">전장 약속</div>
+                <h3 id="faction-map-title">세력을 고르면 첫 거점과 첫 명령이 여기서 드러납니다</h3>
+                <p id="faction-map-body">왼쪽에서 세력을 고르면 중앙 지도는 그 세력의 첫 전선과 집중 거점을 바로 보여줍니다.</p>
+                <div id="faction-map-tag-row" class="faction-map-tag-row"></div>
+              </div>
+              <div class="faction-map-callout-board">
+                <article class="faction-map-callout">
+                  <span>집중 거점</span>
+                  <strong id="faction-map-focus">시나리오 전체</strong>
+                </article>
+                <article class="faction-map-callout">
+                  <span>첫 장면</span>
+                  <strong id="faction-map-scene">작전 개시</strong>
+                </article>
+                <article class="faction-map-callout faction-map-callout-wide">
+                  <span>지금 리스크</span>
+                  <strong id="faction-map-risk">세력을 고르면 첫 턴 우선순위가 정해집니다.</strong>
+                </article>
+              </div>
+            </div>
             <canvas id="faction-map" width="1600" height="900"></canvas>
+            <div id="faction-map-footer" class="faction-map-footer">
+              <div class="faction-map-footer-empty">좌측 카드를 고르면 첫 세 턴 동선이 여기 이어집니다.</div>
+            </div>
           </section>
 
           <aside class="faction-dossier">
+            <div id="faction-selection-rail" class="faction-selection-rail">
+              <div id="faction-selection-summary" class="faction-selection-summary">
+                <div class="faction-selection-summary-empty">세력을 고르면 출정 전 약속이 여기 정리됩니다.</div>
+              </div>
+              <div class="faction-mode-rail">
+                <div class="screen-kicker">연출 기준</div>
+                <div id="narrative-mode-selector" class="narrative-mode-selector"></div>
+              </div>
+              <div class="faction-select-actions">
+                <button id="btn-confirm-faction" class="btn-primary" disabled>세력을 선택하십시오</button>
+                <button id="btn-back-to-start" class="btn-secondary">뒤로</button>
+              </div>
+            </div>
             <div id="faction-preview-card" class="faction-preview-card"></div>
           </aside>
         </div>
@@ -129,7 +240,7 @@
         <div class="stage-content intro-shell">
           <aside class="intro-dossier">
             <div class="intro-year">208년</div>
-            <div class="screen-kicker">출정 문서</div>
+            <div class="screen-kicker">출정 서약</div>
             <div id="intro-stats" class="intro-stats"></div>
             <div id="intro-objectives" class="intro-objectives"></div>
           </aside>
@@ -145,7 +256,7 @@
               <div class="dialogue-box">
                 <div class="dialogue-speaker" id="dialogue-speaker"></div>
                 <div class="dialogue-text" id="dialogue-text"></div>
-                <div class="dialogue-advance">▼ 클릭하여 계속</div>
+                <div class="dialogue-advance">계속</div>
               </div>
               <div class="dialogue-progress" id="dialogue-progress"></div>
             </div>
@@ -198,10 +309,17 @@
                 </div>
                 <div id="chronicle-factions"></div>
               </div>
+              <div id="chronicle-session-board"></div>
 
               <div id="tr-progress-bar" class="hidden"><div id="tr-progress-fill"></div></div>
 
               <div id="turn-resolution" class="hidden">
+                <div class="tr-director">
+                  <span id="tr-director-kicker" class="tr-director-kicker">월말 전황</span>
+                  <strong id="tr-director-title" class="tr-director-title">이번 달 결과를 정리합니다.</strong>
+                  <p id="tr-director-body" class="tr-director-body">핵심 전선과 다음 행동이 여기에 표시됩니다.</p>
+                </div>
+                <div id="tr-session-board"></div>
                 <div class="tr-header">
                   <span id="tr-phase-label" class="tr-phase"></span>
                   <span id="tr-counter" class="tr-counter">0 / 0</span>
@@ -222,44 +340,75 @@
             <main id="main-stage">
               <section id="map-stage">
                 <div id="war-room-brief" class="war-room-brief">
-                  <div class="war-room-kicker" id="war-room-kicker">작전 브리프</div>
-                  <h3 id="war-room-title">첫 10분 목표를 정리 중입니다.</h3>
-                  <p id="war-room-objective">선택한 세력의 시작 압박과 첫 권장 행동이 여기에 표시됩니다.</p>
-                  <div class="war-room-grid">
-                    <div class="war-room-card">
-                      <span class="war-room-label">즉시 행동</span>
-                      <strong id="war-room-action">도시를 선택하세요</strong>
+                  <div class="war-room-session-head">
+                    <div class="war-room-session-copy">
+                      <div class="war-room-kicker" id="war-room-kicker">작전 브리프</div>
+                      <h3 id="war-room-title">첫 10분 목표를 정리 중입니다.</h3>
+                      <p id="war-room-objective">선택한 세력의 시작 압박과 첫 권장 행동이 여기에 표시됩니다.</p>
                     </div>
-                    <div class="war-room-card">
-                      <span class="war-room-label">핵심 거점</span>
-                      <strong id="war-room-focus">-</strong>
+                    <div id="war-room-session-budget" class="war-room-session-budget" aria-live="polite">
+                      <span class="war-room-session-budget-label">세션 상태</span>
+                      <strong>행동 3/3</strong>
+                      <small>첫 거점을 잠그면 같은 흐름으로 결정 패널까지 이어집니다.</small>
                     </div>
-                    <div class="war-room-card">
-                      <span class="war-room-label">전황 리스크</span>
-                      <strong id="war-room-risk">-</strong>
+                  </div>
+                  <div id="war-room-session-track" class="war-room-session-track" aria-live="polite"></div>
+                  <div id="war-room-grid" class="war-room-grid"></div>
+                  <div class="war-room-overlay-bar">
+                    <div class="war-room-overlay-copy">
+                      <span class="war-room-overlay-label">전선 시야</span>
+                      <strong id="war-room-overlay-title">후방을 걷고 접경선만 골라 볼 수 있습니다.</strong>
+                      <div id="war-room-overlay-body">아군 접경 0성 · 외부 전선 0성 · 교전선 0개</div>
+                      <div id="war-room-frontline-strip" class="war-room-frontline-strip"></div>
+                    </div>
+                    <div class="war-room-overlay-actions">
+                      <button id="btn-toggle-frontline-overlay" class="btn-small war-room-overlay-toggle" type="button" aria-pressed="false">
+                        <span>전선 시야</span>
+                        <kbd>V</kbd>
+                      </button>
+                      <div class="war-room-frontline-nav">
+                        <button id="btn-frontline-prev" class="btn-small war-room-frontline-nav-btn" type="button" disabled>
+                          <span>이전 전선</span>
+                          <kbd>←</kbd>
+                        </button>
+                        <button id="btn-frontline-next" class="btn-small war-room-frontline-nav-btn" type="button" disabled>
+                          <span>다음 전선</span>
+                          <kbd>→</kbd>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div id="map-container">
                   <div class="map-base-layer" id="game-map-base" aria-hidden="true"></div>
                   <canvas id="game-map" width="1600" height="900"></canvas>
+                  <div id="map-hover-card" class="hidden" aria-hidden="true">
+                    <div id="map-hover-city">도시</div>
+                    <div id="map-hover-owner">세력</div>
+                    <div id="map-hover-meta">지형 · 성방</div>
+                    <div id="map-hover-hint">Enter · 명령</div>
+                  </div>
                 </div>
                 <div id="map-selection-panel" class="hidden">
                   <div class="map-selection-text">
-                    <div id="map-selection-city">도시 선택 없음</div>
-                    <div id="map-selection-owner">도시를 클릭해 전황과 명령을 확인하세요</div>
-                    <div class="map-selection-brief-grid">
-                      <div class="map-selection-brief-card">
-                        <span class="map-selection-brief-label">즉시 행동</span>
-                        <strong id="map-selection-action">도시를 선택하세요</strong>
-                      </div>
-                      <div class="map-selection-brief-card">
-                        <span class="map-selection-brief-label">권장 장면</span>
-                        <strong id="map-selection-scene">-</strong>
+                    <div class="map-selection-header">
+                      <div class="map-selection-heading">
+                        <div class="map-selection-kicker">선택 도시</div>
+                        <div id="map-selection-city">도시 선택 없음</div>
+                        <div id="map-selection-owner">도시를 클릭해 전황과 다음 행동을 확인하세요</div>
                       </div>
                     </div>
+                    <div id="map-selection-session" class="map-selection-session"></div>
+                    <div id="map-selection-control-hint">지도를 드래그하고 도시를 고르거나 Space·Enter·두 번 누르기로 바로 여십시오.</div>
                   </div>
-                  <button id="btn-open-command" class="btn-small" disabled>명령 열기</button>
+                  <div class="map-selection-aside">
+                    <div id="map-selection-decision" class="map-selection-decision"></div>
+                    <div class="map-selection-actions">
+                      <button id="btn-toggle-frontline-overlay-dock" class="btn-small btn-secondary" type="button">전선 시야</button>
+                      <button id="btn-refocus-city" class="btn-small btn-secondary" disabled>재집중</button>
+                      <button id="btn-open-command" class="btn-small" disabled>명령 열기</button>
+                    </div>
+                  </div>
                 </div>
                 <div id="field-reaction-banner" class="hidden" aria-live="polite">
                   <div class="field-reaction-kicker" id="field-reaction-kicker">현장 반응</div>
@@ -271,10 +420,24 @@
 
             <aside id="city-rail">
               <div id="city-rail-content">
-                <div id="city-info"></div>
-              </div>
-              <div id="city-rail-cta">
-                <button id="btn-open-command-rail" class="btn-turn" disabled>명령 열기</button>
+                <section class="city-rail-section city-rail-section-session">
+                  <div class="city-rail-section-head">
+                    <span class="city-rail-section-kicker">다음 행동</span>
+                    <strong>선택 도시에서 다음 행동까지 한 번에 읽습니다</strong>
+                  </div>
+                  <div id="city-session-board" class="city-session-shell"></div>
+                  <div id="city-rail-cta">
+                    <div id="city-rail-cta-note">선택 도시와 권장 장면을 고르면 이곳에서 곧바로 명령으로 들어갑니다.</div>
+                    <button id="btn-open-command-rail" class="btn-turn" disabled>명령 열기</button>
+                  </div>
+                </section>
+                <section class="city-rail-section city-rail-section-dossier">
+                  <div class="city-rail-section-head">
+                    <span class="city-rail-section-kicker">도시 장부</span>
+                    <strong>도시 장부와 보조 정보</strong>
+                  </div>
+                  <div id="city-info"></div>
+                </section>
               </div>
             </aside>
           </div>
@@ -286,16 +449,30 @@
       <div class="modal-backdrop" id="command-modal-backdrop"></div>
       <div id="action-panel">
         <div id="action-panel-content">
-          <div id="command-stage-strip">
-            <div class="command-stage-step active" data-stage="brief">
-              <span>1</span>
-              <strong>작전 장면</strong>
-            </div>
+          <div id="command-stage-strip" data-mode="sheet">
+            <article class="command-stage-step" data-stage="city">
+              <span class="command-stage-pill">거점</span>
+              <div class="command-stage-meta">
+                <strong>선택 도시</strong>
+                <small class="command-stage-copy" data-stage-copy="city">도시 선택 대기</small>
+              </div>
+            </article>
             <div class="command-stage-divider"></div>
-            <div class="command-stage-step" data-stage="decision">
-              <span>2</span>
-              <strong>명령 확정</strong>
-            </div>
+            <article class="command-stage-step" data-stage="readout">
+              <span class="command-stage-pill">판독</span>
+              <div class="command-stage-meta">
+                <strong>지도 판독</strong>
+                <small class="command-stage-copy" data-stage-copy="readout">전선 판독 대기</small>
+              </div>
+            </article>
+            <div class="command-stage-divider"></div>
+            <article class="command-stage-step" data-stage="decision">
+              <span class="command-stage-pill">결정</span>
+              <div class="command-stage-meta">
+                <strong>실행 확정</strong>
+                <small class="command-stage-copy" data-stage-copy="decision">명령 선택 대기</small>
+              </div>
+            </article>
           </div>
           <div id="action-panel-header">
             <div class="command-heading">
@@ -307,17 +484,49 @@
           <div id="action-panel-body">
             <div id="action-tab-bar"></div>
             <div id="action-panel-main">
-              <div id="command-city-summary"></div>
-              <div id="action-panel-board">
-                <div id="action-buttons"></div>
-                <aside id="command-preview"></aside>
+              <div id="command-session-shell">
+                <div id="command-bridge"></div>
+                <div id="command-city-summary"></div>
               </div>
-              <div id="command-footer">
-                <div id="command-selection-status"></div>
-                <div class="command-footer-actions">
-                  <button id="action-panel-cancel" class="btn-secondary">닫기</button>
-                  <button id="action-panel-confirm" class="btn-primary" disabled>결정</button>
-                </div>
+              <div id="action-panel-board">
+                <section id="command-sheet-surface" data-state="brief">
+                  <div id="command-candidate-sheet" data-state="brief">
+                    <div class="command-sheet-column-head">
+                    <div class="command-sheet-column-copy">
+                      <span class="command-sheet-column-kicker">선택 카드</span>
+                      <strong class="command-sheet-column-title" id="command-candidate-title">이번 턴에 내릴 명령을 고르십시오</strong>
+                    </div>
+                      <span class="command-sheet-column-badge" id="command-candidate-badge">선택 대기</span>
+                    </div>
+                    <p class="command-sheet-column-note" id="command-candidate-copy">핵심 카드 하나를 눌러 이번 턴 명령을 고르고, 같은 화면에서 바로 확정합니다.</p>
+                    <div id="command-candidate-live"></div>
+                    <div id="action-buttons"></div>
+                  </div>
+                  <aside id="command-footer">
+                    <div class="command-sheet-head">
+                      <span class="command-sheet-kicker">턴 결정</span>
+                      <strong class="command-sheet-title">선택한 명령의 효과와 확정 버튼을 여기서 바로 확인합니다</strong>
+                    </div>
+                    <div id="command-sheet-body">
+                      <div id="command-sheet-lane">
+                        <div id="command-seal-docket"></div>
+                      </div>
+                      <div id="command-sheet-stack">
+                        <div id="command-sheet-inspector">
+                          <div id="command-selection-status"></div>
+                        </div>
+                        <div id="command-sheet-preview">
+                          <div id="command-preview"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="command-key-hint"></div>
+                    <div class="command-footer-actions">
+                      <button id="action-panel-cancel" class="btn-secondary">닫기</button>
+                      <button id="action-panel-confirm" class="btn-primary" disabled>결정</button>
+                    </div>
+                  </aside>
+                </section>
               </div>
             </div>
           </div>
@@ -328,10 +537,21 @@
 
   <div id="event-modal" class="hidden">
     <div class="modal-backdrop"></div>
-    <div class="modal-content">
+    <div class="modal-content event-command-modal">
+      <div class="event-command-kicker" id="event-kicker">정세 보고</div>
       <h2 id="event-title"></h2>
       <p id="event-narrative"></p>
       <p id="event-flavor" class="flavor"></p>
+      <div id="event-director-brief" class="event-director-brief hidden">
+        <div class="event-director-card">
+          <span class="event-director-label">상황 판단</span>
+          <strong id="event-director-summary">이 사건이 바꾸는 축을 정리합니다.</strong>
+        </div>
+        <div class="event-director-card">
+          <span class="event-director-label">왜 지금</span>
+          <strong id="event-director-stakes">이번 선택이 다음 달 전황과 다음 행동 우선순위에 반영됩니다.</strong>
+        </div>
+      </div>
       <div id="event-choices"></div>
       <button id="event-continue" class="btn-primary hidden">계속</button>
     </div>
@@ -372,6 +592,7 @@
     <div class="turn-bridge-kicker" id="turn-bridge-kicker">전선 재배치</div>
     <div class="turn-bridge-title" id="turn-bridge-title">다음 달 전황으로 넘어갑니다.</div>
     <div class="turn-bridge-body" id="turn-bridge-body"></div>
+    <div id="turn-bridge-strip"></div>
   </div>
 
   <div id="turn-start-card" class="hidden" aria-live="polite">
@@ -383,6 +604,7 @@
     <div class="turn-start-kicker" id="turn-start-kicker">턴 개시</div>
     <div class="turn-start-title" id="turn-start-title">다음 턴 목표를 정리 중입니다.</div>
     <div class="turn-start-body" id="turn-start-body"></div>
+    <div id="turn-start-strip"></div>
   </div>
 
   <div id="screen-transition" class="hidden" aria-hidden="true">
@@ -401,7 +623,7 @@
 
   <div id="command-seal-flash" class="hidden" aria-hidden="true">
     <div class="command-seal-mark" id="command-seal-mark">令</div>
-    <div class="command-seal-copy" id="command-seal-copy">군령 인준</div>
+    <div class="command-seal-copy" id="command-seal-copy">군령 확정</div>
   </div>
 
   <script type="module" src="js/app.js"></script>

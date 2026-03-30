@@ -1,81 +1,128 @@
 {
-  "updated_at": "2026-03-26T09:13:47.171Z",
-  "source_axis": "engine-slice",
-  "source_candidate": "playable-engine-slice",
-  "run_id": "adaptive-run-20260326-181346",
-  "pass_index": 1,
-  "product_anchors": [
-    "character-modeling-soul-pipeline",
-    "event-generation-at-scale",
-    "ai-persona-autotest-loop",
-    "theme-independent-mechanics",
-    "playable-koei-grade-engine-slice",
-    "design-plus-development-plus-test-team-loop",
-    "app-surface-evolution-lane"
-  ],
-  "review_hints": {
-    "boostAxes": [
-      "autotest",
-      "content-pipeline",
-      "design-surface",
-      "app-surface",
-      "engine-slice",
-      "theme-independence"
-    ],
-    "lastReviewAfterPass": 1
-  },
+  "updated_at": "2026-03-27T18:21:46.384Z",
+  "source_axis": "content-pipeline",
+  "source_candidate": "character-modeling-pipeline",
+  "run_id": "durable-run-20260328-032036-833bd1f1",
+  "pass_index": 3,
+  "product_anchors": [],
+  "review_hints": {},
   "runtime_state": {
-    "last_run_id": "adaptive-run-20260326-181346",
-    "persistentBoostAxes": [
-      "autotest",
-      "content-pipeline",
-      "design-surface",
-      "app-surface",
-      "engine-slice",
-      "theme-independence"
-    ]
+    "last_run_id": "durable-run-20260328-032036-833bd1f1",
+    "persistentBoostAxes": [],
+    "primaryFocusAxis": "content-pipeline",
+    "focusAlignment": "aligned"
   },
   "factory_summary": {
-    "lastRunId": "adaptive-run-20260326-181346",
-    "persistentBoostAxes": [
-      "autotest",
-      "content-pipeline",
-      "design-surface",
-      "app-surface",
-      "engine-slice",
+    "lastRunId": "durable-run-20260328-032036-833bd1f1",
+    "persistentBoostAxes": [],
+    "primaryFocusAxis": "content-pipeline",
+    "focusAlignment": "aligned",
+    "routeSource": "agent-routing-state",
+    "routeContextOrigin": "agent-routing-state",
+    "routeConfidence": "aligned",
+    "routeConfidenceRaw": "aligned",
+    "routeConfidenceText": "aligned",
+    "routeSummary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state",
+    "urgencySnapshot": "theme-independence:1, app-surface:0, autotest:0",
+    "topUrgencyLane": "theme-independence",
+    "topUrgencyValue": 1,
+    "topUrgencyTie": [
       "theme-independence"
+    ],
+    "topUrgencyTieText": "none",
+    "topUrgencyTieCount": 1
+  },
+  "agent_routing_state": {
+    "routeContextOrigin": "agent-routing-state",
+    "routeSource": "agent-routing-state",
+    "primaryFocusAxis": "theme-independence",
+    "topUrgencyLane": "theme-independence",
+    "topUrgencyValue": 1,
+    "topUrgencyTie": [
+      "theme-independence"
+    ],
+    "topUrgencyTieText": "none",
+    "topUrgencyTieCount": 1,
+    "routeConfidence": "aligned",
+    "routeConfidenceRaw": "aligned",
+    "routeConfidenceText": "aligned",
+    "routeSummary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state",
+    "urgencySnapshot": "theme-independence:1, app-surface:0, autotest:0",
+    "sortedLanes": [
+      {
+        "lane": "theme-independence",
+        "urgency": 1
+      },
+      {
+        "lane": "app-surface",
+        "urgency": 0
+      },
+      {
+        "lane": "autotest",
+        "urgency": 0
+      },
+      {
+        "lane": "content-pipeline",
+        "urgency": 0
+      },
+      {
+        "lane": "design-surface",
+        "urgency": 0
+      },
+      {
+        "lane": "engine-slice",
+        "urgency": 0
+      }
     ]
   },
+  "primary_focus_axis": "content-pipeline",
+  "focus_alignment": "aligned",
   "axes": {
     "engine-slice": {
       "axis": "engine-slice",
       "status": "ready",
-      "summary": "scenario 208_red_cliffs / factions 5 / cities 43"
+      "summary": "scenario 208_red_cliffs / factions 5 / cities 43 / top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
     },
     "design-surface": {
       "axis": "design-surface",
       "status": "ready",
-      "summary": "tracked files 4"
+      "summary": "tracked files 4 / top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
     },
     "content-pipeline": {
       "axis": "content-pipeline",
       "status": "ready",
-      "summary": "souls 426 / events 337"
+      "summary": "souls 426 / events 337 / top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
     },
     "autotest": {
       "axis": "autotest",
       "status": "ready",
-      "summary": "balance 0.5723 / anomaly 21.5"
+      "summary": "balance 0.587 / anomaly 20.5 / top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
     },
     "theme-independence": {
       "axis": "theme-independence",
       "status": "ready",
-      "summary": "ui leaks 0 / browser globals 0"
+      "summary": "ui leaks 0 / browser globals 0 / top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
+    },
+    "ux-first-frame": {
+      "axis": "ux-first-frame",
+      "status": "missing"
+    },
+    "map-art": {
+      "axis": "map-art",
+      "status": "missing"
+    },
+    "map-renderer-integrity": {
+      "axis": "map-renderer-integrity",
+      "status": "missing"
+    },
+    "qa-debt": {
+      "axis": "qa-debt",
+      "status": "missing"
     },
     "app-surface": {
       "axis": "app-surface",
       "status": "ready",
-      "summary": "stages 4 / transition cards 2"
+      "summary": "stages 4 / transition cards 2 / top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "axis": "design-surface",
-  "updated_at": "2026-03-24T22:58:08.848Z",
+  "updated_at": "2026-03-27T17:31:52.769Z",
   "candidate": "design-surface-quality",
   "pass_index": 8,
   "payload": {
@@ -8,18 +8,18 @@
     "trackedFiles": [
       {
         "path": "public/index.html",
-        "bytes": 19280,
-        "sha1": "474c41ea38f77f164026e71cb87e6d2064af9e70"
+        "bytes": 24141,
+        "sha1": "ea7c413bac7a31e83e9dbbb1108d754b8f925aec"
       },
       {
         "path": "public/css/style.css",
-        "bytes": 207799,
-        "sha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "bytes": 233261,
+        "sha1": "f252e8c600d264777f28f7a789b54ef78d217e7f"
       },
       {
         "path": "public/js/app.js",
-        "bytes": 89939,
-        "sha1": "315f84a3055d3ab02a167fca53baab07a5658a85"
+        "bytes": 117902,
+        "sha1": "04613b06540600d7a22b53b9f9fd2ecb7aaa7490"
       },
       {
         "path": "public/assets/maps/red-cliffs-base.svg",
@@ -31,6 +31,24 @@
       "docs/macbook14-ux-contract.md",
       "docs/map-art-direction.md",
       "docs/ux-first-frame-priority.md"
-    ]
+    ],
+    "route_context": {
+      "route_context_origin": "agent-routing-state",
+      "route_source": "agent-routing-state",
+      "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+      "top_urgency_lane": "app-surface",
+      "top_urgency_value": 1,
+      "top_urgency_tie": [
+        "app-surface"
+      ],
+      "top_urgency_tie_text": "none",
+      "top_urgency_tie_count": 1,
+      "primary_focus_axis": "theme-independence",
+      "focus_alignment": "boosted toward theme-independence",
+      "route_confidence": "aligned",
+      "route_confidence_raw": "aligned",
+      "route_confidence_text": "aligned",
+      "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+    }
   }
 }

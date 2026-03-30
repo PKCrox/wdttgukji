@@ -1,472 +1,945 @@
 [
   {
-    "updated_at": "2026-03-24T22:37:00.047Z",
+    "updated_at": "2026-03-27T17:09:50.848Z",
     "axis": "autotest",
     "candidate": "ai-persona-autotest-loop",
     "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073515",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
     "payload": {
       "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774391819990.json",
-      "balanceScore": 0.5861,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 80
-        },
-        "avgTurns": 227.4,
-        "stdTurns": 113.4,
-        "avgReversals": 0.09,
-        "dramaRate": 0.03,
-        "avgEventReach": 36.9,
-        "stalemateRate": 20,
-        "earlyElimRate": 0,
-        "anomalyRate": 20
-      },
-      "components": {
-        "winKL": 0.5073,
-        "pacingDev": 0.544,
-        "dramaPenalty": 0.97,
-        "anomaly": 0.2
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:38:00.146Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774391880088.json",
-      "balanceScore": 0.5816,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 72
-        },
-        "avgTurns": 251.5,
-        "stdTurns": 118.4,
-        "avgReversals": 0.07,
-        "dramaRate": 0.025,
-        "avgEventReach": 37.6,
-        "stalemateRate": 28,
-        "earlyElimRate": 0,
-        "anomalyRate": 28
-      },
-      "components": {
-        "winKL": 0.5026,
-        "pacingDev": 0.4796,
-        "dramaPenalty": 0.975,
-        "anomaly": 0.28
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:38:49.715Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774391929657.json",
-      "balanceScore": 0.5736,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 82.5
-        },
-        "avgTurns": 236.4,
-        "stdTurns": 106.7,
-        "avgReversals": 0.05,
-        "dramaRate": 0.015,
-        "avgEventReach": 37.7,
-        "stalemateRate": 17.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 17.5
-      },
-      "components": {
-        "winKL": 0.5165,
-        "pacingDev": 0.4812,
-        "dramaPenalty": 0.985,
-        "anomaly": 0.175
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:39:45.803Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774391985745.json",
-      "balanceScore": 0.5867,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 79
-        },
-        "avgTurns": 231.4,
-        "stdTurns": 114.9,
-        "avgReversals": 0.06,
-        "dramaRate": 0.02,
-        "avgEventReach": 37,
-        "stalemateRate": 21,
-        "earlyElimRate": 0,
-        "anomalyRate": 21
-      },
-      "components": {
-        "winKL": 0.5047,
-        "pacingDev": 0.534,
-        "dramaPenalty": 0.98,
-        "anomaly": 0.21
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:40:38.279Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392038222.json",
-      "balanceScore": 0.5838,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 71.5
-        },
-        "avgTurns": 252.2,
-        "stdTurns": 116.4,
-        "avgReversals": 0.04,
-        "dramaRate": 0.015,
-        "avgEventReach": 37.8,
-        "stalemateRate": 28.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 28.5
-      },
-      "components": {
-        "winKL": 0.5035,
-        "pacingDev": 0.4744,
-        "dramaPenalty": 0.985,
-        "anomaly": 0.285
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:41:34.980Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392094922.json",
-      "balanceScore": 0.5744,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 80,
-          "shu": 0.5
-        },
-        "avgTurns": 230.4,
-        "stdTurns": 108.9,
-        "avgReversals": 0.04,
-        "dramaRate": 0.015,
-        "avgEventReach": 37.5,
-        "stalemateRate": 19.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 19.5
-      },
-      "components": {
-        "winKL": 0.4869,
-        "pacingDev": 0.514,
-        "dramaPenalty": 0.985,
-        "anomaly": 0.195
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:42:23.608Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392143551.json",
-      "balanceScore": 0.5883,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 77
-        },
-        "avgTurns": 232.7,
-        "stdTurns": 116,
-        "avgReversals": 0.08,
-        "dramaRate": 0.02,
-        "avgEventReach": 37.1,
-        "stalemateRate": 23,
-        "earlyElimRate": 0,
-        "anomalyRate": 23
-      },
-      "components": {
-        "winKL": 0.5014,
-        "pacingDev": 0.5332,
-        "dramaPenalty": 0.98,
-        "anomaly": 0.23
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:43:21.931Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392201874.json",
-      "balanceScore": 0.5762,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 75
-        },
-        "avgTurns": 245.5,
-        "stdTurns": 111.6,
-        "avgReversals": 0.04,
-        "dramaRate": 0.01,
-        "avgEventReach": 38,
-        "stalemateRate": 25,
-        "earlyElimRate": 0,
-        "anomalyRate": 25
-      },
-      "components": {
-        "winKL": 0.5003,
-        "pacingDev": 0.4644,
-        "dramaPenalty": 0.99,
-        "anomaly": 0.25
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:44:12.809Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392252750.json",
-      "balanceScore": 0.5715,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 76
-        },
-        "avgTurns": 247.3,
-        "stdTurns": 112.6,
-        "avgReversals": 0.07,
-        "dramaRate": 0.02,
-        "avgEventReach": 37.8,
-        "stalemateRate": 24,
-        "earlyElimRate": 0,
-        "anomalyRate": 24
-      },
-      "components": {
-        "winKL": 0.5006,
-        "pacingDev": 0.4612,
-        "dramaPenalty": 0.98,
-        "anomaly": 0.24
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:45:11.442Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392311385.json",
-      "balanceScore": 0.5754,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 74.5
-        },
-        "avgTurns": 248.8,
-        "stdTurns": 115.8,
-        "avgReversals": 0.09,
-        "dramaRate": 0.02,
-        "avgEventReach": 37.7,
-        "stalemateRate": 25.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 25.5
-      },
-      "components": {
-        "winKL": 0.5004,
-        "pacingDev": 0.468,
-        "dramaPenalty": 0.98,
-        "anomaly": 0.255
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:46:03.020Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392362958.json",
-      "balanceScore": 0.5779,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 74.5
-        },
-        "avgTurns": 247.3,
-        "stdTurns": 118.1,
-        "avgReversals": 0.08,
-        "dramaRate": 0.025,
-        "avgEventReach": 37.3,
-        "stalemateRate": 25.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 25.5
-      },
-      "components": {
-        "winKL": 0.5004,
-        "pacingDev": 0.4832,
-        "dramaPenalty": 0.975,
-        "anomaly": 0.255
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:46:58.654Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392418594.json",
-      "balanceScore": 0.5903,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 82
-        },
-        "avgTurns": 226.6,
-        "stdTurns": 111.1,
-        "avgReversals": 0.02,
-        "dramaRate": 0.005,
-        "avgEventReach": 37.1,
-        "stalemateRate": 18,
-        "earlyElimRate": 0,
-        "anomalyRate": 18
-      },
-      "components": {
-        "winKL": 0.5143,
-        "pacingDev": 0.538,
-        "dramaPenalty": 0.995,
-        "anomaly": 0.18
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:47:51.022Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392470963.json",
-      "balanceScore": 0.5915,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 69.5
-        },
-        "avgTurns": 252.2,
-        "stdTurns": 119.5,
-        "avgReversals": 0.08,
-        "dramaRate": 0.015,
-        "avgEventReach": 37.5,
-        "stalemateRate": 30.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 30.5
-      },
-      "components": {
-        "winKL": 0.508,
-        "pacingDev": 0.4868,
-        "dramaPenalty": 0.985,
-        "anomaly": 0.305
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:48:51.263Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392531204.json",
-      "balanceScore": 0.5584,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 79
-        },
-        "avgTurns": 250,
-        "stdTurns": 104,
-        "avgReversals": 0.07,
-        "dramaRate": 0.015,
-        "avgEventReach": 38.3,
-        "stalemateRate": 21,
-        "earlyElimRate": 0,
-        "anomalyRate": 21
-      },
-      "components": {
-        "winKL": 0.5047,
-        "pacingDev": 0.416,
-        "dramaPenalty": 0.985,
-        "anomaly": 0.21
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:49:39.547Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392579490.json",
-      "balanceScore": 0.5838,
+      "runFile": "scripts/balance/runs/1774631390187.json",
+      "balanceScore": 0.5722,
       "summary": {
         "n": 200,
         "winDistribution": {
           "wei": 79.5,
           "shu": 0.5
         },
-        "avgTurns": 225.4,
+        "avgTurns": 231.2,
+        "stdTurns": 111,
+        "avgReversals": 0.07,
+        "dramaRate": 0.03,
+        "avgEventReach": 37.4,
+        "stalemateRate": 20,
+        "earlyElimRate": 0,
+        "anomalyRate": 20
+      },
+      "components": {
+        "winKL": 0.4854,
+        "pacingDev": 0.5192,
+        "dramaPenalty": 0.97,
+        "anomaly": 0.2
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:14:40.729Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774631680231.json",
+      "balanceScore": 0.5834,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 78
+        },
+        "avgTurns": 236.5,
+        "stdTurns": 117.2,
+        "avgReversals": 0.07,
+        "dramaRate": 0.025,
+        "avgEventReach": 36.9,
+        "stalemateRate": 22,
+        "earlyElimRate": 0,
+        "anomalyRate": 22
+      },
+      "components": {
+        "winKL": 0.5028,
+        "pacingDev": 0.5228,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.22
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:15:57.448Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774631756792.json",
+      "balanceScore": 0.5791,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 75
+        },
+        "avgTurns": 244.2,
+        "stdTurns": 115.7,
+        "avgReversals": 0.07,
+        "dramaRate": 0.02,
+        "avgEventReach": 37.5,
+        "stalemateRate": 25,
+        "earlyElimRate": 0,
+        "anomalyRate": 25
+      },
+      "components": {
+        "winKL": 0.5003,
+        "pacingDev": 0.486,
+        "dramaPenalty": 0.98,
+        "anomaly": 0.25
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "boosted toward autotest",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:19:36.887Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774631976351.json",
+      "balanceScore": 0.5703,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 74.5
+        },
+        "avgTurns": 246,
+        "stdTurns": 112.9,
+        "avgReversals": 0.1,
+        "dramaRate": 0.04,
+        "avgEventReach": 38,
+        "stalemateRate": 25.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 25.5
+      },
+      "components": {
+        "winKL": 0.5004,
+        "pacingDev": 0.4676,
+        "dramaPenalty": 0.96,
+        "anomaly": 0.255
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:21:02.121Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774632061602.json",
+      "balanceScore": 0.5705,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 76.5
+        },
+        "avgTurns": 247.1,
+        "stdTurns": 112,
+        "avgReversals": 0.07,
+        "dramaRate": 0.02,
+        "avgEventReach": 37.7,
+        "stalemateRate": 23.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 23.5
+      },
+      "components": {
+        "winKL": 0.5009,
+        "pacingDev": 0.4596,
+        "dramaPenalty": 0.98,
+        "anomaly": 0.235
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:27:12.782Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774632432162.json",
+      "balanceScore": 0.5733,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 79.5
+        },
+        "avgTurns": 237.5,
+        "stdTurns": 106.7,
+        "avgReversals": 0.05,
+        "dramaRate": 0.015,
+        "avgEventReach": 38.2,
+        "stalemateRate": 20.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 20.5
+      },
+      "components": {
+        "winKL": 0.5059,
+        "pacingDev": 0.4768,
+        "dramaPenalty": 0.985,
+        "anomaly": 0.205
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:28:31.266Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774632510384.json",
+      "balanceScore": 0.5772,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 75.5
+        },
+        "avgTurns": 243.2,
+        "stdTurns": 114.8,
+        "avgReversals": 0.07,
+        "dramaRate": 0.025,
+        "avgEventReach": 37.5,
+        "stalemateRate": 24.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 24.5
+      },
+      "components": {
+        "winKL": 0.5004,
+        "pacingDev": 0.4864,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.245
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "boosted toward autotest",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:31:32.064Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774632691364.json",
+      "balanceScore": 0.5961,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 68
+        },
+        "avgTurns": 262.8,
+        "stdTurns": 112.1,
+        "avgReversals": 0.07,
+        "dramaRate": 0.025,
+        "avgEventReach": 38.6,
+        "stalemateRate": 32,
+        "earlyElimRate": 0,
+        "anomalyRate": 32
+      },
+      "components": {
+        "winKL": 0.5127,
+        "pacingDev": 0.4996,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.32
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:32:40.791Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774632760293.json",
+      "balanceScore": 0.5662,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 74,
+          "shu": 0.5
+        },
+        "avgTurns": 247.5,
+        "stdTurns": 111.6,
+        "avgReversals": 0.06,
+        "dramaRate": 0.015,
+        "avgEventReach": 38.1,
+        "stalemateRate": 25.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 25.5
+      },
+      "components": {
+        "winKL": 0.4788,
+        "pacingDev": 0.4564,
+        "dramaPenalty": 0.985,
+        "anomaly": 0.255
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:39:52.667Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-023724-790da56f",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774633192171.json",
+      "balanceScore": 0.5881,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 77
+        },
+        "avgTurns": 237.6,
+        "stdTurns": 120.7,
+        "avgReversals": 0.06,
+        "dramaRate": 0.02,
+        "avgEventReach": 36.3,
+        "stalemateRate": 23,
+        "earlyElimRate": 0,
+        "anomalyRate": 23
+      },
+      "components": {
+        "winKL": 0.5014,
+        "pacingDev": 0.5324,
+        "dramaPenalty": 0.98,
+        "anomaly": 0.23
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:41:48.272Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-023724-790da56f",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774633307759.json",
+      "balanceScore": 0.5662,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 79.5,
+          "shu": 0.5
+        },
+        "avgTurns": 235.1,
+        "stdTurns": 111.4,
+        "avgReversals": 0.13,
+        "dramaRate": 0.04,
+        "avgEventReach": 37.3,
+        "stalemateRate": 20,
+        "earlyElimRate": 0,
+        "anomalyRate": 20
+      },
+      "components": {
+        "winKL": 0.4854,
+        "pacingDev": 0.5052,
+        "dramaPenalty": 0.96,
+        "anomaly": 0.2
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "boosted toward autotest",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:44:54.791Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024225-e0b4d7a6",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774633494307.json",
+      "balanceScore": 0.5703,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 83
+        },
+        "avgTurns": 234.8,
+        "stdTurns": 106.8,
+        "avgReversals": 0.13,
+        "dramaRate": 0.035,
+        "avgEventReach": 37.7,
+        "stalemateRate": 17,
+        "earlyElimRate": 0,
+        "anomalyRate": 17
+      },
+      "components": {
+        "winKL": 0.5189,
+        "pacingDev": 0.488,
+        "dramaPenalty": 0.965,
+        "anomaly": 0.17
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:47:01.974Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024225-e0b4d7a6",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774633621159.json",
+      "balanceScore": 0.5838,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 75
+        },
+        "avgTurns": 239.9,
+        "stdTurns": 118.6,
+        "avgReversals": 0.07,
+        "dramaRate": 0.03,
+        "avgEventReach": 37.1,
+        "stalemateRate": 25,
+        "earlyElimRate": 0,
+        "anomalyRate": 25
+      },
+      "components": {
+        "winKL": 0.5003,
+        "pacingDev": 0.5148,
+        "dramaPenalty": 0.97,
+        "anomaly": 0.25
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:50:49.491Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024814-c9d034bc",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774633849023.json",
+      "balanceScore": 0.5739,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 77
+        },
+        "avgTurns": 242.9,
         "stdTurns": 114.3,
         "avgReversals": 0.06,
+        "dramaRate": 0.03,
+        "avgEventReach": 37.5,
+        "stalemateRate": 23,
+        "earlyElimRate": 0,
+        "anomalyRate": 23
+      },
+      "components": {
+        "winKL": 0.5014,
+        "pacingDev": 0.4856,
+        "dramaPenalty": 0.97,
+        "anomaly": 0.23
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:52:47.974Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-024814-c9d034bc",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774633967525.json",
+      "balanceScore": 0.5819,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 78
+        },
+        "avgTurns": 234,
+        "stdTurns": 111.9,
+        "avgReversals": 0.07,
+        "dramaRate": 0.02,
+        "avgEventReach": 37.6,
+        "stalemateRate": 22,
+        "earlyElimRate": 0,
+        "anomalyRate": 22
+      },
+      "components": {
+        "winKL": 0.5028,
+        "pacingDev": 0.5116,
+        "dramaPenalty": 0.98,
+        "anomaly": 0.22
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "boosted toward autotest",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:56:00.333Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025325-d2003120",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774634159816.json",
+      "balanceScore": 0.5728,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 76
+        },
+        "avgTurns": 242.8,
+        "stdTurns": 110.7,
+        "avgReversals": 0.06,
+        "dramaRate": 0.025,
+        "avgEventReach": 38,
+        "stalemateRate": 24,
+        "earlyElimRate": 0,
+        "anomalyRate": 24
+      },
+      "components": {
+        "winKL": 0.5006,
+        "pacingDev": 0.4716,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.24
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:58:05.607Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025325-d2003120",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774634284927.json",
+      "balanceScore": 0.5742,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 79.5
+        },
+        "avgTurns": 239.3,
+        "stdTurns": 110.7,
+        "avgReversals": 0.07,
+        "dramaRate": 0.02,
+        "avgEventReach": 37.5,
+        "stalemateRate": 20.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 20.5
+      },
+      "components": {
+        "winKL": 0.5059,
+        "pacingDev": 0.4856,
+        "dramaPenalty": 0.98,
+        "anomaly": 0.205
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T18:01:48.116Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 5,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025917-ebb2f199",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774634507634.json",
+      "balanceScore": 0.5824,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 74.5
+        },
+        "avgTurns": 242.7,
+        "stdTurns": 118,
+        "avgReversals": 0.07,
+        "dramaRate": 0.025,
+        "avgEventReach": 37.5,
+        "stalemateRate": 25.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 25.5
+      },
+      "components": {
+        "winKL": 0.5004,
+        "pacingDev": 0.5012,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.255
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T18:03:42.566Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-025917-ebb2f199",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774634622115.json",
+      "balanceScore": 0.5874,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 80
+        },
+        "avgTurns": 229.4,
+        "stdTurns": 114.2,
+        "avgReversals": 0.07,
         "dramaRate": 0.02,
         "avgEventReach": 36.8,
         "stalemateRate": 20,
@@ -474,335 +947,350 @@
         "anomalyRate": 20
       },
       "components": {
-        "winKL": 0.4854,
-        "pacingDev": 0.5556,
+        "winKL": 0.5073,
+        "pacingDev": 0.5392,
         "dramaPenalty": 0.98,
         "anomaly": 0.2
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "boosted toward autotest",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:50:37.880Z",
+    "updated_at": "2026-03-27T18:06:53.785Z",
     "axis": "autotest",
     "candidate": "ai-persona-autotest-loop",
     "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-030420-eb4a8bf8",
     "payload": {
       "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392637823.json",
-      "balanceScore": 0.5903,
+      "runFile": "scripts/balance/runs/1774634813283.json",
+      "balanceScore": 0.5584,
       "summary": {
         "n": 200,
         "winDistribution": {
-          "wei": 74
-        },
-        "avgTurns": 238.6,
-        "stdTurns": 117.2,
-        "avgReversals": 0.03,
-        "dramaRate": 0.01,
-        "avgEventReach": 37.2,
-        "stalemateRate": 26,
-        "earlyElimRate": 0,
-        "anomalyRate": 26
-      },
-      "components": {
-        "winKL": 0.5006,
-        "pacingDev": 0.5144,
-        "dramaPenalty": 0.99,
-        "anomaly": 0.26
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:51:26.635Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392686578.json",
-      "balanceScore": 0.5599,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 81,
-          "shu": 1
-        },
-        "avgTurns": 234.6,
-        "stdTurns": 109.9,
-        "avgReversals": 0.1,
-        "dramaRate": 0.03,
-        "avgEventReach": 37.2,
-        "stalemateRate": 18,
-        "earlyElimRate": 0,
-        "anomalyRate": 18
-      },
-      "components": {
-        "winKL": 0.4717,
-        "pacingDev": 0.5012,
-        "dramaPenalty": 0.97,
-        "anomaly": 0.18
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:52:24.323Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392744265.json",
-      "balanceScore": 0.5805,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 78.5
-        },
-        "avgTurns": 238,
-        "stdTurns": 113.7,
-        "avgReversals": 0.07,
-        "dramaRate": 0.015,
-        "avgEventReach": 37.3,
-        "stalemateRate": 21.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 21.5
-      },
-      "components": {
-        "winKL": 0.5037,
-        "pacingDev": 0.5028,
-        "dramaPenalty": 0.985,
-        "anomaly": 0.215
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:53:14.498Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392794441.json",
-      "balanceScore": 0.5734,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 78,
+          "wei": 75,
           "shu": 0.5
         },
-        "avgTurns": 237.3,
-        "stdTurns": 111,
-        "avgReversals": 0.04,
-        "dramaRate": 0.005,
-        "avgEventReach": 37.4,
-        "stalemateRate": 21.5,
+        "avgTurns": 250.4,
+        "stdTurns": 106.2,
+        "avgReversals": 0.03,
+        "dramaRate": 0.01,
+        "avgEventReach": 38.6,
+        "stalemateRate": 24.5,
         "earlyElimRate": 0,
-        "anomalyRate": 21.5
+        "anomalyRate": 24.5
       },
       "components": {
-        "winKL": 0.4819,
-        "pacingDev": 0.4948,
-        "dramaPenalty": 0.995,
-        "anomaly": 0.215
+        "winKL": 0.4788,
+        "pacingDev": 0.4264,
+        "dramaPenalty": 0.99,
+        "anomaly": 0.245
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:54:13.459Z",
+    "updated_at": "2026-03-27T18:08:48.532Z",
     "axis": "autotest",
     "candidate": "ai-persona-autotest-loop",
-    "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-030420-eb4a8bf8",
     "payload": {
       "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392853401.json",
-      "balanceScore": 0.577,
+      "runFile": "scripts/balance/runs/1774634928063.json",
+      "balanceScore": 0.5661,
       "summary": {
         "n": 200,
         "winDistribution": {
-          "wei": 80
+          "wei": 79.5,
+          "shu": 0.5
         },
-        "avgTurns": 238.4,
-        "stdTurns": 109.1,
-        "avgReversals": 0.02,
-        "dramaRate": 0.005,
-        "avgEventReach": 37.8,
+        "avgTurns": 237.2,
+        "stdTurns": 107.2,
+        "avgReversals": 0.04,
+        "dramaRate": 0.015,
+        "avgEventReach": 37.9,
         "stalemateRate": 20,
         "earlyElimRate": 0,
         "anomalyRate": 20
       },
       "components": {
-        "winKL": 0.5073,
-        "pacingDev": 0.4828,
-        "dramaPenalty": 0.995,
+        "winKL": 0.4854,
+        "pacingDev": 0.48,
+        "dramaPenalty": 0.985,
         "anomaly": 0.2
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:55:04.646Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392904589.json",
-      "balanceScore": 0.5646,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 78
-        },
-        "avgTurns": 246.6,
-        "stdTurns": 109.7,
-        "avgReversals": 0.07,
-        "dramaRate": 0.03,
-        "avgEventReach": 37.9,
-        "stalemateRate": 22,
-        "earlyElimRate": 0,
-        "anomalyRate": 22
       },
-      "components": {
-        "winKL": 0.5028,
-        "pacingDev": 0.4524,
-        "dramaPenalty": 0.97,
-        "anomaly": 0.22
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:56:02.428Z",
+    "updated_at": "2026-03-27T18:12:26.403Z",
     "axis": "autotest",
     "candidate": "ai-persona-autotest-loop",
     "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031000-1f1e9010",
     "payload": {
       "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774392962370.json",
-      "balanceScore": 0.5737,
+      "runFile": "scripts/balance/runs/1774635145985.json",
+      "balanceScore": 0.5724,
       "summary": {
         "n": 200,
         "winDistribution": {
-          "wei": 81.5,
-          "shu": 0.5
+          "wei": 79.5
         },
-        "avgTurns": 235.4,
-        "stdTurns": 111,
-        "avgReversals": 0.03,
-        "dramaRate": 0.005,
-        "avgEventReach": 37.1,
-        "stalemateRate": 18,
+        "avgTurns": 237.7,
+        "stdTurns": 108.5,
+        "avgReversals": 0.08,
+        "dramaRate": 0.025,
+        "avgEventReach": 37.7,
+        "stalemateRate": 20.5,
         "earlyElimRate": 0,
-        "anomalyRate": 18
+        "anomalyRate": 20.5
       },
       "components": {
-        "winKL": 0.4923,
-        "pacingDev": 0.5024,
-        "dramaPenalty": 0.995,
-        "anomaly": 0.18
+        "winKL": 0.5059,
+        "pacingDev": 0.4832,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.205
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:56:53.835Z",
+    "updated_at": "2026-03-27T18:14:23.699Z",
     "axis": "autotest",
     "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031000-1f1e9010",
     "payload": {
       "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774393013777.json",
-      "balanceScore": 0.5682,
+      "runFile": "scripts/balance/runs/1774635263249.json",
+      "balanceScore": 0.5802,
       "summary": {
         "n": 200,
         "winDistribution": {
-          "wei": 72.5,
-          "shu": 0.5
+          "wei": 72.5
         },
-        "avgTurns": 250.1,
-        "stdTurns": 118.4,
-        "avgReversals": 0.11,
-        "dramaRate": 0.035,
-        "avgEventReach": 37.2,
-        "stalemateRate": 27,
+        "avgTurns": 249.1,
+        "stdTurns": 116.1,
+        "avgReversals": 0.06,
+        "dramaRate": 0.015,
+        "avgEventReach": 37.8,
+        "stalemateRate": 27.5,
         "earlyElimRate": 0,
-        "anomalyRate": 27
+        "anomalyRate": 27.5
       },
       "components": {
-        "winKL": 0.4799,
-        "pacingDev": 0.474,
-        "dramaPenalty": 0.965,
-        "anomaly": 0.27
+        "winKL": 0.5019,
+        "pacingDev": 0.468,
+        "dramaPenalty": 0.985,
+        "anomaly": 0.275
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "boosted toward autotest",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:57:52.757Z",
+    "updated_at": "2026-03-27T18:17:28.924Z",
     "axis": "autotest",
     "candidate": "ai-persona-autotest-loop",
     "pass_index": 5,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031501-3518506e",
     "payload": {
       "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774393072700.json",
-      "balanceScore": 0.5954,
+      "runFile": "scripts/balance/runs/1774635448176.json",
+      "balanceScore": 0.5941,
       "summary": {
         "n": 200,
         "winDistribution": {
-          "wei": 70.5
+          "wei": 77.5
         },
-        "avgTurns": 246.3,
-        "stdTurns": 124.3,
+        "avgTurns": 226.3,
+        "stdTurns": 117.2,
+        "avgReversals": 0.09,
+        "dramaRate": 0.025,
+        "avgEventReach": 36.7,
+        "stalemateRate": 22.5,
+        "earlyElimRate": 0,
+        "anomalyRate": 22.5
+      },
+      "components": {
+        "winKL": 0.502,
+        "pacingDev": 0.5636,
+        "dramaPenalty": 0.975,
+        "anomaly": 0.225
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T18:19:24.426Z",
+    "axis": "autotest",
+    "candidate": "ai-persona-autotest-loop",
+    "pass_index": 10,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031501-3518506e",
+    "payload": {
+      "lane": "autotest",
+      "runFile": "scripts/balance/runs/1774635563842.json",
+      "balanceScore": 0.587,
+      "summary": {
+        "n": 200,
+        "winDistribution": {
+          "wei": 79.5
+        },
+        "avgTurns": 232.1,
+        "stdTurns": 115,
         "avgReversals": 0.07,
         "dramaRate": 0.015,
-        "avgEventReach": 36.8,
-        "stalemateRate": 29.5,
+        "avgEventReach": 37,
+        "stalemateRate": 20.5,
         "earlyElimRate": 0,
-        "anomalyRate": 29.5
+        "anomalyRate": 20.5
       },
       "components": {
-        "winKL": 0.5055,
-        "pacingDev": 0.512,
+        "winKL": 0.5059,
+        "pacingDev": 0.5316,
         "dramaPenalty": 0.985,
-        "anomaly": 0.295
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:58:42.497Z",
-    "axis": "autotest",
-    "candidate": "ai-persona-autotest-loop",
-    "pass_index": 10,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
-    "payload": {
-      "lane": "autotest",
-      "runFile": "scripts/balance/runs/1774393122439.json",
-      "balanceScore": 0.5723,
-      "summary": {
-        "n": 200,
-        "winDistribution": {
-          "wei": 78,
-          "shu": 0.5
-        },
-        "avgTurns": 237.5,
-        "stdTurns": 111.4,
-        "avgReversals": 0.04,
-        "dramaRate": 0.01,
-        "avgEventReach": 37.6,
-        "stalemateRate": 21.5,
-        "earlyElimRate": 0,
-        "anomalyRate": 21.5
+        "anomaly": 0.205
       },
-      "components": {
-        "winKL": 0.4819,
-        "pacingDev": 0.4956,
-        "dramaPenalty": 0.99,
-        "anomaly": 0.215
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 0,
+        "top_urgency_tie": [
+          "app-surface",
+          "autotest",
+          "content-pipeline",
+          "design-surface",
+          "engine-slice",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+        "top_urgency_tie_count": 6,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "boosted toward theme-independence",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (6-way tie)",
+        "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   }

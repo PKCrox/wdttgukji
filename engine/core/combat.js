@@ -6,6 +6,10 @@ const TERRAIN_MODS = {
   mountain: 0.7  // 산지 → 공격 측 불리
 };
 
+function defaultRandom() {
+  return Math.random();
+}
+
 export function resolveCombat(attacker, defender, options = {}) {
   const terrain = options.terrain || 'land';
   const terrainMod = TERRAIN_MODS[terrain] || 1.0;
@@ -62,9 +66,12 @@ export function resolveCombat(attacker, defender, options = {}) {
 }
 
 // 일기토 (1v1) — 장수 무력 비교 + 랜덤
-export function resolveDuel(charA, charB) {
-  const warA = charA.stats.war + Math.random() * 20 - 10;
-  const warB = charB.stats.war + Math.random() * 20 - 10;
+// options.random 주입으로 replay harness에서 결정적 검증이 가능하다.
+export function resolveDuel(charA, charB, options = {}) {
+  const random = typeof options.random === 'function' ? options.random : defaultRandom;
+  const loserKilledRoll = typeof options.loserKilledRoll === 'number' ? options.loserKilledRoll : random();
+  const warA = charA.stats.war + random() * 20 - 10;
+  const warB = charB.stats.war + random() * 20 - 10;
   const winner = warA >= warB ? 'a' : 'b';
   const margin = Math.abs(warA - warB);
 
@@ -74,6 +81,6 @@ export function resolveDuel(charA, charB) {
     moraleBonus: Math.min(20, Math.floor(margin)),
     // 큰 차이 → 패자 부상/사망 가능
     loserInjured: margin > 30,
-    loserKilled: margin > 50 && Math.random() < 0.3
+    loserKilled: margin > 50 && loserKilledRoll < 0.3
   };
 }

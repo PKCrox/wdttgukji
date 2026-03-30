@@ -1,10 +1,10 @@
 [
   {
-    "updated_at": "2026-03-24T22:37:08.738Z",
+    "updated_at": "2026-03-27T16:45:44.274Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
-    "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014220-97bffee3",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -36,17 +36,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:38:08.257Z",
+    "updated_at": "2026-03-27T16:47:30.496Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 1,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014721-fe1797c4",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T16:51:19.009Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014721-fe1797c4",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -78,17 +156,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:38:57.760Z",
+    "updated_at": "2026-03-27T16:52:25.927Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014721-fe1797c4",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T16:52:38.785Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-015229-a6374664",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -120,17 +276,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:39:53.973Z",
+    "updated_at": "2026-03-27T16:57:52.770Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-015229-a6374664",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -162,17 +336,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:40:46.594Z",
+    "updated_at": "2026-03-27T16:58:58.438Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-015229-a6374664",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:02:38.206Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020228-5408331f",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -204,17 +456,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:41:43.282Z",
+    "updated_at": "2026-03-27T17:05:16.841Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020228-5408331f",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -246,17 +516,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:42:32.226Z",
+    "updated_at": "2026-03-27T17:06:20.689Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020228-5408331f",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:06:32.913Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -288,17 +636,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:43:30.048Z",
+    "updated_at": "2026-03-27T17:08:52.363Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -330,17 +696,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:44:20.869Z",
+    "updated_at": "2026-03-27T17:10:01.589Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:12:11.790Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -372,17 +816,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:45:19.620Z",
+    "updated_at": "2026-03-27T17:14:51.924Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -414,17 +876,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:46:11.014Z",
+    "updated_at": "2026-03-27T17:16:07.770Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:16:21.784Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -456,17 +996,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:47:06.983Z",
+    "updated_at": "2026-03-27T17:19:49.074Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -498,17 +1056,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:47:59.847Z",
+    "updated_at": "2026-03-27T17:21:13.144Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:23:21.666Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -540,17 +1176,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "app-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:48:59.652Z",
+    "updated_at": "2026-03-27T17:27:25.110Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -582,17 +1236,95 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:49:47.546Z",
+    "updated_at": "2026-03-27T17:28:41.215Z",
+    "axis": "engine-slice",
+    "candidate": "playable-engine-slice",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
+    "payload": {
+      "lane": "engine-slice",
+      "engineFileCount": 21,
+      "coreModules": [
+        "engine/core/balance-config.js",
+        "engine/core/buildings.js",
+        "engine/core/character-manager.js",
+        "engine/core/combat.js",
+        "engine/core/diplomacy.js",
+        "engine/core/domestic.js",
+        "engine/core/enhanced-combat.js",
+        "engine/core/espionage.js",
+        "engine/core/event-engine.js",
+        "engine/core/game-state.js",
+        "engine/core/growth.js",
+        "engine/core/items.js",
+        "engine/core/logistics.js",
+        "engine/core/skills.js",
+        "engine/core/tech-tree.js",
+        "engine/core/troop-movement.js",
+        "engine/core/turn-loop.js"
+      ],
+      "scenario": {
+        "id": "208_red_cliffs",
+        "factionCount": 5,
+        "cityCount": 43,
+        "characterCount": 123,
+        "connectionCount": 91
+      },
+      "keyArtifacts": {
+        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
+      }
+    }
+  },
+  {
+    "updated_at": "2026-03-27T17:28:55.143Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -624,17 +1356,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:50:46.155Z",
+    "updated_at": "2026-03-27T17:31:42.950Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
     "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -666,17 +1416,35 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "theme-independence",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:51:34.767Z",
+    "updated_at": "2026-03-27T17:32:51.620Z",
     "axis": "engine-slice",
     "candidate": "playable-engine-slice",
-    "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "pass_index": 11,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
     "payload": {
       "lane": "engine-slice",
       "engineFileCount": 21,
@@ -708,344 +1476,26 @@
       },
       "keyArtifacts": {
         "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:52:32.563Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
+        "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+        "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
       },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:53:23.313Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:54:21.710Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:55:12.799Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:56:10.668Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:57:02.040Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-24T22:58:00.942Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 7,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
-      }
-    }
-  },
-  {
-    "updated_at": "2026-03-26T09:13:46.945Z",
-    "axis": "engine-slice",
-    "candidate": "playable-engine-slice",
-    "pass_index": 1,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260326-181346",
-    "payload": {
-      "lane": "engine-slice",
-      "engineFileCount": 21,
-      "coreModules": [
-        "engine/core/balance-config.js",
-        "engine/core/buildings.js",
-        "engine/core/character-manager.js",
-        "engine/core/combat.js",
-        "engine/core/diplomacy.js",
-        "engine/core/domestic.js",
-        "engine/core/enhanced-combat.js",
-        "engine/core/espionage.js",
-        "engine/core/event-engine.js",
-        "engine/core/game-state.js",
-        "engine/core/growth.js",
-        "engine/core/items.js",
-        "engine/core/logistics.js",
-        "engine/core/skills.js",
-        "engine/core/tech-tree.js",
-        "engine/core/troop-movement.js",
-        "engine/core/turn-loop.js"
-      ],
-      "scenario": {
-        "id": "208_red_cliffs",
-        "factionCount": 5,
-        "cityCount": 43,
-        "characterCount": 123,
-        "connectionCount": 91
-      },
-      "keyArtifacts": {
-        "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-        "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-        "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "autotest",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   }

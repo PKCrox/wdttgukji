@@ -1,10 +1,10 @@
 [
   {
-    "updated_at": "2026-03-24T22:13:59.148Z",
+    "updated_at": "2026-03-26T16:24:30.628Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071335",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/pass-runs/adaptive-run-20260327-012403",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -17,19 +17,19 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
+        "htmlSha1": "4f50ef94d9f993e12d704b026d58e75e643037e8",
+        "appSha1": "d0488fbb1ac7a63104fdd7bcf638ee19a8d218e6",
         "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
         "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:15:49.482Z",
+    "updated_at": "2026-03-26T16:36:31.450Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071525",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/pass-runs/adaptive-run-20260327-013519",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -42,19 +42,19 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
+        "htmlSha1": "3fa76ed02395a82cb28886dddf2124be89a087e5",
+        "appSha1": "5892a4268835a6a0c1fd7365177b42e5814b1a3f",
+        "actionPanelSha1": "52f1c908bb74a50bcf5fb9e39928b6978b80bf75",
         "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:17:38.231Z",
+    "updated_at": "2026-03-26T17:12:05.059Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071714",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/pass-runs/adaptive-run-20260327-021137",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -67,19 +67,19 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "b4c01e336cfb55433ba8fa70300590bb7bae0e86",
+        "appSha1": "6f73de1eb79851d2f5fce3f25c041339c2666919",
+        "actionPanelSha1": "f08338585c9e30d69d291de4942dff44384c823a",
+        "styleSha1": "46e9f870aab0e7cd02702c292173383a0665d02e"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:19:25.347Z",
+    "updated_at": "2026-03-26T18:04:53.786Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-071901",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260327-030422-20d277a8",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -92,19 +92,19 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "25f783e6e5f1113ebf7e3bbcdafe261d490098c2",
+        "appSha1": "6f73de1eb79851d2f5fce3f25c041339c2666919",
+        "actionPanelSha1": "f08338585c9e30d69d291de4942dff44384c823a",
+        "styleSha1": "46e9f870aab0e7cd02702c292173383a0665d02e"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:21:14.267Z",
+    "updated_at": "2026-03-26T18:34:31.987Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072050",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260327-033224-b6672791",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -117,19 +117,19 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "97fd57718743cc28565fd903162405612194902e",
+        "appSha1": "6f73de1eb79851d2f5fce3f25c041339c2666919",
+        "actionPanelSha1": "53a24db81abdb1a65cfe27a2989b5f0d1f9a5b58",
+        "styleSha1": "46e9f870aab0e7cd02702c292173383a0665d02e"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:23:03.545Z",
+    "updated_at": "2026-03-26T18:52:52.827Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072239",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260327-035147-ebdc63c5",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -142,19 +142,19 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "f38211408379f1cc27744e8f6a56b584a6fa2b38",
+        "appSha1": "3cc09bc30ad87ae5532e5948d20f0c5382c75b00",
+        "actionPanelSha1": "53a24db81abdb1a65cfe27a2989b5f0d1f9a5b58",
+        "styleSha1": "cdf95dbdb5cb93d2c27d729f1d8ee6a9920bde50"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:24:49.680Z",
+    "updated_at": "2026-03-27T16:21:53.248Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072426",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-011205-bc0469a0",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -167,19 +167,39 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "d694a601fa1355a965c99da4eaffa421853efd01",
+        "appSha1": "7f11d61d6650acf42b89242c8d94608a370cc996",
+        "actionPanelSha1": "c722f2d5435b98b3d5322206533bf86ec5877f28",
+        "styleSha1": "14e640c982cd0ac1c088ce97361e64fec063722c"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "map-art:0.5, qa-debt:0.5, ux-first-frame:0.5",
+        "top_urgency_lane": "map-art",
+        "top_urgency_value": 0.5,
+        "top_urgency_tie": [
+          "map-art",
+          "qa-debt",
+          "ux-first-frame"
+        ],
+        "top_urgency_tie_text": "map-art, qa-debt, ux-first-frame (0.5)",
+        "top_urgency_tie_count": 3,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (3-way tie)",
+        "route_summary": "top urgency lane: map-art (0.5) · tie map-art, qa-debt, ux-first-frame (0.5) · tied (3-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:26:39.513Z",
+    "updated_at": "2026-03-27T16:27:14.469Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072615",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-012413-88fb6245",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -192,19 +212,38 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "1668cb13298fa5593ff997f4b0c52f8bde476e53",
+        "appSha1": "5a019ad43ea43da7e29b7febafcf9941ff7fd6cc",
+        "actionPanelSha1": "c722f2d5435b98b3d5322206533bf86ec5877f28",
+        "styleSha1": "767cb94ff863a8e98717520bcaf74da2295a169e"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, theme-independence:1, autotest:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface",
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "app-surface, theme-independence (1)",
+        "top_urgency_tie_count": 2,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "tied",
+        "route_confidence_raw": "tied",
+        "route_confidence_text": "tied (2-way tie)",
+        "route_summary": "top urgency lane: app-surface (1) · tie app-surface, theme-independence (1) · tied (2-way tie) · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:28:25.281Z",
+    "updated_at": "2026-03-27T16:31:52.344Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072801",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-012928-6daca71c",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -217,19 +256,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "29ce08994c41ca5ed479df3d34ba05a1f6b36989",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "c722f2d5435b98b3d5322206533bf86ec5877f28",
+        "styleSha1": "240963875046904b30c9f5a0792c8126ec60009a"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:30:14.597Z",
+    "updated_at": "2026-03-27T16:36:14.146Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-072951",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-012928-6daca71c",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -242,19 +299,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "b6511b21b8e7d398c125640976dde2fb53412bc5",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "cd6405905822a4da43085cd5db90b58eaaf981cb",
+        "styleSha1": "240963875046904b30c9f5a0792c8126ec60009a"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:32:04.014Z",
+    "updated_at": "2026-03-27T16:40:09.232Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073140",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-013618-588ee453",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -267,19 +342,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "79561af502d111779f0a70f0403351f4e1d370b3",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "673ca671d39f9370862443624d75b66e2998c8b0",
+        "styleSha1": "2795a755bba120b35d80fbc370c0ee4489d1c14e"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:33:51.815Z",
+    "updated_at": "2026-03-27T16:43:33.973Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073328",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014220-97bffee3",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -292,19 +385,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "6337751232c52627dfda5ff0927549340481892b",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "1ddd9d4f402b8cbc29342a929e7b506148775e0c",
+        "styleSha1": "2795a755bba120b35d80fbc370c0ee4489d1c14e"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:35:38.895Z",
+    "updated_at": "2026-03-27T16:47:18.094Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073515",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014220-97bffee3",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -317,19 +428,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "10755d898a74eb4693134e6f274e420528f32bf3",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "95ad531502baff446fa41956e5db425bf2ac0c07",
+        "styleSha1": "2795a755bba120b35d80fbc370c0ee4489d1c14e"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:37:24.667Z",
+    "updated_at": "2026-03-27T16:50:25.225Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073700",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-014721-fe1797c4",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -342,19 +471,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "f4097d1791b607cd2e48b8fcff74975f95cb9725",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "9bd3d566a494ee662d49830c34f1390620f9c817",
+        "styleSha1": "d485ae62342f75c89bc8b98d1267b60bee033a2c"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:39:13.696Z",
+    "updated_at": "2026-03-27T16:56:56.571Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-073850",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-015229-a6374664",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -367,19 +514,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "3e700ff40a54fe9fe76d4f35fc3300a08268bf1b",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "50c661aff24c98d249bf20d79409071da90ca98c",
+        "styleSha1": "40f1498cf9de5c8fae7bde45e6b5961257a92568"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:41:02.389Z",
+    "updated_at": "2026-03-27T17:02:25.247Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074038",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-015229-a6374664",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -392,19 +557,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "39ee85bc922359d696d795a375a8ef3d44190322",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "17cfd2c7a70ad36f9c03732da63b125a61ffbf54",
+        "styleSha1": "40f1498cf9de5c8fae7bde45e6b5961257a92568"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:42:47.866Z",
+    "updated_at": "2026-03-27T17:04:20.102Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074224",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020228-5408331f",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -417,19 +600,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "21dd129a0ed2e1fffe9ff28514dd7076071c5255",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "17f4ad1a5579a54cac575a9f976fb8a0ad66009c",
+        "styleSha1": "40f1498cf9de5c8fae7bde45e6b5961257a92568"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:44:36.629Z",
+    "updated_at": "2026-03-27T17:07:50.712Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074413",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -442,19 +643,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "e57eaee7e0995dbc8f722778f52901084bdd978b",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "b7447a7ba7b38c96d456f4f138700fb3b0df31c1",
+        "styleSha1": "40f1498cf9de5c8fae7bde45e6b5961257a92568"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:46:26.851Z",
+    "updated_at": "2026-03-27T17:11:57.740Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074603",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-020623-66201a10",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -467,19 +686,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "4c0200a1ebe3e36bfe7aa1987004933c1782cd25",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "304dd03a7f5a4639ea77f6d767ae0cb06200b2a4",
+        "styleSha1": "64006d7117ec8d5dfb2386349b87e46023e44b6f"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:48:15.571Z",
+    "updated_at": "2026-03-27T17:13:45.218Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074751",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021201-4f914a4f",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -492,19 +729,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "81670f613cb92bdf9b0eae00a49b4eb92f93e29d",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "4e45c7ec9ee3feaaffa457bcf0acf83cf6137505",
+        "styleSha1": "fe46618e2881b0d1fef32f089f1f07daab7e612b"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:50:03.530Z",
+    "updated_at": "2026-03-27T17:18:39.655Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-074939",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -517,19 +772,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "76d4387a7b4f7159cf759e91b4c641f0df197baf",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "0a0b8fac19b65811e92b59abb831862f2174139b",
+        "styleSha1": "fcfc95d7e1146e64aa6c5eed7d97e374a9f61522"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:51:50.652Z",
+    "updated_at": "2026-03-27T17:23:07.890Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075126",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-021611-740928f3",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -542,19 +815,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "e770ab1cf51e55fe328e0e74fc542197ef569122",
+        "appSha1": "3d5880bac1e946e519879cb49f318260d7bb38a3",
+        "actionPanelSha1": "1a3d7161e1dbbbc8a92e18f15eacce2292bffa0b",
+        "styleSha1": "fcfc95d7e1146e64aa6c5eed7d97e374a9f61522"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:53:39.245Z",
+    "updated_at": "2026-03-27T17:26:18.254Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075315",
+    "pass_index": 4,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022311-8521945b",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -567,19 +858,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "7493f3b3597656fbaf194c4342cf8f6255262e3c",
+        "appSha1": "d0d508764cc4041b9cfad05d12dbbb516ec03293",
+        "actionPanelSha1": "1a3d7161e1dbbbc8a92e18f15eacce2292bffa0b",
+        "styleSha1": "f252e8c600d264777f28f7a789b54ef78d217e7f"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "theme-independence:1, app-surface:0, autotest:0",
+        "top_urgency_lane": "theme-independence",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "theme-independence"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "content-pipeline",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: theme-independence (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:55:28.820Z",
+    "updated_at": "2026-03-27T17:30:36.082Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
     "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075504",
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -592,19 +901,37 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "ea7c413bac7a31e83e9dbbb1108d754b8f925aec",
+        "appSha1": "04613b06540600d7a22b53b9f9fd2ecb7aaa7490",
+        "actionPanelSha1": "1a3d7161e1dbbbc8a92e18f15eacce2292bffa0b",
+        "styleSha1": "f252e8c600d264777f28f7a789b54ef78d217e7f"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "design-surface",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   },
   {
-    "updated_at": "2026-03-24T22:57:17.678Z",
+    "updated_at": "2026-03-27T17:37:20.627Z",
     "axis": "app-surface",
     "candidate": "app-surface-evolution",
-    "pass_index": 3,
-    "run_dir": "/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654",
+    "pass_index": 12,
+    "run_dir": "/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac",
     "payload": {
       "lane": "app-surface",
       "screenIds": [
@@ -617,10 +944,28 @@
       "transitionCards": 2,
       "spotlightCards": 5,
       "keyArtifacts": {
-        "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-        "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-        "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-        "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+        "htmlSha1": "8b7803e40f9e988ce2b303aea116e9b9e2330dd2",
+        "appSha1": "ee5340a18f34a6e320f48da55f066d0058eb70d9",
+        "actionPanelSha1": "338126eed642dc4a0384ab4463aac1e5cf9e19a6",
+        "styleSha1": "f252e8c600d264777f28f7a789b54ef78d217e7f"
+      },
+      "route_context": {
+        "route_context_origin": "agent-routing-state",
+        "route_source": "agent-routing-state",
+        "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+        "top_urgency_lane": "app-surface",
+        "top_urgency_value": 1,
+        "top_urgency_tie": [
+          "app-surface"
+        ],
+        "top_urgency_tie_text": "none",
+        "top_urgency_tie_count": 1,
+        "primary_focus_axis": "engine-slice",
+        "focus_alignment": "aligned",
+        "route_confidence": "aligned",
+        "route_confidence_raw": "aligned",
+        "route_confidence_text": "aligned",
+        "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
       }
     }
   }

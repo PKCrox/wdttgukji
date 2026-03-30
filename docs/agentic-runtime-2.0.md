@@ -7,7 +7,7 @@
 - README의 핵심 축을 lane 단위로 운영한다.
 - pass는 task graph로 컴파일되고, worker가 분산 실행한다.
 - canonical state는 DB에 저장하고, 파일 출력은 export artifact로 유지한다.
-- app surface는 현재 rollout에서 mutation 금지다.
+- app surface는 기본 rollout에서는 mutation 금지다.
 
 ## 핵심 구성
 
@@ -30,6 +30,11 @@
 - `public/` 앱 표면은 현재 자동 변경 금지
 - app surface lane은 구조적으로 존재하지만, `WDTT_RUNTIME_MUTATION_MODE=full` 과 `WDTT_RUNTIME_ALLOW_APP_SURFACE=true`를 같이 열어야 dispatch된다
 - app surface lane을 열더라도 `docs/app-surface-mutation-contract.md`의 machine-managed 경로 밖은 수정하지 않는다
+- 현재 lightweight orchestrator 경로에서는 app-surface lane이 generated fragment 생성 + controlled HTML/CSS/JS block patch까지 수행한다
+- durable runtime도 `--include-hybrid` 또는 full app-surface policy가 열리면 동일한 hybrid lane을 dispatch한다
+- factory phase는 `WDTT_CODEX_FACTORY_ENABLED=true`일 때 local `codex exec` thread를 이어받아 오케스트레이션, QA, 정책, 레지스트리 품질을 직접 개선할 수 있다
+- durable game phase는 `WDTT_CODEX_AGENT_ENABLED=true`일 때 local `codex exec` thread를 이어받아 실제 Codex 추론을 edit hook로 태울 수 있다
+- 최근 `runtime-state`의 boost axis를 generated meta와 controlled patch 스타일 신호로 재사용한다
 
 ## 운영 커맨드
 
@@ -43,6 +48,7 @@
 
 - durable schema, queue, worker, review loop, export layer까지 구현
 - 기존 `adaptive-pass-runner`는 lightweight orchestrator로 유지
+- `app-surface` lane은 generated surface(`public/js|css|fragments/generated`)와 machine-managed core blocks(`index.html`, `style.css`, `app.js`, `action-panel.js`)를 함께 갱신한다
 - 새 runtime이 안정화되면 장기 런의 기본 엔트리포인트를 durable runtime으로 전환
 - `runs/`, `docs/automation-status/`, `scripts/orchestrate/generated/*.json`은 generated artifact로 간주하고 추적하지 않는다
 - `reviewInterval`마다 `runs/.../versions/` 아래에 버전 스냅샷이 자동 생성된다

@@ -47,6 +47,7 @@ Codex가 작업 전 참고해야 할 repo-local 에이전트 명세:
 - 밸런스 오토리서치: `ai/workflows/balance-loop.md`
 - 테마 일반화: `ai/workflows/theme-generalization.md`
 - UX 전용 루프: `ai/workflows/ux-slice-loop.md`
+- 게임 철학 계약: `docs/game-philosophy.md`
 - durable runtime 운영: `docs/agentic-runtime-2.0.md`
 - runtime 환경 변수: `docs/runtime-env.md`
 
@@ -68,3 +69,21 @@ Codex가 작업 전 참고해야 할 repo-local 에이전트 명세:
 - mutation policy 기본값은 `product-core`이며 `public/` app surface 자동 변경은 금지한다.
 - agent roster는 고정 명단이 아니라 메타 런 종료 시 gap/proposal artifact로 재검토된다.
 - agent registry는 메타 런 종료 후 자동 apply 단계로도 진화할 수 있으며, 변경 이력은 `docs/agent-registry-history/`에 남긴다.
+
+## Codex UI Guardrails
+
+`wdttgukji`의 UI/layout/copy/Playwright 작업은 아래 순서를 기본 계약으로 삼는다.
+
+- 작업 시작 전에 repo root를 다시 확인한다. 기준 경로는 `/Users/pkcmini/wdttgukji`다.
+- app surface를 만지기 전에 `docs/game-philosophy.md`를 먼저 기준으로 잡는다.
+- 기본 시작 명령은 `npm run ui:pass -- --scene start|battlefield|command`다.
+- 기본 검증 명령은 `npm run ui:pass:verify`다.
+- UI 패스는 먼저 `npm run qa:ui-preflight`로 시작한다.
+- 실브라우저 검증이 필요하면 `npm run qa:visible -- --scene start|battlefield|command`로 visible Playwright를 먼저 연다.
+- visible Playwright 세션은 기본적으로 하나만 유지한다. 기존 세션을 갈아끼울 때만 `--replace`를 쓴다.
+- app surface 전용 패스의 기본 specialist lead는 `koei-systems-designer`다.
+- 실행 셀은 `koei-systems-designer`, `ux-stage-director`, `map-art-director`, `engine-integrator`를 우선한다.
+- `content-planner`는 카피 정리용 보조다. 표면 철학의 리드가 아니다.
+- `qa-persona-simulator`는 first-frame fit, 맵 가독성, 장면 카피가 안정된 뒤의 플레이감 검증에만 올린다. 레이아웃 핫픽스의 1순위가 아니다.
+- 검증 순서는 `visible Playwright → 수정 → visible Playwright 재확인 → qa:slice/watch-app-surface`다.
+- 스크린샷과 headless QA는 회귀 증거다. 실브라우저 확인을 대체하지 않는다.

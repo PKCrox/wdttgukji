@@ -17,6 +17,7 @@
 - `public/js/action-panel.js`
 - `public/js/map-renderer.js`
 - `public/js/sidebar.js`
+- `public/js/presentation-meta.js`
 - `public/index.html`
 - `public/css/style.css`
 - `public/assets/maps/`
@@ -28,11 +29,29 @@
 
 ## 허용되는 작업
 
+- local Codex session을 이어받아 수행하는 app-surface agent edit
 - generated scene card fragment 갱신
 - generated CSS token/variant 갱신
 - generated UI summary module 갱신
-- 작전/전장/장면 흐름 관련 핵심 JS/CSS/HTML 수정
+- 작전/전장/장면 흐름 관련 핵심 JS/CSS/HTML의 machine-managed block 수정
 - 지도 베이스맵 및 전장 오버레이 관련 자산 수정
+- 하나의 pass 안에서 완결 가능한 bounded feature-sized app interaction 추가
+  - 예: 도시 선택 흐름 강화, command rail 확장, tactical overlay, keyboard control, war-room briefing 개선
+  - 단, 허용 경로 안에서 끝나고 outer QA gate를 통과할 수 있어야 한다
+
+## 현재 구현된 machine-managed block
+
+- `public/index.html`
+  - generated run/meta block
+  - generated war room / command slot mount point
+- `public/css/style.css`
+  - generated accent/style block
+- `public/js/app.js`
+  - war room generated runtime block
+- `public/js/action-panel.js`
+  - command panel generated runtime block
+
+위 블록 바깥의 사람 코드는 app-surface controlled patch가 직접 덮어쓰지 않는다.
 
 ## 금지되는 작업
 
@@ -40,6 +59,7 @@
 - unrelated 서비스의 UI 파일 수정
 - 계약 없이 대규모 경로 이동/삭제
 - 사람 검토 없이 무차별적 전체 재작성
+- QA gate 없이 죽은 shell 기능만 남기는 반쪽짜리 feature 추가
 
 ## 활성화 조건
 
@@ -59,6 +79,13 @@
 
 ## 향후 확장 방향
 
-- generated fragment를 앱이 읽는 include 구조 도입
-- generated CSS layer를 `@layer generated`로 분리
-- generated JS module을 앱 오케스트레이터가 안전하게 import
+- generated fragment를 더 많은 장면 카드와 briefing rail로 확장
+- durable runtime에서 `WDTT_RUNTIME_MUTATION_MODE=full` + `WDTT_RUNTIME_ALLOW_APP_SURFACE=true` 또는 `--include-hybrid`로 hybrid lane을 더 공격적으로 운영
+- app-surface game phase에서 local `codex exec resume` thread를 더 안정적으로 lane 전용 세션으로 고정
+- generated JS block와 app surface QA를 lane fitness 신호와 더 강하게 연결
+- 작은 polish lane을 넘어서 bounded feature lane으로 운영하되, inner hook는 `node --check` 중심으로 닫고 최종 `qa:slice`는 outer durable gate 하나로 통일
+
+## 관련 factory hook
+
+- factory phase의 local Codex hook는 별도 세션으로 운영한다
+- factory hook는 orchestration/QA/policy/docs를 우선 만지고, app-surface core 파일은 직접 수정하지 않는다

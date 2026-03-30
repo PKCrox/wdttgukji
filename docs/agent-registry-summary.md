@@ -1,8 +1,8 @@
 # Agent Registry Summary
 
-- version: 320
-- updated_at: 2026-03-24T22:58:43.110Z
-- last_upgrade_run: /Users/pkc/wdttgukji/runs/pass-runs/meta-run-20260325-075315
+- version: 655
+- updated_at: 2026-03-27T18:20:33.849Z
+- last_upgrade_run: /Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031501-3518506e
 
 ## Agents
 
@@ -126,5 +126,7 @@
 
 ## Pending Agents
 
-- none
+- ux-first-frame: Create a dedicated ux-first-frame specialist (pending)
+- map-art: Create a dedicated map-art specialist (pending)
+- qa-debt: Create a dedicated qa-debt specialist (pending)
 

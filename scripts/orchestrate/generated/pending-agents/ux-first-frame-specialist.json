@@ -1,0 +1,20 @@
+{
+  "agent_id": "ux-first-frame-specialist",
+  "lane": "ux-first-frame",
+  "title": "Create a dedicated ux-first-frame specialist",
+  "rationale": "ux-first-frame has no explicit ownership in the registry.",
+  "suggested_contract": {
+    "lanes": [
+      "ux-first-frame"
+    ],
+    "mutation_scope": "workflow",
+    "fit_signals": [
+      "lane_coverage",
+      "gate_quality",
+      "handoff_quality"
+    ]
+  },
+  "status": "pending",
+  "proposed_at": "2026-03-26T18:40:57.328Z",
+  "target_doc_path": "ai/agents/pending/ux-first-frame-specialist.md"
+}

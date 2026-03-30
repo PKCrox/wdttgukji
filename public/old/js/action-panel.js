@@ -23,10 +23,18 @@ import { moveArmy } from '../../engine/core/troop-movement.js';
 import { previewFoodTransport, transportFood, previewFoodTrade, tradeFood, getTradeSeason } from '../../engine/core/logistics.js';
 import { addExperienceFromSource } from '../../engine/core/growth.js';
 import { ITEMS } from '../../engine/core/items.js';
-import { COMMAND_SCENES, getFactionSealLabel } from './presentation-meta.js';
+import { COMMAND_SCENES, getFactionDoctrine, getFactionSealLabel, getFactionSurfaceTheme } from './presentation-meta.js';
 import { getOpeningActBeat } from './campaign-config.js';
+import { buildBattlefieldDirectorPacket, buildCommandDirectorPacket } from './turn-director.js';
 
 const SCENE_ORDER = ['government', 'military', 'diplomacy', 'personnel'];
+
+function joinCopyParts(...parts) {
+  return parts
+    .map((part) => `${part || ''}`.trim())
+    .filter(Boolean)
+    .join(' ');
+}
 
 export class ActionPanel {
   constructor() {
@@ -38,9 +46,19 @@ export class ActionPanel {
     this.tabBar = document.getElementById('action-tab-bar');
     this.titleEl = document.getElementById('action-panel-title');
     this.captionEl = document.getElementById('command-city-caption');
+    this.bridgeEl = document.getElementById('command-bridge');
     this.summaryEl = document.getElementById('command-city-summary');
+    this.sheetSurfaceEl = document.getElementById('command-sheet-surface');
+    this.candidateSheetEl = document.getElementById('command-candidate-sheet');
+    this.candidateTitleEl = document.getElementById('command-candidate-title');
+    this.candidateCopyEl = document.getElementById('command-candidate-copy');
+    this.candidateBadgeEl = document.getElementById('command-candidate-badge');
+    this.candidateLiveEl = document.getElementById('command-candidate-live');
+    this.sheetBodyEl = document.getElementById('command-sheet-body');
     this.previewEl = document.getElementById('command-preview');
+    this.sealDocketEl = document.getElementById('command-seal-docket');
     this.selectionStatusEl = document.getElementById('command-selection-status');
+    this.keyHintEl = document.getElementById('command-key-hint');
     this.confirmButton = document.getElementById('action-panel-confirm');
     this.cancelButton = document.getElementById('action-panel-cancel');
     this.onAction = null;
@@ -49,23 +67,70 @@ export class ActionPanel {
     this._cityId = null;
     this._state = null;
     this._pendingAction = null;
+    this._previewAction = null;
     this._entries = [];
     this._openingContext = { active: false, turn: 1, factionId: null };
     this._previewTransitionTimer = null;
     this._sceneTransitionTimer = null;
+    this._visibleScenes = [];
+    this._recommendedScene = null;
+    this._sectionButtons = [];
+    this._sceneSections = [];
+    this._sectionResetButton = null;
+    this._focusedSectionId = null;
+    this._primeSelectionOnNextRender = false;
+    this._activeDirector = null;
+    this._activeBattlefieldDirector = null;
 
     document.getElementById('action-panel-close').addEventListener('click', () => this.hide());
     document.getElementById('command-modal-backdrop').addEventListener('click', () => this.hide());
-    this.confirmButton?.addEventListener('click', () => this.confirmSelection());
+    this.confirmButton?.addEventListener('click', () => {
+      if (this._pendingAction) this.confirmSelection();
+      else this._promotePreviewAction();
+    });
     this.cancelButton?.addEventListener('click', () => this.cancelSelection());
+    this.buttons?.addEventListener('scroll', () => this._syncSceneSectionRail());
     document.addEventListener('keydown', (e) => {
       if (!this.isOpen()) return;
       if (e.key === 'Escape') {
         e.preventDefault();
         this.cancelSelection();
+      } else if (this._isRecommendedSceneEvent(e)) {
+        if (!this._recommendedScene || this._recommendedScene === this._activeScene) return;
+        e.preventDefault();
+        this._activeScene = this._recommendedScene;
+        this._pendingAction = null;
+        this._previewAction = null;
+        this._primeSelectionOnNextRender = true;
+        this._render(this._cityId, this._state);
+      } else if (this._isSectionCycleEvent(e)) {
+        const direction = e.key === 'ArrowRight' ? 1 : -1;
+        if (!this._stepSection(direction)) return;
+        e.preventDefault();
+      } else if (this._isSceneCycleEvent(e)) {
+        const direction = e.key === 'ArrowRight' ? 1 : -1;
+        if (!this._stepScene(direction)) return;
+        e.preventDefault();
+      } else if (this._isSceneHotkeyEvent(e)) {
+        const sceneIndex = Number.parseInt(e.key, 10) - 1;
+        const sceneId = this._visibleScenes[sceneIndex];
+        if (!sceneId || sceneId === this._activeScene) return;
+        e.preventDefault();
+        this._activeScene = sceneId;
+        this._pendingAction = null;
+        this._previewAction = null;
+        this._primeSelectionOnNextRender = true;
+        this._render(this._cityId, this._state);
+      } else if (this._isEntryCycleEvent(e)) {
+        const direction = e.key === 'ArrowDown' ? 1 : -1;
+        if (!this._stepEntry(direction)) return;
+        e.preventDefault();
       } else if (e.key === 'Enter' && this._pendingAction && !this.confirmButton.disabled) {
         e.preventDefault();
         this.confirmSelection();
+      } else if (e.key === 'Enter' && this._previewAction) {
+        e.preventDefault();
+        this._promotePreviewAction();
       }
     });
   }
@@ -79,6 +144,7 @@ export class ActionPanel {
   }
 
   setContext(cityId, state) {
+    const previousCityId = this._cityId;
     this._cityId = cityId;
     this._state = state;
     if (!this.isOpen()) return;
@@ -87,6 +153,11 @@ export class ActionPanel {
       return;
     }
     this._pendingAction = null;
+    this._previewAction = null;
+    if (previousCityId !== cityId) {
+      this._activeScene = this._getDefaultSceneForCity(cityId, state);
+      this._primeSelectionOnNextRender = true;
+    }
     this._render(cityId, state);
   }
 
@@ -98,15 +169,20 @@ export class ActionPanel {
     };
   }
 
-  open(cityId = this._cityId, state = this._state, sceneKey = this._activeScene) {
+  open(cityId = this._cityId, state = this._state, sceneKey = null) {
     if (!cityId || !state?.cities?.[cityId]) return false;
+    const previousCityId = this._cityId;
     this._cityId = cityId;
     this._state = state;
     const openingScene = this._openingContext.active && this._openingContext.factionId
       ? getOpeningActBeat(this._openingContext.factionId, this._openingContext.turn)?.preferredScene
       : null;
-    this._activeScene = sceneKey || openingScene || this._activeScene;
+    this._activeScene = sceneKey
+      || openingScene
+      || (previousCityId !== cityId ? this._getDefaultSceneForCity(cityId, state) : this._activeScene);
     this._pendingAction = null;
+    this._previewAction = null;
+    this._primeSelectionOnNextRender = true;
     this._render(cityId, state);
     this.modal.classList.remove('hidden');
     return true;
@@ -114,7 +190,9 @@ export class ActionPanel {
 
   hide() {
     this.modal.classList.add('hidden');
+    this.modal.dataset.playerFaction = 'neutral';
     this._pendingAction = null;
+    this._previewAction = null;
     this._entries = [];
     clearTimeout(this._previewTransitionTimer);
     clearTimeout(this._sceneTransitionTimer);
@@ -122,7 +200,35 @@ export class ActionPanel {
     this.contentArea?.classList.remove('scene-switching');
     this.buttons?.classList.remove('scene-switching');
     this.tabBar?.classList.remove('scene-switching');
-    this.stageStrip?.classList.remove('decision-mode');
+    this._setStageMode('sheet');
+    this._visibleScenes = [];
+    this._recommendedScene = null;
+    this._sectionButtons = [];
+    this._sceneSections = [];
+    this._sectionResetButton = null;
+    this._focusedSectionId = null;
+    this._primeSelectionOnNextRender = false;
+    this._activeDirector = null;
+    this._activeBattlefieldDirector = null;
+    if (this.bridgeEl) this.bridgeEl.innerHTML = '';
+    if (this.sheetBodyEl) delete this.sheetBodyEl.dataset.state;
+    if (this.sheetSurfaceEl) delete this.sheetSurfaceEl.dataset.state;
+    if (this.sheetSurfaceEl) delete this.sheetSurfaceEl.dataset.scene;
+    if (this.candidateSheetEl) delete this.candidateSheetEl.dataset.state;
+    if (this.candidateSheetEl) delete this.candidateSheetEl.dataset.scene;
+    if (this.buttons) delete this.buttons.dataset.state;
+    if (this.buttons) delete this.buttons.dataset.scene;
+    if (this.sealDocketEl) this.sealDocketEl.innerHTML = '';
+    if (this.candidateTitleEl) {
+      this.candidateTitleEl.textContent = '카드를 고르면 턴 결정이 바로 확정 대기 상태로 올라옵니다';
+    }
+    if (this.candidateCopyEl) {
+      this.candidateCopyEl.textContent = '핵심 카드 하나를 눌러 이번 턴 결정을 올리고, 같은 패널에서 바로 확정합니다.';
+    }
+    if (this.candidateBadgeEl) {
+      this.candidateBadgeEl.textContent = '선택 대기';
+    }
+    if (this.candidateLiveEl) this.candidateLiveEl.innerHTML = '';
   }
 
   isOpen() {
@@ -132,10 +238,59 @@ export class ActionPanel {
   cancelSelection() {
     if (this._pendingAction) {
       this._pendingAction = null;
+      this._previewAction = null;
+      this._refreshSelectionUI();
+      return;
+    }
+    if (this._previewAction) {
+      this._previewAction = null;
       this._refreshSelectionUI();
       return;
     }
     this.hide();
+  }
+
+  _promotePreviewAction() {
+    if (!this._previewAction || this._previewAction.disabled) return false;
+    this._pendingAction = this._previewAction;
+    this._refreshSelectionUI();
+    return true;
+  }
+
+  _jumpToStage(stage) {
+    if (stage === 'brief') {
+      if (!this._pendingAction && !this._previewAction && !this._focusedSectionId) return false;
+      this._pendingAction = null;
+      this._previewAction = null;
+      if (this._focusedSectionId) {
+        this._focusedSectionId = null;
+        const scene = this.buttons?.querySelector('.command-scene');
+        if (scene instanceof HTMLElement) {
+          this._applySectionFocus(scene);
+          this._syncSceneSectionRail();
+        }
+      }
+      this._refreshSelectionUI();
+      return true;
+    }
+    if (stage === 'preview') {
+      if (this._pendingAction) {
+        this._previewAction = this._pendingAction;
+        this._pendingAction = null;
+      } else {
+        if (this._previewAction) return false;
+        const firstEntry = this._getFirstSelectableEntry();
+        if (!firstEntry) return false;
+        this._previewAction = firstEntry;
+      }
+      this._refreshSelectionUI();
+      return true;
+    }
+    if (stage === 'decision') {
+      if (this._pendingAction) return false;
+      return this._promotePreviewAction();
+    }
+    return false;
   }
 
   confirmSelection() {
@@ -143,10 +298,40 @@ export class ActionPanel {
     const success = this.onAction(this._pendingAction.actionType, this._pendingAction.params);
     if (success === false) return false;
     this._pendingAction = null;
+    this._previewAction = null;
+    this._primeSelectionOnNextRender = false;
     if (this.isOpen() && this._cityId && this._state?.cities?.[this._cityId]) {
       this._render(this._cityId, this._state);
     }
     return true;
+  }
+
+  switchScene(sceneKey) {
+    if (!sceneKey || !this._cityId || !this._state?.cities?.[this._cityId]) return false;
+    const city = this._state.cities[this._cityId];
+    const scenes = city.owner === this._state.player.factionId
+      ? SCENE_ORDER
+      : SCENE_ORDER.filter((sceneId) => sceneId !== 'government' && sceneId !== 'personnel');
+    if (!scenes.includes(sceneKey)) return false;
+    this._activeScene = sceneKey;
+    this._pendingAction = null;
+    this._previewAction = null;
+    this._primeSelectionOnNextRender = true;
+    if (this.isOpen()) this._render(this._cityId, this._state);
+    return true;
+  }
+
+  _seedDecisionSelection() {
+    if (!this._primeSelectionOnNextRender || this._pendingAction || this._previewAction) {
+      this._primeSelectionOnNextRender = false;
+      return;
+    }
+    const firstEntry = this._getFirstSelectableEntry();
+    if (firstEntry) {
+      this._pendingAction = firstEntry;
+      this._previewAction = firstEntry;
+    }
+    this._primeSelectionOnNextRender = false;
   }
 
   _render(cityId, state) {
@@ -154,6 +339,7 @@ export class ActionPanel {
     if (!city) return this.hide();
 
     const playerFactionId = state.player.factionId;
+    const theme = getFactionSurfaceTheme(playerFactionId);
     const isOwned = city.owner === playerFactionId;
     const scenes = isOwned
       ? SCENE_ORDER
@@ -163,38 +349,78 @@ export class ActionPanel {
     const sceneMeta = COMMAND_SCENES[activeScene];
     const ownerName = city.owner ? state.factions[city.owner]?.name || '' : '무주지';
     const forecast = getCityForecast(cityId, state);
+    const recommendedScene = this._getRecommendedSceneForCity(cityId, state, scenes);
+    const director = buildCommandDirectorPacket({
+      cityId,
+      sceneId: activeScene,
+      state,
+      connections: this._connections,
+    });
+    const battlefieldDirector = buildBattlefieldDirectorPacket({
+      cityId,
+      state,
+      scenario: { connections: this._connections },
+    });
 
     this._activeScene = activeScene;
+    this._activeDirector = director;
+    this._activeBattlefieldDirector = battlefieldDirector;
+    this._visibleScenes = scenes;
+    this._recommendedScene = recommendedScene;
     this._entries = [];
+    this.modal.dataset.playerFaction = theme.id;
     this.panel.dataset.scene = activeScene;
     this.contentArea.dataset.scene = activeScene;
     this.buttons.dataset.scene = activeScene;
     this.previewEl.dataset.scene = activeScene;
 
     this.titleEl.innerHTML = `
-      <span class="command-scene-kicker">${sceneMeta.kicker}</span>
+      <span class="command-scene-kicker">${theme.commandKicker} · ${sceneMeta.kicker}</span>
       <span class="command-scene-title-line">
-        <span class="command-scene-seal">${getFactionSealLabel(city.owner)}</span>
-        <span>${city.name}${ownerName ? ` — ${ownerName}` : ''}</span>
+        <span>${city.name} ${sceneMeta.name}</span>
       </span>
     `;
-    this.captionEl.textContent = isOwned ? sceneMeta.captionOwned : sceneMeta.captionForeign;
-    this.summaryEl.innerHTML = renderCommandSummary(city, ownerName, forecast, state);
+    this.captionEl.textContent = director.subhead || (isOwned ? sceneMeta.captionOwned : sceneMeta.captionForeign);
+    if (this.bridgeEl) {
+      this.bridgeEl.innerHTML = renderCommandBridge({
+        city,
+        sceneId: activeScene,
+        director,
+        battlefieldDirector,
+        recommendedScene,
+      });
+      this.bridgeEl.dataset.scene = activeScene;
+      this.bridgeEl.dataset.tone = isOwned ? 'own' : city.owner ? 'hostile' : 'neutral';
+    }
+    this.summaryEl.innerHTML = renderCommandSummary(city, ownerName, forecast, state, director);
+    this.summaryEl.dataset.scene = activeScene;
+    this.summaryEl.dataset.tone = isOwned ? 'own' : city.owner ? 'hostile' : 'neutral';
     this.tabBar.innerHTML = '';
     this.buttons.innerHTML = '';
 
-    for (const sceneId of scenes) {
+    scenes.forEach((sceneId, sceneIndex) => {
       const meta = COMMAND_SCENES[sceneId];
       const button = document.createElement('button');
       button.className = `scene-nav-button${sceneId === activeScene ? ' active' : ''}`;
-      button.innerHTML = `<span class="scene-nav-name">${meta.name}</span><span class="scene-nav-kicker">${meta.kicker}</span>`;
+      button.innerHTML = `
+        <span class="scene-nav-topline">
+          <span class="scene-nav-name">
+            <span class="scene-nav-hotkey">${sceneIndex + 1}</span>
+            <span>${meta.name}</span>
+          </span>
+          ${sceneId === recommendedScene ? '<span class="scene-nav-badge">권장 · R</span>' : ''}
+        </span>
+        <span class="scene-nav-kicker">${meta.kicker}</span>
+      `;
       button.addEventListener('click', () => {
         this._activeScene = sceneId;
         this._pendingAction = null;
+        this._previewAction = null;
+        this._primeSelectionOnNextRender = true;
         this._render(cityId, state);
       });
       this.tabBar.appendChild(button);
-    }
+    });
 
     const scene = document.createElement('div');
     scene.className = `command-scene command-scene-${activeScene}`;
@@ -215,6 +441,8 @@ export class ActionPanel {
         break;
     }
     this.buttons.appendChild(scene);
+    this._mountSceneSectionRail(scene);
+    this._seedDecisionSelection();
     if (sceneChanged) {
       clearTimeout(this._sceneTransitionTimer);
       this.contentArea.classList.remove('scene-switching');
@@ -233,48 +461,510 @@ export class ActionPanel {
     this._refreshSelectionUI();
   }
 
-  _refreshSelectionUI() {
-    const activeKey = this._pendingAction?.key;
-    this.buttons.querySelectorAll('[data-command-key]').forEach((node) => {
-      node.classList.toggle('selected', node.dataset.commandKey === activeKey);
+  _getDefaultSceneForCity(cityId, state) {
+    const city = state?.cities?.[cityId];
+    if (!city) return this._activeScene || 'military';
+    return city.owner === state?.player?.factionId ? 'government' : 'military';
+  }
+
+  _isSceneHotkeyEvent(event) {
+    if (!/^[1-4]$/.test(event.key)) return false;
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return true;
+    if (target.closest('input, textarea, select, button, [contenteditable="true"]')) return false;
+    return true;
+  }
+
+  _isSceneCycleEvent(event) {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return false;
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return true;
+    if (target.closest('input, textarea, select, button, [contenteditable="true"]')) return false;
+    return true;
+  }
+
+  _isRecommendedSceneEvent(event) {
+    if (event.key.toLowerCase() !== 'r') return false;
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return true;
+    if (target.closest('input, textarea, select, button, [contenteditable="true"]')) return false;
+    return true;
+  }
+
+  _isEntryCycleEvent(event) {
+    if (event.key !== 'ArrowUp' && event.key !== 'ArrowDown') return false;
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return true;
+    if (target.closest('input, textarea, select, [contenteditable="true"]')) return false;
+    return true;
+  }
+
+  _isSectionCycleEvent(event) {
+    if (!event.shiftKey) return false;
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return false;
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return true;
+    if (target.closest('input, textarea, select, [contenteditable="true"]')) return false;
+    return true;
+  }
+
+  _stepScene(direction) {
+    if (this._visibleScenes.length < 2) return false;
+    const currentIndex = this._visibleScenes.indexOf(this._activeScene);
+    if (currentIndex === -1) return false;
+    const nextIndex = (currentIndex + direction + this._visibleScenes.length) % this._visibleScenes.length;
+    const nextScene = this._visibleScenes[nextIndex];
+    if (!nextScene || nextScene === this._activeScene) return false;
+    this._activeScene = nextScene;
+    this._pendingAction = null;
+    this._previewAction = null;
+    this._primeSelectionOnNextRender = true;
+    this._render(this._cityId, this._state);
+    return true;
+  }
+
+  _stepEntry(direction) {
+    const selectableEntries = this._entries.filter((entry) => (
+      !entry.disabled && (!this._focusedSectionId || entry.sectionId === this._focusedSectionId)
+    ));
+    if (!selectableEntries.length) return false;
+    const currentKey = this._pendingAction?.key || this._previewAction?.key;
+    const currentIndex = selectableEntries.findIndex((entry) => entry.key === currentKey);
+    const fallbackIndex = direction < 0 ? selectableEntries.length - 1 : 0;
+    const nextIndex = currentIndex >= 0
+      ? (currentIndex + direction + selectableEntries.length) % selectableEntries.length
+      : fallbackIndex;
+    if (this._pendingAction) {
+      this._pendingAction = selectableEntries[nextIndex];
+    } else {
+      this._previewAction = selectableEntries[nextIndex];
+    }
+    this._refreshSelectionUI();
+    return true;
+  }
+
+  _getFirstSelectableEntry() {
+    return this._entries.find((entry) => (
+      !entry.disabled && (!this._focusedSectionId || entry.sectionId === this._focusedSectionId)
+    )) || null;
+  }
+
+  _activateSection(section, behavior = 'smooth') {
+    if (!(section instanceof HTMLElement)) return false;
+    section.scrollIntoView({ block: 'start', behavior });
+    const firstCommandKey = section.dataset.firstCommandKey;
+    if (firstCommandKey) {
+      const firstEntry = this._entries.find((entry) => entry.key === firstCommandKey);
+      if (firstEntry) {
+        this._pendingAction = firstEntry;
+        this._refreshSelectionUI();
+      }
+    }
+    this._setActiveSectionRail(section.dataset.sectionId || '');
+    return true;
+  }
+
+  _stepSection(direction) {
+    if (this._sceneSections.length < 2) return false;
+    this._syncSceneSectionRail();
+    const activeId = this._sectionButtons.find((button) => button.classList.contains('active'))?.dataset.sectionId;
+    const currentIndex = Math.max(0, this._sceneSections.findIndex((section) => section.dataset.sectionId === activeId));
+    const nextIndex = (currentIndex + direction + this._sceneSections.length) % this._sceneSections.length;
+    return this._activateSection(this._sceneSections[nextIndex]);
+  }
+
+  _mountSceneSectionRail(scene) {
+    const hero = scene.querySelector('.scene-hero');
+    const sections = Array.from(scene.querySelectorAll('.command-scene-section[data-section-id]'));
+    scene.querySelector('.command-scene-section-rail')?.remove();
+    this._sceneSections = sections;
+    this._sectionButtons = [];
+    this._sectionResetButton = null;
+    if (sections.length < 2) return;
+
+    const rail = document.createElement('div');
+    rail.className = 'command-scene-section-rail';
+    const resetButton = document.createElement('button');
+    resetButton.type = 'button';
+    resetButton.className = 'command-scene-section-jump command-scene-section-jump-reset';
+    resetButton.innerHTML = `
+      <span class="command-scene-section-jump-title">전체 보기</span>
+      <span class="command-scene-section-jump-count">모든 묶음</span>
+    `;
+    resetButton.addEventListener('click', () => {
+      this._focusedSectionId = null;
+      this._applySectionFocus(scene);
+      this._syncSceneSectionRail();
+    });
+    rail.appendChild(resetButton);
+    this._sectionResetButton = resetButton;
+
+    sections.forEach((section) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'command-scene-section-jump';
+      button.dataset.sectionId = section.dataset.sectionId || '';
+      button.innerHTML = `
+        <span class="command-scene-section-jump-title">${section.dataset.sectionTitle || '섹션'}</span>
+        <span class="command-scene-section-jump-count">${section.dataset.sectionCount || '0개'}</span>
+      `;
+      button.addEventListener('click', () => {
+        this._focusedSectionId = section.dataset.sectionId || null;
+        this._applySectionFocus(scene);
+        this._activateSection(section);
+      });
+      rail.appendChild(button);
     });
 
+    if (hero?.nextSibling) scene.insertBefore(rail, hero.nextSibling);
+    else scene.prepend(rail);
+    this._sectionButtons = Array.from(rail.querySelectorAll('.command-scene-section-jump[data-section-id]'));
+    this._applySectionFocus(scene);
+    requestAnimationFrame(() => this._syncSceneSectionRail());
+  }
+
+  _applySectionFocus(scene) {
+    if (!(scene instanceof HTMLElement)) return;
+    const focusedSection = this._focusedSectionId
+      ? this._sceneSections.find((section) => section.dataset.sectionId === this._focusedSectionId)
+      : null;
+    if (this._focusedSectionId && !focusedSection) {
+      this._focusedSectionId = null;
+    }
+    const focusActive = !!this._focusedSectionId;
+    scene.classList.toggle('section-focus-mode', focusActive);
+    this._sceneSections.forEach((section) => {
+      section.classList.toggle('hidden-by-focus', focusActive && section.dataset.sectionId !== this._focusedSectionId);
+    });
+    this._sectionButtons.forEach((button) => {
+      button.classList.toggle('locked', focusActive && button.dataset.sectionId === this._focusedSectionId);
+    });
+    this._sectionResetButton?.classList.toggle('locked', !focusActive);
+  }
+
+  _setActiveSectionRail(sectionId) {
+    this._sectionButtons.forEach((button) => {
+      button.classList.toggle('active', button.dataset.sectionId === sectionId);
+    });
+  }
+
+  _syncSceneSectionRail() {
+    if (!this.isOpen() || !this._sectionButtons.length || !this._sceneSections.length || !this.buttons) return;
+    if (this._focusedSectionId) {
+      this._setActiveSectionRail(this._focusedSectionId);
+      return;
+    }
+    const containerRect = this.buttons.getBoundingClientRect();
+    let activeId = this._sceneSections[0]?.dataset.sectionId || '';
+    let bestDistance = Number.POSITIVE_INFINITY;
+    for (const section of this._sceneSections) {
+      const distance = Math.abs((section.getBoundingClientRect().top - containerRect.top) - 76);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        activeId = section.dataset.sectionId || activeId;
+      }
+    }
+    this._setActiveSectionRail(activeId);
+  }
+
+  _getSceneHotkeyHint() {
+    if (!this._visibleScenes.length) return '';
+    const lastIndex = Math.min(this._visibleScenes.length, 4);
+    return `
+      <span class="command-key-chip command-key-chip-scene">
+        <kbd>1-${lastIndex}</kbd>
+        <strong>장면 전환</strong>
+      </span>
+      ${this._visibleScenes.length > 1 ? `
+        <span class="command-key-chip command-key-chip-scene">
+          <kbd>← →</kbd>
+          <strong>장면 순환</strong>
+        </span>
+      ` : ''}
+      ${this._recommendedScene ? `
+        <span class="command-key-chip command-key-chip-scene">
+          <kbd>R</kbd>
+          <strong>권장 장면</strong>
+        </span>
+      ` : ''}
+    `;
+  }
+
+  _getEntryHotkeyHint() {
+    return this._entries.some((entry) => !entry.disabled)
+      ? `
+        <span class="command-key-chip command-key-chip-scene">
+          <kbd>↑ ↓</kbd>
+          <strong>${this._pendingAction ? '결정 이동' : '후보 이동'}</strong>
+        </span>
+      `
+      : '';
+  }
+
+  _setStageMode(mode = 'sheet') {
+    if (!this.stageStrip) return;
+    this.stageStrip.dataset.mode = mode;
+    this.stageStrip.classList.toggle('decision-mode', mode === 'decision');
+  }
+
+  _updateStageStripCopy(sceneMeta) {
+    if (!this.stageStrip) return;
+    const cityCopy = this.stageStrip.querySelector('[data-stage-copy="city"]');
+    const readoutCopy = this.stageStrip.querySelector('[data-stage-copy="readout"]');
+    const decisionCopy = this.stageStrip.querySelector('[data-stage-copy="decision"]');
+    const cityName = this._cityId && this._state?.cities?.[this._cityId]?.name
+      ? this._state.cities[this._cityId].name
+      : '';
+    const cityText = cityName
+      ? `${cityName} · ${sceneMeta?.name || '명령'}`
+      : '도시 선택 대기';
+    const readoutText = truncateBridgeLine(this.captionEl?.textContent || '전선 판독 대기', 52);
+    const decisionText = (this._pendingAction || this._previewAction || this._getFirstSelectableEntry())?.title
+      || `${sceneMeta?.name || '명령'} 선택 대기`;
+    if (cityCopy instanceof HTMLElement) cityCopy.textContent = cityText;
+    if (readoutCopy instanceof HTMLElement) readoutCopy.textContent = readoutText;
+    if (decisionCopy instanceof HTMLElement) decisionCopy.textContent = decisionText;
+  }
+
+  _getSectionHotkeyHint() {
+    return this._sceneSections.length > 1
+      ? `
+        <span class="command-key-chip command-key-chip-scene">
+          <kbd>Shift + ← →</kbd>
+          <strong>섹션 이동</strong>
+        </span>
+      `
+      : '';
+  }
+
+  _getRecommendedSceneForCity(cityId, state, scenes = SCENE_ORDER) {
+    const city = state?.cities?.[cityId];
+    if (!city) return scenes[0] || 'military';
+
+    const openingScene = this._openingContext.active && this._openingContext.factionId === state?.player?.factionId
+      ? getOpeningActBeat(this._openingContext.factionId, this._openingContext.turn)?.preferredScene
+      : null;
+    if (openingScene && scenes.includes(openingScene)) return openingScene;
+
+    const isOwned = city.owner === state?.player?.factionId;
+    if (!isOwned) {
+      if (!city.owner) return scenes.includes('military') ? 'military' : scenes[0];
+      return state.isAtWar(state.player.factionId, city.owner) && scenes.includes('military')
+        ? 'military'
+        : scenes.includes('diplomacy')
+          ? 'diplomacy'
+          : scenes[0];
+    }
+
+    return this._getEnemyNeighbors(cityId, state).length > 0 && scenes.includes('military')
+      ? 'military'
+      : scenes.includes('government')
+        ? 'government'
+        : scenes[0];
+  }
+
+  _refreshSelectionUI() {
+    const activeKey = this._pendingAction?.key;
+    const previewKey = !this._pendingAction ? this._previewAction?.key : null;
+    this.buttons.querySelectorAll('[data-command-key]').forEach((node) => {
+      node.classList.toggle('selected', node.dataset.commandKey === activeKey);
+      node.classList.toggle('previewing', !!previewKey && node.dataset.commandKey === previewKey);
+    });
+    const focusedNode = activeKey || previewKey
+      ? this.buttons.querySelector(`[data-command-key="${activeKey || previewKey}"]`)
+      : null;
+    if (focusedNode instanceof HTMLElement) {
+      const fold = focusedNode.closest('details');
+      if (fold instanceof HTMLDetailsElement) fold.open = true;
+      focusedNode.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+
     const sceneMeta = COMMAND_SCENES[this._activeScene];
+    const sceneHotkeyHint = this._getSceneHotkeyHint();
+    const sectionHotkeyHint = this._getSectionHotkeyHint();
+    const entryHotkeyHint = this._getEntryHotkeyHint();
+    const selectableEntries = this._entries.filter((entry) => (
+      !entry.disabled && (!this._focusedSectionId || entry.sectionId === this._focusedSectionId)
+    ));
     const city = this._cityId && this._state?.cities?.[this._cityId]
       ? this._state.cities[this._cityId]
       : null;
-    this.stageStrip?.classList.toggle('decision-mode', !!this._pendingAction);
+    const recommendedSceneMeta = COMMAND_SCENES[this._recommendedScene] || null;
+    const sheetMode = this._pendingAction ? 'decision' : this._previewAction ? 'preview' : 'brief';
+    this._setStageMode(this._pendingAction ? 'decision' : 'sheet');
+    this._updateStageStripCopy(sceneMeta);
+    if (this.sealDocketEl) {
+      this.sealDocketEl.innerHTML = renderCommandSealDocket({
+        city,
+        sceneMeta,
+        director: this._activeDirector,
+        battlefieldDirector: this._activeBattlefieldDirector,
+        recommendedSceneMeta,
+        pendingAction: this._pendingAction,
+        previewAction: this._previewAction,
+        actionsRemaining: this._state?.actionsRemaining ?? 0,
+      });
+      this.sealDocketEl.dataset.state = sheetMode;
+    }
+    if (this.sheetSurfaceEl) {
+      this.sheetSurfaceEl.dataset.state = sheetMode;
+      this.sheetSurfaceEl.dataset.scene = this._activeScene || 'neutral';
+    }
+    if (this.candidateSheetEl) {
+      this.candidateSheetEl.dataset.state = sheetMode;
+      this.candidateSheetEl.dataset.scene = this._activeScene || 'neutral';
+    }
+    if (this.sheetBodyEl) this.sheetBodyEl.dataset.state = sheetMode;
+    if (this.buttons) this.buttons.dataset.state = sheetMode;
+    if (this.buttons) this.buttons.dataset.scene = this._activeScene || 'neutral';
+    const focusEntry = this._pendingAction || this._previewAction || selectableEntries[0] || null;
+    if (this.candidateLiveEl) {
+      this.candidateLiveEl.innerHTML = renderCommandCandidateLive({
+        mode: sheetMode,
+        sceneId: this._activeScene,
+        sceneMeta,
+        city,
+        entry: focusEntry,
+        actionsRemaining: this._state?.actionsRemaining ?? 0,
+        selectableCount: selectableEntries.length,
+        director: this._activeDirector,
+        battlefieldDirector: this._activeBattlefieldDirector,
+        recommendedSceneMeta,
+      });
+      this.candidateLiveEl.dataset.state = sheetMode;
+    }
+    if (this.candidateTitleEl) {
+      this.candidateTitleEl.textContent = this._pendingAction
+        ? `${focusEntry?.title || sceneMeta?.name || '명령'}이 이번 턴 확정 대기 상태로 올라와 있습니다`
+        : this._previewAction
+          ? `${focusEntry?.title || sceneMeta?.name || '명령'} 후보가 시트에 올라왔습니다`
+          : `${sceneMeta?.name || '명령'} 카드에서 이번 턴 결정을 고릅니다`;
+    }
+    if (this.candidateCopyEl) {
+      this.candidateCopyEl.textContent = this._pendingAction
+        ? '다른 카드를 누르면 현재 선택이 즉시 교체됩니다. Enter나 하단 결정 버튼으로 바로 이번 턴에 반영됩니다.'
+        : this._previewAction
+          ? '후보가 오른쪽 결정 패널에 실시간으로 반영됐습니다. Enter를 누르거나 한 번 더 선택해 확정 대기로 올립니다.'
+          : `${selectableEntries.length || 0}개 후보 중 핵심 카드부터 먼저 노출됩니다. 카드 하나를 누르면 오른쪽 패널이 바로 확정 단계로 전환됩니다.`;
+    }
+    if (this.candidateBadgeEl) {
+      this.candidateBadgeEl.textContent = this._pendingAction
+        ? '즉시 확정'
+        : this._previewAction
+          ? '후보 확인'
+          : `${selectableEntries.length || 0}개 카드`;
+    }
     if (this._pendingAction) {
       const tone = getCommandPreviewTone(this._pendingAction);
-      this.previewEl.innerHTML = renderPendingPreview(this._pendingAction);
-      this.selectionStatusEl.innerHTML = `
-        <span class="selection-status-kicker">결정 장면 · ${sceneMeta.name}</span>
-        <strong>${this._pendingAction.title}</strong>
-        <span>${this._pendingAction.confirmText || '결정하면 행동력이 1 소모됩니다.'}</span>
-        <div class="selection-status-rail tone-${tone}">
-          <span class="selection-status-chip"><em>장면</em><strong>${sceneMeta.name}</strong></span>
-          <span class="selection-status-chip"><em>비용</em><strong>${this._pendingAction.cost || '행동력 1'}</strong></span>
-          <span class="selection-status-chip"><em>효과</em><strong>${this._pendingAction.effect || this._pendingAction.subtitle || '이번 턴 판세에 반영'}</strong></span>
-        </div>
-      `;
+      const confirmLabel = `${formatConfirmActionLabel(this._pendingAction.title)} 확정`;
+      this.previewEl.innerHTML = renderCommandSheetPreview({
+        mode: 'decision',
+        sceneMeta,
+        sceneId: this._activeScene,
+        cityId: this._cityId,
+        state: this._state,
+        connections: this._connections,
+        entry: this._pendingAction,
+      });
+      this.selectionStatusEl.innerHTML = renderCommandSelectionStatus({
+        mode: 'decision',
+        sceneMeta,
+        city,
+        entry: this._pendingAction,
+        tone,
+        actionsRemaining: this._state?.actionsRemaining ?? 0,
+        director: this._activeDirector,
+        battlefieldDirector: this._activeBattlefieldDirector,
+        recommendedSceneMeta,
+      });
+      if (this.keyHintEl) {
+        this.keyHintEl.innerHTML = `
+          ${sceneHotkeyHint}
+          ${sectionHotkeyHint}
+          ${entryHotkeyHint}
+          <span class="command-key-chip"><kbd>Enter</kbd><strong>${confirmLabel}</strong></span>
+          <span class="command-key-chip"><kbd>클릭</kbd><strong>다른 결정 고르기</strong></span>
+          <span class="command-key-chip"><kbd>Esc</kbd><strong>선택 해제</strong></span>
+        `;
+        this.keyHintEl.dataset.mode = 'decision';
+      }
       this.confirmButton.disabled = !!this._pendingAction.disabled;
-      this.confirmButton.textContent = `${sceneMeta.name} 확정`;
-      this.cancelButton.textContent = '작전으로 돌아가기';
+      this.confirmButton.innerHTML = renderFooterButtonLabel(confirmLabel, 'Enter');
+      this.confirmButton.title = this._pendingAction.title;
+      this.cancelButton.innerHTML = renderFooterButtonLabel('선택 해제', 'Esc');
+    } else if (this._previewAction) {
+      const tone = getCommandPreviewTone(this._previewAction);
+      this.previewEl.innerHTML = renderCommandSheetPreview({
+        mode: 'preview',
+        sceneMeta,
+        sceneId: this._activeScene,
+        cityId: this._cityId,
+        state: this._state,
+        connections: this._connections,
+        entry: this._previewAction,
+      });
+      this.selectionStatusEl.innerHTML = renderCommandSelectionStatus({
+        mode: 'preview',
+        sceneMeta,
+        city,
+        entry: this._previewAction,
+        tone,
+        actionsRemaining: this._state?.actionsRemaining ?? 0,
+        director: this._activeDirector,
+        battlefieldDirector: this._activeBattlefieldDirector,
+        recommendedSceneMeta,
+      });
+      if (this.keyHintEl) {
+        this.keyHintEl.innerHTML = `
+          ${sceneHotkeyHint}
+          ${sectionHotkeyHint}
+          ${entryHotkeyHint}
+          <span class="command-key-chip"><kbd>Enter</kbd><strong>이 결정 올리기</strong></span>
+          <span class="command-key-chip"><kbd>클릭</kbd><strong>후보 교체</strong></span>
+          <span class="command-key-chip"><kbd>Esc</kbd><strong>시트 닫기</strong></span>
+          <span class="command-key-copy">왼쪽 카드가 결정 패널을 즉시 바꿉니다.</span>
+        `;
+        this.keyHintEl.dataset.mode = 'sheet';
+      }
+      this.confirmButton.disabled = false;
+      this.confirmButton.innerHTML = renderFooterButtonLabel('이 결정 올리기', 'Enter');
+      this.confirmButton.title = `${this._previewAction.title} 선택`;
+      this.cancelButton.innerHTML = renderFooterButtonLabel('시트 닫기', 'Esc');
     } else {
-      this.previewEl.innerHTML = renderScenePlaceholder(sceneMeta, this._activeScene, this._cityId, this._state, this._connections);
-      this.selectionStatusEl.innerHTML = `
-        <span class="selection-status-kicker">작전 장면 · ${sceneMeta.name}</span>
-        <strong>이번 턴의 명령을 고르십시오</strong>
-        <span>${sceneMeta.placeholderCopy}</span>
-        <div class="selection-status-rail tone-brief">
-          <span class="selection-status-chip"><em>거점</em><strong>${city?.name || '도시 미선택'}</strong></span>
-          <span class="selection-status-chip"><em>장면</em><strong>${sceneMeta.name}</strong></span>
-          <span class="selection-status-chip"><em>행동력</em><strong>${this._state?.actionsRemaining ?? 0} 남음</strong></span>
-        </div>
-      `;
+      this.previewEl.innerHTML = renderCommandSheetPreview({
+        mode: 'brief',
+        sceneMeta,
+        sceneId: this._activeScene,
+        cityId: this._cityId,
+        state: this._state,
+        connections: this._connections,
+      });
+      this.selectionStatusEl.innerHTML = renderCommandSelectionStatus({
+        mode: 'brief',
+        sceneMeta,
+        city,
+        tone: 'brief',
+        actionsRemaining: this._state?.actionsRemaining ?? 0,
+        director: this._activeDirector,
+        battlefieldDirector: this._activeBattlefieldDirector,
+        recommendedSceneMeta,
+      });
+      if (this.keyHintEl) {
+        this.keyHintEl.innerHTML = `
+          ${sceneHotkeyHint}
+          ${sectionHotkeyHint}
+          ${entryHotkeyHint}
+          <span class="command-key-chip"><kbd>클릭</kbd><strong>후보 선택</strong></span>
+          <span class="command-key-chip"><kbd>두 번</kbd><strong>카드 즉시 확정</strong></span>
+          <span class="command-key-chip"><kbd>Esc</kbd><strong>시트 닫기</strong></span>
+          <span class="command-key-copy">왼쪽 카드 하나를 고르면 시트에 바로 올라옵니다.</span>
+        `;
+        this.keyHintEl.dataset.mode = 'sheet';
+      }
       this.confirmButton.disabled = true;
-      this.confirmButton.textContent = '명령 확정';
-      this.cancelButton.textContent = '닫기';
+      this.confirmButton.innerHTML = renderFooterButtonLabel('명령 선택', 'Enter');
+      this.confirmButton.title = '왼쪽 카드 하나를 고르면 시트에 올라옵니다.';
+      this.cancelButton.innerHTML = renderFooterButtonLabel('시트 닫기', 'Esc');
     }
     clearTimeout(this._previewTransitionTimer);
     this.previewEl.classList.remove('preview-transition');
@@ -330,6 +1020,38 @@ export class ActionPanel {
     return hero;
   }
 
+  _createSceneBoardSection({ title, kicker, badge = '운영판', variant = '', tone = 'government', cards = [] }) {
+    const section = document.createElement('section');
+    const sectionId = variant || createSectionKey(title);
+    section.dataset.sectionId = sectionId;
+    section.dataset.sectionTitle = title;
+    section.dataset.sectionCount = badge;
+    section.className = `command-scene-section scene-theater-section tone-${tone}${variant ? ` variant-${variant}` : ''}`;
+    section.innerHTML = `
+      <div class="command-scene-section-head">
+        <div class="command-scene-section-kicker">${kicker}</div>
+        <div class="command-scene-section-titlebar">
+          <h3>${title}</h3>
+          <span class="command-scene-section-badge">${badge}</span>
+        </div>
+      </div>
+    `;
+
+    const grid = document.createElement('div');
+    grid.className = `scene-theater-grid tone-${tone}`;
+    grid.innerHTML = cards.map((card) => `
+      <article class="scene-theater-card tone-${card.tone || 'steady'}">
+        <span class="scene-theater-label">${card.label || '판단'}</span>
+        <h4>${card.title || ''}</h4>
+        <ul class="scene-theater-lines">
+          ${(card.lines || []).filter(Boolean).map((line) => `<li>${line}</li>`).join('')}
+        </ul>
+      </article>
+    `).join('');
+    section.appendChild(grid);
+    return section;
+  }
+
   _buildGovernmentScene(container, cityId, state) {
     const city = state.cities[cityId];
     const faction = state.getFaction(state.player.factionId);
@@ -366,6 +1088,56 @@ export class ActionPanel {
         activeBuilds[0] ? `진행 공사: ${activeBuilds[0]}` : `${seasonLabel(getTradeSeason(state.month))} 교역 시세도 함께 확인할 만합니다.`,
       ],
     }));
+
+    const governmentBoard = this._createSceneBoardSection({
+      title: `${city.name} 행정 운영판`,
+      kicker: '행정 주도권',
+      badge: '4보드',
+      variant: 'government-theater',
+      tone: 'government',
+      cards: [
+        {
+          label: '도시 기조',
+          title: currentPolicy.domestic.name,
+          tone: 'primary',
+          lines: [
+            `태수 ${governorName} · 책사 ${tactician ? getCharName(tactician.id) : '공석'}`,
+            forecast.recommendations[0] || '이번 턴 성장 축을 먼저 정해야 합니다.',
+            currentPolicy.domestic.bonus,
+          ],
+        },
+        {
+          label: '재정·군량',
+          title: `${signed(forecast.goldDelta)} 금 · ${signed(forecast.foodDelta)} 식량`,
+          tone: 'economy',
+          lines: [
+            `세력 금 ${formatNumber(faction.gold)} · 인구 ${formatNumber(cityPopulation)}`,
+            `기술 ${formatNumber(cityTechnology)} · 방어 ${formatNumber(cityDefense)}`,
+            `${seasonLabel(getTradeSeason(state.month))} 교역 시세 반영`,
+          ],
+        },
+        {
+          label: '공사·연구',
+          title: activeBuilds[0] || (researchStatus.researching ? researchStatus.name : '공사 대기'),
+          tone: 'build',
+          lines: [
+            activeBuilds[0] ? `진행 공사 ${activeBuilds[0]}` : '진행 중인 공사가 없습니다.',
+            researchStatus.researching ? `연구 ${researchStatus.name} 진행 중` : '연구 큐가 비어 있습니다.',
+            forecast.bonuses[0] || '장기 성장 보너스는 다음 선택에 달려 있습니다.',
+          ],
+        },
+        {
+          label: '행정 리스크',
+          title: forecast.risks[0] || '즉시 위기 없음',
+          tone: 'risk',
+          lines: [
+            `치안 ${formatNumber(asNumber(city.publicOrder))} · 기술 ${formatNumber(cityTechnology)}`,
+            forecast.bonuses[0] || '큰 보너스는 아직 잠재 상태입니다.',
+            tactician ? `${getCharName(tactician.id)}가 장기 성장 조언을 제공합니다.` : '책사 공석이라 장면 브리프가 얕습니다.',
+          ],
+        },
+      ],
+    });
 
     const growthEntries = [
       { key: 'agriculture', name: '농업', desc: '식량 생산과 안정적인 병참' },
@@ -546,6 +1318,7 @@ export class ActionPanel {
 
     const board = document.createElement('div');
     board.className = 'command-scene-grid government-grid';
+    board.appendChild(governmentBoard);
     board.appendChild(this._createSceneSection('도시 정책', '시정 노선', policyEntries, 'compact', 'government-policy'));
     board.appendChild(this._createSceneSection('시정 장부', '도시 성장·교역', [ ...growthEntries, defenseEntry, ...tradeEntries ], '', 'government-ledger', true));
     board.appendChild(this._createSceneSection('건설 공방', '도시 특화', buildingEntries, 'compact', 'government-build'));
@@ -747,7 +1520,7 @@ export class ActionPanel {
 
     container.appendChild(this._createSceneHero('military', {
       kicker: '군령 장면',
-      title: isOwned ? `${city.name} 전선 작전판` : `${city.name} 공격 검토`,
+      title: isOwned ? `${city.name} 전선 작전판` : `${city.name} 공세 결정판`,
       summary: isOwned
         ? `${city.name}의 병력과 접경선을 바탕으로 침공, 집결, 개전 순서를 결정합니다.`
         : `${city.name}을(를) 중심으로 전쟁을 열지, 우회할지, 외교로 풀지 판단하는 장면입니다.`,
@@ -766,6 +1539,58 @@ export class ActionPanel {
         conscriptPreview?.allowed ? `징병 시 치안 -${conscriptPreview.orderLoss}, 인구 -${formatNumber(conscriptPreview.populationLoss)}` : (neutralFronts.length > 0 ? `개전 후보 세력 ${neutralFronts.length}곳` : '현재 접경 전쟁에 병력을 집중할 수 있습니다.'),
       ],
     }));
+
+    const militaryBoard = this._createSceneBoardSection({
+      title: `${city.name} 전황 지휘판`,
+      kicker: '전선 주도권',
+      badge: '4보드',
+      variant: 'military-theater',
+      tone: 'military',
+      cards: [
+        {
+          label: '전선 압력',
+          title: enemyNeighbors.length ? `적 ${enemyNeighbors.length}면 압박` : '직접 적 없음',
+          tone: 'primary',
+          lines: [
+            `${friendlyNeighbors.length}개 아군 연결 · ${neutralFronts.length}개 비적대 접경`,
+            `${terrainLabel(city.terrain?.type || city.terrain)} · 방어 ${formatNumber(asNumber(city.defense))}`,
+            currentPolicy.military.bonus,
+          ],
+        },
+        {
+          label: '주 공격선',
+          title: attackEntries[0]?.title || warEntries[0]?.title || '직접 공세 대기',
+          tone: 'offense',
+          lines: [
+            attackEntries[0]?.subtitle || warEntries[0]?.subtitle || '지금 당장 누를 공격 카드는 비어 있습니다.',
+            attackEntries[0]?.detail || warEntries[0]?.detail || '군령 정책과 접경선 정비가 먼저 필요합니다.',
+            attackEntries[0]?.decisionNote || `병력 ${formatNumber(city.army)} · 사기 ${formatNumber(asNumber(city.morale))}`,
+          ],
+        },
+        {
+          label: '동원·병참',
+          title: conscriptPreview?.allowed ? `징병 ${formatNumber(conscriptPreview.recruits)}명` : supplyEntries[0]?.title || '병참 대기',
+          tone: 'logistics',
+          lines: [
+            conscriptPreview?.allowed
+              ? `치안 -${conscriptPreview.orderLoss} · 군량 ${formatNumber(conscriptPreview.foodCost)} 소모`
+              : conscriptReasonLabel(conscriptPreview?.reason) || '즉시 징병 조건이 아직 부족합니다.',
+            supplyEntries[0]?.title || '수송·보급 카드를 더 준비해야 합니다.',
+            supplyEntries[0]?.detail || '지금 턴 병참 창은 상대적으로 얕습니다.',
+          ],
+        },
+        {
+          label: '전쟁 상태',
+          title: `${(faction.enemies || []).length}곳 전쟁 · ${(faction.allies || []).length}곳 동맹`,
+          tone: 'risk',
+          lines: [
+            warEntries[0]?.title || '추가 개전 카드는 아직 비어 있습니다.',
+            tactician ? `${getCharName(tactician.id)}가 군령 판단을 보정합니다.` : '책사 공석이라 전황 조언 깊이가 얕습니다.',
+            city.army < 3000 ? '병력 3,000 미만이면 직접 침공이 막힙니다.' : '직접 침공 조건은 충족합니다.',
+          ],
+        },
+      ],
+    });
 
     const postureEntries = Object.values(CITY_MILITARY_POLICIES).map((policy) => this._makeEntry({
       actionType: 'set_city_policy',
@@ -797,6 +1622,7 @@ export class ActionPanel {
 
     const board = document.createElement('div');
     board.className = 'command-scene-grid military-grid';
+    board.appendChild(militaryBoard);
     board.appendChild(this._createSceneSection('전선 방침', '군령 정책', postureEntries, 'compact', 'military-posture'));
     board.appendChild(this._createSceneSection('전선 작전', '침공·요충지 판단', attackEntries, '', 'military-offense', true));
     board.appendChild(this._createSceneSection('병력 재배치', '집결·보강', movementEntries, 'compact', 'military-movement'));
@@ -970,6 +1796,13 @@ export class ActionPanel {
 
     const focusedFactionId = !isOwned && city.owner ? city.owner : targetFactionIds[0];
     const focusedFaction = focusedFactionId ? state.factions[focusedFactionId] : null;
+    const focusedRelation = focusedFactionId
+      ? state.isAtWar(state.player.factionId, focusedFactionId)
+        ? '전쟁'
+        : state.isAllied(state.player.factionId, focusedFactionId)
+          ? '동맹'
+          : '긴장'
+      : '대기';
     container.appendChild(this._createSceneHero('diplomacy', {
       kicker: '외교 장면',
       title: focusedFaction ? `${focusedFaction.name} 관계 보드` : '천하 외교 장부',
@@ -991,8 +1824,59 @@ export class ActionPanel {
       ],
     }));
 
+    const diplomacyBoard = this._createSceneBoardSection({
+      title: focusedFaction ? `${focusedFaction.name} 외교 전개판` : '천하 외교 전개판',
+      kicker: '관계 주도권',
+      badge: '4보드',
+      variant: 'diplomacy-theater',
+      tone: 'diplomacy',
+      cards: [
+        {
+          label: '외교 지형',
+          title: `평판 ${formatNumber(faction.reputation || 100)}`,
+          tone: 'primary',
+          lines: [
+            `전쟁 ${(faction.enemies || []).length}곳 · 동맹 ${(faction.allies || []).length}곳`,
+            `${targetFactionIds.length}개 세력과 교섭 가능`,
+            tactician ? `${getCharName(tactician.id)}가 외교 조언을 제공합니다.` : '책사 공석이라 외교 브리프가 얕습니다.',
+          ],
+        },
+        {
+          label: '집중 대상',
+          title: focusedFaction ? `${focusedFaction.name} · ${focusedRelation}` : '집중 대상 없음',
+          tone: 'relation',
+          lines: [
+            diplomacyEntries[0]?.title || '즉시 제안할 카드가 없습니다.',
+            diplomacyEntries[0]?.subtitle || '병력 차나 관계를 더 벌려야 창이 열립니다.',
+            diplomacyEntries[0]?.detail || '지금은 군사 장면과 번갈아 템포를 잡는 편이 낫습니다.',
+          ],
+        },
+        {
+          label: '교섭 창',
+          title: diplomacyEntries[0]?.title || '교섭 대기',
+          tone: 'window',
+          lines: [
+            diplomacyEntries[0]?.preview?.lines?.[0] || '성공률 계산 대기',
+            diplomacyEntries[1]?.title || '대안 교섭 카드 없음',
+            diplomacyEntries[1]?.preview?.lines?.[0] || '한 장면에서 강한 카드가 아직 적습니다.',
+          ],
+        },
+        {
+          label: '첩보 창',
+          title: espionageEntries[0]?.title || '첩보 대기',
+          tone: 'risk',
+          lines: [
+            espionageEntries[0]?.subtitle || (!isOwned && city.owner ? '지력 60 이상 장수가 있어야 열립니다.' : '적 도시를 고르면 열립니다.'),
+            espionageEntries[0]?.detail || '은밀 작전 카드는 아직 비어 있습니다.',
+            espionageEntries[0]?.preview?.lines?.[2] || '첩보는 다음 턴 군사 장면과 연결됩니다.',
+          ],
+        },
+      ],
+    });
+
     const board = document.createElement('div');
     board.className = 'command-scene-grid diplomacy-grid';
+    board.appendChild(diplomacyBoard);
     board.appendChild(this._createSceneSection('외교 교섭', '관계·강화·동맹', diplomacyEntries, '', 'diplomacy-negotiation', true));
     board.appendChild(this._createSceneSection('첩보 작전', espionageEntries.length ? '적 도시 대상 은밀 작전' : '적 도시 선택 시 활성화', espionageEntries, 'compact', 'diplomacy-espionage'));
     container.appendChild(board);
@@ -1472,17 +2356,27 @@ export class ActionPanel {
 
   _createSceneSection(title, kicker, entries, compact = '', variant = '', showOpeningRail = false) {
     const section = document.createElement('section');
+    const enabledCount = entries.filter((entry) => !entry.disabled).length;
+    const sectionId = variant || createSectionKey(title);
+    const firstEnabledEntry = entries.find((entry) => !entry.disabled);
+    section.dataset.sectionId = sectionId;
+    section.dataset.sectionTitle = title;
+    section.dataset.sectionCount = formatSectionCount(enabledCount, entries.length);
+    if (firstEnabledEntry?.key) section.dataset.firstCommandKey = firstEnabledEntry.key;
     section.className = `command-scene-section${compact ? ` ${compact}` : ''}${variant ? ` variant-${variant}` : ''}`;
     section.innerHTML = `
       <div class="command-scene-section-head">
         <div class="command-scene-section-kicker">${kicker}</div>
-        <h3>${title}</h3>
+        <div class="command-scene-section-titlebar">
+          <h3>${title}</h3>
+          <span class="command-scene-section-badge">${formatSectionCount(enabledCount, entries.length)}</span>
+        </div>
       </div>
     `;
 
     const list = document.createElement('div');
     list.className = 'command-entry-list';
-    const normalizedEntries = entries.map((entry) => ({ ...entry }));
+    const normalizedEntries = entries.map((entry) => ({ ...entry, sectionId }));
     const explicitPriority = normalizedEntries.some((entry) => entry.priorityLabel);
     if (!explicitPriority) {
       const enabledIndices = normalizedEntries
@@ -1596,11 +2490,41 @@ export class ActionPanel {
       <div class="command-entry-detail">${entry.detail || ''}</div>
       <div class="command-entry-effect">${entry.effect || ''}</div>
       ${entry.decisionNote ? `<div class="command-entry-note">${entry.decisionNote}</div>` : ''}
+      ${!entry.disabled ? '<div class="command-entry-confirm-hint">Enter · 지금 확정</div>' : ''}
+      ${featured && !entry.disabled ? '<div class="command-entry-shortcut">두 번 · 즉시 확정</div>' : ''}
     `;
+    card.addEventListener('mouseenter', () => {
+      if (entry.disabled || this._pendingAction) return;
+      this._previewAction = entry;
+      this._refreshSelectionUI();
+    });
+    card.addEventListener('focus', () => {
+      if (entry.disabled || this._pendingAction) return;
+      this._previewAction = entry;
+      this._refreshSelectionUI();
+    });
+    card.addEventListener('mouseleave', () => {
+      if (this._pendingAction || this._previewAction?.key !== entry.key) return;
+      this._previewAction = null;
+      this._refreshSelectionUI();
+    });
+    card.addEventListener('blur', () => {
+      if (this._pendingAction || this._previewAction?.key !== entry.key) return;
+      this._previewAction = null;
+      this._refreshSelectionUI();
+    });
     card.addEventListener('click', () => {
       if (entry.disabled) return;
       this._pendingAction = entry;
+      this._previewAction = entry;
       this._refreshSelectionUI();
+    });
+    card.addEventListener('dblclick', () => {
+      if (entry.disabled) return;
+      this._pendingAction = entry;
+      this._previewAction = entry;
+      this._refreshSelectionUI();
+      this.confirmSelection();
     });
     return card;
   }
@@ -1661,23 +2585,820 @@ export class ActionPanel {
   }
 }
 
-function renderCommandSummary(city, ownerName, forecast, state) {
+function renderCommandSummary(city, ownerName, forecast, state, director = null) {
   const owner = ownerName || '무주지';
   const actionHint = city.owner === state.player.factionId
     ? forecast.recommendations[0] || '이번 달 주력 명령을 고르십시오.'
-    : '군사와 외교만 검토 가능합니다.';
-  return [
-    ['인장', owner],
+    : '군사와 외교를 바로 눌러볼 수 있습니다.';
+  const summaryItems = (director?.status || [
+    ['거점', city.name],
+    ['지배', owner],
     ['병력', formatNumber(city.army)],
-    ['월간 금', signed(forecast.goldDelta)],
-    ['월간 식량', signed(forecast.foodDelta)],
-    ['권고', actionHint],
-  ].map(([label, value]) => `
-    <div class="command-summary-card">
+    ['성방 / 사기', `${formatNumber(asNumber(city.defense))} / ${formatNumber(asNumber(city.morale))}`],
+    ['월간 수지', `${signed(forecast.goldDelta)} 금 · ${signed(forecast.foodDelta)} 식량`],
+    ['이번 턴 권고', actionHint],
+  ]).map(([label, value], index) => [label, value, index === 0 ? 'command-summary-card-primary' : index === 5 ? 'command-summary-card-wide' : '']);
+  return summaryItems.map(([label, value, className]) => `
+    <div class="command-summary-card ${className}">
       <div class="command-summary-label">${label}</div>
       <div class="command-summary-value">${value}</div>
     </div>
   `).join('');
+}
+
+function renderCommandSealDocket({
+  city = null,
+  sceneMeta = null,
+  director = null,
+  battlefieldDirector = null,
+  recommendedSceneMeta = null,
+  pendingAction = null,
+  previewAction = null,
+  actionsRemaining = 0,
+} = {}) {
+  const state = pendingAction ? 'decision' : previewAction ? 'preview' : 'brief';
+  const statusLabel = pendingAction
+    ? '확정 대기'
+    : previewAction
+      ? '후보 확인'
+      : '선택 대기';
+  const focusEntry = pendingAction || previewAction || null;
+  const decisionLine = director?.status?.find?.(([label]) => label === '결정')?.[1]
+    || director?.status?.find?.(([label]) => label === '권고')?.[1]
+    || battlefieldDirector?.action
+    || sceneMeta?.placeholderCopy
+    || '이번 턴 결정 대기';
+  const focusTitle = focusEntry?.title || `${sceneMeta?.name || '명령'} 장면에서 이번 턴 결정을 고릅니다`;
+  const focusCopy = pendingAction
+    ? pendingAction.confirmText || '지금 확정하면 행동력이 소모되고 이번 턴에 즉시 반영됩니다.'
+    : previewAction
+      ? previewAction.detail || previewAction.subtitle || '이 후보를 결정 패널에 올려 곧바로 확정할 수 있습니다.'
+      : decisionLine;
+  const mapReadout = battlefieldDirector?.mapReadout
+    || battlefieldDirector?.sessionTrace?.mapReadout
+    || director?.subhead
+    || sceneMeta?.placeholderCopy
+    || '지도 판독 대기';
+  const sceneDetail = recommendedSceneMeta && recommendedSceneMeta.name !== sceneMeta?.name
+    ? `권장 흐름 ${recommendedSceneMeta.name}`
+    : '현재 장면에서 바로 결정';
+  const sealDetail = pendingAction
+    ? pendingAction.cost || '행동력 1'
+    : previewAction
+      ? 'Enter로 바로 확정'
+      : '왼쪽 카드 선택';
+  const commitLabel = pendingAction ? '즉시 확정' : previewAction ? '후보 확인' : '선택 대기';
+  const commitTitle = pendingAction
+    ? `${focusEntry?.title || sceneMeta?.name || '명령'} 확정 대기`
+    : previewAction
+      ? `${focusEntry?.title || sceneMeta?.name || '명령'} 실행 후보 대기`
+      : `${sceneMeta?.name || '명령'} 카드 선택 대기`;
+  const commitCopy = pendingAction
+    ? '하단 결정 버튼이나 Enter로 이번 턴 선택을 바로 확정합니다.'
+    : previewAction
+      ? '왼쪽 카드가 결정 패널을 바꿨습니다. Enter로 곧바로 턴 결정을 올릴 수 있습니다.'
+      : '왼쪽 카드 하나를 누르면 이 보드가 즉시 턴 결정으로 바뀝니다.';
+
+  return `
+    <section class="command-seal-docket tone-${state}">
+      <div class="command-seal-docket-head">
+        <div class="command-seal-docket-heading">
+          <span class="command-seal-docket-kicker">결정 보드</span>
+          <strong>확정 단계</strong>
+        </div>
+        <span class="command-seal-docket-state">${statusLabel}</span>
+      </div>
+      <div class="command-seal-focus">
+        <span class="command-seal-focus-label">${pendingAction ? '즉시 확정' : previewAction ? '올라온 후보' : '이번 턴 판단'}</span>
+        <strong>${focusTitle}</strong>
+        <p>${focusCopy}</p>
+      </div>
+      <div class="command-seal-grid">
+        <article class="command-seal-card">
+          <span class="command-seal-card-label">거점</span>
+          <strong>${city?.name || '도시 미선택'}</strong>
+          <small>${battlefieldDirector?.objective || director?.headline || '선택 도시에서 바로 결정을 시작합니다.'}</small>
+        </article>
+        <article class="command-seal-card">
+          <span class="command-seal-card-label">장면</span>
+          <strong>${sceneMeta?.name || '명령'}</strong>
+          <small>${sceneDetail}</small>
+        </article>
+        <article class="command-seal-card">
+          <span class="command-seal-card-label">확정</span>
+          <strong>${pendingAction ? '지금 확정' : previewAction ? '후보 올림' : '선택 대기'}</strong>
+          <small>${sealDetail}</small>
+        </article>
+        <article class="command-seal-card">
+          <span class="command-seal-card-label">행동력</span>
+          <strong>${actionsRemaining} 남음</strong>
+          <small>${actionsRemaining > 0 ? '이번 턴 추가 명령 여지' : '이번 턴 행동 종료 상태'}</small>
+        </article>
+        <article class="command-seal-card command-seal-card-wide">
+          <span class="command-seal-card-label">판독 → 결정</span>
+          <strong>${truncateBridgeLine(mapReadout, 84)}</strong>
+          <small>${truncateBridgeLine(focusEntry?.effect || focusEntry?.decisionNote || decisionLine, 120)}</small>
+        </article>
+      </div>
+      <div class="command-seal-commit">
+        <span class="command-seal-commit-label">${commitLabel}</span>
+        <strong>${commitTitle}</strong>
+        <small>${commitCopy}</small>
+      </div>
+    </section>
+  `;
+}
+
+function buildCommandStrikeCards({
+  context = 'candidate',
+  mode = 'brief',
+  sceneMeta = null,
+  city = null,
+  entry = null,
+  actionsRemaining = 0,
+  selectableCount = 0,
+  decisionLine = '',
+  mapReadout = '',
+  battlefieldDirector = null,
+  recommendedSceneMeta = null,
+  candidateTitle = '',
+  candidateCopy = '',
+  commitTitle = '',
+  commitCopy = '',
+} = {}) {
+  const isDecision = mode === 'decision';
+  const isPreview = mode === 'preview';
+  const sceneName = sceneMeta?.name || '명령';
+  const routeScene = recommendedSceneMeta && recommendedSceneMeta.name !== sceneName
+    ? `${sceneName} -> ${recommendedSceneMeta.name}`
+    : `${sceneName} -> 턴 확정`;
+  const actionWindow = actionsRemaining > 0
+    ? `${actionsRemaining} 행동 남음${selectableCount > 0 && !entry ? ` · ${selectableCount}개 카드` : ''}`
+    : '행동력 0 · 턴 종료선';
+  const targetLine = battlefieldDirector?.objective
+    || battlefieldDirector?.focus
+    || decisionLine
+    || candidateTitle
+    || '전장 축 정리 중';
+  const riskLine = battlefieldDirector?.risk
+    || battlefieldDirector?.whyNow
+    || mapReadout
+    || '리스크 판독 대기';
+  const effectLine = entry?.effect
+    || entry?.decisionNote
+    || entry?.confirmText
+    || entry?.detail
+    || entry?.subtitle
+    || decisionLine
+    || sceneMeta?.placeholderCopy
+    || '즉시 효과 판독 대기';
+  const routeLine = isDecision
+    ? `${entry?.title || sceneName} -> Enter -> 턴 확정`
+    : isPreview
+      ? `${entry?.title || sceneName} 후보 -> Enter -> 턴 확정`
+      : routeScene;
+
+  if (context === 'lane') {
+    return [
+      {
+        label: '지도 판독',
+        value: mapReadout || '지도 판독 대기',
+        note: battlefieldDirector?.risk || battlefieldDirector?.whyNow || '전장 압박 축을 먼저 읽습니다.',
+        tone: 'primary',
+      },
+      {
+        label: entry ? '올라온 카드' : '실행 후보',
+        value: candidateTitle || `${sceneName} 카드 선택 대기`,
+        note: candidateCopy || '카드 선택 직후 이 칸이 즉시 바뀝니다.',
+        tone: entry ? 'effect' : 'window',
+      },
+      {
+        label: '행동 창',
+        value: actionWindow,
+        note: recommendedSceneMeta?.name && recommendedSceneMeta.name !== sceneName
+          ? `현재 ${sceneName} · 권장 ${recommendedSceneMeta.name}`
+          : `${sceneName} 장면에서 바로 결정`,
+        tone: 'window',
+      },
+      {
+        label: '턴 확정',
+        value: commitTitle || routeLine,
+        note: commitCopy || 'Enter 또는 하단 결정 버튼으로 이번 턴을 잠급니다.',
+        tone: 'route',
+      },
+    ];
+  }
+
+  return [
+    {
+      label: isDecision ? '확정 목표' : '지금 목표',
+      value: targetLine,
+      note: city?.name || '도시 미선택',
+      tone: 'primary',
+    },
+    {
+      label: '리스크',
+      value: riskLine,
+      note: battlefieldDirector?.whyNow || mapReadout || '판독 축 정리 중',
+      tone: 'risk',
+    },
+    entry
+      ? {
+          label: '즉시 효과',
+          value: effectLine,
+          note: entry.cost || actionWindow,
+          tone: 'effect',
+        }
+      : {
+          label: '행동 창',
+          value: actionWindow,
+          note: selectableCount > 0
+            ? `${selectableCount}개 카드 중 첫 결정을 고르십시오.`
+            : '실행 카드 준비 중',
+          tone: 'window',
+        },
+    {
+      label: '확정선',
+      value: routeLine,
+      note: isDecision
+        ? 'Enter 또는 하단 결정 버튼'
+        : isPreview
+          ? '후보를 한 번 더 잠그면 바로 확정'
+          : routeScene,
+      tone: 'route',
+    },
+  ];
+}
+
+function renderCommandStrikeStrip(cards = [], { tone = 'neutral', state = 'brief', context = 'candidate' } = {}) {
+  if (!cards.length) return '';
+  const valueMax = context === 'lane' ? 46 : 56;
+  const noteMax = context === 'lane' ? 78 : 84;
+  return `
+    <div class="command-strike-strip tone-${tone}" data-state="${state}" data-context="${context}">
+      ${cards.map((card) => `
+        <article class="command-strike-card tone-${card.tone || 'steady'}">
+          <span class="command-strike-label">${card.label}</span>
+          <strong>${truncateBridgeLine(card.value || '', valueMax)}</strong>
+          ${card.note ? `<small>${truncateBridgeLine(card.note, noteMax)}</small>` : ''}
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderCommandCandidateLive({
+  mode = 'brief',
+  sceneId = null,
+  sceneMeta = null,
+  city = null,
+  entry = null,
+  actionsRemaining = 0,
+  selectableCount = 0,
+  director = null,
+  battlefieldDirector = null,
+  recommendedSceneMeta = null,
+} = {}) {
+  const tone = entry ? getCommandPreviewTone(entry) : sceneId || 'neutral';
+  const isDecision = mode === 'decision';
+  const isPreview = mode === 'preview';
+  const decisionLine = director?.status?.find?.(([label]) => label === '다음 행동')?.[1]
+    || director?.status?.find?.(([label]) => label === '결정')?.[1]
+    || director?.status?.find?.(([label]) => label === '권고')?.[1]
+    || battlefieldDirector?.action
+    || sceneMeta?.placeholderCopy
+    || '카드를 고르면 결정 패널가 바로 반응합니다.';
+  const mapReadout = battlefieldDirector?.mapReadout
+    || battlefieldDirector?.sessionTrace?.mapReadout
+    || director?.subhead
+    || sceneMeta?.placeholderCopy
+    || '지도 판독 대기';
+  const sceneRoute = recommendedSceneMeta && recommendedSceneMeta.name !== sceneMeta?.name
+    ? `${sceneMeta?.name || '명령'} · 권장 ${recommendedSceneMeta.name}`
+    : `${sceneMeta?.name || '명령'} 장면 고정`;
+  const stateLabel = isDecision
+    ? '즉시 집행'
+    : isPreview
+      ? '후보 잠금'
+      : '첫 카드';
+  const headline = isDecision
+    ? '이번 턴에 내릴 명령이 정해졌습니다'
+    : isPreview
+      ? '이 후보를 실행할지 바로 고르십시오'
+      : '카드를 골라 이번 턴 명령을 정하십시오';
+  const focusTitle = isDecision
+    ? `${entry?.title || sceneMeta?.name || '명령'} 실행 준비`
+    : isPreview
+      ? `${entry?.title || sceneMeta?.name || '명령'} 후보`
+      : entry
+        ? `${entry.title}부터 이번 턴 명령을 시작합니다`
+        : `${sceneMeta?.name || '명령'}에서 명령을 고르십시오`;
+  const focusCopy = isDecision
+    ? entry?.confirmText || entry?.decisionNote || entry?.effect || entry?.detail || '지금 Enter를 누르면 이번 턴에 즉시 반영됩니다.'
+    : isPreview
+      ? entry?.detail || entry?.decisionNote || entry?.subtitle || entry?.effect || '후보가 올라왔습니다. 확인한 뒤 바로 확정할 수 있습니다.'
+      : entry?.decisionNote || entry?.effect || '왼쪽 카드 하나를 누르면 이번 턴 명령 후보가 바로 올라갑니다.';
+  const chips = [
+    ['거점', city?.name || '도시 미선택'],
+    ['장면', sceneRoute],
+    ['행동력', `${actionsRemaining} 남음`],
+    [isDecision || isPreview ? '확정' : '후보', isDecision
+      ? entry?.cost || '행동력 1'
+      : isPreview
+        ? truncateBridgeLine(entry?.effect || entry?.decisionNote || entry?.subtitle || 'Enter로 바로 확정', 24)
+        : `${selectableCount}개 카드`],
+  ];
+  const commitTitle = isDecision
+    ? 'Enter 또는 하단 결정 버튼으로 바로 실행'
+    : isPreview
+      ? 'Enter로 이 후보를 바로 확정'
+      : '카드를 고르면 바로 실행 준비가 됩니다';
+  const commitCopy = isDecision
+    ? truncateBridgeLine(decisionLine, 112)
+    : isPreview
+      ? truncateBridgeLine(mapReadout, 112)
+      : truncateBridgeLine(decisionLine, 112);
+  const strikeCards = buildCommandStrikeCards({
+    context: 'candidate',
+    mode,
+    sceneMeta,
+    city,
+    entry,
+    actionsRemaining,
+    selectableCount,
+    decisionLine,
+    mapReadout,
+    battlefieldDirector,
+    recommendedSceneMeta,
+  });
+
+  return `
+    <section class="command-candidate-live tone-${tone}" data-state="${mode}">
+      <div class="command-candidate-live-head">
+        <div class="command-candidate-live-copy">
+          <span class="command-candidate-live-kicker">이번 턴 권고</span>
+          <strong>${headline}</strong>
+        </div>
+        <span class="command-candidate-live-state">${stateLabel}</span>
+      </div>
+      <p class="command-candidate-live-route">${truncateBridgeLine(decisionLine, 148)}</p>
+      ${renderCommandStrikeStrip(strikeCards, { tone, state: mode, context: 'candidate' })}
+      <div class="command-candidate-live-focus">
+        <span class="command-candidate-live-focus-label">${isDecision ? '현재 확정안' : isPreview ? '올라온 후보' : '우선 카드'}</span>
+        <strong>${focusTitle}</strong>
+        <small>${focusCopy}</small>
+      </div>
+      <div class="command-candidate-live-chips">
+        ${chips.map(([label, value]) => `
+          <span class="command-candidate-live-chip">
+            <em>${label}</em>
+            <strong>${value}</strong>
+          </span>
+        `).join('')}
+      </div>
+      <div class="command-candidate-live-commit">
+        <strong>${commitTitle}</strong>
+        <small>${commitCopy}</small>
+      </div>
+    </section>
+  `;
+}
+
+function renderCommandSelectionStatus({
+  mode = 'brief',
+  sceneMeta = null,
+  city = null,
+  entry = null,
+  tone = 'brief',
+  actionsRemaining = 0,
+  director = null,
+  battlefieldDirector = null,
+  recommendedSceneMeta = null,
+} = {}) {
+  const isDecision = mode === 'decision';
+  const isPreview = mode === 'preview';
+  const decisionLine = director?.status?.find?.(([label]) => label === '결정')?.[1]
+    || director?.status?.find?.(([label]) => label === '권고')?.[1]
+    || sceneMeta?.placeholderCopy
+    || '카드를 고르면 결정 패널이 바로 실행 후보로 바뀝니다.';
+  const mapReadout = battlefieldDirector?.mapReadout
+    || battlefieldDirector?.sessionTrace?.mapReadout
+    || director?.subhead
+    || sceneMeta?.placeholderCopy
+    || '지도 판독 대기';
+  const laneHeadline = isDecision
+    ? '이번 턴에 내릴 명령이 거의 정해졌습니다'
+    : isPreview
+      ? '후보를 확인하고 바로 확정할 수 있습니다'
+      : '카드를 골라 이번 턴 명령을 정하십시오';
+  const laneState = isDecision
+    ? '확정 대기'
+    : isPreview
+      ? '후보 검토'
+      : '선택 전';
+  const candidateTitle = entry?.title || `${sceneMeta?.name || '명령'} 카드 선택 대기`;
+  const candidateCopy = isDecision
+    ? entry?.confirmText || entry?.decisionNote || entry?.detail || entry?.subtitle || entry?.effect || '이번 턴에 바로 반영할 선택입니다.'
+    : isPreview
+      ? entry?.detail || entry?.decisionNote || entry?.subtitle || entry?.effect || '후보가 올라왔습니다. Enter로 바로 확정할 수 있습니다.'
+      : sceneMeta?.placeholderCopy || '현재 장면의 카드 한 장이 곧바로 결정 보드에 올라갑니다.';
+  const sceneRoute = recommendedSceneMeta && recommendedSceneMeta.name !== sceneMeta?.name
+    ? `현재 ${sceneMeta?.name || '명령'} · 권장 ${recommendedSceneMeta.name}`
+    : `${sceneMeta?.name || '명령'} 장면에서 바로 결정`;
+  const chips = entry
+    ? [
+      ['거점', city?.name || '도시 미선택'],
+      ['비용', entry.cost || '행동력 1'],
+      ['즉시 효과', truncateBridgeLine(entry.effect || entry.decisionNote || entry.subtitle || '이번 턴 판세에 즉시 반영', 42)],
+    ]
+    : [
+      ['거점', city?.name || '도시 미선택'],
+      ['장면', sceneMeta?.name || '명령'],
+      ['행동력', `${actionsRemaining} 남음`],
+    ];
+  const selectionState = entry ? (isDecision ? 'armed' : 'active') : 'pending';
+  const commitState = isDecision ? 'armed' : isPreview ? 'ready' : 'pending';
+  const commitTitle = isDecision
+    ? `${entry?.title || sceneMeta?.name || '명령'} 실행 준비`
+    : isPreview
+      ? `${entry?.title || sceneMeta?.name || '명령'} 확인 중`
+      : '카드를 고르면 바로 실행 준비';
+  const commitCopy = isDecision
+    ? `${truncateBridgeLine(decisionLine, 96)} · Enter나 하단 결정 버튼으로 즉시 실행합니다.`
+    : isPreview
+      ? '후보를 다시 누르거나 Enter를 눌러 바로 확정합니다.'
+      : '카드를 고르면 이 보드가 바로 이번 턴의 명령을 받습니다.';
+  const commitPills = [
+    `${actionsRemaining} AP`,
+    isDecision ? 'Enter · 즉시 확정' : isPreview ? 'Enter · 후보 확정' : '카드 선택 필요',
+    sceneRoute,
+  ];
+  const strikeCards = buildCommandStrikeCards({
+    context: 'lane',
+    mode,
+    sceneMeta,
+    city,
+    entry,
+    actionsRemaining,
+    decisionLine,
+    mapReadout,
+    battlefieldDirector,
+    recommendedSceneMeta,
+    candidateTitle,
+    candidateCopy,
+    commitTitle,
+    commitCopy,
+  });
+
+  return `
+    <section class="command-decision-lane tone-${tone}" data-state="${mode}">
+      <div class="command-decision-lane-head">
+        <div class="command-decision-lane-heading">
+          <span class="command-decision-lane-kicker">진행 순서</span>
+          <strong>${laneHeadline}</strong>
+        </div>
+        <span class="command-decision-lane-state">${laneState}</span>
+      </div>
+      ${renderCommandStrikeStrip(strikeCards, { tone, state: mode, context: 'lane' })}
+      <div class="command-decision-track">
+        <article class="command-decision-step is-complete" data-step="readout">
+          <span class="command-decision-step-index">01</span>
+          <div class="command-decision-step-copy">
+            <span class="command-decision-step-label">지도 판독</span>
+            <strong>${truncateBridgeLine(mapReadout, 76)}</strong>
+            <p>${truncateBridgeLine(decisionLine, 118)}</p>
+          </div>
+        </article>
+        <article class="command-decision-step is-${selectionState}" data-step="selection">
+          <span class="command-decision-step-index">02</span>
+          <div class="command-decision-step-copy">
+            <span class="command-decision-step-label">${entry ? '올라온 카드' : '실행 후보'}</span>
+            <strong>${candidateTitle}</strong>
+            <p>${candidateCopy}</p>
+            <div class="selection-status-rail tone-${tone}">
+              ${chips.map(([label, value]) => `
+                <span class="selection-status-chip">
+                  <em>${label}</em>
+                  <strong>${value}</strong>
+                </span>
+              `).join('')}
+            </div>
+          </div>
+        </article>
+        <article class="command-decision-step is-${commitState}" data-step="commit">
+          <span class="command-decision-step-index">03</span>
+          <div class="command-decision-step-copy">
+            <span class="command-decision-step-label">턴 확정</span>
+            <strong>${commitTitle}</strong>
+            <p>${commitCopy}</p>
+            <div class="command-decision-commit-row">
+              ${commitPills.map((pill) => `<span class="command-decision-commit-pill">${pill}</span>`).join('')}
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  `;
+}
+
+function truncateBridgeLine(text = '', max = 68) {
+  const compact = `${text || ''}`.replace(/\s+/g, ' ').trim();
+  if (!compact) return '';
+  return compact.length > max ? `${compact.slice(0, Math.max(0, max - 1)).trim()}…` : compact;
+}
+
+function renderCommandBridgeSpine(steps = [], { layout = 'strip', density = 'compact' } = {}) {
+  if (!steps.length) return '';
+  const stripCount = Math.max(1, steps.length);
+  return `
+    <div class="battlefield-session-spine" data-layout="${layout}" data-density="${density}" style="--battlefield-session-strip-count:${stripCount}">
+      ${steps.map((step, index) => `
+        <article class="battlefield-session-step is-${step.status || 'pending'}">
+          <span class="battlefield-session-step-index">${index + 1}</span>
+          <div class="battlefield-session-step-copy">
+            <span class="battlefield-session-step-label">${step.label}</span>
+            <strong>${truncateBridgeLine(step.title || step.value || '', density === 'compact' ? 28 : 40)}</strong>
+            <small>${truncateBridgeLine(step.detail || '', density === 'compact' ? 70 : 92)}</small>
+          </div>
+        </article>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderCommandBridgeMetaStrip(items = []) {
+  if (!items.length) return '';
+  return `
+    <div class="city-session-tactical-strip battlefield-session-meta-strip">
+      ${items.slice(0, 3).map((item) => `
+        <span class="city-session-tactical-chip tone-${item.tone || 'steady'}">
+          <em>${item.label}</em>
+          <strong>${item.value}</strong>
+        </span>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderCommandBridgeStory({
+  city,
+  sceneMeta,
+  sceneId = null,
+  recommendedScene = null,
+  battlefieldDirector = null,
+  cityBandLine = '',
+  bridgeNote = '',
+  mapReadoutLine = '',
+  frontlineLine = '',
+  nextActionLine = '',
+}) {
+  const recommendedMeta = COMMAND_SCENES[recommendedScene] || null;
+  const aligned = !recommendedScene || recommendedScene === sceneId;
+  const actionTitle = aligned
+    ? sceneMeta?.name || '명령'
+    : `권장 ${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'}`;
+  const actionBadge = aligned
+    ? '현재 권장 장면'
+    : `권장 ${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'}`;
+  const actionNote = aligned
+    ? `${sceneMeta?.name || '명령'} 장면에서 실행 후보를 고르고 바로 확정합니다.`
+    : `${sceneMeta?.name || '명령'} 장면을 보고 있지만 다음 행동은 ${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'} 쪽에 맞춰져 있습니다.`;
+
+  return `
+    <div class="command-bridge-story">
+      <article class="battlefield-session-focus-card" data-slot="city">
+        <div class="battlefield-session-focus-head">
+          <div class="battlefield-session-focus-seal">${getFactionSealLabel(city.owner)}</div>
+          <div class="battlefield-session-focus-copy">
+            <span class="battlefield-session-focus-kicker">선택 도시</span>
+            <strong>${city.name}</strong>
+            <span class="battlefield-session-focus-subline">${truncateBridgeLine(cityBandLine, 88)}</span>
+          </div>
+        </div>
+        <p class="battlefield-session-focus-note">${truncateBridgeLine(bridgeNote, 124)}</p>
+        ${renderCommandBridgeMetaStrip(battlefieldDirector?.tags || [])}
+      </article>
+      <article class="battlefield-session-pivot-card" data-slot="map">
+        <span class="battlefield-session-pivot-label">지도 판독</span>
+        <strong>${truncateBridgeLine(mapReadoutLine, 60)}</strong>
+        <small>${truncateBridgeLine(battlefieldDirector?.whyNow || frontlineLine || bridgeNote, 104)}</small>
+        <div class="battlefield-session-inline-note battlefield-session-inline-note-subtle">${truncateBridgeLine(frontlineLine, 72)}</div>
+      </article>
+      <article class="battlefield-session-pivot-card battlefield-session-pivot-card-primary" data-slot="action">
+        <span class="battlefield-session-pivot-label">다음 행동</span>
+        <strong>${truncateBridgeLine(actionTitle, 44)}</strong>
+        <small>${truncateBridgeLine(nextActionLine, 104)}</small>
+        <div class="battlefield-session-inline-note battlefield-session-inline-note-subtle">${actionBadge}</div>
+        <p class="battlefield-session-inline-note">${truncateBridgeLine(actionNote, 120)}</p>
+      </article>
+    </div>
+  `;
+}
+
+function renderCommandBridgeDecisionTrack({
+  city,
+  sceneMeta,
+  battlefieldDirector = null,
+  recommendedScene = null,
+  sceneId = null,
+  mapReadoutLine = '',
+  nextActionLine = '',
+  frontlineLine = '',
+}) {
+  const recommendedMeta = COMMAND_SCENES[recommendedScene] || null;
+  const actionDetail = recommendedScene && recommendedScene !== sceneId
+    ? `${nextActionLine} · 권장 ${recommendedMeta?.name || recommendedScene}`
+    : nextActionLine;
+  const steps = [
+    {
+      label: '선택 도시',
+      title: city.name,
+      detail: battlefieldDirector?.objective || battlefieldDirector?.focus || city.name,
+      status: 'complete',
+    },
+    {
+      label: '지도 판독',
+      title: mapReadoutLine,
+      detail: battlefieldDirector?.whyNow || frontlineLine || mapReadoutLine,
+      status: 'complete',
+    },
+    {
+      label: '다음 행동',
+      title: sceneMeta.name,
+      detail: actionDetail,
+      status: recommendedScene && recommendedScene !== sceneId ? 'recommended' : 'complete',
+    },
+    {
+      label: '턴 확정',
+      title: recommendedScene === sceneId ? '패널에서 바로 확정' : `권장 ${recommendedMeta?.name || recommendedScene || sceneMeta.name}`,
+      detail: recommendedScene === sceneId
+        ? `${sceneMeta.name} 장면에서 카드를 고르고 곧바로 확정할 수 있습니다.`
+        : `현재는 ${sceneMeta.name} 장면입니다. 필요하면 권장 장면으로 옮겨 흐름을 맞춥니다.`,
+      status: 'active',
+    },
+  ];
+
+  return renderCommandBridgeSpine(steps, { layout: 'strip', density: 'compact' });
+}
+
+function renderCommandBridgeRouteDeck({
+  city,
+  sceneMeta,
+  sceneId,
+  recommendedScene = null,
+  battlefieldDirector = null,
+  mapReadoutLine = '',
+  nextActionLine = '',
+  frontlineLine = '',
+  bridgeNote = '',
+}) {
+  const recommendedMeta = COMMAND_SCENES[recommendedScene] || null;
+  const aligned = !recommendedScene || recommendedScene === sceneId;
+  const route = [
+    {
+      label: '거점',
+      value: city?.name || '도시 미선택',
+      state: 'active',
+    },
+    {
+      label: '판독',
+      value: mapReadoutLine || '지도 판독 대기',
+      state: 'active',
+    },
+    {
+      label: '장면',
+      value: aligned ? sceneMeta?.name || '명령' : recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령',
+      state: aligned ? 'ready' : 'pending',
+    },
+    {
+      label: '확정',
+      value: aligned ? '현재 패널에서 확정' : '권장 장면 전환',
+      state: aligned ? 'armed' : 'pending',
+    },
+  ];
+  const focusTitle = aligned
+    ? `${sceneMeta?.name || '명령'}에서 턴 결정을 바로 고정합니다`
+    : `${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'}로 옮겨 같은 결정 축을 유지합니다`;
+  const focusCopy = aligned
+    ? `${sceneMeta?.name || '명령'} 카드 한 장이 곧바로 턴 결정으로 이어집니다.`
+    : `${sceneMeta?.name || '명령'}을 보고 있지만 권장 축은 ${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'}입니다.`;
+  const deckNote = aligned
+    ? nextActionLine || bridgeNote || '현재 장면에서 바로 이번 턴 결정을 밀어 올릴 수 있습니다.'
+    : bridgeNote || nextActionLine || '장면만 맞춰 주면 다음 행동 흐름이 다시 같은 축으로 맞춰집니다.';
+  const meta = [
+    frontlineLine || '전선 판독 대기',
+    battlefieldDirector?.objective || bridgeNote || '선택 도시 허브',
+    aligned ? '현재 권장 장면' : `권장 ${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'}`,
+  ];
+
+  return `
+    <aside class="battlefield-decision-deck battlefield-decision-deck-bridge" data-context="bridge" data-state="${aligned ? 'selection' : 'overview'}" data-tone="${aligned ? 'aligned' : '전환'}">
+      <div class="battlefield-decision-deck-head">
+        <div class="battlefield-decision-deck-copy">
+          <span class="battlefield-decision-deck-kicker">${aligned ? '다음 행동' : '장면 전환'}</span>
+          <strong>${truncateBridgeLine(focusTitle, 62)}</strong>
+          <small>${truncateBridgeLine(focusCopy, 128)}</small>
+        </div>
+        <span class="battlefield-decision-deck-state">${aligned ? '바로 확정' : '전환 필요'}</span>
+      </div>
+      <div class="battlefield-decision-route">
+        ${route.map((entry) => `
+          <article class="battlefield-decision-route-step is-${entry.state}">
+            <em>${entry.label}</em>
+            <strong>${truncateBridgeLine(entry.value, 28)}</strong>
+          </article>
+        `).join('')}
+      </div>
+      <div class="battlefield-decision-focus">
+        <span class="battlefield-decision-focus-label">${aligned ? '현재 결정 축' : '다음 장면 보정'}</span>
+        <strong>${truncateBridgeLine(aligned ? `${city?.name || '도시'} · ${sceneMeta?.name || '명령'}` : `${city?.name || '도시'} · ${recommendedMeta?.name || recommendedScene || sceneMeta?.name || '명령'}`, 56)}</strong>
+        <p>${truncateBridgeLine(deckNote, 148)}</p>
+      </div>
+      <div class="battlefield-decision-meta">
+        ${meta.map((entry) => `<span class="battlefield-decision-meta-chip">${truncateBridgeLine(entry, 32)}</span>`).join('')}
+      </div>
+    </aside>
+  `;
+}
+
+function renderCommandBridge({ city, sceneId, director = null, battlefieldDirector = null, recommendedScene = null }) {
+  const sceneMeta = COMMAND_SCENES[sceneId] || { name: sceneId || '명령', kicker: 'command' };
+  const recommendedMeta = COMMAND_SCENES[recommendedScene] || null;
+  const frontlineLine = director?.status?.find?.(([label]) => label === '전선')?.[1]
+    || battlefieldDirector?.risk
+    || '전선 판독 대기';
+  const mapReadoutLine = battlefieldDirector?.mapReadout
+    || battlefieldDirector?.sessionTrace?.mapReadout
+    || frontlineLine;
+  const nextActionLine = director?.status?.find?.(([label]) => label === '권고')?.[1]
+    || battlefieldDirector?.action
+    || sceneMeta.placeholderCopy
+    || '이번 턴의 명령을 정하십시오.';
+  const bridgeNote = battlefieldDirector?.objective
+    || battlefieldDirector?.whyNow
+    || director?.subhead
+    || sceneMeta.placeholderCopy
+    || '';
+  const cityBandLine = battlefieldDirector?.objective
+    || director?.headline
+    || director?.subhead
+    || city.name;
+  const sessionBadge = recommendedScene === sceneId ? '현재 권장 장면' : `권장 ${recommendedMeta?.name || recommendedScene || sceneMeta.name}`;
+
+  return `
+    <section class="command-bridge-panel" data-scene="${sceneId}">
+      <div class="command-bridge-head">
+        <div class="command-bridge-heading">
+          <span class="command-bridge-kicker">전장 판단</span>
+          <strong class="command-bridge-title">${city.name} · ${sceneMeta.name}</strong>
+        </div>
+        <span class="command-bridge-badge">${sessionBadge}</span>
+      </div>
+      <div class="command-bridge-grid">
+        <div class="command-bridge-main">
+          <div class="command-bridge-status">
+            <div class="command-bridge-status-copy">
+              <span class="command-bridge-status-label">이번 턴 흐름</span>
+              <strong>${truncateBridgeLine(nextActionLine, 88)}</strong>
+            </div>
+          </div>
+          ${renderCommandBridgeStory({
+            city,
+            sceneMeta,
+            sceneId,
+            recommendedScene,
+            battlefieldDirector,
+            cityBandLine,
+            bridgeNote,
+            mapReadoutLine,
+            frontlineLine,
+            nextActionLine,
+          })}
+          ${renderCommandBridgeDecisionTrack({
+            city,
+            sceneMeta,
+            battlefieldDirector,
+            recommendedScene,
+            sceneId,
+            mapReadoutLine,
+            nextActionLine,
+            frontlineLine,
+          })}
+        </div>
+        ${renderCommandBridgeRouteDeck({
+          city,
+          sceneMeta,
+          sceneId,
+          recommendedScene,
+          battlefieldDirector,
+          mapReadoutLine,
+          nextActionLine,
+          frontlineLine,
+          bridgeNote,
+        })}
+      </div>
+    </section>
+  `;
 }
 
 function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state = null, connections = []) {
@@ -1694,6 +3415,7 @@ function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state 
   const city = { id: cityId, ...state.cities[cityId] };
   const faction = state.getFaction(state.player.factionId);
   const forecast = getCityForecast(cityId, state);
+  const director = buildCommandDirectorPacket({ cityId, sceneId, state, connections });
   const digest = buildSceneDigest(sceneId, city, state, faction, forecast, connections);
   const sceneBadges = {
     government: '장부 브리프',
@@ -1704,8 +3426,8 @@ function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state 
   return `
     <div class="command-preview-empty command-preview-digest scene-${sceneId}">
       <div class="command-preview-kicker">${sceneBadges[sceneId] || sceneMeta.kicker}</div>
-      <h3>${digest.title || sceneMeta.placeholderTitle}</h3>
-      <p>${digest.copy || sceneMeta.placeholderCopy}</p>
+      <h3>${director.headline || digest.title || sceneMeta.placeholderTitle}</h3>
+      <p>${director.subhead || digest.copy || sceneMeta.placeholderCopy}</p>
       <div class="preview-digest-grid">
         ${(digest.stats || []).map((item) => `
           <div class="preview-digest-card">
@@ -1721,10 +3443,55 @@ function renderScenePlaceholder(sceneMeta, sceneId = null, cityId = null, state 
   `;
 }
 
+function renderCommandSheetPreview({
+  mode = 'brief',
+  sceneMeta = null,
+  sceneId = null,
+  cityId = null,
+  state = null,
+  connections = [],
+  entry = null,
+} = {}) {
+  const tone = entry ? getCommandPreviewTone(entry) : sceneId || 'neutral';
+  const previewKicker = mode === 'decision'
+    ? '결과 미리보기'
+    : mode === 'preview'
+      ? '후보 판독'
+      : '장면 판독';
+  const previewTitle = mode === 'decision'
+    ? '확정 직전 파급과 세부'
+    : mode === 'preview'
+      ? '후보가 올라온 이유와 즉시 파급'
+      : `${sceneMeta?.name || '명령'} 장면에서 먼저 읽을 축`;
+  const previewBadge = mode === 'decision'
+    ? '즉시 실행'
+    : mode === 'preview'
+      ? '후보'
+      : '판독';
+  const content = entry
+    ? renderPendingPreview(entry)
+    : renderScenePlaceholder(sceneMeta, sceneId, cityId, state, connections);
+
+  return `
+    <section class="command-sheet-preview-panel tone-${tone}" data-state="${mode}">
+      <div class="command-sheet-preview-head">
+        <div class="command-sheet-preview-copy">
+          <span class="command-sheet-preview-kicker">${previewKicker}</span>
+          <strong>${previewTitle}</strong>
+        </div>
+        <span class="command-sheet-preview-badge">${previewBadge}</span>
+      </div>
+      <div class="command-sheet-preview-body">
+        ${content}
+      </div>
+    </section>
+  `;
+}
+
 function renderPendingPreview(entry) {
   const tone = getCommandPreviewTone(entry);
   const kicker = {
-    government: '시정 결재안',
+    government: '시정 결정안',
     military: '군령 발령안',
     diplomacy: '교섭 제안서',
     personnel: '인사 조치안',
@@ -1742,6 +3509,16 @@ function renderPendingPreview(entry) {
       ${entry.cost ? `<div class="command-preview-cost">${entry.cost}</div>` : ''}
     </div>
   `;
+}
+
+function formatConfirmActionLabel(label = '') {
+  const compact = label.replace(/\s+/g, ' ').trim();
+  if (!compact) return '명령';
+  return compact.length > 8 ? `${compact.slice(0, 8).trim()}...` : compact;
+}
+
+function renderFooterButtonLabel(label, hotkey) {
+  return `<span>${label}</span><kbd>${hotkey}</kbd>`;
 }
 
 function getCommandPreviewTone(entry) {
@@ -1773,16 +3550,33 @@ function createCommandKey(entry) {
   ].filter(Boolean).join(':');
 }
 
+function createSectionKey(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9가-힣]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function formatSectionCount(enabledCount, totalCount) {
+  if (!totalCount) return '0개';
+  return enabledCount === totalCount ? `${totalCount}개` : `${enabledCount}/${totalCount}`;
+}
+
 function buildSceneDigest(sceneId, city, state, faction, forecast, connections = []) {
   const tactician = state.getTactician?.(state.player.factionId);
+  const doctrine = getFactionDoctrine(state?.player?.factionId);
+  const sceneDoctrine = doctrine?.command?.[sceneId] || doctrine?.command?.government || null;
   if (sceneId === 'government') {
     const policy = getCityPolicy(city);
     const research = getResearchStatus(state, state.player.factionId);
     const activeBuilds = Object.values(city.buildings || {}).filter((building) => building?.building).length;
     const buyPreview = previewFoodTrade(state, city.id, city.food < 9000 ? 3000 : 2000, 'buy');
     return {
-      title: `${city.name} 시정 브리핑`,
-      copy: '지금 명령을 고르지 않아도, 이 도시가 어디에서 이득을 보고 어디가 흔들리는지, 그리고 교역으로 무엇을 메울지부터 읽을 수 있어야 합니다.',
+      title: `${city.name} ${sceneDoctrine?.boardTitle || '시정 브리핑'}`,
+      copy: joinCopyParts(
+        sceneDoctrine?.digestLead,
+        '지금 명령을 고르지 않아도, 이 도시가 어디에서 이득을 보고 어디가 흔들리는지, 그리고 교역으로 무엇을 메울지부터 읽을 수 있어야 합니다.'
+      ),
       stats: [
         { label: '태수', value: city.governor ? getCharName(city.governor) : '공석' },
         { label: '시정', value: policy.domestic.name },
@@ -1793,6 +3587,7 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
       ],
       notes: [
         `${policy.domestic.name}: ${policy.domestic.bonus}`,
+        sceneDoctrine?.noteLead || '이번 시정은 도시의 장기 리듬을 바꾸는 판단입니다.',
         tactician ? `${getCharName(tactician.id)}: ${buildAdvisorOneLiner('government', city.id, state)}` : '책사를 임명하면 시정 브리핑의 방향성이 선명해집니다.',
         forecast.recommendations[0] || '이번 턴에는 성장축 하나를 확실히 밀어주는 편이 좋습니다.',
         forecast.bonuses[0] || '건설과 연구는 다음 몇 턴의 질감을 바꾸는 장기 선택입니다.',
@@ -1809,8 +3604,11 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
     const supplyTargets = friendlyNeighbors.filter((neighbor) => getSuggestedFoodTransport(city, neighbor, enemyNeighbors.length > 0).amount > 0);
     const conscriptPreview = previewConscript(city.id, state, city.governor || state.getFaction(state.player.factionId)?.leader);
     return {
-      title: `${city.name} 전황 보드`,
-      copy: '출정과 병력 이동은 같은 버튼 문법이 아니라 같은 전선 보드 안에서 읽혀야 합니다.',
+      title: `${city.name} ${sceneDoctrine?.boardTitle || '전황 보드'}`,
+      copy: joinCopyParts(
+        sceneDoctrine?.digestLead,
+        '출정과 병력 이동은 같은 버튼 문법이 아니라 같은 전선 보드 안에서 읽혀야 합니다.'
+      ),
       stats: [
         { label: '병력', value: formatNumber(city.army) },
         { label: '방어', value: formatNumber(asNumber(city.defense)) },
@@ -1821,9 +3619,10 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
       ],
       notes: [
         `${policy.military.name}: ${policy.military.bonus}`,
+        sceneDoctrine?.noteLead || '이번 군령은 병력과 보급을 함께 보는 판단입니다.',
         tactician ? `${getCharName(tactician.id)}: ${buildAdvisorOneLiner('military', city.id, state)}` : '책사를 임명하면 군령 장면의 조언이 강화됩니다.',
-        enemyNeighbors.length > 0 ? `즉시 검토 가능한 적 접경 도시 ${enemyNeighbors.length}곳` : '즉시 침공보다 병력 집결이 먼저인 판입니다.',
-        supplyTargets[0] ? `${supplyTargets[0].name} 방향으로 군량 수송을 검토할 수 있습니다.` : (friendlyNeighbors.length > 0 ? `${friendlyNeighbors[0].name} 방향으로 보강 루트가 열려 있습니다.` : '병력 재배치는 제한적입니다.'),
+        enemyNeighbors.length > 0 ? `즉시 눌러볼 수 있는 적 접경 도시 ${enemyNeighbors.length}곳` : '즉시 침공보다 병력 집결이 먼저인 판입니다.',
+        supplyTargets[0] ? `${supplyTargets[0].name} 방향으로 군량 수송 카드를 바로 열 수 있습니다.` : (friendlyNeighbors.length > 0 ? `${friendlyNeighbors[0].name} 방향으로 보강 루트가 열려 있습니다.` : '병력 재배치는 제한적입니다.'),
         conscriptPreview.allowed ? `징병 시 치안 -${conscriptPreview.orderLoss}, 인구 -${formatNumber(conscriptPreview.populationLoss)}` : `${terrainLabel(city.terrain?.type || city.terrain)} 거점이라 방어 투자 가치가 있습니다.`,
       ],
     };
@@ -1832,8 +3631,11 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
   if (sceneId === 'diplomacy') {
     const targetOwner = city.owner && city.owner !== state.player.factionId ? state.factions[city.owner] : null;
     return {
-      title: targetOwner ? `${targetOwner.name} 외교 브리핑` : '천하 외교 브리핑',
-      copy: '강화, 동맹, 위협, 첩보는 같은 외교 장부 안에서 성공률과 후폭풍을 함께 읽게 해야 합니다.',
+      title: targetOwner ? `${targetOwner.name} ${sceneDoctrine?.boardTitle || '외교 브리핑'}` : `천하 ${sceneDoctrine?.boardTitle || '외교 브리핑'}`,
+      copy: joinCopyParts(
+        sceneDoctrine?.digestLead,
+        '강화, 동맹, 위협, 첩보는 같은 외교 장부 안에서 성공률과 후폭풍을 함께 읽게 해야 합니다.'
+      ),
       stats: [
         { label: '평판', value: formatNumber(faction.reputation || 100) },
         { label: '전쟁', value: `${(faction.enemies || []).length}곳` },
@@ -1841,6 +3643,7 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
         { label: '책사', value: tactician ? getCharName(tactician.id) : (targetOwner ? targetOwner.name : '복수 세력') },
       ],
       notes: [
+        sceneDoctrine?.noteLead || '이번 외교는 다음 전선을 바꾸는 장기 판단입니다.',
         tactician ? `${getCharName(tactician.id)}: ${buildAdvisorOneLiner('diplomacy', city.id, state)}` : '책사를 임명하면 외교 장면의 조언과 판정이 강화됩니다.',
         targetOwner ? `현재 ${targetOwner.name}과 ${state.isAtWar(state.player.factionId, targetOwner.id) ? '전쟁 중' : '직접 전쟁은 아님'}` : '도시를 바꾸면 외교 대상과 첩보 대상도 바뀝니다.',
         `총병력 ${formatNumber(state.getTotalArmy(state.player.factionId))} 기준으로 외교 압박이 계산됩니다.`,
@@ -1857,8 +3660,11 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
     .filter((char) => char.equipment && Object.values(char.equipment).some(Boolean) && char.id !== faction?.leader)
     .sort((a, b) => totalEquippedRarityScore(b) - totalEquippedRarityScore(a));
   return {
-    title: `${city.name} 인재 장부`,
-    copy: '장수 수, 포로, 방랑 인재, 태수 상태를 먼저 보여줘야 인사가 게임처럼 읽힙니다.',
+    title: `${city.name} ${sceneDoctrine?.boardTitle || '인재 장부'}`,
+    copy: joinCopyParts(
+      sceneDoctrine?.digestLead,
+      '장수 수, 포로, 방랑 인재, 태수 상태를 먼저 보여줘야 인사가 게임처럼 읽힙니다.'
+    ),
     stats: [
       { label: '태수', value: city.governor ? getCharName(city.governor) : '공석' },
       { label: '장수', value: `${myChars.length}명` },
@@ -1866,6 +3672,7 @@ function buildSceneDigest(sceneId, city, state, faction, forecast, connections =
       { label: '책사', value: tactician ? getCharName(tactician.id) : '없음' },
     ],
       notes: [
+        sceneDoctrine?.noteLead || '이번 인사는 도시 역할을 분리하는 판단입니다.',
         tactician ? `${getCharName(tactician.id)}: ${buildAdvisorOneLiner('personnel', city.id, state)}` : '책사를 임명하면 인사 장면의 장부가 더 분명해집니다.',
         myChars.length > 0 ? `도시 장수층을 재배치하면 전선 도시와 후방 도시 역할이 또렷해집니다.` : '현재 이 도시에 배치된 장수가 적어, 다른 도시 장수를 불러오는 편이 낫습니다.',
         lowLoyalty ? `${getCharName(lowLoyalty.id)}의 충성 ${Math.round(lowLoyalty.loyalty ?? 50)}은 포상 대상입니다.` : (wanderers.length > 0 ? `${wanderers.length}명의 방랑 인재가 감지됩니다.` : '탐색보다 내부 재배치에 집중할 수 있습니다.'),

@@ -1,9 +1,23 @@
 # app-surface artifact
 
-- updated_at: 2026-03-24T22:57:17.678Z
+- updated_at: 2026-03-27T17:37:20.626Z
 - candidate: Playable app surface evolution lane
-- pass_index: 3
-- run_dir: `/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654`
+- pass_index: 12
+- run_dir: `/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-022845-9bf502ac`
+- route_source: agent-routing-state
+- route_context_origin: agent-routing-state
+- urgency_snapshot: app-surface:1, autotest:0, content-pipeline:0
+- top_urgency_lane: app-surface
+- top_urgency_value: 1
+- top_urgency_tie: app-surface
+- top_urgency_tie_text: none
+- top_urgency_tie_count: 1
+- primary_focus_axis: engine-slice
+- focus_alignment: aligned
+- route_confidence: aligned
+- route_confidence_raw: aligned
+- route_confidence_text: aligned
+- route_summary: top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state
 
 ```json
 {
@@ -18,10 +32,28 @@
   "transitionCards": 2,
   "spotlightCards": 5,
   "keyArtifacts": {
-    "htmlSha1": "474c41ea38f77f164026e71cb87e6d2064af9e70",
-    "appSha1": "315f84a3055d3ab02a167fca53baab07a5658a85",
-    "actionPanelSha1": "df7e67528e78d20453ba4efd6df8ca0c8a65fdaf",
-    "styleSha1": "1dc4cfee63a2d6b29680132f081fe4223feef822"
+    "htmlSha1": "8b7803e40f9e988ce2b303aea116e9b9e2330dd2",
+    "appSha1": "ee5340a18f34a6e320f48da55f066d0058eb70d9",
+    "actionPanelSha1": "338126eed642dc4a0384ab4463aac1e5cf9e19a6",
+    "styleSha1": "f252e8c600d264777f28f7a789b54ef78d217e7f"
+  },
+  "route_context": {
+    "route_context_origin": "agent-routing-state",
+    "route_source": "agent-routing-state",
+    "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+    "top_urgency_lane": "app-surface",
+    "top_urgency_value": 1,
+    "top_urgency_tie": [
+      "app-surface"
+    ],
+    "top_urgency_tie_text": "none",
+    "top_urgency_tie_count": 1,
+    "primary_focus_axis": "engine-slice",
+    "focus_alignment": "aligned",
+    "route_confidence": "aligned",
+    "route_confidence_raw": "aligned",
+    "route_confidence_text": "aligned",
+    "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
   }
 }
 ```

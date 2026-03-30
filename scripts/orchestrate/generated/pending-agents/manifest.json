@@ -1,5 +1,9 @@
 {
-  "generated_at": "2026-03-24T22:58:43.018Z",
-  "pending_count": 0,
-  "files": []
+  "generated_at": "2026-03-27T18:20:33.712Z",
+  "pending_count": 3,
+  "files": [
+    "scripts/orchestrate/generated/pending-agents/ux-first-frame-specialist.json",
+    "scripts/orchestrate/generated/pending-agents/map-art-specialist.json",
+    "scripts/orchestrate/generated/pending-agents/qa-debt-specialist.json"
+  ]
 }

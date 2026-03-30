@@ -1,0 +1,533 @@
+{
+  "version": 2,
+  "updated_at": "2026-03-28T04:55:00.000Z",
+  "campaign": "factory-self-upgrade",
+  "goal": "Let split durable long-runs improve orchestration, verification, and runtime quality without needing per-task chat steering.",
+  "items": [
+    {
+      "id": "event-engine-replay",
+      "title": "Add deterministic event-engine replay coverage",
+      "status": "completed",
+      "priority": 1,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-27T00:00:00.000Z",
+      "owned_paths": [
+        "engine/core/event-engine.js",
+        "scripts/qa/replay-event-engine.js",
+        "scripts/qa/run-factory-replay-suite.js"
+      ],
+      "done_when": [
+        "random event trigger/effect flow has deterministic replay coverage",
+        "engine-slice and autotest replay suites include the event-engine check",
+        "node --check and direct replay command both pass"
+      ],
+      "verification": [
+        "node --check engine/core/event-engine.js",
+        "node scripts/qa/replay-event-engine.js",
+        "node scripts/qa/run-factory-replay-suite.js --axis engine-slice"
+      ],
+      "notes": [
+        "Implemented RNG injection via evaluateTrigger/checkEvents options.random.",
+        "Replay harness now covers trigger randomness, priority sorting, effect application, and territory edge cases.",
+        "Keep changes within engine/test infrastructure, not app surface."
+      ]
+    },
+    {
+      "id": "replay-diff-reporting",
+      "title": "Improve replay failure diff reporting",
+      "status": "completed",
+      "priority": 2,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-27T00:00:00.000Z",
+      "owned_paths": [
+        "scripts/qa/run-factory-replay-suite.js",
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/spark-assignment-contract.md"
+      ],
+      "done_when": [
+        "replay failures show which check failed and enough diff context to debug quickly",
+        "factory hook surfaces the failing replay id in its final JSON"
+      ],
+      "verification": [
+        "node --check scripts/qa/run-factory-replay-suite.js",
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js"
+      ],
+      "notes": [
+        "Replay suite now emits failed_check_ids, failed_checks, failure_summary, and failure_excerpt.",
+        "Factory hook now surfaces replay_failure_ids and replay_failures in both success and failure JSON.",
+        "Do not weaken failure semantics."
+      ]
+    },
+    {
+      "id": "app-surface-phase-guardrail",
+      "title": "Add preflight signal for non-split long-run launch mistakes",
+      "status": "completed",
+      "priority": 3,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-27T00:00:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/run-unified-long-run.js",
+        "docs/factory-self-upgrade-lane.md"
+      ],
+      "done_when": [
+        "operator can see from one place that split durable mode is mandatory for app-surface work",
+        "launcher output makes the active factory/game phase allocation obvious"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/run-unified-long-run.js",
+        "node scripts/orchestrate/run-unified-long-run.js --preset 3h --print-only"
+      ],
+      "notes": [
+        "Unified launcher now emits preflight split/durable/app-surface policy details in print-only and launch modes.",
+        "Launcher validates that factory/game phase hours sum to the requested duration.",
+        "Favor launcher and docs over risky runtime surgery."
+      ]
+    },
+    {
+      "id": "turn-loop-replay",
+      "title": "Add deterministic turn-loop replay coverage",
+      "status": "completed",
+      "priority": 1,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-27T01:00:00.000Z",
+      "owned_paths": [
+        "engine/core/turn-loop.js",
+        "scripts/qa/replay-turn-loop.js",
+        "scripts/qa/run-factory-replay-suite.js"
+      ],
+      "done_when": [
+        "executeTurnEvents/processPlayerChoice have deterministic smoke replay coverage on a real scenario fixture",
+        "engine-slice and autotest replay suites include the turn-loop check",
+        "node --check and direct replay command both pass"
+      ],
+      "verification": [
+        "node --check engine/core/turn-loop.js",
+        "node scripts/qa/replay-turn-loop.js",
+        "node scripts/qa/run-factory-replay-suite.js --axis engine-slice"
+      ],
+      "notes": [
+        "Prefer bounded replay fixtures over wide simulation.",
+        "Keep app surface out of scope.",
+        "executeTurnEvents now accepts options.random passthrough so random_chance fixtures can replay deterministically.",
+        "Replay harness covers player-event selection, AI auto-choice handling, MAX_EVENTS_PER_TURN clipping, and processPlayerChoice summary output."
+      ]
+    },
+    {
+      "id": "replay-summary-artifact",
+      "title": "Materialize replay verification digest for operators",
+      "status": "completed",
+      "priority": 2,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-27T01:00:00.000Z",
+      "owned_paths": [
+        "scripts/qa/materialize-replay-summary.js",
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "latest replay verification can be compacted into a small operator-facing digest artifact",
+        "factory hook points to the digest path in its final JSON",
+        "node --check passes for any new JS script"
+      ],
+      "verification": [
+        "node --check scripts/qa/materialize-replay-summary.js"
+      ],
+      "notes": [
+        "Favor new files and concise artifacts.",
+        "Do not duplicate the full replay suite JSON.",
+        "Factory hook now writes a replay digest artifact beside the full replay suite JSON and surfaces both path and digest in final JSON."
+      ]
+    },
+    {
+      "id": "backlog-auto-reseed",
+      "title": "Surface candidate next items when the factory backlog is empty",
+      "status": "completed",
+      "priority": 3,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-27T02:00:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "scripts/orchestrate/factory-upgrade-backlog.json",
+        "docs/factory-self-upgrade-lane.md"
+      ],
+      "done_when": [
+        "factory hook can surface conservative candidate items instead of going blank when no open items remain",
+        "candidate suggestions remain worktree-safe and bounded"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js"
+      ],
+      "notes": [
+        "Do not auto-edit dirty tracked runtime files.",
+        "Heuristics should prefer docs/qa/new files first.",
+        "When no open backlog items remain, the factory hook now emits conservative candidate items with worktree safety annotations."
+      ]
+    },
+    {
+      "id": "backlog-refresh-proposals",
+      "title": "Materialize backlog refresh proposals when the queue is exhausted",
+      "status": "completed",
+      "priority": 1,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T00:30:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "operator can inspect a small generated proposal list when factory queue is exhausted",
+        "proposal list cites routing and handoff sources instead of freeform guesswork",
+        "artifact stays worktree-safe and generated"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "Generated proposal artifact now lives at scripts/orchestrate/generated/factory-backlog-refresh.json.",
+        "Proposal list is filtered against current open/completed backlog ids so it stays actionable.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "route-tie-break-digest",
+      "title": "Materialize a compact tie-break digest for route ties",
+      "status": "completed",
+      "priority": 2,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T00:45:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "operator can see why a top-urgency tie exists and which safe factory lane should be preferred next",
+        "tie-break summary stays compact and points back to richer routing artifacts"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-operator-run-digest --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "factory_run_digest now includes route_tie_break with a preferred factory-safe lane and supporting artifact ids.",
+        "Current tie resolution prefers theme-independence over direct app-surface mutation inside the factory phase.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "diagnostic-refresh-fanout",
+      "title": "Fan out diagnostic-lane backlog refresh proposals by lane",
+      "status": "completed",
+      "priority": 3,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T01:05:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "queue exhaustion under a diagnostic tie yields compact per-lane backlog refresh proposals instead of one generic diagnostic item",
+        "proposal ranking stays grounded in routing coverage, pending-agent signals, and backlog history"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "factory-backlog-refresh now fans out map-art, qa-debt, and ux-first-frame follow-through audits when those lanes are tied.",
+        "Per-lane proposals cite coverage, pending specialists, and matching backlog history so reseeding stays operator-facing and bounded.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "backlog-refresh-digest-pointer",
+      "title": "Surface backlog refresh pointers in factory candidate and run digests",
+      "status": "completed",
+      "priority": 4,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T01:20:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "queue-exhausted candidate and run digests point directly to the latest factory-backlog-refresh artifact",
+        "digest summary stays compact and identifies the top reseed proposal without reopening the full JSON manually"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-operator-run-digest --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "Candidate and run digests now expose factory_backlog_refresh_path and a compact factory_backlog_refresh summary when the queue is exhausted.",
+        "Lane matching in route tie review also uses bounded keyword matching so map-art support does not collide with generic artifact text.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "backlog-refresh-next-action",
+      "title": "Promote the top backlog-refresh proposal into exhausted-state next actions",
+      "status": "completed",
+      "priority": 5,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T01:35:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "queue-exhausted candidate and run digests replace the generic next-action fallback with the top backlog-refresh proposal when one exists",
+        "summary lines stay compact and keep the canonical backlog and refresh artifact paths explicit"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-operator-run-digest --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The exhausted-state next_action now names the top reseed proposal from factory-backlog-refresh instead of only telling the operator to refresh the backlog.",
+        "Candidate artifact summary_lines also rewrite the factory next-step line so future prompts carry the concrete promotion target forward.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "backlog-refresh-source-of-truth",
+      "title": "Make factory-backlog-refresh the source of truth for promoted next actions",
+      "status": "completed",
+      "priority": 6,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T01:50:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "factory-backlog-refresh.json emits its own top_proposed_item and queue_next_action",
+        "candidate and run digests can inherit the promoted next step from that artifact instead of recomputing it independently"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The refresh artifact is now self-describing, which reduces drift between the raw proposal list and the digests that surface it.",
+        "Current pass metadata can consume top_proposed_item and queue_next_action directly from factory-backlog-refresh.json.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "backlog-summary-promotion",
+      "title": "Promote backlog-refresh next steps into the base factory backlog summary",
+      "status": "completed",
+      "priority": 7,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T02:05:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "buildPrompt no longer emits the stale generic factory next-step line when a backlog-refresh promotion target exists",
+        "backlogSummary.summaryLines, candidate artifacts, and run digests share the same promoted next-step wording"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-candidate-artifact --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The promoted next step now gets injected into summarizeFactoryBacklog before buildPrompt consumes summaryLines.",
+        "This keeps future factory prompts aligned with the generated backlog-refresh artifact instead of lagging a pass behind.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "lane-follow-through-audit",
+      "title": "Materialize a lane-specific factory follow-through audit artifact",
+      "status": "completed",
+      "priority": 8,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T02:20:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-lane-follow-through-audit.js",
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "the top backlog-refresh proposal can be materialized into a lane-specific generated audit artifact before canonical backlog promotion",
+        "per-lane refresh proposals point at that audit script instead of only pointing back to the backlog-refresh generator"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-lane-follow-through-audit.js",
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node scripts/orchestrate/materialize-factory-lane-follow-through-audit.js --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The audit artifact summarizes routing diagnostics, pending specialist signals, matching backlog history, and the recommended next step for one lane.",
+        "Current diagnostic tie proposals now point to materialize-factory-lane-follow-through-audit.js so the operator can inspect map-art or sibling lanes directly.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "top-proposal-audit-pointer",
+      "title": "Surface the top proposal's lane audit path in refresh and run digests",
+      "status": "completed",
+      "priority": 9,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T02:35:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "the current top backlog-refresh proposal exposes its lane-audit path when that artifact already exists",
+        "prompt summaries and run digests can point the operator directly at the lane audit without another lookup step"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The top-proposal summary now carries lane_audit_path, and the run digest artifacts section mirrors that path for operator navigation.",
+        "Current map-art follow-through audits can be reached directly from factory-backlog-refresh.json and the preflight run digest.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "top-proposal-backlog-template",
+      "title": "Surface the top proposal's backlog template in refresh and run digests",
+      "status": "completed",
+      "priority": 10,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T03:05:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-lane-follow-through-audit.js",
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "the top lane audit can hand over a ready backlog item template without forcing the operator to reconstruct JSON by hand",
+        "factory-backlog-refresh.json and exhausted candidate/run digests surface that template alongside the current top proposal"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-lane-follow-through-audit.js",
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/materialize-factory-lane-follow-through-audit.js --run-dir <run-dir> --pass-json <pass-json>",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-operator-run-digest --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The lane audit now emits promote_backlog_item, and the refresh/digest summaries surface it as top_proposed_backlog_item.",
+        "Prompt-facing summary lines now tell the operator when a promotion template is already ready for the canonical backlog.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "theme-top-route-refresh",
+      "title": "Promote theme-independence refresh proposals when that lane leads the route",
+      "status": "completed",
+      "priority": 11,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T04:00:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "a top-urgency theme-independence route emits a factory-safe refresh proposal even when no urgency tie exists",
+        "queue-exhausted digests can stay aligned to the active theme-independence route instead of falling back to leftover diagnostic proposals"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-candidate-artifact --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "theme-boundary-coverage-audit now materializes whenever theme-independence is the top urgency lane, not only during ties.",
+        "This keeps exhausted backlog refresh recommendations aligned with the active factory-safe route for theme work.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "theme-boundary-coverage-audit",
+      "title": "Add a focused theme-independence replay coverage audit",
+      "status": "completed",
+      "priority": 12,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T04:20:00.000Z",
+      "owned_paths": [
+        "scripts/qa/list-replay-coverage.js",
+        "docs/factory-self-upgrade-lane.md"
+      ],
+      "done_when": [
+        "operator can run a focused replay coverage audit for theme-independence instead of scanning the full axis inventory",
+        "the audit can be materialized into a generated JSON artifact for later route handoff and review"
+      ],
+      "verification": [
+        "node --check scripts/qa/list-replay-coverage.js",
+        "node scripts/qa/list-replay-coverage.js --axis theme-independence",
+        "node scripts/qa/list-replay-coverage.js --axis theme-independence --output scripts/orchestrate/generated/theme-independence-replay-coverage.json"
+      ],
+      "notes": [
+        "Focused axis audits now surface recommended_action and operator_commands for one axis.",
+        "theme-independence can now be materialized as its own replay coverage artifact instead of only appearing inside the full inventory.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "stale-backlog-refresh-guard",
+      "title": "Guard against stale backlog-refresh artifacts in current pass prompts",
+      "status": "completed",
+      "priority": 13,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T04:40:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "candidate and run digests stop promoting backlog-refresh proposal lines when the artifact was generated for a different run/pass or candidate axis",
+        "the exhausted queue points the operator at an exact rerun command for materialize-factory-backlog-refresh.js before any promotion happens"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/hooks/run-codex-factory-agent.js",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-candidate-artifact --run-dir <run-dir> --pass-json <pass-json>",
+        "node scripts/orchestrate/hooks/run-codex-factory-agent.js --materialize-operator-run-digest --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "The hook now carries backlog-refresh freshness_status, stale_reasons, and refresh_command in digest summaries.",
+        "When stale context is detected, factory next-step lines are rewritten to refresh the artifact instead of promoting old proposals or audit paths.",
+        "Do not touch public app-surface files."
+      ]
+    },
+    {
+      "id": "stale-lane-audit-guard",
+      "title": "Suppress stale lane-audit pointers inside refreshed backlog proposals",
+      "status": "completed",
+      "priority": 14,
+      "owner": "factory-codex",
+      "completed_at": "2026-03-28T04:55:00.000Z",
+      "owned_paths": [
+        "scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "docs/factory-runtime-handoff.md"
+      ],
+      "done_when": [
+        "factory-backlog-refresh.json only surfaces top_proposed_lane_audit and top_proposed_backlog_item when the lane audit matches the current run/pass context",
+        "when the lane audit is stale, the refresh artifact points at the exact materialize-factory-lane-follow-through-audit.js command instead of exposing an old path/template"
+      ],
+      "verification": [
+        "node --check scripts/orchestrate/materialize-factory-backlog-refresh.js",
+        "node scripts/orchestrate/materialize-factory-backlog-refresh.js --run-dir <run-dir> --pass-json <pass-json>"
+      ],
+      "notes": [
+        "Lane-audit freshness now checks run dir, pass index, and candidate axis before surfacing audit/template pointers.",
+        "This keeps refreshed queue artifacts from borrowing stale map-art follow-through audits across durable runs.",
+        "Do not touch public app-surface files."
+      ]
+    }
+  ]
+}

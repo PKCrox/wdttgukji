@@ -460,6 +460,8 @@ Territory:
 - 웹 데모 **우당탕탕삼국지**는 내부 실험용 **수직 슬라이스(vertical slice)** 단계까지 진입했다.
 - 공장 계층은 이제 단순 스크립트 묶음이 아니라 **adaptive runner + durable runtime skeleton + agent registry evolution** 구조로 올라왔다.
 - 장기 운영은 **factory 4시간 → game 4시간** split long-run으로 검증했다.
+- Mac mini 기준 현재 기본 장기 런 경로는 **durable runtime + logged-in Codex CLI session** 이다.
+- factory phase는 Codex로 orchestration/QA/policy를 밀고, game phase는 Codex로 실제 UI/code mutation lane까지 태운다.
 - 가장 최근 장기 런 요약은 [`long-run-verification.md`](docs/long-run-verification.md)에 남겨뒀다.
 - 주의: `runs/`는 로컬 산출물이라 일반 clone에는 포함되지 않을 수 있다. 따라서 clone만으로는 long-run 완료를 직접 재현하지 못할 수 있다.
 - 이미 확보한 강점:
@@ -862,14 +864,37 @@ npm run passes:run -- --profile wdttgukji-product-core --passes 10
 npm run passes:iterate -- --profile wdttgukji-product-core --iterations 3 --passes 10
 
 # factory 4h -> game 4h split 장기 런
-npm run passes:long-run -- --duration-hours 8 --split-factory-game --batch-iterations 3 --passes 10
+# 기본 경로는 durable runtime + local Codex CLI session이다.
+source ~/.zshrc
+export WDTT_CODEX_MODEL=gpt-5.4-mini
+npm run passes:long-run -- \
+  --split-factory-game \
+  --factory-hours 4 \
+  --game-hours 4 \
+  --factory-profile wdttgukji-diagnostic \
+  --game-profile wdttgukji-product-core \
+  --factory-batch-iterations 3 \
+  --game-batch-iterations 3 \
+  --factory-passes 10 \
+  --game-passes 10 \
+  --review-interval 5 \
+  --inline-workers 4 \
+  --goal "overnight durable split long run"
 ```
 
 참고:
 - 장기 런 결과는 `runs/long-runs/` 아래에 저장된다.
 - 가장 최근 검증된 split 장기 런의 요약은 [`docs/long-run-verification.md`](docs/long-run-verification.md)에 남긴다.
 - `runs/long-runs/*`는 로컬 산출물이라 일반 clone에는 비어 있을 수 있다.
-- durable runtime 실런은 별도 env가 필요하다: `WDTT_RUNTIME_DATABASE_URL`, `WDTT_RUNTIME_REDIS_URL`
+- split long-run 기본 경로는 durable runtime이며, factory phase는 `WDTT_CODEX_FACTORY_ENABLED=true`, game phase는 `WDTT_CODEX_AGENT_ENABLED=true`로 돈다.
+- game phase는 `full + app-surface` 정책으로 hybrid `app-surface` lane까지 실제로 태운다.
+- 이 경로는 repo 안에서 OpenAI API key를 직접 호출하는 방식이 아니라, 로그인된 `codex exec` 세션을 재사용하는 구조다.
+- durable runtime은 env가 필요하다: `WDTT_RUNTIME_DATABASE_URL`, `WDTT_RUNTIME_REDIS_URL`
+- 최근 Mac mini 검증 기준:
+  - `qa:slice` 통과
+  - factory Codex durable run 완료: `durable-run-20260327-033951-6e69794c`
+  - game Codex durable run 완료: `durable-run-20260327-033224-b6672791`
+  - split durable verification에서 factory/game 둘 다 진입 확인: `long-run-20260327-034921`
 
 프로덕션 배포판: [wdttgukji.vercel.app](https://wdttgukji.vercel.app)
 

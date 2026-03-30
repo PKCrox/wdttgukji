@@ -1,0 +1,20 @@
+{
+  "agent_id": "qa-debt-specialist",
+  "lane": "qa-debt",
+  "title": "Create a dedicated qa-debt specialist",
+  "rationale": "qa-debt has no explicit ownership in the registry.",
+  "suggested_contract": {
+    "lanes": [
+      "qa-debt"
+    ],
+    "mutation_scope": "workflow",
+    "fit_signals": [
+      "lane_coverage",
+      "gate_quality",
+      "handoff_quality"
+    ]
+  },
+  "status": "pending",
+  "proposed_at": "2026-03-26T19:02:40.180Z",
+  "target_doc_path": "ai/agents/pending/qa-debt-specialist.md"
+}

@@ -24,6 +24,7 @@ function parseArgs(argv) {
     continueOnFailure: false,
     reviewInterval: 5,
     inlineWorkers: 0,
+    includeHybrid: false,
   };
 
   for (let i = 0; i < argv.length; i += 1) {
@@ -34,6 +35,7 @@ function parseArgs(argv) {
     else if (token === '--continue-on-failure') args.continueOnFailure = true;
     else if (token === '--review-interval') args.reviewInterval = Number(argv[++i] || 5);
     else if (token === '--inline-workers') args.inlineWorkers = Number(argv[++i] || 0);
+    else if (token === '--include-hybrid') args.includeHybrid = true;
   }
 
   return args;
@@ -45,6 +47,75 @@ function timestamp() {
   return `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}-${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
 }
 
+function summarizeCounts(values) {
+  return values.reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+}
+
+function buildDurableAggregate(state, profile) {
+  const axisCounts = summarizeCounts(state.passes.map((entry) => entry.candidate.axis));
+  const candidateCounts = summarizeCounts(state.passes.map((entry) => entry.candidate.id));
+  const targetAxisCounts = profile.targetAxisCounts || {};
+  const requiredAxes = profile.requiredAxes || Object.keys(axisCounts);
+  const targetDeficits = Object.entries(targetAxisCounts)
+    .map(([axis, target]) => ({
+      axis,
+      target,
+      actual: axisCounts[axis] || 0,
+      deficit: Math.max(0, target - (axisCounts[axis] || 0)),
+    }))
+    .filter((entry) => entry.deficit > 0);
+  const failedPasses = state.passes
+    .filter((entry) => entry.status !== 'completed')
+    .map((entry) => ({
+      index: entry.index,
+      axis: entry.candidate.axis,
+      candidate: entry.candidate.id,
+      status: entry.status,
+    }));
+  const streakSourceAxes = state.passes.map((entry) => entry.candidate.axis);
+  const streakSourceCandidates = state.passes.map((entry) => entry.candidate.id);
+  const maxStreak = (values) => {
+    let best = 0;
+    let current = 0;
+    let previous = null;
+    for (const value of values) {
+      if (value === previous) current += 1;
+      else current = 1;
+      previous = value;
+      best = Math.max(best, current);
+    }
+    return best;
+  };
+
+  return {
+    iterations: 1,
+    required_axes: requiredAxes,
+    iterations_with_full_coverage: requiredAxes.every((axis) => (axisCounts[axis] || 0) > 0) ? 1 : 0,
+    failed_iterations: failedPasses.length ? [1] : [],
+    total_axis_counts: axisCounts,
+    average_axis_counts: axisCounts,
+    total_candidate_counts: candidateCounts,
+    average_candidate_counts: candidateCounts,
+    missing_axes_histogram: summarizeCounts(requiredAxes.filter((axis) => !(axisCounts[axis] || 0))),
+    target_deficit_histogram: summarizeCounts(targetDeficits.map((entry) => entry.axis)),
+    total_failed_passes: failedPasses.length,
+    failed_pass_histogram: summarizeCounts(failedPasses.map((entry) => entry.axis)),
+    failed_passes: failedPasses,
+    axis_counts: axisCounts,
+    candidate_counts: candidateCounts,
+    target_deficits: targetDeficits,
+    missing_axes: requiredAxes.filter((axis) => !(axisCounts[axis] || 0)),
+    max_candidate_streak_observed: maxStreak(streakSourceCandidates),
+    max_axis_streak_observed: maxStreak(streakSourceAxes),
+    recommendations: targetDeficits.length
+      ? [`Boost under-served axes: ${targetDeficits.map((entry) => entry.axis).join(', ')}`]
+      : ['Lane coverage stayed within target for this durable run.'],
+  };
+}
+
 async function ensureDir(dir) {
   await fs.mkdir(dir, { recursive: true });
 }
@@ -54,12 +125,32 @@ async function writeJson(filePath, data) {
   await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
 }
 
+async function readJsonOrDefault(filePath, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(filePath, 'utf8'));
+  } catch {
+    return fallback;
+  }
+}
+
 async function readAgentRoutingState() {
   try {
     return JSON.parse(await fs.readFile(AGENT_ROUTING_STATE_PATH, 'utf8'));
   } catch {
     return {
       updated_at: null,
+      routeSource: null,
+      routeContextOrigin: 'derived',
+      routeSummary: null,
+      routeConfidence: null,
+      routeConfidenceText: null,
+      primaryFocusAxis: null,
+      urgencySnapshot: null,
+      topUrgencyLane: null,
+      topUrgencyValue: null,
+      topUrgencyTie: [],
+      topUrgencyTieText: 'none',
+      topUrgencyTieCount: 0,
       laneUrgency: {},
       laneDiagnostics: {},
       pendingAgents: [],
@@ -106,6 +197,21 @@ async function writeRuntimeStateArtifacts(rootDir, runId, reviewHints, passState
   const generatedDir = path.join(rootDir, 'scripts', 'orchestrate', 'generated');
   const runtimeStatePath = path.join(generatedDir, 'runtime-state.json');
   const summaryPath = path.join(generatedDir, 'factory-runtime-summary.json');
+  const agentRoutingState = await readJsonOrDefault(path.join(generatedDir, 'agent-routing-state.json'), {
+    routeSource: null,
+    routeContextOrigin: 'derived',
+    routeConfidence: null,
+    routeConfidenceText: null,
+    routeSummary: null,
+    primaryFocusAxis: null,
+    urgencySnapshot: null,
+    topUrgencyLane: null,
+    topUrgencyTie: [],
+    topUrgencyTieText: 'none',
+    topUrgencyTieCount: 0,
+    topUrgencyValue: null,
+  });
+  const primaryFocusAxis = reviewHints.boostAxes?.[0] || passState.passes.at(-1)?.candidate.axis || null;
   const axisStatus = passState.passes.reduce((acc, entry) => {
     acc[entry.candidate.axis] = {
       updated_at: new Date().toISOString(),
@@ -123,6 +229,37 @@ async function writeRuntimeStateArtifacts(rootDir, runId, reviewHints, passState
     updated_at: new Date().toISOString(),
     last_run_id: runId,
     persistentBoostAxes: reviewHints.boostAxes || [],
+    primaryFocusAxis,
+    focusAlignment: primaryFocusAxis === passState.passes.at(-1)?.candidate.axis
+      ? 'aligned'
+      : `boosted toward ${primaryFocusAxis || 'n/a'}`,
+    routeSource: agentRoutingState.routeSource || null,
+    routeContextOrigin: (() => {
+      if (agentRoutingState.routeContextOrigin) return agentRoutingState.routeContextOrigin;
+      if (agentRoutingState.routeSource === 'agent-routing-state') return 'agent-routing-state';
+      if (agentRoutingState.routeSource === 'runtime-state') return 'runtime-state';
+      if (agentRoutingState.routeSource === 'factory-summary') return 'factory-summary';
+      if (agentRoutingState.routeSummary) return 'agent-routing-state';
+      return 'derived';
+    })(),
+    routeConfidence: agentRoutingState.routeConfidence || null,
+    routeConfidenceRaw: agentRoutingState.routeConfidence || null,
+    routeConfidenceText: agentRoutingState.routeConfidenceText
+      || (agentRoutingState.routeConfidence === 'tied'
+        ? `tied (${agentRoutingState.topUrgencyTieCount ?? 0}-way tie)`
+        : agentRoutingState.routeConfidence
+        || null),
+    routeSummary: (() => {
+      const baseRouteSummary = agentRoutingState.routeSummary
+        || `top urgency lane: ${agentRoutingState.topUrgencyLane || 'n/a'} (${agentRoutingState.topUrgencyValue ?? 'n/a'})${agentRoutingState.topUrgencyTieText && agentRoutingState.topUrgencyTieText !== 'none' ? ` · tie ${agentRoutingState.topUrgencyTieText}` : ''} · ${agentRoutingState.routeConfidenceText || agentRoutingState.routeConfidence || 'n/a'} · ${agentRoutingState.routeSource || 'n/a'} · origin ${agentRoutingState.routeContextOrigin || 'derived'}`;
+      return baseRouteSummary.includes('· origin ') ? baseRouteSummary : `${baseRouteSummary} · origin ${agentRoutingState.routeContextOrigin || 'derived'}`;
+    })(),
+    urgencySnapshot: agentRoutingState.urgencySnapshot || null,
+    topUrgencyLane: agentRoutingState.topUrgencyLane || null,
+    topUrgencyTie: agentRoutingState.topUrgencyTie || [],
+    topUrgencyTieText: agentRoutingState.topUrgencyTieText || 'none',
+    topUrgencyTieCount: agentRoutingState.topUrgencyTieCount ?? 0,
+    topUrgencyValue: agentRoutingState.topUrgencyValue ?? null,
     lastCheckpointReview: passState.reviews.at(-1) || null,
     axisStatus,
   };
@@ -131,6 +268,20 @@ async function writeRuntimeStateArtifacts(rootDir, runId, reviewHints, passState
     updatedAt: runtimeState.updated_at,
     lastRunId: runtimeState.last_run_id,
     persistentBoostAxes: runtimeState.persistentBoostAxes,
+    primaryFocusAxis: runtimeState.primaryFocusAxis,
+    focusAlignment: runtimeState.focusAlignment,
+    routeSource: runtimeState.routeSource || null,
+    routeContextOrigin: runtimeState.routeContextOrigin || null,
+    routeConfidence: runtimeState.routeConfidence || null,
+    routeConfidenceRaw: runtimeState.routeConfidenceRaw || null,
+    routeConfidenceText: runtimeState.routeConfidenceText || null,
+    routeSummary: runtimeState.routeSummary || null,
+    urgencySnapshot: runtimeState.urgencySnapshot || null,
+    topUrgencyLane: runtimeState.topUrgencyLane || null,
+    topUrgencyTie: runtimeState.topUrgencyTie || [],
+    topUrgencyTieText: runtimeState.topUrgencyTieText || 'none',
+    topUrgencyTieCount: runtimeState.topUrgencyTieCount ?? 0,
+    topUrgencyValue: runtimeState.topUrgencyValue ?? null,
     axisStatus: runtimeState.axisStatus,
   });
 }
@@ -258,9 +409,11 @@ async function main() {
 
   const profile = getProfile(args.profile);
   const policy = resolveMutationPolicy();
+  const includeHybrid = args.includeHybrid || (policy.allowAppSurface && policy.allowFullMutation);
   const store = new RuntimeStore(config);
   const queue = new RuntimeQueue(config);
   const runId = `durable-run-${timestamp()}-${randomUUID().slice(0, 8)}`;
+  const dbRunId = randomUUID();
   const runDir = path.join(config.artifactRoot, runId);
   const workers = args.inlineWorkers > 0 ? spawnInlineWorkers(args.inlineWorkers) : [];
 
@@ -291,26 +444,28 @@ async function main() {
 
   try {
     await store.createRun({
-      runId,
+      runId: dbRunId,
       goal: args.goal,
       profile: profile.id,
       requestedPasses: args.passes,
       runDir,
       policySnapshot: policy,
       metadata: {
+        humanRunId: runId,
         productAnchors: profile.productAnchors || [],
-        appSurfaceMutation: false,
+        appSurfaceMutation: includeHybrid,
+        includeHybrid,
       },
     });
     await store.createPolicySnapshot({
-      runId,
+      runId: dbRunId,
       version: 1,
       scope: 'default',
       policy,
     });
 
     for (let passIndex = 1; passIndex <= args.passes; passIndex += 1) {
-      const { chosen, ranked } = chooseCandidate(profile, state, { dryRun: false, includeHybrid: false });
+      const { chosen, ranked } = chooseCandidate(profile, state, { dryRun: false, includeHybrid });
       if (!chosen) break;
 
       const rankingSnapshot = ranked.map(({ candidate, score }) => ({
@@ -322,7 +477,7 @@ async function main() {
       }));
 
       const passId = await store.createPass({
-        runId,
+        runId: dbRunId,
         index: passIndex,
         candidate: chosen,
         rankingSnapshot,
@@ -334,7 +489,7 @@ async function main() {
 
       const graph = compilePassGraph(chosen);
       await appendRunLog(runDir, `[pass ${passIndex}] selected ${chosen.id} axis=${chosen.axis} tasks=${graph.length}`);
-      await store.insertTasks({ runId, passId, tasks: graph });
+      await store.insertTasks({ runId: dbRunId, passId, tasks: graph });
       const readyTaskIds = await store.getReadyTaskIds(passId);
       const queuedTaskIds = await store.markTasksQueued(readyTaskIds);
       await queue.enqueueTasks(queuedTaskIds);
@@ -391,11 +546,12 @@ async function main() {
           lastCheckpointReview: review,
         };
         await store.recordReview({
-          runId,
+          runId: dbRunId,
           afterPass: passIndex,
           review,
         });
         await writeRuntimeStateArtifacts(process.cwd(), runId, state.reviewHints, state);
+        await writeJson(path.join(runDir, 'aggregate.partial.json'), buildDurableAggregate(state, profile));
         await writeJson(path.join(runDir, 'state.partial.json'), state);
         const snapshotHook = `node scripts/orchestrate/hooks/materialize-product-core-snapshot.js --axis ${chosen.axis} --run-dir ${runDir} --pass-json ${path.join(runDir, `pass-${String(passIndex).padStart(3, '0')}.json`)}`;
         const snapshotResult = await runCommand(snapshotHook, process.cwd());
@@ -428,12 +584,13 @@ async function main() {
       }
 
       await writeRuntimeStateArtifacts(process.cwd(), runId, state.reviewHints, state);
-      await exportRunArtifacts(store, runId);
+      await exportRunArtifacts(store, dbRunId);
+      await writeJson(path.join(runDir, 'aggregate.partial.json'), buildDurableAggregate(state, profile));
       await writeJson(path.join(runDir, 'state.partial.json'), state);
 
       if (passRecord.status === 'failed' && !args.continueOnFailure) {
-        await store.updateRunStatus({ runId, status: 'failed' });
-        const finalExport = await exportRunArtifacts(store, runId);
+        await store.updateRunStatus({ runId: dbRunId, status: 'failed' });
+        const finalExport = await exportRunArtifacts(store, dbRunId);
         await writeJson(path.join(runDir, 'durable-summary.json'), {
           run_id: runId,
           status: 'failed',
@@ -452,9 +609,11 @@ async function main() {
       }
     }
 
-    await store.updateRunStatus({ runId, status: 'completed' });
+    await store.updateRunStatus({ runId: dbRunId, status: 'completed' });
     await writeRuntimeStateArtifacts(process.cwd(), runId, state.reviewHints, state);
-    const exported = await exportRunArtifacts(store, runId);
+    const exported = await exportRunArtifacts(store, dbRunId);
+    await writeJson(path.join(runDir, 'aggregate.partial.json'), buildDurableAggregate(state, profile));
+    await writeJson(path.join(runDir, 'aggregate.json'), buildDurableAggregate(state, profile));
     const agentEvolution = await runAgentEvolutionPostpass(exported.runDir, process.cwd());
     const summary = {
       run_id: runId,

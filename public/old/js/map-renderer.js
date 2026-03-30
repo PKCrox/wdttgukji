@@ -108,6 +108,107 @@ const ROAD_STYLE = {
   },
 };
 
+const DECISION_CAMERA = {
+  zoom: {
+    default: 1.34,
+    min: 0.92,
+    max: 1.58,
+    selection: {
+      edgeMargin: 0.24,
+      edgeDrop: 0.1,
+      clusterBonus: {
+        max: 0.08,
+        neighbors: 8,
+      },
+    },
+  },
+  viewport: {
+    inset: {
+      x: 0.032,
+      y: 0.028,
+    },
+    battleInset: {
+      x: 0.076,
+      y: 0.042,
+    },
+    battleFocusedInset: {
+      x: 0.108,
+      y: 0.05,
+    },
+  },
+  focus: {
+    targetX: 0.472,
+    targetY: 0.445,
+    readWindow: {
+      base: {
+        xMin: 0.16,
+        xMax: 0.8,
+        yMin: 0.1,
+        yMax: 0.75,
+        pad: {
+          x: 0.02,
+          y: 0.02,
+        },
+      },
+      selected: {
+        xMin: 0.128,
+        xMax: 0.72,
+        yMin: 0.08,
+        yMax: 0.7,
+        pad: {
+          x: 0.042,
+          y: 0.032,
+        },
+      },
+      focused: {
+        xMin: 0.112,
+        xMax: 0.7,
+        yMin: 0.076,
+        yMax: 0.705,
+        pad: {
+          x: 0.06,
+          y: 0.038,
+        },
+      },
+    },
+    pad: {
+      x: {
+        maxRatio: 0.26,
+        slackRatio: 0.058,
+      },
+      y: {
+        maxRatio: 0.22,
+        slackRatio: 0.05,
+      },
+    },
+    bias: {
+      // 선택 도시를 중앙 판독권 안쪽으로 당기되, 다음 행동 레일과 정보의 여유를 유지한다.
+      x: -0.028,
+      y: -0.01,
+      adaptive: {
+        x: 0.08,
+        y: 0.036,
+        scaleX: 0.36,
+        scaleY: 0.16,
+      },
+      anchor: {
+        x: 0.36,
+        y: 0.25,
+        maxX: 0.2,
+        maxY: 0.13,
+      },
+      // 선택 도시를 중심으로 이웃 도시 편차를 보정해 연결망 판독을 유지한다.
+      context: {
+        scaleX: 0.22,
+        scaleY: 0.15,
+        maxOffsetX: 0.038,
+        maxOffsetY: 0.028,
+      },
+      connectedNeighbors: 8,
+    },
+  },
+};
+
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
 }
@@ -151,12 +252,22 @@ export function resolveMapLayout(scenario) {
   return layout;
 }
 
-export function measureMapViewport(layout, width, height) {
+export function measureMapViewport(layout, width, height, options = {}) {
+  const { mode = 'default', insetX: forcedInsetX, insetY: forcedInsetY } = options;
+  const insetProfile = mode === 'battle' ? DECISION_CAMERA.viewport.battleInset : DECISION_CAMERA.viewport.inset;
   const designWidth = layout.designWidth || DEFAULT_W;
   const designHeight = layout.designHeight || DEFAULT_H;
-  const scale = Math.min(width / designWidth, height / designHeight);
-  const offsetX = (width - designWidth * scale) / 2;
-  const offsetY = (height - designHeight * scale) / 2;
+  const insetX = width * (Number.isFinite(forcedInsetX)
+    ? forcedInsetX
+    : ((insetProfile?.x ?? DECISION_CAMERA.viewport.inset.x) || 0));
+  const insetY = height * (Number.isFinite(forcedInsetY)
+    ? forcedInsetY
+    : ((insetProfile?.y ?? DECISION_CAMERA.viewport.inset.y) || 0));
+  const fitWidth = Math.max(1, width - insetX * 2);
+  const fitHeight = Math.max(1, height - insetY * 2);
+  const scale = Math.min(fitWidth / designWidth, fitHeight / designHeight);
+  const offsetX = ((fitWidth - designWidth * scale) / 2) + insetX;
+  const offsetY = ((fitHeight - designHeight * scale) / 2) + insetY;
 
   return {
     width,
@@ -189,17 +300,39 @@ export class MapRenderer {
     this._animFrame = null;
     this._animating = false;
     this._cameraAnimFrame = null;
+    this._containerResizeObserver = null;
+    this._resizeScheduled = false;
     this.selectionPulse = { cityId: null, startedAt: 0, tone: 'selection' };
-    this.camera = { zoom: 1.05, panX: 0, panY: 0 };
-    this.minZoom = 1;
-    this.maxZoom = 1.28;
+    this.camera = { zoom: DECISION_CAMERA.zoom.default, panX: 0, panY: 0 };
+    this.overlayMode = 'default';
+    this.minZoom = DECISION_CAMERA.zoom.min;
+    this.maxZoom = DECISION_CAMERA.zoom.max;
     this._boundResize = () => {
       this._resize();
+      if (this.selectedCity) {
+        if (!this.focusOnCity(this.selectedCity, { immediate: true })) {
+          if (this._lastState) this.render(this._lastState);
+        }
+        return;
+      }
       if (this._lastState) this.render(this._lastState);
     };
 
     this._resize();
     window.addEventListener('resize', this._boundResize);
+
+    const container = this.canvas.parentElement;
+    if (container && typeof ResizeObserver !== 'undefined') {
+      this._containerResizeObserver = new ResizeObserver(() => {
+        if (this._resizeScheduled) return;
+        this._resizeScheduled = true;
+        requestAnimationFrame(() => {
+          this._resizeScheduled = false;
+          this._boundResize();
+        });
+      });
+      this._containerResizeObserver.observe(container);
+    }
   }
 
   _resize() {
@@ -212,8 +345,33 @@ export class MapRenderer {
     this.canvas.style.width = `${width}px`;
     this.canvas.style.height = `${height}px`;
     this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    this.viewport = measureMapViewport(this.layout, width, height);
+    this._refreshDecisionViewport(width, height);
     this._clampCamera();
+  }
+
+  _isSessionMode() {
+    return Boolean(this.selectedCity);
+  }
+
+  _resolveDecisionViewportInset() {
+    const profile = this._isSessionMode()
+      ? DECISION_CAMERA.viewport.battleFocusedInset
+      : DECISION_CAMERA.viewport.battleInset;
+    return {
+      x: Number.isFinite(profile?.x) ? profile.x : DECISION_CAMERA.viewport.battleInset.x,
+      y: Number.isFinite(profile?.y) ? profile.y : DECISION_CAMERA.viewport.battleInset.y,
+    };
+  }
+
+  _refreshDecisionViewport(width = this.canvas?.clientWidth, height = this.canvas?.clientHeight) {
+    if (!this.canvas || !Number.isFinite(width) || !Number.isFinite(height)) return false;
+    const inset = this._resolveDecisionViewportInset();
+    this.viewport = measureMapViewport(this.layout, width, height, {
+      mode: 'battle',
+      insetX: inset.x,
+      insetY: inset.y,
+    });
+    return true;
   }
 
   _getViewTransform() {
@@ -224,12 +382,16 @@ export class MapRenderer {
     return { scale, offsetX, offsetY };
   }
 
-  _clampCamera() {
+  _clampCamera(focusTarget = null) {
     if (!this.viewport) return;
     const { width, height, designWidth, designHeight } = this.viewport;
     const scale = this.viewport.scale * this.camera.zoom;
-    const maxPanX = Math.max(0, (designWidth * scale - width) / 2);
-    const maxPanY = Math.max(0, (designHeight * scale - height) / 2);
+    const baseMaxPanX = Math.max(0, (designWidth * scale - width) / 2);
+    const baseMaxPanY = Math.max(0, (designHeight * scale - height) / 2);
+    const focusPadX = this._focusPad(baseMaxPanX, focusTarget?.panX, 'x');
+    const focusPadY = this._focusPad(baseMaxPanY, focusTarget?.panY, 'y');
+    const maxPanX = baseMaxPanX + focusPadX;
+    const maxPanY = baseMaxPanY + focusPadY;
     this.camera.panX = clamp(this.camera.panX, -maxPanX, maxPanX);
     this.camera.panY = clamp(this.camera.panY, -maxPanY, maxPanY);
   }
@@ -243,36 +405,61 @@ export class MapRenderer {
 
   resetCamera() {
     if (this._cameraAnimFrame) cancelAnimationFrame(this._cameraAnimFrame);
-    this.camera.zoom = 1.05;
+    this.camera.zoom = DECISION_CAMERA.zoom.default;
     this.camera.panX = 0;
     this.camera.panY = 0;
     if (this._lastState) this.render(this._lastState);
   }
 
-  focusOnCity(cityId, { immediate = false, targetXRatio = 0.5, targetYRatio = 0.58 } = {}) {
+  setOverlayMode(mode = 'default') {
+    const nextMode = mode === 'frontline' ? 'frontline' : 'default';
+    if (this.overlayMode === nextMode) return;
+    this.overlayMode = nextMode;
+    if (this._lastState) this.render(this._lastState);
+  }
+
+  focusOnCity(cityId, {
+    immediate = false,
+    targetXRatio = DECISION_CAMERA.focus.targetX,
+    targetYRatio = DECISION_CAMERA.focus.targetY,
+  } = {}) {
     const anchor = this.positions?.[cityId];
-    if (!anchor || !this.viewport) return false;
+    if (!anchor) return false;
+    if (!this._refreshDecisionViewport()) return false;
+    const readWindow = this._resolveDecisionReadWindow(cityId);
+    const clampedTarget = this._clampDecisionTarget(targetXRatio, targetYRatio, cityId);
+    const focusedTarget = this._composeDecisionTarget(cityId, clampedTarget, readWindow);
+    const targetZoom = this._resolveDecisionZoom(cityId);
     if (this._cameraAnimFrame) {
       cancelAnimationFrame(this._cameraAnimFrame);
       this._cameraAnimFrame = null;
     }
 
-    const scale = this.viewport.scale * this.camera.zoom;
+    const scale = this.viewport.scale * targetZoom;
     const baseOffsetX = (this.viewport.width - this.viewport.designWidth * scale) / 2;
     const baseOffsetY = (this.viewport.height - this.viewport.designHeight * scale) / 2;
-    const nextPanX = (this.viewport.width * targetXRatio) - (anchor.x * scale) - baseOffsetX;
-    const nextPanY = (this.viewport.height * targetYRatio) - (anchor.y * scale) - baseOffsetY;
-    const target = { panX: nextPanX, panY: nextPanY };
+    const nextPanX = (this.viewport.width * focusedTarget.x) - (anchor.x * scale) - baseOffsetX;
+    const nextPanY = (this.viewport.height * focusedTarget.y) - (anchor.y * scale) - baseOffsetY;
+    const target = {
+      panX: nextPanX,
+      panY: nextPanY,
+      zoom: targetZoom,
+    };
 
     if (immediate) {
       this.camera.panX = target.panX;
       this.camera.panY = target.panY;
-      this._clampCamera();
+      this.camera.zoom = target.zoom;
+      this._clampCamera(target);
       if (this._lastState) this.render(this._lastState);
       return true;
     }
 
-    const start = { panX: this.camera.panX, panY: this.camera.panY };
+    const start = {
+      panX: this.camera.panX,
+      panY: this.camera.panY,
+      zoom: this.camera.zoom,
+    };
     const startedAt = performance.now();
     const duration = 280;
     const easeOut = (t) => 1 - ((1 - t) * (1 - t) * (1 - t));
@@ -282,7 +469,8 @@ export class MapRenderer {
       const eased = easeOut(progress);
       this.camera.panX = start.panX + ((target.panX - start.panX) * eased);
       this.camera.panY = start.panY + ((target.panY - start.panY) * eased);
-      this._clampCamera();
+      this.camera.zoom = start.zoom + ((target.zoom - start.zoom) * eased);
+      this._clampCamera(target);
       if (this._lastState) this.render(this._lastState);
       if (progress < 1) {
         this._cameraAnimFrame = requestAnimationFrame(tick);
@@ -293,6 +481,216 @@ export class MapRenderer {
 
     this._cameraAnimFrame = requestAnimationFrame(tick);
     return true;
+  }
+
+  _resolveDecisionReadWindow(cityId = null) {
+    const config = DECISION_CAMERA.focus.readWindow || {};
+    const selectedCity = cityId || this.selectedCity;
+    const base = config.base || config;
+    const selectedWindow = this._isSessionMode() && config.focused ? config.focused : config.selected;
+    const selected = selectedCity ? selectedWindow : null;
+    const hasSelected = Boolean(selectedCity && this.positions?.[selectedCity]);
+    const useSelected = hasSelected && selected
+      && Number.isFinite(selected.xMin) && Number.isFinite(selected.xMax)
+      && Number.isFinite(selected.yMin) && Number.isFinite(selected.yMax);
+    const readWindow = {
+      xMin: clamp(useSelected ? selected.xMin : (Number.isFinite(base.xMin) ? base.xMin : 0.2), 0, 1),
+      xMax: clamp(useSelected ? selected.xMax : (Number.isFinite(base.xMax) ? base.xMax : 0.8), 0, 1),
+      yMin: clamp(useSelected ? selected.yMin : (Number.isFinite(base.yMin) ? base.yMin : 0.16), 0, 1),
+      yMax: clamp(useSelected ? selected.yMax : (Number.isFinite(base.yMax) ? base.yMax : 0.75), 0, 1),
+      pad: useSelected ? (selected.pad || {}) : (base.pad || {}),
+    };
+
+    return this._withDecisionReadWindowPadding(readWindow);
+  }
+
+  _withDecisionReadWindowPadding(readWindow) {
+    const pad = readWindow?.pad || {};
+    const padX = clamp(Number.isFinite(pad.x) ? pad.x : 0, 0, 0.24);
+    const padY = clamp(Number.isFinite(pad.y) ? pad.y : 0, 0, 0.24);
+    const width = readWindow.xMax - readWindow.xMin;
+    const height = readWindow.yMax - readWindow.yMin;
+    const safePadX = Math.min(padX, width / 2 - 0.0001);
+    const safePadY = Math.min(padY, height / 2 - 0.0001);
+
+    const xMin = readWindow.xMin + safePadX;
+    const xMax = readWindow.xMax - safePadX;
+    const yMin = readWindow.yMin + safePadY;
+    const yMax = readWindow.yMax - safePadY;
+
+    return {
+      xMin: clamp(xMin < xMax ? xMin : readWindow.xMin, 0, 1),
+      xMax: clamp(xMax > xMin ? xMax : readWindow.xMax, 0, 1),
+      yMin: clamp(yMin < yMax ? yMin : readWindow.yMin, 0, 1),
+      yMax: clamp(yMax > yMin ? yMax : readWindow.yMax, 0, 1),
+    };
+  }
+
+  _resolveDecisionZoom(cityId) {
+    if (!this.viewport || !this.positions?.[cityId]) return DECISION_CAMERA.zoom.default;
+    const city = this.positions[cityId];
+    const selectionCfg = DECISION_CAMERA.zoom.selection || {};
+    const layoutWidth = this.viewport.designWidth || 1;
+    const layoutHeight = this.viewport.designHeight || 1;
+    const xRatio = city.x / layoutWidth;
+    const yRatio = city.y / layoutHeight;
+    const nearestEdge = Math.min(xRatio, 1 - xRatio, yRatio, 1 - yRatio);
+    const edgeMargin = Number.isFinite(selectionCfg.edgeMargin) ? selectionCfg.edgeMargin : 0.22;
+    const edgePressure = clamp((edgeMargin - nearestEdge) / edgeMargin, 0, 1);
+    const edgeDrop = Number.isFinite(selectionCfg.edgeDrop) ? selectionCfg.edgeDrop : 0;
+    const clusterMax = Math.min(
+      this.connections.filter(([from, to]) => from === cityId || to === cityId).length,
+      Number.isFinite(selectionCfg.clusterBonus?.neighbors) ? selectionCfg.clusterBonus.neighbors : 8,
+    );
+    const clusterDensity = selectionCfg.clusterBonus?.neighbors
+      ? clusterMax / selectionCfg.clusterBonus.neighbors
+      : 0;
+    const clusterBoost = Number.isFinite(selectionCfg.clusterBonus?.max) ? selectionCfg.clusterBonus.max : 0;
+    const target = DECISION_CAMERA.zoom.default - (edgePressure * edgeDrop) + (clusterBoost * clusterDensity);
+
+    return clamp(target, DECISION_CAMERA.zoom.min, DECISION_CAMERA.zoom.max);
+  }
+
+  _clampDecisionTarget(targetXRatio, targetYRatio, cityId = null) {
+    const readWindow = this._resolveDecisionReadWindow(cityId);
+    return {
+      x: clamp(targetXRatio, readWindow.xMin, readWindow.xMax),
+      y: clamp(targetYRatio, readWindow.yMin, readWindow.yMax),
+    };
+  }
+
+  _composeDecisionTarget(cityId, baseTarget, readWindow = null) {
+    const anchor = this.positions?.[cityId];
+    if (!anchor || !this.viewport) return baseTarget;
+    if (!baseTarget) return baseTarget;
+    const window = readWindow || this._resolveDecisionReadWindow(cityId);
+    const bias = DECISION_CAMERA.focus.bias || {};
+    const adaptiveBias = this._resolveDecisionAdaptiveBias(cityId, window);
+    const anchorBias = this._resolveDecisionAnchorBias(cityId, window);
+    const context = this._getDecisionContext(cityId);
+    const cx = this.viewport.designWidth || 1;
+    const cy = this.viewport.designHeight || 1;
+    const connectedShiftX = this._worldVectorBias(context?.xOffset || 0, cx, bias.context?.scaleX || 0, bias.context?.maxOffsetX || 0);
+    const connectedShiftY = this._worldVectorBias(context?.yOffset || 0, cy, bias.context?.scaleY || 0, bias.context?.maxOffsetY || 0);
+
+    return {
+      x: clamp(
+        baseTarget.x + (Number.isFinite(bias.x) ? bias.x : 0) + adaptiveBias.x + anchorBias.x - connectedShiftX,
+        window.xMin,
+        window.xMax,
+      ),
+      y: clamp(
+        baseTarget.y + (Number.isFinite(bias.y) ? bias.y : 0) + adaptiveBias.y + anchorBias.y - connectedShiftY,
+        window.yMin,
+        window.yMax,
+      ),
+    };
+  }
+
+  _resolveDecisionAnchorBias(cityId, readWindow = null) {
+    const anchor = this.positions?.[cityId];
+    if (!anchor || !this.viewport) return { x: 0, y: 0 };
+
+    const config = DECISION_CAMERA.focus.bias?.anchor || {};
+    const maxX = Number.isFinite(config.maxX) ? config.maxX : 0;
+    const maxY = Number.isFinite(config.maxY) ? config.maxY : 0;
+    if (!maxX && !maxY) return { x: 0, y: 0 };
+
+    const window = readWindow || this._resolveDecisionReadWindow(cityId);
+    const anchorX = anchor.x / (this.viewport.designWidth || 1);
+    const anchorY = anchor.y / (this.viewport.designHeight || 1);
+    const readCenterX = (window.xMin + window.xMax) / 2;
+    const readCenterY = (window.yMin + window.yMax) / 2;
+    const scaleX = Number.isFinite(config.scaleX) ? config.scaleX : 0;
+    const scaleY = Number.isFinite(config.scaleY) ? config.scaleY : 0;
+
+    return {
+      x: clamp((anchorX - readCenterX) * scaleX, -maxX, maxX),
+      y: clamp((anchorY - readCenterY) * scaleY, -maxY, maxY),
+    };
+  }
+
+  _resolveDecisionAdaptiveBias(cityId, readWindow = null) {
+    const anchor = this.positions?.[cityId];
+    const bias = DECISION_CAMERA.focus.bias?.adaptive || {};
+    const window = readWindow || this._resolveDecisionReadWindow(cityId);
+    const maxX = Number.isFinite(bias.x) ? bias.x : 0;
+    const maxY = Number.isFinite(bias.y) ? bias.y : 0;
+    if (!anchor || !this.viewport || (!maxX && !maxY)) return { x: 0, y: 0 };
+
+    const centerX = (window.xMin + window.xMax) / 2;
+    const centerY = (window.yMin + window.yMax) / 2;
+    const ratioX = (anchor.x / (this.viewport.designWidth || 1)) - centerX;
+    const ratioY = (anchor.y / (this.viewport.designHeight || 1)) - centerY;
+    const scaleX = Number.isFinite(bias.scaleX) ? bias.scaleX : 0;
+    const scaleY = Number.isFinite(bias.scaleY) ? bias.scaleY : 0;
+
+    return {
+      x: clamp(ratioX * scaleX * -1, -maxX, maxX),
+      y: clamp(ratioY * scaleY * -1, -maxY, maxY),
+    };
+  }
+
+  _worldVectorBias(delta, axisLength, scale, maxOffset) {
+    if (!axisLength) return 0;
+    const strength = Number.isFinite(scale) ? scale : 0;
+    const maxShift = Number.isFinite(maxOffset) ? maxOffset : 0;
+    return clamp((delta / axisLength) * strength, -maxShift, maxShift);
+  }
+
+  _getDecisionContext(cityId) {
+    const selected = this.positions?.[cityId];
+    if (!selected) return { xOffset: 0, yOffset: 0 };
+
+    const connectedCities = [];
+    const limit = Math.max(1, Math.min((DECISION_CAMERA.focus.bias?.connectedNeighbors || 4), 6));
+    for (const [from, to] of this.connections) {
+      if (from !== cityId && to !== cityId) continue;
+      const neighborId = from === cityId ? to : from;
+      const anchor = this.positions?.[neighborId];
+      if (!anchor) continue;
+
+      const cityMeta = this.scenario?.cities?.[neighborId] || {};
+      const importance = Number.isFinite(cityMeta.strategic_importance) ? cityMeta.strategic_importance : 0;
+      const weight = 1 + Math.min(1.8, Math.max(0.25, importance / 10));
+      connectedCities.push({ anchor, weight });
+    }
+
+    const topNeighbors = connectedCities
+      .sort((a, b) => b.weight - a.weight)
+      .slice(0, limit);
+
+    if (!topNeighbors.length) {
+      return { xOffset: 0, yOffset: 0 };
+    }
+
+    let weightedX = selected.x * 1.4;
+    let weightedY = selected.y * 1.4;
+    let totalWeight = 1.4;
+
+    for (const item of topNeighbors) {
+      weightedX += item.anchor.x * item.weight;
+      weightedY += item.anchor.y * item.weight;
+      totalWeight += item.weight;
+    }
+
+    return {
+      xOffset: (weightedX / totalWeight) - selected.x,
+      yOffset: (weightedY / totalWeight) - selected.y,
+    };
+  }
+
+  _focusPad(baseMaxPan, targetPan, axis) {
+    if (!Number.isFinite(targetPan) || !this.viewport) return 0;
+
+    const needed = Math.abs(targetPan) - baseMaxPan;
+    if (needed <= 0) return 0;
+
+    const config = axis === 'y' ? DECISION_CAMERA.focus.pad.y : DECISION_CAMERA.focus.pad.x;
+    const viewportLength = axis === 'y' ? this.viewport.height : this.viewport.width;
+    const maxPad = viewportLength * config.maxRatio;
+    const slack = viewportLength * config.slackRatio;
+    return clamp(needed + slack, 0, maxPad);
   }
 
   _toWorld(screenX, screenY) {
@@ -308,6 +706,17 @@ export class MapRenderer {
     return {
       x: worldX * scale + offsetX,
       y: worldY * scale + offsetY,
+    };
+  }
+
+  _clampUiPoint(x, y, margin = 18) {
+    if (!this.viewport) return { x, y };
+    const width = this.canvas.clientWidth;
+    const height = this.canvas.clientHeight;
+    const pad = margin * (this.viewport.scale || 1);
+    return {
+      x: clamp(x, pad, width - pad),
+      y: clamp(y, pad, height - pad),
     };
   }
 
@@ -395,18 +804,69 @@ export class MapRenderer {
     const ctx = this.ctx;
     const width = this.canvas.clientWidth;
     const height = this.canvas.clientHeight;
+    const frontlineOverlay = this._getFrontlineOverlayState(state);
     ctx.clearRect(0, 0, width, height);
 
     this._drawFocusZones(ctx);
     this._drawWaterPolygons(ctx);
     this._drawTerritories(ctx, state);
     this._drawRidgePaths(ctx);
-    this._drawRoads(ctx, state);
-    this._drawFrontlines(ctx, state);
+    this._drawRoads(ctx, state, frontlineOverlay);
+    this._drawFrontlines(ctx, state, frontlineOverlay);
     this._drawMovements(ctx);
     this._drawEventPulses(ctx);
-    this._drawCities(ctx, state);
+    this._drawCities(ctx, state, frontlineOverlay);
     this._drawEdgeShade(ctx, width, height);
+  }
+
+  _getFrontlineOverlayState(state) {
+    if (this.overlayMode !== 'frontline' || !state?.player?.factionId) return null;
+
+    const frontlineEdges = new Set();
+    const frontlineCities = new Set();
+    const playerCities = new Set();
+    const hostileCities = new Set();
+    const hotRoads = new Set();
+    const supportRoads = new Set();
+
+    for (const [cityAId, cityBId] of this.connections) {
+      const cityA = state.cities[cityAId];
+      const cityB = state.cities[cityBId];
+      if (!cityA || !cityB || !cityA.owner || !cityB.owner) continue;
+      if (cityA.owner === cityB.owner) continue;
+
+      const atWar = state.isAtWar(cityA.owner, cityB.owner);
+      const playerEdge = cityA.owner === state.player.factionId || cityB.owner === state.player.factionId;
+      if (!atWar && !playerEdge) continue;
+
+      frontlineEdges.add(pairKey(cityAId, cityBId));
+      frontlineCities.add(cityAId);
+      frontlineCities.add(cityBId);
+      if (cityA.owner === state.player.factionId) playerCities.add(cityAId);
+      else hostileCities.add(cityAId);
+      if (cityB.owner === state.player.factionId) playerCities.add(cityBId);
+      else hostileCities.add(cityBId);
+    }
+
+    for (const road of this.roads) {
+      const fromFrontline = frontlineCities.has(road.from);
+      const toFrontline = frontlineCities.has(road.to);
+      if (fromFrontline && toFrontline) {
+        hotRoads.add(pairKey(road.from, road.to));
+        supportRoads.add(pairKey(road.from, road.to));
+      } else if (fromFrontline || toFrontline) {
+        supportRoads.add(pairKey(road.from, road.to));
+      }
+    }
+
+    return {
+      frontlineEdges,
+      frontlineCities,
+      playerCities,
+      hostileCities,
+      hotRoads,
+      supportRoads,
+    };
   }
 
   _drawFocusZones(ctx) {
@@ -448,6 +908,7 @@ export class MapRenderer {
   _drawTerritories(ctx, state) {
     const drawOrder = ['liu_zhang', 'zhang_lu', 'shu', 'wu', 'wei'];
     const selectedOwner = this.selectedCity ? state.cities[this.selectedCity]?.owner : null;
+    const selectionFocus = this._isSessionMode();
 
     for (const factionId of drawOrder) {
       const points = this.layout.territoryPolygons?.[factionId];
@@ -458,7 +919,9 @@ export class MapRenderer {
       const center = this._toScreen(centroid.x, centroid.y);
       const extent = getExtent(points);
       const radius = Math.max(extent.width, extent.height) * this.viewport.scale * 0.7;
-      const highlight = selectedOwner === factionId || state.player.factionId === factionId;
+      const highlight = selectionFocus
+        ? selectedOwner === factionId
+        : (selectedOwner === factionId || state.player.factionId === factionId);
       const alpha = highlight ? 0.26 : 0.17;
 
       ctx.save();
@@ -510,7 +973,7 @@ export class MapRenderer {
     }
   }
 
-  _drawRoads(ctx, state) {
+  _drawRoads(ctx, state, frontlineOverlay = null) {
     const selected = this.selectedCity;
     const selectedPulseActive = this.selectionPulse.cityId === selected && (Date.now() - this.selectionPulse.startedAt < 1100);
     const selectionTone = SELECTION_TONE_STYLE[this.selectionPulse.tone] || SELECTION_TONE_STYLE.selection;
@@ -520,12 +983,15 @@ export class MapRenderer {
       const to = this.positions[road.to];
       if (!from || !to) continue;
 
+      const roadKey = pairKey(road.from, road.to);
       const selectedBoost = selected && (road.from === selected || road.to === selected);
       const localContext = selected && (isConnected(this.connections, selected, road.from) || isConnected(this.connections, selected, road.to));
       const front = selected && isConnected(this.connections, selected, road.from) && isConnected(this.connections, selected, road.to);
-      if (!selected && road.grade === 'normal' && road.kind === 'road') continue;
-      if (selected && !selectedBoost && !localContext && road.grade === 'normal' && road.kind === 'road') continue;
-      const emphasis = selectedBoost ? 'focused' : localContext || front ? 'context' : 'ambient';
+      const overlayFocused = frontlineOverlay?.hotRoads.has(roadKey);
+      const overlayContext = frontlineOverlay?.supportRoads.has(roadKey);
+      if (!selected && !overlayFocused && !overlayContext && road.grade === 'normal' && road.kind === 'road') continue;
+      if (selected && !selectedBoost && !localContext && !front && !overlayFocused && !overlayContext && road.grade === 'normal' && road.kind === 'road') continue;
+      const emphasis = selectedBoost || overlayFocused ? 'focused' : localContext || front || overlayContext ? 'context' : 'ambient';
       const style = getRoadDescriptor(road, emphasis);
       const control = getRoadControl(from, to, road.grade, road.curve);
       const fromScreen = this._toScreen(from.x, from.y);
@@ -550,13 +1016,18 @@ export class MapRenderer {
       ctx.lineWidth = (style.width * style.lineWidthRatio + (selectedBoost ? 0.8 : 0)) * this.viewport.scale;
       ctx.stroke();
 
-      if (selectedBoost || front) {
+      if (selectedBoost || front || overlayFocused || (overlayContext && road.grade === 'major')) {
         ctx.setLineDash([]);
         ctx.beginPath();
         ctx.moveTo(fromScreen.x, fromScreen.y);
         ctx.quadraticCurveTo(controlScreen.x, controlScreen.y, toScreen.x, toScreen.y);
         ctx.strokeStyle = selectedPulseActive ? selectionTone.roadGlow : style.glow;
-        ctx.lineWidth = (style.width + 10 + (selectedBoost && selectedPulseActive ? 5 : 0)) * this.viewport.scale;
+        ctx.lineWidth = (
+          style.width
+          + 10
+          + (selectedBoost && selectedPulseActive ? 5 : 0)
+          + (overlayFocused ? 4 : overlayContext ? 1.5 : 0)
+        ) * this.viewport.scale;
         ctx.filter = 'blur(6px)';
         ctx.stroke();
       }
@@ -564,7 +1035,7 @@ export class MapRenderer {
     }
   }
 
-  _drawFrontlines(ctx, state) {
+  _drawFrontlines(ctx, state, frontlineOverlay = null) {
     const selected = this.selectedCity;
     const selectedPulseActive = this.selectionPulse.cityId === selected && (Date.now() - this.selectionPulse.startedAt < 1100);
     const selectionTone = SELECTION_TONE_STYLE[this.selectionPulse.tone] || SELECTION_TONE_STYLE.selection;
@@ -577,9 +1048,10 @@ export class MapRenderer {
       const atWar = state.isAtWar(cityA.owner, cityB.owner);
       const playerEdge = cityA.owner === state.player.factionId || cityB.owner === state.player.factionId;
       if (!atWar && !playerEdge) continue;
+      const overlayEdge = frontlineOverlay?.frontlineEdges.has(pairKey(cityAId, cityBId));
       const selectedEdge = selected && (cityAId === selected || cityBId === selected);
       const contextEdge = selected && !selectedEdge && (isConnected(this.connections, selected, cityAId) || isConnected(this.connections, selected, cityBId));
-      if (selected && !selectedEdge && !contextEdge && !atWar) continue;
+      if (selected && !selectedEdge && !contextEdge && !atWar && !overlayEdge) continue;
 
       const from = this.positions[cityAId];
       const to = this.positions[cityBId];
@@ -600,16 +1072,20 @@ export class MapRenderer {
       }
       ctx.setLineDash([10 * this.viewport.scale, 8 * this.viewport.scale]);
       ctx.lineCap = 'round';
-      ctx.lineWidth = (atWar ? 4 : 3 + (selectedEdge ? 1.4 : 0)) * this.viewport.scale;
+      ctx.lineWidth = (atWar ? 4.2 : 3.1) * this.viewport.scale;
+      if (selectedEdge) ctx.lineWidth += 1.4 * this.viewport.scale;
+      if (overlayEdge) ctx.lineWidth += 1.1 * this.viewport.scale;
       ctx.strokeStyle = atWar
-        ? (selectedEdge ? 'rgba(229, 114, 90, 0.96)' : contextEdge ? 'rgba(222, 105, 79, 0.88)' : 'rgba(214, 92, 71, 0.82)')
-        : (selectedEdge ? 'rgba(240, 208, 132, 0.86)' : 'rgba(221, 190, 118, 0.6)');
+        ? (selectedEdge ? 'rgba(229, 114, 90, 0.96)' : overlayEdge ? 'rgba(226, 106, 80, 0.92)' : contextEdge ? 'rgba(222, 105, 79, 0.88)' : 'rgba(214, 92, 71, 0.82)')
+        : (selectedEdge ? 'rgba(240, 208, 132, 0.86)' : overlayEdge ? 'rgba(231, 196, 116, 0.8)' : 'rgba(221, 190, 118, 0.6)');
       ctx.stroke();
 
-      if (selectedEdge || (contextEdge && selectedPulseActive)) {
+      if (selectedEdge || (contextEdge && selectedPulseActive) || overlayEdge) {
         ctx.setLineDash([]);
-        ctx.strokeStyle = selectedPulseActive ? selectionTone.frontGlow : (atWar ? 'rgba(229, 114, 90, 0.22)' : 'rgba(240, 208, 132, 0.2)');
-        ctx.lineWidth = (12 + (selectedPulseActive ? 4 : 0)) * this.viewport.scale;
+        ctx.strokeStyle = selectedPulseActive
+          ? selectionTone.frontGlow
+          : (atWar ? 'rgba(229, 114, 90, 0.24)' : 'rgba(240, 208, 132, 0.22)');
+        ctx.lineWidth = (12 + (selectedPulseActive ? 4 : 0) + (overlayEdge ? 4 : 0)) * this.viewport.scale;
         ctx.filter = 'blur(8px)';
         ctx.stroke();
       }
@@ -683,8 +1159,15 @@ export class MapRenderer {
     }
   }
 
-  _drawCities(ctx, state) {
+  _drawCities(ctx, state, frontlineOverlay = null) {
     const ordered = Object.entries(this.positions).sort(([, a], [, b]) => a.y - b.y);
+    const selectedIndex = this.selectedCity
+      ? ordered.findIndex(([cityId]) => cityId === this.selectedCity)
+      : -1;
+    if (selectedIndex > -1) {
+      const [selectedCityEntry] = ordered.splice(selectedIndex, 1);
+      ordered.push(selectedCityEntry);
+    }
     const selectionTone = SELECTION_TONE_STYLE[this.selectionPulse.tone] || SELECTION_TONE_STYLE.selection;
 
     for (const [cityId, anchor] of ordered) {
@@ -695,7 +1178,10 @@ export class MapRenderer {
       const capital = city.owner && city.governor && state.factions[city.owner]?.leader === city.governor;
       const selected = cityId === this.selectedCity;
       const hovered = cityId === this.hoveredCity;
+      const selectionFocus = this._isSessionMode();
       const adjacent = this.selectedCity && isConnected(this.connections, cityId, this.selectedCity);
+      const frontlineCity = frontlineOverlay?.frontlineCities.has(cityId);
+      const playerFrontline = frontlineOverlay?.playerCities.has(cityId);
       const selectionPulse = selected && this.selectionPulse.cityId === cityId
         ? Math.max(0, 1 - ((Date.now() - this.selectionPulse.startedAt) / 1100))
         : 0;
@@ -707,7 +1193,7 @@ export class MapRenderer {
 
       drawTerrainHalo(ctx, position.x, position.y, markerSize, city.terrain?.type, selected, hovered, importance);
 
-      if (selected || hovered) {
+      if (selected || (!selectionFocus && hovered)) {
         ctx.save();
         ctx.beginPath();
         ctx.arc(position.x, position.y, markerSize + (16 + (selectionPulse * 16)) * this.viewport.scale, 0, Math.PI * 2);
@@ -715,6 +1201,18 @@ export class MapRenderer {
           ? (selectionPulse > 0 ? addAlpha(selectionTone.cityFill, 0.88) : addAlpha(palette.edge, 0.18 + (selectionPulse * 0.12)))
           : 'rgba(243, 223, 184, 0.08)';
         ctx.fill();
+        ctx.restore();
+      }
+
+      if (frontlineCity && !selected && !hovered && !selectionFocus) {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(position.x, position.y, markerSize + 10 * this.viewport.scale, 0, Math.PI * 2);
+        ctx.setLineDash([6 * this.viewport.scale, 5 * this.viewport.scale]);
+        ctx.strokeStyle = playerFrontline ? 'rgba(228, 200, 126, 0.56)' : 'rgba(220, 111, 88, 0.5)';
+        ctx.lineWidth = 1.8 * this.viewport.scale;
+        ctx.stroke();
+        ctx.setLineDash([]);
         ctx.restore();
       }
 
@@ -757,7 +1255,7 @@ export class MapRenderer {
         ctx.restore();
       }
 
-      drawSealMarker(ctx, position.x, position.y, markerSize, palette, capital, selected || hovered);
+      drawSealMarker(ctx, position.x, position.y, markerSize, palette, capital, selected || (!selectionFocus && hovered));
 
       if (capital) {
         drawStar(ctx, position.x, position.y - markerSize - 10 * this.viewport.scale, 6 * this.viewport.scale, '#E4C87E');
@@ -773,32 +1271,62 @@ export class MapRenderer {
         ctx.restore();
       }
 
-      const showBadge = selected || hovered || adjacent || capital || owner === state.player.factionId || importance >= 8;
-      const showLabel = showBadge || importance >= 6;
+      const showBadge = selectionFocus
+        ? selected
+        : frontlineCity || selected || hovered || adjacent || capital || owner === state.player.factionId || importance >= 8;
+      const showLabel = selectionFocus
+        ? selected
+        : frontlineCity || showBadge || importance >= 6;
       const armyText = formatArmyBadge(city.army);
       const badgeX = position.x + ((badgeOffset.badge?.[0] || 0) * this.viewport.scale);
       const badgeY = position.y + markerSize + 12 * this.viewport.scale + ((badgeOffset.badge?.[1] || 0) * this.viewport.scale);
       const labelX = position.x + ((badgeOffset.label?.[0] || 0) * this.viewport.scale);
       const labelY = position.y + markerSize + 33 * this.viewport.scale + ((badgeOffset.label?.[1] || 0) * this.viewport.scale);
+      const showOverlayAdjust = selected || (!selectionFocus && hovered);
+      const uiPad = selected ? 24 : hovered ? 18 : 16;
+      const badgePoint = showOverlayAdjust
+        ? this._clampUiPoint(badgeX, badgeY, uiPad)
+        : { x: badgeX, y: badgeY };
+      const labelPoint = showOverlayAdjust
+        ? this._clampUiPoint(labelX, labelY, uiPad)
+        : { x: labelX, y: labelY };
+      const terrainPoint = showOverlayAdjust
+        ? this._clampUiPoint(
+          labelX + ((badgeOffset.terrain?.[0] || 0) * this.viewport.scale),
+          labelY + 20 * this.viewport.scale + ((badgeOffset.terrain?.[1] || 0) * this.viewport.scale),
+          uiPad,
+        )
+        : {
+            x: labelX + ((badgeOffset.terrain?.[0] || 0) * this.viewport.scale),
+            y: labelY + 20 * this.viewport.scale + ((badgeOffset.terrain?.[1] || 0) * this.viewport.scale),
+          };
+      const commandPoint = selected
+        ? this._clampUiPoint(
+          position.x + ((badgeOffset.command?.[0] || 0) * this.viewport.scale),
+          position.y - markerSize - 24 * this.viewport.scale + ((badgeOffset.command?.[1] || 0) * this.viewport.scale),
+          20,
+        )
+        : { x: 0, y: 0 };
+
       if (showBadge) {
-        const badgeAlpha = selected || hovered ? 1 : adjacent || capital ? 0.92 : owner === state.player.factionId ? 0.82 : 0.7;
+        const badgeAlpha = selected || hovered ? 1 : frontlineCity ? 0.9 : adjacent || capital ? 0.92 : owner === state.player.factionId ? 0.82 : 0.7;
         ctx.save();
         ctx.globalAlpha = badgeAlpha;
-        drawBadge(ctx, badgeX, badgeY, armyText, palette.badge, palette.badgeDark, this.viewport.scale);
+        drawBadge(ctx, badgePoint.x, badgePoint.y, armyText, palette.badge, palette.badgeDark, this.viewport.scale);
         ctx.restore();
       }
       if (showLabel) {
-        const labelAlpha = selected || hovered ? 1 : adjacent || capital ? 0.92 : owner === state.player.factionId ? 0.84 : importance >= 8 ? 0.78 : 0.62;
+        const labelAlpha = selected || hovered ? 1 : frontlineCity ? 0.9 : adjacent || capital ? 0.92 : owner === state.player.factionId ? 0.84 : importance >= 8 ? 0.78 : 0.62;
         ctx.save();
         ctx.globalAlpha = labelAlpha;
-        drawLabelPlaque(ctx, labelX, labelY, city.name, selected, this.viewport.scale);
+        drawLabelPlaque(ctx, labelPoint.x, labelPoint.y, city.name, selected, this.viewport.scale);
         ctx.restore();
       }
-      if (selected || hovered) {
+      if (selected) {
         drawCityTerrainStrip(
           ctx,
-          labelX + ((badgeOffset.terrain?.[0] || 0) * this.viewport.scale),
-          labelY + 20 * this.viewport.scale + ((badgeOffset.terrain?.[1] || 0) * this.viewport.scale),
+          terrainPoint.x,
+          terrainPoint.y,
           city,
           selected ? palette.edge : '#D4C099',
           this.viewport.scale
@@ -808,12 +1336,13 @@ export class MapRenderer {
       if (selected) {
         drawCommandRibbon(
           ctx,
-          position.x + ((badgeOffset.command?.[0] || 0) * this.viewport.scale),
-          position.y - markerSize - 24 * this.viewport.scale + ((badgeOffset.command?.[1] || 0) * this.viewport.scale),
+          commandPoint.x,
+          commandPoint.y,
           this.viewport.scale
         );
-      } else if (hovered) {
-        drawHintTag(ctx, position.x, position.y - markerSize - 18 * this.viewport.scale, state.factions[owner]?.name || '무주지', this.viewport.scale);
+      } else if (hovered && !selectionFocus) {
+        const hintPoint = this._clampUiPoint(position.x, position.y - markerSize - 18 * this.viewport.scale, 12);
+        drawHintTag(ctx, hintPoint.x, hintPoint.y, state.factions[owner]?.name || '무주지', this.viewport.scale);
       }
     }
   }

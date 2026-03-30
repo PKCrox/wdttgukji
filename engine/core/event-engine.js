@@ -3,6 +3,10 @@
 
 import { getCharName, getFactionName, getStatName } from '../data/names.js';
 
+function resolveRandom(options = {}) {
+  return typeof options.random === 'function' ? options.random : Math.random;
+}
+
 // --- 트리거 평가 ---
 
 const triggerEvaluators = {
@@ -72,12 +76,12 @@ const triggerEvaluators = {
     return !state.firedEvents.includes(params.event_id);
   },
 
-  random_chance(params) {
-    return Math.random() < (params.probability || 0.5);
+  random_chance(params, _state, options = {}) {
+    return resolveRandom(options)() < (params.probability || 0.5);
   }
 };
 
-export function evaluateTrigger(event, state) {
+export function evaluateTrigger(event, state, options = {}) {
   if (!event.trigger || !event.trigger.conditions) return false;
   if (state.firedEvents.includes(event.id)) return false;
 
@@ -98,7 +102,7 @@ export function evaluateTrigger(event, state) {
       console.warn(`Unknown trigger type: ${cond.type}`);
       return false;
     }
-    return evaluator(cond.params, state);
+    return evaluator(cond.params, state, options);
   });
 }
 
@@ -283,13 +287,13 @@ export function applyEffects(effects, state) {
 
 // --- 이벤트 체크: 발화 가능한 이벤트 목록 반환 ---
 
-export function checkEvents(events, state) {
+export function checkEvents(events, state, options = {}) {
   const mode = state.narrativeMode || 'both';
   const triggered = [];
   for (const event of events) {
     // 정사/연의 모드 필터
     if (mode !== 'both' && event.mode && event.mode !== 'both' && event.mode !== mode) continue;
-    if (evaluateTrigger(event, state)) {
+    if (evaluateTrigger(event, state, options)) {
       triggered.push(event);
     }
   }

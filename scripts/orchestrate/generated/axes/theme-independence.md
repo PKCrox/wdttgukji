@@ -1,9 +1,23 @@
 # theme-independence artifact
 
-- updated_at: 2026-03-24T22:57:53.044Z
+- updated_at: 2026-03-27T18:17:29.864Z
 - candidate: Theme-independent mechanics boundary
 - pass_index: 6
-- run_dir: `/Users/pkc/wdttgukji/runs/pass-runs/adaptive-run-20260325-075654`
+- run_dir: `/Users/pkcmini/wdttgukji/runs/durable-runtime/durable-run-20260328-031501-3518506e`
+- route_source: agent-routing-state
+- route_context_origin: agent-routing-state
+- urgency_snapshot: app-surface:0, autotest:0, content-pipeline:0
+- top_urgency_lane: app-surface
+- top_urgency_value: 0
+- top_urgency_tie: app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence
+- top_urgency_tie_text: app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)
+- top_urgency_tie_count: 6
+- primary_focus_axis: theme-independence
+- focus_alignment: boosted toward theme-independence
+- route_confidence: tied
+- route_confidence_raw: tied
+- route_confidence_text: tied (6-way tie)
+- route_summary: top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state
 
 ```json
 {
@@ -14,6 +28,29 @@
   "keyArtifacts": {
     "balanceConfigSha1": "a6c097f2d63df44202f57b5e6ff9043fa4a2551a",
     "factionAiSha1": "4b8be0e30dd2fd07f6e6fc8d12fcd4c715dc858d"
+  },
+  "route_context": {
+    "route_context_origin": "agent-routing-state",
+    "route_source": "agent-routing-state",
+    "urgency_snapshot": "app-surface:0, autotest:0, content-pipeline:0",
+    "top_urgency_lane": "app-surface",
+    "top_urgency_value": 0,
+    "top_urgency_tie": [
+      "app-surface",
+      "autotest",
+      "content-pipeline",
+      "design-surface",
+      "engine-slice",
+      "theme-independence"
+    ],
+    "top_urgency_tie_text": "app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0)",
+    "top_urgency_tie_count": 6,
+    "primary_focus_axis": "theme-independence",
+    "focus_alignment": "boosted toward theme-independence",
+    "route_confidence": "tied",
+    "route_confidence_raw": "tied",
+    "route_confidence_text": "tied (6-way tie)",
+    "route_summary": "top urgency lane: app-surface (0) · tie app-surface, autotest, content-pipeline, design-surface, engine-slice, theme-independence (0) · tied (6-way tie) · agent-routing-state · origin agent-routing-state"
   }
 }
 ```

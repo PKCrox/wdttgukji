@@ -1,8 +1,8 @@
 {
   "axis": "engine-slice",
-  "updated_at": "2026-03-26T09:13:46.943Z",
+  "updated_at": "2026-03-27T17:32:51.618Z",
   "candidate": "playable-engine-slice",
-  "pass_index": 1,
+  "pass_index": 11,
   "payload": {
     "lane": "engine-slice",
     "engineFileCount": 21,
@@ -34,8 +34,26 @@
     },
     "keyArtifacts": {
       "scenarioSha1": "6e1de0827cad6f88ccab0698c9cc60ea4bc2daf4",
-      "gameStateSha1": "2720ef21983796309bede869887d5467efa2674e",
-      "turnLoopSha1": "c1cb95cb973ef75cc914aca5b512b5ed638e37e7"
+      "gameStateSha1": "769dfd92d58e482f365d17c3db1b49648894f5d9",
+      "turnLoopSha1": "52d1e8822ba8acc2d3ed43f18a68259055b3dea9"
+    },
+    "route_context": {
+      "route_context_origin": "agent-routing-state",
+      "route_source": "agent-routing-state",
+      "urgency_snapshot": "app-surface:1, autotest:0, content-pipeline:0",
+      "top_urgency_lane": "app-surface",
+      "top_urgency_value": 1,
+      "top_urgency_tie": [
+        "app-surface"
+      ],
+      "top_urgency_tie_text": "none",
+      "top_urgency_tie_count": 1,
+      "primary_focus_axis": "autotest",
+      "focus_alignment": "aligned",
+      "route_confidence": "aligned",
+      "route_confidence_raw": "aligned",
+      "route_confidence_text": "aligned",
+      "route_summary": "top urgency lane: app-surface (1) · aligned · agent-routing-state · origin agent-routing-state"
     }
   }
 }

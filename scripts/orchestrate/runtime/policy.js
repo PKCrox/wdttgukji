@@ -11,6 +11,7 @@ export const DEFAULT_MUTATION_POLICY = {
     'public/js/action-panel.js',
     'public/js/map-renderer.js',
     'public/js/sidebar.js',
+    'public/js/presentation-meta.js',
     'public/index.html',
     'public/css/style.css',
     'public/assets/maps/',
@@ -28,12 +29,14 @@ const MUTATION_WEIGHT = {
 };
 
 export function resolveMutationPolicy(env = process.env) {
+  const mode = env.WDTT_RUNTIME_MUTATION_MODE || DEFAULT_MUTATION_POLICY.mode;
   return {
     ...DEFAULT_MUTATION_POLICY,
-    mode: env.WDTT_RUNTIME_MUTATION_MODE || DEFAULT_MUTATION_POLICY.mode,
+    mode,
     allowAppSurface: env.WDTT_RUNTIME_ALLOW_APP_SURFACE === 'true'
       ? true
       : DEFAULT_MUTATION_POLICY.allowAppSurface,
+    allowFullMutation: mode === 'full',
   };
 }
 
