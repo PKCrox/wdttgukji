@@ -1,124 +1,52 @@
 #!/usr/bin/env node
 
-import path from 'node:path';
-import { access, utimes } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const REPO_ROOT = path.resolve(__dirname, '..', '..');
-const BASE_URL = process.env.WDTT_LIVE_RELOAD_BASE_URL || 'http://127.0.0.1:3001/';
-const VIEWPORT = { width: 1512, height: 982 };
-const PROBE_FILE_CANDIDATES = [
-  path.join(REPO_ROOT, 'public', 'old', 'js', 'app.js'),
-  path.join(REPO_ROOT, 'public', 'js', 'app.js'),
-];
-
-async function resolveProbeFile() {
-  for (const candidate of PROBE_FILE_CANDIDATES) {
-    try {
-      await access(candidate);
-      return candidate;
-    } catch {}
-  }
-  throw new Error(`Probe file not found: ${PROBE_FILE_CANDIDATES.join(', ')}`);
-}
-
-async function freshLoad(page) {
-  console.log('[live-reload-check] fresh load');
-  await page.goto(BASE_URL, { waitUntil: 'load' });
-  await page.evaluate(() => {
-    localStorage.removeItem('wdttgukji_save');
-    localStorage.removeItem('wdttgukji_save_meta');
-    sessionStorage.removeItem('__wdttgukji_live_reload_restore__');
-  });
-  await page.reload({ waitUntil: 'load' });
-}
-
-async function enterCommand(page) {
-  console.log('[live-reload-check] enter command');
-  await page.getByRole('button', { name: '적벽으로 들어간다' }).click();
-  console.log('[live-reload-check] start clicked');
-  await page.waitForSelector('.faction-card[data-faction="shu"]');
-  console.log('[live-reload-check] faction screen ready');
-  await page.evaluate(() => window.__wdttgukji.selectFaction('shu'));
-  console.log('[live-reload-check] faction selected');
-  await page.evaluate(() => window.__wdttgukji.showIntro());
-  await page.waitForSelector('#intro-screen:not(.hidden)');
-  console.log('[live-reload-check] intro ready');
-  await page.evaluate(() => {
-    for (let index = 0; index < 16; index += 1) window.__wdttgukji.advanceDialogue();
-  });
-  console.log('[live-reload-check] dialogue skipped');
-  await page.evaluate(() => window.__wdttgukji.startGame());
-  await page.waitForSelector('#game-screen:not(.hidden)');
-  console.log('[live-reload-check] game screen ready');
-  await page.evaluate(() => window.__wdttgukji.selectCity('jiangling'));
-  await page.waitForFunction(() => document.getElementById('game-screen')?.classList.contains('selection-focus'));
-  console.log('[live-reload-check] city selected');
-  const commandOpened = await page.evaluate(() => window.__wdttgukji.openCommand('jiangling'));
-  console.log(`[live-reload-check] openCommand returned: ${commandOpened}`);
-  const immediateCommandState = await page.evaluate(() => ({
-    modalHidden: document.getElementById('command-modal')?.classList.contains('hidden') ?? null,
-    scene: document.getElementById('action-panel')?.dataset?.scene || null,
-  }));
-  console.log(`[live-reload-check] immediate modalHidden=${immediateCommandState.modalHidden} scene=${immediateCommandState.scene}`);
-  await page.waitForFunction(() => !document.getElementById('command-modal')?.classList.contains('hidden'), { timeout: 5000 });
-  console.log('[live-reload-check] modal visible');
-  await page.waitForFunction(() => !!document.getElementById('action-panel')?.dataset?.scene, { timeout: 5000 });
-  console.log('[live-reload-check] command modal ready');
-}
+import { BASE_URL, DESKTOP_VIEWPORT, ensureViteServer, freshStart } from './phaser-playwright-helpers.js';
 
 async function main() {
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({ viewport: VIEWPORT });
-  const probeFile = await resolveProbeFile();
+  let server = null;
 
   try {
-    await freshLoad(page);
-    await enterCommand(page);
-    console.log('[live-reload-check] command ready');
+    ({ server } = await ensureViteServer(process.cwd()));
 
-    const before = await page.evaluate(() => ({
-      screen: window.__wdttgukji.getVisibleScreen(),
-      city: window.__wdttgukji.getSelectedCity(),
-      commandOpen: window.__wdttgukji.isCommandOpen(),
-      commandScene: window.__wdttgukji.getCommandScene(),
-    }));
+    const browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage({ viewport: DESKTOP_VIEWPORT });
+    const consoleErrors = [];
 
-    const now = new Date();
-    console.log('[live-reload-check] touching probe file');
-    await utimes(probeFile, now, now);
+    page.on('console', (msg) => {
+      if (msg.type() === 'error') consoleErrors.push(msg.text());
+    });
 
-    console.log('[live-reload-check] waiting for reload badge');
-    await page.getByText('변경 반영').waitFor({ state: 'visible', timeout: 15000 });
-    await page.waitForFunction(() => !!window.__wdttgukji && !document.getElementById('command-modal')?.classList.contains('hidden'));
-    await page.waitForFunction(
-      (expectedScene) => document.getElementById('action-panel')?.dataset?.scene === expectedScene,
-      before.commandScene,
-    );
-    console.log('[live-reload-check] restore ready');
+    await freshStart(page, DESKTOP_VIEWPORT);
 
-    const after = await page.evaluate(() => ({
-      screen: window.__wdttgukji.getVisibleScreen(),
-      city: window.__wdttgukji.getSelectedCity(),
-      commandOpen: window.__wdttgukji.isCommandOpen(),
-      commandScene: window.__wdttgukji.getCommandScene(),
-    }));
+    const hmrClientPresent = (await page.locator('script[src*="/@vite/client"]').count()) > 0;
+    const snapshot = await page.evaluate(() => window.__wdttgukjiPhaser.getSnapshot());
 
-    const ok = before.screen === after.screen
-      && before.city === after.city
-      && before.commandOpen === after.commandOpen
-      && before.commandScene === after.commandScene;
-
-    if (!ok) {
-      throw new Error(`Live reload restore mismatch: before=${JSON.stringify(before)} after=${JSON.stringify(after)}`);
-    }
-
-    console.log(JSON.stringify({ ok: true, before, after }, null, 2));
-  } finally {
     await browser.close();
+
+    const report = {
+      appMode: 'phaser',
+      baseUrl: BASE_URL,
+      hmrClientPresent,
+      route: snapshot.route,
+      canvas: snapshot.canvas,
+      consoleErrors,
+      legacyNote: 'Legacy custom live-reload smoke remains available at npm run qa:live-reload:legacy',
+    };
+
+    console.log(JSON.stringify(report, null, 2));
+
+    const failures = [];
+    if (consoleErrors.length > 0) failures.push(`console errors: ${consoleErrors.join(' | ')}`);
+    if (!hmrClientPresent) failures.push('vite HMR client was not injected');
+    if (snapshot.route !== 'start') failures.push(`expected route=start got ${snapshot.route}`);
+    if (!snapshot.canvas?.width) failures.push('missing phaser canvas metrics');
+
+    if (failures.length > 0) {
+      throw new Error(failures.join('; '));
+    }
+  } finally {
+    server?.kill('SIGTERM');
   }
 }
 

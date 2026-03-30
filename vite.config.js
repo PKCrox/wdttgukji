@@ -13,7 +13,9 @@ export default defineConfig({
   },
   server: {
     port: 3001,
-    open: true,
+    host: process.env.WDTT_VITE_HOST || '127.0.0.1',
+    strictPort: true,
+    open: process.env.WDTT_VITE_OPEN === '1',
   },
   build: {
     outDir: 'dist',

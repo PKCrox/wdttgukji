@@ -5354,11 +5354,11 @@
       },
       {
         "from": "tianshui",
-        "to": "yongzhou",
+        "to": "longxi",
         "grade": "normal"
       },
       {
-        "from": "yongzhou",
+        "from": "longxi",
         "to": "changan",
         "grade": "major"
       },
@@ -5368,33 +5368,33 @@
         "grade": "major"
       },
       {
-        "from": "bingzhou",
-        "to": "jizhou",
+        "from": "jinyang",
+        "to": "nanpi",
         "grade": "normal"
       },
       {
-        "from": "jizhou",
+        "from": "nanpi",
         "to": "ye",
         "grade": "major"
       },
       {
-        "from": "jizhou",
-        "to": "youzhou",
+        "from": "nanpi",
+        "to": "ji",
         "grade": "major"
       },
       {
         "from": "ye",
-        "to": "yanzhou",
+        "to": "chenliu",
         "grade": "major"
       },
       {
-        "from": "yanzhou",
+        "from": "chenliu",
         "to": "xuchang",
         "grade": "major"
       },
       {
-        "from": "yanzhou",
-        "to": "xuzhou",
+        "from": "chenliu",
+        "to": "xiapi",
         "grade": "major"
       },
       {
@@ -5404,37 +5404,37 @@
       },
       {
         "from": "xuchang",
-        "to": "yuzhou",
+        "to": "runan",
         "grade": "normal"
       },
       {
-        "from": "yuzhou",
-        "to": "nanyang",
+        "from": "runan",
+        "to": "wan",
         "grade": "normal"
       },
       {
-        "from": "nanyang",
+        "from": "wan",
         "to": "xiangyang",
         "grade": "major"
       },
       {
         "from": "xiangyang",
-        "to": "jingzhou",
+        "to": "jiangling",
         "grade": "major"
       },
       {
-        "from": "jingzhou",
+        "from": "jiangling",
         "to": "changsha",
         "grade": "major"
       },
       {
-        "from": "jingzhou",
+        "from": "jiangling",
         "to": "lujiang",
         "grade": "normal"
       },
       {
         "from": "lujiang",
-        "to": "yangzhou",
+        "to": "shouchun",
         "grade": "major"
       },
       {
@@ -5454,16 +5454,16 @@
       },
       {
         "from": "hanzhong",
-        "to": "yizhou",
+        "to": "jiameng",
         "grade": "major"
       },
       {
-        "from": "yizhou",
+        "from": "jiameng",
         "to": "chengdu",
         "grade": "major"
       },
       {
-        "from": "yizhou",
+        "from": "jiameng",
         "to": "wuling",
         "grade": "normal"
       },
@@ -5474,12 +5474,12 @@
       },
       {
         "from": "changsha",
-        "to": "jiaozhou",
+        "to": "panyu",
         "grade": "normal"
       },
       {
-        "from": "qingzhou",
-        "to": "xuzhou",
+        "from": "pingyuan",
+        "to": "xiapi",
         "grade": "major"
       }
     ],

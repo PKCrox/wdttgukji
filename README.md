@@ -458,6 +458,7 @@ Territory:
 
 - 현재 플레이 가능한 대상은 **208 적벽대전** 단일 시나리오다.
 - 웹 데모 **우당탕탕삼국지**는 내부 실험용 **수직 슬라이스(vertical slice)** 단계까지 진입했다.
+- 현재 기본 플레이어블 표면은 **Phaser 3 + Vite** (`src/**`, `index.html`) 기준이다. 기존 DOM/Canvas 표면은 `public/old/**`에 legacy QA 경로로만 남긴다.
 - 공장 계층은 이제 단순 스크립트 묶음이 아니라 **adaptive runner + durable runtime skeleton + agent registry evolution** 구조로 올라왔다.
 - 장기 운영은 **factory 4시간 → game 4시간** split long-run으로 검증했다.
 - Mac mini 기준 현재 기본 장기 런 경로는 **durable runtime + logged-in Codex CLI session** 이다.
@@ -476,6 +477,7 @@ Territory:
   - UI grammar 일관성 부족
   - 10분 수동 플레이 기준 체감/권력감 부족
   - 위 과강세와 낮은 역전성
+  - 전장 ownership/contested belt가 아직 도시 점보다 먼저 읽히지 않음
 
 ### Phase 0: 데이터 수집 + 스키마 검증 ✅
 - [x] 장수 능력치 크롤링 (삼국지 10/11/12, 멀티버전 1305명)
@@ -530,7 +532,7 @@ Territory:
 
 ### Phase 2: 게임 코어 프로토타입 + 웹 세로 슬라이스 기반 ✅
 - [x] 턴 엔진 (행동력 3/턴, 월 단위 자원 결산, 턴 로그)
-- [x] 맵 렌더링 (Canvas 2D, 43도시 + 91연결, DPI 대응, 세력 색상, 지형 보너스, 이벤트 펄스)
+- [x] 맵 렌더링 (Phaser 3, 43도시 + 91연결, 세력 색상, 지형 레이어, 전장 포커스, DPI 대응)
 - [x] 이벤트 트리거 엔진 (13종 조건 평가 + 16종 효과 적용, 337개 이벤트)
 - [x] 4트랙 내정 시스템 (농업/상업/기술/치안, 도시별 보너스, 감쇠 수익, 반란)
 - [x] 외교 시스템 (평판 기반, 강화/동맹/혼인/조공/위협, 휴전, AI 외교)
@@ -546,10 +548,12 @@ Territory:
 - [ ] 화면별 authored scene 재설계
 - [ ] 시정/군사/외교/인사 command scene 분리
 - [ ] 도시 레일/연대기/턴 결산의 장면형 재구성
-- [ ] 지도 심화: 경계/전선/도시 인장/지형 가독성
+- [ ] 지도 심화: semantic zoom/지형 레이어/전선 포커스 기반은 연결됨, ownership/contested belt는 계속 진행
 - [ ] 10분 플레이 체감 검증
 - [ ] 수동 플레이 기준 UX polish
 - [ ] 208 위/촉/오 체험 차별화
+
+> 최신 전장 상세 계획: [`docs/battlefield-operational-map-plan.md`](docs/battlefield-operational-map-plan.md)
 
 ### Phase 4: 밸런스 오토리서치 운영화
 - [x] Karpathy autoresearch 3-파일 구조 (`prepare.js` / `train.js` / `program.md`)
@@ -585,11 +589,44 @@ Territory:
 - [ ] Tauri/배포 패키징 정리
 
 ### Next Up
-1. command scene 재설계
-2. 도시/연대기 UI 정리
-3. authored map 2차 심화
+1. ownership / contested belt overlay
+2. command scene 재설계
+3. 도시/연대기 UI 정리
 4. 208 수동 플레이 QA
 5. durable runtime 실런 + game phase mutation quality gate
+
+## Phaser UI 작업 레일
+
+`wdttgukji`의 현재 app surface 작업은 `public/old/**`가 아니라 `src/**` Phaser 표면을 기준으로 한다.
+
+- 기본 부트스트랩:
+  - `npm run qa:ui-preflight`
+  - `npm run ui:pass -- --scene start|battlefield|command`
+- visible Playwright:
+  - `npm run qa:visible -- --scene start|battlefield|command`
+- 회귀 검증:
+  - `npm run ui:pass:verify`
+- legacy DOM 표면이 꼭 필요할 때만:
+  - `npm run qa:visible:legacy`
+  - `npm run qa:slice:legacy`
+  - `npm run qa:surface:legacy`
+
+### 팀 재현 기준
+
+장균이 포함 다른 팀원이 같은 흐름으로 UI 패스를 재현하려면 아래 순서만 따르면 된다.
+
+1. `cd /Users/pkcmini/wdttgukji`
+2. `npm install`
+3. `npm run qa:ui-preflight`
+4. `npm run ui:pass -- --scene battlefield`
+5. 필요 시 `npm run qa:visible -- --scene battlefield`
+6. 수정 후 `npm run ui:pass:verify`
+
+현재 전장 레일에서 참고해야 할 문서:
+
+- 게임 철학: [`docs/game-philosophy.md`](docs/game-philosophy.md)
+- 전장 상세 계획: [`docs/battlefield-operational-map-plan.md`](docs/battlefield-operational-map-plan.md)
+- UX 루프: [`ai/workflows/ux-slice-loop.md`](ai/workflows/ux-slice-loop.md)
 
 ---
 

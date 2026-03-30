@@ -70,6 +70,6 @@ export const SPACING = {
 export const SIZES = {
   panelRadius: 8,
   buttonRadius: 6,
-  sidebarWidth: 320,
+  sidebarWidth: 220,
   hudHeight: 48,
 };

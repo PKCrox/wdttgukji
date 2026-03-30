@@ -30,7 +30,7 @@
 
 ### E. UI Integration
 - 담당: `engine-integrator`
-- 입력: `public/js`, `public/css`, `public/index.html`
+- 입력: `src/scenes`, `src/screens`, `src/utils`, `index.html`
 - 출력: 실제 동작하는 장면과 상호작용
 
 ### F. Fit QA

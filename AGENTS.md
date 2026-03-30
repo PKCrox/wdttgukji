@@ -80,6 +80,8 @@ Codex가 작업 전 참고해야 할 repo-local 에이전트 명세:
 - 기본 검증 명령은 `npm run ui:pass:verify`다.
 - UI 패스는 먼저 `npm run qa:ui-preflight`로 시작한다.
 - 실브라우저 검증이 필요하면 `npm run qa:visible -- --scene start|battlefield|command`로 visible Playwright를 먼저 연다.
+- 기본 app surface는 Phaser/Vite(`src/**`, `index.html`)다. legacy DOM surface는 `public/old/**`에만 남긴다.
+- legacy 점검이 꼭 필요할 때만 `qa:visible:legacy`, `qa:slice:legacy`, `qa:surface:legacy`, `qa:live-reload:legacy`를 쓴다.
 - visible Playwright 세션은 기본적으로 하나만 유지한다. 기존 세션을 갈아끼울 때만 `--replace`를 쓴다.
 - app surface 전용 패스의 기본 specialist lead는 `koei-systems-designer`다.
 - 실행 셀은 `koei-systems-designer`, `ux-stage-director`, `map-art-director`, `engine-integrator`를 우선한다.

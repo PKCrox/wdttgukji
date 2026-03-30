@@ -104,6 +104,7 @@ async function writeBrief(sceneCard, scene) {
   await mkdir(path.dirname(BRIEF_PATH), { recursive: true });
   const payload = {
     scene,
+    appMode: 'phaser',
     dramaticQuestion: sceneCard.dramaticQuestion,
     protagonist: sceneCard.protagonist,
     lead: sceneCard.lead,
@@ -160,6 +161,7 @@ async function main() {
     `lead: ${sceneCard.lead}`,
     `cell: ${sceneCard.cell.join(', ')}`,
     `cut_first: ${sceneCard.cutFirst.join(' / ')}`,
+    'app_mode: phaser-first',
     `philosophy: ${PHILOSOPHY_PATH}`,
     `brief_artifact: ${BRIEF_PATH}`,
     'order: philosophy -> visible Playwright -> inspect -> patch -> visible Playwright -> ui:pass:verify',

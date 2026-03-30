@@ -4,17 +4,24 @@ import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import process from 'node:process';
-import { spawn } from 'node:child_process';
 import { setTimeout as delay } from 'node:timers/promises';
 import { chromium } from 'playwright';
+import {
+  BASE_URL,
+  callBridge,
+  DESKTOP_VIEWPORT,
+  ensureViteServer,
+  enterBattlefield,
+  enterCommand,
+  freshStart,
+  gotoApp,
+  waitForRoute,
+} from './phaser-playwright-helpers.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const LOCK_PATH = path.join(REPO_ROOT, 'runs', 'playwright-visible.lock.json');
-const BASE_URL = process.env.WDTT_VISIBLE_BASE_URL || 'http://127.0.0.1:3001/';
-const VIEWPORT = { width: 1512, height: 982 };
-const SERVER_BOOT_TIMEOUT_MS = 10000;
 
 function parseArgs(argv) {
   const args = {
@@ -52,58 +59,6 @@ function isProcessAlive(pid) {
   } catch {
     return false;
   }
-}
-
-async function waitForServer(url, timeoutMs, abortState = null) {
-  const start = Date.now();
-  while (Date.now() - start < timeoutMs) {
-    if (abortState?.exited) {
-      const details = [
-        abortState.code != null ? `code ${abortState.code}` : null,
-        abortState.signal ? `signal ${abortState.signal}` : null,
-        abortState.stderr?.trim() ? abortState.stderr.trim() : null,
-      ].filter(Boolean).join('\n');
-      throw new Error(`Dev server exited before becoming ready${details ? `:\n${details}` : ''}`);
-    }
-    try {
-      const response = await fetch(url);
-      if (response.ok) return;
-    } catch {}
-    await delay(150);
-  }
-  throw new Error(`Dev server did not start within ${timeoutMs}ms`);
-}
-
-async function ensureServer() {
-  let server = null;
-  let stderr = '';
-  const serverState = {
-    exited: false,
-    code: null,
-    signal: null,
-    stderr: '',
-  };
-
-  try {
-    await waitForServer(BASE_URL, 400);
-  } catch {
-    server = spawn(process.execPath, ['server.js'], {
-      cwd: REPO_ROOT,
-      stdio: ['ignore', 'pipe', 'pipe'],
-    });
-    server.stderr.on('data', (chunk) => {
-      stderr += chunk.toString();
-      serverState.stderr = stderr;
-    });
-    server.once('exit', (code, signal) => {
-      serverState.exited = true;
-      serverState.code = code;
-      serverState.signal = signal;
-    });
-  }
-
-  await waitForServer(BASE_URL, SERVER_BOOT_TIMEOUT_MS, serverState);
-  return { server, serverState };
 }
 
 async function ensureRepoRoot() {
@@ -147,6 +102,7 @@ async function acquireLock(scene, replace) {
   const payload = {
     pid: process.pid,
     scene,
+    appMode: 'phaser',
     cwd: REPO_ROOT,
     startedAt: new Date().toISOString(),
   };
@@ -162,47 +118,25 @@ async function releaseLock() {
   } catch {}
 }
 
-async function freshLoad(page) {
-  await page.goto(BASE_URL, { waitUntil: 'load' });
-  await page.evaluate(() => {
-    localStorage.removeItem('wdttgukji_save');
-    localStorage.removeItem('wdttgukji_save_meta');
-  });
-  await page.reload({ waitUntil: 'load' });
-  await page.waitForSelector('.stage-frame');
-}
+async function prepareScene(page, args) {
+  if (args.fresh) {
+    await freshStart(page, DESKTOP_VIEWPORT);
+  } else {
+    await gotoApp(page, DESKTOP_VIEWPORT);
+  }
 
-async function enterBattlefield(page, faction) {
-  await page.getByRole('button', { name: '적벽으로 들어간다' }).click();
-  await page.waitForSelector(`.faction-card[data-faction="${faction}"]`);
-  await page.evaluate((targetFaction) => window.__wdttgukji.selectFaction(targetFaction), faction);
-  await page.evaluate(() => window.__wdttgukji.showIntro());
-  await page.waitForSelector('#intro-screen:not(.hidden)');
-  await page.evaluate(() => {
-    for (let index = 0; index < 16; index += 1) window.__wdttgukji.advanceDialogue();
-  });
-  await page.evaluate(() => window.__wdttgukji.startGame());
-  await page.waitForSelector('#game-screen:not(.hidden)');
-  await page.waitForFunction(() => {
-    const title = document.getElementById('war-room-title')?.textContent?.trim() || '';
-    const objective = document.getElementById('war-room-objective')?.textContent?.trim() || '';
-    return Boolean(title && objective);
-  });
-}
+  if (args.scene === 'battlefield') {
+    await enterBattlefield(page, args.faction);
+    await callBridge(page, 'selectCity', 'xiangyang');
+    return;
+  }
 
-async function enterCommand(page) {
-  await page.evaluate(() => window.__wdttgukji.selectCity('jiangling'));
-  await page.waitForFunction(() => {
-    const title = document.getElementById('field-reaction-title');
-    return !!title?.textContent?.trim() && title.textContent.trim() !== '전장을 정리 중입니다.';
-  });
-  await page.waitForFunction(() => document.getElementById('game-screen')?.classList.contains('selection-focus'));
-  await page.evaluate(() => window.__wdttgukji.openCommand('jiangling', 'government'));
-  await page.waitForFunction(() => {
-    const bridge = document.getElementById('command-bridge');
-    const candidate = document.getElementById('command-candidate-live');
-    return !!bridge?.textContent?.trim() && !!candidate?.textContent?.trim();
-  });
+  if (args.scene === 'command') {
+    await enterCommand(page, { faction: args.faction, cityId: 'xiangyang', tab: 'government' });
+    return;
+  }
+
+  await waitForRoute(page, 'start');
 }
 
 async function main() {
@@ -229,13 +163,13 @@ async function main() {
   });
 
   try {
-    ({ server } = await ensureServer());
+    ({ server } = await ensureViteServer(REPO_ROOT));
 
     browser = await chromium.launch({
       headless: false,
-      args: [`--window-size=${VIEWPORT.width},${VIEWPORT.height}`],
+      args: [`--window-size=${DESKTOP_VIEWPORT.width},${DESKTOP_VIEWPORT.height}`],
     });
-    const context = await browser.newContext({ viewport: VIEWPORT });
+    const context = await browser.newContext({ viewport: DESKTOP_VIEWPORT });
     const page = await context.newPage();
 
     page.on('pageerror', (error) => {
@@ -245,22 +179,15 @@ async function main() {
       if (message.type() === 'error') console.error(`[console.error] ${message.text()}`);
     });
 
-    if (args.fresh) await freshLoad(page);
-    else await page.goto(BASE_URL, { waitUntil: 'load' });
-
-    if (args.scene === 'battlefield' || args.scene === 'command') {
-      await enterBattlefield(page, args.faction);
-    }
-    if (args.scene === 'command') {
-      await enterCommand(page);
-    }
+    await prepareScene(page, args);
 
     console.log([
       'Visible Playwright ready.',
+      'app_mode: phaser',
       `scene: ${args.scene}`,
       `url: ${BASE_URL}`,
-      `viewport: ${VIEWPORT.width}x${VIEWPORT.height}`,
-      'live_reload: on (source patch -> auto reload -> scene restore)',
+      `viewport: ${DESKTOP_VIEWPORT.width}x${DESKTOP_VIEWPORT.height}`,
+      'live_reload: vite hmr',
       'Keep this process running while you inspect the browser. Press Ctrl+C to close it.',
     ].join('\n'));
 

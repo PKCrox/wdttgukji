@@ -54,9 +54,10 @@ async function main() {
   const lines = [
     'wdttgukji UI pass preflight',
     `repo: ${root}`,
+    'app_mode: phaser-first (legacy UI lives under public/old)',
     `viewport: ${EXPECTED_VIEWPORT} (MacBook 14 contract)`,
     `visible_playwright: ${visibleSession}`,
-    'primary_specialists: ux-stage-director, map-art-director, content-planner',
+    'primary_specialists: koei-systems-designer, ux-stage-director, map-art-director, engine-integrator',
     'defer_specialist: qa-persona-simulator (after fit/map/tone stabilize)',
     'execution_order: visible browser -> inspect -> patch -> visible browser re-check -> qa:slice/watch-app-surface',
     'next_commands:',

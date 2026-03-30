@@ -224,7 +224,7 @@ function buildSparkPrompt({ focus, task, iteration, runDir }) {
     ...qaLines,
     'Rules:',
     '- Stay strictly inside owned paths.',
-    '- Do not touch public/index.html, public/css/style.css, public/js/app.js, or public/js/action-panel.js unless they are explicitly owned by this task. They are not in this task.',
+    '- Do not touch index.html, src/scenes/*.js, src/screens/*.js, or src/utils/*.js unless they are explicitly owned by this task. They are not in this task.',
     '- Finish one coherent implementation slice with verification, not half a shell.',
     '- If the task expands or needs cross-system redesign, stop and explain the blocker instead of improvising.',
     '- Treat any visible copy as player-facing product language, not ops language.',

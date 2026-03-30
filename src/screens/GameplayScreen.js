@@ -16,6 +16,8 @@ import { attemptCapture } from '../../engine/core/character-manager.js';
 import { CHAR_NAMES } from '../../engine/data/names.js';
 import EventBus, { EVENTS } from '../utils/EventBus.js';
 
+const SAVE_META_KEY = 'wdttgukji_save_meta';
+
 export default class GameplayScreen {
   constructor(scenario, allEvents, playerFactionId) {
     // 시나리오에 playerFaction 설정
@@ -218,6 +220,14 @@ export default class GameplayScreen {
   save(slotKey = 'autosave') {
     const json = this.state.serialize();
     localStorage.setItem(`wdttgukji_save_${slotKey}`, json);
+    localStorage.setItem(SAVE_META_KEY, JSON.stringify({
+      slotKey,
+      timestamp: Date.now(),
+      turn: this.state.turn,
+      year: this.state.year,
+      month: this.state.month,
+      factionId: this.state.player?.factionId || null,
+    }));
     console.log(`[GamePlay] 저장 완료: ${slotKey}`);
     return true;
   }
@@ -239,6 +249,29 @@ export default class GameplayScreen {
 
   static hasSave(slotKey = 'autosave') {
     return !!localStorage.getItem(`wdttgukji_save_${slotKey}`);
+  }
+
+  static readSaveMeta(slotKey = 'autosave') {
+    try {
+      const meta = JSON.parse(localStorage.getItem(SAVE_META_KEY) || 'null');
+      if (meta?.slotKey === slotKey) return meta;
+    } catch {}
+
+    try {
+      const raw = localStorage.getItem(`wdttgukji_save_${slotKey}`);
+      if (!raw) return null;
+      const payload = JSON.parse(raw);
+      return {
+        slotKey,
+        timestamp: null,
+        turn: payload.turn ?? null,
+        year: payload.year ?? null,
+        month: payload.month ?? null,
+        factionId: payload.player?.factionId || null,
+      };
+    } catch {
+      return null;
+    }
   }
 
   // ─── 유틸 ───
