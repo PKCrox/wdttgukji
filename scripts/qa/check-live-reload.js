@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import path from 'node:path';
-import { utimes } from 'node:fs/promises';
+import { access, utimes } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
@@ -10,7 +10,20 @@ const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const BASE_URL = process.env.WDTT_LIVE_RELOAD_BASE_URL || 'http://127.0.0.1:3001/';
 const VIEWPORT = { width: 1512, height: 982 };
-const PROBE_FILE = path.join(REPO_ROOT, 'public', 'js', 'app.js');
+const PROBE_FILE_CANDIDATES = [
+  path.join(REPO_ROOT, 'public', 'old', 'js', 'app.js'),
+  path.join(REPO_ROOT, 'public', 'js', 'app.js'),
+];
+
+async function resolveProbeFile() {
+  for (const candidate of PROBE_FILE_CANDIDATES) {
+    try {
+      await access(candidate);
+      return candidate;
+    } catch {}
+  }
+  throw new Error(`Probe file not found: ${PROBE_FILE_CANDIDATES.join(', ')}`);
+}
 
 async function freshLoad(page) {
   console.log('[live-reload-check] fresh load');
@@ -60,6 +73,7 @@ async function enterCommand(page) {
 async function main() {
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({ viewport: VIEWPORT });
+  const probeFile = await resolveProbeFile();
 
   try {
     await freshLoad(page);
@@ -75,7 +89,7 @@ async function main() {
 
     const now = new Date();
     console.log('[live-reload-check] touching probe file');
-    await utimes(PROBE_FILE, now, now);
+    await utimes(probeFile, now, now);
 
     console.log('[live-reload-check] waiting for reload badge');
     await page.getByText('변경 반영').waitFor({ state: 'visible', timeout: 15000 });

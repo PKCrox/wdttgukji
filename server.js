@@ -218,6 +218,8 @@ const watcherClosers = [];
 let pendingReloadPath = null;
 let pendingReloadTimer = null;
 let liveReloadVersion = 0;
+const LEGACY_PUBLIC_ROOT = '/public/old';
+const GENERATED_PUBLIC_ROOT = '/public';
 
 function normalizeSlashes(value = '') {
   return `${value}`.replace(/\\/g, '/');
@@ -330,9 +332,19 @@ const server = createServer(async (req, res) => {
     return;
   }
 
-  if (url === '/') url = '/public/index.html';
-  else if (!url.includes('.')) url = '/public' + url + '.html';
-  else if (url.startsWith('/js/') || url.startsWith('/css/') || url.startsWith('/assets/') || url.startsWith('/fragments/')) url = '/public' + url;
+  if (url === '/') {
+    url = `${LEGACY_PUBLIC_ROOT}/index.html`;
+  } else if (!url.includes('.')) {
+    url = `${LEGACY_PUBLIC_ROOT}${url}.html`;
+  } else if (url.startsWith('/js/')) {
+    url = `${LEGACY_PUBLIC_ROOT}${url}`;
+  } else if (url.startsWith('/css/generated/')) {
+    url = `${GENERATED_PUBLIC_ROOT}${url}`;
+  } else if (url.startsWith('/css/')) {
+    url = `${LEGACY_PUBLIC_ROOT}${url}`;
+  } else if (url.startsWith('/assets/') || url.startsWith('/fragments/')) {
+    url = `${GENERATED_PUBLIC_ROOT}${url}`;
+  }
 
   // 그대로 매핑: /engine/*, /data/*, /public/* → 루트에서 서빙
   const filePath = join(__dirname, url);
