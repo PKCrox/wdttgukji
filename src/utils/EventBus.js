@@ -1,0 +1,44 @@
+import Phaser from 'phaser';
+
+/**
+ * 글로벌 이벤트 버스 — 씬 간 통신용
+ * Phaser Scene.events와 달리 씬 lifecycle에 종속되지 않음
+ */
+const EventBus = new Phaser.Events.EventEmitter();
+
+export default EventBus;
+
+// 이벤트 키 상수
+export const EVENTS = {
+  // 맵 인터랙션
+  CITY_SELECTED: 'CITY_SELECTED',
+  CITY_DESELECTED: 'CITY_DESELECTED',
+
+  // 게임 상태 변경
+  STATE_CHANGED: 'STATE_CHANGED',
+  TURN_START: 'TURN_START',
+  TURN_END: 'TURN_END',
+
+  // UI 제어
+  OPEN_ACTION_PANEL: 'OPEN_ACTION_PANEL',
+  CLOSE_ACTION_PANEL: 'CLOSE_ACTION_PANEL',
+  OPEN_CHARACTER: 'OPEN_CHARACTER',
+  CLOSE_CHARACTER: 'CLOSE_CHARACTER',
+
+  // 이벤트/전투
+  SHOW_EVENT: 'SHOW_EVENT',
+  EVENT_CHOICE_MADE: 'EVENT_CHOICE_MADE',
+  START_BATTLE: 'START_BATTLE',
+  BATTLE_ENDED: 'BATTLE_ENDED',
+
+  // 턴 결산
+  SHOW_TURN_RESOLUTION: 'SHOW_TURN_RESOLUTION',
+  TURN_RESOLUTION_DONE: 'TURN_RESOLUTION_DONE',
+
+  // 네비게이션
+  START_NEW_GAME: 'START_NEW_GAME',
+  LOAD_GAME: 'LOAD_GAME',
+  FACTION_SELECTED: 'FACTION_SELECTED',
+  GAME_OVER: 'GAME_OVER',
+  RETURN_TO_MENU: 'RETURN_TO_MENU',
+};

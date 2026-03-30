@@ -9,3 +9,8 @@ docs/automation-status/
 scripts/orchestrate/generated/*.json
 /screenshot-*.png
 /tmp-*.png
+
+# Build artifacts
+dist/
+src-tauri/target/
+screenshots/
