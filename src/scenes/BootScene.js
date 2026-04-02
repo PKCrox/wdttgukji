@@ -15,6 +15,9 @@ export default class BootScene extends Phaser.Scene {
     // 로딩 텍스트 표시 후 Preloader로 전환
     const { width, height } = this.scale;
 
+    // 불투명 배경 (캔버스 투명이므로 직접 그리기)
+    this.add.graphics().fillStyle(0x0a0a0f, 1).fillRect(0, 0, width, height);
+
     this.add.text(width / 2, height / 2, '우당탕탕삼국지', {
       ...FONT_STYLES.title,
       fontSize: '36px',

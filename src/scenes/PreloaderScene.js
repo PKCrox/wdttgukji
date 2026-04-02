@@ -13,6 +13,9 @@ export default class PreloaderScene extends Phaser.Scene {
   preload() {
     const { width, height } = this.scale;
 
+    // 불투명 배경 (캔버스 투명이므로 직접 그리기)
+    this.add.graphics().fillStyle(0x0a0a0f, 1).fillRect(0, 0, width, height);
+
     // 프로그레스 바
     const barBg = this.add.graphics();
     barBg.fillStyle(0x2a2a3a, 1);
@@ -40,11 +43,7 @@ export default class PreloaderScene extends Phaser.Scene {
 
     // JSON 데이터는 ES import로 이미 로드됨 → create()에서 캐시 등록
 
-    // 맵 배경 (public/assets/ 에서 로드)
-    this.load.svg('map-base', 'assets/maps/red-cliffs-base.svg', {
-      width: 1600,
-      height: 900,
-    });
+    // 맵 배경은 Leaflet 타일 레이어가 실시간 렌더링 (정적 이미지 불필요)
   }
 
   create() {

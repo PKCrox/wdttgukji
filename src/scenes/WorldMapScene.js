@@ -1,39 +1,18 @@
 import Phaser from 'phaser';
-import { COLORS, COLORS_CSS, FONT_STYLES, FONTS, FACTION_COLORS, SPACING } from '../utils/Theme.js';
+import { COLORS, COLORS_CSS, FONT_STYLES, FONTS, FACTION_COLORS, SPACING, MAP_PALETTE, CITY_TIERS, ROAD_STYLES, TERRITORY_STYLE } from '../utils/Theme.js';
 import EventBus, { EVENTS } from '../utils/EventBus.js';
 import GameplayScreen from '../screens/GameplayScreen.js';
+import { WORLD_W, WORLD_H, resolveAllAnchors, geoToWorld, oldPixelToWorld, syncLeafletToCamera, setLeafletVisible, invalidateLeafletSize } from '../utils/LeafletBridge.js';
 
-const LEGACY_W = 920;
-const LEGACY_H = 700;
 const DESIGN_W = 1600;
 const DESIGN_H = 900;
-const SAFE_BOUNDS = { left: 80, top: 60, right: 1520, bottom: 840 };
+
+// Zoom tiers — wider range for larger Mercator world
 const ZOOM_TIERS = {
-  strategic: { min: 0.78, max: 0.91 },
-  frontline: { min: 0.92, max: 1.27 },
-  local: { min: 1.28, max: 1.8 },
+  strategic: { min: 0.45, max: 0.64 },
+  frontline: { min: 0.65, max: 1.05 },
+  local: { min: 1.06, max: 1.8 },
 };
-
-// 레거시 좌표(920x700) → 신규 좌표(1600x900) 투영
-function projectLegacyAnchors(cityPositions) {
-  const w = SAFE_BOUNDS.right - SAFE_BOUNDS.left;
-  const h = SAFE_BOUNDS.bottom - SAFE_BOUNDS.top;
-  const anchors = {};
-  for (const [id, pos] of Object.entries(cityPositions || {})) {
-    anchors[id] = {
-      x: Math.round(SAFE_BOUNDS.left + (pos.x / LEGACY_W) * w),
-      y: Math.round(SAFE_BOUNDS.top + (pos.y / LEGACY_H) * h),
-    };
-  }
-  return anchors;
-}
-
-// mapLayout.cityAnchors(명시) + cityPositions(레거시 변환) 병합
-function resolveAllAnchors(scenario) {
-  const legacy = projectLegacyAnchors(scenario.cityPositions || {});
-  const explicit = scenario.mapLayout?.cityAnchors || {};
-  return { ...legacy, ...explicit };
-}
 
 export default class WorldMapScene extends Phaser.Scene {
   constructor() {
@@ -89,36 +68,30 @@ export default class WorldMapScene extends Phaser.Scene {
     this.registry.set('allEvents', allEvents);
     this.registry.set('gameplay', this.gameplay);
 
-    // 맵 월드 크기 (카메라 바운드)
-    const mapW = DESIGN_W;
-    const mapH = DESIGN_H;
+    // 맵 월드 크기 — Mercator 투영 기반 (Leaflet 타일과 정렬)
+    const mapW = Math.round(WORLD_W);
+    const mapH = Math.round(WORLD_H);
+    this.mapW = mapW;
+    this.mapH = mapH;
 
-    // 배경
-    this.add.graphics().fillStyle(0x07080c, 1).fillRect(0, 0, mapW, mapH);
+    // Leaflet 타일맵 활성화 + 크기 재계산
+    setLeafletVisible(true);
+    invalidateLeafletSize();
 
-    if (this.textures.exists('map-base')) {
-      this.add.image(mapW / 2, mapH / 2, 'map-base')
-        .setDisplaySize(mapW, mapH)
-        .setAlpha(0.74);
-    }
-
-    this.drawMapAtmosphere(mapW, mapH);
-
-    // 렌더링 레이어 (순서 중요)
-    this.drawFocusZones(scenario);
-    this.drawWaterPolygons(scenario);
+    // 렌더링 레이어 — Leaflet 타일 위에 게임 요소만
     this.drawTerritories(scenario);
-    this.drawRidgePaths(scenario);
-    this.drawFrontlineAnchors(scenario);
-    this.drawRegionLabels(scenario);
-    this.drawLandmarks(scenario);
     this.drawRoads(scenario);
     this.drawCities(scenario);
     this.focusGraphics = this.add.graphics();
     this.focusGraphics.setDepth(40);
 
-    // 카메라 설정
+    // 카메라 설정 (Mercator 월드 크기)
     this.setupCamera(mapW, mapH);
+
+    // 초기 카메라 위치 — 맵 중앙
+    const cam = this.cameras.main;
+    cam.centerOn(mapW / 2, mapH / 2);
+    cam.zoom = 0.55; // 전략 줌에서 시작
     this.refreshSemanticZoom(true);
 
     // UIOverlay 병렬 실행
@@ -137,27 +110,13 @@ export default class WorldMapScene extends Phaser.Scene {
       EventBus.off(EVENTS.CLOSE_ACTION_PANEL, this.onActionPanelClosed, this);
       EventBus.off(EVENTS.CITY_DESELECTED, this.onCityDeselected, this);
       EventBus.off(EVENTS.STATE_CHANGED, this.refreshCityMarkers, this);
+      setLeafletVisible(false);
       this.scene.stop('UIOverlay');
     });
   }
 
   drawMapAtmosphere(mapW, mapH) {
-    const gfx = this.add.graphics();
-    gfx.setDepth(0);
-
-    // 중앙 전장을 먼저 읽히게 하는 은은한 온기
-    gfx.fillStyle(0x5a4122, 0.2);
-    gfx.fillCircle(mapW * 0.47, mapH * 0.5, 360);
-    gfx.fillStyle(0x8a6430, 0.12);
-    gfx.fillCircle(mapW * 0.64, mapH * 0.42, 220);
-
-    // 외곽은 조금 눌러서 맵이 보드처럼 뜨게 만든다
-    gfx.fillStyle(0x040507, 0.09);
-    gfx.fillRect(0, 0, mapW, 46);
-    gfx.fillRect(0, mapH - 54, mapW, 54);
-    gfx.fillRect(0, 0, 64, mapH);
-    gfx.fillRect(mapW - 64, 0, 64, mapH);
-    this.terrainGraphics.atmosphere = gfx;
+    // Leaflet이 배경 처리 — 별도 비네팅 불필요
   }
 
   drawWaterPolygons(scenario) {
@@ -167,19 +126,19 @@ export default class WorldMapScene extends Phaser.Scene {
     const waterGraphics = this.add.graphics();
     waterGraphics.setDepth(1);
     polygons.forEach((polygon) => {
-      const fill = polygon.kind === 'bay' ? 0x17354a : 0x204761;
-      const stroke = polygon.kind === 'bay' ? 0x4a6a86 : 0x6a96b0;
-      waterGraphics.fillStyle(fill, polygon.kind === 'bay' ? 0.24 : 0.2);
+      const isBay = polygon.kind === 'bay';
+      const pts = polygon.points.map(([x, y]) => { const w = oldPixelToWorld(x, y); return [w.x, w.y]; });
+      waterGraphics.fillStyle(MAP_PALETTE.water, isBay ? 0.15 : 0.12);
       waterGraphics.beginPath();
-      polygon.points.forEach(([x, y], index) => {
+      pts.forEach(([x, y], index) => {
         if (index === 0) waterGraphics.moveTo(x, y);
         else waterGraphics.lineTo(x, y);
       });
       waterGraphics.closePath();
       waterGraphics.fillPath();
-      waterGraphics.lineStyle(polygon.kind === 'bay' ? 2.2 : 2.8, stroke, polygon.kind === 'bay' ? 0.28 : 0.34);
+      waterGraphics.lineStyle(isBay ? 2.0 : 2.4, MAP_PALETTE.waterEdge, isBay ? 0.2 : 0.22);
       waterGraphics.beginPath();
-      polygon.points.forEach(([x, y], index) => {
+      pts.forEach(([x, y], index) => {
         if (index === 0) waterGraphics.moveTo(x, y);
         else waterGraphics.lineTo(x, y);
       });
@@ -195,14 +154,16 @@ export default class WorldMapScene extends Phaser.Scene {
 
     zones.forEach((zone) => {
       const fc = FACTION_COLORS[zone.factionId] || FACTION_COLORS.neutral;
+      const w = oldPixelToWorld(zone.x, zone.y);
+      const scale = WORLD_W / 1600; // radius 스케일링
       const gfx = this.add.graphics();
       gfx.setDepth(1);
       gfx.fillStyle(fc.primary, zone.alpha || 0.12);
-      gfx.fillCircle(zone.x, zone.y, zone.radius);
+      gfx.fillCircle(w.x, w.y, (zone.radius || 100) * scale);
       gfx.lineStyle(2, fc.primary, 0.16);
-      gfx.strokeCircle(zone.x, zone.y, zone.radius * 0.92);
+      gfx.strokeCircle(w.x, w.y, (zone.radius || 100) * scale * 0.92);
 
-      const label = this.add.text(zone.x, zone.y, this.scenario.factions?.[zone.factionId]?.name || zone.factionId, {
+      const label = this.add.text(w.x, w.y, this.scenario.factions?.[zone.factionId]?.name || zone.factionId, {
         fontFamily: FONTS.title,
         fontSize: '18px',
         fontStyle: '700',
@@ -219,26 +180,30 @@ export default class WorldMapScene extends Phaser.Scene {
 
     const gfx = this.add.graphics();
     gfx.setDepth(2);
-    for (const [factionId, points] of Object.entries(polys)) {
+    for (const [factionId, rawPoints] of Object.entries(polys)) {
       const fc = FACTION_COLORS[factionId] || FACTION_COLORS.neutral;
-      // 채우기
-      gfx.fillStyle(fc.fill, Math.min((fc.fillAlpha || 0.14) + 0.03, 0.26));
-      gfx.beginPath();
-      points.forEach((p, i) => {
-        if (i === 0) gfx.moveTo(p[0], p[1]);
-        else gfx.lineTo(p[0], p[1]);
+      // 좌표 변환: 구 1600×900 → Mercator 월드
+      const points = rawPoints.map(p => {
+        const w = oldPixelToWorld(p[0], p[1]);
+        return [w.x, w.y];
       });
-      gfx.closePath();
+      const tracePath = () => {
+        gfx.beginPath();
+        points.forEach((p, i) => {
+          if (i === 0) gfx.moveTo(p[0], p[1]);
+          else gfx.lineTo(p[0], p[1]);
+        });
+        gfx.closePath();
+      };
+
+      // 영토 틴트 — 위성 지형 위에 가볍게만 (지형이 보여야 함)
+      gfx.fillStyle(fc.fill, 0.06);
+      tracePath();
       gfx.fillPath();
 
-      // 경계선
-      gfx.lineStyle(1.2, fc.edge, 0.24);
-      gfx.beginPath();
-      points.forEach((p, i) => {
-        if (i === 0) gfx.moveTo(p[0], p[1]);
-        else gfx.lineTo(p[0], p[1]);
-      });
-      gfx.closePath();
+      // 영토 경계선
+      gfx.lineStyle(2.0, fc.primary, 0.16);
+      tracePath();
       gfx.strokePath();
     }
     this.terrainGraphics.territories = gfx;
@@ -251,21 +216,24 @@ export default class WorldMapScene extends Phaser.Scene {
     const ridgeGraphics = this.add.graphics();
     ridgeGraphics.setDepth(3);
     ridges.forEach((ridge) => {
-      ridgeGraphics.lineStyle(ridge.thickness || 20, 0x241d16, 0.2);
-      ridgeGraphics.beginPath();
-      ridge.points.forEach(([x, y], index) => {
-        if (index === 0) ridgeGraphics.moveTo(x, y);
-        else ridgeGraphics.lineTo(x, y);
-      });
-      ridgeGraphics.strokePath();
+      const t = ridge.thickness || 20;
+      const pts = ridge.points.map(([x, y]) => { const w = oldPixelToWorld(x, y); return [w.x, w.y]; });
+      const tracePath = () => {
+        ridgeGraphics.beginPath();
+        pts.forEach(([x, y], index) => {
+          if (index === 0) ridgeGraphics.moveTo(x, y);
+          else ridgeGraphics.lineTo(x, y);
+        });
+        ridgeGraphics.strokePath();
+      };
 
-      ridgeGraphics.lineStyle(Math.max(4, (ridge.thickness || 20) * 0.24), 0x6d5b43, 0.24);
-      ridgeGraphics.beginPath();
-      ridge.points.forEach(([x, y], index) => {
-        if (index === 0) ridgeGraphics.moveTo(x, y);
-        else ridgeGraphics.lineTo(x, y);
-      });
-      ridgeGraphics.strokePath();
+      // Pass 1: 넓은 그림자 (실제 지형 위 보조)
+      ridgeGraphics.lineStyle(t * 0.8, MAP_PALETTE.ridge, 0.12);
+      tracePath();
+
+      // Pass 2: 가는 하이라이트
+      ridgeGraphics.lineStyle(Math.max(3, t * 0.2), MAP_PALETTE.ridgeHighlight, 0.1);
+      tracePath();
     });
     this.terrainGraphics.ridges = ridgeGraphics;
   }
@@ -276,12 +244,14 @@ export default class WorldMapScene extends Phaser.Scene {
     if (!labels) return;
 
     labels.forEach(label => {
-      const text = this.add.text(label.x, label.y, label.text, {
+      const w = oldPixelToWorld(label.x, label.y);
+      const text = this.add.text(w.x, w.y, label.text, {
         fontFamily: FONTS.title,
         fontSize: `${label.size || 36}px`,
         fontStyle: '700',
-        color: '#d1c0a0',
-      }).setOrigin(0.5).setAlpha(0.16).setDepth(12);
+        color: MAP_PALETTE.regionLabel,
+      }).setOrigin(0.5).setAlpha(0.24).setDepth(12);
+      text.setShadow(0, 1, '#000000', 8, false, true);
       this.regionLabels.push(text);
     });
   }
@@ -291,13 +261,15 @@ export default class WorldMapScene extends Phaser.Scene {
     if (!landmarks?.length) return;
 
     landmarks.forEach((landmark) => {
-      const css = landmark.type === 'river' ? '#7fb2d1' : '#b8a27d';
-      const text = this.add.text(landmark.x, landmark.y, landmark.text, {
+      const w = oldPixelToWorld(landmark.x, landmark.y);
+      const css = landmark.type === 'river' ? MAP_PALETTE.waterLabel : MAP_PALETTE.ridgeLabel;
+      const text = this.add.text(w.x, w.y, landmark.text, {
         fontFamily: FONTS.ui,
         fontSize: '11px',
         fontStyle: '700',
         color: css,
-      }).setOrigin(0.5).setAlpha(0.22).setDepth(13);
+      }).setOrigin(0.5).setAlpha(0.3).setDepth(13);
+      text.setShadow(0, 1, '#000000', 6, false, true);
       this.landmarkLabels.push(text);
     });
   }
@@ -307,18 +279,19 @@ export default class WorldMapScene extends Phaser.Scene {
     if (!frontlines?.length) return;
 
     frontlines.forEach((frontline) => {
+      const pts = frontline.points.map(([x, y]) => { const w = oldPixelToWorld(x, y); return [w.x, w.y]; });
       const gfx = this.add.graphics();
       gfx.setDepth(8);
       gfx.lineStyle(8, 0x0a0907, 0.24);
       gfx.beginPath();
-      frontline.points.forEach(([x, y], index) => {
+      pts.forEach(([x, y], index) => {
         if (index === 0) gfx.moveTo(x, y);
         else gfx.lineTo(x, y);
       });
       gfx.strokePath();
       gfx.lineStyle(2.4, 0xd3b36b, 0.3);
       gfx.beginPath();
-      frontline.points.forEach(([x, y], index) => {
+      pts.forEach(([x, y], index) => {
         if (index === 0) gfx.moveTo(x, y);
         else gfx.lineTo(x, y);
       });
@@ -332,38 +305,51 @@ export default class WorldMapScene extends Phaser.Scene {
     const roads = scenario.mapLayout?.roads;
     if (!roads) return;
 
+    const shadow = this.add.graphics();
     const major = this.add.graphics();
     const minor = this.add.graphics();
-    major.setDepth(9);
+    shadow.setDepth(7);
     minor.setDepth(8);
+    major.setDepth(9);
+
     roads.forEach(road => {
       const fromPos = this.cityAnchors[road.from];
       const toPos = this.cityAnchors[road.to];
       if (!fromPos || !toPos) return;
 
       const isMajor = road.grade === 'major';
-      const gfx = isMajor ? major : minor;
 
-      // 도로 배경 (두꺼운 어두운 선)
+      // 패스 1: 그림자 (깊이감)
       if (isMajor) {
-        gfx.lineStyle(7, 0x140f0b, 0.62);
-        gfx.beginPath();
-        gfx.moveTo(fromPos.x, fromPos.y);
-        gfx.lineTo(toPos.x, toPos.y);
-        gfx.strokePath();
+        shadow.lineStyle(4.5, 0x080604, 0.3);
+        shadow.beginPath();
+        shadow.moveTo(fromPos.x + 1, fromPos.y + 1);
+        shadow.lineTo(toPos.x + 1, toPos.y + 1);
+        shadow.strokePath();
       }
 
-      // 도로 본선
+      // 패스 2: 메인 도로선
+      const gfx = isMajor ? major : minor;
       gfx.lineStyle(
-        isMajor ? 2.8 : 1.4,
-        isMajor ? 0xd7bb82 : 0x4b4f61,
-        isMajor ? 0.82 : 0.48,
+        isMajor ? 2.2 : 1.0,
+        isMajor ? 0xb8a060 : 0x706858,
+        isMajor ? 0.55 : 0.30,
       );
       gfx.beginPath();
       gfx.moveTo(fromPos.x, fromPos.y);
       gfx.lineTo(toPos.x, toPos.y);
       gfx.strokePath();
+
+      // 패스 3: 주요 도로 하이라이트 (중앙선)
+      if (isMajor) {
+        gfx.lineStyle(0.8, 0xd4c080, 0.25);
+        gfx.beginPath();
+        gfx.moveTo(fromPos.x, fromPos.y);
+        gfx.lineTo(toPos.x, toPos.y);
+        gfx.strokePath();
+      }
     });
+    this.terrainGraphics.roadShadow = shadow;
     this.terrainGraphics.majorRoads = major;
     this.terrainGraphics.minorRoads = minor;
   }
@@ -383,30 +369,49 @@ export default class WorldMapScene extends Phaser.Scene {
       const fc = FACTION_COLORS[liveCity.owner] || FACTION_COLORS.neutral;
       const isCapital = liveCity.owner && this.gameplay?.state?.factions?.[liveCity.owner]?.capital === cityId;
       const importance = liveCity.strategic_importance || 0;
-      const baseR = isCapital ? 11 : importance >= 8 ? 9 : importance >= 6 ? 8 : 7;
+      const tier = isCapital ? CITY_TIERS.capital : importance >= 8 ? CITY_TIERS.major : importance >= 5 ? CITY_TIERS.standard : CITY_TIERS.minor;
+      const baseR = tier.radius;
 
       // 도시 그래픽
       const gfx = this.add.graphics();
       this.drawCityMarker(gfx, anchor.x, anchor.y, baseR, fc, isCapital, false);
       gfx.setDepth(20);
 
-      // 병력 바 (도시 아래)
-      const armyBar = this.drawArmyBar(anchor.x, anchor.y + baseR + 4, liveCity, fc);
-      armyBar.setDepth(18);
-
-      // 도시명 라벨
+      // 도시명 라벨 — 배경 필 포함
       const badgeOff = scenario.mapLayout?.cityBadgeOffsets?.[cityId];
       const labelDx = badgeOff?.label?.[0] || 0;
       const labelDy = badgeOff?.label?.[1] || 0;
-      const defaultLabelY = baseR + 10;
+      const defaultLabelY = baseR + 8;
+      const labelFontSize = isCapital ? '13px' : importance >= 8 ? '12px' : '11px';
+
       const label = this.add.text(anchor.x + labelDx, anchor.y + defaultLabelY + labelDy, city.name, {
         fontFamily: FONTS.ui,
-        fontSize: '10px',
-        fontStyle: '600',
-        color: COLORS_CSS.text,
-      }).setOrigin(0.5, 0).setAlpha(0.9);
-      label.setDepth(19);
-      this.cityGraphics[cityId] = { gfx, anchor, baseR, fc, isCapital, armyBar, label, importance };
+        fontSize: labelFontSize,
+        fontStyle: '700',
+        color: COLORS_CSS.textBright,
+        padding: { left: 6, right: 6, top: 3, bottom: 3 },
+      }).setOrigin(0.5, 0).setDepth(21);
+      label.setShadow(0, 1, '#000000', 4, false, true);
+
+      // 라벨 배경 필 (어두운 반투명)
+      const labelBg = this.add.graphics();
+      const lbW = label.width + 2;
+      const lbH = label.height;
+      const lbX = anchor.x + labelDx - lbW / 2;
+      const lbY = anchor.y + defaultLabelY + labelDy;
+      labelBg.fillStyle(0x0a0a10, 0.78);
+      labelBg.fillRoundedRect(lbX, lbY, lbW, lbH, 4);
+      // 세력 색상 좌측 액센트
+      labelBg.fillStyle(fc.primary, 0.6);
+      labelBg.fillRect(lbX, lbY + 3, 2, lbH - 6);
+      labelBg.setDepth(20);
+
+      // 병력 바 (라벨 아래)
+      const armyBarY = lbY + lbH + 3;
+      const armyBar = this.drawArmyBar(anchor.x + labelDx, armyBarY, liveCity, fc);
+      armyBar.setDepth(20);
+
+      this.cityGraphics[cityId] = { gfx, anchor, baseR, fc, isCapital, armyBar, label, labelBg, importance };
 
       // 클릭/호버 영역
       const hitZone = this.add.zone(anchor.x, anchor.y, baseR * 4, baseR * 4)
@@ -425,24 +430,40 @@ export default class WorldMapScene extends Phaser.Scene {
   }
 
   drawCityMarker(gfx, x, y, r, fc, isCapital, hovered) {
-    // 외곽 글로우 (호버 시)
+    // 1. 호버 — 넓은 글로우
     if (hovered) {
-      gfx.fillStyle(fc.primary, 0.12);
+      gfx.fillStyle(fc.primary, 0.06);
+      gfx.fillCircle(x, y, r + 18);
+      gfx.fillStyle(fc.primary, 0.10);
       gfx.fillCircle(x, y, r + 10);
     }
 
-    // 외곽 링
-    gfx.lineStyle(isCapital ? 3 : 2, hovered ? COLORS.accent : fc.edge, hovered ? 0.9 : 0.6);
-    gfx.strokeCircle(x, y, r);
+    // 2. 드롭 섀도우 (깊이감)
+    gfx.fillStyle(0x000000, 0.35);
+    gfx.fillCircle(x + 1, y + 2, r + 2);
 
-    // 내부 채우기
-    gfx.fillStyle(fc.badge, 0.9);
-    gfx.fillCircle(x, y, r - 1);
+    // 3. 외곽 링 — 두꺼운 세력 색상
+    gfx.fillStyle(fc.primary, hovered ? 0.92 : 0.72);
+    gfx.fillCircle(x, y, r + 1);
 
-    // 수도 표시 (내부 원)
+    // 4. 내부 채우기 — 어두운 색 (링 효과)
+    gfx.fillStyle(fc.badgeDark, 0.95);
+    gfx.fillCircle(x, y, r - 2);
+
+    // 5. 내부 하이라이트 (입체감)
+    gfx.fillStyle(fc.badge, 0.45);
+    gfx.fillCircle(x, y - r * 0.2, r * 0.55);
+
+    // 6. 외곽 광택 링
+    gfx.lineStyle(1, 0xffffff, hovered ? 0.22 : 0.10);
+    gfx.strokeCircle(x, y, r + 1);
+
+    // 7. 수도 — 밝은 내부 점 + 외곽 이중링
     if (isCapital) {
-      gfx.fillStyle(fc.primary, 1);
-      gfx.fillCircle(x, y, 3);
+      gfx.fillStyle(0xffffff, 0.85);
+      gfx.fillCircle(x, y, 3.5);
+      gfx.lineStyle(1.5, fc.primary, 0.6);
+      gfx.strokeCircle(x, y, r + 5);
     }
   }
 
@@ -450,17 +471,18 @@ export default class WorldMapScene extends Phaser.Scene {
     const army = city.army || 0;
     const maxArmy = 80000;
     const ratio = Math.min(army / maxArmy, 1);
-    const barW = 24;
-    const barH = 2.5;
+    const barW = 36;
+    const barH = 3;
 
     const gfx = this.add.graphics();
     // 배경
-    gfx.fillStyle(0x1a1a28, 0.6);
-    gfx.fillRect(x - barW / 2, y, barW, barH);
+    gfx.fillStyle(0x000000, 0.5);
+    gfx.fillRoundedRect(x - barW / 2, y, barW, barH, 1.5);
     // 병력 바
     if (ratio > 0) {
-      gfx.fillStyle(fc.primary, 0.7);
-      gfx.fillRect(x - barW / 2, y, barW * ratio, barH);
+      const fillColor = ratio > 0.6 ? fc.primary : ratio > 0.3 ? COLORS.warning : COLORS.danger;
+      gfx.fillStyle(fillColor, 0.85);
+      gfx.fillRoundedRect(x - barW / 2, y, barW * ratio, barH, 1.5);
     }
     return gfx;
   }
@@ -715,12 +737,12 @@ export default class WorldMapScene extends Phaser.Scene {
 
   getZoomBounds() {
     if (this.scene.isActive('ActionPanel')) {
-      return { min: 1.02, max: 1.65 };
+      return { min: 0.72, max: 1.8 };
     }
     if (this.selectedCityId) {
-      return { min: 0.92, max: 1.55 };
+      return { min: 0.55, max: 1.6 };
     }
-    return { min: 0.78, max: 1.32 };
+    return { min: 0.45, max: 1.4 };
   }
 
   resolveZoomTier(zoom) {
@@ -832,7 +854,10 @@ export default class WorldMapScene extends Phaser.Scene {
       cg.armyBar?.setDepth(depth - 1);
       cg.label?.setAlpha(detailAlpha);
       cg.label?.setVisible(detailAlpha > 0.02);
-      cg.label?.setDepth(depth);
+      cg.label?.setDepth(depth + 1);
+      cg.labelBg?.setAlpha(detailAlpha);
+      cg.labelBg?.setVisible(detailAlpha > 0.02);
+      cg.labelBg?.setDepth(depth);
       if (cg.label) {
         cg.label.setScale(isSelected ? 1.06 : strategicCity && this.zoomTier === 'strategic' ? 1.02 : 1);
       }
@@ -850,15 +875,17 @@ export default class WorldMapScene extends Phaser.Scene {
         : allyAxes.length >= 2
           ? '집결 거점'
           : '배후 거점';
+    const mw = this.mapW || WORLD_W;
+    const mh = this.mapH || WORLD_H;
     const positionX = Phaser.Math.Clamp(
-      anchor.x + (anchor.x < DESIGN_W * 0.56 ? 194 : -194),
-      SAFE_BOUNDS.left + 160,
-      SAFE_BOUNDS.right - 160,
+      anchor.x + (anchor.x < mw * 0.56 ? 194 : -194),
+      160,
+      mw - 160,
     );
     const positionY = Phaser.Math.Clamp(
-      anchor.y + (anchor.y < DESIGN_H * 0.48 ? 110 : -110),
-      SAFE_BOUNDS.top + 74,
-      SAFE_BOUNDS.bottom - 82,
+      anchor.y + (anchor.y < mh * 0.48 ? 110 : -110),
+      74,
+      mh - 82,
     );
     const briefW = 236;
     const briefH = 124;
@@ -985,9 +1012,9 @@ export default class WorldMapScene extends Phaser.Scene {
     const maxY = Math.max(...framePoints.map((point) => point.y));
     const centerX = (minX + maxX) / 2;
     const centerY = (minY + maxY) / 2;
-    const span = Math.max(maxX - minX, (maxY - minY) * 1.1, 180);
+    const span = Math.max(maxX - minX, (maxY - minY) * 1.1, 300);
     const bounds = this.getZoomBounds();
-    const targetZoom = Phaser.Math.Clamp(560 / span, Math.max(1.08, bounds.min), Math.min(1.32, bounds.max));
+    const targetZoom = Phaser.Math.Clamp(900 / span, Math.max(0.72, bounds.min), Math.min(1.2, bounds.max));
 
     cam.pan(centerX, centerY, 240, 'Sine.easeOut', true);
     if (targetZoom !== cam.zoom) {
@@ -1034,5 +1061,8 @@ export default class WorldMapScene extends Phaser.Scene {
     if (this.cursors?.right.isDown || this.wasd?.right.isDown) cam.scrollX += speed;
     if (this.cursors?.up.isDown || this.wasd?.up.isDown) cam.scrollY -= speed;
     if (this.cursors?.down.isDown || this.wasd?.down.isDown) cam.scrollY += speed;
+
+    // Leaflet 타일맵 동기화 — Phaser 카메라 → Leaflet 뷰
+    syncLeafletToCamera(cam);
   }
 }

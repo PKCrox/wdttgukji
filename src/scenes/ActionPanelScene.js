@@ -92,13 +92,15 @@ export default class ActionPanelScene extends Phaser.Scene {
 
     // 패널 배경
     const bg = this.add.graphics();
-    bg.fillStyle(0x0b0d14, 0.98);
+    bg.fillStyle(0x0c0e14, 0.98);
     bg.fillRoundedRect(x, y, w, h, 12);
-    bg.lineStyle(1, fc.primary, 0.45);
+    bg.lineStyle(1.2, fc.primary, 0.4);
     bg.strokeRoundedRect(x, y, w, h, 12);
+    bg.lineStyle(1, 0x1e2636, 0.12);
+    bg.strokeRoundedRect(x + 4, y + 4, w - 8, h - 8, 10);
 
     // 상단 색상 바
-    bg.fillStyle(fc.primary, 0.6);
+    bg.fillStyle(fc.primary, 0.7);
     bg.fillRoundedRect(x, y, w, 4, { tl: 12, tr: 12 });
 
     // 헤더
@@ -161,9 +163,9 @@ export default class ActionPanelScene extends Phaser.Scene {
     const stripY = y + 76;
     const stripH = 58;
     const strip = this.add.graphics();
-    strip.fillStyle(0x111521, 0.96);
+    strip.fillStyle(0x0e1119, 0.96);
     strip.fillRoundedRect(x + 20, stripY, w - 40, stripH, 12);
-    strip.lineStyle(1, tabMeta.tone, 0.22);
+    strip.lineStyle(1, tabMeta.tone, 0.26);
     strip.strokeRoundedRect(x + 20, stripY, w - 40, stripH, 12);
     strip.fillStyle(tabMeta.tone, 0.12);
     strip.fillRoundedRect(x + 32, stripY + 12, 84, 22, 11);
@@ -236,8 +238,8 @@ export default class ActionPanelScene extends Phaser.Scene {
       // 활성 탭 하단 바
       if (isActive) {
         const bar = this.add.graphics();
-        bar.fillStyle(tone, 0.8);
-        bar.fillRect(tx + 8, y + 41, tabW - 16, 3);
+        bar.fillStyle(tone, 0.9);
+        bar.fillRoundedRect(tx + 12, y + 41, tabW - 24, 3, 1.5);
       }
 
       // 탭 클릭 영역
@@ -340,9 +342,9 @@ export default class ActionPanelScene extends Phaser.Scene {
     const tabMeta = this.getTabMeta(tabKey);
     const h = 248;
     const bg = this.add.graphics();
-    bg.fillStyle(0x0f131b, 0.96);
+    bg.fillStyle(0x0e1119, 0.96);
     bg.fillRoundedRect(x, y, w, h, 12);
-    bg.lineStyle(1, tabMeta.tone, 0.22);
+    bg.lineStyle(1, tabMeta.tone, 0.26);
     bg.strokeRoundedRect(x, y, w, h, 12);
     this.addContent(bg);
 
@@ -380,9 +382,9 @@ export default class ActionPanelScene extends Phaser.Scene {
   drawSectionCard(cx, cy, cw, label, detail) {
     const tabMeta = this.getTabMeta();
     const bg = this.add.graphics();
-    bg.fillStyle(0x10141c, 0.94);
+    bg.fillStyle(0x0e1119, 0.95);
     bg.fillRoundedRect(cx, cy, cw, 40, 10);
-    bg.lineStyle(1, tabMeta.tone, 0.18);
+    bg.lineStyle(1, tabMeta.tone, 0.2);
     bg.strokeRoundedRect(cx, cy, cw, 40, 10);
     this.addContent(bg);
 

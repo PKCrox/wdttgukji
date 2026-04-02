@@ -11,11 +11,11 @@ import ActionPanelScene from './scenes/ActionPanelScene.js';
 import BattleScene from './scenes/BattleScene.js';
 
 export default {
-  type: Phaser.AUTO,
+  type: Phaser.CANVAS,
   parent: 'game',
   width: 1600,
   height: 900,
-  backgroundColor: '#0a0a0f',
+  transparent: true,
   scale: {
     mode: Phaser.Scale.FIT,
     autoCenter: Phaser.Scale.CENTER_BOTH,

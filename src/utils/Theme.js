@@ -73,3 +73,52 @@ export const SIZES = {
   sidebarWidth: 220,
   hudHeight: 48,
 };
+
+// ─── 맵 렌더링 토큰 ───
+
+export const MAP_PALETTE = {
+  land: 0x13110e,
+  water: 0x162838,
+  waterEdge: 0x3a6080,
+  waterLabel: '#6aacd4',
+  ridge: 0x2a2218,
+  ridgeHighlight: 0x6d5a3a,
+  ridgeLabel: '#b8a27d',
+  roadMajor: 0xc4a86a,
+  roadMajorShadow: 0x100d08,
+  roadMinor: 0x484840,
+  regionLabel: '#c8b890',
+  frontline: 0xd3b36b,
+  frontlineShadow: 0x0a0907,
+};
+
+export const CITY_TIERS = {
+  capital:  { radius: 13, stroke: 3.5, innerDot: 4 },
+  major:    { radius: 11, stroke: 2.5, innerDot: 0 },
+  standard: { radius: 9,  stroke: 2,   innerDot: 0 },
+  minor:    { radius: 7,  stroke: 1.5, innerDot: 0 },
+};
+
+export const ROAD_STYLES = {
+  major: { width: 3.2, shadowWidth: 8, alpha: 0.78 },
+  minor: { width: 1.6, shadowWidth: 0, alpha: 0.44 },
+};
+
+export const TERRITORY_STYLE = {
+  fillBoost: 0.05,      // fillAlpha에 더할 값
+  maxFill: 0.24,
+  edgeWidth: 1.8,
+  edgeAlpha: 0.3,
+  innerEdgeWidth: 4,
+  innerEdgeAlpha: 0.06,  // 내부 glow 효과
+};
+
+export const HUD_STYLE = {
+  bgAlpha: 0.92,
+  borderAlpha: 0.35,
+  chipBg: 0x161620,
+  chipAlpha: 0.85,
+  chipRadius: 10,
+  chipHeight: 28,
+  chipGap: 8,
+};

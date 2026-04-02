@@ -17,9 +17,24 @@
       width: 100vw;
     }
     #game {
+      position: relative;
+      z-index: 1;
       width: 100vw;
       height: 100dvh;
     }
+    /* Leaflet map behind Phaser canvas — lives outside #game */
+    #leaflet-map {
+      background: #0a0a0f;
+    }
+    #leaflet-map .leaflet-tile-pane {
+      will-change: transform;
+    }
+    /* Prevent Leaflet internals from stealing pointer events */
+    #leaflet-map * {
+      pointer-events: none !important;
+    }
+    /* Hide Leaflet attribution */
+    .leaflet-control-attribution { display: none !important; }
   </style>
 </head>
 <body>

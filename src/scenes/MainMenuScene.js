@@ -30,14 +30,10 @@ export default class MainMenuScene extends Phaser.Scene {
     };
 
     const bg = this.add.graphics();
-    bg.fillGradientStyle(0x19120d, 0x16131c, 0x090a10, 0x090a10, 1);
+    bg.fillGradientStyle(0x1a1410, 0x14101a, 0x0a0a0f, 0x0b0910, 1);
     bg.fillRect(0, 0, width, height);
 
-    if (this.textures.exists('map-base')) {
-      this.add.image(width / 2, height / 2 + 10, 'map-base')
-        .setDisplaySize(width * 0.94, height * 0.82)
-        .setAlpha(0.16);
-    }
+    // 메뉴 배경 — 어두운 그래디언트만 (맵 텍스처 불필요)
 
     const atmosphere = this.add.graphics();
     atmosphere.fillStyle(0x76542c, 0.14);
@@ -49,32 +45,32 @@ export default class MainMenuScene extends Phaser.Scene {
     atmosphere.fillRect(0, height - 84, width, 84);
 
     const frame = this.add.graphics();
-    frame.fillStyle(0x0c1018, 0.86);
+    frame.fillStyle(0x0c0e14, 0.9);
     frame.fillRoundedRect(width / 2 - 476, 112, 952, 620, 20);
-    frame.lineStyle(1, COLORS.accent, 0.22);
+    frame.lineStyle(1, COLORS.accent, 0.28);
     frame.strokeRoundedRect(width / 2 - 476, 112, 952, 620, 20);
-    frame.lineStyle(1, 0x2b394d, 0.16);
+    frame.lineStyle(1, 0x1e2636, 0.14);
     frame.strokeRoundedRect(width / 2 - 456, 132, 912, 580, 16);
 
     const titleX = width / 2 - 400;
     const rightX = width / 2 + 112;
 
     const chapterSeal = this.add.graphics();
-    chapterSeal.fillStyle(0x121824, 0.96);
+    chapterSeal.fillStyle(0x18120e, 0.96);
     chapterSeal.fillRoundedRect(titleX, 160, 168, 34, 12);
-    chapterSeal.lineStyle(1, COLORS.accent, 0.26);
+    chapterSeal.lineStyle(1, COLORS.accent, 0.32);
     chapterSeal.strokeRoundedRect(titleX, 160, 168, 34, 12);
 
     const kicker = this.add.text(titleX + 84, 177, this.debugCopy.kicker, {
       ...FONT_STYLES.label,
       fontSize: '12px',
-      letterSpacing: 3,
+      letterSpacing: 4,
       color: COLORS_CSS.accent,
     }).setOrigin(0.5).setAlpha(0.92);
 
     const title = this.add.text(titleX, 214, this.debugCopy.title, {
       fontFamily: FONTS.title,
-      fontSize: '60px',
+      fontSize: '54px',
       fontStyle: '900',
       color: COLORS_CSS.accent,
     }).setOrigin(0, 0).setAlpha(0.96);
@@ -97,11 +93,11 @@ export default class MainMenuScene extends Phaser.Scene {
       const pillX = titleX + index * 150;
       const pillY = 382;
       const pill = this.add.graphics();
-      pill.fillStyle(index === 1 ? 0x2a1a12 : 0x121824, 0.94);
-      pill.fillRoundedRect(pillX, pillY, 134, 32, 14);
-      pill.lineStyle(1, index === 1 ? COLORS.accent : COLORS.border, index === 1 ? 0.24 : 0.18);
-      pill.strokeRoundedRect(pillX, pillY, 134, 32, 14);
-      this.add.text(pillX + 67, pillY + 16, entry, {
+      pill.fillStyle(index === 1 ? 0x2a1a10 : 0x10141e, 0.94);
+      pill.fillRoundedRect(pillX, pillY, 142, 32, 14);
+      pill.lineStyle(1, index === 1 ? COLORS.accent : COLORS.border, index === 1 ? 0.32 : 0.14);
+      pill.strokeRoundedRect(pillX, pillY, 142, 32, 14);
+      this.add.text(pillX + 71, pillY + 16, entry, {
         fontFamily: FONTS.ui,
         fontSize: '10px',
         fontStyle: '700',
@@ -110,9 +106,9 @@ export default class MainMenuScene extends Phaser.Scene {
     });
 
     const briefingCard = this.add.graphics();
-    briefingCard.fillStyle(0x111723, 0.94);
+    briefingCard.fillStyle(0x0e1119, 0.95);
     briefingCard.fillRoundedRect(titleX, 430, 498, 132, 14);
-    briefingCard.lineStyle(1, COLORS.border, 0.2);
+    briefingCard.lineStyle(1, COLORS.border, 0.16);
     briefingCard.strokeRoundedRect(titleX, 430, 498, 132, 14);
     this.add.text(titleX + 18, 448, '전장 브리핑', {
       fontFamily: FONTS.ui,
@@ -134,9 +130,9 @@ export default class MainMenuScene extends Phaser.Scene {
     });
 
     const statusCard = this.add.graphics();
-    statusCard.fillStyle(0x131925, 0.94);
+    statusCard.fillStyle(0x0e1119, 0.95);
     statusCard.fillRoundedRect(rightX, 176, 244, 132, 14);
-    statusCard.lineStyle(1, COLORS.border, 0.2);
+    statusCard.lineStyle(1, COLORS.border, 0.16);
     statusCard.strokeRoundedRect(rightX, 176, 244, 132, 14);
     this.add.text(rightX + 18, 194, '현재 개방 상태', {
       fontFamily: FONTS.ui,
@@ -162,9 +158,9 @@ export default class MainMenuScene extends Phaser.Scene {
     });
 
     const ledgerCard = this.add.graphics();
-    ledgerCard.fillStyle(0x111723, 0.94);
+    ledgerCard.fillStyle(0x0e1119, 0.95);
     ledgerCard.fillRoundedRect(rightX, 332, 244, 230, 14);
-    ledgerCard.lineStyle(1, COLORS.border, 0.2);
+    ledgerCard.lineStyle(1, COLORS.border, 0.16);
     ledgerCard.strokeRoundedRect(rightX, 332, 244, 230, 14);
     this.add.text(rightX + 18, 350, '작전 장부', {
       fontFamily: FONTS.ui,
@@ -227,7 +223,7 @@ export default class MainMenuScene extends Phaser.Scene {
       fontSize: '12px',
     }).setOrigin(0.5).setAlpha(hasSave ? 1 : 0.5);
 
-    this.add.text(width / 2, height - 40, 'wdttgukji v0.1 · Phaser 3', {
+    this.add.text(width / 2, height - 40, '우당탕탕삼국지 v0.2 · 적벽대전', {
       ...FONT_STYLES.bodyDim,
       fontSize: '11px',
     }).setOrigin(0.5).setAlpha(0.5);
@@ -242,6 +238,8 @@ export default class MainMenuScene extends Phaser.Scene {
     const bg = this.add.graphics();
     bg.fillStyle(bgColor, 1);
     bg.fillRoundedRect(x - btnWidth / 2, y - btnHeight / 2, btnWidth, btnHeight, 6);
+    bg.lineStyle(1, COLORS.accent, 0.12);
+    bg.strokeRoundedRect(x - btnWidth / 2, y - btnHeight / 2, btnWidth, btnHeight, 6);
 
     const label = this.add.text(x, y, text, {
       fontFamily: FONTS.ui,
@@ -254,13 +252,17 @@ export default class MainMenuScene extends Phaser.Scene {
 
     hitZone.on('pointerover', () => {
       bg.clear();
-      bg.fillStyle(bgColor, 1);
-      bg.fillRoundedRect(x - btnWidth / 2 - 2, y - btnHeight / 2 - 2, btnWidth + 4, btnHeight + 4, 8);
+      bg.fillStyle(bgColor, 0.85);
+      bg.fillRoundedRect(x - btnWidth / 2 - 1, y - btnHeight / 2 - 1, btnWidth + 2, btnHeight + 2, 7);
+      bg.lineStyle(1, COLORS.accent, 0.3);
+      bg.strokeRoundedRect(x - btnWidth / 2 - 1, y - btnHeight / 2 - 1, btnWidth + 2, btnHeight + 2, 7);
     });
     hitZone.on('pointerout', () => {
       bg.clear();
       bg.fillStyle(bgColor, 1);
       bg.fillRoundedRect(x - btnWidth / 2, y - btnHeight / 2, btnWidth, btnHeight, 6);
+      bg.lineStyle(1, COLORS.accent, 0.12);
+      bg.strokeRoundedRect(x - btnWidth / 2, y - btnHeight / 2, btnWidth, btnHeight, 6);
     });
     hitZone.on('pointerdown', onClick);
 

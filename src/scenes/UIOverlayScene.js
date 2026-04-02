@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { COLORS, COLORS_CSS, FONT_STYLES, FONTS, FACTION_COLORS, SIZES, SPACING } from '../utils/Theme.js';
+import { COLORS, COLORS_CSS, FONT_STYLES, FONTS, FACTION_COLORS, SIZES, SPACING, HUD_STYLE } from '../utils/Theme.js';
 import EventBus, { EVENTS } from '../utils/EventBus.js';
 import { ensureStrategyMapOverlay } from '../utils/StrategyMapOverlay.js';
 import { CHAR_NAMES } from '../../engine/data/names.js';
@@ -66,14 +66,21 @@ export default class UIOverlayScene extends Phaser.Scene {
 
     // HUD 배경
     const bg = this.add.graphics();
-    bg.fillStyle(0x0a0a0f, 0.88);
+    bg.fillStyle(0x08080e, HUD_STYLE.bgAlpha);
     bg.fillRect(0, 0, W, H);
-    bg.lineStyle(1, this.fc.primary, 0.3);
+    // primary accent line
+    bg.lineStyle(1.5, this.fc.primary, HUD_STYLE.borderAlpha);
     bg.lineBetween(0, H, W, H);
+    // subtle secondary line 1px below
+    bg.lineStyle(1, 0x1a1a28, 0.2);
+    bg.lineBetween(0, H + 1.5, W, H + 1.5);
 
-    // 세력 문장 + 이름
+    // 세력 색 dot + 이름
     const factionObj = src.factions?.[this.factionId] || {};
-    this.add.text(16, H / 2, `${factionObj.name || this.factionId}`, {
+    const dot = this.add.graphics();
+    dot.fillStyle(this.fc.primary, 1);
+    dot.fillCircle(12, H / 2, 4);
+    this.add.text(22, H / 2, `${factionObj.name || this.factionId}`, {
       fontFamily: FONTS.title, fontSize: '16px', fontStyle: '700', color: this.fc.css,
     }).setOrigin(0, 0.5);
 
@@ -82,12 +89,12 @@ export default class UIOverlayScene extends Phaser.Scene {
     const month = gs?.month || 1;
     const turn = gs?.turn || 1;
     const season = month <= 3 ? '봄' : month <= 6 ? '여름' : month <= 9 ? '가을' : '겨울';
-    this.hudTurnText = this.add.text(140, H / 2, `${year}년 ${season} · ${turn}턴`, {
+    this.hudTurnText = this.add.text(146, H / 2, `${year}년 ${season} · ${turn}턴`, {
       ...FONT_STYLES.bodyDim, fontSize: '12px',
     }).setOrigin(0, 0.5);
-    // hudTurnText와 hudActionsText는 hudElements에 넣지 않음 (refreshHUD에서 in-place 업데이트)
+    // hudTurnText, hudActionsLabel, hudActionDots는 hudElements에 넣지 않음 (refreshHUD에서 in-place 업데이트)
 
-    // 자원 표시 (우측)
+    // 자원 표시 (우측) — chip 기반
     const cities = Object.values(src.cities || {}).filter(c => c.owner === this.factionId);
     const totalArmy = cities.reduce((s, c) => s + (c.army || 0), 0);
     const totalFood = cities.reduce((s, c) => s + (c.food || 0), 0);
@@ -101,38 +108,71 @@ export default class UIOverlayScene extends Phaser.Scene {
       { label: '장수', value: `${chars.length}`, color: COLORS_CSS.textBright },
     ];
 
-    let rx = W - 20;
+    let rx = W - 16;
     resources.reverse().forEach(r => {
-      const valText = this.add.text(rx, H / 2, r.value, {
+      // measure text widths (invisible first)
+      const valText = this.add.text(0, 0, r.value, {
         fontFamily: FONTS.ui, fontSize: '13px', fontStyle: '700', color: r.color,
-      }).setOrigin(1, 0.5);
-      this.hudElements.push(valText);
-      rx -= valText.width + 4;
-
-      const lblText = this.add.text(rx, H / 2, r.label, {
+      }).setVisible(false);
+      const lblText = this.add.text(0, 0, r.label, {
         fontFamily: FONTS.ui, fontSize: '10px', color: COLORS_CSS.textDim,
-      }).setOrigin(1, 0.5);
-      this.hudElements.push(lblText);
-      rx -= lblText.width + 16;
+      }).setVisible(false);
+      const chipW = valText.width + lblText.width + 24;
+
+      // chip background
+      const chip = this.add.graphics();
+      chip.fillStyle(HUD_STYLE.chipBg, HUD_STYLE.chipAlpha);
+      chip.fillRoundedRect(rx - chipW, (H - HUD_STYLE.chipHeight) / 2, chipW, HUD_STYLE.chipHeight, HUD_STYLE.chipRadius);
+
+      // position text inside chip
+      valText.setPosition(rx - 8, H / 2).setOrigin(1, 0.5).setVisible(true);
+      lblText.setPosition(rx - 8 - valText.width - 4, H / 2).setOrigin(1, 0.5).setVisible(true);
+
+      this.hudElements.push(chip, valText, lblText);
+      rx -= chipW + HUD_STYLE.chipGap;
     });
 
-    // 행동력 표시
+    // 행동력 표시 — 라벨 + 도트
     const actions = gs?.actionsRemaining ?? 3;
-    this.hudActionsText = this.add.text(310, H / 2, `행동력 ${actions}/3`, {
-      fontFamily: FONTS.ui, fontSize: '12px', fontStyle: '600', color: COLORS_CSS.accent,
+    const maxActions = 3;
+    this.hudActionsLabel = this.add.text(310, H / 2, '행동력', {
+      fontFamily: FONTS.ui, fontSize: '11px', fontStyle: '600', color: COLORS_CSS.textDim,
     }).setOrigin(0, 0.5);
+
+    this.hudActionDots = this.add.graphics();
+    this._drawActionDots(this.hudActionDots, 310 + this.hudActionsLabel.width + 8, H / 2, actions, maxActions);
+  }
+
+  /** 행동력 도트 그리기 헬퍼 */
+  _drawActionDots(gfx, startX, cy, filled, total) {
+    gfx.clear();
+    const size = 8;
+    const radius = 2;
+    const gap = 4;
+    for (let i = 0; i < total; i++) {
+      const dx = startX + i * (size + gap);
+      const dy = cy - size / 2;
+      if (i < filled) {
+        gfx.fillStyle(this.fc.primary, 0.9);
+      } else {
+        gfx.fillStyle(COLORS.border, 0.4);
+      }
+      gfx.fillRoundedRect(dx, dy, size, size, radius);
+    }
   }
 
   // ─── 턴 종료 버튼 ───
   drawEndTurnButton() {
-    const btnW = 120;
-    const btnH = 32;
+    const btnW = 140;
+    const btnH = 38;
     const btnX = 1600 / 2 - btnW / 2;
-    const btnY = 900 - 44;
+    const btnY = 900 - 50;
 
     const btnBg = this.add.graphics();
     btnBg.fillStyle(this.fc.primary, 0.75);
     btnBg.fillRoundedRect(btnX, btnY, btnW, btnH, 6);
+    btnBg.lineStyle(1, this.fc.primary, 0.3);
+    btnBg.strokeRoundedRect(btnX, btnY, btnW, btnH, 6);
 
     const btnLabel = this.add.text(btnX + btnW / 2, btnY + btnH / 2, '턴 종료', {
       fontFamily: FONTS.ui, fontSize: '14px', fontStyle: '700', color: '#000000',
@@ -145,11 +185,15 @@ export default class UIOverlayScene extends Phaser.Scene {
       btnBg.clear();
       btnBg.fillStyle(this.fc.primary, 1);
       btnBg.fillRoundedRect(btnX, btnY, btnW, btnH, 6);
+      btnBg.lineStyle(1, this.fc.primary, 0.6);
+      btnBg.strokeRoundedRect(btnX, btnY, btnW, btnH, 6);
     });
     zone.on('pointerout', () => {
       btnBg.clear();
       btnBg.fillStyle(this.fc.primary, 0.75);
       btnBg.fillRoundedRect(btnX, btnY, btnW, btnH, 6);
+      btnBg.lineStyle(1, this.fc.primary, 0.3);
+      btnBg.strokeRoundedRect(btnX, btnY, btnW, btnH, 6);
     });
     zone.on('pointerdown', () => this.onEndTurn());
   }
@@ -767,13 +811,15 @@ export default class UIOverlayScene extends Phaser.Scene {
 
     if (this.hudTurnText) this.hudTurnText.setText(`${year}년 ${season} · ${turn}턴`);
 
+    // 행동력 도트 갱신
     const actions = gs.actionsRemaining ?? 0;
-    if (this.hudActionsText) {
-      this.hudActionsText.setText(`행동력 ${actions}/3`);
-      this.hudActionsText.setColor(actions > 0 ? COLORS_CSS.accent : '#f44336');
+    const maxActions = 3;
+    if (this.hudActionsLabel && this.hudActionDots) {
+      this.hudActionsLabel.setColor(actions > 0 ? COLORS_CSS.textDim : '#f44336');
+      this._drawActionDots(this.hudActionDots, 310 + this.hudActionsLabel.width + 8, H / 2, actions, maxActions);
     }
 
-    // 자원 텍스트 갱신
+    // 자원 chip 갱신
     const factionObj = gs.factions?.[this.factionId] || {};
     const cities = Object.values(gs.cities || {}).filter(c => c.owner === this.factionId);
     const totalArmy = cities.reduce((s, c) => s + (c.army || 0), 0);
@@ -788,19 +834,25 @@ export default class UIOverlayScene extends Phaser.Scene {
       { label: '장수', value: `${chars.length}`, color: COLORS_CSS.textBright },
     ];
 
-    let rx = W - 20;
+    let rx = W - 16;
     resources.reverse().forEach(r => {
-      const valText = this.add.text(rx, H / 2, r.value, {
+      const valText = this.add.text(0, 0, r.value, {
         fontFamily: FONTS.ui, fontSize: '13px', fontStyle: '700', color: r.color,
-      }).setOrigin(1, 0.5);
-      this.hudElements.push(valText);
-      rx -= valText.width + 4;
-
-      const lblText = this.add.text(rx, H / 2, r.label, {
+      }).setVisible(false);
+      const lblText = this.add.text(0, 0, r.label, {
         fontFamily: FONTS.ui, fontSize: '10px', color: COLORS_CSS.textDim,
-      }).setOrigin(1, 0.5);
-      this.hudElements.push(lblText);
-      rx -= lblText.width + 16;
+      }).setVisible(false);
+      const chipW = valText.width + lblText.width + 24;
+
+      const chip = this.add.graphics();
+      chip.fillStyle(HUD_STYLE.chipBg, HUD_STYLE.chipAlpha);
+      chip.fillRoundedRect(rx - chipW, (H - HUD_STYLE.chipHeight) / 2, chipW, HUD_STYLE.chipHeight, HUD_STYLE.chipRadius);
+
+      valText.setPosition(rx - 8, H / 2).setOrigin(1, 0.5).setVisible(true);
+      lblText.setPosition(rx - 8 - valText.width - 4, H / 2).setOrigin(1, 0.5).setVisible(true);
+
+      this.hudElements.push(chip, valText, lblText);
+      rx -= chipW + HUD_STYLE.chipGap;
     });
   }
 }

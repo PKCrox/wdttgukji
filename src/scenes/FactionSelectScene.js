@@ -15,14 +15,10 @@ export default class FactionSelectScene extends Phaser.Scene {
 
     // 배경
     const bg = this.add.graphics();
-    bg.fillGradientStyle(0x17120f, 0x17131c, 0x090a10, 0x090a10, 1);
+    bg.fillGradientStyle(0x1a1410, 0x14101a, 0x0a0a0f, 0x0b0910, 1);
     bg.fillRect(0, 0, width, height);
 
-    if (this.textures.exists('map-base')) {
-      this.add.image(width / 2, height / 2, 'map-base')
-        .setDisplaySize(width * 0.94, height * 0.84)
-        .setAlpha(0.16);
-    }
+    // 맵 배경은 Leaflet이 처리 (메뉴 화면에서는 그래디언트만 표시)
 
     const frame = this.add.graphics();
     frame.fillStyle(0x0c1018, 0.86);
@@ -39,9 +35,10 @@ export default class FactionSelectScene extends Phaser.Scene {
     // 타이틀
     this.add.text(width / 2, 62, '누구의 깃발을 들 것인가', {
       fontFamily: FONTS.title,
-      fontSize: '34px',
+      fontSize: '36px',
       fontStyle: '700',
       color: COLORS_CSS.accent,
+      shadow: { offsetX: 0, offsetY: 2, color: '#000000', blur: 8, stroke: false, fill: true },
     }).setOrigin(0.5);
 
     this.add.text(width / 2, 96, '208년 적벽대전 · 첫 세 턴의 결심이 세력마다 전혀 다르다', {
@@ -128,18 +125,37 @@ export default class FactionSelectScene extends Phaser.Scene {
     });
 
     // 뒤로가기
-    const backText = this.add.text(40, height - 40, '← 메인 메뉴', {
+    const backPill = this.add.graphics();
+    const backTextObj = this.add.text(48, height - 40, '← 메인 메뉴', {
       ...FONT_STYLES.body,
       color: COLORS_CSS.textDim,
-    }).setInteractive({ useHandCursor: true });
-    backText.on('pointerdown', () => {
+    });
+    const btBounds = backTextObj.getBounds();
+    const bpX = btBounds.x - 8;
+    const bpY = btBounds.y - 4;
+    const bpW = btBounds.width + 16;
+    const bpH = btBounds.height + 8;
+    backPill.fillStyle(0x161620, 0.7);
+    backPill.fillRoundedRect(bpX, bpY, bpW, bpH, 4);
+    backTextObj.setInteractive({ useHandCursor: true });
+    backTextObj.on('pointerdown', () => {
       this.cameras.main.fadeOut(300, 10, 10, 15);
       this.cameras.main.once('camerafadeoutcomplete', () => {
         this.scene.start('MainMenu');
       });
     });
-    backText.on('pointerover', () => backText.setColor(COLORS_CSS.accent));
-    backText.on('pointerout', () => backText.setColor(COLORS_CSS.textDim));
+    backTextObj.on('pointerover', () => {
+      backTextObj.setColor(COLORS_CSS.accent);
+      backPill.clear();
+      backPill.fillStyle(0x1e2030, 0.85);
+      backPill.fillRoundedRect(bpX, bpY, bpW, bpH, 4);
+    });
+    backTextObj.on('pointerout', () => {
+      backTextObj.setColor(COLORS_CSS.textDim);
+      backPill.clear();
+      backPill.fillStyle(0x161620, 0.7);
+      backPill.fillRoundedRect(bpX, bpY, bpW, bpH, 4);
+    });
   }
 
   createPreviewBoard(x, y, w, h, factionId) {
@@ -226,13 +242,13 @@ export default class FactionSelectScene extends Phaser.Scene {
     this.previewFactionId = factionId;
 
     this.previewBg.clear();
-    this.previewBg.fillStyle(0x0f141d, 0.94);
+    this.previewBg.fillStyle(0x0c1018, 0.95);
     this.previewBg.fillRoundedRect(this.previewBounds.x, this.previewBounds.y, this.previewBounds.w, this.previewBounds.h, 18);
-    this.previewBg.lineStyle(1, fc.primary, 0.24);
+    this.previewBg.lineStyle(1, fc.primary, 0.3);
     this.previewBg.strokeRoundedRect(this.previewBounds.x, this.previewBounds.y, this.previewBounds.w, this.previewBounds.h, 18);
 
     this.previewAccent.clear();
-    this.previewAccent.fillStyle(fc.primary, 0.2);
+    this.previewAccent.fillStyle(fc.primary, 0.25);
     this.previewAccent.fillRoundedRect(this.previewBounds.x + 18, this.previewBounds.y + 18, this.previewBounds.w - 36, 32, 14);
     this.previewAccent.fillStyle(fc.primary, 0.78);
     this.previewAccent.fillRoundedRect(this.previewBounds.x + 18, this.previewBounds.y + 18, 88, 32, 14);
@@ -259,14 +275,14 @@ export default class FactionSelectScene extends Phaser.Scene {
     const right = w / 2 - 18;
 
     const bg = this.add.graphics();
-    bg.fillStyle(0x10141d, 0.96);
+    bg.fillStyle(0x0e1118, 0.97);
     bg.fillRoundedRect(-w / 2, -h / 2, w, h, 12);
-    bg.lineStyle(1, fc.primary, 0.4);
+    bg.lineStyle(1, fc.primary, 0.5);
     bg.strokeRoundedRect(-w / 2, -h / 2, w, h, 12);
 
     const topBar = this.add.graphics();
-    topBar.fillStyle(fc.primary, 0.8);
-    topBar.fillRoundedRect(-w / 2, -h / 2, w, 6, { tl: 12, tr: 12 });
+    topBar.fillStyle(fc.primary, 0.9);
+    topBar.fillRoundedRect(-w / 2, -h / 2, w, 4, { tl: 12, tr: 12 });
 
     const content = [bg, topBar];
 
@@ -312,7 +328,7 @@ export default class FactionSelectScene extends Phaser.Scene {
         align: 'right',
       }).setOrigin(1, 0);
       const btnBg = this.add.graphics();
-      btnBg.fillStyle(fc.primary, 0.82);
+      btnBg.fillStyle(fc.primary, 0.88);
       btnBg.fillRoundedRect(w / 2 - 150, h / 2 - 42, 132, 30, 8);
       const btnLabel = this.add.text(w / 2 - 84, h / 2 - 27, '이 세력으로 간다', {
         fontFamily: FONTS.ui,
@@ -384,7 +400,7 @@ export default class FactionSelectScene extends Phaser.Scene {
       });
 
       const btnBg = this.add.graphics();
-      btnBg.fillStyle(fc.primary, 0.82);
+      btnBg.fillStyle(fc.primary, 0.88);
       btnBg.fillRoundedRect(-76, h / 2 - 24, 152, 32, 8);
       const btnLabel = this.add.text(0, h / 2 - 8, '이 깃발을 든다', {
         fontFamily: FONTS.ui,
@@ -417,18 +433,18 @@ export default class FactionSelectScene extends Phaser.Scene {
     hitZone.on('pointerover', () => {
       this.updatePreviewBoard(factionId);
       bg.clear();
-      bg.fillStyle(COLORS.bgHover, 0.97);
+      bg.fillStyle(0x141920, 0.98);
       bg.fillRoundedRect(-w / 2, -h / 2, w, h, 12);
-      bg.lineStyle(2, fc.primary, 0.82);
+      bg.lineStyle(1.5, fc.primary, 0.7);
       bg.strokeRoundedRect(-w / 2, -h / 2, w, h, 12);
-      container.setScale(isSupport ? 1.015 : 1.02);
+      container.setScale(isSupport ? 1.01 : 1.015);
     });
 
     hitZone.on('pointerout', () => {
       bg.clear();
-      bg.fillStyle(0x10141d, 0.96);
+      bg.fillStyle(0x0e1118, 0.97);
       bg.fillRoundedRect(-w / 2, -h / 2, w, h, 12);
-      bg.lineStyle(1, fc.primary, 0.4);
+      bg.lineStyle(1, fc.primary, 0.5);
       bg.strokeRoundedRect(-w / 2, -h / 2, w, h, 12);
       container.setScale(1);
     });
