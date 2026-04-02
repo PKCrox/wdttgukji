@@ -17,3 +17,7 @@ screenshots/
 
 # Codex agent memory (versioned snapshots, bloat)
 docs/agent-registry-history/
+
+# Claude Code config
+CLAUDE.md
+.claude/
